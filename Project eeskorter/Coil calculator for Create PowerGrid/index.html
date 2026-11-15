@@ -6,7 +6,371 @@
   <meta name="description" content="Transformer winding & turns ratio calculator for Minecraft Create: Power Grid mod." />
   <meta name="theme-color" content="#080808" />
   <title>Coil calculator for Create PowerGrid</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    :root {
+      --bg: #080808;
+      --panel: #111111;
+      --panel-alt: #181818;
+      --border: #2c2c2c;
+      --text: #f5f5f5;
+      --muted: #8e8e8e;
+      --copper: #c87544;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      line-height: 1.45;
+      padding: 24px 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .app {
+      max-width: 980px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      border: 1px solid var(--border);
+      background: var(--panel);
+      padding: 18px 20px;
+    }
+
+    h1 {
+      font-size: 1.25rem;
+      letter-spacing: 0.1em;
+    }
+
+    .brand-sub {
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    .subtitle {
+      font-size: 0.76rem;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+
+    .badge {
+      border: 1px solid var(--text);
+      padding: 6px 12px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    .lang-btn {
+      font-weight: 700;
+      padding: 6px 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 16px;
+    }
+
+    @media (max-width: 800px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      padding: 20px;
+    }
+
+    .control-group {
+      margin-bottom: 18px;
+    }
+
+    .label-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.76rem;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .input-row {
+      display: grid;
+      grid-template-columns: 124px 1fr;
+      gap: 12px;
+      align-items: center;
+    }
+
+    input[type="number"] {
+      background: #000000;
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 8px 10px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      width: 100%;
+    }
+
+    input[type="number"]:focus {
+      outline: none;
+      border-color: var(--text);
+    }
+
+    input[type="range"] {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 100%;
+      height: 4px;
+      background: var(--border);
+      cursor: pointer;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 14px;
+      height: 14px;
+      background: var(--text);
+      border: 2px solid #000000;
+    }
+
+    input[type="range"]::-moz-range-thumb {
+      width: 14px;
+      height: 14px;
+      background: var(--text);
+      border: 2px solid #000000;
+      border-radius: 0;
+    }
+
+    .presets {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    button {
+      background: #000000;
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 7px 10px;
+      font-family: inherit;
+      font-size: 0.75rem;
+      cursor: pointer;
+      transition: background-color 0.12s ease, color 0.12s ease, border-color 0.12s ease;
+    }
+
+    button:hover,
+    button:focus-visible {
+      background: var(--text);
+      color: #000000;
+      border-color: var(--text);
+      outline: none;
+    }
+
+    .turns-display {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .turn-box {
+      border: 1px solid var(--border);
+      background: #000000;
+      padding: 14px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .turn-box.primary {
+      border-top: 3px solid var(--text);
+    }
+
+    .turn-box.secondary {
+      border-top: 3px solid var(--copper);
+    }
+
+    .turn-title {
+      font-size: 0.7rem;
+      color: var(--muted);
+    }
+
+    .turn-val {
+      font-size: 2.3rem;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
+    .turn-sub {
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    .turn-sub b {
+      color: var(--text);
+    }
+
+    .ratio-divider {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .ratio-divider span {
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .ratio-divider small {
+      font-size: 0.65rem;
+      color: var(--muted);
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .metric {
+      border: 1px solid var(--border);
+      padding: 10px 12px;
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      font-size: 0.78rem;
+    }
+
+    .metric span {
+      color: var(--muted);
+    }
+
+    .schematic svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .guide-accordion {
+      padding: 0;
+    }
+
+    .guide-toggle {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 20px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+      user-select: none;
+      transition: background-color 0.12s ease;
+    }
+
+    .guide-toggle::-webkit-details-marker {
+      display: none;
+    }
+
+    .guide-toggle:hover {
+      background: var(--panel-alt);
+    }
+
+    .guide-arrow {
+      font-size: 0.72rem;
+      color: var(--muted);
+      transition: transform 0.18s ease;
+    }
+
+    .guide-accordion[open] .guide-arrow {
+      transform: rotate(180deg);
+    }
+
+    .guide-accordion[open] .guide-toggle {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .guide-content {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      font-size: 0.8rem;
+      color: var(--text);
+    }
+
+    @media (max-width: 860px) {
+      .guide-content {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .guide-block {
+      border: 1px solid var(--border);
+      background: #000000;
+      padding: 14px 16px;
+    }
+
+    .guide-block h3 {
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+      margin-bottom: 10px;
+      color: var(--copper);
+    }
+
+    .guide-block ul,
+    .guide-block ol {
+      padding-left: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      color: #d4d4d4;
+    }
+
+    .guide-block b {
+      color: #ffffff;
+    }
+
+    .guide-block code {
+      background: var(--panel-alt);
+      border: 1px solid var(--border);
+      padding: 1px 5px;
+      font-size: 0.76rem;
+    }
+  </style>
 </head>
 <body>
   <div class="app">
@@ -118,6 +482,292 @@
     </details>
   </div>
 
-  <script src="app.js" defer></script>
+  <script>
+    (() => {
+      'use strict';
+
+      const I18N = {
+        en: {
+          subtitle: 'TRANSFORMER WINDING & CORE TURNS BUDGET SOLVER',
+          stepDown: 'STEP-DOWN',
+          stepUp: 'STEP-UP',
+          vInLabel: 'INPUT VOLTAGE (V_IN)',
+          vOutLabel: 'TARGET OUTPUT VOLTAGE (V_OUT)',
+          maxTurnsLabel: 'MAX CORE TURNS BUDGET (N₁ + N₂)',
+          swapBtn: '⇄ SWAP',
+          copyBtn: 'COPY LINK',
+          copiedBtn: 'COPIED ✓',
+          primaryTitle: 'PRIMARY COIL (N₁)',
+          secondaryTitle: 'SECONDARY COIL (N₂)',
+          inPrefix: 'IN:',
+          outPrefix: 'OUT:',
+          ratioLabel: 'RATIO',
+          deviationLabel: 'DEVIATION',
+          turnsSumLabel: 'TURNS USED',
+          guideToggle: 'USER GUIDE & IN-GAME WIRING INSTRUCTIONS',
+          svgTop: (n1, vIn) => `INPUT TERMINALS (N₁ = ${n1}) — APPLY ${vIn} V`,
+          svgBot: (n2, vOut) => `OUTPUT TERMINALS (N₂ = ${n2}) — READ ${vOut} V`,
+          guideHtml: `
+            <div class="guide-block">
+              <h3>1. CORE BUDGET &amp; FORMULA</h3>
+              <ul>
+                <li><b>Shared Limit (60):</b> Max turns apply to the entire transformer combined (<code>N₁ + N₂ ≤ 60</code>). Setting 60 on one coil locks the other at <code>1</code>.</li>
+                <li><b>Voltage Ratio:</b> <code>V_out = V_in × (N₂ / N₁)</code>.</li>
+                <li><b>Above 2000 V:</b> Voltage Gauge caps at 2000 V. Use <b>Engineer's Goggles</b>, a <b>Display Link</b>, or a <b>10:1</b> step-down test transformer (50 &amp; 5 turns) and multiply by 10.</li>
+              </ul>
+            </div>
+            <div class="guide-block">
+              <h3>2. SETTING COIL TURNS</h3>
+              <ol>
+                <li><b>Disconnect all wires:</b> Turn counts cannot be changed while wires are attached or current is flowing.</li>
+                <li><b>Set N₁:</b> Aim at the <code>Turns (N)</code> slot on the primary coil, hold <b>Right-Click</b>, drag right to <b>N₁</b>, and release.</li>
+                <li><b>Set N₂:</b> Repeat on the second coil to set <b>N₂</b>.</li>
+              </ol>
+            </div>
+            <div class="guide-block">
+              <h3>3. WIRING TERMINALS</h3>
+              <ol>
+                <li><b>Top Terminals:</b> The 4 copper terminals on top are grouped in pairs — one pair directly above each coil.</li>
+                <li><b>Connect Lines:</b> Wire your input source to the pair on the <b>N₁</b> side and your output load to the pair on the <b>N₂</b> side.</li>
+                <li><b>Polarity:</b> Never bridge two terminals of the same pair. If a gauge shows a minus sign, swap its two wires.</li>
+              </ol>
+            </div>
+          `
+        },
+        ru: {
+          subtitle: 'РАСЧЁТ ВИТКОВ И БЮДЖЕТА СЕРДЕЧНИКА ТРАНСФОРМАТОРА',
+          stepDown: 'ПОНИЖАЮЩИЙ',
+          stepUp: 'ПОВЫШАЮЩИЙ',
+          vInLabel: 'ВХОДНОЕ НАПРЯЖЕНИЕ (V_IN)',
+          vOutLabel: 'ЦЕЛЕВОЕ НАПРЯЖЕНИЕ (V_OUT)',
+          maxTurnsLabel: 'ЛИМИТ ВИТКОВ СЕРДЕЧНИКА (N₁ + N₂)',
+          swapBtn: '⇄ ИНВЕРТ',
+          copyBtn: 'ССЫЛКА',
+          copiedBtn: 'СКОПИРОВАНО ✓',
+          primaryTitle: 'ПЕРВИЧНАЯ (N₁)',
+          secondaryTitle: 'ВТОРИЧНАЯ (N₂)',
+          inPrefix: 'ВХОД:',
+          outPrefix: 'ВЫХОД:',
+          ratioLabel: 'КОЭФФ.',
+          deviationLabel: 'ОТКЛОНЕНИЕ',
+          turnsSumLabel: 'СУММА ВИТКОВ',
+          guideToggle: 'ГАЙД ПО НАСТРОЙКЕ И ПОДКЛЮЧЕНИЮ В MINECRAFT',
+          svgTop: (n1, vIn) => `КЛЕММЫ ВХОДА (N₁ = ${n1}) — ПОДАТЬ ${vIn} V`,
+          svgBot: (n2, vOut) => `КЛЕММЫ ВЫХОДА (N₂ = ${n2}) — СНЯТЬ ${vOut} V`,
+          guideHtml: `
+            <div class="guide-block">
+              <h3>1. ЛИМИТ СЕРДЕЧНИКА И ЗАМЕРЫ</h3>
+              <ul>
+                <li><b>Общий бюджет (60):</b> Лимит витков делится на обе катушки (<code>N₁ + N₂ ≤ 60</code>). Если поставить 60 на первой, вторая заблокируется на <code>1</code>.</li>
+                <li><b>Формула:</b> <code>V_out = V_in × (N₂ / N₁)</code>.</li>
+                <li><b>Выше 2000 V:</b> Шкала Voltage Gauge ограничена 2000 V. Используйте <b>Очки инженера</b>, <b>Display Link</b> или делитель <b>10:1</b> (50 и 5 витков) и умножьте показание на 10.</li>
+              </ul>
+            </div>
+            <div class="guide-block">
+              <h3>2. НАСТРОЙКА ВИТКОВ</h3>
+              <ol>
+                <li><b>Снимите провода:</b> Мод блокирует изменение витков, если к клеммам подключены провода или идёт ток.</li>
+                <li><b>Выставьте N₁:</b> Наведите прицел на слот <code>Turns (N)</code> первой катушки, зажмите <b>ПКМ</b>, потяните мышь вправо до <b>N₁</b> и отпустите.</li>
+                <li><b>Выставьте N₂:</b> Повторите то же самое на второй катушке для значения <b>N₂</b>.</li>
+              </ol>
+            </div>
+            <div class="guide-block">
+              <h3>3. ПОДКЛЮЧЕНИЕ КЛЕММ</h3>
+              <ol>
+                <li><b>4 клеммы сверху:</b> Разделены на две пары — по одной паре строго над каждой катушкой.</li>
+                <li><b>Вход и выход:</b> Подайте входную линию на пару клемм со стороны <b>N₁</b>, а выходную цепь снимите с пары со стороны <b>N₂</b>.</li>
+                <li><b>Полярность:</b> Не замыкайте клеммы одной пары между собой. Если прибор показывает минус — поменяйте его два провода местами.</li>
+              </ol>
+            </div>
+          `
+        }
+      };
+
+      let lang = 'en';
+
+      const el = {
+        vInInput: document.getElementById('vInInput'),
+        vInRange: document.getElementById('vInRange'),
+        vOutInput: document.getElementById('vOutInput'),
+        vOutRange: document.getElementById('vOutRange'),
+        maxTurnsInput: document.getElementById('maxTurnsInput'),
+        maxTurnsRange: document.getElementById('maxTurnsRange'),
+        modeBadge: document.getElementById('modeBadge'),
+        budgetUsed: document.getElementById('budgetUsed'),
+        n1Val: document.getElementById('n1Val'),
+        n2Val: document.getElementById('n2Val'),
+        inPreview: document.getElementById('inPreview'),
+        outActual: document.getElementById('outActual'),
+        ratioVal: document.getElementById('ratioVal'),
+        errorVal: document.getElementById('errorVal'),
+        sumVal: document.getElementById('sumVal'),
+        svgTopLabel: document.getElementById('svgTopLabel'),
+        svgBotLabel: document.getElementById('svgBotLabel'),
+        guideContent: document.getElementById('guideContent'),
+        swapBtn: document.getElementById('swapBtn'),
+        copyBtn: document.getElementById('copyBtn'),
+        langBtn: document.getElementById('langBtn')
+      };
+
+      function clamp(val, min, max) {
+        return Math.min(max, Math.max(min, val));
+      }
+
+      function findBestPair(vIn, vOut, maxTotal) {
+        let best = null;
+
+        for (let n1 = 1; n1 < maxTotal; n1++) {
+          for (let n2 = 1; n1 + n2 <= maxTotal; n2++) {
+            const actualOut = vIn * (n2 / n1);
+            const diff = actualOut - vOut;
+            const absDiff = Math.abs(diff);
+            const relError = (absDiff / vOut) * 100;
+            const sum = n1 + n2;
+
+            if (
+              !best ||
+              absDiff < best.absDiff - 1e-6 ||
+              (Math.abs(absDiff - best.absDiff) <= 1e-6 && sum > best.sum)
+            ) {
+              best = { n1, n2, sum, actualOut, diff, absDiff, relError };
+            }
+          }
+        }
+
+        return best;
+      }
+
+      function applyTranslations() {
+        const t = I18N[lang];
+        document.documentElement.lang = lang;
+        el.langBtn.textContent = lang === 'en' ? 'RU' : 'EN';
+        document.querySelectorAll('[data-i18n]').forEach((node) => {
+          const key = node.dataset.i18n;
+          if (t[key]) node.textContent = t[key];
+        });
+        el.guideContent.innerHTML = t.guideHtml;
+      }
+
+      function syncUrlState(vIn, vOut, maxTotal) {
+        try {
+          const url = new URL(window.location.href);
+          url.searchParams.set('in', vIn);
+          url.searchParams.set('out', vOut);
+          url.searchParams.set('max', maxTotal);
+          url.searchParams.set('lang', lang);
+          window.history.replaceState(null, '', url.toString());
+        } catch (_) {}
+      }
+
+      function loadUrlState() {
+        try {
+          const params = new URLSearchParams(window.location.search);
+          if (params.has('in')) {
+            const v = clamp(parseFloat(params.get('in')) || 1406.59, 0.01, 1000000);
+            el.vInInput.value = v;
+            el.vInRange.value = clamp(Math.round(v), 10, 5000);
+          }
+          if (params.has('out')) {
+            const v = clamp(parseFloat(params.get('out')) || 258, 0.01, 1000000);
+            el.vOutInput.value = v;
+            el.vOutRange.value = clamp(Math.round(v), 1, 5000);
+          }
+          if (params.has('max')) {
+            const m = clamp(parseInt(params.get('max'), 10) || 60, 2, 500);
+            el.maxTurnsInput.value = m;
+            el.maxTurnsRange.value = clamp(m, 2, 120);
+          }
+          if (params.get('lang') === 'ru' || params.get('lang') === 'en') {
+            lang = params.get('lang');
+          }
+        } catch (_) {}
+      }
+
+      function render() {
+        const t = I18N[lang];
+        const vIn = clamp(parseFloat(el.vInInput.value) || 0.01, 0.01, 1000000);
+        const vOut = clamp(parseFloat(el.vOutInput.value) || 0.01, 0.01, 1000000);
+        const maxTotal = clamp(parseInt(el.maxTurnsInput.value, 10) || 60, 2, 500);
+
+        const best = findBestPair(vIn, vOut, maxTotal);
+
+        el.modeBadge.textContent = vIn >= vOut ? t.stepDown : t.stepUp;
+        el.n1Val.textContent = best.n1;
+        el.n2Val.textContent = best.n2;
+        el.inPreview.textContent = `${vIn.toFixed(2)} V`;
+        el.outActual.textContent = `${best.actualOut.toFixed(2)} V`;
+        el.ratioVal.textContent = `${(best.n1 / best.n2).toFixed(2)} : 1`;
+
+        const sign = best.diff >= 0 ? '+' : '';
+        el.errorVal.textContent = `${sign}${best.diff.toFixed(2)} V (${best.relError.toFixed(2)}%)`;
+        el.sumVal.textContent = `${best.sum} / ${maxTotal}`;
+        el.budgetUsed.textContent = `${best.sum} / ${maxTotal}`;
+
+        el.svgTopLabel.textContent = t.svgTop(best.n1, vIn.toFixed(2));
+        el.svgBotLabel.textContent = t.svgBot(best.n2, best.actualOut.toFixed(2));
+
+        syncUrlState(vIn, vOut, maxTotal);
+      }
+
+      function bindPair(numEl, rangeEl) {
+        numEl.addEventListener('input', () => {
+          const val = parseFloat(numEl.value);
+          if (!Number.isNaN(val)) {
+            rangeEl.value = clamp(val, parseFloat(rangeEl.min), parseFloat(rangeEl.max));
+          }
+          render();
+        });
+        rangeEl.addEventListener('input', () => {
+          numEl.value = rangeEl.value;
+          render();
+        });
+      }
+
+      bindPair(el.vInInput, el.vInRange);
+      bindPair(el.vOutInput, el.vOutRange);
+      bindPair(el.maxTurnsInput, el.maxTurnsRange);
+
+      document.querySelectorAll('.presets button[data-in]').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          el.vInInput.value = btn.dataset.in;
+          el.vOutInput.value = btn.dataset.out;
+          el.vInRange.value = clamp(Math.round(parseFloat(btn.dataset.in)), 10, 5000);
+          el.vOutRange.value = clamp(Math.round(parseFloat(btn.dataset.out)), 1, 5000);
+          render();
+        });
+      });
+
+      el.swapBtn.addEventListener('click', () => {
+        const tmp = el.vInInput.value;
+        el.vInInput.value = el.vOutInput.value;
+        el.vOutInput.value = tmp;
+        el.vInRange.value = clamp(Math.round(parseFloat(el.vInInput.value)), 10, 5000);
+        el.vOutRange.value = clamp(Math.round(parseFloat(el.vOutInput.value)), 1, 5000);
+        render();
+      });
+
+      el.copyBtn.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(window.location.href);
+          el.copyBtn.textContent = I18N[lang].copiedBtn;
+          setTimeout(() => {
+            el.copyBtn.textContent = I18N[lang].copyBtn;
+          }, 1500);
+        } catch (_) {
+          window.prompt('URL:', window.location.href);
+        }
+      });
+
+      el.langBtn.addEventListener('click', () => {
+        lang = lang === 'en' ? 'ru' : 'en';
+        applyTranslations();
+        render();
+      });
+
+      loadUrlState();
+      applyTranslations();
+      render();
+    })();
+  </script>
 </body>
 </html>
