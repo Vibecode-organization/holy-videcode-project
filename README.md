@@ -9,6 +9,8 @@
 ## 🇬🇧 English
 
 > An open collection of projects from vibecoders all around the world.
+>
+> 🌐 Website: **https://murk-sus.github.io/holy-videcode-project/**
 
 **Holy Vibecode Project** is a place where any vibecoder can share their project.
 It doesn't matter what platform it's built on, how long it took, or how experienced you are —
@@ -118,6 +120,8 @@ Links: iOS / web / bot (if any)
 ## 🇷🇺 Русский
 
 > Открытая коллекция проектов от вайбкодеров со всего мира.
+>
+> 🌐 Сайт: **https://murk-sus.github.io/holy-videcode-project/**
 
 **Holy Vibecode Project** — это место, где любой вайбкодер может поделиться своим проектом.
 Неважно, на какой платформе он сделан, сколько времени ушло на разработку и какой у тебя опыт:
