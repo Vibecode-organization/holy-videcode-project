@@ -27,19 +27,27 @@
       <span class="brand-star">★</span>
       <span>Holy<b>VibeCode</b></span>
     </a>
-    <nav class="nav" id="nav">
-      <a href="#home" data-route="home">Главная</a>
-      <a href="#projects" data-route="projects">Проекты</a>
-      <a href="#support" data-route="support">Поддержка</a>
-      <a href="#join" data-route="join">Вступить</a>
-      <span class="nav-pill" id="navPill" aria-hidden="true"></span>
-    </nav>
+    <div class="topbar-right">
+      <nav class="nav" id="nav">
+        <a href="#home" data-route="home" data-i18n="nav.home">Главная</a>
+        <a href="#projects" data-route="projects" data-i18n="nav.projects">Проекты</a>
+        <a href="#support" data-route="support" data-i18n="nav.support">Поддержка</a>
+        <a href="#join" data-route="join" data-i18n="nav.join">Вступить</a>
+        <span class="nav-pill" id="navPill" aria-hidden="true"></span>
+      </nav>
+      <div class="lang" id="lang">
+        <button class="lang-btn" id="langBtn" type="button" aria-haspopup="listbox" aria-expanded="false" data-i18n-aria="nav.lang">
+          <span class="lang-globe" aria-hidden="true">✦</span><span id="langCode">RU</span>
+        </button>
+        <ul class="lang-menu" id="langMenu" role="listbox" hidden></ul>
+      </div>
+    </div>
   </header>
 
   <div class="ribbon" aria-hidden="true">
     <div class="ribbon-track">
-      <span>★ HOLY VIBECODE ★ ホーリー・バイブコード ★ ЛЮБАЯ ПЛАТФОРМА ★ ЛЮБОЙ УРОВЕНЬ ★ ВАЙБКОДЕРЫ ВСЕГО МИРА ★ </span>
-      <span>★ HOLY VIBECODE ★ ホーリー・バイブコード ★ ЛЮБАЯ ПЛАТФОРМА ★ ЛЮБОЙ УРОВЕНЬ ★ ВАЙБКОДЕРЫ ВСЕГО МИРА ★ </span>
+      <span data-i18n="ribbon">★ HOLY VIBECODE ★ ホーリー・バイブコード ★ ЛЮБАЯ ПЛАТФОРМА ★ ЛЮБОЙ УРОВЕНЬ ★ ВАЙБКОДЕРЫ ВСЕГО МИРА ★ </span>
+      <span data-i18n="ribbon">★ HOLY VIBECODE ★ ホーリー・バイブコード ★ ЛЮБАЯ ПЛАТФОРМА ★ ЛЮБОЙ УРОВЕНЬ ★ ВАЙБКОДЕРЫ ВСЕГО МИРА ★ </span>
     </div>
   </div>
 
@@ -50,20 +58,20 @@
         <div class="hero-text">
           <p class="kicker">ホーリー・バイブコード</p>
           <h1 class="title" id="heroTitle">Holy VibeCode</h1>
-          <p class="lead">Открытая коллекция проектов вайбкодеров со всего мира. Любая платформа, любой стек, любой уровень — от первого «Hello, World!» до полноценного продукта.</p>
+          <p class="lead" data-i18n="hero.lead">Открытая коллекция проектов вайбкодеров со всего мира.</p>
           <div class="cta">
-            <a class="btn btn-pink" href="#projects" data-route="projects">Смотреть проекты</a>
-            <a class="btn btn-ghost" href="#support" data-route="support">Поддержать авторов</a>
+            <a class="btn btn-pink" href="#projects" data-route="projects" data-i18n="hero.cta1">Смотреть проекты</a>
+            <a class="btn btn-ghost" href="#support" data-route="support" data-i18n="hero.cta2">Поддержать авторов</a>
           </div>
           <div class="stats">
-            <div class="stat"><b id="statAuthors">—</b><span>авторов</span></div>
-            <div class="stat"><b id="statProjects">—</b><span>проектов</span></div>
-            <div class="stat"><b id="statSupport">—</b><span>в поддержке</span></div>
+            <div class="stat"><b id="statAuthors">—</b><span data-i18n="stat.authors">авторов</span></div>
+            <div class="stat"><b id="statProjects">—</b><span data-i18n="stat.projects">проектов</span></div>
+            <div class="stat"><b id="statSupport">—</b><span data-i18n="stat.support">в поддержке</span></div>
           </div>
         </div>
         <div class="hero-art">
-          <div class="bubble" id="bubble">Добро пожаловать, вайбкодер!</div>
-          <button class="girl-wrap" id="heroGirl" type="button" aria-label="Талисман Holy VibeCode"></button>
+          <div class="bubble" id="bubble"></div>
+          <button class="girl-wrap" id="heroGirl" type="button" data-i18n-aria="girl.aria"></button>
           <div class="girl-shadow"></div>
         </div>
       </div>
@@ -71,18 +79,18 @@
       <div class="features">
         <article class="card reveal">
           <div class="card-badge">01</div>
-          <h3>Для всех</h3>
-          <p>Новички и профи, дизайнеры, музыканты, художники — каждый, кто создаёт что-то вместе с ИИ.</p>
+          <h3 data-i18n="f1.t">Для всех</h3>
+          <p data-i18n="f1.d"></p>
         </article>
         <article class="card reveal">
           <div class="card-badge">02</div>
-          <h3>Без ограничений</h3>
-          <p>Веб, мобильные приложения, игры, боты, AI-агенты, утилиты и эксперименты.</p>
+          <h3 data-i18n="f2.t">Без ограничений</h3>
+          <p data-i18n="f2.d"></p>
         </article>
         <article class="card reveal">
           <div class="card-badge">03</div>
-          <h3>Поддержка авторов</h3>
-          <p>Участники сами указывают реквизиты, а вы можете поддержать любимый проект напрямую.</p>
+          <h3 data-i18n="f3.t">Поддержка авторов</h3>
+          <p data-i18n="f3.d"></p>
         </article>
       </div>
     </section>
@@ -91,8 +99,8 @@
     <section class="page" id="page-projects" data-page="projects">
       <div class="page-head">
         <p class="kicker">プロジェクト</p>
-        <h2>Проекты</h2>
-        <p class="muted">Список собирается автоматически из папок репозитория.</p>
+        <h2 data-i18n="proj.title">Проекты</h2>
+        <p class="muted" data-i18n="proj.sub"></p>
       </div>
       <div class="grid" id="projectsGrid">
         <div class="loader"><span></span><span></span><span></span></div>
@@ -104,9 +112,9 @@
       <div class="page-head with-girl">
         <div>
           <p class="kicker">サポート</p>
-          <h2>Поддержка</h2>
-          <p class="muted">Здесь участники репозитория публикуют свои реквизиты. Каждый может добавить и изменить только свои — сайт проверяет ник через GitHub.</p>
-          <button class="btn btn-pink" id="openEditor" type="button">Добавить свои реквизиты</button>
+          <h2 data-i18n="sup.title">Поддержка</h2>
+          <p class="muted" data-i18n="sup.sub"></p>
+          <button class="btn btn-pink" id="openEditor" type="button" data-i18n="sup.add">Добавить свои реквизиты</button>
         </div>
         <div class="mini-girl" id="supportGirl" aria-hidden="true"></div>
       </div>
@@ -114,20 +122,20 @@
       <!-- Редактор -->
       <div class="editor" id="editor" hidden>
         <div class="editor-inner card">
-          <button class="close" id="closeEditor" type="button" aria-label="Закрыть">×</button>
+          <button class="close" id="closeEditor" type="button" data-i18n-aria="close">×</button>
 
           <!-- Шаг 1: вход -->
           <div id="stepLogin">
-            <h3>Вход через GitHub</h3>
-            <p class="muted">Сайт работает без сервера, поэтому для входа нужен личный токен GitHub. Он хранится только в этой вкладке браузера и отправляется только на <code>api.github.com</code>.</p>
+            <h3 data-i18n="login.title">Вход через GitHub</h3>
+            <p class="muted" data-i18n="login.desc_html"></p>
             <ol class="steps">
-              <li>Откройте <a href="https://github.com/settings/tokens/new?scopes=public_repo&description=Holy%20VibeCode" target="_blank" rel="noopener">создание токена</a> (тип <b>classic</b>, галочка <code>public_repo</code> уже стоит).</li>
-              <li>Нажмите <b>Generate token</b> и скопируйте его.</li>
-              <li>Вставьте токен ниже.</li>
+              <li data-i18n="login.s1_html"></li>
+              <li data-i18n="login.s2_html"></li>
+              <li data-i18n="login.s3"></li>
             </ol>
             <form id="loginForm" class="row">
               <input id="tokenInput" type="password" autocomplete="off" placeholder="ghp_..." required>
-              <button class="btn btn-pink" type="submit">Войти</button>
+              <button class="btn btn-pink" type="submit" data-i18n="login.btn">Войти</button>
             </form>
             <p class="msg" id="loginMsg"></p>
           </div>
@@ -138,31 +146,31 @@
               <img id="whoAvatar" alt="">
               <div>
                 <b id="whoLogin"></b>
-                <span class="muted">Вы редактируете только свои реквизиты</span>
+                <span class="muted" data-i18n="form.who"></span>
               </div>
-              <button class="btn btn-small btn-ghost" id="logout" type="button">Выйти</button>
+              <button class="btn btn-small btn-ghost" id="logout" type="button" data-i18n="form.logout">Выйти</button>
             </div>
 
             <form id="supportForm">
-              <label>Отображаемое имя
-                <input id="fName" maxlength="50" placeholder="Как вас называть">
+              <label><span data-i18n="form.name">Отображаемое имя</span>
+                <input id="fName" maxlength="50" data-i18n-ph="form.name.ph">
               </label>
-              <label>Сообщение для поддерживающих
-                <textarea id="fMessage" maxlength="300" rows="2" placeholder="Например: на что пойдут донаты"></textarea>
+              <label><span data-i18n="form.msg">Сообщение для поддерживающих</span>
+                <textarea id="fMessage" maxlength="300" rows="2" data-i18n-ph="form.msg.ph"></textarea>
               </label>
 
               <div class="methods-head">
-                <b>Способы оплаты</b>
-                <span class="muted">Все поля по желанию</span>
+                <b data-i18n="form.methods">Способы оплаты</b>
+                <span class="muted" data-i18n="form.optional"></span>
               </div>
               <div class="chips" id="methodChips"></div>
               <div id="methodRows" class="method-rows"></div>
 
-              <p class="warn">Репозиторий публичный: всё, что вы укажете, увидят все. Не добавляйте то, что не хотите показывать.</p>
+              <p class="warn" data-i18n="form.warn"></p>
 
               <div class="row end">
-                <button class="btn btn-ghost danger" id="deleteBtn" type="button" hidden>Удалить мои реквизиты</button>
-                <button class="btn btn-pink" type="submit">Сохранить</button>
+                <button class="btn btn-ghost danger" id="deleteBtn" type="button" hidden data-i18n="form.delete">Удалить мои реквизиты</button>
+                <button class="btn btn-pink" type="submit" data-i18n="form.save">Сохранить</button>
               </div>
               <p class="msg" id="formMsg"></p>
             </form>
@@ -179,30 +187,30 @@
     <section class="page" id="page-join" data-page="join">
       <div class="page-head">
         <p class="kicker">参加する</p>
-        <h2>Как вступить</h2>
+        <h2 data-i18n="join.title">Как вступить</h2>
       </div>
       <div class="join">
         <article class="card reveal">
           <div class="card-badge">01</div>
-          <h3>Напишите в личку</h3>
+          <h3 data-i18n="j1.t">Напишите в личку</h3>
           <p>Telegram: <a href="https://t.me/natsuk1n_dev" target="_blank" rel="noopener">@natsuk1n_dev</a><br>
              Twitter / X: <a href="https://x.com/murkuwuwuwu" target="_blank" rel="noopener">@murkuwuwuwu</a></p>
-          <p class="muted">Название проекта, что он делает и ссылку на код или демо.</p>
+          <p class="muted" data-i18n="j1.note"></p>
         </article>
         <article class="card reveal">
           <div class="card-badge">02</div>
-          <h3>Создайте папки</h3>
-          <p>Папка с вашим ником на GitHub, внутри — папка для каждого проекта.</p>
+          <h3 data-i18n="j2.t">Создайте папки</h3>
+          <p data-i18n="j2.d"></p>
           <pre>Murk/
 ├── Project Asuka/
 └── Project XXX/</pre>
-          <p class="muted">Если в папке проекта есть <code>index.html</code>, на сайте появится кнопка «Открыть демо».</p>
+          <p class="muted" data-i18n="j2.note_html"></p>
         </article>
         <article class="card reveal">
           <div class="card-badge">03</div>
-          <h3>Выложите релиз</h3>
-          <p>Один проект — один релиз — один архив <code>НазваниеПроекта_Автор.zip</code> со всеми версиями внутри.</p>
-          <a class="btn btn-small btn-ghost" href="https://github.com/murk-sus/holy-videcode-project/releases" target="_blank" rel="noopener">Открыть релизы</a>
+          <h3 data-i18n="j3.t">Выложите релиз</h3>
+          <p data-i18n="j3.d_html"></p>
+          <a class="btn btn-small btn-ghost" href="https://github.com/murk-sus/holy-videcode-project/releases" target="_blank" rel="noopener" data-i18n="j3.btn">Открыть релизы</a>
         </article>
       </div>
     </section>
@@ -210,12 +218,13 @@
 
   <footer class="footer">
     <div class="foot-girl" id="footGirl" aria-hidden="true"></div>
-    <p>Сделано с ♥ вайбкодерами для вайбкодеров</p>
+    <p data-i18n="footer">Сделано с ♥ вайбкодерами для вайбкодеров</p>
     <a href="https://github.com/murk-sus/holy-videcode-project" target="_blank" rel="noopener">GitHub</a>
   </footer>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
+  <script src="web/i18n.js"></script>
   <script src="web/girl.js"></script>
   <script src="web/app.js"></script>
 </body>

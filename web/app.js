@@ -14,18 +14,24 @@
   const TRON_RE = /^T[1-9A-HJ-NP-Za-km-z]{33}$/;
   const CARD_RE = /^\d[\d ]{14,21}\d$/;
   const METHODS = {
-    trc20:   { label: 'USDT TRC-20', short: 'USDT', color: '#26a17b', re: TRON_RE, hint: 'Адрес в сети TRON, начинается с T', ph: 'T...' },
-    tron:    { label: 'TRX (Tron)', short: 'TRX', color: '#eb0029', re: TRON_RE, hint: 'Адрес TRON, начинается с T', ph: 'T...' },
-    monobank:{ label: 'Monobank', short: 'mono', color: '#1c1c1c', re: /^(\d[\d ]{14,21}\d|https:\/\/send\.monobank\.ua\/\S+)$/, hint: 'Номер карты или ссылка на банку send.monobank.ua', ph: '4441 1111 ... или https://send.monobank.ua/jar/...' },
-    tbank:   { label: 'Т-Банк', short: 'Т', color: '#ffdd2d', fg: '#222', re: /^(\d[\d ]{14,21}\d|\+?\d[\d ()-]{9,17}\d|https:\/\/\S+)$/, hint: 'Номер карты, телефон (СБП) или ссылка', ph: '2200 ... или +7 ...' },
-    ton:     { label: 'TON', short: 'TON', color: '#0098ea', re: /^[A-Za-z0-9_-]{48}$/, hint: 'Адрес TON (48 символов)', ph: 'UQ...' },
-    btc:     { label: 'Bitcoin', short: 'BTC', color: '#f7931a', re: /^(bc1[a-z0-9]{25,62}|[13][a-km-zA-HJ-NP-Z1-9]{25,34})$/, hint: 'Адрес Bitcoin', ph: 'bc1...' },
-    eth:     { label: 'ETH / ERC-20', short: 'ETH', color: '#627eea', re: /^0x[a-fA-F0-9]{40}$/, hint: 'Адрес Ethereum, начинается с 0x', ph: '0x...' },
-    paypal:  { label: 'PayPal', short: 'PP', color: '#003087', re: /^(https:\/\/(www\.)?paypal\.(me|com)\/\S+|[^@\s]+@[^@\s]+\.[^@\s]+)$/, hint: 'Ссылка paypal.me или e-mail', ph: 'https://paypal.me/...' },
-    boosty:  { label: 'Boosty', short: 'Boosty', color: '#f15f2c', re: /^https:\/\/boosty\.to\/\S+$/, hint: 'Ссылка https://boosty.to/...', ph: 'https://boosty.to/...' },
-    kofi:    { label: 'Ko-fi', short: 'Ko-fi', color: '#29abe0', re: /^https:\/\/ko-fi\.com\/\S+$/, hint: 'Ссылка https://ko-fi.com/...', ph: 'https://ko-fi.com/...' },
-    custom:  { label: 'Свой способ', short: '★', color: '#b06cff', re: null, hint: 'Любые реквизиты: название и значение', ph: 'Реквизиты или ссылка' }
+    trc20:   { label: 'USDT TRC-20', short: 'USDT', color: '#26a17b', re: TRON_RE, ph: 'T...' },
+    tron:    { label: 'TRX (Tron)', short: 'TRX', color: '#eb0029', re: TRON_RE, ph: 'T...' },
+    monobank:{ label: 'Monobank', short: 'mono', color: '#1c1c1c', re: /^(\d[\d ]{14,21}\d|https:\/\/send\.monobank\.ua\/\S+)$/, ph: '4441 1111 ... / https://send.monobank.ua/jar/...' },
+    tbank:   { label: 'Т-Банк', short: 'Т', color: '#ffdd2d', fg: '#222', re: /^(\d[\d ]{14,21}\d|\+?\d[\d ()-]{9,17}\d|https:\/\/\S+)$/, ph: '2200 ... / +7 ...' },
+    ton:     { label: 'TON', short: 'TON', color: '#0098ea', re: /^[A-Za-z0-9_-]{48}$/, ph: 'UQ...' },
+    btc:     { label: 'Bitcoin', short: 'BTC', color: '#f7931a', re: /^(bc1[a-z0-9]{25,62}|[13][a-km-zA-HJ-NP-Z1-9]{25,34})$/, ph: 'bc1...' },
+    eth:     { label: 'ETH / ERC-20', short: 'ETH', color: '#627eea', re: /^0x[a-fA-F0-9]{40}$/, ph: '0x...' },
+    paypal:  { label: 'PayPal', short: 'PP', color: '#003087', re: /^(https:\/\/(www\.)?paypal\.(me|com)\/\S+|[^@\s]+@[^@\s]+\.[^@\s]+)$/, ph: 'https://paypal.me/...' },
+    boosty:  { label: 'Boosty', short: 'Boosty', color: '#f15f2c', re: /^https:\/\/boosty\.to\/\S+$/, ph: 'https://boosty.to/...' },
+    kofi:    { label: 'Ko-fi', short: 'Ko-fi', color: '#29abe0', re: /^https:\/\/ko-fi\.com\/\S+$/, ph: 'https://ko-fi.com/...' },
+    custom:  { label: '', short: '★', color: '#b06cff', re: null, ph: '' }
   };
+
+  const { t } = window.I18N;
+  const tp = (base, n) => window.I18N.plural(base, n);
+  const mLabel = (type) => (type === 'custom' ? t('customLabel') : METHODS[type].label);
+  const mHint = (type) => t('hint.' + type);
+  const mPh = (type) => (type === 'custom' ? t('customValuePh') : METHODS[type].ph);
 
   const $ = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
@@ -71,8 +77,8 @@
     }
   }
   async function copy(text, e) {
-    try { await navigator.clipboard.writeText(text); toast('Скопировано!'); }
-    catch { toast('Не удалось скопировать'); }
+    try { await navigator.clipboard.writeText(text); toast(t('copied')); }
+    catch { toast(t('copyFail')); }
     if (e) burst(e.clientX, e.clientY, 8);
   }
 
@@ -118,15 +124,6 @@
   }
 
   /* ---------- Девочки ---------- */
-  const PHRASES = [
-    'Добро пожаловать, вайбкодер!',
-    'Покажи свой проект миру ★',
-    'Любая платформа подходит!',
-    'Не бойся начать с Hello, World!',
-    'Поддержи авторов во вкладке «Поддержка» ♥',
-    'Вайбкодинг — это магия ✧',
-    'Кто-то сейчас пишет промпт мечты…'
-  ];
   function setupGirls() {
     const hero = $('#heroGirl');
     hero.innerHTML = window.girl();
@@ -135,9 +132,10 @@
 
     let pi = 0;
     hero.addEventListener('click', (e) => {
-      pi = (pi + 1) % PHRASES.length;
+      const phrases = t('phrases');
+      pi = (pi + 1) % phrases.length;
       const b = $('#bubble');
-      b.textContent = PHRASES[pi];
+      b.textContent = phrases[pi];
       b.style.animation = 'none'; void b.offsetWidth; b.style.animation = '';
       hero.classList.remove('happy'); void hero.offsetWidth; hero.classList.add('happy');
       burst(e.clientX, e.clientY, 14);
@@ -263,19 +261,19 @@
     const authors = buildProjects(data);
     $('#statAuthors').textContent = authors.length;
     $('#statProjects').textContent = authors.reduce((n, a) => n + a.projects.length, 0);
-    if (!authors.length) { grid.append(el('div', { class: 'card empty', text: 'Проектов пока нет — стань первым!' })); return; }
+    if (!authors.length) { grid.append(el('div', { class: 'card empty', text: t('emptyProjects') })); return; }
     authors.forEach((a) => {
       const card = el('article', { class: 'card reveal' },
         el('div', { class: 'author' }, avatarFor(a.author),
-          el('div', {}, el('b', { text: a.author }), el('span', { class: 'muted', text: a.projects.length + ' ' + plural(a.projects.length, ['проект', 'проекта', 'проектов']) })))
+          el('div', {}, el('b', { text: a.author }), el('span', { class: 'muted', text: tp('projCount', a.projects.length) })))
       );
       a.projects.forEach((p) => {
         const gh = `https://github.com/${OWNER}/${REPO}/tree/${encPath(data.branch)}/${encPath(p.path)}`;
         card.append(el('div', { class: 'proj' },
           el('span', { class: 'proj-name', text: p.name }),
           el('span', { class: 'proj-actions' },
-            p.demo ? el('a', { class: 'btn btn-small btn-pink', href: encPath(p.path) + '/', target: '_blank', rel: 'noopener', text: 'Демо' }) : null,
-            el('a', { class: 'btn btn-small btn-ghost', href: gh, target: '_blank', rel: 'noopener', text: 'Код' }))
+            p.demo ? el('a', { class: 'btn btn-small btn-pink', href: encPath(p.path) + '/', target: '_blank', rel: 'noopener', text: t('demo') }) : null,
+            el('a', { class: 'btn btn-small btn-ghost', href: gh, target: '_blank', rel: 'noopener', text: t('code') }))
         ));
       });
       grid.append(card);
@@ -292,7 +290,7 @@
     if (String(raw.login || '').toLowerCase() !== login.toLowerCase()) return null;
     const methods = (Array.isArray(raw.methods) ? raw.methods : []).slice(0, LIMITS.methods).map((m) => {
       const type = METHODS[m?.type] ? m.type : 'custom';
-      const label = type === 'custom' ? clean(m.label, LIMITS.label) || 'Другое' : METHODS[type].label;
+      const label = type === 'custom' ? clean(m.label, LIMITS.label) || t('otherLabel') : METHODS[type].label;
       const value = clean(m?.value, LIMITS.value);
       return value ? { type, label, value } : null;
     }).filter(Boolean);
@@ -324,8 +322,8 @@
     $('#statSupport').textContent = list.length;
     if (!list.length) {
       grid.append(el('div', { class: 'card empty' },
-        el('h3', { text: 'Пока никто не добавил реквизиты' }),
-        el('p', { class: 'muted', text: 'Участники репозитория могут добавить свои — кнопка выше.' })));
+        el('h3', { text: t('emptySupT') }),
+        el('p', { class: 'muted', text: t('emptySupD') })));
       return;
     }
     list.forEach((e) => {
@@ -345,7 +343,7 @@
             el('div', { class: 'mlabel', text: m.label }),
             url ? el('a', { class: 'mvalue', href: url, target: '_blank', rel: 'noopener nofollow', text: m.value })
                 : el('div', { class: 'mvalue', text: m.value })),
-          el('button', { class: 'copy', type: 'button', text: 'Копировать', onclick: (ev) => copy(m.value, ev) })));
+          el('button', { class: 'copy', type: 'button', text: t('copyBtn'), onclick: (ev) => copy(m.value, ev) })));
       });
       grid.append(card);
     });
@@ -368,13 +366,13 @@
 
   async function login(token, silent) {
     const msg = $('#loginMsg');
-    setMsg(msg, 'Проверяю…');
+    setMsg(msg, t('checking'));
     try {
       const user = await api('/user', { token });
       const repo = await api(`/repos/${OWNER}/${REPO}`, { token });
       if (!repo.permissions || !repo.permissions.push) {
         setToken(null);
-        setMsg(msg, `@${user.login}, у вас нет прав на изменение репозитория. Добавлять реквизиты могут только участники — напишите владельцу.`, 'err');
+        setMsg(msg, t('noRights', { login: user.login }), 'err');
         return;
       }
       Object.assign(state, { token, user, branch: repo.default_branch, sha: null });
@@ -382,7 +380,7 @@
       setMsg(msg, '');
       await showForm();
     } catch (e) {
-      if (!silent || e.status !== 401) setMsg(msg, e.status === 401 ? 'Токен не подошёл. Проверьте, что скопировали его полностью.' : 'Ошибка: ' + e.message, 'err');
+      if (!silent || e.status !== 401) setMsg(msg, e.status === 401 ? t('badToken') : t('error', { m: e.message }), 'err');
       else setMsg(msg, '');
       if (e.status === 401) setToken(null);
     }
@@ -403,7 +401,7 @@
     $('#whoAvatar').src = u.avatar_url;
     $('#whoLogin').textContent = '@' + u.login;
     $('#methodRows').textContent = '';
-    setMsg($('#formMsg'), 'Загружаю ваши реквизиты…');
+    setMsg($('#formMsg'), t('loadingMine'));
 
     let existing = null, loadError = false;
     try {
@@ -411,7 +409,7 @@
       state.sha = f.sha;
       existing = sanitizeEntry(JSON.parse(b64decode(f.content)), u.login);
     } catch (e) {
-      if (e.status !== 404) { loadError = true; setMsg($('#formMsg'), 'Не удалось загрузить: ' + e.message, 'err'); }
+      if (e.status !== 404) { loadError = true; setMsg($('#formMsg'), t('loadFail', { m: e.message }), 'err'); }
       state.sha = null;
     }
     $('#fName').value = existing ? existing.name : clean(u.name || '', LIMITS.name);
@@ -423,26 +421,27 @@
 
   function renderChips() {
     const box = $('#methodChips');
+    box.textContent = '';
     Object.entries(METHODS).forEach(([type, m]) => {
-      box.append(el('button', { class: 'chip', type: 'button', text: '+ ' + m.label, onclick: (e) => { addRow(type); burst(e.clientX, e.clientY, 6); } }));
+      box.append(el('button', { class: 'chip', type: 'button', text: '+ ' + mLabel(type), onclick: (e) => { addRow(type); burst(e.clientX, e.clientY, 6); } }));
     });
   }
 
   function addRow(type, data = {}) {
     const rows = $('#methodRows');
-    if (rows.children.length >= LIMITS.methods) { toast(`Максимум ${LIMITS.methods} способов`); return; }
+    if (rows.children.length >= LIMITS.methods) { toast(t('maxMethods', { n: LIMITS.methods })); return; }
     const meta = METHODS[type];
     const tag = el('span', { class: 'mtag', text: meta.short });
     tag.style.background = meta.color; if (meta.fg) tag.style.color = meta.fg;
-    const labelInput = type === 'custom' ? el('input', { class: 'f-label', maxlength: LIMITS.label, placeholder: 'Название (например: Сбер, QIWI, DonationAlerts)' }) : null;
+    const labelInput = type === 'custom' ? el('input', { class: 'f-label', maxlength: LIMITS.label, placeholder: t('customLabelPh'), 'data-i18n-ph': 'customLabelPh' }) : null;
     if (labelInput) labelInput.value = data.label || '';
-    const valueInput = el('input', { class: 'f-value', maxlength: LIMITS.value, placeholder: meta.ph, spellcheck: 'false', autocomplete: 'off' });
+    const valueInput = el('input', { class: 'f-value', maxlength: LIMITS.value, placeholder: mPh(type), spellcheck: 'false', autocomplete: 'off' });
     valueInput.value = data.value || '';
-    const hint = el('div', { class: 'hint', text: meta.hint });
+    const hint = el('div', { class: 'hint', text: mHint(type) });
     const row = el('div', { class: 'mrow', 'data-type': type },
       tag,
       el('div', { class: 'fields' }, type === 'custom' ? null : el('b', { text: meta.label }), labelInput, valueInput, hint),
-      el('button', { class: 'remove', type: 'button', 'aria-label': 'Удалить', text: '×', onclick: () => { row.classList.add('out'); setTimeout(() => row.remove(), 280); } })
+      el('button', { class: 'remove', type: 'button', 'aria-label': t('remove'), 'data-i18n-aria': 'remove', text: '×', onclick: () => { row.classList.add('out'); setTimeout(() => row.remove(), 280); } })
     );
     valueInput.addEventListener('input', () => validateRow(row));
     rows.append(row);
@@ -457,9 +456,9 @@
     const hint = $('.hint', row);
     let error = '';
     if (!value) error = '';
-    else if (type === 'custom' && !label) error = 'Укажите название способа';
-    else if (meta.re && !meta.re.test(value)) error = 'Похоже на ошибку: ' + meta.hint;
-    hint.textContent = error || meta.hint;
+    else if (type === 'custom' && !label) error = t('needLabel');
+    else if (meta.re && !meta.re.test(value)) error = t('looksWrong', { hint: mHint(type) });
+    hint.textContent = error || mHint(type);
     hint.classList.toggle('bad', !!error);
     return { ok: !error, entry: value ? { type, label, value } : null };
   }
@@ -468,9 +467,9 @@
     e.preventDefault();
     const msg = $('#formMsg');
     const results = $$('#methodRows .mrow:not(.out)').map(validateRow);
-    if (results.some((r) => !r.ok)) { setMsg(msg, 'Исправьте поля, отмеченные красным.', 'err'); return; }
+    if (results.some((r) => !r.ok)) { setMsg(msg, t('fixFields'), 'err'); return; }
     const methods = results.map((r) => r.entry).filter(Boolean);
-    if (!methods.length) { setMsg(msg, 'Добавьте хотя бы один способ оплаты.', 'err'); return; }
+    if (!methods.length) { setMsg(msg, t('needOne'), 'err'); return; }
     const entry = {
       version: 1,
       login: state.user.login,
@@ -481,12 +480,12 @@
     };
     const btn = e.submitter || $('#supportForm button[type=submit]');
     btn.disabled = true;
-    setMsg(msg, 'Сохраняю…');
+    setMsg(msg, t('saving'));
     try {
       const res = await api(`/repos/${OWNER}/${REPO}/contents/support/${state.user.login}.json`, {
         token: state.token, method: 'PUT',
         body: {
-          message: `support: реквизиты @${state.user.login}`,
+          message: `support: update @${state.user.login}`,
           content: b64encode(JSON.stringify(entry, null, 2) + '\n'),
           branch: state.branch,
           ...(state.sha ? { sha: state.sha } : {})
@@ -497,21 +496,21 @@
       supporters.set(entry.login.toLowerCase(), sanitizeEntry(entry, entry.login));
       sessionStorage.removeItem(CACHE_KEY);
       renderSupport();
-      setMsg(msg, 'Сохранено! На сайте для всех обновится примерно через минуту.', 'ok');
+      setMsg(msg, t('saved'), 'ok');
       const r = btn.getBoundingClientRect(); burst(r.left + r.width / 2, r.top, 18);
     } catch (err) {
-      setMsg(msg, err.status === 409 ? 'Файл изменился, обновите страницу и попробуйте снова.' : 'Ошибка сохранения: ' + err.message, 'err');
+      setMsg(msg, err.status === 409 ? t('conflict') : t('saveErr', { m: err.message }), 'err');
     } finally { btn.disabled = false; }
   }
 
   async function remove() {
-    if (!state.sha || !confirm('Удалить ваши реквизиты с сайта?')) return;
+    if (!state.sha || !confirm(t('confirmDelete'))) return;
     const msg = $('#formMsg');
-    setMsg(msg, 'Удаляю…');
+    setMsg(msg, t('deleting'));
     try {
       await api(`/repos/${OWNER}/${REPO}/contents/support/${state.user.login}.json`, {
         token: state.token, method: 'DELETE',
-        body: { message: `support: удалил реквизиты @${state.user.login}`, sha: state.sha, branch: state.branch }
+        body: { message: `support: remove @${state.user.login}`, sha: state.sha, branch: state.branch }
       });
       state.sha = null;
       supporters.delete(state.user.login.toLowerCase());
@@ -519,14 +518,62 @@
       renderSupport();
       $('#methodRows').textContent = '';
       $('#deleteBtn').hidden = true;
-      setMsg(msg, 'Реквизиты удалены.', 'ok');
-    } catch (err) { setMsg(msg, 'Ошибка удаления: ' + err.message, 'err'); }
+      setMsg(msg, t('deleted'), 'ok');
+    } catch (err) { setMsg(msg, t('delErr', { m: err.message }), 'err'); }
+  }
+
+  /* ---------- Переключатель языка ---------- */
+  let lastData = null;
+  function setupLang() {
+    const btn = $('#langBtn');
+    const menu = $('#langMenu');
+    const close = () => { menu.hidden = true; btn.setAttribute('aria-expanded', 'false'); };
+    function build() {
+      menu.textContent = '';
+      $('#langCode').textContent = window.I18N.lang.toUpperCase();
+      window.I18N.langs.forEach(([code, name]) => {
+        const li = el('li', { role: 'option', 'aria-selected': String(code === window.I18N.lang), tabindex: '0', lang: code },
+          el('span', { class: 'lang-code', text: code.toUpperCase() }), el('span', { text: name }));
+        const pick = () => { window.I18N.setLang(code); close(); btn.focus(); };
+        li.addEventListener('click', pick);
+        li.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pick(); } });
+        menu.append(li);
+      });
+    }
+    build();
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const open = menu.hidden;
+      menu.hidden = !open;
+      btn.setAttribute('aria-expanded', String(open));
+      if (open) { const cur = menu.querySelector('[aria-selected="true"]'); if (cur) cur.focus(); }
+    });
+    document.addEventListener('click', (e) => { if (!$('#lang').contains(e.target)) close(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+    document.addEventListener('langchange', () => {
+      build();
+      $('#bubble').textContent = t('phrases')[0];
+      renderChips();
+      $$('#methodRows .mrow').forEach((row) => {
+        const type = row.dataset.type;
+        $('.f-value', row).placeholder = mPh(type);
+        const lb = $('.f-label', row);
+        if (lb) lb.placeholder = t('customLabelPh');
+        $('.remove', row).setAttribute('aria-label', t('remove'));
+        validateRow(row);
+      });
+      if (lastData) { renderProjects(lastData); renderSupport(); }
+      requestAnimationFrame(movePill);
+    });
   }
 
   /* ---------- Старт ---------- */
   async function init() {
+    window.I18N.apply();
+    $('#bubble').textContent = t('phrases')[0];
     decorate();
     setupGirls();
+    setupLang();
     renderChips();
     route();
     window.addEventListener('hashchange', route);
@@ -535,17 +582,18 @@
 
     $('#openEditor').addEventListener('click', openEditor);
     $('#closeEditor').addEventListener('click', closeEditor);
-    $('#loginForm').addEventListener('submit', (e) => { e.preventDefault(); const t = $('#tokenInput').value.trim(); if (t) login(t); });
+    $('#loginForm').addEventListener('submit', (e) => { e.preventDefault(); const tok = $('#tokenInput').value.trim(); if (tok) login(tok); });
     $('#logout').addEventListener('click', logout);
     $('#supportForm').addEventListener('submit', save);
     $('#deleteBtn').addEventListener('click', remove);
 
     try {
       const data = await loadRepo();
+      lastData = data;
       renderProjects(data);
       await loadSupporters(data);
     } catch (e) {
-      const text = e.rateLimited ? 'GitHub временно ограничил запросы. Попробуйте через несколько минут.' : 'Не удалось загрузить данные с GitHub.';
+      const text = e.rateLimited ? t('errRate') : t('errLoad');
       ['#projectsGrid', '#supportGrid'].forEach((s) => { const g = $(s); g.textContent = ''; g.append(el('div', { class: 'card empty', text })); });
     }
   }
