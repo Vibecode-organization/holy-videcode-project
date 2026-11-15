@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "login": "RichkovGit",
+  "name": "Данил Рычков",
+  "message": "",
+  "methods": [
+    {
+      "type": "tbank",
+      "label": "Т-Банк",
+      "value": "https://www.tbank-online.com/rm/r_WGdNEpIGeC.jeLifamtyH/BGfW39849"
+    }
+  ],
+  "updated": "2026-11-15T23:43:04.726Z"
+}
