@@ -1,14 +1,73 @@
 # ✨ Holy Vibecode Project
 
+<p align="center">
+  <a href="#-english">🇬🇧 English</a> · <a href="#-русский">🇷🇺 Русский</a>
+</p>
+
+---
+
+## 🇬🇧 English
+
+> An open collection of projects from vibecoders all around the world.
+
+**Holy Vibecode Project** is a place where any vibecoder can share their project.
+It doesn't matter what platform it's built on, how long it took, or how experienced you are —
+everyone is welcome here, from a first "Hello, World!" to a full-fledged product.
+
+### 🌍 Who is this for
+
+For **everyone** who builds things together with AI:
+
+- 🧑‍💻 beginners and experienced developers;
+- 🎨 designers, artists, musicians and anyone experimenting with code;
+- 🚀 those who made a project in 5 minutes or in 5 years;
+- 🛠 those working on any platform: web, mobile, desktop, games, bots, scripts, CLI, AI agents and everything else.
+
+**No restrictions** on platform, programming language, stack, time or skill level.
+
+### 📦 What you can add
+
+Absolutely any project of your own:
+
+| Type | Examples |
+| --- | --- |
+| 🌐 Web | websites, landing pages, web apps |
+| 📱 Mobile | iOS / Android apps |
+| 🎮 Games | browser, mobile, desktop |
+| 🤖 Bots & AI | Telegram bots, Discord bots, agents, prompts |
+| 🧰 Tools | scripts, CLI tools, extensions |
+| 🧪 Experiments | prototypes, pet projects, "just tried it" |
+
+### 🤝 How to join
+
+Want to add your project or become a member?
+
+📩 **Send a direct message on Telegram: [@natsuk1n_dev](https://t.me/natsuk1n_dev)**
+
+Briefly tell us:
+
+1. The name of your project.
+2. What it does.
+3. A link to the code or demo (if available).
+
+### 💡 Principles
+
+- **Openness** — anyone can share their work.
+- **Respect** — we support each other and give constructive feedback.
+- **Freedom** — there's no "right" way to vibecode.
+- **Inspiration** — we learn from each other's projects.
+
+---
+
+## 🇷🇺 Русский
+
 > Открытая коллекция проектов от вайбкодеров со всего мира.
 
 **Holy Vibecode Project** — это место, где любой вайбкодер может поделиться своим проектом.
 Неважно, на какой платформе он сделан, сколько времени ушло на разработку и какой у тебя опыт:
 здесь рады каждому — от первого «Hello, World!» до полноценного продукта.
 
----
-
-## 🌍 Для кого этот проект
+### 🌍 Для кого этот проект
 
 Для **всех**, кто создаёт что-то вместе с ИИ:
 
@@ -19,9 +78,7 @@
 
 **Никаких ограничений** по платформе, языку программирования, стеку, времени или уровню навыков.
 
----
-
-## 📦 Что можно добавить
+### 📦 Что можно добавить
 
 Абсолютно любой свой проект:
 
@@ -34,9 +91,7 @@
 | 🧰 Утилиты | скрипты, CLI-инструменты, расширения |
 | 🧪 Эксперименты | прототипы, пет-проекты, «просто попробовал» |
 
----
-
-## 🤝 Как присоединиться
+### 🤝 Как присоединиться
 
 Хочешь добавить свой проект или стать участником?
 
@@ -48,9 +103,7 @@
 2. Что он делает.
 3. Ссылку на код или демо (если есть).
 
----
-
-## 💡 Принципы
+### 💡 Принципы
 
 - **Открытость** — каждый может поделиться своей работой.
 - **Уважение** — поддерживаем друг друга, критикуем конструктивно.
@@ -60,5 +113,6 @@
 ---
 
 <p align="center">
+  Made with ❤️ by vibecoders, for vibecoders<br>
   Сделано с ❤️ вайбкодерами для вайбкодеров
 </p>
