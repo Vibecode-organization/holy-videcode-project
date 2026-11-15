@@ -1,0 +1,172 @@
+[
+  {
+    "repo": "OpenWrtStudio",
+    "title": "OpenWrt Studio",
+    "version": "v2.5.21",
+    "platforms": "Windows x64",
+    "description": "Программа управления роутерами OpenWrt для Windows.",
+    "install": "Windows: запустите установщик Setup либо распакуйте Portable.zip целиком и запустите EXE.",
+    "tag": "RichkovGit/openwrtstudio",
+    "zip": "OpenWrtStudio_RichkovGit.zip",
+    "prerelease": false,
+    "source_release": "https://github.com/RichkovGit/OpenWrtStudio/releases/tag/v2.5.21",
+    "assets": [
+      {
+        "name": "OpenWrtStudio_Setup_v2.5.21.exe",
+        "url": "https://github.com/RichkovGit/OpenWrtStudio/releases/download/v2.5.21/OpenWrtStudio_Setup_v2.5.21.exe",
+        "digest": "sha256:fc04149239e1fcd002591a7c75e3f45eb5488d3d7758844b12de7ce473ee35da",
+        "destination": "Windows/OpenWrtStudio_Setup_v2.5.21.exe"
+      },
+      {
+        "name": "OpenWrtStudio_v2.5.21_Portable.zip",
+        "url": "https://github.com/RichkovGit/OpenWrtStudio/releases/download/v2.5.21/OpenWrtStudio_v2.5.21_Portable.zip",
+        "digest": "sha256:7068290765409d928043bfb8a3633fd963b06fc86ca0998859a941820c24b0dd",
+        "destination": "Windows/OpenWrtStudio_v2.5.21_Portable.zip"
+      },
+      {
+        "name": "SHA256SUMS.txt",
+        "url": "https://github.com/RichkovGit/OpenWrtStudio/releases/download/v2.5.21/SHA256SUMS.txt",
+        "digest": "sha256:474db2c3dfcf0e9d7df7c29640920c1bd997783654ba519c8fc3947b4b704cc7",
+        "destination": "Windows/SHA256SUMS.txt"
+      }
+    ]
+  },
+  {
+    "repo": "OpenWrtStudio-Mobile",
+    "title": "OpenWrt Studio Mobile / Linux",
+    "version": "v2.5.27-mobile",
+    "platforms": "Android, Linux x86_64",
+    "description": "Приложение управления OpenWrt для Android и Linux. Форк cogwheel0/luci-mobile.",
+    "install": "Android: установите APK для своей архитектуры (обычно arm64-v8a). AAB предназначен для распространения, не для прямой установки. Linux: следуйте LINUX_INSTALL.md; требуется glibc 2.35+.",
+    "tag": "RichkovGit/openwrtstudio-mobile",
+    "zip": "OpenWrtStudio-Mobile_RichkovGit.zip",
+    "prerelease": false,
+    "source_release": "https://github.com/RichkovGit/OpenWrtStudio-Mobile/releases/tag/v2.5.27-mobile",
+    "assets": [
+      {
+        "name": "app-arm64-v8a-release.apk",
+        "url": "https://github.com/RichkovGit/OpenWrtStudio-Mobile/releases/download/v2.5.27-mobile/app-arm64-v8a-release.apk",
+        "digest": "sha256:27f8f04f40e7583bf026b17904d25a69ec33c1aad9448a815b43e9e4099221e8",
+        "destination": "Android/app-arm64-v8a-release.apk"
+      },
+      {
+        "name": "app-armeabi-v7a-release.apk",
+        "url": "https://github.com/RichkovGit/OpenWrtStudio-Mobile/releases/download/v2.5.27-mobile/app-armeabi-v7a-release.apk",
+        "digest": "sha256:c82e4c217e02b75bb899e66139f11cb7bd4d9cbbb6554689c8ea8d6a27a33673",
+        "destination": "Android/app-armeabi-v7a-release.apk"
+      },
+      {
+        "name": "app-release.aab",
+        "url": "https://github.com/RichkovGit/OpenWrtStudio-Mobile/releases/download/v2.5.27-mobile/app-release.aab",
+        "digest": "sha256:cc09b7eed10356e74441a2ec578e59d50bab4455ec4133897f2efb07aff3c866",
+        "destination": "Android/app-release.aab"
+      },
+      {
+        "name": "app-x86_64-release.apk",
+        "url": "https://github.com/RichkovGit/OpenWrtStudio-Mobile/releases/download/v2.5.27-mobile/app-x86_64-release.apk",
+        "digest": "sha256:dc5910caac7a6f0921031a2d442e8cca4071f6351accb08b55389fcf5dc4fe76",
+        "destination": "Android/app-x86_64-release.apk"
+      },
+      {
+        "name": "LINUX_INSTALL.md",
+        "url": "https://github.com/RichkovGit/OpenWrtStudio-Mobile/releases/download/v2.5.27-mobile/LINUX_INSTALL.md",
+        "digest": "sha256:edf460b783ef37fd563fe4d0df96034d0d066df04062c104e107f112208cd627",
+        "destination": "Linux/LINUX_INSTALL.md"
+      },
+      {
+        "name": "OpenWrtStudio-2.5.27-linux-x86_64.tar.gz",
+        "url": "https://github.com/RichkovGit/OpenWrtStudio-Mobile/releases/download/v2.5.27-mobile/OpenWrtStudio-2.5.27-linux-x86_64.tar.gz",
+        "digest": "sha256:cd777505312656d51fe67b3a5ba532a2298d699d6489875ea34ae9239227552d",
+        "destination": "Linux/OpenWrtStudio-2.5.27-linux-x86_64.tar.gz"
+      },
+      {
+        "name": "OpenWrtStudio-2.5.27-x86_64.AppImage",
+        "url": "https://github.com/RichkovGit/OpenWrtStudio-Mobile/releases/download/v2.5.27-mobile/OpenWrtStudio-2.5.27-x86_64.AppImage",
+        "digest": "sha256:2ecec783007716702d39ae673a3f77f4982e12cb027e214b6f6358607bc7d233",
+        "destination": "Linux/OpenWrtStudio-2.5.27-x86_64.AppImage"
+      },
+      {
+        "name": "SHA256SUMS.txt",
+        "url": "https://github.com/RichkovGit/OpenWrtStudio-Mobile/releases/download/v2.5.27-mobile/SHA256SUMS.txt",
+        "digest": "sha256:a41e25cecafc26ee7e0b4a51f7f061c6f41997ab2c6993ccb3c3492079b3a7dd",
+        "destination": "SHA256SUMS.txt"
+      }
+    ]
+  },
+  {
+    "repo": "OpenWrtStudio-LuCI",
+    "title": "OpenWrt Studio LuCI",
+    "version": "v0.1.1",
+    "platforms": "OpenWrt 24.10 / 25.12 (LuCI)",
+    "description": "Тёмная тема и модуль Studio для LuCI. Предварительная версия; полного паритета с Windows-программой пока нет.",
+    "install": "OpenWrt 24.10 с ucode LuCI: установите оба IPK через opkg. OpenWrt 25.12: установите оба APK через apk add --allow-untrusted. Эти APK предназначены для OpenWrt, не для Android. Сначала сделайте резервную копию. Тема выбирается вручную в Система → Система → Язык и оформление. Полная инструкция в исходном репозитории.",
+    "tag": "RichkovGit/openwrtstudio-luci",
+    "zip": "OpenWrtStudio-LuCI_RichkovGit.zip",
+    "prerelease": true,
+    "source_release": "https://github.com/RichkovGit/OpenWrtStudio-LuCI/releases/tag/v0.1.1",
+    "assets": [
+      {
+        "name": "luci-app-openwrtstudio-0.1.1-r1.apk",
+        "url": "https://github.com/RichkovGit/OpenWrtStudio-LuCI/releases/download/v0.1.1/luci-app-openwrtstudio-0.1.1-r1.apk",
+        "digest": "sha256:c4d7b9a57fe700f1fe86c1058c3c1cca8132091f96e70fab9608035fd83cb5fb",
+        "destination": "OpenWrt-25.12/luci-app-openwrtstudio-0.1.1-r1.apk"
+      },
+      {
+        "name": "luci-app-openwrtstudio_0.1.1-1_all.ipk",
+        "url": "https://github.com/RichkovGit/OpenWrtStudio-LuCI/releases/download/v0.1.1/luci-app-openwrtstudio_0.1.1-1_all.ipk",
+        "digest": "sha256:8a78444ce25fe5f17581999bfbf13295abe4a59561bebfa8247e24474fd751ee",
+        "destination": "OpenWrt-24.10/luci-app-openwrtstudio_0.1.1-1_all.ipk"
+      },
+      {
+        "name": "luci-theme-openwrtstudio-0.1.1-r1.apk",
+        "url": "https://github.com/RichkovGit/OpenWrtStudio-LuCI/releases/download/v0.1.1/luci-theme-openwrtstudio-0.1.1-r1.apk",
+        "digest": "sha256:c19cc8ea038f30be53417ea96d10be551f9e1c9e6358909d068aaf795e493eec",
+        "destination": "OpenWrt-25.12/luci-theme-openwrtstudio-0.1.1-r1.apk"
+      },
+      {
+        "name": "luci-theme-openwrtstudio_0.1.1-1_all.ipk",
+        "url": "https://github.com/RichkovGit/OpenWrtStudio-LuCI/releases/download/v0.1.1/luci-theme-openwrtstudio_0.1.1-1_all.ipk",
+        "digest": "sha256:0018564b9bbf29cc5c12e12857f623d81b8b6e505c1e9dfcf36352db481b74c8",
+        "destination": "OpenWrt-24.10/luci-theme-openwrtstudio_0.1.1-1_all.ipk"
+      },
+      {
+        "name": "SHA256SUMS.txt",
+        "url": "https://github.com/RichkovGit/OpenWrtStudio-LuCI/releases/download/v0.1.1/SHA256SUMS.txt",
+        "digest": "sha256:7cf7fc2fb6970003e1877861195beb928d81f6753eb69a32dfaccf6b4b23cdb1",
+        "destination": "SHA256SUMS.txt"
+      }
+    ]
+  },
+  {
+    "repo": "GoogleFlowDesktop",
+    "title": "Flow Studio",
+    "version": "v2.0.1",
+    "platforms": "Windows x64",
+    "description": "Независимый клиент Google Flow: облачная медиатека, генерация видео и локальный монтаж. Не является продуктом Google.",
+    "install": "Распакуйте Windows/FlowStudio-2.0.1-win-x64.zip целиком в доступную для записи папку и запустите FlowStudio.exe. Нужен аккаунт Google Flow; генерация может расходовать кредиты аккаунта. Поддерживаемые операции и ограничения описаны в исходном README.",
+    "tag": "RichkovGit/googleflowdesktop",
+    "zip": "GoogleFlowDesktop_RichkovGit.zip",
+    "prerelease": false,
+    "source_release": "https://github.com/RichkovGit/GoogleFlowDesktop/releases/tag/v2.0.1",
+    "assets": [
+      {
+        "name": "FlowStudio-2.0.1-win-x64.zip",
+        "url": "https://github.com/RichkovGit/GoogleFlowDesktop/releases/download/v2.0.1/FlowStudio-2.0.1-win-x64.zip",
+        "digest": "sha256:ebbd12ebc4aa2cb110b003daeb56fcaea0e79b704348381165462edbc56c2689",
+        "destination": "Windows/FlowStudio-2.0.1-win-x64.zip"
+      },
+      {
+        "name": "FlowStudio-update.json",
+        "url": "https://github.com/RichkovGit/GoogleFlowDesktop/releases/download/v2.0.1/FlowStudio-update.json",
+        "digest": "sha256:b39d28f9db20ebe718d595a74ab846a2dea349846194bae1736a54cd3ecf6e8f",
+        "destination": "Windows/FlowStudio-update.json"
+      },
+      {
+        "name": "FlowStudio-update.sig",
+        "url": "https://github.com/RichkovGit/GoogleFlowDesktop/releases/download/v2.0.1/FlowStudio-update.sig",
+        "digest": "sha256:06798304812173f22d7a633454bea2bd13548564f3529d6c38e8ba478e9affda",
+        "destination": "Windows/FlowStudio-update.sig"
+      }
+    ]
+  }
+]

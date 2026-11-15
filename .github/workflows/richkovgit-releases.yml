@@ -1,0 +1,45 @@
+name: Publish RichkovGit project archives
+on:
+  push:
+    branches: [codex/add-richkovgit-projects]
+    paths: ['RichkovGit/**', '.github/workflows/richkovgit-releases.yml']
+permissions:
+  contents: write
+concurrency:
+  group: richkovgit-library-releases
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        project: [OpenWrtStudio, OpenWrtStudio-Mobile, OpenWrtStudio-LuCI, GoogleFlowDesktop]
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Package and verify original published files
+        env:
+          PROJECT: ${{ matrix.project }}
+        run: python3 RichkovGit/package_releases.py "$PROJECT"
+      - name: Publish one archive per project
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PROJECT: ${{ matrix.project }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          tag="RichkovGit/${PROJECT,,}"
+          archive="richkovgit-dist/$PROJECT/${PROJECT}_RichkovGit.zip"
+          if gh release view "$tag" >/dev/null 2>&1; then
+            echo 'Release already exists; refusing to overwrite it automatically.'
+            exit 1
+          fi
+          flags=(--draft --latest=false)
+          if [[ "$PROJECT" == OpenWrtStudio-LuCI ]]; then flags+=(--prerelease); fi
+          gh release create "$tag" "$archive" --target "$GITHUB_SHA" --title "[RichkovGit] $PROJECT" --notes-file "richkovgit-dist/$PROJECT/notes.md" "${flags[@]}"
+          count=$(gh release view "$tag" --json assets --jq '.assets | length')
+          test "$count" = 1
+          gh release edit "$tag" --draft=false --latest=false
