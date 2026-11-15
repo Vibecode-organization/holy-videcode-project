@@ -19,14 +19,35 @@
       ratioLabel: 'RATIO',
       deviationLabel: 'DEVIATION',
       turnsSumLabel: 'TURNS USED',
-      tableTitle: 'TOP ALTERNATIVE WINDING PAIRS (CLICK TO PREVIEW)',
-      thN1: 'N₁ (INPUT)',
-      thN2: 'N₂ (OUTPUT)',
-      thSum: 'TOTAL',
-      thOut: 'ACTUAL OUTPUT',
-      thErr: 'ERROR',
+      guideToggle: 'USER GUIDE & IN-GAME WIRING INSTRUCTIONS',
       svgTop: (n1, vIn) => `INPUT TERMINALS (N₁ = ${n1}) — APPLY ${vIn} V`,
-      svgBot: (n2, vOut) => `OUTPUT TERMINALS (N₂ = ${n2}) — READ ${vOut} V`
+      svgBot: (n2, vOut) => `OUTPUT TERMINALS (N₂ = ${n2}) — READ ${vOut} V`,
+      guideHtml: `
+        <div class="guide-block">
+          <h3>1. CORE BUDGET &amp; FORMULA</h3>
+          <ul>
+            <li><b>Shared Limit (60):</b> Max turns apply to the entire transformer combined (<code>N₁ + N₂ ≤ 60</code>). Setting 60 on one coil locks the other at <code>1</code>.</li>
+            <li><b>Voltage Ratio:</b> <code>V_out = V_in × (N₂ / N₁)</code>.</li>
+            <li><b>Above 2000 V:</b> Voltage Gauge caps at 2000 V. Use <b>Engineer's Goggles</b>, a <b>Display Link</b>, or a <b>10:1</b> step-down test transformer (50 &amp; 5 turns) and multiply by 10.</li>
+          </ul>
+        </div>
+        <div class="guide-block">
+          <h3>2. SETTING COIL TURNS</h3>
+          <ol>
+            <li><b>Disconnect all wires:</b> Turn counts cannot be changed while wires are attached or current is flowing.</li>
+            <li><b>Set N₁:</b> Aim at the <code>Turns (N)</code> slot on the primary coil, hold <b>Right-Click</b>, drag right to <b>N₁</b>, and release.</li>
+            <li><b>Set N₂:</b> Repeat on the second coil to set <b>N₂</b>.</li>
+          </ol>
+        </div>
+        <div class="guide-block">
+          <h3>3. WIRING TERMINALS</h3>
+          <ol>
+            <li><b>Top Terminals:</b> The 4 copper terminals on top are grouped in pairs — one pair directly above each coil.</li>
+            <li><b>Connect Lines:</b> Wire your input source to the pair on the <b>N₁</b> side and your output load to the pair on the <b>N₂</b> side.</li>
+            <li><b>Polarity:</b> Never bridge two terminals of the same pair. If a gauge shows a minus sign, swap its two wires.</li>
+          </ol>
+        </div>
+      `
     },
     ru: {
       subtitle: 'РАСЧЁТ ВИТКОВ И БЮДЖЕТА СЕРДЕЧНИКА ТРАНСФОРМАТОРА',
@@ -45,14 +66,35 @@
       ratioLabel: 'КОЭФФ.',
       deviationLabel: 'ОТКЛОНЕНИЕ',
       turnsSumLabel: 'СУММА ВИТКОВ',
-      tableTitle: 'АЛЬТЕРНАТИВНЫЕ КОМБИНАЦИИ (КЛИК ДЛЯ ПРЕДПРОСМОТРА)',
-      thN1: 'N₁ (ВХОД)',
-      thN2: 'N₂ (ВЫХОД)',
-      thSum: 'СУММА',
-      thOut: 'ВЫХОД (ФАКТ)',
-      thErr: 'ПОГРЕШНОСТЬ',
+      guideToggle: 'ГАЙД ПО НАСТРОЙКЕ И ПОДКЛЮЧЕНИЮ В MINECRAFT',
       svgTop: (n1, vIn) => `КЛЕММЫ ВХОДА (N₁ = ${n1}) — ПОДАТЬ ${vIn} V`,
-      svgBot: (n2, vOut) => `КЛЕММЫ ВЫХОДА (N₂ = ${n2}) — СНЯТЬ ${vOut} V`
+      svgBot: (n2, vOut) => `КЛЕММЫ ВЫХОДА (N₂ = ${n2}) — СНЯТЬ ${vOut} V`,
+      guideHtml: `
+        <div class="guide-block">
+          <h3>1. ЛИМИТ СЕРДЕЧНИКА И ЗАМЕРЫ</h3>
+          <ul>
+            <li><b>Общий бюджет (60):</b> Лимит витков делится на обе катушки (<code>N₁ + N₂ ≤ 60</code>). Если поставить 60 на первой, вторая заблокируется на <code>1</code>.</li>
+            <li><b>Формула:</b> <code>V_out = V_in × (N₂ / N₁)</code>.</li>
+            <li><b>Выше 2000 V:</b> Шкала Voltage Gauge ограничена 2000 V. Используйте <b>Очки инженера</b>, <b>Display Link</b> или делитель <b>10:1</b> (50 и 5 витков) и умножьте показание на 10.</li>
+          </ul>
+        </div>
+        <div class="guide-block">
+          <h3>2. НАСТРОЙКА ВИТКОВ</h3>
+          <ol>
+            <li><b>Снимите провода:</b> Мод блокирует изменение витков, если к клеммам подключены провода или идёт ток.</li>
+            <li><b>Выставьте N₁:</b> Наведите прицел на слот <code>Turns (N)</code> первой катушки, зажмите <b>ПКМ</b>, потяните мышь вправо до <b>N₁</b> и отпустите.</li>
+            <li><b>Выставьте N₂:</b> Повторите то же самое на второй катушке для значения <b>N₂</b>.</li>
+          </ol>
+        </div>
+        <div class="guide-block">
+          <h3>3. ПОДКЛЮЧЕНИЕ КЛЕММ</h3>
+          <ol>
+            <li><b>4 клеммы сверху:</b> Разделены на две пары — по одной паре строго над каждой катушкой.</li>
+            <li><b>Вход и выход:</b> Подайте входную линию на пару клемм со стороны <b>N₁</b>, а выходную цепь снимите с пары со стороны <b>N₂</b>.</li>
+            <li><b>Полярность:</b> Не замыкайте клеммы одной пары между собой. Если прибор показывает минус — поменяйте его два провода местами.</li>
+          </ol>
+        </div>
+      `
     }
   };
 
@@ -76,7 +118,7 @@
     sumVal: document.getElementById('sumVal'),
     svgTopLabel: document.getElementById('svgTopLabel'),
     svgBotLabel: document.getElementById('svgBotLabel'),
-    altBody: document.getElementById('altBody'),
+    guideContent: document.getElementById('guideContent'),
     swapBtn: document.getElementById('swapBtn'),
     copyBtn: document.getElementById('copyBtn'),
     langBtn: document.getElementById('langBtn')
@@ -86,8 +128,8 @@
     return Math.min(max, Math.max(min, val));
   }
 
-  function findBestPairs(vIn, vOut, maxTotal) {
-    const candidates = [];
+  function findBestPair(vIn, vOut, maxTotal) {
+    let best = null;
 
     for (let n1 = 1; n1 < maxTotal; n1++) {
       for (let n2 = 1; n1 + n2 <= maxTotal; n2++) {
@@ -95,27 +137,19 @@
         const diff = actualOut - vOut;
         const absDiff = Math.abs(diff);
         const relError = (absDiff / vOut) * 100;
+        const sum = n1 + n2;
 
-        candidates.push({
-          n1,
-          n2,
-          sum: n1 + n2,
-          actualOut,
-          diff,
-          absDiff,
-          relError
-        });
+        if (
+          !best ||
+          absDiff < best.absDiff - 1e-6 ||
+          (Math.abs(absDiff - best.absDiff) <= 1e-6 && sum > best.sum)
+        ) {
+          best = { n1, n2, sum, actualOut, diff, absDiff, relError };
+        }
       }
     }
 
-    candidates.sort((a, b) => {
-      if (Math.abs(a.absDiff - b.absDiff) > 1e-6) {
-        return a.absDiff - b.absDiff;
-      }
-      return b.sum - a.sum;
-    });
-
-    return candidates;
+    return best;
   }
 
   function applyTranslations() {
@@ -126,80 +160,66 @@
       const key = node.dataset.i18n;
       if (t[key]) node.textContent = t[key];
     });
+    el.guideContent.innerHTML = t.guideHtml;
   }
 
   function syncUrlState(vIn, vOut, maxTotal) {
-    const url = new URL(window.location.href);
-    url.searchParams.set('in', vIn);
-    url.searchParams.set('out', vOut);
-    url.searchParams.set('max', maxTotal);
-    url.searchParams.set('lang', lang);
-    window.history.replaceState(null, '', url.toString());
+    try {
+      const url = new URL(window.location.href);
+      url.searchParams.set('in', vIn);
+      url.searchParams.set('out', vOut);
+      url.searchParams.set('max', maxTotal);
+      url.searchParams.set('lang', lang);
+      window.history.replaceState(null, '', url.toString());
+    } catch (_) {}
   }
 
   function loadUrlState() {
-    const params = new URLSearchParams(window.location.search);
-    if (params.has('in')) {
-      const v = clamp(parseFloat(params.get('in')) || 1406.59, 0.01, 1000000);
-      el.vInInput.value = v;
-      el.vInRange.value = clamp(Math.round(v), 10, 5000);
-    }
-    if (params.has('out')) {
-      const v = clamp(parseFloat(params.get('out')) || 258, 0.01, 1000000);
-      el.vOutInput.value = v;
-      el.vOutRange.value = clamp(Math.round(v), 1, 5000);
-    }
-    if (params.has('max')) {
-      const m = clamp(parseInt(params.get('max'), 10) || 60, 2, 500);
-      el.maxTurnsInput.value = m;
-      el.maxTurnsRange.value = clamp(m, 2, 120);
-    }
-    if (params.get('lang') === 'ru' || params.get('lang') === 'en') {
-      lang = params.get('lang');
-    }
+    try {
+      const params = new URLSearchParams(window.location.search);
+      if (params.has('in')) {
+        const v = clamp(parseFloat(params.get('in')) || 1406.59, 0.01, 1000000);
+        el.vInInput.value = v;
+        el.vInRange.value = clamp(Math.round(v), 10, 5000);
+      }
+      if (params.has('out')) {
+        const v = clamp(parseFloat(params.get('out')) || 258, 0.01, 1000000);
+        el.vOutInput.value = v;
+        el.vOutRange.value = clamp(Math.round(v), 1, 5000);
+      }
+      if (params.has('max')) {
+        const m = clamp(parseInt(params.get('max'), 10) || 60, 2, 500);
+        el.maxTurnsInput.value = m;
+        el.maxTurnsRange.value = clamp(m, 2, 120);
+      }
+      if (params.get('lang') === 'ru' || params.get('lang') === 'en') {
+        lang = params.get('lang');
+      }
+    } catch (_) {}
   }
 
-  function render(selectedPair = null) {
+  function render() {
     const t = I18N[lang];
     const vIn = clamp(parseFloat(el.vInInput.value) || 0.01, 0.01, 1000000);
     const vOut = clamp(parseFloat(el.vOutInput.value) || 0.01, 0.01, 1000000);
     const maxTotal = clamp(parseInt(el.maxTurnsInput.value, 10) || 60, 2, 500);
 
-    const pairs = findBestPairs(vIn, vOut, maxTotal);
-    const active = selectedPair || pairs[0];
+    const best = findBestPair(vIn, vOut, maxTotal);
 
     el.modeBadge.textContent = vIn >= vOut ? t.stepDown : t.stepUp;
-    el.n1Val.textContent = active.n1;
-    el.n2Val.textContent = active.n2;
+    el.n1Val.textContent = best.n1;
+    el.n2Val.textContent = best.n2;
     el.inPreview.textContent = `${vIn.toFixed(2)} V`;
-    el.outActual.textContent = `${active.actualOut.toFixed(2)} V`;
-    el.ratioVal.textContent = `${(active.n1 / active.n2).toFixed(2)} : 1`;
+    el.outActual.textContent = `${best.actualOut.toFixed(2)} V`;
+    el.ratioVal.textContent = `${(best.n1 / best.n2).toFixed(2)} : 1`;
 
-    const sign = active.diff >= 0 ? '+' : '';
-    el.errorVal.textContent = `${sign}${active.diff.toFixed(2)} V (${active.relError.toFixed(2)}%)`;
-    el.sumVal.textContent = `${active.sum} / ${maxTotal}`;
-    el.budgetUsed.textContent = `${active.sum} / ${maxTotal}`;
+    const sign = best.diff >= 0 ? '+' : '';
+    el.errorVal.textContent = `${sign}${best.diff.toFixed(2)} V (${best.relError.toFixed(2)}%)`;
+    el.sumVal.textContent = `${best.sum} / ${maxTotal}`;
+    el.budgetUsed.textContent = `${best.sum} / ${maxTotal}`;
 
-    el.svgTopLabel.textContent = t.svgTop(active.n1, vIn.toFixed(2));
-    el.svgBotLabel.textContent = t.svgBot(active.n2, active.actualOut.toFixed(2));
-
-    el.altBody.innerHTML = '';
-    pairs.slice(0, 6).forEach((pair) => {
-      const tr = document.createElement('tr');
-      if (pair.n1 === active.n1 && pair.n2 === active.n2) {
-        tr.classList.add('best');
-      }
-      const pSign = pair.diff >= 0 ? '+' : '';
-      tr.innerHTML = `
-        <td>${pair.n1}</td>
-        <td>${pair.n2}</td>
-        <td>${pair.sum} / ${maxTotal}</td>
-        <td>${pair.actualOut.toFixed(2)} V</td>
-        <td>${pSign}${pair.diff.toFixed(2)} V (${pair.relError.toFixed(2)}%)</td>
-      `;
-      tr.addEventListener('click', () => render(pair));
-      el.altBody.appendChild(tr);
-    });
+    el.svgTopLabel.textContent = t.svgTop(best.n1, vIn.toFixed(2));
+    el.svgBotLabel.textContent = t.svgBot(best.n2, best.actualOut.toFixed(2));
 
     syncUrlState(vIn, vOut, maxTotal);
   }
