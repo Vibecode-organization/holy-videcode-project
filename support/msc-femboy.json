@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "login": "msc-femboy",
+  "name": "Femboyᵐˢᶜ",
+  "message": "",
+  "methods": [
+    {
+      "type": "tron",
+      "label": "TRX (Tron)",
+      "value": "TVGxySRuJEpSfHuAuq5MhxtBgZv2T7LV9N"
+    },
+    {
+      "type": "ton",
+      "label": "TON",
+      "value": "UQDm8Og1-R3FudJUegv4T2o0vwzyPXdgFpQGbmjWhvj_RMeH"
+    }
+  ],
+  "updated": "2026-11-15T21:02:27.102Z"
+}
