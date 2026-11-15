@@ -64,6 +64,48 @@ Murk/
 └── Project XXX/
 ```
 
+### 🚀 How to publish a release
+
+**One project — one release — one archive.** When you update, edit your existing release instead of creating a new one.
+
+**1. Pack all versions into a single archive** named `ProjectName_Author.zip`:
+
+```
+ProjectAsuka_Murk.zip
+├── Android/      → ProjectAsuka.apk
+├── Windows/      → ProjectAsuka.exe
+├── macOS/        → ProjectAsuka.dmg
+├── Linux/        → ProjectAsuka.AppImage
+└── README.txt    → version, how to install, links (iOS / web / bot)
+```
+
+Include only the platforms your project supports.
+
+**2. Create the release:** `Releases → Draft a new release`
+
+| Field | Value | Example |
+| --- | --- | --- |
+| Tag | `Author/project-name` | `Murk/project-asuka` |
+| Title | `[Author] Project Name` | `[Murk] Project Asuka` |
+| Asset | `ProjectName_Author.zip` | `ProjectAsuka_Murk.zip` |
+
+**3. Description template:**
+
+```
+Version: v1.0
+Platforms: Android, Windows, macOS, Linux
+Description: a short description of the project
+Links: iOS / web / bot (if any)
+```
+
+**4. Updating:** open your release → `Edit` → delete the old `.zip` → upload the new one with the **same name** → update the version in the description. The download link stays the same forever.
+
+### 📚 Project catalog
+
+| Project | Author | Platforms | Download |
+| --- | --- | --- | --- |
+| Project Asuka | [Murk](https://github.com/murk-sus) | Android, Windows | [ProjectAsuka_Murk.zip](https://github.com/murk-sus/holy-videcode-project/releases/download/Murk/project-asuka/ProjectAsuka_Murk.zip) |
+
 ### 💡 Principles
 
 - **Openness** — anyone can share their work.
@@ -130,6 +172,48 @@ Murk/
 ├── Project Asuka/
 └── Project XXX/
 ```
+
+### 🚀 Как выложить релиз
+
+**Один проект — один релиз — один архив.** При обновлении редактируйте существующий релиз, а не создавайте новый.
+
+**1. Соберите все версии в один архив** с именем `НазваниеПроекта_Автор.zip`:
+
+```
+ProjectAsuka_Murk.zip
+├── Android/      → ProjectAsuka.apk
+├── Windows/      → ProjectAsuka.exe
+├── macOS/        → ProjectAsuka.dmg
+├── Linux/        → ProjectAsuka.AppImage
+└── README.txt    → версия, как установить, ссылки (iOS / веб / бот)
+```
+
+Добавляйте только те платформы, которые поддерживает ваш проект.
+
+**2. Создайте релиз:** `Releases → Draft a new release`
+
+| Поле | Значение | Пример |
+| --- | --- | --- |
+| Тег | `Автор/название-проекта` | `Murk/project-asuka` |
+| Название | `[Автор] Название проекта` | `[Murk] Project Asuka` |
+| Файл | `НазваниеПроекта_Автор.zip` | `ProjectAsuka_Murk.zip` |
+
+**3. Шаблон описания:**
+
+```
+Версия: v1.0
+Платформы: Android, Windows, macOS, Linux
+Описание: коротко о проекте
+Ссылки: iOS / веб / бот (если есть)
+```
+
+**4. Обновление:** откройте свой релиз → `Edit` → удалите старый `.zip` → загрузите новый с **тем же именем** → обновите версию в описании. Ссылка на скачивание при этом не меняется.
+
+### 📚 Каталог проектов
+
+| Проект | Автор | Платформы | Скачать |
+| --- | --- | --- | --- |
+| Project Asuka | [Murk](https://github.com/murk-sus) | Android, Windows | [ProjectAsuka_Murk.zip](https://github.com/murk-sus/holy-videcode-project/releases/download/Murk/project-asuka/ProjectAsuka_Murk.zip) |
 
 ### 💡 Принципы
 
