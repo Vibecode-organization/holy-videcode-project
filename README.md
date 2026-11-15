@@ -53,6 +53,17 @@ Briefly tell us:
 2. What it does.
 3. A link to the code or demo (if available).
 
+### 📁 How to add your project
+
+1. Create a folder named after yourself — preferably your **GitHub username**.
+2. Inside it, create a separate folder for each project, named after the project.
+
+```
+Murk/
+├── Project Asuka/
+└── Project XXX/
+```
+
 ### 💡 Principles
 
 - **Openness** — anyone can share their work.
@@ -108,6 +119,17 @@ Briefly tell us:
 1. Как называется проект.
 2. Что он делает.
 3. Ссылку на код или демо (если есть).
+
+### 📁 Как добавить свой проект
+
+1. Создайте папку со своим именем или псевдонимом — желательно с **ником на GitHub**.
+2. Внутри неё создайте отдельную папку для каждого проекта с его названием.
+
+```
+Murk/
+├── Project Asuka/
+└── Project XXX/
+```
 
 ### 💡 Принципы
 
