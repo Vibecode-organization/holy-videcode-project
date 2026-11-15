@@ -42,7 +42,10 @@ Absolutely any project of your own:
 
 Want to add your project or become a member?
 
-📩 **Send a direct message on Telegram: [@natsuk1n_dev](https://t.me/natsuk1n_dev)**
+📩 **Send a direct message:**
+
+- Telegram: [@natsuk1n_dev](https://t.me/natsuk1n_dev)
+- Twitter / X: [@murkuwuwuwu](https://x.com/murkuwuwuwu)
 
 Briefly tell us:
 
@@ -95,7 +98,10 @@ Briefly tell us:
 
 Хочешь добавить свой проект или стать участником?
 
-📩 **Пиши в личные сообщения в Telegram: [@natsuk1n_dev](https://t.me/natsuk1n_dev)**
+📩 **Пиши в личные сообщения:**
+
+- Telegram: [@natsuk1n_dev](https://t.me/natsuk1n_dev)
+- Twitter / X: [@murkuwuwuwu](https://x.com/murkuwuwuwu)
 
 Расскажи коротко:
 
