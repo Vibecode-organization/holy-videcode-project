@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "login": "furkuki-dev",
+  "name": "LibFresh13",
+  "message": "",
+  "methods": [
+    {
+      "type": "tbank",
+      "label": "Т-Банк",
+      "value": "2200702199482543"
+    }
+  ],
+  "updated": "2026-11-16T05:50:27.502Z"
+}
