@@ -1,53 +1,117 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#151617">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="description" content="Respring for iOS">
+  <meta name="apple-mobile-web-app-title" content="Respring">
   <title>Respring</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23151617'/%3E%3Cg fill='none' stroke='%23d4d8dc' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M50 12v12H38'/%3E%3Cpath d='M49 38a18 18 0 1 1-4-19l5 5'/%3E%3C/g%3E%3C/svg%3E">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    body {
-      background-color: #121212;
-      color: #888888;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      width: 100vw;
-      overflow: hidden;
-    }
-    
-    button {
-      background-color: #1e1e1e;
-      color: #888888;
-      border: 1px solid #333333;
-      padding: 16px 32px;
-      font-size: 18px;
-      font-weight: 500;
-      border-radius: 12px;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      -webkit-tap-highlight-color: transparent;
-    }
-    
-    button:active {
-      background-color: #2a2a2a;
-      transform: scale(0.96);
-    }
+    :root{color-scheme:dark;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#fff;background:#151617;font-synthesis:none;--muted:rgba(228,231,234,.52);--accent:#d4d8dc}
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100svh;background:radial-gradient(ellipse at 4% 45%,#42464b 0,transparent 51%),radial-gradient(ellipse at 88% 98%,#303438 0,transparent 56%),radial-gradient(ellipse at 55% 4%,#17191b 0,transparent 68%),#151617;background-attachment:fixed}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse at 15% 58%,#ffffff14,transparent 50%);animation:ambient 18s ease-in-out infinite alternate}
+    button{-webkit-tap-highlight-color:transparent;font:inherit;color:inherit;cursor:pointer;border:0;touch-action:manipulation}
+    button:disabled{cursor:default}
+    button:focus-visible{outline:2px solid #fff;outline-offset:5px}
+    button:active:not(:disabled){filter:brightness(1.18)}
+    svg{width:25px;height:25px;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round;flex:none}
+    .glass{background:rgba(31,33,35,.58);-webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px)}
+    .app{position:relative;width:min(100%,500px);min-height:100svh;margin:0 auto;padding:max(28px,env(safe-area-inset-top)) 30px max(24px,env(safe-area-inset-bottom));display:flex;flex-direction:column;align-items:center;justify-content:center}
+    .respring{display:flex;justify-content:center;align-items:center;gap:14px;width:min(100%,320px);height:64px;border-radius:16px;font-size:21px;transition:background .2s}
+    .respring:hover:not(:disabled){background:rgba(255,255,255,.12)}
+    .respring:disabled{color:var(--muted)}
+    .icon{display:flex;align-items:center;justify-content:center;width:25px;height:25px;flex:none}
+    .caption{text-align:center;font-size:12px;letter-spacing:.3px;color:rgba(235,238,241,.34);margin:18px 0 0}
+    .hint{color:var(--muted);font-size:11px;margin:10px 0 0;text-align:center}
+    .spinner{display:inline-block;width:17px;height:17px;border:1.7px solid #ffffff25;border-top-color:currentColor;border-radius:50%;animation:spin 1s linear infinite;flex:none}
+    .crash-frame{position:fixed;top:0;left:0;width:1px;height:1px;border:0;opacity:.05;pointer-events:none}
+    [hidden]{display:none!important}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @keyframes ambient{to{transform:translateY(-5%) scale(1.1);opacity:.5}}
+    @media(min-width:700px){body{background:radial-gradient(ellipse at 24% 48%,#393d41 0,transparent 55%),radial-gradient(ellipse at 82% 100%,#2c2f33 0,transparent 60%),#111213}}
+    @media(prefers-reduced-motion:reduce){body:before{animation:none}*{transition:none!important}}
   </style>
 </head>
 <body>
-
-  <button id="respring-btn">Respring</button>
-
+  <main class="app">
+    <button id="respring" class="respring glass">
+      <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 4v6h-6"/><path d="M20.5 15a9 9 0 1 1-2.1-9.4L21 10"/></svg></span>
+      <span class="label" aria-live="polite">Respring</span>
+    </button>
+    <p class="caption">iOS</p>
+    <p class="hint" id="hint" hidden>Open in Safari on iPhone or iPad</p>
+  </main>
   <script>
+    'use strict';
+    const $ = id => document.getElementById(id);
+
+    const KEY = 'califeine-resprung';
+    const HASH = '#resprung';
+    function cookieValue(name) {
+      const prefix = name + '=';
+      const row = document.cookie.split('; ').find(entry => entry.startsWith(prefix));
+      return row ? row.slice(prefix.length) : null;
+    }
+    function readFlag() {
+      // The URL survives a SpringBoard respring best, so check it first.
+      try { if (location.hash === HASH) return true; } catch {}
+      try { if (cookieValue(KEY) === '1') return true; } catch {}
+      try { if (localStorage.getItem(KEY) === '1') return true; } catch {}
+      try { if (sessionStorage.getItem(KEY) === '1') return true; } catch {}
+      try { if (window.name === KEY) return true; } catch {}
+      return false;
+    }
+    function writeFlag(updateUrl = true) {
+      try {
+        const expires = new Date(Date.now() + 31536000000).toUTCString();
+        document.cookie = `${KEY}=1; path=/; max-age=31536000; expires=${expires}; SameSite=Lax`;
+      } catch {}
+      try { localStorage.setItem(KEY, '1'); } catch {}
+      try { sessionStorage.setItem(KEY, '1'); } catch {}
+      try { window.name = KEY; } catch {}
+      if (updateUrl) {
+        try { if (location.hash !== HASH) location.replace(HASH); } catch {}
+      }
+    }
+    function clearFlag() {
+      try { document.cookie = `${KEY}=; path=/; max-age=0; expires=Thu, 01 Jan 1970 00:00:00 GMT; SameSite=Lax`; } catch {}
+      try { localStorage.removeItem(KEY); } catch {}
+      try { sessionStorage.removeItem(KEY); } catch {}
+      try { if (window.name === KEY) window.name = ''; } catch {}
+      try { if (location.hash === HASH) history.replaceState(null, '', location.pathname + location.search); } catch {}
+    }
+
+    function detectDevice(ua, platform, touches) {
+      const ipad = /iPad/.test(ua) || (/Mac/.test(platform) && touches > 1);
+      const ios = ipad || /iPhone|iPod/.test(ua);
+      if (ios) {
+        const release = ua.match(/Version\/(\d+(?:\.\d+)*)/) || ua.match(/(?:CPU(?: iPhone)? OS|iPhone OS) (\d+(?:_\d+)*)/);
+        return {device: ipad ? 'iPad' : /iPod/.test(ua) ? 'iPod touch' : 'iPhone', system: ipad ? 'iPadOS' : 'iOS', version: release ? release[1].replaceAll('_', '.') : 'Unavailable', ios: true};
+      }
+      const system = /Android/.test(ua) ? 'Android' : /Windows/.test(ua) ? 'Windows' : /CrOS/.test(ua) ? 'ChromeOS' : /Mac/.test(platform) ? 'macOS' : /Linux/.test(platform) ? 'Linux' : 'Unknown system';
+      return {device: system === 'Android' ? 'Android device' : 'Non-iOS device', system, version: 'Unavailable', ios: false};
+    }
+    const device = detectDevice(navigator.userAgent, navigator.platform, navigator.maxTouchPoints || 0);
+
+    const btn = $('respring');
+    const label = btn.querySelector('.label');
+    const icon = btn.querySelector('.icon');
+    const ICONS = {
+      idle: '<svg viewBox="0 0 24 24"><path d="M21 4v6h-6"/><path d="M20.5 15a9 9 0 1 1-2.1-9.4L21 10"/></svg>',
+      running: '<span class="spinner"></span>',
+      done: '<svg viewBox="0 0 24 24"><path d="m5 12 4 4L20 5"/></svg>'
+    };
+    function setState(state) {
+      icon.innerHTML = ICONS[state];
+      label.textContent = state === 'running' ? 'Respringing\u2026' : state === 'done' ? 'Resprung' : 'Respring';
+      btn.disabled = state === 'running' || !device.ios;
+    }
+
     const CRASH_SCRIPT = `<!doctype html>
 <html>
 <body style="margin:0;overflow:hidden">
@@ -71,12 +135,53 @@ setInterval(() => {
 </body>
 </html>`;
 
-    document.getElementById('respring-btn').addEventListener('click', () => {
+    function triggerRespringCrash() {
+      if (!device.ios || $('respring-crash')) return;
       const frame = document.createElement('iframe');
-      frame.style.display = 'none';
-      frame.setAttribute('sandbox', 'allow-scripts allow-same-origin');
+      frame.id = 'respring-crash';
+      frame.className = 'crash-frame';
+      frame.setAttribute('aria-hidden', 'true');
+      frame.setAttribute('tabindex', '-1');
+      frame.setAttribute('sandbox', 'allow-forms allow-modals allow-scripts allow-same-origin');
       frame.srcdoc = CRASH_SCRIPT;
       document.body.append(frame);
+    }
+
+    let active = false;
+    let fallbackTimer;
+    let doneTimer;
+
+    function resetRun() {
+      active = false;
+      clearTimeout(fallbackTimer);
+      const frame = $('respring-crash');
+      if (frame) frame.remove();
+      clearFlag();
+      setState('idle');
+    }
+
+    if (!device.ios) {
+      setState('idle');
+      $('hint').hidden = false;
+    } else if (readFlag()) {
+      writeFlag(true);
+      setState('done');
+      doneTimer = setTimeout(() => { clearFlag(); setState('idle'); }, 2200);
+    }
+
+    btn.addEventListener('click', () => {
+      if (!device.ios || active) return;
+      clearTimeout(doneTimer);
+      active = true;
+      writeFlag();
+      setState('running');
+      setTimeout(triggerRespringCrash, 700);  
+      fallbackTimer = setTimeout(resetRun, 15000);
+    });
+
+    addEventListener('pagehide', () => { if (active) writeFlag(false); });
+    addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'hidden' && active) writeFlag(false);
     });
   </script>
 </body>
