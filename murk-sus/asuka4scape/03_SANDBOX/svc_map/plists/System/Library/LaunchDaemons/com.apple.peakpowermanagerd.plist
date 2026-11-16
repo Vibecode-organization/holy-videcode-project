@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.apple.peakpowermanagerd</string>
+	<key>Program</key>
+	<string>/usr/libexec/peakpowermanagerd</string>
+	<key>UserName</key>
+	<string>root</string>
+	<key>EnablePressuredExit</key>
+	<true/>
+	<key>ProcessType</key>
+	<string>Adaptive</string>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>RunAtLoad</key>
+	<true/>
+	<!-- peakpowermanagerd idle-exits and has no other respawn path, so StartInterval relaunches it every
+	     30 min to drain the CPMS telemetry queue. Fires only while the AP is awake, which is fine because
+	     CPMS produces telemetry only while awake. Skipped if the daemon is already running. -->
+	<key>StartInterval</key>
+	<integer>1800</integer>
+	<!-- On-demand relaunch for asynchronous or significant events from the kext. launchd owns this port and
+	     vends it to the daemon (bootstrap_check_in); the daemon passes the send right to the kext. A
+	     notification arriving while the daemon has idle-exited relaunches it at once, without waiting for
+	     StartInterval. -->
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.peakpowermanagerd.telemetry-notification</key>
+		<true/>
+	</dict>
+	<key>LimitLoadFromHardware</key>
+	<dict>
+		<key>targettype</key>
+		<array>
+			<string>J271</string>
+			<string>J272</string>
+			<string>J307</string>
+			<string>J308</string>
+			<string>J310</string>
+			<string>J311</string>
+			<string>J407</string>
+			<string>J408</string>
+		</array>
+	</dict>
+</dict>
+</plist>

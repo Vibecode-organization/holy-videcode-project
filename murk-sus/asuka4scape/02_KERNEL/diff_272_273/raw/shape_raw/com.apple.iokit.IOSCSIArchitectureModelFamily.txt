@@ -1,0 +1,9 @@
+funcs 733 733
+identical 731 ratio 0.99727
+changed regions 2
+== replace A[687:688] B[687:688]
+   A 0xfffffff009b93594 sz=224
+   B 0xfffffff009c5ca14 sz=268
+== replace A[723:724] B[723:724]
+   A 0xfffffff009b95e20 sz=228
+   B 0xfffffff009c5f2cc sz=284

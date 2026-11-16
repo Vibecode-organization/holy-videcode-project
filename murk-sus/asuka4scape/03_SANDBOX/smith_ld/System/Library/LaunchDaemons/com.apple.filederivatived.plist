@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>EnablePressuredExit</key>
+    <true/>
+    <key>EnableTransactions</key>
+    <true/>
+    <key>Label</key>
+    <string>com.apple.filederivatived</string>
+    <key>LaunchEvents</key>
+    <dict/>
+    <key>MachServices</key>
+    <dict>
+        <key>com.apple.FileDerivativeService</key>
+        <dict/>
+    </dict>
+    <key>POSIXSpawnType</key>
+    <string>Adaptive</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/System/Library/PrivateFrameworks/FileDerivatives.framework/Support/filederivatived</string>
+    </array>
+    <key>UserName</key>
+    <string>mobile</string>
+    <key>Disabled</key>
+    <dict>
+        <key>#IfFeatureFlagEnabled</key>
+        <string>FileDerivativeService/Daemon</string>
+        <key>#Then</key>
+        <false/>
+        <key>#Else</key>
+        <true/>
+    </dict>
+</dict>
+</plist>

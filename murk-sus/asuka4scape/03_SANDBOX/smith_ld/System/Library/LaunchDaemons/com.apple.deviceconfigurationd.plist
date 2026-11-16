@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>LimitLoadToSessionType</key>
+	<string>System</string>
+	<key>EnablePressuredExit</key>
+	<true/>
+	<key>Label</key>
+	<string>com.apple.deviceconfigurationd</string>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.notifyd.matching</key>
+		<dict>
+			<key>UserListChanged</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.mobile.keybagd.user_changed</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.deviceconfigurationd.consumer</key>
+		<true/>
+		<key>com.apple.deviceconfigurationd.consumer.async</key>
+		<true/>
+		<key>com.apple.deviceconfigurationd.consumer.private</key>
+		<true/>
+		<key>com.apple.deviceconfigurationd.consumer.private.async</key>
+		<true/>
+		<key>com.apple.deviceconfigurationd.diagnostics.async</key>
+		<true/>
+		<key>com.apple.deviceconfigurationd.provider</key>
+		<true/>
+		<key>com.apple.deviceconfigurationd.provider.async</key>
+		<true/>
+		<key>com.apple.deviceconfigurationd.publisher</key>
+		<dict>
+			<key>_ExperimentalNonLaunching</key>
+			<true/>
+		</dict>
+		<key>com.apple.deviceconfigurationd.user.private.async</key>
+		<true/>
+	</dict>
+	<key>ProcessType</key>
+	<string>Adaptive</string>
+	<key>Program</key>
+	<string>/System/Library/PrivateFrameworks/DeviceConfiguration.framework/deviceconfigurationd</string>
+	<key>PublishesEvents</key>
+	<array>
+		<string>com.apple.DeviceConfiguration.system.effective-configuration-changed</string>
+	</array>
+</dict>
+</plist>

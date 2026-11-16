@@ -1,0 +1,165 @@
+100014d94: pacibsp 
+100014d98: sub sp, sp, #0xd0
+100014d9c: stp x28, x27, [sp, #0x70]
+100014da0: stp x26, x25, [sp, #0x80]
+100014da4: stp x24, x23, [sp, #0x90]
+100014da8: stp x22, x21, [sp, #0xa0]
+100014dac: stp x20, x19, [sp, #0xb0]
+100014db0: stp x29, x30, [sp, #0xc0]
+100014db4: add x29, sp, #0xc0
+100014db8: mov x22, x6
+100014dbc: mov x24, x5
+100014dc0: mov x21, x4
+100014dc4: mov x20, x3
+100014dc8: mov x26, x0
+100014dcc: bl #0x1000a4030
+100014dd0: mov x19, x0
+100014dd4: bl #0x1000a4040
+100014dd8: mov x20, x0
+100014ddc: bl #0x1000a4050
+100014de0: mov x21, x0
+100014de4: bl #0x1000a4060
+100014de8: mov x22, x0
+100014dec: adrp x27, #0x10010b000
+100014df0: ldr x0, [x27, #0x8a0]
+100014df4: bl #0x1000a3e90
+100014df8: cbz x0, #0x100014edc
+100014dfc: mov x0, x20
+100014e00: bl #0x1000a7ba0
+100014e04: bl #0x1000a3e00
+100014e08: mov x23, x0
+100014e0c: mov x0, x19
+100014e10: bl #0x1000ae7a0
+100014e14: bl #0x1000a3e00
+100014e18: mov x25, x0
+100014e1c: cbz x0, #0x100014f58
+100014e20: ldr x27, [x27, #0x8a0]
+100014e24: add x8, sp, #0x18
+100014e28: adrp x16, #0x10010b000
+100014e2c: ldr x16, [x16, #0xb18]
+100014e30: mov x17, x8
+100014e34: movk x17, #0x6ae1, lsl #48
+100014e38: pacda x16, x17
+100014e3c: str x16, [sp, #0x18]
+100014e40: adrp x9, #0x1000b4000
+100014e44: ldr d0, [x9, #0x60]
+100014e48: str d0, [sp, #0x20]
+100014e4c: add x8, x8, #0x10
+100014e50: adrp x16, #0x100015000
+100014e54: add x16, x16, #0x28
+100014e58: pacia x16, x8
+100014e5c: adrp x8, #0x1000f4000
+100014e60: add x8, x8, #0xa78
+100014e64: stp x16, x8, [sp, #0x28]
+100014e68: bl #0x1000a4070
+100014e6c: mov x28, x0
+100014e70: str x0, [sp, #0x38]
+100014e74: bl #0x1000a4060
+100014e78: str x0, [sp, #0x60]
+100014e7c: str x26, [sp, #0x40]
+100014e80: bl #0x1000a4020
+100014e84: str x0, [sp, #0x48]
+100014e88: bl #0x1000a4040
+100014e8c: str x0, [sp, #0x50]
+100014e90: bl #0x1000a4050
+100014e94: str x0, [sp, #0x58]
+100014e98: str x24, [sp, #0x68]
+100014e9c: add x4, sp, #0x18
+100014ea0: mov x0, x27
+100014ea4: mov x2, x28
+100014ea8: mov x3, x25
+100014eac: bl #0x1000a7900
+100014eb0: ldr x8, [sp, #0x58]
+100014eb4: bl #0x1000a3fa0
+100014eb8: ldr x8, [sp, #0x50]
+100014ebc: bl #0x1000a3fa0
+100014ec0: ldr x8, [sp, #0x48]
+100014ec4: bl #0x1000a3fa0
+100014ec8: ldr x8, [sp, #0x60]
+100014ecc: bl #0x1000a3fa0
+100014ed0: ldr x8, [sp, #0x38]
+100014ed4: bl #0x1000a3fa0
+100014ed8: b #0x100014fe4
+100014edc: adrp x8, #0x1000f4000
+100014ee0: add x8, x8, #0
+100014ee4: ldr x0, [x8]
+100014ee8: bl #0x1000021f8
+100014eec: bl #0x1000a3e00
+100014ef0: mov x23, x0
+100014ef4: mov w1, #0x10
+100014ef8: bl #0x1000a4180
+100014efc: cbnz w0, #0x10001501c
+100014f00: bl #0x1000a3f40
+100014f04: adrp x8, #0x10010b000
+100014f08: ldr x8, [x8, #0x798]
+100014f0c: ldr x2, [x8]
+100014f10: adrp x0, #0x1000b7000
+100014f14: add x0, x0, #0x591   ; 0x1000b7591 '-[IXSAppUninstaller _promptToOverrideManagedSettingsOfAppWithRecord:identity:clientName:flags:completion:]'
+100014f18: adrp x6, #0x1000f8000
+100014f1c: add x6, x6, #0x188
+100014f20: mov w1, #0x417
+100014f24: mov w3, #1
+100014f28: mov x4, #0
+100014f2c: mov x5, #0
+100014f30: bl #0x1000a38e0
+100014f34: bl #0x1000a3e00
+100014f38: mov x23, x0
+100014f3c: mov x8, x22
+100014f40: ldr x9, [x8, #0x10]!
+100014f44: mov x0, x22
+100014f48: mov x1, #0
+100014f4c: mov x2, x23
+100014f50: blraa x9, x8
+100014f54: b #0x100014fe8
+100014f58: adrp x8, #0x1000f4000
+100014f5c: add x8, x8, #0
+100014f60: ldr x0, [x8]
+100014f64: bl #0x1000021f8
+100014f68: bl #0x1000a3e00
+100014f6c: mov x27, x0
+100014f70: mov w1, #0
+100014f74: bl #0x1000a4180
+100014f78: cbz w0, #0x100014fc4
+100014f7c: adrp x8, #0x1000b4000
+100014f80: ldr d0, [x8, #0x80]
+100014f84: str s0, [sp]
+100014f88: adrp x8, #0x1000b7000
+100014f8c: add x8, x8, #0x591   ; 0x1000b7591 '-[IXSAppUninstaller _promptToOverrideManagedSettingsOfAppWithRecord:identity:clientName:flags:completion:]'
+100014f90: stur x8, [sp, #4]
+100014f94: mov w8, #0x840
+100014f98: strh w8, [sp, #0xc]
+100014f9c: stur x23, [sp, #0xe]
+100014fa0: adrp x0, #0x100000000
+100014fa4: add x0, x0, #0
+100014fa8: adrp x3, #0x1000cd000
+100014fac: add x3, x3, #0x402   ; 0x1000cd402 '%s: Unable to retrieve team identifier for bundle ID %@'
+100014fb0: mov x4, sp
+100014fb4: mov x1, x27
+100014fb8: mov w2, #0
+100014fbc: mov w5, #0x16
+100014fc0: bl #0x1000a3990
+100014fc4: bl #0x1000a3f80
+100014fc8: mov x0, x26
+100014fcc: mov x2, x19
+100014fd0: mov x3, x20
+100014fd4: mov x4, x21
+100014fd8: mov x5, x24
+100014fdc: mov x6, x22
+100014fe0: bl #0x1000a6140
+100014fe4: bl #0x1000a3f60
+100014fe8: bl #0x1000a3f40
+100014fec: bl #0x1000a3f30
+100014ff0: bl #0x1000a3f20
+100014ff4: bl #0x1000a3f10
+100014ff8: bl #0x1000a3f00
+100014ffc: ldp x29, x30, [sp, #0xc0]
+100015000: ldp x20, x19, [sp, #0xb0]
+100015004: ldp x22, x21, [sp, #0xa0]
+100015008: ldp x24, x23, [sp, #0x90]
+10001500c: ldp x26, x25, [sp, #0x80]
+100015010: ldp x28, x27, [sp, #0x70]
+100015014: add sp, sp, #0xd0
+100015018: retab 
+10001501c: mov x0, x23
+100015020: bl #0x1000997f0
+100015024: b #0x100014f00

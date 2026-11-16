@@ -1,0 +1,14 @@
+// FUN_fffffff009951400 @ fffffff009951400 size=8
+
+void FUN_fffffff009951400(undefined8 param_1)
+
+{
+  undefined8 *puVar1;
+  
+  puVar1 = (undefined8 *)
+           thunk_EXT_FUN_8011000003890d88
+                     (param_1,"IOGPUKernelMappedMemory",&DAT_fffffff00af22290,0x40);
+  *puVar1 = &DAT_fffffff007fec280;
+  return;
+}
+

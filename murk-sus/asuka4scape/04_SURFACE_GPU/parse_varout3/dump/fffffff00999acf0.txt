@@ -1,0 +1,149 @@
+func 0xfffffff00999acf0 kext com.apple.iokit.IOGameControllerFamily writes ['0xfffffff00999aea8']
+
+fffffff00999acf0  bti      c
+fffffff00999acf4  pacibsp  
+fffffff00999acf8  sub      sp, sp, #0x60
+fffffff00999acfc  stp      x26, x25, [sp, #0x10]
+fffffff00999ad00  stp      x24, x23, [sp, #0x20]
+fffffff00999ad04  stp      x22, x21, [sp, #0x30]
+fffffff00999ad08  stp      x20, x19, [sp, #0x40]
+fffffff00999ad0c  stp      x29, x30, [sp, #0x50]
+fffffff00999ad10  add      x29, sp, #0x50
+fffffff00999ad14  mov      x21, x2
+fffffff00999ad18  mov      x23, x0
+fffffff00999ad1c  mov      w19, #0x2bd
+fffffff00999ad20  movk     w19, #0xe000, lsl #16
+fffffff00999ad24  bl       #0xfffffff009986180
+fffffff00999ad28  movk     x17, #0xcda1, lsl #48
+fffffff00999ad2c  autda    x16, x17
+fffffff00999ad30  mov      x17, #0x370
+fffffff00999ad34  add      x16, x16, x17
+fffffff00999ad38  ldr      x8, [x16]
+fffffff00999ad3c  movk     x16, #0x93b7, lsl #48
+fffffff00999ad40  blraa    x8, x16
+fffffff00999ad44  cbz      x0, #0xfffffff00999aef8
+fffffff00999ad48  mov      x0, x23
+fffffff00999ad4c  mov      x1, x21
+fffffff00999ad50  bl       #0xfffffff00999b144
+fffffff00999ad54  cbz      x0, #0xfffffff00999af00
+fffffff00999ad58  mov      x20, x0
+fffffff00999ad5c  ldr      x16, [x0]
+fffffff00999ad60  mov      x24, x0
+fffffff00999ad64  movk     x24, #0xcda1, lsl #48
+fffffff00999ad68  mov      x17, x0
+fffffff00999ad6c  movk     x17, #0xcda1, lsl #48
+fffffff00999ad70  autda    x16, x17
+fffffff00999ad74  ldr      x8, [x16, #0x90]!
+fffffff00999ad78  movk     x16, #0x29e8, lsl #48
+fffffff00999ad7c  blraa    x8, x16
+fffffff00999ad80  bl       #0xfffffff0099a051c
+fffffff00999ad84  cbz      x0, #0xfffffff00999aec0
+fffffff00999ad88  mov      x22, x0
+fffffff00999ad8c  mov      x0, x23
+fffffff00999ad90  bl       #0xfffffff00999b9f8
+fffffff00999ad94  mov      x0, x23
+fffffff00999ad98  bl       #0xfffffff00999b9f8
+fffffff00999ad9c  mov      x0, x23
+fffffff00999ada0  bl       #0xfffffff00999b9f8
+fffffff00999ada4  mov      x0, x23
+fffffff00999ada8  bl       #0xfffffff00999b9f8
+fffffff00999adac  bl       #0xfffffff00998d718
+fffffff00999adb0  bl       #0xfffffff00999c08c
+fffffff00999adb4  mov      x17, x24
+fffffff00999adb8  ldr      x16, [x20]
+fffffff00999adbc  autda    x16, x17
+fffffff00999adc0  mov      x17, x16
+fffffff00999adc4  xpacd    x17
+fffffff00999adc8  cmp      x16, x17
+fffffff00999adcc  b.eq     #0xfffffff00999add4
+fffffff00999add0  brk      #0xc472
+fffffff00999add4  add      x8, x16, #0x138
+fffffff00999add8  ldr      x9, [x16, #0x138]
+fffffff00999addc  adrp     x1, #0xfffffff007837000
+fffffff00999ade0  add      x1, x1, #0x73
+fffffff00999ade4  mov      x0, x20
+fffffff00999ade8  mov      x17, x8
+fffffff00999adec  movk     x17, #0x2e3b, lsl #48
+fffffff00999adf0  blraa    x9, x17
+fffffff00999adf4  adrp     x8, #0xfffffff007ff8000
+fffffff00999adf8  ldr      x8, [x8, #0xe80]
+fffffff00999adfc  ldr      x1, [x8]
+fffffff00999ae00  bl       #0xfffffff0099a05bc
+fffffff00999ae04  cbz      x0, #0xfffffff00999ae40
+fffffff00999ae08  mov      x1, x0
+fffffff00999ae0c  mov      x0, x23
+fffffff00999ae10  bl       #0xfffffff00999c444
+fffffff00999ae14  bl       #0xfffffff00998d764
+fffffff00999ae18  bl       #0xfffffff00998d77c
+fffffff00999ae1c  ldr      x0, [sp, #8]
+fffffff00999ae20  cbz      x0, #0xfffffff00999ae40
+fffffff00999ae24  ldr      x16, [x0]
+fffffff00999ae28  mov      x17, x0
+fffffff00999ae2c  movk     x17, #0xcda1, lsl #48
+fffffff00999ae30  autda    x16, x17
+fffffff00999ae34  ldr      x8, [x16, #0x28]!
+fffffff00999ae38  movk     x16, #0x3a87, lsl #48
+fffffff00999ae3c  blraa    x8, x16
+fffffff00999ae40  bl       #0xfffffff00998d718
+fffffff00999ae44  bl       #0xfffffff00999c4a8
+fffffff00999ae48  mov      x0, x23
+fffffff00999ae4c  bl       #0xfffffff00999b9f8
+fffffff00999ae50  mov      x0, x23
+fffffff00999ae54  bl       #0xfffffff00999b9f8
+fffffff00999ae58  mov      w0, #0x1000
+fffffff00999ae5c  mov      x1, #0
+fffffff00999ae60  mov      x2, #0
+fffffff00999ae64  bl       #0xfffffff0099a04cc
+fffffff00999ae68  cbz      x0, #0xfffffff00999af08
+fffffff00999ae6c  mov      x23, x0
+fffffff00999ae70  ldr      x16, [x22]
+fffffff00999ae74  mov      x25, x22
+fffffff00999ae78  movk     x25, #0xcda1, lsl #48
+fffffff00999ae7c  mov      x17, x22
+fffffff00999ae80  movk     x17, #0xcda1, lsl #48
+fffffff00999ae84  autda    x16, x17
+fffffff00999ae88  ldr      x8, [x16, #0x30]!
+fffffff00999ae8c  mov      x0, x22
+fffffff00999ae90  mov      x1, x23
+fffffff00999ae94  movk     x16, #0x89a9, lsl #48
+fffffff00999ae98  blraa    x8, x16
+fffffff00999ae9c  cbz      w0, #0xfffffff00999af14
+fffffff00999aea0  mov      w19, #0
+fffffff00999aea4  ldr      x8, [x21, #0x78]
+fffffff00999aea8  str      x23, [x8] <<<
+fffffff00999aeac  bl       #0xfffffff00998d758
+fffffff00999aeb0  ldr      x8, [x16, #0x28]!
+fffffff00999aeb4  mov      x0, x22
+fffffff00999aeb8  movk     x16, #0x3a87, lsl #48
+fffffff00999aebc  blraa    x8, x16
+fffffff00999aec0  ldr      x16, [x20]
+fffffff00999aec4  autda    x16, x24
+fffffff00999aec8  ldr      x8, [x16, #0x28]!
+fffffff00999aecc  mov      x0, x20
+fffffff00999aed0  movk     x16, #0x3a87, lsl #48
+fffffff00999aed4  blraa    x8, x16
+fffffff00999aed8  mov      x0, x19
+fffffff00999aedc  ldp      x29, x30, [sp, #0x50]
+fffffff00999aee0  ldp      x20, x19, [sp, #0x40]
+fffffff00999aee4  ldp      x22, x21, [sp, #0x30]
+fffffff00999aee8  ldp      x24, x23, [sp, #0x20]
+fffffff00999aeec  ldp      x26, x25, [sp, #0x10]
+fffffff00999aef0  add      sp, sp, #0x60
+fffffff00999aef4  retab    
+fffffff00999aef8  add      w19, w19, #0x1b
+fffffff00999aefc  b        #0xfffffff00999aed8
+fffffff00999af00  add      w19, w19, #0xc
+fffffff00999af04  b        #0xfffffff00999aed8
+fffffff00999af08  mov      x25, x22
+fffffff00999af0c  movk     x25, #0xcda1, lsl #48
+fffffff00999af10  b        #0xfffffff00999aeac
+fffffff00999af14  ldr      x16, [x23]
+fffffff00999af18  mov      x17, x23
+fffffff00999af1c  movk     x17, #0xcda1, lsl #48
+fffffff00999af20  autda    x16, x17
+fffffff00999af24  ldr      x8, [x16, #0x28]!
+fffffff00999af28  mov      x0, x23
+fffffff00999af2c  movk     x16, #0x3a87, lsl #48
+fffffff00999af30  blraa    x8, x16
+fffffff00999af34  add      w19, w19, #0xc
+fffffff00999af38  b        #0xfffffff00999aeac

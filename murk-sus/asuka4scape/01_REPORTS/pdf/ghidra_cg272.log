@@ -1,0 +1,163 @@
+openjdk version "27" 2026-09-15
+OpenJDK Runtime Environment (build 27)
+OpenJDK 64-Bit Server VM (build 27, mixed mode)
+INFO  Using log config file: jar:file:/home/femboychik/ghidra/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/application.log (LoggingInitialization)  
+INFO  Loading user preferences: /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/preferences (Preferences)  
+INFO  Loading previous preferences: /home/femboychik/.config/ghidra/ghidra_11.4.2_PUBLIC/preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (1485 ms) (ClassSearcher)  
+WARNING: Final field name in class ghidra.util.charset.CharsetInfo has been mutated reflectively by class com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$2 in unnamed module @2c35e847 (file:/home/femboychik/ghidra/Ghidra/Framework/Generic/lib/gson-2.13.2.jar)
+WARNING: Use --enable-final-field-mutation=ALL-UNNAMED to avoid a warning
+WARNING: Mutating final fields will be blocked in a future release unless final field mutation is enabled
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (4193 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 177 extension points (89 false positives) (ClassSearcher)  
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::staticFieldOffset has been called by org.apache.felix.framework.util.SecureAction (file:/home/femboychik/ghidra/Ghidra/Features/Base/lib/org.apache.felix.framework-7.0.5.jar)
+WARNING: Please consider reporting this to the maintainers of class org.apache.felix.framework.util.SecureAction
+WARNING: sun.misc.Unsafe::staticFieldOffset will be removed in a future release
+INFO  HEADLESS Script Paths:
+    /home/femboychik/ghidra/Ghidra/Features/PyGhidra/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/FileFormats/ghidra_scripts
+    /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/Extensions/Jython/ghidra_scripts
+    /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/Extensions/MachineLearning/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/Base/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /home/femboychik/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/BytePatterns/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /home/femboychik/work/pdf/scripts
+    /home/femboychik/ghidra/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/VersionTracking/ghidra_scripts
+    /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/Extensions/SleighDevTools/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/PDB/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Processors/Atmel/ghidra_scripts
+    /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/Extensions/Lisa/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Processors/DATA/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Debug/Debugger/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Processors/8051/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Processors/JVM/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/FunctionID/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Processors/PIC/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/Decompiler/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/SwiftDemangler/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/BSim/ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Creating project: /home/femboychik/work/pdf/gh/cg272 (HeadlessAnalyzer)  
+INFO  Creating project: /home/femboychik/work/pdf/gh/cg272 (DefaultProject)  
+INFO  REPORT: Processing input files:  (HeadlessAnalyzer)  
+INFO       project: /home/femboychik/work/pdf/gh/cg272 (HeadlessAnalyzer)  
+INFO  IMPORTING: file:///home/femboychik/work/pdf/CoreGraphics.27.2.fixed (HeadlessAnalyzer)  
+WARN  Using unknown opinion: Mac OS X Mach-O, AARCH64:LE:64:v8A:default (LcsHintLoadSpecChooser)  
+INFO  Using Loader: Mac OS X Mach-O (ProgramLoader)  
+INFO  Using Language/Compiler: AARCH64:LE:64:v8A:default (ProgramLoader)  
+INFO  Using Library Search Path: [., /bin, /lib, /lib64, /lib/x86_64-linux-gnu, /lib/aarch64-linux-gnu, /usr/bin, /usr/lib, /usr/X11R6/bin, /usr/X11R6/lib, /usr/java/packages/lib, /usr/lib64] (ProgramLoader)  
+INFO  Additional info:
+Loading file:///home/femboychik/work/pdf/CoreGraphics.27.2.fixed?MD5=b084f46f959e0c575621eb17938e768b...
+CoreGraphics.27.2.fixed: installed 8 objc SpecExtensions
+------------------------------------------------
+
+Linking the External Programs of 'CoreGraphics.27.2.fixed' to imported libraries...
+  [/System/Library/PrivateFrameworks/FontServices.framework/libFontParser.dylib] -> not found in project
+  [/System/Library/PrivateFrameworks/TextRecognition.framework/TextRecognition] -> not found in project
+  [/System/Library/PrivateFrameworks/ProtocolBuffer.framework/ProtocolBuffer] -> not found in project
+  [/System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking] -> not found in project
+  [/usr/lib/libicucore.A.dylib] -> not found in project
+  [/System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics] -> not found in project
+  [/usr/lib/libMobileGestalt.dylib] -> not found in project
+  [/System/Library/Frameworks/IOSurface.framework/IOSurface] -> not found in project
+  [/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation] -> not found in project
+  [/System/Library/Frameworks/Foundation.framework/Foundation] -> not found in project
+  [/usr/lib/libz.1.dylib] -> not found in project
+  [/usr/lib/libxml2.2.dylib] -> not found in project
+  [/System/Library/Frameworks/Accelerate.framework/Accelerate] -> not found in project
+  [/System/Library/Frameworks/CFNetwork.framework/CFNetwork] -> not found in project
+  [/usr/lib/libobjc.A.dylib] -> not found in project
+  [/usr/lib/libc++.1.dylib] -> not found in project
+  [/usr/lib/libSystem.B.dylib] -> not found in project
+  [/System/Library/Frameworks/Security.framework/Security] -> not found in project
+  [/System/Library/PrivateFrameworks/CollectionsInternal.framework/CollectionsInternal] -> not found in project
+  [/usr/lib/swift/libswiftCore.dylib] -> not found in project
+  [/usr/lib/swift/libswiftCoreFoundation.dylib] -> not found in project
+  [/usr/lib/swift/libswiftDispatch.dylib] -> not found in project
+  [/usr/lib/swift/libswiftObjectiveC.dylib] -> not found in project
+  [/usr/lib/swift/libswiftXPC.dylib] -> not found in project
+  [/usr/lib/swift/libswift_Builtin_float.dylib] -> not found in project
+------------------------------------------------
+
+ (ProgramLoader)  
+INFO  IMPORTING: Loaded 0 additional files (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: NameSymbols.java  (HeadlessAnalyzer)  
+INFO  SCRIPT: /home/femboychik/work/pdf/scripts/NameSymbols.java (HeadlessAnalyzer)  
+INFO  NameSymbols.java> NameSymbols: processed=11967 named=10041 (GhidraScript)  
+INFO  ANALYZING all memory and code: file:///home/femboychik/work/pdf/CoreGraphics.27.2.fixed (HeadlessAnalyzer)  
+WARN  Decompiling 183dca720, pcode error at 188138390: Could not follow disassembly flow into non-existing memory at 188138390 (DecompileCallback)  
+WARN  Decompiling 183fa9710, pcode error at 188138390: Could not follow disassembly flow into non-existing memory at 188138390 (DecompileCallback)  
+WARN  Decompiling 183eac7a8, pcode error at 188141250: Could not follow disassembly flow into non-existing memory at 188141250 (DecompileCallback)  
+WARN  Decompiling 18402f7e8, pcode error at 1881443d0: Could not follow disassembly flow into non-existing memory at 1881443d0 (DecompileCallback)  
+WARN  Decompiling 183b4675c, pcode error at 18813b850: Could not follow disassembly flow into non-existing memory at 18813b850 (DecompileCallback)  
+WARN  Decompiling 183e9e32c, pcode error at 188138390: Could not follow disassembly flow into non-existing memory at 188138390 (DecompileCallback)  
+WARN  Decompiling 183e54d1c, pcode error at 188138390: Could not follow disassembly flow into non-existing memory at 188138390 (DecompileCallback)  
+WARN  Decompiling 183e8ba80, pcode error at 188143840: Could not follow disassembly flow into non-existing memory at 188143840 (DecompileCallback)  
+WARN  Decompiling 183b20120, pcode error at 1881443d0: Could not follow disassembly flow into non-existing memory at 1881443d0 (DecompileCallback)  
+WARN  Decompiling 183be5dac, pcode error at 188141240: Could not follow disassembly flow into non-existing memory at 188141240 (DecompileCallback)  
+WARN  Decompiling 183fa85d4, pcode error at 188138390: Could not follow disassembly flow into non-existing memory at 188138390 (DecompileCallback)  
+WARN  Decompiling 183f7afd8, pcode error at 1881404d0: Could not follow disassembly flow into non-existing memory at 1881404d0 (DecompileCallback)  
+WARN  Decompiling 183f7afd8, pcode error at 1881416b0: Could not follow disassembly flow into non-existing memory at 1881416b0 (DecompileCallback)  
+WARN  Decompiling 183f7afd8, pcode error at 188140f70: Could not follow disassembly flow into non-existing memory at 188140f70 (DecompileCallback)  
+WARN  Decompiling 183e7c508, pcode error at 18813adf0: Could not follow disassembly flow into non-existing memory at 18813adf0 (DecompileCallback)  
+WARN  Decompiling 183e7c508, pcode error at 188145db0: Could not follow disassembly flow into non-existing memory at 188145db0 (DecompileCallback)  
+WARN  Decompiling 183c2b6d8, pcode error at 188138390: Could not follow disassembly flow into non-existing memory at 188138390 (DecompileCallback)  
+WARN  Decompiling 183c2c788, pcode error at 188138390: Could not follow disassembly flow into non-existing memory at 188138390 (DecompileCallback)  
+WARN  Decompiling 183cb3144, pcode error at 188141240: Could not follow disassembly flow into non-existing memory at 188141240 (DecompileCallback)  
+INFO  Packed database cache: /var/tmp/femboychik-ghidra/packed-db-cache (PackedDatabaseCache)  
+INFO  Applied data type archive: mac_osx (ApplyDataArchiveAnalyzer)  
+INFO  -----------------------------------------------------
+    AARCH64 ELF PLT Thunks                     0.000 secs
+    ASCII Strings                              2.652 secs
+    Apply Data Archives                       17.934 secs
+    Basic Constant Reference Analyzer         38.185 secs
+    CFStrings                                  0.226 secs
+    Call Convention ID                         0.094 secs
+    Call-Fixup Installer                       0.197 secs
+    Create Address Tables                      2.192 secs
+    Create Function                            0.581 secs
+    Data Reference                             1.495 secs
+    Decompiler Switch Analysis                61.626 secs
+    Demangler GNU                              2.539 secs
+    Demangler Swift                            0.088 secs
+    Disassemble                                3.287 secs
+    Disassemble Entry Points                   0.108 secs
+    Embedded Media                             0.231 secs
+    External Entry References                  0.000 secs
+    Function ID                                3.199 secs
+    Function Start Search                      0.510 secs
+    Function Start Search After Code           0.490 secs
+    Function Start Search After Data           0.447 secs
+    Function Start Search delayed - One Time   0.955 secs
+    Mach-O Function Starts                     0.220 secs
+    Non-Returning Functions - Discovered       5.809 secs
+    Non-Returning Functions - Known            0.051 secs
+    Objective-C Message Analyzer               0.114 secs
+    Objective-C Type Metadata Analyzer         0.106 secs
+    Reference                                  1.377 secs
+    Shared Return Calls                        1.831 secs
+    Stack                                     46.236 secs
+    Subroutine References                      1.257 secs
+    Subroutine References - One Time           0.002 secs
+    Swift Type Metadata Analyzer               0.774 secs
+-----------------------------------------------------
+     Total Time   194 secs
+-----------------------------------------------------
+ (AutoAnalysisManager)  
+INFO  REPORT: Analysis succeeded for file: file:///home/femboychik/work/pdf/CoreGraphics.27.2.fixed (HeadlessAnalyzer)  
+INFO  /CoreGraphics.27.2.fixed: file created (femboychik) (LocalFileSystem)  
+INFO  REPORT: Save succeeded for: /CoreGraphics.27.2.fixed (cg272:/CoreGraphics.27.2.fixed) (HeadlessAnalyzer)  
+INFO  REPORT: Import succeeded (HeadlessAnalyzer)  

@@ -1,0 +1,5 @@
+funcs 672 673
+identical 672 ratio 0.99926
+changed regions 1
+== insert A[423:423] B[423:424]
+   B 0xfffffff009a5a768 sz=32

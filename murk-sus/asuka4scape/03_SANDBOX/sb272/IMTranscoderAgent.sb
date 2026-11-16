@@ -1,0 +1,1038 @@
+(version 1)
+(%extends-builtin "baseline")
+(enable-profile-flag "common-rules")
+(enable-profile-flag "common-syscall-rules")
+(enable-profile-flag "common-apple-internal-rules")
+(enable-profile-flag "common-apple-signed-executable-rules")
+(enable-profile-flag "common-mach-lookups")
+(enable-profile-flag "common-sysctl-rules")
+(enable-profile-flag "common-pluginkit-support")
+(enable-profile-flag "generic-sandbox-extension-support")
+(enable-profile-flag "common-debugging-rules")
+(enable-profile-flag "common-device-access")
+(enable-profile-flag "common-preferences-rules")
+(enable-profile-flag "common-mobilegestalt-rules")
+(enable-profile-flag "common-containermanagerd-rules")
+(enable-profile-flag "common-system-logging-rules")
+(enable-profile-flag "common-managed-configuration-read-rules")
+(enable-profile-flag "common-exception-entitlement-rules")
+(enable-profile-flag "threatening-syscall-unix-policy-enforcement")
+
+;; (default) inherited from parent profile "baseline"
+(delegate default)
+
+(allow asr-parser-enter)
+
+(allow coalition-info)
+
+(allow consume-extension)
+
+(allow darwin-notification-post)
+
+(allow dynamic-code-generation)
+
+(allow file-clone)
+
+(allow file-graft)
+
+(allow file-issue-extension
+	(require-all
+		(extension-class "com.apple.app-sandbox.read")
+		(subpath "${HOME}/Library/Caches/com.apple.imtranscoding.IMTranscoderAgent")
+	)
+)
+(allow file-issue-extension
+	(require-all
+		(extension-class "com.apple.app-sandbox.read-write")
+		(subpath "${HOME}/Library/Caches/com.apple.imtranscoding.IMTranscoderAgent")
+	)
+)
+(allow file-issue-extension
+	(require-all
+		(extension-class "com.apple.mediaserverd.read-write")
+		(subpath "${HOME}/Library/Caches/com.apple.imtranscoding.IMTranscoderAgent")
+	)
+)
+(allow file-issue-extension
+	(require-all
+		(extension-class "com.apple.mediaserverd.read")
+		(subpath "${HOME}/Library/Caches/com.apple.imtranscoding.IMTranscoderAgent")
+	)
+)
+(allow file-issue-extension
+	(require-all
+		(extension-class "com.apple.app-sandbox.read")
+		(require-any
+			(subpath "/System/Cryptexes")
+			(subpath "/private/preboot/Cryptexes")
+		)
+	)
+)
+(allow file-issue-extension
+	(require-all
+		(extension-class "com.apple.aned.read-only")
+		(require-any
+			(require-all
+				(extension-class "com.apple.aned.read-only")
+				(extension "com.apple.assets.read")
+				(require-any
+					(subpath "${HOME}/Library/Assets")
+					(subpath "/private/var/MobileAsset")
+				)
+			)
+			(require-any
+				(subpath "${PROCESS_TEMP_DIR}/com.apple.messages")
+				(subpath "/private/var/tmp/com.apple.messages")
+			)
+			(subpath "${HOME}/Library/Caches/com.apple.MobileSMS")
+			(subpath "${HOME}/Library/Caches/com.apple.imtranscoding.IMTranscoderAgent")
+		)
+	)
+)
+(deny file-issue-extension
+	(require-any
+		(literal "/System/Library/Caches/apticket.der")
+		(literal "/usr/standalone/firmware/apticket.der")
+		(subpath "/System/Library/Caches/com.apple.factorydata")
+		(subpath "/System/Library/Caches/com.apple.kernelcaches")
+		(subpath "/private/var/hardware/FactoryData")
+	)
+)
+
+(allow file-link)
+(deny file-link
+	(require-all
+		(subpath "${HOME}/Media")
+		(process-attribute is-apple-signed-executable)
+	)
+)
+
+(allow file-lock)
+
+(allow file-map-executable
+	(require-all
+		(extension "com.apple.sandbox.oopjit")
+		(subpath "/private/var/OOPJit")
+	)
+)
+(allow file-map-executable
+	(require-any
+		(subpath "/System/Cryptexes")
+		(subpath "/private/preboot/Cryptexes")
+	)
+)
+(allow file-map-executable
+	(require-all
+		(system-attribute carrier-build)
+		(require-any
+			(subpath "/AppleInternal")
+			(subpath "/usr/local/lib")
+		)
+	)
+)
+
+(allow file-read*
+	(require-all
+		(subpath "/private/var")
+		(subpath "${FRONT_USER_HOME}")
+		(require-any
+			(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Library/Carrier Bundles/.*/carrier\.plist$")
+			(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Library/Carrier Bundles/.*\.png$")
+		)
+	)
+)
+(allow file-read*
+	(require-all
+		(extension "com.apple.assets.read")
+		(require-any
+			(subpath "${HOME}/Library/Assets")
+			(subpath "/private/var/MobileAsset")
+		)
+	)
+)
+(allow file-read*
+	(require-all
+		(subpath "/System/Library/Carrier Bundles")
+		(require-any
+			(regex #"^/System/Library/Carrier Bundles/.*/carrier\.plist$")
+			(regex #"^/System/Library/Carrier Bundles/.*\.png$")
+		)
+	)
+)
+(allow file-read*
+	(require-all
+		(extension "com.apple.sandbox.oopjit")
+		(subpath "/private/var/OOPJit")
+	)
+)
+(allow file-read*
+	(require-all
+		(subpath "/private/var")
+		(subpath "${FRONT_USER_HOME}")
+		(require-any
+			(regex #"(((((^/private/var/(mobile|euser[0-9]+)/Library/Carrier Bundles/.*\.bundle($|/Info\.plist$)|^/private/var/(mobile|euser[0-9]+)/Library/Carrier Bundles/.*\.bundle/([^/])*\.lproj(/|$))|^/private/var/[-0-9A-F]+/Library/Carrier Bundles/.*\.bundle($|/Info\.plist$))|^/private/var/[-0-9A-F]+/Library/Carrier Bundles/.*\.bundle/([^/])*\.lproj(/|$))|^/private/var/Users/[^/]+/Library/Carrier Bundles/.*\.bundle($|/Info\.plist$))|^/private/var/Users/[^/]+/Library/Carrier Bundles/.*\.bundle/([^/])*\.lproj(/|$))")
+			(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Library/Carrier Bundles/.*/carrier\.plist$")
+			(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Library/Carrier Bundles/.*\.png$")
+			(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Library/DeviceRegistry/[-0-9A-Z]+/GeoServices($|/)")
+		)
+	)
+)
+(allow file-read*
+	(require-all
+		(vnode-type DIRECTORY REGULAR-FILE)
+		(require-any
+			(subpath "${HOME}/Library/Caches/com.apple.nsurlsessiond/Downloads/com.apple.MobileSMS")
+			(subpath "${HOME}/Library/Caches/com.apple.nsurlsessiond/Downloads/com.apple.imtranscoding.IMTranscoderAgent")
+		)
+	)
+)
+(allow file-read*
+	(require-all
+		(process-attribute is-apple-signed-executable)
+		(require-any
+			(literal "/System")
+			(literal "/private")
+			(literal "/private/preboot")
+		)
+	)
+)
+(allow file-read*
+	(require-all
+		(system-attribute carrier-build)
+		(require-any
+			(subpath "/AppleInternal")
+			(subpath "/usr/local/lib")
+		)
+	)
+)
+(allow file-read*
+	(require-any
+		(extension "com.apple.im.transcode")
+		(literal "${FRONT_USER_HOME}/Library/ConfigurationProfiles/EffectiveUserSettings.plist")
+		(literal "${FRONT_USER_HOME}/Library/Preferences/com.apple.carrier.plist")
+		(literal "${FRONT_USER_HOME}/Library/UserConfigurationProfiles/EffectiveUserSettings.plist")
+		(literal "${HOME}/Library/Caches/Checkpoint.plist")
+		(literal "/private/preboot/cryptex1/current/RestoreVersion.plist")
+		(literal "/private/preboot/cryptex1/current/SystemVersion.plist")
+		(literal "/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.configurationprofiles/Library/ConfigurationProfiles/EffectiveUserSettings.plist")
+		(subpath "${FRONT_USER_HOME}/Library/Caches/GeoServices")
+		(subpath "${FRONT_USER_HOME}/Library/Carrier Bundles/Overlay")
+		(subpath "${HOME}/Library/Caches/com.apple.MobileSMS")
+		(subpath "${HOME}/Library/Caches/com.apple.avatar")
+		(subpath "${HOME}/Library/Caches/com.apple.imtranscoding.IMTranscoderAgent")
+		(subpath "${HOME}/Library/Fonts")
+		(subpath "${HOME}/Library/SMS/Attachments")
+		(subpath "${HOME}/Media")
+		(subpath "${PROCESS_TEMP_DIR}/com.apple.messages")
+		(subpath "/")
+		(subpath "/System/Cryptexes")
+		(subpath "/private/preboot/Cryptexes")
+		(subpath "/private/var/containers/Data/System/com.apple.geod")
+		(subpath "/private/var/tmp/com.apple.messages")
+	)
+)
+(deny file-read*
+	(require-any
+		(literal "${ANY_USER_HOME}/Library/Caches/GeoServices/tguid.bin")
+		(literal "/System/Library/Caches/apticket.der")
+		(literal "/usr/sbin/fairplayd")
+		(literal "/usr/standalone/firmware/apticket.der")
+		(subpath "${HOME}/Library/FairPlay")
+		(subpath "/System/Library/Caches/com.apple.factorydata")
+		(subpath "/System/Library/Caches/com.apple.kernelcaches")
+		(subpath "/private/var/hardware/FactoryData")
+	)
+)
+
+(allow file-read-metadata
+	(require-all
+		(subpath "/private/var")
+		(subpath "${FRONT_USER_HOME}")
+		(require-any
+			(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Library/Carrier Bundles/.*/carrier\.plist$")
+			(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Library/Carrier Bundles/.*\.png$")
+		)
+	)
+)
+(allow file-read-metadata
+	(require-all
+		(extension "com.apple.assets.read")
+		(require-any
+			(subpath "${HOME}/Library/Assets")
+			(subpath "/private/var/MobileAsset")
+		)
+	)
+)
+(allow file-read-metadata
+	(require-all
+		(subpath "/System/Library/Carrier Bundles")
+		(require-any
+			(regex #"^/System/Library/Carrier Bundles/.*/carrier\.plist$")
+			(regex #"^/System/Library/Carrier Bundles/.*\.png$")
+		)
+	)
+)
+(allow file-read-metadata
+	(require-all
+		(extension "com.apple.sandbox.oopjit")
+		(subpath "/private/var/OOPJit")
+	)
+)
+(allow file-read-metadata
+	(require-all
+		(subpath "/private/var")
+		(subpath "${FRONT_USER_HOME}")
+		(require-any
+			(regex #"(((((^/private/var/(mobile|euser[0-9]+)/Library/Carrier Bundles/.*\.bundle($|/Info\.plist$)|^/private/var/(mobile|euser[0-9]+)/Library/Carrier Bundles/.*\.bundle/([^/])*\.lproj(/|$))|^/private/var/[-0-9A-F]+/Library/Carrier Bundles/.*\.bundle($|/Info\.plist$))|^/private/var/[-0-9A-F]+/Library/Carrier Bundles/.*\.bundle/([^/])*\.lproj(/|$))|^/private/var/Users/[^/]+/Library/Carrier Bundles/.*\.bundle($|/Info\.plist$))|^/private/var/Users/[^/]+/Library/Carrier Bundles/.*\.bundle/([^/])*\.lproj(/|$))")
+			(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Library/Carrier Bundles/.*/carrier\.plist$")
+			(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Library/Carrier Bundles/.*\.png$")
+			(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Library/DeviceRegistry/[-0-9A-Z]+/GeoServices($|/)")
+		)
+	)
+)
+(allow file-read-metadata
+	(require-all
+		(vnode-type DIRECTORY REGULAR-FILE)
+		(require-any
+			(subpath "${HOME}/Library/Caches/com.apple.nsurlsessiond/Downloads/com.apple.MobileSMS")
+			(subpath "${HOME}/Library/Caches/com.apple.nsurlsessiond/Downloads/com.apple.imtranscoding.IMTranscoderAgent")
+		)
+	)
+)
+(allow file-read-metadata
+	(require-all
+		(process-attribute is-apple-signed-executable)
+		(require-any
+			(literal "${FRONT_USER_HOME}/Library/DeviceRegistry")
+			(require-all
+				(subpath "/private/var")
+				(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Library/DeviceRegistry/[-0-9A-Z]+$")
+				(subpath "${FRONT_USER_HOME}")
+			)
+		)
+	)
+)
+(allow file-read-metadata
+	(require-all
+		(process-attribute is-apple-signed-executable)
+		(require-any
+			(literal "/System")
+			(literal "/private")
+			(literal "/private/preboot")
+		)
+	)
+)
+(allow file-read-metadata
+	(require-all
+		(system-attribute carrier-build)
+		(require-any
+			(subpath "/AppleInternal")
+			(subpath "/usr/local/lib")
+		)
+	)
+)
+(allow file-read-metadata
+	(require-any
+		(extension "com.apple.im.transcode")
+		(literal "${FRONT_USER_HOME}/Library/ConfigurationProfiles/EffectiveUserSettings.plist")
+		(literal "${FRONT_USER_HOME}/Library/Preferences/com.apple.carrier.plist")
+		(literal "${FRONT_USER_HOME}/Library/UserConfigurationProfiles/EffectiveUserSettings.plist")
+		(literal "${HOME}")
+		(literal "${HOME}/Library/Caches")
+		(literal "${HOME}/Library/Caches/Checkpoint.plist")
+		(literal "${HOME}/Library/PPTDevice")
+		(literal "${HOME}/Library/Preferences")
+		(literal "/private/preboot/cryptex1/current/RestoreVersion.plist")
+		(literal "/private/preboot/cryptex1/current/SystemVersion.plist")
+		(literal "/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.configurationprofiles/Library/ConfigurationProfiles/EffectiveUserSettings.plist")
+		(subpath "${FRONT_USER_HOME}/Library/Caches/GeoServices")
+		(subpath "${FRONT_USER_HOME}/Library/Carrier Bundles")
+		(subpath "${FRONT_USER_HOME}/Library/Carrier Bundles/Overlay")
+		(subpath "${HOME}/Library/Caches/com.apple.MobileSMS")
+		(subpath "${HOME}/Library/Caches/com.apple.avatar")
+		(subpath "${HOME}/Library/Caches/com.apple.imtranscoding.IMTranscoderAgent")
+		(subpath "${HOME}/Library/Fonts")
+		(subpath "${HOME}/Library/SMS/Attachments")
+		(subpath "${HOME}/Media")
+		(subpath "${PROCESS_TEMP_DIR}/com.apple.messages")
+		(subpath "/")
+		(subpath "/System/Cryptexes")
+		(subpath "/private/preboot/Cryptexes")
+		(subpath "/private/var/containers/Data/System/com.apple.geod")
+		(subpath "/private/var/tmp/com.apple.messages")
+	)
+)
+(deny file-read-metadata
+	(require-any
+		(literal "${ANY_USER_HOME}/Library/Caches/GeoServices/tguid.bin")
+		(literal "/System/Library/Caches/apticket.der")
+		(literal "/usr/sbin/fairplayd")
+		(literal "/usr/standalone/firmware/apticket.der")
+		(subpath "${HOME}/Library/FairPlay")
+		(subpath "/System/Library/Caches/com.apple.factorydata")
+		(subpath "/System/Library/Caches/com.apple.kernelcaches")
+		(subpath "/private/var/hardware/FactoryData")
+	)
+)
+
+(allow file-test-existence)
+
+(allow file-ungraft)
+
+(allow file-write*
+	(require-all
+		(vnode-type DIRECTORY REGULAR-FILE)
+		(require-any
+			(subpath "${HOME}/Library/Caches/com.apple.nsurlsessiond/Downloads/com.apple.MobileSMS")
+			(subpath "${HOME}/Library/Caches/com.apple.nsurlsessiond/Downloads/com.apple.imtranscoding.IMTranscoderAgent")
+		)
+	)
+)
+(allow file-write*
+	(require-any
+		(extension "com.apple.im.transcode")
+		(subpath "${HOME}/Library/Caches/com.apple.MobileSMS")
+		(subpath "${HOME}/Library/Caches/com.apple.avatar")
+		(subpath "${HOME}/Library/Caches/com.apple.imtranscoding.IMTranscoderAgent")
+		(subpath "${HOME}/Library/SMS/Attachments")
+		(subpath "${HOME}/Media")
+		(subpath "${PROCESS_TEMP_DIR}/com.apple.messages")
+		(subpath "/private/var/tmp/com.apple.messages")
+	)
+)
+(deny file-write*
+	(literal "${ANY_USER_HOME}/Library/Caches/GeoServices/tguid.bin")
+)
+
+(allow file-write-create
+	(require-all
+		(vnode-type DIRECTORY REGULAR-FILE)
+		(require-any
+			(subpath "${HOME}/Library/Caches/com.apple.nsurlsessiond/Downloads/com.apple.MobileSMS")
+			(subpath "${HOME}/Library/Caches/com.apple.nsurlsessiond/Downloads/com.apple.imtranscoding.IMTranscoderAgent")
+		)
+	)
+)
+(allow file-write-create
+	(require-all
+		(vnode-type DIRECTORY)
+		(require-any
+			(literal "${HOME}/Library/Caches")
+			(require-all
+				(process-attribute is-apple-signed-executable)
+				(require-any
+					(literal "${FRONT_USER_HOME}/Library/DeviceRegistry")
+					(require-all
+						(subpath "/private/var")
+						(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Library/DeviceRegistry/[-0-9A-Z]+$")
+						(subpath "${FRONT_USER_HOME}")
+					)
+				)
+			)
+		)
+	)
+)
+(allow file-write-create
+	(require-any
+		(extension "com.apple.im.transcode")
+		(subpath "${HOME}/Library/Caches/com.apple.MobileSMS")
+		(subpath "${HOME}/Library/Caches/com.apple.avatar")
+		(subpath "${HOME}/Library/Caches/com.apple.imtranscoding.IMTranscoderAgent")
+		(subpath "${HOME}/Library/SMS/Attachments")
+		(subpath "${HOME}/Media")
+		(subpath "${PROCESS_TEMP_DIR}/com.apple.messages")
+		(subpath "/private/var/tmp/com.apple.messages")
+	)
+)
+(deny file-write-create
+	(literal "${ANY_USER_HOME}/Library/Caches/GeoServices/tguid.bin")
+)
+
+(deny file-write-setugid)
+
+(allow file-write-unlink
+	(require-all
+		(extension "com.apple.sandbox.oopjit")
+		(subpath "/private/var/OOPJit")
+	)
+)
+(allow file-write-unlink
+	(require-all
+		(vnode-type DIRECTORY REGULAR-FILE)
+		(require-any
+			(subpath "${HOME}/Library/Caches/com.apple.nsurlsessiond/Downloads/com.apple.MobileSMS")
+			(subpath "${HOME}/Library/Caches/com.apple.nsurlsessiond/Downloads/com.apple.imtranscoding.IMTranscoderAgent")
+		)
+	)
+)
+(allow file-write-unlink
+	(require-any
+		(extension "com.apple.im.transcode")
+		(subpath "${HOME}/Library/Caches/com.apple.MobileSMS")
+		(subpath "${HOME}/Library/Caches/com.apple.avatar")
+		(subpath "${HOME}/Library/Caches/com.apple.imtranscoding.IMTranscoderAgent")
+		(subpath "${HOME}/Library/SMS/Attachments")
+		(subpath "${HOME}/Media")
+		(subpath "${PROCESS_TEMP_DIR}/com.apple.messages")
+		(subpath "/private/var/tmp/com.apple.messages")
+	)
+)
+(deny file-write-unlink
+	(literal "${ANY_USER_HOME}/Library/Caches/GeoServices/tguid.bin")
+)
+
+(allow fs-info)
+
+(allow fs-quota*)
+
+(allow fs-snapshot-mount)
+
+(allow iokit-get-properties)
+
+(allow iokit-open-user-client
+	(require-all
+		(system-attribute virtual-device)
+		(require-any
+			(iokit-registry-entry-class "AppleVideoToolboxParavirtualizationUserClient")
+			(iokit-registry-entry-class "IOSurfaceAcceleratorParavirtClient")
+		)
+	)
+)
+(allow iokit-open-user-client
+	(require-any
+		(extension "com.apple.security.exception.iokit-user-client-class")
+		(iokit-connection "IOGPU")
+		(iokit-connection "IOGraphicsAccelerator2")
+		(iokit-registry-entry-class "AGXCommandQueue")
+		(iokit-registry-entry-class "AGXDevice")
+		(iokit-registry-entry-class "AGXSharedUserClient")
+		(iokit-registry-entry-class "AppleJPEGDriverUserClient")
+		(iokit-registry-entry-class "AppleKeyStoreUserClient")
+		(iokit-registry-entry-class "IOAccelContext")
+		(iokit-registry-entry-class "IOAccelContext2")
+		(iokit-registry-entry-class "IOAccelDevice")
+		(iokit-registry-entry-class "IOAccelDevice2")
+		(iokit-registry-entry-class "IOAccelSharedUserClient")
+		(iokit-registry-entry-class "IOAccelSharedUserClient2")
+		(iokit-registry-entry-class "IOAccelSubmitter2")
+		(iokit-registry-entry-class "IOGPUDeviceUserClient")
+		(iokit-registry-entry-class "IOMobileFramebufferUserClient")
+		(iokit-registry-entry-class "IOSurfaceAcceleratorClient")
+		(iokit-registry-entry-class "IOSurfaceRootUserClient")
+		(iokit-registry-entry-class "IOSurfaceSendRight")
+	)
+)
+
+(allow iokit-open-service)
+
+(allow ipc-posix-shm-read-data
+	(require-all
+		(ipc-posix-name "apple.shm.notification_center")
+		(require-not (%entitlement-is-bool-true "com.apple.security.on-demand-install-capable"))
+	)
+)
+
+(allow isp-command-send)
+
+(deny job-creation)
+
+(deny lsopen
+	(profile-flag "deny-lsopen")
+)
+
+(allow mach-bootstrap)
+
+(allow mach-cross-domain-lookup)
+
+(allow mach-derive-port)
+
+(allow mach-lookup
+	(require-all
+		(global-name "com.apple.system.notification_center")
+		(%entitlement-is-bool-true "com.apple.security.on-demand-install-capable")
+	)
+)
+(allow mach-lookup
+	(require-any
+		(extension "com.apple.security.exception.mach-lookup.global-name")
+		(extension "com.apple.security.exception.mach-lookup.local-name")
+		(global-name "com.apple.CARenderServer")
+		(global-name "com.apple.PersistentURLTranslator.Gatekeeper")
+		(global-name "com.apple.accountsd.accountmanager")
+		(global-name "com.apple.airplay.apsynccontroller.xpc")
+		(global-name "com.apple.airplay.endpoint.xpc")
+		(global-name "com.apple.assetsd.changehub")
+		(global-name "com.apple.audio.AudioComponentRegistrar")
+		(global-name "com.apple.audio.AudioSession")
+		(global-name "com.apple.audioanalyticsd")
+		(global-name "com.apple.backboard.hid-services.xpc")
+		(global-name "com.apple.backboard.hid.services")
+		(global-name "com.apple.commcenter.coretelephony.xpc")
+		(global-name "com.apple.commcenter.xpc")
+		(global-name "com.apple.coremedia.admin")
+		(global-name "com.apple.coremedia.bytestream.xpc")
+		(global-name "com.apple.coremedia.capturesession")
+		(global-name "com.apple.coremedia.capturesource")
+		(global-name "com.apple.coremedia.compressionsession")
+		(global-name "com.apple.coremedia.decompressionsession")
+		(global-name "com.apple.coremedia.endpoint.xpc")
+		(global-name "com.apple.coremedia.endpointremotecontrolsession.xpc")
+		(global-name "com.apple.coremedia.externalstoragedevicemanager.xpc")
+		(global-name "com.apple.coremedia.externalsyncdevicemanager.xpc")
+		(global-name "com.apple.coremedia.figcontentkeyboss.xpc")
+		(global-name "com.apple.coremedia.mediaparserd.formatreader.xpc")
+		(global-name "com.apple.coremedia.mediaparserd.jsonparser.xpc")
+		(global-name "com.apple.coremedia.mediaparserd.mutablemovie.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.asset.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.assetcacheinspector.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.assetimagegenerator.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.audiodeviceclock.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.audioprocessingtap.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.bytestream.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.cpeprotector.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.customurlloader.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.figcontentkeyboss.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.figcontentkeysession.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.figcpecryptor.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.figmetriceventtimeline.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.formatreader.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.mutablecomposition.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.mutablemovie.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.player.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.remaker.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.samplebufferaudiorenderer.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.samplebufferrendersynchronizer.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.samplegenerator.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.sandboxserver.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.videocompositor.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.videotarget.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.visualcontext.xpc")
+		(global-name "com.apple.coremedia.remotequeue")
+		(global-name "com.apple.coremedia.routediscoverer.xpc")
+		(global-name "com.apple.coremedia.routingcontext.xpc")
+		(global-name "com.apple.coremedia.routingsessionmanager.xpc")
+		(global-name "com.apple.coremedia.sandboxserver")
+		(global-name "com.apple.coremedia.sandboxserver.xpc")
+		(global-name "com.apple.coremedia.sts")
+		(global-name "com.apple.coremedia.systemcontroller.xpc")
+		(global-name "com.apple.coremedia.videocodecd.compressionsession")
+		(global-name "com.apple.coremedia.videocodecd.compressionsession.xpc")
+		(global-name "com.apple.coremedia.videocodecd.decompressionsession")
+		(global-name "com.apple.coremedia.videocodecd.decompressionsession.xpc")
+		(global-name "com.apple.coremedia.volumecontroller.xpc")
+		(global-name "com.apple.cvmsServ")
+		(global-name "com.apple.frontboard.systemappservices")
+		(global-name "com.apple.geoanalyticsd")
+		(global-name "com.apple.geod")
+		(global-name "com.apple.gpumemd.source")
+		(global-name "com.apple.itunescloudd.xpc")
+		(global-name "com.apple.itunesstored.xpc")
+		(global-name "com.apple.locationd.registration")
+		(global-name "com.apple.locationd.spi")
+		(global-name "com.apple.locationd.synchronous")
+		(global-name "com.apple.lsd.advertisingidentifiers")
+		(global-name "com.apple.lsd.openurl")
+		(global-name "com.apple.marco")
+		(global-name "com.apple.mediaexperience.endpoint.xpc")
+		(global-name "com.apple.mediaexperience.systemmediacastingcontroller.xpc")
+		(global-name "com.apple.mediaserverd")
+		(global-name "com.apple.mobileasset.autoasset")
+		(global-name "com.apple.mobileassetd")
+		(global-name "com.apple.mobileassetd.v2")
+		(global-name "com.apple.mobilecheckpoint.checkpointd")
+		(global-name "com.apple.nano.nanoregistry.paireddeviceregistry")
+		(global-name "com.apple.nanomaps.xpc.GeoServices")
+		(global-name "com.apple.nfcd.hwmanager")
+		(global-name "com.apple.pairedsyncd.syncstate")
+		(global-name "com.apple.pegasus")
+		(global-name "com.apple.photos.service")
+		(global-name "com.apple.privacyaccountingd")
+		(global-name "com.apple.springboard.backgroundappservices")
+		(global-name "com.apple.tccd")
+		(global-name "com.apple.timesync.expositor")
+		(global-name "com.apple.timesync.manager")
+		(global-name "com.apple.timesync.ptp.manager")
+		(global-name "com.apple.trustd")
+		(xpc-service-name "*")
+		(xpc-service-name "com.apple.AGXCompilerService*")
+		(xpc-service-name "com.apple.ImageIOXPCService")
+		(xpc-service-name "com.apple.MTLCompilerService")
+		(xpc-service-name "com.apple.coremedia.compressionsession.xpc")
+		(xpc-service-name "com.apple.coremedia.decompressionsession.xpc")
+	)
+)
+(deny mach-lookup
+	(with send-signal 9)
+	(xpc-service-name "com.apple.WebKit.*")
+)
+(deny mach-lookup
+	(xpc-service-name "com.apple.CoreGraphics.CGPDFService")
+)
+
+(allow mach-register
+	(extension "com.apple.security.exception.mach-register.global-name")
+)
+
+(allow mach-task-exception-port-set)
+
+(allow mach-task-inspect
+	(target self)
+)
+
+(allow mach-task-name
+	(target self)
+)
+
+(allow mach-task-read
+	(target self)
+)
+
+(allow mach-task-special-port*)
+
+(allow necp-client-open)
+
+(allow nvram*)
+
+(allow process-codesigning)
+
+(allow process-info*)
+
+(allow process-iopolicy*)
+
+(allow sandbox-check)
+
+(allow signal
+	(target self)
+)
+
+(allow socket-ioctl)
+
+(allow socket-option-get)
+
+(allow socket-option-set)
+
+(allow syscall-unix
+	(syscall-number
+		SYS_exit
+		SYS_read
+		SYS_write
+		SYS_open
+		SYS_close
+		SYS_link
+		SYS_unlink
+		SYS_chmod
+		SYS_chown
+		SYS_getfsstat
+		SYS_getpid
+		SYS_getuid
+		SYS_geteuid
+		SYS_sendmsg
+		SYS_access
+		SYS_chflags
+		SYS_fchflags
+		SYS_kill
+		SYS_crossarch_trap
+		SYS_dup
+		SYS_getegid
+		SYS_sigaction
+		SYS_getgid
+		SYS_sigprocmask
+		SYS_sigpending
+		SYS_sigaltstack
+		SYS_ioctl
+		SYS_readlink
+		SYS_umask
+		SYS_msync
+		SYS_munmap
+		SYS_mprotect
+		SYS_madvise
+		SYS_dup2
+		SYS_fcntl
+		SYS_fsync
+		SYS_socket
+		SYS_connect
+		SYS_setsockopt
+		SYS_sigsuspend
+		SYS_gettimeofday
+		SYS_getrusage
+		SYS_getsockopt
+		SYS_readv
+		SYS_writev
+		SYS_fchown
+		SYS_fchmod
+		SYS_rename
+		SYS_flock
+		SYS_sendto
+		SYS_mkdir
+		SYS_rmdir
+		SYS_utimes
+		SYS_futimes
+		SYS_pread
+		SYS_pwrite
+		SYS_statfs
+		SYS_fstatfs
+		SYS_quotactl
+		SYS_csops
+		SYS_csops_audittoken
+		SYS_kdebug_typefilter
+		SYS_kdebug_trace_string
+		SYS_kdebug_trace64
+		SYS_kdebug_trace
+		SYS_sigreturn
+		SYS_stat
+		SYS_fstat
+		SYS_lstat
+		SYS_pathconf
+		SYS_fpathconf
+		SYS_getrlimit
+		SYS_setrlimit
+		SYS_mmap
+		SYS_lseek
+		SYS_ftruncate
+		SYS_sysctl
+		SYS_getumask
+		SYS_open_dprotected_np
+		SYS_openat_dprotected_np
+		SYS_getattrlist
+		SYS_setattrlist
+		SYS_fgetattrlist
+		SYS_fsetattrlist
+		SYS_getxattr
+		SYS_fgetxattr
+		SYS_setxattr
+		SYS_fsetxattr
+		SYS_removexattr
+		SYS_fremovexattr
+		SYS_listxattr
+		SYS_flistxattr
+		SYS_shm_open
+		SYS_sysctlbyname
+		SYS_stat_extended
+		SYS_lstat_extended
+		SYS_fstat_extended
+		SYS_chmod_extended
+		SYS_fchmod_extended
+		SYS_gettid
+		SYS_mkdir_extended
+		SYS_shared_region_check_np
+		SYS_psynch_rw_longrdlock
+		SYS_psynch_rw_yieldwrlock
+		SYS_psynch_rw_downgrade
+		SYS_psynch_rw_upgrade
+		SYS_psynch_mutexwait
+		SYS_psynch_mutexdrop
+		SYS_psynch_cvbroad
+		SYS_psynch_cvsignal
+		SYS_psynch_cvwait
+		SYS_psynch_rw_rdlock
+		SYS_psynch_rw_wrlock
+		SYS_psynch_rw_unlock
+		SYS_psynch_rw_unlock2
+		SYS_psynch_cvclrprepost
+		SYS_issetugid
+		SYS___pthread_kill
+		SYS___pthread_sigmask
+		SYS___sigwait
+		SYS___disable_threadsignal
+		SYS___pthread_markcancel
+		SYS___pthread_canceled
+		SYS___semwait_signal
+		SYS_proc_info
+		SYS_stat64
+		SYS_fstat64
+		SYS_lstat64
+		SYS_stat64_extended
+		SYS_lstat64_extended
+		SYS_fstat64_extended
+		SYS_getdirentries64
+		SYS_statfs64
+		SYS_fstatfs64
+		SYS_getfsstat64
+		SYS___pthread_chdir
+		SYS___pthread_fchdir
+		SYS_bsdthread_create
+		SYS_bsdthread_terminate
+		SYS_kqueue
+		SYS_kevent
+		SYS_lchown
+		SYS_bsdthread_register
+		SYS_workq_open
+		SYS_workq_kernreturn
+		SYS_kevent64
+		SYS_thread_selfid
+		SYS_kevent_qos
+		SYS_kevent_id
+		SYS___mac_syscall
+		SYS_read_nocancel
+		SYS_write_nocancel
+		SYS_open_nocancel
+		SYS_close_nocancel
+		SYS_sendmsg_nocancel
+		SYS_fcntl_nocancel
+		SYS_sigsuspend_nocancel
+		SYS_readv_nocancel
+		SYS_writev_nocancel
+		SYS_sendto_nocancel
+		SYS_pread_nocancel
+		SYS_pwrite_nocancel
+		SYS___sigwait_nocancel
+		SYS___semwait_signal_nocancel
+		SYS_fsgetpath
+		SYS_fileport_makefd
+		SYS_memorystatus_control
+		SYS_guarded_open_np
+		SYS_guarded_close_np
+		SYS_guarded_kqueue_np
+		SYS_change_fdguard_np
+		SYS_proc_rlimit_control
+		SYS_getattrlistbulk
+		SYS_clonefileat
+		SYS_openat
+		SYS_openat_nocancel
+		SYS_renameat
+		SYS_faccessat
+		SYS_fchmodat
+		SYS_fchownat
+		SYS_fstatat
+		SYS_fstatat64
+		SYS_linkat
+		SYS_unlinkat
+		SYS_mkdirat
+		SYS_bsdthread_ctl
+		SYS_guarded_open_dprotected_np
+		SYS_renameatx_np
+		SYS_persona
+		SYS_mach_eventlink_signal_wait_until
+		SYS_getentropy
+		SYS_necp_open
+		SYS_necp_client_action
+		SYS___channel_open
+		SYS___channel_get_info
+		SYS___channel_sync
+		SYS___channel_get_opt
+		SYS___channel_set_opt
+		SYS_ulock_wait
+		SYS_ulock_wake
+		SYS_fclonefileat
+		SYS_terminate_with_payload
+		SYS_abort_with_payload
+		SYS_setattrlistat
+		SYS_os_fault_with_payload
+		SYS_kqueue_workloop_ctl
+		SYS_memorystatus_available_memory
+		SYS_objc_bp_assist_cfg_np
+		SYS_shared_region_map_and_slide_2_np
+		SYS_preadv
+		SYS_pwritev
+		SYS_preadv_nocancel
+		SYS_pwritev_nocancel
+		SYS_ulock_wait2
+		SYS_proc_info_extended_id
+		SYS_map_with_linking_np
+		SYS_freadlink)
+)
+
+(allow syscall-mach)
+
+(allow syscall-mig)
+
+(allow sysctl-read
+	(require-all
+		(sysctl-name "kern.bootsessionuuid")
+		(signing-identifier "com.apple.*")
+	)
+)
+
+(allow system-fcntl)
+
+(deny system-kas-info)
+
+(allow system-mac-syscall)
+
+(allow system-memorystatus-control)
+
+(allow system-necp-client-action)
+
+(allow system-privilege)
+
+(allow user-preference-read
+	(require-all
+		(preference-domain "com.apple.itunesstored")
+		(process-attribute is-apple-signed-executable)
+		(require-not (%entitlement-is-bool-true "com.apple.itunesstored.private"))
+	)
+)
+(allow user-preference-read
+	(require-any
+		(preference-domain "com.apple.AppSupport")
+		(preference-domain "com.apple.ET")
+		(preference-domain "com.apple.GEO")
+		(preference-domain "com.apple.Metal")
+		(preference-domain "com.apple.MobileAsset")
+		(preference-domain "com.apple.MobileSMS")
+		(preference-domain "com.apple.NanoRegistry")
+		(preference-domain "com.apple.UIKit")
+		(preference-domain "com.apple.avfoundation")
+		(preference-domain "com.apple.carrier")
+		(preference-domain "com.apple.coreaudio")
+		(preference-domain "com.apple.coremedia")
+		(preference-domain "com.apple.corevideo")
+		(preference-domain "com.apple.demo-settings")
+		(preference-domain "com.apple.imtranscoding.IMTranscoderAgent")
+		(preference-domain "com.apple.iokit.IOMobileGraphicsFamily")
+		(preference-domain "com.apple.locationd")
+		(preference-domain "com.apple.logging")
+		(preference-domain "com.apple.marco")
+		(preference-domain "com.apple.mms_override")
+		(preference-domain "com.apple.mobileipod")
+		(preference-domain "com.apple.mobileslideshow")
+		(preference-domain "com.apple.opengl")
+		(preference-domain "com.apple.pairedsync")
+		(preference-domain "com.apple.passd")
+	)
+)
+
+(allow managed-preference-read
+	(require-all
+		(preference-domain "com.apple.itunesstored")
+		(process-attribute is-apple-signed-executable)
+		(require-not (%entitlement-is-bool-true "com.apple.itunesstored.private"))
+	)
+)
+(allow managed-preference-read
+	(require-any
+		(preference-domain "com.apple.AppSupport")
+		(preference-domain "com.apple.ET")
+		(preference-domain "com.apple.GEO")
+		(preference-domain "com.apple.Metal")
+		(preference-domain "com.apple.MobileAsset")
+		(preference-domain "com.apple.MobileSMS")
+		(preference-domain "com.apple.NanoRegistry")
+		(preference-domain "com.apple.UIKit")
+		(preference-domain "com.apple.avfoundation")
+		(preference-domain "com.apple.carrier")
+		(preference-domain "com.apple.coreaudio")
+		(preference-domain "com.apple.coremedia")
+		(preference-domain "com.apple.corevideo")
+		(preference-domain "com.apple.demo-settings")
+		(preference-domain "com.apple.imtranscoding.IMTranscoderAgent")
+		(preference-domain "com.apple.iokit.IOMobileGraphicsFamily")
+		(preference-domain "com.apple.locationd")
+		(preference-domain "com.apple.logging")
+		(preference-domain "com.apple.marco")
+		(preference-domain "com.apple.mms_override")
+		(preference-domain "com.apple.mobileipod")
+		(preference-domain "com.apple.mobileslideshow")
+		(preference-domain "com.apple.opengl")
+		(preference-domain "com.apple.pairedsync")
+		(preference-domain "com.apple.passd")
+	)
+)
+
+(allow user-preference-write
+	(preference-domain "com.apple.imtranscoding.IMTranscoderAgent")
+)
+
+(allow exception-entitlement)
+
+(allow process-exec-update-label)

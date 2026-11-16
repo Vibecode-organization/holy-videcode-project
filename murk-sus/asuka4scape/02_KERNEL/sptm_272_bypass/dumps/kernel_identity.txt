@@ -1,0 +1,21 @@
+Идентификация программы в присланном Ghidra-проекте
+====================================================
+
+Проект: /home/femboychik/Загрузки/AyuGram Desktop/Архив2/123.rep
+Программа: kernelcache.release.iphone16.decompressed
+Язык: AARCH64:LE:64:AppleSilicon
+__TEXT base: 0xfffffff007004000
+
+Строка версии (адрес 0xfffffff0070437d0):
+
+@(#)VERSION: Darwin Kernel Version 27.0.0: Tue Jul 14 21:26:37 PDT 2026;
+root:xnu-13432.0.94.502.2~2/RELEASE_ARM64_T8122
+
+==> Это iOS 27.0.0, SoC T8122 (A18 Pro).
+    НЕ 24B115 и НЕ T8110.
+
+Целевая сборка по заданию:
+  iOS 27.2 RC, build 24B115, iPhone14,7 (T8110), xnu-13432.42.3~28
+  Ядро: ~/work/rc115/24B115__iPhone14,7/kernelcache.release.iphone14b (67 239 936 B)
+  SPTM: ~/work/sptm_27.2_24B119.macho
+        sha256 a29fbc4f54c10888e25372a47410669b9857787adbee4feac3af37f15701d083

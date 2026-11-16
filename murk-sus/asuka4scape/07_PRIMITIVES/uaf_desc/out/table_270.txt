@@ -1,0 +1,61 @@
+### base27 @0xfffffff00805b530 count=60
+sel 0  fn=0xfffffff009bfc8e4  sIn=1  strIn=0xffffffff  sOut=0  strOut=0x000c68
+sel 1  fn=0xfffffff009bfcab4  sIn=1  strIn=0x000000  sOut=0  strOut=0x000000
+sel 2  fn=0xfffffff009bfcac4  sIn=0  strIn=0x00000c  sOut=0  strOut=0x000c68
+sel 3  fn=0xfffffff009bfcae0  sIn=0  strIn=0x00000c  sOut=0  strOut=0x000004
+sel 4  fn=0xfffffff009bfcafc  sIn=1  strIn=0x000000  sOut=0  strOut=0x000c68
+sel 5  fn=0xfffffff009bfcb10  sIn=2  strIn=0x000000  sOut=0  strOut=0x000000
+sel 6  fn=0xfffffff009bfcb24  sIn=0  strIn=0x000020  sOut=0  strOut=0x000c68
+sel 7  fn=0xfffffff009bfcb34  sIn=2  strIn=0x000000  sOut=0  strOut=0x000c68
+sel 8  fn=0xfffffff009bfcb4c  sIn=1  strIn=0x000000  sOut=1  strOut=0x000000
+sel 9  fn=0xfffffff009bfcb84  sIn=0  strIn=0xffffffff  sOut=0  strOut=0x000004
+sel10  fn=0xfffffff009bfcc9c  sIn=0  strIn=0xffffffff  sOut=0  strOut=0xffffffff
+sel11  fn=0xfffffff009bfceac  sIn=0  strIn=0xffffffff  sOut=0  strOut=0x000004
+sel12  fn=0xfffffff009bfcfc4  sIn=3  strIn=0x000000  sOut=0  strOut=0x000000
+sel13  fn=0xfffffff009bfcfdc  sIn=0  strIn=0x000000  sOut=0  strOut=0x000028
+sel14  fn=0xfffffff009bfd024  sIn=2  strIn=0x000000  sOut=0  strOut=0x000000
+sel15  fn=0xfffffff009bfd038  sIn=2  strIn=0x000000  sOut=0  strOut=0x000000
+sel16  fn=0xfffffff009bfd04c  sIn=1  strIn=0x000000  sOut=1  strOut=0x000000
+sel17  fn=0xfffffff009bfd0c4  sIn=0  strIn=0x000018  sOut=0  strOut=0x000000
+sel18  fn=0xfffffff009bfd0ec  sIn=0  strIn=0x000018  sOut=0  strOut=0x000000
+sel19  fn=0xfffffff009bfd104  sIn=0  strIn=0xffffffff  sOut=0  strOut=0x000000
+sel20  fn=0xfffffff009bfd180  sIn=2  strIn=0x000000  sOut=1  strOut=0x000000
+sel21  fn=0xfffffff009bfd1fc  sIn=4  strIn=0x000000  sOut=0  strOut=0x000000
+sel22  fn=0xfffffff009bfd284  sIn=2  strIn=0x000000  sOut=0  strOut=0x000000
+sel23  fn=0xfffffff009bfd2a0  sIn=1  strIn=0x000000  sOut=1  strOut=0x000000
+sel24  fn=0xfffffff009bfd318  sIn=0  strIn=0xffffffff  sOut=0  strOut=0x000000
+sel25  fn=0xfffffff009bfd428  sIn=1  strIn=0x000000  sOut=1  strOut=0x000000
+sel26  fn=0xfffffff009bfd4a0  sIn=0  strIn=0xffffffff  sOut=0  strOut=0xffffffff
+sel27  fn=0xfffffff009bfd6ac  sIn=0  strIn=0x0000a0  sOut=0  strOut=0x000000
+sel28  fn=0xfffffff009bfd6b8  sIn=1  strIn=0x000000  sOut=0  strOut=0x0000a0
+sel29  fn=0xfffffff009bfd6d4  sIn=2  strIn=0x000000  sOut=0  strOut=0x000000
+sel30  fn=0xfffffff009bfd6e4  sIn=1  strIn=0x000000  sOut=0  strOut=0xffffffff
+sel31  fn=0xfffffff009bfd7a0  sIn=3  strIn=0x000000  sOut=0  strOut=0x000000
+sel32  fn=0xfffffff009bfd7b8  sIn=0  strIn=0x000000  sOut=1  strOut=0x000000
+sel33  fn=0xfffffff009bfd81c  sIn=3  strIn=0x000000  sOut=0  strOut=0x000000
+sel34  fn=0xfffffff009bfd830  sIn=1  strIn=0x000000  sOut=0  strOut=0x000c68
+sel35  fn=0xfffffff009bfd844  sIn=2  strIn=0x000000  sOut=1  strOut=0x000000
+sel36  fn=0xfffffff009bfd8c0  sIn=1  strIn=0x000000  sOut=2  strOut=0x000000
+sel37  fn=0xfffffff009bfd948  sIn=2  strIn=0x000000  sOut=0  strOut=0x000000
+sel38  fn=0xfffffff009bfd95c  sIn=1  strIn=0x000000  sOut=4  strOut=0x000000
+sel39  fn=0xfffffff009bfd97c  sIn=5  strIn=0x000000  sOut=0  strOut=0x000000
+sel40  fn=0xfffffff009bfd994  sIn=0  strIn=0x000000  sOut=0  strOut=0x000000
+sel41  fn=0xfffffff009bfd9b0  sIn=1  strIn=0x000000  sOut=0  strOut=0x000000
+sel42  fn=0xfffffff009bfd9c0  sIn=4  strIn=0x000000  sOut=0  strOut=0x000000
+sel43  fn=0xfffffff009bfd9dc  sIn=4  strIn=0x000000  sOut=0  strOut=0x000000
+sel44  fn=0xfffffff009bfd9f4  sIn=4  strIn=0x000000  sOut=0  strOut=0x000000
+sel45  fn=0xfffffff009bfdabc  sIn=3  strIn=0x000000  sOut=0  strOut=0x000000
+sel46  fn=0xfffffff009bfdad0  sIn=0  strIn=0xffffffff  sOut=2  strOut=0x000000
+sel47  fn=0xfffffff009bfdc34  sIn=1  strIn=0xffffffff  sOut=0  strOut=0x000000
+sel48  fn=0xfffffff009bfdd4c  sIn=1  strIn=0xffffffff  sOut=0  strOut=0x000000
+sel49  fn=0xfffffff009bfde64  sIn=1  strIn=0x000000  sOut=0  strOut=0xffffffff
+sel50  fn=0xfffffff009bfdf10  sIn=2  strIn=0xffffffff  sOut=0  strOut=0x000000
+sel51  fn=0xfffffff009bfdf44  sIn=2  strIn=0x000000  sOut=2  strOut=0xffffffff
+sel52  fn=0xfffffff009bfdf80  sIn=1  strIn=0x000000  sOut=0  strOut=0x000000
+sel53  fn=0xfffffff009bfdfa4  sIn=1  strIn=0x000000  sOut=0  strOut=0x000000
+sel54  fn=0xfffffff009bfdfb4  sIn=0  strIn=0xffffffff  sOut=0  strOut=0x000000
+sel55  fn=0xfffffff009bfe0c4  sIn=1  strIn=0x000000  sOut=1  strOut=0x000000
+sel56  fn=0xfffffff009bfe14c  sIn=2  strIn=0x000000  sOut=0  strOut=0x000000
+sel57  fn=0xfffffff009bfe160  sIn=4  strIn=0x000000  sOut=0  strOut=0x000000
+sel58  fn=0xfffffff009bfe180  sIn=5  strIn=0x000000  sOut=3  strOut=0x000000
+sel59  fn=0xfffffff009bfe224  sIn=1  strIn=0x000000  sOut=0  strOut=0x000000

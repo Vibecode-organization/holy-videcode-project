@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.apple.fde.harbord.mobile</string>
+	<key>UserName</key>
+	<string>mobile</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/local/libexec/harbord</string>
+		<string>--user-context</string>
+		<string>mobile</string>
+		<string>--mach-service-name</string>
+		<string>com.apple.fde.harbord.mobile</string>
+	</array>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.fde.harbord.mobile</key>
+		<true/>
+	</dict>
+	<key>ProcessType</key>
+	<string>Standard</string>
+</dict>
+</plist>

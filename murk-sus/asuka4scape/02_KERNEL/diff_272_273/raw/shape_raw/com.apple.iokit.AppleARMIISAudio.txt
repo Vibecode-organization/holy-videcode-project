@@ -1,0 +1,6 @@
+funcs 322 322
+identical 321 ratio 0.99689
+changed regions 1
+== replace A[285:286] B[285:286]
+   A 0xfffffff0082e76cc sz=1232
+   B 0xfffffff008309a1c sz=1192

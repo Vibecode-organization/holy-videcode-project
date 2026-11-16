@@ -1,0 +1,2266 @@
+
+====================================================================================================
+SEL  0  fn=0xfffffff009947330 len=0x114  scIn=0 stIn=0x0 scOut=0 stOut=0x40
+0xfffffff009947330  bti      c
+0xfffffff009947334  pacibsp  
+0xfffffff009947338  stp      x22, x21, [sp, #-0x30]!
+0xfffffff00994733c  stp      x20, x19, [sp, #0x10]
+0xfffffff009947340  stp      x29, x30, [sp, #0x20]
+0xfffffff009947344  add      x29, sp, #0x20
+0xfffffff009947348  mov      x19, x0
+0xfffffff00994734c  ldr      x21, [x2, #0x58]
+0xfffffff009947350  ldr      x0, [x0, #0xf8]
+0xfffffff009947354  ldr      w8, [x0, #0x1f0]
+0xfffffff009947358  and      w9, w8, #0xffff
+0xfffffff00994735c  lsr      w8, w8, #9
+0xfffffff009947360  and      w8, w8, #0x1000
+0xfffffff009947364  orr      w8, w8, w9
+0xfffffff009947368  ldr      w9, [x0, #0x1f8]
+0xfffffff00994736c  stp      w8, w9, [x21]
+0xfffffff009947370  ldr      x8, [x0, #0x208]
+0xfffffff009947374  str      x8, [x21, #0x10]
+0xfffffff009947378  ldr      x16, [x0]
+0xfffffff00994737c  mov      x17, x0
+0xfffffff009947380  movk     x17, #0xcda1, lsl #48
+0xfffffff009947384  autda    x16, x17
+0xfffffff009947388  mov      x17, x16
+0xfffffff00994738c  xpacd    x17
+0xfffffff009947390  cmp      x16, x17
+0xfffffff009947394  b.eq     #0xfffffff00994739c
+0xfffffff009947398  brk      #0xc472
+0xfffffff00994739c  add      x8, x16, #0x540
+0xfffffff0099473a0  ldr      x9, [x16, #0x540]
+0xfffffff0099473a4  mov      x17, x8
+0xfffffff0099473a8  movk     x17, #0x82fa, lsl #48
+0xfffffff0099473ac  blraa    x9, x17
+0xfffffff0099473b0  str      x0, [x21, #8]
+0xfffffff0099473b4  ldr      x0, [x19, #0xf8]
+0xfffffff0099473b8  ldr      w8, [x0, #0x100]
+0xfffffff0099473bc  str      w8, [x21, #0x18]
+0xfffffff0099473c0  mov      w1, #0
+0xfffffff0099473c4  bl       #0xfffffff0099749b8
+0xfffffff0099473c8  str      x0, [x21, #0x20]
+0xfffffff0099473cc  ldr      x20, [x19, #0xf8]
+0xfffffff0099473d0  ldr      x0, [x19, #0x120]
+0xfffffff0099473d4  bl       #0xfffffff0099676a8
+0xfffffff0099473d8  mov      x1, x0
+0xfffffff0099473dc  mov      x17, x20
+0xfffffff0099473e0  ldr      x16, [x20]
+0xfffffff0099473e4  movk     x17, #0xcda1, lsl #48
+0xfffffff0099473e8  autda    x16, x17
+0xfffffff0099473ec  mov      x17, x16
+0xfffffff0099473f0  xpacd    x17
+0xfffffff0099473f4  cmp      x16, x17
+0xfffffff0099473f8  b.eq     #0xfffffff009947400
+0xfffffff0099473fc  brk      #0xc472
+0xfffffff009947400  add      x8, x16, #0x680
+0xfffffff009947404  ldr      x9, [x16, #0x680]
+0xfffffff009947408  mov      x0, x20
+0xfffffff00994740c  mov      x17, x8
+0xfffffff009947410  movk     x17, #0x9603, lsl #48
+0xfffffff009947414  blraa    x9, x17
+0xfffffff009947418  ldr      x8, [x19, #0xf8]
+0xfffffff00994741c  ldr      x9, [x8, #0x258]
+0xfffffff009947420  stp      x0, x9, [x21, #0x28]
+0xfffffff009947424  ldrh     w9, [x8, #0x260]
+0xfffffff009947428  ldrh     w8, [x8, #0x262]
+0xfffffff00994742c  stp      w9, w8, [x21, #0x38]
+0xfffffff009947430  mov      w0, #0
+0xfffffff009947434  ldp      x29, x30, [sp, #0x20]
+0xfffffff009947438  ldp      x20, x19, [sp, #0x10]
+0xfffffff00994743c  ldp      x22, x21, [sp], #0x30
+0xfffffff009947440  retab    
+
+====================================================================================================
+SEL  1  fn=0xfffffff009947444 len=0x34  scIn=0 stIn=0x0 scOut=0 stOut=0x40
+0xfffffff009947444  bti      c
+0xfffffff009947448  pacibsp  
+0xfffffff00994744c  stp      x29, x30, [sp, #-0x10]!
+0xfffffff009947450  mov      x29, sp
+0xfffffff009947454  ldr      x8, [x2, #0x58]
+0xfffffff009947458  ldr      x9, [x0, #0xf8]
+0xfffffff00994745c  ldr      x1, [x9, #0x1e8]
+0xfffffff009947460  mov      x0, x8
+0xfffffff009947464  mov      w2, #0x40
+0xfffffff009947468  bl       #0xfffffff009984e4c
+0xfffffff00994746c  mov      w0, #0
+0xfffffff009947470  ldp      x29, x30, [sp], #0x10
+0xfffffff009947474  retab    
+
+====================================================================================================
+SEL  2  fn=0xfffffff009947478 len=0xd0  scIn=0 stIn=0x0 scOut=0 stOut=0x218
+0xfffffff009947478  bti      c
+0xfffffff00994747c  pacibsp  
+0xfffffff009947480  stp      x22, x21, [sp, #-0x30]!
+0xfffffff009947484  stp      x20, x19, [sp, #0x10]
+0xfffffff009947488  stp      x29, x30, [sp, #0x20]
+0xfffffff00994748c  add      x29, sp, #0x20
+0xfffffff009947490  mov      x19, x0
+0xfffffff009947494  ldr      x21, [x2, #0x58]
+0xfffffff009947498  ldr      x0, [x0, #0x110]
+0xfffffff00994749c  ldr      x16, [x0]
+0xfffffff0099474a0  mov      x17, x0
+0xfffffff0099474a4  movk     x17, #0xcda1, lsl #48
+0xfffffff0099474a8  autda    x16, x17
+0xfffffff0099474ac  ldr      x8, [x16, #0x78]!
+0xfffffff0099474b0  movk     x16, #0x34f6, lsl #48
+0xfffffff0099474b4  blraa    x8, x16
+0xfffffff0099474b8  ldr      w8, [x19, #0x118]
+0xfffffff0099474bc  add      x8, x0, x8
+0xfffffff0099474c0  str      x8, [x21]
+0xfffffff0099474c4  ldr      x8, [x19, #0xf8]
+0xfffffff0099474c8  add      x9, x8, #0x22c
+0xfffffff0099474cc  ldr      d0, [x9]
+0xfffffff0099474d0  str      d0, [x21, #8]
+0xfffffff0099474d4  ldr      w9, [x8, #0x234]
+0xfffffff0099474d8  str      w9, [x21, #0x10]
+0xfffffff0099474dc  ldr      x0, [x8, #0x148]
+0xfffffff0099474e0  bl       #0xfffffff00994abb0
+0xfffffff0099474e4  str      w0, [x21, #0x14]
+0xfffffff0099474e8  cmp      w0, #1
+0xfffffff0099474ec  b.lt     #0xfffffff009947534
+0xfffffff0099474f0  mov      x20, #0
+0xfffffff0099474f4  add      x22, x21, #0x18
+0xfffffff0099474f8  ldr      x8, [x19, #0xf8]
+0xfffffff0099474fc  ldr      x0, [x8, #0x148]
+0xfffffff009947500  ldr      x16, [x0]
+0xfffffff009947504  mov      x17, x0
+0xfffffff009947508  movk     x17, #0xcda1, lsl #48
+0xfffffff00994750c  autda    x16, x17
+0xfffffff009947510  ldr      x8, [x16, #0x88]!
+0xfffffff009947514  mov      x1, x20
+0xfffffff009947518  movk     x16, #0x372b, lsl #48
+0xfffffff00994751c  blraa    x8, x16
+0xfffffff009947520  str      w0, [x22, x20, lsl #2]
+0xfffffff009947524  add      x20, x20, #1
+0xfffffff009947528  ldrsw    x8, [x21, #0x14]
+0xfffffff00994752c  cmp      x20, x8
+0xfffffff009947530  b.lt     #0xfffffff0099474f8
+0xfffffff009947534  mov      w0, #0
+0xfffffff009947538  ldp      x29, x30, [sp, #0x20]
+0xfffffff00994753c  ldp      x20, x19, [sp, #0x10]
+0xfffffff009947540  ldp      x22, x21, [sp], #0x30
+0xfffffff009947544  retab    
+
+====================================================================================================
+SEL  3  fn=0xfffffff009947548 len=0x34  scIn=0 stIn=0x0 scOut=0 stOut=0x8
+0xfffffff009947548  bti      c
+0xfffffff00994754c  pacibsp  
+0xfffffff009947550  stp      x20, x19, [sp, #-0x20]!
+0xfffffff009947554  stp      x29, x30, [sp, #0x10]
+0xfffffff009947558  add      x29, sp, #0x10
+0xfffffff00994755c  ldr      x19, [x2, #0x58]
+0xfffffff009947560  ldr      x0, [x0, #0xf8]
+0xfffffff009947564  bl       #0xfffffff00997554c
+0xfffffff009947568  stp      w0, wzr, [x19]
+0xfffffff00994756c  mov      w0, #0
+0xfffffff009947570  ldp      x29, x30, [sp, #0x10]
+0xfffffff009947574  ldp      x20, x19, [sp], #0x20
+0xfffffff009947578  retab    
+
+====================================================================================================
+SEL  4  fn=0xfffffff00994757c len=0xc8  scIn=0 stIn=0x0 scOut=0 stOut=0x20
+0xfffffff00994757c  bti      c
+0xfffffff009947580  pacibsp  
+0xfffffff009947584  sub      sp, sp, #0x30
+0xfffffff009947588  stp      x20, x19, [sp, #0x10]
+0xfffffff00994758c  stp      x29, x30, [sp, #0x20]
+0xfffffff009947590  add      x29, sp, #0x20
+0xfffffff009947594  mov      x19, x0
+0xfffffff009947598  ldr      x20, [x2, #0x58]
+0xfffffff00994759c  ldr      x8, [x0, #0xe8]
+0xfffffff0099475a0  str      x8, [x20]
+0xfffffff0099475a4  ldr      x8, [x0, #0xd8]
+0xfffffff0099475a8  ldr      x0, [x8, #8]
+0xfffffff0099475ac  cbnz     x0, #0xfffffff0099475c8
+0xfffffff0099475b0  ldr      x0, [x19, #0xf8]
+0xfffffff0099475b4  ldr      x1, [x8]
+0xfffffff0099475b8  bl       #0xfffffff009975520
+0xfffffff0099475bc  ldr      x8, [x19, #0xd8]
+0xfffffff0099475c0  str      x0, [x8, #8]
+0xfffffff0099475c4  cbz      x0, #0xfffffff009947644
+0xfffffff0099475c8  ldr      x16, [x0]
+0xfffffff0099475cc  mov      x17, x0
+0xfffffff0099475d0  movk     x17, #0xcda1, lsl #48
+0xfffffff0099475d4  autda    x16, x17
+0xfffffff0099475d8  ldr      x8, [x16, #0x78]!
+0xfffffff0099475dc  movk     x16, #0x34f6, lsl #48
+0xfffffff0099475e0  blraa    x8, x16
+0xfffffff0099475e4  str      x0, [x20, #8]
+0xfffffff0099475e8  ldr      x8, [x19, #0xd8]
+0xfffffff0099475ec  ldr      x0, [x8, #8]
+0xfffffff0099475f0  ldr      x16, [x0]
+0xfffffff0099475f4  mov      x17, x0
+0xfffffff0099475f8  movk     x17, #0xcda1, lsl #48
+0xfffffff0099475fc  autda    x16, x17
+0xfffffff009947600  ldr      x8, [x16, #0x88]!
+0xfffffff009947604  movk     x16, #0xfd11, lsl #48
+0xfffffff009947608  blraa    x8, x16
+0xfffffff00994760c  str      w0, [x20, #0x18]
+0xfffffff009947610  str      xzr, [sp, #8]
+0xfffffff009947614  ldr      x8, [x19, #0x120]
+0xfffffff009947618  ldr      x0, [x8, #0x30]
+0xfffffff00994761c  add      x2, sp, #8
+0xfffffff009947620  mov      w1, #0
+0xfffffff009947624  bl       #0xfffffff009964430
+0xfffffff009947628  mov      w0, #0
+0xfffffff00994762c  ldr      x8, [sp, #8]
+0xfffffff009947630  str      x8, [x20, #0x10]
+0xfffffff009947634  ldp      x29, x30, [sp, #0x20]
+0xfffffff009947638  ldp      x20, x19, [sp, #0x10]
+0xfffffff00994763c  add      sp, sp, #0x30
+0xfffffff009947640  retab    
+
+====================================================================================================
+SEL  5  fn=0xfffffff009947658 len=0x64  scIn=0 stIn=0x0 scOut=0 stOut=0x10
+0xfffffff009947658  bti      c
+0xfffffff00994765c  pacibsp  
+0xfffffff009947660  stp      x24, x23, [sp, #-0x40]!
+0xfffffff009947664  stp      x22, x21, [sp, #0x10]
+0xfffffff009947668  stp      x20, x19, [sp, #0x20]
+0xfffffff00994766c  stp      x29, x30, [sp, #0x30]
+0xfffffff009947670  add      x29, sp, #0x30
+0xfffffff009947674  ldr      x22, [x2, #0x58]
+0xfffffff009947678  adrp     x19, #0xfffffff00af22000
+0xfffffff00994767c  add      x19, x19, #0xc0
+0xfffffff009947680  mov      w23, #0x1000000
+0xfffffff009947684  ldr      x20, [x19]
+0xfffffff009947688  add      x21, x20, x23
+0xfffffff00994768c  mov      x0, x20
+0xfffffff009947690  mov      x1, x21
+0xfffffff009947694  mov      x2, x19
+0xfffffff009947698  bl       #0xfffffff0099843fc
+0xfffffff00994769c  cbz      w0, #0xfffffff009947684
+0xfffffff0099476a0  stp      x20, x21, [x22]
+0xfffffff0099476a4  mov      w0, #0
+0xfffffff0099476a8  ldp      x29, x30, [sp, #0x30]
+0xfffffff0099476ac  ldp      x20, x19, [sp, #0x20]
+0xfffffff0099476b0  ldp      x22, x21, [sp, #0x10]
+0xfffffff0099476b4  ldp      x24, x23, [sp], #0x40
+0xfffffff0099476b8  retab    
+
+====================================================================================================
+SEL  6  fn=0xfffffff0099476bc len=0x304  scIn=0 stIn=0xffffffff scOut=0 stOut=0x10
+   name: static IOReturn IOGPUDeviceUserClient::s_new_command_queue(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)
+0xfffffff0099476bc  bti      c
+0xfffffff0099476c0  pacibsp  
+0xfffffff0099476c4  sub      sp, sp, #0x60
+0xfffffff0099476c8  stp      x24, x23, [sp, #0x20]
+0xfffffff0099476cc  stp      x22, x21, [sp, #0x30]
+0xfffffff0099476d0  stp      x20, x19, [sp, #0x40]
+0xfffffff0099476d4  stp      x29, x30, [sp, #0x50]
+0xfffffff0099476d8  add      x29, sp, #0x50
+0xfffffff0099476dc  mov      x21, x2
+0xfffffff0099476e0  mov      x19, x0
+0xfffffff0099476e4  ldr      x20, [x2, #0x30]
+0xfffffff0099476e8  ldr      x22, [x2, #0x58]
+0xfffffff0099476ec  ldr      x8, [x0, #0x120]
+0xfffffff0099476f0  ldr      x8, [x8, #0x88]
+0xfffffff0099476f4  ldr      w8, [x8, #0x30]
+0xfffffff0099476f8  ldr      x0, [x0, #0xf8]
+0xfffffff0099476fc  ldr      w9, [x0, #0x248]
+0xfffffff009947700  cmp      w8, w9
+0xfffffff009947704  b.ls     #0xfffffff009947750
+0xfffffff009947708  stp      x8, x9, [sp, #8]
+0xfffffff00994770c  adrp     x9, #0xfffffff00782b000
+0xfffffff009947710  add      x9, x9, #0x1c1
+0xfffffff009947714  str      x9, [sp]
+0xfffffff009947718  adrp     x0, #0xfffffff007829000
+0xfffffff00994771c  add      x0, x0, #0xf60
+0xfffffff009947720  adrp     x1, #0xfffffff007ff2000
+0xfffffff009947724  ldr      x1, [x1, #0x808]
+0xfffffff009947728  adrp     x3, #0xfffffff007831000
+0xfffffff00994772c  add      x3, x3, #0x7e
+0xfffffff009947730  mov      w2, #0x11
+0xfffffff009947734  bl       #0xfffffff009984c2c
+0xfffffff009947738  ldr      x0, [x19, #0xf8]
+0xfffffff00994773c  ldrb     w8, [x0, #0x1fc]
+0xfffffff009947740  tbz      w8, #3, #0xfffffff0099477b8
+0xfffffff009947744  mov      w19, #0x8001
+0xfffffff009947748  movk     w19, #0xe007, lsl #16
+0xfffffff00994774c  b        #0xfffffff0099479a4
+0xfffffff009947750  ldr      w9, [x0, #0x244]
+0xfffffff009947754  cmp      w8, w9
+0xfffffff009947758  b.ls     #0xfffffff0099477b8
+0xfffffff00994775c  add      x9, x19, #0x11c
+0xfffffff009947760  mov      w10, #1
+0xfffffff009947764  ldadd    w10, w9, [x9]
+0xfffffff009947768  mov      w10, #0xcccd
+0xfffffff00994776c  movk     w10, #0xcccc, lsl #16
+0xfffffff009947770  mul      w9, w9, w10
+0xfffffff009947774  ror      w9, w9, #1
+0xfffffff009947778  mov      w10, #0x9999
+0xfffffff00994777c  movk     w10, #0x1999, lsl #16
+0xfffffff009947780  cmp      w9, w10
+0xfffffff009947784  b.hi     #0xfffffff0099477b8
+0xfffffff009947788  adrp     x9, #0xfffffff00782b000
+0xfffffff00994778c  add      x9, x9, #0x1c1
+0xfffffff009947790  stp      x9, x8, [sp]
+0xfffffff009947794  adrp     x0, #0xfffffff007829000
+0xfffffff009947798  add      x0, x0, #0xf60
+0xfffffff00994779c  adrp     x1, #0xfffffff007ff2000
+0xfffffff0099477a0  ldr      x1, [x1, #0x808]
+0xfffffff0099477a4  adrp     x3, #0xfffffff007831000
+0xfffffff0099477a8  add      x3, x3, #0xd6
+0xfffffff0099477ac  mov      w2, #0x11
+0xfffffff0099477b0  bl       #0xfffffff009984c2c
+0xfffffff0099477b4  ldr      x0, [x19, #0xf8]
+0xfffffff0099477b8  ldr      w8, [x21, #0x38]
+0xfffffff0099477bc  ldr      w9, [x0, #0x278]
+0xfffffff0099477c0  cmp      w8, #0x408
+0xfffffff0099477c4  ccmp     w8, w9, #0, hs
+0xfffffff0099477c8  b.eq     #0xfffffff00994780c
+0xfffffff0099477cc  stp      x8, x9, [sp, #8]
+0xfffffff0099477d0  adrp     x9, #0xfffffff00782b000
+0xfffffff0099477d4  add      x9, x9, #0x1c1
+0xfffffff0099477d8  str      x9, [sp]
+0xfffffff0099477dc  adrp     x0, #0xfffffff007829000
+0xfffffff0099477e0  add      x0, x0, #0xf60
+0xfffffff0099477e4  adrp     x1, #0xfffffff007ff2000
+0xfffffff0099477e8  ldr      x1, [x1, #0x808]
+0xfffffff0099477ec  adrp     x3, #0xfffffff007831000
+0xfffffff0099477f0  add      x3, x3, #0x10b
+0xfffffff0099477f4  mov      w2, #0x11
+0xfffffff0099477f8  bl       #0xfffffff009984c2c
+0xfffffff0099477fc  mov      w8, #0x2bd
+0xfffffff009947800  movk     w8, #0xe000, lsl #16
+0xfffffff009947804  add      w19, w8, #5
+0xfffffff009947808  b        #0xfffffff0099479a4
+0xfffffff00994780c  ldr      x16, [x0]
+0xfffffff009947810  mov      x17, x0
+0xfffffff009947814  movk     x17, #0xcda1, lsl #48
+0xfffffff009947818  autda    x16, x17
+0xfffffff00994781c  mov      x17, #0x698
+0xfffffff009947820  add      x16, x16, x17
+0xfffffff009947824  ldr      x8, [x16]
+0xfffffff009947828  movk     x16, #0xbd5, lsl #48
+0xfffffff00994782c  blraa    x8, x16
+0xfffffff009947830  cbz      x0, #0xfffffff0099478c8
+0xfffffff009947834  mov      x21, x0
+0xfffffff009947838  ldr      x1, [x19, #0xf8]
+0xfffffff00994783c  ldr      x2, [x19, #0x120]
+0xfffffff009947840  ldr      x16, [x0]
+0xfffffff009947844  mov      x23, x0
+0xfffffff009947848  movk     x23, #0xcda1, lsl #48
+0xfffffff00994784c  mov      x17, x0
+0xfffffff009947850  movk     x17, #0xcda1, lsl #48
+0xfffffff009947854  autda    x16, x17
+0xfffffff009947858  ldr      x8, [x16, #0xd8]!
+0xfffffff00994785c  mov      x3, x20
+0xfffffff009947860  movk     x16, #0xfcfc, lsl #48
+0xfffffff009947864  blraa    x8, x16
+0xfffffff009947868  tbz      w0, #0, #0xfffffff009947900
+0xfffffff00994786c  ldr      x8, [x19, #0x120]
+0xfffffff009947870  ldr      x0, [x8, #0x88]
+0xfffffff009947874  mov      x1, x21
+0xfffffff009947878  bl       #0xfffffff009944fb0
+0xfffffff00994787c  cbz      w0, #0xfffffff009947954
+0xfffffff009947880  mov      x20, x0
+0xfffffff009947884  mov      x0, x21
+0xfffffff009947888  mov      x1, x20
+0xfffffff00994788c  bl       #0xfffffff00997a23c
+0xfffffff009947890  mov      x0, x19
+0xfffffff009947894  mov      w1, #1
+0xfffffff009947898  bl       #0xfffffff009947080
+0xfffffff00994789c  mov      w8, w20
+0xfffffff0099478a0  ldr      x9, [x21, #0x550]
+0xfffffff0099478a4  stp      x8, x9, [x22]
+0xfffffff0099478a8  ldr      x16, [x21]
+0xfffffff0099478ac  autda    x16, x23
+0xfffffff0099478b0  ldr      x8, [x16, #0x28]!
+0xfffffff0099478b4  mov      x0, x21
+0xfffffff0099478b8  movk     x16, #0x3a87, lsl #48
+0xfffffff0099478bc  blraa    x8, x16
+0xfffffff0099478c0  mov      w19, #0
+0xfffffff0099478c4  b        #0xfffffff0099479a4
+0xfffffff0099478c8  mov      w19, #0x2bd
+0xfffffff0099478cc  movk     w19, #0xe000, lsl #16
+0xfffffff0099478d0  adrp     x8, #0xfffffff00782b000
+0xfffffff0099478d4  add      x8, x8, #0x1c1
+0xfffffff0099478d8  str      x8, [sp]
+0xfffffff0099478dc  adrp     x0, #0xfffffff007829000
+0xfffffff0099478e0  add      x0, x0, #0xf60
+0xfffffff0099478e4  adrp     x1, #0xfffffff007ff2000
+0xfffffff0099478e8  ldr      x1, [x1, #0x808]
+0xfffffff0099478ec  adrp     x3, #0xfffffff007831000
+0xfffffff0099478f0  add      x3, x3, #0x143
+0xfffffff0099478f4  mov      w2, #0x11
+0xfffffff0099478f8  bl       #0xfffffff009984c2c
+0xfffffff0099478fc  b        #0xfffffff0099479a4
+0xfffffff009947900  adrp     x8, #0xfffffff00782b000
+0xfffffff009947904  add      x8, x8, #0x1c1
+0xfffffff009947908  str      x8, [sp]
+0xfffffff00994790c  adrp     x0, #0xfffffff007829000
+0xfffffff009947910  add      x0, x0, #0xf60
+0xfffffff009947914  adrp     x1, #0xfffffff007ff2000
+0xfffffff009947918  ldr      x1, [x1, #0x808]
+0xfffffff00994791c  adrp     x3, #0xfffffff007831000
+0xfffffff009947920  add      x3, x3, #0x15f
+0xfffffff009947924  mov      w2, #0x11
+0xfffffff009947928  bl       #0xfffffff009984c2c
+0xfffffff00994792c  ldr      x16, [x21]
+0xfffffff009947930  autda    x16, x23
+0xfffffff009947934  ldr      x8, [x16, #0x28]!
+0xfffffff009947938  mov      x0, x21
+0xfffffff00994793c  movk     x16, #0x3a87, lsl #48
+0xfffffff009947940  blraa    x8, x16
+0xfffffff009947944  mov      w8, #0x2bd
+0xfffffff009947948  movk     w8, #0xe000, lsl #16
+0xfffffff00994794c  add      w19, w8, #1
+0xfffffff009947950  b        #0xfffffff0099479a4
+0xfffffff009947954  adrp     x8, #0xfffffff00782b000
+0xfffffff009947958  add      x8, x8, #0x1c1
+0xfffffff00994795c  str      x8, [sp]
+0xfffffff009947960  adrp     x0, #0xfffffff007829000
+0xfffffff009947964  add      x0, x0, #0xf60
+0xfffffff009947968  adrp     x1, #0xfffffff007ff2000
+0xfffffff00994796c  ldr      x1, [x1, #0x808]
+0xfffffff009947970  adrp     x3, #0xfffffff007831000
+0xfffffff009947974  add      x3, x3, #0x170
+0xfffffff009947978  mov      w2, #0x11
+0xfffffff00994797c  bl       #0xfffffff009984c2c
+0xfffffff009947980  ldr      x16, [x21]
+0xfffffff009947984  autda    x16, x23
+0xfffffff009947988  ldr      x8, [x16, #0x28]!
+0xfffffff00994798c  mov      x0, x21
+0xfffffff009947990  movk     x16, #0x3a87, lsl #48
+0xfffffff009947994  blraa    x8, x16
+0xfffffff009947998  mov      w8, #0x2bd
+0xfffffff00994799c  movk     w8, #0xe000, lsl #16
+0xfffffff0099479a0  add      w19, w8, #0x1e
+0xfffffff0099479a4  mov      x0, x19
+0xfffffff0099479a8  ldp      x29, x30, [sp, #0x50]
+0xfffffff0099479ac  ldp      x20, x19, [sp, #0x40]
+0xfffffff0099479b0  ldp      x22, x21, [sp, #0x30]
+0xfffffff0099479b4  ldp      x24, x23, [sp, #0x20]
+0xfffffff0099479b8  add      sp, sp, #0x60
+0xfffffff0099479bc  retab    
+
+====================================================================================================
+SEL  7  fn=0xfffffff0099479c0 len=0x94  scIn=1 stIn=0x0 scOut=0 stOut=0x0
+   name: static IOReturn IOGPUDeviceUserClient::s_delete_command_queue(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)
+0xfffffff0099479c0  bti      c
+0xfffffff0099479c4  pacibsp  
+0xfffffff0099479c8  sub      sp, sp, #0x30
+0xfffffff0099479cc  stp      x20, x19, [sp, #0x10]
+0xfffffff0099479d0  stp      x29, x30, [sp, #0x20]
+0xfffffff0099479d4  add      x29, sp, #0x20
+0xfffffff0099479d8  mov      x19, x0
+0xfffffff0099479dc  ldr      x8, [x2, #0x20]
+0xfffffff0099479e0  ldr      w20, [x8]
+0xfffffff0099479e4  ldr      x8, [x0, #0x120]
+0xfffffff0099479e8  ldr      x0, [x8, #0x88]
+0xfffffff0099479ec  mov      x1, x20
+0xfffffff0099479f0  bl       #0xfffffff009945154
+0xfffffff0099479f4  cbz      x0, #0xfffffff009947a10
+0xfffffff0099479f8  bl       #0xfffffff00997684c
+0xfffffff0099479fc  mov      x0, x19
+0xfffffff009947a00  mov      w1, #-1
+0xfffffff009947a04  bl       #0xfffffff009947080
+0xfffffff009947a08  mov      w0, #0
+0xfffffff009947a0c  b        #0xfffffff009947a44
+0xfffffff009947a10  adrp     x8, #0xfffffff00782b000
+0xfffffff009947a14  add      x8, x8, #0x23a
+0xfffffff009947a18  stp      x8, x20, [sp]
+0xfffffff009947a1c  adrp     x0, #0xfffffff007829000
+0xfffffff009947a20  add      x0, x0, #0xf60
+0xfffffff009947a24  adrp     x1, #0xfffffff007ff2000
+0xfffffff009947a28  ldr      x1, [x1, #0x808]
+0xfffffff009947a2c  adrp     x3, #0xfffffff007831000
+0xfffffff009947a30  add      x3, x3, #0x193
+0xfffffff009947a34  mov      w2, #0x11
+0xfffffff009947a38  bl       #0xfffffff009984c2c
+0xfffffff009947a3c  mov      w0, #0x2c2
+0xfffffff009947a40  movk     w0, #0xe000, lsl #16
+0xfffffff009947a44  ldp      x29, x30, [sp, #0x20]
+0xfffffff009947a48  ldp      x20, x19, [sp, #0x10]
+0xfffffff009947a4c  add      sp, sp, #0x30
+0xfffffff009947a50  retab    
+
+====================================================================================================
+SEL  8  fn=0xfffffff009947a54 len=0x188  scIn=0 stIn=0xffffffff scOut=0 stOut=0xffffffff
+   name: static IOReturn IOGPUDeviceUserClient::s_new_resource(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)
+0xfffffff009947a54  bti      c
+0xfffffff009947a58  pacibsp  
+0xfffffff009947a5c  sub      sp, sp, #0x50
+0xfffffff009947a60  stp      x24, x23, [sp, #0x10]
+0xfffffff009947a64  stp      x22, x21, [sp, #0x20]
+0xfffffff009947a68  stp      x20, x19, [sp, #0x30]
+0xfffffff009947a6c  stp      x29, x30, [sp, #0x40]
+0xfffffff009947a70  add      x29, sp, #0x40
+0xfffffff009947a74  mov      x22, x2
+0xfffffff009947a78  mov      x21, x0
+0xfffffff009947a7c  mov      w19, #0x2c2
+0xfffffff009947a80  movk     w19, #0xe000, lsl #16
+0xfffffff009947a84  ldr      x23, [x2, #0x58]
+0xfffffff009947a88  ldr      x0, [x2, #0x40]
+0xfffffff009947a8c  cbz      x0, #0xfffffff009947b04
+0xfffffff009947a90  ldr      x16, [x0]
+0xfffffff009947a94  mov      x17, x0
+0xfffffff009947a98  movk     x17, #0xcda1, lsl #48
+0xfffffff009947a9c  autda    x16, x17
+0xfffffff009947aa0  ldr      x8, [x16, #0xe8]!
+0xfffffff009947aa4  mov      w1, #0x1000
+0xfffffff009947aa8  movk     x16, #0x3ed6, lsl #48
+0xfffffff009947aac  blraa    x8, x16
+0xfffffff009947ab0  cbz      x0, #0xfffffff009947b90
+0xfffffff009947ab4  mov      x20, x0
+0xfffffff009947ab8  ldr      x16, [x0]
+0xfffffff009947abc  mov      x17, x0
+0xfffffff009947ac0  movk     x17, #0xcda1, lsl #48
+0xfffffff009947ac4  autda    x16, x17
+0xfffffff009947ac8  ldr      x8, [x16, #0x78]!
+0xfffffff009947acc  movk     x16, #0x34f6, lsl #48
+0xfffffff009947ad0  blraa    x8, x16
+0xfffffff009947ad4  mov      x24, x0
+0xfffffff009947ad8  ldr      x0, [x22, #0x40]
+0xfffffff009947adc  ldr      x16, [x0]
+0xfffffff009947ae0  mov      x17, x0
+0xfffffff009947ae4  movk     x17, #0xcda1, lsl #48
+0xfffffff009947ae8  autda    x16, x17
+0xfffffff009947aec  ldr      x8, [x16, #0xb0]!
+0xfffffff009947af0  movk     x16, #0xb392, lsl #48
+0xfffffff009947af4  blraa    x8, x16
+0xfffffff009947af8  mov      x3, x0
+0xfffffff009947afc  cbnz     x24, #0xfffffff009947b14
+0xfffffff009947b00  b        #0xfffffff009947b38
+0xfffffff009947b04  mov      x20, #0
+0xfffffff009947b08  ldr      w3, [x22, #0x38]
+0xfffffff009947b0c  ldr      x24, [x22, #0x30]
+0xfffffff009947b10  cbz      x24, #0xfffffff009947b38
+0xfffffff009947b14  cmp      x3, #0x58
+0xfffffff009947b18  ccmp     x23, #0, #4, hs
+0xfffffff009947b1c  b.eq     #0xfffffff009947b38
+0xfffffff009947b20  add      x4, x22, #0x60
+0xfffffff009947b24  mov      x0, x21
+0xfffffff009947b28  mov      x1, x24
+0xfffffff009947b2c  mov      x2, x23
+0xfffffff009947b30  bl       #0xfffffff00994a30c
+0xfffffff009947b34  mov      x19, x0
+0xfffffff009947b38  cbz      x20, #0xfffffff009947b5c
+0xfffffff009947b3c  ldr      x16, [x20]
+0xfffffff009947b40  mov      x17, x20
+0xfffffff009947b44  movk     x17, #0xcda1, lsl #48
+0xfffffff009947b48  autda    x16, x17
+0xfffffff009947b4c  ldr      x8, [x16, #0x28]!
+0xfffffff009947b50  mov      x0, x20
+0xfffffff009947b54  movk     x16, #0x3a87, lsl #48
+0xfffffff009947b58  blraa    x8, x16
+0xfffffff009947b5c  cbz      w19, #0xfffffff009947bc0
+0xfffffff009947b60  adrp     x8, #0xfffffff00782b000
+0xfffffff009947b64  add      x8, x8, #0x2b6
+0xfffffff009947b68  str      x8, [sp]
+0xfffffff009947b6c  adrp     x0, #0xfffffff007829000
+0xfffffff009947b70  add      x0, x0, #0xf60
+0xfffffff009947b74  adrp     x1, #0xfffffff007ff2000
+0xfffffff009947b78  ldr      x1, [x1, #0x808]
+0xfffffff009947b7c  adrp     x3, #0xfffffff007831000
+0xfffffff009947b80  add      x3, x3, #0x1c5
+0xfffffff009947b84  mov      w2, #0x11
+0xfffffff009947b88  bl       #0xfffffff009984c2c
+0xfffffff009947b8c  b        #0xfffffff009947bc0
+0xfffffff009947b90  adrp     x8, #0xfffffff00782b000
+0xfffffff009947b94  add      x8, x8, #0x2b6
+0xfffffff009947b98  str      x8, [sp]
+0xfffffff009947b9c  adrp     x0, #0xfffffff007829000
+0xfffffff009947ba0  add      x0, x0, #0xf60
+0xfffffff009947ba4  adrp     x1, #0xfffffff007ff2000
+0xfffffff009947ba8  ldr      x1, [x1, #0x808]
+0xfffffff009947bac  adrp     x3, #0xfffffff007831000
+0xfffffff009947bb0  add      x3, x3, #0x1a9
+0xfffffff009947bb4  mov      w2, #0x11
+0xfffffff009947bb8  bl       #0xfffffff009984c2c
+0xfffffff009947bbc  add      w19, w19, #6
+0xfffffff009947bc0  mov      x0, x19
+0xfffffff009947bc4  ldp      x29, x30, [sp, #0x40]
+0xfffffff009947bc8  ldp      x20, x19, [sp, #0x30]
+0xfffffff009947bcc  ldp      x22, x21, [sp, #0x20]
+0xfffffff009947bd0  ldp      x24, x23, [sp, #0x10]
+0xfffffff009947bd4  add      sp, sp, #0x50
+0xfffffff009947bd8  retab    
+
+====================================================================================================
+SEL  9  fn=0xfffffff009947bdc len=0x14  scIn=1 stIn=0x0 scOut=0 stOut=0x0
+0xfffffff009947bdc  bti      c
+0xfffffff009947be0  ldr      x0, [x0, #0x120]
+0xfffffff009947be4  ldr      x8, [x2, #0x20]
+0xfffffff009947be8  ldr      w1, [x8]
+0xfffffff009947bec  b        #0xfffffff009965954
+
+====================================================================================================
+SEL 10  fn=0xfffffff009947bf0 len=0x18  scIn=2 stIn=0x0 scOut=0 stOut=0x0
+0xfffffff009947bf0  bti      c
+0xfffffff009947bf4  ldr      x0, [x0, #0x120]
+0xfffffff009947bf8  ldr      x8, [x2, #0x20]
+0xfffffff009947bfc  ldr      w1, [x8]
+0xfffffff009947c00  ldr      w2, [x8, #8]
+0xfffffff009947c04  b        #0xfffffff0099664e4
+
+====================================================================================================
+SEL 11  fn=0xfffffff009947c08 len=0x20  scIn=2 stIn=0x0 scOut=1 stOut=0x0
+0xfffffff009947c08  bti      c
+0xfffffff009947c0c  ldr      x8, [x2, #0x20]
+0xfffffff009947c10  ldr      w1, [x8]
+0xfffffff009947c14  ldr      w8, [x8, #8]
+0xfffffff009947c18  ldr      x3, [x2, #0x48]
+0xfffffff009947c1c  ldr      x0, [x0, #0x120]
+0xfffffff009947c20  mov      x2, x8
+0xfffffff009947c24  b        #0xfffffff009966668
+
+====================================================================================================
+SEL 12  fn=0xfffffff009947c28 len=0x28  scIn=2 stIn=0x0 scOut=0 stOut=0x10
+0xfffffff009947c28  bti      c
+0xfffffff009947c2c  ldr      x8, [x2, #0x20]
+0xfffffff009947c30  ldr      w1, [x8]
+0xfffffff009947c34  ldr      w8, [x8, #8]
+0xfffffff009947c38  ldr      x3, [x2, #0x58]
+0xfffffff009947c3c  ldr      x0, [x0, #0x120]
+0xfffffff009947c40  add      x4, x3, #8
+0xfffffff009947c44  add      x5, x3, #0xc
+0xfffffff009947c48  mov      x2, x8
+0xfffffff009947c4c  b        #0xfffffff0099659b4
+
+====================================================================================================
+SEL 13  fn=0xfffffff009947c50 len=0x14  scIn=1 stIn=0x0 scOut=0 stOut=0x0
+0xfffffff009947c50  bti      c
+0xfffffff009947c54  ldr      x0, [x0, #0x120]
+0xfffffff009947c58  ldr      x8, [x2, #0x20]
+0xfffffff009947c5c  ldr      w1, [x8]
+0xfffffff009947c60  b        #0xfffffff009965b04
+
+====================================================================================================
+SEL 14  fn=0xfffffff009947c64 len=0x20  scIn=2 stIn=0x0 scOut=0 stOut=0x10
+0xfffffff009947c64  bti      c
+0xfffffff009947c68  ldr      x0, [x0, #0x120]
+0xfffffff009947c6c  ldr      x8, [x2, #0x20]
+0xfffffff009947c70  ldr      w1, [x8]
+0xfffffff009947c74  ldr      w8, [x8, #8]
+0xfffffff009947c78  ldr      x3, [x2, #0x58]
+0xfffffff009947c7c  mov      x2, x8
+0xfffffff009947c80  b        #0xfffffff009965dc0
+
+====================================================================================================
+SEL 15  fn=0xfffffff009947c84 len=0x14  scIn=1 stIn=0x0 scOut=0 stOut=0x0
+0xfffffff009947c84  bti      c
+0xfffffff009947c88  ldr      x0, [x0, #0x120]
+0xfffffff009947c8c  ldr      x8, [x2, #0x20]
+0xfffffff009947c90  ldr      w1, [x8]
+0xfffffff009947c94  b        #0xfffffff009965edc
+
+====================================================================================================
+SEL 16  fn=0xfffffff009947c98 len=0x10  scIn=0 stIn=0x0 scOut=0 stOut=0x8
+0xfffffff009947c98  bti      c
+0xfffffff009947c9c  ldr      x1, [x2, #0x58]
+0xfffffff009947ca0  ldr      x0, [x0, #0x120]
+0xfffffff009947ca4  b        #0xfffffff0099673a0
+
+====================================================================================================
+SEL 17  fn=0xfffffff009947ca8 len=0x10  scIn=0 stIn=0x0 scOut=0 stOut=0x4
+0xfffffff009947ca8  bti      c
+0xfffffff009947cac  ldr      x0, [x0, #0x120]
+0xfffffff009947cb0  ldr      x1, [x2, #0x58]
+0xfffffff009947cb4  b        #0xfffffff009965cd0
+
+====================================================================================================
+SEL 18  fn=0xfffffff009947cb8 len=0x14  scIn=1 stIn=0x0 scOut=0 stOut=0x0
+0xfffffff009947cb8  bti      c
+0xfffffff009947cbc  ldr      x0, [x0, #0x120]
+0xfffffff009947cc0  ldr      x8, [x2, #0x20]
+0xfffffff009947cc4  ldr      w1, [x8]
+0xfffffff009947cc8  b        #0xfffffff009965d78
+
+====================================================================================================
+SEL 19  fn=0xfffffff009947ccc len=0x18  scIn=1 stIn=0x0 scOut=0 stOut=0x18
+0xfffffff009947ccc  bti      c
+0xfffffff009947cd0  ldr      x0, [x0, #0x120]
+0xfffffff009947cd4  ldr      x8, [x2, #0x20]
+0xfffffff009947cd8  ldr      x1, [x8]
+0xfffffff009947cdc  ldr      x2, [x2, #0x58]
+0xfffffff009947ce0  b        #0xfffffff009965b64
+
+====================================================================================================
+SEL 20  fn=0xfffffff009947ce4 len=0x14  scIn=1 stIn=0x0 scOut=0 stOut=0x0
+0xfffffff009947ce4  bti      c
+0xfffffff009947ce8  ldr      x0, [x0, #0x120]
+0xfffffff009947cec  ldr      x8, [x2, #0x20]
+0xfffffff009947cf0  ldr      w1, [x8]
+0xfffffff009947cf4  b        #0xfffffff009965c20
+
+====================================================================================================
+SEL 21  fn=0xfffffff009947cf8 len=0x10  scIn=0 stIn=0x0 scOut=0 stOut=0x30
+0xfffffff009947cf8  bti      c
+0xfffffff009947cfc  ldr      x1, [x2, #0x58]
+0xfffffff009947d00  ldr      x0, [x0, #0x120]
+0xfffffff009947d04  b        #0xfffffff009966328
+
+====================================================================================================
+SEL 22  fn=0xfffffff009947d08 len=0x10  scIn=0 stIn=0x0 scOut=0 stOut=0xffffffff
+0xfffffff009947d08  bti      c
+0xfffffff009947d0c  mov      w0, #0x2c7
+0xfffffff009947d10  movk     w0, #0xe000, lsl #16
+0xfffffff009947d14  ret      
+
+====================================================================================================
+SEL 23  fn=0xfffffff009947d18 len=0x10  scIn=0 stIn=0x0 scOut=1 stOut=0x0
+0xfffffff009947d18  bti      c
+0xfffffff009947d1c  ldr      x0, [x0, #0x120]
+0xfffffff009947d20  ldr      x1, [x2, #0x48]
+0xfffffff009947d24  b        #0xfffffff0099664a0
+
+====================================================================================================
+SEL 24  fn=0xfffffff009947d28 len=0xbc  scIn=2 stIn=0x0 scOut=0 stOut=0x0
+0xfffffff009947d28  bti      c
+0xfffffff009947d2c  pacibsp  
+0xfffffff009947d30  stp      x22, x21, [sp, #-0x30]!
+0xfffffff009947d34  stp      x20, x19, [sp, #0x10]
+0xfffffff009947d38  stp      x29, x30, [sp, #0x20]
+0xfffffff009947d3c  add      x29, sp, #0x20
+0xfffffff009947d40  mov      x20, x0
+0xfffffff009947d44  mov      w19, #0x2c2
+0xfffffff009947d48  movk     w19, #0xe000, lsl #16
+0xfffffff009947d4c  ldr      x8, [x2, #0x20]
+0xfffffff009947d50  ldr      w1, [x8]
+0xfffffff009947d54  ldr      w22, [x8, #8]
+0xfffffff009947d58  ldr      x0, [x0, #0x120]
+0xfffffff009947d5c  bl       #0xfffffff009965da8
+0xfffffff009947d60  mov      x21, x0
+0xfffffff009947d64  ldr      x0, [x20, #0x120]
+0xfffffff009947d68  mov      x1, x22
+0xfffffff009947d6c  bl       #0xfffffff009965db4
+0xfffffff009947d70  mov      x20, x0
+0xfffffff009947d74  cbz      x21, #0xfffffff009947dac
+0xfffffff009947d78  cbz      x20, #0xfffffff009947d8c
+0xfffffff009947d7c  mov      x0, x21
+0xfffffff009947d80  mov      x1, x20
+0xfffffff009947d84  bl       #0xfffffff009976ba0
+0xfffffff009947d88  mov      x19, x0
+0xfffffff009947d8c  ldr      x16, [x21]
+0xfffffff009947d90  mov      x17, x21
+0xfffffff009947d94  movk     x17, #0xcda1, lsl #48
+0xfffffff009947d98  autda    x16, x17
+0xfffffff009947d9c  ldr      x8, [x16, #0x28]!
+0xfffffff009947da0  mov      x0, x21
+0xfffffff009947da4  movk     x16, #0x3a87, lsl #48
+0xfffffff009947da8  blraa    x8, x16
+0xfffffff009947dac  cbz      x20, #0xfffffff009947dd0
+0xfffffff009947db0  ldr      x16, [x20]
+0xfffffff009947db4  mov      x17, x20
+0xfffffff009947db8  movk     x17, #0xcda1, lsl #48
+0xfffffff009947dbc  autda    x16, x17
+0xfffffff009947dc0  ldr      x8, [x16, #0x28]!
+0xfffffff009947dc4  mov      x0, x20
+0xfffffff009947dc8  movk     x16, #0x3a87, lsl #48
+0xfffffff009947dcc  blraa    x8, x16
+0xfffffff009947dd0  mov      x0, x19
+0xfffffff009947dd4  ldp      x29, x30, [sp, #0x20]
+0xfffffff009947dd8  ldp      x20, x19, [sp, #0x10]
+0xfffffff009947ddc  ldp      x22, x21, [sp], #0x30
+0xfffffff009947de0  retab    
+
+====================================================================================================
+SEL 25  fn=0xfffffff009947de4 len=0x220  scIn=4 stIn=0xffffffff scOut=1 stOut=0x0
+   name: static IOReturn IOGPUDeviceUserClient::s_submit_command_buffers(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)
+0xfffffff009947de4  bti      c
+0xfffffff009947de8  pacibsp  
+0xfffffff009947dec  sub      sp, sp, #0x70
+0xfffffff009947df0  stp      x26, x25, [sp, #0x20]
+0xfffffff009947df4  stp      x24, x23, [sp, #0x30]
+0xfffffff009947df8  stp      x22, x21, [sp, #0x40]
+0xfffffff009947dfc  stp      x20, x19, [sp, #0x50]
+0xfffffff009947e00  stp      x29, x30, [sp, #0x60]
+0xfffffff009947e04  add      x29, sp, #0x60
+0xfffffff009947e08  mov      x21, x2
+0xfffffff009947e0c  mov      x22, x0
+0xfffffff009947e10  mov      w19, #0x2c2
+0xfffffff009947e14  movk     w19, #0xe000, lsl #16
+0xfffffff009947e18  ldr      x0, [x2, #0x40]
+0xfffffff009947e1c  cbz      x0, #0xfffffff009947eac
+0xfffffff009947e20  ldr      x16, [x0]
+0xfffffff009947e24  mov      x17, x0
+0xfffffff009947e28  movk     x17, #0xcda1, lsl #48
+0xfffffff009947e2c  autda    x16, x17
+0xfffffff009947e30  ldr      x8, [x16, #0xe8]!
+0xfffffff009947e34  mov      w1, #0x1000
+0xfffffff009947e38  movk     x16, #0x3ed6, lsl #48
+0xfffffff009947e3c  blraa    x8, x16
+0xfffffff009947e40  cbz      x0, #0xfffffff009947f08
+0xfffffff009947e44  mov      x20, x0
+0xfffffff009947e48  ldr      x16, [x0]
+0xfffffff009947e4c  mov      x17, x0
+0xfffffff009947e50  movk     x17, #0xcda1, lsl #48
+0xfffffff009947e54  autda    x16, x17
+0xfffffff009947e58  ldr      x8, [x16, #0x78]!
+0xfffffff009947e5c  movk     x16, #0x34f6, lsl #48
+0xfffffff009947e60  blraa    x8, x16
+0xfffffff009947e64  mov      x23, x0
+0xfffffff009947e68  ldr      x0, [x21, #0x40]
+0xfffffff009947e6c  ldr      x16, [x0]
+0xfffffff009947e70  mov      x17, x0
+0xfffffff009947e74  movk     x17, #0xcda1, lsl #48
+0xfffffff009947e78  autda    x16, x17
+0xfffffff009947e7c  ldr      x8, [x16, #0xb0]!
+0xfffffff009947e80  movk     x16, #0xb392, lsl #48
+0xfffffff009947e84  blraa    x8, x16
+0xfffffff009947e88  ldr      w8, [x21, #0x28]
+0xfffffff009947e8c  cmp      w8, #4
+0xfffffff009947e90  b.eq     #0xfffffff009947ec4
+0xfffffff009947e94  mov      x8, x20
+0xfffffff009947e98  movk     x8, #0xcda1, lsl #48
+0xfffffff009947e9c  ldr      x16, [x20]
+0xfffffff009947ea0  autda    x16, x8
+0xfffffff009947ea4  ldr      x8, [x16, #0x28]!
+0xfffffff009947ea8  b        #0xfffffff009947fd8
+0xfffffff009947eac  ldr      w8, [x21, #0x28]
+0xfffffff009947eb0  cmp      w8, #4
+0xfffffff009947eb4  b.ne     #0xfffffff009947fe4
+0xfffffff009947eb8  mov      x20, #0
+0xfffffff009947ebc  ldr      w0, [x21, #0x38]
+0xfffffff009947ec0  ldr      x23, [x21, #0x30]
+0xfffffff009947ec4  ldr      x8, [x21, #0x20]
+0xfffffff009947ec8  ldp      x25, x24, [x8, #0x10]
+0xfffffff009947ecc  umulh    x9, x24, x25
+0xfffffff009947ed0  cbz      x9, #0xfffffff009947f10
+0xfffffff009947ed4  stp      x25, x24, [sp, #8]
+0xfffffff009947ed8  adrp     x8, #0xfffffff00782b000
+0xfffffff009947edc  add      x8, x8, #0x42d
+0xfffffff009947ee0  str      x8, [sp]
+0xfffffff009947ee4  adrp     x0, #0xfffffff007829000
+0xfffffff009947ee8  add      x0, x0, #0xf60
+0xfffffff009947eec  adrp     x1, #0xfffffff007ff2000
+0xfffffff009947ef0  ldr      x1, [x1, #0x808]
+0xfffffff009947ef4  adrp     x3, #0xfffffff007831000
+0xfffffff009947ef8  add      x3, x3, #0x230
+0xfffffff009947efc  mov      w2, #0x11
+0xfffffff009947f00  bl       #0xfffffff009984c2c
+0xfffffff009947f04  b        #0xfffffff009947fc0
+0xfffffff009947f08  add      w19, w19, #6
+0xfffffff009947f0c  b        #0xfffffff009947fe4
+0xfffffff009947f10  mul      x9, x24, x25
+0xfffffff009947f14  cmp      x0, x9
+0xfffffff009947f18  b.ne     #0xfffffff009947f90
+0xfffffff009947f1c  ldr      w1, [x8]
+0xfffffff009947f20  ldr      x0, [x22, #0x120]
+0xfffffff009947f24  bl       #0xfffffff009965da8
+0xfffffff009947f28  cbz      x0, #0xfffffff009947fc0
+0xfffffff009947f2c  mov      x22, x0
+0xfffffff009947f30  ldr      x8, [x0, #0x530]
+0xfffffff009947f34  ldr      w8, [x8, #0x268]
+0xfffffff009947f38  cmp      x24, x8
+0xfffffff009947f3c  b.ne     #0xfffffff009948004
+0xfffffff009947f40  str      wzr, [sp, #0x1c]
+0xfffffff009947f44  add      x4, sp, #0x1c
+0xfffffff009947f48  mov      x0, x22
+0xfffffff009947f4c  mov      x1, x23
+0xfffffff009947f50  mov      x2, x25
+0xfffffff009947f54  mov      x3, x24
+0xfffffff009947f58  bl       #0xfffffff009976cf8
+0xfffffff009947f5c  mov      x19, x0
+0xfffffff009947f60  ldr      w8, [sp, #0x1c]
+0xfffffff009947f64  ldr      x9, [x21, #0x48]
+0xfffffff009947f68  str      x8, [x9]
+0xfffffff009947f6c  ldr      x16, [x22]
+0xfffffff009947f70  mov      x17, x22
+0xfffffff009947f74  movk     x17, #0xcda1, lsl #48
+0xfffffff009947f78  autda    x16, x17
+0xfffffff009947f7c  ldr      x8, [x16, #0x28]!
+0xfffffff009947f80  mov      x0, x22
+0xfffffff009947f84  movk     x16, #0x3a87, lsl #48
+0xfffffff009947f88  blraa    x8, x16
+0xfffffff009947f8c  b        #0xfffffff009947fc0
+0xfffffff009947f90  stp      x0, x9, [sp, #8]
+0xfffffff009947f94  adrp     x8, #0xfffffff00782b000
+0xfffffff009947f98  add      x8, x8, #0x42d
+0xfffffff009947f9c  str      x8, [sp]
+0xfffffff009947fa0  adrp     x0, #0xfffffff007829000
+0xfffffff009947fa4  add      x0, x0, #0xf60
+0xfffffff009947fa8  adrp     x1, #0xfffffff007ff2000
+0xfffffff009947fac  ldr      x1, [x1, #0x808]
+0xfffffff009947fb0  adrp     x3, #0xfffffff007831000
+0xfffffff009947fb4  add      x3, x3, #0x257
+0xfffffff009947fb8  mov      w2, #0x11
+0xfffffff009947fbc  bl       #0xfffffff009984c2c
+0xfffffff009947fc0  cbz      x20, #0xfffffff009947fe4
+0xfffffff009947fc4  ldr      x16, [x20]
+0xfffffff009947fc8  mov      x17, x20
+0xfffffff009947fcc  movk     x17, #0xcda1, lsl #48
+0xfffffff009947fd0  autda    x16, x17
+0xfffffff009947fd4  ldr      x8, [x16, #0x28]!
+0xfffffff009947fd8  mov      x0, x20
+0xfffffff009947fdc  movk     x16, #0x3a87, lsl #48
+0xfffffff009947fe0  blraa    x8, x16
+0xfffffff009947fe4  mov      x0, x19
+0xfffffff009947fe8  ldp      x29, x30, [sp, #0x60]
+0xfffffff009947fec  ldp      x20, x19, [sp, #0x50]
+0xfffffff009947ff0  ldp      x22, x21, [sp, #0x40]
+0xfffffff009947ff4  ldp      x24, x23, [sp, #0x30]
+0xfffffff009947ff8  ldp      x26, x25, [sp, #0x20]
+0xfffffff009947ffc  add      sp, sp, #0x70
+0xfffffff009948000  retab    
+
+====================================================================================================
+SEL 26  fn=0xfffffff009948074 len=0xa8  scIn=1 stIn=0xc scOut=1 stOut=0x0
+0xfffffff009948074  bti      c
+0xfffffff009948078  pacibsp  
+0xfffffff00994807c  sub      sp, sp, #0x40
+0xfffffff009948080  stp      x22, x21, [sp, #0x10]
+0xfffffff009948084  stp      x20, x19, [sp, #0x20]
+0xfffffff009948088  stp      x29, x30, [sp, #0x30]
+0xfffffff00994808c  add      x29, sp, #0x30
+0xfffffff009948090  mov      x19, x2
+0xfffffff009948094  ldr      x8, [x2, #0x20]
+0xfffffff009948098  ldr      w1, [x8]
+0xfffffff00994809c  ldr      x21, [x2, #0x30]
+0xfffffff0099480a0  ldr      x0, [x0, #0x120]
+0xfffffff0099480a4  bl       #0xfffffff009965da8
+0xfffffff0099480a8  mov      w8, #3
+0xfffffff0099480ac  str      w8, [sp, #0xc]
+0xfffffff0099480b0  cbz      x0, #0xfffffff0099480fc
+0xfffffff0099480b4  mov      x20, x0
+0xfffffff0099480b8  ldp      w1, w2, [x21]
+0xfffffff0099480bc  add      x3, sp, #0xc
+0xfffffff0099480c0  bl       #0xfffffff009977304
+0xfffffff0099480c4  mov      x21, x0
+0xfffffff0099480c8  cbnz     w0, #0xfffffff0099480d8
+0xfffffff0099480cc  ldr      w8, [sp, #0xc]
+0xfffffff0099480d0  ldr      x9, [x19, #0x48]
+0xfffffff0099480d4  str      x8, [x9]
+0xfffffff0099480d8  ldr      x16, [x20]
+0xfffffff0099480dc  mov      x17, x20
+0xfffffff0099480e0  movk     x17, #0xcda1, lsl #48
+0xfffffff0099480e4  autda    x16, x17
+0xfffffff0099480e8  ldr      x8, [x16, #0x28]!
+0xfffffff0099480ec  mov      x0, x20
+0xfffffff0099480f0  movk     x16, #0x3a87, lsl #48
+0xfffffff0099480f4  blraa    x8, x16
+0xfffffff0099480f8  b        #0xfffffff009948104
+0xfffffff0099480fc  mov      w21, #0x2c2
+0xfffffff009948100  movk     w21, #0xe000, lsl #16
+0xfffffff009948104  mov      x0, x21
+0xfffffff009948108  ldp      x29, x30, [sp, #0x30]
+0xfffffff00994810c  ldp      x20, x19, [sp, #0x20]
+0xfffffff009948110  ldp      x22, x21, [sp, #0x10]
+0xfffffff009948114  add      sp, sp, #0x40
+0xfffffff009948118  retab    
+
+====================================================================================================
+SEL 27  fn=0xfffffff00994811c len=0xa4  scIn=1 stIn=0x4 scOut=0 stOut=0x0
+0xfffffff00994811c  bti      c
+0xfffffff009948120  pacibsp  
+0xfffffff009948124  stp      x22, x21, [sp, #-0x30]!
+0xfffffff009948128  stp      x20, x19, [sp, #0x10]
+0xfffffff00994812c  stp      x29, x30, [sp, #0x20]
+0xfffffff009948130  add      x29, sp, #0x20
+0xfffffff009948134  ldr      x8, [x2, #0x20]
+0xfffffff009948138  ldr      w1, [x8]
+0xfffffff00994813c  ldr      x21, [x2, #0x30]
+0xfffffff009948140  ldr      x0, [x0, #0x120]
+0xfffffff009948144  bl       #0xfffffff009965da8
+0xfffffff009948148  cbz      x0, #0xfffffff0099481a4
+0xfffffff00994814c  mov      x19, x0
+0xfffffff009948150  ldr      w1, [x21]
+0xfffffff009948154  bl       #0xfffffff0099767f8
+0xfffffff009948158  mov      x20, x0
+0xfffffff00994815c  cbnz     w0, #0xfffffff009948180
+0xfffffff009948160  mov      x0, x19
+0xfffffff009948164  bl       #0xfffffff0099768f4
+0xfffffff009948168  ldr      w1, [x21]
+0xfffffff00994816c  mov      x0, x19
+0xfffffff009948170  bl       #0xfffffff00997742c
+0xfffffff009948174  mov      x20, x0
+0xfffffff009948178  mov      x0, x19
+0xfffffff00994817c  bl       #0xfffffff009976900
+0xfffffff009948180  ldr      x16, [x19]
+0xfffffff009948184  mov      x17, x19
+0xfffffff009948188  movk     x17, #0xcda1, lsl #48
+0xfffffff00994818c  autda    x16, x17
+0xfffffff009948190  ldr      x8, [x16, #0x28]!
+0xfffffff009948194  mov      x0, x19
+0xfffffff009948198  movk     x16, #0x3a87, lsl #48
+0xfffffff00994819c  blraa    x8, x16
+0xfffffff0099481a0  b        #0xfffffff0099481ac
+0xfffffff0099481a4  mov      w20, #0x2c2
+0xfffffff0099481a8  movk     w20, #0xe000, lsl #16
+0xfffffff0099481ac  mov      x0, x20
+0xfffffff0099481b0  ldp      x29, x30, [sp, #0x20]
+0xfffffff0099481b4  ldp      x20, x19, [sp, #0x10]
+0xfffffff0099481b8  ldp      x22, x21, [sp], #0x30
+0xfffffff0099481bc  retab    
+
+====================================================================================================
+SEL 28  fn=0xfffffff0099481c0 len=0x34  scIn=0 stIn=0x0 scOut=2 stOut=0x0
+0xfffffff0099481c0  bti      c
+0xfffffff0099481c4  ldr      x0, [x0, #0x120]
+0xfffffff0099481c8  ldr      x1, [x2, #0x48]
+0xfffffff0099481cc  ldr      x16, [x0]
+0xfffffff0099481d0  mov      x17, x0
+0xfffffff0099481d4  movk     x17, #0xcda1, lsl #48
+0xfffffff0099481d8  autda    x16, x17
+0xfffffff0099481dc  ldr      x8, [x16, #0xb0]!
+0xfffffff0099481e0  mov      x2, x16
+0xfffffff0099481e4  mov      x16, x8
+0xfffffff0099481e8  mov      x17, x2
+0xfffffff0099481ec  movk     x17, #0xb0e2, lsl #48
+0xfffffff0099481f0  braa     x16, x17
+
+====================================================================================================
+SEL 29  fn=0xfffffff0099481f4 len=0x38  scIn=1 stIn=0x0 scOut=0 stOut=0x0
+0xfffffff0099481f4  bti      c
+0xfffffff0099481f8  ldr      x0, [x0, #0x120]
+0xfffffff0099481fc  ldr      x8, [x2, #0x20]
+0xfffffff009948200  ldr      w1, [x8]
+0xfffffff009948204  ldr      x16, [x0]
+0xfffffff009948208  mov      x17, x0
+0xfffffff00994820c  movk     x17, #0xcda1, lsl #48
+0xfffffff009948210  autda    x16, x17
+0xfffffff009948214  ldr      x8, [x16, #0xb8]!
+0xfffffff009948218  mov      x2, x16
+0xfffffff00994821c  mov      x16, x8
+0xfffffff009948220  mov      x17, x2
+0xfffffff009948224  movk     x17, #0x9045, lsl #48
+0xfffffff009948228  braa     x16, x17
+
+====================================================================================================
+SEL 30  fn=0xfffffff00994822c len=0xd0  scIn=2 stIn=0x0 scOut=0 stOut=0x0
+   name: static IOReturn IOGPUDeviceUserClient::s_async_signal_mtlLateEvalevent(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)
+0xfffffff00994822c  bti      c
+0xfffffff009948230  pacibsp  
+0xfffffff009948234  sub      sp, sp, #0x50
+0xfffffff009948238  stp      x22, x21, [sp, #0x20]
+0xfffffff00994823c  stp      x20, x19, [sp, #0x30]
+0xfffffff009948240  stp      x29, x30, [sp, #0x40]
+0xfffffff009948244  add      x29, sp, #0x40
+0xfffffff009948248  ldr      x8, [x2, #0x20]
+0xfffffff00994824c  ldr      w21, [x8]
+0xfffffff009948250  ldr      x19, [x8, #8]
+0xfffffff009948254  ldr      x0, [x0, #0x120]
+0xfffffff009948258  mov      x1, x21
+0xfffffff00994825c  bl       #0xfffffff009965cc4
+0xfffffff009948260  cbz      x0, #0xfffffff0099482b0
+0xfffffff009948264  mov      x20, x0
+0xfffffff009948268  ldr      x16, [x0]
+0xfffffff00994826c  mov      x17, x0
+0xfffffff009948270  movk     x17, #0xcda1, lsl #48
+0xfffffff009948274  autda    x16, x17
+0xfffffff009948278  ldr      x8, [x16, #0x88]!
+0xfffffff00994827c  mov      x1, x19
+0xfffffff009948280  movk     x16, #0x46e5, lsl #48
+0xfffffff009948284  blraa    x8, x16
+0xfffffff009948288  ldr      x16, [x20]
+0xfffffff00994828c  mov      x17, x20
+0xfffffff009948290  movk     x17, #0xcda1, lsl #48
+0xfffffff009948294  autda    x16, x17
+0xfffffff009948298  ldr      x8, [x16, #0x28]!
+0xfffffff00994829c  mov      x0, x20
+0xfffffff0099482a0  movk     x16, #0x3a87, lsl #48
+0xfffffff0099482a4  blraa    x8, x16
+0xfffffff0099482a8  mov      w0, #0
+0xfffffff0099482ac  b        #0xfffffff0099482e8
+0xfffffff0099482b0  stp      x21, x19, [sp, #8]
+0xfffffff0099482b4  adrp     x8, #0xfffffff00782b000
+0xfffffff0099482b8  add      x8, x8, #0x32a
+0xfffffff0099482bc  str      x8, [sp]
+0xfffffff0099482c0  adrp     x0, #0xfffffff007829000
+0xfffffff0099482c4  add      x0, x0, #0xf60
+0xfffffff0099482c8  adrp     x1, #0xfffffff007ff2000
+0xfffffff0099482cc  ldr      x1, [x1, #0x808]
+0xfffffff0099482d0  adrp     x3, #0xfffffff007831000
+0xfffffff0099482d4  add      x3, x3, #0x1e3
+0xfffffff0099482d8  mov      w2, #0x11
+0xfffffff0099482dc  bl       #0xfffffff009984c2c
+0xfffffff0099482e0  mov      w0, #0x2c2
+0xfffffff0099482e4  movk     w0, #0xe000, lsl #16
+0xfffffff0099482e8  ldp      x29, x30, [sp, #0x40]
+0xfffffff0099482ec  ldp      x20, x19, [sp, #0x30]
+0xfffffff0099482f0  ldp      x22, x21, [sp, #0x20]
+0xfffffff0099482f4  add      sp, sp, #0x50
+0xfffffff0099482f8  retab    
+
+====================================================================================================
+SEL 31  fn=0xfffffff0099482fc len=0xd8  scIn=1 stIn=0x0 scOut=2 stOut=0x0
+   name: static IOReturn IOGPUDeviceUserClient::s_query_mtlLateEvalevent(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)
+0xfffffff0099482fc  bti      c
+0xfffffff009948300  pacibsp  
+0xfffffff009948304  sub      sp, sp, #0x40
+0xfffffff009948308  stp      x22, x21, [sp, #0x10]
+0xfffffff00994830c  stp      x20, x19, [sp, #0x20]
+0xfffffff009948310  stp      x29, x30, [sp, #0x30]
+0xfffffff009948314  add      x29, sp, #0x30
+0xfffffff009948318  mov      x19, x2
+0xfffffff00994831c  ldr      x8, [x2, #0x20]
+0xfffffff009948320  ldr      w21, [x8]
+0xfffffff009948324  ldr      x0, [x0, #0x120]
+0xfffffff009948328  mov      x1, x21
+0xfffffff00994832c  bl       #0xfffffff009965cc4
+0xfffffff009948330  cbz      x0, #0xfffffff00994838c
+0xfffffff009948334  mov      x20, x0
+0xfffffff009948338  ldr      x16, [x0]
+0xfffffff00994833c  mov      x17, x0
+0xfffffff009948340  movk     x17, #0xcda1, lsl #48
+0xfffffff009948344  autda    x16, x17
+0xfffffff009948348  ldr      x8, [x16, #0x80]!
+0xfffffff00994834c  movk     x16, #0x27d5, lsl #48
+0xfffffff009948350  blraa    x8, x16
+0xfffffff009948354  ldr      x8, [x19, #0x48]
+0xfffffff009948358  str      x0, [x8]
+0xfffffff00994835c  ldr      x9, [x20, #0x20]
+0xfffffff009948360  str      x9, [x8, #8]
+0xfffffff009948364  ldr      x16, [x20]
+0xfffffff009948368  mov      x17, x20
+0xfffffff00994836c  movk     x17, #0xcda1, lsl #48
+0xfffffff009948370  autda    x16, x17
+0xfffffff009948374  ldr      x8, [x16, #0x28]!
+0xfffffff009948378  mov      x0, x20
+0xfffffff00994837c  movk     x16, #0x3a87, lsl #48
+0xfffffff009948380  blraa    x8, x16
+0xfffffff009948384  mov      w0, #0
+0xfffffff009948388  b        #0xfffffff0099483c0
+0xfffffff00994838c  adrp     x8, #0xfffffff00782b000
+0xfffffff009948390  add      x8, x8, #0x3af
+0xfffffff009948394  stp      x8, x21, [sp]
+0xfffffff009948398  adrp     x0, #0xfffffff007829000
+0xfffffff00994839c  add      x0, x0, #0xf60
+0xfffffff0099483a0  adrp     x1, #0xfffffff007ff2000
+0xfffffff0099483a4  ldr      x1, [x1, #0x808]
+0xfffffff0099483a8  adrp     x3, #0xfffffff007831000
+0xfffffff0099483ac  add      x3, x3, #0x210
+0xfffffff0099483b0  mov      w2, #0x11
+0xfffffff0099483b4  bl       #0xfffffff009984c2c
+0xfffffff0099483b8  mov      w0, #0x2c2
+0xfffffff0099483bc  movk     w0, #0xe000, lsl #16
+0xfffffff0099483c0  ldp      x29, x30, [sp, #0x30]
+0xfffffff0099483c4  ldp      x20, x19, [sp, #0x20]
+0xfffffff0099483c8  ldp      x22, x21, [sp, #0x10]
+0xfffffff0099483cc  add      sp, sp, #0x40
+0xfffffff0099483d0  retab    
+
+====================================================================================================
+SEL 32  fn=0xfffffff0099483d4 len=0x3c  scIn=2 stIn=0x0 scOut=0 stOut=0x0
+0xfffffff0099483d4  bti      c
+0xfffffff0099483d8  ldr      x8, [x2, #0x20]
+0xfffffff0099483dc  ldp      x1, x2, [x8]
+0xfffffff0099483e0  ldr      x16, [x0]
+0xfffffff0099483e4  mov      x17, x0
+0xfffffff0099483e8  movk     x17, #0xcda1, lsl #48
+0xfffffff0099483ec  autda    x16, x17
+0xfffffff0099483f0  mov      x17, #0x5e0
+0xfffffff0099483f4  add      x16, x16, x17
+0xfffffff0099483f8  ldr      x8, [x16]
+0xfffffff0099483fc  mov      x3, x16
+0xfffffff009948400  mov      x16, x8
+0xfffffff009948404  mov      x17, x3
+0xfffffff009948408  movk     x17, #0x7827, lsl #48
+0xfffffff00994840c  braa     x16, x17
+
+====================================================================================================
+SEL 33  fn=0xfffffff009948410 len=0x3c  scIn=2 stIn=0x0 scOut=0 stOut=0x0
+0xfffffff009948410  bti      c
+0xfffffff009948414  ldr      x8, [x2, #0x20]
+0xfffffff009948418  ldr      w1, [x8]
+0xfffffff00994841c  ldr      w2, [x8, #8]
+0xfffffff009948420  ldr      x0, [x0, #0x120]
+0xfffffff009948424  ldr      x16, [x0]
+0xfffffff009948428  mov      x17, x0
+0xfffffff00994842c  movk     x17, #0xcda1, lsl #48
+0xfffffff009948430  autda    x16, x17
+0xfffffff009948434  ldr      x8, [x16, #0x90]!
+0xfffffff009948438  mov      x3, x16
+0xfffffff00994843c  mov      x16, x8
+0xfffffff009948440  mov      x17, x3
+0xfffffff009948444  movk     x17, #0x2820, lsl #48
+0xfffffff009948448  braa     x16, x17
+
+====================================================================================================
+SEL 34  fn=0xfffffff00994844c len=0x68  scIn=1 stIn=0x0 scOut=1 stOut=0x0
+0xfffffff00994844c  bti      c
+0xfffffff009948450  pacibsp  
+0xfffffff009948454  sub      sp, sp, #0x30
+0xfffffff009948458  stp      x20, x19, [sp, #0x10]
+0xfffffff00994845c  stp      x29, x30, [sp, #0x20]
+0xfffffff009948460  add      x29, sp, #0x20
+0xfffffff009948464  mov      x19, x2
+0xfffffff009948468  ldr      x8, [x2, #0x20]
+0xfffffff00994846c  ldr      w1, [x8]
+0xfffffff009948470  str      wzr, [sp, #0xc]
+0xfffffff009948474  ldr      x0, [x0, #0x120]
+0xfffffff009948478  ldr      x16, [x0]
+0xfffffff00994847c  mov      x17, x0
+0xfffffff009948480  movk     x17, #0xcda1, lsl #48
+0xfffffff009948484  autda    x16, x17
+0xfffffff009948488  ldr      x8, [x16, #0x98]!
+0xfffffff00994848c  add      x2, sp, #0xc
+0xfffffff009948490  movk     x16, #0xc6c4, lsl #48
+0xfffffff009948494  blraa    x8, x16
+0xfffffff009948498  ldr      w8, [sp, #0xc]
+0xfffffff00994849c  ldr      x9, [x19, #0x48]
+0xfffffff0099484a0  str      x8, [x9]
+0xfffffff0099484a4  ldp      x29, x30, [sp, #0x20]
+0xfffffff0099484a8  ldp      x20, x19, [sp, #0x10]
+0xfffffff0099484ac  add      sp, sp, #0x30
+0xfffffff0099484b0  retab    
+
+====================================================================================================
+SEL 35  fn=0xfffffff0099484b4 len=0x18  scIn=2 stIn=0x0 scOut=0 stOut=0x0
+0xfffffff0099484b4  bti      c
+0xfffffff0099484b8  ldr      x8, [x2, #0x20]
+0xfffffff0099484bc  ldr      w1, [x8]
+0xfffffff0099484c0  ldr      w2, [x8, #8]
+0xfffffff0099484c4  ldr      x0, [x0, #0x120]
+0xfffffff0099484c8  b        #0xfffffff0099665b4
+
+====================================================================================================
+SEL 36  fn=0xfffffff0099484cc len=0x9c  scIn=3 stIn=0x0 scOut=1 stOut=0x0
+0xfffffff0099484cc  bti      c
+0xfffffff0099484d0  pacibsp  
+0xfffffff0099484d4  sub      sp, sp, #0x50
+0xfffffff0099484d8  stp      x24, x23, [sp, #0x10]
+0xfffffff0099484dc  stp      x22, x21, [sp, #0x20]
+0xfffffff0099484e0  stp      x20, x19, [sp, #0x30]
+0xfffffff0099484e4  stp      x29, x30, [sp, #0x40]
+0xfffffff0099484e8  add      x29, sp, #0x40
+0xfffffff0099484ec  mov      x19, x2
+0xfffffff0099484f0  mov      x21, x0
+0xfffffff0099484f4  ldr      x8, [x2, #0x20]
+0xfffffff0099484f8  ldr      w22, [x8]
+0xfffffff0099484fc  ldp      x23, x24, [x8, #8]
+0xfffffff009948500  str      wzr, [sp, #0xc]
+0xfffffff009948504  ldr      x8, [x0, #0x120]
+0xfffffff009948508  ldr      x8, [x8, #0x48]
+0xfffffff00994850c  ldr      x0, [x8, #0x2e0]
+0xfffffff009948510  bl       #0xfffffff009984f2c
+0xfffffff009948514  mov      x20, x0
+0xfffffff009948518  ldr      x0, [x21, #0x120]
+0xfffffff00994851c  add      x4, sp, #0xc
+0xfffffff009948520  mov      x1, x22
+0xfffffff009948524  mov      x2, x23
+0xfffffff009948528  mov      x3, x24
+0xfffffff00994852c  bl       #0xfffffff0099676d4
+0xfffffff009948530  mov      x21, x0
+0xfffffff009948534  cbnz     w0, #0xfffffff009948544
+0xfffffff009948538  ldr      w8, [sp, #0xc]
+0xfffffff00994853c  ldr      x9, [x19, #0x48]
+0xfffffff009948540  str      x8, [x9]
+0xfffffff009948544  mov      x0, x20
+0xfffffff009948548  bl       #0xfffffff009984f2c
+0xfffffff00994854c  mov      x0, x21
+0xfffffff009948550  ldp      x29, x30, [sp, #0x40]
+0xfffffff009948554  ldp      x20, x19, [sp, #0x30]
+0xfffffff009948558  ldp      x22, x21, [sp, #0x20]
+0xfffffff00994855c  ldp      x24, x23, [sp, #0x10]
+0xfffffff009948560  add      sp, sp, #0x50
+0xfffffff009948564  retab    
+
+====================================================================================================
+SEL 37  fn=0xfffffff009948568 len=0x14  scIn=1 stIn=0x0 scOut=0 stOut=0x0
+0xfffffff009948568  bti      c
+0xfffffff00994856c  ldr      x8, [x2, #0x20]
+0xfffffff009948570  ldr      w1, [x8]
+0xfffffff009948574  ldr      x0, [x0, #0x120]
+0xfffffff009948578  b        #0xfffffff009967fb8
+
+====================================================================================================
+SEL 38  fn=0xfffffff00994857c len=0x10  scIn=0 stIn=0x18 scOut=0 stOut=0x0
+0xfffffff00994857c  bti      c
+0xfffffff009948580  ldr      x1, [x2, #0x30]
+0xfffffff009948584  ldr      x0, [x0, #0x120]
+0xfffffff009948588  b        #0xfffffff009968054
+
+====================================================================================================
+SEL 39  fn=0xfffffff00994858c len=0x50  scIn=0 stIn=0x18 scOut=1 stOut=0x0
+0xfffffff00994858c  bti      c
+0xfffffff009948590  pacibsp  
+0xfffffff009948594  sub      sp, sp, #0x30
+0xfffffff009948598  stp      x20, x19, [sp, #0x10]
+0xfffffff00994859c  stp      x29, x30, [sp, #0x20]
+0xfffffff0099485a0  add      x29, sp, #0x20
+0xfffffff0099485a4  mov      x19, x2
+0xfffffff0099485a8  ldr      x1, [x2, #0x30]
+0xfffffff0099485ac  str      xzr, [sp, #8]
+0xfffffff0099485b0  ldr      x0, [x0, #0x120]
+0xfffffff0099485b4  add      x2, sp, #8
+0xfffffff0099485b8  bl       #0xfffffff00996810c
+0xfffffff0099485bc  cbnz     w0, #0xfffffff0099485cc
+0xfffffff0099485c0  ldr      x8, [sp, #8]
+0xfffffff0099485c4  ldr      x9, [x19, #0x48]
+0xfffffff0099485c8  str      x8, [x9]
+0xfffffff0099485cc  ldp      x29, x30, [sp, #0x20]
+0xfffffff0099485d0  ldp      x20, x19, [sp, #0x10]
+0xfffffff0099485d4  add      sp, sp, #0x30
+0xfffffff0099485d8  retab    
+
+====================================================================================================
+SEL 40  fn=0xfffffff0099485dc len=0x134  scIn=1 stIn=0x0 scOut=2 stOut=0x0
+   name: static IOReturn IOGPUDeviceUserClient::s_create_vniodesc(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)
+0xfffffff0099485dc  bti      c
+0xfffffff0099485e0  pacibsp  
+0xfffffff0099485e4  sub      sp, sp, #0x40
+0xfffffff0099485e8  stp      x22, x21, [sp, #0x10]
+0xfffffff0099485ec  stp      x20, x19, [sp, #0x20]
+0xfffffff0099485f0  stp      x29, x30, [sp, #0x30]
+0xfffffff0099485f4  add      x29, sp, #0x30
+0xfffffff0099485f8  mov      x20, x2
+0xfffffff0099485fc  mov      x21, x0
+0xfffffff009948600  ldr      x8, [x2, #0x20]
+0xfffffff009948604  ldr      w0, [x8]
+0xfffffff009948608  bl       #0xfffffff0099647b0
+0xfffffff00994860c  cbz      x0, #0xfffffff009948664
+0xfffffff009948610  mov      x19, x0
+0xfffffff009948614  ldr      x8, [x21, #0x120]
+0xfffffff009948618  ldr      x0, [x8, #0x108]
+0xfffffff00994861c  mov      x1, x19
+0xfffffff009948620  bl       #0xfffffff009944fb0
+0xfffffff009948624  cbz      w0, #0xfffffff00994869c
+0xfffffff009948628  mov      w8, w0
+0xfffffff00994862c  ldr      x9, [x20, #0x48]
+0xfffffff009948630  str      x8, [x9]
+0xfffffff009948634  ldr      x8, [x19, #0x20]
+0xfffffff009948638  str      x8, [x9, #8]
+0xfffffff00994863c  ldr      x16, [x19]
+0xfffffff009948640  mov      x17, x19
+0xfffffff009948644  movk     x17, #0xcda1, lsl #48
+0xfffffff009948648  autda    x16, x17
+0xfffffff00994864c  ldr      x8, [x16, #0x28]!
+0xfffffff009948650  mov      x0, x19
+0xfffffff009948654  movk     x16, #0x3a87, lsl #48
+0xfffffff009948658  blraa    x8, x16
+0xfffffff00994865c  mov      w19, #0
+0xfffffff009948660  b        #0xfffffff0099486f8
+0xfffffff009948664  mov      w19, #0x2c2
+0xfffffff009948668  movk     w19, #0xe000, lsl #16
+0xfffffff00994866c  adrp     x8, #0xfffffff00782b000
+0xfffffff009948670  add      x8, x8, #0x63f
+0xfffffff009948674  str      x8, [sp]
+0xfffffff009948678  adrp     x0, #0xfffffff007829000
+0xfffffff00994867c  add      x0, x0, #0xf60
+0xfffffff009948680  adrp     x1, #0xfffffff007ff2000
+0xfffffff009948684  ldr      x1, [x1, #0x808]
+0xfffffff009948688  adrp     x3, #0xfffffff007831000
+0xfffffff00994868c  add      x3, x3, #0x340
+0xfffffff009948690  mov      w2, #0x11
+0xfffffff009948694  bl       #0xfffffff009984c2c
+0xfffffff009948698  b        #0xfffffff0099486f8
+0xfffffff00994869c  adrp     x8, #0xfffffff00782b000
+0xfffffff0099486a0  add      x8, x8, #0x63f
+0xfffffff0099486a4  str      x8, [sp]
+0xfffffff0099486a8  adrp     x0, #0xfffffff007829000
+0xfffffff0099486ac  add      x0, x0, #0xf60
+0xfffffff0099486b0  adrp     x1, #0xfffffff007ff2000
+0xfffffff0099486b4  ldr      x1, [x1, #0x808]
+0xfffffff0099486b8  adrp     x3, #0xfffffff007831000
+0xfffffff0099486bc  add      x3, x3, #0x364
+0xfffffff0099486c0  mov      w2, #0x11
+0xfffffff0099486c4  bl       #0xfffffff009984c2c
+0xfffffff0099486c8  ldr      x16, [x19]
+0xfffffff0099486cc  mov      x17, x19
+0xfffffff0099486d0  movk     x17, #0xcda1, lsl #48
+0xfffffff0099486d4  autda    x16, x17
+0xfffffff0099486d8  ldr      x8, [x16, #0x28]!
+0xfffffff0099486dc  mov      x0, x19
+0xfffffff0099486e0  movk     x16, #0x3a87, lsl #48
+0xfffffff0099486e4  blraa    x8, x16
+0xfffffff0099486e8  mov      w8, #0x19
+0xfffffff0099486ec  mov      w9, #0x2c2
+0xfffffff0099486f0  movk     w9, #0xe000, lsl #16
+0xfffffff0099486f4  orr      w19, w9, w8
+0xfffffff0099486f8  mov      x0, x19
+0xfffffff0099486fc  ldp      x29, x30, [sp, #0x30]
+0xfffffff009948700  ldp      x20, x19, [sp, #0x20]
+0xfffffff009948704  ldp      x22, x21, [sp, #0x10]
+0xfffffff009948708  add      sp, sp, #0x40
+0xfffffff00994870c  retab    
+
+====================================================================================================
+SEL 41  fn=0xfffffff009948710 len=0x2c  scIn=1 stIn=0x0 scOut=0 stOut=0x0
+0xfffffff009948710  bti      c
+0xfffffff009948714  pacibsp  
+0xfffffff009948718  stp      x29, x30, [sp, #-0x10]!
+0xfffffff00994871c  mov      x29, sp
+0xfffffff009948720  ldr      x8, [x0, #0x120]
+0xfffffff009948724  ldr      x0, [x8, #0x108]
+0xfffffff009948728  ldr      x8, [x2, #0x20]
+0xfffffff00994872c  ldr      w1, [x8]
+0xfffffff009948730  bl       #0xfffffff0099451a0
+0xfffffff009948734  ldp      x29, x30, [sp], #0x10
+0xfffffff009948738  retab    
+
+====================================================================================================
+SEL 42  fn=0xfffffff00994873c len=0x1e4  scIn=2 stIn=0x0 scOut=2 stOut=0x0
+   name: static IOReturn IOGPUDeviceUserClient::s_create_io_command_queue(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)
+0xfffffff00994873c  bti      c
+0xfffffff009948740  pacibsp  
+0xfffffff009948744  sub      sp, sp, #0x50
+0xfffffff009948748  stp      x24, x23, [sp, #0x10]
+0xfffffff00994874c  stp      x22, x21, [sp, #0x20]
+0xfffffff009948750  stp      x20, x19, [sp, #0x30]
+0xfffffff009948754  stp      x29, x30, [sp, #0x40]
+0xfffffff009948758  add      x29, sp, #0x40
+0xfffffff00994875c  mov      x20, x2
+0xfffffff009948760  mov      x21, x0
+0xfffffff009948764  ldr      x8, [x2, #0x20]
+0xfffffff009948768  ldp      x22, x23, [x8]
+0xfffffff00994876c  ldr      x0, [x0, #0xf8]
+0xfffffff009948770  ldr      x16, [x0]
+0xfffffff009948774  mov      x17, x0
+0xfffffff009948778  movk     x17, #0xcda1, lsl #48
+0xfffffff00994877c  autda    x16, x17
+0xfffffff009948780  mov      x17, #0x6b0
+0xfffffff009948784  add      x16, x16, x17
+0xfffffff009948788  ldr      x8, [x16]
+0xfffffff00994878c  movk     x16, #0x35e, lsl #48
+0xfffffff009948790  blraa    x8, x16
+0xfffffff009948794  cbz      x0, #0xfffffff009948828
+0xfffffff009948798  mov      x19, x0
+0xfffffff00994879c  ldr      x1, [x21, #0x120]
+0xfffffff0099487a0  ldr      x16, [x0]
+0xfffffff0099487a4  mov      x24, x0
+0xfffffff0099487a8  movk     x24, #0xcda1, lsl #48
+0xfffffff0099487ac  mov      x17, x0
+0xfffffff0099487b0  movk     x17, #0xcda1, lsl #48
+0xfffffff0099487b4  autda    x16, x17
+0xfffffff0099487b8  ldr      x8, [x16, #0x88]!
+0xfffffff0099487bc  mov      x2, x22
+0xfffffff0099487c0  mov      x3, x23
+0xfffffff0099487c4  movk     x16, #0x8159, lsl #48
+0xfffffff0099487c8  blraa    x8, x16
+0xfffffff0099487cc  tbz      w0, #0, #0xfffffff009948860
+0xfffffff0099487d0  ldr      x8, [x21, #0x120]
+0xfffffff0099487d4  ldr      x0, [x8, #0x110]
+0xfffffff0099487d8  mov      x1, x19
+0xfffffff0099487dc  bl       #0xfffffff009944fb0
+0xfffffff0099487e0  cbz      w0, #0xfffffff0099488b4
+0xfffffff0099487e4  mov      x21, x0
+0xfffffff0099487e8  mov      x0, x19
+0xfffffff0099487ec  mov      x1, x21
+0xfffffff0099487f0  bl       #0xfffffff00995b2e0
+0xfffffff0099487f4  mov      w8, w21
+0xfffffff0099487f8  ldr      x9, [x20, #0x48]
+0xfffffff0099487fc  str      x8, [x9]
+0xfffffff009948800  ldr      x8, [x19, #0x30]
+0xfffffff009948804  str      x8, [x9, #8]
+0xfffffff009948808  ldr      x16, [x19]
+0xfffffff00994880c  autda    x16, x24
+0xfffffff009948810  ldr      x8, [x16, #0x28]!
+0xfffffff009948814  mov      x0, x19
+0xfffffff009948818  movk     x16, #0x3a87, lsl #48
+0xfffffff00994881c  blraa    x8, x16
+0xfffffff009948820  mov      w19, #0
+0xfffffff009948824  b        #0xfffffff009948904
+0xfffffff009948828  mov      w19, #0x2bd
+0xfffffff00994882c  movk     w19, #0xe000, lsl #16
+0xfffffff009948830  adrp     x8, #0xfffffff00782b000
+0xfffffff009948834  add      x8, x8, #0x6b6
+0xfffffff009948838  str      x8, [sp]
+0xfffffff00994883c  adrp     x0, #0xfffffff007829000
+0xfffffff009948840  add      x0, x0, #0xf60
+0xfffffff009948844  adrp     x1, #0xfffffff007ff2000
+0xfffffff009948848  ldr      x1, [x1, #0x808]
+0xfffffff00994884c  adrp     x3, #0xfffffff007831000
+0xfffffff009948850  add      x3, x3, #0x387
+0xfffffff009948854  mov      w2, #0x11
+0xfffffff009948858  bl       #0xfffffff009984c2c
+0xfffffff00994885c  b        #0xfffffff009948904
+0xfffffff009948860  adrp     x8, #0xfffffff00782b000
+0xfffffff009948864  add      x8, x8, #0x6b6
+0xfffffff009948868  str      x8, [sp]
+0xfffffff00994886c  adrp     x0, #0xfffffff007829000
+0xfffffff009948870  add      x0, x0, #0xf60
+0xfffffff009948874  adrp     x1, #0xfffffff007ff2000
+0xfffffff009948878  ldr      x1, [x1, #0x808]
+0xfffffff00994887c  adrp     x3, #0xfffffff007831000
+0xfffffff009948880  add      x3, x3, #0x3ad
+0xfffffff009948884  mov      w2, #0x11
+0xfffffff009948888  bl       #0xfffffff009984c2c
+0xfffffff00994888c  ldr      x16, [x19]
+0xfffffff009948890  autda    x16, x24
+0xfffffff009948894  ldr      x8, [x16, #0x28]!
+0xfffffff009948898  mov      x0, x19
+0xfffffff00994889c  movk     x16, #0x3a87, lsl #48
+0xfffffff0099488a0  blraa    x8, x16
+0xfffffff0099488a4  mov      w8, #0x2bd
+0xfffffff0099488a8  movk     w8, #0xe000, lsl #16
+0xfffffff0099488ac  add      w19, w8, #0xc
+0xfffffff0099488b0  b        #0xfffffff009948904
+0xfffffff0099488b4  adrp     x8, #0xfffffff00782b000
+0xfffffff0099488b8  add      x8, x8, #0x6b6
+0xfffffff0099488bc  str      x8, [sp]
+0xfffffff0099488c0  adrp     x0, #0xfffffff007829000
+0xfffffff0099488c4  add      x0, x0, #0xf60
+0xfffffff0099488c8  adrp     x1, #0xfffffff007ff2000
+0xfffffff0099488cc  ldr      x1, [x1, #0x808]
+0xfffffff0099488d0  adrp     x3, #0xfffffff007831000
+0xfffffff0099488d4  add      x3, x3, #0x3cf
+0xfffffff0099488d8  mov      w2, #0x11
+0xfffffff0099488dc  bl       #0xfffffff009984c2c
+0xfffffff0099488e0  ldr      x16, [x19]
+0xfffffff0099488e4  autda    x16, x24
+0xfffffff0099488e8  ldr      x8, [x16, #0x28]!
+0xfffffff0099488ec  mov      x0, x19
+0xfffffff0099488f0  movk     x16, #0x3a87, lsl #48
+0xfffffff0099488f4  blraa    x8, x16
+0xfffffff0099488f8  mov      w8, #0x2bd
+0xfffffff0099488fc  movk     w8, #0xe000, lsl #16
+0xfffffff009948900  add      w19, w8, #0x1e
+0xfffffff009948904  mov      x0, x19
+0xfffffff009948908  ldp      x29, x30, [sp, #0x40]
+0xfffffff00994890c  ldp      x20, x19, [sp, #0x30]
+0xfffffff009948910  ldp      x22, x21, [sp, #0x20]
+0xfffffff009948914  ldp      x24, x23, [sp, #0x10]
+0xfffffff009948918  add      sp, sp, #0x50
+0xfffffff00994891c  retab    
+
+====================================================================================================
+SEL 43  fn=0xfffffff009948920 len=0x84  scIn=1 stIn=0x0 scOut=0 stOut=0x0
+   name: static IOReturn IOGPUDeviceUserClient::s_destroy_io_command_queue(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)
+0xfffffff009948920  bti      c
+0xfffffff009948924  pacibsp  
+0xfffffff009948928  sub      sp, sp, #0x30
+0xfffffff00994892c  stp      x20, x19, [sp, #0x10]
+0xfffffff009948930  stp      x29, x30, [sp, #0x20]
+0xfffffff009948934  add      x29, sp, #0x20
+0xfffffff009948938  ldr      x8, [x2, #0x20]
+0xfffffff00994893c  ldr      w19, [x8]
+0xfffffff009948940  ldr      x8, [x0, #0x120]
+0xfffffff009948944  ldr      x0, [x8, #0x110]
+0xfffffff009948948  mov      x1, x19
+0xfffffff00994894c  bl       #0xfffffff009945154
+0xfffffff009948950  cbz      x0, #0xfffffff009948960
+0xfffffff009948954  bl       #0xfffffff00995b020
+0xfffffff009948958  mov      w0, #0
+0xfffffff00994895c  b        #0xfffffff009948994
+0xfffffff009948960  adrp     x8, #0xfffffff00782b000
+0xfffffff009948964  add      x8, x8, #0x735
+0xfffffff009948968  stp      x8, x19, [sp]
+0xfffffff00994896c  adrp     x0, #0xfffffff007829000
+0xfffffff009948970  add      x0, x0, #0xf60
+0xfffffff009948974  adrp     x1, #0xfffffff007ff2000
+0xfffffff009948978  ldr      x1, [x1, #0x808]
+0xfffffff00994897c  adrp     x3, #0xfffffff007831000
+0xfffffff009948980  add      x3, x3, #0x3fd
+0xfffffff009948984  mov      w2, #0x11
+0xfffffff009948988  bl       #0xfffffff009984c2c
+0xfffffff00994898c  mov      w0, #0x2c2
+0xfffffff009948990  movk     w0, #0xe000, lsl #16
+0xfffffff009948994  ldp      x29, x30, [sp, #0x20]
+0xfffffff009948998  ldp      x20, x19, [sp, #0x10]
+0xfffffff00994899c  add      sp, sp, #0x30
+0xfffffff0099489a0  retab    
+
+====================================================================================================
+SEL 44  fn=0xfffffff0099489a4 len=0x150  scIn=2 stIn=0x0 scOut=0 stOut=0x0
+   name: static IOReturn IOGPUDeviceUserClient::s_set_io_notification_queue(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)
+0xfffffff0099489a4  bti      c
+0xfffffff0099489a8  pacibsp  
+0xfffffff0099489ac  sub      sp, sp, #0x40
+0xfffffff0099489b0  stp      x22, x21, [sp, #0x10]
+0xfffffff0099489b4  stp      x20, x19, [sp, #0x20]
+0xfffffff0099489b8  stp      x29, x30, [sp, #0x30]
+0xfffffff0099489bc  add      x29, sp, #0x30
+0xfffffff0099489c0  mov      x20, x0
+0xfffffff0099489c4  ldr      x8, [x2, #0x20]
+0xfffffff0099489c8  ldr      w22, [x8]
+0xfffffff0099489cc  ldr      w21, [x8, #8]
+0xfffffff0099489d0  ldr      x0, [x0, #0x120]
+0xfffffff0099489d4  mov      x1, x22
+0xfffffff0099489d8  bl       #0xfffffff009967bb4
+0xfffffff0099489dc  cbz      x0, #0xfffffff009948a50
+0xfffffff0099489e0  mov      x19, x0
+0xfffffff0099489e4  ldr      x0, [x20, #0x120]
+0xfffffff0099489e8  mov      x1, x21
+0xfffffff0099489ec  bl       #0xfffffff009965db4
+0xfffffff0099489f0  cbz      x0, #0xfffffff009948a88
+0xfffffff0099489f4  mov      x20, x0
+0xfffffff0099489f8  mov      x0, x19
+0xfffffff0099489fc  mov      x1, x20
+0xfffffff009948a00  bl       #0xfffffff00995b2ec
+0xfffffff009948a04  mov      x21, x0
+0xfffffff009948a08  ldr      x16, [x19]
+0xfffffff009948a0c  mov      x17, x19
+0xfffffff009948a10  movk     x17, #0xcda1, lsl #48
+0xfffffff009948a14  autda    x16, x17
+0xfffffff009948a18  ldr      x8, [x16, #0x28]!
+0xfffffff009948a1c  mov      x0, x19
+0xfffffff009948a20  movk     x16, #0x3a87, lsl #48
+0xfffffff009948a24  blraa    x8, x16
+0xfffffff009948a28  ldr      x16, [x20]
+0xfffffff009948a2c  mov      x17, x20
+0xfffffff009948a30  movk     x17, #0xcda1, lsl #48
+0xfffffff009948a34  autda    x16, x17
+0xfffffff009948a38  ldr      x8, [x16, #0x28]!
+0xfffffff009948a3c  mov      x0, x20
+0xfffffff009948a40  movk     x16, #0x3a87, lsl #48
+0xfffffff009948a44  blraa    x8, x16
+0xfffffff009948a48  mov      x0, x21
+0xfffffff009948a4c  b        #0xfffffff009948ae0
+0xfffffff009948a50  mov      w20, #0x2c2
+0xfffffff009948a54  movk     w20, #0xe000, lsl #16
+0xfffffff009948a58  adrp     x8, #0xfffffff00782b000
+0xfffffff009948a5c  add      x8, x8, #0x7b5
+0xfffffff009948a60  stp      x8, x22, [sp]
+0xfffffff009948a64  adrp     x0, #0xfffffff007829000
+0xfffffff009948a68  add      x0, x0, #0xf60
+0xfffffff009948a6c  adrp     x1, #0xfffffff007ff2000
+0xfffffff009948a70  ldr      x1, [x1, #0x808]
+0xfffffff009948a74  adrp     x3, #0xfffffff007831000
+0xfffffff009948a78  add      x3, x3, #0x41b
+0xfffffff009948a7c  mov      w2, #0x11
+0xfffffff009948a80  bl       #0xfffffff009984c2c
+0xfffffff009948a84  b        #0xfffffff009948adc
+0xfffffff009948a88  mov      w20, #0x2c2
+0xfffffff009948a8c  movk     w20, #0xe000, lsl #16
+0xfffffff009948a90  adrp     x8, #0xfffffff00782b000
+0xfffffff009948a94  add      x8, x8, #0x7b5
+0xfffffff009948a98  stp      x8, x21, [sp]
+0xfffffff009948a9c  adrp     x0, #0xfffffff007829000
+0xfffffff009948aa0  add      x0, x0, #0xf60
+0xfffffff009948aa4  adrp     x1, #0xfffffff007ff2000
+0xfffffff009948aa8  ldr      x1, [x1, #0x808]
+0xfffffff009948aac  adrp     x3, #0xfffffff007831000
+0xfffffff009948ab0  add      x3, x3, #0x439
+0xfffffff009948ab4  mov      w2, #0x11
+0xfffffff009948ab8  bl       #0xfffffff009984c2c
+0xfffffff009948abc  ldr      x16, [x19]
+0xfffffff009948ac0  mov      x17, x19
+0xfffffff009948ac4  movk     x17, #0xcda1, lsl #48
+0xfffffff009948ac8  autda    x16, x17
+0xfffffff009948acc  ldr      x8, [x16, #0x28]!
+0xfffffff009948ad0  mov      x0, x19
+0xfffffff009948ad4  movk     x16, #0x3a87, lsl #48
+0xfffffff009948ad8  blraa    x8, x16
+0xfffffff009948adc  mov      x0, x20
+0xfffffff009948ae0  ldp      x29, x30, [sp, #0x30]
+0xfffffff009948ae4  ldp      x20, x19, [sp, #0x20]
+0xfffffff009948ae8  ldp      x22, x21, [sp, #0x10]
+0xfffffff009948aec  add      sp, sp, #0x40
+0xfffffff009948af0  retab    
+
+====================================================================================================
+SEL 45  fn=0xfffffff009948af4 len=0x17c  scIn=1 stIn=0xffffffff scOut=0 stOut=0x0
+   name: static IOReturn IOGPUDeviceUserClient::s_submit_io_commands(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)
+0xfffffff009948af4  bti      c
+0xfffffff009948af8  pacibsp  
+0xfffffff009948afc  sub      sp, sp, #0x60
+0xfffffff009948b00  stp      x24, x23, [sp, #0x20]
+0xfffffff009948b04  stp      x22, x21, [sp, #0x30]
+0xfffffff009948b08  stp      x20, x19, [sp, #0x40]
+0xfffffff009948b0c  stp      x29, x30, [sp, #0x50]
+0xfffffff009948b10  add      x29, sp, #0x50
+0xfffffff009948b14  mov      x21, x2
+0xfffffff009948b18  mov      x20, x0
+0xfffffff009948b1c  ldr      x0, [x2, #0x40]
+0xfffffff009948b20  cbz      x0, #0xfffffff009948b90
+0xfffffff009948b24  ldr      x16, [x0]
+0xfffffff009948b28  mov      x17, x0
+0xfffffff009948b2c  movk     x17, #0xcda1, lsl #48
+0xfffffff009948b30  autda    x16, x17
+0xfffffff009948b34  ldr      x8, [x16, #0xe8]!
+0xfffffff009948b38  mov      w1, #0x1000
+0xfffffff009948b3c  movk     x16, #0x3ed6, lsl #48
+0xfffffff009948b40  blraa    x8, x16
+0xfffffff009948b44  cbz      x0, #0xfffffff009948c1c
+0xfffffff009948b48  mov      x19, x0
+0xfffffff009948b4c  ldr      x16, [x0]
+0xfffffff009948b50  mov      x17, x0
+0xfffffff009948b54  movk     x17, #0xcda1, lsl #48
+0xfffffff009948b58  autda    x16, x17
+0xfffffff009948b5c  ldr      x8, [x16, #0x78]!
+0xfffffff009948b60  movk     x16, #0x34f6, lsl #48
+0xfffffff009948b64  blraa    x8, x16
+0xfffffff009948b68  mov      x22, x0
+0xfffffff009948b6c  ldr      x0, [x21, #0x40]
+0xfffffff009948b70  ldr      x16, [x0]
+0xfffffff009948b74  mov      x17, x0
+0xfffffff009948b78  movk     x17, #0xcda1, lsl #48
+0xfffffff009948b7c  autda    x16, x17
+0xfffffff009948b80  ldr      x8, [x16, #0xb0]!
+0xfffffff009948b84  movk     x16, #0xb392, lsl #48
+0xfffffff009948b88  blraa    x8, x16
+0xfffffff009948b8c  b        #0xfffffff009948b9c
+0xfffffff009948b90  mov      x19, #0
+0xfffffff009948b94  ldr      x22, [x21, #0x30]
+0xfffffff009948b98  ldr      w0, [x21, #0x38]
+0xfffffff009948b9c  subs     x9, x0, #8
+0xfffffff009948ba0  b.lo     #0xfffffff009948bc0
+0xfffffff009948ba4  mov      x8, #-0x5555555555555556
+0xfffffff009948ba8  movk     x8, #0xaaab
+0xfffffff009948bac  umulh    x8, x9, x8
+0xfffffff009948bb0  lsr      x8, x8, #4
+0xfffffff009948bb4  mov      w10, #0x18
+0xfffffff009948bb8  msub     x9, x8, x10, x9
+0xfffffff009948bbc  cbz      x9, #0xfffffff009948c70
+0xfffffff009948bc0  mov      w20, #0x2c2
+0xfffffff009948bc4  movk     w20, #0xe000, lsl #16
+0xfffffff009948bc8  adrp     x8, #0xfffffff00782b000
+0xfffffff009948bcc  add      x8, x8, #0x836
+0xfffffff009948bd0  stp      x8, x0, [sp]
+0xfffffff009948bd4  adrp     x0, #0xfffffff007829000
+0xfffffff009948bd8  add      x0, x0, #0xf60
+0xfffffff009948bdc  adrp     x1, #0xfffffff007ff2000
+0xfffffff009948be0  ldr      x1, [x1, #0x808]
+0xfffffff009948be4  adrp     x3, #0xfffffff007831000
+0xfffffff009948be8  add      x3, x3, #0x489
+0xfffffff009948bec  mov      w2, #0x11
+0xfffffff009948bf0  bl       #0xfffffff009984c2c
+0xfffffff009948bf4  cbz      x19, #0xfffffff009948c54
+0xfffffff009948bf8  ldr      x16, [x19]
+0xfffffff009948bfc  mov      x17, x19
+0xfffffff009948c00  movk     x17, #0xcda1, lsl #48
+0xfffffff009948c04  autda    x16, x17
+0xfffffff009948c08  ldr      x8, [x16, #0x28]!
+0xfffffff009948c0c  mov      x0, x19
+0xfffffff009948c10  movk     x16, #0x3a87, lsl #48
+0xfffffff009948c14  blraa    x8, x16
+0xfffffff009948c18  b        #0xfffffff009948c54
+0xfffffff009948c1c  adrp     x8, #0xfffffff00782b000
+0xfffffff009948c20  add      x8, x8, #0x836
+0xfffffff009948c24  str      x8, [sp]
+0xfffffff009948c28  adrp     x0, #0xfffffff007829000
+0xfffffff009948c2c  add      x0, x0, #0xf60
+0xfffffff009948c30  adrp     x1, #0xfffffff007ff2000
+0xfffffff009948c34  ldr      x1, [x1, #0x808]
+0xfffffff009948c38  adrp     x3, #0xfffffff007831000
+0xfffffff009948c3c  add      x3, x3, #0x461
+0xfffffff009948c40  mov      w2, #0x11
+0xfffffff009948c44  bl       #0xfffffff009984c2c
+0xfffffff009948c48  mov      w8, #0x2c2
+0xfffffff009948c4c  movk     w8, #0xe000, lsl #16
+0xfffffff009948c50  add      w20, w8, #6
+0xfffffff009948c54  mov      x0, x20
+0xfffffff009948c58  ldp      x29, x30, [sp, #0x50]
+0xfffffff009948c5c  ldp      x20, x19, [sp, #0x40]
+0xfffffff009948c60  ldp      x22, x21, [sp, #0x30]
+0xfffffff009948c64  ldp      x24, x23, [sp, #0x20]
+0xfffffff009948c68  add      sp, sp, #0x60
+0xfffffff009948c6c  retab    
+
+====================================================================================================
+SEL 46  fn=0xfffffff009948d60 len=0xbc  scIn=1 stIn=0x0 scOut=2 stOut=0x0
+   name: static IOReturn IOGPUDeviceUserClient::s_create_io_command_buffer(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)
+0xfffffff009948d60  bti      c
+0xfffffff009948d64  pacibsp  
+0xfffffff009948d68  sub      sp, sp, #0x40
+0xfffffff009948d6c  stp      x22, x21, [sp, #0x10]
+0xfffffff009948d70  stp      x20, x19, [sp, #0x20]
+0xfffffff009948d74  stp      x29, x30, [sp, #0x30]
+0xfffffff009948d78  add      x29, sp, #0x30
+0xfffffff009948d7c  mov      x20, x2
+0xfffffff009948d80  ldr      x8, [x2, #0x20]
+0xfffffff009948d84  ldr      w21, [x8]
+0xfffffff009948d88  ldr      x0, [x0, #0x120]
+0xfffffff009948d8c  mov      x1, x21
+0xfffffff009948d90  bl       #0xfffffff009967bb4
+0xfffffff009948d94  cbz      x0, #0xfffffff009948dd4
+0xfffffff009948d98  mov      x19, x0
+0xfffffff009948d9c  ldr      x1, [x20, #0x48]
+0xfffffff009948da0  add      x2, x1, #8
+0xfffffff009948da4  bl       #0xfffffff00995b9a4
+0xfffffff009948da8  mov      x20, x0
+0xfffffff009948dac  ldr      x16, [x19]
+0xfffffff009948db0  mov      x17, x19
+0xfffffff009948db4  movk     x17, #0xcda1, lsl #48
+0xfffffff009948db8  autda    x16, x17
+0xfffffff009948dbc  ldr      x8, [x16, #0x28]!
+0xfffffff009948dc0  mov      x0, x19
+0xfffffff009948dc4  movk     x16, #0x3a87, lsl #48
+0xfffffff009948dc8  blraa    x8, x16
+0xfffffff009948dcc  mov      x0, x20
+0xfffffff009948dd0  b        #0xfffffff009948e08
+0xfffffff009948dd4  adrp     x8, #0xfffffff00782b000
+0xfffffff009948dd8  add      x8, x8, #0x8b0
+0xfffffff009948ddc  stp      x8, x21, [sp]
+0xfffffff009948de0  adrp     x0, #0xfffffff007829000
+0xfffffff009948de4  add      x0, x0, #0xf60
+0xfffffff009948de8  adrp     x1, #0xfffffff007ff2000
+0xfffffff009948dec  ldr      x1, [x1, #0x808]
+0xfffffff009948df0  adrp     x3, #0xfffffff007831000
+0xfffffff009948df4  add      x3, x3, #0x501
+0xfffffff009948df8  mov      w2, #0x11
+0xfffffff009948dfc  bl       #0xfffffff009984c2c
+0xfffffff009948e00  mov      w0, #0x2c2
+0xfffffff009948e04  movk     w0, #0xe000, lsl #16
+0xfffffff009948e08  ldp      x29, x30, [sp, #0x30]
+0xfffffff009948e0c  ldp      x20, x19, [sp, #0x20]
+0xfffffff009948e10  ldp      x22, x21, [sp, #0x10]
+0xfffffff009948e14  add      sp, sp, #0x40
+0xfffffff009948e18  retab    
+
+====================================================================================================
+SEL 47  fn=0xfffffff009948e1c len=0xbc  scIn=2 stIn=0x0 scOut=0 stOut=0x0
+   name: static IOReturn IOGPUDeviceUserClient::s_destroy_io_command_buffer(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)
+0xfffffff009948e1c  bti      c
+0xfffffff009948e20  pacibsp  
+0xfffffff009948e24  sub      sp, sp, #0x40
+0xfffffff009948e28  stp      x22, x21, [sp, #0x10]
+0xfffffff009948e2c  stp      x20, x19, [sp, #0x20]
+0xfffffff009948e30  stp      x29, x30, [sp, #0x30]
+0xfffffff009948e34  add      x29, sp, #0x30
+0xfffffff009948e38  mov      x20, x2
+0xfffffff009948e3c  ldr      x8, [x2, #0x20]
+0xfffffff009948e40  ldr      w21, [x8]
+0xfffffff009948e44  ldr      x0, [x0, #0x120]
+0xfffffff009948e48  mov      x1, x21
+0xfffffff009948e4c  bl       #0xfffffff009967bb4
+0xfffffff009948e50  cbz      x0, #0xfffffff009948e90
+0xfffffff009948e54  mov      x19, x0
+0xfffffff009948e58  ldr      x8, [x20, #0x20]
+0xfffffff009948e5c  ldr      w1, [x8, #8]
+0xfffffff009948e60  bl       #0xfffffff00995bb6c
+0xfffffff009948e64  mov      x20, x0
+0xfffffff009948e68  ldr      x16, [x19]
+0xfffffff009948e6c  mov      x17, x19
+0xfffffff009948e70  movk     x17, #0xcda1, lsl #48
+0xfffffff009948e74  autda    x16, x17
+0xfffffff009948e78  ldr      x8, [x16, #0x28]!
+0xfffffff009948e7c  mov      x0, x19
+0xfffffff009948e80  movk     x16, #0x3a87, lsl #48
+0xfffffff009948e84  blraa    x8, x16
+0xfffffff009948e88  mov      x0, x20
+0xfffffff009948e8c  b        #0xfffffff009948ec4
+0xfffffff009948e90  adrp     x8, #0xfffffff00782b000
+0xfffffff009948e94  add      x8, x8, #0x930
+0xfffffff009948e98  stp      x8, x21, [sp]
+0xfffffff009948e9c  adrp     x0, #0xfffffff007829000
+0xfffffff009948ea0  add      x0, x0, #0xf60
+0xfffffff009948ea4  adrp     x1, #0xfffffff007ff2000
+0xfffffff009948ea8  ldr      x1, [x1, #0x808]
+0xfffffff009948eac  adrp     x3, #0xfffffff007831000
+0xfffffff009948eb0  add      x3, x3, #0x51f
+0xfffffff009948eb4  mov      w2, #0x11
+0xfffffff009948eb8  bl       #0xfffffff009984c2c
+0xfffffff009948ebc  mov      w0, #0x2c2
+0xfffffff009948ec0  movk     w0, #0xe000, lsl #16
+0xfffffff009948ec4  ldp      x29, x30, [sp, #0x30]
+0xfffffff009948ec8  ldp      x20, x19, [sp, #0x20]
+0xfffffff009948ecc  ldp      x22, x21, [sp, #0x10]
+0xfffffff009948ed0  add      sp, sp, #0x40
+0xfffffff009948ed4  retab    
+
+====================================================================================================
+SEL 48  fn=0xfffffff009948ed8 len=0xbc  scIn=2 stIn=0x0 scOut=0 stOut=0x0
+   name: static IOReturn IOGPUDeviceUserClient::s_try_cancel_io_command_buffer(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)
+0xfffffff009948ed8  bti      c
+0xfffffff009948edc  pacibsp  
+0xfffffff009948ee0  sub      sp, sp, #0x40
+0xfffffff009948ee4  stp      x22, x21, [sp, #0x10]
+0xfffffff009948ee8  stp      x20, x19, [sp, #0x20]
+0xfffffff009948eec  stp      x29, x30, [sp, #0x30]
+0xfffffff009948ef0  add      x29, sp, #0x30
+0xfffffff009948ef4  mov      x20, x2
+0xfffffff009948ef8  ldr      x8, [x2, #0x20]
+0xfffffff009948efc  ldr      w21, [x8]
+0xfffffff009948f00  ldr      x0, [x0, #0x120]
+0xfffffff009948f04  mov      x1, x21
+0xfffffff009948f08  bl       #0xfffffff009967bb4
+0xfffffff009948f0c  cbz      x0, #0xfffffff009948f4c
+0xfffffff009948f10  mov      x19, x0
+0xfffffff009948f14  ldr      x8, [x20, #0x20]
+0xfffffff009948f18  ldr      w1, [x8, #8]
+0xfffffff009948f1c  bl       #0xfffffff00995bbe4
+0xfffffff009948f20  mov      x20, x0
+0xfffffff009948f24  ldr      x16, [x19]
+0xfffffff009948f28  mov      x17, x19
+0xfffffff009948f2c  movk     x17, #0xcda1, lsl #48
+0xfffffff009948f30  autda    x16, x17
+0xfffffff009948f34  ldr      x8, [x16, #0x28]!
+0xfffffff009948f38  mov      x0, x19
+0xfffffff009948f3c  movk     x16, #0x3a87, lsl #48
+0xfffffff009948f40  blraa    x8, x16
+0xfffffff009948f44  mov      x0, x20
+0xfffffff009948f48  b        #0xfffffff009948f80
+0xfffffff009948f4c  adrp     x8, #0xfffffff00782b000
+0xfffffff009948f50  add      x8, x8, #0x9b1
+0xfffffff009948f54  stp      x8, x21, [sp]
+0xfffffff009948f58  adrp     x0, #0xfffffff007829000
+0xfffffff009948f5c  add      x0, x0, #0xf60
+0xfffffff009948f60  adrp     x1, #0xfffffff007ff2000
+0xfffffff009948f64  ldr      x1, [x1, #0x808]
+0xfffffff009948f68  adrp     x3, #0xfffffff007831000
+0xfffffff009948f6c  add      x3, x3, #0x53d
+0xfffffff009948f70  mov      w2, #0x11
+0xfffffff009948f74  bl       #0xfffffff009984c2c
+0xfffffff009948f78  mov      w0, #0x2c2
+0xfffffff009948f7c  movk     w0, #0xe000, lsl #16
+0xfffffff009948f80  ldp      x29, x30, [sp, #0x30]
+0xfffffff009948f84  ldp      x20, x19, [sp, #0x20]
+0xfffffff009948f88  ldp      x22, x21, [sp, #0x10]
+0xfffffff009948f8c  add      sp, sp, #0x40
+0xfffffff009948f90  retab    
+
+====================================================================================================
+SEL 49  fn=0xfffffff009948f94 len=0xa8  scIn=1 stIn=0x0 scOut=0 stOut=0x0
+   name: static IOReturn IOGPUDeviceUserClient::s_perform_io(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)
+0xfffffff009948f94  bti      c
+0xfffffff009948f98  pacibsp  
+0xfffffff009948f9c  sub      sp, sp, #0x30
+0xfffffff009948fa0  stp      x20, x19, [sp, #0x10]
+0xfffffff009948fa4  stp      x29, x30, [sp, #0x20]
+0xfffffff009948fa8  add      x29, sp, #0x20
+0xfffffff009948fac  ldr      x8, [x2, #0x20]
+0xfffffff009948fb0  ldr      w20, [x8]
+0xfffffff009948fb4  ldr      x0, [x0, #0x120]
+0xfffffff009948fb8  mov      x1, x20
+0xfffffff009948fbc  bl       #0xfffffff009967bb4
+0xfffffff009948fc0  cbz      x0, #0xfffffff009948ff8
+0xfffffff009948fc4  mov      x19, x0
+0xfffffff009948fc8  bl       #0xfffffff00995b654
+0xfffffff009948fcc  mov      x20, x0
+0xfffffff009948fd0  ldr      x16, [x19]
+0xfffffff009948fd4  mov      x17, x19
+0xfffffff009948fd8  movk     x17, #0xcda1, lsl #48
+0xfffffff009948fdc  autda    x16, x17
+0xfffffff009948fe0  ldr      x8, [x16, #0x28]!
+0xfffffff009948fe4  mov      x0, x19
+0xfffffff009948fe8  movk     x16, #0x3a87, lsl #48
+0xfffffff009948fec  blraa    x8, x16
+0xfffffff009948ff0  mov      x0, x20
+0xfffffff009948ff4  b        #0xfffffff00994902c
+0xfffffff009948ff8  adrp     x8, #0xfffffff00782b000
+0xfffffff009948ffc  add      x8, x8, #0xa35
+0xfffffff009949000  stp      x8, x20, [sp]
+0xfffffff009949004  adrp     x0, #0xfffffff007829000
+0xfffffff009949008  add      x0, x0, #0xf60
+0xfffffff00994900c  adrp     x1, #0xfffffff007ff2000
+0xfffffff009949010  ldr      x1, [x1, #0x808]
+0xfffffff009949014  adrp     x3, #0xfffffff007831000
+0xfffffff009949018  add      x3, x3, #0x55b
+0xfffffff00994901c  mov      w2, #0x11
+0xfffffff009949020  bl       #0xfffffff009984c2c
+0xfffffff009949024  mov      w0, #0x2c2
+0xfffffff009949028  movk     w0, #0xe000, lsl #16
+0xfffffff00994902c  ldp      x29, x30, [sp, #0x20]
+0xfffffff009949030  ldp      x20, x19, [sp, #0x10]
+0xfffffff009949034  add      sp, sp, #0x30
+0xfffffff009949038  retab    
+
+====================================================================================================
+SEL 50  fn=0xfffffff00994903c len=0xa4  scIn=1 stIn=0x0 scOut=0 stOut=0x0
+   name: static IOReturn IOGPUDeviceUserClient::s_io_command_buffer_complete(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)
+0xfffffff00994903c  bti      c
+0xfffffff009949040  pacibsp  
+0xfffffff009949044  sub      sp, sp, #0x30
+0xfffffff009949048  stp      x20, x19, [sp, #0x10]
+0xfffffff00994904c  stp      x29, x30, [sp, #0x20]
+0xfffffff009949050  add      x29, sp, #0x20
+0xfffffff009949054  ldr      x8, [x2, #0x20]
+0xfffffff009949058  ldr      w20, [x8]
+0xfffffff00994905c  ldr      x0, [x0, #0x120]
+0xfffffff009949060  mov      x1, x20
+0xfffffff009949064  bl       #0xfffffff009967bb4
+0xfffffff009949068  cbz      x0, #0xfffffff00994909c
+0xfffffff00994906c  mov      x19, x0
+0xfffffff009949070  bl       #0xfffffff00995bc50
+0xfffffff009949074  ldr      x16, [x19]
+0xfffffff009949078  mov      x17, x19
+0xfffffff00994907c  movk     x17, #0xcda1, lsl #48
+0xfffffff009949080  autda    x16, x17
+0xfffffff009949084  ldr      x8, [x16, #0x28]!
+0xfffffff009949088  mov      x0, x19
+0xfffffff00994908c  movk     x16, #0x3a87, lsl #48
+0xfffffff009949090  blraa    x8, x16
+0xfffffff009949094  mov      w0, #0
+0xfffffff009949098  b        #0xfffffff0099490d0
+0xfffffff00994909c  adrp     x8, #0xfffffff00782b000
+0xfffffff0099490a0  add      x8, x8, #0xaa7
+0xfffffff0099490a4  stp      x8, x20, [sp]
+0xfffffff0099490a8  adrp     x0, #0xfffffff007829000
+0xfffffff0099490ac  add      x0, x0, #0xf60
+0xfffffff0099490b0  adrp     x1, #0xfffffff007ff2000
+0xfffffff0099490b4  ldr      x1, [x1, #0x808]
+0xfffffff0099490b8  adrp     x3, #0xfffffff007831000
+0xfffffff0099490bc  add      x3, x3, #0x579
+0xfffffff0099490c0  mov      w2, #0x11
+0xfffffff0099490c4  bl       #0xfffffff009984c2c
+0xfffffff0099490c8  mov      w0, #0x2c2
+0xfffffff0099490cc  movk     w0, #0xe000, lsl #16
+0xfffffff0099490d0  ldp      x29, x30, [sp, #0x20]
+0xfffffff0099490d4  ldp      x20, x19, [sp, #0x10]
+0xfffffff0099490d8  add      sp, sp, #0x30
+0xfffffff0099490dc  retab    
+
+====================================================================================================
+SEL 51  fn=0xfffffff0099490e0 len=0xc0  scIn=3 stIn=0x0 scOut=0 stOut=0x0
+   name: static IOReturn IOGPUDeviceUserClient::s_io_command_buffer_barrier_complete(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)
+0xfffffff0099490e0  bti      c
+0xfffffff0099490e4  pacibsp  
+0xfffffff0099490e8  sub      sp, sp, #0x40
+0xfffffff0099490ec  stp      x22, x21, [sp, #0x10]
+0xfffffff0099490f0  stp      x20, x19, [sp, #0x20]
+0xfffffff0099490f4  stp      x29, x30, [sp, #0x30]
+0xfffffff0099490f8  add      x29, sp, #0x30
+0xfffffff0099490fc  mov      x20, x2
+0xfffffff009949100  ldr      x8, [x2, #0x20]
+0xfffffff009949104  ldr      w21, [x8]
+0xfffffff009949108  ldr      x0, [x0, #0x120]
+0xfffffff00994910c  mov      x1, x21
+0xfffffff009949110  bl       #0xfffffff009967bb4
+0xfffffff009949114  cbz      x0, #0xfffffff009949158
+0xfffffff009949118  mov      x19, x0
+0xfffffff00994911c  ldr      x8, [x20, #0x20]
+0xfffffff009949120  ldr      w1, [x8, #8]
+0xfffffff009949124  ldr      w2, [x8, #0x10]
+0xfffffff009949128  bl       #0xfffffff00995bc90
+0xfffffff00994912c  mov      x20, x0
+0xfffffff009949130  ldr      x16, [x19]
+0xfffffff009949134  mov      x17, x19
+0xfffffff009949138  movk     x17, #0xcda1, lsl #48
+0xfffffff00994913c  autda    x16, x17
+0xfffffff009949140  ldr      x8, [x16, #0x28]!
+0xfffffff009949144  mov      x0, x19
+0xfffffff009949148  movk     x16, #0x3a87, lsl #48
+0xfffffff00994914c  blraa    x8, x16
+0xfffffff009949150  mov      x0, x20
+0xfffffff009949154  b        #0xfffffff00994918c
+0xfffffff009949158  adrp     x8, #0xfffffff00782b000
+0xfffffff00994915c  add      x8, x8, #0xb29
+0xfffffff009949160  stp      x8, x21, [sp]
+0xfffffff009949164  adrp     x0, #0xfffffff007829000
+0xfffffff009949168  add      x0, x0, #0xf60
+0xfffffff00994916c  adrp     x1, #0xfffffff007ff2000
+0xfffffff009949170  ldr      x1, [x1, #0x808]
+0xfffffff009949174  adrp     x3, #0xfffffff007831000
+0xfffffff009949178  add      x3, x3, #0x597
+0xfffffff00994917c  mov      w2, #0x11
+0xfffffff009949180  bl       #0xfffffff009984c2c
+0xfffffff009949184  mov      w0, #0x2c2
+0xfffffff009949188  movk     w0, #0xe000, lsl #16
+0xfffffff00994918c  ldp      x29, x30, [sp, #0x30]
+0xfffffff009949190  ldp      x20, x19, [sp, #0x20]
+0xfffffff009949194  ldp      x22, x21, [sp, #0x10]
+0xfffffff009949198  add      sp, sp, #0x40
+0xfffffff00994919c  retab    
+
+====================================================================================================
+SEL 52  fn=0xfffffff0099491a0 len=0x190  scIn=2 stIn=0xffffffff scOut=0 stOut=0x0
+   name: static IOReturn IOGPUDeviceUserClient::s_group_add_resources(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)
+0xfffffff0099491a0  bti      c
+0xfffffff0099491a4  pacibsp  
+0xfffffff0099491a8  sub      sp, sp, #0x60
+0xfffffff0099491ac  stp      x26, x25, [sp, #0x10]
+0xfffffff0099491b0  stp      x24, x23, [sp, #0x20]
+0xfffffff0099491b4  stp      x22, x21, [sp, #0x30]
+0xfffffff0099491b8  stp      x20, x19, [sp, #0x40]
+0xfffffff0099491bc  stp      x29, x30, [sp, #0x50]
+0xfffffff0099491c0  add      x29, sp, #0x50
+0xfffffff0099491c4  mov      x25, x2
+0xfffffff0099491c8  mov      x22, x0
+0xfffffff0099491cc  mov      w19, #0x2c2
+0xfffffff0099491d0  movk     w19, #0xe000, lsl #16
+0xfffffff0099491d4  ldr      x8, [x2, #0x20]
+0xfffffff0099491d8  ldr      w23, [x8]
+0xfffffff0099491dc  ldr      w21, [x8, #8]
+0xfffffff0099491e0  ldr      x0, [x2, #0x40]
+0xfffffff0099491e4  cbz      x0, #0xfffffff009949258
+0xfffffff0099491e8  ldr      x16, [x0]
+0xfffffff0099491ec  mov      x17, x0
+0xfffffff0099491f0  movk     x17, #0xcda1, lsl #48
+0xfffffff0099491f4  autda    x16, x17
+0xfffffff0099491f8  ldr      x8, [x16, #0xe8]!
+0xfffffff0099491fc  mov      w1, #0x1000
+0xfffffff009949200  movk     x16, #0x3ed6, lsl #48
+0xfffffff009949204  blraa    x8, x16
+0xfffffff009949208  cbz      x0, #0xfffffff0099492e0
+0xfffffff00994920c  mov      x20, x0
+0xfffffff009949210  ldr      x16, [x0]
+0xfffffff009949214  mov      x17, x0
+0xfffffff009949218  movk     x17, #0xcda1, lsl #48
+0xfffffff00994921c  autda    x16, x17
+0xfffffff009949220  ldr      x8, [x16, #0x78]!
+0xfffffff009949224  movk     x16, #0x34f6, lsl #48
+0xfffffff009949228  blraa    x8, x16
+0xfffffff00994922c  mov      x24, x0
+0xfffffff009949230  ldr      x0, [x25, #0x40]
+0xfffffff009949234  ldr      x16, [x0]
+0xfffffff009949238  mov      x17, x0
+0xfffffff00994923c  movk     x17, #0xcda1, lsl #48
+0xfffffff009949240  autda    x16, x17
+0xfffffff009949244  ldr      x8, [x16, #0xb0]!
+0xfffffff009949248  movk     x16, #0xb392, lsl #48
+0xfffffff00994924c  blraa    x8, x16
+0xfffffff009949250  cbnz     x24, #0xfffffff009949268
+0xfffffff009949254  b        #0xfffffff009949288
+0xfffffff009949258  mov      x20, #0
+0xfffffff00994925c  ldr      w0, [x25, #0x38]
+0xfffffff009949260  ldr      x24, [x25, #0x30]
+0xfffffff009949264  cbz      x24, #0xfffffff009949288
+0xfffffff009949268  cmp      x0, x21, lsl #2
+0xfffffff00994926c  b.lo     #0xfffffff009949288
+0xfffffff009949270  ldr      x0, [x22, #0x120]
+0xfffffff009949274  mov      x1, x23
+0xfffffff009949278  mov      x2, x24
+0xfffffff00994927c  mov      x3, x21
+0xfffffff009949280  bl       #0xfffffff009967e24
+0xfffffff009949284  mov      x19, x0
+0xfffffff009949288  cbz      x20, #0xfffffff0099492ac
+0xfffffff00994928c  ldr      x16, [x20]
+0xfffffff009949290  mov      x17, x20
+0xfffffff009949294  movk     x17, #0xcda1, lsl #48
+0xfffffff009949298  autda    x16, x17
+0xfffffff00994929c  ldr      x8, [x16, #0x28]!
+0xfffffff0099492a0  mov      x0, x20
+0xfffffff0099492a4  movk     x16, #0x3a87, lsl #48
+0xfffffff0099492a8  blraa    x8, x16
+0xfffffff0099492ac  cbz      w19, #0xfffffff009949310
+0xfffffff0099492b0  adrp     x8, #0xfffffff00782b000
+0xfffffff0099492b4  add      x8, x8, #0xbb3
+0xfffffff0099492b8  str      x8, [sp]
+0xfffffff0099492bc  adrp     x0, #0xfffffff007829000
+0xfffffff0099492c0  add      x0, x0, #0xf60
+0xfffffff0099492c4  adrp     x1, #0xfffffff007ff2000
+0xfffffff0099492c8  ldr      x1, [x1, #0x808]
+0xfffffff0099492cc  adrp     x3, #0xfffffff007831000
+0xfffffff0099492d0  add      x3, x3, #0x5d1
+0xfffffff0099492d4  mov      w2, #0x11
+0xfffffff0099492d8  bl       #0xfffffff009984c2c
+0xfffffff0099492dc  b        #0xfffffff009949310
+0xfffffff0099492e0  adrp     x8, #0xfffffff00782b000
+0xfffffff0099492e4  add      x8, x8, #0xbb3
+0xfffffff0099492e8  str      x8, [sp]
+0xfffffff0099492ec  adrp     x0, #0xfffffff007829000
+0xfffffff0099492f0  add      x0, x0, #0xf60
+0xfffffff0099492f4  adrp     x1, #0xfffffff007ff2000
+0xfffffff0099492f8  ldr      x1, [x1, #0x808]
+0xfffffff0099492fc  adrp     x3, #0xfffffff007831000
+0xfffffff009949300  add      x3, x3, #0x5b5
+0xfffffff009949304  mov      w2, #0x11
+0xfffffff009949308  bl       #0xfffffff009984c2c
+0xfffffff00994930c  add      w19, w19, #6
+0xfffffff009949310  mov      x0, x19
+0xfffffff009949314  ldp      x29, x30, [sp, #0x50]
+0xfffffff009949318  ldp      x20, x19, [sp, #0x40]
+0xfffffff00994931c  ldp      x22, x21, [sp, #0x30]
+0xfffffff009949320  ldp      x24, x23, [sp, #0x20]
+0xfffffff009949324  ldp      x26, x25, [sp, #0x10]
+0xfffffff009949328  add      sp, sp, #0x60
+0xfffffff00994932c  retab    
+
+====================================================================================================
+SEL 53  fn=0xfffffff009949330 len=0x190  scIn=2 stIn=0xffffffff scOut=0 stOut=0x0
+   name: static IOReturn IOGPUDeviceUserClient::s_group_remove_resources(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)
+0xfffffff009949330  bti      c
+0xfffffff009949334  pacibsp  
+0xfffffff009949338  sub      sp, sp, #0x60
+0xfffffff00994933c  stp      x26, x25, [sp, #0x10]
+0xfffffff009949340  stp      x24, x23, [sp, #0x20]
+0xfffffff009949344  stp      x22, x21, [sp, #0x30]
+0xfffffff009949348  stp      x20, x19, [sp, #0x40]
+0xfffffff00994934c  stp      x29, x30, [sp, #0x50]
+0xfffffff009949350  add      x29, sp, #0x50
+0xfffffff009949354  mov      x25, x2
+0xfffffff009949358  mov      x22, x0
+0xfffffff00994935c  mov      w19, #0x2c2
+0xfffffff009949360  movk     w19, #0xe000, lsl #16
+0xfffffff009949364  ldr      x8, [x2, #0x20]
+0xfffffff009949368  ldr      w23, [x8]
+0xfffffff00994936c  ldr      w21, [x8, #8]
+0xfffffff009949370  ldr      x0, [x2, #0x40]
+0xfffffff009949374  cbz      x0, #0xfffffff0099493e8
+0xfffffff009949378  ldr      x16, [x0]
+0xfffffff00994937c  mov      x17, x0
+0xfffffff009949380  movk     x17, #0xcda1, lsl #48
+0xfffffff009949384  autda    x16, x17
+0xfffffff009949388  ldr      x8, [x16, #0xe8]!
+0xfffffff00994938c  mov      w1, #0x1000
+0xfffffff009949390  movk     x16, #0x3ed6, lsl #48
+0xfffffff009949394  blraa    x8, x16
+0xfffffff009949398  cbz      x0, #0xfffffff009949470
+0xfffffff00994939c  mov      x20, x0
+0xfffffff0099493a0  ldr      x16, [x0]
+0xfffffff0099493a4  mov      x17, x0
+0xfffffff0099493a8  movk     x17, #0xcda1, lsl #48
+0xfffffff0099493ac  autda    x16, x17
+0xfffffff0099493b0  ldr      x8, [x16, #0x78]!
+0xfffffff0099493b4  movk     x16, #0x34f6, lsl #48
+0xfffffff0099493b8  blraa    x8, x16
+0xfffffff0099493bc  mov      x24, x0
+0xfffffff0099493c0  ldr      x0, [x25, #0x40]
+0xfffffff0099493c4  ldr      x16, [x0]
+0xfffffff0099493c8  mov      x17, x0
+0xfffffff0099493cc  movk     x17, #0xcda1, lsl #48
+0xfffffff0099493d0  autda    x16, x17
+0xfffffff0099493d4  ldr      x8, [x16, #0xb0]!
+0xfffffff0099493d8  movk     x16, #0xb392, lsl #48
+0xfffffff0099493dc  blraa    x8, x16
+0xfffffff0099493e0  cbnz     x24, #0xfffffff0099493f8
+0xfffffff0099493e4  b        #0xfffffff009949418
+0xfffffff0099493e8  mov      x20, #0
+0xfffffff0099493ec  ldr      w0, [x25, #0x38]
+0xfffffff0099493f0  ldr      x24, [x25, #0x30]
+0xfffffff0099493f4  cbz      x24, #0xfffffff009949418
+0xfffffff0099493f8  cmp      x0, x21, lsl #3
+0xfffffff0099493fc  b.lo     #0xfffffff009949418
+0xfffffff009949400  ldr      x0, [x22, #0x120]
+0xfffffff009949404  mov      x1, x23
+0xfffffff009949408  mov      x2, x24
+0xfffffff00994940c  mov      x3, x21
+0xfffffff009949410  bl       #0xfffffff009967f2c
+0xfffffff009949414  mov      x19, x0
+0xfffffff009949418  cbz      x20, #0xfffffff00994943c
+0xfffffff00994941c  ldr      x16, [x20]
+0xfffffff009949420  mov      x17, x20
+0xfffffff009949424  movk     x17, #0xcda1, lsl #48
+0xfffffff009949428  autda    x16, x17
+0xfffffff00994942c  ldr      x8, [x16, #0x28]!
+0xfffffff009949430  mov      x0, x20
+0xfffffff009949434  movk     x16, #0x3a87, lsl #48
+0xfffffff009949438  blraa    x8, x16
+0xfffffff00994943c  cbz      w19, #0xfffffff0099494a0
+0xfffffff009949440  adrp     x8, #0xfffffff00782b000
+0xfffffff009949444  add      x8, x8, #0xc2e
+0xfffffff009949448  str      x8, [sp]
+0xfffffff00994944c  adrp     x0, #0xfffffff007829000
+0xfffffff009949450  add      x0, x0, #0xf60
+0xfffffff009949454  adrp     x1, #0xfffffff007ff2000
+0xfffffff009949458  ldr      x1, [x1, #0x808]
+0xfffffff00994945c  adrp     x3, #0xfffffff007831000
+0xfffffff009949460  add      x3, x3, #0x612
+0xfffffff009949464  mov      w2, #0x11
+0xfffffff009949468  bl       #0xfffffff009984c2c
+0xfffffff00994946c  b        #0xfffffff0099494a0
+0xfffffff009949470  adrp     x8, #0xfffffff00782b000
+0xfffffff009949474  add      x8, x8, #0xc2e
+0xfffffff009949478  str      x8, [sp]
+0xfffffff00994947c  adrp     x0, #0xfffffff007829000
+0xfffffff009949480  add      x0, x0, #0xf60
+0xfffffff009949484  adrp     x1, #0xfffffff007ff2000
+0xfffffff009949488  ldr      x1, [x1, #0x808]
+0xfffffff00994948c  adrp     x3, #0xfffffff007831000
+0xfffffff009949490  add      x3, x3, #0x5f6
+0xfffffff009949494  mov      w2, #0x11
+0xfffffff009949498  bl       #0xfffffff009984c2c
+0xfffffff00994949c  add      w19, w19, #6
+0xfffffff0099494a0  mov      x0, x19
+0xfffffff0099494a4  ldp      x29, x30, [sp, #0x50]
+0xfffffff0099494a8  ldp      x20, x19, [sp, #0x40]
+0xfffffff0099494ac  ldp      x22, x21, [sp, #0x30]
+0xfffffff0099494b0  ldp      x24, x23, [sp, #0x20]
+0xfffffff0099494b4  ldp      x26, x25, [sp, #0x10]
+0xfffffff0099494b8  add      sp, sp, #0x60
+0xfffffff0099494bc  retab    
+
+====================================================================================================
+SEL 54  fn=0xfffffff0099494c0 len=0x54  scIn=2 stIn=0x0 scOut=1 stOut=0x0
+0xfffffff0099494c0  bti      c
+0xfffffff0099494c4  pacibsp  
+0xfffffff0099494c8  sub      sp, sp, #0x30
+0xfffffff0099494cc  stp      x20, x19, [sp, #0x10]
+0xfffffff0099494d0  stp      x29, x30, [sp, #0x20]
+0xfffffff0099494d4  add      x29, sp, #0x20
+0xfffffff0099494d8  mov      x19, x2
+0xfffffff0099494dc  str      xzr, [sp, #8]
+0xfffffff0099494e0  ldr      x0, [x0, #0x120]
+0xfffffff0099494e4  ldr      x8, [x2, #0x20]
+0xfffffff0099494e8  ldp      x1, x2, [x8]
+0xfffffff0099494ec  add      x3, sp, #8
+0xfffffff0099494f0  bl       #0xfffffff0099681d8
+0xfffffff0099494f4  cbnz     w0, #0xfffffff009949504
+0xfffffff0099494f8  ldr      x8, [sp, #8]
+0xfffffff0099494fc  ldr      x9, [x19, #0x48]
+0xfffffff009949500  str      x8, [x9]
+0xfffffff009949504  ldp      x29, x30, [sp, #0x20]
+0xfffffff009949508  ldp      x20, x19, [sp, #0x10]
+0xfffffff00994950c  add      sp, sp, #0x30
+0xfffffff009949510  retab    
+
+====================================================================================================
+SEL 55  fn=0xfffffff009949514 len=0xc  scIn=0 stIn=0x0 scOut=0 stOut=0x0
+0xfffffff009949514  bti      c
+0xfffffff009949518  ldr      x0, [x0, #0x120]
+0xfffffff00994951c  b        #0xfffffff0099683c4

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ProcessType</key>
+	<string>Adaptive</string>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>EnablePressuredExit</key>
+	<true/>
+	<key>Label</key>
+	<string>com.apple.riskdatad</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.odi.legacySPIService</key>
+		<true/>
+		<key>com.apple.odi.assessmentService</key>
+		<true/>
+		<key>com.apple.odi.consentService</key>
+		<true/>
+	</dict>
+	<key>Program</key>
+	<string>/usr/libexec/riskdatad</string>
+	<key>UserName</key>
+	<string>mobile</string>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.distnoted.matching.trusted</key>
+		<dict>
+			<key>ApplicationUnregistered</key>
+			<dict>
+				<key>Name</key>
+				<string>com.apple.LaunchServices.applicationUnregistered</string>
+			</dict>
+		</dict>
+		<key>com.apple.notifyd.matching</key>
+		<dict>
+			<key>com.apple.Preferences.ResetPrivacyWarningsNotification</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.Preferences.ResetPrivacyWarningsNotification</string>
+			</dict>
+		</dict>
+		<key>com.apple.rapport.matching</key>
+		<dict>
+			<key>odi.rapport</key>
+			<dict>
+				<key>type</key>
+				<string>server</string>
+				<key>serviceType</key>
+				<string>odi.rapport</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.apple.icloudsubscriptionoptimizerd</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/System/Library/PrivateFrameworks/iCloudSubscriptionOptimizerDaemon.framework/icloudsubscriptionoptimizerd/icloudsubscriptionoptimizerd</string>
+	</array>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.icloudsubscriptionoptimizerd.xpc.client</key>
+		<true/>
+	</dict>
+	<key>ProcessType</key>
+	<string>Adaptive</string>
+	<key>EnablePressuredExit</key>
+	<true/>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>UserName</key>
+	<string>mobile</string>
+	<key>StartInterval</key>
+	<integer>10800</integer>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.bg.system.task</key>
+		<dict>
+			<key>com.apple.icloudsubscriptionoptimizerd.task.dailywakeup</key>
+			<dict>
+				<key>Priority</key>
+				<string>Utility</string>
+				<key>RequiresNetworkConnectivity</key>
+				<false/>
+				<key>RequiresExternalPower</key>
+				<false/>
+				<key>RepeatingTask</key>
+				<dict>
+					<key>Interval</key>
+					<integer>86400</integer>
+					<key>MinDurationBetweenInstances</key>
+					<integer>69120</integer>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

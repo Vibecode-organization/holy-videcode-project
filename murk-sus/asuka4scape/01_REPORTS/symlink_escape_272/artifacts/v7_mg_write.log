@@ -1,0 +1,23 @@
+================ BQ272 v7 Caches-symlink probe ================
+date=2026-11-08 03:11:18 +0000 uid=501 bundle=app.lake9674.aquila8809
+dlopen MCM = 0x3773153c0 (ok)
+xpc sym create=0x18d727250 release=0x18d72770c array=0x18d7329b0 append=0x18d732bcc
+sym create=0x2150c746c class=0x2150c7c2c ids=0x2150d0dd4 gids=0x2150c7648 flags=0x2150c7e2c part=0x2150e7ffc domain=0x2150e8224 one=0x2150ce1ec path=0x2150e93c0 token=0x2150d60e4 free=0x2150ce0c8 consume=0x2d7983560 release=0x2d79837ec
+group=file:///private/var/mobile/Containers/Shared/AppGroup/A1D50351-4491-4A13-9BEF-13DE88F19300/
+mgCaches=/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches
+symlink probe in Library ret=0 errno=0 (Undefined error: 0)
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/A1D50351-4491-4A13-9BEF-13DE88F19300/Library/Caches -> /private/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches ret=0 errno=0
+--- symCaches-p3-f8100 cls=7 gid=group.8e0bc870a21520b9.1 part=3 flags=0x8100000000 idsMode=0 domain=(empty)
+  get_single_result = 0x14440f160 errno=0 (Undefined error: 0)
+  result path=/private/var/mobile/Containers/Shared/AppGroup/A1D50351-4491-4A13-9BEF-13DE88F19300/Library/Caches token=YES obj_token=YES
+  sandbox_extension_consume -> 2 errno=0 (Undefined error: 0)
+  lstat(/private/var/mobile/Containers/Shared/AppGroup/A1D50351-4491-4A13-9BEF-13DE88F19300/Library/Caches) = 0 errno=0 (Undefined error: 0)
+    link-mode=755 uid=501 gid=501 size=98 type=link
+  stat-follow(/private/var/mobile/Containers/Shared/AppGroup/A1D50351-4491-4A13-9BEF-13DE88F19300/Library/Caches) = 0 errno=0 (Undefined error: 0)
+    mode=0 uid=-2 gid=-2 size=96 type=dir
+  open(O_RDONLY) = 4 errno=0 (Undefined error: 0)
+  readdir(/private/var/mobile/Containers/Shared/AppGroup/A1D50351-4491-4A13-9BEF-13DE88F19300/Library/Caches) OK n=1: com.apple.MobileGestalt.plist 
+  marker-create(.bq272_2180) fd=4 errno=0 (Undefined error: 0)
+    marker write=3 unlink=0 errno=0
+restore: /private/var/mobile/Containers/Shared/AppGroup/A1D50351-4491-4A13-9BEF-13DE88F19300/Library/Caches.bq_orig -> /private/var/mobile/Containers/Shared/AppGroup/A1D50351-4491-4A13-9BEF-13DE88F19300/Library/Caches ok=1 err=(null)
+================ PROBE_DONE ================

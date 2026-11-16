@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.apple.pebbleplayd</string>
+	<key>UserName</key>
+	<string>mobile</string>
+	<key>ProcessType</key>
+	<string>Adaptive</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/System/Library/PrivateFrameworks/PebblePlayDaemon.framework/pebbleplayd</string>
+	</array>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.rapport.matching</key>
+		<dict>
+			<key>pebbleplay-application-service</key>
+			<dict>
+				<key>serviceType</key>
+                <dict>
+                    <key>#IfFeatureFlagEnabled</key>
+                    <string>PebblePlay/asQuicRapport</string>
+                    <key>#Then</key>
+                    <string>com.apple.PebblePlayService2</string>
+                    <key>#Else</key>
+                    <string>com.apple.PebblePlayService</string>
+                </dict>
+				<key>type</key>
+				<string>server</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>NSApplicationServices</key>
+	<dict>
+		<key>Advertises</key>
+		<array>
+			<dict>
+				<key>NSApplicationServiceIdentifier</key>
+                <dict>
+                    <key>#IfFeatureFlagEnabled</key>
+                    <string>PebblePlay/asQuicRapport</string>
+                    <key>#Then</key>
+                    <string>com.apple.PebblePlayService2</string>
+                    <key>#Else</key>
+                    <string>com.apple.PebblePlayService</string>
+                </dict>
+			</dict>
+		</array>
+	</dict>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.internal.pebbleplayd.server</key>
+		<true/>
+	</dict>
+</dict>
+</plist>

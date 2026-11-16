@@ -1,0 +1,3 @@
+funcs 545 545
+identical 545 ratio 1.0
+changed regions 0

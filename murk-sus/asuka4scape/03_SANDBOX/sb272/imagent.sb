@@ -1,0 +1,1374 @@
+(version 1)
+(%extends-builtin "baseline")
+(enable-profile-flag "common-rules")
+(enable-profile-flag "common-syscall-rules")
+(enable-profile-flag "common-apple-internal-rules")
+(enable-profile-flag "common-apple-signed-executable-rules")
+(enable-profile-flag "common-mach-lookups")
+(enable-profile-flag "common-sysctl-rules")
+(enable-profile-flag "common-pluginkit-support")
+(enable-profile-flag "generic-sandbox-extension-support")
+(enable-profile-flag "common-debugging-rules")
+(enable-profile-flag "common-device-access")
+(enable-profile-flag "common-preferences-rules")
+(enable-profile-flag "common-mobilegestalt-rules")
+(enable-profile-flag "common-containermanagerd-rules")
+(enable-profile-flag "common-system-logging-rules")
+(enable-profile-flag "common-managed-configuration-read-rules")
+(enable-profile-flag "common-exception-entitlement-rules")
+(enable-profile-flag "threatening-syscall-unix-policy-enforcement")
+
+;; (default) inherited from parent profile "baseline"
+(delegate default)
+
+(allow asr-parser-enter)
+
+(allow coalition-info)
+
+(allow consume-extension)
+
+(allow darwin-notification-post)
+
+(allow distributed-notification-post)
+
+(allow dynamic-code-generation)
+
+(allow file-clone)
+
+(allow file-graft)
+
+(allow file-issue-extension
+	(require-all
+		(extension-class "com.apple.app-sandbox.read")
+		(subpath "${PROCESS_TEMP_DIR}/com.apple.MobileSMS")
+	)
+)
+(allow file-issue-extension
+	(require-all
+		(extension-class "com.apple.app-sandbox.read-write")
+		(subpath "${PROCESS_TEMP_DIR}/com.apple.MobileSMS")
+	)
+)
+(allow file-issue-extension
+	(require-all
+		(extension-class "com.apple.mediaserverd.read-write")
+		(subpath "${PROCESS_TEMP_DIR}/com.apple.MobileSMS")
+	)
+)
+(allow file-issue-extension
+	(require-all
+		(extension-class "com.apple.mediaserverd.read")
+		(subpath "${PROCESS_TEMP_DIR}/com.apple.MobileSMS")
+	)
+)
+(allow file-issue-extension
+	(require-all
+		(extension-class "com.apple.aned.read-only")
+		(require-any
+			(require-all
+				(extension-class "com.apple.aned.read-only")
+				(require-any
+					(require-all
+						(subpath "/private/var")
+						(subpath "${HOME}")
+						(require-any
+							(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Media/([^/]+/)?iTunes_Control/Ringtones(/|$)")
+							(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Media/([^/]+/)?iTunes_Control/iTunes/Ringtones.plist$")
+						)
+					)
+					(subpath "${HOME}/Media/Purchases")
+				)
+			)
+			(require-all
+				(subpath "/private/var")
+				(require-any
+					(require-all
+						(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Containers/(Temp/)?Data/[^/]+/[^/]+/tmp/com.apple.MobileSMS(/|$)")
+						(require-any
+							(subpath "${FRONT_USER_HOME}")
+							(subpath "${HOME}")
+						)
+					)
+					(subpath "${HOME}/Library/Caches/com.apple.MobileSMS")
+				)
+			)
+			(require-any
+				(subpath "${PROCESS_TEMP_DIR}/com.apple.messages")
+				(subpath "/private/var/tmp/com.apple.messages")
+			)
+			(subpath "${HOME}/Library/Caches/com.apple.MobileSMS")
+			(subpath "${HOME}/Library/MessagesMetaData")
+			(subpath "${HOME}/Library/SMS")
+			(subpath "${PROCESS_TEMP_DIR}/com.apple.MobileSMS")
+			(subpath "/private/var/PersonaVolumes/[^/]+/Containers/Data/[^/]+/[^/]+/tmp/com.apple.MobileSMS")
+			(subpath "/private/var/tmp/com.apple.MobileSMS")
+		)
+	)
+)
+(allow file-issue-extension
+	(require-all
+		(extension-class "com.apple.identityservices.send")
+		(require-any
+			(subpath "${HOME}/Library/SMS")
+			(subpath "${PROCESS_TEMP_DIR}")
+			(subpath "/private/var/tmp")
+		)
+	)
+)
+(allow file-issue-extension
+	(require-all
+		(extension-class "com.apple.app-sandbox.read")
+		(require-any
+			(subpath "/System/Cryptexes")
+			(subpath "/private/preboot/Cryptexes")
+		)
+	)
+)
+(allow file-issue-extension
+	(require-all
+		(subpath "${HOME}/Library/Caches/com.apple.MobileSMS")
+		(require-any
+			(extension-class "com.apple.mediaserverd.read")
+			(extension-class "com.apple.mediaserverd.read-write")
+		)
+	)
+)
+(deny file-issue-extension
+	(require-any
+		(literal "/System/Library/Caches/apticket.der")
+		(literal "/usr/standalone/firmware/apticket.der")
+		(subpath "/System/Library/Caches/com.apple.factorydata")
+		(subpath "/System/Library/Caches/com.apple.kernelcaches")
+		(subpath "/private/var/hardware/FactoryData")
+	)
+)
+
+(allow file-link)
+(deny file-link
+	(subpath "${HOME}/Library/AddressBook")
+)
+(deny file-link
+	(require-all
+		(subpath "${HOME}/Media")
+		(process-attribute is-apple-signed-executable)
+	)
+)
+
+(allow file-lock)
+
+(allow file-map-executable
+	(require-all
+		(extension "com.apple.sandbox.oopjit")
+		(subpath "/private/var/OOPJit")
+	)
+)
+(allow file-map-executable
+	(require-any
+		(subpath "/System/Cryptexes")
+		(subpath "/private/preboot/Cryptexes")
+	)
+)
+(allow file-map-executable
+	(require-all
+		(system-attribute carrier-build)
+		(require-any
+			(subpath "/AppleInternal")
+			(subpath "/usr/local/lib")
+		)
+	)
+)
+
+(allow file-read*
+	(with report)
+	(require-all
+		(literal "${HOME}/Media/PhotoData/Photos.sqlite*")
+		(process-attribute is-platform-binary)
+		(extension "com.apple.tcc.kTCCServicePhotos")
+	)
+)
+(allow file-read*
+	(require-all
+		(subpath "${FRONT_USER_HOME}/Library/IdentityServices")
+		(extension "com.apple.identityservices.deliver")
+	)
+)
+(allow file-read*
+	(require-all
+		(%entitlement-is-bool-true "com.apple.Contacts.database-allow")
+		(extension "com.apple.tcc.kTCCServiceAddressBook")
+		(require-any
+			(literal "${HOME}/Library/Preferences/com.apple.mobilephone.speeddial.plist")
+			(subpath "${HOME}/Library/AddressBook")
+			(subpath "${HOME}/Library/AddressBook/Delegates")
+		)
+	)
+)
+(allow file-read*
+	(require-all
+		(extension "com.apple.tcc.kTCCServicePhotos")
+		(require-any
+			(literal "${HOME}/Media/PhotoData/syncInfo.plist")
+			(require-any
+				(subpath "${HOME}/Media/PhotoData/CPLAssets")
+				(subpath "${HOME}/Media/PhotoData/Metadata")
+				(subpath "${HOME}/Media/PhotoData/Mutations")
+				(subpath "${HOME}/Media/PhotoData/Sync")
+				(subpath "${HOME}/Media/PhotoData/Thumbnails")
+			)
+			(subpath "${HOME}/Media/DCIM")
+			(subpath "${HOME}/Media/PhotoData/PhotoCloudSharingData")
+			(subpath "${HOME}/Media/PhotoStreamsData")
+		)
+	)
+)
+(allow file-read*
+	(require-all
+		(subpath "/private/var")
+		(require-any
+			(require-all
+				(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Containers/(Temp/)?Data/[^/]+/[^/]+/tmp/com.apple.MobileSMS(/|$)")
+				(subpath "${FRONT_USER_HOME}")
+			)
+			(require-all
+				(subpath "${HOME}")
+				(require-any
+					(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Containers/(Temp/)?Data/[^/]+/[^/]+/tmp/com.apple.MobileSMS(/|$)")
+					(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Media/([^/]+/)?iTunes_Control/Ringtones(/|$)")
+					(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Media/([^/]+/)?iTunes_Control/iTunes/Ringtones.plist$")
+				)
+			)
+		)
+	)
+)
+(allow file-read*
+	(require-all
+		(subpath "/private/var")
+		(regex #"(((((^/private/var/(mobile|euser[0-9]+)/Library/Carrier Bundles/.*\.bundle($|/Info\.plist$)|^/private/var/(mobile|euser[0-9]+)/Library/Carrier Bundles/.*\.bundle/([^/])*\.lproj(/|$))|^/private/var/[-0-9A-F]+/Library/Carrier Bundles/.*\.bundle($|/Info\.plist$))|^/private/var/[-0-9A-F]+/Library/Carrier Bundles/.*\.bundle/([^/])*\.lproj(/|$))|^/private/var/Users/[^/]+/Library/Carrier Bundles/.*\.bundle($|/Info\.plist$))|^/private/var/Users/[^/]+/Library/Carrier Bundles/.*\.bundle/([^/])*\.lproj(/|$))")
+		(subpath "${FRONT_USER_HOME}")
+	)
+)
+(allow file-read*
+	(require-all
+		(subpath "/System/Library/Carrier Bundles")
+		(require-any
+			(regex #"^/System/Library/Carrier Bundles/.*/carrier\.plist$")
+			(regex #"^/System/Library/Carrier Bundles/.*\.png$")
+		)
+	)
+)
+(allow file-read*
+	(require-all
+		(extension "com.apple.sandbox.oopjit")
+		(subpath "/private/var/OOPJit")
+	)
+)
+(allow file-read*
+	(require-all
+		(subpath "/private/var")
+		(require-any
+			(require-all
+				(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Library/Carrier Bundles/.*/carrier\.plist$")
+				(subpath "${FRONT_USER_HOME}")
+			)
+			(require-all
+				(subpath "${FRONT_USER_HOME}")
+				(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Library/Carrier Bundles/.*\.png$")
+			)
+		)
+	)
+)
+(allow file-read*
+	(require-all
+		(vnode-type DIRECTORY REGULAR-FILE)
+		(subpath "${HOME}/Library/Caches/com.apple.nsurlsessiond/Downloads/com.apple.MobileSMS")
+	)
+)
+(allow file-read*
+	(require-all
+		(process-attribute is-apple-signed-executable)
+		(require-any
+			(literal "/System")
+			(literal "/private")
+			(literal "/private/preboot")
+		)
+	)
+)
+(allow file-read*
+	(require-all
+		(system-attribute carrier-build)
+		(require-any
+			(subpath "/AppleInternal")
+			(subpath "/usr/local/lib")
+		)
+	)
+)
+(allow file-read*
+	(require-any
+		(literal "${FRONT_USER_HOME}/Library/ConfigurationProfiles/EffectiveUserSettings.plist")
+		(literal "${FRONT_USER_HOME}/Library/ConfigurationProfiles/PayloadDependency.plist")
+		(literal "${FRONT_USER_HOME}/Library/Logs/CrashReporter/PersistentConnection/com.apple.imagent*")
+		(literal "${FRONT_USER_HOME}/Library/Logs/PersistentConnection/com.apple.imagent*")
+		(literal "${FRONT_USER_HOME}/Library/Preferences/com.apple.carrier.plist")
+		(literal "${FRONT_USER_HOME}/Library/UserConfigurationProfiles/EffectiveUserSettings.plist")
+		(literal "${FRONT_USER_HOME}/Library/UserConfigurationProfiles/PayloadDependency.plist")
+		(literal "${HOME}/Library/Caches/.com.apple.persistentconnection.settings.lock.lock")
+		(literal "${HOME}/Library/Caches/Checkpoint.plist")
+		(literal "${HOME}/Library/Caches/com.apple.persistentconnection.intervalcache.plist.lock")
+		(literal "${HOME}/Library/Logs/MobileBackup/MobileBackup-imagent.log")
+		(literal "/private/preboot/cryptex1/current/RestoreVersion.plist")
+		(literal "/private/preboot/cryptex1/current/SystemVersion.plist")
+		(literal "/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.configurationprofiles/Library/ConfigurationProfiles/EffectiveUserSettings.plist")
+		(literal "/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.configurationprofiles/Library/ConfigurationProfiles/PayloadDependency.plist")
+		(literal "/private/var/preferences/SystemConfiguration/com.apple.radios.plist")
+		(literal "/private/var/preferences/com.apple.networkd.plist")
+		(subpath "${FRONT_USER_HOME}/Library/Carrier Bundles/Overlay")
+		(subpath "${HOME}/Library/AddressBook")
+		(subpath "${HOME}/Library/Caches/com.apple.MobileSMS")
+		(subpath "${HOME}/Library/CallHistoryDB")
+		(subpath "${HOME}/Library/Fonts")
+		(subpath "${HOME}/Library/MessagesMetaData")
+		(subpath "${HOME}/Library/SMS")
+		(subpath "${HOME}/Media/Purchases")
+		(subpath "${PROCESS_TEMP_DIR}/com.apple.MobileSMS")
+		(subpath "${PROCESS_TEMP_DIR}/com.apple.messages")
+		(subpath "/")
+		(subpath "/System/Cryptexes")
+		(subpath "/private/preboot/Cryptexes")
+		(subpath "/private/var/PersonaVolumes/[^/]+/Containers/Data/[^/]+/[^/]+/tmp/com.apple.MobileSMS")
+		(subpath "/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.configurationprofiles/Library/ConfigurationProfiles/MDM.plist")
+		(subpath "/private/var/tmp/com.apple.MobileSMS")
+		(subpath "/private/var/tmp/com.apple.messages")
+	)
+)
+(deny file-read*
+	(require-any
+		(literal "/System/Library/Caches/apticket.der")
+		(literal "/usr/sbin/fairplayd")
+		(literal "/usr/standalone/firmware/apticket.der")
+		(subpath "${HOME}/Library/FairPlay")
+		(subpath "/System/Library/Caches/com.apple.factorydata")
+		(subpath "/System/Library/Caches/com.apple.kernelcaches")
+		(subpath "/private/var/hardware/FactoryData")
+	)
+)
+
+(allow file-read-metadata
+	(with report)
+	(require-all
+		(literal "${HOME}/Media/PhotoData/Photos.sqlite*")
+		(process-attribute is-platform-binary)
+		(extension "com.apple.tcc.kTCCServicePhotos")
+	)
+)
+(allow file-read-metadata
+	(require-all
+		(subpath "${FRONT_USER_HOME}/Library/IdentityServices")
+		(extension "com.apple.identityservices.deliver")
+	)
+)
+(allow file-read-metadata
+	(require-all
+		(%entitlement-is-bool-true "com.apple.Contacts.database-allow")
+		(extension "com.apple.tcc.kTCCServiceAddressBook")
+		(require-any
+			(literal "${HOME}/Library/Preferences/com.apple.mobilephone.speeddial.plist")
+			(subpath "${HOME}/Library/AddressBook")
+			(subpath "${HOME}/Library/AddressBook/Delegates")
+		)
+	)
+)
+(allow file-read-metadata
+	(require-all
+		(extension "com.apple.tcc.kTCCServicePhotos")
+		(require-any
+			(literal "${HOME}/Media/PhotoData/syncInfo.plist")
+			(require-any
+				(subpath "${HOME}/Media/PhotoData/CPLAssets")
+				(subpath "${HOME}/Media/PhotoData/Metadata")
+				(subpath "${HOME}/Media/PhotoData/Mutations")
+				(subpath "${HOME}/Media/PhotoData/Sync")
+				(subpath "${HOME}/Media/PhotoData/Thumbnails")
+			)
+			(subpath "${HOME}/Media/DCIM")
+			(subpath "${HOME}/Media/PhotoData/PhotoCloudSharingData")
+			(subpath "${HOME}/Media/PhotoStreamsData")
+		)
+	)
+)
+(allow file-read-metadata
+	(require-all
+		(subpath "/private/var")
+		(require-any
+			(require-all
+				(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Containers/(Temp/)?Data/[^/]+/[^/]+/tmp/com.apple.MobileSMS(/|$)")
+				(subpath "${FRONT_USER_HOME}")
+			)
+			(require-all
+				(subpath "${HOME}")
+				(require-any
+					(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Containers/(Temp/)?Data/[^/]+/[^/]+/tmp/com.apple.MobileSMS(/|$)")
+					(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Media/([^/]+/)?iTunes_Control/Ringtones(/|$)")
+					(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Media/([^/]+/)?iTunes_Control/iTunes/Ringtones.plist$")
+				)
+			)
+		)
+	)
+)
+(allow file-read-metadata
+	(require-all
+		(vnode-type DIRECTORY REGULAR-FILE)
+		(subpath "${HOME}/Library/Caches/com.apple.nsurlsessiond/Downloads/com.apple.MobileSMS")
+	)
+)
+(allow file-read-metadata
+	(require-all
+		(subpath "/private/var")
+		(regex #"(((((^/private/var/(mobile|euser[0-9]+)/Library/Carrier Bundles/.*\.bundle($|/Info\.plist$)|^/private/var/(mobile|euser[0-9]+)/Library/Carrier Bundles/.*\.bundle/([^/])*\.lproj(/|$))|^/private/var/[-0-9A-F]+/Library/Carrier Bundles/.*\.bundle($|/Info\.plist$))|^/private/var/[-0-9A-F]+/Library/Carrier Bundles/.*\.bundle/([^/])*\.lproj(/|$))|^/private/var/Users/[^/]+/Library/Carrier Bundles/.*\.bundle($|/Info\.plist$))|^/private/var/Users/[^/]+/Library/Carrier Bundles/.*\.bundle/([^/])*\.lproj(/|$))")
+		(subpath "${FRONT_USER_HOME}")
+	)
+)
+(allow file-read-metadata
+	(require-all
+		(subpath "/private/var")
+		(require-any
+			(literal "/private/var/preferences/com.apple.networkd.plist")
+			(require-all
+				(require-any
+					(subpath "${FRONT_USER_HOME}")
+					(subpath "${HOME}")
+				)
+				(require-any
+					(literal "/private/var/preferences/com.apple.networkd.plist")
+					(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Containers/(Temp/)?Data/[^/]+/[^/]+/tmp/com.apple.MobileSMS(/|$)")
+				)
+			)
+			(subpath "/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.configurationprofiles/Library/ConfigurationProfiles/MDM.plist")
+		)
+	)
+)
+(allow file-read-metadata
+	(require-all
+		(extension "com.apple.sandbox.oopjit")
+		(subpath "/private/var/OOPJit")
+	)
+)
+(allow file-read-metadata
+	(require-all
+		(subpath "/private/var")
+		(require-any
+			(require-all
+				(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Library/Carrier Bundles/.*/carrier\.plist$")
+				(subpath "${FRONT_USER_HOME}")
+			)
+			(require-all
+				(subpath "${FRONT_USER_HOME}")
+				(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Library/Carrier Bundles/.*\.png$")
+			)
+		)
+	)
+)
+(allow file-read-metadata
+	(require-all
+		(subpath "/System/Library/Carrier Bundles")
+		(require-any
+			(regex #"^/System/Library/Carrier Bundles/.*/carrier\.plist$")
+			(regex #"^/System/Library/Carrier Bundles/.*\.png$")
+		)
+	)
+)
+(allow file-read-metadata
+	(require-all
+		(process-attribute is-apple-signed-executable)
+		(require-any
+			(literal "${HOME}")
+			(literal "${HOME}/Library/Preferences")
+		)
+	)
+)
+(allow file-read-metadata
+	(require-all
+		(process-attribute is-apple-signed-executable)
+		(require-any
+			(literal "/System")
+			(literal "/private")
+			(literal "/private/preboot")
+		)
+	)
+)
+(allow file-read-metadata
+	(require-all
+		(system-attribute carrier-build)
+		(require-any
+			(subpath "/AppleInternal")
+			(subpath "/usr/local/lib")
+		)
+	)
+)
+(allow file-read-metadata
+	(require-any
+		(literal "${FRONT_USER_HOME}/Library/ConfigurationProfiles/EffectiveUserSettings.plist")
+		(literal "${FRONT_USER_HOME}/Library/ConfigurationProfiles/PayloadDependency.plist")
+		(literal "${FRONT_USER_HOME}/Library/Logs/CrashReporter/PersistentConnection")
+		(literal "${FRONT_USER_HOME}/Library/Logs/CrashReporter/PersistentConnection/com.apple.imagent*")
+		(literal "${FRONT_USER_HOME}/Library/Logs/PersistentConnection")
+		(literal "${FRONT_USER_HOME}/Library/Logs/PersistentConnection/com.apple.imagent*")
+		(literal "${FRONT_USER_HOME}/Library/Preferences/com.apple.carrier.plist")
+		(literal "${FRONT_USER_HOME}/Library/UserConfigurationProfiles/EffectiveUserSettings.plist")
+		(literal "${FRONT_USER_HOME}/Library/UserConfigurationProfiles/PayloadDependency.plist")
+		(literal "${HOME}")
+		(literal "${HOME}/Library/Caches")
+		(literal "${HOME}/Library/Caches/.com.apple.persistentconnection.settings.lock.lock")
+		(literal "${HOME}/Library/Caches/Checkpoint.plist")
+		(literal "${HOME}/Library/Caches/com.apple.persistentconnection.intervalcache.plist.lock")
+		(literal "${HOME}/Library/Logs/MobileBackup")
+		(literal "${HOME}/Library/Logs/MobileBackup/MobileBackup-imagent.log")
+		(literal "${HOME}/Library/PPTDevice")
+		(literal "${HOME}/Library/Preferences")
+		(literal "/private/preboot/cryptex1/current/RestoreVersion.plist")
+		(literal "/private/preboot/cryptex1/current/SystemVersion.plist")
+		(literal "/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.configurationprofiles/Library/ConfigurationProfiles/EffectiveUserSettings.plist")
+		(literal "/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.configurationprofiles/Library/ConfigurationProfiles/PayloadDependency.plist")
+		(literal "/private/var/preferences/SystemConfiguration/com.apple.radios.plist")
+		(subpath "${FRONT_USER_HOME}/Library/Carrier Bundles")
+		(subpath "${FRONT_USER_HOME}/Library/Carrier Bundles/Overlay")
+		(subpath "${HOME}/Library/AddressBook")
+		(subpath "${HOME}/Library/Caches/com.apple.MobileSMS")
+		(subpath "${HOME}/Library/CallHistoryDB")
+		(subpath "${HOME}/Library/Fonts")
+		(subpath "${HOME}/Library/MessagesMetaData")
+		(subpath "${HOME}/Library/SMS")
+		(subpath "${HOME}/Media/Purchases")
+		(subpath "${PROCESS_TEMP_DIR}/com.apple.MobileSMS")
+		(subpath "${PROCESS_TEMP_DIR}/com.apple.messages")
+		(subpath "/")
+		(subpath "/System/Cryptexes")
+		(subpath "/private/preboot/Cryptexes")
+		(subpath "/private/var/PersonaVolumes/[^/]+/Containers/Data/[^/]+/[^/]+/tmp/com.apple.MobileSMS")
+		(subpath "/private/var/tmp/com.apple.MobileSMS")
+		(subpath "/private/var/tmp/com.apple.messages")
+	)
+)
+(deny file-read-metadata
+	(require-any
+		(literal "/System/Library/Caches/apticket.der")
+		(literal "/usr/sbin/fairplayd")
+		(literal "/usr/standalone/firmware/apticket.der")
+		(subpath "${HOME}/Library/FairPlay")
+		(subpath "/System/Library/Caches/com.apple.factorydata")
+		(subpath "/System/Library/Caches/com.apple.kernelcaches")
+		(subpath "/private/var/hardware/FactoryData")
+	)
+)
+
+(allow file-test-existence)
+
+(allow file-ungraft)
+
+(allow file-write*
+	(require-all
+		(vnode-type DIRECTORY REGULAR-FILE)
+		(subpath "${HOME}/Library/Caches/com.apple.nsurlsessiond/Downloads/com.apple.MobileSMS")
+	)
+)
+(allow file-write*
+	(require-all
+		(require-any
+			(subpath "${FRONT_USER_HOME}")
+			(subpath "${HOME}")
+		)
+		(subpath "/private/var")
+		(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Containers/(Temp/)?Data/[^/]+/[^/]+/tmp/com.apple.MobileSMS(/|$)")
+	)
+)
+(allow file-write*
+	(require-all
+		(%entitlement-is-bool-true "com.apple.Contacts.database-allow")
+		(extension "com.apple.tcc.kTCCServiceAddressBook")
+		(require-any
+			(require-all
+				(vnode-type REGULAR-FILE)
+				(require-any
+					(subpath "${HOME}/Library/AddressBook")
+					(subpath "${HOME}/Library/Caches/com.apple.nsurlsessiond/Downloads/com.apple.MobileSMS")
+				)
+			)
+			(subpath "${HOME}/Library/AddressBook/Delegates")
+		)
+	)
+)
+(allow file-write*
+	(require-any
+		(literal "${FRONT_USER_HOME}/Library/Logs/CrashReporter/PersistentConnection/com.apple.imagent*")
+		(literal "${FRONT_USER_HOME}/Library/Logs/PersistentConnection/com.apple.imagent*")
+		(literal "${HOME}/Library/Caches/.com.apple.persistentconnection.settings.lock.lock")
+		(literal "${HOME}/Library/Caches/com.apple.persistentconnection.intervalcache.plist.lock")
+		(literal "${HOME}/Library/Logs/MobileBackup/MobileBackup-imagent.log")
+		(subpath "${HOME}/Library/Caches/com.apple.MobileSMS")
+		(subpath "${HOME}/Library/MessagesMetaData")
+		(subpath "${HOME}/Library/SMS")
+		(subpath "${PROCESS_TEMP_DIR}/com.apple.MobileSMS")
+		(subpath "${PROCESS_TEMP_DIR}/com.apple.messages")
+		(subpath "/private/var/PersonaVolumes/[^/]+/Containers/Data/[^/]+/[^/]+/tmp/com.apple.MobileSMS")
+		(subpath "/private/var/tmp/com.apple.MobileSMS")
+		(subpath "/private/var/tmp/com.apple.messages")
+	)
+)
+
+(allow file-write-create
+	(require-all
+		(require-any
+			(subpath "${FRONT_USER_HOME}")
+			(subpath "${HOME}")
+		)
+		(subpath "/private/var")
+		(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Containers/(Temp/)?Data/[^/]+/[^/]+/tmp/com.apple.MobileSMS(/|$)")
+	)
+)
+(allow file-write-create
+	(require-all
+		(%entitlement-is-bool-true "com.apple.Contacts.database-allow")
+		(extension "com.apple.tcc.kTCCServiceAddressBook")
+		(require-any
+			(require-all
+				(vnode-type REGULAR-FILE)
+				(require-any
+					(subpath "${HOME}/Library/AddressBook")
+					(subpath "${HOME}/Library/Caches/com.apple.nsurlsessiond/Downloads/com.apple.MobileSMS")
+				)
+			)
+			(subpath "${HOME}/Library/AddressBook/Delegates")
+		)
+	)
+)
+(allow file-write-create
+	(require-all
+		(vnode-type DIRECTORY)
+		(require-any
+			(literal "${FRONT_USER_HOME}/Library/Logs/CrashReporter/PersistentConnection")
+			(literal "${FRONT_USER_HOME}/Library/Logs/PersistentConnection")
+			(literal "${HOME}/Library/Caches")
+			(literal "${HOME}/Library/Logs/MobileBackup")
+		)
+	)
+)
+(allow file-write-create
+	(require-all
+		(vnode-type DIRECTORY REGULAR-FILE)
+		(subpath "${HOME}/Library/Caches/com.apple.nsurlsessiond/Downloads/com.apple.MobileSMS")
+	)
+)
+(allow file-write-create
+	(require-all
+		(vnode-type REGULAR-FILE)
+		(require-any
+			(subpath "${PROCESS_TEMP_DIR}")
+			(subpath "/private/var/tmp")
+		)
+	)
+)
+(allow file-write-create
+	(require-any
+		(literal "${FRONT_USER_HOME}/Library/Logs/CrashReporter/PersistentConnection/com.apple.imagent*")
+		(literal "${FRONT_USER_HOME}/Library/Logs/PersistentConnection/com.apple.imagent*")
+		(literal "${HOME}/Library/Caches/.com.apple.persistentconnection.settings.lock.lock")
+		(literal "${HOME}/Library/Caches/com.apple.persistentconnection.intervalcache.plist.lock")
+		(literal "${HOME}/Library/Logs/MobileBackup/MobileBackup-imagent.log")
+		(subpath "${HOME}/Library/Caches/com.apple.MobileSMS")
+		(subpath "${HOME}/Library/MessagesMetaData")
+		(subpath "${HOME}/Library/SMS")
+		(subpath "${PROCESS_TEMP_DIR}/com.apple.MobileSMS")
+		(subpath "${PROCESS_TEMP_DIR}/com.apple.messages")
+		(subpath "/private/var/PersonaVolumes/[^/]+/Containers/Data/[^/]+/[^/]+/tmp/com.apple.MobileSMS")
+		(subpath "/private/var/tmp/com.apple.MobileSMS")
+		(subpath "/private/var/tmp/com.apple.messages")
+	)
+)
+
+(deny file-write-setugid)
+
+(allow file-write-unlink
+	(require-all
+		(subpath "${FRONT_USER_HOME}/Library/IdentityServices")
+		(extension "com.apple.identityservices.deliver")
+	)
+)
+(allow file-write-unlink
+	(require-all
+		(extension "com.apple.sandbox.oopjit")
+		(subpath "/private/var/OOPJit")
+	)
+)
+(allow file-write-unlink
+	(require-all
+		(require-any
+			(subpath "${FRONT_USER_HOME}")
+			(subpath "${HOME}")
+		)
+		(subpath "/private/var")
+		(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Containers/(Temp/)?Data/[^/]+/[^/]+/tmp/com.apple.MobileSMS(/|$)")
+	)
+)
+(allow file-write-unlink
+	(require-all
+		(%entitlement-is-bool-true "com.apple.Contacts.database-allow")
+		(extension "com.apple.tcc.kTCCServiceAddressBook")
+		(require-any
+			(require-all
+				(vnode-type REGULAR-FILE)
+				(require-any
+					(subpath "${HOME}/Library/AddressBook")
+					(subpath "${HOME}/Library/Caches/com.apple.nsurlsessiond/Downloads/com.apple.MobileSMS")
+				)
+			)
+			(subpath "${HOME}/Library/AddressBook/Delegates")
+		)
+	)
+)
+(allow file-write-unlink
+	(require-all
+		(vnode-type DIRECTORY REGULAR-FILE)
+		(subpath "${HOME}/Library/Caches/com.apple.nsurlsessiond/Downloads/com.apple.MobileSMS")
+	)
+)
+(allow file-write-unlink
+	(require-all
+		(vnode-type REGULAR-FILE)
+		(require-any
+			(subpath "${PROCESS_TEMP_DIR}")
+			(subpath "/private/var/tmp")
+		)
+	)
+)
+(allow file-write-unlink
+	(require-any
+		(literal "${FRONT_USER_HOME}/Library/Logs/CrashReporter/PersistentConnection/com.apple.imagent*")
+		(literal "${FRONT_USER_HOME}/Library/Logs/PersistentConnection/com.apple.imagent*")
+		(literal "${HOME}/Library/Caches/.com.apple.persistentconnection.settings.lock.lock")
+		(literal "${HOME}/Library/Caches/com.apple.persistentconnection.intervalcache.plist.lock")
+		(literal "${HOME}/Library/Logs/MobileBackup/MobileBackup-imagent.log")
+		(subpath "${HOME}/Library/Caches/com.apple.MobileSMS")
+		(subpath "${HOME}/Library/MessagesMetaData")
+		(subpath "${HOME}/Library/SMS")
+		(subpath "${PROCESS_TEMP_DIR}/com.apple.MobileSMS")
+		(subpath "${PROCESS_TEMP_DIR}/com.apple.messages")
+		(subpath "/private/var/PersonaVolumes/[^/]+/Containers/Data/[^/]+/[^/]+/tmp/com.apple.MobileSMS")
+		(subpath "/private/var/tmp/com.apple.MobileSMS")
+		(subpath "/private/var/tmp/com.apple.messages")
+	)
+)
+
+(allow fs-info)
+
+(allow fs-quota*)
+
+(allow fs-snapshot-mount)
+
+(allow iokit-get-properties)
+
+(allow iokit-open-user-client
+	(require-all
+		(system-attribute virtual-device)
+		(require-any
+			(iokit-registry-entry-class "AppleVideoToolboxParavirtualizationUserClient")
+			(iokit-registry-entry-class "IOSurfaceAcceleratorParavirtClient")
+		)
+	)
+)
+(allow iokit-open-user-client
+	(require-any
+		(extension "com.apple.security.exception.iokit-user-client-class")
+		(iokit-registry-entry-class "AGXDevice")
+		(iokit-registry-entry-class "AppleJPEGDriverUserClient")
+		(iokit-registry-entry-class "AppleKeyStoreUserClient")
+		(iokit-registry-entry-class "IOMobileFramebufferUserClient")
+		(iokit-registry-entry-class "IOSurfaceAcceleratorClient")
+		(iokit-registry-entry-class "IOSurfaceRootUserClient")
+		(iokit-registry-entry-class "RootDomainUserClient")
+	)
+)
+
+(allow iokit-open-service)
+
+(allow ipc-posix-shm-read-data
+	(require-all
+		(ipc-posix-name "apple.shm.notification_center")
+		(require-not (%entitlement-is-bool-true "com.apple.security.on-demand-install-capable"))
+	)
+)
+
+(allow isp-command-send)
+
+(deny job-creation)
+
+(deny lsopen
+	(profile-flag "deny-lsopen")
+)
+
+(allow mach-bootstrap)
+
+(allow mach-cross-domain-lookup)
+
+(allow mach-derive-port)
+
+(allow mach-lookup
+	(require-all
+		(global-name "com.apple.system.notification_center")
+		(%entitlement-is-bool-true "com.apple.security.on-demand-install-capable")
+	)
+)
+(allow mach-lookup
+	(require-any
+		(extension "com.apple.security.exception.mach-lookup.global-name")
+		(extension "com.apple.security.exception.mach-lookup.local-name")
+		(global-name "com.apple.ABDatabaseDoctor")
+		(global-name "com.apple.CellularPlanDaemon.xpc")
+		(global-name "com.apple.FSEvents")
+		(global-name "com.apple.FileCoordination")
+		(global-name "com.apple.PersistentURLTranslator.Gatekeeper")
+		(global-name "com.apple.PowerManagement.control")
+		(global-name "com.apple.SBUserNotification")
+		(global-name "com.apple.SystemConfiguration.configd")
+		(global-name "com.apple.accountsd.accountmanager")
+		(global-name "com.apple.apsd")
+		(global-name "com.apple.assetsd.changehub")
+		(global-name "com.apple.audio.SystemSoundServer-iOS")
+		(global-name "com.apple.awdd")
+		(global-name "com.apple.backupd")
+		(global-name "com.apple.cache_delete")
+		(global-name "com.apple.callkit.callcontrollerhost")
+		(global-name "com.apple.carkit.dnd.service")
+		(global-name "com.apple.ckdiscretionaryd")
+		(global-name "com.apple.cloudasset.cloudd")
+		(global-name "com.apple.cloudd")
+		(global-name "com.apple.cmfsyncagent.embedded.auth")
+		(global-name "com.apple.commcenter.coretelephony.xpc")
+		(global-name "com.apple.commcenter.xpc")
+		(global-name "com.apple.contactsd")
+		(global-name "com.apple.dmd.emergency-mode")
+		(global-name "com.apple.dmd.policy")
+		(global-name "com.apple.frontboard.systemappservices")
+		(global-name "com.apple.hsa-authentication-server")
+		(global-name "com.apple.icloud.fmfd")
+		(global-name "com.apple.identityservicesd.embedded.auth")
+		(global-name "com.apple.identityservicesd.idquery.embedded.auth")
+		(global-name "com.apple.idsremoteurlconnectionagent.embedded.auth")
+		(global-name "com.apple.imdpersistence.IMDPersistenceAgent")
+		(global-name "com.apple.imtransferservices.IMTransferAgent")
+		(global-name "com.apple.iokit.powerdxpc")
+		(global-name "com.apple.lsd.advertisingidentifiers")
+		(global-name "com.apple.lsd.openurl")
+		(global-name "com.apple.managedconfiguration.profiled")
+		(global-name "com.apple.marco")
+		(global-name "com.apple.mobilecheckpoint.checkpointd")
+		(global-name "com.apple.nano.nanoregistry.paireddeviceregistry")
+		(global-name "com.apple.nanoprefsync")
+		(global-name "com.apple.nsurlsessiond.NSURLSessionProxyService")
+		(global-name "com.apple.pairedsyncd.syncstate")
+		(global-name "com.apple.passd.in-app-payment")
+		(global-name "com.apple.photos.service")
+		(global-name "com.apple.powerlog.plxpclogger.xpc")
+		(global-name "com.apple.private.corewifi.mobilewifi-xpc")
+		(global-name "com.apple.protectedcloudstorage.protectedcloudkeysyncing")
+		(global-name "com.apple.rtcreportingd")
+		(global-name "com.apple.securityd")
+		(global-name "com.apple.siri.vocabularyupdates")
+		(global-name "com.apple.spotlight.IndexAgent")
+		(global-name "com.apple.spotlight.IndexDelegateAgent")
+		(global-name "com.apple.springboard.backgroundappservices")
+		(global-name "com.apple.springboard.services")
+		(global-name "com.apple.tccd")
+		(global-name "com.apple.telephonyutilities.callservicesdaemon.callcapabilities")
+		(global-name "com.apple.telephonyutilities.callservicesdaemon.callhistorymanager")
+		(global-name "com.apple.telephonyutilities.callservicesdaemon.callprovidermanager")
+		(global-name "com.apple.telephonyutilities.callservicesdaemon.callstatecontroller")
+		(global-name "com.apple.telephonyutilities.callservicesdaemon.conversationmanager")
+		(global-name "com.apple.trustd")
+		(global-name "com.apple.usernotifications.listener")
+		(global-name "com.apple.usernotifications.remotenotificationservice")
+		(global-name "com.apple.usernotifications.usernotificationservice")
+		(global-name "com.apple.wifi.manager")
+		(xpc-service-name "*")
+		(xpc-service-name "com.apple.ImageIOXPCService")
+		(xpc-service-name "com.apple.imfoundation.IMRemoteURLConnectionAgent")
+	)
+)
+(deny mach-lookup
+	(with send-signal 9)
+	(xpc-service-name "com.apple.WebKit.*")
+)
+(deny mach-lookup
+	(xpc-service-name "com.apple.CoreGraphics.CGPDFService")
+)
+
+(allow mach-register
+	(extension "com.apple.security.exception.mach-register.global-name")
+)
+
+(allow mach-task-exception-port-set)
+
+(allow mach-task-inspect
+	(target self)
+)
+
+(allow mach-task-name
+	(target self)
+)
+
+(allow mach-task-read
+	(target self)
+)
+
+(allow mach-task-special-port*)
+
+(allow necp-client-open)
+
+(allow network-outbound
+	(require-any
+		(control-name "com.apple.flow-divert")
+		(literal "/private/var/run/lockdown.sock")
+	)
+)
+
+(allow process-codesigning)
+
+(allow process-info-codesignature)
+
+(allow process-iopolicy*)
+
+(allow sandbox-check)
+
+(allow signal
+	(target self)
+)
+
+(allow socket-ioctl)
+
+(allow socket-option-get)
+
+(allow socket-option-set)
+
+(allow syscall-unix
+	(syscall-number
+		SYS_exit
+		SYS_read
+		SYS_write
+		SYS_open
+		SYS_close
+		SYS_link
+		SYS_unlink
+		SYS_chmod
+		SYS_chown
+		SYS_getfsstat
+		SYS_getpid
+		SYS_getuid
+		SYS_geteuid
+		SYS_recvmsg
+		SYS_sendmsg
+		SYS_recvfrom
+		SYS_access
+		SYS_chflags
+		SYS_fchflags
+		SYS_kill
+		SYS_crossarch_trap
+		SYS_dup
+		SYS_getegid
+		SYS_sigaction
+		SYS_getgid
+		SYS_sigprocmask
+		SYS_sigpending
+		SYS_sigaltstack
+		SYS_ioctl
+		SYS_readlink
+		SYS_umask
+		SYS_msync
+		SYS_munmap
+		SYS_mprotect
+		SYS_madvise
+		SYS_mincore
+		SYS_getgroups
+		SYS_fcntl
+		SYS_select
+		SYS_fsync
+		SYS_socket
+		SYS_connect
+		SYS_setsockopt
+		SYS_sigsuspend
+		SYS_gettimeofday
+		SYS_getrusage
+		SYS_getsockopt
+		SYS_readv
+		SYS_writev
+		SYS_fchown
+		SYS_fchmod
+		SYS_rename
+		SYS_flock
+		SYS_sendto
+		SYS_shutdown
+		SYS_socketpair
+		SYS_mkdir
+		SYS_rmdir
+		SYS_utimes
+		SYS_futimes
+		SYS_pread
+		SYS_pwrite
+		SYS_statfs
+		SYS_fstatfs
+		SYS_quotactl
+		SYS_csops
+		SYS_csops_audittoken
+		SYS_kdebug_typefilter
+		SYS_kdebug_trace_string
+		SYS_kdebug_trace64
+		SYS_kdebug_trace
+		SYS_sigreturn
+		SYS_stat
+		SYS_fstat
+		SYS_lstat
+		SYS_pathconf
+		SYS_fpathconf
+		SYS_getrlimit
+		SYS_setrlimit
+		SYS_mmap
+		SYS_lseek
+		SYS_ftruncate
+		SYS_sysctl
+		SYS_munlock
+		SYS_getumask
+		SYS_open_dprotected_np
+		SYS_openat_dprotected_np
+		SYS_getattrlist
+		SYS_setattrlist
+		SYS_fgetattrlist
+		SYS_fsetattrlist
+		SYS_getxattr
+		SYS_fgetxattr
+		SYS_setxattr
+		SYS_fsetxattr
+		SYS_removexattr
+		SYS_fremovexattr
+		SYS_listxattr
+		SYS_flistxattr
+		SYS_fsctl
+		SYS_ffsctl
+		SYS_shm_open
+		SYS_sem_open
+		SYS_sem_close
+		SYS_sysctlbyname
+		SYS_stat_extended
+		SYS_lstat_extended
+		SYS_fstat_extended
+		SYS_chmod_extended
+		SYS_fchmod_extended
+		SYS_access_extended
+		SYS_gettid
+		SYS_mkdir_extended
+		SYS_shared_region_check_np
+		SYS_psynch_rw_longrdlock
+		SYS_psynch_rw_yieldwrlock
+		SYS_psynch_rw_downgrade
+		SYS_psynch_rw_upgrade
+		SYS_psynch_mutexwait
+		SYS_psynch_mutexdrop
+		SYS_psynch_cvbroad
+		SYS_psynch_cvsignal
+		SYS_psynch_cvwait
+		SYS_psynch_rw_rdlock
+		SYS_psynch_rw_wrlock
+		SYS_psynch_rw_unlock
+		SYS_psynch_rw_unlock2
+		SYS_psynch_cvclrprepost
+		SYS_iopolicysys
+		SYS_issetugid
+		SYS___pthread_kill
+		SYS___pthread_sigmask
+		SYS___sigwait
+		SYS___disable_threadsignal
+		SYS___pthread_markcancel
+		SYS___pthread_canceled
+		SYS___semwait_signal
+		SYS_proc_info
+		SYS_stat64
+		SYS_fstat64
+		SYS_lstat64
+		SYS_stat64_extended
+		SYS_lstat64_extended
+		SYS_fstat64_extended
+		SYS_getdirentries64
+		SYS_statfs64
+		SYS_fstatfs64
+		SYS_getfsstat64
+		SYS___pthread_chdir
+		SYS___pthread_fchdir
+		SYS_bsdthread_create
+		SYS_bsdthread_terminate
+		SYS_kqueue
+		SYS_kevent
+		SYS_lchown
+		SYS_bsdthread_register
+		SYS_workq_open
+		SYS_workq_kernreturn
+		SYS_kevent64
+		SYS_thread_selfid
+		SYS_kevent_qos
+		SYS_kevent_id
+		SYS___mac_syscall
+		SYS_pselect
+		SYS_pselect_nocancel
+		SYS_read_nocancel
+		SYS_write_nocancel
+		SYS_open_nocancel
+		SYS_close_nocancel
+		SYS_recvmsg_nocancel
+		SYS_sendmsg_nocancel
+		SYS_recvfrom_nocancel
+		SYS_fcntl_nocancel
+		SYS_select_nocancel
+		SYS_connect_nocancel
+		SYS_sigsuspend_nocancel
+		SYS_readv_nocancel
+		SYS_writev_nocancel
+		SYS_sendto_nocancel
+		SYS_pread_nocancel
+		SYS_pwrite_nocancel
+		SYS___sigwait_nocancel
+		SYS___semwait_signal_nocancel
+		SYS_fsgetpath
+		SYS_fileport_makeport
+		SYS_fileport_makefd
+		SYS_memorystatus_control
+		SYS_guarded_open_np
+		SYS_guarded_close_np
+		SYS_guarded_kqueue_np
+		SYS_change_fdguard_np
+		SYS_proc_rlimit_control
+		SYS_connectx
+		SYS_getattrlistbulk
+		SYS_clonefileat
+		SYS_openat
+		SYS_openat_nocancel
+		SYS_renameat
+		SYS_faccessat
+		SYS_fchmodat
+		SYS_fchownat
+		SYS_fstatat
+		SYS_fstatat64
+		SYS_linkat
+		SYS_unlinkat
+		SYS_mkdirat
+		SYS_bsdthread_ctl
+		SYS_guarded_open_dprotected_np
+		SYS_guarded_write_np
+		SYS_guarded_pwrite_np
+		SYS_guarded_writev_np
+		SYS_renameatx_np
+		SYS_persona
+		SYS_work_interval_ctl
+		SYS_getentropy
+		SYS_necp_open
+		SYS_necp_client_action
+		SYS___nexus_set_opt
+		SYS___channel_open
+		SYS___channel_get_info
+		SYS___channel_sync
+		SYS___channel_get_opt
+		SYS___channel_set_opt
+		SYS_ulock_wait
+		SYS_ulock_wake
+		SYS_fclonefileat
+		SYS_terminate_with_payload
+		SYS_abort_with_payload
+		SYS_os_fault_with_payload
+		SYS_kqueue_workloop_ctl
+		SYS_memorystatus_available_memory
+		SYS_objc_bp_assist_cfg_np
+		SYS_shared_region_map_and_slide_2_np
+		SYS_preadv
+		SYS_pwritev
+		SYS_preadv_nocancel
+		SYS_pwritev_nocancel
+		SYS_ulock_wait2
+		SYS_proc_info_extended_id
+		SYS_map_with_linking_np
+		SYS_freadlink)
+)
+
+(allow syscall-mach)
+
+(allow syscall-mig)
+
+(allow sysctl-read
+	(sysctl-name "net.routetable.*")
+)
+
+(allow system-fcntl)
+
+(allow system-fsctl
+	(fsctl-command APFSIOC_CLEAR_PURGEABLE)
+)
+
+(deny system-kas-info)
+
+(allow system-mac-syscall)
+
+(allow system-memorystatus-control)
+
+(allow system-necp-client-action)
+
+(allow system-privilege)
+
+(allow user-preference-read
+	(require-all
+		(preference-domain "com.apple.CoreDuet")
+		(process-attribute is-apple-signed-executable)
+	)
+)
+(allow user-preference-read
+	(require-any
+		(preference-domain "com.apple.AOSNotification.public.notbackedup")
+		(preference-domain "com.apple.AppSupport")
+		(preference-domain "com.apple.CloudKit")
+		(preference-domain "com.apple.DataMigration")
+		(preference-domain "com.apple.IMCoreSpotlight")
+		(preference-domain "com.apple.ImageIO")
+		(preference-domain "com.apple.Messages")
+		(preference-domain "com.apple.MobileSMS")
+		(preference-domain "com.apple.MobileSMSPreview")
+		(preference-domain "com.apple.NanoRegistry")
+		(preference-domain "com.apple.PeoplePicker")
+		(preference-domain "com.apple.apsd")
+		(preference-domain "com.apple.carrier")
+		(preference-domain "com.apple.conference")
+		(preference-domain "com.apple.coreaudio")
+		(preference-domain "com.apple.coremedia")
+		(preference-domain "com.apple.demo-settings")
+		(preference-domain "com.apple.facetime.bag")
+		(preference-domain "com.apple.iChatAgent")
+		(preference-domain "com.apple.icloud.findmydeviced.postwipe")
+		(preference-domain "com.apple.icloud.findmydeviced.public.notbackedup")
+		(preference-domain "com.apple.ids")
+		(preference-domain "com.apple.ids.debug")
+		(preference-domain "com.apple.imagent")
+		(preference-domain "com.apple.imdbadgeutilities")
+		(preference-domain "com.apple.imdsmsrecordstore")
+		(preference-domain "com.apple.imessage")
+		(preference-domain "com.apple.imessage.bag")
+		(preference-domain "com.apple.imservice.*")
+		(preference-domain "com.apple.iokit.IOMobileGraphicsFamily")
+		(preference-domain "com.apple.logging")
+		(preference-domain "com.apple.madrid")
+		(preference-domain "com.apple.marco")
+		(preference-domain "com.apple.messages")
+		(preference-domain "com.apple.messages.AttachmentsAutomation")
+		(preference-domain "com.apple.messages.IMCoreAutomation")
+		(preference-domain "com.apple.messages.commsafety")
+		(preference-domain "com.apple.messages.nicknames")
+		(preference-domain "com.apple.messages.statistics")
+		(preference-domain "com.apple.mmcs")
+		(preference-domain "com.apple.mms_override")
+		(preference-domain "com.apple.mobileSMS")
+		(preference-domain "com.apple.operator")
+		(preference-domain "com.apple.pairedsync")
+		(preference-domain "com.apple.pairedsyncd")
+		(preference-domain "com.apple.persistentconnection")
+		(preference-domain "com.apple.private.dmd.policy")
+		(preference-domain "com.apple.purplebuddy")
+		(preference-domain "com.apple.purplebuddy.notbackedup")
+		(preference-domain "com.apple.registration")
+		(preference-domain "com.apple.sms")
+		(preference-domain "com.apple.springboard")
+		(preference-domain "com.apple.vehiclePolicy.DNDMode")
+	)
+)
+
+(allow managed-preference-read
+	(require-all
+		(preference-domain "com.apple.CoreDuet")
+		(process-attribute is-apple-signed-executable)
+	)
+)
+(allow managed-preference-read
+	(require-any
+		(preference-domain "com.apple.AOSNotification.public.notbackedup")
+		(preference-domain "com.apple.AppSupport")
+		(preference-domain "com.apple.CloudKit")
+		(preference-domain "com.apple.DataMigration")
+		(preference-domain "com.apple.IMCoreSpotlight")
+		(preference-domain "com.apple.ImageIO")
+		(preference-domain "com.apple.Messages")
+		(preference-domain "com.apple.MobileSMS")
+		(preference-domain "com.apple.MobileSMSPreview")
+		(preference-domain "com.apple.NanoRegistry")
+		(preference-domain "com.apple.PeoplePicker")
+		(preference-domain "com.apple.apsd")
+		(preference-domain "com.apple.carrier")
+		(preference-domain "com.apple.conference")
+		(preference-domain "com.apple.coreaudio")
+		(preference-domain "com.apple.coremedia")
+		(preference-domain "com.apple.demo-settings")
+		(preference-domain "com.apple.facetime.bag")
+		(preference-domain "com.apple.iChatAgent")
+		(preference-domain "com.apple.icloud.findmydeviced.postwipe")
+		(preference-domain "com.apple.icloud.findmydeviced.public.notbackedup")
+		(preference-domain "com.apple.ids")
+		(preference-domain "com.apple.ids.debug")
+		(preference-domain "com.apple.imagent")
+		(preference-domain "com.apple.imdbadgeutilities")
+		(preference-domain "com.apple.imdsmsrecordstore")
+		(preference-domain "com.apple.imessage")
+		(preference-domain "com.apple.imessage.bag")
+		(preference-domain "com.apple.imservice.*")
+		(preference-domain "com.apple.iokit.IOMobileGraphicsFamily")
+		(preference-domain "com.apple.logging")
+		(preference-domain "com.apple.madrid")
+		(preference-domain "com.apple.marco")
+		(preference-domain "com.apple.messages")
+		(preference-domain "com.apple.messages.AttachmentsAutomation")
+		(preference-domain "com.apple.messages.IMCoreAutomation")
+		(preference-domain "com.apple.messages.commsafety")
+		(preference-domain "com.apple.messages.nicknames")
+		(preference-domain "com.apple.messages.statistics")
+		(preference-domain "com.apple.mmcs")
+		(preference-domain "com.apple.mms_override")
+		(preference-domain "com.apple.mobileSMS")
+		(preference-domain "com.apple.operator")
+		(preference-domain "com.apple.pairedsync")
+		(preference-domain "com.apple.pairedsyncd")
+		(preference-domain "com.apple.persistentconnection")
+		(preference-domain "com.apple.private.dmd.policy")
+		(preference-domain "com.apple.purplebuddy")
+		(preference-domain "com.apple.purplebuddy.notbackedup")
+		(preference-domain "com.apple.registration")
+		(preference-domain "com.apple.sms")
+		(preference-domain "com.apple.springboard")
+		(preference-domain "com.apple.vehiclePolicy.DNDMode")
+	)
+)
+
+(allow user-preference-write
+	(require-any
+		(preference-domain "com.apple.IMCoreSpotlight")
+		(preference-domain "com.apple.Messages")
+		(preference-domain "com.apple.MobileSMS")
+		(preference-domain "com.apple.MobileSMSPreview")
+		(preference-domain "com.apple.facetime.bag")
+		(preference-domain "com.apple.iChatAgent")
+		(preference-domain "com.apple.ids.debug")
+		(preference-domain "com.apple.imagent")
+		(preference-domain "com.apple.imdbadgeutilities")
+		(preference-domain "com.apple.imessage")
+		(preference-domain "com.apple.imessage.bag")
+		(preference-domain "com.apple.imservice.*")
+		(preference-domain "com.apple.madrid")
+		(preference-domain "com.apple.messages")
+		(preference-domain "com.apple.messages.AttachmentsAutomation")
+		(preference-domain "com.apple.messages.commsafety")
+		(preference-domain "com.apple.messages.nicknames")
+		(preference-domain "com.apple.messages.statistics")
+		(preference-domain "com.apple.mobileSMS")
+		(preference-domain "com.apple.sms")
+	)
+)
+
+(allow exception-entitlement)
+
+(allow process-exec-update-label)

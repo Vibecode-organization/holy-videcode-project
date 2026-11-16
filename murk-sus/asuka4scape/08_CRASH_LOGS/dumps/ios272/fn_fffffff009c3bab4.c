@@ -1,0 +1,19 @@
+// FUN_fffffff009c3bab4 @ fffffff009c3bab4 size=108
+
+undefined8 FUN_fffffff009c3bab4(undefined8 param_1,undefined8 param_2,undefined8 param_3)
+
+{
+  long *plVar1;
+  undefined8 uVar2;
+  
+  plVar1 = (long *)FUN_fffffff009c3f1d0();
+  if (plVar1 == (long *)0x0) {
+    uVar2 = 0xe00002c2;
+  }
+  else {
+    uVar2 = FUN_fffffff009c24720(plVar1,param_3);
+    (**(code **)(*plVar1 + 0x28))(plVar1);
+  }
+  return uVar2;
+}
+

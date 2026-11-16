@@ -1,0 +1,17 @@
+=== sbclass1 start pid=826 cls=7 target=/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches
+cls=7 group=0 part=3 flags=0x8000000000 id=app.lake9674.aquila8809 res=0x0 tok=NO path=
+cls=7 group=1 part=3 flags=0x8000000000 id=app.lake9674.aquila8809 res=0x0 tok=NO path=
+cls=7 group=0 part=3 flags=0x8000000000 id=group.8e0bc870a21520b9.1 res=0x0 tok=NO path=
+cls=7 group=1 part=3 flags=0x8000000000 id=group.8e0bc870a21520b9.1 res=0x12e40cd20 tok=YES path=/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches
+cls=7 consume=2
+cls=7 opendir /private/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches -> 0x12e40d400 errno=0
+cls=7 write /private/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches/sbclass1_marker -> 4 errno=0
+cls=7 group=0 part=3 flags=0x8000000000 id=com.apple.geod res=0x0 tok=NO path=
+cls=7 group=1 part=3 flags=0x8000000000 id=com.apple.geod res=0x0 tok=NO path=
+cls=7 group=0 part=3 flags=0x8000000000 id=systemgroup.com.apple.mobilegestaltcache res=0x0 tok=NO path=
+cls=7 group=1 part=3 flags=0x8000000000 id=systemgroup.com.apple.mobilegestaltcache res=0x0 tok=NO path=
+cls=7 group=0 part=3 flags=0x8000000000 id=com.apple.Preferences res=0x0 tok=NO path=
+cls=7 group=1 part=3 flags=0x8000000000 id=com.apple.Preferences res=0x0 tok=NO path=
+cls=7 group=0 part=3 flags=0x8000000000 id=com.apple.mobilesafari res=0x0 tok=NO path=
+cls=7 group=1 part=3 flags=0x8000000000 id=com.apple.mobilesafari res=0x0 tok=NO path=
+=== sbclass1 done cls=7 ===

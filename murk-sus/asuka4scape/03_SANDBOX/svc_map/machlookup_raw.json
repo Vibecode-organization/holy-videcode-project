@@ -1,0 +1,1589 @@
+[
+ {
+  "profile": "baseline",
+  "names": [
+   "com.apple.mobile.usermanagerd.xpc"
+  ],
+  "reqany": false,
+  "kind": "flagged",
+  "detail": "common-apple-signed-executable-rules",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'with'), ('sym', 'report')], [('sym', 'require-all'), [('sym', 'profile-flag'), ('str', 'common-apple-signed-executable-rules')], [('sym', 'process-attribute'), ('sym', 'is-apple-signed-executable')], [('sym', 'global-name'), ('str', 'com.apple.mobile.usermanagerd.xpc')]]]"
+ },
+ {
+  "profile": "baseline",
+  "names": [],
+  "reqany": false,
+  "kind": "inactive",
+  "detail": "disable-enforcement",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'with'), ('sym', 'report')], [('sym', 'profile-flag'), ('str', 'disable-enforcement')]]"
+ },
+ {
+  "profile": "baseline",
+  "names": [
+   "com.apple.pluginkit.pkd"
+  ],
+  "reqany": false,
+  "kind": "flagged",
+  "detail": "common-pluginkit-support",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.pluginkit.pkd')], [('sym', 'profile-flag'), ('str', 'common-pluginkit-support')]]]"
+ },
+ {
+  "profile": "baseline",
+  "names": [
+   "com.apple.system.logger"
+  ],
+  "reqany": false,
+  "kind": "flagged",
+  "detail": "common-system-logging-rules",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.system.logger')], [('sym', 'profile-flag'), ('str', 'common-system-logging-rules')]]]"
+ },
+ {
+  "profile": "baseline",
+  "names": [
+   "com.apple.fairplayd.versioned",
+   "com.apple.fairplayd.xpc",
+   "com.apple.amsprivateidentifiers",
+   "com.apple.servicesanalytics.xpc"
+  ],
+  "reqany": true,
+  "kind": "entitled",
+  "detail": "com.apple.private.applemediaservices",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'profile-flag'), ('str', 'common-rules')], [('sym', '%entitlement-is-present'), ('str', 'com.apple.private.applemediaservices')], [('sym', 'require-any'), [('sym', 'global-name'), ('str', 'com.apple.fairplayd.versioned')], [('sym', 'global-name'), ('str', 'com.apple.fairplayd.xpc')], [('sym', 'require-any'), [('sym', 'glo"
+ },
+ {
+  "profile": "baseline",
+  "names": [
+   "com.apple.contactsd.support"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.private.contacts",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.contactsd.support')], [('sym', '%entitlement-is-present'), ('str', 'com.apple.private.contacts')], [('sym', 'profile-flag'), ('str', 'common-rules')]]]"
+ },
+ {
+  "profile": "baseline",
+  "names": [
+   "com.apple.managedconfiguration.profiled.public"
+  ],
+  "reqany": false,
+  "kind": "flagged",
+  "detail": "common-managed-configuration-read-rules",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.managedconfiguration.profiled.public')], [('sym', 'profile-flag'), ('str', 'common-managed-configuration-read-rules')]]]"
+ },
+ {
+  "profile": "baseline",
+  "names": [],
+  "reqany": false,
+  "kind": "flagged",
+  "detail": "common-pluginkit-support",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'profile-flag'), ('str', 'common-pluginkit-support')], [('sym', 'extension'), ('str', 'com.apple.pluginkit.plugin-service')]]]"
+ },
+ {
+  "profile": "baseline",
+  "names": [
+   "com.apple.extensionkitservice"
+  ],
+  "reqany": false,
+  "kind": "flagged",
+  "detail": "common-pluginkit-support",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'profile-flag'), ('str', 'common-pluginkit-support')], [('sym', 'global-name'), ('str', 'com.apple.extensionkitservice')]]]"
+ },
+ {
+  "profile": "baseline",
+  "names": [],
+  "reqany": false,
+  "kind": "flagged",
+  "detail": "autobox-client-telemetry",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'profile-flag'), ('str', 'autobox-client-telemetry')]]"
+ },
+ {
+  "profile": "baseline",
+  "names": [
+   "com.apple.containermanagerd",
+   "com.apple.containermanagerd.system"
+  ],
+  "reqany": true,
+  "kind": "flagged",
+  "detail": "common-containermanagerd-rules",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'profile-flag'), ('str', 'common-containermanagerd-rules')], [('sym', 'require-any'), [('sym', 'global-name'), ('str', 'com.apple.containermanagerd')], [('sym', 'global-name'), ('str', 'com.apple.containermanagerd.system')]]]]"
+ },
+ {
+  "profile": "baseline",
+  "names": [
+   "com.apple.mobilegestalt.xpc"
+  ],
+  "reqany": false,
+  "kind": "flagged",
+  "detail": "common-mobilegestalt-rules",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.mobilegestalt.xpc')], [('sym', 'profile-flag'), ('str', 'common-mobilegestalt-rules')]]]"
+ },
+ {
+  "profile": "baseline",
+  "names": [
+   "com.apple.coreduetd.people"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.coreduetd.people",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.coreduetd.people')], [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.coreduetd.people')], [('sym', 'profile-flag'), ('str', 'common-rules')]]]"
+ },
+ {
+  "profile": "baseline",
+  "names": [
+   "com.apple.cfprefsd.agent",
+   "com.apple.cfprefsd.daemon",
+   "com.apple.cfprefsd.daemon.system"
+  ],
+  "reqany": true,
+  "kind": "flagged",
+  "detail": "common-preferences-rules",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'profile-flag'), ('str', 'common-preferences-rules')], [('sym', 'require-any'), [('sym', 'global-name'), ('str', 'com.apple.cfprefsd.agent')], [('sym', 'local-name'), ('str', 'com.apple.cfprefsd.agent')], [('sym', 'require-any'), [('sym', 'global-name'), ('str', 'com.apple.cfprefsd.daemon')], [('sym', 'global-name'), ('st"
+ },
+ {
+  "profile": "baseline",
+  "names": [
+   "com.apple.hangtracerd",
+   "com.apple.osanalytics.osanalyticshelper",
+   "com.apple.hangtracerd",
+   "com.apple.dt.testmanagerd.appintentsservices",
+   "com.apple.testmanagerd.appintentsservices",
+   "com.apple.gputools.service",
+   "com.apple.hangtelemetryd",
+   "com.apple.hangtracermonitor"
+  ],
+  "reqany": true,
+  "kind": "flagged",
+  "detail": "common-debugging-rules",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'profile-flag'), ('str', 'common-debugging-rules')], [('sym', 'require-any'), [('sym', 'global-name'), ('str', 'com.apple.hangtracerd')], [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.osanalytics.osanalyticshelper')], [('sym', 'process-attribute'), ('sym', 'is-apple-signed-executable')]], [('sym', '"
+ },
+ {
+  "profile": "baseline",
+  "names": [
+   "com.apple.CoreAuthentication.daemon",
+   "com.apple.aggregated",
+   "com.apple.analyticsd",
+   "com.apple.diagnosticd",
+   "com.apple.distributed_notifications@1v3",
+   "com.apple.logd",
+   "com.apple.logd.events",
+   "com.apple.lsd",
+   "com.apple.lsd.mapdb",
+   "com.apple.lsd.open",
+   "com.apple.runningboard",
+   "com.apple.system.libinfo.muser",
+   "com.apple.appsupport.cplogd",
+   "com.apple.coreservices.lsuseractivitymanager.xpc",
+   "com.apple.ctkd.token-client",
+   "com.apple.duetknowledged.activity",
+   "com.apple.lsd.icons"
+  ],
+  "reqany": true,
+  "kind": "flagged",
+  "detail": "common-mach-lookups",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'profile-flag'), ('str', 'common-mach-lookups')], [('sym', 'require-any'), [('sym', 'global-name'), ('str', 'com.apple.CoreAuthentication.daemon')], [('sym', 'global-name'), ('str', 'com.apple.aggregated')], [('sym', 'global-name'), ('str', 'com.apple.analyticsd')], [('sym', 'global-name'), ('str', 'com.apple.diagnosticd'"
+ },
+ {
+  "profile": "baseline",
+  "names": [
+   "com.apple.SharedWebCredentials",
+   "com.apple.datamigrator",
+   "com.apple.Honeybee.event-notify",
+   "com.apple.PerformanceTrace.PerformanceTraceService"
+  ],
+  "reqany": true,
+  "kind": "flagged",
+  "detail": "common-apple-signed-executable-rules",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'profile-flag'), ('str', 'common-apple-signed-executable-rules')], [('sym', 'process-attribute'), ('sym', 'is-apple-signed-executable')], [('sym', 'require-any'), [('sym', 'global-name'), ('str', 'com.apple.SharedWebCredentials')], [('sym', 'global-name'), ('str', 'com.apple.datamigrator')], [('sym', 'require-any'), [('sy"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.sharingd.nsxpc"
+  ],
+  "reqany": false,
+  "kind": "open",
+  "detail": "",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'with'), ('sym', 'report')], [('sym', 'global-name'), ('str', 'com.apple.sharingd.nsxpc')]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.ExposureNotification"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.developer.exposure-notification",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.ExposureNotification')], [('sym', '%entitlement-is-present'), ('str', 'com.apple.developer.exposure-notification')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.networkd_privileged"
+  ],
+  "reqany": true,
+  "kind": "entitled",
+  "detail": "com.apple.networkd.advisory_socket,com.apple.networkd.disable_opportunistic,com.apple.networkd.modify_settings,com.apple.networkd.persistent_interface,com.apple.networkd_privileged",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.networkd_privileged')], [('sym', 'require-any'), [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.networkd.advisory_socket')], [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.networkd.disable_opportunistic')], [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.n"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.merchantd.engagement"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.developer.proximity-reader.customer-engagement",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.merchantd.engagement')], [('sym', '%entitlement-is-present'), ('str', 'com.apple.developer.proximity-reader.customer-engagement')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.ak.anisette.xpc"
+  ],
+  "reqany": true,
+  "kind": "entitled",
+  "detail": "com.apple.authkit.client,com.apple.authkit.client.internal,com.apple.authkit.client.private",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.ak.anisette.xpc')], [('sym', 'require-any'), [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.authkit.client')], [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.authkit.client.internal')], [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.authkit.client.private"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.coreidvd.mobile-document-provider-registration.xpc"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.developer.identity-document-services.document-provider.mobile-document-types",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.coreidvd.mobile-document-provider-registration.xpc')], [('sym', '%entitlement-is-present'), ('str', 'com.apple.developer.identity-document-services.document-provider.mobile-document-types')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.coreidvd.web-presentment.xpc"
+  ],
+  "reqany": true,
+  "kind": "entitled",
+  "detail": "com.apple.developer.identity-document-services.web-presentment-controller,com.apple.developer.web-browser",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.coreidvd.web-presentment.xpc')], [('sym', 'require-any'), [('sym', '%entitlement-is-present'), ('str', 'com.apple.developer.identity-document-services.web-presentment-controller')], [('sym', '%entitlement-is-present'), ('str', 'com.apple.developer.web-browser')]]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.browserkitd"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.developer.web-browser",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.browserkitd')], [('sym', '%entitlement-is-present'), ('str', 'com.apple.developer.web-browser')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.SystemConfiguration.DNSConfiguration",
+   "com.apple.SystemConfiguration.NetworkInformation",
+   "com.apple.SystemConfiguration.PPPController",
+   "com.apple.SystemConfiguration.SCNetworkReachability",
+   "com.apple.SystemConfiguration.configd",
+   "com.apple.SystemConfiguration.helper",
+   "com.apple.commcenter.cupolicy.xpc",
+   "com.apple.commcenter.xpc",
+   "com.apple.securityd",
+   "com.apple.symptoms.symptomsd.managed_events",
+   "com.apple.symptomsd",
+   "com.apple.trustd",
+   "com.apple.usymptomsd"
+  ],
+  "reqany": true,
+  "kind": "entitled",
+  "detail": "com.apple.developer.networking.multicast",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.developer.networking.multicast')], [('sym', 'require-any'), [('sym', 'global-name'), ('str', 'com.apple.SystemConfiguration.DNSConfiguration')], [('sym', 'global-name'), ('str', 'com.apple.SystemConfiguration.NetworkInformation')], [('sym', 'global-name'), ('str', 'com.appl"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.idsremoteurlconnectionagent.embedded.auth"
+  ],
+  "reqany": true,
+  "kind": "entitled",
+  "detail": "com.apple.private.ids.remoteurlconnection,com.apple.private.imcore.imremoteurlconnection",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.idsremoteurlconnectionagent.embedded.auth')], [('sym', 'require-any'), [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.private.ids.remoteurlconnection')], [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.private.imcore.imremoteurlconnection')]]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.siri.vocabularyupdates"
+  ],
+  "reqany": true,
+  "kind": "entitled",
+  "detail": "com.apple.developer.siri,com.apple.siri.synapse",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.siri.vocabularyupdates')], [('sym', 'require-any'), [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.developer.siri')], [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.siri.synapse')]]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.sigmond"
+  ],
+  "reqany": false,
+  "kind": "open",
+  "detail": "",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.sigmond')], [('sym', 'process-attribute'), ('sym', 'is-apple-signed-executable')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.mobile.usermanagerd.xpc"
+  ],
+  "reqany": false,
+  "kind": "open",
+  "detail": "",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.mobile.usermanagerd.xpc')], [('sym', 'process-attribute'), ('sym', 'is-apple-signed-executable')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.personad.xpc"
+  ],
+  "reqany": true,
+  "kind": "entitled",
+  "detail": "com.apple.private.contactsui,com.apple.private.persona.read,com.apple.private.persona.write",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.personad.xpc')], [('sym', 'require-any'), [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.private.contactsui')], [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.private.persona.read')], [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.private.persona.write')]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.enterprise.licensing"
+  ],
+  "reqany": true,
+  "kind": "entitled",
+  "detail": "com.apple.developer.app-compute-category,com.apple.developer.arkit.barcode-detection.allow,com.apple.developer.arkit.camera-region.allow,com.apple.developer.arkit.main-camera-access.allow,com.apple.developer.arkit.object-tracking-parameter-adjustment.allow,com.apple.developer.arkit.shared-coordinate-space.allow,com.apple.developer.arkit.visual-fidelity-monitoring.allow,com.apple.developer.avfoundation.uvc-device-access,com.apple.developer.coreml.neural-engine-access,com.apple.developer.protected-content,com.apple.developer.screen-capture.include-passthrough,com.apple.developer.window-body-follow",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.enterprise.licensing')], [('sym', 'require-any'), [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.developer.arkit.barcode-detection.allow')], [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.developer.arkit.camera-region.allow')], [('sym', '%entitlement-is-bool-true'),"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.PowerManagement.control"
+  ],
+  "reqany": true,
+  "kind": "open",
+  "detail": "",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.PowerManagement.control')], [('sym', 'require-any'), [('sym', 'signing-identifier'), ('str', 'com.apple.WorkflowKit.ShortcutsIntents')], [('sym', 'signing-identifier'), ('str', 'com.apple.shortcuts.watch')]]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.iokit.powerdxpc"
+  ],
+  "reqany": true,
+  "kind": "open",
+  "detail": "",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.iokit.powerdxpc')], [('sym', 'require-any'), [('sym', 'signing-identifier'), ('str', 'com.apple.WorkflowKit.ShortcutsIntents')], [('sym', 'signing-identifier'), ('str', 'com.apple.shortcuts.watch')]]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.nanoprefsync"
+  ],
+  "reqany": false,
+  "kind": "open",
+  "detail": "",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.nanoprefsync')], [('sym', 'signing-identifier'), ('str', 'com.apple.iBooks')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.merchantd.transaction"
+  ],
+  "reqany": true,
+  "kind": "entitled",
+  "detail": "com.apple.developer.proximity-reader.payment.acceptance,com.apple.developer.proximity-reader.payment.acceptance-development",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.merchantd.transaction')], [('sym', 'require-any'), [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.developer.proximity-reader.payment.acceptance')], [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.developer.proximity-reader.payment.acceptance-development')]]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.SharedWebCredentials",
+   "com.apple.dataaccess.dataaccessd",
+   "com.apple.exchangesyncd"
+  ],
+  "reqany": true,
+  "kind": "open",
+  "detail": "",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'process-attribute'), ('sym', 'is-apple-signed-executable')], [('sym', 'require-any'), [('sym', 'global-name'), ('str', 'com.apple.SharedWebCredentials')], [('sym', 'global-name'), ('str', 'com.apple.dataaccess.dataaccessd')], [('sym', 'global-name'), ('str', 'com.apple.exchangesyncd')], [('sym', 'xpc-service-name'), ('st"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.odi.assessmentService"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.developer.trustinsights.base",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.odi.assessmentService')], [('sym', '%entitlement-is-present'), ('str', 'com.apple.developer.trustinsights.base')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.bulletinboard.utilitiesconnection"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.bulletinboard.utilities",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.bulletinboard.utilitiesconnection')], [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.bulletinboard.utilities')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.PowerManagement.control",
+   "com.apple.iokit.powerdxpc",
+   "com.apple.powerlog.plxpclogger.xpc"
+  ],
+  "reqany": true,
+  "kind": "open",
+  "detail": "",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'signing-identifier'), ('str', 'com.apple.Bridge')], [('sym', 'require-any'), [('sym', 'global-name'), ('str', 'com.apple.PowerManagement.control')], [('sym', 'global-name'), ('str', 'com.apple.iokit.powerdxpc')], [('sym', 'global-name'), ('str', 'com.apple.powerlog.plxpclogger.xpc')]]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.icloud.findmydeviced"
+  ],
+  "reqany": true,
+  "kind": "entitled",
+  "detail": "com.apple.aosnotification.aosnotifyd-access,com.apple.icloud.findmydeviced.access",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.icloud.findmydeviced')], [('sym', 'require-any'), [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.aosnotification.aosnotifyd-access')], [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.icloud.findmydeviced.access')]]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.merchantd.storage"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.developer.proximity-reader.payment.acceptance",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.merchantd.storage')], [('sym', '%entitlement-is-present'), ('str', 'com.apple.developer.proximity-reader.payment.acceptance')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.mobilestoredemod"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.private.mobilestoredemo.enabledemo",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.mobilestoredemod')], [('sym', '%entitlement-is-present'), ('str', 'com.apple.private.mobilestoredemo.enabledemo')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.callkit.networkextension.voip"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.developer.networking.networkextension",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.callkit.networkextension.voip')], [('sym', '%entitlement-is-present'), ('str', 'com.apple.developer.networking.networkextension')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [],
+  "reqany": true,
+  "kind": "open",
+  "detail": "",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'xpc-service-name'), ('str', 'com.apple.StreamingUnzipService')], [('sym', 'require-any'), [('sym', 'signing-identifier'), ('str', 'com.apple.Home')], [('sym', 'signing-identifier'), ('str', 'com.apple.Home.HomeControlService')]]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.bulletinboard.observerconnection"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.bulletinboard.observer",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.bulletinboard.observerconnection')], [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.bulletinboard.observer')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.accessibility.api",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'local-name'), ('str', 'com.apple.iphone.axserver')], [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.accessibility.api')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.VideoSubscriberAccount.videosubscriptionsd"
+  ],
+  "reqany": true,
+  "kind": "entitled",
+  "detail": "com.apple.developer.video-subscription-registration,com.apple.private.subscriptionservice.all-sources.read-only,com.apple.private.subscriptionservice.internal,com.apple.private.subscriptionservice.web-sources.read-write,com.apple.smoot.subscriptionservice",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.VideoSubscriberAccount.videosubscriptionsd')], [('sym', 'require-any'), [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.developer.video-subscription-registration')], [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.private.subscriptionservice.all-sources.read-only')], "
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.icfcallserver"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.private.icfcallserver",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.icfcallserver')], [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.private.icfcallserver')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.messages.critical-messaging"
+  ],
+  "reqany": true,
+  "kind": "entitled",
+  "detail": "com.apple.developer.messages.critical-messaging,com.apple.developer.upi-device-validation",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.messages.critical-messaging')], [('sym', 'require-any'), [('sym', '%entitlement-is-present'), ('str', 'com.apple.developer.messages.critical-messaging')], [('sym', '%entitlement-is-present'), ('str', 'com.apple.developer.upi-device-validation')]]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.managedconfiguration.profiled"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.managedconfiguration.profiled-access",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.managedconfiguration.profiled')], [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.managedconfiguration.profiled-access')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.cache_delete"
+  ],
+  "reqany": true,
+  "kind": "entitled",
+  "detail": "com.apple.mobile.deleted.AllowFreeSpace,com.apple.private.CacheDelete",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.cache_delete')], [('sym', 'require-any'), [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.mobile.deleted.AllowFreeSpace')], [('sym', '%entitlement-is-present'), ('str', 'com.apple.private.CacheDelete')]]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.lsd.xpc"
+  ],
+  "reqany": false,
+  "kind": "open",
+  "detail": "",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.lsd.xpc')], [('sym', 'signing-identifier'), ('str', 'com.apple.mobilesafari')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.bulletinboard.systemstateconnection"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.bulletinboard.systemstate",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.bulletinboard.systemstateconnection')], [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.bulletinboard.systemstate')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.replayd"
+  ],
+  "reqany": false,
+  "kind": "open",
+  "detail": "",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.replayd')], [('sym', 'process-attribute'), ('sym', 'is-plugin')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.arkit.service.focusRegion"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.developer.foveated-streaming-provider",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.arkit.service.focusRegion')], [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.developer.foveated-streaming-provider')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.coreidvd.digital-presentment.xpc"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.developer.in-app-identity-presentment,com.apple.developer.in-app-identity-presentment.merchant-identifiers",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.coreidvd.digital-presentment.xpc')], [('sym', '%entitlement-is-present'), ('str', 'com.apple.developer.in-app-identity-presentment')], [('sym', '%entitlement-is-present'), ('str', 'com.apple.developer.in-app-identity-presentment.merchant-identifiers')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.StreamReceiverDisplay.sessions"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.developer.foveated-streaming-session",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.StreamReceiverDisplay.sessions')], [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.developer.foveated-streaming-session')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.coreduetd"
+  ],
+  "reqany": false,
+  "kind": "open",
+  "detail": "",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.coreduetd')], [('sym', 'process-attribute'), ('sym', 'is-apple-signed-executable')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.mobile.keybagd.xpc"
+  ],
+  "reqany": true,
+  "kind": "entitled",
+  "detail": "com.apple.private.amfi.can-execute-cdhash",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.mobile.keybagd.xpc')], [('sym', 'require-any'), [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.private.amfi.can-execute-cdhash')], [('sym', 'signing-identifier'), ('str', 'com.apple.WebContentFilter.remoteUI.WebContentAnalysisUI')]]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.powerlog.plxpclogger.xpc"
+  ],
+  "reqany": true,
+  "kind": "open",
+  "detail": "",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.powerlog.plxpclogger.xpc')], [('sym', 'require-any'), [('sym', 'signing-identifier'), ('str', 'com.apple.WorkflowKit.ShortcutsIntents')], [('sym', 'signing-identifier'), ('str', 'com.apple.shortcuts.watch')]]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.backupd",
+   "com.apple.bulletindistributord.server",
+   "com.apple.harvestd.manager",
+   "com.apple.identityservicesd.embedded.auth",
+   "com.apple.mobilemail",
+   "com.apple.nanoprefsync",
+   "com.apple.routined.registration",
+   "com.apple.sharingd.nsxpc"
+  ],
+  "reqany": true,
+  "kind": "open",
+  "detail": "",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'signing-identifier'), ('str', 'com.apple.mobilemail')], [('sym', 'require-any'), [('sym', 'global-name'), ('str', 'com.apple.backupd')], [('sym', 'global-name'), ('str', 'com.apple.bulletindistributord.server')], [('sym', 'global-name'), ('str', 'com.apple.harvestd.manager')], [('sym', 'global-name'), ('str', 'com.apple."
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.familycircle.agent"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.private.familycircle",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.familycircle.agent')], [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.private.familycircle')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.nanoprefsync"
+  ],
+  "reqany": false,
+  "kind": "open",
+  "detail": "",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.nanoprefsync')], [('sym', 'signing-identifier'), ('str', 'com.apple.Music')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.SafetyKit"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.developer.severe-vehicular-crash-event",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.SafetyKit')], [('sym', '%entitlement-is-present'), ('str', 'com.apple.developer.severe-vehicular-crash-event')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.identityservicesd.embedded.auth"
+  ],
+  "reqany": true,
+  "kind": "open",
+  "detail": "",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.identityservicesd.embedded.auth')], [('sym', 'require-any'), [('sym', 'require-any'), [('sym', 'signing-identifier'), ('str', 'com.apple.WorkflowKit.ShortcutsIntents')], [('sym', 'signing-identifier'), ('str', 'com.apple.shortcuts.watch')]], [('sym', 'signing-identifier'), ('str', 'com.a"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.AOSNotification"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.aosnotification.aosnotifyd-access",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.AOSNotification')], [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.aosnotification.aosnotifyd-access')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.merchantd.identity"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.developer.proximity-reader.identity.read",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.merchantd.identity')], [('sym', '%entitlement-is-present'), ('str', 'com.apple.developer.proximity-reader.identity.read')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.bulletinboard.settingsconnection"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.bulletinboard.settings",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.bulletinboard.settingsconnection')], [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.bulletinboard.settings')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.merchantd.discovery"
+  ],
+  "reqany": true,
+  "kind": "entitled",
+  "detail": "com.apple.developer.proximity-reader.identity.display,com.apple.developer.proximity-reader.identity.read,com.apple.developer.proximity-reader.payment.acceptance",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.merchantd.discovery')], [('sym', 'require-any'), [('sym', '%entitlement-is-present'), ('str', 'com.apple.developer.proximity-reader.identity.display')], [('sym', '%entitlement-is-present'), ('str', 'com.apple.developer.proximity-reader.identity.read')], [('sym', '%entitlement-is-present'"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.telephonyutilities.callservicesdaemon.ptt"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.developer.push-to-talk",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.telephonyutilities.callservicesdaemon.ptt')], [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.developer.push-to-talk')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.MomentsUIService"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.developer.journal.allow",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.MomentsUIService')], [('sym', '%entitlement-is-present'), ('str', 'com.apple.developer.journal.allow')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.appmanagedfeatures.restrictions"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.developer.appmanagedfeatures",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.appmanagedfeatures.restrictions')], [('sym', '%entitlement-is-present'), ('str', 'com.apple.developer.appmanagedfeatures')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.seserviced.credential.manager"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.developer.secure-element-credential",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.seserviced.credential.manager')], [('sym', '%entitlement-is-present'), ('str', 'com.apple.developer.secure-element-credential')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.FileCoordination"
+  ],
+  "reqany": false,
+  "kind": "open",
+  "detail": "",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.FileCoordination')], [('sym', 'signing-identifier'), ('str', 'com.apple.Music')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.financed.service.coredatastore"
+  ],
+  "reqany": true,
+  "kind": "entitled",
+  "detail": "com.apple.developer.financekit,com.apple.finance.private",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.financed.service.coredatastore')], [('sym', 'require-any'), [('sym', '%entitlement-is-present'), ('str', 'com.apple.developer.financekit')], [('sym', '%entitlement-is-present'), ('str', 'com.apple.finance.private')]]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.assessmentagent"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.developer.automatic-assessment-configuration",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.assessmentagent')], [('sym', '%entitlement-is-present'), ('str', 'com.apple.developer.automatic-assessment-configuration')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.ServicesPaymentAngel"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.private.applemediaservices",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.ServicesPaymentAngel')], [('sym', '%entitlement-is-present'), ('str', 'com.apple.private.applemediaservices')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.ThreadNetwork.xpc"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.developer.networking.manage-thread-network-credentials",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.ThreadNetwork.xpc')], [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.developer.networking.manage-thread-network-credentials')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.developer.wifi-infrastructure.WiFiNetworkSharingApp"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.developer.wifi-infrastructure",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.developer.wifi-infrastructure.WiFiNetworkSharingApp')], [('sym', '%entitlement-is-present'), ('str', 'com.apple.developer.wifi-infrastructure')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.DeviceConfigurationAgent.consumer",
+   "com.apple.DeviceConfigurationAgent.consumer.async",
+   "com.apple.DeviceConfigurationAgent.publisher",
+   "com.apple.deviceconfigurationd.consumer",
+   "com.apple.deviceconfigurationd.consumer.async",
+   "com.apple.deviceconfigurationd.publisher"
+  ],
+  "reqany": true,
+  "kind": "entitled",
+  "detail": "com.apple.private.device-configuration.effective-configuration-ids.read",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'require-any'), [('sym', 'global-name'), ('str', 'com.apple.DeviceConfigurationAgent.consumer')], [('sym', 'global-name'), ('str', 'com.apple.DeviceConfigurationAgent.consumer.async')], [('sym', 'global-name'), ('str', 'com.apple.DeviceConfigurationAgent.publisher')], [('sym', 'global-name'), ('str', 'com.apple.deviceconf"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.seserviced.session"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.developer.carkey.session",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.seserviced.session')], [('sym', '%entitlement-is-present'), ('str', 'com.apple.developer.carkey.session')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.weatherkit.authservice"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.developer.weatherkit",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.weatherkit.authservice')], [('sym', '%entitlement-is-present'), ('str', 'com.apple.developer.weatherkit')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.family.ageRange.xpc"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.developer.declared-age-range",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.family.ageRange.xpc')], [('sym', '%entitlement-is-present'), ('str', 'com.apple.developer.declared-age-range')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.AuthenticationServices.AuthenticationServicesAgent.VerificationCodes",
+   "com.apple.AuthenticationServicesCore.AuthenticationServicesAgent.CredentialExchange"
+  ],
+  "reqany": true,
+  "kind": "entitled",
+  "detail": "com.apple.developer.authentication-services.autofill-credential-provider",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'require-any'), [('sym', 'global-name'), ('str', 'com.apple.AuthenticationServices.AuthenticationServicesAgent.VerificationCodes')], [('sym', 'global-name'), ('str', 'com.apple.AuthenticationServicesCore.AuthenticationServicesAgent.CredentialExchange')]], [('sym', '%entitlement-is-present'), ('str', 'com.apple.developer.a"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.FamilyControlsAgent.data-access",
+   "com.apple.UsageTrackingAgent.data-access"
+  ],
+  "reqany": true,
+  "kind": "entitled",
+  "detail": "com.apple.developer.family-controls.app-and-website-usage",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'require-any'), [('sym', 'global-name'), ('str', 'com.apple.FamilyControlsAgent.data-access')], [('sym', 'global-name'), ('str', 'com.apple.UsageTrackingAgent.data-access')]], [('sym', '%entitlement-is-present'), ('str', 'com.apple.developer.family-controls.app-and-website-usage')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.MusicKit.UI"
+  ],
+  "reqany": true,
+  "kind": "entitled",
+  "detail": "com.apple.storekit.cloud-service-exempted-from-tcc-access",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.MusicKit.UI')], [('sym', 'require-any'), [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.storekit.cloud-service-exempted-from-tcc-access')], [('sym', 'extension'), ('str', 'com.apple.tcc.kTCCServiceMediaLibrary')]]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.uikit.viewservice.*",
+   "com.apple.cloudd.debug",
+   "com.apple.cloudkit.partlycloudd.debug",
+   "^com[.]apple[.]uikit[.]viewservice[.].+"
+  ],
+  "reqany": true,
+  "kind": "open",
+  "detail": "",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.uikit.viewservice.*')], [('sym', 'require-any'), [('sym', 'global-name'), ('str', 'com.apple.cloudd.debug')], [('sym', 'global-name'), ('str', 'com.apple.cloudkit.partlycloudd.debug')], [('sym', 'global-name'), ('str', '^com[.]apple[.]uikit[.]viewservice[.].+')]]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.osanalytics.osanalyticshelper",
+   "com.apple.ReportCrash",
+   "com.apple.ReportCrash.DirectoryService",
+   "com.apple.ReportCrash.SafetyNet",
+   "com.apple.ReportCrash.StackShot"
+  ],
+  "reqany": true,
+  "kind": "open",
+  "detail": "",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'process-attribute'), ('sym', 'is-apple-signed-executable')], [('sym', 'require-any'), [('sym', 'global-name'), ('str', 'com.apple.osanalytics.osanalyticshelper')], [('sym', 'require-any'), [('sym', 'global-name'), ('str', 'com.apple.ReportCrash')], [('sym', 'global-name'), ('str', 'com.apple.ReportCrash.DirectoryService'"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.ak.auth.xpc"
+  ],
+  "reqany": false,
+  "kind": "open",
+  "detail": "",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.ak.auth.xpc')], [('sym', 'process-attribute'), ('sym', 'is-apple-signed-executable')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.identityservicesd.embedded.auth"
+  ],
+  "reqany": true,
+  "kind": "entitled",
+  "detail": "com.apple.private.amfi.can-execute-cdhash",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.identityservicesd.embedded.auth')], [('sym', 'require-any'), [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.private.amfi.can-execute-cdhash')], [('sym', 'signing-identifier'), ('str', 'com.apple.Bridge')]]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.mobile.keybagd.UserManager.xpc"
+  ],
+  "reqany": false,
+  "kind": "open",
+  "detail": "",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.mobile.keybagd.UserManager.xpc')], [('sym', 'process-attribute'), ('sym', 'is-apple-signed-executable')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.mobile.keybagd.xpc"
+  ],
+  "reqany": false,
+  "kind": "open",
+  "detail": "",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.mobile.keybagd.xpc')], [('sym', 'process-attribute'), ('sym', 'is-apple-signed-executable')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.safarifetcherd"
+  ],
+  "reqany": false,
+  "kind": "open",
+  "detail": "",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.safarifetcherd')], [('sym', 'signing-identifier'), ('str', 'com.apple.mobilesafari')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.lskdd",
+   "com.apple.lskdd.xpc"
+  ],
+  "reqany": true,
+  "kind": "open",
+  "detail": "",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'require-any'), [('sym', 'global-name'), ('str', 'com.apple.lskdd')], [('sym', 'global-name'), ('str', 'com.apple.lskdd.xpc')]], [('sym', 'process-attribute'), ('sym', 'is-apple-signed-executable')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.aps.alertprovider.xpc"
+  ],
+  "reqany": false,
+  "kind": "open",
+  "detail": "",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.aps.alertprovider.xpc')], [('sym', 'process-attribute'), ('sym', 'is-apple-signed-executable')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.PowerManagement.control",
+   "com.apple.assistant.analytics",
+   "com.apple.iokit.powerdxpc",
+   "com.apple.nanomaps.xpc.GeoServices.Navigation",
+   "com.apple.nanomaps.xpc.Navigation",
+   "com.apple.powerlog.plxpclogger.xpc"
+  ],
+  "reqany": true,
+  "kind": "open",
+  "detail": "",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'signing-identifier'), ('str', 'com.apple.Maps')], [('sym', 'require-any'), [('sym', 'global-name'), ('str', 'com.apple.PowerManagement.control')], [('sym', 'global-name'), ('str', 'com.apple.assistant.analytics')], [('sym', 'global-name'), ('str', 'com.apple.iokit.powerdxpc')], [('sym', 'global-name'), ('str', 'com.apple"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.unfreed"
+  ],
+  "reqany": false,
+  "kind": "open",
+  "detail": "",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.unfreed')], [('sym', 'process-attribute'), ('sym', 'is-apple-signed-executable')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [],
+  "reqany": false,
+  "kind": "open",
+  "detail": "",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'xpc-service-name'), ('str', 'com.apple.Gestures.tracing.service.xpc')], [('sym', 'process-attribute'), ('sym', 'is-apple-signed-executable')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.SystemConfiguration.PPPController-priv"
+  ],
+  "reqany": false,
+  "kind": "entitled",
+  "detail": "com.apple.networking.vpn.configuration",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.SystemConfiguration.PPPController-priv')], [('sym', '%entitlement-is-present'), ('str', 'com.apple.networking.vpn.configuration')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.EventTimingProfileService",
+   "com.apple.JetTracingSupport.JetTracingService"
+  ],
+  "reqany": true,
+  "kind": "open",
+  "detail": "",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'system-attribute'), ('sym', 'internal-build')], [('sym', 'require-any'), [('sym', 'global-name'), ('str', 'com.apple.EventTimingProfileService')], [('sym', 'global-name'), ('str', 'com.apple.JetTracingSupport.JetTracingService')]]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.gputools.service"
+  ],
+  "reqany": false,
+  "kind": "open",
+  "detail": "",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.gputools.service')], [('sym', 'system-attribute'), ('sym', 'developer-mode')]]]"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.FileCoordination"
+  ],
+  "reqany": true,
+  "kind": "open",
+  "detail": "",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.FileCoordination')], [('sym', 'require-any'), [('sym', 'require-any'), [('sym', 'signing-identifier'), ('str', 'com.apple.Health')], [('sym', 'signing-identifier'), ('str', 'com.apple.PassbookUIService')]], [('sym', 'signing-identifier'), ('str', 'com.apple.iBooks')], [('sym', 'signing-i"
+ },
+ {
+  "profile": "container",
+  "names": [],
+  "reqany": true,
+  "kind": "entitled",
+  "detail": "com.apple.private.imcore.imdpersistence.data-detection-access ,com.apple.private.imcore.imdpersistence.database-access,com.apple.private.imcore.spi.database-access",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'xpc-service-name'), ('str', 'com.apple.imdpersistence.IMDPersistenceAgent')], [('sym', 'require-any'), [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.private.imcore.imdpersistence.data-detection-access ')], [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple.private.imcore.imdpersistence.database-access'"
+ },
+ {
+  "profile": "container",
+  "names": [
+   "com.apple.tccd",
+   "com.apple.system.notification_center",
+   "com.apple.lsd.advertisingidentifiers",
+   "com.apple.lsd.openurl"
+  ],
+  "reqany": true,
+  "kind": "entitled",
+  "detail": "com.apple.security.on-demand-install-capable",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-all'), [('sym', 'require-not'), [('sym', 'xpc-service-name'), ('str', '*')]], [('sym', 'require-any'), [('sym', 'global-name'), ('str', 'com.apple.tccd')], [('sym', 'require-all'), [('sym', 'global-name'), ('str', 'com.apple.system.notification_center')], [('sym', 'require-not'), [('sym', '%entitlement-is-bool-true'), ('str', 'com.apple."
+ },
+ {
+  "profile": "container",
+  "names": [
+   "PurplePPTServer",
+   "PurpleSystemAppPort",
+   "PurpleSystemEventPort",
+   "ScripterServer",
+   "UIASTNotificationCenter",
+   "com.apple.ABDatabaseDoctor",
+   "com.apple.AccessibilityUIServer",
+   "com.apple.AccessorySetupUI",
+   "com.apple.AdSheetPad.server",
+   "com.apple.AdSheetPhone.server",
+   "com.apple.AppMigrationKitHelper",
+   "com.apple.AppSSO.service-xpc",
+   "com.apple.AppTrackingTransparency.EnforcementService",
+   "com.apple.AudioAccessoryKit",
+   "com.apple.AuthenticationServices.AuthenticationServicesAgent.CredentialUpdate",
+   "com.apple.AuthenticationServices.AuthenticationServicesAgent.PhoneNumberVerification",
+   "com.apple.AuthenticationServicesCore.AuthenticationServicesAgent",
+   "com.apple.AutoFillSuggestions",
+   "com.apple.BrowserEngineKit.Intermediary",
+   "com.apple.CARenderServer",
+   "com.apple.CameraOverlayAngel.application-service",
+   "com.apple.ClipServices.clipserviced",
+   "com.apple.ClockKit.CLKWatchFaceLibrary",
+   "com.apple.CoreMLModelSecurityService",
+   "com.apple.DeviceAccess.xpc",
+   "com.apple.DragUI.druid.destination",
+   "com.apple.DragUI.druid.source",
+   "com.apple.ExternalAccessory.distributednotification.server",
+   "com.apple.FSEvents",
+   "com.apple.FileCoordination",
+   "com.apple.FileProvider",
+   "com.apple.FontServices.FontProviderLoader",
+   "com.apple.GSSCred",
+   "com.apple.GameController.gamecontrollerd",
+   "com.apple.GameController.gamecontrollerd.app",
+   "com.apple.GameController.gamecontrollerd.haptics",
+   "com.apple.IncomingCallNotifications.ICNotificationManagerHost",
+   "com.apple.KeyboardServices.TextReplacementService",
+   "com.apple.MediaControl.daemon",
+   "com.apple.MobileAccessoryUpdater",
+   "com.apple.MobileFileIntegrity",
+   "com.apple.MobileInternetSharing",
+   "com.apple.Music.MPMusicPlayerControllerInternal",
+   "com.apple.Music.MPMusicPlayerMigServer",
+   "com.apple.Music.MPMusicPlayerMigServerExists",
+   "com.apple.NPKCompanionAgent.library",
+   "com.apple.PassKitWrapperXPCServiceUI",
+   "com.apple.PersistentURLTranslator.Gatekeeper",
+   "com.apple.PhotosViewService",
+   "com.apple.PointerUI.pointeruid.service",
+   "com.apple.PowerManagement.control",
+   "com.apple.ProgressReporting",
+   "com.apple.SBUserNotification",
+   "com.apple.Safari.SafeBrowsing.Service",
+   "com.apple.ScreenTimeAgent",
+   "com.apple.ScreenTimeSettingsAgent.public",
+   "com.apple.SensorKit.SKMediaEventsHelper",
+   "com.apple.ServicesAccountLinkingService.xpc",
+   "com.apple.SetStoreUpdateService",
+   "com.apple.SiriTTSService.TrialProxy",
+   "com.apple.SpatialAudioProfileXPCService",
+   "com.apple.StoreKitUISceneService",
+   "com.apple.SystemConfiguration.DNSConfiguration",
+   "com.apple.SystemConfiguration.NetworkInformation",
+   "com.apple.SystemConfiguration.PPPController",
+   "com.apple.SystemConfiguration.SCNetworkReachability",
+   "com.apple.SystemConfiguration.configd",
+   "com.apple.SystemConfiguration.helper",
+   "com.apple.TelephonyTransferService",
+   "com.apple.TextInput",
+   "com.apple.TextInput.emoji",
+   "com.apple.TextInput.image-cache-server",
+   "com.apple.TextInput.lexicon-server",
+   "com.apple.TextInput.preferences",
+   "com.apple.TextInput.rdt",
+   "com.apple.TextInput.shortcuts",
+   "com.apple.UIKit.KeyboardManagement.hosted",
+   "com.apple.UIKit.OverlayUI.services",
+   "com.apple.UIKit.SecureControlService",
+   "com.apple.UIKit.pasteboardd",
+   "com.apple.UIKit.statusbarserver",
+   "com.apple.USDKit.FormatLoader",
+   "com.apple.USDLib.FormatLoader",
+   "com.apple.VoiceOverTouch",
+   "com.apple.VoiceOverTouch.drag.xpc",
+   "com.apple.VoiceOverTouch.xpc",
+   "com.apple.WebBookmarks.webbookmarksd",
+   "com.apple.accessibility.AXBackBoardServer",
+   "com.apple.accessibility.gax.backboard",
+   "com.apple.accessibility.mediaaccessibilityd",
+   "com.apple.accessibility.voices",
+   "com.apple.accessories.externalaccessory-server",
+   "com.apple.accessories.transport-server",
+   "com.apple.accountsd.accessmanager",
+   "com.apple.accountsd.accountmanager",
+   "com.apple.accountsd.authmanager",
+   "com.apple.accountsd.oauthsigner",
+   "com.apple.airplay.apsynccontroller.xpc",
+   "com.apple.airplay.endpoint.xpc",
+   "com.apple.airplay.sender.xpc",
+   "com.apple.airplaydiagnostics.server",
+   "com.apple.ait.client",
+   "com.apple.ak.authorizationservices.xpc",
+   "com.apple.alarmkitservices",
+   "com.apple.ap.adprivacyd.attribution",
+   "com.apple.ap.adprivacyd.trackingtransparency",
+   "com.apple.ap.promotedcontent.attributionservice",
+   "com.apple.appledepthd",
+   "com.apple.appleneuralengine",
+   "com.apple.appleprofilepolicyd",
+   "com.apple.appprotectiond.extensioninfo",
+   "com.apple.appprotectiond.extensionmonitor",
+   "com.apple.appprotectiond.viewsubjectinfo",
+   "com.apple.appprotectiond.viewsubjectmonitor",
+   "com.apple.apsd",
+   "com.apple.arkit.service.geoTracking",
+   "com.apple.arkit.service.location",
+   "com.apple.asktod",
+   "com.apple.assetsd.changehub",
+   "com.apple.assistant.analytics",
+   "com.apple.assistant.dictation",
+   "com.apple.assistivetouchd.drag.xpc",
+   "com.apple.atc",
+   "com.apple.attributionkitd.xpc",
+   "com.apple.audio.AURemoteIOServer",
+   "com.apple.audio.AudioComponentPrefs",
+   "com.apple.audio.AudioComponentRegistrar",
+   "com.apple.audio.AudioConverterServer",
+   "com.apple.audio.AudioFileServer",
+   "com.apple.audio.AudioQueueServer",
+   "com.apple.audio.AudioSession",
+   "com.apple.audio.AudioUnitServer",
+   "com.apple.audio.SystemSoundServer-iOS",
+   "com.apple.audio.hapticd",
+   "com.apple.audioanalyticsd",
+   "com.apple.awdd",
+   "com.apple.backboard.TouchDeliveryPolicyServer",
+   "com.apple.backboard.animation-fence-arbiter",
+   "com.apple.backboard.display.services",
+   "com.apple.backboard.hid-services.xpc",
+   "com.apple.backboard.hid.services",
+   "com.apple.backboard.watchdog",
+   "com.apple.backboard.workspaceserverconnection",
+   "com.apple.backgroundassets.user",
+   "com.apple.biome.access.user",
+   "com.apple.bird",
+   "com.apple.bird.token",
+   "com.apple.businessservicesd",
+   "com.apple.bypassBasebandAutoBooter.msgport",
+   "com.apple.cache_delete.public",
+   "com.apple.calaccessd",
+   "com.apple.calaccessd.xpc",
+   "com.apple.callkit.callcontrollerhost",
+   "com.apple.callkit.callsourcehost",
+   "com.apple.callkit.service",
+   "com.apple.campo",
+   "com.apple.certui.relay",
+   "com.apple.cfnetwork.AuthBrokerAgent",
+   "com.apple.cfnetwork.cfnetworkagent",
+   "com.apple.chrono.accessoryLiveActivities",
+   "com.apple.chrono.controlcenter",
+   "com.apple.chrono.widgetcenterconnection",
+   "com.apple.ckdiscretionaryd",
+   "com.apple.cloudasset.cloudd",
+   "com.apple.cloudd",
+   "com.apple.cmfsyncagent.embedded.auth",
+   "com.apple.commandandcontrol.drag.xpc",
+   "com.apple.commcenter.coretelephony.xpc",
+   "com.apple.commcenter.cupolicy.xpc",
+   "com.apple.commcenter.dm-helper",
+   "com.apple.commcenter.mobile-helper",
+   "com.apple.commcenter.tmk.xpc",
+   "com.apple.commcenter.xpc",
+   "com.apple.contacts.poster.api",
+   "com.apple.contactsd",
+   "com.apple.contactsd.contact-provider",
+   "com.apple.contactsd.support",
+   "com.apple.conversation.accessibility",
+   "com.apple.conversation.dialing",
+   "com.apple.conversation.history",
+   "com.apple.corelocation.locationUI",
+   "com.apple.coremedia.admin",
+   "com.apple.coremedia.audioprocessingtap",
+   "com.apple.coremedia.bytestream.xpc",
+   "com.apple.coremedia.capturesession",
+   "com.apple.coremedia.capturesource",
+   "com.apple.coremedia.compressionsession",
+   "com.apple.coremedia.decompressionsession",
+   "com.apple.coremedia.endpoint.xpc",
+   "com.apple.coremedia.endpointremotecontrolsession.xpc",
+   "com.apple.coremedia.externalstoragedevicemanager.xpc",
+   "com.apple.coremedia.externalsyncdevicemanager.xpc",
+   "com.apple.coremedia.figcontentkeyboss.xpc",
+   "com.apple.coremedia.figvirtualcapturecard.xpc",
+   "com.apple.coremedia.mediaparserd.formatreader.xpc",
+   "com.apple.coremedia.mediaparserd.jsonparser.xpc",
+   "com.apple.coremedia.mediaparserd.mutablemovie.xpc",
+   "com.apple.coremedia.mediaplaybackd.asset.xpc",
+   "com.apple.coremedia.mediaplaybackd.assetcacheinspector.xpc",
+   "com.apple.coremedia.mediaplaybackd.assetimagegenerator.xpc",
+   "com.apple.coremedia.mediaplaybackd.audiodeviceclock.xpc",
+   "com.apple.coremedia.mediaplaybackd.audioprocessingtap.xpc",
+   "com.apple.coremedia.mediaplaybackd.bytestream.xpc",
+   "com.apple.coremedia.mediaplaybackd.cpe.xpc",
+   "com.apple.coremedia.mediaplaybackd.cpeprotector.xpc",
+   "com.apple.coremedia.mediaplaybackd.customurlloader.xpc",
+   "com.apple.coremedia.mediaplaybackd.figcontentkeyboss.xpc",
+   "com.apple.coremedia.mediaplaybackd.figcontentkeysession.xpc",
+   "com.apple.coremedia.mediaplaybackd.figcpecryptor.xpc",
+   "com.apple.coremedia.mediaplaybackd.figmetriceventtimeline.xpc",
+   "com.apple.coremedia.mediaplaybackd.formatreader.xpc",
+   "com.apple.coremedia.mediaplaybackd.mutablecomposition.xpc",
+   "com.apple.coremedia.mediaplaybackd.mutablemovie.xpc",
+   "com.apple.coremedia.mediaplaybackd.player.xpc",
+   "com.apple.coremedia.mediaplaybackd.remaker.xpc",
+   "com.apple.coremedia.mediaplaybackd.samplebufferaudiorenderer.xpc",
+   "com.apple.coremedia.mediaplaybackd.samplebufferrendersynchronizer.xpc",
+   "com.apple.coremedia.mediaplaybackd.samplegenerator.xpc",
+   "com.apple.coremedia.mediaplaybackd.sandboxserver.xpc",
+   "com.apple.coremedia.mediaplaybackd.videocompositor.xpc",
+   "com.apple.coremedia.mediaplaybackd.videoqueue",
+   "com.apple.coremedia.mediaplaybackd.videotarget.xpc",
+   "com.apple.coremedia.mediaplaybackd.visualcontext.xpc",
+   "com.apple.coremedia.remotequeue",
+   "com.apple.coremedia.routediscoverer.xpc",
+   "com.apple.coremedia.routingcontext.xpc",
+   "com.apple.coremedia.routingsessionmanager.xpc",
+   "com.apple.coremedia.sandboxserver",
+   "com.apple.coremedia.sandboxserver.xpc",
+   "com.apple.coremedia.sts",
+   "com.apple.coremedia.systemcontroller.xpc",
+   "com.apple.coremedia.videocodecd.compressionsession",
+   "com.apple.coremedia.videocodecd.compressionsession.xpc",
+   "com.apple.coremedia.videocodecd.decompressionsession",
+   "com.apple.coremedia.videocodecd.decompressionsession.xpc",
+   "com.apple.coremedia.volumecontroller.xpc",
+   "com.apple.coremedia.wirelessdisplay",
+   "com.apple.coremedia.wirelessdisplayserver",
+   "com.apple.corerecents.recentsd",
+   "com.apple.corespotlightservice",
+   "com.apple.coresymbolicationd",
+   "com.apple.ctkd.slot-client",
+   "com.apple.ctkd.smartcardregistration-client",
+   "com.apple.cvhwa.xpc",
+   "com.apple.cvmsCompAgent_armv7",
+   "com.apple.cvmsServ",
+   "com.apple.dasd.end-prewarm",
+   "com.apple.datamigrator.dz",
+   "com.apple.developer.wifi-infrastructure.WiFiNetworkSharingExtension",
+   "com.apple.devicecheckd",
+   "com.apple.devicemanagementclient.managedappsd",
+   "com.apple.dictationd.recognition",
+   "com.apple.distributed_notifications@0v3",
+   "com.apple.dnssd.service",
+   "com.apple.dockaccessoryd",
+   "com.apple.donotdisturb.appconfiguration.service",
+   "com.apple.donotdisturb.availability.service",
+   "com.apple.dt.automationmode.reader",
+   "com.apple.dt.testmanagerd.runner",
+   "com.apple.dt.testmanagerd.uiprocess",
+   "com.apple.dt.xctestd.target",
+   "com.apple.duetactivityscheduler",
+   "com.apple.fairplayd",
+   "com.apple.fairplayd.versioned",
+   "com.apple.fileprovider.pushkit",
+   "com.apple.financed.service.financestore",
+   "com.apple.fontservicesd",
+   "com.apple.frontboard.systemappservices",
+   "com.apple.frontboard.workspace",
+   "com.apple.fullkeyboardaccess.drag.xpc",
+   "com.apple.gamecenter",
+   "com.apple.gamed",
+   "com.apple.gamed.note",
+   "com.apple.gamesaved",
+   "com.apple.generativeexperiences.externaltextcomposition",
+   "com.apple.geoanalyticsd",
+   "com.apple.geod",
+   "com.apple.gizmoappd",
+   "com.apple.gpumemd.source",
+   "com.apple.gputools.producer",
+   "com.apple.handwritingd.pkanalytics",
+   "com.apple.handwritingd.pksettings",
+   "com.apple.handwritingd.remoterecognition",
+   "com.apple.healthd.restriction",
+   "com.apple.healthd.server",
+   "com.apple.hid.PencilHaptics",
+   "com.apple.homed.xpc",
+   "com.apple.homed.xpc.accessory-setup",
+   "com.apple.iMessageAppsViewService.warmup-connection",
+   "com.apple.iTunesStore.daemon",
+   "com.apple.iTunesStore.daemon-notifications",
+   "com.apple.iTunesStore.daemon.deatchwatch",
+   "com.apple.iTunesStore.daemon.notifications.public",
+   "com.apple.iTunesStore.daemon.public",
+   "com.apple.iap2d",
+   "com.apple.iap2d.ExternalAccessory.distributednotification.server",
+   "com.apple.iap2d.distributednotification.server",
+   "com.apple.iap2d.xpc",
+   "com.apple.iapauthd",
+   "com.apple.iapauthd.xpc",
+   "com.apple.iapd",
+   "com.apple.iapd.distributednotification.server",
+   "com.apple.iapd.xpc",
+   "com.apple.iaptransportd",
+   "com.apple.iaptransportd.ExternalAccessory.distributednotification.server",
+   "com.apple.iaptransportd.xpc",
+   "com.apple.iconservices",
+   "com.apple.icprefd-xpc",
+   "com.apple.identityservicesd.idquery.embedded.auth",
+   "com.apple.imagent.EnhancedLinkSecurityStore",
+   "com.apple.imagent.embedded.auth",
+   "com.apple.imavagent.embedded.auth",
+   "com.apple.inputanalyticsd",
+   "com.apple.inputservice.input-ui-host",
+   "com.apple.inputservice.keyboardui",
+   "com.apple.instruments.server.mig",
+   "com.apple.iohideventsystem",
+   "com.apple.iokit.powerdxpc",
+   "com.apple.iphone.axserver-systemwide",
+   "com.apple.itdbprep.server",
+   "com.apple.itunescloudd.tcchelper",
+   "com.apple.itunescloudd.xpc",
+   "com.apple.itunesstored.xpc",
+   "com.apple.kvsd",
+   "com.apple.librariand",
+   "com.apple.linkd.autoShortcut",
+   "com.apple.linkd.transcript",
+   "com.apple.livecommunicationkit.conversationhistory",
+   "com.apple.livecommunicationkit.telephonymanager",
+   "com.apple.locationd.registration",
+   "com.apple.locationd.spi",
+   "com.apple.locationd.synchronous",
+   "com.apple.mDNSResponder",
+   "com.apple.managedappdistributiond.xpc",
+   "com.apple.managedconfiguration.mdmdservice",
+   "com.apple.marco",
+   "com.apple.matter.support.xpc",
+   "com.apple.mediaanalysisd.analysis",
+   "com.apple.mediaanalysisd.service.public",
+   "com.apple.mediaanalysisd.videosession.public",
+   "com.apple.mediaexperience.endpoint.xpc",
+   "com.apple.mediaexperience.systemmediacastingcontroller.xpc",
+   "com.apple.medialibraryd.xpc",
+   "com.apple.mediaremoted.xpc",
+   "com.apple.mediaserverd",
+   "com.apple.mediastream.sharing",
+   "com.apple.mediastream.sharing-nowake",
+   "com.apple.metrickit.xpc",
+   "com.apple.metricmeasurement.MetricMeasurementHelper",
+   "com.apple.midiserver",
+   "com.apple.midiserver.io",
+   "com.apple.mobile.installd",
+   "com.apple.mobileasset.autoasset",
+   "com.apple.mobileassetd",
+   "com.apple.mobileassetd.v2",
+   "com.apple.mobilecheckpoint.checkpointd",
+   "com.apple.mobileipod.MPMusicPlayerControllerInternal",
+   "com.apple.mobileipod.MPMusicPlayerMigServerExists",
+   "com.apple.mobilemail.services.xpc",
+   "com.apple.modelmanager",
+   "com.apple.nano.nanoregistry.paireddeviceregistry",
+   "com.apple.nanomaps.xpc.GeoServices",
+   "com.apple.nanoprefsync",
+   "com.apple.naturallanguaged",
+   "com.apple.nearbyd.xpc.nearbyinteraction",
+   "com.apple.nehelper",
+   "com.apple.nesessionmanager",
+   "com.apple.networkd",
+   "com.apple.networking.captivenetworksupport",
+   "com.apple.networkscored",
+   "com.apple.networkserviceproxy.fetch-token",
+   "com.apple.notificationcenter.widgetcontrollerconnection",
+   "com.apple.nsurlsessiond",
+   "com.apple.ondemandd.client",
+   "com.apple.pairedsyncd.syncstate",
+   "com.apple.parsecd",
+   "com.apple.passd.assertions",
+   "com.apple.passd.in-app-payment",
+   "com.apple.passd.library",
+   "com.apple.pasteboard.pasted",
+   "com.apple.pegasus",
+   "com.apple.photos.service",
+   "com.apple.powerlog.plxpclogger.xpc",
+   "com.apple.prdaily",
+   "com.apple.privacyaccountingd",
+   "com.apple.private.corewifi.mobilewifi-xpc",
+   "com.apple.proactive.visual-action-execution.resource-retrieval",
+   "com.apple.progressd",
+   "com.apple.ptpcamerad",
+   "com.apple.quicklook.ThumbnailsAgent",
+   "com.apple.relatived.public",
+   "com.apple.relatived.status",
+   "com.apple.relatived.tempest",
+   "com.apple.remindd",
+   "com.apple.revisiond",
+   "com.apple.rti-screencontinuity",
+   "com.apple.safarifetcherd",
+   "com.apple.sandboxd",
+   "com.apple.scrod",
+   "com.apple.securityd",
+   "com.apple.server.bluetooth",
+   "com.apple.server.bluetooth.le.att.xpc",
+   "com.apple.server.bluetooth.le.pipe.xpc",
+   "com.apple.seserviced.passkit-extensions",
+   "com.apple.sessionservices",
+   "com.apple.sharing.sharesheet",
+   "com.apple.shazamd",
+   "com.apple.siri.VoiceShortcuts.xpc",
+   "com.apple.speech.localspeechrecognition",
+   "com.apple.spotlight.IndexAgent",
+   "com.apple.spotlight.IndexDelegateAgent",
+   "com.apple.spotlight.SearchAgent",
+   "com.apple.springboard",
+   "com.apple.springboard.backgroundappservices",
+   "com.apple.springboard.blockableservices",
+   "com.apple.springboard.icongeneration",
+   "com.apple.springboard.services",
+   "com.apple.springboard.watchdogserver",
+   "com.apple.storekit.configuration.xpc",
+   "com.apple.storekitd",
+   "com.apple.storekitservice",
+   "com.apple.swiftuitracingsupport.xpc",
+   "com.apple.symptoms.symptomsd.managed_events",
+   "com.apple.symptomsd",
+   "com.apple.synapse.backlink-service",
+   "com.apple.syncdefaultsd",
+   "com.apple.telephonyutilities.callservicesdaemon.callcapabilities",
+   "com.apple.telephonyutilities.callservicesdaemon.voip",
+   "com.apple.telephonyutilities.remotelogdaemon",
+   "com.apple.testmanagerd",
+   "com.apple.timesync.expositor",
+   "com.apple.timesync.manager",
+   "com.apple.timesync.ptp.manager",
+   "com.apple.toolmetadataservice",
+   "com.apple.translation.text",
+   "com.apple.triald.namespace-management",
+   "com.apple.trustd",
+   "com.apple.twitterd",
+   "com.apple.twitterd.server",
+   "com.apple.uiintelligencesupport.agent",
+   "com.apple.uikit.eyedropperd.service",
+   "com.apple.usernotifications.accessorynotifications",
+   "com.apple.usernotifications.listener",
+   "com.apple.usernotifications.remotenotificationservice",
+   "com.apple.usernotifications.usernotificationservice",
+   "com.apple.usymptomsd",
+   "com.apple.vibrationmanagerd",
+   "com.apple.videoconference.avconference",
+   "com.apple.videoconference.camera",
+   "com.apple.voiceservices.keepalive",
+   "com.apple.voiceservices.tts",
+   "com.apple.vsassetd",
+   "com.apple.wapi.client",
+   "com.apple.watchconnectivity.complication",
+   "com.apple.wcd",
+   "com.apple.webfilterd",
+   "com.apple.webinspector",
+   "com.apple.webprivacyd",
+   "com.apple.weibod.server",
+   "com.apple.widget.pushkit",
+   "com.apple.wifi.manager",
+   "com.apple.wifip2pd",
+   "com.apple.wirelessinsightsd.xpc"
+  ],
+  "reqany": true,
+  "kind": "open",
+  "detail": "",
+  "src": "[('sym', 'allow'), ('sym', 'mach-lookup'), [('sym', 'require-any'), [('sym', 'extension'), ('str', 'com.apple.sandbox.application-group')], [('sym', 'extension'), ('str', 'com.apple.security.exception.mach-lookup.global-name')], [('sym', 'extension'), ('str', 'com.apple.security.exception.mach-lookup.local-name')], [('sym', 'global-name'), ('str', 'PurplePPTServer')], [('sym', 'global-name'), ('st"
+ }
+]

@@ -1,0 +1,23 @@
+=== sbprefs start pid=916 home=/var/mobile/Containers/Data/Application/05E00745-CB96-4D1C-B531-98F4150B9857
+group=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E
+set domain=com.apple.sbprefs.plain sync=1
+get domain=com.apple.sbprefs.plain -> v
+set domain=../sbprefs_up1 sync=1
+get domain=../sbprefs_up1 -> v
+set domain=../../../../sbprefs_up4 sync=0
+get domain=../../../../sbprefs_up4 -> v
+set domain=../../../../../sbprefs_up5 sync=0
+get domain=../../../../../sbprefs_up5 -> v
+set domain=../../../../../Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Documents/sbprefs_g5 sync=0
+get domain=../../../../../Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Documents/sbprefs_g5 -> v
+set domain=../../Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Documents/sbprefs_g2 sync=0
+get domain=../../Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Documents/sbprefs_g2 -> v
+set domain=/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Documents/sbprefs_abs sync=1
+get domain=/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Documents/sbprefs_abs -> v
+exists /private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Documents/sbprefs_g5.plist -> 0
+exists /private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Documents/sbprefs_g2.plist -> 0
+exists /private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Documents/sbprefs_abs.plist -> 1
+xread com.apple.springboard -> null
+xread com.apple.Preferences -> null
+xread com.apple.mobilegestaltcache -> null
+=== sbprefs done ===

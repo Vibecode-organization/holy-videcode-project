@@ -1,0 +1,12 @@
+{
+	"path": "/",
+	"root": "/home/femboychik/work/sbx_build/symroot/SBX.app",
+	"bundle_id": "com.smith.sbx",
+	"bundle_version": "1",
+	"bundle_executable": "SBX",
+	"sha1": "4P0pd5WroWOx9tH2vZhn+P0jUnQ=",
+	"sha256": "Fcf8IbueKNaS9CWHMpEfVEbWQDJa082y1zzhfdt5tdM=",
+	"name": "SBX",
+	"files": [ "SBX" ],
+	"changed": [ "SBX", "embedded.mobileprovision" ]
+}

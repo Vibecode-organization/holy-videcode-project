@@ -1,0 +1,6 @@
+funcs 3447 3447
+identical 3446 ratio 0.99971
+changed regions 1
+== replace A[3276:3277] B[3276:3277]
+   A 0xfffffff0097a8a14 sz=276
+   B 0xfffffff00986eed4 sz=276

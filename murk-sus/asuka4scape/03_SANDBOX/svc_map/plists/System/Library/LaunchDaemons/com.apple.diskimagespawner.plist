@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.apple.diskimagespawner</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.diskimagespawner.xpc</key>
+		<true/>
+		<key>com.apple.diskimagespawner</key>
+		<dict>
+			<key>HostSpecialPort</key>
+			<integer>36</integer>
+		</dict>
+	</dict>
+	<key>Program</key>
+	<string>/usr/libexec/diskimagespawner</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>diskimagespawner</string>
+	</array>
+	<key>UserName</key>
+	<string>root</string>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>EnablePressuredExit</key>
+	<true/>
+	<key>POSIXSpawnType</key>
+	<string>Interactive</string>
+</dict>
+</plist>

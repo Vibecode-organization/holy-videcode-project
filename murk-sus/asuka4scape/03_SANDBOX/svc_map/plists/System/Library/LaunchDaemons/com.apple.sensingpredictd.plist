@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>EnablePressuredExit</key>
+	<true/>
+	<key>Label</key>
+	<string>com.apple.sensingpredictd</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.SensingPredict</key>
+		<true/>
+		<key>com.apple.SensingPredict.debugService</key>
+		<true/>
+	</dict>
+	<key>ProcessType</key>
+	<string>Adaptive</string>
+	<key>Program</key>
+	<string>/usr/libexec/sensingpredictd</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/libexec/sensingpredictd</string>
+	</array>
+	<key>UserName</key>
+	<string>mobile</string>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.AudioAccessoryDiscovery</key>
+		<dict>
+			<key>SecureSensorConnection</key>
+			<dict>
+				<key>discoveryTypes</key>
+				<array>
+					<string>SecureSensor</string>
+				</array>
+				<key>targetDeviceClasses</key>
+				<array>
+					<string>iPhone</string>
+					<string>iPad</string>
+				</array>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

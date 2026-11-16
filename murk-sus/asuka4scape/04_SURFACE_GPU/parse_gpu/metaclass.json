@@ -1,0 +1,2710 @@
+{
+ "com.apple.AGXG14P": [
+  {
+   "site": 18446744005125756164,
+   "name": "AGX3DChannel",
+   "size": 400
+  },
+  {
+   "site": 18446744005125760124,
+   "name": "AGX3DChannelSKU",
+   "size": 400
+  },
+  {
+   "site": 18446744005125763476,
+   "name": "AGX3DCommandDescriptor",
+   "size": 2816
+  },
+  {
+   "site": 18446744005125763784,
+   "name": "AGX3DChannelGen2",
+   "size": 400
+  },
+  {
+   "site": 18446744005125872224,
+   "name": "AGXAllocation",
+   "size": 304
+  },
+  {
+   "site": 18446744005125875164,
+   "name": "AGXAllocationList2",
+   "size": 152
+  },
+  {
+   "site": 18446744005125877432,
+   "name": "AGXBlockFence",
+   "size": 344
+  },
+  {
+   "site": 18446744005125878000,
+   "name": "AGXBlockedArray",
+   "size": 80
+  },
+  {
+   "site": 18446744005125887100,
+   "name": "AGXChannel",
+   "size": 392
+  },
+  {
+   "site": 18446744005125896372,
+   "name": "AGXCLChannel",
+   "size": 392
+  },
+  {
+   "site": 18446744005125897984,
+   "name": "AGXCLChannelSKU",
+   "size": 392
+  },
+  {
+   "site": 18446744005125901124,
+   "name": "AGXCLCommandDescriptor",
+   "size": 1920
+  },
+  {
+   "site": 18446744005125901432,
+   "name": "AGXCLChannelGen2",
+   "size": 392
+  },
+  {
+   "site": 18446744005125909380,
+   "name": "AGXCommandDescriptor",
+   "size": 576
+  },
+  {
+   "site": 18446744005125909440,
+   "name": "AGXCommandBuffer",
+   "size": 6080
+  },
+  {
+   "site": 18446744005125979048,
+   "name": "AGXCommandQueue",
+   "size": 2376
+  },
+  {
+   "site": 18446744005125979108,
+   "name": "AGXCommandQueueReclaimableState",
+   "size": 248
+  },
+  {
+   "site": 18446744005125979168,
+   "name": "AGXUniqueResourceSet",
+   "size": 48
+  },
+  {
+   "site": 18446744005125984472,
+   "name": "AGXDebugBufferShmem",
+   "size": 112
+  },
+  {
+   "site": 18446744005125992196,
+   "name": "AGXDeviceUserClient",
+   "size": 312
+  },
+  {
+   "site": 18446744005125993804,
+   "name": "AGXDiagnosisReport",
+   "size": 56
+  },
+  {
+   "site": 18446744005125997260,
+   "name": "AGXEventMachine",
+   "size": 5200
+  }
+ ],
+ "com.apple.driver.AppleH11ANEInterface": [
+  {
+   "site": 18446744005133929064,
+   "name": "ANEDeviceInterface",
+   "size": 144
+  },
+  {
+   "site": 18446744005133929540,
+   "name": "ANEDeviceInterface",
+   "size": 144
+  },
+  {
+   "site": 18446744005133930928,
+   "name": "ANEDeviceInterface",
+   "size": 144
+  },
+  {
+   "site": 18446744005134409716,
+   "name": "ANEDriver",
+   "size": 2088
+  },
+  {
+   "site": 18446744005134411288,
+   "name": "ANEDriver",
+   "size": 2088
+  },
+  {
+   "site": 18446744005134411724,
+   "name": "H1xANELoadBalancer",
+   "size": 2088
+  },
+  {
+   "site": 18446744005134412288,
+   "name": "H1xANELoadBalancer",
+   "size": 2088
+  },
+  {
+   "site": 18446744005134436312,
+   "name": "ANEDriver",
+   "size": 2088
+  },
+  {
+   "site": 18446744005134436368,
+   "name": "H1xANELoadBalancer",
+   "size": 2088
+  },
+  {
+   "site": 18446744005134436648,
+   "name": "ANEScheduler",
+   "size": 2728
+  },
+  {
+   "site": 18446744005134438808,
+   "name": "ANEScheduler",
+   "size": 2728
+  },
+  {
+   "site": 18446744005134483612,
+   "name": "ANEScheduler",
+   "size": 2728
+  },
+  {
+   "site": 18446744005134491104,
+   "name": "ANEClientDeviceWrapper",
+   "size": 32
+  },
+  {
+   "site": 18446744005134491612,
+   "name": "ANEClientDeviceWrapper",
+   "size": 32
+  },
+  {
+   "site": 18446744005134514984,
+   "name": "ANEClientDeviceWrapper",
+   "size": 32
+  },
+  {
+   "site": 18446744005134515120,
+   "name": "ANEClientInterface",
+   "size": 416
+  },
+  {
+   "site": 18446744005134515636,
+   "name": "ANEClientInterface",
+   "size": 416
+  },
+  {
+   "site": 18446744005134516048,
+   "name": "H11ANEInUserClient",
+   "size": 416
+  },
+  {
+   "site": 18446744005134516564,
+   "name": "H11ANEInUserClient",
+   "size": 416
+  },
+  {
+   "site": 18446744005134516976,
+   "name": "H11ANEInDirectPathClient",
+   "size": 416
+  },
+  {
+   "site": 18446744005134517492,
+   "name": "H11ANEInDirectPathClient",
+   "size": 416
+  },
+  {
+   "site": 18446744005134517904,
+   "name": "H1xANELoadBalancerClient",
+   "size": 416
+  },
+  {
+   "site": 18446744005134518420,
+   "name": "H1xANELoadBalancerClient",
+   "size": 416
+  },
+  {
+   "site": 18446744005134518832,
+   "name": "H1xANELoadBalancerDirectPathClient",
+   "size": 416
+  },
+  {
+   "site": 18446744005134519348,
+   "name": "H1xANELoadBalancerDirectPathClient",
+   "size": 416
+  },
+  {
+   "site": 18446744005134526416,
+   "name": "ANEClientInterface",
+   "size": 416
+  },
+  {
+   "site": 18446744005134526476,
+   "name": "H11ANEInUserClient",
+   "size": 416
+  },
+  {
+   "site": 18446744005134526536,
+   "name": "H11ANEInDirectPathClient",
+   "size": 416
+  },
+  {
+   "site": 18446744005134526592,
+   "name": "H1xANELoadBalancerClient",
+   "size": 416
+  },
+  {
+   "site": 18446744005134526648,
+   "name": "H1xANELoadBalancerDirectPathClient",
+   "size": 416
+  },
+  {
+   "site": 18446744005134536048,
+   "name": "ANEClientHints",
+   "size": 152
+  },
+  {
+   "site": 18446744005134536372,
+   "name": "ANEClientHints",
+   "size": 152
+  },
+  {
+   "site": 18446744005134537016,
+   "name": "ANEClientHintsUserClient",
+   "size": 240
+  },
+  {
+   "site": 18446744005134537340,
+   "name": "ANEClientHintsUserClient",
+   "size": 240
+  },
+  {
+   "site": 18446744005134540844,
+   "name": "ANEClientHints",
+   "size": 152
+  },
+  {
+   "site": 18446744005134540904,
+   "name": "ANEClientHintsUserClient",
+   "size": 240
+  },
+  {
+   "site": 18446744005134657552,
+   "name": "ANEInVMAllocator",
+   "size": 104
+  },
+  {
+   "site": 18446744005134657884,
+   "name": "ANEInVMAllocator",
+   "size": 104
+  },
+  {
+   "site": 18446744005134660592,
+   "name": "ANEInVMAllocator",
+   "size": 104
+  },
+  {
+   "site": 18446744005134660684,
+   "name": "ANEMessage",
+   "size": 40
+  },
+  {
+   "site": 18446744005134661008,
+   "name": "ANEMessage",
+   "size": 40
+  },
+  {
+   "site": 18446744005134661396,
+   "name": "ANEPowerOnMsg",
+   "size": 40
+  },
+  {
+   "site": 18446744005134661720,
+   "name": "ANEPowerOnMsg",
+   "size": 40
+  },
+  {
+   "site": 18446744005134662108,
+   "name": "ANENotificationMsg",
+   "size": 40
+  },
+  {
+   "site": 18446744005134662432,
+   "name": "ANENotificationMsg",
+   "size": 40
+  },
+  {
+   "site": 18446744005134662820,
+   "name": "ANERequestCompletionMsg",
+   "size": 64
+  },
+  {
+   "site": 18446744005134663144,
+   "name": "ANERequestCompletionMsg",
+   "size": 64
+  },
+  {
+   "site": 18446744005134663532,
+   "name": "ANEProgramEventMsg",
+   "size": 136
+  },
+  {
+   "site": 18446744005134663856,
+   "name": "ANEProgramEventMsg",
+   "size": 136
+  },
+  {
+   "site": 18446744005134664244,
+   "name": "ANEDebugEventMsg",
+   "size": 80
+  },
+  {
+   "site": 18446744005134664568,
+   "name": "ANEDebugEventMsg",
+   "size": 80
+  },
+  {
+   "site": 18446744005134664956,
+   "name": "ANEPowerMsg",
+   "size": 56
+  },
+  {
+   "site": 18446744005134665288,
+   "name": "ANEPowerMsg",
+   "size": 56
+  },
+  {
+   "site": 18446744005134665688,
+   "name": "ANEFwToFwSignalMsg",
+   "size": 1176
+  },
+  {
+   "site": 18446744005134666012,
+   "name": "ANEFwToFwSignalMsg",
+   "size": 1176
+  },
+  {
+   "site": 18446744005134666400,
+   "name": "ANERequestTimeoutMsg",
+   "size": 48
+  },
+  {
+   "site": 18446744005134666724,
+   "name": "ANERequestTimeoutMsg",
+   "size": 48
+  },
+  {
+   "site": 18446744005134667112,
+   "name": "ANEHWDeviceTimeoutMsg",
+   "size": 40
+  },
+  {
+   "site": 18446744005134667444,
+   "name": "ANEHWDeviceTimeoutMsg",
+   "size": 40
+  },
+  {
+   "site": 18446744005134667844,
+   "name": "ANEFirmwareClientLoggingMsg",
+   "size": 48
+  },
+  {
+   "site": 18446744005134668372,
+   "name": "ANEFirmwareClientLoggingMsg",
+   "size": 48
+  },
+  {
+   "site": 18446744005134668772,
+   "name": "ANEFWRpcMsg",
+   "size": 88
+  },
+  {
+   "site": 18446744005134669096,
+   "name": "ANEFWRpcMsg",
+   "size": 88
+  },
+  {
+   "site": 18446744005134669484,
+   "name": "ANEWakeNotificationMsg",
+   "size": 104
+  },
+  {
+   "site": 18446744005134670016,
+   "name": "ANEWakeNotificationMsg",
+   "size": 104
+  },
+  {
+   "site": 18446744005134670428,
+   "name": "ANEIspIPCEPMsg",
+   "size": 96
+  },
+  {
+   "site": 18446744005134670752,
+   "name": "ANEIspIPCEPMsg",
+   "size": 96
+  },
+  {
+   "site": 18446744005134671140,
+   "name": "ANEThrottleUpdateMsg",
+   "size": 40
+  },
+  {
+   "site": 18446744005134671464,
+   "name": "ANEThrottleUpdateMsg",
+   "size": 40
+  },
+  {
+   "site": 18446744005134671852,
+   "name": "ANEExclaveMemoryWiringMsg",
+   "size": 64
+  },
+  {
+   "site": 18446744005134672176,
+   "name": "ANEExclaveMemoryWiringMsg",
+   "size": 64
+  },
+  {
+   "site": 18446744005134672564,
+   "name": "ANEPoolRefillMsg",
+   "size": 56
+  },
+  {
+   "site": 18446744005134673072,
+   "name": "ANEPoolRefillMsg",
+   "size": 56
+  },
+  {
+   "site": 18446744005134673472,
+   "name": "ANEHWDeviceClientNotificationMsg",
+   "size": 40
+  },
+  {
+   "site": 18446744005134673796,
+   "name": "ANEHWDeviceClientNotificationMsg",
+   "size": 40
+  },
+  {
+   "site": 18446744005134675060,
+   "name": "ANEMessage",
+   "size": 40
+  },
+  {
+   "site": 18446744005134675116,
+   "name": "ANEPowerOnMsg",
+   "size": 40
+  },
+  {
+   "site": 18446744005134675172,
+   "name": "ANENotificationMsg",
+   "size": 40
+  },
+  {
+   "site": 18446744005134675228,
+   "name": "ANERequestCompletionMsg",
+   "size": 64
+  },
+  {
+   "site": 18446744005134675284,
+   "name": "ANEProgramEventMsg",
+   "size": 136
+  },
+  {
+   "site": 18446744005134675340,
+   "name": "ANEDebugEventMsg",
+   "size": 80
+  },
+  {
+   "site": 18446744005134675396,
+   "name": "ANEPowerMsg",
+   "size": 56
+  },
+  {
+   "site": 18446744005134675452,
+   "name": "ANEFwToFwSignalMsg",
+   "size": 1176
+  },
+  {
+   "site": 18446744005134675508,
+   "name": "ANERequestTimeoutMsg",
+   "size": 48
+  },
+  {
+   "site": 18446744005134675564,
+   "name": "ANEHWDeviceTimeoutMsg",
+   "size": 40
+  },
+  {
+   "site": 18446744005134675620,
+   "name": "ANEFirmwareClientLoggingMsg",
+   "size": 48
+  },
+  {
+   "site": 18446744005134675676,
+   "name": "ANEFWRpcMsg",
+   "size": 88
+  },
+  {
+   "site": 18446744005134675732,
+   "name": "ANEWakeNotificationMsg",
+   "size": 104
+  },
+  {
+   "site": 18446744005134675788,
+   "name": "ANEIspIPCEPMsg",
+   "size": 96
+  },
+  {
+   "site": 18446744005134675844,
+   "name": "ANEThrottleUpdateMsg",
+   "size": 40
+  },
+  {
+   "site": 18446744005134675900,
+   "name": "ANEExclaveMemoryWiringMsg",
+   "size": 64
+  },
+  {
+   "site": 18446744005134675956,
+   "name": "ANEPoolRefillMsg",
+   "size": 56
+  },
+  {
+   "site": 18446744005134676012,
+   "name": "ANEHWDeviceClientNotificationMsg",
+   "size": 40
+  },
+  {
+   "site": 18446744005134785220,
+   "name": "ANECoredump",
+   "size": 624
+  },
+  {
+   "site": 18446744005134785544,
+   "name": "ANECoredump",
+   "size": 624
+  },
+  {
+   "site": 18446744005134787688,
+   "name": "ANECoredump",
+   "size": 624
+  },
+  {
+   "site": 18446744005134791992,
+   "name": "ANEDriverDebugClient",
+   "size": 392
+  },
+  {
+   "site": 18446744005134792316,
+   "name": "ANEDriverDebugClient",
+   "size": 392
+  },
+  {
+   "site": 18446744005134794852,
+   "name": "ANEDriverDebugClient",
+   "size": 392
+  },
+  {
+   "site": 18446744005134820928,
+   "name": "ANEExclaveProxy",
+   "size": 144
+  },
+  {
+   "site": 18446744005134821260,
+   "name": "ANEExclaveProxy",
+   "size": 144
+  },
+  {
+   "site": 18446744005134822584,
+   "name": "ANEExclaveProxy",
+   "size": 144
+  },
+  {
+   "site": 18446744005134904460,
+   "name": "FWSharedMemoryRequest",
+   "size": 88
+  },
+  {
+   "site": 18446744005134904784,
+   "name": "FWSharedMemoryRequest",
+   "size": 88
+  },
+  {
+   "site": 18446744005134936064,
+   "name": "FWSharedMemoryRequest",
+   "size": 88
+  },
+  {
+   "site": 18446744005134989900,
+   "name": "AppleANEPowerOnOffFunction",
+   "size": 56
+  },
+  {
+   "site": 18446744005134990224,
+   "name": "AppleANEPowerOnOffFunction",
+   "size": 56
+  },
+  {
+   "site": 18446744005134992672,
+   "name": "AppleANEMPMMapMemoryFunction",
+   "size": 56
+  },
+  {
+   "site": 18446744005134992996,
+   "name": "AppleANEMPMMapMemoryFunction",
+   "size": 56
+  },
+  {
+   "site": 18446744005134993812,
+   "name": "AppleANEMPMUnmapMemoryFunction",
+   "size": 56
+  },
+  {
+   "site": 18446744005134994136,
+   "name": "AppleANEMPMUnmapMemoryFunction",
+   "size": 56
+  },
+  {
+   "site": 18446744005135016308,
+   "name": "AppleANEPowerOnOffFunction",
+   "size": 56
+  },
+  {
+   "site": 18446744005135016364,
+   "name": "AppleANEMPMMapMemoryFunction",
+   "size": 56
+  },
+  {
+   "site": 18446744005135016420,
+   "name": "AppleANEMPMUnmapMemoryFunction",
+   "size": 56
+  },
+  {
+   "site": 18446744005135048636,
+   "name": "AppleANEEPFunction",
+   "size": 56
+  },
+  {
+   "site": 18446744005135048960,
+   "name": "AppleANEEPFunction",
+   "size": 56
+  },
+  {
+   "site": 18446744005135063184,
+   "name": "AppleANEEPFunction",
+   "size": 56
+  },
+  {
+   "site": 18446744005135078792,
+   "name": "ANEPerfRequest",
+   "size": 288
+  },
+  {
+   "site": 18446744005135079156,
+   "name": "ANEPerfRequest",
+   "size": 288
+  },
+  {
+   "site": 18446744005135086264,
+   "name": "ANEPerfRequest",
+   "size": 288
+  },
+  {
+   "site": 18446744005135091072,
+   "name": "AppleANEPerfCounterReadFunction",
+   "size": 56
+  },
+  {
+   "site": 18446744005135091396,
+   "name": "AppleANEPerfCounterReadFunction",
+   "size": 56
+  },
+  {
+   "site": 18446744005135092220,
+   "name": "AppleANEPerfCounterReadFunction",
+   "size": 56
+  },
+  {
+   "site": 18446744005135278148,
+   "name": "ANEWorkLoop",
+   "size": 80
+  },
+  {
+   "site": 18446744005135278472,
+   "name": "ANEWorkLoop",
+   "size": 80
+  },
+  {
+   "site": 18446744005135279328,
+   "name": "ANEWorkLoop",
+   "size": 80
+  },
+  {
+   "site": 18446744005135279420,
+   "name": "ANEPrivilegedVMAccess",
+   "size": 136
+  },
+  {
+   "site": 18446744005135279744,
+   "name": "ANEPrivilegedVMAccess",
+   "size": 136
+  },
+  {
+   "site": 18446744005135280440,
+   "name": "ANEPrivilegedVMAccessUserClient",
+   "size": 216
+  },
+  {
+   "site": 18446744005135280764,
+   "name": "ANEPrivilegedVMAccessUserClient",
+   "size": 216
+  },
+  {
+   "site": 18446744005135281252,
+   "name": "ANEPrivilegedVMAccess",
+   "size": 136
+  },
+  {
+   "site": 18446744005135281312,
+   "name": "ANEPrivilegedVMAccessUserClient",
+   "size": 216
+  }
+ ],
+ "com.apple.driver.AppleJPEGDriver": [
+  {
+   "site": 18446744005137381572,
+   "name": "AppleJPEGWrapperControlV14",
+   "size": 48
+  },
+  {
+   "site": 18446744005137381960,
+   "name": "AppleJPEGWrapperControlV14",
+   "size": 48
+  }
+ ],
+ "com.apple.driver.AppleSEPKeyStore": [
+  {
+   "site": 18446744005142325372,
+   "name": "AppleKeyStoreTest",
+   "size": 136
+  },
+  {
+   "site": 18446744005142325432,
+   "name": "AppleKeyStoreTestUserClient",
+   "size": 216
+  },
+  {
+   "site": 18446744005142432580,
+   "name": "AppleKeyStoreCommand",
+   "size": 40
+  },
+  {
+   "site": 18446744005142432640,
+   "name": "AppleKeyStore",
+   "size": 504
+  },
+  {
+   "site": 18446744005142432700,
+   "name": "AppleKeyStoreUserClient",
+   "size": 280
+  }
+ ],
+ "com.apple.driver.AppleSEPManager": [
+  {
+   "site": 18446744005142592868,
+   "name": "SEPEpoch",
+   "size": 24
+  },
+  {
+   "site": 18446744005142593192,
+   "name": "SEPEpoch",
+   "size": 24
+  },
+  {
+   "site": 18446744005142594184,
+   "name": "SEPEpoch",
+   "size": 24
+  },
+  {
+   "site": 18446744005142594300,
+   "name": "SEPApNonce",
+   "size": 24
+  },
+  {
+   "site": 18446744005142594624,
+   "name": "SEPApNonce",
+   "size": 24
+  },
+  {
+   "site": 18446744005142595672,
+   "name": "SEPApNonce",
+   "size": 24
+  },
+  {
+   "site": 18446744005142595788,
+   "name": "IODARTVMAllocatorMPM",
+   "size": 104
+  },
+  {
+   "site": 18446744005142596120,
+   "name": "IODARTVMAllocatorMPM",
+   "size": 104
+  },
+  {
+   "site": 18446744005142597500,
+   "name": "IODARTVMAllocatorMPM",
+   "size": 104
+  },
+  {
+   "site": 18446744005142597616,
+   "name": "AppleSEPDeviceService",
+   "size": 152
+  },
+  {
+   "site": 18446744005142597940,
+   "name": "AppleSEPDeviceService",
+   "size": 152
+  },
+  {
+   "site": 18446744005142599528,
+   "name": "AppleSEPDeviceService",
+   "size": 152
+  },
+  {
+   "site": 18446744005142599644,
+   "name": "AppleSEPDiscovery",
+   "size": 2712
+  },
+  {
+   "site": 18446744005142599968,
+   "name": "AppleSEPDiscovery",
+   "size": 2712
+  },
+  {
+   "site": 18446744005142602424,
+   "name": "AppleSEPDiscovery",
+   "size": 2712
+  },
+  {
+   "site": 18446744005142602572,
+   "name": "SEPBICS",
+   "size": 32
+  },
+  {
+   "site": 18446744005142602896,
+   "name": "SEPBICS",
+   "size": 32
+  },
+  {
+   "site": 18446744005142604232,
+   "name": "SEPBICS",
+   "size": 32
+  },
+  {
+   "site": 18446744005142604348,
+   "name": "AppleSEPTraceBuffer",
+   "size": 128
+  },
+  {
+   "site": 18446744005142604728,
+   "name": "AppleSEPTraceBuffer",
+   "size": 128
+  },
+  {
+   "site": 18446744005142607560,
+   "name": "AppleSEPTraceBuffer",
+   "size": 128
+  },
+  {
+   "site": 18446744005142607684,
+   "name": "AppleSEPHilo",
+   "size": 304
+  },
+  {
+   "site": 18446744005142608008,
+   "name": "AppleSEPHilo",
+   "size": 304
+  },
+  {
+   "site": 18446744005142629240,
+   "name": "AppleSEPHiloService",
+   "size": 144
+  },
+  {
+   "site": 18446744005142629564,
+   "name": "AppleSEPHiloService",
+   "size": 144
+  },
+  {
+   "site": 18446744005142630336,
+   "name": "AppleSEPHilo",
+   "size": 304
+  },
+  {
+   "site": 18446744005142630396,
+   "name": "AppleSEPHiloService",
+   "size": 144
+  },
+  {
+   "site": 18446744005142630668,
+   "name": "AppleSEPTesting",
+   "size": 224
+  },
+  {
+   "site": 18446744005142631184,
+   "name": "AppleSEPTesting",
+   "size": 224
+  },
+  {
+   "site": 18446744005142638692,
+   "name": "AppleSEPTestingService",
+   "size": 144
+  },
+  {
+   "site": 18446744005142639016,
+   "name": "AppleSEPTestingService",
+   "size": 144
+  },
+  {
+   "site": 18446744005142639912,
+   "name": "AppleSEPTesting",
+   "size": 224
+  },
+  {
+   "site": 18446744005142639972,
+   "name": "AppleSEPTestingService",
+   "size": 144
+  },
+  {
+   "site": 18446744005142640164,
+   "name": "AppleSEPDebug",
+   "size": 192
+  },
+  {
+   "site": 18446744005142640488,
+   "name": "AppleSEPDebug",
+   "size": 192
+  },
+  {
+   "site": 18446744005142643868,
+   "name": "AppleSEPDebugService",
+   "size": 144
+  },
+  {
+   "site": 18446744005142644192,
+   "name": "AppleSEPDebugService",
+   "size": 144
+  },
+  {
+   "site": 18446744005142645128,
+   "name": "AppleSEPDebug",
+   "size": 192
+  },
+  {
+   "site": 18446744005142645188,
+   "name": "AppleSEPDebugService",
+   "size": 144
+  },
+  {
+   "site": 18446744005142645388,
+   "name": "AppleSEPEndpoint",
+   "size": 176
+  },
+  {
+   "site": 18446744005142645720,
+   "name": "AppleSEPEndpoint",
+   "size": 176
+  },
+  {
+   "site": 18446744005142651720,
+   "name": "AppleSEPEndpointService",
+   "size": 144
+  },
+  {
+   "site": 18446744005142652044,
+   "name": "AppleSEPEndpointService",
+   "size": 144
+  },
+  {
+   "site": 18446744005142652176,
+   "name": "AppleSEPEndpoint",
+   "size": 176
+  },
+  {
+   "site": 18446744005142652236,
+   "name": "AppleSEPEndpointService",
+   "size": 144
+  },
+  {
+   "site": 18446744005142652428,
+   "name": "AppleSEPFirmware",
+   "size": 232
+  },
+  {
+   "site": 18446744005142652784,
+   "name": "AppleSEPFirmware",
+   "size": 232
+  },
+  {
+   "site": 18446744005142657652,
+   "name": "AppleSEPFirmware",
+   "size": 232
+  },
+  {
+   "site": 18446744005142657864,
+   "name": "AppleSEPUserClient",
+   "size": 232
+  },
+  {
+   "site": 18446744005142658188,
+   "name": "AppleSEPUserClient",
+   "size": 232
+  },
+  {
+   "site": 18446744005142673480,
+   "name": "AppleSEPUserClient",
+   "size": 232
+  },
+  {
+   "site": 18446744005142673676,
+   "name": "AppleSEPDebugArgs",
+   "size": 32
+  },
+  {
+   "site": 18446744005142674000,
+   "name": "AppleSEPDebugArgs",
+   "size": 32
+  },
+  {
+   "site": 18446744005142676216,
+   "name": "AppleSEPDebugArgs",
+   "size": 32
+  },
+  {
+   "site": 18446744005142676340,
+   "name": "AppleSEPPairing",
+   "size": 200
+  },
+  {
+   "site": 18446744005142676664,
+   "name": "AppleSEPPairing",
+   "size": 200
+  },
+  {
+   "site": 18446744005142681888,
+   "name": "AppleSEPPairing",
+   "size": 200
+  },
+  {
+   "site": 18446744005142682036,
+   "name": "AppleSEPLogger",
+   "size": 192
+  },
+  {
+   "site": 18446744005142682360,
+   "name": "AppleSEPLogger",
+   "size": 192
+  },
+  {
+   "site": 18446744005142683788,
+   "name": "AppleSEPLoggerService",
+   "size": 144
+  },
+  {
+   "site": 18446744005142684112,
+   "name": "AppleSEPLoggerService",
+   "size": 144
+  },
+  {
+   "site": 18446744005142684972,
+   "name": "AppleSEPLogger",
+   "size": 192
+  },
+  {
+   "site": 18446744005142685032,
+   "name": "AppleSEPLoggerService",
+   "size": 144
+  },
+  {
+   "site": 18446744005142685232,
+   "name": "AppleSEPControl",
+   "size": 200
+  },
+  {
+   "site": 18446744005142685556,
+   "name": "AppleSEPControl",
+   "size": 200
+  },
+  {
+   "site": 18446744005142691800,
+   "name": "AppleSEPControl",
+   "size": 200
+  },
+  {
+   "site": 18446744005142691948,
+   "name": "AppleSEPBooter",
+   "size": 464
+  },
+  {
+   "site": 18446744005142692304,
+   "name": "AppleSEPBooter",
+   "size": 464
+  },
+  {
+   "site": 18446744005142700036,
+   "name": "AppleSEPBooter",
+   "size": 464
+  },
+  {
+   "site": 18446744005142700216,
+   "name": "AppleSEPCommand",
+   "size": 88
+  },
+  {
+   "site": 18446744005142700540,
+   "name": "AppleSEPCommand",
+   "size": 88
+  },
+  {
+   "site": 18446744005142701220,
+   "name": "AppleSEPCommandPool",
+   "size": 72
+  },
+  {
+   "site": 18446744005142701544,
+   "name": "AppleSEPCommandPool",
+   "size": 72
+  },
+  {
+   "site": 18446744005142702732,
+   "name": "AppleSEPCommand",
+   "size": 88
+  },
+  {
+   "site": 18446744005142702792,
+   "name": "AppleSEPCommandPool",
+   "size": 72
+  },
+  {
+   "site": 18446744005142708012,
+   "name": "AppleSEPXART",
+   "size": 232
+  },
+  {
+   "site": 18446744005142708352,
+   "name": "AppleSEPXART",
+   "size": 232
+  },
+  {
+   "site": 18446744005142712016,
+   "name": "AppleSEPXARTService",
+   "size": 144
+  },
+  {
+   "site": 18446744005142712340,
+   "name": "AppleSEPXARTService",
+   "size": 144
+  },
+  {
+   "site": 18446744005142713640,
+   "name": "AppleSEPXART",
+   "size": 232
+  },
+  {
+   "site": 18446744005142713700,
+   "name": "AppleSEPXARTService",
+   "size": 144
+  },
+  {
+   "site": 18446744005142723800,
+   "name": "AppleSEPManager",
+   "size": 3000
+  },
+  {
+   "site": 18446744005142724192,
+   "name": "AppleSEPManager",
+   "size": 3000
+  },
+  {
+   "site": 18446744005142760624,
+   "name": "AppleSEPManager",
+   "size": 3000
+  },
+  {
+   "site": 18446744005142760844,
+   "name": "AppleSEPARTRequests",
+   "size": 216
+  },
+  {
+   "site": 18446744005142761168,
+   "name": "AppleSEPARTRequests",
+   "size": 216
+  },
+  {
+   "site": 18446744005142763872,
+   "name": "AppleSEPARTRequestsService",
+   "size": 144
+  },
+  {
+   "site": 18446744005142764196,
+   "name": "AppleSEPARTRequestsService",
+   "size": 144
+  },
+  {
+   "site": 18446744005142765052,
+   "name": "AppleSEPARTStorage",
+   "size": 248
+  },
+  {
+   "site": 18446744005142765376,
+   "name": "AppleSEPARTStorage",
+   "size": 248
+  },
+  {
+   "site": 18446744005142772788,
+   "name": "AppleSEPARTStorageService",
+   "size": 144
+  },
+  {
+   "site": 18446744005142773112,
+   "name": "AppleSEPARTStorageService",
+   "size": 144
+  },
+  {
+   "site": 18446744005142773968,
+   "name": "AppleSEPARTService",
+   "size": 184
+  },
+  {
+   "site": 18446744005142774292,
+   "name": "AppleSEPARTService",
+   "size": 184
+  },
+  {
+   "site": 18446744005142776652,
+   "name": "AppleSEPARTRequests",
+   "size": 216
+  },
+  {
+   "site": 18446744005142776716,
+   "name": "AppleSEPARTRequestsService",
+   "size": 144
+  },
+  {
+   "site": 18446744005142776772,
+   "name": "AppleSEPARTStorage",
+   "size": 248
+  },
+  {
+   "site": 18446744005142776828,
+   "name": "AppleSEPARTStorageService",
+   "size": 144
+  },
+  {
+   "site": 18446744005142776888,
+   "name": "AppleSEPARTService",
+   "size": 184
+  },
+  {
+   "site": 18446744005142777152,
+   "name": "AppleSEPSharedMemoryBuffer",
+   "size": 72
+  },
+  {
+   "site": 18446744005142777476,
+   "name": "AppleSEPSharedMemoryBuffer",
+   "size": 72
+  },
+  {
+   "site": 18446744005142780624,
+   "name": "AppleSEPSharedMemoryChannel",
+   "size": 32
+  },
+  {
+   "site": 18446744005142780948,
+   "name": "AppleSEPSharedMemoryChannel",
+   "size": 32
+  },
+  {
+   "site": 18446744005142781792,
+   "name": "AppleSEPPanicBuffer",
+   "size": 40
+  },
+  {
+   "site": 18446744005142782116,
+   "name": "AppleSEPPanicBuffer",
+   "size": 40
+  },
+  {
+   "site": 18446744005142783204,
+   "name": "AppleSEPSharedMemoryBuffer",
+   "size": 72
+  },
+  {
+   "site": 18446744005142783268,
+   "name": "AppleSEPSharedMemoryChannel",
+   "size": 32
+  },
+  {
+   "site": 18446744005142783324,
+   "name": "AppleSEPPanicBuffer",
+   "size": 40
+  },
+  {
+   "site": 18446744005142783500,
+   "name": "AppleSEPCoreBuffer",
+   "size": 120
+  },
+  {
+   "site": 18446744005142783824,
+   "name": "AppleSEPCoreBuffer",
+   "size": 120
+  },
+  {
+   "site": 18446744005142785784,
+   "name": "AppleSEPCoreBuffer",
+   "size": 120
+  }
+ ],
+ "com.apple.iokit.IOGPUFamily": [
+  {
+   "site": 18446744005150771188,
+   "name": "IOGPUVirtualMemory",
+   "size": 216
+  },
+  {
+   "site": 18446744005150771512,
+   "name": "IOGPUVirtualMemory",
+   "size": 216
+  },
+  {
+   "site": 18446744005150779824,
+   "name": "IOGPUVirtualMemory",
+   "size": 216
+  },
+  {
+   "site": 18446744005150779916,
+   "name": "IOGPUMemory",
+   "size": 128
+  },
+  {
+   "site": 18446744005150780080,
+   "name": "IOGPUMemory",
+   "size": 128
+  },
+  {
+   "site": 18446744005150785612,
+   "name": "IOGPUMemory",
+   "size": 128
+  },
+  {
+   "site": 18446744005150785704,
+   "name": "IOGPUWeakNamespace",
+   "size": 56
+  },
+  {
+   "site": 18446744005150786028,
+   "name": "IOGPUWeakNamespace",
+   "size": 56
+  },
+  {
+   "site": 18446744005150788476,
+   "name": "IOGPUNamespace",
+   "size": 56
+  },
+  {
+   "site": 18446744005150788800,
+   "name": "IOGPUNamespace",
+   "size": 56
+  },
+  {
+   "site": 18446744005150790416,
+   "name": "IOGPUWeakNamespace",
+   "size": 56
+  },
+  {
+   "site": 18446744005150790472,
+   "name": "IOGPUNamespace",
+   "size": 56
+  },
+  {
+   "site": 18446744005150790612,
+   "name": "IOGPUChannel",
+   "size": 56
+  },
+  {
+   "site": 18446744005150790776,
+   "name": "IOGPUChannel",
+   "size": 56
+  },
+  {
+   "site": 18446744005150791772,
+   "name": "IOGPUChannel",
+   "size": 56
+  },
+  {
+   "site": 18446744005150791864,
+   "name": "IOGPUBufferMemoryDescriptor",
+   "size": 232
+  },
+  {
+   "site": 18446744005150792188,
+   "name": "IOGPUBufferMemoryDescriptor",
+   "size": 232
+  },
+  {
+   "site": 18446744005150793376,
+   "name": "IOGPUMultiMemoryDescriptor",
+   "size": 120
+  },
+  {
+   "site": 18446744005150793700,
+   "name": "IOGPUMultiMemoryDescriptor",
+   "size": 120
+  },
+  {
+   "site": 18446744005150794844,
+   "name": "IOGPUSubMemoryDescriptor",
+   "size": 120
+  },
+  {
+   "site": 18446744005150795168,
+   "name": "IOGPUSubMemoryDescriptor",
+   "size": 120
+  },
+  {
+   "site": 18446744005150796344,
+   "name": "IOGPUBufferMemoryDescriptor",
+   "size": 232
+  },
+  {
+   "site": 18446744005150796404,
+   "name": "IOGPUMultiMemoryDescriptor",
+   "size": 120
+  },
+  {
+   "site": 18446744005150796464,
+   "name": "IOGPUSubMemoryDescriptor",
+   "size": 120
+  },
+  {
+   "site": 18446744005150796652,
+   "name": "IOGPUDeviceUserClient",
+   "size": 304
+  },
+  {
+   "site": 18446744005150796976,
+   "name": "IOGPUDeviceUserClient",
+   "size": 304
+  },
+  {
+   "site": 18446744005150811224,
+   "name": "IOGPUDeviceUserClient",
+   "size": 304
+  },
+  {
+   "site": 18446744005150811316,
+   "name": "IOGPUMTLLateEvalEvent",
+   "size": 40
+  },
+  {
+   "site": 18446744005150811640,
+   "name": "IOGPUMTLLateEvalEvent",
+   "size": 40
+  },
+  {
+   "site": 18446744005150812268,
+   "name": "IOGPUMTLLateEvalEvent",
+   "size": 40
+  },
+  {
+   "site": 18446744005150812360,
+   "name": "IOGPUEventMachine",
+   "size": 5200
+  },
+  {
+   "site": 18446744005150812524,
+   "name": "IOGPUEventMachine",
+   "size": 5200
+  },
+  {
+   "site": 18446744005150824112,
+   "name": "IOGPUEventMachine",
+   "size": 5200
+  },
+  {
+   "site": 18446744005150825228,
+   "name": "IOGPUMTLFence",
+   "size": 288
+  },
+  {
+   "site": 18446744005150825552,
+   "name": "IOGPUMTLFence",
+   "size": 288
+  },
+  {
+   "site": 18446744005150826372,
+   "name": "IOGPUMTLFence",
+   "size": 288
+  },
+  {
+   "site": 18446744005150826464,
+   "name": "IOAccelGPURestartReport",
+   "size": 136
+  },
+  {
+   "site": 18446744005150826788,
+   "name": "IOAccelGPURestartReport",
+   "size": 136
+  },
+  {
+   "site": 18446744005150827268,
+   "name": "IOAccelGPURestartReport",
+   "size": 136
+  },
+  {
+   "site": 18446744005150827360,
+   "name": "IOGPUBlockFencePort",
+   "size": 88
+  },
+  {
+   "site": 18446744005150827684,
+   "name": "IOGPUBlockFencePort",
+   "size": 88
+  },
+  {
+   "site": 18446744005150828872,
+   "name": "IOGPUEventFence",
+   "size": 208
+  },
+  {
+   "site": 18446744005150829036,
+   "name": "IOGPUEventFence",
+   "size": 208
+  },
+  {
+   "site": 18446744005150829316,
+   "name": "IOGPUBlockFence",
+   "size": 304
+  },
+  {
+   "site": 18446744005150829640,
+   "name": "IOGPUBlockFence",
+   "size": 304
+  },
+  {
+   "site": 18446744005150831760,
+   "name": "IOGPUSharedEventFence",
+   "size": 224
+  },
+  {
+   "site": 18446744005150832084,
+   "name": "IOGPUSharedEventFence",
+   "size": 224
+  },
+  {
+   "site": 18446744005150832932,
+   "name": "IOGPUMappingFence",
+   "size": 216
+  },
+  {
+   "site": 18446744005150833256,
+   "name": "IOGPUMappingFence",
+   "size": 216
+  },
+  {
+   "site": 18446744005150834080,
+   "name": "IOGPUFenceMachine",
+   "size": 120
+  },
+  {
+   "site": 18446744005150834404,
+   "name": "IOGPUFenceMachine",
+   "size": 120
+  },
+  {
+   "site": 18446744005150839372,
+   "name": "IOGPUBlockFencePort",
+   "size": 88
+  },
+  {
+   "site": 18446744005150839432,
+   "name": "IOGPUEventFence",
+   "size": 208
+  },
+  {
+   "site": 18446744005150839488,
+   "name": "IOGPUBlockFence",
+   "size": 304
+  },
+  {
+   "site": 18446744005150839544,
+   "name": "IOGPUSharedEventFence",
+   "size": 224
+  },
+  {
+   "site": 18446744005150839600,
+   "name": "IOGPUMappingFence",
+   "size": 216
+  },
+  {
+   "site": 18446744005150839656,
+   "name": "IOGPUFenceMachine",
+   "size": 120
+  },
+  {
+   "site": 18446744005150839844,
+   "name": "IOGPUKernelMappedMemory",
+   "size": 64
+  },
+  {
+   "site": 18446744005150840168,
+   "name": "IOGPUKernelMappedMemory",
+   "size": 64
+  },
+  {
+   "site": 18446744005150841548,
+   "name": "IOGPUDeviceShmem",
+   "size": 104
+  },
+  {
+   "site": 18446744005150841872,
+   "name": "IOGPUDeviceShmem",
+   "size": 104
+  },
+  {
+   "site": 18446744005150843272,
+   "name": "IOGPUKernelMappedMemory",
+   "size": 64
+  },
+  {
+   "site": 18446744005150843328,
+   "name": "IOGPUDeviceShmem",
+   "size": 104
+  },
+  {
+   "site": 18446744005150843736,
+   "name": "IOGPUResource",
+   "size": 160
+  },
+  {
+   "site": 18446744005150843900,
+   "name": "IOGPUResource",
+   "size": 160
+  },
+  {
+   "site": 18446744005150869456,
+   "name": "IOGPUResource",
+   "size": 160
+  },
+  {
+   "site": 18446744005150869576,
+   "name": "IOGPUIOCommandDescriptor",
+   "size": 88
+  },
+  {
+   "site": 18446744005150869900,
+   "name": "IOGPUIOCommandDescriptor",
+   "size": 88
+  },
+  {
+   "site": 18446744005150870836,
+   "name": "IOGPUIOCommandBuffer",
+   "size": 112
+  },
+  {
+   "site": 18446744005150871160,
+   "name": "IOGPUIOCommandBuffer",
+   "size": 112
+  },
+  {
+   "site": 18446744005150877456,
+   "name": "IOGPUIOCommandQueue",
+   "size": 176
+  },
+  {
+   "site": 18446744005150877780,
+   "name": "IOGPUIOCommandQueue",
+   "size": 176
+  },
+  {
+   "site": 18446744005150883148,
+   "name": "IOGPUIOCommandDescriptor",
+   "size": 88
+  },
+  {
+   "site": 18446744005150883204,
+   "name": "IOGPUIOCommandBuffer",
+   "size": 112
+  },
+  {
+   "site": 18446744005150883260,
+   "name": "IOGPUIOCommandQueue",
+   "size": 176
+  },
+  {
+   "site": 18446744005150883412,
+   "name": "IOGPUDeviceAssertion",
+   "size": 40
+  },
+  {
+   "site": 18446744005150883736,
+   "name": "IOGPUDeviceAssertion",
+   "size": 40
+  },
+  {
+   "site": 18446744005150884596,
+   "name": "IOGPUDeviceAssertion",
+   "size": 40
+  },
+  {
+   "site": 18446744005150884688,
+   "name": "IOGPUWorkQueue",
+   "size": 256
+  },
+  {
+   "site": 18446744005150884852,
+   "name": "IOGPUWorkQueue",
+   "size": 256
+  },
+  {
+   "site": 18446744005150891500,
+   "name": "IOGPUWorkQueueState",
+   "size": 184
+  },
+  {
+   "site": 18446744005150891824,
+   "name": "IOGPUWorkQueueState",
+   "size": 184
+  },
+  {
+   "site": 18446744005150894224,
+   "name": "IOGPUWorkQueue",
+   "size": 256
+  },
+  {
+   "site": 18446744005150894284,
+   "name": "IOGPUWorkQueueState",
+   "size": 184
+  },
+  {
+   "site": 18446744005150894420,
+   "name": "IOGPUScheduler",
+   "size": 592
+  },
+  {
+   "site": 18446744005150894744,
+   "name": "IOGPUScheduler",
+   "size": 592
+  },
+  {
+   "site": 18446744005150914480,
+   "name": "IOGPUScheduler",
+   "size": 592
+  },
+  {
+   "site": 18446744005150914572,
+   "name": "IOGPUClientSharedMachine",
+   "size": 96
+  },
+  {
+   "site": 18446744005150914896,
+   "name": "IOGPUClientSharedMachine",
+   "size": 96
+  },
+  {
+   "site": 18446744005150917900,
+   "name": "IOGPUVnioDesc",
+   "size": 40
+  },
+  {
+   "site": 18446744005150918224,
+   "name": "IOGPUVnioDesc",
+   "size": 40
+  },
+  {
+   "site": 18446744005150919012,
+   "name": "IOGPUDevice",
+   "size": 288
+  },
+  {
+   "site": 18446744005150919336,
+   "name": "IOGPUDevice",
+   "size": 288
+  },
+  {
+   "site": 18446744005150934512,
+   "name": "IOGPUClientSharedMachine",
+   "size": 96
+  },
+  {
+   "site": 18446744005150934576,
+   "name": "IOGPUVnioDesc",
+   "size": 40
+  },
+  {
+   "site": 18446744005150934632,
+   "name": "IOGPUDevice",
+   "size": 288
+  },
+  {
+   "site": 18446744005150934784,
+   "name": "IOGPUGroupMemory",
+   "size": 304
+  },
+  {
+   "site": 18446744005150935476,
+   "name": "IOGPUGroupMemory",
+   "size": 304
+  },
+  {
+   "site": 18446744005150950776,
+   "name": "IOGPUGroupMemory",
+   "size": 304
+  },
+  {
+   "site": 18446744005150950868,
+   "name": "IOGPUStatistics",
+   "size": 48
+  },
+  {
+   "site": 18446744005150951192,
+   "name": "IOGPUStatistics",
+   "size": 48
+  },
+  {
+   "site": 18446744005150953560,
+   "name": "IOGPUStatistics",
+   "size": 48
+  },
+  {
+   "site": 18446744005150953652,
+   "name": "IOGPUCommandDescriptor",
+   "size": 320
+  },
+  {
+   "site": 18446744005150953976,
+   "name": "IOGPUCommandDescriptor",
+   "size": 320
+  },
+  {
+   "site": 18446744005150959104,
+   "name": "IOGPUMappingCommand",
+   "size": 64
+  },
+  {
+   "site": 18446744005150959748,
+   "name": "IOGPUMappingCommand",
+   "size": 64
+  },
+  {
+   "site": 18446744005150961268,
+   "name": "IOGPUMappingCommandDescriptor",
+   "size": 384
+  },
+  {
+   "site": 18446744005150961592,
+   "name": "IOGPUMappingCommandDescriptor",
+   "size": 384
+  },
+  {
+   "site": 18446744005150963624,
+   "name": "IOGPUCommandDescriptor",
+   "size": 320
+  },
+  {
+   "site": 18446744005150963680,
+   "name": "IOGPUMappingCommand",
+   "size": 64
+  },
+  {
+   "site": 18446744005150963736,
+   "name": "IOGPUMappingCommandDescriptor",
+   "size": 384
+  },
+  {
+   "site": 18446744005150963888,
+   "name": "IOGPUResourceSet",
+   "size": 48
+  },
+  {
+   "site": 18446744005150964212,
+   "name": "IOGPUResourceSet",
+   "size": 48
+  },
+  {
+   "site": 18446744005150965488,
+   "name": "IOGPUWeakResourceSet",
+   "size": 48
+  },
+  {
+   "site": 18446744005150965812,
+   "name": "IOGPUWeakResourceSet",
+   "size": 48
+  },
+  {
+   "site": 18446744005150966836,
+   "name": "IOGPUResourceSet",
+   "size": 48
+  },
+  {
+   "site": 18446744005150966892,
+   "name": "IOGPUWeakResourceSet",
+   "size": 48
+  },
+  {
+   "site": 18446744005150967100,
+   "name": "IOGPUTask",
+   "size": 464
+  },
+  {
+   "site": 18446744005150967424,
+   "name": "IOGPUTask",
+   "size": 464
+  },
+  {
+   "site": 18446744005150970140,
+   "name": "IOGPUTask",
+   "size": 464
+  },
+  {
+   "site": 18446744005150970232,
+   "name": "IOAcceleratorES",
+   "size": 136
+  },
+  {
+   "site": 18446744005150970556,
+   "name": "IOAcceleratorES",
+   "size": 136
+  },
+  {
+   "site": 18446744005150970664,
+   "name": "IOGPU",
+   "size": 752
+  },
+  {
+   "site": 18446744005150970828,
+   "name": "IOGPU",
+   "size": 752
+  },
+  {
+   "site": 18446744005150971696,
+   "name": "KDebugVersion",
+   "size": 64
+  },
+  {
+   "site": 18446744005150990592,
+   "name": "IOAcceleratorES",
+   "size": 136
+  },
+  {
+   "site": 18446744005150990648,
+   "name": "IOGPU",
+   "size": 752
+  },
+  {
+   "site": 18446744005150991160,
+   "name": "IOGPUCommandQueue",
+   "size": 1488
+  },
+  {
+   "site": 18446744005150991484,
+   "name": "IOGPUCommandQueue",
+   "size": 1488
+  },
+  {
+   "site": 18446744005151011036,
+   "name": "IOGPUCommandQueue",
+   "size": 1488
+  },
+  {
+   "site": 18446744005151011128,
+   "name": "IOGPUAllocationInfo",
+   "size": 1072
+  },
+  {
+   "site": 18446744005151011452,
+   "name": "IOGPUAllocationInfo",
+   "size": 1072
+  },
+  {
+   "site": 18446744005151021068,
+   "name": "IOGPUAllocationInfo",
+   "size": 1072
+  },
+  {
+   "site": 18446744005151024132,
+   "name": "IOGPUMemoryInfoUserClient",
+   "size": 232
+  },
+  {
+   "site": 18446744005151024456,
+   "name": "IOGPUMemoryInfoUserClient",
+   "size": 232
+  },
+  {
+   "site": 18446744005151026720,
+   "name": "IOGPUMemoryInfoUserClient",
+   "size": 232
+  },
+  {
+   "site": 18446744005151026812,
+   "name": "IOGPUMemoryMap",
+   "size": 72
+  },
+  {
+   "site": 18446744005151026976,
+   "name": "IOGPUMemoryMap",
+   "size": 72
+  },
+  {
+   "site": 18446744005151029636,
+   "name": "IOGPUMemoryMap",
+   "size": 72
+  },
+  {
+   "site": 18446744005151029728,
+   "name": "IOGPUMTLEvent",
+   "size": 656
+  },
+  {
+   "site": 18446744005151030052,
+   "name": "IOGPUMTLEvent",
+   "size": 656
+  },
+  {
+   "site": 18446744005151031692,
+   "name": "IOGPUMTLEvent",
+   "size": 656
+  },
+  {
+   "site": 18446744005151031784,
+   "name": "IOGPUSysMemory",
+   "size": 232
+  },
+  {
+   "site": 18446744005151032348,
+   "name": "IOGPUSysMemory",
+   "size": 232
+  },
+  {
+   "site": 18446744005151042392,
+   "name": "IOGPUSysMemory",
+   "size": 232
+  },
+  {
+   "site": 18446744005151042484,
+   "name": "IOGPUNotificationQueue",
+   "size": 48
+  },
+  {
+   "site": 18446744005151042808,
+   "name": "IOGPUNotificationQueue",
+   "size": 48
+  },
+  {
+   "site": 18446744005151044076,
+   "name": "IOGPUNotificationQueue",
+   "size": 48
+  }
+ ],
+ "com.apple.iokit.IOMobileGraphicsFamily-DCP": [
+  {
+   "site": 18446744005152021988,
+   "name": "DCPResetLoopWindowSec",
+   "size": 32
+  },
+  {
+   "site": 18446744005152022444,
+   "name": "deferred_abort_signal",
+   "size": 4096
+  },
+  {
+   "site": 18446744005152073360,
+   "name": "iomfb_swap_fn",
+   "size": 4096
+  },
+  {
+   "site": 18446744005152097836,
+   "name": "IOMFBTTRReport",
+   "size": 136
+  },
+  {
+   "site": 18446744005152098160,
+   "name": "IOMFBTTRReport",
+   "size": 136
+  },
+  {
+   "site": 18446744005152098640,
+   "name": "IOMFBTTRReport",
+   "size": 136
+  },
+  {
+   "site": 18446744005152120868,
+   "name": "AppleDCPLinkService",
+   "size": 1488
+  },
+  {
+   "site": 18446744005152121032,
+   "name": "AppleDCPLinkService",
+   "size": 1488
+  },
+  {
+   "site": 18446744005152135496,
+   "name": "AppleDCPLinkService",
+   "size": 1488
+  },
+  {
+   "site": 18446744005152148396,
+   "name": "SharedEventResourceManager",
+   "size": 80
+  },
+  {
+   "site": 18446744005152148720,
+   "name": "SharedEventResourceManager",
+   "size": 80
+  },
+  {
+   "site": 18446744005152151308,
+   "name": "SharedEventResourceManager",
+   "size": 80
+  },
+  {
+   "site": 18446744005152151600,
+   "name": "DCPLink",
+   "size": 96
+  },
+  {
+   "site": 18446744005152151924,
+   "name": "DCPLink",
+   "size": 96
+  },
+  {
+   "site": 18446744005152154804,
+   "name": "DCPLink",
+   "size": 96
+  },
+  {
+   "site": 18446744005152154896,
+   "name": "DCPPowerManager",
+   "size": 136
+  },
+  {
+   "site": 18446744005152155708,
+   "name": "DCPPowerManager",
+   "size": 136
+  },
+  {
+   "site": 18446744005152162612,
+   "name": "DCPPowerManager",
+   "size": 136
+  }
+ ],
+ "com.apple.iokit.IOMobileGraphicsFamily": [
+  {
+   "site": 18446744005152193796,
+   "name": "iomfb_aaf_async",
+   "size": 4096
+  },
+  {
+   "site": 18446744005152194360,
+   "name": "IOAVHandlerInternalDisplay",
+   "size": 80
+  },
+  {
+   "site": 18446744005152194684,
+   "name": "IOAVHandlerInternalDisplay",
+   "size": 80
+  },
+  {
+   "site": 18446744005152197692,
+   "name": "IOAVHandlerInternalDisplay",
+   "size": 80
+  },
+  {
+   "site": 18446744005152197784,
+   "name": "AppleARMParamFIFO",
+   "size": 136
+  },
+  {
+   "site": 18446744005152197948,
+   "name": "AppleARMParamFIFO",
+   "size": 136
+  },
+  {
+   "site": 18446744005152198216,
+   "name": "AppleARMParamFIFO",
+   "size": 136
+  },
+  {
+   "site": 18446744005152203632,
+   "name": "IOMFBEvtMonTrampoline",
+   "size": 24
+  },
+  {
+   "site": 18446744005152203956,
+   "name": "IOMFBEvtMonTrampoline",
+   "size": 24
+  },
+  {
+   "site": 18446744005152206956,
+   "name": "IOMFBEvtMonTrampoline",
+   "size": 24
+  },
+  {
+   "site": 18446744005152214856,
+   "name": "IOMobileFramebufferUserClient",
+   "size": 2392
+  },
+  {
+   "site": 18446744005152215180,
+   "name": "IOMobileFramebufferUserClient",
+   "size": 2392
+  },
+  {
+   "site": 18446744005152232464,
+   "name": "IOMobileFramebufferUserClient",
+   "size": 2392
+  },
+  {
+   "site": 18446744005152232900,
+   "name": "IOMobileFramebuffer",
+   "size": 144
+  },
+  {
+   "site": 18446744005152233064,
+   "name": "IOMobileFramebuffer",
+   "size": 144
+  },
+  {
+   "site": 18446744005152233196,
+   "name": "IOMobileFramebufferService",
+   "size": 144
+  },
+  {
+   "site": 18446744005152233360,
+   "name": "IOMobileFramebufferService",
+   "size": 144
+  },
+  {
+   "site": 18446744005152233808,
+   "name": "IOMobileFramebuffer",
+   "size": 144
+  },
+  {
+   "site": 18446744005152233864,
+   "name": "IOMobileFramebufferService",
+   "size": 144
+  }
+ ],
+ "com.apple.iokit.IOSurface": [
+  {
+   "site": 18446744005153738564,
+   "name": "IOSurfaceSharedEventListener",
+   "size": 80
+  },
+  {
+   "site": 18446744005153739208,
+   "name": "IOSurfaceSharedEventListener",
+   "size": 80
+  },
+  {
+   "site": 18446744005153741956,
+   "name": "IOSurfaceSharedEventNotificationPort",
+   "size": 144
+  },
+  {
+   "site": 18446744005153742600,
+   "name": "IOSurfaceSharedEventNotificationPort",
+   "size": 144
+  },
+  {
+   "site": 18446744005153743428,
+   "name": "IOSurfaceSharedEventReference",
+   "size": 24
+  },
+  {
+   "site": 18446744005153743992,
+   "name": "IOSurfaceSharedEventReference",
+   "size": 24
+  },
+  {
+   "site": 18446744005153744844,
+   "name": "IOSurfaceSharedEvent",
+   "size": 104
+  },
+  {
+   "site": 18446744005153745168,
+   "name": "IOSurfaceSharedEvent",
+   "size": 104
+  },
+  {
+   "site": 18446744005153751920,
+   "name": "IOSurfaceSharedEventNotification",
+   "size": 112
+  },
+  {
+   "site": 18446744005153752652,
+   "name": "IOSurfaceSharedEventNotification",
+   "size": 112
+  },
+  {
+   "site": 18446744005153753980,
+   "name": "IOSurfaceSharedEventListener",
+   "size": 80
+  },
+  {
+   "site": 18446744005153754036,
+   "name": "IOSurfaceSharedEventNotificationPort",
+   "size": 144
+  },
+  {
+   "site": 18446744005153754092,
+   "name": "IOSurfaceSharedEventReference",
+   "size": 24
+  },
+  {
+   "site": 18446744005153754148,
+   "name": "IOSurfaceSharedEvent",
+   "size": 104
+  },
+  {
+   "site": 18446744005153754204,
+   "name": "IOSurfaceSharedEventNotification",
+   "size": 112
+  },
+  {
+   "site": 18446744005153754380,
+   "name": "IOFenceTransaction",
+   "size": 88
+  },
+  {
+   "site": 18446744005153755024,
+   "name": "IOFenceTransaction",
+   "size": 88
+  },
+  {
+   "site": 18446744005153759636,
+   "name": "IOFenceTransaction",
+   "size": 88
+  },
+  {
+   "site": 18446744005153759868,
+   "name": "IOSurface",
+   "size": 992
+  },
+  {
+   "site": 18446744005153761256,
+   "name": "IOSurface",
+   "size": 992
+  },
+  {
+   "site": 18446744005153800256,
+   "name": "BasicInfo",
+   "size": 120
+  },
+  {
+   "site": 18446744005153800332,
+   "name": "Layout",
+   "size": 48
+  },
+  {
+   "site": 18446744005153800844,
+   "name": "ColorAndSpatialKeys",
+   "size": 132
+  },
+  {
+   "site": 18446744005153829808,
+   "name": "IOSurface",
+   "size": 992
+  },
+  {
+   "site": 18446744005153829900,
+   "name": "IOSurfaceClient",
+   "size": 152
+  },
+  {
+   "site": 18446744005153830552,
+   "name": "IOSurfaceClient",
+   "size": 152
+  },
+  {
+   "site": 18446744005153835820,
+   "name": "IOSurfaceClient",
+   "size": 152
+  },
+  {
+   "site": 18446744005153835912,
+   "name": "IOSurfaceMemoryTag",
+   "size": 56
+  },
+  {
+   "site": 18446744005153836476,
+   "name": "IOSurfaceMemoryTag",
+   "size": 56
+  },
+  {
+   "site": 18446744005153837528,
+   "name": "IOSurfaceMemoryTag",
+   "size": 56
+  },
+  {
+   "site": 18446744005153837620,
+   "name": "IOSurfaceDeviceCache",
+   "size": 104
+  },
+  {
+   "site": 18446744005153837944,
+   "name": "IOSurfaceDeviceCache",
+   "size": 104
+  },
+  {
+   "site": 18446744005153840584,
+   "name": "IOSurfaceDeviceCache",
+   "size": 104
+  },
+  {
+   "site": 18446744005153840676,
+   "name": "IOSurfaceDescriptor",
+   "size": 24
+  },
+  {
+   "site": 18446744005153841000,
+   "name": "IOSurfaceDescriptor",
+   "size": 24
+  },
+  {
+   "site": 18446744005153845368,
+   "name": "IOSurfaceDescriptor",
+   "size": 24
+  },
+  {
+   "site": 18446744005153845460,
+   "name": "IOSurfaceMemoryCallback",
+   "size": 48
+  },
+  {
+   "site": 18446744005153846104,
+   "name": "IOSurfaceMemoryCallback",
+   "size": 48
+  },
+  {
+   "site": 18446744005153847152,
+   "name": "IOSurfaceMemoryCallback",
+   "size": 48
+  },
+  {
+   "site": 18446744005153847244,
+   "name": "IOSurfaceDeviceMemoryRegion",
+   "size": 96
+  },
+  {
+   "site": 18446744005153847976,
+   "name": "IOSurfaceDeviceMemoryRegion",
+   "size": 96
+  },
+  {
+   "site": 18446744005153850488,
+   "name": "IOSurfaceDeviceMemoryRegion",
+   "size": 96
+  },
+  {
+   "site": 18446744005153850580,
+   "name": "IOSurfaceMemoryRegion",
+   "size": 40
+  },
+  {
+   "site": 18446744005153851232,
+   "name": "IOSurfaceMemoryRegion",
+   "size": 40
+  },
+  {
+   "site": 18446744005153852240,
+   "name": "IOSurfaceMemoryRegion",
+   "size": 40
+  },
+  {
+   "site": 18446744005153852628,
+   "name": "IOSurfaceRoot",
+   "size": 1184
+  },
+  {
+   "site": 18446744005153854016,
+   "name": "IOSurfaceRoot",
+   "size": 1184
+  },
+  {
+   "site": 18446744005153882928,
+   "name": "IOSurfaceRoot",
+   "size": 1184
+  },
+  {
+   "site": 18446744005153883136,
+   "name": "IOSurfaceRootUserClient",
+   "size": 328
+  },
+  {
+   "site": 18446744005153884060,
+   "name": "IOSurfaceRootUserClient",
+   "size": 328
+  },
+  {
+   "site": 18446744005153917812,
+   "name": "IOSurfaceRootUserClient",
+   "size": 328
+  },
+  {
+   "site": 18446744005153917904,
+   "name": "IOFence",
+   "size": 216
+  },
+  {
+   "site": 18446744005153918636,
+   "name": "IOFence",
+   "size": 216
+  },
+  {
+   "site": 18446744005153920208,
+   "name": "IOFence",
+   "size": 216
+  },
+  {
+   "site": 18446744005153920300,
+   "name": "IOSurfaceShared",
+   "size": 72
+  },
+  {
+   "site": 18446744005153920864,
+   "name": "IOSurfaceShared",
+   "size": 72
+  },
+  {
+   "site": 18446744005153923028,
+   "name": "IOSurfaceShared",
+   "size": 72
+  },
+  {
+   "site": 18446744005153923120,
+   "name": "IOSurfaceDescriptorContext",
+   "size": 64
+  },
+  {
+   "site": 18446744005153923772,
+   "name": "IOSurfaceDescriptorContext",
+   "size": 64
+  },
+  {
+   "site": 18446744005153926864,
+   "name": "IOSurfaceDescriptorComponent",
+   "size": 32
+  },
+  {
+   "site": 18446744005153927428,
+   "name": "IOSurfaceDescriptorComponent",
+   "size": 32
+  },
+  {
+   "site": 18446744005153928468,
+   "name": "IOSurfaceMemoryPoolBunch",
+   "size": 72
+  },
+  {
+   "site": 18446744005153928792,
+   "name": "IOSurfaceMemoryPoolBunch",
+   "size": 72
+  },
+  {
+   "site": 18446744005153937136,
+   "name": "IOSurfaceMemoryPool",
+   "size": 176
+  },
+  {
+   "site": 18446744005153937976,
+   "name": "IOSurfaceMemoryPool",
+   "size": 176
+  },
+  {
+   "site": 18446744005153943152,
+   "name": "IOSurfaceDescriptorContext",
+   "size": 64
+  },
+  {
+   "site": 18446744005153943208,
+   "name": "IOSurfaceDescriptorComponent",
+   "size": 32
+  },
+  {
+   "site": 18446744005153943264,
+   "name": "IOSurfaceMemoryPoolBunch",
+   "size": 72
+  },
+  {
+   "site": 18446744005153943320,
+   "name": "IOSurfaceMemoryPool",
+   "size": 176
+  },
+  {
+   "site": 18446744005153943752,
+   "name": "IOSurfaceSendRight",
+   "size": 40
+  },
+  {
+   "site": 18446744005153944316,
+   "name": "IOSurfaceSendRight",
+   "size": 40
+  },
+  {
+   "site": 18446744005153945312,
+   "name": "IOSurfaceWiredSendRight",
+   "size": 40
+  },
+  {
+   "site": 18446744005153945876,
+   "name": "IOSurfaceWiredSendRight",
+   "size": 40
+  },
+  {
+   "site": 18446744005153946848,
+   "name": "IOSurfaceSendRight",
+   "size": 40
+  },
+  {
+   "site": 18446744005153946904,
+   "name": "IOSurfaceWiredSendRight",
+   "size": 40
+  },
+  {
+   "site": 18446744005153947044,
+   "name": "IOSurfaceSmaMemoryRegion",
+   "size": 96
+  },
+  {
+   "site": 18446744005153947776,
+   "name": "IOSurfaceSmaMemoryRegion",
+   "size": 96
+  },
+  {
+   "site": 18446744005153949548,
+   "name": "IOSurfaceSmaMemoryRegion",
+   "size": 96
+  },
+  {
+   "site": 18446744005153949640,
+   "name": "IOSurfaceTransaction",
+   "size": 48
+  },
+  {
+   "site": 18446744005153949964,
+   "name": "IOSurfaceTransaction",
+   "size": 48
+  },
+  {
+   "site": 18446744005153951076,
+   "name": "IOSurfaceTransaction",
+   "size": 48
+  }
+ ]
+}

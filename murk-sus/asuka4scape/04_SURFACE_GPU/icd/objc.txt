@@ -1,0 +1,3071 @@
+@protocol IPProgressServerDelegate <NSObject>
+
+@required
+
+/* required instance methods */
+-[IPProgressServerDelegate progressServer:requestPauseForIdentity:];
+-[IPProgressServerDelegate progressServer:requestResumeForIdentity:];
+-[IPProgressServerDelegate progressServer:requestCancelForIdentity:withReason:fromClient:];
+
+@optional
+
+@end
+
+@protocol IXAppReplacementProtocol <NSObject>
+
+@required
+
+/* required instance methods */
+-[IXAppReplacementProtocol replaceDataForRequest:completion:];
+
+@optional
+
+@end
+
+@protocol IXClientPersonaLifecycleReportingProtocol <NSObject>
+
+@required
+
+/* required instance methods */
+-[IXClientPersonaLifecycleReportingProtocol _remote_reportPersonaConstructionWithUniqueString:options:completion:];
+-[IXClientPersonaLifecycleReportingProtocol _remote_reportPersonaDestructionWithUniqueString:options:completion:];
+
+@optional
+
+@end
+
+@protocol IXClientProtocol <NSObject>
+
+@required
+
+/* required instance methods */
+-[IXClientProtocol _remote_createPlaceholderDataPromiseWithSeed:completion:];
+-[IXClientProtocol _remote_createTransferToPathDataPromiseWithSeed:completion:];
+-[IXClientProtocol _remote_createStreamingZipTransferDataPromiseWithSeed:completion:];
+-[IXClientProtocol _remote_createInMemoryDataPromiseWithSeed:data:completion:];
+-[IXClientProtocol _remote_createInMemoryDictionaryPromiseWithSeed:dictionary:completion:];
+-[IXClientProtocol _remote_createOutOfBandTransferPromiseWithSeed:completion:];
+-[IXClientProtocol _remote_createOutOfBandStreamingZipTransferDataPromiseWithSeed:completion:];
+-[IXClientProtocol _remote_createAppReferenceDataPromiseWithSeed:ifMatchingPredicate:completion:];
+-[IXClientProtocol _remote_addObserversForDataPromisesWithUUIDs:];
+-[IXClientProtocol _remote_removeObserverForDataPromiseWithUUID:];
+-[IXClientProtocol _remote_createAppInstallCoordinatorWithSeed:createIfNotExisting:requireMatchingIntent:scopeRequirement:completion:];
+-[IXClientProtocol _remote_addObserversForCoordinatorsWithUUIDs:fireObserverMethods:];
+-[IXClientProtocol _remote_removeObserverForCoordinatorWithUUID:];
+-[IXClientProtocol _remote_fetchSeedsForCoordinatorsWithIntent:completion:];
+-[IXClientProtocol _remote_fetchRegisteredDataPromiseInfoForCreator:completion:];
+-[IXClientProtocol _remote_checkIfDataPromiseExistsForUUID:completion:];
+-[IXClientProtocol _remote_purgeRegisteredCoordinatorsAndPromisesForCreator:completion:];
+-[IXClientProtocol _remote_killDaemonForTestingWithCompletion:];
+-[IXClientProtocol _remote_pingDaemonWithCompletion:];
+-[IXClientProtocol _remote_fakeClientDeathWithCompletion:];
+-[IXClientProtocol _remote_postNSCurrentLocaleDidChangeNotification:];
+-[IXClientProtocol _remote_fetchDuplicatedClassInfo:];
+-[IXClientProtocol _remote_setTestingEnabled:completion:];
+-[IXClientProtocol _remote_setTestModeForIdentifierPrefix:testMode:testSpecificValidationData:completion:];
+-[IXClientProtocol _remote_registerContentsForDiskImageAtURL:options:completion:];
+-[IXClientProtocol _remote_unregisterContentsForDiskImageAtURL:options:completion:];
+-[IXClientProtocol _remote_registerContentForOSModuleAtURL:options:completion:];
+-[IXClientProtocol _remote_unregisterContentForOSModuleAtURL:options:completion:];
+-[IXClientProtocol _remote_setKnownOSModuleURLs:options:completion:];
+-[IXClientProtocol _remote_registerRootContentForBundles:options:completion:];
+-[IXClientProtocol _remote_unregisterRootContentForBundles:options:completion:];
+-[IXClientProtocol _remote_associateMultiPersonaAppsWithBundleIDs:withPersona:completion:];
+-[IXClientProtocol _remote_addBundleIDs:toMappingsForPersona:completion:];
+-[IXClientProtocol _remote_removeBundleIDs:fromMappingsForPersona:completion:];
+-[IXClientProtocol _remote_addPersonaForUniqueString:toAppWithBundleID:inDomain:completion:];
+-[IXClientProtocol _remote_removePersonaForUniqueString:fromAppWithBundleID:inDomain:completion:];
+-[IXClientProtocol _remote_enrollPersonaForUniqueString:forApps:inDomain:completion:];
+-[IXClientProtocol _remote_setPersonasForUniqueStrings:onAppWithBundleID:inDomain:completion:];
+-[IXClientProtocol _remote_resetAppReplacementStateForAppIdentity:options:completion:];
+-[IXClientProtocol _remote_recordAppReplacementNotApplicableForAppIdentity:options:completion:];
+-[IXClientProtocol _remote_appReplacementRefusedForAppIdentity:options:completion:];
+-[IXClientProtocol _remote_performAppReplacementFromAppIdentity:toAppIdentity:options:completion:];
+-[IXClientProtocol _remote_resumeInterruptedAppReplacementWithOptions:completion:];
+-[IXClientProtocol _remote_removabilityForAppWithIdentity:completion:];
+-[IXClientProtocol _remote_removabilityForAppWithIdentity:byClient:completion:];
+-[IXClientProtocol _remote_setRemovability:forAppWithIdentity:byClient:completion:];
+-[IXClientProtocol _remote_removabilityDataWithCompletion:];
+-[IXClientProtocol _remote_defaultAppMetadataForAppIdentity:completion:];
+-[IXClientProtocol _remote_defaultAppMetadataListWithCompletion:];
+-[IXClientProtocol _remote_cancelCoordinatorForAppWithIdentity:reason:client:completion:];
+-[IXClientProtocol _remote_cancelCoordinatorsForAppsWithIdentities:reason:client:completion:];
+-[IXClientProtocol _remote_setIsPaused:forCoordinatorForAppWithIdentity:completion:];
+-[IXClientProtocol _remote_prioritizeCoordinatorForAppWithIdentity:completion:];
+-[IXClientProtocol _remote_uninstallAppWithIdentity:options:completion:];
+-[IXClientProtocol _remote_revertAppWithIdentity:completion:];
+-[IXClientProtocol _remote_refreshContainersWithOptions:forAppWithIdentity:completion:];
+-[IXClientProtocol _remote_registerObserverMachServiceName:forClientIdentifiers:respondingToSelectors:];
+-[IXClientProtocol _remote_registerTransientObserver:forClientIdentifiers:respondingToSelectors:];
+-[IXClientProtocol _remote_displayUserPresentableErrorForApp:code:];
+-[IXClientProtocol _remote_displayUserPresentableErrorForApps:code:];
+-[IXClientProtocol _remote_displayUserPresentableErrorForAppWithLocalizedName:code:];
+-[IXClientProtocol _remote_updateSINFForAppWithIdentity:sinfData:options:completion:];
+-[IXClientProtocol _remote_updateiTunesMetadata:forAppWithIdentity:completion:];
+-[IXClientProtocol _remote_iTunesMetadataForRemovableSystemAppWithIdentity:completion:];
+-[IXClientProtocol _remote_stagingLocationForInstallLocation:completion:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:cancelForReason:client:completion:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:setPlaceholderPromiseUUID:completion:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:getPlaceholderPromise:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:hasPlaceholderPromise:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:setAppAssetPromiseUUID:completion:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:getAppAssetPromise:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:hasAppAssetPromise:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:appAssetPromiseHasBegunFulfillment:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:getAppAssetPromiseDRI:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:setAppAssetPromiseDRI:completion:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:setInstallOptionsPromiseUUID:completion:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:getInstallOptions:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:hasInstallOptions:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:setImportance:completion:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:importanceWithCompletion:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:conveyPriorityReplacingExisting:withCompletion:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:setInitialODRAssetPromiseUUIDs:completion:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:getInitialODRAssetPromises:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:hasInitialODRAssetPromises:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:setUserDataPromiseUUID:completion:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:getUserDataPromise:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:hasUserDataPromise:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:getUserDataRestoreShouldBegin:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:setPreparationPromiseUUID:completion:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:getPreparationPromise:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:setDeviceSecurityPromiseUUID:completion:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:getDeviceSecurityPromise:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:getHasDeviceSecurityPromise:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:setNeedsPostProcessing:completion:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:getNeedsPostProcessing:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:getPostProcessingShouldBegin:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:setEssentialAssetPromiseUUIDs:completion:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:getEssentialAssetPromises:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:hasEssentialAssetPromises:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:setDataImportPromiseUUIDs:completion:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:getDataImportPromises:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:hasDataImportPromises:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:getIsComplete:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:getErrorInfo:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:fireObserversWithCompletion:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:setIsPaused:completion:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:getIsPausedWithCompletion:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:prioritizeWithCompletion:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:getCoordinatorScopeWithCompletion:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:convertToGloballyScopedWithCompletion:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:setPlaceholderDisposition:completion:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:getPlaceholderDispositionWithCompletion:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:setProgressHint:completion:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:getProgressHintWithCompletion:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:setRemovability:byClient:completion:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:removabilityWithCompletion:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:setTargetGizmoPairingID:completion:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:targetGizmoPairingIDWithCompletion:];
+-[IXClientProtocol _remote_IXSCoordinatedAppInstall:getCoordinationState:];
+-[IXClientProtocol _remote_IXSDataPromise:getPercentComplete:];
+-[IXClientProtocol _remote_IXSDataPromise:setPercentComplete:];
+-[IXClientProtocol _remote_IXSDataPromise:getIsComplete:];
+-[IXClientProtocol _remote_IXSDataPromise:setIsComplete:completion:];
+-[IXClientProtocol _remote_IXSDataPromise:cancelForReason:client:completion:];
+-[IXClientProtocol _remote_IXSDataPromise:resetWithCompletion:];
+-[IXClientProtocol _remote_IXSDataPromise:getErrorInfo:];
+-[IXClientProtocol _remote_IXSDataPromise:preflightWithCompletion:];
+-[IXClientProtocol _remote_IXSOwnedDataPromise:setStagedPath:];
+-[IXClientProtocol _remote_IXSOwnedDataPromise:getStagedPath:];
+-[IXClientProtocol _remote_IXSOwnedDataPromise:getTargetLastPathComponent:];
+-[IXClientProtocol _remote_IXSOwnedDataPromise:setTargetLastPathComponent:withCompletion:];
+-[IXClientProtocol _remote_IXSPlaceholder:setMetadataPromiseUUID:completion:];
+-[IXClientProtocol _remote_IXSPlaceholder:getMetadataWithCompletion:];
+-[IXClientProtocol _remote_IXSPlaceholder:setSinfPromiseUUID:completion:];
+-[IXClientProtocol _remote_IXSPlaceholder:getSinfDataWithCompletion:];
+-[IXClientProtocol _remote_IXSPlaceholder:setLaunchProhibited:completion:];
+-[IXClientProtocol _remote_IXSPlaceholder:getLaunchProhibitedWithCompletion:];
+-[IXClientProtocol _remote_IXSPlaceholder:setAttributes:completion:];
+-[IXClientProtocol _remote_IXSPlaceholder:getAttributesWithCompletion:];
+-[IXClientProtocol _remote_IXSPlaceholder:setIconPromiseUUID:completion:];
+-[IXClientProtocol _remote_IXSPlaceholder:hasIconPromise:];
+-[IXClientProtocol _remote_IXSPlaceholder:getIconPromise:];
+-[IXClientProtocol _remote_IXSPlaceholder:setIconResourcesPromiseUUID:withInfoPlistIconContentPromiseUUID:completion:];
+-[IXClientProtocol _remote_IXSPlaceholder:hasIconResourcesPromise:];
+-[IXClientProtocol _remote_IXSPlaceholder:getIconResourcesPromiseAndInfoPlistContentPromise:];
+-[IXClientProtocol _remote_IXSPlaceholder:setLocalizationPromiseUUID:completion:];
+-[IXClientProtocol _remote_IXSPlaceholder:getLocalizationDictionary:];
+-[IXClientProtocol _remote_IXSPlaceholder:setEntitlementsPromiseUUID:completion:];
+-[IXClientProtocol _remote_IXSPlaceholder:hasEntitlementsPromise:];
+-[IXClientProtocol _remote_IXSPlaceholder:getEntitlementsPromise:];
+-[IXClientProtocol _remote_IXSPlaceholder:setInfoPlistLoctablePromiseUUID:completion:];
+-[IXClientProtocol _remote_IXSPlaceholder:hasInfoPlistLoctablePromise:];
+-[IXClientProtocol _remote_IXSPlaceholder:getInfoPlistLoctablePromise:];
+-[IXClientProtocol _remote_IXSPlaceholder:setAppExtensionPlaceholderPromiseUUIDs:completion:];
+-[IXClientProtocol _remote_IXSPlaceholder:hasAppExtensionPlaceholderPromises:];
+-[IXClientProtocol _remote_IXSPlaceholder:getAppExtensionPlaceholderPromises:];
+-[IXClientProtocol _remote_IXSPlaceholder:setConfigurationCompleteWithCompletion:];
+-[IXClientProtocol _remote_IXSPromisedTransferToPath:setTransferPath:];
+-[IXClientProtocol _remote_IXSPromisedTransferToPath:setShouldCopy:];
+-[IXClientProtocol _remote_IXSPromisedTransferToPath:setTryDeltaCopy:];
+-[IXClientProtocol _remote_IXSPromisedStreamingZipTransfer:setArchiveBytesConsumed:];
+-[IXClientProtocol _remote_IXSPromisedOutOfBandStreamingZipTransfer:setArchiveBytesConsumed:];
+
+@optional
+
+@end
+
+@protocol IXSAppExtensionRecordProtocol <IXSBundleRecordProtocol>
+
+@required
+
+@property (T@"<IXSPropertyListProtocol>",R) infoDictionary;
+
+/* required instance methods */
+-[IXSAppExtensionRecordProtocol infoDictionary];
+
+@optional
+
+@end
+
+@protocol IXSAppUninstallerProtocol <NSObject>
+
+@required
+
+/* class methods */
++[IXSAppUninstallerProtocol sharedUninstaller];
+
+/* required instance methods */
+-[IXSAppUninstallerProtocol uninstallAppWithIdentity:clientName:options:completion:];
+
+@optional
+
+@end
+
+@protocol IXSAppUpdateSchedulerDelegate <NSObject>
+
+@required
+
+/* required instance methods */
+-[IXSAppUpdateSchedulerDelegate scheduledAppUpdateReadyToExecute];
+
+@optional
+
+@end
+
+@protocol IXSAppUpdateSchedulerProtocol <NSObject, NSSecureCoding>
+
+@required
+
+/* required instance methods */
+-[IXSAppUpdateSchedulerProtocol initWithBackgroundScheduler:];
+-[IXSAppUpdateSchedulerProtocol scheduleUpdateInstallForCoordinatorUUID:error:];
+-[IXSAppUpdateSchedulerProtocol removeUpdateRequestForCoordinatorUUID:];
+
+@optional
+
+@end
+
+@protocol IXSApplicationRecordProtocol <IXSBundleRecordProtocol>
+
+@required
+
+@property (T@"NSSet",R,N) applicationExtensionRecords;
+
+/* required instance methods */
+-[IXSApplicationRecordProtocol applicationExtensionRecords];
+
+@optional
+
+@end
+
+@protocol IXSBackgroundSchedulerProtocol <NSObject, NSSecureCoding>
+
+@required
+
+/* required instance methods */
+-[IXSBackgroundSchedulerProtocol registerForTaskWithIdentifier:usingQueue:launchHandler:];
+-[IXSBackgroundSchedulerProtocol submitTaskRequest:error:];
+-[IXSBackgroundSchedulerProtocol taskRequestForIdentifier:];
+-[IXSBackgroundSchedulerProtocol constructTaskRequestWithIdentifier:];
+-[IXSBackgroundSchedulerProtocol deregisterTaskWithIdentifier:];
+
+@optional
+
+@end
+
+@protocol IXSBundleRecordProtocol <NSObject>
+
+@required
+
+@property (T@"NSString",R,N) bundleIdentifier;
+@property (T@"NSURL",R,N) URL;
+@property (T@"<IXSPropertyListProtocol>",R,N) entitlements;
+
+/* required instance methods */
+-[IXSBundleRecordProtocol dataContainerURLForPersonaWithUniqueString:error:];
+-[IXSBundleRecordProtocol getDataContainerURL:error:];
+-[IXSBundleRecordProtocol bundleIdentifier];
+-[IXSBundleRecordProtocol URL];
+-[IXSBundleRecordProtocol entitlements];
+
+@optional
+
+@end
+
+@protocol IXSCacheDeleteUpdateCompleteDelegate <NSObject>
+
+@required
+
+/* required instance methods */
+-[IXSCacheDeleteUpdateCompleteDelegate applyStagedUpdateAndRunBlockWhenComplete:];
+
+@optional
+
+@end
+
+@protocol IXSCoordinatedAppInstallProtocol <NSObject>
+
+@required
+
+@property (T@"IXApplicationIdentity",R,C,N) identity;
+@property (TQ,R,N) originalIntent;
+@property (TQ,R,N) effectiveIntent;
+
+/* required instance methods */
+-[IXSCoordinatedAppInstallProtocol cancelForReason:client:error:];
+-[IXSCoordinatedAppInstallProtocol identity];
+-[IXSCoordinatedAppInstallProtocol originalIntent];
+-[IXSCoordinatedAppInstallProtocol effectiveIntent];
+
+@optional
+
+@end
+
+@protocol IXSCoordinatorManagerProtocol <NSObject>
+
+@required
+
+/* required instance methods */
+-[IXSCoordinatorManagerProtocol enumerateCoordinators:];
+-[IXSCoordinatorManagerProtocol performCreationBlockingOperation:];
+
+@optional
+
+@end
+
+@protocol IXSCoordinatorProgressDelegate <NSObject>
+
+@required
+
+/* required instance methods */
+-[IXSCoordinatorProgressDelegate didUpdateProgress:forPhase:overallProgress:];
+
+@optional
+
+@end
+
+@protocol IXSDataPromiseAwakening
+
+@required
+
+/* required instance methods */
+-[IXSDataPromiseAwakening awakeFromSerializationWithLookupBlock:error:];
+
+@optional
+
+@end
+
+@protocol IXSDataPromiseDelegate <NSObject>
+
+@required
+
+/* required instance methods */
+-[IXSDataPromiseDelegate promiseDidBegin:];
+-[IXSDataPromiseDelegate promiseDidComplete:];
+-[IXSDataPromiseDelegate promiseDidReset:];
+-[IXSDataPromiseDelegate promise:didUpdateProgress:];
+-[IXSDataPromiseDelegate promise:didCancelForReason:client:];
+
+@optional
+
+@end
+
+@protocol IXSDataReplacementExtensionSessionProtocol <IXAppReplacementProtocol>
+
+@required
+
+/* required instance methods */
+-[IXSDataReplacementExtensionSessionProtocol invalidate];
+
+@optional
+
+@end
+
+@protocol IXSDeviceLockAssertionProtocol <NSObject>
+
+@required
+
+/* required instance methods */
+-[IXSDeviceLockAssertionProtocol acquireWithError:];
+-[IXSDeviceLockAssertionProtocol invalidate];
+
+@optional
+
+@end
+
+@protocol IXSPropertyListProtocol <NSObject>
+
+@required
+
+/* required instance methods */
+-[IXSPropertyListProtocol objectForKey:ofClass:];
+-[IXSPropertyListProtocol objectForKey:ofClass:valuesOfClass:];
+
+@optional
+
+@end
+
+@protocol IXSSystemTaskProtocol <NSObject>
+
+@required
+
+@property (TB,N) requiresNetworkConnectivity;
+@property (TB,N) requiresExternalPower;
+@property (Tq,N) priority;
+@property (T@"NSArray",C,N) relatedApplications;
+@property (Tq,N) applicationRelationship;
+@property (T@"NSString",R,C,N) identifier;
+@property (T@?,C,N) expirationHandler;
+
+/* required instance methods */
+-[IXSSystemTaskProtocol setTaskCompleted];
+-[IXSSystemTaskProtocol requiresNetworkConnectivity];
+-[IXSSystemTaskProtocol setRequiresNetworkConnectivity:];
+-[IXSSystemTaskProtocol requiresExternalPower];
+-[IXSSystemTaskProtocol setRequiresExternalPower:];
+-[IXSSystemTaskProtocol priority];
+-[IXSSystemTaskProtocol setPriority:];
+-[IXSSystemTaskProtocol relatedApplications];
+-[IXSSystemTaskProtocol setRelatedApplications:];
+-[IXSSystemTaskProtocol applicationRelationship];
+-[IXSSystemTaskProtocol setApplicationRelationship:];
+-[IXSSystemTaskProtocol identifier];
+-[IXSSystemTaskProtocol expirationHandler];
+-[IXSSystemTaskProtocol setExpirationHandler:];
+
+@optional
+
+@end
+
+@protocol IXSSystemTaskRequestProtocol <NSObject, IXSSystemTaskProtocol>
+
+@required
+
+/* required instance methods */
+-[IXSSystemTaskRequestProtocol initWithIdentifier:];
+
+@optional
+
+@end
+
+@protocol NSCoding
+
+@required
+
+/* required instance methods */
+-[NSCoding encodeWithCoder:];
+-[NSCoding initWithCoder:];
+
+@optional
+
+@end
+
+@protocol NSCopying
+
+@required
+
+/* required instance methods */
+-[NSCopying copyWithZone:];
+
+@optional
+
+@end
+
+@protocol NSObject
+
+@required
+
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* required instance methods */
+-[NSObject isEqual:];
+-[NSObject class];
+-[NSObject self];
+-[NSObject performSelector:];
+-[NSObject performSelector:withObject:];
+-[NSObject performSelector:withObject:withObject:];
+-[NSObject isProxy];
+-[NSObject isKindOfClass:];
+-[NSObject isMemberOfClass:];
+-[NSObject conformsToProtocol:];
+-[NSObject respondsToSelector:];
+-[NSObject retain];
+-[NSObject release];
+-[NSObject autorelease];
+-[NSObject retainCount];
+-[NSObject zone];
+-[NSObject hash];
+-[NSObject superclass];
+-[NSObject description];
+
+@optional
+
+/* optional instance methods */
+-[NSObject debugDescription];
+
+@end
+
+@protocol NSSecureCoding <NSCoding>
+
+@required
+
+@property (class, TB,R) supportsSecureCoding;
+
+/* class methods */
++[NSSecureCoding supportsSecureCoding];
+
+@optional
+
+@end
+
+@protocol NSXPCListenerDelegate <NSObject>
+
+@required
+
+@optional
+
+/* optional instance methods */
+-[NSXPCListenerDelegate listener:shouldAcceptNewConnection:];
+
+@end
+
+@protocol SBSRemoteAlertHandleObserver <NSObject>
+
+@required
+
+@optional
+
+/* optional instance methods */
+-[SBSRemoteAlertHandleObserver remoteAlertHandleDidActivate:];
+-[SBSRemoteAlertHandleObserver remoteAlertHandleDidDeactivate:];
+-[SBSRemoteAlertHandleObserver remoteAlertHandle:didInvalidateWithError:];
+
+@end
+
+@interface IXSAppDeletionEligibilityManager : NSObject {
+    /* instance variables */
+    @"NSObject<OS_dispatch_queue>" _internalQueue;
+    @"NSMutableDictionary" _domainToEligibilityAnswerMap;
+}
+
+@property (T@"NSObject<OS_dispatch_queue>",R,N,V_internalQueue) internalQueue;
+@property (T@"NSMutableDictionary",&,N,V_domainToEligibilityAnswerMap) domainToEligibilityAnswerMap;
+
+/* class methods */
++[IXSAppDeletionEligibilityManager sharedInstance];
+
+/* instance methods */
+-[IXSAppDeletionEligibilityManager init];
+-[IXSAppDeletionEligibilityManager _onQueue_setRemovabilityForAppWithIdentity:usingEligibilityAnswer:];
+-[IXSAppDeletionEligibilityManager _onQueue_updateRemovabilityForAppIdentities:usingEligibilityAnswer:];
+-[IXSAppDeletionEligibilityManager _eligibilityAnswerForDomain:];
+-[IXSAppDeletionEligibilityManager _domainToAppIdentitySetMap];
+-[IXSAppDeletionEligibilityManager _onQueue_processEligibilityDomainChange];
+-[IXSAppDeletionEligibilityManager eligibilityDidChange];
+-[IXSAppDeletionEligibilityManager _onQueue_setAppRemovabilityForSystemAppPlaceholder:];
+-[IXSAppDeletionEligibilityManager _onQueue_enumerateSystemAppPlaceholdersAndSetAppRemovability:];
+-[IXSAppDeletionEligibilityManager _systemAppPlaceholderEnumerator];
+-[IXSAppDeletionEligibilityManager reconcileAppRemovabilityForSystemAppPlaceholders];
+-[IXSAppDeletionEligibilityManager _test_domainToEligibilityAnswerMap];
+-[IXSAppDeletionEligibilityManager _testAppRemovabilityBundleID];
+-[IXSAppDeletionEligibilityManager _test_modifyDomainToEligibilityAnswerMap:];
+-[IXSAppDeletionEligibilityManager internalQueue];
+-[IXSAppDeletionEligibilityManager domainToEligibilityAnswerMap];
+-[IXSAppDeletionEligibilityManager setDomainToEligibilityAnswerMap:];
+
+@end
+
+@interface IXSAppInstallObserverManager : NSObject {
+    /* instance variables */
+    @"NSObject<OS_dispatch_queue>" _internalQueue;
+    @"NSMutableDictionary" _clientToObserverServiceNameMap;
+    @"NSMutableDictionary" _serviceRespondsToMap;
+    @"NSMutableDictionary" _serviceToConnectionMap;
+    @"NSMutableDictionary" _clientToObserverEndpointMap;
+    @"NSMutableDictionary" _listenerRespondsToMap;
+    @"NSHashTable" _clientConnections;
+}
+
+@property (T@"NSObject<OS_dispatch_queue>",R,N,V_internalQueue) internalQueue;
+@property (T@"NSURL",R,D,N) saveURL;
+@property (T@"NSMutableDictionary",R,N,V_clientToObserverServiceNameMap) clientToObserverServiceNameMap;
+@property (T@"NSMutableDictionary",R,N,V_serviceRespondsToMap) serviceRespondsToMap;
+@property (T@"NSMutableDictionary",R,N,V_serviceToConnectionMap) serviceToConnectionMap;
+@property (T@"NSMutableDictionary",R,N,V_clientToObserverEndpointMap) clientToObserverEndpointMap;
+@property (T@"NSMutableDictionary",R,N,V_listenerRespondsToMap) listenerRespondsToMap;
+@property (T@"NSHashTable",R,N,V_clientConnections) clientConnections;
+
+/* class methods */
++[IXSAppInstallObserverManager sharedInstance];
+
+/* instance methods */
+-[IXSAppInstallObserverManager saveURL];
+-[IXSAppInstallObserverManager init];
+-[IXSAppInstallObserverManager _saveMapping];
+-[IXSAppInstallObserverManager registerMachServiceName:forClientIDs:respondingToSelectors:];
+-[IXSAppInstallObserverManager registerListenerEndpoint:forClientIDs:respondingToSelectors:];
+-[IXSAppInstallObserverManager registerClientConnection:];
+-[IXSAppInstallObserverManager unregisterClientConnection:];
+-[IXSAppInstallObserverManager _onQueue_connectionForServiceName:];
+-[IXSAppInstallObserverManager _onQueue_callRemoteObjectProxyForServiceName:errorHandler:callHandler:];
+-[IXSAppInstallObserverManager _onQueue_connectionForObserverEndpoint:];
+-[IXSAppInstallObserverManager _onQueue_callRemoteObjectProxyForServiceEndpoint:errorHandler:callHandler:];
+-[IXSAppInstallObserverManager _onQueue_messageMachServices:forMethod:callMethodOnProxy:exceptServices:];
+-[IXSAppInstallObserverManager _onQueue_messageXPCListenerEndpoints:forMethod:callMethodOnProxy:exceptEndpoints:];
+-[IXSAppInstallObserverManager _messageInterestedServicesForMethod:callMethodOnProxy:];
+-[IXSAppInstallObserverManager _messageInterestedServicesForClientIDs:forMethod:callMethodOnProxy:];
+-[IXSAppInstallObserverManager _callHandlerForClientConnections:];
+-[IXSAppInstallObserverManager coordinatorShouldPrioritize:];
+-[IXSAppInstallObserverManager shouldPrioritizeAppWithIdentity:forClientIDs:];
+-[IXSAppInstallObserverManager mayUninstallAppWithIdentity:];
+-[IXSAppInstallObserverManager coordinatorShouldResume:];
+-[IXSAppInstallObserverManager coordinatorShouldPause:];
+-[IXSAppInstallObserverManager coordinator:configuredPromiseDidBeginFulfillment:];
+-[IXSAppInstallObserverManager coordinatorShouldBeginRestoringUserData:];
+-[IXSAppInstallObserverManager coordinatorDidInstallPlaceholder:forRecordPromise:];
+-[IXSAppInstallObserverManager coordinatorShouldBeginPostProcessing:forRecordPromise:];
+-[IXSAppInstallObserverManager coordinatorDidCompleteSuccessfully:forRecordPromise:];
+-[IXSAppInstallObserverManager coordinator:canceledWithReason:client:];
+-[IXSAppInstallObserverManager coordinator:didUpdateProgress:forPhase:overallProgress:];
+-[IXSAppInstallObserverManager promiseDidCompleteSuccessfully:];
+-[IXSAppInstallObserverManager promise:canceledWithReason:client:];
+-[IXSAppInstallObserverManager internalQueue];
+-[IXSAppInstallObserverManager clientToObserverServiceNameMap];
+-[IXSAppInstallObserverManager serviceRespondsToMap];
+-[IXSAppInstallObserverManager serviceToConnectionMap];
+-[IXSAppInstallObserverManager clientToObserverEndpointMap];
+-[IXSAppInstallObserverManager listenerRespondsToMap];
+-[IXSAppInstallObserverManager clientConnections];
+
+@end
+
+@interface IXSAppRemovabilityManager : NSObject {
+    /* instance variables */
+    @"NSMutableDictionary" _allAppRemovability;
+    @"IXDataStoreClock" _removabilityChangeClock;
+    @"NSObject<OS_dispatch_queue>" _queue;
+}
+
+@property (T@"NSMutableDictionary",&,N,V_allAppRemovability) allAppRemovability;
+@property (T@"IXDataStoreClock",&,N,V_removabilityChangeClock) removabilityChangeClock;
+@property (T@"NSObject<OS_dispatch_queue>",R,N,V_queue) queue;
+@property (T@"NSURL",R,D,N) removabilityURL;
+
+/* class methods */
++[IXSAppRemovabilityManager sharedInstance];
++[IXSAppRemovabilityManager stringForRemovability:];
+
+/* instance methods */
+-[IXSAppRemovabilityManager init];
+-[IXSAppRemovabilityManager _onQueue_handleStateChangeForIdentity:updatedRemovability:];
+-[IXSAppRemovabilityManager removabilityURL];
+-[IXSAppRemovabilityManager removabilityMetadataForAppWithIdentity:];
+-[IXSAppRemovabilityManager removabilityForAppWithIdentity:client:];
+-[IXSAppRemovabilityManager setRemovability:forAppWithIdentity:byClient:error:];
+-[IXSAppRemovabilityManager _onQueue_removeLegacyRemovabilityFiles];
+-[IXSAppRemovabilityManager _onQueue_writeRemovabilityWithError:];
+-[IXSAppRemovabilityManager _enumerateRemovability:];
+-[IXSAppRemovabilityManager removabilityInfoForAllIdentities];
+-[IXSAppRemovabilityManager clearRemovabilityStateForIdentity:error:];
+-[IXSAppRemovabilityManager removabilityDataWithChangeClock:];
+-[IXSAppRemovabilityManager allAppRemovability];
+-[IXSAppRemovabilityManager setAllAppRemovability:];
+-[IXSAppRemovabilityManager removabilityChangeClock];
+-[IXSAppRemovabilityManager setRemovabilityChangeClock:];
+-[IXSAppRemovabilityManager queue];
+
+@end
+
+@interface IXSAppUninstallAlert : IXSUninstallAlert {
+    /* instance variables */
+    B _appManagedByManagedSettings;
+    @"NSArray" _fontFamilies;
+    ^{__CFBundle=} _appStringsBundle;
+    @"NSString" _appStringsTableName;
+}
+
+@property (TB,R,D,N) needsShowFontsButton;
+@property (TB,R,D,N) appHasInstalledFonts;
+@property (T@"NSArray",R,N,V_fontFamilies) fontFamilies;
+@property (Tq,R,D,N) installedFontCount;
+@property (TB,R,D,N) appHasAppManagedFeaturesEntitlement;
+@property (TB,R,N,V_appManagedByManagedSettings) appManagedByManagedSettings;
+@property (T^{__CFBundle=},R,N,V_appStringsBundle) appStringsBundle;
+@property (T@"NSString",R,N,V_appStringsTableName) appStringsTableName;
+@property (TB,R,D,N) deviceHasOneHomeEnabled;
+
+/* class methods */
++[IXSAppUninstallAlert _loadHBMCloudSyncUtilityClass];
+
+/* instance methods */
+-[IXSAppUninstallAlert initWithAppRecord:bundleIdentifier:removability:isManagedByManagedSettings:deletionIsRestricted:];
+-[IXSAppUninstallAlert appIsRemovable];
+-[IXSAppUninstallAlert deviceHasOneHomeEnabled];
+-[IXSAppUninstallAlert appHasAppManagedFeaturesEntitlement];
+-[IXSAppUninstallAlert appHasInstalledFonts];
+-[IXSAppUninstallAlert needsShowFontsButton];
+-[IXSAppUninstallAlert installedFontCount];
+-[IXSAppUninstallAlert customizedLocalizedStringForKey:];
+-[IXSAppUninstallAlert localizedStringForKey:withFormatHint:];
+-[IXSAppUninstallAlert appInstalledFonts];
+-[IXSAppUninstallAlert title];
+-[IXSAppUninstallAlert _customDeleteStringForMessagesApp];
+-[IXSAppUninstallAlert message];
+-[IXSAppUninstallAlert defaultButtonLabel];
+-[IXSAppUninstallAlert cancelButtonLabel];
+-[IXSAppUninstallAlert otherButtonLabel];
+-[IXSAppUninstallAlert optionalButtonForNotRemovableAppLabel];
+-[IXSAppUninstallAlert optionalButtonForNotRemovableAppActionURL];
+-[IXSAppUninstallAlert otherButtonActionWithCompletion:];
+-[IXSAppUninstallAlert dealloc];
+-[IXSAppUninstallAlert fontFamilies];
+-[IXSAppUninstallAlert appManagedByManagedSettings];
+-[IXSAppUninstallAlert appStringsBundle];
+-[IXSAppUninstallAlert appStringsTableName];
+
+@end
+
+@interface IXSAppUninstaller : NSObject <IXSAppUninstallerProtocol>
+
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* class methods */
++[IXSAppUninstaller sharedUninstaller];
+
+/* instance methods */
+-[IXSAppUninstaller uninstallParallelPlaceholderForIdentity:reason:];
+-[IXSAppUninstaller _promptViewHealthKitDataWithIdentity:record:];
+-[IXSAppUninstaller _postUninstallAlertsWithIdentity:flags:record:];
+-[IXSAppUninstaller _dextIDsForBundleID:];
+-[IXSAppUninstaller _acquireTerminationAssertion:forIdentity:excludingApp:withError:];
+-[IXSAppUninstaller _performUninstallOfAppWithIdentity:clientName:withFlags:record:completion:];
+-[IXSAppUninstaller _promptForRelatedDataAndUninstallAppWithRecord:identity:clientName:flags:completion:];
+-[IXSAppUninstaller _promptForMoveOrDeleteAppRecord:identity:clientName:flags:completion:removability:];
+-[IXSAppUninstaller _promptForUnlockOfAppRecord:identity:clientName:flags:completion:removability:];
+-[IXSAppUninstaller _loadScreenTimeCore];
+-[IXSAppUninstaller _stManagementStateClass];
+-[IXSAppUninstaller _screenTimeManagementEnabled];
+-[IXSAppUninstaller _loadWebBookmarks];
+-[IXSAppUninstaller _wbWebFilterSettingsClass];
+-[IXSAppUninstaller _webContentFilterEnabled];
+-[IXSAppUninstaller _contentRestrictionIsEnabledForBundleID:];
+-[IXSAppUninstaller _finalDeletionPromptWithRecord:identity:clientName:flags:removability:completion:];
+-[IXSAppUninstaller _promptForGatingDefaultAppDeletionWithRecord:identity:clientName:flags:removability:completion:];
+-[IXSAppUninstaller _displayDeletionSheetIfRequiredForRecord:identity:clientName:flags:completion:removability:];
+-[IXSAppUninstaller _stCommunicationClientClass];
+-[IXSAppUninstaller _stAuthenticationResultClass];
+-[IXSAppUninstaller _loadFamilyControls];
+-[IXSAppUninstaller _foAuthorizationCenterClass];
+-[IXSAppUninstaller _foAuthorizationRecordClass];
+-[IXSAppUninstaller _requireScreenTimePinForBundleID:];
+-[IXSAppUninstaller _promptForDeletionWithRecord:identity:clientName:flags:completion:removability:];
+-[IXSAppUninstaller _displayAuthenticationErrorForApp:];
+-[IXSAppUninstaller _promptToOverrideManagedSettingsOfAppWithRecord:identity:clientName:flags:completion:];
+-[IXSAppUninstaller _uninstallAppWithRecord:identity:clientName:flags:removability:completion:];
+-[IXSAppUninstaller uninstallAppWithIdentity:clientName:options:completion:];
+
+@end
+
+@interface IXSAppUpdateScheduler : NSObject <IXSAppUpdateSchedulerProtocol> {
+    /* instance variables */
+    @"NSObject<OS_dispatch_queue>" _internalQueue;
+    @"NSObject<OS_dispatch_queue>" _scheduleQueue;
+    @"NSObject<OS_dispatch_queue>" _coordinatorQueue;
+    @"<IXSBackgroundSchedulerProtocol>" _backgroundScheduler;
+}
+
+@property (T@"NSObject<OS_dispatch_queue>",R,N,V_internalQueue) internalQueue;
+@property (T@"NSObject<OS_dispatch_queue>",R,N,V_scheduleQueue) scheduleQueue;
+@property (T@"NSObject<OS_dispatch_queue>",R,N,V_coordinatorQueue) coordinatorQueue;
+@property (T@"<IXSBackgroundSchedulerProtocol>",R,N,V_backgroundScheduler) backgroundScheduler;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* class methods */
++[IXSAppUpdateScheduler sharedInstance];
++[IXSAppUpdateScheduler supportsSecureCoding];
+
+/* instance methods */
+-[IXSAppUpdateScheduler _internalInit];
+-[IXSAppUpdateScheduler initWithBackgroundScheduler:];
+-[IXSAppUpdateScheduler encodeWithCoder:];
+-[IXSAppUpdateScheduler initWithCoder:];
+-[IXSAppUpdateScheduler _onQueue_deregisterTaskWithDASWithIdentifier:];
+-[IXSAppUpdateScheduler _onQueue_invokeInstallerForTask:];
+-[IXSAppUpdateScheduler _onQueue_registerUpdateRequestForTask:];
+-[IXSAppUpdateScheduler _onQueue_scheduleUpdateRequestForTask:error:];
+-[IXSAppUpdateScheduler scheduleUpdateInstallForCoordinatorUUID:error:];
+-[IXSAppUpdateScheduler removeUpdateRequestForCoordinatorUUID:];
+-[IXSAppUpdateScheduler internalQueue];
+-[IXSAppUpdateScheduler scheduleQueue];
+-[IXSAppUpdateScheduler coordinatorQueue];
+-[IXSAppUpdateScheduler backgroundScheduler];
+
+@end
+
+@interface IXSBackgroundTaskScheduler : NSObject <IXSBackgroundSchedulerProtocol> {
+    /* instance variables */
+    @"BGSystemTaskScheduler" _backgroundScheduler;
+}
+
+@property (T@"BGSystemTaskScheduler",R,N,V_backgroundScheduler) backgroundScheduler;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* class methods */
++[IXSBackgroundTaskScheduler supportsSecureCoding];
+
+/* instance methods */
+-[IXSBackgroundTaskScheduler init];
+-[IXSBackgroundTaskScheduler encodeWithCoder:];
+-[IXSBackgroundTaskScheduler initWithCoder:];
+-[IXSBackgroundTaskScheduler submitTaskRequest:error:];
+-[IXSBackgroundTaskScheduler registerForTaskWithIdentifier:usingQueue:launchHandler:];
+-[IXSBackgroundTaskScheduler taskRequestForIdentifier:];
+-[IXSBackgroundTaskScheduler constructTaskRequestWithIdentifier:];
+-[IXSBackgroundTaskScheduler deregisterTaskWithIdentifier:];
+-[IXSBackgroundTaskScheduler backgroundScheduler];
+
+@end
+
+@interface IXSCacheDelete : NSObject {
+    /* instance variables */
+    @"NSObject<OS_dispatch_queue>" _internalQueue;
+}
+
+@property (T@"NSObject<OS_dispatch_queue>",R,N,V_internalQueue) internalQueue;
+
+/* class methods */
++[IXSCacheDelete configureService];
+
+/* instance methods */
+-[IXSCacheDelete _onQueue_sizeForPurgeableCoordinators:];
+-[IXSCacheDelete _onQueue_purge:urgency:];
+-[IXSCacheDelete _onQueue_validateVolumeKey:];
+-[IXSCacheDelete _purge:urgency:];
+-[IXSCacheDelete _purgeable:urgency:];
+-[IXSCacheDelete _registerCacheDeleteInfoCallbacks];
+-[IXSCacheDelete init];
+-[IXSCacheDelete internalQueue];
+
+@end
+
+@interface IXSClientConnection : NSObject <IXClientProtocol> {
+    /* instance variables */
+    B _invalidated;
+    B _fakeClientProcessDeath;
+    @"NSString" _clientName;
+    @"NSUUID" _connectionUUID;
+    @"NSXPCConnection" _xpcConnection;
+    @"NSObject<OS_dispatch_queue>" _internalQueue;
+    @"NSCountedSet" _interestedCoordinatorUUIDs;
+    @"NSCountedSet" _interestedPromiseUUIDs;
+    {?="val"[8I]} _clientAuditToken;
+}
+
+@property (T@"NSXPCConnection",W,N,V_xpcConnection) xpcConnection;
+@property (TB,N,V_invalidated) invalidated;
+@property (TB,N,V_fakeClientProcessDeath) fakeClientProcessDeath;
+@property (T{?=[8I]},R,N,V_clientAuditToken) clientAuditToken;
+@property (T@"NSObject<OS_dispatch_queue>",R,N,V_internalQueue) internalQueue;
+@property (T@"NSCountedSet",R,N,V_interestedCoordinatorUUIDs) interestedCoordinatorUUIDs;
+@property (T@"NSCountedSet",R,N,V_interestedPromiseUUIDs) interestedPromiseUUIDs;
+@property (T@"NSString",R,N,V_clientName) clientName;
+@property (T@"NSUUID",R,N,V_connectionUUID) connectionUUID;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* instance methods */
+-[IXSClientConnection initWithConnection:];
+-[IXSClientConnection clientProcessExists];
+-[IXSClientConnection connectionInvalidated];
+-[IXSClientConnection description];
+-[IXSClientConnection addInterestedCoordinatorUUIDs:];
+-[IXSClientConnection addInterestedCoordinatorUUID:];
+-[IXSClientConnection removeInterestedCoordinatorUUIDs:];
+-[IXSClientConnection removeInterestedCoordinatorUUID:];
+-[IXSClientConnection interestedInCoordinatorUUID:];
+-[IXSClientConnection cancelOrphanedPromisesAndRemovePromiseReferences];
+-[IXSClientConnection addInterestedPromiseUUID:];
+-[IXSClientConnection addInterestedPromiseUUIDs:];
+-[IXSClientConnection removeInterestedPromiseUUIDs:];
+-[IXSClientConnection removeInterestedPromiseUUID:];
+-[IXSClientConnection interestedInPromiseUUID:];
+-[IXSClientConnection _remote_createPlaceholderDataPromiseWithSeed:completion:];
+-[IXSClientConnection _remote_createTransferToPathDataPromiseWithSeed:completion:];
+-[IXSClientConnection _remote_createStreamingZipTransferDataPromiseWithSeed:completion:];
+-[IXSClientConnection _remote_createInMemoryDataPromiseWithSeed:data:completion:];
+-[IXSClientConnection _remote_createInMemoryDictionaryPromiseWithSeed:dictionary:completion:];
+-[IXSClientConnection _remote_createOutOfBandTransferPromiseWithSeed:completion:];
+-[IXSClientConnection _remote_createOutOfBandStreamingZipTransferDataPromiseWithSeed:completion:];
+-[IXSClientConnection _remote_createAppReferenceDataPromiseWithSeed:ifMatchingPredicate:completion:];
+-[IXSClientConnection _remote_createAppInstallCoordinatorWithSeed:createIfNotExisting:requireMatchingIntent:scopeRequirement:completion:];
+-[IXSClientConnection _remote_fetchSeedsForCoordinatorsWithIntent:completion:];
+-[IXSClientConnection _remote_fetchRegisteredDataPromiseInfoForCreator:completion:];
+-[IXSClientConnection _remote_checkIfDataPromiseExistsForUUID:completion:];
+-[IXSClientConnection _remote_cancelCoordinatorForAppWithIdentity:reason:client:completion:];
+-[IXSClientConnection _remote_cancelCoordinatorsForAppsWithIdentities:reason:client:completion:];
+-[IXSClientConnection _remote_setIsPaused:forCoordinatorForAppWithIdentity:completion:];
+-[IXSClientConnection _remote_prioritizeCoordinatorForAppWithIdentity:completion:];
+-[IXSClientConnection _remote_purgeRegisteredCoordinatorsAndPromisesForCreator:completion:];
+-[IXSClientConnection _remote_killDaemonForTestingWithCompletion:];
+-[IXSClientConnection _remote_pingDaemonWithCompletion:];
+-[IXSClientConnection _remote_fakeClientDeathWithCompletion:];
+-[IXSClientConnection _remote_postNSCurrentLocaleDidChangeNotification:];
+-[IXSClientConnection _remote_fetchDuplicatedClassInfo:];
+-[IXSClientConnection _remote_setTestingEnabled:completion:];
+-[IXSClientConnection _remote_setTestModeForIdentifierPrefix:testMode:testSpecificValidationData:completion:];
+-[IXSClientConnection _remote_registerContentsForDiskImageAtURL:options:completion:];
+-[IXSClientConnection _remote_unregisterContentsForDiskImageAtURL:options:completion:];
+-[IXSClientConnection _remote_registerContentForOSModuleAtURL:options:completion:];
+-[IXSClientConnection _remote_unregisterContentForOSModuleAtURL:options:completion:];
+-[IXSClientConnection _remote_setKnownOSModuleURLs:options:completion:];
+-[IXSClientConnection _remote_registerRootContentForBundles:options:completion:];
+-[IXSClientConnection _remote_unregisterRootContentForBundles:options:completion:];
+-[IXSClientConnection _remote_associateMultiPersonaAppsWithBundleIDs:withPersona:completion:];
+-[IXSClientConnection _remote_addBundleIDs:toMappingsForPersona:completion:];
+-[IXSClientConnection _remote_removeBundleIDs:fromMappingsForPersona:completion:];
+-[IXSClientConnection _remote_addPersonaForUniqueString:toAppWithBundleID:inDomain:completion:];
+-[IXSClientConnection _remote_removePersonaForUniqueString:fromAppWithBundleID:inDomain:completion:];
+-[IXSClientConnection _remote_enrollPersonaForUniqueString:forApps:inDomain:completion:];
+-[IXSClientConnection _remote_setPersonasForUniqueStrings:onAppWithBundleID:inDomain:completion:];
+-[IXSClientConnection _remote_recordAppReplacementNotApplicableForAppIdentity:options:completion:];
+-[IXSClientConnection _remote_appReplacementRefusedForAppIdentity:options:completion:];
+-[IXSClientConnection _remote_resetAppReplacementStateForAppIdentity:options:completion:];
+-[IXSClientConnection _remote_performAppReplacementFromAppIdentity:toAppIdentity:options:completion:];
+-[IXSClientConnection _remote_resumeInterruptedAppReplacementWithOptions:completion:];
+-[IXSClientConnection _remote_removabilityForAppWithIdentity:completion:];
+-[IXSClientConnection _remote_removabilityForAppWithIdentity:byClient:completion:];
+-[IXSClientConnection _remote_setRemovability:forAppWithIdentity:byClient:completion:];
+-[IXSClientConnection _remote_removabilityDataWithCompletion:];
+-[IXSClientConnection _remote_defaultAppMetadataForAppIdentity:completion:];
+-[IXSClientConnection _remote_defaultAppMetadataListWithCompletion:];
+-[IXSClientConnection _remote_uninstallAppWithIdentity:options:completion:];
+-[IXSClientConnection _remote_revertAppWithIdentity:completion:];
+-[IXSClientConnection _remote_refreshContainersWithOptions:forAppWithIdentity:completion:];
+-[IXSClientConnection _remote_registerObserverMachServiceName:forClientIdentifiers:respondingToSelectors:];
+-[IXSClientConnection _remote_registerTransientObserver:forClientIdentifiers:respondingToSelectors:];
+-[IXSClientConnection _remote_displayUserPresentableErrorForApp:code:];
+-[IXSClientConnection _remote_displayUserPresentableErrorForApps:code:];
+-[IXSClientConnection _remote_displayUserPresentableErrorForAppWithLocalizedName:code:];
+-[IXSClientConnection _remote_addObserversForCoordinatorsWithUUIDs:fireObserverMethods:];
+-[IXSClientConnection _remote_removeObserverForCoordinatorWithUUID:];
+-[IXSClientConnection _remote_addObserversForDataPromisesWithUUIDs:];
+-[IXSClientConnection _remote_removeObserverForDataPromiseWithUUID:];
+-[IXSClientConnection _remote_updateSINFForAppWithIdentity:sinfData:options:completion:];
+-[IXSClientConnection _remote_updateiTunesMetadata:forAppWithIdentity:completion:];
+-[IXSClientConnection _remote_iTunesMetadataForRemovableSystemAppWithIdentity:completion:];
+-[IXSClientConnection _remote_stagingLocationForInstallLocation:completion:];
+-[IXSClientConnection _fetchIXSCoordinatedAppInstallForUUID:method:andRunWithCoordinator:error:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:appAssetPromiseHasBegunFulfillment:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:cancelForReason:client:completion:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:fireObserversWithCompletion:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:getAppAssetPromise:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:getAppAssetPromiseDRI:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:getCoordinationState:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:getErrorInfo:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:getInitialODRAssetPromises:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:getIsComplete:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:getIsPausedWithCompletion:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:getPlaceholderPromise:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:getPreparationPromise:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:getUserDataPromise:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:getDeviceSecurityPromise:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:getHasDeviceSecurityPromise:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:setNeedsPostProcessing:completion:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:getNeedsPostProcessing:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:getPostProcessingShouldBegin:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:setEssentialAssetPromiseUUIDs:completion:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:getEssentialAssetPromises:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:hasEssentialAssetPromises:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:setDataImportPromiseUUIDs:completion:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:getDataImportPromises:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:hasDataImportPromises:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:getUserDataRestoreShouldBegin:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:hasAppAssetPromise:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:hasInitialODRAssetPromises:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:hasInstallOptions:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:getInstallOptions:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:hasPlaceholderPromise:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:hasUserDataPromise:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:setImportance:completion:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:importanceWithCompletion:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:conveyPriorityReplacingExisting:withCompletion:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:prioritizeWithCompletion:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:setTargetGizmoPairingID:completion:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:targetGizmoPairingIDWithCompletion:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:setAppAssetPromiseDRI:completion:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:setAppAssetPromiseUUID:completion:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:setInitialODRAssetPromiseUUIDs:completion:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:setInstallOptionsPromiseUUID:completion:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:setIsPaused:completion:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:setPlaceholderPromiseUUID:completion:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:setPreparationPromiseUUID:completion:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:setUserDataPromiseUUID:completion:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:setDeviceSecurityPromiseUUID:completion:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:getCoordinatorScopeWithCompletion:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:convertToGloballyScopedWithCompletion:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:setPlaceholderDisposition:completion:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:getPlaceholderDispositionWithCompletion:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:setProgressHint:completion:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:getProgressHintWithCompletion:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:setRemovability:byClient:completion:];
+-[IXSClientConnection _remote_IXSCoordinatedAppInstall:removabilityWithCompletion:];
+-[IXSClientConnection _fetchDataPromiseForUUID:method:andRunWithPromise:error:];
+-[IXSClientConnection _remote_IXSDataPromise:getPercentComplete:];
+-[IXSClientConnection _remote_IXSDataPromise:setPercentComplete:];
+-[IXSClientConnection _remote_IXSDataPromise:getIsComplete:];
+-[IXSClientConnection _remote_IXSDataPromise:setIsComplete:completion:];
+-[IXSClientConnection _remote_IXSDataPromise:cancelForReason:client:completion:];
+-[IXSClientConnection _remote_IXSDataPromise:resetWithCompletion:];
+-[IXSClientConnection _remote_IXSDataPromise:getErrorInfo:];
+-[IXSClientConnection _remote_IXSDataPromise:preflightWithCompletion:];
+-[IXSClientConnection _fetchOwnedDataPromiseForUUID:method:andRunWithPromise:error:];
+-[IXSClientConnection _remote_IXSOwnedDataPromise:setStagedPath:];
+-[IXSClientConnection _remote_IXSOwnedDataPromise:getStagedPath:];
+-[IXSClientConnection _remote_IXSOwnedDataPromise:setTargetLastPathComponent:withCompletion:];
+-[IXSClientConnection _remote_IXSOwnedDataPromise:getTargetLastPathComponent:];
+-[IXSClientConnection _fetchPlaceholderForUUID:method:andRunWithPromise:error:];
+-[IXSClientConnection _remote_IXSPlaceholder:setMetadataPromiseUUID:completion:];
+-[IXSClientConnection _remote_IXSPlaceholder:getMetadataWithCompletion:];
+-[IXSClientConnection _remote_IXSPlaceholder:setSinfPromiseUUID:completion:];
+-[IXSClientConnection _remote_IXSPlaceholder:getSinfDataWithCompletion:];
+-[IXSClientConnection _remote_IXSPlaceholder:setLaunchProhibited:completion:];
+-[IXSClientConnection _remote_IXSPlaceholder:getLaunchProhibitedWithCompletion:];
+-[IXSClientConnection _remote_IXSPlaceholder:setAttributes:completion:];
+-[IXSClientConnection _remote_IXSPlaceholder:getAttributesWithCompletion:];
+-[IXSClientConnection _remote_IXSPlaceholder:setIconPromiseUUID:completion:];
+-[IXSClientConnection _remote_IXSPlaceholder:hasIconPromise:];
+-[IXSClientConnection _remote_IXSPlaceholder:getIconPromise:];
+-[IXSClientConnection _remote_IXSPlaceholder:setIconResourcesPromiseUUID:withInfoPlistIconContentPromiseUUID:completion:];
+-[IXSClientConnection _remote_IXSPlaceholder:hasIconResourcesPromise:];
+-[IXSClientConnection _remote_IXSPlaceholder:getIconResourcesPromiseAndInfoPlistContentPromise:];
+-[IXSClientConnection _remote_IXSPlaceholder:setLocalizationPromiseUUID:completion:];
+-[IXSClientConnection _remote_IXSPlaceholder:getLocalizationDictionary:];
+-[IXSClientConnection _remote_IXSPlaceholder:setEntitlementsPromiseUUID:completion:];
+-[IXSClientConnection _remote_IXSPlaceholder:hasEntitlementsPromise:];
+-[IXSClientConnection _remote_IXSPlaceholder:getEntitlementsPromise:];
+-[IXSClientConnection _remote_IXSPlaceholder:setInfoPlistLoctablePromiseUUID:completion:];
+-[IXSClientConnection _remote_IXSPlaceholder:hasInfoPlistLoctablePromise:];
+-[IXSClientConnection _remote_IXSPlaceholder:getInfoPlistLoctablePromise:];
+-[IXSClientConnection _remote_IXSPlaceholder:setAppExtensionPlaceholderPromiseUUIDs:completion:];
+-[IXSClientConnection _remote_IXSPlaceholder:hasAppExtensionPlaceholderPromises:];
+-[IXSClientConnection _remote_IXSPlaceholder:getAppExtensionPlaceholderPromises:];
+-[IXSClientConnection _remote_IXSPlaceholder:setConfigurationCompleteWithCompletion:];
+-[IXSClientConnection _fetchPromisedTransferToPathForUUID:method:andRunWithPromise:error:];
+-[IXSClientConnection _remote_IXSPromisedTransferToPath:setTransferPath:];
+-[IXSClientConnection _remote_IXSPromisedTransferToPath:setShouldCopy:];
+-[IXSClientConnection _remote_IXSPromisedTransferToPath:setTryDeltaCopy:];
+-[IXSClientConnection _fetchPromisedStreamingZipTransferForUUID:method:andRunWithPromise:error:];
+-[IXSClientConnection _remote_IXSPromisedStreamingZipTransfer:setArchiveBytesConsumed:];
+-[IXSClientConnection _fetchPromisedOutOfBandStreamingZipTransferForUUID:method:andRunWithPromise:error:];
+-[IXSClientConnection _remote_IXSPromisedOutOfBandStreamingZipTransfer:setArchiveBytesConsumed:];
+-[IXSClientConnection _client_coordinatorDidRegisterForObservationWithUUID:];
+-[IXSClientConnection _client_coordinatorShouldPrioritizeWithUUID:];
+-[IXSClientConnection _client_coordinatorShouldResumeWithUUID:];
+-[IXSClientConnection _client_coordinatorShouldPauseWithUUID:];
+-[IXSClientConnection _client_coordinatorWithUUID:configuredPromiseDidBeginFulfillment:];
+-[IXSClientConnection _client_coordinatorShouldBeginRestoringUserDataWithUUID:];
+-[IXSClientConnection _client_coordinatorShouldBeginPostProcessingWithUUID:forRecordPromise:];
+-[IXSClientConnection _client_coordinatorDidInstallPlaceholderWithUUID:forRecordPromise:];
+-[IXSClientConnection _client_coordinatorDidCompleteSuccessfullyWithUUID:forRecordPromise:];
+-[IXSClientConnection _client_coordinatorWithUUID:didCancelWithReason:client:];
+-[IXSClientConnection _client_coordinatorWithUUID:didUpdateProgress:forPhase:overallProgress:];
+-[IXSClientConnection _client_promiseDidCompleteSuccessfullyWithUUID:];
+-[IXSClientConnection _client_promiseWithUUID:didCancelWithReason:client:];
+-[IXSClientConnection clientName];
+-[IXSClientConnection connectionUUID];
+-[IXSClientConnection xpcConnection];
+-[IXSClientConnection setXpcConnection:];
+-[IXSClientConnection invalidated];
+-[IXSClientConnection setInvalidated:];
+-[IXSClientConnection fakeClientProcessDeath];
+-[IXSClientConnection setFakeClientProcessDeath:];
+-[IXSClientConnection clientAuditToken];
+-[IXSClientConnection internalQueue];
+-[IXSClientConnection interestedCoordinatorUUIDs];
+-[IXSClientConnection interestedPromiseUUIDs];
+
+@end
+
+@interface IXSClientConnectionManager : NSObject <NSXPCListenerDelegate> {
+    /* instance variables */
+    @"NSHashTable" _allConnections;
+    @"NSObject<OS_dispatch_queue>" _allConnectionsQueue;
+    @"NSXPCListener" _serviceListener;
+}
+
+@property (T@"NSHashTable",R,N,V_allConnections) allConnections;
+@property (T@"NSObject<OS_dispatch_queue>",R,N,V_allConnectionsQueue) allConnectionsQueue;
+@property (T@"NSXPCListener",&,N,V_serviceListener) serviceListener;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* class methods */
++[IXSClientConnectionManager configureService];
++[IXSClientConnectionManager sharedInstance];
+
+/* instance methods */
+-[IXSClientConnectionManager init];
+-[IXSClientConnectionManager listener:shouldAcceptNewConnection:];
+-[IXSClientConnectionManager allConnections];
+-[IXSClientConnectionManager allConnectionsQueue];
+-[IXSClientConnectionManager serviceListener];
+-[IXSClientConnectionManager setServiceListener:];
+
+@end
+
+@interface IXSContainerRefreshManager : NSObject
+
+/* class methods */
++[IXSContainerRefreshManager sharedInstance];
+
+/* instance methods */
+-[IXSContainerRefreshManager _onQueue_terminateBundleID:withOptions:terminationAssertion:error:];
+-[IXSContainerRefreshManager _onQueue_refreshContainerTypes:forAppWithIdentity:error:];
+-[IXSContainerRefreshManager refreshContainerTypesWithOptions:forAppWithIdentity:completion:];
+
+@end
+
+@interface IXSContentRestrictedAppDeleteAlert : IXSUninstallAlert {
+    /* instance variables */
+    Q _appType;
+}
+
+@property (TQ,R,N,V_appType) appType;
+
+/* instance methods */
+-[IXSContentRestrictedAppDeleteAlert initWithAppRecord:removability:appType:];
+-[IXSContentRestrictedAppDeleteAlert title];
+-[IXSContentRestrictedAppDeleteAlert message];
+-[IXSContentRestrictedAppDeleteAlert defaultButtonLabel];
+-[IXSContentRestrictedAppDeleteAlert displayAlertWithCompletion:];
+-[IXSContentRestrictedAppDeleteAlert appType];
+
+@end
+
+@interface IXSCoordinatedAppInstall : NSObject <IXSDataPromiseDelegate, IXSCoordinatorProgressDelegate, NSSecureCoding, IXSAppUpdateSchedulerDelegate, IXSCacheDeleteUpdateCompleteDelegate, IXSCoordinatedAppInstallProtocol> {
+    /* instance variables */
+    B _needsPostProcessing;
+    B _isPaused;
+    B _complete;
+    B _isTracked;
+    C _coordinatorScope;
+    B _currentProgressPhaseIsComplete;
+    B _sentBeginRestoringUserData;
+    B _expectTermAssertionCallback;
+    B _appAssetPromiseSetterCanInstallLocalProvisionedContent;
+    B _sentBeginPostProcessing;
+    B _isMacPlatformApp;
+    {os_unfair_lock_s="_os_unfair_lock_opaque"I} _externalPropertyLock;
+    @"<IXSAppUpdateSchedulerProtocol>" _updateScheduler;
+    @"MIStagedUpdateMetadata" _stagedUpdateMetadata;
+    @"IXSPlaceholder" _placeholderPromise;
+    @"IXSOwnedDataPromise" _appAssetPromise;
+    Q _appAssetPromiseDRI;
+    @"NSArray" _initialODRAssetPromises;
+    @"IXSPromisedOutOfBandTransfer" _userDataPromise;
+    @"IXSPromisedOutOfBandTransfer" _deviceSecurityPromise;
+    @"IXSPromisedOutOfBandTransfer" _preparationPromise;
+    @"IXSOwnedDataPromise" _installOptionsPromise;
+    @"NSArray" _essentialAssetPromises;
+    @"NSArray" _dataImportPromises;
+    @"NSUUID" _targetGizmoPairingID;
+    Q _importance;
+    Q _newRemovability;
+    Q _newRemovabilityClient;
+    Q _savedRemovability;
+    Q _savedRemovabilityClient;
+    @? _priorityBoostCompletion;
+    @"NSString" _priorityBoostSourceInfo;
+    @"LSRecordPromise" _completedRecordPromise;
+    Q _effectiveIntent;
+    @"IXSClientConnection" _scopedToConnection;
+    @"IXProgressHint" _progressHint;
+    Q _placeholderDisposition;
+    @"IXAppInstallCoordinatorSeed" _seed;
+    @"NSObject<OS_dispatch_queue>" _internalQueue;
+    @"NSObject<OS_dispatch_queue>" _delegateCallQueue;
+    @"NSObject<OS_dispatch_group>" _outstandingInstallOperationsGroup;
+    @"NSError" _error;
+    Q _errorSourceIdentifier;
+    @"NSUUID" _installOptionsPromiseUUID;
+    @"NSUUID" _placeholderPromiseUUID;
+    @"NSUUID" _appAssetPromiseUUID;
+    @"NSArray" _initialODRAssetPromiseUUIDs;
+    @"NSUUID" _userDataPromiseUUID;
+    @"NSUUID" _deviceSecurityPromiseUUID;
+    @"NSUUID" _preparationPromiseUUID;
+    @"NSProgress" _cachedCurrentPhaseProgress;
+    @"NSMutableArray" _pendingProgressRequests;
+    Q _placeholderInstallState;
+    Q _appInstallState;
+    @"IXSPlaceholderFailureInfo" _placeholderFailureInfo;
+    Q _originalInstallType;
+    @"IXSPowerAssertion" _appInstallPowerAssertion;
+    @"IXTerminationAssertion" _termAssertion;
+    @"NSObject<OS_dispatch_source>" _assertionRetryTimer;
+    Q _assertionRetryCount;
+    @"NSDate" _firstAppExtensionBusyTime;
+    @"IXSCoordinatorProgress" _coordinatorProgress;
+    @"IPPublishedIdentityProgress" _publishedInstallProgress;
+    @"NSObject<OS_os_transaction>" _transaction;
+    @"NSObject<OS_os_transaction>" _assertionTransaction;
+    @"NSArray" _essentialAssetPromiseUUIDs;
+    @"NSArray" _dataImportPromiseUUIDs;
+    Q _postProcessingAssertionState;
+    Q _updateScheduleState;
+    @"NSObject<OS_dispatch_queue>" _assertionQueue;
+    @? _cacheDeleteCallback;
+}
+
+@property (T@"NSObject<OS_dispatch_queue>",&,N,V_internalQueue) internalQueue;
+@property (T@"NSObject<OS_dispatch_queue>",&,N,V_delegateCallQueue) delegateCallQueue;
+@property (T@"NSObject<OS_dispatch_group>",&,N,V_outstandingInstallOperationsGroup) outstandingInstallOperationsGroup;
+@property (T{os_unfair_lock_s=I},R,N,V_externalPropertyLock) externalPropertyLock;
+@property (TQ,N,V_effectiveIntent) effectiveIntent;
+@property (TB,N,GisComplete,V_complete) complete;
+@property (T@"NSError",&,N,V_error) error;
+@property (TQ,N,V_errorSourceIdentifier) errorSourceIdentifier;
+@property (T@"IXSOwnedDataPromise",&,N,V_installOptionsPromise) installOptionsPromise;
+@property (T@"NSUUID",&,N,V_installOptionsPromiseUUID) installOptionsPromiseUUID;
+@property (TQ,N,V_importance) importance;
+@property (TQ,N,V_placeholderDisposition) placeholderDisposition;
+@property (TQ,N,V_newRemovability) newRemovability;
+@property (TQ,N,V_savedRemovability) savedRemovability;
+@property (TQ,N,V_newRemovabilityClient) newRemovabilityClient;
+@property (TQ,N,V_savedRemovabilityClient) savedRemovabilityClient;
+@property (T@"IXSPlaceholder",&,N,V_placeholderPromise) placeholderPromise;
+@property (T@"NSUUID",&,N,V_placeholderPromiseUUID) placeholderPromiseUUID;
+@property (T@"IXSOwnedDataPromise",&,N,V_appAssetPromise) appAssetPromise;
+@property (T@"NSUUID",&,N,V_appAssetPromiseUUID) appAssetPromiseUUID;
+@property (TQ,N,V_appAssetPromiseDRI) appAssetPromiseDRI;
+@property (T@"NSArray",C,N,V_initialODRAssetPromises) initialODRAssetPromises;
+@property (T@"NSArray",C,N,V_initialODRAssetPromiseUUIDs) initialODRAssetPromiseUUIDs;
+@property (T@"IXSPromisedOutOfBandTransfer",&,N,V_userDataPromise) userDataPromise;
+@property (T@"NSUUID",&,N,V_userDataPromiseUUID) userDataPromiseUUID;
+@property (T@"IXSPromisedOutOfBandTransfer",&,N,V_deviceSecurityPromise) deviceSecurityPromise;
+@property (T@"NSUUID",&,N,V_deviceSecurityPromiseUUID) deviceSecurityPromiseUUID;
+@property (T@"IXSPromisedOutOfBandTransfer",&,N,V_preparationPromise) preparationPromise;
+@property (T@"NSUUID",&,N,V_preparationPromiseUUID) preparationPromiseUUID;
+@property (T@"NSProgress",R,N,V_cachedCurrentPhaseProgress) cachedCurrentPhaseProgress;
+@property (TB,N,V_currentProgressPhaseIsComplete) currentProgressPhaseIsComplete;
+@property (T@"NSMutableArray",&,N,V_pendingProgressRequests) pendingProgressRequests;
+@property (T@"IXProgressHint",C,N,V_progressHint) progressHint;
+@property (T@"IXProgressHint",C,D,N) progressHintWithDefault;
+@property (TQ,R,N) state;
+@property (TQ,N,V_placeholderInstallState) placeholderInstallState;
+@property (TQ,N,V_appInstallState) appInstallState;
+@property (T@"IXSPlaceholderFailureInfo",&,N,V_placeholderFailureInfo) placeholderFailureInfo;
+@property (TQ,N,V_originalInstallType) originalInstallType;
+@property (TB,N,V_isPaused) isPaused;
+@property (TB,R,N,GplaceholderIsInstalled) placeholderInstalled;
+@property (T@"LSRecordPromise",&,N,V_completedRecordPromise) completedRecordPromise;
+@property (TB,N,V_sentBeginRestoringUserData) sentBeginRestoringUserData;
+@property (TB,D,N) shouldBeginRestoringUserData;
+@property (T@"IXSPowerAssertion",&,N,V_appInstallPowerAssertion) appInstallPowerAssertion;
+@property (T@"IXTerminationAssertion",&,N,V_termAssertion) termAssertion;
+@property (TB,N,V_expectTermAssertionCallback) expectTermAssertionCallback;
+@property (T@"NSObject<OS_dispatch_source>",&,N,V_assertionRetryTimer) assertionRetryTimer;
+@property (TQ,N,V_assertionRetryCount) assertionRetryCount;
+@property (T@"NSDate",&,N,V_firstAppExtensionBusyTime) firstAppExtensionBusyTime;
+@property (T@"NSUUID",&,N,V_targetGizmoPairingID) targetGizmoPairingID;
+@property (T@"IXSCoordinatorProgress",&,N,V_coordinatorProgress) coordinatorProgress;
+@property (T@"IPPublishedIdentityProgress",&,N,V_publishedInstallProgress) publishedInstallProgress;
+@property (TB,N,V_appAssetPromiseSetterCanInstallLocalProvisionedContent) appAssetPromiseSetterCanInstallLocalProvisionedContent;
+@property (T@?,C,N,V_priorityBoostCompletion) priorityBoostCompletion;
+@property (T@"NSString",&,N,V_priorityBoostSourceInfo) priorityBoostSourceInfo;
+@property (T@"IXSClientConnection",W,N,V_scopedToConnection) scopedToConnection;
+@property (TC,N,V_coordinatorScope) coordinatorScope;
+@property (T@"NSObject<OS_os_transaction>",&,N,V_transaction) transaction;
+@property (T@"NSObject<OS_os_transaction>",&,N,V_assertionTransaction) assertionTransaction;
+@property (TB,N,V_needsPostProcessing) needsPostProcessing;
+@property (TB,N,V_sentBeginPostProcessing) sentBeginPostProcessing;
+@property (TB,D,N) shouldBeginPostProcessing;
+@property (T@"NSArray",C,N,V_essentialAssetPromises) essentialAssetPromises;
+@property (T@"NSArray",C,N,V_essentialAssetPromiseUUIDs) essentialAssetPromiseUUIDs;
+@property (T@"NSArray",C,N,V_dataImportPromises) dataImportPromises;
+@property (T@"NSArray",C,N,V_dataImportPromiseUUIDs) dataImportPromiseUUIDs;
+@property (TQ,N,V_postProcessingAssertionState) postProcessingAssertionState;
+@property (TQ,N,V_updateScheduleState) updateScheduleState;
+@property (T@"NSObject<OS_dispatch_queue>",&,N,V_assertionQueue) assertionQueue;
+@property (T@?,C,N,V_cacheDeleteCallback) cacheDeleteCallback;
+@property (TB,N,V_isMacPlatformApp) isMacPlatformApp;
+@property (T@"MIStagedUpdateMetadata",&,N,V_stagedUpdateMetadata) stagedUpdateMetadata;
+@property (T@"<IXSAppUpdateSchedulerProtocol>",&,N,V_updateScheduler) updateScheduler;
+@property (T@"IXAppInstallCoordinatorSeed",R,N,V_seed) seed;
+@property (T@"IXApplicationIdentity",R,C,D,N) identity;
+@property (TQ,R,D,N) installationDomain;
+@property (T@"NSUUID",R,D,N) uniqueIdentifier;
+@property (TQ,R,D,N) originalIntent;
+@property (TQ,R,D,N) creator;
+@property (T@"NSSet",R,C,N) promiseUUIDs;
+@property (TB,N,V_isTracked) isTracked;
+@property (TQ,R,N) stagedUpdateSizeOnDisk;
+@property (TB,R,N) isUpdateScheduled;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* class methods */
++[IXSCoordinatedAppInstall supportsSecureCoding];
++[IXSCoordinatedAppInstall _fetchInstallOptionsFromPromise:error:];
+
+/* instance methods */
+-[IXSCoordinatedAppInstall _validateLocationForPromise:error:];
+-[IXSCoordinatedAppInstall _remote_cancelForReason:client:completion:];
+-[IXSCoordinatedAppInstall _remote_setPlaceholderPromiseUUID:completion:];
+-[IXSCoordinatedAppInstall _remote_getPlaceholderPromise:];
+-[IXSCoordinatedAppInstall _remote_hasPlaceholderPromise:];
+-[IXSCoordinatedAppInstall _remote_setAppAssetPromiseUUID:fromConnection:completion:];
+-[IXSCoordinatedAppInstall _remote_getAppAssetPromise:];
+-[IXSCoordinatedAppInstall _remote_hasAppAssetPromise:];
+-[IXSCoordinatedAppInstall _remote_appAssetPromiseHasBegunFulfillment:];
+-[IXSCoordinatedAppInstall _remote_getAppAssetPromiseDRI:];
+-[IXSCoordinatedAppInstall _remote_setAppAssetPromiseDRI:completion:];
+-[IXSCoordinatedAppInstall _validateParentLinkageForInstallOptions:connection:error:];
+-[IXSCoordinatedAppInstall _remote_setInstallOptionsPromiseUUID:forConnection:completion:];
+-[IXSCoordinatedAppInstall _remote_hasInstallOptions:];
+-[IXSCoordinatedAppInstall _remote_getInstallOptions:];
+-[IXSCoordinatedAppInstall _remote_setImportance:completion:];
+-[IXSCoordinatedAppInstall _remote_importanceWithCompletion:];
+-[IXSCoordinatedAppInstall _remote_conveyPriorityReplacingExisting:forConnection:withCompletion:];
+-[IXSCoordinatedAppInstall _remote_setTargetGizmoPairingID:completion:];
+-[IXSCoordinatedAppInstall _remote_targetGizmoPairingIDWithCompletion:];
+-[IXSCoordinatedAppInstall _remote_setInitialODRAssetPromiseUUIDs:completion:];
+-[IXSCoordinatedAppInstall _remote_getInitialODRAssetPromises:];
+-[IXSCoordinatedAppInstall _remote_hasInitialODRAssetPromises:];
+-[IXSCoordinatedAppInstall _remote_setUserDataPromiseUUID:completion:];
+-[IXSCoordinatedAppInstall _remote_getUserDataPromise:];
+-[IXSCoordinatedAppInstall _remote_hasUserDataPromise:];
+-[IXSCoordinatedAppInstall _remote_getUserDataRestoreShouldBegin:];
+-[IXSCoordinatedAppInstall _remote_setPreparationPromiseUUID:completion:];
+-[IXSCoordinatedAppInstall _remote_getPreparationPromise:];
+-[IXSCoordinatedAppInstall _remote_setDeviceSecurityPromiseUUID:completion:];
+-[IXSCoordinatedAppInstall _remote_getDeviceSecurityPromise:];
+-[IXSCoordinatedAppInstall _remote_getHasDeviceSecurityPromise:];
+-[IXSCoordinatedAppInstall _remote_setNeedsPostProcessing:completion:];
+-[IXSCoordinatedAppInstall _remote_getNeedsPostProcessing:];
+-[IXSCoordinatedAppInstall _remote_getPostProcessingShouldBegin:];
+-[IXSCoordinatedAppInstall _remote_setEssentialAssetPromiseUUIDs:completion:];
+-[IXSCoordinatedAppInstall _remote_getEssentialAssetPromises:];
+-[IXSCoordinatedAppInstall _remote_hasEssentialAssetPromises:];
+-[IXSCoordinatedAppInstall _remote_setDataImportPromiseUUIDs:completion:];
+-[IXSCoordinatedAppInstall _remote_getDataImportPromises:];
+-[IXSCoordinatedAppInstall _remote_hasDataImportPromises:];
+-[IXSCoordinatedAppInstall _remote_getIsComplete:];
+-[IXSCoordinatedAppInstall _remote_getErrorInfo:];
+-[IXSCoordinatedAppInstall _remote_fireObserversForClient:completion:];
+-[IXSCoordinatedAppInstall _remote_setIsPaused:completion:];
+-[IXSCoordinatedAppInstall _remote_getIsPausedWithCompletion:];
+-[IXSCoordinatedAppInstall _remote_prioritizeWithCompletion:];
+-[IXSCoordinatedAppInstall _remote_getCoordinationState:];
+-[IXSCoordinatedAppInstall _remote_getCoordinatorScopeWithCompletion:];
+-[IXSCoordinatedAppInstall _remote_convertToGloballyScopedWithCompletion:];
+-[IXSCoordinatedAppInstall _remote_setPlaceholderDisposition:completion:];
+-[IXSCoordinatedAppInstall _remote_getPlaceholderDispositionWithCompletion:];
+-[IXSCoordinatedAppInstall _remote_setProgressHint:completion:];
+-[IXSCoordinatedAppInstall _remote_getProgressHintWithCompletion:];
+-[IXSCoordinatedAppInstall _remote_setRemovability:byClient:completion:];
+-[IXSCoordinatedAppInstall _remote_removabilityWithCompletion:];
+-[IXSCoordinatedAppInstall _initInternalState];
+-[IXSCoordinatedAppInstall initWithCoder:];
+-[IXSCoordinatedAppInstall shouldEnablePostProcessingByDefault];
+-[IXSCoordinatedAppInstall _internalInitWithSeed:scopedToConnection:error:];
+-[IXSCoordinatedAppInstall initWithSeed:scopedToConnection:creatorAuditToken:error:];
+-[IXSCoordinatedAppInstall dealloc];
+-[IXSCoordinatedAppInstall encodeWithCoder:];
+-[IXSCoordinatedAppInstall awakeFromSerializationWithError:];
+-[IXSCoordinatedAppInstall _runWithExternalPropertyLock:];
+-[IXSCoordinatedAppInstall _createPowerAssertion];
+-[IXSCoordinatedAppInstall updateScheduler];
+-[IXSCoordinatedAppInstall _onAssertionQueue_setTermAssertion:];
+-[IXSCoordinatedAppInstall setTermAssertion:];
+-[IXSCoordinatedAppInstall handleFirstUnlockNotification];
+-[IXSCoordinatedAppInstall _shouldStageUpdate];
+-[IXSCoordinatedAppInstall state];
+-[IXSCoordinatedAppInstall _onQueue_isPlaceholderUnnecessary];
+-[IXSCoordinatedAppInstall _eligibleToScheduleUpdate];
+-[IXSCoordinatedAppInstall _onQueue_scheduleUpdate];
+-[IXSCoordinatedAppInstall _onQueue_checkState];
+-[IXSCoordinatedAppInstall _runAsyncBlockWithDescription:onUninstallQueue:];
+-[IXSCoordinatedAppInstall _runAsyncBlockWithDescription:onLaunchServicesQueue:];
+-[IXSCoordinatedAppInstall _onQueue_acquireTerminationAssertionWithDescription:terminationResistance:allowLaunchPredicate:completion:];
+-[IXSCoordinatedAppInstall _onQueue_convertTerminationAssertionToAllowExtensionLaunch];
+-[IXSCoordinatedAppInstall _onQueue_assertionRetrySeconds];
+-[IXSCoordinatedAppInstall _onQueue_runAssertionHandlerForPlaceholder:];
+-[IXSCoordinatedAppInstall _onQueue_handleAssertionAcquisitionFailureForPlaceholder:withError:];
+-[IXSCoordinatedAppInstall _onQueue_acquireAssertionForPlaceholder:forceAcquisition:];
+-[IXSCoordinatedAppInstall _shouldRetryInstallAttemptBasedOnPreviousResult:returnedError:targetInstallURL:retriesAttempted:totalRetries:];
+-[IXSCoordinatedAppInstall _limitedConcurrency_doRetryingInstallOperationForPlaceholder:installTargetURL:retries:error:installAttemptBlock:];
+-[IXSCoordinatedAppInstall _limitedConcurrency_installApplication:isPlaceholder:options:hasStagedUpdateWithIdentifier:retries:error:];
+-[IXSCoordinatedAppInstall _finishPlaceholderInstallAtURL:result:recordPromise:error:];
+-[IXSCoordinatedAppInstall _onQueue_fetchMetadataFromInstalledAppForOffloadWithError:];
+-[IXSCoordinatedAppInstall _onQueue_installPlaceholder];
+-[IXSCoordinatedAppInstall _onQueue_acquireAssertionAndInstallPlaceholder];
+-[IXSCoordinatedAppInstall _onQueue_fetchInstallOptionsWithError:];
+-[IXSCoordinatedAppInstall _onQueue_handleCancelForInstallFailure:];
+-[IXSCoordinatedAppInstall _finishAppInstallAtURL:result:recordPromise:error:];
+-[IXSCoordinatedAppInstall _onQueue_doAddReference:];
+-[IXSCoordinatedAppInstall stageUpdateFromAppAsset:options:retries:error:];
+-[IXSCoordinatedAppInstall _onQueue_gizmoInstallForInstallOptions:appAssetAtPath:];
+-[IXSCoordinatedAppInstall _onQueue_doInstall];
+-[IXSCoordinatedAppInstall _onQueue_acquireAssertionAndDoInstall];
+-[IXSCoordinatedAppInstall _onQueue_fireObserversForClient:];
+-[IXSCoordinatedAppInstall stagedUpdateMetadata];
+-[IXSCoordinatedAppInstall setStagedUpdateMetadata:];
+-[IXSCoordinatedAppInstall trackingStagedUpdateIdentifier];
+-[IXSCoordinatedAppInstall inPostProcessingPhase];
+-[IXSCoordinatedAppInstall stagedUpdateSizeOnDisk];
+-[IXSCoordinatedAppInstall placeholderPromise];
+-[IXSCoordinatedAppInstall setPlaceholderPromise:];
+-[IXSCoordinatedAppInstall appAssetPromise];
+-[IXSCoordinatedAppInstall _internal_setAppAssetPromise:performExternalActions:];
+-[IXSCoordinatedAppInstall _internal_setAppAssetPromise:];
+-[IXSCoordinatedAppInstall setAppAssetPromise:];
+-[IXSCoordinatedAppInstall appAssetPromiseDRI];
+-[IXSCoordinatedAppInstall setAppAssetPromiseDRI:];
+-[IXSCoordinatedAppInstall initialODRAssetPromises];
+-[IXSCoordinatedAppInstall setInitialODRAssetPromises:];
+-[IXSCoordinatedAppInstall userDataPromise];
+-[IXSCoordinatedAppInstall setUserDataPromise:];
+-[IXSCoordinatedAppInstall deviceSecurityPromise];
+-[IXSCoordinatedAppInstall setDeviceSecurityPromise:];
+-[IXSCoordinatedAppInstall preparationPromise];
+-[IXSCoordinatedAppInstall setPreparationPromise:];
+-[IXSCoordinatedAppInstall installOptionsPromise];
+-[IXSCoordinatedAppInstall _internal_setInstallOptionsPromise:performExternalActions:];
+-[IXSCoordinatedAppInstall _internal_setInstallOptionsPromise:];
+-[IXSCoordinatedAppInstall setInstallOptionsPromise:];
+-[IXSCoordinatedAppInstall needsPostProcessing];
+-[IXSCoordinatedAppInstall setNeedsPostProcessing:];
+-[IXSCoordinatedAppInstall shouldBeginPostProcessing];
+-[IXSCoordinatedAppInstall essentialAssetPromises];
+-[IXSCoordinatedAppInstall setEssentialAssetPromises:];
+-[IXSCoordinatedAppInstall dataImportPromises];
+-[IXSCoordinatedAppInstall setDataImportPromises:];
+-[IXSCoordinatedAppInstall targetGizmoPairingID];
+-[IXSCoordinatedAppInstall setTargetGizmoPairingID:];
+-[IXSCoordinatedAppInstall isPaused];
+-[IXSCoordinatedAppInstall setIsPaused:];
+-[IXSCoordinatedAppInstall setIsPaused:completion:];
+-[IXSCoordinatedAppInstall externalSetIsPaused:completion:];
+-[IXSCoordinatedAppInstall externalGetIsPaused];
+-[IXSCoordinatedAppInstall setImportance:];
+-[IXSCoordinatedAppInstall importance];
+-[IXSCoordinatedAppInstall newRemovability];
+-[IXSCoordinatedAppInstall setNewRemovability:];
+-[IXSCoordinatedAppInstall newRemovabilityClient];
+-[IXSCoordinatedAppInstall setNewRemovabilityClient:];
+-[IXSCoordinatedAppInstall savedRemovability];
+-[IXSCoordinatedAppInstall setSavedRemovability:];
+-[IXSCoordinatedAppInstall savedRemovabilityClient];
+-[IXSCoordinatedAppInstall setSavedRemovabilityClient:];
+-[IXSCoordinatedAppInstall setNewRemovabilityState:removabilityClient:];
+-[IXSCoordinatedAppInstall setPriorityBoostCompletion:withSourceInfo:];
+-[IXSCoordinatedAppInstall priorityBoostCompletion];
+-[IXSCoordinatedAppInstall priorityBoostSourceInfo];
+-[IXSCoordinatedAppInstall shouldBeginRestoringUserData];
+-[IXSCoordinatedAppInstall prioritizeWithCompletion:];
+-[IXSCoordinatedAppInstall _onQueue_prioritizeWithCompletion:];
+-[IXSCoordinatedAppInstall _onQueue_unregister];
+-[IXSCoordinatedAppInstall isComplete];
+-[IXSCoordinatedAppInstall setComplete:];
+-[IXSCoordinatedAppInstall placeholderIsInstalled];
+-[IXSCoordinatedAppInstall _placeholderOrParallelPlaceholderIsInstalledWithRecord:];
+-[IXSCoordinatedAppInstall _asyncUpdatePlaceholderMetadataWithInstallType:reason:underlyingError:client:];
+-[IXSCoordinatedAppInstall _onQueue_updatePlaceholderForFailureReason:client:installType:];
+-[IXSCoordinatedAppInstall setCompletedRecordPromise:];
+-[IXSCoordinatedAppInstall completedRecordPromise];
+-[IXSCoordinatedAppInstall _shouldRemovePlaceholderForReason:];
+-[IXSCoordinatedAppInstall _onQueue_handleAppAssetPromiseCancellationWhenRestoringWithReason:client:];
+-[IXSCoordinatedAppInstall _onQueue_removeParallelPlaceholder:];
+-[IXSCoordinatedAppInstall _onQueue_shouldDeletePlaceholderOnCancelationForReason:client:];
+-[IXSCoordinatedAppInstall _onQueue_cancelPlaceholderIfNeededForReason:client:needsLSDatabaseSync:];
+-[IXSCoordinatedAppInstall cancelForReason:client:needsLSDatabaseSync:error:];
+-[IXSCoordinatedAppInstall cancelForReason:client:error:];
+-[IXSCoordinatedAppInstall _onQueue_localizedAppName];
+-[IXSCoordinatedAppInstall _onQueue_cancelStagedUpdate];
+-[IXSCoordinatedAppInstall _onQueue_internal_cancelForReason:client:needsLSDatabaseSync:error:];
+-[IXSCoordinatedAppInstall _onQueue_internal_cancelForReason:client:];
+-[IXSCoordinatedAppInstall _onQueue_internal_saveState];
+-[IXSCoordinatedAppInstall _onQueue_saveState];
+-[IXSCoordinatedAppInstall isTracked];
+-[IXSCoordinatedAppInstall setIsTracked:];
+-[IXSCoordinatedAppInstall _updatePendingOperationsForChangeFromPreviousState:toNewState:];
+-[IXSCoordinatedAppInstall setPlaceholderInstallState:];
+-[IXSCoordinatedAppInstall setPlaceholderInstallState:withLSRecordPromiseForCompletion:];
+-[IXSCoordinatedAppInstall setAppInstallState:];
+-[IXSCoordinatedAppInstall promiseStateDescription];
+-[IXSCoordinatedAppInstall description];
+-[IXSCoordinatedAppInstall identity];
+-[IXSCoordinatedAppInstall installationDomain];
+-[IXSCoordinatedAppInstall uniqueIdentifier];
+-[IXSCoordinatedAppInstall creator];
+-[IXSCoordinatedAppInstall originalIntent];
+-[IXSCoordinatedAppInstall effectiveIntent];
+-[IXSCoordinatedAppInstall setEffectiveIntent:];
+-[IXSCoordinatedAppInstall coordinatorScope];
+-[IXSCoordinatedAppInstall setCoordinatorScope:];
+-[IXSCoordinatedAppInstall scopedToConnection];
+-[IXSCoordinatedAppInstall setScopedToConnection:];
+-[IXSCoordinatedAppInstall promiseUUIDs];
+-[IXSCoordinatedAppInstall progressHintWithDefault];
+-[IXSCoordinatedAppInstall progressHint];
+-[IXSCoordinatedAppInstall setProgressHint:];
+-[IXSCoordinatedAppInstall currentProgressPhaseIsComplete];
+-[IXSCoordinatedAppInstall setCurrentProgressPhaseIsComplete:];
+-[IXSCoordinatedAppInstall _pauseProgressObject:];
+-[IXSCoordinatedAppInstall _onQueue_pauseProgress];
+-[IXSCoordinatedAppInstall _onQueue_resumeProgress];
+-[IXSCoordinatedAppInstall _onQueue_cancelProgress:];
+-[IXSCoordinatedAppInstall _onQueue_cancelProgress];
+-[IXSCoordinatedAppInstall _onQueue_finishProgress:];
+-[IXSCoordinatedAppInstall _onQueue_finishProgress];
+-[IXSCoordinatedAppInstall _onQueue_fetchProgressAndRun:];
+-[IXSCoordinatedAppInstall _onQueue_fetchProgressForPhase:andRun:];
+-[IXSCoordinatedAppInstall _runWithProgress:block:];
+-[IXSCoordinatedAppInstall _limitedConcurrency_setUpLSProgressForInstallType:progressHint:];
+-[IXSCoordinatedAppInstall _limitedConcurrency_fetchLSProgressForPhase:appRecord:];
+-[IXSCoordinatedAppInstall _limitedConcurrency_saveOriginalInstallTypeForAppRecord:];
+-[IXSCoordinatedAppInstall _onQueue_configureTotalUnitCountsForInstallProgress:];
+-[IXSCoordinatedAppInstall _onQueue_setInstallProgressPercentComplete:forPhase:];
+-[IXSCoordinatedAppInstall _limitedConcurrency_fetchLoadingProgressForPlaceholderInstallType:progressHint:andRun:];
+-[IXSCoordinatedAppInstall _onQueue_updateLoadingProgress];
+-[IXSCoordinatedAppInstall _limitedConcurrency_fetchInstallingProgress];
+-[IXSCoordinatedAppInstall _limitedConcurrency_fetchPostProcessingProgressAndRun:];
+-[IXSCoordinatedAppInstall _onQueue_updatePostProcessingProgress];
+-[IXSCoordinatedAppInstall didUpdateProgress:forPhase:overallProgress:];
+-[IXSCoordinatedAppInstall transactionStepForPromise:];
+-[IXSCoordinatedAppInstall promiseDidBegin:];
+-[IXSCoordinatedAppInstall promiseDidComplete:];
+-[IXSCoordinatedAppInstall promiseDidReset:];
+-[IXSCoordinatedAppInstall promise:didUpdateProgress:];
+-[IXSCoordinatedAppInstall promise:didCancelForReason:client:];
+-[IXSCoordinatedAppInstall placeholderDisposition];
+-[IXSCoordinatedAppInstall setPlaceholderDisposition:];
+-[IXSCoordinatedAppInstall _onQueue_runPostProcessingAssertionHandler];
+-[IXSCoordinatedAppInstall isUpdateScheduled];
+-[IXSCoordinatedAppInstall scheduledAppUpdateReadyToExecute];
+-[IXSCoordinatedAppInstall applyStagedUpdateAndRunBlockWhenComplete:];
+-[IXSCoordinatedAppInstall assertionAcquiredCallback];
+-[IXSCoordinatedAppInstall setUpdateScheduler:];
+-[IXSCoordinatedAppInstall setPriorityBoostCompletion:];
+-[IXSCoordinatedAppInstall setPriorityBoostSourceInfo:];
+-[IXSCoordinatedAppInstall seed];
+-[IXSCoordinatedAppInstall internalQueue];
+-[IXSCoordinatedAppInstall setInternalQueue:];
+-[IXSCoordinatedAppInstall delegateCallQueue];
+-[IXSCoordinatedAppInstall setDelegateCallQueue:];
+-[IXSCoordinatedAppInstall outstandingInstallOperationsGroup];
+-[IXSCoordinatedAppInstall setOutstandingInstallOperationsGroup:];
+-[IXSCoordinatedAppInstall externalPropertyLock];
+-[IXSCoordinatedAppInstall error];
+-[IXSCoordinatedAppInstall setError:];
+-[IXSCoordinatedAppInstall errorSourceIdentifier];
+-[IXSCoordinatedAppInstall setErrorSourceIdentifier:];
+-[IXSCoordinatedAppInstall installOptionsPromiseUUID];
+-[IXSCoordinatedAppInstall setInstallOptionsPromiseUUID:];
+-[IXSCoordinatedAppInstall placeholderPromiseUUID];
+-[IXSCoordinatedAppInstall setPlaceholderPromiseUUID:];
+-[IXSCoordinatedAppInstall appAssetPromiseUUID];
+-[IXSCoordinatedAppInstall setAppAssetPromiseUUID:];
+-[IXSCoordinatedAppInstall initialODRAssetPromiseUUIDs];
+-[IXSCoordinatedAppInstall setInitialODRAssetPromiseUUIDs:];
+-[IXSCoordinatedAppInstall userDataPromiseUUID];
+-[IXSCoordinatedAppInstall setUserDataPromiseUUID:];
+-[IXSCoordinatedAppInstall deviceSecurityPromiseUUID];
+-[IXSCoordinatedAppInstall setDeviceSecurityPromiseUUID:];
+-[IXSCoordinatedAppInstall preparationPromiseUUID];
+-[IXSCoordinatedAppInstall setPreparationPromiseUUID:];
+-[IXSCoordinatedAppInstall cachedCurrentPhaseProgress];
+-[IXSCoordinatedAppInstall pendingProgressRequests];
+-[IXSCoordinatedAppInstall setPendingProgressRequests:];
+-[IXSCoordinatedAppInstall placeholderInstallState];
+-[IXSCoordinatedAppInstall appInstallState];
+-[IXSCoordinatedAppInstall placeholderFailureInfo];
+-[IXSCoordinatedAppInstall setPlaceholderFailureInfo:];
+-[IXSCoordinatedAppInstall originalInstallType];
+-[IXSCoordinatedAppInstall setOriginalInstallType:];
+-[IXSCoordinatedAppInstall sentBeginRestoringUserData];
+-[IXSCoordinatedAppInstall setSentBeginRestoringUserData:];
+-[IXSCoordinatedAppInstall appInstallPowerAssertion];
+-[IXSCoordinatedAppInstall setAppInstallPowerAssertion:];
+-[IXSCoordinatedAppInstall termAssertion];
+-[IXSCoordinatedAppInstall expectTermAssertionCallback];
+-[IXSCoordinatedAppInstall setExpectTermAssertionCallback:];
+-[IXSCoordinatedAppInstall assertionRetryTimer];
+-[IXSCoordinatedAppInstall setAssertionRetryTimer:];
+-[IXSCoordinatedAppInstall assertionRetryCount];
+-[IXSCoordinatedAppInstall setAssertionRetryCount:];
+-[IXSCoordinatedAppInstall firstAppExtensionBusyTime];
+-[IXSCoordinatedAppInstall setFirstAppExtensionBusyTime:];
+-[IXSCoordinatedAppInstall coordinatorProgress];
+-[IXSCoordinatedAppInstall setCoordinatorProgress:];
+-[IXSCoordinatedAppInstall publishedInstallProgress];
+-[IXSCoordinatedAppInstall setPublishedInstallProgress:];
+-[IXSCoordinatedAppInstall appAssetPromiseSetterCanInstallLocalProvisionedContent];
+-[IXSCoordinatedAppInstall setAppAssetPromiseSetterCanInstallLocalProvisionedContent:];
+-[IXSCoordinatedAppInstall transaction];
+-[IXSCoordinatedAppInstall setTransaction:];
+-[IXSCoordinatedAppInstall assertionTransaction];
+-[IXSCoordinatedAppInstall setAssertionTransaction:];
+-[IXSCoordinatedAppInstall sentBeginPostProcessing];
+-[IXSCoordinatedAppInstall setSentBeginPostProcessing:];
+-[IXSCoordinatedAppInstall essentialAssetPromiseUUIDs];
+-[IXSCoordinatedAppInstall setEssentialAssetPromiseUUIDs:];
+-[IXSCoordinatedAppInstall dataImportPromiseUUIDs];
+-[IXSCoordinatedAppInstall setDataImportPromiseUUIDs:];
+-[IXSCoordinatedAppInstall postProcessingAssertionState];
+-[IXSCoordinatedAppInstall setPostProcessingAssertionState:];
+-[IXSCoordinatedAppInstall updateScheduleState];
+-[IXSCoordinatedAppInstall setUpdateScheduleState:];
+-[IXSCoordinatedAppInstall assertionQueue];
+-[IXSCoordinatedAppInstall setAssertionQueue:];
+-[IXSCoordinatedAppInstall cacheDeleteCallback];
+-[IXSCoordinatedAppInstall setCacheDeleteCallback:];
+-[IXSCoordinatedAppInstall isMacPlatformApp];
+-[IXSCoordinatedAppInstall setIsMacPlatformApp:];
+
+@end
+
+@interface IXSCoordinatorManager : NSObject <IXSCoordinatorManagerProtocol> {
+    /* instance variables */
+    @"NSObject<OS_dispatch_queue>" _mapQueue;
+    @"NSObject<OS_dispatch_queue>" _createQueue;
+    @"NSMutableDictionary" _identityToCoordinatorMap;
+    @"NSMutableDictionary" _uuidToCoordinatorMap;
+    @"NSMutableDictionary" _connectionToProcessScopedCoordinatorMap;
+    @"NSMutableArray" _identityPriority;
+}
+
+@property (T@"NSObject<OS_dispatch_queue>",R,N,V_mapQueue) mapQueue;
+@property (T@"NSObject<OS_dispatch_queue>",R,N,V_createQueue) createQueue;
+@property (T@"NSMutableDictionary",R,N,V_identityToCoordinatorMap) identityToCoordinatorMap;
+@property (T@"NSMutableDictionary",R,N,V_uuidToCoordinatorMap) uuidToCoordinatorMap;
+@property (T@"NSMutableDictionary",R,N,V_connectionToProcessScopedCoordinatorMap) connectionToProcessScopedCoordinatorMap;
+@property (T@"NSMutableArray",R,N,V_identityPriority) identityPriority;
+@property (TQ,R,N) coordinatorCount;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* class methods */
++[IXSCoordinatorManager savePathForCoordinator:];
++[IXSCoordinatorManager saveDir];
++[IXSCoordinatorManager prioritySaveURL];
++[IXSCoordinatorManager sharedInstance];
+
+/* instance methods */
+-[IXSCoordinatorManager coordinatorCount];
+-[IXSCoordinatorManager init];
+-[IXSCoordinatorManager _onMapQueue_removeCoordinatorFromMaps:];
+-[IXSCoordinatorManager _onMapQueue_saveIdentityPriority];
+-[IXSCoordinatorManager _coordinator:isApplicableToConnection:];
+-[IXSCoordinatorManager coordinatorForUUID:];
+-[IXSCoordinatorManager coordinatorForIdentity:];
+-[IXSCoordinatorManager coordinatorsForBundleIdentifier:];
+-[IXSCoordinatorManager _lookupCoordinatorForIdentity:];
+-[IXSCoordinatorManager _lookupCoordinatorForIdentity:checkingScopeForConnection:error:];
+-[IXSCoordinatorManager coordinatorForIdentity:connection:error:creatingIfNotExisting:];
+-[IXSCoordinatorManager performCreationBlockingOperation:];
+-[IXSCoordinatorManager unregisterCoordinator:];
+-[IXSCoordinatorManager prioritizeCoordinatorWithIdentity:];
+-[IXSCoordinatorManager prioritizeCoordinator:];
+-[IXSCoordinatorManager enumerateCoordinators:];
+-[IXSCoordinatorManager enumerateCoordinatorsApplicableToConnection:usingBlock:];
+-[IXSCoordinatorManager _enumerateCoordinatorsForConnection:usingBlock:];
+-[IXSCoordinatorManager clearAllCoordinatorsForCreator:];
+-[IXSCoordinatorManager connectionInvalidated:];
+-[IXSCoordinatorManager convertProcessScopedCoordinatorToGlobalScoped:];
+-[IXSCoordinatorManager mapQueue];
+-[IXSCoordinatorManager createQueue];
+-[IXSCoordinatorManager identityToCoordinatorMap];
+-[IXSCoordinatorManager uuidToCoordinatorMap];
+-[IXSCoordinatorManager connectionToProcessScopedCoordinatorMap];
+-[IXSCoordinatorManager identityPriority];
+
+@end
+
+@interface IXSCoordinatorProgress : NSObject <NSSecureCoding, NSCopying> {
+    /* instance variables */
+    B _progressCompleted;
+    B _needsPostProcessing;
+    Q _totalUnitsCompleted;
+    Q _totalUnits;
+    @"<IXSCoordinatorProgressDelegate>" _delegate;
+    Q _progressPhase;
+    d _currentPhaseProgress;
+    @"IXProgressHint" _progressHint;
+    @"IXApplicationIdentity" _identity;
+}
+
+@property (TQ,N,V_progressPhase) progressPhase;
+@property (Td,N,V_currentPhaseProgress) currentPhaseProgress;
+@property (TB,N,V_progressCompleted) progressCompleted;
+@property (TB,N,V_needsPostProcessing) needsPostProcessing;
+@property (T@"IXProgressHint",&,N,V_progressHint) progressHint;
+@property (T@"IXApplicationIdentity",&,N,V_identity) identity;
+@property (TQ,N,V_totalUnits) totalUnits;
+@property (TQ,N,V_totalUnitsCompleted) totalUnitsCompleted;
+@property (T@"<IXSCoordinatorProgressDelegate>",W,N,V_delegate) delegate;
+
+/* class methods */
++[IXSCoordinatorProgress _computeOverallProgressForCurrentProgress:progressPhase:progressHint:];
++[IXSCoordinatorProgress supportsSecureCoding];
+
+/* instance methods */
+-[IXSCoordinatorProgress initForCoordinatorWithIdentity:totalUnits:progressHint:needsPostProcessing:delegate:];
+-[IXSCoordinatorProgress description];
+-[IXSCoordinatorProgress finishLoading];
+-[IXSCoordinatorProgress finishInstalling];
+-[IXSCoordinatorProgress finishPostProcessing];
+-[IXSCoordinatorProgress _notifyDelegateAndUpdateProgressWithPhaseCompleted:];
+-[IXSCoordinatorProgress setTotalUnitsCompleted:];
+-[IXSCoordinatorProgress setTotalUnits:];
+-[IXSCoordinatorProgress initWithCoder:];
+-[IXSCoordinatorProgress encodeWithCoder:];
+-[IXSCoordinatorProgress copyWithZone:];
+-[IXSCoordinatorProgress totalUnitsCompleted];
+-[IXSCoordinatorProgress totalUnits];
+-[IXSCoordinatorProgress delegate];
+-[IXSCoordinatorProgress setDelegate:];
+-[IXSCoordinatorProgress progressPhase];
+-[IXSCoordinatorProgress setProgressPhase:];
+-[IXSCoordinatorProgress currentPhaseProgress];
+-[IXSCoordinatorProgress setCurrentPhaseProgress:];
+-[IXSCoordinatorProgress progressCompleted];
+-[IXSCoordinatorProgress setProgressCompleted:];
+-[IXSCoordinatorProgress needsPostProcessing];
+-[IXSCoordinatorProgress setNeedsPostProcessing:];
+-[IXSCoordinatorProgress progressHint];
+-[IXSCoordinatorProgress setProgressHint:];
+-[IXSCoordinatorProgress identity];
+-[IXSCoordinatorProgress setIdentity:];
+
+@end
+
+@interface IXSDataPromise : NSObject <NSSecureCoding, IXSDataPromiseAwakening> {
+    /* instance variables */
+    B _isTracked;
+    B _complete;
+    B _didAwake;
+    d _percentComplete;
+    @"<IXSDataPromiseDelegate>" _delegate;
+    @"NSObject<OS_dispatch_queue>" _accessQueue;
+    @"NSError" _error;
+    Q _errorSourceIdentifier;
+    @"NSObject<OS_dispatch_queue>" _delegateDeliveryQueue;
+    @"IXDataPromiseSeed" _seed;
+    d _lastSavedPercentComplete;
+}
+
+@property (T@"NSError",&,N,V_error) error;
+@property (TQ,N,V_errorSourceIdentifier) errorSourceIdentifier;
+@property (Td,N,V_lastSavedPercentComplete) lastSavedPercentComplete;
+@property (T@"NSString",R,D,N) name;
+@property (TQ,R,D,N) creatorIdentifier;
+@property (T@"NSUUID",R,D,N) uniqueIdentifier;
+@property (T@"NSObject<OS_dispatch_queue>",R,N,V_accessQueue) accessQueue;
+@property (T@"IXDataPromiseSeed",R,C,D,N) clientSeed;
+@property (TB,N,GisComplete,V_complete) complete;
+@property (Td,N,V_percentComplete) percentComplete;
+@property (TQ,R,D,N) totalBytesNeededOnDisk;
+@property (TQ,R,D,N) totalBytesForProgress;
+@property (TQ,R,D,N) bytesConsumedOnDisk;
+@property (TB,R,D,N) hasBegun;
+@property (TB,N,V_didAwake) didAwake;
+@property (T@"NSSet",R,C,N) subPromiseUUIDs;
+@property (T@"<IXSDataPromiseDelegate>",W,N,V_delegate) delegate;
+@property (T@"NSObject<OS_dispatch_queue>",R,N,V_delegateDeliveryQueue) delegateDeliveryQueue;
+@property (T@"IXDataPromiseSeed",&,N,V_seed) seed;
+@property (TB,N,V_isTracked) isTracked;
+@property (T@"NSURL",&,D,N) preflightPath;
+
+/* class methods */
++[IXSDataPromise supportsSecureCoding];
+
+/* instance methods */
+-[IXSDataPromise _remote_getPercentComplete:];
+-[IXSDataPromise _remote_setPercentComplete:];
+-[IXSDataPromise _remote_getIsComplete:];
+-[IXSDataPromise _remote_setIsComplete:];
+-[IXSDataPromise _remote_cancelForReason:client:completion:];
+-[IXSDataPromise _remote_resetWithCompletion:];
+-[IXSDataPromise _remote_getErrorInfo:];
+-[IXSDataPromise _remote_preflightWithCompletion:];
+-[IXSDataPromise _internalInitWithUniqueIdentifier:];
+-[IXSDataPromise initWithSeed:error:];
+-[IXSDataPromise clientSeed];
+-[IXSDataPromise initWithCoder:];
+-[IXSDataPromise encodeWithCoder:];
+-[IXSDataPromise isEqual:];
+-[IXSDataPromise hash];
+-[IXSDataPromise reset];
+-[IXSDataPromise cancelForReason:client:error:];
+-[IXSDataPromise error];
+-[IXSDataPromise errorSourceIdentifier];
+-[IXSDataPromise awakeFromSerializationWithLookupBlock:error:];
+-[IXSDataPromise saveState];
+-[IXSDataPromise _removeSavedState];
+-[IXSDataPromise isTracked];
+-[IXSDataPromise setIsTracked:];
+-[IXSDataPromise name];
+-[IXSDataPromise creatorIdentifier];
+-[IXSDataPromise uniqueIdentifier];
+-[IXSDataPromise totalBytesNeededOnDisk];
+-[IXSDataPromise totalBytesForProgress];
+-[IXSDataPromise bytesConsumedOnDisk];
+-[IXSDataPromise preflightPath];
+-[IXSDataPromise subPromiseUUIDs];
+-[IXSDataPromise isComplete];
+-[IXSDataPromise setComplete:];
+-[IXSDataPromise percentComplete];
+-[IXSDataPromise _setPercentComplete:saveStateIfNeeded:];
+-[IXSDataPromise setPercentComplete:];
+-[IXSDataPromise hasBegun];
+-[IXSDataPromise didAwake];
+-[IXSDataPromise setDidAwake:];
+-[IXSDataPromise delegate];
+-[IXSDataPromise setDelegate:];
+-[IXSDataPromise decommission];
+-[IXSDataPromise supersede];
+-[IXSDataPromise description];
+-[IXSDataPromise accessQueue];
+-[IXSDataPromise setError:];
+-[IXSDataPromise setErrorSourceIdentifier:];
+-[IXSDataPromise delegateDeliveryQueue];
+-[IXSDataPromise seed];
+-[IXSDataPromise setSeed:];
+-[IXSDataPromise lastSavedPercentComplete];
+-[IXSDataPromise setLastSavedPercentComplete:];
+
+@end
+
+@interface IXSDataPromiseManager : NSObject <IXSDataPromiseDelegate> {
+    /* instance variables */
+    @"NSObject<OS_dispatch_queue>" _queue;
+    @"NSMutableDictionary" _uuidToPromiseMap;
+}
+
+@property (T@"NSObject<OS_dispatch_queue>",R,N,V_queue) queue;
+@property (T@"NSMutableDictionary",R,N,V_uuidToPromiseMap) uuidToPromiseMap;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* class methods */
++[IXSDataPromiseManager savePathForPromise:];
++[IXSDataPromiseManager saveDir];
++[IXSDataPromiseManager sharedInstance];
+
+/* instance methods */
+-[IXSDataPromiseManager init];
+-[IXSDataPromiseManager _onQueue_restoreSavedPromises];
+-[IXSDataPromiseManager _promiseForUUID:ofType:useQueue:];
+-[IXSDataPromiseManager promiseForUUID:ofType:];
+-[IXSDataPromiseManager promiseForUUID:];
+-[IXSDataPromiseManager registerPromise:];
+-[IXSDataPromiseManager enumeratePromises:];
+-[IXSDataPromiseManager decommissionPromise:];
+-[IXSDataPromiseManager clearAllPromisesForCreator:];
+-[IXSDataPromiseManager cancelPromiseForUUIDIfNotAssociatedWithAnyCoordinator:withReason:client:];
+-[IXSDataPromiseManager promiseDidBegin:];
+-[IXSDataPromiseManager promiseDidComplete:];
+-[IXSDataPromiseManager promiseDidReset:];
+-[IXSDataPromiseManager promise:didUpdateProgress:];
+-[IXSDataPromiseManager promise:didCancelForReason:client:];
+-[IXSDataPromiseManager queue];
+-[IXSDataPromiseManager uuidToPromiseMap];
+
+@end
+
+@interface IXSDataReplacementHost : NSObject {
+    /* instance variables */
+     extensionPointIdentifier;
+     requiredDiskSpaceBytes;
+     sourceIdentity;
+     destinationIdentity;
+     terminationAssertion;
+     didRegisterPendingOperation;
+     didProhibitAppLaunch;
+}
+
+/* class methods */
++[IXSDataReplacementHost coordinatorManager];
++[IXSDataReplacementHost deviceHasBeenUnlockedSinceBoot];
++[IXSDataReplacementHost makeHostForResumingReplacementFromSourceIdentity:destinationIdentity:];
++[IXSDataReplacementHost journalURL];
++[IXSDataReplacementHost resumeInterruptedDataReplacementWithCompletion:];
+
+/* instance methods */
+-[IXSDataReplacementHost initWithSourceIdentity:destinationIdentity:];
+-[IXSDataReplacementHost appUninstaller];
+-[IXSDataReplacementHost freeUpRequiredDiskSpaceWithError:];
+-[IXSDataReplacementHost deviceHasPersonas];
+-[IXSDataReplacementHost systemPersonaUniqueStringWithError:];
+-[IXSDataReplacementHost pendingOperationsTracker];
+-[IXSDataReplacementHost makeTerminationAssertion];
+-[IXSDataReplacementHost makeDeviceLockAssertion];
+-[IXSDataReplacementHost makeSessionForExtensionWithRecord:error:];
+-[IXSDataReplacementHost registeredExtensionRecordsWithError:];
+-[IXSDataReplacementHost recordForAppWithBundleID:allowingPlaceholder:error:];
+-[IXSDataReplacementHost recordForAppExtensionWithApplicationIdentifier:];
+-[IXSDataReplacementHost performDataReplacementWithCompletion:];
+-[IXSDataReplacementHost init];
+
+@end
+
+@interface IXSDataReplacementJournalEntry : NSObject <NSSecureCoding, NSCoding> {
+    /* instance variables */
+    @"IXApplicationIdentity" sourceIdentity;
+    @"IXApplicationIdentity" destinationIdentity;
+    Q stage;
+    Q resumeAttemptCount;
+    ? completedDataReplacements;
+}
+
+@property (T@"IXApplicationIdentity",N,&,VsourceIdentity) sourceIdentity;
+@property (T@"IXApplicationIdentity",N,&,VdestinationIdentity) destinationIdentity;
+@property (TQ,N,Vstage) stage;
+@property (TQ,N,VresumeAttemptCount) resumeAttemptCount;
+@property (T@"NSSet",N,C) completedDataReplacements;
+@property (TB,N,R) hasRemainingResumeAttempts;
+@property (T@"NSString",N,R) description;
+
+/* class methods */
++[IXSDataReplacementJournalEntry maximumResumeAttempts];
++[IXSDataReplacementJournalEntry supportsSecureCoding];
+
+/* instance methods */
+-[IXSDataReplacementJournalEntry sourceIdentity];
+-[IXSDataReplacementJournalEntry setSourceIdentity:];
+-[IXSDataReplacementJournalEntry destinationIdentity];
+-[IXSDataReplacementJournalEntry setDestinationIdentity:];
+-[IXSDataReplacementJournalEntry stage];
+-[IXSDataReplacementJournalEntry setStage:];
+-[IXSDataReplacementJournalEntry resumeAttemptCount];
+-[IXSDataReplacementJournalEntry setResumeAttemptCount:];
+-[IXSDataReplacementJournalEntry completedDataReplacements];
+-[IXSDataReplacementJournalEntry setCompletedDataReplacements:];
+-[IXSDataReplacementJournalEntry initWithSourceIdentity:destinationIdentity:];
+-[IXSDataReplacementJournalEntry hasRemainingResumeAttempts];
+-[IXSDataReplacementJournalEntry recordDataReplacementByExtensionWithBundleID:forSourceIdentity:destinationIdentity:entityType:];
+-[IXSDataReplacementJournalEntry hasReplacedDataByExtensionWithBundleID:forSourceIdentity:destinationIdentity:entityType:];
+-[IXSDataReplacementJournalEntry encodeWithCoder:];
+-[IXSDataReplacementJournalEntry initWithCoder:];
+-[IXSDataReplacementJournalEntry description];
+-[IXSDataReplacementJournalEntry init];
+
+@end
+
+@interface IXSDefaultAppDeleteAlert : IXSUninstallAlert {
+    /* instance variables */
+    Q _appType;
+}
+
+@property (TQ,R,N,V_appType) appType;
+
+/* instance methods */
+-[IXSDefaultAppDeleteAlert initWithAppRecord:removability:defaultAppType:];
+-[IXSDefaultAppDeleteAlert title];
+-[IXSDefaultAppDeleteAlert message];
+-[IXSDefaultAppDeleteAlert defaultButtonLabel];
+-[IXSDefaultAppDeleteAlert cancelButtonLabel];
+-[IXSDefaultAppDeleteAlert displayAlertWithCompletion:];
+-[IXSDefaultAppDeleteAlert appType];
+
+@end
+
+@interface IXSDefaultAppDeletionManager : NSObject
+
+/* class methods */
++[IXSDefaultAppDeletionManager sharedInstance];
+
+/* instance methods */
+-[IXSDefaultAppDeletionManager getOtherAppsAreInstalled:forDefaultAppType:exceptBundleID:error:];
+-[IXSDefaultAppDeletionManager _shouldGateDeletionForAppType:];
+-[IXSDefaultAppDeletionManager getAppRecordNeedsDefaultAppDeletionAlert:forRecord:defaultAppType:gateDeletionOfLastApp:error:];
+-[IXSDefaultAppDeletionManager defaultAppMetadataForAppIdentity:error:];
+-[IXSDefaultAppDeletionManager defaultAppMetadataListWithError:];
+
+@end
+
+@interface IXSDefaultAppDownloadAlert : IXSUninstallAlert {
+    /* instance variables */
+    Q _appType;
+}
+
+@property (TQ,R,N,V_appType) appType;
+
+/* instance methods */
+-[IXSDefaultAppDownloadAlert initWithAppRecord:removability:defaultAppType:];
+-[IXSDefaultAppDownloadAlert title];
+-[IXSDefaultAppDownloadAlert message];
+-[IXSDefaultAppDownloadAlert defaultButtonLabel];
+-[IXSDefaultAppDownloadAlert cancelButtonLabel];
+-[IXSDefaultAppDownloadAlert _localizedNameForDefaultAppMarketplace];
+-[IXSDefaultAppDownloadAlert _bundleIDForDefaultAppMarketplace:];
+-[IXSDefaultAppDownloadAlert openDefaultAppStoreWithError:];
+-[IXSDefaultAppDownloadAlert displayAlertWithCompletion:];
+-[IXSDefaultAppDownloadAlert appType];
+
+@end
+
+@interface IXSDefaultAppSelectAlert : IXSUninstallAlert {
+    /* instance variables */
+    Q _appType;
+}
+
+@property (TQ,R,N,V_appType) appType;
+
+/* instance methods */
+-[IXSDefaultAppSelectAlert initWithAppRecord:removability:defaultAppType:];
+-[IXSDefaultAppSelectAlert title];
+-[IXSDefaultAppSelectAlert message];
+-[IXSDefaultAppSelectAlert defaultButtonLabel];
+-[IXSDefaultAppSelectAlert cancelButtonLabel];
+-[IXSDefaultAppSelectAlert notificationFlags];
+-[IXSDefaultAppSelectAlert openSettingsWithBundleID:];
+-[IXSDefaultAppSelectAlert displayAlertWithCompletion:];
+-[IXSDefaultAppSelectAlert appType];
+
+@end
+
+@interface IXSDeviceLockAssertion : NSObject <IXSDeviceLockAssertionProtocol> {
+    /* instance variables */
+    B isAcquired;
+}
+
+@property (TB,N,VisAcquired) isAcquired;
+
+/* instance methods */
+-[IXSDeviceLockAssertion isAcquired];
+-[IXSDeviceLockAssertion setIsAcquired:];
+-[IXSDeviceLockAssertion init];
+-[IXSDeviceLockAssertion acquireWithError:];
+-[IXSDeviceLockAssertion invalidate];
+-[IXSDeviceLockAssertion dealloc];
+
+@end
+
+@interface IXSErrorPresenter : NSObject
+
+/* class methods */
++[IXSErrorPresenter sharedPresenter];
+
+/* instance methods */
+-[IXSErrorPresenter init];
+-[IXSErrorPresenter presentErrorForIdentity:code:underlyingError:errorSource:];
+-[IXSErrorPresenter presentErrorForIdentities:code:underlyingError:errorSource:];
+-[IXSErrorPresenter presentErrorForAppWithLocalizedName:code:underlyingError:errorSource:];
+-[IXSErrorPresenter _presentErrorHighlightingLocalizedAppName:withHighlightedAppRecord:bundleIDs:code:errorSource:underlyingError:];
+-[IXSErrorPresenter localizedErrorForAppName:unlocalizedError:localizedError:withError:];
+
+@end
+
+@interface IXSHealthKitDataUninstallAlert : IXSUninstallAlert
+
+/* class methods */
++[IXSHealthKitDataUninstallAlert openHealthKitClasses];
++[IXSHealthKitDataUninstallAlert hkHealthStoreClass];
++[IXSHealthKitDataUninstallAlert hkSourceStoreClass];
++[IXSHealthKitDataUninstallAlert hkBehaviorClass];
++[IXSHealthKitDataUninstallAlert healthKitDataSupportedOnDevice];
++[IXSHealthKitDataUninstallAlert healthKitDataPresentForAppWithBundleID:completion:];
++[IXSHealthKitDataUninstallAlert viewHealthKitDataForAppWithBundleID:];
+
+/* instance methods */
+-[IXSHealthKitDataUninstallAlert initWithAppRecord:bundleIdentifier:];
+-[IXSHealthKitDataUninstallAlert title];
+-[IXSHealthKitDataUninstallAlert message];
+-[IXSHealthKitDataUninstallAlert defaultButtonLabel];
+-[IXSHealthKitDataUninstallAlert cancelButtonLabel];
+-[IXSHealthKitDataUninstallAlert notificationFlags];
+
+@end
+
+@interface IXSInstallProgressServer : NSObject <IPProgressServerDelegate>
+
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* instance methods */
+-[IXSInstallProgressServer _setIsPaused:forIdentity:];
+-[IXSInstallProgressServer progressServer:requestPauseForIdentity:];
+-[IXSInstallProgressServer progressServer:requestResumeForIdentity:];
+-[IXSInstallProgressServer progressServer:requestCancelForIdentity:withReason:fromClient:];
+
+@end
+
+@interface IXSLimitedConcurrencyOperation : NSObject {
+    /* instance variables */
+    @"NSString" _descString;
+    @? _block;
+}
+
+@property (T@"NSString",R,C,N,V_descString) descString;
+@property (T@?,R,N,V_block) block;
+
+/* instance methods */
+-[IXSLimitedConcurrencyOperation initWithBlock:description:];
+-[IXSLimitedConcurrencyOperation descString];
+-[IXSLimitedConcurrencyOperation block];
+
+@end
+
+@interface IXSLimitedConcurrencyQueue : NSObject {
+    /* instance variables */
+    Q _width;
+    @"NSObject<OS_dispatch_queue>" _internalQueue;
+    @"NSMutableDictionary" _waitingOperations;
+    @"NSMutableSet" _activeIdentities;
+    @"NSMutableArray" _identityQueue;
+}
+
+@property (TQ,R,N,V_width) width;
+@property (T@"NSObject<OS_dispatch_queue>",R,N,V_internalQueue) internalQueue;
+@property (T@"NSMutableDictionary",R,N,V_waitingOperations) waitingOperations;
+@property (T@"NSMutableSet",R,N,V_activeIdentities) activeIdentities;
+@property (T@"NSMutableArray",R,N,V_identityQueue) identityQueue;
+
+/* class methods */
++[IXSLimitedConcurrencyQueue launchServicesQueue];
++[IXSLimitedConcurrencyQueue uninstallConcurrencyQueue];
+
+/* instance methods */
+-[IXSLimitedConcurrencyQueue initWithWidth:];
+-[IXSLimitedConcurrencyQueue runAsyncForIdentity:description:operation:];
+-[IXSLimitedConcurrencyQueue _onQueue_deQueueIfNeeded];
+-[IXSLimitedConcurrencyQueue _onQueue_runAsyncForIdentity:description:operation:];
+-[IXSLimitedConcurrencyQueue width];
+-[IXSLimitedConcurrencyQueue internalQueue];
+-[IXSLimitedConcurrencyQueue waitingOperations];
+-[IXSLimitedConcurrencyQueue activeIdentities];
+-[IXSLimitedConcurrencyQueue identityQueue];
+
+@end
+
+@interface IXSMoveOrDeleteAlert : IXSUninstallAlert
+
+/* instance methods */
+-[IXSMoveOrDeleteAlert initWithAppRecord:bundleIdentifier:removability:deletionIsRestricted:];
+-[IXSMoveOrDeleteAlert title];
+-[IXSMoveOrDeleteAlert message];
+-[IXSMoveOrDeleteAlert defaultButtonLabel];
+-[IXSMoveOrDeleteAlert cancelButtonLabel];
+-[IXSMoveOrDeleteAlert otherButtonLabel];
+-[IXSMoveOrDeleteAlert otherButtonActionWithCompletion:];
+
+@end
+
+@interface IXSOpaqueDataPromise : IXSDataPromise <NSSecureCoding>
+
+@property (T@"IXOpaqueDataPromiseSeed",R,C,D,N) clientSeed;
+
+@end
+
+@interface IXSOwnedDataPromise : IXSDataPromise <NSSecureCoding> {
+    /* instance variables */
+    B _stagedPathMayNotExistWhenAwakening;
+    @"NSString" _relativeStagedPath;
+    @"NSString" _targetLastPathComponent;
+    @"MIStagingLocation" _stagingLocation;
+    @"NSError" _awakeningError;
+}
+
+@property (T@"IXOwnedDataPromiseSeed",&,D,N) seed;
+@property (T@"NSString",&,N,V_relativeStagedPath) relativeStagedPath;
+@property (T@"MIStagingLocation",&,N,V_stagingLocation) stagingLocation;
+@property (T@"NSString",&,N,V_targetLastPathComponent) targetLastPathComponent;
+@property (T@"NSError",&,N,V_awakeningError) awakeningError;
+@property (T@"IXOwnedDataPromiseSeed",R,C,D,N) clientSeed;
+@property (T@"<MILocationProtocol>",R,N) location;
+@property (T@"NSURL",R,D,N) stagingBaseDir;
+@property (T@"NSURL",&,D,N) stagedPath;
+@property (TB,N,V_stagedPathMayNotExistWhenAwakening) stagedPathMayNotExistWhenAwakening;
+
+/* class methods */
++[IXSOwnedDataPromise supportsSecureCoding];
+
+/* instance methods */
+-[IXSOwnedDataPromise _remote_setStagedPath:];
+-[IXSOwnedDataPromise _remote_getStagedPath:];
+-[IXSOwnedDataPromise _remote_setTargetLastPathComponent:withCompletion:];
+-[IXSOwnedDataPromise _remote_getTargetLastPathComponent:];
+-[IXSOwnedDataPromise awakeFromSerializationWithLookupBlock:error:];
+-[IXSOwnedDataPromise _onQueue_createStagingBaseDirWithError:];
+-[IXSOwnedDataPromise _onQueue_purgeStagingBaseDirKeepingBaseDir:];
+-[IXSOwnedDataPromise _onQueue_initWithSeedWithError:];
+-[IXSOwnedDataPromise initWithSeed:error:];
+-[IXSOwnedDataPromise initWithCoder:];
+-[IXSOwnedDataPromise encodeWithCoder:];
+-[IXSOwnedDataPromise description];
+-[IXSOwnedDataPromise reset];
+-[IXSOwnedDataPromise cancelForReason:client:error:];
+-[IXSOwnedDataPromise validateStagedPathWithError:];
+-[IXSOwnedDataPromise setComplete:];
+-[IXSOwnedDataPromise decommission];
+-[IXSOwnedDataPromise location];
+-[IXSOwnedDataPromise preflightPath];
+-[IXSOwnedDataPromise stagingBaseDir];
+-[IXSOwnedDataPromise relativeStagedPath];
+-[IXSOwnedDataPromise setRelativeStagedPath:];
+-[IXSOwnedDataPromise targetLastPathComponent];
+-[IXSOwnedDataPromise setTargetLastPathComponent:];
+-[IXSOwnedDataPromise stagedPath];
+-[IXSOwnedDataPromise _internal_setStagedPath:];
+-[IXSOwnedDataPromise setStagedPath:];
+-[IXSOwnedDataPromise setStagedPathMayNotExistWhenAwakening:];
+-[IXSOwnedDataPromise issueSandboxExtensionWithError:];
+-[IXSOwnedDataPromise stagedPathMayNotExistWhenAwakening];
+-[IXSOwnedDataPromise stagingLocation];
+-[IXSOwnedDataPromise setStagingLocation:];
+-[IXSOwnedDataPromise awakeningError];
+-[IXSOwnedDataPromise setAwakeningError:];
+
+@end
+
+@interface IXSPendingOperationsTracker : NSObject {
+    /* instance variables */
+    @"NSURL" _sentinelPath;
+    @"NSMutableSet" _pendingOperationIdentities;
+    @"NSObject<OS_dispatch_queue>" _internalQueue;
+}
+
+@property (T@"NSMutableSet",&,N,V_pendingOperationIdentities) pendingOperationIdentities;
+@property (T@"NSObject<OS_dispatch_queue>",&,N,V_internalQueue) internalQueue;
+@property (T@"NSURL",R,N,V_sentinelPath) sentinelPath;
+@property (T@"NSSet",R,N) pendingWorkIdentities;
+
+/* class methods */
++[IXSPendingOperationsTracker sharedInstance];
+
+/* instance methods */
+-[IXSPendingOperationsTracker sentinelPath];
+-[IXSPendingOperationsTracker _deserializePlistFormatFromData:atURL:];
+-[IXSPendingOperationsTracker _deserializeKeyedArchiveFromData:atURL:];
+-[IXSPendingOperationsTracker _deserializePendingOperationIdentities];
+-[IXSPendingOperationsTracker init];
+-[IXSPendingOperationsTracker initWithSentinelPathOverride:];
+-[IXSPendingOperationsTracker _onQueue_writePendingWork];
+-[IXSPendingOperationsTracker beginPendingOperationForIdentity:];
+-[IXSPendingOperationsTracker endPendingOperationForIdentity:];
+-[IXSPendingOperationsTracker pendingWorkIdentities];
+-[IXSPendingOperationsTracker clearAllPendingOperations];
+-[IXSPendingOperationsTracker pendingOperationIdentities];
+-[IXSPendingOperationsTracker setPendingOperationIdentities:];
+-[IXSPendingOperationsTracker internalQueue];
+-[IXSPendingOperationsTracker setInternalQueue:];
+
+@end
+
+@interface IXSPersonaLifecycleClientConnection : NSObject <IXClientPersonaLifecycleReportingProtocol> {
+    /* instance variables */
+    @"NSUUID" _connectionUUID;
+    @"NSXPCConnection" xpcConnection;
+    B invalidated;
+}
+
+@property (T@"NSUUID",N,R,V_connectionUUID) _connectionUUID;
+@property (T@"NSUUID",N,R) connectionUUID;
+@property (T@"NSXPCConnection",N,R,VxpcConnection) xpcConnection;
+@property (TB,N,Vinvalidated) invalidated;
+@property (T@"NSString",N,R) clientName;
+@property (T@"NSString",N,R) description;
+
+/* instance methods */
+-[IXSPersonaLifecycleClientConnection _connectionUUID];
+-[IXSPersonaLifecycleClientConnection connectionUUID];
+-[IXSPersonaLifecycleClientConnection xpcConnection];
+-[IXSPersonaLifecycleClientConnection invalidated];
+-[IXSPersonaLifecycleClientConnection setInvalidated:];
+-[IXSPersonaLifecycleClientConnection clientName];
+-[IXSPersonaLifecycleClientConnection initWithConnection:];
+-[IXSPersonaLifecycleClientConnection connectionInvalidated];
+-[IXSPersonaLifecycleClientConnection description];
+-[IXSPersonaLifecycleClientConnection _remote_reportPersonaConstructionWithUniqueString:options:completion:];
+-[IXSPersonaLifecycleClientConnection _remote_reportPersonaDestructionWithUniqueString:options:completion:];
+-[IXSPersonaLifecycleClientConnection init];
+
+@end
+
+@interface IXSPersonaLifecycleClientConnectionManager : NSObject <NSXPCListenerDelegate>
+
+/* class methods */
++[IXSPersonaLifecycleClientConnectionManager configureService];
+
+/* instance methods */
+-[IXSPersonaLifecycleClientConnectionManager listener:shouldAcceptNewConnection:];
+-[IXSPersonaLifecycleClientConnectionManager init];
+
+@end
+
+@interface IXSPersonaLifecycleEvent : NSObject {
+    /* instance variables */
+    Q eventType;
+    ? personaUniqueString;
+}
+
+@property (TQ,N,R,VeventType) eventType;
+@property (T@"NSString",N,R) personaUniqueString;
+
+/* class methods */
++[IXSPersonaLifecycleEvent constructionEventForPersonaUniqueString:];
++[IXSPersonaLifecycleEvent destructionEventForPersonaUniqueString:];
+
+/* instance methods */
+-[IXSPersonaLifecycleEvent eventType];
+-[IXSPersonaLifecycleEvent personaUniqueString];
+-[IXSPersonaLifecycleEvent initWithType:personaUniqueString:];
+-[IXSPersonaLifecycleEvent coordinatorManager];
+-[IXSPersonaLifecycleEvent systemPersonaStringWithError:];
+-[IXSPersonaLifecycleEvent personalPersonaStringWithError:];
+-[IXSPersonaLifecycleEvent reportWithCompletion:];
+-[IXSPersonaLifecycleEvent init];
+
+@end
+
+@interface IXSPlaceholder : IXSOwnedDataPromise <NSSecureCoding, IXSDataPromiseDelegate, IXSDataPromiseAwakening> {
+    /* instance variables */
+    B _sentDidBegin;
+    B _configurationComplete;
+    B _creatorHadWebPlaceholderInstallEntitlement;
+    @"NSUUID" _iconPromiseUUID;
+    @"NSUUID" _iconResourcesPromiseUUID;
+    @"NSUUID" _infoPlistIconContentPromiseUUID;
+    @"NSUUID" _entitlementsPromiseUUID;
+    @"NSUUID" _infoPlistLoctablePromiseUUID;
+    @"NSUUID" _metadataPromiseUUID;
+    @"NSUUID" _sinfPromiseUUID;
+    @"NSArray" _appExtensionPlaceholdersPromiseUUIDs;
+    @"NSUUID" _localizationDictionaryPromiseUUID;
+    @"IXSOwnedDataPromise" _icon;
+    @"IXSPromisedTransferToPath" _iconResourcesPromise;
+    @"IXSPromisedInMemoryDictionary" _infoPlistIconContentPromise;
+    @"IXSOwnedDataPromise" _entitlements;
+    @"IXSOwnedDataPromise" _infoPlistLoctable;
+    @"NSArray" _appExtensionPlaceholders;
+    @"IXPlaceholderAttributes" _attributes;
+    @"IXSPromisedInMemoryData" _metadataPromise;
+    @"IXSPromisedInMemoryData" _sinfPromise;
+    @"IXSPromisedInMemoryDictionary" _localizationDictionaryPromise;
+    @"NSError" _awakeningError;
+}
+
+@property (T@"IXPlaceholderSeed",&,D,N) seed;
+@property (T@"NSUUID",&,N,V_iconPromiseUUID) iconPromiseUUID;
+@property (T@"NSUUID",&,N,V_iconResourcesPromiseUUID) iconResourcesPromiseUUID;
+@property (T@"NSUUID",&,N,V_infoPlistIconContentPromiseUUID) infoPlistIconContentPromiseUUID;
+@property (T@"NSUUID",&,N,V_entitlementsPromiseUUID) entitlementsPromiseUUID;
+@property (T@"NSUUID",&,N,V_infoPlistLoctablePromiseUUID) infoPlistLoctablePromiseUUID;
+@property (T@"NSUUID",&,N,V_metadataPromiseUUID) metadataPromiseUUID;
+@property (T@"NSUUID",&,N,V_sinfPromiseUUID) sinfPromiseUUID;
+@property (T@"NSArray",&,N,V_appExtensionPlaceholdersPromiseUUIDs) appExtensionPlaceholdersPromiseUUIDs;
+@property (T@"NSUUID",&,N,V_localizationDictionaryPromiseUUID) localizationDictionaryPromiseUUID;
+@property (TB,N,V_sentDidBegin) sentDidBegin;
+@property (TB,N,V_configurationComplete) configurationComplete;
+@property (T@"IXSOwnedDataPromise",&,N,V_icon) icon;
+@property (T@"IXSPromisedTransferToPath",&,N,V_iconResourcesPromise) iconResourcesPromise;
+@property (T@"IXSPromisedInMemoryDictionary",&,N,V_infoPlistIconContentPromise) infoPlistIconContentPromise;
+@property (T@"IXSOwnedDataPromise",&,N,V_entitlements) entitlements;
+@property (T@"IXSOwnedDataPromise",&,N,V_infoPlistLoctable) infoPlistLoctable;
+@property (T@"NSArray",C,N,V_appExtensionPlaceholders) appExtensionPlaceholders;
+@property (T@"IXPlaceholderAttributes",C,N,V_attributes) attributes;
+@property (T@"IXSPromisedInMemoryData",&,N,V_metadataPromise) metadataPromise;
+@property (T@"IXSPromisedInMemoryData",&,N,V_sinfPromise) sinfPromise;
+@property (T@"IXSPromisedInMemoryDictionary",&,N,V_localizationDictionaryPromise) localizationDictionaryPromise;
+@property (T@"NSDictionary",R,D,N) localizationDictionary;
+@property (T@"NSError",&,N,V_awakeningError) awakeningError;
+@property (TB,R,N,V_creatorHadWebPlaceholderInstallEntitlement) creatorHadWebPlaceholderInstallEntitlement;
+@property (T@"IXPlaceholderSeed",R,C,D,N) clientSeed;
+@property (T@"NSString",R,C,D,N) bundleID;
+@property (TQ,R,D,N) installType;
+@property (T@"NSString",R,C,D,N) bundleName;
+@property (T@"NSString",R,C,D,N) bundleDirectoryName;
+@property (T@"MIStoreMetadata",R,C,D,N) metadata;
+@property (T@"NSData",R,C,D,N) sinfData;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* class methods */
++[IXSPlaceholder supportsSecureCoding];
++[IXSPlaceholder _metadataFromPromise:];
++[IXSPlaceholder _sanitizedFilesystemNameForName:fileExtension:fallingBackToName:];
+
+/* instance methods */
+-[IXSPlaceholder _checkLocationOfPromiseMatchesOurs:description:error:];
+-[IXSPlaceholder _remote_setMetadataPromiseUUID:fromConnection:completion:];
+-[IXSPlaceholder _remote_getMetadataWithCompletion:];
+-[IXSPlaceholder _remote_setSinfPromiseUUID:completion:];
+-[IXSPlaceholder _remote_getSinfDataWithCompletion:];
+-[IXSPlaceholder _remote_setLaunchProhibited:completion:];
+-[IXSPlaceholder _remote_getLaunchProhibitedWithCompletion:];
+-[IXSPlaceholder _remote_setAttributes:completion:];
+-[IXSPlaceholder _remote_getAttributesWithCompletion:];
+-[IXSPlaceholder _remote_setIconPromiseUUID:completion:];
+-[IXSPlaceholder _remote_hasIconPromise:];
+-[IXSPlaceholder _remote_getIconPromise:];
+-[IXSPlaceholder _remote_setIconResourcesPromiseUUID:infoPlistIconContentPromiseUUID:completion:];
+-[IXSPlaceholder _remote_hasIconResourcesPromise:];
+-[IXSPlaceholder _remote_getIconResourcesPromiseAndInfoPlistContent:];
+-[IXSPlaceholder _remote_setLocalizationPromiseUUID:completion:];
+-[IXSPlaceholder _remote_getLocalizationDictionary:];
+-[IXSPlaceholder _remote_setEntitlementsPromiseUUID:completion:];
+-[IXSPlaceholder _remote_hasEntitlementsPromise:];
+-[IXSPlaceholder _remote_getEntitlementsPromise:];
+-[IXSPlaceholder _remote_setInfoPlistLoctablePromiseUUID:completion:];
+-[IXSPlaceholder _remote_hasInfoPlistLoctablePromise:];
+-[IXSPlaceholder _remote_getInfoPlistLoctablePromise:];
+-[IXSPlaceholder _remote_setAppExtensionPlaceholderPromiseUUIDs:completion:];
+-[IXSPlaceholder _remote_hasAppExtensionPlaceholderPromises:];
+-[IXSPlaceholder _remote_getAppExtensionPlaceholderPromises:];
+-[IXSPlaceholder _remote_setConfigurationCompleteWithCompletion:];
+-[IXSPlaceholder _internal_checkInitWithSeed:error:];
+-[IXSPlaceholder initWithSeed:fromConnection:error:];
+-[IXSPlaceholder initWithCoder:];
+-[IXSPlaceholder encodeWithCoder:];
+-[IXSPlaceholder awakeFromSerializationWithLookupBlock:error:];
+-[IXSPlaceholder setIcon:];
+-[IXSPlaceholder setIconResourcesPromise:];
+-[IXSPlaceholder setInfoPlistIconContentPromise:];
+-[IXSPlaceholder setIconResourcesPromise:andInfoPlistIconContentPromise:];
+-[IXSPlaceholder setMetadataPromise:];
+-[IXSPlaceholder setSinfPromise:];
+-[IXSPlaceholder setLocalizationDictionaryPromise:];
+-[IXSPlaceholder setEntitlements:];
+-[IXSPlaceholder setInfoPlistLoctable:];
+-[IXSPlaceholder setAppExtensionPlaceholders:];
+-[IXSPlaceholder setConfigurationComplete:];
+-[IXSPlaceholder setAttributes:];
+-[IXSPlaceholder metadata];
+-[IXSPlaceholder sinfData];
+-[IXSPlaceholder localizationDictionary];
+-[IXSPlaceholder _isReadyToMaterialize];
+-[IXSPlaceholder _materializeIfReady];
+-[IXSPlaceholder isComplete];
+-[IXSPlaceholder setComplete:];
+-[IXSPlaceholder percentComplete];
+-[IXSPlaceholder setPercentComplete:];
+-[IXSPlaceholder _cancelPromise:forReason:client:];
+-[IXSPlaceholder cancelForReason:client:error:];
+-[IXSPlaceholder bundleName];
+-[IXSPlaceholder bundleDirectoryName];
+-[IXSPlaceholder bundleID];
+-[IXSPlaceholder installType];
+-[IXSPlaceholder totalBytesNeededOnDisk];
+-[IXSPlaceholder _promiseUUIDsForPromise:];
+-[IXSPlaceholder subPromiseUUIDs];
+-[IXSPlaceholder _decommissionPromise:];
+-[IXSPlaceholder decommission];
+-[IXSPlaceholder _validateClientEntitlements:];
+-[IXSPlaceholder _preparedBundleDirectoryName];
+-[IXSPlaceholder _materialize];
+-[IXSPlaceholder promiseDidBegin:];
+-[IXSPlaceholder promiseDidComplete:];
+-[IXSPlaceholder promiseDidReset:];
+-[IXSPlaceholder promise:didUpdateProgress:];
+-[IXSPlaceholder promise:didCancelForReason:client:];
+-[IXSPlaceholder iconPromiseUUID];
+-[IXSPlaceholder setIconPromiseUUID:];
+-[IXSPlaceholder iconResourcesPromiseUUID];
+-[IXSPlaceholder setIconResourcesPromiseUUID:];
+-[IXSPlaceholder infoPlistIconContentPromiseUUID];
+-[IXSPlaceholder setInfoPlistIconContentPromiseUUID:];
+-[IXSPlaceholder entitlementsPromiseUUID];
+-[IXSPlaceholder setEntitlementsPromiseUUID:];
+-[IXSPlaceholder infoPlistLoctablePromiseUUID];
+-[IXSPlaceholder setInfoPlistLoctablePromiseUUID:];
+-[IXSPlaceholder metadataPromiseUUID];
+-[IXSPlaceholder setMetadataPromiseUUID:];
+-[IXSPlaceholder sinfPromiseUUID];
+-[IXSPlaceholder setSinfPromiseUUID:];
+-[IXSPlaceholder appExtensionPlaceholdersPromiseUUIDs];
+-[IXSPlaceholder setAppExtensionPlaceholdersPromiseUUIDs:];
+-[IXSPlaceholder localizationDictionaryPromiseUUID];
+-[IXSPlaceholder setLocalizationDictionaryPromiseUUID:];
+-[IXSPlaceholder sentDidBegin];
+-[IXSPlaceholder setSentDidBegin:];
+-[IXSPlaceholder configurationComplete];
+-[IXSPlaceholder icon];
+-[IXSPlaceholder iconResourcesPromise];
+-[IXSPlaceholder infoPlistIconContentPromise];
+-[IXSPlaceholder entitlements];
+-[IXSPlaceholder infoPlistLoctable];
+-[IXSPlaceholder appExtensionPlaceholders];
+-[IXSPlaceholder attributes];
+-[IXSPlaceholder metadataPromise];
+-[IXSPlaceholder sinfPromise];
+-[IXSPlaceholder localizationDictionaryPromise];
+-[IXSPlaceholder awakeningError];
+-[IXSPlaceholder setAwakeningError:];
+-[IXSPlaceholder creatorHadWebPlaceholderInstallEntitlement];
+
+@end
+
+@interface IXSPlaceholderFailureInfo : NSObject <NSSecureCoding> {
+    /* instance variables */
+    Q _installType;
+    q _reason;
+    @"NSError" _underlyingError;
+    Q _client;
+}
+
+@property (TQ,N,V_installType) installType;
+@property (Tq,N,V_reason) reason;
+@property (T@"NSError",&,N,V_underlyingError) underlyingError;
+@property (TQ,N,V_client) client;
+
+/* class methods */
++[IXSPlaceholderFailureInfo supportsSecureCoding];
+
+/* instance methods */
+-[IXSPlaceholderFailureInfo initWithCoder:];
+-[IXSPlaceholderFailureInfo encodeWithCoder:];
+-[IXSPlaceholderFailureInfo installType];
+-[IXSPlaceholderFailureInfo setInstallType:];
+-[IXSPlaceholderFailureInfo reason];
+-[IXSPlaceholderFailureInfo setReason:];
+-[IXSPlaceholderFailureInfo underlyingError];
+-[IXSPlaceholderFailureInfo setUnderlyingError:];
+-[IXSPlaceholderFailureInfo client];
+-[IXSPlaceholderFailureInfo setClient:];
+
+@end
+
+@interface IXSPowerAssertion : NSObject {
+    /* instance variables */
+    I _assertion;
+    @"NSString" _assertionName;
+}
+
+@property (TI,R,N,V_assertion) assertion;
+@property (T@"NSString",R,N,V_assertionName) assertionName;
+
+/* instance methods */
+-[IXSPowerAssertion initWithAssertionName:details:];
+-[IXSPowerAssertion invalidate];
+-[IXSPowerAssertion dealloc];
+-[IXSPowerAssertion description];
+-[IXSPowerAssertion assertion];
+-[IXSPowerAssertion assertionName];
+
+@end
+
+@interface IXSPromisedAppReference : IXSOwnedDataPromise <NSSecureCoding> {
+    /* instance variables */
+    @"MIAppReference" _appReference;
+}
+
+@property (T@"IXPromisedAppReferenceSeed",&,D,N) seed;
+@property (T@"MIAppReference",&,N,V_appReference) appReference;
+@property (T@"IXPromisedAppReferenceSeed",R,C,D,N) clientSeed;
+
+/* class methods */
++[IXSPromisedAppReference supportsSecureCoding];
+
+/* instance methods */
+-[IXSPromisedAppReference initWithCoder:];
+-[IXSPromisedAppReference encodeWithCoder:];
+-[IXSPromisedAppReference initWithSeed:ifMatchingPredicate:error:];
+-[IXSPromisedAppReference appReference];
+-[IXSPromisedAppReference setAppReference:];
+-[IXSPromisedAppReference markAppReferenceAsConsumed];
+-[IXSPromisedAppReference cancelForReason:client:error:];
+-[IXSPromisedAppReference validateStagedPathWithError:];
+
+@end
+
+@interface IXSPromisedInMemoryData : IXSOwnedDataPromise <NSSecureCoding>
+
+@property (T@"IXPromisedInMemoryDataSeed",&,D,N) seed;
+@property (T@"IXPromisedInMemoryDataSeed",R,C,D,N) clientSeed;
+@property (T@"NSData",R,C,N) data;
+
+/* class methods */
++[IXSPromisedInMemoryData supportsSecureCoding];
+
+/* instance methods */
+-[IXSPromisedInMemoryData initWithCoder:];
+-[IXSPromisedInMemoryData encodeWithCoder:];
+-[IXSPromisedInMemoryData initWithSeed:data:error:];
+-[IXSPromisedInMemoryData updatedPromiseWithData:error:];
+-[IXSPromisedInMemoryData data];
+
+@end
+
+@interface IXSPromisedInMemoryDictionary : IXSOwnedDataPromise <NSSecureCoding>
+
+@property (T@"IXPromisedInMemoryDictionarySeed",&,D,N) seed;
+@property (T@"IXPromisedInMemoryDictionarySeed",R,C,D,N) clientSeed;
+@property (T@"NSDictionary",R,C,N) dictionary;
+
+/* class methods */
++[IXSPromisedInMemoryDictionary supportsSecureCoding];
+
+/* instance methods */
+-[IXSPromisedInMemoryDictionary initWithCoder:];
+-[IXSPromisedInMemoryDictionary encodeWithCoder:];
+-[IXSPromisedInMemoryDictionary initWithSeed:dictionary:error:];
+-[IXSPromisedInMemoryDictionary dictionary];
+
+@end
+
+@interface IXSPromisedOutOfBandStreamingZipTransfer : IXSOpaqueDataPromise <NSSecureCoding>
+
+@property (T@"IXPromisedOutOfBandStreamingZipTransferSeed",&,D,N) seed;
+@property (T@"IXPromisedOutOfBandStreamingZipTransferSeed",R,C,D,N) clientSeed;
+
+/* instance methods */
+-[IXSPromisedOutOfBandStreamingZipTransfer _remote_setArchiveBytesConsumed:];
+-[IXSPromisedOutOfBandStreamingZipTransfer initWithSeed:error:];
+-[IXSPromisedOutOfBandStreamingZipTransfer reset];
+-[IXSPromisedOutOfBandStreamingZipTransfer totalBytesForProgress];
+
+@end
+
+@interface IXSPromisedOutOfBandTransfer : IXSOpaqueDataPromise <NSSecureCoding>
+
+@property (T@"IXPromisedOutOfBandTransferSeed",R,C,D,N) clientSeed;
+
+@end
+
+@interface IXSPromisedStreamingZipTransfer : IXSOwnedDataPromise <NSSecureCoding>
+
+@property (T@"IXPromisedStreamingZipTransferSeed",&,D,N) seed;
+@property (T@"IXPromisedStreamingZipTransferSeed",R,C,D,N) clientSeed;
+
+/* instance methods */
+-[IXSPromisedStreamingZipTransfer _remote_setArchiveBytesConsumed:];
+-[IXSPromisedStreamingZipTransfer initWithSeed:error:];
+-[IXSPromisedStreamingZipTransfer reset];
+-[IXSPromisedStreamingZipTransfer totalBytesForProgress];
+-[IXSPromisedStreamingZipTransfer bytesConsumedOnDisk];
+
+@end
+
+@interface IXSPromisedTransferToPath : IXSOwnedDataPromise <NSSecureCoding>
+
+@property (T@"IXPromisedTransferToPathSeed",&,D,N) seed;
+@property (T@"IXPromisedTransferToPathSeed",R,C,D,N) clientSeed;
+
+/* class methods */
++[IXSPromisedTransferToPath supportsSecureCoding];
+
+/* instance methods */
+-[IXSPromisedTransferToPath _remote_setTransferPath:];
+-[IXSPromisedTransferToPath _remote_setShouldCopy:];
+-[IXSPromisedTransferToPath _remote_setTryDeltaCopy:];
+-[IXSPromisedTransferToPath initWithSeed:error:];
+-[IXSPromisedTransferToPath initWithCoder:];
+-[IXSPromisedTransferToPath encodeWithCoder:];
+
+@end
+
+@interface IXSRemoteDeletionPromptConnection : NSObject <SBSRemoteAlertHandleObserver> {
+    /* instance variables */
+    B _lastDismissWasSwipeDown;
+    B _wasCleanExit;
+    @"NSObject<OS_xpc_object>" _serviceConnection;
+    @"NSObject<OS_xpc_object>" _listenerConnection;
+    @? _completion;
+}
+
+@property (T@"NSObject<OS_xpc_object>",&,N,V_serviceConnection) serviceConnection;
+@property (T@"NSObject<OS_xpc_object>",&,N,V_listenerConnection) listenerConnection;
+@property (T@?,C,N,V_completion) completion;
+@property (TB,N,V_lastDismissWasSwipeDown) lastDismissWasSwipeDown;
+@property (TB,N,V_wasCleanExit) wasCleanExit;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* instance methods */
+-[IXSRemoteDeletionPromptConnection init];
+-[IXSRemoteDeletionPromptConnection startConnectionWithConfig:alertDefinition:completion:];
+-[IXSRemoteDeletionPromptConnection _communicateFailureForHandle:withError:];
+-[IXSRemoteDeletionPromptConnection _discardRemoteAlertHandle:];
+-[IXSRemoteDeletionPromptConnection dismissAlert];
+-[IXSRemoteDeletionPromptConnection dealloc];
+-[IXSRemoteDeletionPromptConnection remoteAlertHandleDidActivate:];
+-[IXSRemoteDeletionPromptConnection remoteAlertHandleDidDeactivate:];
+-[IXSRemoteDeletionPromptConnection remoteAlertHandle:didInvalidateWithError:];
+-[IXSRemoteDeletionPromptConnection serviceConnection];
+-[IXSRemoteDeletionPromptConnection setServiceConnection:];
+-[IXSRemoteDeletionPromptConnection listenerConnection];
+-[IXSRemoteDeletionPromptConnection setListenerConnection:];
+-[IXSRemoteDeletionPromptConnection completion];
+-[IXSRemoteDeletionPromptConnection setCompletion:];
+-[IXSRemoteDeletionPromptConnection lastDismissWasSwipeDown];
+-[IXSRemoteDeletionPromptConnection setLastDismissWasSwipeDown:];
+-[IXSRemoteDeletionPromptConnection wasCleanExit];
+-[IXSRemoteDeletionPromptConnection setWasCleanExit:];
+
+@end
+
+@interface IXSRemoteDeletionPromptManager : NSObject {
+    /* instance variables */
+    @"IXSRemoteDeletionPromptConnection" _connection;
+}
+
+@property (T@"IXSRemoteDeletionPromptConnection",&,N,V_connection) connection;
+
+/* class methods */
++[IXSRemoteDeletionPromptManager sharedInstance];
+
+/* instance methods */
+-[IXSRemoteDeletionPromptManager init];
+-[IXSRemoteDeletionPromptManager dismissRemoteAlert];
+-[IXSRemoteDeletionPromptManager iCloudIsEnabledForMessages];
+-[IXSRemoteDeletionPromptManager sharedMediaInMessagesCount];
+-[IXSRemoteDeletionPromptManager isValidBundleIDForRemoteAlert:withAppType:numAppsInstalled:];
+-[IXSRemoteDeletionPromptManager _constructRelevantAppData:showArchiveOption:];
+-[IXSRemoteDeletionPromptManager displayDeletionAlertForRecord:showArchiveOption:completion:];
+-[IXSRemoteDeletionPromptManager connection];
+-[IXSRemoteDeletionPromptManager setConnection:];
+
+@end
+
+@interface IXSRevertManager : NSObject {
+    /* instance variables */
+    @"IXTerminationAssertion" _terminationAssertion;
+    @"NSObject<OS_dispatch_queue>" _internalQueue;
+}
+
+@property (T@"IXTerminationAssertion",&,N,V_terminationAssertion) terminationAssertion;
+@property (T@"NSObject<OS_dispatch_queue>",&,N,V_internalQueue) internalQueue;
+
+/* class methods */
++[IXSRevertManager revertAppWithIdentity:forClientWithName:completion:];
+
+/* instance methods */
+-[IXSRevertManager init];
+-[IXSRevertManager setTerminationAssertion:];
+-[IXSRevertManager _acquireTerminationAssertionForIdentity:withError:];
+-[IXSRevertManager _revertAppWithIdentity:forClientWithName:completion:];
+-[IXSRevertManager dealloc];
+-[IXSRevertManager terminationAssertion];
+-[IXSRevertManager internalQueue];
+-[IXSRevertManager setInternalQueue:];
+
+@end
+
+@interface IXSSADStoreMetadataManager : NSObject
+
+/* class methods */
++[IXSSADStoreMetadataManager bundleIDToMetadata];
++[IXSSADStoreMetadataManager regulatoryDomainUpdateDarwinNotification];
++[IXSSADStoreMetadataManager updateMetadata];
++[IXSSADStoreMetadataManager _onQueue_updateMetadata];
++[IXSSADStoreMetadataManager _currentRegionCode];
++[IXSSADStoreMetadataManager _regionMetadataForBundleID:fromMapping:forRegion:];
++[IXSSADStoreMetadataManager _enumerateMetadataForRegion:enumerator:];
++[IXSSADStoreMetadataManager _currentRegionMetadataForBundleID:currentRegion:];
++[IXSSADStoreMetadataManager currentRegionMetadataForBundleID:];
++[IXSSADStoreMetadataManager previousRegionFilePath];
++[IXSSADStoreMetadataManager readPreviousRegion];
++[IXSSADStoreMetadataManager savePreviousRegion:];
+
+@end
+
+@interface IXSTestBackgroundScheduler : NSObject <IXSBackgroundSchedulerProtocol> {
+    /* instance variables */
+    Q _delay;
+    @? _scheduledTaskBlock;
+    @"NSObject<OS_dispatch_queue>" _taskQueue;
+    @"<IXSSystemTaskRequestProtocol>" _taskRequest;
+}
+
+@property (TQ,N,V_delay) delay;
+@property (T@?,C,N,V_scheduledTaskBlock) scheduledTaskBlock;
+@property (T@"NSObject<OS_dispatch_queue>",&,N,V_taskQueue) taskQueue;
+@property (T@"<IXSSystemTaskRequestProtocol>",&,N,V_taskRequest) taskRequest;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* class methods */
++[IXSTestBackgroundScheduler supportsSecureCoding];
+
+/* instance methods */
+-[IXSTestBackgroundScheduler initWithScheduledTaskDelay:];
+-[IXSTestBackgroundScheduler encodeWithCoder:];
+-[IXSTestBackgroundScheduler initWithCoder:];
+-[IXSTestBackgroundScheduler registerForTaskWithIdentifier:usingQueue:launchHandler:];
+-[IXSTestBackgroundScheduler submitTaskRequest:error:];
+-[IXSTestBackgroundScheduler taskRequestForIdentifier:];
+-[IXSTestBackgroundScheduler constructTaskRequestWithIdentifier:];
+-[IXSTestBackgroundScheduler deregisterTaskWithIdentifier:];
+-[IXSTestBackgroundScheduler delay];
+-[IXSTestBackgroundScheduler setDelay:];
+-[IXSTestBackgroundScheduler scheduledTaskBlock];
+-[IXSTestBackgroundScheduler setScheduledTaskBlock:];
+-[IXSTestBackgroundScheduler taskQueue];
+-[IXSTestBackgroundScheduler setTaskQueue:];
+-[IXSTestBackgroundScheduler taskRequest];
+-[IXSTestBackgroundScheduler setTaskRequest:];
+
+@end
+
+@interface IXSTestTaskRequest : NSObject <IXSSystemTaskRequestProtocol> {
+    /* instance variables */
+    B _requiresNetworkConnectivity;
+    B _requiresExternalPower;
+    q _priority;
+    @"NSArray" _relatedApplications;
+    q _applicationRelationship;
+    @"NSString" _identifier;
+    @? _expirationHandler;
+}
+
+@property (TB,N,V_requiresNetworkConnectivity) requiresNetworkConnectivity;
+@property (TB,N,V_requiresExternalPower) requiresExternalPower;
+@property (Tq,N,V_priority) priority;
+@property (T@"NSArray",C,N,V_relatedApplications) relatedApplications;
+@property (Tq,N,V_applicationRelationship) applicationRelationship;
+@property (T@"NSString",R,C,N,V_identifier) identifier;
+@property (T@?,C,N,V_expirationHandler) expirationHandler;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* instance methods */
+-[IXSTestTaskRequest initWithIdentifier:];
+-[IXSTestTaskRequest setTaskCompleted];
+-[IXSTestTaskRequest requiresNetworkConnectivity];
+-[IXSTestTaskRequest setRequiresNetworkConnectivity:];
+-[IXSTestTaskRequest requiresExternalPower];
+-[IXSTestTaskRequest setRequiresExternalPower:];
+-[IXSTestTaskRequest priority];
+-[IXSTestTaskRequest setPriority:];
+-[IXSTestTaskRequest relatedApplications];
+-[IXSTestTaskRequest setRelatedApplications:];
+-[IXSTestTaskRequest applicationRelationship];
+-[IXSTestTaskRequest setApplicationRelationship:];
+-[IXSTestTaskRequest identifier];
+-[IXSTestTaskRequest expirationHandler];
+-[IXSTestTaskRequest setExpirationHandler:];
+
+@end
+
+@interface IXSUninstallAlert : NSObject {
+    /* instance variables */
+    B _appIsRemovable;
+    B _deletionIsRestricted;
+    B _needsArchiveOptionButton;
+    B _needsDemoteOptionButton;
+    B _defaultButtonAppearsDestructive;
+    @"LSApplicationRecord" _appRecord;
+    @"NSString" _bundleIdentifier;
+    Q _appRemovability;
+    ^{__CFBundle=} _defaultStringsBundle;
+    @"NSString" _defaultStringsTableName;
+    @"NSString" _typeDescription;
+}
+
+@property (T@"LSApplicationRecord",R,N,V_appRecord) appRecord;
+@property (T@"NSString",R,N,V_bundleIdentifier) bundleIdentifier;
+@property (TB,R,N,V_appIsRemovable) appIsRemovable;
+@property (TQ,R,N,V_appRemovability) appRemovability;
+@property (TB,R,N,V_deletionIsRestricted) deletionIsRestricted;
+@property (TB,N,V_needsArchiveOptionButton) needsArchiveOptionButton;
+@property (TB,N,V_needsDemoteOptionButton) needsDemoteOptionButton;
+@property (T^{__CFBundle=},R,N,V_defaultStringsBundle) defaultStringsBundle;
+@property (T@"NSString",R,N,V_defaultStringsTableName) defaultStringsTableName;
+@property (TB,R,N) appHasiCloudDataOrDocuments;
+@property (T@"NSString",&,N,V_typeDescription) typeDescription;
+@property (TB,N,V_defaultButtonAppearsDestructive) defaultButtonAppearsDestructive;
+@property (T@"NSString",R,D,N) title;
+@property (T@"NSString",R,D,N) message;
+@property (T@"NSString",R,D,N) defaultButtonLabel;
+@property (T@"NSString",R,D,N) cancelButtonLabel;
+@property (T@"NSString",R,D,N) otherButtonLabel;
+@property (T@"NSString",R,D,N) optionalButtonForNotRemovableAppLabel;
+@property (T@"NSString",R,D,N) optionalButtonForNotRemovableAppActionURL;
+@property (TQ,R,N) notificationFlags;
+
+/* class methods */
++[IXSUninstallAlert stringForCFOptionFlag:];
+
+/* instance methods */
+-[IXSUninstallAlert initWithAppRecord:bundleIdentifier:removability:deletionIsRestricted:];
+-[IXSUninstallAlert title];
+-[IXSUninstallAlert message];
+-[IXSUninstallAlert defaultButtonLabel];
+-[IXSUninstallAlert cancelButtonLabel];
+-[IXSUninstallAlert optionalButtonForNotRemovableAppLabel];
+-[IXSUninstallAlert optionalButtonForNotRemovableAppActionURL];
+-[IXSUninstallAlert otherButtonLabel];
+-[IXSUninstallAlert notificationFlags];
+-[IXSUninstallAlert appHasiCloudDataOrDocuments];
+-[IXSUninstallAlert _onMainQueue_deleteButtonActionWithDisposition:error:];
+-[IXSUninstallAlert _processUserNotification:withConfiguration:response:completion:];
+-[IXSUninstallAlert _onMainQueue_displayAlertWithCompletion:uninstallAlertConfiguration:];
+-[IXSUninstallAlert displayAlertWithCompletion:uninstallAlertConfiguration:];
+-[IXSUninstallAlert _configureOptionalButtonForConfiguration:];
+-[IXSUninstallAlert displayAlertWithCompletion:];
+-[IXSUninstallAlert otherButtonActionWithCompletion:];
+-[IXSUninstallAlert _localizedStringForKey:tableName:withFormatHint:];
+-[IXSUninstallAlert localizedStringForKey:withFormatHint:];
+-[IXSUninstallAlert sideButtonLocalizedStringForKey:withFormatHint:];
+-[IXSUninstallAlert isMDMRestrictedWithOrganizationName:];
+-[IXSUninstallAlert dealloc];
+-[IXSUninstallAlert appRecord];
+-[IXSUninstallAlert bundleIdentifier];
+-[IXSUninstallAlert appIsRemovable];
+-[IXSUninstallAlert appRemovability];
+-[IXSUninstallAlert deletionIsRestricted];
+-[IXSUninstallAlert needsArchiveOptionButton];
+-[IXSUninstallAlert setNeedsArchiveOptionButton:];
+-[IXSUninstallAlert needsDemoteOptionButton];
+-[IXSUninstallAlert setNeedsDemoteOptionButton:];
+-[IXSUninstallAlert defaultStringsBundle];
+-[IXSUninstallAlert defaultStringsTableName];
+-[IXSUninstallAlert typeDescription];
+-[IXSUninstallAlert setTypeDescription:];
+-[IXSUninstallAlert defaultButtonAppearsDestructive];
+-[IXSUninstallAlert setDefaultButtonAppearsDestructive:];
+
+@end
+
+@interface IXSUninstallAlertConfiguration : NSObject {
+    /* instance variables */
+    @"NSMutableArray" _buttonDefinitions;
+    @"NSMutableArray" _actionDefinitions;
+    @"NSString" _title;
+    @"NSString" _message;
+}
+
+@property (T@"NSMutableArray",&,N,V_buttonDefinitions) buttonDefinitions;
+@property (T@"NSMutableArray",&,N,V_actionDefinitions) actionDefinitions;
+@property (T@"NSDictionary",R,N) alertParameters;
+@property (T@"NSString",&,N,V_title) title;
+@property (T@"NSString",&,N,V_message) message;
+@property (TQ,R,N) numButtons;
+
+/* instance methods */
+-[IXSUninstallAlertConfiguration initWithTitle:message:];
+-[IXSUninstallAlertConfiguration addButtonDefinition:forAction:];
+-[IXSUninstallAlertConfiguration actionForButtonAtIndex:];
+-[IXSUninstallAlertConfiguration numButtons];
+-[IXSUninstallAlertConfiguration alertParameters];
+-[IXSUninstallAlertConfiguration buttonDefinitions];
+-[IXSUninstallAlertConfiguration setButtonDefinitions:];
+-[IXSUninstallAlertConfiguration actionDefinitions];
+-[IXSUninstallAlertConfiguration setActionDefinitions:];
+-[IXSUninstallAlertConfiguration title];
+-[IXSUninstallAlertConfiguration setTitle:];
+-[IXSUninstallAlertConfiguration message];
+-[IXSUninstallAlertConfiguration setMessage:];
+
+@end
+
+@interface IXSUninstallButtonConfiguration : NSObject {
+    /* instance variables */
+    B _isPreferredButton;
+    i _presentationStyle;
+    i _buttonType;
+    @"NSString" _title;
+}
+
+@property (T@"NSString",R,N,V_title) title;
+@property (Ti,N,V_presentationStyle) presentationStyle;
+@property (Ti,R,N,V_buttonType) buttonType;
+@property (TB,N,V_isPreferredButton) isPreferredButton;
+@property (T@"NSDictionary",R,N) buttonDefinitionForSB;
+
+/* instance methods */
+-[IXSUninstallButtonConfiguration initWithTitle:buttonType:];
+-[IXSUninstallButtonConfiguration buttonDefinitionForSB];
+-[IXSUninstallButtonConfiguration title];
+-[IXSUninstallButtonConfiguration presentationStyle];
+-[IXSUninstallButtonConfiguration setPresentationStyle:];
+-[IXSUninstallButtonConfiguration buttonType];
+-[IXSUninstallButtonConfiguration isPreferredButton];
+-[IXSUninstallButtonConfiguration setIsPreferredButton:];
+
+@end
+
+@interface TestModeMetadata : NSObject {
+    /* instance variables */
+    Q _mode;
+    @"NSDictionary" _testSpecificValidationData;
+}
+
+@property (TQ,R,N,V_mode) mode;
+@property (T@"NSDictionary",R,N,V_testSpecificValidationData) testSpecificValidationData;
+
+/* instance methods */
+-[TestModeMetadata initWithMode:testSpecificValidationData:];
+-[TestModeMetadata mode];
+-[TestModeMetadata testSpecificValidationData];
+
+@end
+
+@interface _TtC20installcoordinationd34IXSDataReplacementExtensionSession : NSObject <IXSDataReplacementExtensionSessionProtocol> {
+    /* instance variables */
+    _$sSS extensionBundleID;
+    _$s19ExtensionFoundation03AppA7ProcessVMn process;
+    _$sSo15NSXPCConnectionC connection;
+}
+
+/* instance methods */
+-[_TtC20installcoordinationd34IXSDataReplacementExtensionSession replaceDataForRequest:completion:];
+-[_TtC20installcoordinationd34IXSDataReplacementExtensionSession invalidate];
+-[_TtC20installcoordinationd34IXSDataReplacementExtensionSession init];
+
+@end
+
+@interface LSPropertyList (IXSLSRecordProtocols) <IXSPropertyListProtocol>
+
+@end
+
+@interface LSBundleRecord (IXSLSRecordProtocols) <IXSBundleRecordProtocol>
+
+@end
+
+@interface LSApplicationExtensionRecord (IXSLSRecordProtocols) <IXSAppExtensionRecordProtocol>
+
+@end
+
+@interface LSApplicationRecord (IXSLSRecordProtocols) <IXSApplicationRecordProtocol>
+
+@end
+
+

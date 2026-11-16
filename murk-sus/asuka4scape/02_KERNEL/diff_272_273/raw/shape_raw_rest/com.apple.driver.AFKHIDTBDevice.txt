@@ -1,0 +1,3 @@
+funcs 304 304
+identical 304 ratio 1.0
+changed regions 0

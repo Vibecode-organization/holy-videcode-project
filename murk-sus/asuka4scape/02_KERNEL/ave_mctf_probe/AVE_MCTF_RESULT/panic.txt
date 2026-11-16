@@ -1,0 +1,71 @@
+╭───────────────────── Traceback (most recent call last) ──────────────────────╮
+│ /home/femboychik/.local/lib/python3.14/site-packages/typer_injector/_inject. │
+│ py:154 in wrapper                                                            │
+│                                                                              │
+│   151 │   new_signature = flatten_signature(func)                            │
+│   152 │                                                                      │
+│   153 │   def wrapper(**kwargs: Any) -> Any:                                 │
+│ ❱ 154 │   │   return invoke_with_dependencies(func, kwargs, {})              │
+│   155 │                                                                      │
+│   156 │   update_wrapper(wrapper, func)                                      │
+│   157 │   wrapper.__signature__ = new_signature  # pyright:                  │
+│       ignore[reportFunctionMemberAccess]                                     │
+│                                                                              │
+│ /home/femboychik/.local/lib/python3.14/site-packages/typer_injector/_inject. │
+│ py:125 in invoke_with_dependencies                                           │
+│                                                                              │
+│   122 │   │   else:                                                          │
+│   123 │   │   │   func_kwargs[param.name] = kwargs.pop(param.name)           │
+│   124 │                                                                      │
+│ ❱ 125 │   return func(**func_kwargs)                                         │
+│   126                                                                        │
+│   127                                                                        │
+│   128 def flatten_signature(func: Callable[..., Any]) -> inspect.Signature:  │
+│                                                                              │
+│ /home/femboychik/.local/lib/python3.14/site-packages/pymobiledevice3/cli/cli │
+│ _common.py:244 in wrapper                                                    │
+│                                                                              │
+│   241 │   │   task = cli_loop.create_task(func(*args, **kwargs))             │
+│   242 │   │   try:                                                           │
+│   243 │   │   │   with cancel_on_sigint(task):                               │
+│ ❱ 244 │   │   │   │   return cli_loop.run_until_complete(task)               │
+│   245 │   │   except asyncio.CancelledError:                                 │
+│   246 │   │   │   raise typer.Exit(code=130) from None                       │
+│   247 │   │   except KeyboardInterrupt:                                      │
+│                                                                              │
+│ /usr/lib/python3.14/asyncio/base_events.py:720 in run_until_complete         │
+│                                                                              │
+│    717 │   │   if not future.done():                                         │
+│    718 │   │   │   raise RuntimeError('Event loop stopped before Future      │
+│        completed.')                                                          │
+│    719 │   │                                                                 │
+│ ❱  720 │   │   return future.result()                                        │
+│    721 │                                                                     │
+│    722 │   def stop(self):                                                   │
+│    723 │   │   """Stop running the event loop.                               │
+│                                                                              │
+│ /home/femboychik/.local/lib/python3.14/site-packages/pymobiledevice3/cli/cra │
+│ sh.py:95 in crash_parse_latest                                               │
+│                                                                              │
+│    92 ) -> None:                                                             │
+│    93 │   """Parse latest top-level crash report(s) under a path, ordered by │
+│       newest first"""                                                        │
+│    94 │   async with CrashReportsManager(service_provider) as crash_manager: │
+│ ❱  95 │   │   latest_reports = await crash_manager.parse_latest(             │
+│    96 │   │   │   path=remote_file,                                          │
+│    97 │   │   │   match=match or [],                                         │
+│    98 │   │   │   match_insensitive=match_insensitive or [],                 │
+│                                                                              │
+│ /home/femboychik/.local/lib/python3.14/site-packages/pymobiledevice3/service │
+│ s/crash_reports.py:195 in parse_latest                                       │
+│                                                                              │
+│   192 │   │                                                                  │
+│   193 │   │   if len(matching_entries_by_mtime) == 0:                        │
+│   194 │   │   │   match_arguments_description =                              │
+│       get_match_arguments_description()                                      │
+│ ❱ 195 │   │   │   raise ValueError(                                          │
+│   196 │   │   │   │   f"No reports found ({match_arguments_description})"    │
+│   197 │   │   │   │   if match_arguments_description                         │
+│   198 │   │   │   │   else "No reports found"                                │
+╰──────────────────────────────────────────────────────────────────────────────╯
+ValueError: No reports found (match=['panic'])

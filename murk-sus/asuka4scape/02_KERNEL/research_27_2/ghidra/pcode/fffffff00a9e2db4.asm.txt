@@ -1,0 +1,65 @@
+fffffff00a9e2db4 pacibsp
+fffffff00a9e2db8 sub sp,sp,#0x70
+fffffff00a9e2dbc stp x22,x21,[sp, #0x40]
+fffffff00a9e2dc0 stp x20,x19,[sp, #0x50]
+fffffff00a9e2dc4 stp x29,x30,[sp, #0x60]
+fffffff00a9e2dc8 add x29,sp,#0x60
+fffffff00a9e2dcc cbz x2,0xfffffff00a9e2e7c
+fffffff00a9e2dd0 mov x19,x2
+fffffff00a9e2dd4 mov x20,x0
+fffffff00a9e2dd8 ldr x8,[x0, #0x20]
+fffffff00a9e2ddc cmp x2,x8
+fffffff00a9e2de0 b.cs 0xfffffff00a9e2e90
+fffffff00a9e2de4 ldr x8,[x20, #0x18]
+fffffff00a9e2de8 lsl x9,x19,#0x6
+fffffff00a9e2dec sub x21,x9,x19, LSL #0x3
+fffffff00a9e2df0 add x9,x8,x21
+fffffff00a9e2df4 eor x16,x8,x9
+fffffff00a9e2df8 tst x16,#-0x40000000000000
+fffffff00a9e2dfc b.eq 0xfffffff00a9e2e04
+fffffff00a9e2e00 movk x9,#0xc8a2, LSL #48
+fffffff00a9e2e04 ldr x8,[x9], #0x11
+fffffff00a9e2e08 ldr x10,[x8]
+fffffff00a9e2e0c add x8,x8,#0x300
+fffffff00a9e2e10 stp x10,x8,[sp, #0x18]
+fffffff00a9e2e14 str x9,[sp, #0x28]
+fffffff00a9e2e18 adrp x8,-0xff8ff3000
+fffffff00a9e2e1c ldr d0,[x8, #0xcf0]
+fffffff00a9e2e20 str d0,[sp, #0x30]
+fffffff00a9e2e24 add x8,x20,#0x40
+fffffff00a9e2e28 str x8,[sp, #0x38]
+fffffff00a9e2e2c ldr x8,[x20, #0x10]
+fffffff00a9e2e30 ldr x9,[x8, #0x30]
+fffffff00a9e2e34 ldrb w8,[x20, #0xd]
+fffffff00a9e2e38 orr x8,x19,x8, LSL #0x18
+fffffff00a9e2e3c add x2,sp,#0x18
+fffffff00a9e2e40 mov x0,x1
+fffffff00a9e2e44 mov x1,x8
+fffffff00a9e2e48 mov x17,#0xea3c
+fffffff00a9e2e4c blraa x9,x17
+fffffff00a9e2e50 ldr x8,[x20, #0x20]
+fffffff00a9e2e54 cmp x19,x8
+fffffff00a9e2e58 b.cs 0xfffffff00a9e2e98
+fffffff00a9e2e5c ldr x8,[x20, #0x18]
+fffffff00a9e2e60 add x9,x8,x21
+fffffff00a9e2e64 eor x16,x8,x9
+fffffff00a9e2e68 tst x16,#-0x40000000000000
+fffffff00a9e2e6c b.eq 0xfffffff00a9e2e74
+fffffff00a9e2e70 movk x9,#0xc8a2, LSL #48
+fffffff00a9e2e74 mov w8,#0x1
+fffffff00a9e2e78 strb w8,[x9, #0x10]
+fffffff00a9e2e7c ldp x29,x30,[sp, #0x60]
+fffffff00a9e2e80 ldp x20,x19,[sp, #0x50]
+fffffff00a9e2e84 ldp x22,x21,[sp, #0x40]
+fffffff00a9e2e88 add sp,sp,#0x70
+fffffff00a9e2e8c retab
+fffffff00a9e2e90 mov w8,#0x131
+fffffff00a9e2e94 b 0xfffffff00a9e2e9c
+fffffff00a9e2e98 mov w8,#0x141
+fffffff00a9e2e9c adrp x9,-0xff8f48000
+fffffff00a9e2ea0 add x9,x9,#0xfa7
+fffffff00a9e2ea4 stp x9,x8,[sp, #0x8]
+fffffff00a9e2ea8 str x19,[sp]
+fffffff00a9e2eac adrp x0,-0xff8f47000
+fffffff00a9e2eb0 add x0,x0,#0x9
+fffffff00a9e2eb4 bl 0xfffffff00aa4d114

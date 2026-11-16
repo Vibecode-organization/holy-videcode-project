@@ -1,0 +1,508 @@
+0xfffffff00a1d5100 sz=1136 replace :: machine_routines_common.c | ml_set_interrupts_enabled_with_debug | %s: debug exceptions enabled in kernel mode @%s:%d
+0xfffffff00a1de640 sz=612 replace :: 
+0xfffffff00a1df9c4 sz=164 replace :: 
+0xfffffff00a1dfa68 sz=248 replace :: 
+0xfffffff00a1dfb60 sz=336 replace :: 
+0xfffffff00a1dfcb0 sz=404 replace :: 
+0xfffffff00a1e05f4 sz=672 replace :: 
+0xfffffff00a1e7754 sz=3800 replace :: 
+0xfffffff00a1f075c sz=232 replace :: 
+0xfffffff00a1f0844 sz=288 replace :: 
+0xfffffff00a1f0ed4 sz=396 replace :: 
+0xfffffff00a1f1060 sz=192 replace :: 
+0xfffffff00a1f1120 sz=236 replace :: 
+0xfffffff00a1f1f04 sz=228 replace :: 
+0xfffffff00a1f3fe4 sz=204 insert :: 
+0xfffffff00a1f74fc sz=628 replace :: 
+0xfffffff00a1f79e8 sz=1360 replace :: 
+0xfffffff00a1ff3e4 sz=276 replace :: 
+0xfffffff00a20ae88 sz=12 replace :: 
+0xfffffff00a20b298 sz=524 replace :: coalition.c | i_coal_jetsam_set_taskrole | %s: invalid role(%d) for task @%s:%d | %s: task %p attempting to set role %d in coalition %p to which it does not belong! @%s:%d
+0xfffffff00a20b4a4 sz=104 replace :: 
+0xfffffff00a20b50c sz=60 replace :: 
+0xfffffff00a20c20c sz=272 replace :: coalition.c | Attempt to call task_coalition_role_for_type with invalid coalition_type: %d
+0xfffffff00a20f9e4 sz=1116 replace :: 
+0xfffffff00a211404 sz=236 replace :: Compressor Info: %u%% of compressed pages limit (%s) and %u%% of segments limit (%s) with %d swapfiles and %s 
+0xfffffff00a211aa8 sz=2616 replace :: exception.c | bad exception behavior! @%s:%d | mach_exception_raise_identity_protected() must be code64 @%s:%d | mach_exception_raise_state_identity_protected() must be code64 @%s:%d
+0xfffffff00a2131cc sz=356 replace :: com.apple.private.set-exception-port | com.apple.security.cs.debugger
+0xfffffff00a2134d4 sz=12 insert :: 
+0xfffffff00a2153dc sz=372 replace :: Memory error logging started | host.c | attempted to set invalid special port %d @%s:%d
+0xfffffff00a2155ec sz=216 replace :: com.apple.private.xpc.launchd.event-monitor
+0xfffffff00a219270 sz=872 replace :: 
+0xfffffff00a21e488 sz=696 replace :: com.apple.private.set-exception-port | com.apple.security.cs.debugger | com.apple.security.only-one-exception-port
+0xfffffff00a232c9c sz=152 insert :: mpsc_queue.c | mpsc_queue[%p]: invalid kind (%d) @%s:%d
+0xfffffff00a25e1f8 sz=552 replace :: 
+0xfffffff00a2603d0 sz=3904 replace :: task.c | created task is not a member of a resource coalition @%s:%d | coalition.c | failed to adopt task %p into corpse coalition: %d @%s:%d
+0xfffffff00a26ba84 sz=268 replace :: com.apple.security.fatal-exceptions | com.apple.private.verified-jit-mode
+0xfffffff00a2756f4 sz=488 replace :: 
+0xfffffff00a2777d4 sz=1336 replace :: com.apple.private.thread-set-state | com.apple.security.cs.debugger
+0xfffffff00a298c8c sz=2012 replace :: keepsyms | Zone info: |   Zone map: %p - %p |   Metadata: %p - %p
+0xfffffff00a2b7fe0 sz=952 replace :: thread_call.c | thread_call_enter_delayed_with_leeway | NULL call in %s @%s:%d
+0xfffffff00a2b8398 sz=3956 replace :: report_compressor_age | vm: %s: vm_compressor_mode == VM_PAGER_NOT_CONFIGURED, returning early | thread_call.c | thread_call_enter_delayed_with_leeway
+0xfffffff00a2baf98 sz=92 replace :: 
+0xfffffff00a2bb344 sz=408 replace :: 
+0xfffffff00a2bbde4 sz=2696 replace :: vm_compressor_process_major_segments | vm: %s: moved %d/%d segments from MAJORQ to AGEQ in %lu.%09u seconds and %d breaks | vm: pre-compaction fragmentation level %u | vm: post-compaction fragmentation level %u
+0xfffffff00a2bcc80 sz=4456 replace :: vm_compressor.c | c_seg %p has bad c_state = %d @%s:%d | c_seg %p requesting bad c_state = %d @%s:%d
+0xfffffff00a2be098 sz=820 replace :: 
+0xfffffff00a2c1e2c sz=140 replace :: 
+0xfffffff00a2c25e4 sz=2820 replace :: vm_compressor.c | c_decompress_page: c_segno %d >= c_segments_available %d, slot_ptr(%p), slot_data(%x) @%s:%d | c_decompress_page: c_segno %d is free, slot_ptr(%p), slot_data(%x) @%s:%d | c_decompress_page: c_indx %d >= c_nextslot %d, c_seg(%p), slot_ptr(%p), slot_data(%x) @%s:%d
+0xfffffff00a2c3e28 sz=1212 replace :: vm_param.h | overflow detected @%s:%d
+0xfffffff00a2c6284 sz=1740 replace :: vm_param.h | overflow detected @%s:%d
+0xfffffff00a2c8ec8 sz=3464 replace :: vm_param.h | overflow detected @%s:%d
+0xfffffff00a2ca0ec sz=512 replace :: 
+0xfffffff00a2cd51c sz=4628 replace :: vm_object_internal.h | vm_object_pl_req_begin(%p): overflow | vm_object_paging_begin(%p): overflow | memory_object.c
+0xfffffff00a2cf230 sz=15484 replace :: vm_fault.c | Write fault on compressor map, va: %p type: %u bounds: %p->%p @%s:%d | vm_object_internal.h | vm_object_paging_begin(%p): overflow
+0xfffffff00a2d3720 sz=208 insert :: 
+0xfffffff00a2d39fc sz=636 replace :: vm_object_internal.h | vm_object_paging_begin(%p): overflow
+0xfffffff00a2d5330 sz=8812 replace :: vm_object_internal.h | vm_object_activity_end(%p): underflow | vm_object_paging_begin(%p): overflow | vm_object_paging_end(%p): underflow
+0xfffffff00a2d79f4 sz=84 insert :: 
+0xfffffff00a2d7f14 sz=296 insert :: vm_object_internal.h | vm_object_paging_end(%p): underflow
+0xfffffff00a2d81ac sz=252 replace :: 
+0xfffffff00a2d82a8 sz=944 replace :: 
+0xfffffff00a2da81c sz=3624 replace :: vm_object_internal.h | vm_object_paging_begin(%p): overflow | vm_fault.c | vm_fault_copy: unexpected error 0x%x from vm_fault_page()
+0xfffffff00a2db968 sz=1000 replace :: lock_rw.c | panic: rw lock exclusive check done outside of kernel debugger @%s:%d | vm_fault.c | kdp_lightweight_fault called from outside of debugger context @%s:%d
+0xfffffff00a2dd900 sz=1096 replace :: 
+0xfffffff00a2e0da0 sz=692 replace :: vm_map.c | Attempt to delete through transparent submap. @%s:%d | vm_map_delete_preflight_submap | Unable to find entry in sealed submap (%s) %p,  %llx @%s:%d
+0xfffffff00a2e1330 sz=1112 replace :: 
+0xfffffff00a2e34bc sz=788 replace :: 
+0xfffffff00a2e902c sz=1796 replace :: vm_map_remap | %s: downgrading VM entry [%p, %p) from JIT to non-JIT
+0xfffffff00a2f55f4 sz=3376 replace :: vm_map.c | vm_map_relocate | %s: tried to relocate entries in the kernel map (map = %p) @%s:%d | %s failed to delete source; it must have changed after it was locked (kr = %d) @%s:%d
+0xfffffff00a2f86d4 sz=2188 replace :: vm: vm_map_freeze: FREEZER_ERROR_EXCESS_SHARED_MEMORY. %d pages for pid %d, versus maximum limit of %d | vm: vm_map_freeze: FREEZER_ERROR_LOW_PRIVATE_SHARED_RATIO. %d/%d pages = ratio of %d for pid %d, versus minimu
+0xfffffff00a2fa5c0 sz=212 replace :: 
+0xfffffff00a306324 sz=2300 replace :: 
+0xfffffff00a3093e4 sz=664 replace :: 
+0xfffffff00a310388 sz=376 replace :: lock_ticket.c | panic: ticket lock acquired check done outside of kernel debugger @%s:%d
+0xfffffff00a3105b4 sz=368 replace :: lock_ticket.c | panic: ticket lock acquired check done outside of kernel debugger @%s:%d
+0xfffffff00a310b88 sz=404 replace :: 
+0xfffffff00a31186c sz=324 replace :: 
+0xfffffff00a3119b0 sz=168 replace :: 
+0xfffffff00a312390 sz=8608 replace :: 
+0xfffffff00a3146a0 sz=9388 replace :: vm_pageout.c | vm_pageout: no victim @%s:%d
+0xfffffff00a317028 sz=1708 replace :: 
+0xfffffff00a318a94 sz=1688 replace :: 
+0xfffffff00a31912c sz=248 replace :: 
+0xfffffff00a319224 sz=24 replace :: 
+0xfffffff00a3196dc sz=5408 replace :: vm_pageout.c | need corner case for fictitious page @%s:%d | vm_object_upl_request: contiguous object specified @%s:%d | vm_object_upl_request: external object with non-zero paging offset @%s:%d
+0xfffffff00a31bd68 sz=8096 replace :: vm_pageout.c | vm_object_iopl_request: unexpected error 0x%x from vm_fault_page() | vm_object_iopl_request: Wired page missing. @%s:%d | vm_object_internal.h
+0xfffffff00a31eb1c sz=1212 replace :: vm_pageout.c | iopl_valid_data: %p already wired @%s:%d | iopl_valid_data: busy+absent page on page queue @%s:%d | iopl_valid_data: busy page w/o absent @%s:%d
+0xfffffff00a31fde4 sz=40 replace :: 
+0xfffffff00a31fe0c sz=232 replace :: 
+0xfffffff00a328d90 sz=276 replace :: vm_param.h | overflow detected @%s:%d
+0xfffffff00a3290b8 sz=556 replace :: 
+0xfffffff00a329420 sz=900 replace :: vm_resident.c | vm_page_wire(%p): wire_count overflow @%s:%d
+0xfffffff00a3297a4 sz=1708 replace :: 
+0xfffffff00a32aee8 sz=736 replace :: 
+0xfffffff00a32b328 sz=1524 replace :: 
+0xfffffff00a32c884 sz=452 replace :: 
+0xfffffff00a32cee8 sz=380 replace :: 
+0xfffffff00a32dce0 sz=908 replace :: 
+0xfffffff00a32e208 sz=1020 replace :: vm_resident.c | vm_page_check_pageable_safe: trying to add pagefrom a kernel object to pageable queue @%s:%d | vm_page_check_pageable_safe: trying to add pagefrom compressor object (%p) to pageable queue @%s:%d
+0xfffffff00a32f378 sz=1276 replace :: vm_resident.c | Unrecognized relocation reason %u
+0xfffffff00a331814 sz=4216 replace :: invalid
+0xfffffff00a33ee54 sz=264 replace :: 
+0xfffffff00a3415b8 sz=264 replace :: 
+0xfffffff00a342370 sz=2340 replace :: vm_upl.c | upl_abort_range: kernel_object being DUMPED @%s:%d | vm_object_internal.h | vm_object_activity_end(%p): underflow
+0xfffffff00a342c94 sz=5368 replace :: vm_upl.c | wire_count == 0, m = %p, obj = %p @%s:%d | vm_object_internal.h | vm_object_activity_end(%p): underflow
+0xfffffff00a346600 sz=152 replace :: 
+0xfffffff00a346698 sz=152 replace :: 
+0xfffffff00a34aa10 sz=304 replace :: 
+0xfffffff00a3683b0 sz=252 replace :: 
+0xfffffff00a3684ac sz=100 replace :: 
+0xfffffff00a36ed08 sz=1344 replace :: 
+0xfffffff00a36f674 sz=264 replace :: 
+0xfffffff00a387054 sz=6196 replace :: __PRELINK_TEXT | __PLK_DATA_CONST | __PLK_TEXT_EXEC | __TEXT
+0xfffffff00a389140 sz=832 replace :: 
+0xfffffff00a3907b0 sz=1496 replace :: Kernel stack memory corruption detected @%s:%d | Unexpected fault in kernel static region | Unexpected fault in kernel physical aperture | Kernel data abort.
+0xfffffff00a395844 sz=416 insert :: 
+0xfffffff00a3961c0 sz=1004 replace :: pmap.c | kvtophys_nofail | %s: VA->PA translation failed for va %p @%s:%d | sptm.h
+0xfffffff00a39cfd0 sz=2068 replace :: 
+0xfffffff00a39f4e8 sz=1844 replace :: commpage 64-bit | commpage.c | commpage cpus==0 @%s:%d
+0xfffffff00a3b34b4 sz=13760 replace :: 3B878185-AA62-4E1F-9DC9-D6799CBB6EBB | machine_routines_common.c | ml_set_interrupts_enabled_with_debug | %s: debug exceptions enabled in kernel mode @%s:%d
+0xfffffff00a3b8bac sz=308 replace :: jitbox.c | invalid jrange value @%s:%d
+0xfffffff00a3c9cd8 sz=1032 replace :: vfs_bio.c | %p: b_hash.le_prev is not deadbeef @%s:%d | Couldn't register buffer cache callout for vm pressure! @%s:%d
+0xfffffff00a3cac2c sz=2452 replace :: buf_getblk | vfs_bio.c | buffer has UPL, but not marked BUSY: %p @%s:%d | %p: b_hash.le_prev is not deadbeef @%s:%d
+0xfffffff00a3cc094 sz=676 replace :: buf_biowait
+0xfffffff00a3cc664 sz=568 replace :: buf_invalblkno
+0xfffffff00a3d1f10 sz=5508 replace :: cluster_io | vfs_cluster.c | BUSY bp found in cluster_io @%s:%d | Vector UPLs should not take this code-path @%s:%d
+0xfffffff00a3d9df8 sz=4728 replace :: cluster_read_copy | vfs_cluster.c | encrypted blocks will hit UBC! @%s:%d | cluster_read_copy: failed to get pagelist @%s:%d
+0xfffffff00a3fe638 sz=816 replace :: 
+0xfffffff00a408224 sz=4736 replace :: vfs_syscalls.c | EKEEPLOOKING without NAMEI_CONTLOOKUP on either ndp? @%s:%d
+0xfffffff00a40c880 sz=2836 replace :: com.apple.private.kernel.set-package-extensions | fsctl_internal | %s: proc %s[%d] uses FSIOC_SET_FSTYPENAME_OVERRIDE | mtmfs
+0xfffffff00a41450c sz=984 replace :: 
+0xfffffff00a416064 sz=3032 replace :: com.apple.ResourceFork | vn_open_auth_retry | vfs_vnops.c | EKEEPLOOKING, but continue flag not set? @%s:%d
+0xfffffff00a41d830 sz=88 insert :: 
+0xfffffff00a42b810 sz=992 replace :: vnode_spec_revokewait | spec_vnops.c | spec_ioctl @%s:%d
+0xfffffff00a430e5c sz=820 replace :: 
+0xfffffff00a4372a0 sz=144 replace :: 
+0xfffffff00a439310 sz=408 replace :: bpf.c | bpf_release_d | %s: %p BPF_DETACHED not set @%s:%d
+0xfffffff00a439b24 sz=248 replace :: 
+0xfffffff00a43a6d0 sz=2672 replace :: bpfread | bpf_read | %s: bpf%d ERESTART to EINTR | bpf.c
+0xfffffff00a43b278 sz=1604 replace :: bpfwrite | com.apple.private.network.management.data | bpfwrite: resid %d error %d | bpf.c
+0xfffffff00a43c194 sz=4956 replace :: bpfioctl | bpf%d BIOCSBLEN capped to %u from %u | BIOCSPKTHDRV2 | bpf%u cannot set BIOCSBATCHWRITE when BIOCSETTC is set
+0xfffffff00a43db64 sz=1108 replace :: bpf_setdlt | bpf_setdlt: bpf%d bpf_attachd %s error %d | bpf_setdlt: bpf%d ifpromisc %s error %d
+0xfffffff00a43dfb8 sz=120 replace :: BIOCSETIF
+0xfffffff00a43e86c sz=2808 replace :: bpf_setup | %s: uuids not found error %d | %s: processes not matching error %d | %s: source and destination are the same device error %d
+0xfffffff00a441160 sz=688 replace :: 
+0xfffffff00a4418bc sz=920 replace :: bpfdetach | bpf.c | bpf_release_d | %s: %p BPF_DETACHED not set @%s:%d
+0xfffffff00a46a12c sz=6068 replace :: ifnet_ioref_wait | if_flt_monitor | ifnet_poll_thread_exit | ifnet_start_thread_exit
+0xfffffff00a470ac0 sz=456 replace :: 
+0xfffffff00a471068 sz=456 replace :: 
+0xfffffff00a475d30 sz=252 replace :: net.link.addr
+0xfffffff00a478684 sz=3924 replace :: m->m_flags & M_PKTHDR | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/k | ifp->if_flt_busy != 0 | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n
+0xfffffff00a47b940 sz=3744 replace :: m->m_flags & M_PKTHDR | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/k | ifp->if_output_dlil != NULL | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n
+0xfffffff00a47db14 sz=952 replace :: *proto_family == PF_INET | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n | (m->m_flags & M_PKTHDR) != 0 | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n
+0xfffffff00a47decc sz=996 replace :: *proto_family == PF_INET6 | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n | (m->m_flags & M_PKTHDR) != 0 | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n
+0xfffffff00a4807a8 sz=408 replace :: 
+0xfffffff00a490fbc sz=2060 replace :: redirect_nx_sync_tx | %s: %s ring %d flags 0x%x | __DATA_CONST | redirect_tx_submit
+0xfffffff00a497e90 sz=752 replace :: buf != NULL && buflen >= sizeof(*ss) | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n | buflen >= sa->sa_len | size <= sdl->sdl_alen
+0xfffffff00a498250 sz=200 insert :: 
+0xfffffff00a49c4e0 sz=2964 replace :: rt_setgate | %s: rejecting AF_LINK gateway on index %u with unusable link address (nlen %u, alen %u, sdl_len %u) | route.c | sin_get_ifscope
+0xfffffff00a4a4f40 sz=4908 replace :: m->m_flags & M_PKTHDR | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n | com.apple.private.network.management.control
+0xfffffff00a4ae3d0 sz=3864 replace :: nstat_ifnet_report_lim_stats | %s - Reporting LIM stats for ifindex %u | lock_rw_old.c | lck_rw_unlock_exclusive(): lock %p held in mode: %d @%s:%d
+0xfffffff00a4b0368 sz=1876 replace :: 
+0xfffffff00a4b8148 sz=524 replace :: unknown | %s net_port_info if_index %u arch %s family %s proto %s local %s:%u foreign %s:%u pid: %u epid %u
+0xfffffff00a4b9d84 sz=1148 replace :: if_ports_used_add_inpcb | %s: ifindex %u too big | %s: unexpected protocol %u for inp %p | lock_rw_old.c
+0xfffffff00a4ba930 sz=1144 replace :: if_ports_used_add_flow_entry | %s: ifindex %u too big | %s: unexpected protocol %u for nfi %p | lock_rw_old.c
+0xfffffff00a4baf94 sz=3268 replace :: if_ports_used_match_mbuf: called PKTF_WAKE_PKT not set from %s | if_ports_used_match_mbuf: receive interface is NULL | if_ports_used_match_mbuf: mbuf_copydata(ip) error %d | if_ports_used_match_mbuf: mbuf_copydata(ip6_hdr) error %d
+0xfffffff00a4bc0d0 sz=152 replace :: 
+0xfffffff00a4bc168 sz=1008 replace :: net_port_info_match_npi | net_port_info_find_match %s check on delegated %s | wake packet no match | net_port_info_find_match: max delegation depth %u exceeded for %s
+0xfffffff00a4bc558 sz=1700 replace :: deliver_attributed_wake_packet_event | %s: kev_post_msg() failed with error %d for wake uuid %s | already notified attributed wake packet | lock_rw_old.c
+0xfffffff00a4bcbfc sz=2452 replace :: if_ports_used_match_pkt | %s: called PKT_F_WAKE_PKT not set from %s | if_ports_used_match_pkt: receive interface is NULL | %s: unexpected protocol family %u from %s
+0xfffffff00a4c711c sz=4932 replace :: utun%d | utunid%d | utun_ctl_connect - kpipe requires netif: failed %d | com.apple.netif.%s
+0xfffffff00a4d2b44 sz=2248 replace :: ipsec_output: first mbuf length shorter than IP header length: %d. | __DATA_CONST | ipsec_output: Bad ip header length %d. | ipsec_output: first mbuf length shorter than IPv6 header length: %d.
+0xfffffff00a4dd1b8 sz=1160 replace :: Failed to find a free agent type ID. | necp_get_new_agent_id
+0xfffffff00a4e5130 sz=14836 replace :: euuid | necp_application_find_policy_match_internal | %s: %s(%d) does not hold the necessary entitlement to delegate network traffic for other processes by %s | %s: Invalid TLV length (%u)
+0xfffffff00a4e8d7c sz=9328 replace :: EXAMINING | SOCKET | necp_socket_find_policy_match_with_info_locked | %s: DATA-TRACE <%s %llx>: %s - policy id=%d session_order=%d policy_order=%d result=%s (cond_policy_id %d) (sk
+0xfffffff00a4ecdf8 sz=108 insert :: 
+0xfffffff00a4ed1c0 sz=11308 replace :: NECP_KERNEL_CONDITION_APP_ID | SOCKET | necp_socket_check_policy | %s: DATA-TRACE <%s %llx>: ------ %smatching <%s> <value (%d / 0x%X) (%d / 0x%X) (%d / 0x%X) input (%d / 0x%X) 
+0xfffffff00a4f017c sz=7488 replace :: START | SOCKET - INP UPDATE | necp_socket_find_policy_match | %s: DATA-TRACE <%s %llx>: %s - fam %d proto %d port <local %d/%d remote %d/%d> <local %s remote %s> <drop-all 
+0xfffffff00a4f204c sz=3152 replace :: com.apple.private.necp.match | com.apple.developer.CaptiveNetworkPlugin
+0xfffffff00a4fc8e0 sz=1792 replace :: necp_set_socket_resolver_signature_from_parameters | %s: Invalid TLV length (%u)
+0xfffffff00a4febd8 sz=11096 replace :: necp_client_trace_parsed_parameters | %s: NECP_CLIENT_PARAMS_LOG <pid %d %s>: Parsed params - valid_fields %X flags %X extended flags %llX delegated | %s: NECP_CLIENT_PARAMS_LOG <pid %d %s>: Parsed params - tracker flags <known-tracker %X> <non-app-initiated %X | %s: NECP_CLIENT_PARAMS_LOG <pid %d %s>: Parsed prohibited_interfaces[%d] <%s>
+0xfffffff00a507814 sz=4308 replace :: NECP client observers with push enabled may not add their own clients | necp_client_add | necp_client_add cannot add more clients | %s: necp_client_add parameters copyin error (%d)
+0xfffffff00a50b094 sz=2228 replace :: necp_client_request_nexus | %s: necp_client_request_nexus copyin client_id error (%d) | %s: Request nexus error (%d) | %s: <pid %d> Disallow request nexus with flow divert result
+0xfffffff00a51a178 sz=924 replace :: 
+0xfffffff00a51a514 sz=152 replace :: 
+0xfffffff00a526500 sz=900 replace :: nat464_translate_icmp_ip | %s translated to IPv6 (inner) ip6_plen: %#x ip6_nxt: %d ip6_src: %s ip6_dst: %s | %s translated to IPv4 (inner) ip_len: %#x ip_p: %d ip_sum: %#x ip_src: %s ip_dst: %s | pbuf != NULL
+0xfffffff00a526988 sz=664 replace :: nat464_translate_64 | %s translated to IPv4 ip_len: %#x ip_p: %d ip_sum: %#x ip_src: %s ip_dst: %s
+0xfffffff00a526c20 sz=396 replace :: nat464_translate_46 | %s translated to IPv6 ip6_plen: %#x  ip6_nxt: %d ip6_src: %s ip6_dst: %s
+0xfffffff00a526dac sz=2168 replace :: nat464_translate_proto | %s translated to ICMP type: %d code: %d checksum: %#x | FALSE | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n
+0xfffffff00a52e050 sz=4856 replace :: pbuf == NULL || pd.mp == NULL || pd.mp == pbuf | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n
+0xfffffff00a531fb0 sz=15228 replace :: pbuf == pd->mp | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n | !NETNS_TOKEN_VALID(&nstoken) | s->rule.ptr->states != 0
+0xfffffff00a538418 sz=2236 replace :: 
+0xfffffff00a539840 sz=112 replace :: 
+0xfffffff00a5398b0 sz=1616 replace :: pf_route: invalid parameters @%s:%d
+0xfffffff00a53c0ac sz=344 replace :: 
+0xfffffff00a53dcac sz=416 replace :: pf_calc_mss: not AF_INET or AF_INET6! @%s:%d
+0xfffffff00a5412e0 sz=5188 replace :: pbuf == NULL || pd.mp == NULL || pd.mp == pbuf | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n | pbuf->pb_type == PBUF_TYPE_MEMORY | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n
+0xfffffff00a542834 sz=1204 replace :: m->m_flags & M_PKTHDR | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n | pf_route6: invalid parameters @%s:%d
+0xfffffff00a550428 sz=2792 replace :: frent != NULL | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n | *frag == NULL || BUFFER_FRAGMENTS(*frag) | frep != NULL || frea != NULL
+0xfffffff00a550f10 sz=2436 replace :: *frag == NULL || !BUFFER_FRAGMENTS(*frag) | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n | frp != NULL || fra != NULL | cur == NULL
+0xfffffff00a551b0c sz=3092 replace :: 
+0xfffffff00a552778 sz=3192 replace :: *frag == NULL || BUFFER_FRAGMENTS(*frag) | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n | frep != NULL || frea != NULL | frent != NULL
+0xfffffff00a5533f0 sz=2496 replace :: *frag == NULL || !BUFFER_FRAGMENTS(*frag) | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n | frp != NULL || fra != NULL | cur == NULL
+0xfffffff00a554430 sz=652 replace :: pbuf == pd->mp | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n
+0xfffffff00a55640c sz=836 replace :: pbuf->pb_memory.pm_buffer != NULL | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n | off >= 0 | nm->pm_offset + (nm->pm_len + delta_len) <= nm->pm_buffer_len
+0xfffffff00a55ff24 sz=860 replace :: iptap_clone_create | %s: ifnet_allocate failed, error %d | %s: ifnet_attach failed - error %d
+0xfffffff00a560280 sz=416 replace :: iptap_tap_callback | %s: if_softc is NULL for ifp %s
+0xfffffff00a560420 sz=212 replace :: iptap != NULL | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n
+0xfffffff00a560a8c sz=1516 replace :: 
+0xfffffff00a5611a4 sz=936 replace :: pktap_clone_create | %s: ifnet_allocate failed, error %d | %s: ifnet_attach failed - error %d | %s:%d unit %u
+0xfffffff00a56154c sz=300 replace :: pktap_tap_callback | %s: if_softc is NULL for ifp %s
+0xfffffff00a561678 sz=292 replace :: pktap_detach | pktap != NULL | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n
+0xfffffff00a5631d4 sz=2368 replace :: pktap_build_mbuf_header | %s:%d unknown if_type %u for %s
+0xfffffff00a564f74 sz=4180 replace :: 
+0xfffffff00a565fc8 sz=104 replace :: 
+0xfffffff00a566294 sz=212 replace :: 
+0xfffffff00a566368 sz=100 replace :: 
+0xfffffff00a566400 sz=4180 replace :: 
+0xfffffff00a567454 sz=104 replace :: 
+0xfffffff00a567720 sz=212 replace :: 
+0xfffffff00a5677f4 sz=100 replace :: 
+0xfffffff00a575090 sz=2484 replace :: cfil_service_inject_queue | %s:%d CFIL: SERVICE INJECT-Q: <so %llx> outgoing %d queue len %llu | %s:%d CFIL: SERVICE INJECT-Q: <so %llx> data %llx datalen %u (mbcnt %u) | CFIL: Error: sosend_reinject() failed
+0xfffffff00a59068c sz=960 replace :: igmp_domifdetach | %s: called for ifp %s | igmp.c | igi_delete
+0xfffffff00a590a4c sz=880 replace :: %s: flushing %llx on relq ifp %s | igmp_flush_relq | inm->inm_in_nrele == true | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n
+0xfffffff00a590dbc sz=1124 replace :: igi_remref | %s: freeing igmp_ifinfo for ifp %s | _inm->inm_in_dtle == true | _dtlecnt != 0
+0xfffffff00a591220 sz=1660 replace :: igmp.c | m_pulldown malfunction @%s:%d
+0xfffffff00a592b00 sz=1464 insert :: igi != NULL | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n
+0xfffffff00a5937e4 sz=60 insert :: 
+0xfffffff00a593efc sz=5360 replace :: igmp_v1v2_process_querier_timers | %s: transition from v%d->v%d on %s | igmp_v3_merge_state_changes | %s: outbound queue full on %s
+0xfffffff00a59a4c4 sz=2616 replace :: ia != NULL | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n
+0xfffffff00a59c42c sz=764 replace :: ifp != NULL | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n
+0xfffffff00a59d098 sz=2864 replace :: route->rt_expire == 0 || route->rt_rmx.rmx_expire != 0 | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n | arp_lookup_ip | %s: can't allocate llinfo for %s
+0xfffffff00a5a2e54 sz=2724 replace :: (inm->inm_debug & (IFD_ATTACHED | IFD_TRASHED)) == IFD_ATTACHED | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n | !lastref || (!(inm->inm_debug & IFD_ATTACHED) && inm->inm_reqcnt == 0) | ifma->ifma_addr != NULL
+0xfffffff00a5a43f4 sz=476 insert :: in_mcast.c | in_multi_detach | %s: inm=%p negative reqcnt @%s:%d | %s: Attempt to detach an unattached record inm=%p @%s:%d
+0xfffffff00a5c33ac sz=6188 replace :: ip_input_check_interface | %s: weak ES interface match to %s for packet from %s to %s proto %u received via %s | %s: no interface match for packet from %s to %s proto %u received via %s | __DATA_CONST
+0xfffffff00a5d6914 sz=468 replace :: m->m_flags & M_PKTHDR | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n
+0xfffffff00a5d6ae8 sz=26816 replace :: IPv6 bad tcp checksum | IPv4 bad tcp checksum | bad tcp offset | src IPv6 address unspecified
+0xfffffff00a5de938 sz=16248 replace :: tcp_output | %s - %lx: snd_nxt is %u and snd_una is %u, cnt %d | %s - %lx: offset is negative! len %d off %d | rledbat
+0xfffffff00a6183d0 sz=1736 replace :: com.apple.flow-divert | (%u): flow_divert_kctl_init - ctl_register failed: %d | g_tcp_protosw != NULL | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n
+0xfffffff00a618e64 sz=1076 replace :: (%u): trying ctl_enqueuembuf again | (%u): flow_divert_kctl_rcvd: ctl_enqueuembuf returned an error: %d
+0xfffffff00a619298 sz=1540 replace :: (%u): got a bad packet, length (%lu) < sizeof hdr (%lu) | (%u): mbuf_copydata failed for the header: %d | unknown | (%u): flow_divert_input(): Got a %s (%d) message from group %d for a conn_id: %u
+0xfffffff00a61a1f0 sz=916 replace :: (%u): flow_divert_packet_init failed: %d, cannot send flow states | (%u): flow_divert_handle_flow_states_request: group send queue is not empty | (%u): flow_divert_handle_flow_states_request started with ctl_unit %d | (%u): Failed to add a flow state: %d
+0xfffffff00a61a584 sz=2008 replace :: (%u): failed to get the connect result: %d | (%u): flow_divert_handle_connect_result: (so) is NULL | (%u): received connect result %u | (%u): failed to get the send window: %d
+0xfffffff00a61b994 sz=768 replace :: (%u): failed to create a IP_RECVDSTADDR control mbuf | (%u): failed to create a IP_RECVIF control mbuf
+0xfffffff00a61ccd0 sz=1256 replace :: (%u): disconnecting group %d | flow_divert.c | flow divert group %u is disconnecting, but no groups are active (active count = %u) @%s:%d | flow divert group %u is disconnecting, but in-process group list is empty @%s:%d
+0xfffffff00a61d464 sz=440 replace :: (%u): failed to create a properties update packet: %d | (%u): failed to add the traffic class: %d
+0xfffffff00a63631c sz=4288 replace :: local version: %d > peer version %d | mptcp_sanitize_option | %s - %lx: type = %d | n->m_len == m->m_len
+0xfffffff00a63b554 sz=4120 replace :: IPv6 AH input: AH with IPv6 jumbogram is not supported. | __cstring | IPv6 AH input: unsupported authentication algorithm for spi %u | IPv6 AH input: no key association found for spi %u
+0xfffffff00a642988 sz=7040 replace :: IPv6 ESP input: packet alignment problem (off=%d, pktlen=%d) | __DATA_CONST | __cstring | IPv6 ESP input: unsupported encryption algorithm for spi %u (0x%08x)
+0xfffffff00a656a60 sz=724 replace :: 
+0xfffffff00a657628 sz=6260 replace :: MBUFQ_EMPTY(&diq6) | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n | m->m_flags & M_PKTHDR | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n
+0xfffffff00a6594dc sz=2056 replace :: ENOBUFS in icmp6_error %d | __DATA_CONST
+0xfffffff00a65ac10 sz=3500 replace :: ICMP6 checksum error(%d|%x) %s | icmp6_input: unknown type %d(src=%s, dst=%s, ifid=%d) | __DATA_CONST | icmp6.c
+0xfffffff00a65c6b4 sz=2080 replace :: ICMP6 redirect sent from %s rejected; hlim=%d (must be 255) | ICMP6 redirect sent from %s rejected; must be from linklocal | ICMP6 redirect rejected; neither router case nor onlink case: %s | ICMP6 redirect rejected; no route with inet6 gateway found for redirect dst: %s
+0xfffffff00a65ced4 sz=1916 replace :: 
+0xfffffff00a662578 sz=2092 replace :: ifp != NULL && ifra != NULL | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n | ia != NULL | in6ctl_aifaddr
+0xfffffff00a663284 sz=2360 replace :: in6_purgeaddr: failed to remove a route to the p2p destination: %s on %s, errno=%d | in6_unlink_ifa: IPv6 address 0x%llx has no prefix | pr->ndpr_addrcnt != 0 | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n
+0xfffffff00a664ba4 sz=280 insert :: 
+0xfffffff00a66c9b4 sz=7388 replace :: ip6_input.c | ip6_input | %s: unexpected packet %p @%s:%d | ip6_input_check_interface
+0xfffffff00a66e690 sz=708 replace :: 
+0xfffffff00a66fd30 sz=12708 replace :: m0->m_flags & M_PKTHDR | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n | ip6_output_list | %{public}s:%d pid %d (%{public}s) is unable to transmit packets on %{public}s
+0xfffffff00a6730f8 sz=1124 replace :: m->m_flags & M_PKTHDR | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n | ip6_output.c | in6_finalize_cksum
+0xfffffff00a677558 sz=6264 replace :: in6_selectsrc_core | %s:%d in src %s dst %s ifp %s | %s:%d CLAT46: NEXT ia %s address on ifp1 %s skipped as it is not reserved for CLAT46 | %s:%d NEXT ia %s ifp1 %s address is not on outgoing interface
+0xfffffff00a678f28 sz=1248 replace :: ifp != NULL | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n | sifp != NULL
+0xfffffff00a67cfd0 sz=2876 replace :: (inm->in6m_debug & (IFD_ATTACHED | IFD_TRASHED)) == IFD_ATTACHED | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/n | IN6_IS_ADDR_MULTICAST(mcaddr) | mcaddr->s6_addr16[1] != 0
+0xfffffff00a67e580 sz=476 insert :: in6_mcast.c | in6_multi_detach | %s: in6m=%p negative reqcnt @%s:%d | %s: Attempt to detach an unattached record in6m=%p @%s:%d
+0xfffffff00a685a74 sz=184 replace :: 
+0xfffffff00a687c48 sz=4872 replace :: %s: transition from v%d -> v%d on %s | mld_v1_process_querier_timers | mld_v2_merge_state_changes | %s: outbound queue full
+0xfffffff00a68a1d0 sz=1124 replace :: mli_remref | %s: freeing mld_ifinfo for ifp %s | _in6m->in6m_in_dtle == true | _dtlecnt != 0
+0xfffffff00a68abd8 sz=896 replace :: %s: flushing inm %llx on relq ifp %s | <null> | mld_flush_relq | inm->in6m_in_nrele == true
+0xfffffff00a68bf74 sz=976 replace :: mld_domifdetach | %s: called for ifp %s | mld6.c | mli_delete
+0xfffffff00a68c344 sz=3588 replace :: mld_v1_input_report | %s: ignore v1 query src %s on ifp %s | %s: ignore v1 report on ifp %s | mld_v1_input_query
+0xfffffff00a692ab0 sz=688 replace :: regen_tmpaddr: failed to create a new tmp addr,errno=%d
+0xfffffff00a6981ac sz=1048 replace :: nd6_lookup_ipv6 | %s: route %s on %s%d link address does not fit (sdl_alen %u, error %d) | nd6_lookup_ipv6:  qset_id=%lld | %s: route %s on %s%d gateway address not AF_LINK
+0xfffffff00a698d64 sz=3500 replace :: nd6_ns_input: invalid hlim (%d) from %s to %s on %s | nd6_ns_input: src=%s | nd6_ns_input: dst=%s | nd6_ns_input: tgt=%s
+0xfffffff00a69b3c8 sz=5852 replace :: nd6_na_input: invalid hlim (%d) from %s to %s on %s | nd6_na_input: on ND6ALT interface! | nd6_na_input: a solicited adv is multicasted | nd6_na_input: invalid target address %s
+0xfffffff00a69caa4 sz=1200 replace :: nd6_dad_na_input | %s: ignoring duplicate NA on %s [eh_src != tgtlladdr] | %s: duplicate IPv6 address %s [processing NA on %s] | %s: ignoring duplicate NA on %s [DAD not in progress]
+0xfffffff00a6a2de8 sz=1432 replace :: nd6_rs_input: invalid hlim (%d) from %s to %s on %s | nd6_rs_input: RS packet from non-neighbor | __DATA_CONST | nd6_rs_input: invalid ND option, ignored
+0xfffffff00a6a3380 sz=6048 replace :: nd6_ra_input | %s: skipping RA from %s to %s on %s, accept RA: %d local RA=%d | nd6_ra_input: invalid hlim (%d) from %s to %s on %s | %s: accepting RA from %s to %s on %s, local RA=%d
+0xfffffff00a6a5538 sz=3692 replace :: prelist_update: nd6_prelist_add failed for %s/%d on %s errno=%d, returnpr=0x%llx | in6_init_prefix_ltimes: preferred lifetime(%d) is greater than valid lifetime(%d) | prelist_update: failed to make the prefix %s/%d on-link on %s (errno=%d) | nd_prefix_busy_wait
+0xfffffff00a6a9518 sz=2844 replace :: in6_tmpifadd: failed to find a unique random IFID | in6_tmpifadd | %s: failed to add address. err=%d | newia != NULL
+0xfffffff00a6aa15c sz=300 insert :: 
+0xfffffff00a6aa510 sz=2232 replace :: %s: freeing route to %s with gateway %s | nd6_rtr.c | nddr_remref | %s: nddr %p negative refcnt @%s:%d
+0xfffffff00a6acf00 sz=244 replace :: 
+0xfffffff00a6addc0 sz=272 replace :: 
+0xfffffff00a6aee68 sz=316 insert :: 
+0xfffffff00a6b29f8 sz=428 replace :: 
+0xfffffff00a6b623c sz=5968 replace :: Connection attempt to UDP %s:%d from %s:%d | udp6_input | ip_savecontrol error %d | sbappendaddr full receive socket buffer
+0xfffffff00a6d695c sz=488 replace :: 
+0xfffffff00a6d966c sz=800 replace :: 
+0xfffffff00a70f218 sz=8924 replace :: com.apple.private.spawn-panic-crash-behavior | com.apple.private.spawn-driver | com.apple.private.shared-region.config | com.apple.private.coalition-spawn
+0xfffffff00a713c20 sz=2296 replace :: com.apple.developer.memory.ios13extended_footprint | com.apple.developer.kernel.increased-debugging-memory-limit | com.apple.developer.kernel.increased-memory-limit | com.apple.private.internal-jetsam-range
+0xfffffff00a717638 sz=100 replace :: 
+0xfffffff00a71769c sz=360 replace :: 
+0xfffffff00a717c1c sz=2824 replace :: preinit | initproc exited | initproc failed to start | Text page corruption detected in dying process %d
+0xfffffff00a71e800 sz=2596 replace :: kern_fork.c | Unable to allocate a new pid @%s:%d
+0xfffffff00a7275a8 sz=40 insert :: 
+0xfffffff00a72ad88 sz=3580 replace :: 
+0xfffffff00a72bb84 sz=76 replace :: 
+0xfffffff00a7376c8 sz=592 replace :: 
+0xfffffff00a7449c8 sz=160 replace :: 
+0xfffffff00a7474e4 sz=168 insert :: 
+0xfffffff00a74758c sz=312 insert :: memorystatus: Invalid value (%d) for entitled_max_task_pmem. Disabling entitled memory limits | memorystatus: Entitled developer limit (%d MB) must be | memorystatus: Invalid value (%d) for entitled_max_developer_task_pmem. Disabling.
+0xfffffff00a7487cc sz=7616 replace :: VM_memorystatus_%d | memorystatus: c_segment_count=%u major compaction occurred %u seconds ago | memorystatus: killing due to "%s" - compression_ratio=%u | memorystatus: memorystatus_kill_hiwat_proc: failed to allocate exit reason
+0xfffffff00a74c400 sz=2792 replace :: memorystatus: _memstat_refresh_oldest_reapable_proc_info: re-using existing data | memorystatus: _memstat_refresh_oldest_reapable_proc_info: rescanning proc list | memorystatus: memstat_kill_top_process: found reapable long-idle process %s [%d] | memorystatus: memstat_kill_top_process: skipping non-reapable process %s [%d]
+0xfffffff00a75341c sz=112 replace :: 
+0xfffffff00a754958 sz=208 replace :: com.apple.private.memorystatus | memorystatus: swapping-in all swapped-out compressor segments
+0xfffffff00a755c1c sz=204 replace :: 
+0xfffffff00a756014 sz=1152 replace :: 
+0xfffffff00a756494 sz=528 replace :: 
+0xfffffff00a75aee8 sz=668 replace :: 
+0xfffffff00a75c538 sz=1964 replace :: 
+0xfffffff00a75f4e8 sz=120 replace :: 
+0xfffffff00a77cac0 sz=5676 replace :: 
+0xfffffff00a780a28 sz=708 replace :: ptsopen
+0xfffffff00a780ef8 sz=468 replace :: 
+0xfffffff00a7810cc sz=212 replace :: 
+0xfffffff00a78139c sz=424 replace :: 
+0xfffffff00a781544 sz=176 replace :: 
+0xfffffff00a781884 sz=744 replace :: ptcread
+0xfffffff00a781ca4 sz=344 replace :: 
+0xfffffff00a782184 sz=1680 replace :: 
+0xfffffff00a782f9c sz=368 replace :: 
+0xfffffff00a78310c sz=364 replace :: tty_ptmx.c | ptmx kevent: unexpected filter: %d, kn = %p, tty = %p @%s:%d
+0xfffffff00a783278 sz=384 replace :: 
+0xfffffff00a7833f8 sz=408 replace :: 
+0xfffffff00a783590 sz=528 replace :: tty_ptmx.c | invalid knote %p detach, filter: %d @%s:%d
+0xfffffff00a783a80 sz=372 replace :: 
+0xfffffff00a783bf4 sz=232 replace :: 
+0xfffffff00a783cdc sz=1072 replace :: ttys%03d
+0xfffffff00a784424 sz=568 replace :: tty_ptmx.c | ptmx kevent: unexpected filter: %d, kn = %p, tty = %p @%s:%d
+0xfffffff00a785380 sz=468 replace :: 
+0xfffffff00a786a78 sz=80 replace :: 
+0xfffffff00a786f94 sz=288 replace :: vm_param.h | overflow detected @%s:%d
+0xfffffff00a78794c sz=132 replace :: 
+0xfffffff00a78f694 sz=508 replace :: thread_call.c | thread_call_enter_delayed | NULL call in %s @%s:%d
+0xfffffff00a798c04 sz=600 replace :: uipc_mbuf2.c | m_adj_sum16 | %s: invalid mbuf chain %p [off %u, len %u] @%s:%d | m_sum16
+0xfffffff00a798e5c sz=148 replace :: uipc_mbuf2.c | m_sum16 | %s: mbuf %p len (%u) < off+len (%u+%u) @%s:%d
+0xfffffff00a7b3180 sz=3416 replace :: fg_insertuipc | rp[i]->fg_lflags & FG_INSMSGQ | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/k | uipc_send
+0xfffffff00a7b4bbc sz=308 replace :: 
+0xfffffff00a7b692c sz=1788 replace :: so->so_rcv.sb_flags & SB_LOCK | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/k
+0xfffffff00a7b7438 sz=1508 replace :: fg_removeuipc
+0xfffffff00a7da4fc sz=76 replace :: 
+0xfffffff00a7da548 sz=124 replace :: machine_routines_common.c | iBoot reported a total memory size of 0x%llx, below the 0x%llx bytes it handed to XNU @%s:%d
+0xfffffff00a7e6170 sz=344 replace :: bindfs
+0xfffffff00a7e62c8 sz=680 replace :: 
+0xfffffff00a7f8abc sz=948 replace :: proc_null | kern_channel_defunct | SK[%u]: %-30s %s(%d) ch 0x%p flags 0x%x
+0xfffffff00a7fe930 sz=2560 replace :: proc_null | __channel_open | SK[%u]: %-30s %s(%d): EINVAL: PACKET_POOL is required for EVENT ring | SK[%u]: %-30s %s(%d): EINVAL: init %p, init_len %u
+0xfffffff00a7ff850 sz=4268 replace :: na_reject_channel | SK[%u]: %-30s %s(%d) marked as non-permissive | proc_null | __channel_sync
+0xfffffff00a814eb8 sz=1100 replace :: 
+0xfffffff00a826054 sz=1624 replace :: proc_null | __nexus_open | SK[%u]: %-30s %s(%d): EINVAL: init 0x%llx, init_len %u | SK[%u]: %-30s %s(%d): copyin err %d, init %p
+0xfffffff00a83a774 sz=10768 replace :: do_gso | SK[%u]: %-30s invalid args: headroom %d, total_hlen %d, mss %d, bufsz %d | SK[%u]: %-30s invalid proto: %d | SK[%u]: %-30s invalid args: mss %d, mtu %d, total_hlen %d
+0xfffffff00a83d428 sz=1116 replace :: tx_lookup_flow | SK[%u]: %-30s pkt flow id %s != flow id %s, %s | SK[%u]: %-30s Tx flow port %d != channel port %d, %s | SK[%u]: %-30s Tx flow torn down %s
+0xfffffff00a846cac sz=7268 replace :: pkt_len >= cls_len | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/s | af != AF_UNSPEC | flow_pkt_classify
+0xfffffff00a8573b8 sz=6292 replace :: flow_rx_agg_host | SK[%u]: %-30s mbuf alloc failed (err %d), maxchunks %d, len %d | SK[%u]: %-30s Checksum for aggregation on new mbuf is wrong | SK[%u]: %-30s Checksum for aggregation is wrong
+0xfffffff00a858c4c sz=4396 replace :: flow_rx_agg_channel | SK[%u]: %-30s Checksum for aggregation is wrong | SK[%u]: %-30s packet too big: bufcnt %d len %d | SK[%u]: %-30s buflet alloc failed (err %d)
+0xfffffff00a862dc4 sz=480 replace :: 
+0xfffffff00a8635c0 sz=512 replace :: err == 0 | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/s
+0xfffffff00a8637c0 sz=324 replace :: 
+0xfffffff00a864458 sz=396 replace :: 
+0xfffffff00a86563c sz=3024 replace :: nx_netif_compat_na_rxsync | SK[%u]: %-30s kr "%s" (%p) m %p idx %u slot_len %d | SK[%u]: %-30s kr "%s" (%p) m %p len %dbad pkt_hdr | METADATA_TYPE(pkt) == NEXUS_META_TYPE_PACKET
+0xfffffff00a8672e8 sz=5240 replace :: netif_poll_thread_exit | nx_netif_compat_na_activate | SK[%u]: %-30s %s: waiting for poller thread to terminate | SK[%u]: %-30s TX mitigation allocation failed
+0xfffffff00a868880 sz=840 replace :: 
+0xfffffff00a86915c sz=2804 replace :: nx_netif_host_output | SK[%u]: %-30s "%s" (%p) not in skywalk mode anymore | SK[%u]: %-30s "%s" (%p) from_host, drop packet size %u > %u | SK[%u]: %-30s kr "%s" (%p) krflags 0x%x or %s in drop mode
+0xfffffff00a86d9c4 sz=860 replace :: 
+0xfffffff00a86e8b4 sz=728 replace :: tc < MBUF_TC_MAX | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/s
+0xfffffff00a86f6d8 sz=768 replace :: tc < KPKT_TC_MAX | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/s
+0xfffffff00a870d9c sz=1176 replace :: netif_filter_na_txsync | SK[%u]: %-30s packet got dropped by internalize | SK[%u]: %-30s dropped zero length packet | SK[%u]: %-30s dropped packet injected on ring %u whose wrap flag does not match the ring direction: pkt_pflags
+0xfffffff00a87144c sz=636 replace :: 
+0xfffffff00a871ab8 sz=1800 replace :: 
+0xfffffff00a8744bc sz=1700 replace :: netif_vp_na_activate_on | SK[%u]: %-30s port info not found: %d | netif_change_pending | netif_hwna_setup
+0xfffffff00a874ecc sz=840 replace :: err == 0 | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/s
+0xfffffff00a8760d8 sz=444 replace :: SK[%u]: %-30s filter packet is not mbuf-wrapped: pkt_pflags 0x%llx | nx_netif_filter_pkt_to_mbuf | (flags & (NETIF_CONVERT_TX | NETIF_CONVERT_RX)) != 0 | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/s
+0xfffffff00a8766b8 sz=452 replace :: SK[%u]: %-30s filter packet is not packet-wrapped: pkt_pflags 0x%llx | nx_netif_filter_pkt_to_pkt | (flags & (NETIF_CONVERT_TX | NETIF_CONVERT_RX)) != 0 | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/s
+0xfffffff00a878590 sz=2376 replace :: total_len > state->hlen | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/s | ((tx_headroom + state->mac_hlen) & 0x1) == 0 | (tx_headroom + state->hlen + mss) <= PP_BUF_SIZE_DEF(pp)
+0xfffffff00a87af18 sz=636 replace :: c == cnt | /Library/Caches/com.apple.xbs/FBE73862-C372-4A76-BC3C-8E79BBE064EA/TemporaryDirectory.14N5mt/Sources/xnu/bsd/s | b == bytes
+0xfffffff00a8cc91c sz=208 replace :: OSRuntime.cpp | OSRuntime: C++ runtime failed to initialize. @%s:%d
+0xfffffff00a8ccd20 sz=612 replace :: Null structor in kext %s segment %s! | OSRuntime.cpp | %s: null structor @%s:%d
+0xfffffff00a8ccf84 sz=688 replace :: Can't tear down kext %s C++; classes have instances:
+0xfffffff00a8ee2b0 sz=332 replace :: 
+0xfffffff00a8ee3fc sz=232 replace :: 
+0xfffffff00a8ee4e4 sz=208 replace :: 
+0xfffffff00a8ee6e0 sz=396 replace :: 
+0xfffffff00a8ee86c sz=376 replace :: 
+0xfffffff00a8eee9c sz=208 replace :: 
+0xfffffff00a8eef6c sz=292 replace :: 
+0xfffffff00a8ef164 sz=6308 replace :: 
+0xfffffff00a8f0a08 sz=304 replace :: 
+0xfffffff00a8f0b38 sz=348 replace :: 
+0xfffffff00a8f0c94 sz=372 replace :: 
+0xfffffff00a8f0e08 sz=396 replace :: 
+0xfffffff00a8f0f94 sz=388 replace :: 
+0xfffffff00a8f1118 sz=368 replace :: 
+0xfffffff00a8f1288 sz=368 replace :: 
+0xfffffff00a8f1598 sz=288 replace :: 
+0xfffffff00a8f16b8 sz=288 replace :: 
+0xfffffff00a8f17d8 sz=288 replace :: 
+0xfffffff00a8f18f8 sz=160 replace :: 
+0xfffffff00a8f1998 sz=212 replace :: 
+0xfffffff00a8f1a6c sz=156 replace :: 
+0xfffffff00a8f1b08 sz=200 replace :: 
+0xfffffff00a8f1bd0 sz=276 replace :: 
+0xfffffff00a8f1ce4 sz=164 replace :: 
+0xfffffff00a8f1d88 sz=164 replace :: 
+0xfffffff00a8f1e2c sz=164 replace :: 
+0xfffffff00a8f1ed0 sz=188 replace :: 
+0xfffffff00a8f1f8c sz=276 replace :: 
+0xfffffff00a8f4b68 sz=1268 replace :: Extensible paniclog not supported
+0xfffffff00a8f50d0 sz=368 replace :: 
+0xfffffff00a8f60ac sz=700 replace :: 
+0xfffffff00a8f6368 sz=620 replace :: 
+0xfffffff00a8f65d4 sz=288 replace :: 
+0xfffffff00a8f6f24 sz=280 replace :: 
+0xfffffff00a8f703c sz=192 replace :: 
+0xfffffff00a8f7128 sz=360 replace :: 
+0xfffffff00a8f7290 sz=160 replace :: 
+0xfffffff00a8f7330 sz=200 replace :: 
+0xfffffff00a8f73f8 sz=688 replace :: 
+0xfffffff00a8f796c sz=256 replace :: 
+0xfffffff00a8f7a6c sz=164 replace :: 
+0xfffffff00a8f7b10 sz=208 replace :: 
+0xfffffff00a8f7be0 sz=188 replace :: 
+0xfffffff00a8f7d94 sz=304 replace :: 
+0xfffffff00a8f7ec4 sz=160 replace :: 
+0xfffffff00a8f8090 sz=204 replace :: 
+0xfffffff00a8f8714 sz=204 replace :: 
+0xfffffff00a8f87e0 sz=164 replace :: 
+0xfffffff00a8f8c84 sz=164 replace :: 
+0xfffffff00a8f8d28 sz=176 replace :: 
+0xfffffff00a8f8dd8 sz=196 replace :: 
+0xfffffff00a8f8e9c sz=260 replace :: 
+0xfffffff00a8f90cc sz=240 replace :: 
+0xfffffff00a8f9638 sz=176 replace :: 
+0xfffffff00a8f96e8 sz=228 replace :: 
+0xfffffff00a8f9918 sz=1104 replace :: 
+0xfffffff00a8f9e8c sz=400 replace :: 
+0xfffffff00a8fa01c sz=388 replace :: 
+0xfffffff00a8fa61c sz=288 replace :: 
+0xfffffff00a8fa73c sz=248 replace :: 
+0xfffffff00a8fa834 sz=264 replace :: 
+0xfffffff00a8fa968 sz=1520 replace :: 
+0xfffffff00a8fb07c sz=292 replace :: 
+0xfffffff00a8fb888 sz=288 replace :: 
+0xfffffff00a8fb9a8 sz=288 replace :: 
+0xfffffff00a8fbac8 sz=176 replace :: 
+0xfffffff00a8fbb78 sz=176 replace :: 
+0xfffffff00a8fbc28 sz=176 replace :: 
+0xfffffff00a8fbcd8 sz=288 replace :: 
+0xfffffff00a8fc73c sz=248 replace :: 
+0xfffffff00a8fc834 sz=264 replace :: 
+0xfffffff00a8fc93c sz=248 replace :: 
+0xfffffff00a8fca34 sz=264 replace :: 
+0xfffffff00a8fcb68 sz=860 replace :: 
+0xfffffff00a8fd05c sz=376 replace :: 
+0xfffffff00a8fd8bc sz=188 replace :: 
+0xfffffff00a8fde68 sz=248 replace :: 
+0xfffffff00a8fdf60 sz=264 replace :: 
+0xfffffff00a8fe094 sz=744 replace :: 
+0xfffffff00a8fe514 sz=440 replace :: 
+0xfffffff00a8feb74 sz=376 replace :: 
+0xfffffff00a8fee8c sz=372 replace :: 
+0xfffffff00a8ff5c8 sz=376 replace :: 
+0xfffffff00a8ff8e0 sz=372 replace :: 
+0xfffffff00a90001c sz=548 replace :: 
+0xfffffff00a900240 sz=212 replace :: 
+0xfffffff00a900314 sz=212 replace :: 
+0xfffffff00a90045c sz=320 replace :: 
+0xfffffff00a900868 sz=840 replace :: 
+0xfffffff00a900bb0 sz=344 replace :: 
+0xfffffff00a900d08 sz=316 replace :: 
+0xfffffff00a901b14 sz=800 replace :: vm_param.h | overflow detected @%s:%d
+0xfffffff00a90465c sz=508 replace :: _NO_NAME_4 | Darwin Kernel Version 27.2.0: Tue Oct 13 21:26:30 PDT 2026; root:xnu-13432.42.3~28/RELEASE_ARM64_T8110 | IOKitBuildVersion | IOKitDiagnostics
+0xfffffff00a96915c sz=628 replace :: 
+0xfffffff00a975c00 sz=2564 replace :: IOMemoryDescriptor 0x%zx prepared read only | vm_param.h | overflow detected @%s:%d | IOMemoryDescriptor.cpp
+0xfffffff00a976b4c sz=2396 replace :: IOMemoryDescriptor.cpp | _dmaReferences overflow @%s:%d | _dmaReferences underflow @%s:%d | IOGMD: not wired for the IODMACommand @%s:%d
+0xfffffff00a97c88c sz=56 replace :: 
+0xfffffff00a9c6b88 sz=96 replace :: 
+0xfffffff00a9c6bf8 sz=164 replace :: 
+0xfffffff00a9cbbd4 sz=1684 replace :: com.apple.private.driverkit.allows-publish | IODriverKitPublishEntitlementsKey | DK: %s-0x%qx: subscriber entitlements check failed | swapNElements
+0xfffffff00a9cc494 sz=912 replace :: The range of valid memory is too large to be represented by this type, or [begin, end) is not a well-formed ra | bounded_ptr<T>::operator*: Dereferencing this pointer would access memory outside of the bounds set originally
+0xfffffff00a9d4100 sz=880 replace :: 
+0xfffffff00a9d4470 sz=712 replace :: 
+0xfffffff00a9d9810 sz=300 replace :: 
+0xfffffff00a9d9ae0 sz=684 replace :: 
+0xfffffff00a9da62c sz=360 replace :: 
+0xfffffff00a9daca0 sz=856 replace :: 
+0xfffffff00a9daff8 sz=236 replace :: 
+0xfffffff00a9deec0 sz=296 insert :: 
+0xfffffff00a9e6b1c sz=380 replace :: SK[%u]: %-30s SKMapper %p
+0xfffffff00a9e9874 sz=1064 replace :: initWithTask | SK[%u]: %-30s SKMapper %p task 0x%llx map %p addr 0x%llx size 0x%llx subMaps %u kr 0x%x
+0xfffffff00aa1199c sz=72 replace :: 
+0xfffffff00aa11d74 sz=204 insert :: 
+0xfffffff00aa1f6d4 sz=364 insert :: 
+0xfffffff00aa2ee20 sz=380 insert :: 
+0xfffffff00aa3b87c sz=708 insert :: 
+0xfffffff00aa3cb40 sz=748 replace :: 
+0xfffffff00aa49768 sz=56 replace :: tightbeam
+0xfffffff00aa56724 sz=140 replace :: vm_compressor_segment_buffer_size
+0xfffffff00aa567b0 sz=636 replace :: kern.compressor_pool_multiplier | vm: configured segment limit would overflow slot mapping index, reducing to %d
+0xfffffff00aa56b24 sz=180 replace :: vm: Maximum number of VM swap files: %d
+0xfffffff00aa56e94 sz=80 replace :: 
+0xfffffff00aa56fb0 sz=500 replace :: vm_page_bootstrap | zone_bootstrap | vm_object_bootstrap | vm_map_init
+0xfffffff00aa59594 sz=2176 replace :: vm_page_bg_mode | vm_page_bg_exclude_external | vm_page_bg_target | vm_page_donate_mode
+0xfffffff00aa5a6e0 sz=140 replace :: vm_entry_lock.c | VM entry %p lock shared lock overflow <v:%d c:%c%c w:%c%c %c/%d> @%s:%d
+0xfffffff00aa5a76c sz=592 replace :: 
+0xfffffff00aa5b4e4 sz=2272 replace :: user_ts_jop | diversify_user_jop | sptm_stability_hacks | kernel_startup_bootstrap
+0xfffffff00aa64e80 sz=64 replace :: tb_codec.c
+0xfffffff00aa65d70 sz=8848 replace :: 

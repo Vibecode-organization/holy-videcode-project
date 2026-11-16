@@ -1,0 +1,296 @@
+{
+ "0xfffffff00932c994": {
+  "func": 18446744005144398228,
+  "writes": [
+   "0xfffffff00932c9ec"
+  ],
+  "tables": [
+   [
+    18446744005123349832,
+    24,
+    6,
+    11,
+    "com.apple.driver.AppleT8110CLPC",
+    [
+     0,
+     0,
+     0,
+     4294967295
+    ]
+   ]
+  ]
+ },
+ "0xfffffff00932ca04": {
+  "func": 18446744005144398340,
+  "writes": [
+   "0xfffffff00932ca5c"
+  ],
+  "tables": [
+   [
+    18446744005123349832,
+    24,
+    7,
+    11,
+    "com.apple.driver.AppleT8110CLPC",
+    [
+     0,
+     0,
+     0,
+     4294967295
+    ]
+   ]
+  ]
+ },
+ "0xfffffff0097b6cf0": {
+  "func": 18446744005149158640,
+  "writes": [
+   "0xfffffff0097b6d54"
+  ],
+  "tables": [
+   [
+    18446744005123853728,
+    24,
+    26,
+    33,
+    "com.apple.iokit.IOAVFamily",
+    [
+     0,
+     0,
+     0,
+     4294967295
+    ]
+   ]
+  ]
+ },
+ "0xfffffff0097b7154": {
+  "func": 18446744005149159764,
+  "writes": [
+   "0xfffffff0097b71b8"
+  ],
+  "tables": [
+   [
+    18446744005123853728,
+    24,
+    31,
+    33,
+    "com.apple.iokit.IOAVFamily",
+    [
+     0,
+     0,
+     0,
+     4294967295
+    ]
+   ]
+  ]
+ },
+ "0xfffffff009994f34": {
+  "func": 18446744005151117108,
+  "writes": [
+   "0xfffffff009995370"
+  ],
+  "tables": [
+   [
+    18446744005124239256,
+    40,
+    5,
+    6,
+    "com.apple.iokit.IOGameControllerFamily",
+    [
+     1,
+     4294967295,
+     0,
+     4294967295
+    ]
+   ]
+  ]
+ },
+ "0xfffffff009a459b0": {
+  "func": 18446744005151840688,
+  "writes": [
+   "0xfffffff009a45a6c"
+  ],
+  "tables": [
+   [
+    18446744005124366424,
+    40,
+    4,
+    5,
+    "com.apple.iokit.IOHIDFamily",
+    [
+     0,
+     4294967295,
+     0,
+     4294967295
+    ]
+   ]
+  ]
+ },
+ "0xfffffff009c3968c": {
+  "func": 18446744005153887884,
+  "writes": [
+   "0xfffffff009c39730"
+  ],
+  "tables": [
+   [
+    18446744005124721552,
+    40,
+    30,
+    120,
+    "com.apple.iokit.IOSurface",
+    [
+     1,
+     0,
+     0,
+     4294967295
+    ]
+   ]
+  ]
+ },
+ "0xfffffff009c39e0c": {
+  "func": 18446744005153889804,
+  "writes": [
+   "0xfffffff009c39ea0"
+  ],
+  "tables": [
+   [
+    18446744005124721552,
+    40,
+    49,
+    120,
+    "com.apple.iokit.IOSurface",
+    [
+     1,
+     0,
+     0,
+     4294967295
+    ]
+   ]
+  ]
+ },
+ "0xfffffff009d241cc": {
+  "func": 18446744005154849228,
+  "writes": [
+   "0xfffffff009d24288",
+   "0xfffffff009d24288"
+  ],
+  "tables": [
+   [
+    18446744005124878496,
+    24,
+    4,
+    29,
+    "com.apple.iokit.IOUSBHostFamily",
+    [
+     5,
+     0,
+     1,
+     4294967295
+    ]
+   ],
+   [
+    18446744005124892600,
+    24,
+    4,
+    15,
+    "com.apple.iokit.IOUSBHostFamily",
+    [
+     5,
+     0,
+     1,
+     4294967295
+    ]
+   ]
+  ]
+ },
+ "0xfffffff009fff338": {
+  "func": 18446744005157843768,
+  "writes": [
+   "0xfffffff009fff374",
+   "0xfffffff009fff490"
+  ],
+  "tables": [
+   [
+    18446744005125214536,
+    24,
+    8,
+    11,
+    "com.apple.filesystems.apfs",
+    [
+     0,
+     0,
+     0,
+     0
+    ]
+   ],
+   [
+    18446744005125214536,
+    24,
+    8,
+    11,
+    "com.apple.filesystems.apfs",
+    [
+     0,
+     0,
+     0,
+     0
+    ]
+   ]
+  ]
+ },
+ "0xfffffff009ffa1d4": {
+  "func": 18446744005157822932,
+  "writes": [
+   "0xfffffff009ffa234",
+   "0xfffffff009ffa414"
+  ],
+  "tables": [
+   [
+    18446744005125216048,
+    24,
+    2,
+    18,
+    "com.apple.filesystems.apfs",
+    [
+     0,
+     4,
+     0,
+     0
+    ]
+   ],
+   [
+    18446744005125216048,
+    24,
+    2,
+    18,
+    "com.apple.filesystems.apfs",
+    [
+     0,
+     4,
+     0,
+     0
+    ]
+   ]
+  ]
+ },
+ "0xfffffff00999a0d0": {
+  "func": 18446744005151138000,
+  "writes": [
+   "0xfffffff00999ac58"
+  ],
+  "tables": []
+ },
+ "0xfffffff00999acf0": {
+  "func": 18446744005151141104,
+  "writes": [
+   "0xfffffff00999aea8"
+  ],
+  "tables": []
+ },
+ "0xfffffff00a9c4778": {
+  "func": 18446744005168088952,
+  "writes": [
+   "0xfffffff00a9c49b8"
+  ],
+  "tables": []
+ }
+}

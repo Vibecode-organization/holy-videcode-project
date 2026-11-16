@@ -1,0 +1,202 @@
+//===== AT 22604b0f0 -> FUN_22604b0f0 =====
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+ulong * FUN_22604b0f0(ulong param_1,ulong param_2,undefined8 param_3,undefined8 param_4,
+                     undefined8 param_5,undefined8 param_6,long param_7,long param_8,long param_9,
+                     long param_10,long param_11,long param_12,ulong param_13)
+
+{
+  uint uVar1;
+  ulong *puVar2;
+  ulong **ppuVar3;
+  code *pcVar4;
+  uint uVar5;
+  ulong *puVar6;
+  ulong *puVar7;
+  undefined4 uVar8;
+  ulong *puVar9;
+  ulong uVar10;
+  ulong local_580 [3];
+  undefined8 uStack_568;
+  ulong local_560;
+  ulong uStack_558;
+  long local_550;
+  ulong *local_548;
+  ulong **local_540;
+  undefined1 *local_538;
+  undefined1 *puStack_530;
+  ulong auStack_528 [36];
+  ulong *local_408;
+  ulong **local_400;
+  ulong auStack_3f8 [36];
+  ulong *local_2d8;
+  ulong **local_2d0;
+  long local_68;
+  
+  puVar7 = local_580;
+  local_68 = *_DAT_268210d30;
+  local_538 = &DAT_aaaaaaaaaaaaaaaa;
+  puStack_530 = &DAT_aaaaaaaaaaaaaaaa;
+  local_548 = (ulong *)&DAT_aaaaaaaaaaaaaaaa;
+  local_540 = (ulong **)&DAT_aaaaaaaaaaaaaaaa;
+  local_550 = 0;
+  if (CARRY8(param_1,param_2)) {
+LAB_22604b3b4:
+                    /* WARNING: Does not return */
+    pcVar4 = (code *)SoftwareBreakpoint(0x5513,0x22604b3b8);
+    (*pcVar4)();
+  }
+  if (param_1 + param_2 < param_1) goto LAB_22604b3b0;
+  func_0x00022815f690(auStack_528,0xaa,0x4c0);
+  puVar6 = &local_560;
+  local_560 = param_1;
+  uStack_558 = param_1 + param_2;
+  _X509ChainParseCertificateSet(puVar6,auStack_528,4,&local_538,&local_550);
+  puVar9 = puVar6;
+  if (((int)puVar6 == 0) && (puVar9 = (ulong *)0x5000a, local_560 == uStack_558)) {
+    if (local_550 == 2) {
+      _X509ChainResetChain(&local_548,&local_538);
+      local_2d8 = local_548;
+      ppuVar3 = &local_2d8;
+      if (local_548 != (ulong *)0x0) {
+        local_548[0x25] = (ulong)&local_2d8;
+        ppuVar3 = local_540;
+      }
+      local_540 = ppuVar3;
+      if ((ulong *)0xfffffffffffffecf < auStack_528) goto LAB_22604b3b4;
+      local_548 = auStack_3f8;
+      local_2d0 = &local_548;
+      local_408 = (ulong *)0x0;
+      local_400 = local_540;
+      *local_540 = auStack_528;
+      uVar8 = 7;
+      if (*(char *)(param_12 + 0x14) == '\0') {
+        uVar8 = 4;
+      }
+      puVar6 = (ulong *)0xc;
+      local_540 = &local_408;
+      _X509ChainCheckPathWithOptions(0xc,uVar8,&local_548,param_12,0);
+      puVar9 = puVar6;
+      if ((int)puVar6 == 0) {
+        uVar10 = *local_540[1];
+        local_580[2] = param_3;
+        uStack_568 = param_4;
+        _oidForPubKeyLength(param_4);
+        if ((((uVar10 + 0x130 < uVar10) || (uVar10 + 0x20 < uVar10 + 0x10)) ||
+            (uVar10 + 0x38 < uVar10 + 0x28)) || (uVar10 + 0x48 < uVar10 + 0x38)) {
+LAB_22604b3b0:
+                    /* WARNING: Does not return */
+          pcVar4 = (code *)SoftwareBreakpoint(0x5519,0x22604b3b4);
+          (*pcVar4)();
+        }
+        puVar6 = local_580 + 2;
+        _X509CertificateCheckSignatureWithPublicKey(puVar6,&_ecPublicKey,param_4);
+        puVar9 = puVar6;
+        if ((int)puVar6 == 0) {
+          if ((param_9 != 0) && (param_10 != 0)) {
+            puVar6 = (ulong *)(uVar10 + 0xf8);
+            if ((ulong *)(uVar10 + 0x108) < puVar6) goto LAB_22604b3b0;
+            _compare_octet_string_raw();
+            if ((int)puVar6 != 0) {
+              puVar9 = (ulong *)0x90105;
+              goto LAB_22604b1e8;
+            }
+          }
+          puVar2 = local_548;
+          if (local_548 + 0x26 < local_548) goto LAB_22604b3b0;
+          puVar6 = local_548;
+          _X509CertificateParseKey(local_548,param_5,param_6);
+          uVar5 = (uint)puVar6;
+          uVar1 = uVar5;
+          if (uVar5 == 0) {
+            uVar1 = 0x5000b;
+          }
+          puVar9 = (ulong *)(ulong)uVar1;
+          if ((puVar2 != (ulong *)0x0) && (uVar5 == 0)) {
+            if (param_11 != 0) {
+              *(bool *)param_11 = (puVar2[0x1e] & param_13) != 0;
+            }
+            if ((param_7 != 0) && (param_8 != 0)) {
+              puVar6 = puVar2 + 0xd;
+              local_580[0] = 0;
+              local_580[1] = 0;
+              if (puVar2 + 0xf < puVar6) goto LAB_22604b3b0;
+              _X509CertificateSubjectNameGetCommonName(puVar6,local_580);
+              puVar9 = puVar6;
+              if (((int)puVar6 != 0) ||
+                 (FUN_22604c570(local_580,param_7,param_8), puVar6 = puVar7, puVar9 = puVar7,
+                 (int)puVar7 != 0)) goto LAB_22604b1e8;
+            }
+            puVar9 = (ulong *)0x0;
+          }
+        }
+      }
+    }
+    else {
+      puVar9 = (ulong *)0x5000c;
+    }
+  }
+LAB_22604b1e8:
+  if (*_DAT_268210d30 != local_68) {
+    func_0x00022813f190();
+    return puVar6;
+  }
+  return puVar9;
+}
+
+
+
+//===== AT 22604b438 -> _CTEvaluateSensorCerts =====
+
+void _CTEvaluateSensorCerts(void)
+
+{
+  FUN_22604b0f0();
+  return;
+}
+
+
+
+//===== AT 22604b3fc -> _CTEvaluateYonkersCerts =====
+
+void _CTEvaluateYonkersCerts(void)
+
+{
+  FUN_22604b0f0();
+  return;
+}
+
+
+
+//===== AT 22604b7a8 -> _CTEvaluateAcrt =====
+
+void _CTEvaluateAcrt(undefined8 param_1,undefined8 param_2,undefined8 param_3,undefined8 param_4)
+
+{
+  _CTEvaluateCertsForPolicy(param_1,param_2,0,0,param_3,param_4,0,0,0,0,&DAT_2689b9f38);
+  return;
+}
+
+
+
+//===== AT 22604b8f8 -> _CTEvaluateKDLSignatureCMS =====
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void _CTEvaluateKDLSignatureCMS(void)
+
+{
+  long lVar1;
+  
+  lVar1 = *_DAT_268210d30;
+  _CMSVerifySignedDataWithLeaf();
+  if (*_DAT_268210d30 == lVar1) {
+    return;
+  }
+  func_0x00022813f190();
+  return;
+}
+
+
+

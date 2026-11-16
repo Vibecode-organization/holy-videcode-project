@@ -1,0 +1,1176 @@
+$and-array
+$and-array0
+$and operator disallowed for active fact
+$flag-check
+$optional
+$optional only supports a single dependent operation
+$or-array
+	$or-array0
+$or operator disallowed for active fact
+$query
+$query090/
+$query deserialization failed since it has an invalid query definition
+00D000000004
+00T0008D00P<888XH
+0123456789abcdef
+%08X-%016llX
+0<H000,,<
+0HH00000
+1122211222112012122222
+1211111212221212111
+12111112122212121111111111112
+12121122211
+121212
+1212212
+122222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222211
+21:26:02
+4H#@9(
+6hV@9iZ
+ACMKernControl
+ACMKernelLib
+ACMKernelTransport
+ACMKernGetEnvironmentVariable
+ACMKernSetEnvironmentVariable
+acm_mem_alloc_info
+acm_mem_free_info
+ACM says dev mode is %llu
+_acmService
+acmService
+AKSKernelServices
+_allocatedMem.data >= size
+_allocatedMem.total >= size
+alloc_vm_buffer
+allows_security_research
+A memory allocation has failed
+AMFI: [1] informing daemon of developer mode state change
+AMFI: [2] informing daemon of developer mode state change
+AMFI: ACM status %i
+amfi_allow_3p_launch_constraints
+AMFI: allowed with a license-to-operate
+AMFI: allowing pid %u to inherit IPC ports (cur_vp entitled)
+AMFI: allowing pid %u to inherit IPC ports (get-task-allow)
+AMFI: allowing pid %u to inherit IPC ports (no entitlements)
+AMFI: allowing pid %u to inherit IPC ports (platform binary)
+AMFI: allowing pid %u to inherit IPC ports (teamid match)
+amfi-allows-trust-cache-load
+AMFI: amfi-allows-trust-cache-load has unexpected size (%u).
+AMFI: AMFICompleteSecurityBootMode | bootMode: %u
+"AMFI: amfi-only-platform-code has unexpected size (%u)!" @%s:%d
+AMFI: AMFIUpdateDeviceState
+AMFI: apple-internal profile allows all entitlements
+AMFI: [ApplePMGRNub] latched BPR
+AMFI: [AppleSocMisc] latched BPR
+AMFI: armed security boot mode: %s
+AMFI: armSecurityBootMode: invalid scalarInput
+AMFI: armSecurityBootMode: invalid scalarInputCount
+"AMFI: attempted to free OSEntitlements without invalidation" @%s:%d
+"AMFI: attempted to reinitialize OSEntitlementsReadOnly ceCtx: %p" @%s:%d
+"AMFI: attempted to reinitialize OSEntitlementsReadOnly data: %p" @%s:%d
+"AMFI: attempted to reinitialize OSEntitlementsReadOnly identity: %p" @%s:%d
+AMFI: bailing out because of restricted entitlements.
+AMFI: Booted in a VM
+AMFI booted with research mode
+"AMFI: calling %s without xART storage support" @%s:%d
+AMFI: can-execute-cdhash code in non-entitled context.
+AMFI: can-execute-cdhash is disabled by system configuration
+AMFI: CC_Parent: Unknown Constraint category: %d
+AMFI: CC_Responsible: Unknown Constraint category: %d
+AMFI: CC_Self: Unknown Constraint category: %d
+"AMFI cert overrun\n" @%s:%d
+AMFI: code signature validation failed.
+AMFI: completeSecurityBootMode: invalid scalarInput
+AMFI: completeSecurityBootMode: invalid scalarInputCount
+AMFI: constraint violation %s has entitlements but is not a main binary
+_amfi_copy_seatbelt_profile_names
+AMFI: Couldn't copy buffer for the profile aux-sig
+AMFI: delaying developer mode latching...
+AMFI: Developer Mode can not be enabled on trusted darwinOS.
+AMFI: developer mode is disabled, processes can not run invalid.
+AMFI: developer mode is enabled in the trusted darwinos research variant
+AMFI: developer mode is force enabled
+AMFI: Developer Mode is off (%i)
+AMFI: Developer Mode Is On
+AMFI: device UDID not enforced
+AMFI: Disable developer mode since we couldn't get mobile obliteration status
+AMFI: disabling local signing due to AKS error: %x
+AMFI: disabling local signing due to allow3rdParty = false
+AMFI: disabling local signing due to failed MO query: %d
+AMFI: disabling local signing due to key length: %lu
+AMFI: disabling local signing due to mobile obliteration
+AMFI: disabling local signing due to no protected data access
+AMFI: disabling local signing due to restore environment
+AMFI: disabling Swift Playgrounds JIT services on iPhone devices
+"amfid is broken. (%s) (%d) (%d) (%d)" @%s:%d
+amfid_validated
+AMFI: empty profile provided: %s
+AMFI: Enabling developer mode since protected data is not available
+AMFI: Enabling developer mode since we are in mobile obliteration
+AMFI: Enabling developer mode since we are restoring....
+amfi_enforce_cc_types
+amfi_enforce_launch_constraints
+AMFI: Entitlement extraction failure in no entitlement check.
+AMFI: Entitlements present in no entitlement check. (length: %ld, ptr: %s)
+AMFI: Error: expected light weight code requirement, but data is not valid: %s
+AMFI: evaluating provisioning profile: %.*s
+AMFI: failed formatting for security boot mode: %u
+"AMFI: failed OSEntitlements back-reference: %p | %p" @%s:%d
+"AMFI: failed to acquire entitlements buffer from profile: %u" @%s:%d
+"AMFI: failed to acquire entitlements element from profile: %u" @%s:%d
+"AMFI: failed to acquire UUID element from profile: %u" @%s:%d
+"AMFI: failed to acquire UUID string from profile: %u" @%s:%d
+AMFI: Failed to allocate memory for the failure description
+AMFI: Failed to allocate ProcessAccessor objects
+AMFI: failed to arm security boot mode: %u
+"AMFI: failed to compute size for deserialization: %s\n" @%s:%d
+"AMFI: failed to compute size for XML: %s\n" @%s:%d
+AMFI: failed to copy profile data into kernel allocation
+AMFI: failed to create kernel allocation for profile
+"AMFI: failed to create OSDictionary copy: %u\n" @%s:%d
+AMFI: failed to create OSObject copy: %u
+"AMFI: failed to create profile context: %u" @%s:%d
+"AMFI: failed to deserialize legacy context: %s\n" @%s:%d
+"AMFI: failed to evaluate provisioning profile: %d" @%s:%d
+AMFI: Failed to get trust cache type for %s: (TCReturn: 0x%02X | 0x%02X | %u)
+AMFI: Failed to get trust cache UUID for %s (TCReturn: 0x%02X | 0x%02X | %u)
+"AMFI failed to initialize. This would compromise system security." @%s:%d
+"AMFI: failed to serialize as XML: %s\n" @%s:%d
+AMFI: failed to set auxiliary_info for auxiliary info
+AMFI: Failed to set cdhash in the SHA1 code directory usage event payload
+AMFI: Failed to set constraint identifier in the tle violation event payload
+AMFI: Failed to set constraint type in the tle usage event payload
+AMFI: Failed to set cpu_type in the SHA1 code directory usage event payload
+AMFI: Failed to set error code in the tle violation event payload
+AMFI: Failed to set error message in the tle violation event payload
+AMFI: Failed to set failed process validation category in the tle violation event payload
+AMFI: failed to set filename for auxiliary info
+AMFI: Failed to set filename in the SHA1 code directory usage event payload
+AMFI: Failed to set has_restricted_entitlements in the SHA1 code directory usage event payload
+AMFI: Failed to set launching process path in the tle violation event payload
+AMFI: Failed to set launching process validation category in the tle violation event payload
+AMFI: Failed to set launch type in the tle violation event payload
+AMFI: Failed to set match result in the tle violation event payload
+AMFI: failed to set monitor for auxiliary info
+AMFI: failed to set platform for auxiliary info
+AMFI: Failed to set process identifier in the tle violation event payload
+AMFI: failed to set research_variant for auxiliary info
+AMFI: failed to set signing_identifier for auxiliary info
+AMFI: Failed to set signing_identifier in the SHA1 code directory usage event payload
+AMFI: Failed to set signing identifier in the tle usage event payload
+AMFI: failed to set team_identifier for auxiliary info
+AMFI: Failed to set team_identifier in the SHA1 code directory usage event payload
+AMFI: Failed to set team identifier in the tle usage event payload
+AMFI: failed to set trust_level for auxiliary info
+AMFI: Failed to set validation_category in the SHA1 code directory usage event payload
+AMFI: Failed to set validation category in the tle usage event payload
+"AMFI: failed to validate entitlements from profile: %u" @%s:%d
+AMFI: file (%s) contains an invalid launch constraint on in slot %d, ignoring
+AMFI: file (%s) failed to parse a launch constraint on in slot %d (%s), ignoring
+AMFI: finished: %i %i
+"AMFI gave us too many certs\n" @%s:%d
+AMFIGetLocalSigningPublicKey
+AMFI: hook..execve() killing %s (pid %u): Attempt to execute a Legacy VPN Plugin.
+AMFI: hook..execve() killing %s (pid %u): Attempt to execute completely unsigned code (must be at least ad-hoc signed).
+AMFI: hook..execve() killing %s (pid %u): dyld signature cannot be verified. You either have a corrupt system image or are trying to run an unsigned application outside of a supported development configuration.
+AMFI: hook..execve() killing %s (pid %u): %s
+"AMFI: inconsistency between instance and csBlob context" @%s:%d
+"AMFI: inconsistency between instance and monitor context: %u | %u" @%s:%d
+"AMFI: inconsistency in DER entitlements length: %u | %lu" @%s:%d
+AMFIInMobileObliterationPhase
+AMFI: Launch Constraint Violation (%senforcing), error info: c[%d]p[%d]m[%d]e[%d], (%.*s) launching proc[vc: %d pid: %d]: %s, launch type %d, failure proc [vc: %d pid: %d]: %s
+AMFI: local signing validation was unsuccessful.
+"AMFI mac policy could not be registered!" @%s:%d
+AMFI: no alternative entitlements for OOP-JIT type: %u
+"AMFI: no amfi-only-platform-code device tree node!" @%s:%d
+"AMFI: No AppleSocMisc?\n" @%s:%d
+"AMFI: no chosen device tree node!" @%s:%d
+"AMFI: no /model device tree node!" @%s:%d
+AMFI: [non-fatal] unable to accelerate context: %s | %u
+AMFI: Non-SMAC process %s not permitted to map library %s from SMAC
+"AMFI: No PMGR?\n" @%s:%d
+"AMFI: no protected-data-access device tree node!" @%s:%d
+"AMFI: no root device tree node!" @%s:%d
+"AMFI: not booted with security-mode-change-enabled\n" @%s:%d
+"AMFI: not capturing mobile obliteration state" @%s:%d
+AMFI: Only launchd can set the application launch type
+AMFI: Only launchd can set the system service launch type (parent changed: %d)
+amfi-only-platform-code
+AMFI: only sysdiagnose can set the sysdiagnose launch type (parent changed: %d)
+AMFI: OOP-JIT previews allowed through %s
+AMFI: OOP-JIT %s is not meant for %s
+AMFI: OOP-JIT validation was unsuccessful.
+amfi.OSEntitlements
+AMFI: Platform binary with platform identifier not in trust cache
+AMFI: _proc_check_inherit_ipc_ports returning %d for pid %u
+AMFI: process with pid %u is not CS_VALID, not honoring entitlements.
+AMFI: profile disallowed due to developer mode
+AMFI: profile does not provision any developer certificates
+AMFI: profile does not provision any devices
+AMFI: profile does not provision claimed entitlements
+AMFI: profile does not provision current device
+AMFI: profile does not provision developer certificate
+AMFI: profile not registered with XNU monitor without cs_blob
+AMFI: profile provisions claimed entitlements
+AMFI: profile provisions current device
+AMFI: profile provisions developer certificate
+AMFIProfiles.cpp
+AMFI: profile validated the code signature
+"AMFI: protected-data-access has unexpected size (%u)!" @%s:%d
+AMFIProtectedDataAvailable
+AMFI: providing XNU monitor with auxiliary signature
+AMFI: queried model name from device tree: %s
+AMFI: research variant relaxes lock-state for trust caches: %u
+AMFI: run invalid not allowed
+AMFI: %s
+"AMFI: %s: Anomaly, code directory is NULL" @%s:%d
+AMFI: %s: cannot securely resolve entitlements from NULL proc
+AMFI: '%s' cmsBlobInit failed: component=%#x error=%#x unique=%#x
+AMFI: '%s' cmsBlobVerify failed: component=%#x error=%#x unique=%u
+AMFI: '%s' cmsBlobVerifyWithAgilityHash failed: component=%#x error=%#x unique=%u
+AMFI: '%s' cmsBlobVerifyWithAgilityHash unsupported: unique=%#x
+AMFI: '%s' couldn't fetch certs
+AMFI: '%s': disallowed entitlement key: %s
+AMFI: '%s': disallowed value for entitlement: %s
+AMFI: '%s': disallowing locally signed library with entitlements
+AMFI: '%s' does not pass kernel-side policy for this model, bailing out.
+AMFISetLocalSigningPublicKey
+AMFI: %s: Failed to allocate memory for fatal error message, cannot produce a crash reason.
+AMFI: '%s': has developer signature (%#llx) but developer mode is not enabled
+AMFI: '%s' has no cd?
+AMFI: '%s' has no CMS blob?
+AMFI: '%s' has short cd (%u)?
+AMFI: '%s' has short cms (%u), bailing out.
+AMFI: '%s' has zero length cms, but is not adhoc?
+AMFI: %s: invalid OOP-JIT type
+AMFI: '%s' is adhoc signed.
+AMFI: skipping PMGRAON latch due to AVP
+AMFI: %s linkage size is too small
+AMFI: '%s': locally signed
+AMFI: '%s' : locally signed jit is disabled by system configuration
+AMFI: '%s': locally signed signatures need to be at least 0x%X signature version (0x%X)
+AMFI: '%s': local signed binary does not have a team identifier
+AMFI: '%s': local signed binary has an invalid team-identifier: %s
+AMFI: '%s': local signing public key not initialized
+AMFI: SMAC process %s not permitted to map library %s from different SMAC
+AMFI: '%s' no hash agility and first code directory is not the best one
+AMFI: %s not allowed to map OOP-JIT %s
+AMFI: %s not allowed with universal profile
+AMFI: %s: oop-jit is disabled by system configuration
+AMFI: %s: OOP-JIT signature has entitlements
+AMFI: %s: OOP-JIT signature represents main binary
+AMFI: %s: required cs_blobs not available
+AMFI: %s: %s has no entitlements
+AMFI: %s: unable to allocate storage space for names
+AMFI: %s: unable to find code directory
+AMFI: '%s': unable to find code directory
+AMFI: %s: unable to obtain cs_blob on current_proc
+"AMFI: %s: unable to obtain local signing public key at early boot" @%s:%d
+AMFI: '%s': Unrecoverable CT signature issue, bailing out.
+AMFI: %s: unsatisfied entitlements for loading OOP-JIT signature
+AMFI: '%s': unsuitable CT policy %#llx for this platform/device, rejecting signature.
+AMFI: %s: unsupported OOP-JIT type: %u
+AMFI: '%s': verification failed since local signing is restricted
+AMFI: task_for_pid() not allowed
+AMFI Trust Cache Interface
+AMFI: trying to get developer mode status from ACM
+AMFI: UDID support enabled: %u
+"AMFI: unable to adjust without monitor: %u" @%s:%d
+"AMFI: Unable to create a name matching for SCRD" @%s:%d
+"AMFI: unable to create legacy CE context from monitor CE context: %u" @%s:%d
+"AMFI: unable to get legacy context after adjustment without monitor: %u" @%s:%d
+"AMFI: Unable to match on SCRD endpoint" @%s:%d
+AMFI: unable to obtain AKS services
+"AMFI: unable to obtain legacy CE context from CE context: %u" @%s:%d
+AMFI: unable to obtain local signing public key from AKS: %x
+"AMFI: Unable to query BPR via AppleSocMisc: 0x%x\n" @%s:%d
+"AMFI: Unable to set BPR via AppleSocMisc: 0x%x\n" @%s:%d
+AMFI: unable to validate entitlements: %u
+"AMFI: unexpectedly failed to obtain AKS services" @%s:%d
+"AMFI: unexpected OSEntitlements adjustment with monitor" @%s:%d
+"AMFI: unexpected OSEntitlements adjustment without monitor" @%s:%d
+AMFI: Unknown Launch Type: %d
+AMFI: using cached detached cert data for %s
+AMFI: using universal provisioning profile
+AMFI: Validation Category info: current %s (%d) parent %s (%d) responsible %s (%d) launch type %d
+AMFI: vn_getpath() returned %d.
+AMFI: vnode_check_signature called with platform %d
+AMFI: XNU monitor refused profile
+API Misuse
+&apos;
+AppleCredentialManager
+apple-internal
+AppleInternalProfile
+Apple Mobile File Integrity
+AppleMobileFileIntegrity
+AppleMobileFileIntegrity.cpp
+AppleMobileFileIntegrityUserClient
+ApplePMGRNub
+AppleSoCMisc
+application-identifier
+App Store Fast Path -> %s
+/arm-io/sep/iop-sep-nub/xART
+/arm-io/soc-misc
+Array contains too many elements
+array decoding failure
+__assert
+AssertMacros: %s (value: 0x%lx), %s, file: %s:%d
+Attempted resurection of an object
+Attempted to execute a non-iterable query
+Attempted to execute unknown CoreEntitlements operation
+Attempting to select a boolean value from a non-boolean DER object
+Attempting to select a data value from a non-data DER object
+Attempting to select an integer value from a non-integer DER object
+Attempting to select a string value from a non-string DER object
+Aug 13 2026
+__auth_got
+__auth_ptr
+__auth_stubs
+auxiliary_info
+B16@?0^{?={der_vm_context=^{CERuntime}{CEAccelerationContext=^{CEAccelerationElement}Q}QBB(?={ccder_read_blob=**}{?=**})}{der_vm_context=^{CERuntime}{CEAccelerationContext=^{CEAccelerationElement}Q}QBB(?={ccder_read_blob=**}{?=**})}II^v}8
+"Bad AMFI Detached Certs size" @%s:%d
+Bad things happened.
+BATS_TESTPLAN_ID
+beta-reports-active
+bool decode failure
+boolean should be exactly 1 byte
+boolean_t deviceUnlocked(bool *)
+Boolean tokenIsTrusted(audit_token_t)
+Bool op requires boolean parameter
+bounded_ptr<T>::operator*: Dereferencing this pointer would access memory outside of the bounds set originally
+bounded_ptr<T>::operator+=(n): Adding the specified number of bytes to the offset representing the current position would overflow.
+bounded_ptr<T>::operator+=(n): Calculating the number of bytes to add to the offset (n * sizeof(T)) would trigger an overflow
+Caller provided a disallowed launch type
+Caller provided an invalid constraint as a spawnattr
+callout out to amfid for %s %s, return %d valid: %d isApple: %d
+can-execute-cdhash
+Cannot be both OOP-JIT loader and runner simultaneously
+"Cannot unload AMFI - policy is not dynamic\n" @%s:%d
+"can't has cs_enforcement_disable" @%s:%d
+cdhash
+cdhash-full
+cdhash != NULL
+CEBuildIndexForContext
+CEDeserialization length mismatch
+CEDeserialize_block_invoke
+CEIndexSizeForContext
+CertManager.cpp
+CESerializeXML
+CEValidateWithOptions
+checkForLaunchWarningsInDaemon
+_checkForOOPJit
+_checkOOPJitLibraryValidation
+chip-id
+/chosen
+cmd = (acm_command_t *)acm_malloc_data(cmdSize)
+Code has restricted entitlements, but the validation of its code signature failed.
+code-signing-flags
+com.apple.abm-helper
+com.apple.accounts.appleaccount.fullaccess
+com.apple.amfi.developer_mode_state
+com.apple.amfi.tle_violation.v2
+com.apple.avfoundation.allow-capture-filter-rendering
+com.apple.avfoundation.allow-still-image-capture-shutter-sound-manipulation
+com.apple.backboardd.debugapplications
+com.apple.backboardd.launchapplications
+com.apple.basebandd.xpc.allow
+com.apple.bash
+com.apple.bbswbypass0
+com.apple.BlastDoor
+com.apple.brctl
+com.apple.camera.iokit-user-access
+"com.apple.CoreDevice.dtdebugproxyd0
+com.apple.CoreLocation.PrivateMode
+com.apple.coretelephony.Identity.get
+com.apple.cs-auxiliary-info
+com.apple.developer.app-management-domain
+com.apple.developer.cs.allow-jit
+com.apple.developer.swift-playgrounds-app
+com.apple.developer.swift-playgrounds-app.development-build
+com.apple.developer.team-identifier
+com.apple.developer.web-browser-engine.webcontent
+com.apple.diagnosticd.diagnostic
+com.apple.driver.AppleMobileFileIntegrity
+com.apple.family
+com.apple.IDSBlastDoorService
+com.apple.IDSBlastDoorSupport
+com.apple.keystore.access-keychain-keys
+com.apple.keystore.auth-token
+com.apple.keystore.device
+com.apple.keystore.devicebackup
+com.apple.keystore.sik.access
+com.apple.keystore.stash.access
+com.apple.locationd.activity
+com.apple.locationd.private_info
+com.apple.mbfloagent0
+com.apple.MediaAnalysisBlastDoorService
+com.apple.MediaAnalysisBlastDoorSupport
+com.apple.MessagesAirlockService
+com.apple.MessagesBlastDoorService
+com.apple.MessagesBlastDoorSupport
+com.apple.mis.warning
+com.apple.MobileFileIntegrity
+com.apple.mobilenotes
+com.apple.networkdiagnosticsd
+com.apple.nvram.boot-args-set-allow
+com.apple.private.accounts.allaccounts
+com.apple.private.amfi.can-check-trust-cache
+com.apple.private.amfi.can-execute-cdhash
+com.apple.private.amfi.can-load-cdhash
+com.apple.private.amfi.can-load-trust-cache
+com.apple.private.amfi.can-set-denylist
+com.apple.private.amfi.developer-mode-control
+com.apple.private.amfi.garbage-collect-profiles
+com.apple.private.apfs.revert-to-snapshot
+com.apple.private.assetsd.nebulad.access
+com.apple.private.avfoundation.capture.nonstandard-client.allow
+com.apple.private.CallHistory.read
+com.apple.private.cloudkit.spi
+com.apple.private.contacts
+com.apple.private.corespotlight.receiver
+com.apple.private.cs.debugger
+com.apple.private.email
+com.apple.private.enable-swift-playgrounds-validation
+com.apple.private.hid.manager.client
+com.apple.private.host-exception-port-override
+com.apple.private.kernel.system-override
+com.apple.private.mediaexperience.suppressrecordingstatetosystemstatus
+com.apple.private.MobileContainerManager.allowed
+com.apple.private.MobileGestalt.AllowProtectedKeys
+com.apple.private.oop-jit.loader
+com.apple.private.oop-jit.runner
+com.apple.private.osanalytics.defaults.allow
+com.apple.private.osanalytics.defaults.read-all.allow
+com.apple.private.photoanalysisd.access
+com.apple.private.playgrounds-local-signing-allowed
+com.apple.private.security.container-manager
+com.apple.private.security.datavault.controller
+com.apple.private.security.disk-device-access
+com.apple.private.security.install
+com.apple.private.security.install.heritable
+com.apple.private.security.no-container
+com.apple.private.security.no-sandbox
+com.apple.private.security.restricted-nvram-variables.heritable
+com.apple.private.security.storage.AppBundles
+com.apple.private.security.storage.DiagnosticReports.read-write
+com.apple.private.security.storage-exempt.heritable
+com.apple.private.security.storage.Messages
+com.apple.private.security.storage.Photos
+com.apple.private.security.storage.trustd-private
+com.apple.private.set-exception-port
+*com.apple.private.set-launch-type.internal0
+com.apple.private.system-keychain
+com.apple.private.tcc.allow
+com.apple.private.tcc.allow.overridable
+com.apple.private.tcc.manager
+com.apple.private.thread-set-state
+com.apple.private.uninstall.deletion
+com.apple.private.vfs.snapshot
+com.apple.QuartzCore.global-capture
+com.apple.QuartzCore.secure-capture
+com.apple.QuartzCore.secure-mode
+com.apple.RecoveryDiagnose.recoverydiagnosed
+com.apple.recoveryos_agent
+com.apple.RecoveryOS-Agent
+com.apple.rootless.datavault.controller
+com.apple.rootless.install
+com.apple.rootless.install.heritable
+com.apple.rootless.restricted-nvram-variables.heritable
+com.apple.security.get-movable-control-port
+com.apple.security.get-task-allow
+com.apple.sh
+com.apple.sha1.code_directory.usage
+com.apple.springboard
+com.apple.sysdiagnosed
+com.apple.sysdiagnosed0
+com.apple.system-task-ports
+com.apple.system-task-ports.control
+com.apple.system-task-ports.inspect
+com.apple.system-task-ports.read
+com.apple.system-task-ports.token.control
+com.apple.system-task-ports.token.corpse
+com.apple.system-task-ports.token.inspect
+com.apple.system-task-ports.token.read
+com.apple.TelephonyBlastDoorService
+com.apple.TelephonyBlastDoorSupport
+com.apple.tle.constraints.usage
+com.apple.vpn.installer_events
+com.apple.WalletBlastDoorService
+com.apple.WalletBlastDoorSupport
+com.apple.WebKit.WebContent
+com.apple.wifi.manager-access
+com.apple.wifivelocityd
+com.apple.wlan.authentication
+command
+commandSize
+__common
+compilation-service
+ConfigurationSettings.cpp
+__const
+const kks_services_t *AKS_services()
+"Constraint array failed to validate" @%s:%d
+Constraint categories are not supported when matching against a running process (cc:%lld)
+ConstraintCategories.cpp
+Constraint category disallowed in spawn attr
+Constraint category parent constraint can't be enforced because parent has changed
+constraint_identifier
+Constraint is too deeply nested. Failing to avoid recursion overflow
+Constraint not matched
+Constraint size (%zu) exceeds maximum %d
+constraint_type
+ConstraintUtilities.cpp
+copy_keys_to_accelerator_block_invoke
+copyOSEntitlements
+copyPackedData failed: %d
+copyTrustCacheAndManifestFromInputArgument
+CoreAnalyticsHub
+CoreEntitlements: subset | %.*s: 0x%04X
+CoreEntitlements: validation | %.*s: 0x%04X
+"CoreEntitlments has triggered a panic\n" @%s:%d
+could not decode size for next DER sub-sequence
+could not decode tag for next DER sub-sequence
+Couldn't allocate buffer for cms blob
+"Couldn't allocate memory for a denylist" @%s:%d
+Couldn't fetch detached certificates for %s
+Couldn't find daemon.
+Couldn't find trust cache UUID for library from SMAC
+Couldn't find trust cache UUID for process when mapping library from SMAC
+cpu_type
+critical failure during xml serialization, start != end
+cryptex1.boot.app
+cryptex1.boot.os
+cryptex1.boot.rosetta
+cryptex1.generic
+cryptex1.generic.supplemental
+cryptex1.preboot.app
+cryptex1.preboot.os
+cryptex1.safari-downlevel
+CSBlobAccessor.cpp
+cs_enforcement_disable
+csflags
+(*cs_flags & initial_cs_flags) == initial_cs_flags
+__cstring
+curr_path
+curr_validation_category
+darwinos-ramdisk0B
+darwinos-security-environment
+<data>
+__data
+__DATA
+__DATA_CONST
+(data && dataLength && dataLength <= kACMControlMaxDataLength) || (!data && !dataLength)
+(data && dataLength && dataLength <= kACMEnvironmentVariableMaxDataLength) || (!data && !dataLength)
+data element not allowed
+dataOutBuffer && dataInOutLength
+!dataSize || data
+ddDDPP
+	dDP<8T
+der_decode_boolean
+der_decode_data
+der_decode_entitlements
+der_decode_key_value
+der_decode_next
+der_decode_number
+der_decode_numeric_string
+der_decode_string
+der_decode_utc_time
+der_validate_array
+der_validate_dictionary
+der_vm_bool_from_context
+der_vm_buffer_from_context
+der_vm_data_from_context
+der_vm_execute_integer_value_allowed
+der_vm_execute_match_bool
+der_vm_execute_match_integer
+der_vm_execute_match_string
+der_vm_execute_match_string_prefix
+der_vm_execute_nocopy
+der_vm_execute_select_index
+der_vm_execute_select_key
+der_vm_execute_select_longest_matching_key
+der_vm_execute_string_prefix_value_allowed
+der_vm_execute_string_value_allowed
+der_vm_integer_from_context
+der_vm_iterate_b
+der_vm_string_from_context
+developer_app_executions
+DeveloperCertificates
+developer-mode
+Developer mode is disabled, %*.s is disallowed
+developer_mode_resolved
+developer_mode_state
+developer mode status
+developer_mode_status
+developer mode status has been resolved
+DHL0TT
+dictionary decoding failure
+dictionary key is not a valid string
+dictionary keys are not sorted or not unique
+dictionary key / value decoding failure
+dictionary value verification failure
+disabled
+Disallowing: found launch warnings for %s
+( <dP\8
+DpP|XhxxX
+dynamic
+dynamic-codesigning
+Embedded parent constraint can't be enforced because parent has changed
+Embedded self constraint can't be enforced because parent has changed
+enabled
+encountered invalid element in an array
+encountered invalid element in an iterable
+encountered invalid tag
+EntitlementPolicy.h
+entitlements
+Entitlements
+entitlements blob does not have CCDER_CONSTRUCTED_SET coding
+entitlements blob does not have CCDER_ENTITLEMENTS coding
+entitlements blob does not have CCDER_ENTITLEMENTS_DICT as the second element
+Entitlements element not allowed
+entitlements too large
+entitlements too small
+entitlement validation failed, binary has XML entitlements but no DER slot is present.
+Entry count is too large, failing: %lld
+err == 0 
+error_code
+Error communicating with amfid while checking launch warnings for %s
+error copying in constraint %d
+Error getting DER
+Error getting XML
+error_msg
+evaluateLibraryLoadConstraintOnLibrary() could not copy out error msg '%s', error: %d
+evaluateLibraryLoadConstraintOnProcess() could not copy out error msg '%s', error: %d
+Expected operator string in Array tuple
+extra data at the end of element
+factless operator disallowed for active fact
+Fact not allowed in context
+Failed during buffer decoding
+failed getting DER entitlements
+failed getting entitlements
+failed parsing DER entitlements
+"Failed to add encyclopedia to MetaEncyclopedia" @%s:%d
+Failed to cast CoreAnalyticsHub
+failed to construct an LWCR from the provided buffer (error: %d)
+Failed to get path for vnode
+fail_path
+fail_validation_category
+fast-path-appstore
+fast-path-local
+fatal error detected during OOP-JIT signature validation
+fatal error when decoding key/value pair
+filename
+getBPR
+getOSEntitlements
+getOSEntitlementsFromProcSecure
+get-task-allow
+global.bootability-brain
+global.ota-update-brain
+global.pdi
+Got an unexpected type (not a dictionary) when trying to generate a query operation.
+Got an unexpected type (not a dictionary) when trying to generate dependent operations for evaluation.
+Got an unexpected type (not an integer, string or data) when trying to generate an In operation.
+Got an unexpected type (not an integer) when trying to generate an integer operation.
+Got an unexpected type (not a sequence) when trying to read the array of matches.
+H88T`lP
+h,8+hh8k
+has_restricted_entitlements
+h&C9	 
+heap underflow / memory tracking issue?
+H<H\T 
+img_vp
+Incorrect number of elements in operator Array tuple
+index size overflow
+info-plist-hash
+initAppleCredentialService
+initCoreAnalyticsService
+initUDIDEnforcement
+in-kernel
+In Operation expected the Fact to be an integer, string or data
+inSize >= sizeof(acm_command_t)
+int _authorize_local_signing(struct proc *, user_addr_t)
+int _check_authorize_local_signing_entitlement(struct proc *)
+int _check_cdhash_in_trustcache(struct proc *, user_addr_t)
+in-tc-with-constraint-category
+</integer>
+<integer>
+integer_allowed_iterate
+INTEGRITY_CHECK_SENTINEL_01
+Internal
+Internal Error: No cdhash found.
+int _get_local_signing_private_key(struct proc *, user_addr_t)
+int _get_local_signing_public_key(struct proc *, user_addr_t)
+Int op requires int parameter
+int _proc_check_map_anon(proc_t, kauth_cred_t, user_addr_t, user_size_t, int, int, int *)
+int _set_local_signing_public_key(struct proc *, user_addr_t)
+Invalid Arguments
+invalid arguments passed in
+Invalid data length: %lld entries, %u bytes
+Invalid denylist
+invalid dictionary element
+Invalid fact type for this operation (expected an integer or bool)
+Invalid fact type for this operation (expected a string)
+Invalid fact type for this operation (expected data)
+invalid tag or length
+IODTNVRAM
+iokit.OSDetachedCertificates
+iokit.OSEntitlements
+iPhone
+is-init-proc
+is-kernel-proc
+is-main-binary
+is-sip-protected
+iterable decoding failure
+iteration over a non-iterable type
+__kalloc_type
+__kalloc_var
+kern.hv_vmm_present
+kern.osreleasetype
+kern_return_t _initializeAppleMobileFileIntegrity()
+(keybagUuid && keybagUuidLength == UUID_LEN) || (!keybagUuid && !keybagUuidLength)
+key contains an embedded NUL
+key length is invalid
+key / value decoding failure
+key-value pair contains extra elements
+LaunchConstraintPolicy.cpp
+launch_constraints_3rd_party_allowed
+launch constraints are allowed for 3rd parties
+launch_constraints_cc_types_enforced
+LaunchConstraints.cpp
+launch constraints enforced
+launch_constraints_enforced
+Launch Constraint Violation, error info: c[%d]p[%d]m[%d]e[%d], (%.*s) launch type %d, failure proc [vc: %d]: %s
+launch environment logging
+launch_env_logging
+launch-type
+launch_type
+Launch warning found for proc (fatal): %s
+LibCall_ACMGetEnvironmentVariable
+LibCall_ACMKernelControl
+LibCall_ACMSetEnvironmentVariable
+LibCall_BuildCommand
+/Library/Caches/com.apple.xbs/A1DFC313-3939-4260-93B4-338320D4E0E9/TemporaryDirectory.95Owi8/Sources/AppleCredentialManager_KernelLibs/ACMKernelLib/ACMKernelTransport.cpp
+/Library/Caches/com.apple.xbs/A1DFC313-3939-4260-93B4-338320D4E0E9/TemporaryDirectory.95Owi8/Sources/AppleCredentialManager_KernelLibs/common/CommonMem.c
+/Library/Caches/com.apple.xbs/A1DFC313-3939-4260-93B4-338320D4E0E9/TemporaryDirectory.95Owi8/Sources/AppleCredentialManager_KernelLibs/common/LibCall.c
+LibraryConstraints.cpp
+Library Load Constraint Rejection: Rejecting '%s' (Team ID: %s, platform: %s) for process '%s(%d)' (Team ID: %s, platform: %s), reason: %.*s
+Library Process Constraint Rejection: Rejecting loading of '%s' (Team ID: %s, platform: %s) for process '%s(%d)' (Team ID: %s, platform: %s), reason: %.*s
+Library Validation failed: Rejecting '%s' (Team ID: %s, platform: %s) for process '%s(%d)' (Team ID: %s, platform: %s), reason: %s
+library_validation_failure
+library_validation_failure() could not copy out error msg '%s', error: %d
+Library Validation overridden for '%s' (Team ID: %s, platform: %s) for process '%s(%d)' (Team ID: %s, platform: %s), overridden failure: %s
+Library violates process' library load contraint
+__LINKEDIT
+loadFromCE
+_load_trust_cache
+loadTrustCacheWithExternalManifest
+loadTrustCacheWithType
+Locally Signed Fast Path -> %s
+LocalSigning.cpp
+LOCALSPKEY
+LOCALSPKEY.swift-playgrounds-
+lockdown_mode_state
+LWCR: invalid version / compatible version fields
+LWCRs are not encoded correctly
+LWCRs constraint category cannot be less that zero
+LWCRs do not specify a constraint category or explicit requirements
+LWCRs 'requirements' field is not a dictionary
+mapped file has no cdhash, completely unsigned? Code has to be at least ad-hoc signed.
+mapped file has no Team ID and is not a platform binary (signed with custom identity or adhoc?)
+mapped file has wrong signer type
+mapping process and mapped file (non-platform) have different Team IDs
+mapping process has no Team ID and is not a platform binary
+mapping process is a platform binary, but mapped file is not
+match_result
+Memory prepare failed: 0x%x
+MetaEncyclopedia.cpp
+MISDenylist.cpp
+ml-compiler
+modify-anchor-certificates
+__mod_init_func
+__mod_term_func
+monitor
+no code signature
+No error message set
+Non array element found in operator Array
+Non-Fatal: failed to change validation category from %d to %d at %s
+non-NULL
+Non-SMAC process not permitted to map library from SMAC
+No Process
+No process found pid: %d pidversion: %d
+No requirements in the provided constraint
+Not a CoreEntitlements error!
+not allowing mapping of development code into production process
+Not eligible for acceleration
+Null query context
+number too large
+numeric string element not allowed
+oblit-inprogress
+on-authorized-authapfs-volume
+Only platform code can set launch constraints
+Only platform code can set launch constraints on itself
+Only platform code can set launch constraints on its parent
+Only platform code can set launch constraints on its responsible process
+on-system-volume
+oop-jit
+_oopJITLibraryValidationEntitlement
+OOP-JIT loader entitlement is an incorrect type
+OOP-JIT runner entitlement is an incorrect type
+OOP-JIT signature not valid for mapping process
+OOP-JIT Signed Fast Path -> %s
+os_add_overflow(sizeof(acm_command_t), dataSize, &cmdSize) == 0 
+OSBoundedPtr.h
+OSDetachedCertificates
+OSEntitlements
+OSEntitlements.cpp
+os-environment
+osenvironment
+__os_log
+Over-release of an object
+performCommand
+performCommandFunc
+performCommandV3
+personalized.cryptex1.update-brain
+personalized.cryptex-research
+personalized.ddi
+personalized.engineering-root
+personalized.mobile-asset-brain
+personalized.mobile-asset-code
+personalized.pdi
+personalized.supplemental-ephemeral
+personalized.supplemental-persistent
+platform
+platform-application
+platform binary with platform identifier not in trust cache
+platform-identifier
+platform-identifier-for-current-process
+PPDXdh
+pqc_codesigning_enabled
+PQC code signing support compiled in
+previews
+"previously valid CE result has become invalid" @%s:%d
+Private Cloud Compute
+process_identifier
+_process_matches_constraint
+Process violates library's library load constraint
+Process was launched as a sysdiagnose helper unexpectedly
+Process was launched as a system service unexpectedly but met System Service constraints
+_proc_satisfies_constraint
+/product
+protected-data-access
+ProvisionedDevices
+ProvisionsAllDevices
+QA Hierarchy used -> %s
+qa-path-appstore
+Query cannot be satisfied
+Query Operation expected the Fact to be a CoreEntitlements dictionary
+&quot;
+recursion limit reached
+recursivelyValidateEntitlements
+RefCounted object destroyed, but is not fully released
+Requirement not satisfied: %.*s
+research.com.apple.license-to-operate
+research_variant
+Respecting MIS launch warning: %s
+-restore
+Restricted Execution Mode state(%s): %s (pid %u) would be disallowed by policy, but is allowed by boot-args
+Restricted Execution Mode state(%s): %s would be disallowed by policy, but is allowed by boot-args
+restricted execution mode status
+restricted_execution_mode_status
+retained
+Root installed sysdiagnose helper allowed: %s
+Root installed system service allowed: %s
+runtime doesn't support acceleration
+run-unsigned-code
+S24@?0r^{_CEKeyValuePair={_CEElement={?=*Q}{?=Q{?=*Q}}}{_CEValueTypePair=I{_CEElement={?=*Q}{?=Q{?=*Q}}}}}8^{_CEIterateArgs=Q^vB}16
+S24@?0r^{_CEValueTypePair=I{_CEElement={?=*Q}{?=Q{?=*Q}}}}8^{_CEIterateArgs=Q^vB}16
+%s: attempted to load duplicate trust cache -- switching to success
+%s: blob too large: %zu
+%s: built %s %s
+%s called with NULL cred
+%s called with NULL proc
+"%s: /chosen is missing unique-device-id-string" @%s:%d
+%s: /chosen node not found
+"%s: /chosen/unique-device-id-string is too large: %d" @%s:%d
+%s: copyBytesFromInputArguments failed: %d
+%s: copying private key from AMFI not supported on this platform
+%s: copyTrustCacheAndManifestFromInputArgument failed: %d
+%s: could not get current process
+%s: could not get entitlements
+%s: could not get target
+%s: could not query process for entitlements
+%s: cs_enforcement disabled by boot-arg
+%s: daemon replied with error: %d
+%s: daemon token not trusted
+%s: data length overflow: %zu (= %zu + %zu)
+%s: device is not unlocked (lock_state %d).
+%s disallowed on non-platform process
+%s disallowed without %s
+seatbelt-profiles
+security-mode-change-enable
+Security research enabled
+[%s]: entitlements blob has unexpected version %lld
+sep-endpoint,scrd
+%s: error copying in args %d
+%s: error copying in args: %d
+%s: error copying in img4_aux_manifest_addr: %d
+%s: error copying in img4_manifest_addr: %d
+%s: error copying in img4_object_addr: %d
+%s: error copying in public key %d
+%s: error copying in UUID: %d
+%s: error %d when querying AKS for extended lock state, failing.
+%s: error: %s
+service
+serviceMatchingDict
+setBPR
+Setting up notifier for %s
+%s: expected length overflow: %zu (total len %zu + %zu)
+%s: failed to copy in cdhash %d
+%s: failed to copy out public key: %d
+%s: failure getting can set denylist entitlement for process %d
+%s: failure getting load trust cache entitlement for process %d
+%s: Hash type is SHA1
+"Should have fatal failure description pointers when we are enforcing" @%s:%d
+"Should not reach here proc: %d library: %d" @%s:%d
+"Should not reach here, uncategorized constraint category: %d" @%s:%d
+signing-identifier
+signing_identifier
+%s: img4_aux_manifest_addr expected but not provided
+%s: img4_manifest_addr expected but not provided
+%s: img4_object_addr expected but not provided
+%s: img4_object cannot have zero length
+%s: input too large: %llu
+%s: Internal error when creating code signature validation error (buffer allocation failed).
+%s: invalid error struct size: %zu
+%s: invalid load trust cache selector %d
+sip-enabled
+site.ACMCredential
+site.ACMCredential.ACMCredentialDataAP
+site.ACMCredential.ACMCredentialDataBiometryMatchAttempted
+site.ACMCredential.ACMCredentialDataBiometryMatched
+site.ACMCredential.ACMCredentialDataContinuityUnlock
+site.ACMCredential.ACMCredentialDataKextDenyList
+site.ACMCredential.ACMCredentialDataPasscodeValidated
+site.ACMCredential.ACMCredentialDataPasscodeValidated2
+site.ACMCredential.ACMCredentialDataPassphraseEntered
+site.ACMCredential.ACMCredentialDataPassphraseExtractable
+site.ACMCredential.ACMCredentialDataSecureIntent
+site.ACMCredential.ACMCredentialDataSignature
+site.ACMCredential.ACMCredentialDataUserOutputDisplayed
+site.ACMCredentialRef
+site.ACMHandleWithPayload
+site.ACMRequirement
+site.ACMRequirement.ACMRequirementDataAccessGroups
+site.ACMRequirement.ACMRequirementDataAP
+site.ACMRequirement.ACMRequirementDataBiometryMatchAttempted
+site.ACMRequirement.ACMRequirementDataBiometryMatched
+site.ACMRequirement.ACMRequirementDataBiometryMatchedWithAttributes
+site.ACMRequirement.ACMRequirementDataKeyRef
+site.ACMRequirement.ACMRequirementDataPasscodeValidated
+site.ACMRequirement.ACMRequirementDataPasscodeValidatedWithAttributes
+site.ACMRequirement.ACMRequirementDataPassphraseEntered
+site.ACMRequirement.ACMRequirementDataPushButton
+site.ACMRequirement.ACMRequirementDataPushButtonWithAttributes
+site.ACMRequirement.ACMRequirementDataRatchet
+site.ACMRequirement.ACMRequirementDataSecureIntent
+site.ACMRequirement.ACMRequirementDataSecureStateWithAttributes
+site.ACMRequirement.ACMRequirementDataUserOutputDisplayed
+site.amfid_failed_entitlements_desc_t
+site.amfi_interface_constraint_match_result_t
+site.AndOperation
+site.AppleMobileFileIntegrity
+site.AppleMobileFileIntegrityUserClient
+site.BinaryDataOp
+site.BinaryIntOp
+site.BinaryStrOp
+site.CEAccelerationElement_t
+site.char *
+site.char*
+site.ConstErrorOperation
+site.InOperation
+site.LaunchTypeApplicationPolicy
+site.LaunchTypeNonePolicy
+site.LaunchTypeSysdiagnosePolicy
+site.LaunchTypeSystemServicePolicy
+site.OptionalOperation
+site.OrOperation
+site.ProcessAccessor
+site.QueryOperation
+site.RefCounted
+site.T
+site.VnodeLazyPath
+%s: loading duplicate trust cache (success)
+%s: loading trust caches disallowed by system state
+%s: local signing public key not available
+%s: local signing public key not available with daemon
+slotHashSize
+%s: mac_policy_register failed: %d
+SMAC process not permitted to map library from different SMAC
+"%s: missing ChipID or UniqueChipID: %p | %p" @%s:%d
+%s: no registered daemon port
+%s not allowed for Restricted Execution Mode state (%s)
+%s not allowed for Restricted Execution Mode state (%s): code is not present in any trustcache
+%s not allowed for Restricted Execution Mode state (%s): code is unsigned
+%s: null address for public key
+%s: null arguments
+%s: NVRAM service not available
+%s: only allowed process can modify the compilation service trust cache
+%s: only an allowed process can authorize local signing
+%s: only an allowed process can set local signing public key
+%s: PID %d is requesting a trust cache load
+%s (pid %u) not allowed for Restricted Execution Mode state (%s)
+%s (pid %u) not allowed for Restricted Execution Mode state (%s): code is not present in any trustcache
+%s (pid %u) not allowed for Restricted Execution Mode state (%s): code is unsigned
+%s: Possible race detected. Rejecting.
+%s: prepare failed: 0x%x
+%s: prepare failed: %d
+%s: process %d attempted to use MAP_JIT but developer mode status has not been resolved!
+%s: process %d attempted to use MAP_JIT, but device still locked!
+%s: Process %d is checking if a cdhash is in the trust cache
+%s: process %d not allowed to load trust cache
+%s: process %d not allowed to set denylist
+%s: process %s attempted to use MAP_JIT but jit is disallowed by system configuration
+%s: /product is missing udid-version
+%s: /product node not found
+%s: /product/udid-version has unexpected length: %u
+%s: /product/udid-version is not supported: %u
+%s: public key size not accepted: %zu
+srd_allow_trust_caches_when_locked
+%s: Returning IOReturn 0x%x to process %d
+[%s]: %s
+%s: %s: called.
+%s::%s CoreAnalyticsmatchingDict is null
+"%s" @%s:%d
+%s: %s disallowed due to OOP-JIT loader entitlement
+%s: %s disallowed due to OOP-JIT runner entitlement
+%s: short input data: %zu < %zu
+%s: short input: %zu < %zu
+%s: Signature meets iphone VPN Prod policy
+%s: %s: mem: type=%s ptr=%p size=%u (total=%u raw=%u data=%u types=%u) %s:%d (%s).
+%s: %s: returning.
+%s: %s: returning, err = %ld.
+%s: %s: returning, err = %ld, code=%u.
+%s: %s: returning, err = %ld, var=%u.
+[%s]: subset validation failed, bool value of key '%.*s' not allowed
+[%s]: subset validation failed, integer value of key '%.*s' not allowed
+[%s]: subset validation failed, key not found in the superset '%.*s'
+[%s]: subset validation failed, key %.*s with value '%.*s' not allowed
+[%s]: subset validation failed, string array of key '%.*s' not allowed
+[%s]: subset validation failed, type mismatch for key '%.*s' %lu != %lu 
+%s: target is not AppleMobileFileIntegrity object
+static IOReturn AppleMobileFileIntegrityUserClient::copyBytesFromInputArguments(IOExternalMethodArguments *, void **, IOByteCount *)
+static IOReturn AppleMobileFileIntegrityUserClient::isCdhashInTrustCache(OSObject *, void *, IOExternalMethodArguments *)
+static IOReturn AppleMobileFileIntegrityUserClient::loadCompilationServiceCodeDirectoryHash(OSObject *, void *, IOExternalMethodArguments *)
+static IOReturn AppleMobileFileIntegrityUserClient::loadTrustCache(OSObject *, void *, IOExternalMethodArguments *)
+static IOReturn AppleMobileFileIntegrityUserClient::setDenylist(OSObject *, void *, IOExternalMethodArguments *)
+StaticPlatformPolicy<%d>: no registered daemon port
+StaticPlatformPolicy<%d>: Unable to match identity
+StaticPlatformPolicy<%d>: unable to verify audit token came from amfid
+StaticPlatformPolicy<%d>: verify_code_directory interrupted
+StaticPlatformPolicy<%d>: verify_code_directory returned 0x%x
+StaticPlatformPolicy<%d>: verify_code_directory server is dead
+%s: token idversion (%d) does not match proc (%d)
+%s: token is untrusted: error %d getting cdhash
+%s: token is untrusted: hash does not match
+%s: token is untrusted: pid %d not found
+%s: total length overflow: %zu != %zu + %zu
+</string>
+String contains an embedded NUL
+string decode failure
+String op requires string parameter
+string_prefix_allowed_iterate
+string_value_allowed_iterate
+sub-sequence size is larger than sequence size
+%s: unable to allocate %llu bytes
+%s: unable to extract img4 module: 0x%02X | 0x%02X | %u
+%s: unable to get amfid daemon port: %d
+%s: unable to get %s (0x%x)
+%s: unable to load trust cache: %d
+%s: unable to obtain AKS services for checking unlock state, failing.
+%s: unexpected cd hash length: %u
+%s: Unexpected match result %d
+%s: Unknown hash type %d
+%s: unrecognized method selector %d
+Support.cpp
+%s: UUID expected but not provided
+%s: vm_allocate failed
+%s: vm_map_copyin failed kr = %d
+%s: vm_map_unwire failed kr = %d
+%s: vm_map_wire failed kr = %d
+swift-playgrounds
+System process was launched as an application unexpectedly
+T	_A9I
+task_for_pid-allow
+tDDX\TTL\\
+team-identifier
+team_identifier
+team-identifier-for-current-process
+__text
+__TEXT
+__TEXT_EXEC
+The array of dependent operations is empty.
+The ConstraintCategory types that are enforcing
+The dictionary of dependent operations is empty.
+The offset of the pointer inside its valid memory range can't be represented using int32_t
+The range of valid memory is too large to be represented by this type, or [begin, end) is not a well-formed range
+There should only be one operation to match a fact
+The signature could not be validated because AMFI could not load its entitlements for validation: %s
+The system only allows platform binaries until developer mode status has been resolved, and the code is not a platform binary
+This bounded_ptr is pointing to memory outside of what can be represented by a native pointer.
+This LWCR is not compatible with this runtime
+Too many elements in dictionary
+transport
+transportContext
+trust-cache
+trust_cache_interface
+trustCacheIsDuplicateImg4
+trust_level
+udid-version
+Unable to allocate %llu bytes
+unable to create an OSObject for locally signed entitlement
+unable to create an OSString for locally signed entitlement
+unable to decode value size for key-value pair
+unable to decode value tag for key-value pair
+Unexpected key for parsing context
+Unexpected operator in Array tuple
+Unexpected type in Array tuple
+Unexpected type of an fact declaration.
+Unexpected type of an operation declaration.
+Unexpected type to match against
+Unexpected type to match against during iteration
+unhandled opcode
+unique-chip-id
+unique-device-id-string
+unknown
+Unknown boolean encoding
+Unknown data encoding
+Unknown DER entitlements encoding
+Unknown launch type
+unknown number encoding
+Unknown numeric string encoding
+Unknown string encoding
+Unknown UTC Time encoding
+"Unknown validation category %d" @%s:%d
+_unload_trust_cache
+Unsatisfied Entitlements: %s
+untrusted
+UTC Time element not allowed
+UTIL_OPTIONAL_BUFFER(outBuffer,outSize)
+v16@?0r^{_OSEntitlementsReadOnly=^{OSEntitlements}{CEQueryContext={der_vm_context=^{CERuntime}{CEAccelerationContext=^{CEAccelerationElement}Q}QBB(?={ccder_read_blob=**}{?=**})}B}{_CEContext={_CEContextInfo=CI}{_CEElement={?=*Q}{?=Q{?=*Q}}}^{_CEElementIndex}Q{CEQueryContext={der_vm_context=^{CERuntime}{CEAccelerationContext=^{CEAccelerationElement}Q}QBB(?={ccder_read_blob=**}{?=**})}B}B}^{_CEContext}*{?=^{__SC_GenericBlob}}{?=BB}}8
+v40@?0{CESerializedElement=q(?=q)QB}8
+validateCommand
+_validateOOPJit
+validate_V0
+validate_VNext
+validation-category
+validation_category
+"Validation category %d should not reach here" @%s:%d
+Validation of denylist failed: not sorted
+valuesAreAllowed_block_invoke
+Verification failed
+virtual bool AppleMobileFileIntegrity::start(IOService *)
+virtual IOReturn AppleMobileFileIntegrityUserClient::externalMethod(uint32_t, IOExternalMethodArguments *, IOExternalMethodDispatch *, OSObject *, void *)
+virtual void AppleMobileFileIntegrity::stop(IOService *)
+!vnode_isdir(vp)
+vnode_isreg(vp)
+When validating %s:
+xml-looking blob was passed in
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "https://www.apple.com/DTDs/PropertyList-1.0.dtd"><plist version="1.0">
+@yH	@7

@@ -1,0 +1,2640 @@
+
+===== fffffff0087cd104  OSUnserialize(stub)   func~fffffff0087ccfbc (+0x148)
+  strings: %s failed to load CLP DSP [errorCode : 0x%x , remainingRetries : %d] | %s::%s() START [_dspHWServiceEnabled=%d, _clpFirmwareLoaded=%d] | AncFirmware | HapticsFirmware | _processFirmwareDataGated
+   .. 0xfffffff0087cd0a4  str      xzr, [sp, #0x38]
+   .. 0xfffffff0087cd0a8  ldrb     w8, [x19, #0x108]
+   .. 0xfffffff0087cd0ac  tbz      w8, #0, #0xfffffff0087cd438
+   .. 0xfffffff0087cd0b0  cbz      x21, #0xfffffff0087cd454
+   .. 0xfffffff0087cd0b4  ldr      x16, [x21]
+   .. 0xfffffff0087cd0b8  mov      x17, x21
+  >>
+     0xfffffff0087cd104  bl       #0xfffffff00880c148
+     0xfffffff0087cd108  mov      x27, x0
+     0xfffffff0087cd10c  cbz      x0, #0xfffffff0087cd470
+     0xfffffff0087cd110  adrp     x8, #0xfffffff007d7c000
+     0xfffffff0087cd114  ldr      x8, [x8, #0x418]
+     0xfffffff0087cd118  ldr      x23, [x8]
+     0xfffffff0087cd11c  mov      x0, x27
+     0xfffffff0087cd120  mov      x1, x23
+     0xfffffff0087cd124  bl       #0xfffffff00880c1f8
+     0xfffffff0087cd128  mov      x21, x0
+     0xfffffff0087cd12c  cbz      x0, #0xfffffff0087cd490
+     0xfffffff0087cd130  ldr      x8, [x19, #0x110]
+     0xfffffff0087cd134  cbnz     x8, #0xfffffff0087cd4a8
+     0xfffffff0087cd138  str      x27, [sp, #0x28]
+     0xfffffff0087cd13c  mov      x0, x19
+     0xfffffff0087cd140  mov      x1, x21
+     0xfffffff0087cd144  bl       #0xfffffff0087ce5cc
+     0xfffffff0087cd148  cbz      w0, #0xfffffff0087cd248
+     0xfffffff0087cd14c  mov      x22, x0
+     0xfffffff0087cd150  str      x23, [sp, #0x30]
+     0xfffffff0087cd154  mov      w23, #0xa
+     0xfffffff0087cd158  adrp     x25, #0xfffffff0073ed000
+     0xfffffff0087cd15c  add      x25, x25, #0x7c0
+     0xfffffff0087cd160  adrp     x26, #0xfffffff007d7c000
+     0xfffffff0087cd164  ldr      x26, [x26, #0x4d0]
+     0xfffffff0087cd168  adrp     x27, #0xfffffff0073f8000
+     0xfffffff0087cd16c  add      x27, x27, #0xd1a
+     0xfffffff0087cd170  adrp     x28, #0xfffffff0073ee000
+     0xfffffff0087cd174  add      x28, x28, #0xa9b
+     0xfffffff0087cd178  sub      w24, w23, #1
+
+===== fffffff0088bbc04  OSUnserialize(stub)   func~fffffff0088bbaec (+0x118)
+  strings: 
+   .. 0xfffffff0088bbba4  mov      x17, x8
+   .. 0xfffffff0088bbba8  movk     x17, #0xc9c, lsl #48
+   .. 0xfffffff0088bbbac  blraa    x9, x17
+   .. 0xfffffff0088bbbb0  mov      x23, x0
+   .. 0xfffffff0088bbbb4  mov      x0, x19
+   .. 0xfffffff0088bbbb8  bl       #0xfffffff008908b44
+  >>
+     0xfffffff0088bbc04  bl       #0xfffffff008908934
+     0xfffffff0088bbc08  cbz      x0, #0xfffffff0088bbc94
+     0xfffffff0088bbc0c  mov      x20, x0
+     0xfffffff0088bbc10  adrp     x8, #0xfffffff007db4000
+     0xfffffff0088bbc14  ldr      x8, [x8, #0x780]
+     0xfffffff0088bbc18  ldr      x1, [x8]
+     0xfffffff0088bbc1c  bl       #0xfffffff008908b64
+     0xfffffff0088bbc20  cbz      x0, #0xfffffff0088bbc98
+     0xfffffff0088bbc24  mov      x19, x0
+     0xfffffff0088bbc28  ldr      x16, [x0]
+     0xfffffff0088bbc2c  mov      x17, x0
+     0xfffffff0088bbc30  movk     x17, #0xcda1, lsl #48
+     0xfffffff0088bbc34  autda    x16, x17
+     0xfffffff0088bbc38  ldr      x8, [x16, #0x20]!
+     0xfffffff0088bbc3c  movk     x16, #0x2e4a, lsl #48
+     0xfffffff0088bbc40  blraa    x8, x16
+     0xfffffff0088bbc44  ldr      x16, [x20]
+     0xfffffff0088bbc48  mov      x17, x20
+     0xfffffff0088bbc4c  movk     x17, #0xcda1, lsl #48
+     0xfffffff0088bbc50  autda    x16, x17
+     0xfffffff0088bbc54  ldr      x8, [x16, #0x28]!
+     0xfffffff0088bbc58  mov      x0, x20
+     0xfffffff0088bbc5c  movk     x16, #0x3a87, lsl #48
+     0xfffffff0088bbc60  blraa    x8, x16
+     0xfffffff0088bbc64  ldr      x0, [sp, #0x60]
+     0xfffffff0088bbc68  cbz      x0, #0xfffffff0088bbc74
+     0xfffffff0088bbc6c  ldr      x1, [sp, #0x68]
+     0xfffffff0088bbc70  bl       #0xfffffff0089087d4
+     0xfffffff0088bbc74  mov      x0, x19
+     0xfffffff0088bbc78  ldp      x29, x30, [sp, #0xa0]
+
+===== fffffff0088c3e5c  OSUnserialize(stub)   func~fffffff0088c3d4c (+0x110)
+  strings: IOClass | IOKitDebug | IOProviderClass | IOUserClientClass
+   .. 0xfffffff0088c3dfc  ldr      x16, [x19]
+   .. 0xfffffff0088c3e00  autda    x16, x25
+   .. 0xfffffff0088c3e04  ldr      x8, [x16, #0xc8]!
+   .. 0xfffffff0088c3e08  mov      x0, x19
+   .. 0xfffffff0088c3e0c  mov      x1, #0
+   .. 0xfffffff0088c3e10  mov      x2, x22
+  >>
+     0xfffffff0088c3e5c  bl       #0xfffffff008908934
+     0xfffffff0088c3e60  mov      x26, x0
+     0xfffffff0088c3e64  adrp     x8, #0xfffffff007db4000
+     0xfffffff0088c3e68  ldr      x8, [x8, #0x718]
+     0xfffffff0088c3e6c  ldr      x1, [x8]
+     0xfffffff0088c3e70  bl       #0xfffffff008908b64
+     0xfffffff0088c3e74  cbnz     x0, #0xfffffff0088c3ea4
+     0xfffffff0088c3e78  cbz      x26, #0xfffffff0088c3e9c
+     0xfffffff0088c3e7c  ldr      x16, [x26]
+     0xfffffff0088c3e80  mov      x17, x26
+     0xfffffff0088c3e84  movk     x17, #0xcda1, lsl #48
+     0xfffffff0088c3e88  autda    x16, x17
+     0xfffffff0088c3e8c  ldr      x8, [x16, #0x28]!
+     0xfffffff0088c3e90  mov      x0, x26
+     0xfffffff0088c3e94  movk     x16, #0x3a87, lsl #48
+     0xfffffff0088c3e98  blraa    x8, x16
+     0xfffffff0088c3e9c  mov      x25, #0
+     0xfffffff0088c3ea0  b        #0xfffffff0088c3fd4
+     0xfffffff0088c3ea4  mov      x25, x0
+     0xfffffff0088c3ea8  ldr      x16, [x0]
+     0xfffffff0088c3eac  mov      x17, x0
+     0xfffffff0088c3eb0  movk     x17, #0xcda1, lsl #48
+     0xfffffff0088c3eb4  autda    x16, x17
+     0xfffffff0088c3eb8  mov      x17, #0x138
+     0xfffffff0088c3ebc  add      x16, x16, x17
+     0xfffffff0088c3ec0  ldr      x8, [x16]
+     0xfffffff0088c3ec4  adrp     x1, #0xfffffff00742f000
+     0xfffffff0088c3ec8  add      x1, x1, #0xc47
+     0xfffffff0088c3ecc  movk     x16, #0x2e3b, lsl #48
+     0xfffffff0088c3ed0  blraa    x8, x16
+
+===== fffffff0088c54d8  OSUnserialize(stub)   func~fffffff0088c53c4 (+0x114)
+  strings: IOClass | IOKitDebug | IOProviderClass | IOUserClientClass
+   .. 0xfffffff0088c5478  ldr      x16, [x19]
+   .. 0xfffffff0088c547c  autda    x16, x24
+   .. 0xfffffff0088c5480  ldr      x8, [x16, #0xc8]!
+   .. 0xfffffff0088c5484  mov      x0, x19
+   .. 0xfffffff0088c5488  mov      x1, #0
+   .. 0xfffffff0088c548c  mov      x2, x22
+  >>
+     0xfffffff0088c54d8  bl       #0xfffffff008908934
+     0xfffffff0088c54dc  mov      x24, x0
+     0xfffffff0088c54e0  cbz      x0, #0xfffffff0088c55c8
+     0xfffffff0088c54e4  adrp     x8, #0xfffffff007db4000
+     0xfffffff0088c54e8  ldr      x8, [x8, #0x718]
+     0xfffffff0088c54ec  ldr      x1, [x8]
+     0xfffffff0088c54f0  mov      x0, x24
+     0xfffffff0088c54f4  bl       #0xfffffff008908b64
+     0xfffffff0088c54f8  cbz      x0, #0xfffffff0088c55c4
+     0xfffffff0088c54fc  mov      x26, x0
+     0xfffffff0088c5500  ldr      x16, [x0]
+     0xfffffff0088c5504  mov      x17, x0
+     0xfffffff0088c5508  movk     x17, #0xcda1, lsl #48
+     0xfffffff0088c550c  autda    x16, x17
+     0xfffffff0088c5510  mov      x17, #0x138
+     0xfffffff0088c5514  add      x16, x16, x17
+     0xfffffff0088c5518  ldr      x8, [x16]
+     0xfffffff0088c551c  adrp     x1, #0xfffffff00742f000
+     0xfffffff0088c5520  add      x1, x1, #0xc47
+     0xfffffff0088c5524  movk     x16, #0x2e3b, lsl #48
+     0xfffffff0088c5528  blraa    x8, x16
+     0xfffffff0088c552c  sub      w28, w20, #7
+     0xfffffff0088c5530  cbnz     x0, #0xfffffff0088c55c4
+     0xfffffff0088c5534  str      w27, [sp, #0xc]
+     0xfffffff0088c5538  mov      x27, x26
+     0xfffffff0088c553c  movk     x27, #0xcda1, lsl #48
+     0xfffffff0088c5540  ldr      x16, [x26]
+     0xfffffff0088c5544  autda    x16, x27
+     0xfffffff0088c5548  mov      x17, #0x138
+     0xfffffff0088c554c  add      x16, x16, x17
+
+===== fffffff0088c5878  OSUnserialize(stub)   func~fffffff0088c5694 (+0x1e4)
+  strings: IOClass | IOKitDebug | IOProviderClass | IOUserClientClass
+   .. 0xfffffff0088c5818  ldr      x16, [x19]
+   .. 0xfffffff0088c581c  autda    x16, x24
+   .. 0xfffffff0088c5820  ldr      x8, [x16, #0xc8]!
+   .. 0xfffffff0088c5824  mov      x0, x19
+   .. 0xfffffff0088c5828  mov      x1, #0
+   .. 0xfffffff0088c582c  mov      x2, x22
+  >>
+     0xfffffff0088c5878  bl       #0xfffffff008908934
+     0xfffffff0088c587c  mov      x24, x0
+     0xfffffff0088c5880  cbz      x0, #0xfffffff0088c5964
+     0xfffffff0088c5884  adrp     x8, #0xfffffff007db4000
+     0xfffffff0088c5888  ldr      x8, [x8, #0x718]
+     0xfffffff0088c588c  ldr      x1, [x8]
+     0xfffffff0088c5890  mov      x0, x24
+     0xfffffff0088c5894  bl       #0xfffffff008908b64
+     0xfffffff0088c5898  cbz      x0, #0xfffffff0088c5960
+     0xfffffff0088c589c  mov      x25, x0
+     0xfffffff0088c58a0  ldr      x16, [x0]
+     0xfffffff0088c58a4  mov      x17, x0
+     0xfffffff0088c58a8  movk     x17, #0xcda1, lsl #48
+     0xfffffff0088c58ac  autda    x16, x17
+     0xfffffff0088c58b0  mov      x17, #0x138
+     0xfffffff0088c58b4  add      x16, x16, x17
+     0xfffffff0088c58b8  ldr      x8, [x16]
+     0xfffffff0088c58bc  adrp     x1, #0xfffffff00742f000
+     0xfffffff0088c58c0  add      x1, x1, #0xc47
+     0xfffffff0088c58c4  movk     x16, #0x2e3b, lsl #48
+     0xfffffff0088c58c8  blraa    x8, x16
+     0xfffffff0088c58cc  sub      w27, w20, #7
+     0xfffffff0088c58d0  cbnz     x0, #0xfffffff0088c5960
+     0xfffffff0088c58d4  mov      x28, x25
+     0xfffffff0088c58d8  movk     x28, #0xcda1, lsl #48
+     0xfffffff0088c58dc  ldr      x16, [x25]
+     0xfffffff0088c58e0  autda    x16, x28
+     0xfffffff0088c58e4  mov      x17, #0x138
+     0xfffffff0088c58e8  add      x16, x16, x17
+     0xfffffff0088c58ec  ldr      x8, [x16]
+
+===== fffffff0088d9e84  OSUnserialize(stub)   func~fffffff0088d9e6c (+0x18)
+  strings: o many branch target mispredicts
+   .. 0xfffffff0088d9e24  ldr      x8, [x16, #0x28]!
+   .. 0xfffffff0088d9e28  mov      x0, x19
+   .. 0xfffffff0088d9e2c  movk     x16, #0x3a87, lsl #48
+   .. 0xfffffff0088d9e30  blraa    x8, x16
+   .. 0xfffffff0088d9e34  ldr      x8, [sp, #0x28]
+   .. 0xfffffff0088d9e38  adrp     x9, #0xfffffff007db4000
+  >>
+     0xfffffff0088d9e84  bl       #0xfffffff008908934
+     0xfffffff0088d9e88  mov      x19, x0
+     0xfffffff0088d9e8c  adrp     x8, #0xfffffff007db4000
+     0xfffffff0088d9e90  ldr      x8, [x8, #0x718]
+     0xfffffff0088d9e94  ldr      x1, [x8]
+     0xfffffff0088d9e98  bl       #0xfffffff008908b64
+     0xfffffff0088d9e9c  cbz      x0, #0xfffffff0088d9ec0
+     0xfffffff0088d9ea0  mov      x22, x0
+     0xfffffff0088d9ea4  bl       #0xfffffff0089025e0
+     0xfffffff0088d9ea8  b        #0xfffffff0088d9c54
+     0xfffffff0088d9eac  mov      x25, #0
+     0xfffffff0088d9eb0  mov      x26, #0
+     0xfffffff0088d9eb4  cbnz     x24, #0xfffffff0088d9d98
+     0xfffffff0088d9eb8  b        #0xfffffff0088d9da4
+     0xfffffff0088d9ebc  bl       #0xfffffff008909024
+     0xfffffff0088d9ec0  bl       #0xfffffff0089025b0
+     0xfffffff0088d9ec4  bti      c
+     0xfffffff0088d9ec8  pacibsp  
+     0xfffffff0088d9ecc  stp      x29, x30, [sp, #-0x10]!
+     0xfffffff0088d9ed0  mov      x29, sp
+     0xfffffff0088d9ed4  ldr      x16, [x0]
+     0xfffffff0088d9ed8  mov      x17, x0
+     0xfffffff0088d9edc  movk     x17, #0xcda1, lsl #48
+     0xfffffff0088d9ee0  autda    x16, x17
+     0xfffffff0088d9ee4  mov      x17, #0x370
+     0xfffffff0088d9ee8  add      x16, x16, x17
+     0xfffffff0088d9eec  ldr      x8, [x16]
+     0xfffffff0088d9ef0  movk     x16, #0x93b7, lsl #48
+     0xfffffff0088d9ef4  blraa    x8, x16
+     0xfffffff0088d9ef8  adrp     x8, #0xfffffff007dab000
+
+===== fffffff0088e26ac  OSUnserialize(stub)   func~fffffff0088e261c (+0x90)
+  strings: AFKIOServiceClient | AFKIOServiceClientBase
+   .. 0xfffffff0088e264c  mov      x0, x8
+   .. 0xfffffff0088e2650  mov      x17, x3
+   .. 0xfffffff0088e2654  movk     x17, #0x699e, lsl #48
+   .. 0xfffffff0088e2658  braa     x16, x17
+   .. 0xfffffff0088e265c  bti      c
+   .. 0xfffffff0088e2660  pacibsp  
+  >>
+     0xfffffff0088e26ac  bl       #0xfffffff008908934
+     0xfffffff0088e26b0  str      x0, [x19]
+     0xfffffff0088e26b4  cmp      x0, #0
+     0xfffffff0088e26b8  cset     w0, ne
+     0xfffffff0088e26bc  ldp      x29, x30, [sp, #0x20]
+     0xfffffff0088e26c0  ldp      x20, x19, [sp, #0x10]
+     0xfffffff0088e26c4  add      sp, sp, #0x30
+     0xfffffff0088e26c8  retab    
+     0xfffffff0088e26cc  bti      c
+     0xfffffff0088e26d0  str      x1, [x0, #0xc0]
+     0xfffffff0088e26d4  cmp      x1, #0
+     0xfffffff0088e26d8  cset     w0, ne
+     0xfffffff0088e26dc  ret      
+     0xfffffff0088e26e0  bti      c
+     0xfffffff0088e26e4  b        #0xfffffff0089089c4
+     0xfffffff0088e26e8  bti      c
+     0xfffffff0088e26ec  ldr      x8, [x0]
+     0xfffffff0088e26f0  cbz      x8, #0xfffffff0088e2700
+     0xfffffff0088e26f4  ldr      x9, [x0, #8]
+     0xfffffff0088e26f8  subs     x10, x9, #4
+     0xfffffff0088e26fc  b.hs     #0xfffffff0088e2708
+     0xfffffff0088e2700  mov      w0, #0
+     0xfffffff0088e2704  ret      
+     0xfffffff0088e2708  mov      w13, #0
+     0xfffffff0088e270c  cmp      x10, w13, uxtw
+     0xfffffff0088e2710  b.ls     #0xfffffff0088e2700
+     0xfffffff0088e2714  mov      w11, w13
+     0xfffffff0088e2718  ldr      w12, [x8, x11]
+     0xfffffff0088e271c  and      w13, w12, #0xffffff
+     0xfffffff0088e2720  cmp      w13, #5
+
+===== fffffff008b06298  OSUnserialize(stub)   func~fffffff008b061c4 (+0xd4)
+  strings: Property Header | [0x%llx][%llx][%s::%s]: Updating Property Header | mergeFromHeader
+   .. 0xfffffff008b06238  mov      x0, x19
+   .. 0xfffffff008b0623c  movk     x16, #0xbb9b, lsl #48
+   .. 0xfffffff008b06240  blraa    x8, x16
+   .. 0xfffffff008b06244  cmp      w0, #8
+   .. 0xfffffff008b06248  b.ls     #0xfffffff008b06768
+   .. 0xfffffff008b0624c  ldrh     w8, [x22]
+  >>
+     0xfffffff008b06298  bl       #0xfffffff008b74944
+     0xfffffff008b0629c  cbz      x0, #0xfffffff008b0668c
+     0xfffffff008b062a0  mov      x19, x0
+     0xfffffff008b062a4  adrp     x8, #0xfffffff007dfd000
+     0xfffffff008b062a8  ldr      x8, [x8, #0x618]
+     0xfffffff008b062ac  ldr      x21, [x8]
+     0xfffffff008b062b0  mov      x1, x21
+     0xfffffff008b062b4  bl       #0xfffffff008b74be4
+     0xfffffff008b062b8  cbz      x0, #0xfffffff008b0678c
+     0xfffffff008b062bc  mov      x26, x0
+     0xfffffff008b062c0  ldr      x16, [x20]
+     0xfffffff008b062c4  mov      x22, x20
+     0xfffffff008b062c8  movk     x22, #0xcda1, lsl #48
+     0xfffffff008b062cc  mov      x17, x20
+     0xfffffff008b062d0  movk     x17, #0xcda1, lsl #48
+     0xfffffff008b062d4  autda    x16, x17
+     0xfffffff008b062d8  mov      x17, #0x118
+     0xfffffff008b062dc  add      x16, x16, x17
+     0xfffffff008b062e0  ldr      x8, [x16]
+     0xfffffff008b062e4  adrp     x1, #0xfffffff0074d6000
+     0xfffffff008b062e8  add      x1, x1, #0x14d
+     0xfffffff008b062ec  mov      x0, x20
+     0xfffffff008b062f0  movk     x16, #0x37a5, lsl #48
+     0xfffffff008b062f4  blraa    x8, x16
+     0xfffffff008b062f8  str      x21, [sp, #0x60]
+     0xfffffff008b062fc  mov      x1, x21
+     0xfffffff008b06300  bl       #0xfffffff008b74be4
+     0xfffffff008b06304  adrp     x21, #0xfffffff0074d6000
+     0xfffffff008b06308  add      x21, x21, #0x59
+     0xfffffff008b0630c  cbz      x0, #0xfffffff008b06340
+
+===== fffffff008b19dfc  OSUnserialize(stub)   func~fffffff008b19d34 (+0xc8)
+  strings: 
+   .. 0xfffffff008b19d9c  ldr      x8, [x16, #0xd8]!
+   .. 0xfffffff008b19da0  mov      w1, #0
+   .. 0xfffffff008b19da4  movk     x16, #0xf5b3, lsl #48
+   .. 0xfffffff008b19da8  blraa    x8, x16
+   .. 0xfffffff008b19dac  mov      x1, x0
+   .. 0xfffffff008b19db0  cbnz     w0, #0xfffffff008b19fd4
+  >>
+     0xfffffff008b19dfc  bl       #0xfffffff008b74944
+     0xfffffff008b19e00  cbz      x0, #0xfffffff008b19ffc
+     0xfffffff008b19e04  mov      x23, x0
+     0xfffffff008b19e08  adrp     x8, #0xfffffff007dfd000
+     0xfffffff008b19e0c  ldr      x8, [x8, #0x618]
+     0xfffffff008b19e10  ldr      x1, [x8]
+     0xfffffff008b19e14  bl       #0xfffffff008b74be4
+     0xfffffff008b19e18  cbz      x0, #0xfffffff008b1a014
+     0xfffffff008b19e1c  mov      x22, x0
+     0xfffffff008b19e20  bl       #0xfffffff008b74d44
+     0xfffffff008b19e24  mov      x24, x0
+     0xfffffff008b19e28  cbz      x0, #0xfffffff008b1a02c
+     0xfffffff008b19e2c  mov      x28, x24
+     0xfffffff008b19e30  movk     x28, #0xcda1, lsl #48
+     0xfffffff008b19e34  adrp     x8, #0xfffffff007dfd000
+     0xfffffff008b19e38  ldr      x8, [x8, #0x678]
+     0xfffffff008b19e3c  ldr      x25, [x8]
+     0xfffffff008b19e40  adrp     x8, #0xfffffff007dfd000
+     0xfffffff008b19e44  ldr      x8, [x8, #0x650]
+     0xfffffff008b19e48  ldr      x26, [x8]
+     0xfffffff008b19e4c  ldr      x16, [x24]
+     0xfffffff008b19e50  autda    x16, x28
+     0xfffffff008b19e54  ldr      x8, [x16, #0x88]!
+     0xfffffff008b19e58  mov      x0, x24
+     0xfffffff008b19e5c  movk     x16, #0x1ac8, lsl #48
+     0xfffffff008b19e60  blraa    x8, x16
+     0xfffffff008b19e64  mov      x1, x25
+     0xfffffff008b19e68  bl       #0xfffffff008b74be4
+     0xfffffff008b19e6c  cbz      x0, #0xfffffff008b19ebc
+     0xfffffff008b19e70  mov      x1, x0
+
+===== fffffff008c1c260  OSUnserialize(stub)   func~fffffff008c1c1f4 (+0x6c)
+  strings: AccessOptions | Symbols
+   .. 0xfffffff008c1c200  stp      x28, x27, [sp, #0x40]
+   .. 0xfffffff008c1c204  stp      x26, x25, [sp, #0x50]
+   .. 0xfffffff008c1c208  stp      x24, x23, [sp, #0x60]
+   .. 0xfffffff008c1c20c  stp      x22, x21, [sp, #0x70]
+   .. 0xfffffff008c1c210  stp      x20, x19, [sp, #0x80]
+   .. 0xfffffff008c1c214  stp      x29, x30, [sp, #0x90]
+  >>
+     0xfffffff008c1c260  bl       #0xfffffff008c1ffcc
+     0xfffffff008c1c264  mov      x19, x0
+     0xfffffff008c1c268  cbz      x0, #0xfffffff008c1c33c
+     0xfffffff008c1c26c  adrp     x8, #0xfffffff007e0e000
+     0xfffffff008c1c270  ldr      x8, [x8, #0x9a8]
+     0xfffffff008c1c274  ldr      x1, [x8]
+     0xfffffff008c1c278  mov      x0, x19
+     0xfffffff008c1c27c  bl       #0xfffffff008c2012c
+     0xfffffff008c1c280  cbz      x0, #0xfffffff008c1c33c
+     0xfffffff008c1c284  mov      x24, x0
+     0xfffffff008c1c288  bl       #0xfffffff008beada8
+     0xfffffff008c1c28c  movk     x17, #0xcda1, lsl #48
+     0xfffffff008c1c290  autda    x16, x17
+     0xfffffff008c1c294  mov      x17, #0x138
+     0xfffffff008c1c298  add      x16, x16, x17
+     0xfffffff008c1c29c  ldr      x8, [x16]
+     0xfffffff008c1c2a0  adrp     x1, #0xfffffff0074f2000
+     0xfffffff008c1c2a4  add      x1, x1, #0x44
+     0xfffffff008c1c2a8  movk     x16, #0x2e3b, lsl #48
+     0xfffffff008c1c2ac  blraa    x8, x16
+     0xfffffff008c1c2b0  adrp     x8, #0xfffffff007e0e000
+     0xfffffff008c1c2b4  ldr      x8, [x8, #0x9f0]
+     0xfffffff008c1c2b8  ldr      x1, [x8]
+     0xfffffff008c1c2bc  bl       #0xfffffff008c2012c
+     0xfffffff008c1c2c0  cbz      x0, #0xfffffff008c1c33c
+     0xfffffff008c1c2c4  mov      x1, x0
+     0xfffffff008c1c2c8  bl       #0xfffffff008bea984
+     0xfffffff008c1c2cc  mov      x20, x0
+     0xfffffff008c1c2d0  sub      w27, w21, #6
+     0xfffffff008c1c2d4  cbz      x0, #0xfffffff008c1c354
+
+===== fffffff008c1c5f8  OSUnserialize(stub)   func~fffffff008c1c598 (+0x60)
+  strings: AccessOptions | Values
+   .. 0xfffffff008c1c598  bti      c
+   .. 0xfffffff008c1c59c  pacibsp  
+   .. 0xfffffff008c1c5a0  sub      sp, sp, #0x80
+   .. 0xfffffff008c1c5a4  stp      x24, x23, [sp, #0x40]
+   .. 0xfffffff008c1c5a8  stp      x22, x21, [sp, #0x50]
+   .. 0xfffffff008c1c5ac  stp      x20, x19, [sp, #0x60]
+  >>
+     0xfffffff008c1c5f8  bl       #0xfffffff008c1ffcc
+     0xfffffff008c1c5fc  mov      x19, x0
+     0xfffffff008c1c600  cbz      x0, #0xfffffff008c1c6f0
+     0xfffffff008c1c604  adrp     x8, #0xfffffff007e0e000
+     0xfffffff008c1c608  ldr      x8, [x8, #0x9a8]
+     0xfffffff008c1c60c  ldr      x22, [x8]
+     0xfffffff008c1c610  mov      x0, x19
+     0xfffffff008c1c614  mov      x1, x22
+     0xfffffff008c1c618  bl       #0xfffffff008c2012c
+     0xfffffff008c1c61c  cbz      x0, #0xfffffff008c1c6f0
+     0xfffffff008c1c620  mov      x23, x0
+     0xfffffff008c1c624  bl       #0xfffffff008beada8
+     0xfffffff008c1c628  movk     x17, #0xcda1, lsl #48
+     0xfffffff008c1c62c  autda    x16, x17
+     0xfffffff008c1c630  mov      x17, #0x138
+     0xfffffff008c1c634  add      x16, x16, x17
+     0xfffffff008c1c638  ldr      x8, [x16]
+     0xfffffff008c1c63c  adrp     x1, #0xfffffff0074f2000
+     0xfffffff008c1c640  add      x1, x1, #0x5a
+     0xfffffff008c1c644  movk     x16, #0x2e3b, lsl #48
+     0xfffffff008c1c648  blraa    x8, x16
+     0xfffffff008c1c64c  mov      x1, x22
+     0xfffffff008c1c650  bl       #0xfffffff008c2012c
+     0xfffffff008c1c654  cbz      x0, #0xfffffff008c1c6f0
+     0xfffffff008c1c658  mov      x22, x0
+     0xfffffff008c1c65c  mov      x8, x23
+     0xfffffff008c1c660  movk     x8, #0xcda1, lsl #48
+     0xfffffff008c1c664  ldr      x16, [x23]
+     0xfffffff008c1c668  autda    x16, x8
+     0xfffffff008c1c66c  mov      x17, #0x138
+
+===== fffffff008c1c7dc  OSUnserialize(stub)   func~fffffff008c1c778 (+0x64)
+  strings: com.apple.ahs.poweruserclientaccess
+   .. 0xfffffff008c1c77c  b        #0xfffffff008c1c6f0
+   .. 0xfffffff008c1c780  bti      c
+   .. 0xfffffff008c1c784  pacibsp  
+   .. 0xfffffff008c1c788  sub      sp, sp, #0x70
+   .. 0xfffffff008c1c78c  stp      x22, x21, [sp, #0x40]
+   .. 0xfffffff008c1c790  stp      x20, x19, [sp, #0x50]
+  >>
+     0xfffffff008c1c7dc  bl       #0xfffffff008c1ffcc
+     0xfffffff008c1c7e0  mov      x20, x0
+     0xfffffff008c1c7e4  cbz      x0, #0xfffffff008c1c868
+     0xfffffff008c1c7e8  adrp     x8, #0xfffffff007e0e000
+     0xfffffff008c1c7ec  ldr      x8, [x8, #0x9f0]
+     0xfffffff008c1c7f0  ldr      x1, [x8]
+     0xfffffff008c1c7f4  mov      x0, x20
+     0xfffffff008c1c7f8  bl       #0xfffffff008c2012c
+     0xfffffff008c1c7fc  cbz      x0, #0xfffffff008c1c868
+     0xfffffff008c1c800  mov      x22, x0
+     0xfffffff008c1c804  ldr      x0, [x21, #0xd8]
+     0xfffffff008c1c808  bl       #0xfffffff008beada8
+     0xfffffff008c1c80c  movk     x17, #0xcda1, lsl #48
+     0xfffffff008c1c810  autda    x16, x17
+     0xfffffff008c1c814  mov      x17, #0x558
+     0xfffffff008c1c818  add      x16, x16, x17
+     0xfffffff008c1c81c  ldr      x8, [x16]
+     0xfffffff008c1c820  mov      x1, x22
+     0xfffffff008c1c824  mov      w2, #1
+     0xfffffff008c1c828  movk     x16, #0x65d0, lsl #48
+     0xfffffff008c1c82c  blraa    x8, x16
+     0xfffffff008c1c830  cbnz     w0, #0xfffffff008c1c864
+     0xfffffff008c1c834  ldr      x0, [x21, #0xd8]
+     0xfffffff008c1c838  ldr      x16, [x0]
+     0xfffffff008c1c83c  mov      x17, x0
+     0xfffffff008c1c840  movk     x17, #0xcda1, lsl #48
+     0xfffffff008c1c844  autda    x16, x17
+     0xfffffff008c1c848  mov      x17, #0x558
+     0xfffffff008c1c84c  add      x16, x16, x17
+     0xfffffff008c1c850  ldr      x8, [x16]
+
+===== fffffff008c6fc90  OSUnserialize(stub)   func~fffffff008c6fa84 (+0x20c)
+  strings: AIDLastLoadOptions | AIDLoadMs | AIDNextLoadOptions | Skipping validation on image loading | Tag: '%c%c%c%c' Options: 0x%08X | Trying to load an image that couldn't be validated | Unknown validation status %u. Image loading not permitted | Unserializing payload with %u bytes
+   .. 0xfffffff008c6fc30  adrp     x3, #0xfffffff007518000
+   .. 0xfffffff008c6fc34  add      x3, x3, #0x6bf
+   .. 0xfffffff008c6fc38  mov      w2, #2
+   .. 0xfffffff008c6fc3c  bl       #0xfffffff008c78d54
+   .. 0xfffffff008c6fc40  ldr      x16, [x21]
+   .. 0xfffffff008c6fc44  mov      x17, x21
+  >>
+     0xfffffff008c6fc90  bl       #0xfffffff008c78924
+     0xfffffff008c6fc94  str      x0, [x19, #0x158]
+     0xfffffff008c6fc98  ldr      x16, [x21]
+     0xfffffff008c6fc9c  mov      x17, x21
+     0xfffffff008c6fca0  movk     x17, #0xcda1, lsl #48
+     0xfffffff008c6fca4  autda    x16, x17
+     0xfffffff008c6fca8  ldr      x8, [x16, #0x28]!
+     0xfffffff008c6fcac  mov      x0, x21
+     0xfffffff008c6fcb0  movk     x16, #0x3a87, lsl #48
+     0xfffffff008c6fcb4  blraa    x8, x16
+     0xfffffff008c6fcb8  ldr      x8, [x19, #0x158]
+     0xfffffff008c6fcbc  cbz      x8, #0xfffffff008c6fe8c
+     0xfffffff008c6fcc0  mov      x22, x19
+     0xfffffff008c6fcc4  movk     x22, #0xcda1, lsl #48
+     0xfffffff008c6fcc8  str      w20, [x19, #0x170]
+     0xfffffff008c6fccc  ldr      x16, [x19]
+     0xfffffff008c6fcd0  autda    x16, x22
+     0xfffffff008c6fcd4  mov      x17, #0x148
+     0xfffffff008c6fcd8  add      x16, x16, x17
+     0xfffffff008c6fcdc  ldr      x8, [x16]
+     0xfffffff008c6fce0  adrp     x1, #0xfffffff007517000
+     0xfffffff008c6fce4  add      x1, x1, #0x996
+     0xfffffff008c6fce8  mov      x0, x19
+     0xfffffff008c6fcec  movk     x16, #0x5a20, lsl #48
+     0xfffffff008c6fcf0  blraa    x8, x16
+     0xfffffff008c6fcf4  mov      x20, x0
+     0xfffffff008c6fcf8  adrp     x8, #0xfffffff007e26000
+     0xfffffff008c6fcfc  ldr      x8, [x8, #0x6a8]
+     0xfffffff008c6fd00  ldr      x1, [x8]
+     0xfffffff008c6fd04  bl       #0xfffffff008c78ab4
+
+===== fffffff008ea46c4  OSUnserialize(stub)   func~fffffff008ea4664 (+0x60)
+  strings: IOPMPowerSource | OSUnserializeXML failed | setDCPAVPropEnd
+   .. 0xfffffff008ea4664  bti      c
+   .. 0xfffffff008ea4668  pacibsp  
+   .. 0xfffffff008ea466c  sub      sp, sp, #0x40
+   .. 0xfffffff008ea4670  stp      x22, x21, [sp, #0x10]
+   .. 0xfffffff008ea4674  stp      x20, x19, [sp, #0x20]
+   .. 0xfffffff008ea4678  stp      x29, x30, [sp, #0x30]
+  >>
+     0xfffffff008ea46c4  bl       #0xfffffff008eb8980
+     0xfffffff008ea46c8  cbz      x0, #0xfffffff008ea4788
+     0xfffffff008ea46cc  mov      x21, x0
+     0xfffffff008ea46d0  ldr      x16, [x19]
+     0xfffffff008ea46d4  mov      x17, x19
+     0xfffffff008ea46d8  movk     x17, #0xcda1, lsl #48
+     0xfffffff008ea46dc  autda    x16, x17
+     0xfffffff008ea46e0  ldr      x8, [x16, #0xc8]!
+     0xfffffff008ea46e4  mov      x0, x19
+     0xfffffff008ea46e8  mov      x1, x20
+     0xfffffff008ea46ec  mov      x2, x21
+     0xfffffff008ea46f0  movk     x16, #0xff53, lsl #48
+     0xfffffff008ea46f4  blraa    x8, x16
+     0xfffffff008ea46f8  mov      x20, x0
+     0xfffffff008ea46fc  ldr      x16, [x21]
+     0xfffffff008ea4700  mov      x17, x21
+     0xfffffff008ea4704  movk     x17, #0xcda1, lsl #48
+     0xfffffff008ea4708  autda    x16, x17
+     0xfffffff008ea470c  ldr      x8, [x16, #0x28]!
+     0xfffffff008ea4710  mov      x0, x21
+     0xfffffff008ea4714  movk     x16, #0x3a87, lsl #48
+     0xfffffff008ea4718  blraa    x8, x16
+     0xfffffff008ea471c  b        #0xfffffff008ea4734
+     0xfffffff008ea4720  str      x22, [sp]
+     0xfffffff008ea4724  adrp     x0, #0xfffffff00762d000
+     0xfffffff008ea4728  add      x0, x0, #0xa89
+     0xfffffff008ea472c  bl       #0xfffffff008eb88a0
+     0xfffffff008ea4730  mov      w20, #0
+     0xfffffff008ea4734  ldr      x0, [x19, #0x5f10]
+     0xfffffff008ea4738  cbz      x0, #0xfffffff008ea4754
+
+===== fffffff0092b47a8  OSUnserialize(stub)   func~fffffff0092b4760 (+0x48)
+  strings: 
+   .. 0xfffffff0092b4748  mov      x0, x20
+   .. 0xfffffff0092b474c  bl       #0xfffffff0092ba56c
+   .. 0xfffffff0092b4750  mov      x0, x19
+   .. 0xfffffff0092b4754  ldp      x29, x30, [sp, #0x10]
+   .. 0xfffffff0092b4758  ldp      x20, x19, [sp], #0x20
+   .. 0xfffffff0092b475c  retab    
+  >>
+     0xfffffff0092b47a8  bl       #0xfffffff0092ba10c
+     0xfffffff0092b47ac  cbz      x0, #0xfffffff0092b4880
+     0xfffffff0092b47b0  mov      x22, x0
+     0xfffffff0092b47b4  adrp     x8, #0xfffffff007f0a000
+     0xfffffff0092b47b8  ldr      x8, [x8, #0x478]
+     0xfffffff0092b47bc  ldr      x1, [x8]
+     0xfffffff0092b47c0  bl       #0xfffffff0092ba32c
+     0xfffffff0092b47c4  sub      w25, w21, #6
+     0xfffffff0092b47c8  cbz      x0, #0xfffffff0092b4850
+     0xfffffff0092b47cc  mov      x20, x0
+     0xfffffff0092b47d0  ldr      x16, [x0]
+     0xfffffff0092b47d4  mov      x26, x0
+     0xfffffff0092b47d8  movk     x26, #0xcda1, lsl #48
+     0xfffffff0092b47dc  mov      x17, x0
+     0xfffffff0092b47e0  movk     x17, #0xcda1, lsl #48
+     0xfffffff0092b47e4  autda    x16, x17
+     0xfffffff0092b47e8  ldr      x8, [x16, #0x90]!
+     0xfffffff0092b47ec  movk     x16, #0x29e8, lsl #48
+     0xfffffff0092b47f0  blraa    x8, x16
+     0xfffffff0092b47f4  bl       #0xfffffff0092ba1cc
+     0xfffffff0092b47f8  sub      w27, w21, #5
+     0xfffffff0092b47fc  cbz      x0, #0xfffffff0092b4864
+     0xfffffff0092b4800  mov      x22, x0
+     0xfffffff0092b4804  ldp      x0, x1, [x23, #0xd8]
+     0xfffffff0092b4808  mov      x2, x20
+     0xfffffff0092b480c  mov      x3, x22
+     0xfffffff0092b4810  bl       #0xfffffff0092ac974
+     0xfffffff0092b4814  cbz      w0, #0xfffffff0092b48a0
+     0xfffffff0092b4818  mov      x23, x0
+     0xfffffff0092b481c  adrp     x0, #0xfffffff007714000
+
+===== fffffff00932b768  OSUnserialize(stub)   func~fffffff00932b5e0 (+0x188)
+  strings: 
+   .. 0xfffffff00932b708  b        #0xfffffff00932b718
+   .. 0xfffffff00932b70c  mov      x22, #0
+   .. 0xfffffff00932b710  mov      x21, #0
+   .. 0xfffffff00932b714  mov      x27, #0
+   .. 0xfffffff00932b718  ldr      x16, [x20]
+   .. 0xfffffff00932b71c  mov      x17, x20
+  >>
+     0xfffffff00932b768  bl       #0xfffffff009363c20
+     0xfffffff00932b76c  mov      x25, x0
+     0xfffffff00932b770  adrp     x8, #0xfffffff007f1f000
+     0xfffffff00932b774  ldr      x8, [x8, #0x480]
+     0xfffffff00932b778  ldr      x1, [x8]
+     0xfffffff00932b77c  bl       #0xfffffff009363e50
+     0xfffffff00932b780  cbz      x0, #0xfffffff00932b984
+     0xfffffff00932b784  mov      x1, x0
+     0xfffffff00932b788  adrp     x0, #0xfffffff00af05000
+     0xfffffff00932b78c  add      x0, x0, #0x180
+     0xfffffff00932b790  add      x2, sp, #0x1c
+     0xfffffff00932b794  bl       #0xfffffff0093357c0
+     0xfffffff00932b798  mov      x26, x0
+     0xfffffff00932b79c  str      x27, [sp, #0x10]
+     0xfffffff00932b7a0  cbz      x27, #0xfffffff00932b958
+     0xfffffff00932b7a4  adrp     x8, #0xfffffff007f1f000
+     0xfffffff00932b7a8  ldr      x8, [x8, #0x490]
+     0xfffffff00932b7ac  ldr      x1, [x8]
+     0xfffffff00932b7b0  mov      x0, x26
+     0xfffffff00932b7b4  bl       #0xfffffff009363e50
+     0xfffffff00932b7b8  cbz      x0, #0xfffffff00932b87c
+     0xfffffff00932b7bc  mov      x24, x0
+     0xfffffff00932b7c0  ldr      x16, [x0]
+     0xfffffff00932b7c4  mov      x17, x0
+     0xfffffff00932b7c8  movk     x17, #0xcda1, lsl #48
+     0xfffffff00932b7cc  autda    x16, x17
+     0xfffffff00932b7d0  ldr      x8, [x16, #0xa0]!
+     0xfffffff00932b7d4  movk     x16, #0xbb9b, lsl #48
+     0xfffffff00932b7d8  blraa    x8, x16
+     0xfffffff00932b7dc  cmp      w0, #0x28
+
+===== fffffff0094bb28c  OSUnserialize(stub)   func~fffffff0094bb24c (+0x40)
+  strings: CoreAnalyticsTestUserClient | _channel | _value
+   .. 0xfffffff0094bb22c  movk     x17, #0x4577, lsl #48
+   .. 0xfffffff0094bb230  blraa    x8, x17
+   .. 0xfffffff0094bb234  str      xzr, [x22, #0xd8]
+   .. 0xfffffff0094bb238  ldp      x29, x30, [sp, #0x30]
+   .. 0xfffffff0094bb23c  ldp      x20, x19, [sp, #0x20]
+   .. 0xfffffff0094bb240  ldp      x22, x21, [sp, #0x10]
+  >>
+     0xfffffff0094bb28c  bl       #0xfffffff0094be7ac
+     0xfffffff0094bb290  cbz      x0, #0xfffffff0094bb43c
+     0xfffffff0094bb294  mov      x20, x0
+     0xfffffff0094bb298  adrp     x8, #0xfffffff007f57000
+     0xfffffff0094bb29c  ldr      x8, [x8, #0x6f8]
+     0xfffffff0094bb2a0  ldr      x1, [x8]
+     0xfffffff0094bb2a4  bl       #0xfffffff0094be8dc
+     0xfffffff0094bb2a8  cbz      x0, #0xfffffff0094bb3b0
+     0xfffffff0094bb2ac  mov      x23, x0
+     0xfffffff0094bb2b0  ldr      x16, [x0]
+     0xfffffff0094bb2b4  mov      x17, x0
+     0xfffffff0094bb2b8  movk     x17, #0xcda1, lsl #48
+     0xfffffff0094bb2bc  autda    x16, x17
+     0xfffffff0094bb2c0  mov      x17, #0x138
+     0xfffffff0094bb2c4  add      x16, x16, x17
+     0xfffffff0094bb2c8  ldr      x8, [x16]
+     0xfffffff0094bb2cc  adrp     x1, #0xfffffff007766000
+     0xfffffff0094bb2d0  add      x1, x1, #0x4b6
+     0xfffffff0094bb2d4  movk     x16, #0x2e3b, lsl #48
+     0xfffffff0094bb2d8  blraa    x8, x16
+     0xfffffff0094bb2dc  adrp     x8, #0xfffffff007f57000
+     0xfffffff0094bb2e0  ldr      x8, [x8, #0x718]
+     0xfffffff0094bb2e4  ldr      x1, [x8]
+     0xfffffff0094bb2e8  bl       #0xfffffff0094be8dc
+     0xfffffff0094bb2ec  mov      x22, x0
+     0xfffffff0094bb2f0  mov      x17, x23
+     0xfffffff0094bb2f4  ldr      x16, [x23]
+     0xfffffff0094bb2f8  movk     x17, #0xcda1, lsl #48
+     0xfffffff0094bb2fc  autda    x16, x17
+     0xfffffff0094bb300  mov      x17, x16
+
+===== fffffff0097a8afc  OSUnserialize(stub)   func~fffffff0097a8a00 (+0xfc)
+  strings: level | masks
+   .. 0xfffffff0097a8a9c  ldr      x8, [x8, #0x770]
+   .. 0xfffffff0097a8aa0  ldr      x1, [x8]
+   .. 0xfffffff0097a8aa4  mov      x0, x22
+   .. 0xfffffff0097a8aa8  bl       #0xfffffff0097ba9c4
+   .. 0xfffffff0097a8aac  cbz      x0, #0xfffffff0097a8b0c
+   .. 0xfffffff0097a8ab0  mov      x21, x0
+  >>
+     0xfffffff0097a8afc  bl       #0xfffffff0097ba7c4
+     0xfffffff0097a8b00  cbz      x0, #0xfffffff0097a8b20
+     0xfffffff0097a8b04  mov      w19, #0
+     0xfffffff0097a8b08  str      x0, [x20]
+     0xfffffff0097a8b0c  mov      x0, x19
+     0xfffffff0097a8b10  ldp      x29, x30, [sp, #0x20]
+     0xfffffff0097a8b14  ldp      x20, x19, [sp, #0x10]
+     0xfffffff0097a8b18  ldp      x22, x21, [sp], #0x30
+     0xfffffff0097a8b1c  retab    
+     0xfffffff0097a8b20  add      w19, w19, #8
+     0xfffffff0097a8b24  b        #0xfffffff0097a8b0c
+     0xfffffff0097a8b28  bti      c
+     0xfffffff0097a8b2c  pacibsp  
+     0xfffffff0097a8b30  stp      x22, x21, [sp, #-0x30]!
+     0xfffffff0097a8b34  stp      x20, x19, [sp, #0x10]
+     0xfffffff0097a8b38  stp      x29, x30, [sp, #0x20]
+     0xfffffff0097a8b3c  add      x29, sp, #0x20
+     0xfffffff0097a8b40  mov      x20, x2
+     0xfffffff0097a8b44  bl       #0xfffffff00976c74c
+     0xfffffff0097a8b48  bl       #0xfffffff00976c7a0
+     0xfffffff0097a8b4c  cbz      x0, #0xfffffff0097a8bb4
+     0xfffffff0097a8b50  mov      x21, x0
+     0xfffffff0097a8b54  mov      w0, w20
+     0xfffffff0097a8b58  mov      w1, #0x20
+     0xfffffff0097a8b5c  bl       #0xfffffff0097bac24
+     0xfffffff0097a8b60  cbz      x0, #0xfffffff0097a8bb4
+     0xfffffff0097a8b64  bl       #0xfffffff00976c73c
+     0xfffffff0097a8b68  movk     x17, #0xcda1, lsl #48
+     0xfffffff0097a8b6c  autda    x16, x17
+     0xfffffff0097a8b70  mov      x17, #0x100
+
+===== fffffff0097b6f00  OSUnserialize(stub)   func~fffffff0097b6eb4 (+0x4c)
+  strings: _setHDRStaticMetadata | no_entry
+   .. 0xfffffff0097b6ea0  ldp      x20, x19, [sp, #0x50]
+   .. 0xfffffff0097b6ea4  ldp      x22, x21, [sp, #0x40]
+   .. 0xfffffff0097b6ea8  ldp      x24, x23, [sp, #0x30]
+   .. 0xfffffff0097b6eac  add      sp, sp, #0x70
+   .. 0xfffffff0097b6eb0  retab    
+   .. 0xfffffff0097b6eb4  mov      w19, #0x2c2
+  >>
+     0xfffffff0097b6f00  bl       #0xfffffff0097ba7c4
+     0xfffffff0097b6f04  mov      x20, x0
+     0xfffffff0097b6f08  cbz      x0, #0xfffffff0097b714c
+     0xfffffff0097b6f0c  adrp     x8, #0xfffffff007f99000
+     0xfffffff0097b6f10  ldr      x8, [x8, #0x798]
+     0xfffffff0097b6f14  ldr      x1, [x8]
+     0xfffffff0097b6f18  mov      x0, x20
+     0xfffffff0097b6f1c  bl       #0xfffffff0097ba9c4
+     0xfffffff0097b6f20  mov      x22, x0
+     0xfffffff0097b6f24  adrp     x8, #0xfffffff007f99000
+     0xfffffff0097b6f28  ldr      x8, [x8, #0x818]
+     0xfffffff0097b6f2c  ldr      x1, [x8]
+     0xfffffff0097b6f30  mov      x0, x20
+     0xfffffff0097b6f34  bl       #0xfffffff0097ba9c4
+     0xfffffff0097b6f38  cbnz     x22, #0xfffffff0097b6f5c
+     0xfffffff0097b6f3c  cbz      x0, #0xfffffff0097b6f80
+     0xfffffff0097b6f40  bl       #0xfffffff00973d8cc
+     0xfffffff0097b6f44  movk     x17, #0xcda1, lsl #48
+     0xfffffff0097b6f48  autda    x16, x17
+     0xfffffff0097b6f4c  ldr      x8, [x16, #0x80]!
+     0xfffffff0097b6f50  movk     x16, #0xcdf4, lsl #48
+     0xfffffff0097b6f54  blraa    x8, x16
+     0xfffffff0097b6f58  cbz      w0, #0xfffffff0097b6f80
+     0xfffffff0097b6f5c  ldr      x0, [x21, #0x100]
+     0xfffffff0097b6f60  bl       #0xfffffff00973d8cc
+     0xfffffff0097b6f64  movk     x17, #0x1da4, lsl #48
+     0xfffffff0097b6f68  autda    x16, x17
+     0xfffffff0097b6f6c  ldr      x8, [x16, #0x88]!
+     0xfffffff0097b6f70  mov      x1, x22
+     0xfffffff0097b6f74  movk     x16, #0x46b7, lsl #48
+
+===== fffffff009995c80  OSUnserialize(stub)   func~fffffff009995b9c (+0xe4)
+  strings: [%#010llx] Create control queue (%llx): Not permitted
+   .. 0xfffffff009995c20  blraa    x8, x16
+   .. 0xfffffff009995c24  cbnz     w0, #0xfffffff009995d1c
+   .. 0xfffffff009995c28  ldr      x16, [x19]
+   .. 0xfffffff009995c2c  autda    x16, x24
+   .. 0xfffffff009995c30  ldr      x8, [x16, #0xc8]!
+   .. 0xfffffff009995c34  mov      x0, x19
+  >>
+     0xfffffff009995c80  bl       #0xfffffff0099a046c
+     0xfffffff009995c84  cbz      x0, #0xfffffff009995d1c
+     0xfffffff009995c88  mov      x23, x0
+     0xfffffff009995c8c  adrp     x8, #0xfffffff007ff8000
+     0xfffffff009995c90  ldr      x8, [x8, #0xe80]
+     0xfffffff009995c94  ldr      x1, [x8]
+     0xfffffff009995c98  bl       #0xfffffff0099a05bc
+     0xfffffff009995c9c  mov      x22, x0
+     0xfffffff009995ca0  cbz      x0, #0xfffffff009995cc4
+     0xfffffff009995ca4  ldr      x16, [x22]
+     0xfffffff009995ca8  mov      x17, x22
+     0xfffffff009995cac  movk     x17, #0xcda1, lsl #48
+     0xfffffff009995cb0  autda    x16, x17
+     0xfffffff009995cb4  ldr      x8, [x16, #0x20]!
+     0xfffffff009995cb8  mov      x0, x22
+     0xfffffff009995cbc  movk     x16, #0x2e4a, lsl #48
+     0xfffffff009995cc0  blraa    x8, x16
+     0xfffffff009995cc4  bl       #0xfffffff0099861e4
+     0xfffffff009995cc8  bl       #0xfffffff0099a038c
+     0xfffffff009995ccc  ldr      x16, [x23]
+     0xfffffff009995cd0  mov      x17, x23
+     0xfffffff009995cd4  movk     x17, #0xcda1, lsl #48
+     0xfffffff009995cd8  autda    x16, x17
+     0xfffffff009995cdc  ldr      x8, [x16, #0x28]!
+     0xfffffff009995ce0  mov      x0, x23
+     0xfffffff009995ce4  movk     x16, #0x3a87, lsl #48
+     0xfffffff009995ce8  blraa    x8, x16
+     0xfffffff009995cec  ldr      x16, [x19]
+     0xfffffff009995cf0  autda    x16, x24
+     0xfffffff009995cf4  ldr      x8, [x16, #0x28]!
+
+===== fffffff00999b21c  OSUnserialize(stub)   func~fffffff00999b144 (+0xd8)
+  strings: Could not unserialize input arguments! | ReportInterval
+   .. 0xfffffff00999b1bc  blraa    x8, x16
+   .. 0xfffffff00999b1c0  cbnz     w0, #0xfffffff00999b2e0
+   .. 0xfffffff00999b1c4  ldr      x16, [x19]
+   .. 0xfffffff00999b1c8  autda    x16, x24
+   .. 0xfffffff00999b1cc  ldr      x8, [x16, #0xc8]!
+   .. 0xfffffff00999b1d0  mov      x0, x19
+  >>
+     0xfffffff00999b21c  bl       #0xfffffff0099a046c
+     0xfffffff00999b220  cbz      x0, #0xfffffff00999b2c0
+     0xfffffff00999b224  mov      x23, x0
+     0xfffffff00999b228  adrp     x8, #0xfffffff007ff8000
+     0xfffffff00999b22c  ldr      x8, [x8, #0xe80]
+     0xfffffff00999b230  ldr      x1, [x8]
+     0xfffffff00999b234  bl       #0xfffffff0099a05bc
+     0xfffffff00999b238  mov      x22, x0
+     0xfffffff00999b23c  cbz      x0, #0xfffffff00999b260
+     0xfffffff00999b240  ldr      x16, [x22]
+     0xfffffff00999b244  mov      x17, x22
+     0xfffffff00999b248  movk     x17, #0xcda1, lsl #48
+     0xfffffff00999b24c  autda    x16, x17
+     0xfffffff00999b250  ldr      x8, [x16, #0x20]!
+     0xfffffff00999b254  mov      x0, x22
+     0xfffffff00999b258  movk     x16, #0x2e4a, lsl #48
+     0xfffffff00999b25c  blraa    x8, x16
+     0xfffffff00999b260  bl       #0xfffffff0099861e4
+     0xfffffff00999b264  bl       #0xfffffff0099a038c
+     0xfffffff00999b268  ldr      x16, [x23]
+     0xfffffff00999b26c  mov      x17, x23
+     0xfffffff00999b270  movk     x17, #0xcda1, lsl #48
+     0xfffffff00999b274  autda    x16, x17
+     0xfffffff00999b278  ldr      x8, [x16, #0x28]!
+     0xfffffff00999b27c  mov      x0, x23
+     0xfffffff00999b280  movk     x16, #0x3a87, lsl #48
+     0xfffffff00999b284  blraa    x8, x16
+     0xfffffff00999b288  ldr      x16, [x19]
+     0xfffffff00999b28c  autda    x16, x24
+     0xfffffff00999b290  ldr      x8, [x16, #0x28]!
+
+===== fffffff00999f124  OSUnserialize(stub)   func~fffffff00999f04c (+0xd8)
+  strings: Could not unserialize input arguments! | [%#010llx] Failed to open provider.
+   .. 0xfffffff00999f0c4  blraa    x8, x16
+   .. 0xfffffff00999f0c8  cbnz     w0, #0xfffffff00999f1e8
+   .. 0xfffffff00999f0cc  ldr      x16, [x19]
+   .. 0xfffffff00999f0d0  autda    x16, x24
+   .. 0xfffffff00999f0d4  ldr      x8, [x16, #0xc8]!
+   .. 0xfffffff00999f0d8  mov      x0, x19
+  >>
+     0xfffffff00999f124  bl       #0xfffffff0099a046c
+     0xfffffff00999f128  cbz      x0, #0xfffffff00999f1c8
+     0xfffffff00999f12c  mov      x23, x0
+     0xfffffff00999f130  adrp     x8, #0xfffffff007ff8000
+     0xfffffff00999f134  ldr      x8, [x8, #0xe80]
+     0xfffffff00999f138  ldr      x1, [x8]
+     0xfffffff00999f13c  bl       #0xfffffff0099a05bc
+     0xfffffff00999f140  mov      x22, x0
+     0xfffffff00999f144  cbz      x0, #0xfffffff00999f168
+     0xfffffff00999f148  ldr      x16, [x22]
+     0xfffffff00999f14c  mov      x17, x22
+     0xfffffff00999f150  movk     x17, #0xcda1, lsl #48
+     0xfffffff00999f154  autda    x16, x17
+     0xfffffff00999f158  ldr      x8, [x16, #0x20]!
+     0xfffffff00999f15c  mov      x0, x22
+     0xfffffff00999f160  movk     x16, #0x2e4a, lsl #48
+     0xfffffff00999f164  blraa    x8, x16
+     0xfffffff00999f168  bl       #0xfffffff0099861e4
+     0xfffffff00999f16c  bl       #0xfffffff0099a038c
+     0xfffffff00999f170  ldr      x16, [x23]
+     0xfffffff00999f174  mov      x17, x23
+     0xfffffff00999f178  movk     x17, #0xcda1, lsl #48
+     0xfffffff00999f17c  autda    x16, x17
+     0xfffffff00999f180  ldr      x8, [x16, #0x28]!
+     0xfffffff00999f184  mov      x0, x23
+     0xfffffff00999f188  movk     x16, #0x3a87, lsl #48
+     0xfffffff00999f18c  blraa    x8, x16
+     0xfffffff00999f190  ldr      x16, [x19]
+     0xfffffff00999f194  autda    x16, x24
+     0xfffffff00999f198  ldr      x8, [x16, #0x28]!
+
+===== fffffff0099b379c  OSUnserialize(stub)   func~fffffff0099b3740 (+0x5c)
+  strings: IOClass | IOKitDebug | IOProviderClass | IOUserClientClass | createImageInfoDict | validateImageInfoDict
+   .. 0xfffffff0099b373c  retab    
+   .. 0xfffffff0099b3740  mov      x0, x20
+   .. 0xfffffff0099b3744  mov      x1, x21
+   .. 0xfffffff0099b3748  bl       #0xfffffff0099b8a78
+   .. 0xfffffff0099b374c  mov      x20, #0
+   .. 0xfffffff0099b3750  b        #0xfffffff0099b3710
+  >>
+     0xfffffff0099b379c  bl       #0xfffffff0099b8ba8
+     0xfffffff0099b37a0  mov      x20, x0
+     0xfffffff0099b37a4  cbnz     x0, #0xfffffff0099b380c
+     0xfffffff0099b37a8  ldr      x0, [sp, #0x18]
+     0xfffffff0099b37ac  cbz      x0, #0xfffffff0099b380c
+     0xfffffff0099b37b0  ldr      x16, [x0]
+     0xfffffff0099b37b4  mov      x17, x0
+     0xfffffff0099b37b8  movk     x17, #0xcda1, lsl #48
+     0xfffffff0099b37bc  autda    x16, x17
+     0xfffffff0099b37c0  ldr      x8, [x16, #0xa8]!
+     0xfffffff0099b37c4  movk     x16, #0x2987, lsl #48
+     0xfffffff0099b37c8  blraa    x8, x16
+     0xfffffff0099b37cc  adrp     x8, #0xfffffff007840000
+     0xfffffff0099b37d0  add      x8, x8, #0x712
+     0xfffffff0099b37d4  stp      x8, x0, [sp]
+     0xfffffff0099b37d8  adrp     x0, #0xfffffff007840000
+     0xfffffff0099b37dc  add      x0, x0, #0x6f1
+     0xfffffff0099b37e0  bl       #0xfffffff0099b8b08
+     0xfffffff0099b37e4  ldr      x20, [sp, #0x18]
+     0xfffffff0099b37e8  ldr      x16, [x20]
+     0xfffffff0099b37ec  mov      x17, x20
+     0xfffffff0099b37f0  movk     x17, #0xcda1, lsl #48
+     0xfffffff0099b37f4  autda    x16, x17
+     0xfffffff0099b37f8  ldr      x8, [x16, #0x28]!
+     0xfffffff0099b37fc  mov      x0, x20
+     0xfffffff0099b3800  movk     x16, #0x3a87, lsl #48
+     0xfffffff0099b3804  blraa    x8, x16
+     0xfffffff0099b3808  b        #0xfffffff0099b3834
+     0xfffffff0099b380c  cbz      x20, #0xfffffff0099b3834
+     0xfffffff0099b3810  adrp     x8, #0xfffffff007ffd000
+
+===== fffffff0099d0974  OSUnserialize(stub)   func~fffffff0099d0928 (+0x4c)
+  strings: SharedMemorySize
+   .. 0xfffffff0099d0914  blraa    x8, x16
+   .. 0xfffffff0099d0918  strb     wzr, [x19, #0x10a]
+   .. 0xfffffff0099d091c  ldp      x29, x30, [sp, #0x10]
+   .. 0xfffffff0099d0920  ldp      x20, x19, [sp], #0x20
+   .. 0xfffffff0099d0924  retab    
+   .. 0xfffffff0099d0928  bti      c
+  >>
+     0xfffffff0099d0974  bl       #0xfffffff009a4815c
+     0xfffffff0099d0978  b        #0xfffffff0099d0988
+     0xfffffff0099d097c  mov      x21, #0
+     0xfffffff0099d0980  b        #0xfffffff0099d098c
+     0xfffffff0099d0984  bl       #0xfffffff009a4859c
+     0xfffffff0099d0988  mov      x21, x0
+     0xfffffff0099d098c  ldr      w8, [x19, #0x128]
+     0xfffffff0099d0990  add      w8, w8, #1
+     0xfffffff0099d0994  str      w8, [x19, #0x128]
+     0xfffffff0099d0998  ldr      x8, [x20, #0x20]
+     0xfffffff0099d099c  ldr      w2, [x8]
+     0xfffffff0099d09a0  mov      x0, x19
+     0xfffffff0099d09a4  mov      x1, x21
+     0xfffffff0099d09a8  bl       #0xfffffff0099d0fbc
+     0xfffffff0099d09ac  mov      x20, x0
+     0xfffffff0099d09b0  cbz      x21, #0xfffffff0099d09d4
+     0xfffffff0099d09b4  ldr      x16, [x21]
+     0xfffffff0099d09b8  mov      x17, x21
+     0xfffffff0099d09bc  movk     x17, #0xcda1, lsl #48
+     0xfffffff0099d09c0  autda    x16, x17
+     0xfffffff0099d09c4  ldr      x8, [x16, #0x28]!
+     0xfffffff0099d09c8  mov      x0, x21
+     0xfffffff0099d09cc  movk     x16, #0x3a87, lsl #48
+     0xfffffff0099d09d0  blraa    x8, x16
+     0xfffffff0099d09d4  cbz      w20, #0xfffffff0099d0a0c
+     0xfffffff0099d09d8  mov      w0, #0
+     0xfffffff0099d09dc  bl       #0xfffffff0099cb890
+     0xfffffff0099d09e0  mov      x1, x0
+     0xfffffff0099d09e4  str      x20, [sp]
+     0xfffffff0099d09e8  adrp     x0, #0xfffffff007846000
+
+===== fffffff009a2ab90  OSUnserialize(stub)   func~fffffff009a2aa80 (+0x110)
+  strings: 
+   .. 0xfffffff009a2ab30  mov      w2, #0x10
+   .. 0xfffffff009a2ab34  bl       #0xfffffff009a4881c
+   .. 0xfffffff009a2ab38  mov      w0, #0
+   .. 0xfffffff009a2ab3c  b        #0xfffffff009a2aa68
+   .. 0xfffffff009a2ab40  bti      c
+   .. 0xfffffff009a2ab44  pacibsp  
+  >>
+     0xfffffff009a2ab90  bl       #0xfffffff009a4815c
+     0xfffffff009a2ab94  cbz      x0, #0xfffffff009a2abd0
+     0xfffffff009a2ab98  mov      x23, x0
+     0xfffffff009a2ab9c  adrp     x8, #0xfffffff008017000
+     0xfffffff009a2aba0  ldr      x8, [x8, #0x358]
+     0xfffffff009a2aba4  ldr      x1, [x8]
+     0xfffffff009a2aba8  bl       #0xfffffff009a483bc
+     0xfffffff009a2abac  cbnz     x0, #0xfffffff009a2abdc
+     0xfffffff009a2abb0  ldr      x16, [x23]
+     0xfffffff009a2abb4  mov      x17, x23
+     0xfffffff009a2abb8  movk     x17, #0xcda1, lsl #48
+     0xfffffff009a2abbc  autda    x16, x17
+     0xfffffff009a2abc0  ldr      x8, [x16, #0x28]!
+     0xfffffff009a2abc4  mov      x0, x23
+     0xfffffff009a2abc8  movk     x16, #0x3a87, lsl #48
+     0xfffffff009a2abcc  blraa    x8, x16
+     0xfffffff009a2abd0  mov      w0, #1
+     0xfffffff009a2abd4  bl       #0xfffffff009a482bc
+     0xfffffff009a2abd8  cbz      x0, #0xfffffff009a2ac44
+     0xfffffff009a2abdc  mov      x22, x0
+     0xfffffff009a2abe0  ldr      x0, [x19, #0x120]
+     0xfffffff009a2abe4  cbz      x0, #0xfffffff009a2ac04
+     0xfffffff009a2abe8  ldr      x16, [x0]
+     0xfffffff009a2abec  mov      x17, x0
+     0xfffffff009a2abf0  movk     x17, #0xcda1, lsl #48
+     0xfffffff009a2abf4  autda    x16, x17
+     0xfffffff009a2abf8  ldr      x8, [x16, #0x28]!
+     0xfffffff009a2abfc  movk     x16, #0x3a87, lsl #48
+     0xfffffff009a2ac00  blraa    x8, x16
+     0xfffffff009a2ac04  str      x22, [x19, #0x120]
+
+===== fffffff009a459fc  OSUnserialize(stub)   func~fffffff009a4599c (+0x60)
+  strings: 
+   .. 0xfffffff009a4599c  mov      x20, x0
+   .. 0xfffffff009a459a0  b        #0xfffffff009a45934
+   .. 0xfffffff009a459a4  ldr      x0, [x21, #0x68]
+   .. 0xfffffff009a459a8  cbnz     x0, #0xfffffff009a45910
+   .. 0xfffffff009a459ac  b        #0xfffffff009a45934
+   .. 0xfffffff009a459b0  bti      c
+  >>
+     0xfffffff009a459fc  bl       #0xfffffff009a4815c
+     0xfffffff009a45a00  cbz      x0, #0xfffffff009a45a94
+     0xfffffff009a45a04  mov      x22, x0
+     0xfffffff009a45a08  adrp     x8, #0xfffffff008017000
+     0xfffffff009a45a0c  ldr      x8, [x8, #0x358]
+     0xfffffff009a45a10  ldr      x1, [x8]
+     0xfffffff009a45a14  bl       #0xfffffff009a483bc
+     0xfffffff009a45a18  mov      x1, x0
+     0xfffffff009a45a1c  cbnz     x0, #0xfffffff009a45a2c
+     0xfffffff009a45a20  b        #0xfffffff009a45a74
+     0xfffffff009a45a24  mov      x22, #0
+     0xfffffff009a45a28  mov      x1, #0
+     0xfffffff009a45a2c  ldr      x16, [x21]
+     0xfffffff009a45a30  mov      x17, x21
+     0xfffffff009a45a34  movk     x17, #0xcda1, lsl #48
+     0xfffffff009a45a38  autda    x16, x17
+     0xfffffff009a45a3c  mov      x17, #0x5f8
+     0xfffffff009a45a40  add      x16, x16, x17
+     0xfffffff009a45a44  ldr      x8, [x16]
+     0xfffffff009a45a48  add      x2, sp, #8
+     0xfffffff009a45a4c  mov      x0, x21
+     0xfffffff009a45a50  movk     x16, #0x5c79, lsl #48
+     0xfffffff009a45a54  blraa    x8, x16
+     0xfffffff009a45a58  mov      x20, x0
+     0xfffffff009a45a5c  cbnz     w0, #0xfffffff009a45a70
+     0xfffffff009a45a60  ldr      x8, [sp, #8]
+     0xfffffff009a45a64  cbz      x8, #0xfffffff009a45a70
+     0xfffffff009a45a68  ldr      x9, [x19, #0x78]
+     0xfffffff009a45a6c  str      x8, [x9]
+     0xfffffff009a45a70  cbz      x22, #0xfffffff009a45a94
+
+===== fffffff009a46ef8  OSUnserialize(stub)   func~fffffff009a46df0 (+0x108)
+  strings: Privileged | RegisterService
+   .. 0xfffffff009a46e98  ldr      x16, [x19]
+   .. 0xfffffff009a46e9c  autda    x16, x27
+   .. 0xfffffff009a46ea0  ldr      x8, [x16, #0xc8]!
+   .. 0xfffffff009a46ea4  mov      x0, x19
+   .. 0xfffffff009a46ea8  mov      x1, #0
+   .. 0xfffffff009a46eac  mov      x2, x22
+  >>
+     0xfffffff009a46ef8  bl       #0xfffffff009a4815c
+     0xfffffff009a46efc  cbz      x0, #0xfffffff009a470a4
+     0xfffffff009a46f00  mov      x25, x0
+     0xfffffff009a46f04  ldr      x0, [x23, #0xe0]
+     0xfffffff009a46f08  cbz      x0, #0xfffffff009a46f28
+     0xfffffff009a46f0c  ldr      x16, [x0]
+     0xfffffff009a46f10  mov      x17, x0
+     0xfffffff009a46f14  movk     x17, #0xcda1, lsl #48
+     0xfffffff009a46f18  autda    x16, x17
+     0xfffffff009a46f1c  ldr      x8, [x16, #0x28]!
+     0xfffffff009a46f20  movk     x16, #0x3a87, lsl #48
+     0xfffffff009a46f24  blraa    x8, x16
+     0xfffffff009a46f28  str      xzr, [x23, #0xe0]
+     0xfffffff009a46f2c  adrp     x8, #0xfffffff008017000
+     0xfffffff009a46f30  ldr      x8, [x8, #0x358]
+     0xfffffff009a46f34  ldr      x1, [x8]
+     0xfffffff009a46f38  mov      x0, x25
+     0xfffffff009a46f3c  bl       #0xfffffff009a483bc
+     0xfffffff009a46f40  str      x0, [x23, #0xe0]
+     0xfffffff009a46f44  cbz      x0, #0xfffffff009a47104
+     0xfffffff009a46f48  bl       #0xfffffff0099cd400
+     0xfffffff009a46f4c  movk     x17, #0xcda1, lsl #48
+     0xfffffff009a46f50  autda    x16, x17
+     0xfffffff009a46f54  ldr      x8, [x16, #0x20]!
+     0xfffffff009a46f58  movk     x16, #0x2e4a, lsl #48
+     0xfffffff009a46f5c  blraa    x8, x16
+     0xfffffff009a46f60  ldr      x0, [x23, #0xe0]
+     0xfffffff009a46f64  bl       #0xfffffff0099f0cd4
+     0xfffffff009a46f68  tbz      w0, #0, #0xfffffff009a46f74
+     0xfffffff009a46f6c  sub      w20, w20, #7
+
+===== fffffff009a78de0  OSUnserialize(stub)   func~fffffff009a78c3c (+0x1a4)
+  strings: "IOMFB: %s: no instance for instance ID: %u\n" @%s:%d | InstanceTracker.h | ection=0x%x | static T *IOMFB::InstanceTracker::instance(tracked_entity_t, uint32_t) [T = IOMFB::MemDescRelay]
+   .. 0xfffffff009a78d80  ldr      x16, [x0]
+   .. 0xfffffff009a78d84  mov      x17, x0
+   .. 0xfffffff009a78d88  movk     x17, #0xffdd, lsl #48
+   .. 0xfffffff009a78d8c  autda    x16, x17
+   .. 0xfffffff009a78d90  ldr      x8, [x16, #0x48]!
+   .. 0xfffffff009a78d94  movk     x16, #0xa3df, lsl #48
+  >>
+     0xfffffff009a78de0  bl       #0xfffffff009a99d40
+     0xfffffff009a78de4  adrp     x8, #0xfffffff008022000
+     0xfffffff009a78de8  ldr      x8, [x8, #0x258]
+     0xfffffff009a78dec  ldr      x1, [x8]
+     0xfffffff009a78df0  bl       #0xfffffff009a99f00
+     0xfffffff009a78df4  b        #0xfffffff009a78da8
+     0xfffffff009a78df8  mov      w9, #0x5d
+     0xfffffff009a78dfc  adrp     x10, #0xfffffff007852000
+     0xfffffff009a78e00  add      x10, x10, #0xb16
+     0xfffffff009a78e04  stp      x10, x9, [sp, #0x10]
+     0xfffffff009a78e08  adrp     x9, #0xfffffff007856000
+     0xfffffff009a78e0c  add      x9, x9, #0xea4
+     0xfffffff009a78e10  stp      x9, x8, [sp]
+     0xfffffff009a78e14  adrp     x0, #0xfffffff007852000
+     0xfffffff009a78e18  add      x0, x0, #0xa7c
+     0xfffffff009a78e1c  bl       #0xfffffff009a9a920
+     0xfffffff009a78e20  bti      c
+     0xfffffff009a78e24  cbz      x1, #0xfffffff009a78e34
+     0xfffffff009a78e28  ldrb     w8, [x1, #0xe0]
+     0xfffffff009a78e2c  eor      w8, w8, #1
+     0xfffffff009a78e30  b        #0xfffffff009a78e38
+     0xfffffff009a78e34  mov      w8, #0
+     0xfffffff009a78e38  ldr      x16, [x0]
+     0xfffffff009a78e3c  mov      x17, x0
+     0xfffffff009a78e40  movk     x17, #0xcda1, lsl #48
+     0xfffffff009a78e44  autda    x16, x17
+     0xfffffff009a78e48  mov      x17, #0x8b8
+     0xfffffff009a78e4c  add      x16, x16, x17
+     0xfffffff009a78e50  ldr      x9, [x16]
+     0xfffffff009a78e54  mov      x5, x16
+
+===== fffffff009a94db0  OSUnserialize(stub)   func~fffffff009a94d20 (+0x90)
+  strings: "IOMFB: %s: no instance for instance ID: %u\n" @%s:%d | InstanceTracker.h | static T *IOMFB::InstanceTracker::instance(tracked_entity_t, uint32_t) [T = IOMobileFramebufferAP]
+   .. 0xfffffff009a94d50  b        #0xfffffff009a94d88
+   .. 0xfffffff009a94d54  ldr      x9, [x19, #0x28]
+   .. 0xfffffff009a94d58  add      x25, x9, x8
+   .. 0xfffffff009a94d5c  mov      w27, #0x1044
+   .. 0xfffffff009a94d60  mov      x0, x25
+   .. 0xfffffff009a94d64  mov      x1, x23
+  >>
+     0xfffffff009a94db0  bl       #0xfffffff009a99d40
+     0xfffffff009a94db4  cbz      x0, #0xfffffff009a94df8
+     0xfffffff009a94db8  mov      x24, x0
+     0xfffffff009a94dbc  adrp     x8, #0xfffffff008022000
+     0xfffffff009a94dc0  ldr      x8, [x8, #0x2b0]
+     0xfffffff009a94dc4  ldr      x1, [x8]
+     0xfffffff009a94dc8  bl       #0xfffffff009a99f00
+     0xfffffff009a94dcc  mov      x23, x0
+     0xfffffff009a94dd0  cbnz     x0, #0xfffffff009a94e08
+     0xfffffff009a94dd4  ldr      x16, [x24]
+     0xfffffff009a94dd8  mov      x17, x24
+     0xfffffff009a94ddc  movk     x17, #0xcda1, lsl #48
+     0xfffffff009a94de0  autda    x16, x17
+     0xfffffff009a94de4  ldr      x8, [x16, #0x28]!
+     0xfffffff009a94de8  mov      x0, x24
+     0xfffffff009a94dec  movk     x16, #0x3a87, lsl #48
+     0xfffffff009a94df0  blraa    x8, x16
+     0xfffffff009a94df4  b        #0xfffffff009a94e08
+     0xfffffff009a94df8  adrp     x0, #0xfffffff007858000
+     0xfffffff009a94dfc  add      x0, x0, #0xca5
+     0xfffffff009a94e00  bl       #0xfffffff009a99bc0
+     0xfffffff009a94e04  mov      x23, #0
+     0xfffffff009a94e08  ldr      w8, [x21, #0x38]
+     0xfffffff009a94e0c  add      x9, x8, x8, lsl #1
+     0xfffffff009a94e10  adrp     x10, #0xfffffff008022000
+     0xfffffff009a94e14  ldr      x10, [x10, #0x298]
+     0xfffffff009a94e18  lsl      x9, x9, #4
+     0xfffffff009a94e1c  cmp      x9, w9, sxtw
+     0xfffffff009a94e20  add      x11, x10, w9, sxtw
+     0xfffffff009a94e24  add      x16, x10, x9
+
+===== fffffff009a95204  OSUnserialize(stub)   func~fffffff009a95174 (+0x90)
+  strings: "IOMFB: %s: no instance for instance ID: %u\n" @%s:%d | InstanceTracker.h | static T *IOMFB::InstanceTracker::instance(tracked_entity_t, uint32_t) [T = IOMobileFramebufferAP]
+   .. 0xfffffff009a951a4  b        #0xfffffff009a951dc
+   .. 0xfffffff009a951a8  ldr      x9, [x19, #0x28]
+   .. 0xfffffff009a951ac  add      x25, x9, x8
+   .. 0xfffffff009a951b0  mov      w27, #0x1044
+   .. 0xfffffff009a951b4  mov      x0, x25
+   .. 0xfffffff009a951b8  mov      x1, x23
+  >>
+     0xfffffff009a95204  bl       #0xfffffff009a99d40
+     0xfffffff009a95208  cbz      x0, #0xfffffff009a9524c
+     0xfffffff009a9520c  mov      x24, x0
+     0xfffffff009a95210  adrp     x8, #0xfffffff008022000
+     0xfffffff009a95214  ldr      x8, [x8, #0x258]
+     0xfffffff009a95218  ldr      x1, [x8]
+     0xfffffff009a9521c  bl       #0xfffffff009a99f00
+     0xfffffff009a95220  mov      x23, x0
+     0xfffffff009a95224  cbnz     x0, #0xfffffff009a9525c
+     0xfffffff009a95228  ldr      x16, [x24]
+     0xfffffff009a9522c  mov      x17, x24
+     0xfffffff009a95230  movk     x17, #0xcda1, lsl #48
+     0xfffffff009a95234  autda    x16, x17
+     0xfffffff009a95238  ldr      x8, [x16, #0x28]!
+     0xfffffff009a9523c  mov      x0, x24
+     0xfffffff009a95240  movk     x16, #0x3a87, lsl #48
+     0xfffffff009a95244  blraa    x8, x16
+     0xfffffff009a95248  b        #0xfffffff009a9525c
+     0xfffffff009a9524c  adrp     x0, #0xfffffff007858000
+     0xfffffff009a95250  add      x0, x0, #0xccc
+     0xfffffff009a95254  bl       #0xfffffff009a99bc0
+     0xfffffff009a95258  mov      x23, #0
+     0xfffffff009a9525c  ldr      w8, [x21, #0x38]
+     0xfffffff009a95260  add      x9, x8, x8, lsl #1
+     0xfffffff009a95264  adrp     x10, #0xfffffff008022000
+     0xfffffff009a95268  ldr      x10, [x10, #0x298]
+     0xfffffff009a9526c  lsl      x9, x9, #4
+     0xfffffff009a95270  cmp      x9, w9, sxtw
+     0xfffffff009a95274  add      x11, x10, w9, sxtw
+     0xfffffff009a95278  add      x16, x10, x9
+
+===== fffffff009a95ebc  OSUnserialize(stub)   func~fffffff009a95e34 (+0x88)
+  strings: "IOMFB: %s: no instance for instance ID: %u\n" @%s:%d | InstanceTracker.h | static T *IOMFB::InstanceTracker::instance(tracked_entity_t, uint32_t) [T = IOMobileFramebufferAP]
+   .. 0xfffffff009a95e5c  cmp      w24, #4
+   .. 0xfffffff009a95e60  b.lo     #0xfffffff009a95e10
+   .. 0xfffffff009a95e64  b        #0xfffffff009a95e9c
+   .. 0xfffffff009a95e68  ldr      x9, [x19, #0x28]
+   .. 0xfffffff009a95e6c  add      x25, x9, x8
+   .. 0xfffffff009a95e70  mov      w27, #0x1044
+  >>
+     0xfffffff009a95ebc  bl       #0xfffffff009a99d40
+     0xfffffff009a95ec0  cbz      x0, #0xfffffff009a95f04
+     0xfffffff009a95ec4  mov      x24, x0
+     0xfffffff009a95ec8  adrp     x8, #0xfffffff008022000
+     0xfffffff009a95ecc  ldr      x8, [x8, #0x2b0]
+     0xfffffff009a95ed0  ldr      x1, [x8]
+     0xfffffff009a95ed4  bl       #0xfffffff009a99f00
+     0xfffffff009a95ed8  mov      x23, x0
+     0xfffffff009a95edc  cbnz     x0, #0xfffffff009a95f14
+     0xfffffff009a95ee0  ldr      x16, [x24]
+     0xfffffff009a95ee4  mov      x17, x24
+     0xfffffff009a95ee8  movk     x17, #0xcda1, lsl #48
+     0xfffffff009a95eec  autda    x16, x17
+     0xfffffff009a95ef0  ldr      x8, [x16, #0x28]!
+     0xfffffff009a95ef4  mov      x0, x24
+     0xfffffff009a95ef8  movk     x16, #0x3a87, lsl #48
+     0xfffffff009a95efc  blraa    x8, x16
+     0xfffffff009a95f00  b        #0xfffffff009a95f14
+     0xfffffff009a95f04  adrp     x0, #0xfffffff007858000
+     0xfffffff009a95f08  add      x0, x0, #0xca5
+     0xfffffff009a95f0c  bl       #0xfffffff009a99bc0
+     0xfffffff009a95f10  mov      x23, #0
+     0xfffffff009a95f14  ldr      w8, [x22, #0x38]
+     0xfffffff009a95f18  add      x9, x8, x8, lsl #1
+     0xfffffff009a95f1c  adrp     x10, #0xfffffff008022000
+     0xfffffff009a95f20  ldr      x10, [x10, #0x298]
+     0xfffffff009a95f24  lsl      x9, x9, #4
+     0xfffffff009a95f28  cmp      x9, w9, sxtw
+     0xfffffff009a95f2c  add      x11, x10, w9, sxtw
+     0xfffffff009a95f30  add      x16, x10, x9
+
+===== fffffff009a962b8  OSUnserialize(stub)   func~fffffff009a96230 (+0x88)
+  strings: "IOMFB: %s: no instance for instance ID: %u\n" @%s:%d | InstanceTracker.h | static T *IOMFB::InstanceTracker::instance(tracked_entity_t, uint32_t) [T = IOMobileFramebufferAP]
+   .. 0xfffffff009a96258  cmp      w24, #4
+   .. 0xfffffff009a9625c  b.lo     #0xfffffff009a9620c
+   .. 0xfffffff009a96260  b        #0xfffffff009a96298
+   .. 0xfffffff009a96264  ldr      x9, [x19, #0x28]
+   .. 0xfffffff009a96268  add      x25, x9, x8
+   .. 0xfffffff009a9626c  mov      w27, #0x1044
+  >>
+     0xfffffff009a962b8  bl       #0xfffffff009a99d40
+     0xfffffff009a962bc  cbz      x0, #0xfffffff009a96300
+     0xfffffff009a962c0  mov      x24, x0
+     0xfffffff009a962c4  adrp     x8, #0xfffffff008022000
+     0xfffffff009a962c8  ldr      x8, [x8, #0x258]
+     0xfffffff009a962cc  ldr      x1, [x8]
+     0xfffffff009a962d0  bl       #0xfffffff009a99f00
+     0xfffffff009a962d4  mov      x23, x0
+     0xfffffff009a962d8  cbnz     x0, #0xfffffff009a96310
+     0xfffffff009a962dc  ldr      x16, [x24]
+     0xfffffff009a962e0  mov      x17, x24
+     0xfffffff009a962e4  movk     x17, #0xcda1, lsl #48
+     0xfffffff009a962e8  autda    x16, x17
+     0xfffffff009a962ec  ldr      x8, [x16, #0x28]!
+     0xfffffff009a962f0  mov      x0, x24
+     0xfffffff009a962f4  movk     x16, #0x3a87, lsl #48
+     0xfffffff009a962f8  blraa    x8, x16
+     0xfffffff009a962fc  b        #0xfffffff009a96310
+     0xfffffff009a96300  adrp     x0, #0xfffffff007858000
+     0xfffffff009a96304  add      x0, x0, #0xccc
+     0xfffffff009a96308  bl       #0xfffffff009a99bc0
+     0xfffffff009a9630c  mov      x23, #0
+     0xfffffff009a96310  ldr      w8, [x22, #0x38]
+     0xfffffff009a96314  add      x9, x8, x8, lsl #1
+     0xfffffff009a96318  adrp     x10, #0xfffffff008022000
+     0xfffffff009a9631c  ldr      x10, [x10, #0x298]
+     0xfffffff009a96320  lsl      x9, x9, #4
+     0xfffffff009a96324  cmp      x9, w9, sxtw
+     0xfffffff009a96328  add      x11, x10, w9, sxtw
+     0xfffffff009a9632c  add      x16, x10, x9
+
+===== fffffff009c3ac1c  OSUnserialize(stub)   func~fffffff009c3ab8c (+0x90)
+  strings: create_surface
+   .. 0xfffffff009c3abbc  ldr      w8, [x0, #0x128]
+   .. 0xfffffff009c3abc0  cmp      w8, #4, lsl #12
+   .. 0xfffffff009c3abc4  b.lo     #0xfffffff009c3abfc
+   .. 0xfffffff009c3abc8  adrp     x9, #0xfffffff00789d000
+   .. 0xfffffff009c3abcc  add      x9, x9, #0x4a
+   .. 0xfffffff009c3abd0  stp      x9, x8, [sp]
+  >>
+     0xfffffff009c3ac1c  bl       #0xfffffff009c49764
+     0xfffffff009c3ac20  cbz      x0, #0xfffffff009c3b098
+     0xfffffff009c3ac24  mov      x20, x0
+     0xfffffff009c3ac28  adrp     x8, #0xfffffff00806c000
+     0xfffffff009c3ac2c  ldr      x8, [x8, #0x9c8]
+     0xfffffff009c3ac30  ldr      x1, [x8]
+     0xfffffff009c3ac34  bl       #0xfffffff009c498d4
+     0xfffffff009c3ac38  cbz      x0, #0xfffffff009c3ac88
+     0xfffffff009c3ac3c  mov      x25, x0
+     0xfffffff009c3ac40  cbz      w22, #0xfffffff009c3ac94
+     0xfffffff009c3ac44  mov      x0, x23
+     0xfffffff009c3ac48  mov      x1, x22
+     0xfffffff009c3ac4c  bl       #0xfffffff009c3f1d0
+     0xfffffff009c3ac50  mov      x21, x0
+     0xfffffff009c3ac54  cbnz     x0, #0xfffffff009c3ac98
+     0xfffffff009c3ac58  adrp     x8, #0xfffffff00789d000
+     0xfffffff009c3ac5c  add      x8, x8, #0x4a
+     0xfffffff009c3ac60  stp      x8, x22, [sp]
+     0xfffffff009c3ac64  adrp     x0, #0xfffffff00789a000
+     0xfffffff009c3ac68  add      x0, x0, #0x30
+     0xfffffff009c3ac6c  adrp     x1, #0xfffffff00806c000
+     0xfffffff009c3ac70  ldr      x1, [x1, #0xa48]
+     0xfffffff009c3ac74  adrp     x3, #0xfffffff0078a0000
+     0xfffffff009c3ac78  add      x3, x3, #0xbd3
+     0xfffffff009c3ac7c  mov      w2, #0x10
+     0xfffffff009c3ac80  bl       #0xfffffff009c49b74
+     0xfffffff009c3ac84  b        #0xfffffff009c3b078
+     0xfffffff009c3ac88  mov      w24, #0x2c2
+     0xfffffff009c3ac8c  movk     w24, #0xe000, lsl #16
+     0xfffffff009c3ac90  b        #0xfffffff009c3b068
+
+===== fffffff009c3c408  OSUnserialize(stub)   func~fffffff009c3c3b8 (+0x50)
+  strings: 
+   .. 0xfffffff009c3c3a8  movk     w0, #0xe000, lsl #16
+   .. 0xfffffff009c3c3ac  ldp      x29, x30, [sp, #0x10]
+   .. 0xfffffff009c3c3b0  ldp      x20, x19, [sp], #0x20
+   .. 0xfffffff009c3c3b4  retab    
+   .. 0xfffffff009c3c3b8  bti      c
+   .. 0xfffffff009c3c3bc  pacibsp  
+  >>
+     0xfffffff009c3c408  bl       #0xfffffff009c49764
+     0xfffffff009c3c40c  cbz      x0, #0xfffffff009c3c500
+     0xfffffff009c3c410  mov      x22, x0
+     0xfffffff009c3c414  adrp     x8, #0xfffffff00806c000
+     0xfffffff009c3c418  ldr      x8, [x8, #0x9f0]
+     0xfffffff009c3c41c  ldr      x1, [x8]
+     0xfffffff009c3c420  bl       #0xfffffff009c498d4
+     0xfffffff009c3c424  cbz      x0, #0xfffffff009c3c4e0
+     0xfffffff009c3c428  mov      x24, x0
+     0xfffffff009c3c42c  ldr      x16, [x0]
+     0xfffffff009c3c430  mov      x17, x0
+     0xfffffff009c3c434  movk     x17, #0xcda1, lsl #48
+     0xfffffff009c3c438  autda    x16, x17
+     0xfffffff009c3c43c  mov      x17, #0x118
+     0xfffffff009c3c440  add      x16, x16, x17
+     0xfffffff009c3c444  ldr      x8, [x16]
+     0xfffffff009c3c448  mov      w1, #0
+     0xfffffff009c3c44c  movk     x16, #0x8453, lsl #48
+     0xfffffff009c3c450  blraa    x8, x16
+     0xfffffff009c3c454  mov      x23, x0
+     0xfffffff009c3c458  ldr      x16, [x24]
+     0xfffffff009c3c45c  mov      x17, x24
+     0xfffffff009c3c460  movk     x17, #0xcda1, lsl #48
+     0xfffffff009c3c464  autda    x16, x17
+     0xfffffff009c3c468  mov      x17, #0x118
+     0xfffffff009c3c46c  add      x16, x16, x17
+     0xfffffff009c3c470  ldr      x8, [x16]
+     0xfffffff009c3c474  mov      x0, x24
+     0xfffffff009c3c478  mov      w1, #1
+     0xfffffff009c3c47c  movk     x16, #0x8453, lsl #48
+
+===== fffffff009c3c830  OSUnserialize(stub)   func~fffffff009c3c7fc (+0x34)
+  strings: 
+   .. 0xfffffff009c3c7d0  movk     x16, #0x3a87, lsl #48
+   .. 0xfffffff009c3c7d4  blraa    x8, x16
+   .. 0xfffffff009c3c7d8  mov      x0, x20
+   .. 0xfffffff009c3c7dc  ldp      x29, x30, [sp, #0x60]
+   .. 0xfffffff009c3c7e0  ldp      x20, x19, [sp, #0x50]
+   .. 0xfffffff009c3c7e4  ldp      x22, x21, [sp, #0x40]
+  >>
+     0xfffffff009c3c830  bl       #0xfffffff009c49764
+     0xfffffff009c3c834  cbz      x0, #0xfffffff009c3c8c0
+     0xfffffff009c3c838  mov      x19, x0
+     0xfffffff009c3c83c  adrp     x8, #0xfffffff00806c000
+     0xfffffff009c3c840  ldr      x8, [x8, #0x9f0]
+     0xfffffff009c3c844  ldr      x1, [x8]
+     0xfffffff009c3c848  bl       #0xfffffff009c498d4
+     0xfffffff009c3c84c  cbz      x0, #0xfffffff009c3c8a0
+     0xfffffff009c3c850  mov      x22, x0
+     0xfffffff009c3c854  ldr      x0, [x20, #0xe0]
+     0xfffffff009c3c858  bl       #0xfffffff009c49684
+     0xfffffff009c3c85c  mov      x0, x22
+     0xfffffff009c3c860  mov      w1, #0
+     0xfffffff009c3c864  bl       #0xfffffff009c49a74
+     0xfffffff009c3c868  mov      x21, x0
+     0xfffffff009c3c86c  ldr      x0, [x20, #0x130]
+     0xfffffff009c3c870  cbz      x0, #0xfffffff009c3c890
+     0xfffffff009c3c874  ldr      x16, [x0]
+     0xfffffff009c3c878  mov      x17, x0
+     0xfffffff009c3c87c  movk     x17, #0xcda1, lsl #48
+     0xfffffff009c3c880  autda    x16, x17
+     0xfffffff009c3c884  ldr      x8, [x16, #0x28]!
+     0xfffffff009c3c888  movk     x16, #0x3a87, lsl #48
+     0xfffffff009c3c88c  blraa    x8, x16
+     0xfffffff009c3c890  str      x21, [x20, #0x130]
+     0xfffffff009c3c894  ldr      x0, [x20, #0xe0]
+     0xfffffff009c3c898  bl       #0xfffffff009c49674
+     0xfffffff009c3c89c  mov      w21, #0
+     0xfffffff009c3c8a0  ldr      x16, [x19]
+     0xfffffff009c3c8a4  mov      x17, x19
+
+===== fffffff009c3d5b0  OSUnserialize(stub)   func~fffffff009c3d560 (+0x50)
+  strings: 
+   .. 0xfffffff009c3d550  movk     w0, #0xe000, lsl #16
+   .. 0xfffffff009c3d554  ldp      x29, x30, [sp, #0x10]
+   .. 0xfffffff009c3d558  ldp      x20, x19, [sp], #0x20
+   .. 0xfffffff009c3d55c  retab    
+   .. 0xfffffff009c3d560  bti      c
+   .. 0xfffffff009c3d564  pacibsp  
+  >>
+     0xfffffff009c3d5b0  bl       #0xfffffff009c49764
+     0xfffffff009c3d5b4  cbz      x0, #0xfffffff009c3d724
+     0xfffffff009c3d5b8  mov      x21, x0
+     0xfffffff009c3d5bc  adrp     x8, #0xfffffff00806c000
+     0xfffffff009c3d5c0  ldr      x8, [x8, #0x9f0]
+     0xfffffff009c3d5c4  ldr      x1, [x8]
+     0xfffffff009c3d5c8  bl       #0xfffffff009c498d4
+     0xfffffff009c3d5cc  cbz      x0, #0xfffffff009c3d704
+     0xfffffff009c3d5d0  mov      x23, x0
+     0xfffffff009c3d5d4  ldr      x16, [x0]
+     0xfffffff009c3d5d8  mov      x17, x0
+     0xfffffff009c3d5dc  movk     x17, #0xcda1, lsl #48
+     0xfffffff009c3d5e0  autda    x16, x17
+     0xfffffff009c3d5e4  mov      x17, #0x118
+     0xfffffff009c3d5e8  add      x16, x16, x17
+     0xfffffff009c3d5ec  ldr      x8, [x16]
+     0xfffffff009c3d5f0  mov      w1, #0
+     0xfffffff009c3d5f4  movk     x16, #0x8453, lsl #48
+     0xfffffff009c3d5f8  blraa    x8, x16
+     0xfffffff009c3d5fc  mov      x25, x0
+     0xfffffff009c3d600  ldr      x16, [x23]
+     0xfffffff009c3d604  mov      x17, x23
+     0xfffffff009c3d608  movk     x17, #0xcda1, lsl #48
+     0xfffffff009c3d60c  autda    x16, x17
+     0xfffffff009c3d610  mov      x17, #0x118
+     0xfffffff009c3d614  add      x16, x16, x17
+     0xfffffff009c3d618  ldr      x8, [x16]
+     0xfffffff009c3d61c  mov      x0, x23
+     0xfffffff009c3d620  mov      w1, #1
+     0xfffffff009c3d624  movk     x16, #0x8453, lsl #48
+
+===== fffffff009c3e3c4  OSUnserialize(stub)   func~fffffff009c3e2ac (+0x118)
+  strings: 
+   .. 0xfffffff009c3e364  mov      x0, x22
+   .. 0xfffffff009c3e368  ldp      x29, x30, [sp, #0x40]
+   .. 0xfffffff009c3e36c  ldp      x20, x19, [sp, #0x30]
+   .. 0xfffffff009c3e370  ldp      x22, x21, [sp, #0x20]
+   .. 0xfffffff009c3e374  ldp      x24, x23, [sp, #0x10]
+   .. 0xfffffff009c3e378  add      sp, sp, #0x50
+  >>
+     0xfffffff009c3e3c4  bl       #0xfffffff009c49764
+     0xfffffff009c3e3c8  mov      x21, x0
+     0xfffffff009c3e3cc  adrp     x8, #0xfffffff00806c000
+     0xfffffff009c3e3d0  ldr      x8, [x8, #0x9c8]
+     0xfffffff009c3e3d4  ldr      x1, [x8]
+     0xfffffff009c3e3d8  bl       #0xfffffff009c498d4
+     0xfffffff009c3e3dc  mov      x19, x0
+     0xfffffff009c3e3e0  cbz      x0, #0xfffffff009c3e448
+     0xfffffff009c3e3e4  ldr      x0, [x23, #0xe8]
+     0xfffffff009c3e3e8  bl       #0xfffffff009c372dc
+     0xfffffff009c3e3ec  cbz      x0, #0xfffffff009c3e484
+     0xfffffff009c3e3f0  mov      x21, x0
+     0xfffffff009c3e3f4  ldr      x16, [x19]
+     0xfffffff009c3e3f8  mov      x17, x19
+     0xfffffff009c3e3fc  movk     x17, #0xcda1, lsl #48
+     0xfffffff009c3e400  autda    x16, x17
+     0xfffffff009c3e404  ldr      x8, [x16, #0x20]!
+     0xfffffff009c3e408  mov      x0, x19
+     0xfffffff009c3e40c  movk     x16, #0x2e4a, lsl #48
+     0xfffffff009c3e410  blraa    x8, x16
+     0xfffffff009c3e414  ldr      x16, [x23, #0xf8]!
+     0xfffffff009c3e418  mov      x26, x23
+     0xfffffff009c3e41c  movk     x26, #0xd024, lsl #48
+     0xfffffff009c3e420  cbz      x16, #0xfffffff009c3e48c
+     0xfffffff009c3e424  mov      x17, x26
+     0xfffffff009c3e428  autda    x16, x17
+     0xfffffff009c3e42c  mov      x17, x16
+     0xfffffff009c3e430  xpacd    x17
+     0xfffffff009c3e434  cmp      x16, x17
+     0xfffffff009c3e438  b.eq     #0xfffffff009c3e440
+
+===== fffffff009c3e5b0  OSUnserialize(stub)   func~fffffff009c3e570 (+0x40)
+  strings: ensure_memory_pool_memory
+   .. 0xfffffff009c3e550  blraa    x8, x16
+   .. 0xfffffff009c3e554  mov      x0, x20
+   .. 0xfffffff009c3e558  ldp      x29, x30, [sp, #0x40]
+   .. 0xfffffff009c3e55c  ldp      x20, x19, [sp, #0x30]
+   .. 0xfffffff009c3e560  ldp      x22, x21, [sp, #0x20]
+   .. 0xfffffff009c3e564  ldp      x24, x23, [sp, #0x10]
+  >>
+     0xfffffff009c3e5b0  bl       #0xfffffff009c49764
+     0xfffffff009c3e5b4  mov      x22, x0
+     0xfffffff009c3e5b8  adrp     x8, #0xfffffff00806c000
+     0xfffffff009c3e5bc  ldr      x8, [x8, #0x9c8]
+     0xfffffff009c3e5c0  ldr      x1, [x8]
+     0xfffffff009c3e5c4  bl       #0xfffffff009c498d4
+     0xfffffff009c3e5c8  cbz      x0, #0xfffffff009c3e604
+     0xfffffff009c3e5cc  mov      x19, x0
+     0xfffffff009c3e5d0  str      xzr, [sp, #0x10]
+     0xfffffff009c3e5d4  ldr      x16, [x21, #0xf8]!
+     0xfffffff009c3e5d8  cbz      x16, #0xfffffff009c3e660
+     0xfffffff009c3e5dc  mov      x17, x21
+     0xfffffff009c3e5e0  movk     x17, #0xd024, lsl #48
+     0xfffffff009c3e5e4  autda    x16, x17
+     0xfffffff009c3e5e8  mov      x17, x16
+     0xfffffff009c3e5ec  xpacd    x17
+     0xfffffff009c3e5f0  cmp      x16, x17
+     0xfffffff009c3e5f4  b.eq     #0xfffffff009c3e5fc
+     0xfffffff009c3e5f8  brk      #0xc472
+     0xfffffff009c3e5fc  mov      x0, x16
+     0xfffffff009c3e600  b        #0xfffffff009c3e664
+     0xfffffff009c3e604  cbz      x22, #0xfffffff009c3e628
+     0xfffffff009c3e608  ldr      x16, [x22]
+     0xfffffff009c3e60c  mov      x17, x22
+     0xfffffff009c3e610  movk     x17, #0xcda1, lsl #48
+     0xfffffff009c3e614  autda    x16, x17
+     0xfffffff009c3e618  ldr      x8, [x16, #0x28]!
+     0xfffffff009c3e61c  mov      x0, x22
+     0xfffffff009c3e620  movk     x16, #0x3a87, lsl #48
+     0xfffffff009c3e624  blraa    x8, x16
+
+===== fffffff009c3e8ac  OSUnserialize(stub)   func~fffffff009c3e5fc (+0x2b0)
+  strings: ensure_memory_pool_memory | flush_memory_pool
+   .. 0xfffffff009c3e84c  b.ne     #0xfffffff009c3e868
+   .. 0xfffffff009c3e850  mov      x0, x20
+   .. 0xfffffff009c3e854  ldp      x29, x30, [sp, #0x40]
+   .. 0xfffffff009c3e858  ldp      x20, x19, [sp, #0x30]
+   .. 0xfffffff009c3e85c  ldp      x22, x21, [sp, #0x20]
+   .. 0xfffffff009c3e860  add      sp, sp, #0x50
+  >>
+     0xfffffff009c3e8ac  bl       #0xfffffff009c49764
+     0xfffffff009c3e8b0  mov      x22, x0
+     0xfffffff009c3e8b4  adrp     x8, #0xfffffff00806c000
+     0xfffffff009c3e8b8  ldr      x8, [x8, #0x9c8]
+     0xfffffff009c3e8bc  ldr      x1, [x8]
+     0xfffffff009c3e8c0  bl       #0xfffffff009c498d4
+     0xfffffff009c3e8c4  cbz      x0, #0xfffffff009c3e900
+     0xfffffff009c3e8c8  mov      x19, x0
+     0xfffffff009c3e8cc  str      xzr, [sp, #0x10]
+     0xfffffff009c3e8d0  ldr      x16, [x21, #0xf8]!
+     0xfffffff009c3e8d4  cbz      x16, #0xfffffff009c3e95c
+     0xfffffff009c3e8d8  mov      x17, x21
+     0xfffffff009c3e8dc  movk     x17, #0xd024, lsl #48
+     0xfffffff009c3e8e0  autda    x16, x17
+     0xfffffff009c3e8e4  mov      x17, x16
+     0xfffffff009c3e8e8  xpacd    x17
+     0xfffffff009c3e8ec  cmp      x16, x17
+     0xfffffff009c3e8f0  b.eq     #0xfffffff009c3e8f8
+     0xfffffff009c3e8f4  brk      #0xc472
+     0xfffffff009c3e8f8  mov      x0, x16
+     0xfffffff009c3e8fc  b        #0xfffffff009c3e960
+     0xfffffff009c3e900  cbz      x22, #0xfffffff009c3e924
+     0xfffffff009c3e904  ldr      x16, [x22]
+     0xfffffff009c3e908  mov      x17, x22
+     0xfffffff009c3e90c  movk     x17, #0xcda1, lsl #48
+     0xfffffff009c3e910  autda    x16, x17
+     0xfffffff009c3e914  ldr      x8, [x16, #0x28]!
+     0xfffffff009c3e918  mov      x0, x22
+     0xfffffff009c3e91c  movk     x16, #0x3a87, lsl #48
+     0xfffffff009c3e920  blraa    x8, x16
+
+===== fffffff009e93bcc  OSUnserialize(stub)   func~fffffff009e93b0c (+0xc0)
+  strings: 
+   .. 0xfffffff009e93b6c  b        #0xfffffff009e93ae8
+   .. 0xfffffff009e93b70  ldr      x16, [x21]
+   .. 0xfffffff009e93b74  autda    x16, x27
+   .. 0xfffffff009e93b78  ldr      x8, [x16, #0xb0]!
+   .. 0xfffffff009e93b7c  mov      x0, x21
+   .. 0xfffffff009e93b80  movk     x16, #0xb392, lsl #48
+  >>
+     0xfffffff009e93bcc  bl       #0xfffffff009e9896c
+     0xfffffff009e93bd0  cbz      x0, #0xfffffff009e93c1c
+     0xfffffff009e93bd4  mov      x25, x0
+     0xfffffff009e93bd8  adrp     x8, #0xfffffff0080b6000
+     0xfffffff009e93bdc  ldr      x8, [x8, #0x7f0]
+     0xfffffff009e93be0  ldr      x1, [x8]
+     0xfffffff009e93be4  bl       #0xfffffff009e98a1c
+     0xfffffff009e93be8  mov      x23, x0
+     0xfffffff009e93bec  cbnz     x0, #0xfffffff009e93c20
+     0xfffffff009e93bf0  ldr      x16, [x25]
+     0xfffffff009e93bf4  mov      x17, x25
+     0xfffffff009e93bf8  movk     x17, #0xcda1, lsl #48
+     0xfffffff009e93bfc  autda    x16, x17
+     0xfffffff009e93c00  ldr      x8, [x16, #0x28]!
+     0xfffffff009e93c04  mov      x0, x25
+     0xfffffff009e93c08  movk     x16, #0x3a87, lsl #48
+     0xfffffff009e93c0c  blraa    x8, x16
+     0xfffffff009e93c10  b        #0xfffffff009e93c20
+     0xfffffff009e93c14  mov      x23, #0
+     0xfffffff009e93c18  b        #0xfffffff009e93c2c
+     0xfffffff009e93c1c  mov      x23, #0
+     0xfffffff009e93c20  mov      x0, x24
+     0xfffffff009e93c24  mov      x1, x22
+     0xfffffff009e93c28  bl       #0xfffffff009e9889c
+     0xfffffff009e93c2c  ldr      x16, [x21]
+     0xfffffff009e93c30  autda    x16, x27
+     0xfffffff009e93c34  ldr      x8, [x16, #0xe0]!
+     0xfffffff009e93c38  mov      x0, x21
+     0xfffffff009e93c3c  mov      w1, #0
+     0xfffffff009e93c40  movk     x16, #0x9285, lsl #48
+
+===== fffffff009ee3080  OSUnserialize(stub)   func~fffffff009ee3040 (+0x40)
+  strings:  IOgPTPPlugin assertion FailIfNULLWithAction "%s" failed in %s at line %d goto Exit.  | NULL == unserialised | UTCEpoch | UTCOffset
+   .. 0xfffffff009ee3020  movk     x17, #0xcd74, lsl #48
+   .. 0xfffffff009ee3024  braa     x16, x17
+   .. 0xfffffff009ee3028  ldp      x29, x30, [sp, #0x40]
+   .. 0xfffffff009ee302c  ldp      x20, x19, [sp, #0x30]
+   .. 0xfffffff009ee3030  ldp      x22, x21, [sp, #0x20]
+   .. 0xfffffff009ee3034  ldp      x24, x23, [sp, #0x10]
+  >>
+     0xfffffff009ee3080  bl       #0xfffffff009f0942c
+     0xfffffff009ee3084  mov      x19, x0
+     0xfffffff009ee3088  ldr      x8, [sp, #0x18]
+     0xfffffff009ee308c  cbz      x8, #0xfffffff009ee3130
+     0xfffffff009ee3090  cbnz     x19, #0xfffffff009ee3134
+     0xfffffff009ee3094  mov      w8, #0xd01
+     0xfffffff009ee3098  str      x8, [sp, #0x10]
+     0xfffffff009ee309c  adrp     x8, #0xfffffff00790c000
+     0xfffffff009ee30a0  add      x8, x8, #0xb13
+     0xfffffff009ee30a4  adrp     x9, #0xfffffff00790d000
+     0xfffffff009ee30a8  add      x9, x9, #0x67d
+     0xfffffff009ee30ac  stp      x9, x8, [sp]
+     0xfffffff009ee30b0  adrp     x19, #0xfffffff007907000
+     0xfffffff009ee30b4  add      x19, x19, #0x590
+     0xfffffff009ee30b8  adrp     x20, #0xfffffff0080c6000
+     0xfffffff009ee30bc  ldr      x20, [x20, #0x698]
+     0xfffffff009ee30c0  adrp     x3, #0xfffffff007923000
+     0xfffffff009ee30c4  add      x3, x3, #0x802
+     0xfffffff009ee30c8  mov      x0, x19
+     0xfffffff009ee30cc  mov      x1, x20
+     0xfffffff009ee30d0  mov      w2, #0
+     0xfffffff009ee30d4  bl       #0xfffffff009f09ddc
+     0xfffffff009ee30d8  ldr      x0, [sp, #0x18]
+     0xfffffff009ee30dc  ldr      x16, [x0]
+     0xfffffff009ee30e0  mov      x17, x0
+     0xfffffff009ee30e4  movk     x17, #0xcda1, lsl #48
+     0xfffffff009ee30e8  autda    x16, x17
+     0xfffffff009ee30ec  ldr      x8, [x16, #0xa8]!
+     0xfffffff009ee30f0  movk     x16, #0x2987, lsl #48
+     0xfffffff009ee30f4  blraa    x8, x16
+
+===== fffffff009f397ac  OSUnserialize(stub)   func~fffffff009f39714 (+0x98)
+  strings: 
+   .. 0xfffffff009f3974c  mov      x17, x8
+   .. 0xfffffff009f39750  movk     x17, #0x4a6a, lsl #48
+   .. 0xfffffff009f39754  blraa    x9, x17
+   .. 0xfffffff009f39758  cbz      w0, #0xfffffff009f39958
+   .. 0xfffffff009f3975c  ldr      x16, [x20]
+   .. 0xfffffff009f39760  mov      x17, x20
+  >>
+     0xfffffff009f397ac  bl       #0xfffffff009f6f1c8
+     0xfffffff009f397b0  adrp     x8, #0xfffffff0080d8000
+     0xfffffff009f397b4  ldr      x8, [x8, #0x310]
+     0xfffffff009f397b8  ldr      x21, [x8]
+     0xfffffff009f397bc  mov      x1, x21
+     0xfffffff009f397c0  bl       #0xfffffff009f6f408
+     0xfffffff009f397c4  cbz      x0, #0xfffffff009f39958
+     0xfffffff009f397c8  mov      x20, x0
+     0xfffffff009f397cc  adrp     x8, #0xfffffff00af4d000
+     0xfffffff009f397d0  ldr      x1, [x8, #0xe30]
+     0xfffffff009f397d4  ldr      x16, [x0]
+     0xfffffff009f397d8  mov      x24, x0
+     0xfffffff009f397dc  movk     x24, #0xcda1, lsl #48
+     0xfffffff009f397e0  mov      x17, x0
+     0xfffffff009f397e4  movk     x17, #0xcda1, lsl #48
+     0xfffffff009f397e8  autda    x16, x17
+     0xfffffff009f397ec  mov      x17, #0x138
+     0xfffffff009f397f0  add      x16, x16, x17
+     0xfffffff009f397f4  ldr      x8, [x16]
+     0xfffffff009f397f8  movk     x16, #0x2e3b, lsl #48
+     0xfffffff009f397fc  blraa    x8, x16
+     0xfffffff009f39800  mov      x1, x21
+     0xfffffff009f39804  bl       #0xfffffff009f6f408
+     0xfffffff009f39808  str      x0, [x19, #0x18]
+     0xfffffff009f3980c  cbz      x0, #0xfffffff009f3982c
+     0xfffffff009f39810  ldr      x16, [x0]
+     0xfffffff009f39814  mov      x17, x0
+     0xfffffff009f39818  movk     x17, #0xcda1, lsl #48
+     0xfffffff009f3981c  autda    x16, x17
+     0xfffffff009f39820  ldr      x8, [x16, #0x20]!
+
+===== fffffff009f83320  OSUnserialize(stub)   func~fffffff009f82d00 (+0x620)
+  strings: /chosen | <none> | <unknown> | CoreAnalyticsHub | Exclude from data collection | PrivateCloudOS detected | Protobox | com.apple.sandbox.reporting | darwinos-security-environment | failed to allocate IOKit matching dictionary for %s | kern.hv_vmm_present | md0 | sandbox.profiles | sandbox.sandboxes | sandbox.syscallmasks | sb_serial_reporting | violation | virtual machine detected
+   .. 0xfffffff009f832c0  add      x3, x3, #0xfb0
+   .. 0xfffffff009f832c4  mov      w0, #0xf
+   .. 0xfffffff009f832c8  mov      w2, #0
+   .. 0xfffffff009f832cc  bl       #0xfffffff009fa9178
+   .. 0xfffffff009f832d0  adrp     x1, #0xfffffff007b40000
+   .. 0xfffffff009f832d4  add      x1, x1, #0x7c3
+  >>
+     0xfffffff009f83320  bl       #0xfffffff009fa975c
+     0xfffffff009f83324  cbz      x0, #0xfffffff009f83754
+     0xfffffff009f83328  mov      x19, x0
+     0xfffffff009f8332c  adrp     x8, #0xfffffff0080dd000
+     0xfffffff009f83330  ldr      x8, [x8, #0x720]
+     0xfffffff009f83334  ldr      x21, [x8]
+     0xfffffff009f83338  mov      x1, x21
+     0xfffffff009f8333c  bl       #0xfffffff009fa97ac
+     0xfffffff009f83340  cbz      x0, #0xfffffff009f8377c
+     0xfffffff009f83344  mov      x22, x0
+     0xfffffff009f83348  mov      w0, #2
+     0xfffffff009f8334c  bl       #0xfffffff009fa977c
+     0xfffffff009f83350  mov      x20, x0
+     0xfffffff009f83354  cbz      x0, #0xfffffff009f838f0
+     0xfffffff009f83358  ldr      x16, [x22]
+     0xfffffff009f8335c  mov      x17, x22
+     0xfffffff009f83360  movk     x17, #0xcda1, lsl #48
+     0xfffffff009f83364  autda    x16, x17
+     0xfffffff009f83368  mov      x17, #0x138
+     0xfffffff009f8336c  add      x16, x16, x17
+     0xfffffff009f83370  ldr      x8, [x16]
+     0xfffffff009f83374  adrp     x23, #0xfffffff007b3d000
+     0xfffffff009f83378  add      x23, x23, #0xe6
+     0xfffffff009f8337c  mov      x0, x22
+     0xfffffff009f83380  mov      x1, x23
+     0xfffffff009f83384  movk     x16, #0x2e3b, lsl #48
+     0xfffffff009f83388  blraa    x8, x16
+     0xfffffff009f8338c  mov      x1, x21
+     0xfffffff009f83390  bl       #0xfffffff009fa97ac
+     0xfffffff009f83394  mov      x22, x0
+
+===== fffffff00a8b6798  sub_fffffff00a8d846c   func~fffffff00a8b5184 (+0x1614)
+  strings: (unknown error) | CFBundlePackageType | CFBundleUEXTExecutable | Can't translate physical address 0x%x of kext info dictionary for device tree entry %s. | DEXT | Error unserializing info dictionary for device tree entry %s: %s. | Failed to allocate space for prelinked kext %s. | Failed to create wrapper for device tree entry %s kext path %s. | IOKitPersonalities | Invalid KC Kind @%s:%d | Kext %s can't find prelinked kext executable size. | Kext %s can't find prelinked kext kmod_info address. | Kext %s failed to create executable wrapper. | Kext %s failed to save mutable segment %llx->%llx. | ModuleIndex | No booter-provided data for kext device tree entry %s. | No kext info dictionary for booter device tree entry %s. | OSBundleAllowUserLoad | OSBundleRequireExplicitLoad | OSMutableSegmentCopy | Saving kext %s mutable segment %.*s %llx->%llx. | _PrelinkBundlePath | _PrelinkExecutableLoadAddr | _PrelinkExecutableRelativePath
+   .. 0xfffffff00a8b6738  ldr      x8, [x16, #0xa8]!
+   .. 0xfffffff00a8b673c  mov      x0, x22
+   .. 0xfffffff00a8b6740  movk     x16, #0x2987, lsl #48
+   .. 0xfffffff00a8b6744  blraa    x8, x16
+   .. 0xfffffff00a8b6748  str      x0, [sp]
+   .. 0xfffffff00a8b674c  adrp     x2, #0xfffffff0070aa000
+  >>
+     0xfffffff00a8b6798  bl       #0xfffffff00a8d846c
+     0xfffffff00a8b679c  mov      x19, x0
+     0xfffffff00a8b67a0  ldr      x20, [sp, #0x18]
+     0xfffffff00a8b67a4  cbz      x0, #0xfffffff00a8b67e4
+     0xfffffff00a8b67a8  ldr      x16, [x19]
+     0xfffffff00a8b67ac  mov      x17, x19
+     0xfffffff00a8b67b0  movk     x17, #0xcda1, lsl #48
+     0xfffffff00a8b67b4  autda    x16, x17
+     0xfffffff00a8b67b8  ldr      x8, [x16, #0x38]!
+     0xfffffff00a8b67bc  mov      x0, x19
+     0xfffffff00a8b67c0  movk     x16, #0xfffc, lsl #48
+     0xfffffff00a8b67c4  blraa    x8, x16
+     0xfffffff00a8b67c8  mov      x8, x26
+     0xfffffff00a8b67cc  adrp     x9, #0xfffffff00ad95000
+     0xfffffff00a8b67d0  add      x9, x9, #0xc70
+     0xfffffff00a8b67d4  cmp      x0, x9
+     0xfffffff00a8b67d8  b.eq     #0xfffffff00a8b690c
+     0xfffffff00a8b67dc  ldr      x0, [x0, #0x10]
+     0xfffffff00a8b67e0  cbnz     x0, #0xfffffff00a8b67d4
+     0xfffffff00a8b67e4  cbz      x20, #0xfffffff00a8b6834
+     0xfffffff00a8b67e8  ldr      x16, [x20]
+     0xfffffff00a8b67ec  mov      x17, x20
+     0xfffffff00a8b67f0  movk     x17, #0xcda1, lsl #48
+     0xfffffff00a8b67f4  autda    x16, x17
+     0xfffffff00a8b67f8  ldr      x8, [x16, #0xa8]!
+     0xfffffff00a8b67fc  mov      x0, x20
+     0xfffffff00a8b6800  movk     x16, #0x2987, lsl #48
+     0xfffffff00a8b6804  blraa    x8, x16
+     0xfffffff00a8b6808  cbz      x0, #0xfffffff00a8b6834
+     0xfffffff00a8b680c  mov      x8, x20
+
+===== fffffff00a8c0a28  sub_fffffff00a8d846c   func~fffffff00a8c08e4 (+0x144)
+  strings: (unknown error) | Error unserializing request from user space: %s. | Invalid request from user space (not nul-terminated). | __LINKEDIT | not a dictionary
+   .. 0xfffffff00a8c09c8  mov      w1, #0x41
+   .. 0xfffffff00a8c09cc  bl       #0xfffffff00a8a2484
+   .. 0xfffffff00a8c09d0  mov      x21, #0
+   .. 0xfffffff00a8c09d4  mov      x20, #0
+   .. 0xfffffff00a8c09d8  mov      x27, #0
+   .. 0xfffffff00a8c09dc  mov      x26, #0
+  >>
+     0xfffffff00a8c0a28  bl       #0xfffffff00a8d846c
+     0xfffffff00a8c0a2c  mov      x20, x0
+     0xfffffff00a8c0a30  ldr      x21, [sp, #0x48]
+     0xfffffff00a8c0a34  cbz      x0, #0xfffffff00a8c0a78
+     0xfffffff00a8c0a38  ldr      x16, [x20]
+     0xfffffff00a8c0a3c  mov      x28, x20
+     0xfffffff00a8c0a40  movk     x28, #0xcda1, lsl #48
+     0xfffffff00a8c0a44  mov      x17, x20
+     0xfffffff00a8c0a48  movk     x17, #0xcda1, lsl #48
+     0xfffffff00a8c0a4c  autda    x16, x17
+     0xfffffff00a8c0a50  ldr      x8, [x16, #0x38]!
+     0xfffffff00a8c0a54  mov      x0, x20
+     0xfffffff00a8c0a58  movk     x16, #0xfffc, lsl #48
+     0xfffffff00a8c0a5c  blraa    x8, x16
+     0xfffffff00a8c0a60  adrp     x27, #0xfffffff00ad95000
+     0xfffffff00a8c0a64  add      x27, x27, #0xc70
+     0xfffffff00a8c0a68  cmp      x0, x27
+     0xfffffff00a8c0a6c  b.eq     #0xfffffff00a8c0c78
+     0xfffffff00a8c0a70  ldr      x0, [x0, #0x10]
+     0xfffffff00a8c0a74  cbnz     x0, #0xfffffff00a8c0a68
+     0xfffffff00a8c0a78  cbz      x21, #0xfffffff00a8c0ac4
+     0xfffffff00a8c0a7c  ldr      x16, [x21]
+     0xfffffff00a8c0a80  mov      x17, x21
+     0xfffffff00a8c0a84  movk     x17, #0xcda1, lsl #48
+     0xfffffff00a8c0a88  autda    x16, x17
+     0xfffffff00a8c0a8c  ldr      x8, [x16, #0xa8]!
+     0xfffffff00a8c0a90  mov      x0, x21
+     0xfffffff00a8c0a94  movk     x16, #0x2987, lsl #48
+     0xfffffff00a8c0a98  blraa    x8, x16
+     0xfffffff00a8c0a9c  cbz      x0, #0xfffffff00a8c0ac4
+
+===== fffffff00a8d8568  sub_fffffff00a8d5ea4   func~fffffff00a8d7fac (+0x5bc)
+  strings: 
+   .. 0xfffffff00a8d8508  movk     x17, #0xcda1, lsl #48
+   .. 0xfffffff00a8d850c  autda    x16, x17
+   .. 0xfffffff00a8d8510  ldr      x8, [x16, #0xd0]!
+   .. 0xfffffff00a8d8514  mov      x0, x24
+   .. 0xfffffff00a8d8518  mov      w1, #0x80
+   .. 0xfffffff00a8d851c  movk     x16, #0x9c02, lsl #48
+  >>
+     0xfffffff00a8d8568  bl       #0xfffffff00a8d5ea4
+     0xfffffff00a8d856c  ldr      x20, [x19, #0x30]
+     0xfffffff00a8d8570  ldr      x21, [x19, #0x10]
+     0xfffffff00a8d8574  cbz      x21, #0xfffffff00a8d8618
+     0xfffffff00a8d8578  adrp     x22, #0xfffffff007c7c000
+     0xfffffff00a8d857c  add      x22, x22, #0x390
+     0xfffffff00a8d8580  adrp     x23, #0xfffffff007c6a000
+     0xfffffff00a8d8584  add      x23, x23, #0xfb0
+     0xfffffff00a8d8588  b        #0xfffffff00a8d85a4
+     0xfffffff00a8d858c  ldr      x24, [x21, #8]
+     0xfffffff00a8d8590  mov      x0, x22
+     0xfffffff00a8d8594  mov      x1, x21
+     0xfffffff00a8d8598  bl       #0xfffffff00a29762c
+     0xfffffff00a8d859c  mov      x21, x24
+     0xfffffff00a8d85a0  cbz      x24, #0xfffffff00a8d8618
+     0xfffffff00a8d85a4  ldr      x0, [x21, #0x18]
+     0xfffffff00a8d85a8  cbz      x0, #0xfffffff00a8d85c8
+     0xfffffff00a8d85ac  ldr      x16, [x0]
+     0xfffffff00a8d85b0  mov      x17, x0
+     0xfffffff00a8d85b4  movk     x17, #0xcda1, lsl #48
+     0xfffffff00a8d85b8  autda    x16, x17
+     0xfffffff00a8d85bc  ldr      x8, [x16, #0x28]!
+     0xfffffff00a8d85c0  movk     x16, #0x3a87, lsl #48
+     0xfffffff00a8d85c4  blraa    x8, x16
+     0xfffffff00a8d85c8  ldr      x1, [x21, #0x30]
+     0xfffffff00a8d85cc  cbz      x1, #0xfffffff00a8d85d8
+     0xfffffff00a8d85d0  mov      x0, x23
+     0xfffffff00a8d85d4  bl       #0xfffffff00a2214fc
+     0xfffffff00a8d85d8  ldr      x0, [x21, #0x20]
+     0xfffffff00a8d85dc  cbz      x0, #0xfffffff00a8d85fc
+
+===== fffffff00a8d8674  sub_fffffff00a8d846c   func~fffffff00a8d8660 (+0x14)
+  strings: 
+   .. 0xfffffff00a8d8614  b        #0xfffffff00a8d8648
+   .. 0xfffffff00a8d8618  ldr      x0, [x19, #0x20]
+   .. 0xfffffff00a8d861c  ldr      x16, [x0]
+   .. 0xfffffff00a8d8620  mov      x17, x0
+   .. 0xfffffff00a8d8624  movk     x17, #0xcda1, lsl #48
+   .. 0xfffffff00a8d8628  autda    x16, x17
+  >>
+     0xfffffff00a8d8674  b        #0xfffffff00a8d846c
+     0xfffffff00a8d8678  pacibsp  
+     0xfffffff00a8d867c  stp      x24, x23, [sp, #-0x40]!
+     0xfffffff00a8d8680  stp      x22, x21, [sp, #0x10]
+     0xfffffff00a8d8684  stp      x20, x19, [sp, #0x20]
+     0xfffffff00a8d8688  stp      x29, x30, [sp, #0x30]
+     0xfffffff00a8d868c  add      x29, sp, #0x30
+     0xfffffff00a8d8690  cbz      x0, #0xfffffff00a8d8710
+     0xfffffff00a8d8694  cmp      x1, #4
+     0xfffffff00a8d8698  b.lo     #0xfffffff00a8d8710
+     0xfffffff00a8d869c  mov      x19, x0
+     0xfffffff00a8d86a0  mov      x24, x1
+     0xfffffff00a8d86a4  mov      x23, x2
+     0xfffffff00a8d86a8  mov      x22, x3
+     0xfffffff00a8d86ac  mov      x21, x4
+     0xfffffff00a8d86b0  mov      x20, x5
+     0xfffffff00a8d86b4  adrp     x0, #0xfffffff007043000
+     0xfffffff00a8d86b8  add      x0, x0, #0xa08
+     0xfffffff00a8d86bc  mov      x1, x19
+     0xfffffff00a8d86c0  bl       #0xfffffff00aa7451c
+     0xfffffff00a8d86c4  cbz      w0, #0xfffffff00a8d86d4
+     0xfffffff00a8d86c8  ldrb     w8, [x19]
+     0xfffffff00a8d86cc  cmp      w8, #0xd4
+     0xfffffff00a8d86d0  b.ne     #0xfffffff00a8d8704
+     0xfffffff00a8d86d4  mov      x0, x19
+     0xfffffff00a8d86d8  mov      x1, x24
+     0xfffffff00a8d86dc  mov      x2, x23
+     0xfffffff00a8d86e0  mov      x3, x22
+     0xfffffff00a8d86e4  mov      x4, x21
+     0xfffffff00a8d86e8  mov      x5, x20
+
+===== fffffff00a8d8750  sub_fffffff00a8d846c   func~fffffff00a8d8728 (+0x28)
+  strings: 
+   .. 0xfffffff00a8d86f0  ldp      x20, x19, [sp, #0x20]
+   .. 0xfffffff00a8d86f4  ldp      x22, x21, [sp, #0x10]
+   .. 0xfffffff00a8d86f8  ldp      x24, x23, [sp], #0x40
+   .. 0xfffffff00a8d86fc  autibsp  
+   .. 0xfffffff00a8d8700  b        #0xfffffff00a8d96f4
+   .. 0xfffffff00a8d8704  sub      x8, x24, #1
+  >>
+     0xfffffff00a8d8750  b        #0xfffffff00a8d846c
+     0xfffffff00a8d8754  pacibsp  
+     0xfffffff00a8d8758  stp      x22, x21, [sp, #-0x30]!
+     0xfffffff00a8d875c  stp      x20, x19, [sp, #0x10]
+     0xfffffff00a8d8760  stp      x29, x30, [sp, #0x20]
+     0xfffffff00a8d8764  add      x29, sp, #0x20
+     0xfffffff00a8d8768  cbz      x0, #0xfffffff00a8d87d8
+     0xfffffff00a8d876c  cmp      x1, #4
+     0xfffffff00a8d8770  b.lo     #0xfffffff00a8d87d8
+     0xfffffff00a8d8774  mov      x19, x2
+     0xfffffff00a8d8778  mov      x20, x0
+     0xfffffff00a8d877c  mov      x21, x1
+     0xfffffff00a8d8780  adrp     x0, #0xfffffff007043000
+     0xfffffff00a8d8784  add      x0, x0, #0xa08
+     0xfffffff00a8d8788  mov      x1, x20
+     0xfffffff00a8d878c  bl       #0xfffffff00aa7451c
+     0xfffffff00a8d8790  cbz      w0, #0xfffffff00a8d87a0
+     0xfffffff00a8d8794  ldrb     w8, [x20]
+     0xfffffff00a8d8798  cmp      w8, #0xd4
+     0xfffffff00a8d879c  b.ne     #0xfffffff00a8d87cc
+     0xfffffff00a8d87a0  mov      x0, x20
+     0xfffffff00a8d87a4  mov      x1, x21
+     0xfffffff00a8d87a8  mov      x2, #0
+     0xfffffff00a8d87ac  mov      x3, #0
+     0xfffffff00a8d87b0  mov      w4, #0
+     0xfffffff00a8d87b4  mov      x5, x19
+     0xfffffff00a8d87b8  ldp      x29, x30, [sp, #0x20]
+     0xfffffff00a8d87bc  ldp      x20, x19, [sp, #0x10]
+     0xfffffff00a8d87c0  ldp      x22, x21, [sp], #0x30
+     0xfffffff00a8d87c4  autibsp  
+
+===== fffffff00a8d8810  sub_fffffff00a8d846c   func~fffffff00a8d87ec (+0x24)
+  strings: 
+   .. 0xfffffff00a8d87b0  mov      w4, #0
+   .. 0xfffffff00a8d87b4  mov      x5, x19
+   .. 0xfffffff00a8d87b8  ldp      x29, x30, [sp, #0x20]
+   .. 0xfffffff00a8d87bc  ldp      x20, x19, [sp, #0x10]
+   .. 0xfffffff00a8d87c0  ldp      x22, x21, [sp], #0x30
+   .. 0xfffffff00a8d87c4  autibsp  
+  >>
+     0xfffffff00a8d8810  b        #0xfffffff00a8d846c
+     0xfffffff00a8d8814  bti      c
+     0xfffffff00a8d8818  cmp      w0, #4
+     0xfffffff00a8d881c  b.hs     #0xfffffff00a8d8828
+     0xfffffff00a8d8820  mov      x0, #0
+     0xfffffff00a8d8824  ret      
+     0xfffffff00a8d8828  pacibsp  
+     0xfffffff00a8d882c  stp      x22, x21, [sp, #-0x30]!
+     0xfffffff00a8d8830  stp      x20, x19, [sp, #0x10]
+     0xfffffff00a8d8834  stp      x29, x30, [sp, #0x20]
+     0xfffffff00a8d8838  add      x29, sp, #0x20
+     0xfffffff00a8d883c  mov      x19, x0
+     0xfffffff00a8d8840  mov      x22, x1
+     0xfffffff00a8d8844  mov      x21, x2
+     0xfffffff00a8d8848  adrp     x0, #0xfffffff00ad95000
+     0xfffffff00a8d884c  add      x0, x0, #0xe18
+     0xfffffff00a8d8850  ldr      x16, [x0]
+     0xfffffff00a8d8854  mov      x17, x0
+     0xfffffff00a8d8858  movk     x17, #0xcda1, lsl #48
+     0xfffffff00a8d885c  autda    x16, x17
+     0xfffffff00a8d8860  ldr      x8, [x16, #0x68]!
+     0xfffffff00a8d8864  movk     x16, #0x1601, lsl #48
+     0xfffffff00a8d8868  blraa    x8, x16
+     0xfffffff00a8d886c  cbz      x0, #0xfffffff00a8d8968
+     0xfffffff00a8d8870  ldr      x16, [x0]
+     0xfffffff00a8d8874  mov      x17, x0
+     0xfffffff00a8d8878  movk     x17, #0xcda1, lsl #48
+     0xfffffff00a8d887c  autda    x16, x17
+     0xfffffff00a8d8880  ldr      x8, [x16, #0xb0]!
+     0xfffffff00a8d8884  mov      x20, x0
+
+===== fffffff00a8da420  sub_fffffff00a8d846c   func~fffffff00a8d96f4 (+0xd2c)
+  strings: OSValueObject<int>
+   .. 0xfffffff00a8da3c0  ubfiz    x2, x23, #3, #0x20
+   .. 0xfffffff00a8da3c4  adrp     x8, #0xfffffff007c87000
+   .. 0xfffffff00a8da3c8  add      x8, x8, #0x690
+   .. 0xfffffff00a8da3cc  orr      x0, x8, #1
+   .. 0xfffffff00a8da3d0  ldr      x1, [sp, #0x10]
+   .. 0xfffffff00a8da3d4  bl       #0xfffffff00a2212a8
+  >>
+     0xfffffff00a8da420  bl       #0xfffffff00a8d846c
+     0xfffffff00a8da424  ldr      x20, [sp, #8]
+     0xfffffff00a8da428  ldr      x8, [x19]
+     0xfffffff00a8da42c  cbz      x8, #0xfffffff00a8da458
+     0xfffffff00a8da430  ldr      x16, [x8]
+     0xfffffff00a8da434  mov      x17, x8
+     0xfffffff00a8da438  movk     x17, #0xcda1, lsl #48
+     0xfffffff00a8da43c  autda    x16, x17
+     0xfffffff00a8da440  ldr      x9, [x16, #0x28]!
+     0xfffffff00a8da444  mov      x21, x0
+     0xfffffff00a8da448  mov      x0, x8
+     0xfffffff00a8da44c  movk     x16, #0x3a87, lsl #48
+     0xfffffff00a8da450  blraa    x9, x16
+     0xfffffff00a8da454  mov      x0, x21
+     0xfffffff00a8da458  str      x20, [x19]
+     0xfffffff00a8da45c  ldp      x29, x30, [sp, #0x30]
+     0xfffffff00a8da460  ldp      x20, x19, [sp, #0x20]
+     0xfffffff00a8da464  ldp      x22, x21, [sp, #0x10]
+     0xfffffff00a8da468  add      sp, sp, #0x40
+     0xfffffff00a8da46c  retab    
+     0xfffffff00a8da470  pacibsp  
+     0xfffffff00a8da474  sub      sp, sp, #0x40
+     0xfffffff00a8da478  stp      x22, x21, [sp, #0x10]
+     0xfffffff00a8da47c  stp      x20, x19, [sp, #0x20]
+     0xfffffff00a8da480  stp      x29, x30, [sp, #0x30]
+     0xfffffff00a8da484  add      x29, sp, #0x30
+     0xfffffff00a8da488  mov      x19, x1
+     0xfffffff00a8da48c  str      xzr, [sp, #8]
+     0xfffffff00a8da490  add      x4, sp, #8
+     0xfffffff00a8da494  mov      x1, #0
+
+===== fffffff00a8da4a0  sub_fffffff00a8d846c   func~fffffff00a8da470 (+0x30)
+  strings: OSValueObject<int>
+   .. 0xfffffff00a8da440  ldr      x9, [x16, #0x28]!
+   .. 0xfffffff00a8da444  mov      x21, x0
+   .. 0xfffffff00a8da448  mov      x0, x8
+   .. 0xfffffff00a8da44c  movk     x16, #0x3a87, lsl #48
+   .. 0xfffffff00a8da450  blraa    x9, x16
+   .. 0xfffffff00a8da454  mov      x0, x21
+  >>
+     0xfffffff00a8da4a0  bl       #0xfffffff00a8d846c
+     0xfffffff00a8da4a4  ldr      x20, [sp, #8]
+     0xfffffff00a8da4a8  ldr      x8, [x19]
+     0xfffffff00a8da4ac  cbz      x8, #0xfffffff00a8da4d8
+     0xfffffff00a8da4b0  ldr      x16, [x8]
+     0xfffffff00a8da4b4  mov      x17, x8
+     0xfffffff00a8da4b8  movk     x17, #0xcda1, lsl #48
+     0xfffffff00a8da4bc  autda    x16, x17
+     0xfffffff00a8da4c0  ldr      x9, [x16, #0x28]!
+     0xfffffff00a8da4c4  mov      x21, x0
+     0xfffffff00a8da4c8  mov      x0, x8
+     0xfffffff00a8da4cc  movk     x16, #0x3a87, lsl #48
+     0xfffffff00a8da4d0  blraa    x9, x16
+     0xfffffff00a8da4d4  mov      x0, x21
+     0xfffffff00a8da4d8  str      x20, [x19]
+     0xfffffff00a8da4dc  ldp      x29, x30, [sp, #0x30]
+     0xfffffff00a8da4e0  ldp      x20, x19, [sp, #0x20]
+     0xfffffff00a8da4e4  ldp      x22, x21, [sp, #0x10]
+     0xfffffff00a8da4e8  add      sp, sp, #0x40
+     0xfffffff00a8da4ec  retab    
+     0xfffffff00a8da4f0  pacibsp  
+     0xfffffff00a8da4f4  sub      sp, sp, #0x40
+     0xfffffff00a8da4f8  stp      x22, x21, [sp, #0x10]
+     0xfffffff00a8da4fc  stp      x20, x19, [sp, #0x20]
+     0xfffffff00a8da500  stp      x29, x30, [sp, #0x30]
+     0xfffffff00a8da504  add      x29, sp, #0x30
+     0xfffffff00a8da508  mov      x19, x5
+     0xfffffff00a8da50c  str      xzr, [sp, #8]
+     0xfffffff00a8da510  add      x5, sp, #8
+     0xfffffff00a8da514  bl       #0xfffffff00a8d8678
+
+===== fffffff00a907f18  sub_fffffff00a8d5c98   func~fffffff00a907a58 (+0x4c0)
+  strings: AAPL,ignore
+   .. 0xfffffff00a907eb8  movk     x16, #0x3a87, lsl #48
+   .. 0xfffffff00a907ebc  blraa    x8, x16
+   .. 0xfffffff00a907ec0  str      x21, [x19]
+   .. 0xfffffff00a907ec4  mov      x0, x20
+   .. 0xfffffff00a907ec8  ldp      x29, x30, [sp, #0x30]
+   .. 0xfffffff00a907ecc  ldp      x20, x19, [sp, #0x20]
+  >>
+     0xfffffff00a907f18  bl       #0xfffffff00a8d5c98
+     0xfffffff00a907f1c  cbz      x0, #0xfffffff00a907f7c
+     0xfffffff00a907f20  mov      x19, x0
+     0xfffffff00a907f24  ldr      x16, [x20]
+     0xfffffff00a907f28  mov      x17, x20
+     0xfffffff00a907f2c  movk     x17, #0xcda1, lsl #48
+     0xfffffff00a907f30  autda    x16, x17
+     0xfffffff00a907f34  mov      x17, #0x1f8
+     0xfffffff00a907f38  add      x16, x16, x17
+     0xfffffff00a907f3c  ldr      x8, [x16]
+     0xfffffff00a907f40  mov      x0, x20
+     0xfffffff00a907f44  mov      x1, x19
+     0xfffffff00a907f48  mov      x2, #0
+     0xfffffff00a907f4c  movk     x16, #0xcbcc, lsl #48
+     0xfffffff00a907f50  blraa    x8, x16
+     0xfffffff00a907f54  mov      x20, x0
+     0xfffffff00a907f58  ldr      x16, [x19]
+     0xfffffff00a907f5c  mov      x17, x19
+     0xfffffff00a907f60  movk     x17, #0xcda1, lsl #48
+     0xfffffff00a907f64  autda    x16, x17
+     0xfffffff00a907f68  ldr      x8, [x16, #0x28]!
+     0xfffffff00a907f6c  mov      x0, x19
+     0xfffffff00a907f70  movk     x16, #0x3a87, lsl #48
+     0xfffffff00a907f74  blraa    x8, x16
+     0xfffffff00a907f78  mov      x0, x20
+     0xfffffff00a907f7c  ldp      x29, x30, [sp, #0x10]
+     0xfffffff00a907f80  ldp      x20, x19, [sp], #0x20
+     0xfffffff00a907f84  retab    
+     0xfffffff00a907f88  pacibsp  
+     0xfffffff00a907f8c  sub      sp, sp, #0x70
+
+===== fffffff00a908164  sub_fffffff00a8d5c98   func~fffffff00a907f88 (+0x1dc)
+  strings: AAPL,ignore
+   .. 0xfffffff00a908104  movk     x16, #0x1ac8, lsl #48
+   .. 0xfffffff00a908108  blraa    x8, x16
+   .. 0xfffffff00a90810c  mov      x25, x0
+   .. 0xfffffff00a908110  cbz      x0, #0xfffffff00a907ff0
+   .. 0xfffffff00a908114  ldr      x16, [x25]
+   .. 0xfffffff00a908118  mov      x17, x25
+  >>
+     0xfffffff00a908164  bl       #0xfffffff00a8d5c98
+     0xfffffff00a908168  cbz      x0, #0xfffffff00a9081f8
+     0xfffffff00a90816c  mov      x26, x0
+     0xfffffff00a908170  mov      x8, x25
+     0xfffffff00a908174  movk     x8, #0xcda1, lsl #48
+     0xfffffff00a908178  ldr      w9, [sp, #0xc]
+     0xfffffff00a90817c  mov      x24, x21
+     0xfffffff00a908180  mov      x21, x22
+     0xfffffff00a908184  and      w22, w9, #2
+     0xfffffff00a908188  ldr      x16, [x25]
+     0xfffffff00a90818c  autda    x16, x8
+     0xfffffff00a908190  mov      x17, #0x1f8
+     0xfffffff00a908194  add      x16, x16, x17
+     0xfffffff00a908198  ldr      x8, [x16]
+     0xfffffff00a90819c  mov      x0, x25
+     0xfffffff00a9081a0  mov      x1, x26
+     0xfffffff00a9081a4  mov      x2, #0
+     0xfffffff00a9081a8  movk     x16, #0xcbcc, lsl #48
+     0xfffffff00a9081ac  blraa    x8, x16
+     0xfffffff00a9081b0  mov      x23, x27
+     0xfffffff00a9081b4  mov      x27, x0
+     0xfffffff00a9081b8  ldr      x16, [x26]
+     0xfffffff00a9081bc  mov      x17, x26
+     0xfffffff00a9081c0  movk     x17, #0xcda1, lsl #48
+     0xfffffff00a9081c4  autda    x16, x17
+     0xfffffff00a9081c8  ldr      x8, [x16, #0x28]!
+     0xfffffff00a9081cc  mov      x0, x26
+     0xfffffff00a9081d0  movk     x16, #0x3a87, lsl #48
+     0xfffffff00a9081d4  blraa    x8, x16
+     0xfffffff00a9081d8  cmp      w27, w22, lsr #1
+
+===== fffffff00a951d90  sub_fffffff00a8d5c98   func~fffffff00a951d64 (+0x2c)
+  strings: CFBundleIdentifier | CFBundleIdentifierKernel | IOClass | IOHIDInterface | IOProbeScore
+   .. 0xfffffff00a951d30  adrp     x2, #0xfffffff00ad98000
+   .. 0xfffffff00a951d34  add      x2, x2, #0x798
+   .. 0xfffffff00a951d38  mov      w3, #0x28
+   .. 0xfffffff00a951d3c  bl       #0xfffffff00a894d88
+   .. 0xfffffff00a951d40  adrp     x16, #0xfffffff007c2c000
+   .. 0xfffffff00a951d44  add      x16, x16, #0x160
+  >>
+     0xfffffff00a951d90  bl       #0xfffffff00a8d5c98
+     0xfffffff00a951d94  ldr      x19, [sp, #8]
+     0xfffffff00a951d98  cbz      x0, #0xfffffff00a951df4
+     0xfffffff00a951d9c  mov      x20, x0
+     0xfffffff00a951da0  ldr      x16, [x0]
+     0xfffffff00a951da4  mov      x21, x0
+     0xfffffff00a951da8  movk     x21, #0xcda1, lsl #48
+     0xfffffff00a951dac  mov      x17, x0
+     0xfffffff00a951db0  movk     x17, #0xcda1, lsl #48
+     0xfffffff00a951db4  autda    x16, x17
+     0xfffffff00a951db8  ldr      x8, [x16, #0x38]!
+     0xfffffff00a951dbc  movk     x16, #0xfffc, lsl #48
+     0xfffffff00a951dc0  blraa    x8, x16
+     0xfffffff00a951dc4  adrp     x8, #0xfffffff00ad95000
+     0xfffffff00a951dc8  add      x8, x8, #0xbd0
+     0xfffffff00a951dcc  cmp      x0, x8
+     0xfffffff00a951dd0  b.eq     #0xfffffff00a951e34
+     0xfffffff00a951dd4  ldr      x0, [x0, #0x10]
+     0xfffffff00a951dd8  cbnz     x0, #0xfffffff00a951dcc
+     0xfffffff00a951ddc  ldr      x16, [x20]
+     0xfffffff00a951de0  autda    x16, x21
+     0xfffffff00a951de4  ldr      x8, [x16, #0x28]!
+     0xfffffff00a951de8  mov      x0, x20
+     0xfffffff00a951dec  movk     x16, #0x3a87, lsl #48
+     0xfffffff00a951df0  blraa    x8, x16
+     0xfffffff00a951df4  cbz      x19, #0xfffffff00a951e28
+     0xfffffff00a951df8  ldr      x16, [x19]
+     0xfffffff00a951dfc  mov      x17, x19
+     0xfffffff00a951e00  movk     x17, #0xcda1, lsl #48
+     0xfffffff00a951e04  autda    x16, x17
+
+===== fffffff00a9a8630  OSUnserialize(direct)   func~fffffff00a9a85b8 (+0x78)
+  strings: 
+   .. 0xfffffff00a9a85d0  mov      w19, #0x2c2
+   .. 0xfffffff00a9a85d4  movk     w19, #0xe000, lsl #16
+   .. 0xfffffff00a9a85d8  cbz      x0, #0xfffffff00a9a86d4
+   .. 0xfffffff00a9a85dc  mov      x22, x2
+   .. 0xfffffff00a9a85e0  mov      x21, x1
+   .. 0xfffffff00a9a85e4  mov      x23, x3
+  >>
+     0xfffffff00a9a8630  bl       #0xfffffff00a8d8754
+     0xfffffff00a9a8634  cbz      x0, #0xfffffff00a9a86d4
+     0xfffffff00a9a8638  mov      x21, x0
+     0xfffffff00a9a863c  ldr      x16, [x0]
+     0xfffffff00a9a8640  mov      x22, x0
+     0xfffffff00a9a8644  movk     x22, #0xcda1, lsl #48
+     0xfffffff00a9a8648  mov      x17, x0
+     0xfffffff00a9a864c  movk     x17, #0xcda1, lsl #48
+     0xfffffff00a9a8650  autda    x16, x17
+     0xfffffff00a9a8654  ldr      x8, [x16, #0x38]!
+     0xfffffff00a9a8658  movk     x16, #0xfffc, lsl #48
+     0xfffffff00a9a865c  blraa    x8, x16
+     0xfffffff00a9a8660  adrp     x8, #0xfffffff00ad95000
+     0xfffffff00a9a8664  add      x8, x8, #0xc70
+     0xfffffff00a9a8668  cmp      x0, x8
+     0xfffffff00a9a866c  b.eq     #0xfffffff00a9a867c
+     0xfffffff00a9a8670  ldr      x0, [x0, #0x10]
+     0xfffffff00a9a8674  cbnz     x0, #0xfffffff00a9a8668
+     0xfffffff00a9a8678  b        #0xfffffff00a9a86bc
+     0xfffffff00a9a867c  adrp     x8, #0xfffffff00ad97000
+     0xfffffff00a9a8680  ldr      x1, [x8, #0xea0]
+     0xfffffff00a9a8684  adrp     x8, #0xfffffff00add6000
+     0xfffffff00a9a8688  ldr      x2, [x8, #0xe58]
+     0xfffffff00a9a868c  ldr      x16, [x21]
+     0xfffffff00a9a8690  autda    x16, x22
+     0xfffffff00a9a8694  ldr      x8, [x16, #0xf0]!
+     0xfffffff00a9a8698  mov      x0, x21
+     0xfffffff00a9a869c  movk     x16, #0x8d9e, lsl #48
+     0xfffffff00a9a86a0  blraa    x8, x16
+     0xfffffff00a9a86a4  mov      x0, x20
+
+===== fffffff00a9a87e0  OSUnserialize(direct)   func~fffffff00a9a8794 (+0x4c)
+  strings: 
+   .. 0xfffffff00a9a8780  ldp      x20, x19, [sp, #0x30]
+   .. 0xfffffff00a9a8784  ldp      x22, x21, [sp, #0x20]
+   .. 0xfffffff00a9a8788  ldp      x24, x23, [sp, #0x10]
+   .. 0xfffffff00a9a878c  add      sp, sp, #0x50
+   .. 0xfffffff00a9a8790  retab    
+   .. 0xfffffff00a9a8794  pacibsp  
+  >>
+     0xfffffff00a9a87e0  bl       #0xfffffff00a8d8754
+     0xfffffff00a9a87e4  cbz      x0, #0xfffffff00a9a8984
+     0xfffffff00a9a87e8  mov      x19, x0
+     0xfffffff00a9a87ec  ldr      x16, [x0]
+     0xfffffff00a9a87f0  mov      x22, x0
+     0xfffffff00a9a87f4  movk     x22, #0xcda1, lsl #48
+     0xfffffff00a9a87f8  mov      x17, x0
+     0xfffffff00a9a87fc  movk     x17, #0xcda1, lsl #48
+     0xfffffff00a9a8800  autda    x16, x17
+     0xfffffff00a9a8804  ldr      x8, [x16, #0x38]!
+     0xfffffff00a9a8808  movk     x16, #0xfffc, lsl #48
+     0xfffffff00a9a880c  blraa    x8, x16
+     0xfffffff00a9a8810  adrp     x8, #0xfffffff00ad95000
+     0xfffffff00a9a8814  add      x8, x8, #0xc70
+     0xfffffff00a9a8818  cmp      x0, x8
+     0xfffffff00a9a881c  b.eq     #0xfffffff00a9a882c
+     0xfffffff00a9a8820  ldr      x0, [x0, #0x10]
+     0xfffffff00a9a8824  cbnz     x0, #0xfffffff00a9a8818
+     0xfffffff00a9a8828  b        #0xfffffff00a9a896c
+     0xfffffff00a9a882c  adrp     x8, #0xfffffff00ad97000
+     0xfffffff00a9a8830  ldr      x1, [x8, #0xea0]
+     0xfffffff00a9a8834  adrp     x8, #0xfffffff00add6000
+     0xfffffff00a9a8838  ldr      x2, [x8, #0xe58]
+     0xfffffff00a9a883c  ldr      x16, [x19]
+     0xfffffff00a9a8840  autda    x16, x22
+     0xfffffff00a9a8844  ldr      x8, [x16, #0xf0]!
+     0xfffffff00a9a8848  mov      x0, x19
+     0xfffffff00a9a884c  movk     x16, #0x8d9e, lsl #48
+     0xfffffff00a9a8850  blraa    x8, x16
+     0xfffffff00a9a8854  mov      x0, x19
+
+===== fffffff00a9a8a38  OSUnserialize(direct)   func~fffffff00a9a899c (+0x9c)
+  strings: 
+   .. 0xfffffff00a9a89d8  str      xzr, [sp, #8]
+   .. 0xfffffff00a9a89dc  ldr      x0, [x23, #0x8d8]
+   .. 0xfffffff00a9a89e0  ldr      x3, [x1, #0x20]
+   .. 0xfffffff00a9a89e4  add      x1, sp, #8
+   .. 0xfffffff00a9a89e8  mov      w4, #1
+   .. 0xfffffff00a9a89ec  bl       #0xfffffff00a2e7458
+  >>
+     0xfffffff00a9a8a38  bl       #0xfffffff00a8d8754
+     0xfffffff00a9a8a3c  cbz      x0, #0xfffffff00a9a8adc
+     0xfffffff00a9a8a40  mov      x21, x0
+     0xfffffff00a9a8a44  ldr      x16, [x0]
+     0xfffffff00a9a8a48  mov      x26, x0
+     0xfffffff00a9a8a4c  movk     x26, #0xcda1, lsl #48
+     0xfffffff00a9a8a50  mov      x17, x0
+     0xfffffff00a9a8a54  movk     x17, #0xcda1, lsl #48
+     0xfffffff00a9a8a58  autda    x16, x17
+     0xfffffff00a9a8a5c  ldr      x8, [x16, #0x38]!
+     0xfffffff00a9a8a60  movk     x16, #0xfffc, lsl #48
+     0xfffffff00a9a8a64  blraa    x8, x16
+     0xfffffff00a9a8a68  adrp     x8, #0xfffffff00ad95000
+     0xfffffff00a9a8a6c  add      x8, x8, #0xc70
+     0xfffffff00a9a8a70  cmp      x0, x8
+     0xfffffff00a9a8a74  b.eq     #0xfffffff00a9a8a84
+     0xfffffff00a9a8a78  ldr      x0, [x0, #0x10]
+     0xfffffff00a9a8a7c  cbnz     x0, #0xfffffff00a9a8a70
+     0xfffffff00a9a8a80  b        #0xfffffff00a9a8ac4
+     0xfffffff00a9a8a84  adrp     x8, #0xfffffff00ad97000
+     0xfffffff00a9a8a88  ldr      x1, [x8, #0xea0]
+     0xfffffff00a9a8a8c  adrp     x8, #0xfffffff00add6000
+     0xfffffff00a9a8a90  ldr      x2, [x8, #0xe58]
+     0xfffffff00a9a8a94  ldr      x16, [x21]
+     0xfffffff00a9a8a98  autda    x16, x26
+     0xfffffff00a9a8a9c  ldr      x8, [x16, #0xf0]!
+     0xfffffff00a9a8aa0  mov      x0, x21
+     0xfffffff00a9a8aa4  movk     x16, #0x8d9e, lsl #48
+     0xfffffff00a9a8aa8  blraa    x8, x16
+     0xfffffff00a9a8aac  mov      x0, x21
+
+===== fffffff00a9a8b58  OSUnserialize(direct)   func~fffffff00a9a8b10 (+0x48)
+  strings: 
+   .. 0xfffffff00a9a8af8  ldp      x20, x19, [sp, #0x40]
+   .. 0xfffffff00a9a8afc  ldp      x22, x21, [sp, #0x30]
+   .. 0xfffffff00a9a8b00  ldp      x24, x23, [sp, #0x20]
+   .. 0xfffffff00a9a8b04  ldp      x26, x25, [sp, #0x10]
+   .. 0xfffffff00a9a8b08  add      sp, sp, #0x60
+   .. 0xfffffff00a9a8b0c  retab    
+  >>
+     0xfffffff00a9a8b58  bl       #0xfffffff00a8d8754
+     0xfffffff00a9a8b5c  cbz      x0, #0xfffffff00a9a8bfc
+     0xfffffff00a9a8b60  mov      x20, x0
+     0xfffffff00a9a8b64  ldr      x16, [x0]
+     0xfffffff00a9a8b68  mov      x22, x0
+     0xfffffff00a9a8b6c  movk     x22, #0xcda1, lsl #48
+     0xfffffff00a9a8b70  mov      x17, x0
+     0xfffffff00a9a8b74  movk     x17, #0xcda1, lsl #48
+     0xfffffff00a9a8b78  autda    x16, x17
+     0xfffffff00a9a8b7c  ldr      x8, [x16, #0x38]!
+     0xfffffff00a9a8b80  movk     x16, #0xfffc, lsl #48
+     0xfffffff00a9a8b84  blraa    x8, x16
+     0xfffffff00a9a8b88  adrp     x8, #0xfffffff00ad95000
+     0xfffffff00a9a8b8c  add      x8, x8, #0xc70
+     0xfffffff00a9a8b90  cmp      x0, x8
+     0xfffffff00a9a8b94  b.eq     #0xfffffff00a9a8ba4
+     0xfffffff00a9a8b98  ldr      x0, [x0, #0x10]
+     0xfffffff00a9a8b9c  cbnz     x0, #0xfffffff00a9a8b90
+     0xfffffff00a9a8ba0  b        #0xfffffff00a9a8be4
+     0xfffffff00a9a8ba4  adrp     x8, #0xfffffff00ad97000
+     0xfffffff00a9a8ba8  ldr      x1, [x8, #0xea0]
+     0xfffffff00a9a8bac  adrp     x8, #0xfffffff00add6000
+     0xfffffff00a9a8bb0  ldr      x2, [x8, #0xe58]
+     0xfffffff00a9a8bb4  ldr      x16, [x20]
+     0xfffffff00a9a8bb8  autda    x16, x22
+     0xfffffff00a9a8bbc  ldr      x8, [x16, #0xf0]!
+     0xfffffff00a9a8bc0  mov      x0, x20
+     0xfffffff00a9a8bc4  movk     x16, #0x8d9e, lsl #48
+     0xfffffff00a9a8bc8  blraa    x8, x16
+     0xfffffff00a9a8bcc  mov      x0, x20
+
+===== fffffff00a9a8d8c  OSUnserialize(direct)   func~fffffff00a9a8c10 (+0x17c)
+  strings: 
+   .. 0xfffffff00a9a8d2c  mov      w19, #0x2c2
+   .. 0xfffffff00a9a8d30  movk     w19, #0xe000, lsl #16
+   .. 0xfffffff00a9a8d34  adrp     x8, #0xfffffff007c37000
+   .. 0xfffffff00a9a8d38  ldr      x8, [x8, #0xd60]
+   .. 0xfffffff00a9a8d3c  cmp      x0, x8
+   .. 0xfffffff00a9a8d40  b.eq     #0xfffffff00a9a8d4c
+  >>
+     0xfffffff00a9a8d8c  bl       #0xfffffff00a8d8754
+     0xfffffff00a9a8d90  mov      x20, x0
+     0xfffffff00a9a8d94  cbz      x0, #0xfffffff00a9a8fc4
+     0xfffffff00a9a8d98  ldr      x23, [x29, #0x10]
+     0xfffffff00a9a8d9c  ldr      x16, [x20]
+     0xfffffff00a9a8da0  mov      x22, x20
+     0xfffffff00a9a8da4  movk     x22, #0xcda1, lsl #48
+     0xfffffff00a9a8da8  mov      x17, x20
+     0xfffffff00a9a8dac  movk     x17, #0xcda1, lsl #48
+     0xfffffff00a9a8db0  autda    x16, x17
+     0xfffffff00a9a8db4  ldr      x8, [x16, #0x38]!
+     0xfffffff00a9a8db8  mov      x0, x20
+     0xfffffff00a9a8dbc  movk     x16, #0xfffc, lsl #48
+     0xfffffff00a9a8dc0  blraa    x8, x16
+     0xfffffff00a9a8dc4  adrp     x8, #0xfffffff00ad95000
+     0xfffffff00a9a8dc8  add      x8, x8, #0xc70
+     0xfffffff00a9a8dcc  cmp      x0, x8
+     0xfffffff00a9a8dd0  b.eq     #0xfffffff00a9a8de0
+     0xfffffff00a9a8dd4  ldr      x0, [x0, #0x10]
+     0xfffffff00a9a8dd8  cbnz     x0, #0xfffffff00a9a8dcc
+     0xfffffff00a9a8ddc  b        #0xfffffff00a9a8fc4
+     0xfffffff00a9a8de0  adrp     x8, #0xfffffff00ad97000
+     0xfffffff00a9a8de4  ldr      x1, [x8, #0xea0]
+     0xfffffff00a9a8de8  adrp     x8, #0xfffffff00add6000
+     0xfffffff00a9a8dec  ldr      x2, [x8, #0xe58]
+     0xfffffff00a9a8df0  ldr      x16, [x20]
+     0xfffffff00a9a8df4  autda    x16, x22
+     0xfffffff00a9a8df8  ldr      x8, [x16, #0xf0]!
+     0xfffffff00a9a8dfc  mov      x0, x20
+     0xfffffff00a9a8e00  movk     x16, #0x8d9e, lsl #48
+
+===== fffffff00a9abac8  OSUnserialize(direct)   func~fffffff00a9ab69c (+0x42c)
+  strings: 
+   .. 0xfffffff00a9aba68  b.eq     #0xfffffff00a9aba78
+   .. 0xfffffff00a9aba6c  ldr      x0, [x0, #0x10]
+   .. 0xfffffff00a9aba70  cbnz     x0, #0xfffffff00a9aba64
+   .. 0xfffffff00a9aba74  b        #0xfffffff00a9abeec
+   .. 0xfffffff00a9aba78  cmp      w20, #0x400, lsl #12
+   .. 0xfffffff00a9aba7c  b.ls     #0xfffffff00a9aba88
+  >>
+     0xfffffff00a9abac8  bl       #0xfffffff00a8d8754
+     0xfffffff00a9abacc  mov      x20, x0
+     0xfffffff00a9abad0  ldr      x0, [x25, #0x8d8]
+     0xfffffff00a9abad4  mov      x1, x23
+     0xfffffff00a9abad8  mov      x2, x24
+     0xfffffff00a9abadc  bl       #0xfffffff00a2de0a4
+     0xfffffff00a9abae0  cbz      x20, #0xfffffff00a9abb0c
+     0xfffffff00a9abae4  bl       #0xfffffff00a29b24c
+     0xfffffff00a9abae8  ldr      x0, [x0, #8]
+     0xfffffff00a9abaec  mov      x1, x22
+     0xfffffff00a9abaf0  mov      x2, x20
+     0xfffffff00a9abaf4  bl       #0xfffffff00aa36a28
+     0xfffffff00a9abaf8  cbz      w0, #0xfffffff00a9abb1c
+     0xfffffff00a9abafc  mov      x26, x20
+     0xfffffff00a9abb00  movk     x26, #0xcda1, lsl #48
+     0xfffffff00a9abb04  add      w21, w21, #0x20
+     0xfffffff00a9abb08  b        #0xfffffff00a9abec4
+     0xfffffff00a9abb0c  mov      w0, #0
+     0xfffffff00a9abb10  mov      w8, #0x2c2
+     0xfffffff00a9abb14  movk     w8, #0xe000, lsl #16
+     0xfffffff00a9abb18  b        #0xfffffff00a9abee4
+     0xfffffff00a9abb1c  ldr      x16, [x22]
+     0xfffffff00a9abb20  autda    x16, x27
+     0xfffffff00a9abb24  ldr      x8, [x16, #0x38]!
+     0xfffffff00a9abb28  mov      x0, x22
+     0xfffffff00a9abb2c  movk     x16, #0xfffc, lsl #48
+     0xfffffff00a9abb30  blraa    x8, x16
+     0xfffffff00a9abb34  adrp     x8, #0xfffffff00ad98000
+     0xfffffff00a9abb38  add      x8, x8, #0x838
+     0xfffffff00a9abb3c  cmp      x0, x8
+
+===== fffffff00a9b01b4  OSUnserialize(direct)   func~fffffff00a9b00c8 (+0xec)
+  strings: 
+   .. 0xfffffff00a9b0154  movk     w8, #0xe000, lsl #16
+   .. 0xfffffff00a9b0158  adrp     x9, #0xfffffff00ad95000
+   .. 0xfffffff00a9b015c  add      x9, x9, #0xbd0
+   .. 0xfffffff00a9b0160  cmp      x0, x9
+   .. 0xfffffff00a9b0164  b.eq     #0xfffffff00a9b02cc
+   .. 0xfffffff00a9b0168  ldr      x0, [x0, #0x10]
+  >>
+     0xfffffff00a9b01b4  bl       #0xfffffff00a8d8754
+     0xfffffff00a9b01b8  mov      x19, x0
+     0xfffffff00a9b01bc  ldr      x0, [x26, #0x8d8]
+     0xfffffff00a9b01c0  mov      x1, x21
+     0xfffffff00a9b01c4  mov      x2, x20
+     0xfffffff00a9b01c8  bl       #0xfffffff00a2de0a4
+     0xfffffff00a9b01cc  mov      x10, x24
+     0xfffffff00a9b01d0  cbnz     x19, #0xfffffff00a9b023c
+     0xfffffff00a9b01d4  mov      w0, #0
+     0xfffffff00a9b01d8  sub      w8, w25, #5
+     0xfffffff00a9b01dc  str      w8, [x22]
+     0xfffffff00a9b01e0  b        #0xfffffff00a9b00a8
+     0xfffffff00a9b01e4  mov      w8, #0x2e
+     0xfffffff00a9b01e8  b        #0xfffffff00a9b02a8
+     0xfffffff00a9b01ec  cbz      x19, #0xfffffff00a9b0334
+     0xfffffff00a9b01f0  ldr      x16, [x19]
+     0xfffffff00a9b01f4  mov      x17, x19
+     0xfffffff00a9b01f8  movk     x17, #0xcda1, lsl #48
+     0xfffffff00a9b01fc  autda    x16, x17
+     0xfffffff00a9b0200  ldr      x8, [x16, #0x38]!
+     0xfffffff00a9b0204  mov      x0, x19
+     0xfffffff00a9b0208  movk     x16, #0xfffc, lsl #48
+     0xfffffff00a9b020c  blraa    x8, x16
+     0xfffffff00a9b0210  mov      w8, #0x2c2
+     0xfffffff00a9b0214  movk     w8, #0xe000, lsl #16
+     0xfffffff00a9b0218  adrp     x9, #0xfffffff00ad95000
+     0xfffffff00a9b021c  add      x9, x9, #0xc70
+     0xfffffff00a9b0220  cmp      x0, x9
+     0xfffffff00a9b0224  b.eq     #0xfffffff00a9b02b0
+     0xfffffff00a9b0228  ldr      x0, [x0, #0x10]
+
+===== fffffff00a9dd7d8  sub_fffffff00a8d846c   func~fffffff00a9dd10c (+0x6cc)
+  strings: /chosen | /chosen/memory-map | 40A0DDD2-77F8-4392-B4A3-1E7304206516:boot-command | 40A0DDD2-77F8-4392-B4A3-1E7304206516:boot-picker-bringup-reason | 40A0DDD2-77F8-4392-B4A3-1E7304206516:recovery-boot-mode | 40A0DDD2-77F8-4392-B4A3-1E7304206516:recovery-broken-seal-uuid | IODTNVRAM | IOKitBSDInit.cpp | IONVRAM | Reboot into Recovery (this panic is expected) @%s:%d | boot-uuid | boot-uuid-media | missing-boot-media | recover-system | root-matching | rootdev | ssv-seal-broken | tenotification.set | {'IOProviderClass' = 'IOResources';'IOResourceMatch' = ('IOBSD', 'boot-uuid-media');}
+   .. 0xfffffff00a9dd778  autda    x16, x17
+   .. 0xfffffff00a9dd77c  ldr      x8, [x16, #0x38]!
+   .. 0xfffffff00a9dd780  movk     x16, #0xfffc, lsl #48
+   .. 0xfffffff00a9dd784  blraa    x8, x16
+   .. 0xfffffff00a9dd788  adrp     x8, #0xfffffff00ad95000
+   .. 0xfffffff00a9dd78c  add      x8, x8, #0xc48
+  >>
+     0xfffffff00a9dd7d8  bl       #0xfffffff00a8d846c
+     0xfffffff00a9dd7dc  cbz      x0, #0xfffffff00a9dd838
+     0xfffffff00a9dd7e0  mov      x26, x0
+     0xfffffff00a9dd7e4  ldr      x16, [x0]
+     0xfffffff00a9dd7e8  mov      x21, x0
+     0xfffffff00a9dd7ec  movk     x21, #0xcda1, lsl #48
+     0xfffffff00a9dd7f0  mov      x17, x0
+     0xfffffff00a9dd7f4  movk     x17, #0xcda1, lsl #48
+     0xfffffff00a9dd7f8  autda    x16, x17
+     0xfffffff00a9dd7fc  ldr      x8, [x16, #0x38]!
+     0xfffffff00a9dd800  movk     x16, #0xfffc, lsl #48
+     0xfffffff00a9dd804  blraa    x8, x16
+     0xfffffff00a9dd808  adrp     x8, #0xfffffff00ad95000
+     0xfffffff00a9dd80c  add      x8, x8, #0xc70
+     0xfffffff00a9dd810  cmp      x0, x8
+     0xfffffff00a9dd814  b.eq     #0xfffffff00a9de2d4
+     0xfffffff00a9dd818  ldr      x0, [x0, #0x10]
+     0xfffffff00a9dd81c  cbnz     x0, #0xfffffff00a9dd810
+     0xfffffff00a9dd820  ldr      x16, [x26]
+     0xfffffff00a9dd824  autda    x16, x21
+     0xfffffff00a9dd828  ldr      x8, [x16, #0x28]!
+     0xfffffff00a9dd82c  mov      x0, x26
+     0xfffffff00a9dd830  movk     x16, #0x3a87, lsl #48
+     0xfffffff00a9dd834  blraa    x8, x16
+     0xfffffff00a9dd838  ldr      x16, [x27]
+     0xfffffff00a9dd83c  autda    x16, x28
+     0xfffffff00a9dd840  mov      x17, #0x118
+     0xfffffff00a9dd844  add      x16, x16, x17
+     0xfffffff00a9dd848  ldr      x8, [x16]
+     0xfffffff00a9dd84c  adrp     x1, #0xfffffff0070b8000
+
+===== fffffff00a9dd924  sub_fffffff00a8d5c98   func~fffffff00a9dd10c (+0x818)
+  strings: /chosen | /chosen/memory-map | 40A0DDD2-77F8-4392-B4A3-1E7304206516:boot-command | 40A0DDD2-77F8-4392-B4A3-1E7304206516:boot-picker-bringup-reason | 40A0DDD2-77F8-4392-B4A3-1E7304206516:recovery-boot-mode | 40A0DDD2-77F8-4392-B4A3-1E7304206516:recovery-broken-seal-uuid | IODTNVRAM | IOKitBSDInit.cpp | IONVRAM | RAMDisk | Reboot into Recovery (this panic is expected) @%s:%d | boot-uuid | boot-uuid-media | missing-boot-media | recover-system | root-matching | rootdev | ssv-seal-broken | tenotification.set | {'IOProviderClass' = 'IOResources';'IOResourceMatch' = ('IOBSD', 'boot-uuid-media');}
+   .. 0xfffffff00a9dd8c4  autda    x16, x17
+   .. 0xfffffff00a9dd8c8  ldr      x8, [x16, #0x80]!
+   .. 0xfffffff00a9dd8cc  mov      x0, x24
+   .. 0xfffffff00a9dd8d0  mov      x1, x26
+   .. 0xfffffff00a9dd8d4  movk     x16, #0x9f7c, lsl #48
+   .. 0xfffffff00a9dd8d8  blraa    x8, x16
+  >>
+     0xfffffff00a9dd924  bl       #0xfffffff00a8d5c98
+     0xfffffff00a9dd928  mov      x26, x0
+     0xfffffff00a9dd92c  cbz      x0, #0xfffffff00a9de42c
+     0xfffffff00a9dd930  ldr      x16, [x26]
+     0xfffffff00a9dd934  mov      x17, x26
+     0xfffffff00a9dd938  movk     x17, #0xcda1, lsl #48
+     0xfffffff00a9dd93c  autda    x16, x17
+     0xfffffff00a9dd940  ldr      x8, [x16, #0x38]!
+     0xfffffff00a9dd944  mov      x0, x26
+     0xfffffff00a9dd948  movk     x16, #0xfffc, lsl #48
+     0xfffffff00a9dd94c  blraa    x8, x16
+     0xfffffff00a9dd950  adrp     x24, #0xfffffff0070b8000
+     0xfffffff00a9dd954  add      x24, x24, #0x93a
+     0xfffffff00a9dd958  adrp     x8, #0xfffffff00ad95000
+     0xfffffff00a9dd95c  add      x8, x8, #0xc70
+     0xfffffff00a9dd960  cmp      x0, x8
+     0xfffffff00a9dd964  b.eq     #0xfffffff00a9dd994
+     0xfffffff00a9dd968  ldr      x0, [x0, #0x10]
+     0xfffffff00a9dd96c  cbnz     x0, #0xfffffff00a9dd960
+     0xfffffff00a9dd970  b        #0xfffffff00a9dd990
+     0xfffffff00a9dd974  ldr      x16, [x24]
+     0xfffffff00a9dd978  autda    x16, x21
+     0xfffffff00a9dd97c  ldr      x8, [x16, #0x28]!
+     0xfffffff00a9dd980  mov      x0, x24
+     0xfffffff00a9dd984  movk     x16, #0x3a87, lsl #48
+     0xfffffff00a9dd988  blraa    x8, x16
+     0xfffffff00a9dd98c  mov      x24, #0
+     0xfffffff00a9dd990  mov      x26, #0
+     0xfffffff00a9dd994  ldr      x16, [x27]
+     0xfffffff00a9dd998  autda    x16, x28
+
+===== fffffff00a9de3dc  sub_fffffff00a8d5c98   func~fffffff00a9dd10c (+0x12d0)
+  strings: /chosen | /chosen/memory-map | 40A0DDD2-77F8-4392-B4A3-1E7304206516:boot-command | 40A0DDD2-77F8-4392-B4A3-1E7304206516:boot-picker-bringup-reason | 40A0DDD2-77F8-4392-B4A3-1E7304206516:recovery-boot-mode | 40A0DDD2-77F8-4392-B4A3-1E7304206516:recovery-broken-seal-uuid | Apple_HFS | BSD Name | Content | IODTNVRAM | IOInterfaceUnit | IOKitBSDInit.cpp | IOMedia | IONVRAM | IONetworkInterface | IONetworkStack | IOPathMatch | RAMDisk | Reboot into Recovery (this panic is expected) @%s:%d | boot-uuid | boot-uuid-media | enotification.set | missing-boot-media | recover-system
+   .. 0xfffffff00a9de37c  autda    x16, x17
+   .. 0xfffffff00a9de380  ldr      x8, [x16, #0x80]!
+   .. 0xfffffff00a9de384  mov      x0, x26
+   .. 0xfffffff00a9de388  mov      x1, x25
+   .. 0xfffffff00a9de38c  movk     x16, #0x9f7c, lsl #48
+   .. 0xfffffff00a9de390  blraa    x8, x16
+  >>
+     0xfffffff00a9de3dc  bl       #0xfffffff00a8d5c98
+     0xfffffff00a9de3e0  mov      x26, x0
+     0xfffffff00a9de3e4  cbz      x0, #0xfffffff00a9de488
+     0xfffffff00a9de3e8  ldr      x16, [x26]
+     0xfffffff00a9de3ec  mov      x17, x26
+     0xfffffff00a9de3f0  movk     x17, #0xcda1, lsl #48
+     0xfffffff00a9de3f4  autda    x16, x17
+     0xfffffff00a9de3f8  ldr      x8, [x16, #0x38]!
+     0xfffffff00a9de3fc  mov      x0, x26
+     0xfffffff00a9de400  movk     x16, #0xfffc, lsl #48
+     0xfffffff00a9de404  blraa    x8, x16
+     0xfffffff00a9de408  adrp     x24, #0xfffffff0070b8000
+     0xfffffff00a9de40c  add      x24, x24, #0x93a
+     0xfffffff00a9de410  adrp     x8, #0xfffffff00ad95000
+     0xfffffff00a9de414  add      x8, x8, #0xc70
+     0xfffffff00a9de418  cmp      x0, x8
+     0xfffffff00a9de41c  b.eq     #0xfffffff00a9de490
+     0xfffffff00a9de420  ldr      x0, [x0, #0x10]
+     0xfffffff00a9de424  cbnz     x0, #0xfffffff00a9de418
+     0xfffffff00a9de428  b        #0xfffffff00a9de480
+     0xfffffff00a9de42c  adrp     x24, #0xfffffff0070b8000
+     0xfffffff00a9de430  add      x24, x24, #0x93a
+     0xfffffff00a9de434  b        #0xfffffff00a9dd994
+     0xfffffff00a9de438  mov      x26, #0
+     0xfffffff00a9de43c  mov      x27, #0
+     0xfffffff00a9de440  ldr      x0, [sp, #0x20]
+     0xfffffff00a9de444  b        #0xfffffff00a9de510
+     0xfffffff00a9de448  mov      x25, x26
+     0xfffffff00a9de44c  mov      x26, #0
+     0xfffffff00a9de450  ldr      x8, [x16, #0x28]!
+
+===== fffffff00a9e06fc  OSUnserialize(direct)   func~fffffff00a9e04bc (+0x240)
+  strings: Last Sleep Options | SleepRequestedByPID | Unknown | local | root
+   .. 0xfffffff00a9e069c  ldr      x8, [x20, #0xd8]
+   .. 0xfffffff00a9e06a0  cbz      x8, #0xfffffff00a9e0768
+   .. 0xfffffff00a9e06a4  str      xzr, [sp, #8]
+   .. 0xfffffff00a9e06a8  ldr      x0, [x20, #0xe0]
+   .. 0xfffffff00a9e06ac  bl       #0xfffffff00a29b0b4
+   .. 0xfffffff00a9e06b0  cbz      x0, #0xfffffff00a9e06ec
+  >>
+     0xfffffff00a9e06fc  bl       #0xfffffff00a8d8754
+     0xfffffff00a9e0700  mov      x21, x0
+     0xfffffff00a9e0704  cbz      x0, #0xfffffff00a9e0740
+     0xfffffff00a9e0708  ldr      x16, [x21]
+     0xfffffff00a9e070c  mov      x17, x21
+     0xfffffff00a9e0710  movk     x17, #0xcda1, lsl #48
+     0xfffffff00a9e0714  autda    x16, x17
+     0xfffffff00a9e0718  ldr      x8, [x16, #0x38]!
+     0xfffffff00a9e071c  mov      x0, x21
+     0xfffffff00a9e0720  movk     x16, #0xfffc, lsl #48
+     0xfffffff00a9e0724  blraa    x8, x16
+     0xfffffff00a9e0728  adrp     x8, #0xfffffff00ad95000
+     0xfffffff00a9e072c  add      x8, x8, #0xc70
+     0xfffffff00a9e0730  cmp      x0, x8
+     0xfffffff00a9e0734  b.eq     #0xfffffff00a9e0780
+     0xfffffff00a9e0738  ldr      x0, [x0, #0x10]
+     0xfffffff00a9e073c  cbnz     x0, #0xfffffff00a9e0730
+     0xfffffff00a9e0740  ldr      x0, [sp, #8]
+     0xfffffff00a9e0744  cbz      x0, #0xfffffff00a9e07b4
+     0xfffffff00a9e0748  ldr      x16, [x0]
+     0xfffffff00a9e074c  mov      x17, x0
+     0xfffffff00a9e0750  movk     x17, #0xcda1, lsl #48
+     0xfffffff00a9e0754  autda    x16, x17
+     0xfffffff00a9e0758  ldr      x8, [x16, #0xa8]!
+     0xfffffff00a9e075c  movk     x16, #0x2987, lsl #48
+     0xfffffff00a9e0760  blraa    x8, x16
+     0xfffffff00a9e0764  b        #0xfffffff00a9e07bc
+     0xfffffff00a9e0768  mov      w8, #0x2c1
+     0xfffffff00a9e076c  movk     w8, #0xe000, lsl #16
+     0xfffffff00a9e0770  str      w8, [x19]
+
+===== fffffff00a9e52b4  sub_fffffff00a8d846c   func~fffffff00a9e5294 (+0x20)
+  strings: WorkloadIDConfigurationFlags | WorkloadIDTable
+   .. 0xfffffff00a9e5254  movk     x17, #0xcda1, lsl #48
+   .. 0xfffffff00a9e5258  autda    x16, x17
+   .. 0xfffffff00a9e525c  ldr      x8, [x16, #0x28]!
+   .. 0xfffffff00a9e5260  mov      x0, x19
+   .. 0xfffffff00a9e5264  movk     x16, #0x3a87, lsl #48
+   .. 0xfffffff00a9e5268  blraa    x8, x16
+  >>
+     0xfffffff00a9e52b4  bl       #0xfffffff00a8d846c
+     0xfffffff00a9e52b8  mov      x21, x0
+     0xfffffff00a9e52bc  ldr      x19, [sp]
+     0xfffffff00a9e52c0  cbz      x0, #0xfffffff00a9e521c
+     0xfffffff00a9e52c4  ldr      x16, [x21]
+     0xfffffff00a9e52c8  mov      x25, x21
+     0xfffffff00a9e52cc  movk     x25, #0xcda1, lsl #48
+     0xfffffff00a9e52d0  mov      x17, x21
+     0xfffffff00a9e52d4  movk     x17, #0xcda1, lsl #48
+     0xfffffff00a9e52d8  autda    x16, x17
+     0xfffffff00a9e52dc  ldr      x8, [x16, #0x38]!
+     0xfffffff00a9e52e0  mov      x0, x21
+     0xfffffff00a9e52e4  movk     x16, #0xfffc, lsl #48
+     0xfffffff00a9e52e8  blraa    x8, x16
+     0xfffffff00a9e52ec  adrp     x24, #0xfffffff00ad95000
+     0xfffffff00a9e52f0  add      x24, x24, #0xc70
+     0xfffffff00a9e52f4  cmp      x0, x24
+     0xfffffff00a9e52f8  b.eq     #0xfffffff00a9e5308
+     0xfffffff00a9e52fc  ldr      x0, [x0, #0x10]
+     0xfffffff00a9e5300  cbnz     x0, #0xfffffff00a9e52f4
+     0xfffffff00a9e5304  b        #0xfffffff00a9e521c
+     0xfffffff00a9e5308  ldr      x16, [x21]
+     0xfffffff00a9e530c  autda    x16, x25
+     0xfffffff00a9e5310  mov      x17, #0x138
+     0xfffffff00a9e5314  add      x16, x16, x17
+     0xfffffff00a9e5318  ldr      x8, [x16]
+     0xfffffff00a9e531c  adrp     x1, #0xfffffff0070b9000
+     0xfffffff00a9e5320  add      x1, x1, #0xb2
+     0xfffffff00a9e5324  mov      x0, x21
+     0xfffffff00a9e5328  movk     x16, #0x2e3b, lsl #48

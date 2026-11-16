@@ -1,0 +1,120 @@
+openjdk version "27" 2026-09-15
+OpenJDK Runtime Environment (build 27)
+OpenJDK 64-Bit Server VM (build 27, mixed mode)
+INFO  Using log config file: jar:file:/home/femboychik/ghidra/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/application.log (LoggingInitialization)  
+INFO  Loading user preferences: /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/preferences (Preferences)  
+INFO  Loading previous preferences: /home/femboychik/.config/ghidra/ghidra_11.4.2_PUBLIC/preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (5497 ms) (ClassSearcher)  
+WARNING: Final field name in class ghidra.util.charset.CharsetInfo has been mutated reflectively by class com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$2 in unnamed module @2c35e847 (file:/home/femboychik/ghidra/Ghidra/Framework/Generic/lib/gson-2.13.2.jar)
+WARNING: Use --enable-final-field-mutation=ALL-UNNAMED to avoid a warning
+WARNING: Mutating final fields will be blocked in a future release unless final field mutation is enabled
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (17793 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 59 extension points (21 false positives) (ClassSearcher)  
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::staticFieldOffset has been called by org.apache.felix.framework.util.SecureAction (file:/home/femboychik/ghidra/Ghidra/Features/Base/lib/org.apache.felix.framework-7.0.5.jar)
+WARNING: Please consider reporting this to the maintainers of class org.apache.felix.framework.util.SecureAction
+WARNING: sun.misc.Unsafe::staticFieldOffset will be removed in a future release
+INFO  HEADLESS Script Paths:
+    /home/femboychik/ghidra/Ghidra/Features/PyGhidra/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/FileFormats/ghidra_scripts
+    /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/Extensions/Jython/ghidra_scripts
+    /home/femboychik/work/scripts2
+    /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/Extensions/MachineLearning/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/Base/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /home/femboychik/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/BytePatterns/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/VersionTracking/ghidra_scripts
+    /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/Extensions/SleighDevTools/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/PDB/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Processors/Atmel/ghidra_scripts
+    /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/Extensions/Lisa/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Processors/DATA/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Debug/Debugger/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Processors/8051/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Processors/JVM/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/FunctionID/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Processors/PIC/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/Decompiler/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/SwiftDemangler/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/BSim/ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: /home/femboychik/Загрузки/AyuGram Desktop/Архив/123 (HeadlessAnalyzer)  
+INFO  Opening project: /home/femboychik/Загрузки/AyuGram Desktop/Архив/123 (HeadlessProject)  
+INFO  REPORT: Processing read-only project file: /kernelcache.release.iphone14b.decompressed (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: DumpTree.java  (HeadlessAnalyzer)  
+INFO  SCRIPT: /home/femboychik/work/scripts2/DumpTree.java (HeadlessAnalyzer)  
+INFO  DumpTree.java> NOFN fffffff0085c1bec (GhidraScript)  
+INFO  DumpTree.java> progress 20/198 total=33 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff0085f932c (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff0085f9374 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff0085f9964 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff0085f9a2c (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff0085f9e74 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff00863dd40 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff00863df18 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff00873c078 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff00873c264 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff0088cf6f0 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff0088cf798 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff0088cf7ec (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff0088cf840 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff0088cf8e8 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff0088cf93c (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff0088cf990 (GhidraScript)  
+INFO  DumpTree.java> progress 40/198 total=55 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff008b21648 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff008c27fdc (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff008c32eec (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff008c32f84 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff008c33380 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff009183fd0 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff009184024 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff009184078 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff009184614 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff009184980 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff009184a88 (GhidraScript)  
+INFO  DumpTree.java> progress 60/198 total=81 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff009185380 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff0091854a0 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff009185640 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff009185d24 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff009185d9c (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff009185e14 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff009185f58 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff009185fd0 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff009186048 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff0091863e4 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff009186ca4 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff0091ace6c (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff009250990 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff009250a1c (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff009250bf8 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff009250e78 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff009258d80 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff00926e190 (GhidraScript)  
+INFO  DumpTree.java> progress 80/198 total=108 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff00926eb64 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff00927093c (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff009271310 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff009767884 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff0097907fc (GhidraScript)  
+INFO  DumpTree.java> progress 100/198 total=128 (GhidraScript)  
+INFO  DumpTree.java> progress 120/198 total=153 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff009c38e54 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff009c392c0 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff009c39448 (GhidraScript)  
+INFO  DumpTree.java> NOFN fffffff009c39bdc (GhidraScript)  
+INFO  DumpTree.java> progress 140/198 total=181 (GhidraScript)  
+INFO  DumpTree.java> DONE handlers=143 files=195 (GhidraScript)  

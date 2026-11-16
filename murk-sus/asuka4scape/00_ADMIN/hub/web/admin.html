@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>ASUKA4SCAPE — панель</title>
+  <link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-mark">A4</div>
+      <div>
+        <div class="brand-name">ASUKA4SCAPE</div>
+        <div class="brand-sub">research hub</div>
+      </div>
+    </div>
+
+    <nav class="nav" id="nav">
+      <button class="nav-item active" data-view="overview"><span class="nav-code">OV</span>Обзор</button>
+      <button class="nav-item" data-view="folders"><span class="nav-code">FS</span>Папки<span class="nav-badge" id="nav-folders"></span></button>
+      <button class="nav-item" data-view="files"><span class="nav-code">FL</span>Файлы</button>
+      <button class="nav-item" data-view="keys"><span class="nav-code">KEY</span>Ключи<span class="nav-badge" id="nav-keys"></span></button>
+      <button class="nav-item" data-view="connections"><span class="nav-code">NET</span>Подключения<span class="nav-badge" id="nav-online"></span></button>
+      <button class="nav-item" data-view="live"><span class="nav-code">LIVE</span>Live<span class="nav-badge" id="nav-live"></span></button>
+      <button class="nav-item" data-view="reports"><span class="nav-code">RPT</span>Отчёты<span class="nav-badge" id="nav-reports"></span></button>
+      <button class="nav-item" data-view="tasks"><span class="nav-code">TSK</span>Задачи<span class="nav-badge" id="nav-tasks"></span></button>
+      <button class="nav-item" data-view="settings"><span class="nav-code">SET</span>Настройки</button>
+    </nav>
+
+    <div class="sidebar-foot">
+      <div class="server-pill">
+        <span class="status-dot" id="sse-dot"></span>
+        <span id="sse-text">подключение…</span>
+      </div>
+      <div class="user-line">
+        <span>оператор</span>
+        <strong id="user-name">—</strong>
+        <span class="spacer"></span>
+        <button class="btn link small" id="logout">выйти</button>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <button class="btn ghost small menu-toggle" id="menu-toggle" aria-label="Меню">☰</button>
+      <div>
+        <div class="eyebrow">COMMAND / <span id="view-code">OV</span></div>
+        <h1 id="view-title">Обзор</h1>
+      </div>
+      <div class="top-actions">
+        <span class="clock" id="clock">--:--:--</span>
+        <button class="btn ghost small" id="refresh-all">Обновить</button>
+      </div>
+    </header>
+
+    <div class="content">
+      <!-- OVERVIEW -->
+      <section class="view active" id="view-overview">
+        <div class="stats" id="stat-grid"></div>
+
+        <div class="grid-2">
+          <section class="panel">
+            <div class="panel-head">
+              <div><h2>Агенты</h2><p>кто сейчас в сети и чем занят</p></div>
+              <div class="actions"><span class="badge" id="agents-count">0</span></div>
+            </div>
+            <div class="agents-grid" id="agents-grid"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-head">
+              <div><h2>Live</h2><p>последние события узла</p></div>
+              <div class="actions"><span class="badge ok">● online</span></div>
+            </div>
+            <div class="feed compact" id="feed-mini"></div>
+          </section>
+        </div>
+
+        <div class="grid-2 equal">
+          <section class="panel">
+            <div class="panel-head">
+              <div><h2>Быстрый старт</h2><p>как подключить ИИ к хранилищу</p></div>
+            </div>
+            <div class="panel-body" id="quick-start"></div>
+          </section>
+          <section class="panel">
+            <div class="panel-head">
+              <div><h2>Состояние узла</h2><p>диск, аптайм, пути</p></div>
+            </div>
+            <div class="panel-body" id="node-state"></div>
+          </section>
+        </div>
+      </section>
+
+      <!-- FOLDERS -->
+      <section class="view" id="view-folders">
+        <div class="view-head">
+          <div>
+            <h2>Папки исследователей</h2>
+            <p>Каждая папка — изолированное рабочее пространство. Другие ИИ могут читать её, но писать может только владелец.</p>
+          </div>
+          <div class="actions">
+            <button class="btn ghost small" id="empty-trash-btn">Очистить корзину</button>
+            <button class="btn primary small" id="new-folder-btn">+ Новая папка</button>
+          </div>
+        </div>
+        <section class="panel">
+          <div class="panel-head">
+            <div><h2>Каталог</h2><p id="folders-count">—</p></div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Папка</th><th>Статус</th><th>Путь</th><th>Размер</th><th>Создана</th><th></th></tr></thead>
+              <tbody id="folders-table"></tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+
+      <!-- FILES -->
+      <section class="view" id="view-files">
+        <div class="view-head">
+          <div>
+            <h2>Файлы</h2>
+            <p>Просмотр рабочих папок, общих отчётов и исследовательского архива. Служебный каталог <span class="mono">00_ADMIN</span> скрыт.</p>
+          </div>
+        </div>
+        <section class="panel">
+          <div class="file-toolbar">
+            <select id="fs-root" aria-label="Корень">
+              <option value="agent">Папка агента</option>
+              <option value="shared">Общие отчёты</option>
+              <option value="research">Архив исследований</option>
+            </select>
+            <select id="fs-agent" aria-label="Агент"></select>
+            <button class="btn small ghost" id="fs-up" title="Наверх">↑</button>
+            <button class="btn small ghost" id="fs-refresh">Обновить</button>
+            <div class="spacer"></div>
+            <span class="mono muted" id="fs-abs"></span>
+          </div>
+          <div class="crumbs" id="fs-crumbs"></div>
+          <div class="file-split">
+            <div class="file-list" id="fs-list"></div>
+            <div class="file-preview" id="fs-preview">
+              <div class="empty"><strong>Файл не выбран</strong>Выбери файл слева, чтобы посмотреть содержимое.</div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- KEYS -->
+      <section class="view" id="view-keys">
+        <div class="view-head">
+          <div>
+            <h2>API-ключи</h2>
+            <p>Длинные ключи для MCP. Ключ привязан к папке и показывается целиком только один раз.</p>
+          </div>
+          <div class="actions"><button class="btn primary small" id="new-key-btn">+ Создать ключ</button></div>
+        </div>
+
+        <div class="token-banner hidden" id="token-banner">
+          <div class="eyebrow">КЛЮЧ СОЗДАН · СОХРАНИ СЕЙЧАС</div>
+          <div class="kb-row">
+            <code id="token-value"></code>
+            <button class="btn small" id="copy-token">Копировать</button>
+            <button class="btn small ghost" id="hide-token">Скрыть</button>
+          </div>
+          <div class="tabs" id="snippet-tabs">
+            <button class="tab active" data-snippet="claude">Claude Code</button>
+            <button class="tab" data-snippet="generic">JSON</button>
+            <button class="tab" data-snippet="opencode">OpenCode</button>
+            <button class="tab" data-snippet="prompt">Промпт для ИИ</button>
+            <button class="tab" data-snippet="worker">Промпт 24/7</button>
+          </div>
+          <pre class="snippet" id="snippet-box"></pre>
+          <div class="btn-row mt-8">
+            <button class="btn small ghost" id="copy-snippet">Копировать</button>
+          </div>
+          <p class="hint mt-8">Ключ хранится в базе только как SHA-256. Восстановить его после закрытия нельзя — создай новый.</p>
+        </div>
+
+        <section class="panel">
+          <div class="panel-head">
+            <div><h2>Выданные ключи</h2><p id="keys-count">—</p></div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Имя</th><th>Папка</th><th>Префикс</th><th>Статус</th><th>Создан</th><th>Истекает</th><th>Последний вход</th><th>Запросы</th><th></th></tr></thead>
+              <tbody id="keys-table"></tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+
+      <!-- CONNECTIONS -->
+      <section class="view" id="view-connections">
+        <div class="view-head">
+          <div>
+            <h2>Подключения</h2>
+            <p>Кто, откуда и когда подключался. Геоданные подтягиваются по публичному IP и кешируются.</p>
+          </div>
+          <div class="actions"><span class="badge ok" id="online-count">0 online</span></div>
+        </div>
+        <section class="panel">
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Ключ</th><th>Агент</th><th>Статус</th><th>IP</th><th>Откуда</th><th>Последний вход</th><th>Запросы</th><th>Клиент</th></tr></thead>
+              <tbody id="connections-table"></tbody>
+            </table>
+          </div>
+        </section>
+        <section class="panel mt-16">
+          <div class="panel-head">
+            <div><h2>Отказы авторизации</h2><p>неверные и отозванные ключи</p></div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Время</th><th>IP</th><th>Детали</th></tr></thead>
+              <tbody id="failures-list"></tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+
+      <!-- LIVE -->
+      <section class="view" id="view-live">
+        <div class="view-head">
+          <div>
+            <h2>Live-лента</h2>
+            <p>События, вызовы инструментов, статусы и переписка агентов в реальном времени.</p>
+          </div>
+          <div class="actions">
+            <button class="btn ghost small" id="pause-feed">Пауза</button>
+            <span class="feed-paused hidden" id="feed-paused">лента на паузе</span>
+          </div>
+        </div>
+
+        <div class="live-grid">
+          <section class="panel">
+            <div class="panel-head">
+              <div><h2>События</h2><p>SSE-поток</p></div>
+              <div class="actions filters" id="feed-filters">
+                <button class="chip active" data-filter="all">все</button>
+                <button class="chip" data-filter="tool">tools</button>
+                <button class="chip" data-filter="message">чат</button>
+                <button class="chip" data-filter="status">статусы</button>
+                <button class="chip" data-filter="report">отчёты</button>
+                <button class="chip" data-filter="auth_fail">отказы</button>
+              </div>
+            </div>
+            <div class="feed" id="feed"></div>
+          </section>
+
+          <section class="panel chat-panel">
+            <div class="panel-head">
+              <div><h2>Общий чат</h2><p>сообщения команде и админу</p></div>
+            </div>
+            <div class="chat-log" id="chat-log"></div>
+            <form class="chat-form" id="chat-form">
+              <div class="row">
+                <select id="chat-recipient" aria-label="Получатель"></select>
+                <input id="chat-subject" placeholder="Тема (необязательно)" maxlength="160">
+              </div>
+              <textarea id="chat-body" placeholder="Сообщение команде…" maxlength="20000" required></textarea>
+              <button class="btn primary small" type="submit">Отправить</button>
+            </form>
+          </section>
+        </div>
+      </section>
+
+      <!-- REPORTS -->
+      <section class="view" id="view-reports">
+        <div class="view-head">
+          <div>
+            <h2>Отчёты</h2>
+            <p>Общая папка <span class="mono">логи работы ИИ</span>. Сюда агенты пишут подтверждённые примитивы и итоги.</p>
+          </div>
+          <div class="actions"><span class="badge" id="reports-count">0</span></div>
+        </div>
+        <section class="panel">
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Дата</th><th>Автор</th><th>Заголовок</th><th>Кратко</th><th>Файл</th></tr></thead>
+              <tbody id="reports-table"></tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+
+      <!-- TASKS -->
+      <section class="view" id="view-tasks">
+        <div class="view-head">
+          <div>
+            <h2>Доска задач</h2>
+            <p>Агенты берут задачи через MCP. Пустые колонки — нормально: команда сама решает, что важно.</p>
+          </div>
+          <div class="actions">
+            <span class="badge" id="tasks-open-count">0</span>
+            <button class="btn primary small" id="new-task-btn">+ Новая задача</button>
+          </div>
+        </div>
+        <div class="task-board" id="task-board"></div>
+      </section>
+
+      <!-- SETTINGS -->
+      <section class="view" id="view-settings">
+        <div class="view-head">
+          <div>
+            <h2>Настройки</h2>
+            <p>Подключение, безопасность и состояние хранилища.</p>
+          </div>
+        </div>
+
+        <div class="settings-grid">
+          <section class="panel">
+            <div class="panel-head"><div><h2>Подключение</h2><p>MCP endpoint и публичный адрес</p></div></div>
+            <div class="panel-body stack" id="settings-connection"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-head"><div><h2>Безопасность</h2><p>пароль оператора</p></div></div>
+            <div class="panel-body">
+              <form id="password-form" class="stack">
+                <label class="field"><span>Текущий пароль</span><input id="pw-current" type="password" autocomplete="current-password" required></label>
+                <label class="field"><span>Новый пароль</span><input id="pw-new" type="password" autocomplete="new-password" minlength="10" required></label>
+                <button class="btn small" type="submit">Сменить пароль</button>
+                <p class="hint">После смены все сессии, кроме текущей, будут завершены.</p>
+              </form>
+            </div>
+          </section>
+
+          <section class="panel wide">
+            <div class="panel-head"><div><h2>Хранилище</h2><p>диск и база</p></div></div>
+            <div class="panel-body" id="settings-storage"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-head"><div><h2>О системе</h2><p>версия и режим</p></div></div>
+            <div class="panel-body" id="settings-about"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-head"><div><h2>Обслуживание</h2><p>корзина и сессии</p></div></div>
+            <div class="panel-body stack">
+              <div class="callout">Удаление папки перемещает её в <span class="mono">agents/.trash</span> и отзывает все ключи. Очистка корзины удаляет файлы безвозвратно.</div>
+              <div class="btn-row">
+                <button class="btn danger small" id="empty-trash-btn-2">Очистить корзину</button>
+                <button class="btn ghost small" id="logout-all">Выйти</button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+  </main>
+</div>
+
+<div class="modal hidden" id="modal" aria-hidden="true">
+  <div class="modal-backdrop" data-close="1"></div>
+  <div class="modal-card" id="modal-card" role="dialog" aria-modal="true">
+    <header class="modal-head">
+      <h2 id="modal-title"></h2>
+      <button class="modal-close" data-close="1" aria-label="Закрыть">×</button>
+    </header>
+    <div class="modal-body" id="modal-body"></div>
+    <footer class="modal-foot" id="modal-foot"></footer>
+  </div>
+</div>
+
+<div class="toasts" id="toasts"></div>
+<script src="/static/app.js"></script>
+</body>
+</html>

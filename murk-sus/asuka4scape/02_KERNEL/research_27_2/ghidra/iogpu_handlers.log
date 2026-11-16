@@ -1,0 +1,80 @@
+openjdk version "27" 2026-09-15
+OpenJDK Runtime Environment (build 27)
+OpenJDK 64-Bit Server VM (build 27, mixed mode)
+INFO  Using log config file: jar:file:/home/femboychik/ghidra/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/application.log (LoggingInitialization)  
+INFO  Loading user preferences: /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/preferences (Preferences)  
+INFO  Loading previous preferences: /home/femboychik/.config/ghidra/ghidra_11.4.2_PUBLIC/preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (1715 ms) (ClassSearcher)  
+WARNING: Final field name in class ghidra.util.charset.CharsetInfo has been mutated reflectively by class com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$2 in unnamed module @2c35e847 (file:/home/femboychik/ghidra/Ghidra/Framework/Generic/lib/gson-2.13.2.jar)
+WARNING: Use --enable-final-field-mutation=ALL-UNNAMED to avoid a warning
+WARNING: Mutating final fields will be blocked in a future release unless final field mutation is enabled
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (3323 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 59 extension points (21 false positives) (ClassSearcher)  
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::staticFieldOffset has been called by org.apache.felix.framework.util.SecureAction (file:/home/femboychik/ghidra/Ghidra/Features/Base/lib/org.apache.felix.framework-7.0.5.jar)
+WARNING: Please consider reporting this to the maintainers of class org.apache.felix.framework.util.SecureAction
+WARNING: sun.misc.Unsafe::staticFieldOffset will be removed in a future release
+INFO  HEADLESS Script Paths:
+    /home/femboychik/ghidra/Ghidra/Features/PyGhidra/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/FileFormats/ghidra_scripts
+    /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/Extensions/Jython/ghidra_scripts
+    /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/Extensions/MachineLearning/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/Base/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /home/femboychik/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/BytePatterns/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/VersionTracking/ghidra_scripts
+    /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/Extensions/SleighDevTools/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/PDB/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Processors/Atmel/ghidra_scripts
+    /home/femboychik/claude_code/research_27_2/scripts
+    /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/Extensions/Lisa/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Processors/DATA/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Debug/Debugger/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Processors/8051/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Processors/JVM/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/FunctionID/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Processors/PIC/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/Decompiler/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/SwiftDemangler/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/BSim/ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: /home/femboychik/Загрузки/AyuGram Desktop/Архив/123 (HeadlessAnalyzer)  
+INFO  Opening project: /home/femboychik/Загрузки/AyuGram Desktop/Архив/123 (HeadlessProject)  
+INFO  REPORT: Processing read-only project file: /kernelcache.release.iphone14b.decompressed (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: DumpFunctions.java '0xfffffff00821ef38' '0xfffffff00821f204' '0xfffffff00821f2a8' '0xfffffff00821f320' '0xfffffff00821f5bc' '0xfffffff00821f67c' '0xfffffff00821f760' '0xfffffff00830afa0' '0xfffffff00830b034' '0xfffffff00830b0d4' '0xfffffff00830b124' '0xfffffff008320f50' '0xfffffff008321024' '0xfffffff008321104' '0xfffffff0082d40c0'  (HeadlessAnalyzer)  
+INFO  SCRIPT: /home/femboychik/claude_code/research_27_2/scripts/DumpFunctions.java (HeadlessAnalyzer)  
+INFO  DumpFunctions.java> WROTE fn_fffffff00821ef38.c bytes=3366 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff00821f204.c bytes=1162 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff00821f2a8.c bytes=868 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff00821f320.c bytes=3076 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff00821f5bc.c bytes=1252 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff00821f67c.c bytes=1058 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff00821f760.c bytes=1260 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff00830afa0.c bytes=708 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff00830b034.c bytes=712 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff00830b0d4.c bytes=1059 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff00830b124.c bytes=1055 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff008320f50.c bytes=751 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff008321024.c bytes=837 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff008321104.c bytes=779 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff0082d40c0.c bytes=2846 (GhidraScript)  
+INFO  REPORT: Execute script: RefTo.java '0xfffffff007caff88' '0xfffffff007cd44c8' '0xfffffff007cda310'  (HeadlessAnalyzer)  
+INFO  SCRIPT: /home/femboychik/claude_code/research_27_2/scripts/RefTo.java (HeadlessAnalyzer)  
+INFO  RefTo.java> === REFTO fffffff007caff88 (GhidraScript)  
+INFO  RefTo.java>   total=0 (GhidraScript)  
+INFO  RefTo.java> === REFTO fffffff007cd44c8 (GhidraScript)  
+INFO  RefTo.java>   total=0 (GhidraScript)  
+INFO  RefTo.java> === REFTO fffffff007cda310 (GhidraScript)  
+INFO  RefTo.java>   total=0 (GhidraScript)  

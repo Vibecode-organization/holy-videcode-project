@@ -1,0 +1,24 @@
+// FUN_fffffff0081fbb64 @ fffffff0081fbb64 size=8
+
+void FUN_fffffff0081fbb64(void)
+
+{
+  undefined8 *puVar1;
+  
+  DAT_fffffff00ae23a00 = thunk_EXT_FUN_80110000038d0164("getFilteredGPUPowerToKernelClientFunction")
+  ;
+  DAT_fffffff00ae23a08 = thunk_EXT_FUN_80110000038d0164("getCLPCDynamicSplitRatioDictKey");
+  DAT_fffffff00ae23a10 = thunk_EXT_FUN_80110000038d0164("getCLPCStandbyCountKey");
+  DAT_fffffff00ae23a18 = thunk_EXT_FUN_80110000038d0164("getCLPCStandbyDurationKey");
+  DAT_fffffff00ae23a20 = thunk_EXT_FUN_80110000038d0164("getCLPCPowerSamplePeriodKey");
+  DAT_fffffff00ae23a28 = thunk_EXT_FUN_80110000038d0164("getCLPCPerfCtrlTargetKey");
+  DAT_fffffff00ae23a30 = thunk_EXT_FUN_80110000038d0164("setCLPCDeadlineControlEffortKey");
+  DAT_fffffff00ae23a38 = thunk_EXT_FUN_80110000038d0164("setAGXGameModeKey");
+  DAT_fffffff00ae23a40 = thunk_EXT_FUN_80110000038d0164("setBudgetToAGXFunction");
+  puVar1 = (undefined8 *)
+           thunk_EXT_FUN_8011000003890d88
+                     (&DAT_fffffff00ae23a48,"AGXSecureMemoryMap",&DAT_fffffff00ae23a70,0x78);
+  *puVar1 = &DAT_fffffff007c9eb40;
+  return;
+}
+

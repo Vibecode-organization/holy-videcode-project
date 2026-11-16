@@ -1,0 +1,324 @@
+## passd  10848496 bytes
+### entitlements (197 keys)
+  NSBonjourServices = _wallet._tcp
+  adi-client = 4201635476
+  application-identifier = com.apple.passd
+  aps-connection-initiate
+  aps-environment = Production
+  com.apple.CommCenter.fine-grained = spi
+  com.apple.Contacts.database-allow
+  com.apple.NPKCompanionAgent.client
+  com.apple.NanoPassbook.IDVRemoteDeviceService.credentialprovisioning
+  com.apple.NanoPassbook.IDVRemoteDeviceService.session.client
+  com.apple.PassKit.issuer-provisioning.consumer
+  com.apple.SystemConfiguration.SCPreferences-write-access = com.apple.radios.plist
+  com.apple.accounts.appleaccount.fullaccess
+  com.apple.accounts.appleidauthentication.defaultaccess
+  com.apple.accounts.idms.fullaccess
+  com.apple.ap.adservicesd.statusconditionclient.allow_write
+  com.apple.appattest.spi
+  com.apple.appprotectiond.read.access
+  com.apple.asd.allow
+  com.apple.asd.client = 2178910101
+  com.apple.assistant.cdm.client
+  com.apple.authkit.client.internal
+  com.apple.avfoundation.allow-system-wide-context
+  com.apple.bluetooth.system
+  com.apple.cards.all-access
+  com.apple.cdp.statemachine
+  com.apple.cdp.utility
+  com.apple.chrono.invalidate-timelines
+  com.apple.chronoservices
+  com.apple.coreduetd.allow
+  com.apple.coreduetd.context
+  com.apple.coreidvd.identity-proofing
+  com.apple.coreidvd.identity-proofing-ui
+  com.apple.coreidvd.identity-provisioning
+  com.apple.coreidvd.spi
+  com.apple.developer.apple-cash-disbursements
+  com.apple.developer.device-information.user-assigned-device-name
+  com.apple.developer.hardened-process
+  com.apple.developer.homekit
+  com.apple.developer.icloud-container-development-container-identifiers = com.apple.pay, com.apple.shoebox, com.apple.passes, com.apple.passes.sync, com.apple.passes.sync.secure, com.apple.prototyping.pay
+  com.apple.developer.icloud-container-identifiers = com.apple.pay, com.apple.shoebox, com.apple.passes, com.apple.passes.sync, com.apple.passes.sync.secure, com.apple.prototyping.pay
+  com.apple.developer.icloud-services = CloudKit, CloudDocuments
+  com.apple.developer.networking.multicast
+  com.apple.developer.siri
+  com.apple.developer.ubiquity-kvstore-identifier = com.apple.passd
+  com.apple.developer.weatherkit
+  com.apple.duet.activityscheduler.allow
+  com.apple.finance.private
+  com.apple.finance.store
+  com.apple.finhealth.all-access
+  com.apple.frontboard.app-badge-value-access
+  com.apple.frontboard.launchapplications
+  com.apple.generativeexperiences.availabilityService
+  com.apple.icloud.findmydeviced.access
+  com.apple.idcredentials.biometrics
+  com.apple.idcredentials.storage = ua, identity
+  com.apple.imagent
+  com.apple.internal.seserviced.all.endpoints.and.cas
+  com.apple.internal.seserviced.fido
+  com.apple.internal.seserviced.ptattestation
+  com.apple.keystore.sik.access
+  com.apple.locationd.clearauthorizations
+  com.apple.locationd.effective_bundle
+  com.apple.locationd.ranging
+  com.apple.locationd.spectator
+  com.apple.managedconfiguration.profiled-access
+  com.apple.mkb.usersession.info
+  com.apple.mkb.usersession.keybagopaquedata
+  com.apple.mobileactivationd.device-identifiers
+  com.apple.mobileactivationd.spi
+  com.apple.multitasking.unlimitedassertions
+  com.apple.nano.nanoregistry
+  com.apple.nano.nanoregistry.generalaccess
+  com.apple.nanopassd.connect
+  com.apple.nanopassrenderingservice.client
+  com.apple.nanosystemsettings = accounts, icloud
+  com.apple.nearbyd.xpc
+  com.apple.nearbyinteraction.background
+  com.apple.nfcd.assertion.handover
+  com.apple.nfcd.hwmanager
+  com.apple.nfcd.radio.powertoggle
+  com.apple.nfcd.session.ecommerce
+  com.apple.nfcd.session.fieldOperations
+  com.apple.nfcd.session.peerpayment
+  com.apple.nfcd.session.reader.internal
+  com.apple.nfcd.session.se
+  com.apple.nfcd.session.trust
+  com.apple.nfcd.singleUser
+  com.apple.odi.internal
+  com.apple.pairedunlock.xpc.authorized
+  com.apple.payment.all-access
+  com.apple.payment.payment-information-event-hosting
+  com.apple.payment.presentation
+  com.apple.pegasus.context
+  com.apple.private.CoreAuthentication.SPI
+  com.apple.private.InstallCoordination.allowed
+  com.apple.private.LocalAuthentication.CallerName
+  com.apple.private.LocalAuthentication.CallerPID
+  com.apple.private.LocalAuthentication.DTO
+  com.apple.private.LocalAuthentication.DTO.FallbackToNoAuth
+  com.apple.private.LocalAuthentication.Storage
+  com.apple.private.MobileGestalt.AllowedProtectedKeys = MLBSerialNumber, SerialNumber, UniqueDeviceID, UniqueChipID
+  com.apple.private.accessories.showallconnections
+  com.apple.private.accounts.allaccounts
+  com.apple.private.activitykit.activityAuthorizer
+  com.apple.private.activitykit.ephemeralActivityRequester
+  com.apple.private.activitykit.unboundedActivityRequester
+  com.apple.private.amsondevicestoraged
+  com.apple.private.appintents.allowed-bundle-identifiers = com.apple.Passbook
+  com.apple.private.applemediaservices
+  com.apple.private.applesse.allow
+  com.apple.private.aps-connection-initiate
+  com.apple.private.assets.accessible-asset-types = com.apple.MobileAsset.WalletMobileAssets
+  com.apple.private.attribution.implicitly-assumed-identity = {type, value}
+  com.apple.private.biome.read-write = Wallet.Transaction, Discoverability.Signals
+  com.apple.private.biometrickit.allow-default
+  com.apple.private.canModifyAppLinkPermissions
+  com.apple.private.carkit
+  com.apple.private.ckks
+  com.apple.private.cloudkit.buddyAccess
+  com.apple.private.cloudkit.masquerade
+  com.apple.private.cloudkit.serviceNameForContainerMap = {com.apple.passes.sync.secure, com.apple.pay, com.apple.prototyping.pay}
+  com.apple.private.cloudkit.setEnvironment
+  com.apple.private.cloudkit.systemService
+  com.apple.private.corerecents
+  com.apple.private.coreservices.canmaplsdatabase
+  com.apple.private.coreservices.canopenactivity
+  com.apple.private.corespotlight.bundleid = com.apple.Passbook
+  com.apple.private.corespotlight.internal
+  com.apple.private.corespotlight.search.internal
+  com.apple.private.familycircle
+  com.apple.private.homekit
+  com.apple.private.homekit.wallet-key
+  com.apple.private.hsa-authentication-processing
+  com.apple.private.ids.messaging = com.apple.private.alloy.applepay, com.apple.private.alloy.applepay.sharing, com.apple.private.alloy.passbook.provisioning
+  com.apple.private.ids.messaging.high-priority = com.apple.private.alloy.applepay, com.apple.private.alloy.applepay.sharing
+  com.apple.private.ids.phone-number-authentication
+  com.apple.private.intelligenceplatform.client-identifier = com.apple.passd
+  com.apple.private.intelligenceplatform.use-cases = {PassSemanticDonation}
+  com.apple.private.keychain.sysbound
+  com.apple.private.librarian.container-proxy
+  com.apple.private.managed-settings.effective-read
+  com.apple.private.nearbyinteraction.privileged
+  com.apple.private.network.socket-delegate
+  com.apple.private.nsurlsession.impersonate
+  com.apple.private.octagon
+  com.apple.private.rtcreportingd
+  com.apple.private.security.storage.os_eligibility.readonly
+  com.apple.private.seserviced.passd.private.jpki
+  com.apple.private.seserviced.sereservation.client
+  com.apple.private.seserviced.sesprivacykey
+  com.apple.private.sessionkit.custom-platter-target
+  com.apple.private.sessionkit.customPushProcessIdentifier
+  com.apple.private.sessionkit.sessionRequest
+  com.apple.private.swc.additional-service-details-provider = com.apple.Passbook, com.apple.NanoPassbook
+  com.apple.private.swc.system-app
+  com.apple.private.tcc.allow = kTCCServiceCalendar, kTCCServiceWillow, kTCCServiceLiverpool, kTCCServiceAddressBook, kTCCServiceFaceID, kTCCServicePhotos
+  com.apple.private.tcc.manager.access.delete = kTCCServicePKPassLibraryBackgroundAddPasses
+  com.apple.private.tcc.manager.access.read = kTCCServiceAll
+  com.apple.private.tcc.manager.check-by-audit-token = kTCCServicePKPassLibraryBackgroundAddPasses
+  com.apple.private.ts
+  com.apple.private.usernotifications.bundle-identifiers = com.apple.Passbook, com.apple.NanoPassbook, com.apple.PassbookUIService
+  com.apple.runningboard.assertions.PassbookUIService
+  com.apple.runningboard.attributes.bannerrequest
+  com.apple.runningboard.launchprocess
+  com.apple.runningboard.process-state
+  com.apple.security.application-groups = com.apple.CoreODI
+  com.apple.security.attestation.access
+  com.apple.security.exception.files.absolute-path.read-only = /private/var/db/eligibilityd/eligibility.plist
+  com.apple.security.exception.mach-lookup.global-name = com.apple.amsondevicestoraged.xpc, com.apple.photos.service, com.apple.visualintelligence.visual-action-prediction, com.apple.generativeexperiences.availabilityService
+  com.apple.security.exception.shared-preference.read-only = com.apple.suggestions, kCFPreferencesAnyApplication, com.apple.gms.availability
+  com.apple.security.exception.shared-preference.read-write = com.apple.OnDeviceStorage
+  com.apple.security.network.client
+  com.apple.security.network.server
+  com.apple.security.system-groups = systemgroup.com.apple.configurationprofiles, systemgroup.com.apple.mobileactivationd
+  com.apple.seld.tsmmanager
+  com.apple.seserviced.key
+  com.apple.seserviced.kmlXpcService
+  com.apple.seserviced.session.acwg
+  com.apple.seserviced.session.dck
+  com.apple.sharing.Client
+  com.apple.sharing.DeviceDiscovery
+  com.apple.sharing.Services = com.apple.sharing.ApplePay
+  com.apple.springboard.application-removability.proxy
+  com.apple.springboard.biometricUnlockSuppression
+  com.apple.springboard.capture-button-restriction
+  com.apple.springboard.opensensitiveurl
+  com.apple.springboard.remote-alert
+  com.apple.springboard.requestDeviceUnlock
+  com.apple.springboard.shortcutitems.fullaccess
+  com.apple.symptom_diagnostics.report
+  com.apple.usermanagerd.persona.fetch
+  com.apple.visualintelligence.private.visual-action-prediction
+  com.apple.wallet.banner
+  fairplay-client = 87750944
+  keychain-access-groups = com.apple.CredentialSharingService, com.apple.safari.credit-cards, com.apple.SubcredentialUIService, com.apple.PassbookUIService, com.apple.Passbook.PeerPayment, apple, com.apple.pay.merchant-tokens
+  seatbelt-profiles = passd
+### selector-like strings (4636)
+  JSONObjectWithData:options:error:
+  PKArrayForKey:
+  PKBoolForKey:
+  PKDataForKey:
+  PKDateForKey:
+  PKDictionaryForKey:
+  PKDoubleForKey:
+  PKIntegerForKey:
+  PKNumberForKey:
+  PKStringForKey:
+  PKURLForKey:
+  SQLForEntityClass:
+  SQLJoinClausesForEntityClass:
+  SQLParsingScannerWithSQL:
+  SQLToAddColumnWithSQL:toTableNamed:
+  URLForResource:withExtension:
+  URLForUbiquityContainerIdentifier:
+  URLSessionDidFinishEventsForBackgroundURLSession:
+  URLWithString:
+  UUIDWithString:
+  abortDownloadOfCloudDataWithReason:
+  acceptCarKeyShareForMessage:activationCode:completion:
+  acceptInvitationWithIdentifier:activationCode:analyticsUpdateConfig:completion:
+  accessCredentialStoreWithHandler:
+  accessFileDescriptorWithBlock:
+  accessPresentmentInformationForSubtype:
+  accessPrioritySecureElementManagerSessionWithHandler:
+  accessSecureElementManagerSessionWithHandler:
+  accessSecureElementManagerSessionWithSessionExchangeToken:callbackQueue:handler:
+  accessSecureElementManagerSessionWithSessionExchangeToken:handler:
+  accessTerminalDidLockForType:forAppletIdentifier:keyIdentifier:withContent:
+  accessTerminalDidUnlockForType:forAppletIdentifier:keyIdentifier:withContent:
+  accessTerminalDidUpdateStatusForType:forAppletIdentifier:keyIdentifier:withContent:
+  accessUserActivitySignalsForCollectionInterval:
+  accommodatePresentedItemDeletionWithCompletionHandler:
+  accommodatePresentedItemEvictionWithCompletionHandler:
+  accountActionWithRequest:completion:
+  accountAdditionalPushTopicsForAccountPID:inDatabase:
+  accountAndReconsentStatusWithCompletion:
+  accountAttestationAnonymizationSaltWithCompletion:
+  accountAttestionRequestForCredential:withCompletion:
+  accountBalanceHistoryWithRequest:completion:
+  accountBalancesForAccountIdentifier:startDate:endDate:type:completion:
+  accountBalancesForAccountIdentifier:startDate:endDate:type:limit:
+  accountCardAvailabilityInfoWithIdentifier:
+  accountCardAvailabilityInfoWithIdentifier:inDatabase:
+  accountDeleteBeneficiaryWithRequest:completion:
+  accountDetailsForAccountPID:inDatabase:
+  accountEndpointMetadataForAccountIdentifier:endpoint:
+  accountEnhancedMerchantBehaviorForAccountIdentifier:
+  accountEnhancedMerchantBehaviorForAccountPID:inDatabase:
+  accountEnhancedMerchantBehaviorForAccountWithIdentifier:completion:
+  accountEnhancedMerchantForPrivateIdentifier:accountIdentifier:
+  accountEnhancedMerchantForPrivateIdentifier:accountPID:inDatabase:
+  accountEnhancedMerchantProgramIdentifiersForEnhancedMerchantPID:inDatabase:
+  accountEnhancedMerchantsForAccountIdentifier:
+  accountEnhancedMerchantsForAccountPID:inDatabase:
+  accountEnhancedMerchantsForAccountWithIdentifier:completion:
+  accountEntityOrderingsForAccountIdentifier:entityType:
+  accountEntityOrderingsForAccountPID:entityType:inDatabase:
+  accountEntityOrderingsForAccountWithIdentifier:entityType:completion:
+  accountEventExistsWithIdentifier:
+  accountEventWithIdentifier:
+  accountEventWithIdentifier:inDatabase:
+  accountEventsForAccountIdentifier:
+  accountEventsForAccountIdentifier:altDSID:types:startDate:endDate:orderedByDate:limit:
+  accountEventsForAccountIdentifier:excludingTypes:
+  accountEventsWithAccountIdentifier:excludingTypes:inDatabase:
+  accountEventsWithAccountIdentifier:inDatabase:
+  accountFetchPeriodsForAccountPID:inDatabase:
+  accountForPassWithUniqueID:completion:
+  accountForPaymentPass:manager:completion:
+  accountHoldsForAccountIdentifier:completion:
+  accountIdentifierWithPreviousAccountIdentifier:
+  accountInfoWithCompletionHandler:
+  accountInvitationWithAltDSID:
+  accountIsInDirtyStateWithIdentifier:completion:
+  accountMinimumOSVersionsWithPersistentID:inDatabase:
+  accountPendingFamilyMembersForAccountIdentifier:
+  accountPendingFamilyMembersForAccountIdentifier:completion:
+  accountPendingFamilyMembersForAccountIdentifier:inDatabase:
+  accountPendingFamilyMembersWithDisplayedNotification:
+  accountPendingFamilyMembersWithDisplayedNotification:inDatabase:
+  accountPromotionBehaviorForAccountIdentifier:
+  accountPromotionBehaviorForAccountPID:inDatabase:
+  accountPromotionBehaviorForAccountWithIdentifier:completion:
+  accountPromotionCompletionStepsForProgramIdentifier:accountIdentifier:
+  accountPromotionCompletionStepsForProgramIdentifier:accountPID:inDatabase:
+  accountPromotionCompletionStepsForPromotionPID:inDatabase:
+  accountPromotionForProgramIdentifier:accountIdentifier:
+  accountPromotionForProgramIdentifier:accountPID:inDatabase:
+  accountPromotionsForAccountIdentifier:
+  accountPromotionsForAccountPID:inDatabase:
+  accountPromotionsForAccountWithIdentifier:completion:
+  accountReportDeviceEventWithRequest:completion:
+  accountSendReportWithRequest:completion:
+  accountServiceUnavailablePeriodWithPersistentID:inDatabase:
+  accountStatementMetadataForAccountIdentifier:
+  accountStatementMetadataForAccountIdentifier:inDatabase:
+  accountStatementMetadataForAllAccountsWithCompletion:
+  accountStatementMetadataForStatementIdentifier:accountIdentifier:
+  accountStatementMetadataForStatementIdentifier:accountIdentifier:completion:
+  accountStatementMetadataItemsForStatementMetadataPID:inDatabase:
+  accountStatementsWithRequest:completion:
+  accountTaxFormsForAccount:inDatabase:
+  accountTaxFormsForAccountIdentifier:
+  accountTaxFormsWithRequest:completion:
+  accountTermsWithRequest:completion:
+  accountTransactionAnswerWithRequest:completion:
+  accountUpdateUserInfoWithRequest:completion:
+  accountUserActivityForAccountUserAltDSID:
+  accountUserForAccountPID:handle:inDatabase:
+  accountUserForAccountWithIdentifier:handle:
+  accountUserWithAltDSID:
+  accountUserWithAltDSID:accountIdentifier:
+  accountUserWithTransactionSourceIdentifier:
+  accountUsersByAccountIdentifierForFeature:completion:
+  accountUsersForAccountPID:accessLevel:inDatabase:
+  accountUsersForAccountPID:inDatabase:
+  accountUsersForAccountWithIdentifier:
+### path/url-ish strings
+  		<string>/private/var/db/eligibilityd/eligibility.plist</string>
+  ./private/var/db/eligibilityd/eligibility.plist0
+

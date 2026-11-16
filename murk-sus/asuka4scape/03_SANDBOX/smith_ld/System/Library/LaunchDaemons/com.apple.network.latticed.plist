@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>Label</key>
+		<string>com.apple.network.latticed</string>
+		<key>ProgramArguments</key>
+		<array>
+			<string>/usr/libexec/latticed</string>
+		</array>
+		<key>ProcessType</key>
+		<string>Background</string>
+		<key>LaunchEvents</key>
+		<dict>
+			<key>com.apple.iokit.matching</key>
+			<dict>
+				<key>AppleLatticeDPDKService</key>
+				<dict>
+					<key>IOProviderClass</key>
+					<string>AppleLatticeDPDKService</string>
+					<key>IOMatchLaunchStream</key>
+					<true/>
+				</dict>
+			</dict>
+			<key>com.apple.notifyd.matching</key>
+			<dict>
+				<key>com.apple.darwininit.firewall.installed</key>
+				<dict>
+					<key>Notification</key>
+					<string>com.apple.darwininit.firewall.installed</string>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
+</plist>

@@ -1,0 +1,3 @@
+funcs 3555 3555
+identical 3555 ratio 1.0
+changed regions 0

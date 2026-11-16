@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UserName</key>
+	<string>mobile</string>
+	<key>GroupName</key>
+	<string>mobile</string>
+	<key>Label</key>
+	<string>com.apple.roya.royacaptured</string>
+	<key>RunAtLoad</key>
+	<false/>
+	<key>ProcessType</key>
+	<string>Interactive</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.roya.royacaptured</key>
+		<false/>
+		<key>com.apple.roya.royacaptured.system</key>
+		<true/>
+		<key>com.apple.roya.royacaptured.camera</key>
+		<true/>
+		<key>com.apple.roya.royacaptured.userevent</key>
+		<true/>
+		<key>com.apple.roya.royacaptured.capturesession</key>
+		<true/>
+		<key>com.apple.roya.royacaptured.mediaoffload</key>
+		<true/>
+	</dict>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.applicationservice.matching</key>
+		<dict>
+			<key>com.apple.continuitycamera.networksession</key>
+			<dict>
+				<key>scope</key>
+				<integer>3</integer>
+				<key>type</key>
+				<string>listen</string>
+				<key>serviceName</key>
+				<string>com.apple.continuitycamera.device</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/libexec/royacaptured</string>
+	</array>
+</dict>
+</plist>

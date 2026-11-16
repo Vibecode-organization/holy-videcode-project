@@ -1,0 +1,6 @@
+funcs 843 843
+identical 842 ratio 0.99881
+changed regions 1
+== replace A[808:809] B[808:809]
+   A 0xfffffff008610f78 sz=184
+   B 0xfffffff008633288 sz=184

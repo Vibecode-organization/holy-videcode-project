@@ -1,0 +1,6 @@
+funcs 356 356
+identical 355 ratio 0.99719
+changed regions 1
+== replace A[14:15] B[14:15]
+   A 0xfffffff008e4c460 sz=6612
+   B 0xfffffff008f10030 sz=6612

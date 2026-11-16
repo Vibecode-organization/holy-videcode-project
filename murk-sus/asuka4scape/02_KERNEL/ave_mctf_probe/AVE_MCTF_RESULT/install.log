@@ -1,0 +1,28 @@
+2026-11-08 22:32:53 femboychik-systemproductname pymobiledevice3.services.installation_proxy[61149] INFO Uploading AVEMCTFProbe-signed.ipa...
+AVEMCTFProbe-signed.ipa ━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 151.8/151.8 KiB  0:00:00
+2026-11-08 22:32:53 femboychik-systemproductname pymobiledevice3.services.installation_proxy[61149] INFO Upload complete.
+2026-11-08 22:32:53 femboychik-systemproductname pymobiledevice3.services.installation_proxy[61149] INFO Stage: GeneratingApplicationMap
+2026-11-08 22:32:54 femboychik-systemproductname pymobiledevice3.services.installation_proxy[61149] INFO Stage: InstallComplete
+install ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 100/100  0:00:00
+2026-11-08 22:32:54 femboychik-systemproductname pymobiledevice3.services.installation_proxy[61149] INFO Installation succeed.
+2026-11-08 22:35:35 femboychik-systemproductname pymobiledevice3.services.installation_proxy[62231] INFO Uploading AVEMCTFProbe-signed.ipa...
+AVEMCTFProbe-signed.ipa ━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 153.8/153.8 KiB  0:00:00
+2026-11-08 22:35:35 femboychik-systemproductname pymobiledevice3.services.installation_proxy[62231] INFO Upload complete.
+2026-11-08 22:35:35 femboychik-systemproductname pymobiledevice3.services.installation_proxy[62231] INFO Stage: GeneratingApplicationMap
+2026-11-08 22:35:35 femboychik-systemproductname pymobiledevice3.services.installation_proxy[62231] INFO Stage: InstallComplete
+install ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 100/100  0:00:00
+2026-11-08 22:35:35 femboychik-systemproductname pymobiledevice3.services.installation_proxy[62231] INFO Installation succeed.
+2026-11-08 22:38:34 femboychik-systemproductname pymobiledevice3.services.installation_proxy[62939] INFO Uploading AVEMCTFProbe-signed.ipa...
+AVEMCTFProbe-signed.ipa ━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 154.0/154.0 KiB  0:00:00
+2026-11-08 22:38:34 femboychik-systemproductname pymobiledevice3.services.installation_proxy[62939] INFO Upload complete.
+2026-11-08 22:38:34 femboychik-systemproductname pymobiledevice3.services.installation_proxy[62939] INFO Stage: GeneratingApplicationMap
+2026-11-08 22:38:34 femboychik-systemproductname pymobiledevice3.services.installation_proxy[62939] INFO Stage: InstallComplete
+install ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 100/100  0:00:00
+2026-11-08 22:38:35 femboychik-systemproductname pymobiledevice3.services.installation_proxy[62939] INFO Installation succeed.
+2026-11-08 22:47:21 femboychik-systemproductname pymobiledevice3.services.installation_proxy[64076] INFO Uploading AVEMCTFProbe-signed.ipa...
+AVEMCTFProbe-signed.ipa ━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 154.2/154.2 KiB  0:00:00
+2026-11-08 22:47:21 femboychik-systemproductname pymobiledevice3.services.installation_proxy[64076] INFO Upload complete.
+2026-11-08 22:47:21 femboychik-systemproductname pymobiledevice3.services.installation_proxy[64076] INFO Stage: GeneratingApplicationMap
+2026-11-08 22:47:21 femboychik-systemproductname pymobiledevice3.services.installation_proxy[64076] INFO Stage: InstallComplete
+install ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 100/100  0:00:00
+2026-11-08 22:47:21 femboychik-systemproductname pymobiledevice3.services.installation_proxy[64076] INFO Installation succeed.

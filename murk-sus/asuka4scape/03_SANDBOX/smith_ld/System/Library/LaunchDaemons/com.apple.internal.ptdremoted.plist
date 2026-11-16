@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnablePressuredExit</key>
+	<true/>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>Label</key>
+	<string>com.apple.internal.ptdremoted</string>
+	<key>ProcessType</key>
+	<string>Adaptive</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/appleinternal/libexec/ptdremoted</string>
+	</array>
+	<key>RemoteServices</key>
+	<dict>
+		<key>com.apple.internal.ptdremoted</key>
+		<dict>
+			<key>RequireEntitlement</key>
+			<string>com.apple.private.ptdremoteaccess</string>
+			<key>ExposedToUntrustedDevices</key>
+			<true/>
+			<key>ServiceProperties</key>
+			<dict>
+				<key>UsesRemoteXPC</key>
+				<true/>
+				<key>ServiceVersion</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

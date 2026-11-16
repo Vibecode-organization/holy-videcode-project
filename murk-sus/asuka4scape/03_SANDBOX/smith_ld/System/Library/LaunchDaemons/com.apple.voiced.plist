@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/System/Library/PrivateFrameworks/VoiceServices.framework/Support/voiced</string>
+	</array>
+	<key>EnablePressuredExit</key>
+	<true/>
+	<key>UserName</key>
+	<string>mobile</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.voiceservices.tts</key>
+		<true/>
+		<key>com.apple.voiceservices.keepalive</key>
+		<true/>
+		<key>com.apple.voiced</key>
+		<dict>
+			<key>ResetAtClose</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>Label</key>
+	<string>com.apple.voiced</string>
+	<key>ProcessType</key>
+	<string>Adaptive</string>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.notifyd.matching</key>
+		<dict>
+			<key>com.apple.MobileAsset.VoiceServices.VoiceResources.ma.new-asset-installed</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.MobileAsset.VoiceServices.VoiceResources.ma.new-asset-installed</string>
+			</dict>
+			<key>com.apple.MobileAsset.VoiceServices.GryphonVoice.ma.new-asset-installed</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.MobileAsset.VoiceServices.GryphonVoice.ma.new-asset-installed</string>
+			</dict>
+			<key>com.apple.MobileAsset.VoiceServicesVocalizerVoice.ma.cached-metadata-updated</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.MobileAsset.VoiceServicesVocalizerVoice.ma.cached-metadata-updated</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

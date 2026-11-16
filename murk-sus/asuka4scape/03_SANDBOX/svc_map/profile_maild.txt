@@ -1,0 +1,261 @@
+## maild  2437744 bytes
+### entitlements (127 keys)
+  application-identifier = com.apple.email.maild
+  aps-connection-initiate
+  com.apple.CommCenter.fine-grained = spi
+  com.apple.Contacts.database-allow
+  com.apple.PerfPowerServices.data-donation
+  com.apple.UNCUserNotification
+  com.apple.assistant.cdm.client
+  com.apple.authkit.client.internal
+  com.apple.bulletindistributord.server
+  com.apple.businessservicesd.businessmetadata
+  com.apple.chrono.invalidate-timelines
+  com.apple.chronoservices
+  com.apple.coreduetd.allow
+  com.apple.coreduetd.context
+  com.apple.dataaccess.dataaccessd.PersistentPush = com.apple.email.maild
+  com.apple.developer.hardened-process
+  com.apple.developer.hardened-process.hardened-heap
+  com.apple.developer.icloud-container-environment = Production
+  com.apple.developer.icloud-container-identifiers = com.apple.mobilemail, com.apple.mail.preferences
+  com.apple.developer.icloud-extended-share-access = InProcessShareOwnerParticipantInfo
+  com.apple.developer.icloud-services = CloudKit, CloudDocuments
+  com.apple.developer.networking.carrier-constrained.app-optimized
+  com.apple.developer.networking.carrier-constrained.appcategory = productivity-8012
+  com.apple.developer.networking.non-terrestrial.app-optimized
+  com.apple.developer.networking.non-terrestrial.appcategory = productivity-8012
+  com.apple.developer.ubiquity-kvstore-identifier = com.apple.mail
+  com.apple.diagnosticpipeline.request
+  com.apple.duet.activityscheduler.allow
+  com.apple.frontboard.launchapplications
+  com.apple.icloudmailagent.secret.xpc
+  com.apple.intelligenceplatform.EntityResolution
+  com.apple.intelligenceplatform.View
+  com.apple.keystore.allow.background-processing-assertions
+  com.apple.mobile.keybagd.UserManager.sync
+  com.apple.mobilemail.mailservices
+  com.apple.multitasking.systemappassertions
+  com.apple.nano.nanoregistry
+  com.apple.networkd.set_account_identifier
+  com.apple.notificationcenter.widgetcontrollerhascontent
+  com.apple.private.CacheDelete = ITEMIZED_PURGEABLE_ENTITLEMENT, CLIENT_ENTITLEMENT, SERVICE_ENTITLEMENT
+  com.apple.private.MobileContainerManager.lookup = {appData}
+  com.apple.private.MobileContainerManager.unrestrictedPersona
+  com.apple.private.accounts.allaccounts
+  com.apple.private.appintents.allowed-bundle-identifiers = com.apple.mobilemail, com.apple.mail
+  com.apple.private.attribution.implicitly-assumed-identity = {type, value}
+  com.apple.private.attribution.usage-reporting-only.implicitly-assumed-identity = {type, value}
+  com.apple.private.biome.pruner = Mail.Categorization
+  com.apple.private.biome.read-write = Mail.Categorization, Mail.Recategorization, Mail.CategorizationAnalytics.Receive, Mail.CategorizationAnalytics.Read, Mail.CategorizationAnalytics.Recategorize
+  com.apple.private.biome.writer = Discoverability.Signals
+  com.apple.private.clouddocs.sharing.private-interface
+  com.apple.private.cloudkit.masquerade
+  com.apple.private.cloudkit.publishAssets
+  com.apple.private.cloudkit.serviceNameForContainerMap = {com.apple.mail.preferences}
+  com.apple.private.cloudkit.spi
+  com.apple.private.cloudkit.systemService
+  com.apple.private.communicationsfilter
+  com.apple.private.coreservices.canmaplsdatabase
+  com.apple.private.corespotlight.bundleid = com.apple.mobilemail
+  com.apple.private.corespotlight.internal
+  com.apple.private.corespotlight.search.internal
+  com.apple.private.dnssd.resolver-override
+  com.apple.private.donotdisturb.behavior.resolution.client-identifiers = com.apple.messageui
+  com.apple.private.dprivacyd.allow
+  com.apple.private.generativesearch.client.search
+  com.apple.private.ids.messaging = com.apple.private.alloy.mail.fetches, com.apple.private.alloy.mail.sync.accounts, com.apple.private.alloy.mail.sync.content, com.apple.private.alloy.mail.sync.messages, com.apple.private.alloy.mail.sy
+  com.apple.private.ids.messaging.urgent-priority = com.apple.private.alloy.mail.fetches, com.apple.private.alloy.mail.sync.accounts, com.apple.private.alloy.mail.sync.content, com.apple.private.alloy.mail.sync.messages, com.apple.private.alloy.mail.sy
+  com.apple.private.imcore.imagent
+  com.apple.private.intelligenceplatform.use-cases = {MailInAppSearch}
+  com.apple.private.intelligenceplatform.views.read-only = appEntityRelevanceRanking, entityAliasECR, entitySubgraph, entitySummary, eventSubgraph, inferenceFeaturesECR, loiEntityRelevanceRanking, peopleSubgraph, personEntityRelevanceRanking, visualIdentifier
+  com.apple.private.kernel.override-cpumon
+  com.apple.private.kvs.ignore-quota
+  com.apple.private.metadata.exattrs
+  com.apple.private.network.socket-delegate
+  com.apple.private.networkserviceproxy
+  com.apple.private.nsurlsession.impersonate
+  com.apple.private.parsec.default-client = com.apple.email.maild
+  com.apple.private.persona.read
+  com.apple.private.personas.propagate
+  com.apple.private.security.restricted-application-groups = group.com.apple.calendar, group.com.apple.mail, com.apple.MailPersonaStorage, group.com.apple.suggestions.mail-intelligence, group.com.apple.pommes
+  com.apple.private.security.storage.Calendar
+  com.apple.private.security.storage.Mail
+  com.apple.private.security.storage.triald
+  com.apple.private.suggestions.mail
+  com.apple.private.tcc.allow = kTCCServiceLiverpool, kTCCServiceCalendar, kTCCServiceReminders
+  com.apple.private.tcc.allow.overridable = kTCCServiceAddressBook
+  com.apple.private.tcc.kill-on-assumed-identity-authorization-change
+  com.apple.private.ubiquity-additional-kvstore-identifiers = com.apple.mail.vipsenders, com.apple.mail.threadinfo, com.apple.mail.listUnsubscribeInfo, com.apple.mail.remindMe, com.apple.mail.senders, com.apple.mail.businesses
+  com.apple.private.usernotifications.bundle-identifiers = com.apple.mobilemail
+  com.apple.proactive.eventtracker
+  com.apple.rootless.storage.coreduet_knowledge_store
+  com.apple.runningboard.assertions.webkit
+  com.apple.runningboard.process-state
+  com.apple.samples.cloudkit.sharing
+  com.apple.security.application-groups = group.com.apple.calendar, group.com.apple.mail, com.apple.MailPersonaStorage, group.com.apple.suggestions.mail-intelligence, group.com.apple.pommes
+  com.apple.security.exception.carrier-bundle.read
+  com.apple.security.exception.files.absolute-path.read-only = /private/var/mobile/Library/Trial/, /private/var/containers/Shared/SystemGroup/systemgroup.com.apple.configurationprofiles/Library/ConfigurationProfiles/ClientTruth.plist, /System/, /private/var/Mobil
+  com.apple.security.exception.files.absolute-path.read-write = /private/var/tmp/com.apple.email.maild/
+  com.apple.security.exception.files.home-relative-path.read-only = /Library/SyncedPreferences/com.apple.email.maild-com.apple.mail.vipsenders.plist, /Library/SyncedPreferences/com.apple.email.maild-com.apple.mail.threadinfo.plist, /Library/Caches/PassKit/, /Library/U
+  com.apple.security.exception.files.home-relative-path.read-write = /Library/Application Support/CloudKitMailConversationsFlags/, /Library/Caches/com.apple.backboardd/, /Library/Caches/com.apple.email.maild/, /Library/Caches/com.apple.WebKit.Networking/, /Library/Cach
+  com.apple.security.exception.iokit-user-client-class = AppleKeyStoreUserClient, RootDomainUserClient
+  com.apple.security.exception.mach-lookup.global-name = com.apple.linkd.application-service, com.apple.mobile.usermanagerd.xpc, com.apple.assistant.cdm, com.apple.duetactivityscheduler, com.apple.triald.namespace-management, com.apple.identityservicesd.emb
+  com.apple.security.exception.shared-preference.read-only = com.apple.suggestions, com.apple.FontParser, com.apple.persistentconnection-mcc, com.apple.nsurlcache, com.apple.ImageIO, com.apple.applejpeg, com.apple.pairedsyncd, com.apple.usernotifications.userno
+  com.apple.security.exception.shared-preference.read-write = com.apple.EmailFoundation, com.apple.NanoMail, com.apple.mobilemail, com.apple.email.maild, com.apple.message, com.apple.usernotifications.delegate.mobilemail, com.apple.usernotifications.delegate.com
+  com.apple.security.network.client
+  com.apple.security.system-groups = systemgroup.com.apple.osanalytics, systemgroup.com.apple.configurationprofiles
+  com.apple.security.ts.addressbook
+  com.apple.security.ts.application-group-support
+  com.apple.security.ts.cloudkit-client
+  com.apple.security.ts.identity-services-client
+  com.apple.security.ts.location-services
+  com.apple.security.ts.mach-task-name
+  com.apple.security.ts.mobile-keybag-access
+  com.apple.security.ts.power-assertions
+  com.apple.security.ts.springboard-services
+  com.apple.springboard.delete-application-snapshots
+  com.apple.springboard.monitorAppSwitcherUserQuit
+  com.apple.springboard.shortcutitems.fullaccess
+  com.apple.symptom_diagnostics
+  com.apple.tailspin.dump-output
+  com.apple.trial.client = 337
+  com.apple.usermanagerd.persona.background
+  com.apple.usermanagerd.persona.create
+  com.apple.usermanagerd.persona.delete
+  com.apple.usermanagerd.persona.fetch
+  com.apple.wifi.manager-access
+  keychain-access-groups = com.apple.social.oauthurl, apple, appleaccount, com.apple.mobilemail.smime, com.apple.identities, com.apple.certificates, com.apple.mail, com.apple.mail.identities, com.apple.suggestions.mail-intellig
+  seatbelt-profiles = maild
+### selector-like strings (846)
+  JSONObjectWithData:options:error:
+  URLForLoadingContext:
+  URLForLoadingContext:scheme:
+  URLWithString:
+  accountImageForAccount:
+  accountPropertyForKey:
+  accountWithId:
+  accountWithUniqueId:
+  actionDecisionForMessage:usingMessageActionProvider:
+  actionKeyForTriageAction:
+  activeAccountsDidChangeForNotificationCenterObserver:
+  activeAccountsWithError:
+  activityWithID:finishedWithError:
+  activityWithID:setCompletedCount:totalCount:
+  activityWithID:setUserInfoObject:forKey:
+  adaptivePresentationStyleForPresentationController:
+  adaptivePresentationStyleForPresentationController:traitCollection:
+  addChangeObserver:withIdentifier:
+  addChild:withPendingUnitCount:
+  addNotificationRequest:withCompletionHandler:
+  addRemindMeSoundForNotificationContent:
+  addSoundForAccountIfNecessaryForNotificationContent:notificationMessage:
+  additionalContentInsetForComposeWebView:
+  additionalStoreWithIdentifier:
+  addressableGroupResultStyleForComposeContactsSearchController:
+  allKeysForObject:
+  allMailboxUidsSortedWithSpecialsAtTopForAccount:includingLocals:client:outbox:
+  allMailboxUidsSortedWithSpecialsAtTopIncludingLocals:
+  allVIPSendersWithCompletion:
+  andCompoundCriterionWithCriteria:
+  andPredicateWithSubpredicates:
+  appendCustomEntityWithTag:stringRepresentation:
+  appendFormat:
+  appendInnerTextWithConsumableNode:
+  archivedDataWithRootObject:requiringSecureCoding:error:
+  arrayForKey:
+  arrayWithArray:
+  arrayWithCapacity:
+  arrayWithObject:
+  arrayWithObjects:
+  arrayWithObjects:count:
+  attachmentAttributedStringWithContentId:mergingAttributes:
+  attachmentForTextAttachment:error:
+  attachmentForURL:error:
+  attachmentForURL:withMimeBody:error:
+  attachmentURLsForGlobalMessageIDs:
+  attachmentsForContext:
+  attachmentsForURLs:error:
+  attemptToCancelFullMessageLoadForMessageIds:
+  autosaveSessionForIdentifier:completion:
+  autosavedMessageDataWithIdentifier:completion:
+  becomeCurrentWithPendingUnitCount:
+  beginAddingNewMessagesForStore:
+  bezierPathWithRoundedRect:cornerRadius:
+  blockForKey:
+  blockOperationWithBlock:
+  bodyBackfillDateForSource:
+  bodyDataForcingDownload:
+  boolForKey:
+  boundingRectWithSize:options:attributes:context:
+  bulletinFlagsForMessageStatus:dateReceived:messageWillBeAddedToSyncProvider:mailboxId:
+  bundleForClass:
+  bundleWithIdentifier:
+  cachedMetadataJSONForKey:messageID:
+  canInitWithRequest:
+  cancelRequestForMessageId:
+  cancelRequestForMessageIds:
+  cancelSummaryRequestForMessageWithExternalReference:
+  cancelSummaryRequestsForAccountWithID:
+  canonicalRequestForRequest:
+  checkInComposeWithIdentifier:completion:
+  com.apple.EmailFoundation
+  com.apple.FSEvents
+  com.apple.FavoritesPersistence.mergeExternalChanges
+  com.apple.FavoritesPersistence.writeCollectionData
+  com.apple.FontParser
+  com.apple.ImageIO
+  com.apple.MFNanoServerMessageContentLoader.attachments
+  com.apple.MFNanoServerMessageContentLoader.database
+  com.apple.MFNanoServerMessageContentLoader.parsing
+  com.apple.MFNanoServerMessageSender
+  com.apple.MFNanoServerMessageUpdater
+  com.apple.MailPersonaStorage
+  com.apple.Message
+  com.apple.MobileMail.NanoServer
+  com.apple.MobileMail.NanoServer.ContentLoader
+  com.apple.MobileMail.NanoServerFullMessageLoader
+  com.apple.MobileMail.OutgoingMessageRepository_iOS.observationScheduler
+  com.apple.MobileMail.pushPurgeableSpaceUpdate
+  com.apple.NanoMail
+  com.apple.UNCUserNotification
+  com.apple.adid
+  com.apple.applejpeg
+  com.apple.assistant.cdm
+  com.apple.assistant.cdm.client
+  com.apple.businessservicesd
+  com.apple.cdp.daemon
+  com.apple.certificates
+  com.apple.chronoservices
+  com.apple.coredatad.cloudkit
+  com.apple.coreduetd.allow
+  com.apple.coreduetd.context
+  com.apple.donotdisturb.service
+  com.apple.dprivacyd
+  com.apple.duetactivityscheduler
+  com.apple.email
+  com.apple.email.ConversationDailyExporter
+  com.apple.email.ConversationPruning
+  com.apple.email.DaemonFetchController
+  com.apple.email.DaemonFetchController.pendingFetchOTCScheduler
+  com.apple.email.EDRemoteContentManager.requestScheduler
+  com.apple.email.EDRemoteContentPersistence.analyticsScheduler
+  com.apple.email.EMCoreAnalyticsCollector
+  com.apple.email.MFDeliveryQueue.ObservationScheduler
+  com.apple.email.MFDeliveryQueue.delayedMessagesScheduler
+  com.apple.email.MFUserNotificationCenterController.contentProtectionQueue
+  com.apple.email.MFUserNotificationCenterUpgrader
+  com.apple.email.MailboxAutofetchController.fetch
+  com.apple.email.MailboxAutofetchController.fetchProcessor
+  com.apple.email.NanoServer
+### path/url-ish strings
+  /private/var
+  		<string>/private/var/mobile/Library/Trial/</string>
+  		<string>/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.configurationprofiles/Library/ConfigurationProfiles/ClientTruth.plist</string>
+  		<string>/private/var/MobileAsset/</string>
+  		<string>/private/var/tmp/com.apple.email.maild/</string>
+  "/private/var/mobile/Library/Trial/
+  /private/var/containers/Shared/SystemGroup/systemgroup.com.apple.configurationprofiles/Library/ConfigurationProfiles/ClientTruth.plist
+  /private/var/MobileAsset/0h
+  '/private/var/tmp/com.apple.email.maild/0
+

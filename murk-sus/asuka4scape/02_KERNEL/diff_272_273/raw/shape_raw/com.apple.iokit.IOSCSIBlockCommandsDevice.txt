@@ -1,0 +1,3 @@
+funcs 302 302
+identical 302 ratio 1.0
+changed regions 0

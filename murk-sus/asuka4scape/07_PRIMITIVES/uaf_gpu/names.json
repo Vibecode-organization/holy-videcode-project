@@ -1,0 +1,1849 @@
+{
+ "0": [
+  [
+   "0xfffffff00994772c",
+   "0xfffffff00783107e",
+   "%s: The number of queues (%d) exceeding limit (%d), failing IOGPUCommandQueue creation\n"
+  ],
+  [
+   "0xfffffff0099477a8",
+   "0xfffffff0078310d6",
+   "%s: Too many queues (%d) created, possibly leaking?\n"
+  ],
+  [
+   "0xfffffff0099477f0",
+   "0xfffffff00783110b",
+   "%s: Invalid newCommandQueueArgsSize (%u) expected (%u)\n"
+  ],
+  [
+   "0xfffffff0099478f0",
+   "0xfffffff007831143",
+   "%s: newCommandQueue failed\n"
+  ],
+  [
+   "0xfffffff009947920",
+   "0xfffffff00783115f",
+   "%s: init failed\n"
+  ]
+ ],
+ "1": [
+  [
+   "0xfffffff00994772c",
+   "0xfffffff00783107e",
+   "%s: The number of queues (%d) exceeding limit (%d), failing IOGPUCommandQueue creation\n"
+  ],
+  [
+   "0xfffffff0099477a8",
+   "0xfffffff0078310d6",
+   "%s: Too many queues (%d) created, possibly leaking?\n"
+  ],
+  [
+   "0xfffffff0099477f0",
+   "0xfffffff00783110b",
+   "%s: Invalid newCommandQueueArgsSize (%u) expected (%u)\n"
+  ],
+  [
+   "0xfffffff0099478f0",
+   "0xfffffff007831143",
+   "%s: newCommandQueue failed\n"
+  ],
+  [
+   "0xfffffff009947920",
+   "0xfffffff00783115f",
+   "%s: init failed\n"
+  ],
+  [
+   "0xfffffff009947974",
+   "0xfffffff007831170",
+   "%s: failed to add into name space\n"
+  ],
+  [
+   "0xfffffff009947a30",
+   "0xfffffff007831193",
+   "%s: failed for id %d\n"
+  ]
+ ],
+ "2": [
+  [
+   "0xfffffff00994772c",
+   "0xfffffff00783107e",
+   "%s: The number of queues (%d) exceeding limit (%d), failing IOGPUCommandQueue creation\n"
+  ],
+  [
+   "0xfffffff0099477a8",
+   "0xfffffff0078310d6",
+   "%s: Too many queues (%d) created, possibly leaking?\n"
+  ],
+  [
+   "0xfffffff0099477f0",
+   "0xfffffff00783110b",
+   "%s: Invalid newCommandQueueArgsSize (%u) expected (%u)\n"
+  ],
+  [
+   "0xfffffff0099478f0",
+   "0xfffffff007831143",
+   "%s: newCommandQueue failed\n"
+  ],
+  [
+   "0xfffffff009947920",
+   "0xfffffff00783115f",
+   "%s: init failed\n"
+  ],
+  [
+   "0xfffffff009947974",
+   "0xfffffff007831170",
+   "%s: failed to add into name space\n"
+  ],
+  [
+   "0xfffffff009947a30",
+   "0xfffffff007831193",
+   "%s: failed for id %d\n"
+  ]
+ ],
+ "3": [
+  [
+   "0xfffffff00994772c",
+   "0xfffffff00783107e",
+   "%s: The number of queues (%d) exceeding limit (%d), failing IOGPUCommandQueue creation\n"
+  ],
+  [
+   "0xfffffff0099477a8",
+   "0xfffffff0078310d6",
+   "%s: Too many queues (%d) created, possibly leaking?\n"
+  ],
+  [
+   "0xfffffff0099477f0",
+   "0xfffffff00783110b",
+   "%s: Invalid newCommandQueueArgsSize (%u) expected (%u)\n"
+  ],
+  [
+   "0xfffffff0099478f0",
+   "0xfffffff007831143",
+   "%s: newCommandQueue failed\n"
+  ],
+  [
+   "0xfffffff009947920",
+   "0xfffffff00783115f",
+   "%s: init failed\n"
+  ],
+  [
+   "0xfffffff009947974",
+   "0xfffffff007831170",
+   "%s: failed to add into name space\n"
+  ],
+  [
+   "0xfffffff009947a30",
+   "0xfffffff007831193",
+   "%s: failed for id %d\n"
+  ]
+ ],
+ "4": [
+  [
+   "0xfffffff00994772c",
+   "0xfffffff00783107e",
+   "%s: The number of queues (%d) exceeding limit (%d), failing IOGPUCommandQueue creation\n"
+  ],
+  [
+   "0xfffffff0099477a8",
+   "0xfffffff0078310d6",
+   "%s: Too many queues (%d) created, possibly leaking?\n"
+  ],
+  [
+   "0xfffffff0099477f0",
+   "0xfffffff00783110b",
+   "%s: Invalid newCommandQueueArgsSize (%u) expected (%u)\n"
+  ],
+  [
+   "0xfffffff0099478f0",
+   "0xfffffff007831143",
+   "%s: newCommandQueue failed\n"
+  ],
+  [
+   "0xfffffff009947920",
+   "0xfffffff00783115f",
+   "%s: init failed\n"
+  ],
+  [
+   "0xfffffff009947974",
+   "0xfffffff007831170",
+   "%s: failed to add into name space\n"
+  ],
+  [
+   "0xfffffff009947a30",
+   "0xfffffff007831193",
+   "%s: failed for id %d\n"
+  ],
+  [
+   "0xfffffff009947b64",
+   "0xfffffff00782b2b6",
+   "static IOReturn IOGPUDeviceUserClient::s_new_resource(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ]
+ ],
+ "5": [
+  [
+   "0xfffffff00994772c",
+   "0xfffffff00783107e",
+   "%s: The number of queues (%d) exceeding limit (%d), failing IOGPUCommandQueue creation\n"
+  ],
+  [
+   "0xfffffff0099477a8",
+   "0xfffffff0078310d6",
+   "%s: Too many queues (%d) created, possibly leaking?\n"
+  ],
+  [
+   "0xfffffff0099477f0",
+   "0xfffffff00783110b",
+   "%s: Invalid newCommandQueueArgsSize (%u) expected (%u)\n"
+  ],
+  [
+   "0xfffffff0099478f0",
+   "0xfffffff007831143",
+   "%s: newCommandQueue failed\n"
+  ],
+  [
+   "0xfffffff009947920",
+   "0xfffffff00783115f",
+   "%s: init failed\n"
+  ],
+  [
+   "0xfffffff009947974",
+   "0xfffffff007831170",
+   "%s: failed to add into name space\n"
+  ],
+  [
+   "0xfffffff009947a30",
+   "0xfffffff007831193",
+   "%s: failed for id %d\n"
+  ],
+  [
+   "0xfffffff009947b64",
+   "0xfffffff00782b2b6",
+   "static IOReturn IOGPUDeviceUserClient::s_new_resource(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff009947b80",
+   "0xfffffff0078311c5",
+   "%s failed to create resource\n"
+  ],
+  [
+   "0xfffffff009947b94",
+   "0xfffffff00782b2b6",
+   "static IOReturn IOGPUDeviceUserClient::s_new_resource(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff009947bb0",
+   "0xfffffff0078311a9",
+   "%s failed to map arguments\n"
+  ]
+ ],
+ "6": [
+  [
+   "0xfffffff00994772c",
+   "0xfffffff00783107e",
+   "%s: The number of queues (%d) exceeding limit (%d), failing IOGPUCommandQueue creation\n"
+  ],
+  [
+   "0xfffffff0099477a8",
+   "0xfffffff0078310d6",
+   "%s: Too many queues (%d) created, possibly leaking?\n"
+  ],
+  [
+   "0xfffffff0099477f0",
+   "0xfffffff00783110b",
+   "%s: Invalid newCommandQueueArgsSize (%u) expected (%u)\n"
+  ],
+  [
+   "0xfffffff0099478f0",
+   "0xfffffff007831143",
+   "%s: newCommandQueue failed\n"
+  ],
+  [
+   "0xfffffff009947920",
+   "0xfffffff00783115f",
+   "%s: init failed\n"
+  ],
+  [
+   "0xfffffff009947974",
+   "0xfffffff007831170",
+   "%s: failed to add into name space\n"
+  ],
+  [
+   "0xfffffff009947a30",
+   "0xfffffff007831193",
+   "%s: failed for id %d\n"
+  ],
+  [
+   "0xfffffff009947b64",
+   "0xfffffff00782b2b6",
+   "static IOReturn IOGPUDeviceUserClient::s_new_resource(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff009947b80",
+   "0xfffffff0078311c5",
+   "%s failed to create resource\n"
+  ],
+  [
+   "0xfffffff009947b94",
+   "0xfffffff00782b2b6",
+   "static IOReturn IOGPUDeviceUserClient::s_new_resource(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff009947bb0",
+   "0xfffffff0078311a9",
+   "%s failed to map arguments\n"
+  ]
+ ],
+ "7": [
+  [
+   "0xfffffff009947a30",
+   "0xfffffff007831193",
+   "%s: failed for id %d\n"
+  ],
+  [
+   "0xfffffff009947b64",
+   "0xfffffff00782b2b6",
+   "static IOReturn IOGPUDeviceUserClient::s_new_resource(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff009947b80",
+   "0xfffffff0078311c5",
+   "%s failed to create resource\n"
+  ],
+  [
+   "0xfffffff009947b94",
+   "0xfffffff00782b2b6",
+   "static IOReturn IOGPUDeviceUserClient::s_new_resource(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff009947bb0",
+   "0xfffffff0078311a9",
+   "%s failed to map arguments\n"
+  ],
+  [
+   "0xfffffff009947ef8",
+   "0xfffffff007831230",
+   "%s: total size overflow (%llu * %llu)\n"
+  ],
+  [
+   "0xfffffff009947fb4",
+   "0xfffffff007831257",
+   "%s: bad structureInputSize (%lld != %llu)\n"
+  ]
+ ],
+ "8": [
+  [
+   "0xfffffff009947b64",
+   "0xfffffff00782b2b6",
+   "static IOReturn IOGPUDeviceUserClient::s_new_resource(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff009947b80",
+   "0xfffffff0078311c5",
+   "%s failed to create resource\n"
+  ],
+  [
+   "0xfffffff009947b94",
+   "0xfffffff00782b2b6",
+   "static IOReturn IOGPUDeviceUserClient::s_new_resource(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff009947bb0",
+   "0xfffffff0078311a9",
+   "%s failed to map arguments\n"
+  ],
+  [
+   "0xfffffff009947ef8",
+   "0xfffffff007831230",
+   "%s: total size overflow (%llu * %llu)\n"
+  ],
+  [
+   "0xfffffff009947fb4",
+   "0xfffffff007831257",
+   "%s: bad structureInputSize (%lld != %llu)\n"
+  ],
+  [
+   "0xfffffff009948028",
+   "0xfffffff007831282",
+   "%s: cmdBufArgSize does not match config (%llu != %u)\n"
+  ]
+ ],
+ "9": [
+  [
+   "0xfffffff009947ef8",
+   "0xfffffff007831230",
+   "%s: total size overflow (%llu * %llu)\n"
+  ],
+  [
+   "0xfffffff009947fb4",
+   "0xfffffff007831257",
+   "%s: bad structureInputSize (%lld != %llu)\n"
+  ],
+  [
+   "0xfffffff009948028",
+   "0xfffffff007831282",
+   "%s: cmdBufArgSize does not match config (%llu != %u)\n"
+  ]
+ ],
+ "10": [
+  [
+   "0xfffffff009947ef8",
+   "0xfffffff007831230",
+   "%s: total size overflow (%llu * %llu)\n"
+  ],
+  [
+   "0xfffffff009947fb4",
+   "0xfffffff007831257",
+   "%s: bad structureInputSize (%lld != %llu)\n"
+  ],
+  [
+   "0xfffffff009948028",
+   "0xfffffff007831282",
+   "%s: cmdBufArgSize does not match config (%llu != %u)\n"
+  ]
+ ],
+ "11": [
+  [
+   "0xfffffff009947ef8",
+   "0xfffffff007831230",
+   "%s: total size overflow (%llu * %llu)\n"
+  ],
+  [
+   "0xfffffff009947fb4",
+   "0xfffffff007831257",
+   "%s: bad structureInputSize (%lld != %llu)\n"
+  ],
+  [
+   "0xfffffff009948028",
+   "0xfffffff007831282",
+   "%s: cmdBufArgSize does not match config (%llu != %u)\n"
+  ]
+ ],
+ "12": [
+  [
+   "0xfffffff009947ef8",
+   "0xfffffff007831230",
+   "%s: total size overflow (%llu * %llu)\n"
+  ],
+  [
+   "0xfffffff009947fb4",
+   "0xfffffff007831257",
+   "%s: bad structureInputSize (%lld != %llu)\n"
+  ],
+  [
+   "0xfffffff009948028",
+   "0xfffffff007831282",
+   "%s: cmdBufArgSize does not match config (%llu != %u)\n"
+  ]
+ ],
+ "13": [
+  [
+   "0xfffffff009947ef8",
+   "0xfffffff007831230",
+   "%s: total size overflow (%llu * %llu)\n"
+  ],
+  [
+   "0xfffffff009947fb4",
+   "0xfffffff007831257",
+   "%s: bad structureInputSize (%lld != %llu)\n"
+  ],
+  [
+   "0xfffffff009948028",
+   "0xfffffff007831282",
+   "%s: cmdBufArgSize does not match config (%llu != %u)\n"
+  ]
+ ],
+ "14": [
+  [
+   "0xfffffff009947ef8",
+   "0xfffffff007831230",
+   "%s: total size overflow (%llu * %llu)\n"
+  ],
+  [
+   "0xfffffff009947fb4",
+   "0xfffffff007831257",
+   "%s: bad structureInputSize (%lld != %llu)\n"
+  ],
+  [
+   "0xfffffff009948028",
+   "0xfffffff007831282",
+   "%s: cmdBufArgSize does not match config (%llu != %u)\n"
+  ]
+ ],
+ "15": [
+  [
+   "0xfffffff009947ef8",
+   "0xfffffff007831230",
+   "%s: total size overflow (%llu * %llu)\n"
+  ],
+  [
+   "0xfffffff009947fb4",
+   "0xfffffff007831257",
+   "%s: bad structureInputSize (%lld != %llu)\n"
+  ],
+  [
+   "0xfffffff009948028",
+   "0xfffffff007831282",
+   "%s: cmdBufArgSize does not match config (%llu != %u)\n"
+  ]
+ ],
+ "16": [
+  [
+   "0xfffffff009947ef8",
+   "0xfffffff007831230",
+   "%s: total size overflow (%llu * %llu)\n"
+  ],
+  [
+   "0xfffffff009947fb4",
+   "0xfffffff007831257",
+   "%s: bad structureInputSize (%lld != %llu)\n"
+  ],
+  [
+   "0xfffffff009948028",
+   "0xfffffff007831282",
+   "%s: cmdBufArgSize does not match config (%llu != %u)\n"
+  ]
+ ],
+ "17": [
+  [
+   "0xfffffff009947ef8",
+   "0xfffffff007831230",
+   "%s: total size overflow (%llu * %llu)\n"
+  ],
+  [
+   "0xfffffff009947fb4",
+   "0xfffffff007831257",
+   "%s: bad structureInputSize (%lld != %llu)\n"
+  ],
+  [
+   "0xfffffff009948028",
+   "0xfffffff007831282",
+   "%s: cmdBufArgSize does not match config (%llu != %u)\n"
+  ]
+ ],
+ "18": [
+  [
+   "0xfffffff009947ef8",
+   "0xfffffff007831230",
+   "%s: total size overflow (%llu * %llu)\n"
+  ],
+  [
+   "0xfffffff009947fb4",
+   "0xfffffff007831257",
+   "%s: bad structureInputSize (%lld != %llu)\n"
+  ],
+  [
+   "0xfffffff009948028",
+   "0xfffffff007831282",
+   "%s: cmdBufArgSize does not match config (%llu != %u)\n"
+  ]
+ ],
+ "19": [
+  [
+   "0xfffffff009947ef8",
+   "0xfffffff007831230",
+   "%s: total size overflow (%llu * %llu)\n"
+  ],
+  [
+   "0xfffffff009947fb4",
+   "0xfffffff007831257",
+   "%s: bad structureInputSize (%lld != %llu)\n"
+  ],
+  [
+   "0xfffffff009948028",
+   "0xfffffff007831282",
+   "%s: cmdBufArgSize does not match config (%llu != %u)\n"
+  ]
+ ],
+ "20": [
+  [
+   "0xfffffff009947ef8",
+   "0xfffffff007831230",
+   "%s: total size overflow (%llu * %llu)\n"
+  ],
+  [
+   "0xfffffff009947fb4",
+   "0xfffffff007831257",
+   "%s: bad structureInputSize (%lld != %llu)\n"
+  ],
+  [
+   "0xfffffff009948028",
+   "0xfffffff007831282",
+   "%s: cmdBufArgSize does not match config (%llu != %u)\n"
+  ],
+  [
+   "0xfffffff0099482d4",
+   "0xfffffff0078311e3",
+   "%s: Could not find event_id %u (value %llu)\n"
+  ]
+ ],
+ "21": [
+  [
+   "0xfffffff009947ef8",
+   "0xfffffff007831230",
+   "%s: total size overflow (%llu * %llu)\n"
+  ],
+  [
+   "0xfffffff009947fb4",
+   "0xfffffff007831257",
+   "%s: bad structureInputSize (%lld != %llu)\n"
+  ],
+  [
+   "0xfffffff009948028",
+   "0xfffffff007831282",
+   "%s: cmdBufArgSize does not match config (%llu != %u)\n"
+  ],
+  [
+   "0xfffffff0099482d4",
+   "0xfffffff0078311e3",
+   "%s: Could not find event_id %u (value %llu)\n"
+  ]
+ ],
+ "22": [
+  [
+   "0xfffffff009947ef8",
+   "0xfffffff007831230",
+   "%s: total size overflow (%llu * %llu)\n"
+  ],
+  [
+   "0xfffffff009947fb4",
+   "0xfffffff007831257",
+   "%s: bad structureInputSize (%lld != %llu)\n"
+  ],
+  [
+   "0xfffffff009948028",
+   "0xfffffff007831282",
+   "%s: cmdBufArgSize does not match config (%llu != %u)\n"
+  ],
+  [
+   "0xfffffff0099482d4",
+   "0xfffffff0078311e3",
+   "%s: Could not find event_id %u (value %llu)\n"
+  ]
+ ],
+ "23": [
+  [
+   "0xfffffff009947ef8",
+   "0xfffffff007831230",
+   "%s: total size overflow (%llu * %llu)\n"
+  ],
+  [
+   "0xfffffff009947fb4",
+   "0xfffffff007831257",
+   "%s: bad structureInputSize (%lld != %llu)\n"
+  ],
+  [
+   "0xfffffff009948028",
+   "0xfffffff007831282",
+   "%s: cmdBufArgSize does not match config (%llu != %u)\n"
+  ],
+  [
+   "0xfffffff0099482d4",
+   "0xfffffff0078311e3",
+   "%s: Could not find event_id %u (value %llu)\n"
+  ]
+ ],
+ "24": [
+  [
+   "0xfffffff009947ef8",
+   "0xfffffff007831230",
+   "%s: total size overflow (%llu * %llu)\n"
+  ],
+  [
+   "0xfffffff009947fb4",
+   "0xfffffff007831257",
+   "%s: bad structureInputSize (%lld != %llu)\n"
+  ],
+  [
+   "0xfffffff009948028",
+   "0xfffffff007831282",
+   "%s: cmdBufArgSize does not match config (%llu != %u)\n"
+  ],
+  [
+   "0xfffffff0099482d4",
+   "0xfffffff0078311e3",
+   "%s: Could not find event_id %u (value %llu)\n"
+  ]
+ ],
+ "25": [
+  [
+   "0xfffffff009947ef8",
+   "0xfffffff007831230",
+   "%s: total size overflow (%llu * %llu)\n"
+  ],
+  [
+   "0xfffffff009947fb4",
+   "0xfffffff007831257",
+   "%s: bad structureInputSize (%lld != %llu)\n"
+  ],
+  [
+   "0xfffffff009948028",
+   "0xfffffff007831282",
+   "%s: cmdBufArgSize does not match config (%llu != %u)\n"
+  ],
+  [
+   "0xfffffff0099482d4",
+   "0xfffffff0078311e3",
+   "%s: Could not find event_id %u (value %llu)\n"
+  ],
+  [
+   "0xfffffff0099483ac",
+   "0xfffffff007831210",
+   "%s: Could not find event_id %u\n"
+  ]
+ ],
+ "26": [
+  [
+   "0xfffffff0099482d4",
+   "0xfffffff0078311e3",
+   "%s: Could not find event_id %u (value %llu)\n"
+  ],
+  [
+   "0xfffffff0099483ac",
+   "0xfffffff007831210",
+   "%s: Could not find event_id %u\n"
+  ],
+  [
+   "0xfffffff009948670",
+   "0xfffffff00782b63f",
+   "static IOReturn IOGPUDeviceUserClient::s_create_vniodesc(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ]
+ ],
+ "27": [
+  [
+   "0xfffffff0099482d4",
+   "0xfffffff0078311e3",
+   "%s: Could not find event_id %u (value %llu)\n"
+  ],
+  [
+   "0xfffffff0099483ac",
+   "0xfffffff007831210",
+   "%s: Could not find event_id %u\n"
+  ],
+  [
+   "0xfffffff009948670",
+   "0xfffffff00782b63f",
+   "static IOReturn IOGPUDeviceUserClient::s_create_vniodesc(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff00994868c",
+   "0xfffffff007831340",
+   "%s: Failed to create IOGPUVnioDesc\n"
+  ],
+  [
+   "0xfffffff0099486a0",
+   "0xfffffff00782b63f",
+   "static IOReturn IOGPUDeviceUserClient::s_create_vniodesc(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff0099486bc",
+   "0xfffffff007831364",
+   "%s: VnioDesc add namespace failed\n"
+  ]
+ ],
+ "28": [
+  [
+   "0xfffffff0099482d4",
+   "0xfffffff0078311e3",
+   "%s: Could not find event_id %u (value %llu)\n"
+  ],
+  [
+   "0xfffffff0099483ac",
+   "0xfffffff007831210",
+   "%s: Could not find event_id %u\n"
+  ],
+  [
+   "0xfffffff009948670",
+   "0xfffffff00782b63f",
+   "static IOReturn IOGPUDeviceUserClient::s_create_vniodesc(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff00994868c",
+   "0xfffffff007831340",
+   "%s: Failed to create IOGPUVnioDesc\n"
+  ],
+  [
+   "0xfffffff0099486a0",
+   "0xfffffff00782b63f",
+   "static IOReturn IOGPUDeviceUserClient::s_create_vniodesc(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff0099486bc",
+   "0xfffffff007831364",
+   "%s: VnioDesc add namespace failed\n"
+  ]
+ ],
+ "29": [
+  [
+   "0xfffffff0099482d4",
+   "0xfffffff0078311e3",
+   "%s: Could not find event_id %u (value %llu)\n"
+  ],
+  [
+   "0xfffffff0099483ac",
+   "0xfffffff007831210",
+   "%s: Could not find event_id %u\n"
+  ],
+  [
+   "0xfffffff009948670",
+   "0xfffffff00782b63f",
+   "static IOReturn IOGPUDeviceUserClient::s_create_vniodesc(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff00994868c",
+   "0xfffffff007831340",
+   "%s: Failed to create IOGPUVnioDesc\n"
+  ],
+  [
+   "0xfffffff0099486a0",
+   "0xfffffff00782b63f",
+   "static IOReturn IOGPUDeviceUserClient::s_create_vniodesc(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff0099486bc",
+   "0xfffffff007831364",
+   "%s: VnioDesc add namespace failed\n"
+  ]
+ ],
+ "30": [
+  [
+   "0xfffffff0099482d4",
+   "0xfffffff0078311e3",
+   "%s: Could not find event_id %u (value %llu)\n"
+  ],
+  [
+   "0xfffffff0099483ac",
+   "0xfffffff007831210",
+   "%s: Could not find event_id %u\n"
+  ],
+  [
+   "0xfffffff009948670",
+   "0xfffffff00782b63f",
+   "static IOReturn IOGPUDeviceUserClient::s_create_vniodesc(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff00994868c",
+   "0xfffffff007831340",
+   "%s: Failed to create IOGPUVnioDesc\n"
+  ],
+  [
+   "0xfffffff0099486a0",
+   "0xfffffff00782b63f",
+   "static IOReturn IOGPUDeviceUserClient::s_create_vniodesc(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff0099486bc",
+   "0xfffffff007831364",
+   "%s: VnioDesc add namespace failed\n"
+  ]
+ ],
+ "31": [
+  [
+   "0xfffffff0099483ac",
+   "0xfffffff007831210",
+   "%s: Could not find event_id %u\n"
+  ],
+  [
+   "0xfffffff009948670",
+   "0xfffffff00782b63f",
+   "static IOReturn IOGPUDeviceUserClient::s_create_vniodesc(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff00994868c",
+   "0xfffffff007831340",
+   "%s: Failed to create IOGPUVnioDesc\n"
+  ],
+  [
+   "0xfffffff0099486a0",
+   "0xfffffff00782b63f",
+   "static IOReturn IOGPUDeviceUserClient::s_create_vniodesc(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff0099486bc",
+   "0xfffffff007831364",
+   "%s: VnioDesc add namespace failed\n"
+  ],
+  [
+   "0xfffffff009948850",
+   "0xfffffff007831387",
+   "%s: IO Command Queue creation failed\n"
+  ],
+  [
+   "0xfffffff009948880",
+   "0xfffffff0078313ad",
+   "%s: IO Command Queue init failed\n"
+  ],
+  [
+   "0xfffffff0099488d4",
+   "0xfffffff0078313cf",
+   "%s: IO Command Queue add to namespace failed\n"
+  ]
+ ],
+ "32": [
+  [
+   "0xfffffff009948670",
+   "0xfffffff00782b63f",
+   "static IOReturn IOGPUDeviceUserClient::s_create_vniodesc(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff00994868c",
+   "0xfffffff007831340",
+   "%s: Failed to create IOGPUVnioDesc\n"
+  ],
+  [
+   "0xfffffff0099486a0",
+   "0xfffffff00782b63f",
+   "static IOReturn IOGPUDeviceUserClient::s_create_vniodesc(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff0099486bc",
+   "0xfffffff007831364",
+   "%s: VnioDesc add namespace failed\n"
+  ],
+  [
+   "0xfffffff009948850",
+   "0xfffffff007831387",
+   "%s: IO Command Queue creation failed\n"
+  ],
+  [
+   "0xfffffff009948880",
+   "0xfffffff0078313ad",
+   "%s: IO Command Queue init failed\n"
+  ],
+  [
+   "0xfffffff0099488d4",
+   "0xfffffff0078313cf",
+   "%s: IO Command Queue add to namespace failed\n"
+  ],
+  [
+   "0xfffffff009948980",
+   "0xfffffff0078313fd",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ]
+ ],
+ "33": [
+  [
+   "0xfffffff009948670",
+   "0xfffffff00782b63f",
+   "static IOReturn IOGPUDeviceUserClient::s_create_vniodesc(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff00994868c",
+   "0xfffffff007831340",
+   "%s: Failed to create IOGPUVnioDesc\n"
+  ],
+  [
+   "0xfffffff0099486a0",
+   "0xfffffff00782b63f",
+   "static IOReturn IOGPUDeviceUserClient::s_create_vniodesc(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff0099486bc",
+   "0xfffffff007831364",
+   "%s: VnioDesc add namespace failed\n"
+  ],
+  [
+   "0xfffffff009948850",
+   "0xfffffff007831387",
+   "%s: IO Command Queue creation failed\n"
+  ],
+  [
+   "0xfffffff009948880",
+   "0xfffffff0078313ad",
+   "%s: IO Command Queue init failed\n"
+  ],
+  [
+   "0xfffffff0099488d4",
+   "0xfffffff0078313cf",
+   "%s: IO Command Queue add to namespace failed\n"
+  ],
+  [
+   "0xfffffff009948980",
+   "0xfffffff0078313fd",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ]
+ ],
+ "34": [
+  [
+   "0xfffffff009948670",
+   "0xfffffff00782b63f",
+   "static IOReturn IOGPUDeviceUserClient::s_create_vniodesc(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff00994868c",
+   "0xfffffff007831340",
+   "%s: Failed to create IOGPUVnioDesc\n"
+  ],
+  [
+   "0xfffffff0099486a0",
+   "0xfffffff00782b63f",
+   "static IOReturn IOGPUDeviceUserClient::s_create_vniodesc(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff0099486bc",
+   "0xfffffff007831364",
+   "%s: VnioDesc add namespace failed\n"
+  ],
+  [
+   "0xfffffff009948850",
+   "0xfffffff007831387",
+   "%s: IO Command Queue creation failed\n"
+  ],
+  [
+   "0xfffffff009948880",
+   "0xfffffff0078313ad",
+   "%s: IO Command Queue init failed\n"
+  ],
+  [
+   "0xfffffff0099488d4",
+   "0xfffffff0078313cf",
+   "%s: IO Command Queue add to namespace failed\n"
+  ],
+  [
+   "0xfffffff009948980",
+   "0xfffffff0078313fd",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ]
+ ],
+ "35": [
+  [
+   "0xfffffff009948670",
+   "0xfffffff00782b63f",
+   "static IOReturn IOGPUDeviceUserClient::s_create_vniodesc(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff00994868c",
+   "0xfffffff007831340",
+   "%s: Failed to create IOGPUVnioDesc\n"
+  ],
+  [
+   "0xfffffff0099486a0",
+   "0xfffffff00782b63f",
+   "static IOReturn IOGPUDeviceUserClient::s_create_vniodesc(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff0099486bc",
+   "0xfffffff007831364",
+   "%s: VnioDesc add namespace failed\n"
+  ],
+  [
+   "0xfffffff009948850",
+   "0xfffffff007831387",
+   "%s: IO Command Queue creation failed\n"
+  ],
+  [
+   "0xfffffff009948880",
+   "0xfffffff0078313ad",
+   "%s: IO Command Queue init failed\n"
+  ],
+  [
+   "0xfffffff0099488d4",
+   "0xfffffff0078313cf",
+   "%s: IO Command Queue add to namespace failed\n"
+  ],
+  [
+   "0xfffffff009948980",
+   "0xfffffff0078313fd",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948a78",
+   "0xfffffff00783141b",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948ab0",
+   "0xfffffff007831439",
+   "%s: Invalid Notification Queue ID (%u)\n"
+  ]
+ ],
+ "36": [
+  [
+   "0xfffffff009948670",
+   "0xfffffff00782b63f",
+   "static IOReturn IOGPUDeviceUserClient::s_create_vniodesc(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff00994868c",
+   "0xfffffff007831340",
+   "%s: Failed to create IOGPUVnioDesc\n"
+  ],
+  [
+   "0xfffffff0099486a0",
+   "0xfffffff00782b63f",
+   "static IOReturn IOGPUDeviceUserClient::s_create_vniodesc(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff0099486bc",
+   "0xfffffff007831364",
+   "%s: VnioDesc add namespace failed\n"
+  ],
+  [
+   "0xfffffff009948850",
+   "0xfffffff007831387",
+   "%s: IO Command Queue creation failed\n"
+  ],
+  [
+   "0xfffffff009948880",
+   "0xfffffff0078313ad",
+   "%s: IO Command Queue init failed\n"
+  ],
+  [
+   "0xfffffff0099488d4",
+   "0xfffffff0078313cf",
+   "%s: IO Command Queue add to namespace failed\n"
+  ],
+  [
+   "0xfffffff009948980",
+   "0xfffffff0078313fd",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948a78",
+   "0xfffffff00783141b",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948ab0",
+   "0xfffffff007831439",
+   "%s: Invalid Notification Queue ID (%u)\n"
+  ]
+ ],
+ "37": [
+  [
+   "0xfffffff009948670",
+   "0xfffffff00782b63f",
+   "static IOReturn IOGPUDeviceUserClient::s_create_vniodesc(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff00994868c",
+   "0xfffffff007831340",
+   "%s: Failed to create IOGPUVnioDesc\n"
+  ],
+  [
+   "0xfffffff0099486a0",
+   "0xfffffff00782b63f",
+   "static IOReturn IOGPUDeviceUserClient::s_create_vniodesc(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff0099486bc",
+   "0xfffffff007831364",
+   "%s: VnioDesc add namespace failed\n"
+  ],
+  [
+   "0xfffffff009948850",
+   "0xfffffff007831387",
+   "%s: IO Command Queue creation failed\n"
+  ],
+  [
+   "0xfffffff009948880",
+   "0xfffffff0078313ad",
+   "%s: IO Command Queue init failed\n"
+  ],
+  [
+   "0xfffffff0099488d4",
+   "0xfffffff0078313cf",
+   "%s: IO Command Queue add to namespace failed\n"
+  ],
+  [
+   "0xfffffff009948980",
+   "0xfffffff0078313fd",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948a78",
+   "0xfffffff00783141b",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948ab0",
+   "0xfffffff007831439",
+   "%s: Invalid Notification Queue ID (%u)\n"
+  ]
+ ],
+ "38": [
+  [
+   "0xfffffff009948670",
+   "0xfffffff00782b63f",
+   "static IOReturn IOGPUDeviceUserClient::s_create_vniodesc(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff00994868c",
+   "0xfffffff007831340",
+   "%s: Failed to create IOGPUVnioDesc\n"
+  ],
+  [
+   "0xfffffff0099486a0",
+   "0xfffffff00782b63f",
+   "static IOReturn IOGPUDeviceUserClient::s_create_vniodesc(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff0099486bc",
+   "0xfffffff007831364",
+   "%s: VnioDesc add namespace failed\n"
+  ],
+  [
+   "0xfffffff009948850",
+   "0xfffffff007831387",
+   "%s: IO Command Queue creation failed\n"
+  ],
+  [
+   "0xfffffff009948880",
+   "0xfffffff0078313ad",
+   "%s: IO Command Queue init failed\n"
+  ],
+  [
+   "0xfffffff0099488d4",
+   "0xfffffff0078313cf",
+   "%s: IO Command Queue add to namespace failed\n"
+  ],
+  [
+   "0xfffffff009948980",
+   "0xfffffff0078313fd",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948a78",
+   "0xfffffff00783141b",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948ab0",
+   "0xfffffff007831439",
+   "%s: Invalid Notification Queue ID (%u)\n"
+  ]
+ ],
+ "39": [
+  [
+   "0xfffffff009948670",
+   "0xfffffff00782b63f",
+   "static IOReturn IOGPUDeviceUserClient::s_create_vniodesc(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff00994868c",
+   "0xfffffff007831340",
+   "%s: Failed to create IOGPUVnioDesc\n"
+  ],
+  [
+   "0xfffffff0099486a0",
+   "0xfffffff00782b63f",
+   "static IOReturn IOGPUDeviceUserClient::s_create_vniodesc(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff0099486bc",
+   "0xfffffff007831364",
+   "%s: VnioDesc add namespace failed\n"
+  ],
+  [
+   "0xfffffff009948850",
+   "0xfffffff007831387",
+   "%s: IO Command Queue creation failed\n"
+  ],
+  [
+   "0xfffffff009948880",
+   "0xfffffff0078313ad",
+   "%s: IO Command Queue init failed\n"
+  ],
+  [
+   "0xfffffff0099488d4",
+   "0xfffffff0078313cf",
+   "%s: IO Command Queue add to namespace failed\n"
+  ],
+  [
+   "0xfffffff009948980",
+   "0xfffffff0078313fd",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948a78",
+   "0xfffffff00783141b",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948ab0",
+   "0xfffffff007831439",
+   "%s: Invalid Notification Queue ID (%u)\n"
+  ]
+ ],
+ "40": [
+  [
+   "0xfffffff009948670",
+   "0xfffffff00782b63f",
+   "static IOReturn IOGPUDeviceUserClient::s_create_vniodesc(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff00994868c",
+   "0xfffffff007831340",
+   "%s: Failed to create IOGPUVnioDesc\n"
+  ],
+  [
+   "0xfffffff0099486a0",
+   "0xfffffff00782b63f",
+   "static IOReturn IOGPUDeviceUserClient::s_create_vniodesc(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff0099486bc",
+   "0xfffffff007831364",
+   "%s: VnioDesc add namespace failed\n"
+  ],
+  [
+   "0xfffffff009948850",
+   "0xfffffff007831387",
+   "%s: IO Command Queue creation failed\n"
+  ],
+  [
+   "0xfffffff009948880",
+   "0xfffffff0078313ad",
+   "%s: IO Command Queue init failed\n"
+  ],
+  [
+   "0xfffffff0099488d4",
+   "0xfffffff0078313cf",
+   "%s: IO Command Queue add to namespace failed\n"
+  ],
+  [
+   "0xfffffff009948980",
+   "0xfffffff0078313fd",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948a78",
+   "0xfffffff00783141b",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948ab0",
+   "0xfffffff007831439",
+   "%s: Invalid Notification Queue ID (%u)\n"
+  ]
+ ],
+ "41": [
+  [
+   "0xfffffff009948850",
+   "0xfffffff007831387",
+   "%s: IO Command Queue creation failed\n"
+  ],
+  [
+   "0xfffffff009948880",
+   "0xfffffff0078313ad",
+   "%s: IO Command Queue init failed\n"
+  ],
+  [
+   "0xfffffff0099488d4",
+   "0xfffffff0078313cf",
+   "%s: IO Command Queue add to namespace failed\n"
+  ],
+  [
+   "0xfffffff009948980",
+   "0xfffffff0078313fd",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948a78",
+   "0xfffffff00783141b",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948ab0",
+   "0xfffffff007831439",
+   "%s: Invalid Notification Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948be8",
+   "0xfffffff007831489",
+   "%s: Insufficient input struct size (%llu)\n"
+  ],
+  [
+   "0xfffffff009948c3c",
+   "0xfffffff007831461",
+   "%s: input memory descriptor map failed\n"
+  ]
+ ],
+ "42": [
+  [
+   "0xfffffff009948850",
+   "0xfffffff007831387",
+   "%s: IO Command Queue creation failed\n"
+  ],
+  [
+   "0xfffffff009948880",
+   "0xfffffff0078313ad",
+   "%s: IO Command Queue init failed\n"
+  ],
+  [
+   "0xfffffff0099488d4",
+   "0xfffffff0078313cf",
+   "%s: IO Command Queue add to namespace failed\n"
+  ],
+  [
+   "0xfffffff009948980",
+   "0xfffffff0078313fd",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948a78",
+   "0xfffffff00783141b",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948ab0",
+   "0xfffffff007831439",
+   "%s: Invalid Notification Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948be8",
+   "0xfffffff007831489",
+   "%s: Insufficient input struct size (%llu)\n"
+  ],
+  [
+   "0xfffffff009948c3c",
+   "0xfffffff007831461",
+   "%s: input memory descriptor map failed\n"
+  ],
+  [
+   "0xfffffff009948d10",
+   "0xfffffff0078314b4",
+   "%s: Command buffer count mismatch (%lld - %u)\n"
+  ]
+ ],
+ "43": [
+  [
+   "0xfffffff009948980",
+   "0xfffffff0078313fd",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948a78",
+   "0xfffffff00783141b",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948ab0",
+   "0xfffffff007831439",
+   "%s: Invalid Notification Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948be8",
+   "0xfffffff007831489",
+   "%s: Insufficient input struct size (%llu)\n"
+  ],
+  [
+   "0xfffffff009948c3c",
+   "0xfffffff007831461",
+   "%s: input memory descriptor map failed\n"
+  ],
+  [
+   "0xfffffff009948d10",
+   "0xfffffff0078314b4",
+   "%s: Command buffer count mismatch (%lld - %u)\n"
+  ],
+  [
+   "0xfffffff009948d4c",
+   "0xfffffff0078314e3",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948df4",
+   "0xfffffff007831501",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948eb0",
+   "0xfffffff00783151f",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ]
+ ],
+ "44": [
+  [
+   "0xfffffff009948a78",
+   "0xfffffff00783141b",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948ab0",
+   "0xfffffff007831439",
+   "%s: Invalid Notification Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948be8",
+   "0xfffffff007831489",
+   "%s: Insufficient input struct size (%llu)\n"
+  ],
+  [
+   "0xfffffff009948c3c",
+   "0xfffffff007831461",
+   "%s: input memory descriptor map failed\n"
+  ],
+  [
+   "0xfffffff009948d10",
+   "0xfffffff0078314b4",
+   "%s: Command buffer count mismatch (%lld - %u)\n"
+  ],
+  [
+   "0xfffffff009948d4c",
+   "0xfffffff0078314e3",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948df4",
+   "0xfffffff007831501",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948eb0",
+   "0xfffffff00783151f",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948f6c",
+   "0xfffffff00783153d",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ]
+ ],
+ "45": [
+  [
+   "0xfffffff009948be8",
+   "0xfffffff007831489",
+   "%s: Insufficient input struct size (%llu)\n"
+  ],
+  [
+   "0xfffffff009948c3c",
+   "0xfffffff007831461",
+   "%s: input memory descriptor map failed\n"
+  ],
+  [
+   "0xfffffff009948d10",
+   "0xfffffff0078314b4",
+   "%s: Command buffer count mismatch (%lld - %u)\n"
+  ],
+  [
+   "0xfffffff009948d4c",
+   "0xfffffff0078314e3",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948df4",
+   "0xfffffff007831501",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948eb0",
+   "0xfffffff00783151f",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948f6c",
+   "0xfffffff00783153d",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948ffc",
+   "0xfffffff00782ba35",
+   "static IOReturn IOGPUDeviceUserClient::s_perform_io(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff009949018",
+   "0xfffffff00783155b",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff0099490bc",
+   "0xfffffff007831579",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ]
+ ],
+ "46": [
+  [
+   "0xfffffff009948df4",
+   "0xfffffff007831501",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948eb0",
+   "0xfffffff00783151f",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948f6c",
+   "0xfffffff00783153d",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948ffc",
+   "0xfffffff00782ba35",
+   "static IOReturn IOGPUDeviceUserClient::s_perform_io(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff009949018",
+   "0xfffffff00783155b",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff0099490bc",
+   "0xfffffff007831579",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009949178",
+   "0xfffffff007831597",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff0099492d0",
+   "0xfffffff0078315d1",
+   "%s failed to add resources to group\n"
+  ],
+  [
+   "0xfffffff009949300",
+   "0xfffffff0078315b5",
+   "%s failed to map arguments\n"
+  ]
+ ],
+ "47": [
+  [
+   "0xfffffff009948eb0",
+   "0xfffffff00783151f",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948f6c",
+   "0xfffffff00783153d",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948ffc",
+   "0xfffffff00782ba35",
+   "static IOReturn IOGPUDeviceUserClient::s_perform_io(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff009949018",
+   "0xfffffff00783155b",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff0099490bc",
+   "0xfffffff007831579",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009949178",
+   "0xfffffff007831597",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff0099492d0",
+   "0xfffffff0078315d1",
+   "%s failed to add resources to group\n"
+  ],
+  [
+   "0xfffffff009949300",
+   "0xfffffff0078315b5",
+   "%s failed to map arguments\n"
+  ]
+ ],
+ "48": [
+  [
+   "0xfffffff009948f6c",
+   "0xfffffff00783153d",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009948ffc",
+   "0xfffffff00782ba35",
+   "static IOReturn IOGPUDeviceUserClient::s_perform_io(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff009949018",
+   "0xfffffff00783155b",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff0099490bc",
+   "0xfffffff007831579",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009949178",
+   "0xfffffff007831597",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff0099492d0",
+   "0xfffffff0078315d1",
+   "%s failed to add resources to group\n"
+  ],
+  [
+   "0xfffffff009949300",
+   "0xfffffff0078315b5",
+   "%s failed to map arguments\n"
+  ],
+  [
+   "0xfffffff009949460",
+   "0xfffffff007831612",
+   "%s failed to add resources to group\n"
+  ],
+  [
+   "0xfffffff009949490",
+   "0xfffffff0078315f6",
+   "%s failed to map arguments\n"
+  ]
+ ],
+ "49": [
+  [
+   "0xfffffff009948ffc",
+   "0xfffffff00782ba35",
+   "static IOReturn IOGPUDeviceUserClient::s_perform_io(IOGPUDeviceUserClient *, void *, IOExternalMethodArguments *)"
+  ],
+  [
+   "0xfffffff009949018",
+   "0xfffffff00783155b",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff0099490bc",
+   "0xfffffff007831579",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009949178",
+   "0xfffffff007831597",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff0099492d0",
+   "0xfffffff0078315d1",
+   "%s failed to add resources to group\n"
+  ],
+  [
+   "0xfffffff009949300",
+   "0xfffffff0078315b5",
+   "%s failed to map arguments\n"
+  ],
+  [
+   "0xfffffff009949460",
+   "0xfffffff007831612",
+   "%s failed to add resources to group\n"
+  ],
+  [
+   "0xfffffff009949490",
+   "0xfffffff0078315f6",
+   "%s failed to map arguments\n"
+  ]
+ ],
+ "50": [
+  [
+   "0xfffffff0099490bc",
+   "0xfffffff007831579",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff009949178",
+   "0xfffffff007831597",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff0099492d0",
+   "0xfffffff0078315d1",
+   "%s failed to add resources to group\n"
+  ],
+  [
+   "0xfffffff009949300",
+   "0xfffffff0078315b5",
+   "%s failed to map arguments\n"
+  ],
+  [
+   "0xfffffff009949460",
+   "0xfffffff007831612",
+   "%s failed to add resources to group\n"
+  ],
+  [
+   "0xfffffff009949490",
+   "0xfffffff0078315f6",
+   "%s failed to map arguments\n"
+  ]
+ ],
+ "51": [
+  [
+   "0xfffffff009949178",
+   "0xfffffff007831597",
+   "%s: Invalid IO Queue ID (%u)\n"
+  ],
+  [
+   "0xfffffff0099492d0",
+   "0xfffffff0078315d1",
+   "%s failed to add resources to group\n"
+  ],
+  [
+   "0xfffffff009949300",
+   "0xfffffff0078315b5",
+   "%s failed to map arguments\n"
+  ],
+  [
+   "0xfffffff009949460",
+   "0xfffffff007831612",
+   "%s failed to add resources to group\n"
+  ],
+  [
+   "0xfffffff009949490",
+   "0xfffffff0078315f6",
+   "%s failed to map arguments\n"
+  ]
+ ],
+ "52": [
+  [
+   "0xfffffff0099492d0",
+   "0xfffffff0078315d1",
+   "%s failed to add resources to group\n"
+  ],
+  [
+   "0xfffffff009949300",
+   "0xfffffff0078315b5",
+   "%s failed to map arguments\n"
+  ],
+  [
+   "0xfffffff009949460",
+   "0xfffffff007831612",
+   "%s failed to add resources to group\n"
+  ],
+  [
+   "0xfffffff009949490",
+   "0xfffffff0078315f6",
+   "%s failed to map arguments\n"
+  ]
+ ],
+ "53": [
+  [
+   "0xfffffff009949460",
+   "0xfffffff007831612",
+   "%s failed to add resources to group\n"
+  ],
+  [
+   "0xfffffff009949490",
+   "0xfffffff0078315f6",
+   "%s failed to map arguments\n"
+  ]
+ ],
+ "54": [
+  [
+   "0xfffffff009949a64",
+   "0xfffffff00782b4ab",
+   "IOReturn IOGPUDeviceUserClient::t_signal_shared_event(uintptr_t, uintptr_t, uintptr_t, uintptr_t)"
+  ],
+  [
+   "0xfffffff009949a80",
+   "0xfffffff0078312b8",
+   "%s: Failed to find command queue\n"
+  ]
+ ],
+ "55": [
+  [
+   "0xfffffff009949a64",
+   "0xfffffff00782b4ab",
+   "IOReturn IOGPUDeviceUserClient::t_signal_shared_event(uintptr_t, uintptr_t, uintptr_t, uintptr_t)"
+  ],
+  [
+   "0xfffffff009949a80",
+   "0xfffffff0078312b8",
+   "%s: Failed to find command queue\n"
+  ]
+ ]
+}

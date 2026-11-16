@@ -1,0 +1,9 @@
+funcs 293 293
+identical 291 ratio 0.99317
+changed regions 2
+== replace A[105:106] B[105:106]
+   A 0xfffffff00946f664 sz=1316
+   B 0xfffffff009535a34 sz=1320
+== replace A[187:188] B[187:188]
+   A 0xfffffff0094717a0 sz=1316
+   B 0xfffffff009537b74 sz=1320

@@ -1,0 +1,66 @@
+func 0xfffffff009a459b0 kext com.apple.iokit.IOHIDFamily writes ['0xfffffff009a45a6c']
+  table 0xfffffff008012058 stride 0x28 idx 4/5 kext com.apple.iokit.IOHIDFamily f=[0, 4294967295, 0, 4294967295]
+
+fffffff009a459b0  bti      c
+fffffff009a459b4  pacibsp  
+fffffff009a459b8  sub      sp, sp, #0x40
+fffffff009a459bc  stp      x22, x21, [sp, #0x10]
+fffffff009a459c0  stp      x20, x19, [sp, #0x20]
+fffffff009a459c4  stp      x29, x30, [sp, #0x30]
+fffffff009a459c8  add      x29, sp, #0x30
+fffffff009a459cc  mov      w20, #0x2c2
+fffffff009a459d0  movk     w20, #0xe000, lsl #16
+fffffff009a459d4  str      xzr, [sp, #8]
+fffffff009a459d8  ldr      x8, [x2, #0x78]
+fffffff009a459dc  cbz      x8, #0xfffffff009a45a94
+fffffff009a459e0  mov      x19, x2
+fffffff009a459e4  mov      x21, x0
+fffffff009a459e8  ldr      x0, [x2, #0x30]
+fffffff009a459ec  cbz      x0, #0xfffffff009a45a24
+fffffff009a459f0  ldr      w1, [x19, #0x38]
+fffffff009a459f4  cbz      w1, #0xfffffff009a45a24
+fffffff009a459f8  mov      x2, #0
+fffffff009a459fc  bl       #0xfffffff009a4815c
+fffffff009a45a00  cbz      x0, #0xfffffff009a45a94
+fffffff009a45a04  mov      x22, x0
+fffffff009a45a08  adrp     x8, #0xfffffff008017000
+fffffff009a45a0c  ldr      x8, [x8, #0x358]
+fffffff009a45a10  ldr      x1, [x8]
+fffffff009a45a14  bl       #0xfffffff009a483bc
+fffffff009a45a18  mov      x1, x0
+fffffff009a45a1c  cbnz     x0, #0xfffffff009a45a2c
+fffffff009a45a20  b        #0xfffffff009a45a74
+fffffff009a45a24  mov      x22, #0
+fffffff009a45a28  mov      x1, #0
+fffffff009a45a2c  ldr      x16, [x21]
+fffffff009a45a30  mov      x17, x21
+fffffff009a45a34  movk     x17, #0xcda1, lsl #48
+fffffff009a45a38  autda    x16, x17
+fffffff009a45a3c  mov      x17, #0x5f8
+fffffff009a45a40  add      x16, x16, x17
+fffffff009a45a44  ldr      x8, [x16]
+fffffff009a45a48  add      x2, sp, #8
+fffffff009a45a4c  mov      x0, x21
+fffffff009a45a50  movk     x16, #0x5c79, lsl #48
+fffffff009a45a54  blraa    x8, x16
+fffffff009a45a58  mov      x20, x0
+fffffff009a45a5c  cbnz     w0, #0xfffffff009a45a70
+fffffff009a45a60  ldr      x8, [sp, #8]
+fffffff009a45a64  cbz      x8, #0xfffffff009a45a70
+fffffff009a45a68  ldr      x9, [x19, #0x78]
+fffffff009a45a6c  str      x8, [x9] <<<
+fffffff009a45a70  cbz      x22, #0xfffffff009a45a94
+fffffff009a45a74  ldr      x16, [x22]
+fffffff009a45a78  mov      x17, x22
+fffffff009a45a7c  movk     x17, #0xcda1, lsl #48
+fffffff009a45a80  autda    x16, x17
+fffffff009a45a84  ldr      x8, [x16, #0x28]!
+fffffff009a45a88  mov      x0, x22
+fffffff009a45a8c  movk     x16, #0x3a87, lsl #48
+fffffff009a45a90  blraa    x8, x16
+fffffff009a45a94  mov      x0, x20
+fffffff009a45a98  ldp      x29, x30, [sp, #0x30]
+fffffff009a45a9c  ldp      x20, x19, [sp, #0x20]
+fffffff009a45aa0  ldp      x22, x21, [sp, #0x10]
+fffffff009a45aa4  add      sp, sp, #0x40
+fffffff009a45aa8  retab    

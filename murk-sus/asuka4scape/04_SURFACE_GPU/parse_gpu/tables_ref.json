@@ -1,0 +1,1464 @@
+[
+ {
+  "va": 18446744005120782144,
+  "stride": 40,
+  "n": 8,
+  "pc": 18446744005126493788,
+  "pcs": [
+   18446744005126493788
+  ],
+  "kext": "com.apple.security.AKSAnalytics",
+  "kext_pc": "com.apple.security.AKSAnalytics"
+ },
+ {
+  "va": 18446744005120819080,
+  "stride": 24,
+  "n": 7,
+  "pc": 18446744005126518848,
+  "pcs": [
+   18446744005126518848
+  ],
+  "kext": "com.apple.driver.ASIOKit",
+  "kext_pc": "com.apple.driver.ASIOKit"
+ },
+ {
+  "va": 18446744005120819200,
+  "stride": 24,
+  "n": 2,
+  "pc": 18446744005126520336,
+  "pcs": [
+   18446744005126520336,
+   18446744005126520848,
+   18446744005126520912,
+   18446744005126520968,
+   18446744005126521172,
+   18446744005126521264,
+   18446744005126521376,
+   18446744005126521468,
+   18446744005126529820
+  ],
+  "kext": "com.apple.driver.ASIOKit",
+  "kext_pc": "com.apple.driver.ASIOKit"
+ },
+ {
+  "va": 18446744005120834616,
+  "stride": 24,
+  "n": 4,
+  "pc": 18446744005126863784,
+  "pcs": [
+   18446744005126863784
+  ],
+  "kext": "com.apple.AUC",
+  "kext_pc": "com.apple.AUC"
+ },
+ {
+  "va": 18446744005120900032,
+  "stride": 24,
+  "n": 6,
+  "pc": 18446744005127081156,
+  "pcs": [
+   18446744005127081156
+  ],
+  "kext": "com.apple.driver.AppleAOPAudio",
+  "kext_pc": "com.apple.driver.AppleAOPAudio"
+ },
+ {
+  "va": 18446744005120920496,
+  "stride": 24,
+  "n": 2,
+  "pc": 18446744005127167276,
+  "pcs": [
+   18446744005127167276
+  ],
+  "kext": "com.apple.driver.AppleAOPAudio",
+  "kext_pc": "com.apple.driver.AppleAOPAudio"
+ },
+ {
+  "va": 18446744005120929408,
+  "stride": 24,
+  "n": 3,
+  "pc": 18446744005127217684,
+  "pcs": [
+   18446744005127217684
+  ],
+  "kext": "com.apple.driver.AppleAOPAudio",
+  "kext_pc": "com.apple.driver.AppleAOPAudio"
+ },
+ {
+  "va": 18446744005120936768,
+  "stride": 24,
+  "n": 5,
+  "pc": 18446744005127256824,
+  "pcs": [
+   18446744005127256824
+  ],
+  "kext": "com.apple.driver.AppleAOPVoiceTrigger",
+  "kext_pc": "com.apple.driver.AppleAOPVoiceTrigger"
+ },
+ {
+  "va": 18446744005120967880,
+  "stride": 24,
+  "n": 7,
+  "pc": 18446744005127483920,
+  "pcs": [
+   18446744005127483920
+  ],
+  "kext": "com.apple.driver.AppleARMPlatform",
+  "kext_pc": "com.apple.driver.AppleARMPlatform"
+ },
+ {
+  "va": 18446744005120992016,
+  "stride": 24,
+  "n": 8,
+  "pc": 18446744005127574092,
+  "pcs": [
+   18446744005127574092
+  ],
+  "kext": "com.apple.driver.AppleARMPlatform",
+  "kext_pc": "com.apple.driver.AppleARMPlatform"
+ },
+ {
+  "va": 18446744005121037456,
+  "stride": 40,
+  "n": 3,
+  "pc": 18446744005127744812,
+  "pcs": [
+   18446744005127744812
+  ],
+  "kext": "com.apple.driver.AppleARMPlatform",
+  "kext_pc": "com.apple.driver.AppleARMPlatform"
+ },
+ {
+  "va": 18446744005121059784,
+  "stride": 24,
+  "n": 10,
+  "pc": 18446744005127811924,
+  "pcs": [
+   18446744005127811924
+  ],
+  "kext": "com.apple.driver.AppleARMWatchdogTimer",
+  "kext_pc": "com.apple.driver.AppleARMWatchdogTimer"
+ },
+ {
+  "va": 18446744005121079832,
+  "stride": 40,
+  "n": 8,
+  "pc": 18446744005128159920,
+  "pcs": [
+   18446744005128159920
+  ],
+  "kext": "com.apple.driver.AppleAVD",
+  "kext_pc": "com.apple.driver.AppleAVD"
+ },
+ {
+  "va": 18446744005121189824,
+  "stride": 24,
+  "n": 4,
+  "pc": 18446744005130217328,
+  "pcs": [
+   18446744005130217328
+  ],
+  "kext": "com.apple.driver.AppleAstrisGpioProbe",
+  "kext_pc": "com.apple.driver.AppleAstrisGpioProbe"
+ },
+ {
+  "va": 18446744005121202752,
+  "stride": 24,
+  "n": 25,
+  "pc": 18446744005130278012,
+  "pcs": [
+   18446744005130278012
+  ],
+  "kext": "com.apple.driver.AppleAuthCP",
+  "kext_pc": "com.apple.driver.AppleAuthCP"
+ },
+ {
+  "va": 18446744005121235592,
+  "stride": 24,
+  "n": 24,
+  "pc": 18446744005130555140,
+  "pcs": [
+   18446744005130555140
+  ],
+  "kext": "com.apple.driver.AppleBasebandM20",
+  "kext_pc": "com.apple.driver.AppleBasebandM20"
+ },
+ {
+  "va": 18446744005121288864,
+  "stride": 24,
+  "n": 4,
+  "pc": 18446744005130814088,
+  "pcs": [
+   18446744005130814088
+  ],
+  "kext": "com.apple.driver.AppleBasebandPCI",
+  "kext_pc": "com.apple.driver.AppleBasebandPCI"
+ },
+ {
+  "va": 18446744005121295536,
+  "stride": 24,
+  "n": 13,
+  "pc": 18446744005130840084,
+  "pcs": [
+   18446744005130840084
+  ],
+  "kext": "com.apple.driver.AppleBasebandPCI",
+  "kext_pc": "com.apple.driver.AppleBasebandPCI"
+ },
+ {
+  "va": 18446744005121340016,
+  "stride": 40,
+  "n": 2,
+  "pc": 18446744005130993648,
+  "pcs": [
+   18446744005130993648
+  ],
+  "kext": "com.apple.driver.AppleBasebandPCIMAVControl",
+  "kext_pc": "com.apple.driver.AppleBasebandPCIMAVControl"
+ },
+ {
+  "va": 18446744005121380352,
+  "stride": 40,
+  "n": 3,
+  "pc": 18446744005131116936,
+  "pcs": [
+   18446744005131116936,
+   18446744005131119044,
+   18446744005131137344,
+   18446744005131137432,
+   18446744005131138104,
+   18446744005131138168,
+   18446744005131138224,
+   18446744005131138428,
+   18446744005131138520,
+   18446744005131138632,
+   18446744005131138724,
+   18446744005131143784,
+   18446744005131145800,
+   18446744005131145972,
+   18446744005131147860,
+   18446744005131148784,
+   18446744005131149448,
+   18446744005131149640,
+   18446744005131149812,
+   18446744005131150116,
+   18446744005131150372,
+   18446744005131150684,
+   18446744005131150992,
+   18446744005131151416,
+   18446744005131151576,
+   18446744005131151716,
+   18446744005131152140,
+   18446744005131153040,
+   18446744005131153248,
+   18446744005131153304,
+   18446744005131153600,
+   18446744005131153712,
+   18446744005131153804
+  ],
+  "kext": "com.apple.driver.AppleBasebandPCIMAVPDP",
+  "kext_pc": "com.apple.driver.AppleBasebandPCIMAVPDP"
+ },
+ {
+  "va": 18446744005121390824,
+  "stride": 24,
+  "n": 4,
+  "pc": 18446744005131202596,
+  "pcs": [
+   18446744005131202596
+  ],
+  "kext": "com.apple.driver.AppleBluetoothDebug",
+  "kext_pc": "com.apple.driver.AppleBluetoothDebug"
+ },
+ {
+  "va": 18446744005121398664,
+  "stride": 24,
+  "n": 7,
+  "pc": 18446744005131236936,
+  "pcs": [
+   18446744005131236936
+  ],
+  "kext": "com.apple.driver.AppleBluetoothModule",
+  "kext_pc": "com.apple.driver.AppleBluetoothModule"
+ },
+ {
+  "va": 18446744005121490944,
+  "stride": 24,
+  "n": 8,
+  "pc": 18446744005131681056,
+  "pcs": [
+   18446744005131681056,
+   18446744005131682256,
+   18446744005131682392,
+   18446744005131683228,
+   18446744005131683364,
+   18446744005131684576,
+   18446744005131684928,
+   18446744005131684984,
+   18446744005131685108,
+   18446744005131685208,
+   18446744005131733044,
+   18446744005131733068,
+   18446744005131735832,
+   18446744005131735856,
+   18446744005131741500,
+   18446744005131741556,
+   18446744005131741680,
+   18446744005131741776,
+   18446744005131742000,
+   18446744005131742448,
+   18446744005131742868,
+   18446744005131742924,
+   18446744005131743048,
+   18446744005131743148,
+   18446744005131754232,
+   18446744005131754288,
+   18446744005131754412,
+   18446744005131754512,
+   18446744005131756152,
+   18446744005131756208,
+   18446744005131756332,
+   18446744005131756428,
+   18446744005131756664,
+   18446744005131758584,
+   18446744005131759040,
+   18446744005131759096,
+   18446744005131759220,
+   18446744005131759320,
+   18446744005131766060,
+   18446744005131766552,
+   18446744005131766688,
+   18446744005131767436,
+   18446744005131767836,
+   18446744005131767892,
+   18446744005131768016,
+   18446744005131768140,
+   18446744005131768420,
+   18446744005131770324,
+   18446744005131770684,
+   18446744005131771604,
+   18446744005131771708,
+   18446744005131771916,
+   18446744005131772104,
+   18446744005131772156,
+   18446744005131772296,
+   18446744005131772348,
+   18446744005131772520,
+   18446744005131880176,
+   18446744005131895668,
+   18446744005131895732,
+   18446744005131895796,
+   18446744005131895860,
+   18446744005131895924,
+   18446744005131896008,
+   18446744005131896404,
+   18446744005131917948,
+   18446744005131918012,
+   18446744005131918068,
+   18446744005131918272,
+   18446744005131918364,
+   18446744005131918476,
+   18446744005131918568,
+   18446744005131918684,
+   18446744005131919132,
+   18446744005131919308,
+   18446744005131919372,
+   18446744005131919432,
+   18446744005131919640,
+   18446744005131919732,
+   18446744005131919848,
+   18446744005131919944,
+   18446744005131922708,
+   18446744005131922768
+  ],
+  "kext": "com.apple.driver.AppleConvergedPCI",
+  "kext_pc": "com.apple.driver.AppleConvergedPCI"
+ },
+ {
+  "va": 18446744005121487936,
+  "stride": 24,
+  "n": 6,
+  "pc": 18446744005131856948,
+  "pcs": [
+   18446744005131856948
+  ],
+  "kext": "com.apple.driver.AppleConvergedPCI",
+  "kext_pc": "com.apple.driver.AppleConvergedPCI"
+ },
+ {
+  "va": 18446744005121525568,
+  "stride": 24,
+  "n": 2,
+  "pc": 18446744005132026740,
+  "pcs": [
+   18446744005132026740
+  ],
+  "kext": "com.apple.driver.AppleDiskImages2",
+  "kext_pc": "com.apple.driver.AppleDiskImages2"
+ },
+ {
+  "va": 18446744005121531400,
+  "stride": 24,
+  "n": 9,
+  "pc": 18446744005132092228,
+  "pcs": [
+   18446744005132092228
+  ],
+  "kext": "com.apple.driver.AppleDiskImages2",
+  "kext_pc": "com.apple.driver.AppleDiskImages2"
+ },
+ {
+  "va": 18446744005121538224,
+  "stride": 24,
+  "n": 3,
+  "pc": 18446744005132107604,
+  "pcs": [
+   18446744005132107604
+  ],
+  "kext": "com.apple.driver.AppleDockChannel",
+  "kext_pc": "com.apple.driver.AppleDockChannel"
+ },
+ {
+  "va": 18446744005121666672,
+  "stride": 24,
+  "n": 9,
+  "pc": 18446744005132807028,
+  "pcs": [
+   18446744005132807028
+  ],
+  "kext": "com.apple.driver.AppleEmbeddedGPS",
+  "kext_pc": "com.apple.driver.AppleEmbeddedGPS"
+ },
+ {
+  "va": 18446744005121748112,
+  "stride": 24,
+  "n": 6,
+  "pc": 18446744005133246776,
+  "pcs": [
+   18446744005133246776
+  ],
+  "kext": "com.apple.driver.AppleEmbeddedTempSensor",
+  "kext_pc": "com.apple.driver.AppleEmbeddedTempSensor"
+ },
+ {
+  "va": 18446744005121763032,
+  "stride": 24,
+  "n": 9,
+  "pc": 18446744005133310844,
+  "pcs": [
+   18446744005133310844
+  ],
+  "kext": "com.apple.driver.AppleEmbeddedTouchEEPROM",
+  "kext_pc": "com.apple.driver.AppleEmbeddedTouchEEPROM"
+ },
+ {
+  "va": 18446744005121868744,
+  "stride": 40,
+  "n": 11,
+  "pc": 18446744005133630044,
+  "pcs": [
+   18446744005133630044
+  ],
+  "kext": "com.apple.driver.AppleFirmwareKit",
+  "kext_pc": "com.apple.driver.AppleFirmwareKit"
+ },
+ {
+  "va": 18446744005121825496,
+  "stride": 40,
+  "n": 2,
+  "pc": 18446744005133722436,
+  "pcs": [
+   18446744005133722436
+  ],
+  "kext": "com.apple.driver.AppleFirmwareKit",
+  "kext_pc": "com.apple.driver.AppleFirmwareKit"
+ },
+ {
+  "va": 18446744005121827712,
+  "stride": 40,
+  "n": 3,
+  "pc": 18446744005133724696,
+  "pcs": [
+   18446744005133724696
+  ],
+  "kext": "com.apple.driver.AppleFirmwareKit",
+  "kext_pc": "com.apple.driver.AppleFirmwareKit"
+ },
+ {
+  "va": 18446744005121899816,
+  "stride": 40,
+  "n": 3,
+  "pc": 18446744005133815432,
+  "pcs": [
+   18446744005133815432
+  ],
+  "kext": "com.apple.driver.AppleGPIOICController",
+  "kext_pc": "com.apple.driver.AppleGPIOICController"
+ },
+ {
+  "va": 18446744005121950000,
+  "stride": 40,
+  "n": 11,
+  "pc": 18446744005134522504,
+  "pcs": [
+   18446744005134522504
+  ],
+  "kext": "com.apple.driver.AppleH11ANEInterface",
+  "kext_pc": "com.apple.driver.AppleH11ANEInterface"
+ },
+ {
+  "va": 18446744005121950640,
+  "stride": 40,
+  "n": 2,
+  "pc": 18446744005134523020,
+  "pcs": [
+   18446744005134523020
+  ],
+  "kext": "com.apple.driver.AppleH11ANEInterface",
+  "kext_pc": "com.apple.driver.AppleH11ANEInterface"
+ },
+ {
+  "va": 18446744005121968784,
+  "stride": 40,
+  "n": 4,
+  "pc": 18446744005134794568,
+  "pcs": [
+   18446744005134794568
+  ],
+  "kext": "com.apple.driver.AppleH11ANEInterface",
+  "kext_pc": "com.apple.driver.AppleH11ANEInterface"
+ },
+ {
+  "va": 18446744005122062792,
+  "stride": 24,
+  "n": 3,
+  "pc": 18446744005135353008,
+  "pcs": [
+   18446744005135353008
+  ],
+  "kext": "com.apple.driver.AppleH13CameraInterface",
+  "kext_pc": "com.apple.driver.AppleH13CameraInterface"
+ },
+ {
+  "va": 18446744005122123368,
+  "stride": 24,
+  "n": 99,
+  "pc": 18446744005135749632,
+  "pcs": [
+   18446744005135749632
+  ],
+  "kext": "com.apple.driver.AppleH13CameraInterface",
+  "kext_pc": "com.apple.driver.AppleH13CameraInterface"
+ },
+ {
+  "va": 18446744005122152840,
+  "stride": 24,
+  "n": 8,
+  "pc": 18446744005135911240,
+  "pcs": [
+   18446744005135911240,
+   18446744005135911544
+  ],
+  "kext": "com.apple.driver.AppleHIDTransport",
+  "kext_pc": "com.apple.driver.AppleHIDTransport"
+ },
+ {
+  "va": 18446744005122163816,
+  "stride": 24,
+  "n": 6,
+  "pc": 18446744005135964408,
+  "pcs": [
+   18446744005135964408,
+   18446744005135964712
+  ],
+  "kext": "com.apple.driver.AppleHIDTransport",
+  "kext_pc": "com.apple.driver.AppleHIDTransport"
+ },
+ {
+  "va": 18446744005122229760,
+  "stride": 40,
+  "n": 4,
+  "pc": 18446744005136812524,
+  "pcs": [
+   18446744005136812524
+  ],
+  "kext": "com.apple.driver.AppleHapticsSupportLEAP",
+  "kext_pc": "com.apple.driver.AppleHapticsSupportLEAP"
+ },
+ {
+  "va": 18446744005122262328,
+  "stride": 24,
+  "n": 15,
+  "pc": 18446744005137025112,
+  "pcs": [
+   18446744005137025112
+  ],
+  "kext": "com.apple.driver.AppleIDV",
+  "kext_pc": "com.apple.driver.AppleIDV"
+ },
+ {
+  "va": 18446744005122272664,
+  "stride": 24,
+  "n": 21,
+  "pc": 18446744005137082720,
+  "pcs": [
+   18446744005137082720
+  ],
+  "kext": "com.apple.driver.AppleIPAppender",
+  "kext_pc": "com.apple.driver.AppleIPAppender"
+ },
+ {
+  "va": 18446744005122320568,
+  "stride": 24,
+  "n": 6,
+  "pc": 18446744005137171328,
+  "pcs": [
+   18446744005137171328
+  ],
+  "kext": "com.apple.security.AppleImage4",
+  "kext_pc": "com.apple.security.AppleImage4"
+ },
+ {
+  "va": 18446744005122364352,
+  "stride": 40,
+  "n": 6,
+  "pc": 18446744005137464372,
+  "pcs": [
+   18446744005137464372
+  ],
+  "kext": "com.apple.driver.AppleJPEGDriver",
+  "kext_pc": "com.apple.driver.AppleJPEGDriver"
+ },
+ {
+  "va": 18446744005122817056,
+  "stride": 24,
+  "n": 2,
+  "pc": 18446744005140724120,
+  "pcs": [
+   18446744005140724120
+  ],
+  "kext": "com.apple.driver.ApplePMP",
+  "kext_pc": "com.apple.driver.ApplePMP"
+ },
+ {
+  "va": 18446744005122820600,
+  "stride": 24,
+  "n": 7,
+  "pc": 18446744005140748452,
+  "pcs": [
+   18446744005140748452
+  ],
+  "kext": "com.apple.driver.ApplePMP",
+  "kext_pc": "com.apple.driver.ApplePMP"
+ },
+ {
+  "va": 18446744005122822432,
+  "stride": 24,
+  "n": 18,
+  "pc": 18446744005140752172,
+  "pcs": [
+   18446744005140752172
+  ],
+  "kext": "com.apple.driver.ApplePMP",
+  "kext_pc": "com.apple.driver.ApplePMP"
+ },
+ {
+  "va": 18446744005122844584,
+  "stride": 24,
+  "n": 56,
+  "pc": 18446744005140905760,
+  "pcs": [
+   18446744005140905760
+  ],
+  "kext": "com.apple.driver.ApplePPMCPMS",
+  "kext_pc": "com.apple.driver.ApplePPMCPMS"
+ },
+ {
+  "va": 18446744005122892648,
+  "stride": 24,
+  "n": 7,
+  "pc": 18446744005141505464,
+  "pcs": [
+   18446744005141505464
+  ],
+  "kext": "com.apple.driver.ApplePhotonDetector",
+  "kext_pc": "com.apple.driver.ApplePhotonDetector"
+ },
+ {
+  "va": 18446744005122980176,
+  "stride": 24,
+  "n": 3,
+  "pc": 18446744005142202996,
+  "pcs": [
+   18446744005142202996
+  ],
+  "kext": "com.apple.driver.AppleSEPCredentialManager",
+  "kext_pc": "com.apple.driver.AppleSEPCredentialManager"
+ },
+ {
+  "va": 18446744005123028280,
+  "stride": 24,
+  "n": 17,
+  "pc": 18446744005142671672,
+  "pcs": [
+   18446744005142671672
+  ],
+  "kext": "com.apple.driver.AppleSEPManager",
+  "kext_pc": "com.apple.driver.AppleSEPManager"
+ },
+ {
+  "va": 18446744005123064968,
+  "stride": 24,
+  "n": 7,
+  "pc": 18446744005142880800,
+  "pcs": [
+   18446744005142880800
+  ],
+  "kext": "com.apple.driver.AppleSMC",
+  "kext_pc": "com.apple.driver.AppleSMC"
+ },
+ {
+  "va": 18446744005123145312,
+  "stride": 40,
+  "n": 4,
+  "pc": 18446744005143300148,
+  "pcs": [
+   18446744005143300148
+  ],
+  "kext": "com.apple.driver.AppleSPU",
+  "kext_pc": "com.apple.driver.AppleSPU"
+ },
+ {
+  "va": 18446744005123154320,
+  "stride": 24,
+  "n": 2,
+  "pc": 18446744005143316500,
+  "pcs": [
+   18446744005143316500
+  ],
+  "kext": "com.apple.driver.AppleSPU",
+  "kext_pc": "com.apple.driver.AppleSPU"
+ },
+ {
+  "va": 18446744005123157872,
+  "stride": 40,
+  "n": 3,
+  "pc": 18446744005143320852,
+  "pcs": [
+   18446744005143320852
+  ],
+  "kext": "com.apple.driver.AppleSPU",
+  "kext_pc": "com.apple.driver.AppleSPU"
+ },
+ {
+  "va": 18446744005123187752,
+  "stride": 24,
+  "n": 7,
+  "pc": 18446744005143383216,
+  "pcs": [
+   18446744005143383216
+  ],
+  "kext": "com.apple.driver.AppleSPU",
+  "kext_pc": "com.apple.driver.AppleSPU"
+ },
+ {
+  "va": 18446744005123169440,
+  "stride": 24,
+  "n": 12,
+  "pc": 18446744005143504392,
+  "pcs": [
+   18446744005143504392
+  ],
+  "kext": "com.apple.driver.AppleSPU",
+  "kext_pc": "com.apple.driver.AppleSPU"
+ },
+ {
+  "va": 18446744005123171584,
+  "stride": 24,
+  "n": 5,
+  "pc": 18446744005143507148,
+  "pcs": [
+   18446744005143507148
+  ],
+  "kext": "com.apple.driver.AppleSPU",
+  "kext_pc": "com.apple.driver.AppleSPU"
+ },
+ {
+  "va": 18446744005123183912,
+  "stride": 24,
+  "n": 4,
+  "pc": 18446744005143530188,
+  "pcs": [
+   18446744005143530188
+  ],
+  "kext": "com.apple.driver.AppleSPU",
+  "kext_pc": "com.apple.driver.AppleSPU"
+ },
+ {
+  "va": 18446744005123185968,
+  "stride": 24,
+  "n": 5,
+  "pc": 18446744005143530812,
+  "pcs": [
+   18446744005143530812
+  ],
+  "kext": "com.apple.driver.AppleSPU",
+  "kext_pc": "com.apple.driver.AppleSPU"
+ },
+ {
+  "va": 18446744005123201288,
+  "stride": 24,
+  "n": 2,
+  "pc": 18446744005143543960,
+  "pcs": [
+   18446744005143543960
+  ],
+  "kext": "com.apple.driver.AppleSPU",
+  "kext_pc": "com.apple.driver.AppleSPU"
+ },
+ {
+  "va": 18446744005123236600,
+  "stride": 24,
+  "n": 20,
+  "pc": 18446744005143623956,
+  "pcs": [
+   18446744005143623956
+  ],
+  "kext": "com.apple.driver.AppleSPURose",
+  "kext_pc": "com.apple.driver.AppleSPURose"
+ },
+ {
+  "va": 18446744005123239152,
+  "stride": 24,
+  "n": 24,
+  "pc": 18446744005143635504,
+  "pcs": [
+   18446744005143635504
+  ],
+  "kext": "com.apple.driver.AppleSPURose",
+  "kext_pc": "com.apple.driver.AppleSPURose"
+ },
+ {
+  "va": 18446744005123262056,
+  "stride": 40,
+  "n": 4,
+  "pc": 18446744005143746016,
+  "pcs": [
+   18446744005143746016
+  ],
+  "kext": "com.apple.driver.AppleSmartBatteryManagerEmbedded",
+  "kext_pc": "com.apple.driver.AppleSmartBatteryManagerEmbedded"
+ },
+ {
+  "va": 18446744005123265408,
+  "stride": 40,
+  "n": 5,
+  "pc": 18446744005143777624,
+  "pcs": [
+   18446744005143777624
+  ],
+  "kext": "com.apple.driver.AppleSmartBatteryManagerEmbedded",
+  "kext_pc": "com.apple.driver.AppleSmartBatteryManagerEmbedded"
+ },
+ {
+  "va": 18446744005123289712,
+  "stride": 40,
+  "n": 4,
+  "pc": 18446744005143936912,
+  "pcs": [
+   18446744005143936912
+  ],
+  "kext": "com.apple.driver.AppleSmartIO2",
+  "kext_pc": "com.apple.driver.AppleSmartIO2"
+ },
+ {
+  "va": 18446744005123299976,
+  "stride": 40,
+  "n": 14,
+  "pc": 18446744005143982064,
+  "pcs": [
+   18446744005143982064
+  ],
+  "kext": "com.apple.driver.AppleStockholmControl",
+  "kext_pc": "com.apple.driver.AppleStockholmControl"
+ },
+ {
+  "va": 18446744005123349832,
+  "stride": 24,
+  "n": 11,
+  "pc": 18446744005144397196,
+  "pcs": [
+   18446744005144397196
+  ],
+  "kext": "com.apple.driver.AppleT8110CLPC",
+  "kext_pc": "com.apple.driver.AppleT8110CLPC"
+ },
+ {
+  "va": 18446744005123785200,
+  "stride": 24,
+  "n": 4,
+  "pc": 18446744005148661648,
+  "pcs": [
+   18446744005148661648
+  ],
+  "kext": "com.apple.iokit.IOAVFamily",
+  "kext_pc": "com.apple.iokit.IOAVFamily"
+ },
+ {
+  "va": 18446744005123830640,
+  "stride": 24,
+  "n": 11,
+  "pc": 18446744005148833820,
+  "pcs": [
+   18446744005148833820
+  ],
+  "kext": "com.apple.iokit.IOAVFamily",
+  "kext_pc": "com.apple.iokit.IOAVFamily"
+ },
+ {
+  "va": 18446744005123853728,
+  "stride": 24,
+  "n": 33,
+  "pc": 18446744005148997776,
+  "pcs": [
+   18446744005148997776
+  ],
+  "kext": "com.apple.iokit.IOAVFamily",
+  "kext_pc": "com.apple.iokit.IOAVFamily"
+ },
+ {
+  "va": 18446744005123856224,
+  "stride": 24,
+  "n": 15,
+  "pc": 18446744005149002732,
+  "pcs": [
+   18446744005149002732
+  ],
+  "kext": "com.apple.iokit.IOAVFamily",
+  "kext_pc": "com.apple.iokit.IOAVFamily"
+ },
+ {
+  "va": 18446744005123858248,
+  "stride": 24,
+  "n": 7,
+  "pc": 18446744005149007748,
+  "pcs": [
+   18446744005149007748
+  ],
+  "kext": "com.apple.iokit.IOAVFamily",
+  "kext_pc": "com.apple.iokit.IOAVFamily"
+ },
+ {
+  "va": 18446744005123861744,
+  "stride": 24,
+  "n": 13,
+  "pc": 18446744005149009320,
+  "pcs": [
+   18446744005149009320
+  ],
+  "kext": "com.apple.iokit.IOAVFamily",
+  "kext_pc": "com.apple.iokit.IOAVFamily"
+ },
+ {
+  "va": 18446744005123866568,
+  "stride": 24,
+  "n": 2,
+  "pc": 18446744005149022152,
+  "pcs": [
+   18446744005149022152
+  ],
+  "kext": "com.apple.iokit.IOAVFamily",
+  "kext_pc": "com.apple.iokit.IOAVFamily"
+ },
+ {
+  "va": 18446744005123898136,
+  "stride": 40,
+  "n": 3,
+  "pc": 18446744005149264568,
+  "pcs": [
+   18446744005149264568
+  ],
+  "kext": "com.apple.iokit.IOAccessoryManager",
+  "kext_pc": "com.apple.iokit.IOAccessoryManager"
+ },
+ {
+  "va": 18446744005123907952,
+  "stride": 24,
+  "n": 4,
+  "pc": 18446744005149380908,
+  "pcs": [
+   18446744005149380908
+  ],
+  "kext": "com.apple.iokit.IOAccessoryManager",
+  "kext_pc": "com.apple.iokit.IOAccessoryManager"
+ },
+ {
+  "va": 18446744005123939400,
+  "stride": 24,
+  "n": 3,
+  "pc": 18446744005149502628,
+  "pcs": [
+   18446744005149502628
+  ],
+  "kext": "com.apple.iokit.IOAccessoryManager",
+  "kext_pc": "com.apple.iokit.IOAccessoryManager"
+ },
+ {
+  "va": 18446744005123947696,
+  "stride": 24,
+  "n": 39,
+  "pc": 18446744005149515504,
+  "pcs": [
+   18446744005149515504
+  ],
+  "kext": "com.apple.iokit.IOAccessoryManager",
+  "kext_pc": "com.apple.iokit.IOAccessoryManager"
+ },
+ {
+  "va": 18446744005123986240,
+  "stride": 24,
+  "n": 2,
+  "pc": 18446744005149616448,
+  "pcs": [
+   18446744005149616448
+  ],
+  "kext": "com.apple.iokit.IOAccessoryManager",
+  "kext_pc": "com.apple.iokit.IOAccessoryManager"
+ },
+ {
+  "va": 18446744005123995920,
+  "stride": 40,
+  "n": 6,
+  "pc": 18446744005149638068,
+  "pcs": [
+   18446744005149638068
+  ],
+  "kext": "com.apple.iokit.IOAccessoryManager",
+  "kext_pc": "com.apple.iokit.IOAccessoryManager"
+ },
+ {
+  "va": 18446744005124046672,
+  "stride": 24,
+  "n": 2,
+  "pc": 18446744005149847880,
+  "pcs": [
+   18446744005149847880
+  ],
+  "kext": "com.apple.iokit.IOAccessoryManager",
+  "kext_pc": "com.apple.iokit.IOAccessoryManager"
+ },
+ {
+  "va": 18446744005123916200,
+  "stride": 24,
+  "n": 3,
+  "pc": 18446744005149977336,
+  "pcs": [
+   18446744005149977336
+  ],
+  "kext": "com.apple.iokit.IOAccessoryManager",
+  "kext_pc": "com.apple.iokit.IOAccessoryManager"
+ },
+ {
+  "va": 18446744005123932864,
+  "stride": 24,
+  "n": 3,
+  "pc": 18446744005149991864,
+  "pcs": [
+   18446744005149991864
+  ],
+  "kext": "com.apple.iokit.IOAccessoryManager",
+  "kext_pc": "com.apple.iokit.IOAccessoryManager"
+ },
+ {
+  "va": 18446744005123953200,
+  "stride": 24,
+  "n": 3,
+  "pc": 18446744005150011140,
+  "pcs": [
+   18446744005150011140
+  ],
+  "kext": "com.apple.iokit.IOAccessoryManager",
+  "kext_pc": "com.apple.iokit.IOAccessoryManager"
+ },
+ {
+  "va": 18446744005124036376,
+  "stride": 40,
+  "n": 14,
+  "pc": 18446744005150112492,
+  "pcs": [
+   18446744005150112492
+  ],
+  "kext": "com.apple.iokit.IOAccessoryManager",
+  "kext_pc": "com.apple.iokit.IOAccessoryManager"
+ },
+ {
+  "va": 18446744005124071448,
+  "stride": 24,
+  "n": 6,
+  "pc": 18446744005150170112,
+  "pcs": [
+   18446744005150170112
+  ],
+  "kext": "com.apple.driver.IOAudioCodecs",
+  "kext_pc": "com.apple.driver.IOAudioCodecs"
+ },
+ {
+  "va": 18446744005124097312,
+  "stride": 24,
+  "n": 7,
+  "pc": 18446744005150284040,
+  "pcs": [
+   18446744005150284040
+  ],
+  "kext": "com.apple.iokit.IOCECFamily",
+  "kext_pc": "com.apple.iokit.IOCECFamily"
+ },
+ {
+  "va": 18446744005124122096,
+  "stride": 24,
+  "n": 6,
+  "pc": 18446744005150389736,
+  "pcs": [
+   18446744005150389736,
+   18446744005150390864
+  ],
+  "kext": "com.apple.iokit.IODisplayPortFamily",
+  "kext_pc": "com.apple.iokit.IODisplayPortFamily"
+ },
+ {
+  "va": 18446744005124140632,
+  "stride": 24,
+  "n": 6,
+  "pc": 18446744005150460156,
+  "pcs": [
+   18446744005150460156
+  ],
+  "kext": "com.apple.iokit.IODisplayPortFamily",
+  "kext_pc": "com.apple.iokit.IODisplayPortFamily"
+ },
+ {
+  "va": 18446744005124164072,
+  "stride": 24,
+  "n": 4,
+  "pc": 18446744005150572560,
+  "pcs": [
+   18446744005150572560
+  ],
+  "kext": "com.apple.iokit.IODisplayPortFamily",
+  "kext_pc": "com.apple.iokit.IODisplayPortFamily"
+ },
+ {
+  "va": 18446744005124169584,
+  "stride": 24,
+  "n": 12,
+  "pc": 18446744005150579944,
+  "pcs": [
+   18446744005150579944
+  ],
+  "kext": "com.apple.iokit.IODisplayPortFamily",
+  "kext_pc": "com.apple.iokit.IODisplayPortFamily"
+ },
+ {
+  "va": 18446744005124169728,
+  "stride": 24,
+  "n": 6,
+  "pc": 18446744005150591504,
+  "pcs": [
+   18446744005150591504,
+   18446744005150591568,
+   18446744005150591600,
+   18446744005150591632,
+   18446744005150591664,
+   18446744005150591720,
+   18446744005150591752,
+   18446744005150591784,
+   18446744005150591816,
+   18446744005150592284,
+   18446744005150592444,
+   18446744005150592476,
+   18446744005150592508,
+   18446744005150592540,
+   18446744005150592924,
+   18446744005150593428,
+   18446744005150595888
+  ],
+  "kext": "com.apple.iokit.IODisplayPortFamily",
+  "kext_pc": "com.apple.iokit.IODisplayPortFamily"
+ },
+ {
+  "va": 18446744005124176552,
+  "stride": 24,
+  "n": 5,
+  "pc": 18446744005150750864,
+  "pcs": [
+   18446744005150750864
+  ],
+  "kext": "com.apple.iokit.IODisplayPortFamily",
+  "kext_pc": "com.apple.iokit.IODisplayPortFamily"
+ },
+ {
+  "va": 18446744005124204352,
+  "stride": 24,
+  "n": 56,
+  "pc": 18446744005150810636,
+  "pcs": [
+   18446744005150810636
+  ],
+  "kext": "com.apple.iokit.IOGPUFamily",
+  "kext_pc": "com.apple.iokit.IOGPUFamily"
+ },
+ {
+  "va": 18446744005124203008,
+  "stride": 24,
+  "n": 112,
+  "pc": 18446744005150810664,
+  "pcs": [
+   18446744005150810664
+  ],
+  "kext": "com.apple.iokit.IOGPUFamily",
+  "kext_pc": "com.apple.iokit.IOGPUFamily"
+ },
+ {
+  "va": 18446744005124224960,
+  "stride": 24,
+  "n": 3,
+  "pc": 18446744005151025300,
+  "pcs": [
+   18446744005151025300
+  ],
+  "kext": "com.apple.iokit.IOGPUFamily",
+  "kext_pc": "com.apple.iokit.IOGPUFamily"
+ },
+ {
+  "va": 18446744005124239256,
+  "stride": 40,
+  "n": 6,
+  "pc": 18446744005151119908,
+  "pcs": [
+   18446744005151119908
+  ],
+  "kext": "com.apple.iokit.IOGameControllerFamily",
+  "kext_pc": "com.apple.iokit.IOGameControllerFamily"
+ },
+ {
+  "va": 18446744005124245224,
+  "stride": 40,
+  "n": 2,
+  "pc": 18446744005151142124,
+  "pcs": [
+   18446744005151142124
+  ],
+  "kext": "com.apple.iokit.IOGameControllerFamily",
+  "kext_pc": "com.apple.iokit.IOGameControllerFamily"
+ },
+ {
+  "va": 18446744005124258424,
+  "stride": 40,
+  "n": 3,
+  "pc": 18446744005151158260,
+  "pcs": [
+   18446744005151158260
+  ],
+  "kext": "com.apple.iokit.IOGameControllerFamily",
+  "kext_pc": "com.apple.iokit.IOGameControllerFamily"
+ },
+ {
+  "va": 18446744005124321896,
+  "stride": 40,
+  "n": 3,
+  "pc": 18446744005151730980,
+  "pcs": [
+   18446744005151730980
+  ],
+  "kext": "com.apple.iokit.IOHIDFamily",
+  "kext_pc": "com.apple.iokit.IOHIDFamily"
+ },
+ {
+  "va": 18446744005124366424,
+  "stride": 40,
+  "n": 5,
+  "pc": 18446744005151841328,
+  "pcs": [
+   18446744005151841328
+  ],
+  "kext": "com.apple.iokit.IOHIDFamily",
+  "kext_pc": "com.apple.iokit.IOHIDFamily"
+ },
+ {
+  "va": 18446744005124372216,
+  "stride": 40,
+  "n": 2,
+  "pc": 18446744005151845804,
+  "pcs": [
+   18446744005151845804
+  ],
+  "kext": "com.apple.iokit.IOHIDFamily",
+  "kext_pc": "com.apple.iokit.IOHIDFamily"
+ },
+ {
+  "va": 18446744005124499064,
+  "stride": 24,
+  "n": 18,
+  "pc": 18446744005152441752,
+  "pcs": [
+   18446744005152441752,
+   18446744005152442092
+  ],
+  "kext": "com.apple.iokit.IONVMeFamily",
+  "kext_pc": "com.apple.iokit.IONVMeFamily"
+ },
+ {
+  "va": 18446744005124477872,
+  "stride": 24,
+  "n": 3,
+  "pc": 18446744005152626760,
+  "pcs": [
+   18446744005152626760
+  ],
+  "kext": "com.apple.iokit.IONVMeFamily",
+  "kext_pc": "com.apple.iokit.IONVMeFamily"
+ },
+ {
+  "va": 18446744005124581800,
+  "stride": 24,
+  "n": 4,
+  "pc": 18446744005153119292,
+  "pcs": [
+   18446744005153119292
+  ],
+  "kext": "com.apple.iokit.IOReportFamily",
+  "kext_pc": "com.apple.iokit.IOReportFamily"
+ },
+ {
+  "va": 18446744005124721552,
+  "stride": 40,
+  "n": 17,
+  "pc": 18446744005153910292,
+  "pcs": [
+   18446744005153910292
+  ],
+  "kext": "com.apple.iokit.IOSurface",
+  "kext_pc": "com.apple.iokit.IOSurface"
+ },
+ {
+  "va": 18446744005124723952,
+  "stride": 40,
+  "n": 17,
+  "pc": 18446744005153910304,
+  "pcs": [
+   18446744005153910304
+  ],
+  "kext": "com.apple.iokit.IOSurface",
+  "kext_pc": "com.apple.iokit.IOSurface"
+ },
+ {
+  "va": 18446744005124804616,
+  "stride": 24,
+  "n": 9,
+  "pc": 18446744005154230476,
+  "pcs": [
+   18446744005154230476
+  ],
+  "kext": "com.apple.iokit.IOUSBDeviceFamily",
+  "kext_pc": "com.apple.iokit.IOUSBDeviceFamily"
+ },
+ {
+  "va": 18446744005124859880,
+  "stride": 24,
+  "n": 20,
+  "pc": 18446744005154793584,
+  "pcs": [
+   18446744005154793584
+  ],
+  "kext": "com.apple.iokit.IOUSBHostFamily",
+  "kext_pc": "com.apple.iokit.IOUSBHostFamily"
+ },
+ {
+  "va": 18446744005124862344,
+  "stride": 24,
+  "n": 36,
+  "pc": 18446744005154807596,
+  "pcs": [
+   18446744005154807596
+  ],
+  "kext": "com.apple.iokit.IOUSBHostFamily",
+  "kext_pc": "com.apple.iokit.IOUSBHostFamily"
+ },
+ {
+  "va": 18446744005124878496,
+  "stride": 24,
+  "n": 29,
+  "pc": 18446744005155088376,
+  "pcs": [
+   18446744005155088376
+  ],
+  "kext": "com.apple.iokit.IOUSBHostFamily",
+  "kext_pc": "com.apple.iokit.IOUSBHostFamily"
+ },
+ {
+  "va": 18446744005124892600,
+  "stride": 24,
+  "n": 15,
+  "pc": 18446744005155294448,
+  "pcs": [
+   18446744005155294448
+  ],
+  "kext": "com.apple.iokit.IOUSBHostFamily",
+  "kext_pc": "com.apple.iokit.IOUSBHostFamily"
+ },
+ {
+  "va": 18446744005125033280,
+  "stride": 24,
+  "n": 5,
+  "pc": 18446744005156354080,
+  "pcs": [
+   18446744005156354080
+  ],
+  "kext": "com.apple.iokit.IOUserEthernet",
+  "kext_pc": "com.apple.iokit.IOUserEthernet"
+ },
+ {
+  "va": 18446744005125108568,
+  "stride": 24,
+  "n": 9,
+  "pc": 18446744005156843568,
+  "pcs": [
+   18446744005156843568
+  ],
+  "kext": "com.apple.security.Image4",
+  "kext_pc": "com.apple.security.Image4"
+ },
+ {
+  "va": 18446744005125161296,
+  "stride": 24,
+  "n": 14,
+  "pc": 18446744005157163348,
+  "pcs": [
+   18446744005157163348
+  ],
+  "kext": "com.apple.driver.RTBuddy",
+  "kext_pc": "com.apple.driver.RTBuddy"
+ },
+ {
+  "va": 18446744005125203056,
+  "stride": 24,
+  "n": 3,
+  "pc": 18446744005157498580,
+  "pcs": [
+   18446744005157498580
+  ],
+  "kext": "com.apple.driver.VideoProcessing",
+  "kext_pc": "com.apple.driver.VideoProcessing"
+ },
+ {
+  "va": 18446744005125214536,
+  "stride": 24,
+  "n": 11,
+  "pc": 18446744005157810276,
+  "pcs": [
+   18446744005157810276
+  ],
+  "kext": "com.apple.filesystems.apfs",
+  "kext_pc": "com.apple.filesystems.apfs"
+ }
+]

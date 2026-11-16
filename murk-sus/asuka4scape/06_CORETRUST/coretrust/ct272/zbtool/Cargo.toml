@@ -1,0 +1,7 @@
+[package]
+name = "zbtool"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+zbitmap = "0.1.0"

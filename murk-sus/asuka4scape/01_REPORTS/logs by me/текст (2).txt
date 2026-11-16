@@ -1,0 +1,358 @@
+=== KRWProbe 1.1 ===
+machine=iPhone14,7 release=27.2.0 os=24B115 build=?
+kern.version=Darwin Kernel Version 27.2.0: Tue Oct 13 21:26:30 PDT 2026; root:xnu-13432.42.3~28/RELEASE_ARM64_T8110
+hw.model=D27AP memsize=
+pid=11505 uid=501 euid=501
+--- surfaces ---
+basic surface: id=14 alloc=16384 bpe=4 bpr=256 base=0x1025b0000
+planes=1 256x256: OK id=14 alloc=262144 count=1
+planes=2 256x256: OK id=14 alloc=524288 count=2
+planes=4 256x256: OK id=14 alloc=1048576 count=4
+planes=8 256x256: OK id=14 alloc=2097152 count=8
+--- user clients (controls first) ---
+NoSuchService_SMITH_0: no service
+AppleMobileFileIntegrity: kr=0xe00002e2 (3758097122) not-permitted-or-error
+IOSurfaceRoot: kr=0x0 (0) OK
+AppleAVE2Driver: kr=0xe00002bd (3758097085) not-permitted-or-error
+AppleAVE2Interface: no service
+AppleH11ANEInterface: no service
+AGXAcceleratorG14P: kr=0xe00002c7 (3758097095) not-permitted-or-error
+=== safe done ===
+=== KRWProbe 1.1 CREATE (IOSurfaceRootUserClient) ===
+create: IOServiceOpen OK conn=29467
+sel0: scalarIn=1 {parent=0}, structIn=394 (XML+NUL), scalarOut=0, structOut=0xc68
+sel0 CREATE -> kr=0x0 (0) OK, structOut=3176/0xc68
+sel0: surface id=13 (u32 at info+0x18)
+sel0: planes=0 (+0x58) flag=0 (+0x5c) pixfmt=0x00000000 (+0x64) usecnt=0 (+0x68)
+sel0: IOSurfaceInfo[0x00..0x90]:
+  +0x000: 00 c0 5c 02 01 00 00 00 90 8a 5a 02 01 00 00 00
+  +0x010: 40 c3 5a 02 01 00 00 00 0d 00 00 00 00 00 00 00
+  +0x020: 00 40 00 00 00 00 00 00 40 00 00 00 00 00 00 00
+  +0x030: 40 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00
+  +0x040: 00 00 00 00 00 00 00 00 41 52 47 42 00 00 00 00
+  +0x050: 00 40 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  +0x060: 04 00 01 01 00 00 00 00 00 00 00 00 00 00 00 00
+  +0x070: 00 00 00 00 00 00 00 00 9a d8 0e 00 00 00 00 01
+  +0x080: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+sel2 USE+INFO -> kr=0x0 (0) OK, structIn=12 structOut=3176/0xc68
+sel2: id=13 usecnt=1 (+0x68) planes=0
+sel3 USE- -> kr=0x0 (0) OK, structIn=0xc structOut=4/4 value=1
+sel9 SET 'KRWProbeValue'=1 -> kr=0x0 (0) OK, structIn=107 structOut=4/4 value=3
+sel10 GET 'KRWProbeValue' -> kr=0x0 (0) OK, structIn=26 structOut=28
+sel10: serialized value (16 bytes at out+0xc):
+  +0x000: d3 00 00 00 40 00 00 84 01 00 00 00 00 00 00 00
+
+sel11 REMOVE 'KRWProbeValue' -> kr=0x0 (0) OK, structIn=26 structOut=4/4 value=5
+sel1 RELEASE id=13 -> kr=0xe00002c2 (3758097090) FAIL
+=== CREATE probe done ===
+=== KRWProbe 1.1 MUTATE (100000 iters) ===
+base: 64x64 BGRA, plane 64x64 bpe=4 bpr=256, compressed baseline tiles 32x32 2x2 hdr=8 data=16KiB
+file: /private/var/mobile/Containers/Data/Application/C4ABC0E0-7111-4C0D-B095-55D9D8C33553/tmp/last_config.xml  (XML + iteration is rewritten before every sel 0 call)
+MUTATE preflight base: kr=0x0 (0) OK, structOut=3176/0xc68, id=13
+MUTATE 0/100000 created=0 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=0
+MUTATE 1000/100000 created=550 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=15
+MUTATE 2000/100000 created=1096 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=31
+MUTATE 3000/100000 created=1652 last_kr=0x0 id=267 nmut=1 conn_gen=46
+MUTATE 4000/100000 created=2231 last_kr=0x0 id=183 nmut=1 conn_gen=62
+MUTATE 5000/100000 created=2806 last_kr=0x0 id=176 nmut=3 conn_gen=78
+MUTATE 6000/100000 created=3357 last_kr=0x0 id=272 nmut=2 conn_gen=93
+MUTATE 7000/100000 created=3860 last_kr=0x0 id=190 nmut=1 conn_gen=109
+MUTATE 8000/100000 created=4416 last_kr=0x0 id=13 nmut=1 conn_gen=125
+MUTATE 9000/100000 created=4971 last_kr=0x0 id=199 nmut=2 conn_gen=140
+MUTATE 10000/100000 created=5548 last_kr=0x0 id=190 nmut=1 conn_gen=156
+MUTATE 11000/100000 created=6129 last_kr=0x0 id=270 nmut=3 conn_gen=171
+MUTATE 12000/100000 created=6683 last_kr=0x0 id=355 nmut=3 conn_gen=187
+MUTATE 13000/100000 created=7219 last_kr=0x0 id=175 nmut=1 conn_gen=203
+MUTATE 14000/100000 created=7797 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=218
+MUTATE 15000/100000 created=8351 last_kr=0x0 id=187 nmut=1 conn_gen=234
+MUTATE 16000/100000 created=8899 last_kr=0xe00002c2 id=0 nmut=1 conn_gen=250
+MUTATE 17000/100000 created=9473 last_kr=0xe00002c2 id=0 nmut=1 conn_gen=265
+MUTATE 18000/100000 created=10027 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=281
+MUTATE 19000/100000 created=10601 last_kr=0xe00002c2 id=0 nmut=1 conn_gen=296
+MUTATE 20000/100000 created=11165 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=312
+MUTATE 21000/100000 created=11712 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=328
+MUTATE 22000/100000 created=12251 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=343
+MUTATE 23000/100000 created=12798 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=359
+MUTATE 24000/100000 created=13345 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=375
+MUTATE 25000/100000 created=13897 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=390
+MUTATE 26000/100000 created=14443 last_kr=0x0 id=170 nmut=1 conn_gen=406
+MUTATE 27000/100000 created=15018 last_kr=0x0 id=269 nmut=1 conn_gen=421
+MUTATE 28000/100000 created=15564 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=437
+MUTATE 29000/100000 created=16095 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=453
+MUTATE 30000/100000 created=16656 last_kr=0x0 id=199 nmut=2 conn_gen=468
+MUTATE 31000/100000 created=17226 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=484
+MUTATE 32000/100000 created=17813 last_kr=0x0 id=13 nmut=1 conn_gen=500
+MUTATE 33000/100000 created=18353 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=515
+MUTATE 34000/100000 created=18928 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=531
+MUTATE 35000/100000 created=19496 last_kr=0x0 id=267 nmut=1 conn_gen=546
+MUTATE 36000/100000 created=20030 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=562
+MUTATE 37000/100000 created=20593 last_kr=0x0 id=17 nmut=1 conn_gen=578
+MUTATE 38000/100000 created=21162 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=593
+MUTATE 39000/100000 created=21728 last_kr=0x0 id=189 nmut=2 conn_gen=609
+MUTATE 40000/100000 created=22314 last_kr=0x0 id=13 nmut=1 conn_gen=625
+MUTATE 41000/100000 created=22894 last_kr=0x0 id=260 nmut=3 conn_gen=640
+MUTATE 42000/100000 created=23478 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=656
+MUTATE 43000/100000 created=24014 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=671
+MUTATE 44000/100000 created=24579 last_kr=0x0 id=192 nmut=1 conn_gen=687
+MUTATE 45000/100000 created=25129 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=703
+MUTATE 46000/100000 created=25691 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=718
+MUTATE 47000/100000 created=26229 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=734
+MUTATE 48000/100000 created=26788 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=750
+MUTATE 49000/100000 created=27340 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=765
+MUTATE 50000/100000 created=27884 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=781
+MUTATE 51000/100000 created=28472 last_kr=0x0 id=271 nmut=2 conn_gen=796
+MUTATE 52000/100000 created=29023 last_kr=0x0 id=195 nmut=1 conn_gen=812
+MUTATE 53000/100000 created=29571 last_kr=0x0 id=20 nmut=1 conn_gen=828
+MUTATE 54000/100000 created=30159 last_kr=0x0 id=269 nmut=1 conn_gen=843
+MUTATE 55000/100000 created=30741 last_kr=0x0 id=193 nmut=1 conn_gen=859
+MUTATE 56000/100000 created=31291 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=875
+MUTATE 57000/100000 created=31859 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=890
+MUTATE 58000/100000 created=32418 last_kr=0x0 id=175 nmut=1 conn_gen=906
+MUTATE 59000/100000 created=32951 last_kr=0x0 id=270 nmut=1 conn_gen=921
+MUTATE 60000/100000 created=33503 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=937
+MUTATE 61000/100000 created=34085 last_kr=0x0 id=17 nmut=1 conn_gen=953
+MUTATE 62000/100000 created=34640 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=968
+MUTATE 63000/100000 created=35192 last_kr=0x0 id=186 nmut=2 conn_gen=984
+MUTATE 64000/100000 created=35749 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=1000
+MUTATE 65000/100000 created=36320 last_kr=0x0 id=271 nmut=1 conn_gen=1015
+MUTATE 66000/100000 created=36881 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=1031
+MUTATE 67000/100000 created=37438 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=1046
+MUTATE 68000/100000 created=38005 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=1062
+MUTATE 69000/100000 created=38600 last_kr=0x0 id=20 nmut=1 conn_gen=1078
+MUTATE 70000/100000 created=39155 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=1093
+MUTATE 71000/100000 created=39688 last_kr=0x0 id=178 nmut=3 conn_gen=1109
+MUTATE 72000/100000 created=40257 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=1125
+MUTATE 73000/100000 created=40834 last_kr=0x0 id=194 nmut=3 conn_gen=1140
+MUTATE 74000/100000 created=41375 last_kr=0x0 id=175 nmut=1 conn_gen=1156
+MUTATE 75000/100000 created=41932 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=1171
+MUTATE 76000/100000 created=42483 last_kr=0x0 id=187 nmut=2 conn_gen=1187
+MUTATE 77000/100000 created=43057 last_kr=0xe00002c2 id=0 nmut=1 conn_gen=1203
+MUTATE 78000/100000 created=43640 last_kr=0x0 id=192 nmut=1 conn_gen=1218
+MUTATE 79000/100000 created=44179 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=1234
+MUTATE 80000/100000 created=44743 last_kr=0x0 id=13 nmut=2 conn_gen=1250
+MUTATE 81000/100000 created=45311 last_kr=0x0 id=190 nmut=2 conn_gen=1265
+MUTATE 82000/100000 created=45860 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=1281
+MUTATE 83000/100000 created=46442 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=1296
+MUTATE 84000/100000 created=47005 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=1312
+MUTATE 85000/100000 created=47562 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=1328
+MUTATE 86000/100000 created=48117 last_kr=0x0 id=201 nmut=1 conn_gen=1343
+MUTATE 87000/100000 created=48663 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=1359
+MUTATE 88000/100000 created=49194 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=1375
+MUTATE 89000/100000 created=49777 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=1390
+MUTATE 90000/100000 created=50323 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=1406
+MUTATE 91000/100000 created=50886 last_kr=0x0 id=273 nmut=1 conn_gen=1421
+MUTATE 92000/100000 created=51439 last_kr=0xe00002c2 id=0 nmut=1 conn_gen=1437
+MUTATE 93000/100000 created=52002 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=1453
+MUTATE 94000/100000 created=52578 last_kr=0x0 id=276 nmut=1 conn_gen=1468
+MUTATE 95000/100000 created=53133 last_kr=0x0 id=189 nmut=2 conn_gen=1484
+MUTATE 96000/100000 created=53690 last_kr=0x0 id=13 nmut=2 conn_gen=1500
+MUTATE 97000/100000 created=54241 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=1515
+MUTATE 98000/100000 created=54807 last_kr=0x0 id=186 nmut=1 conn_gen=1531
+MUTATE 99000/100000 created=55397 last_kr=0x0 id=306 nmut=1 conn_gen=1546
+=== MUTATE done: 100000 calls, 55938 created (55.94%), 1562 reconnects, last_kr=0x0 ===
+=== KRWProbe 1.1 MUTATE (200000 iters) ===
+base: 64x64 BGRA, plane 64x64 bpe=4 bpr=256, compressed baseline tiles 32x32 2x2 hdr=8 data=16KiB
+file: /private/var/mobile/Containers/Data/Application/C4ABC0E0-7111-4C0D-B095-55D9D8C33553/tmp/last_config.xml  (XML + iteration is rewritten before every sel 0 call)
+MUTATE preflight base: kr=0x0 (0) OK, structOut=3176/0xc68, id=13
+MUTATE 0/200000 created=0 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=0
+MUTATE 1000/200000 created=552 last_kr=0xe00002c2 id=0 nmut=1 conn_gen=15
+MUTATE 2000/200000 created=1104 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=31
+MUTATE 3000/200000 created=1659 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=46
+MUTATE 4000/200000 created=2227 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=62
+MUTATE 5000/200000 created=2796 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=78
+MUTATE 6000/200000 created=3384 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=93
+MUTATE 7000/200000 created=3952 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=109
+MUTATE 8000/200000 created=4528 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=125
+MUTATE 9000/200000 created=5113 last_kr=0x0 id=199 nmut=1 conn_gen=140
+MUTATE 10000/200000 created=5655 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=156
+MUTATE 11000/200000 created=6211 last_kr=0x0 id=301 nmut=1 conn_gen=171
+MUTATE 12000/200000 created=6773 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=187
+MUTATE 13000/200000 created=7356 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=203
+MUTATE 14000/200000 created=7933 last_kr=0x0 id=263 nmut=1 conn_gen=218
+MUTATE 15000/200000 created=8479 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=234
+MUTATE 16000/200000 created=9050 last_kr=0x0 id=14 nmut=1 conn_gen=250
+MUTATE 17000/200000 created=9608 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=265
+MUTATE 18000/200000 created=10153 last_kr=0x0 id=173 nmut=3 conn_gen=281
+MUTATE 19000/200000 created=10709 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=296
+MUTATE 20000/200000 created=11274 last_kr=0x0 id=193 nmut=2 conn_gen=312
+MUTATE 21000/200000 created=11846 last_kr=0x0 id=170 nmut=1 conn_gen=328
+MUTATE 22000/200000 created=12398 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=343
+MUTATE 23000/200000 created=12962 last_kr=0x0 id=178 nmut=2 conn_gen=359
+MUTATE 24000/200000 created=13535 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=375
+MUTATE 25000/200000 created=14086 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=390
+MUTATE 26000/200000 created=14644 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=406
+MUTATE 27000/200000 created=15209 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=421
+MUTATE 28000/200000 created=15762 last_kr=0x0 id=178 nmut=2 conn_gen=437
+MUTATE 29000/200000 created=16308 last_kr=0x0 id=18 nmut=3 conn_gen=453
+MUTATE 30000/200000 created=16888 last_kr=0x0 id=200 nmut=1 conn_gen=468
+MUTATE 31000/200000 created=17456 last_kr=0x0 id=178 nmut=1 conn_gen=484
+MUTATE 32000/200000 created=18005 last_kr=0x0 id=13 nmut=3 conn_gen=500
+MUTATE 33000/200000 created=18560 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=515
+MUTATE 34000/200000 created=19120 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=531
+MUTATE 35000/200000 created=19686 last_kr=0x0 id=267 nmut=2 conn_gen=546
+MUTATE 36000/200000 created=20240 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=562
+MUTATE 37000/200000 created=20819 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=578
+MUTATE 38000/200000 created=21394 last_kr=0x0 id=196 nmut=3 conn_gen=593
+MUTATE 39000/200000 created=21950 last_kr=0x0 id=173 nmut=1 conn_gen=609
+MUTATE 40000/200000 created=22495 last_kr=0x0 id=13 nmut=1 conn_gen=625
+MUTATE 41000/200000 created=23038 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=640
+MUTATE 42000/200000 created=23608 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=656
+MUTATE 43000/200000 created=24175 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=671
+MUTATE 44000/200000 created=24729 last_kr=0x0 id=182 nmut=1 conn_gen=687
+MUTATE 45000/200000 created=25305 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=703
+MUTATE 46000/200000 created=25860 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=718
+MUTATE 47000/200000 created=26406 last_kr=0x0 id=176 nmut=3 conn_gen=734
+MUTATE 48000/200000 created=26983 last_kr=0x0 id=13 nmut=1 conn_gen=750
+MUTATE 49000/200000 created=27513 last_kr=0x0 id=189 nmut=2 conn_gen=765
+MUTATE 50000/200000 created=28078 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=781
+MUTATE 51000/200000 created=28636 last_kr=0x0 id=201 nmut=1 conn_gen=796
+MUTATE 52000/200000 created=29171 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=812
+MUTATE 53000/200000 created=29722 last_kr=0x0 id=18 nmut=2 conn_gen=828
+MUTATE 54000/200000 created=30272 last_kr=0x0 id=197 nmut=2 conn_gen=843
+MUTATE 55000/200000 created=30840 last_kr=0xe00002c2 id=0 nmut=1 conn_gen=859
+MUTATE 56000/200000 created=31415 last_kr=0x0 id=13 nmut=2 conn_gen=875
+MUTATE 57000/200000 created=31962 last_kr=0x0 id=186 nmut=3 conn_gen=890
+MUTATE 58000/200000 created=32533 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=906
+MUTATE 59000/200000 created=33098 last_kr=0x0 id=197 nmut=3 conn_gen=921
+MUTATE 60000/200000 created=33664 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=937
+MUTATE 61000/200000 created=34222 last_kr=0x0 id=19 nmut=2 conn_gen=953
+MUTATE 62000/200000 created=34779 last_kr=0x0 id=196 nmut=1 conn_gen=968
+MUTATE 63000/200000 created=35330 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=984
+MUTATE 64000/200000 created=35917 last_kr=0x0 id=13 nmut=1 conn_gen=1000
+MUTATE 65000/200000 created=36485 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=1015
+MUTATE 66000/200000 created=37035 last_kr=0xe00002c2 id=0 nmut=1 conn_gen=1031
+MUTATE 67000/200000 created=37597 last_kr=0x0 id=267 nmut=1 conn_gen=1046
+MUTATE 68000/200000 created=38177 last_kr=0x0 id=185 nmut=2 conn_gen=1062
+MUTATE 69000/200000 created=38741 last_kr=0x0 id=17 nmut=3 conn_gen=1078
+MUTATE 70000/200000 created=39291 last_kr=0x0 id=191 nmut=2 conn_gen=1093
+MUTATE 71000/200000 created=39866 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=1109
+MUTATE 72000/200000 created=40429 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=1125
+MUTATE 73000/200000 created=40967 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=1140
+MUTATE 74000/200000 created=41499 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=1156
+MUTATE 75000/200000 created=42060 last_kr=0x0 id=389 nmut=2 conn_gen=1171
+MUTATE 76000/200000 created=42620 last_kr=0x0 id=199 nmut=1 conn_gen=1187
+MUTATE 77000/200000 created=43184 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=1203
+MUTATE 78000/200000 created=43767 last_kr=0x0 id=270 nmut=2 conn_gen=1218
+MUTATE 79000/200000 created=44312 last_kr=0x0 id=351 nmut=1 conn_gen=1234
+MUTATE 80000/200000 created=44860 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=1250
+MUTATE 81000/200000 created=45406 last_kr=0x0 id=199 nmut=2 conn_gen=1265
+MUTATE 82000/200000 created=45964 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=1281
+MUTATE 83000/200000 created=46511 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=1296
+MUTATE 84000/200000 created=47090 last_kr=0x0 id=191 nmut=1 conn_gen=1312
+MUTATE 85000/200000 created=47669 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=1328
+MUTATE 86000/200000 created=48213 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=1343
+MUTATE 87000/200000 created=48765 last_kr=0x0 id=186 nmut=2 conn_gen=1359
+MUTATE 88000/200000 created=49327 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=1375
+MUTATE 89000/200000 created=49866 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=1390
+MUTATE 90000/200000 created=50444 last_kr=0x0 id=172 nmut=1 conn_gen=1406
+MUTATE 91000/200000 created=50993 last_kr=0x0 id=269 nmut=1 conn_gen=1421
+MUTATE 92000/200000 created=51565 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=1437
+MUTATE 93000/200000 created=52115 last_kr=0x0 id=18 nmut=1 conn_gen=1453
+MUTATE 94000/200000 created=52653 last_kr=0x0 id=200 nmut=2 conn_gen=1468
+MUTATE 95000/200000 created=53202 last_kr=0x0 id=178 nmut=1 conn_gen=1484
+MUTATE 96000/200000 created=53738 last_kr=0x0 id=13 nmut=3 conn_gen=1500
+MUTATE 97000/200000 created=54278 last_kr=0xe00002c2 id=0 nmut=1 conn_gen=1515
+MUTATE 98000/200000 created=54831 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=1531
+MUTATE 99000/200000 created=55385 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=1546
+MUTATE 100000/200000 created=55947 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=1562
+MUTATE 101000/200000 created=56519 last_kr=0x0 id=19 nmut=2 conn_gen=1578
+MUTATE 102000/200000 created=57086 last_kr=0x0 id=261 nmut=2 conn_gen=1593
+MUTATE 103000/200000 created=57635 last_kr=0x0 id=172 nmut=1 conn_gen=1609
+MUTATE 104000/200000 created=58197 last_kr=0x0 id=13 nmut=2 conn_gen=1625
+MUTATE 105000/200000 created=58740 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=1640
+MUTATE 106000/200000 created=59284 last_kr=0x0 id=167 nmut=2 conn_gen=1656
+MUTATE 107000/200000 created=59859 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=1671
+MUTATE 108000/200000 created=60415 last_kr=0x0 id=185 nmut=2 conn_gen=1687
+MUTATE 109000/200000 created=60950 last_kr=0x0 id=167 nmut=1 conn_gen=1703
+MUTATE 110000/200000 created=61509 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=1718
+MUTATE 111000/200000 created=62049 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=1734
+MUTATE 112000/200000 created=62593 last_kr=0x0 id=13 nmut=1 conn_gen=1750
+MUTATE 113000/200000 created=63147 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=1765
+MUTATE 114000/200000 created=63714 last_kr=0x0 id=20 nmut=1 conn_gen=1781
+MUTATE 115000/200000 created=64285 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=1796
+MUTATE 116000/200000 created=64853 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=1812
+MUTATE 117000/200000 created=65441 last_kr=0x0 id=19 nmut=1 conn_gen=1828
+MUTATE 118000/200000 created=66040 last_kr=0x0 id=271 nmut=2 conn_gen=1843
+MUTATE 119000/200000 created=66605 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=1859
+MUTATE 120000/200000 created=67169 last_kr=0x0 id=13 nmut=1 conn_gen=1875
+MUTATE 121000/200000 created=67746 last_kr=0x0 id=197 nmut=1 conn_gen=1890
+MUTATE 122000/200000 created=68292 last_kr=0x0 id=166 nmut=1 conn_gen=1906
+MUTATE 123000/200000 created=68861 last_kr=0x0 id=272 nmut=2 conn_gen=1921
+MUTATE 124000/200000 created=69405 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=1937
+MUTATE 125000/200000 created=69979 last_kr=0x0 id=19 nmut=2 conn_gen=1953
+MUTATE 126000/200000 created=70554 last_kr=0x0 id=272 nmut=1 conn_gen=1968
+MUTATE 127000/200000 created=71112 last_kr=0x0 id=178 nmut=1 conn_gen=1984
+MUTATE 128000/200000 created=71689 last_kr=0x0 id=13 nmut=2 conn_gen=2000
+MUTATE 129000/200000 created=72253 last_kr=0x0 id=185 nmut=3 conn_gen=2015
+MUTATE 130000/200000 created=72824 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=2031
+MUTATE 131000/200000 created=73377 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=2046
+MUTATE 132000/200000 created=73940 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=2062
+MUTATE 133000/200000 created=74515 last_kr=0x0 id=19 nmut=2 conn_gen=2078
+MUTATE 134000/200000 created=75074 last_kr=0x0 id=195 nmut=2 conn_gen=2093
+MUTATE 135000/200000 created=75608 last_kr=0x0 id=173 nmut=1 conn_gen=2109
+MUTATE 136000/200000 created=76177 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=2125
+MUTATE 137000/200000 created=76742 last_kr=0x0 id=195 nmut=2 conn_gen=2140
+MUTATE 138000/200000 created=77305 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=2156
+MUTATE 139000/200000 created=77839 last_kr=0x0 id=199 nmut=1 conn_gen=2171
+MUTATE 140000/200000 created=78405 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=2187
+MUTATE 141000/200000 created=78977 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=2203
+MUTATE 142000/200000 created=79531 last_kr=0xe00002c2 id=0 nmut=1 conn_gen=2218
+MUTATE 143000/200000 created=80089 last_kr=0x0 id=173 nmut=1 conn_gen=2234
+MUTATE 144000/200000 created=80647 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=2250
+MUTATE 145000/200000 created=81236 last_kr=0x0 id=195 nmut=2 conn_gen=2265
+MUTATE 146000/200000 created=81791 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=2281
+MUTATE 147000/200000 created=82361 last_kr=0x0 id=194 nmut=2 conn_gen=2296
+MUTATE 148000/200000 created=82916 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=2312
+MUTATE 149000/200000 created=83475 last_kr=0x0 id=17 nmut=2 conn_gen=2328
+MUTATE 150000/200000 created=84005 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=2343
+MUTATE 151000/200000 created=84573 last_kr=0x0 id=182 nmut=1 conn_gen=2359
+MUTATE 152000/200000 created=85113 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=2375
+MUTATE 153000/200000 created=85655 last_kr=0x0 id=267 nmut=3 conn_gen=2390
+MUTATE 154000/200000 created=86189 last_kr=0x0 id=170 nmut=2 conn_gen=2406
+MUTATE 155000/200000 created=86735 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=2421
+MUTATE 156000/200000 created=87296 last_kr=0xe00002c2 id=0 nmut=1 conn_gen=2437
+MUTATE 157000/200000 created=87865 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=2453
+MUTATE 158000/200000 created=88469 last_kr=0x0 id=194 nmut=1 conn_gen=2468
+MUTATE 159000/200000 created=89032 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=2484
+MUTATE 160000/200000 created=89602 last_kr=0x0 id=13 nmut=2 conn_gen=2500
+MUTATE 161000/200000 created=90184 last_kr=0x0 id=190 nmut=3 conn_gen=2515
+MUTATE 162000/200000 created=90741 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=2531
+MUTATE 163000/200000 created=91292 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=2546
+MUTATE 164000/200000 created=91869 last_kr=0x0 id=191 nmut=1 conn_gen=2562
+MUTATE 165000/200000 created=92417 last_kr=0x0 id=20 nmut=1 conn_gen=2578
+MUTATE 166000/200000 created=92992 last_kr=0x0 id=261 nmut=1 conn_gen=2593
+MUTATE 167000/200000 created=93559 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=2609
+MUTATE 168000/200000 created=94148 last_kr=0x0 id=13 nmut=2 conn_gen=2625
+MUTATE 169000/200000 created=94704 last_kr=0x0 id=190 nmut=1 conn_gen=2640
+MUTATE 170000/200000 created=95266 last_kr=0x0 id=172 nmut=1 conn_gen=2656
+MUTATE 171000/200000 created=95831 last_kr=0xe00002c2 id=0 nmut=1 conn_gen=2671
+MUTATE 172000/200000 created=96418 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=2687
+MUTATE 173000/200000 created=97006 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=2703
+MUTATE 174000/200000 created=97559 last_kr=0x0 id=192 nmut=1 conn_gen=2718
+MUTATE 175000/200000 created=98102 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=2734
+MUTATE 176000/200000 created=98646 last_kr=0x0 id=13 nmut=2 conn_gen=2750
+MUTATE 177000/200000 created=99213 last_kr=0x0 id=191 nmut=1 conn_gen=2765
+MUTATE 178000/200000 created=99748 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=2781
+MUTATE 179000/200000 created=100313 last_kr=0x0 id=276 nmut=1 conn_gen=2796
+MUTATE 180000/200000 created=100896 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=2812
+MUTATE 181000/200000 created=101443 last_kr=0x0 id=20 nmut=3 conn_gen=2828
+MUTATE 182000/200000 created=102010 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=2843
+MUTATE 183000/200000 created=102560 last_kr=0x0 id=172 nmut=2 conn_gen=2859
+MUTATE 184000/200000 created=103134 last_kr=0x0 id=13 nmut=2 conn_gen=2875
+MUTATE 185000/200000 created=103703 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=2890
+MUTATE 186000/200000 created=104247 last_kr=0x0 id=170 nmut=1 conn_gen=2906
+MUTATE 187000/200000 created=104779 last_kr=0x0 id=276 nmut=1 conn_gen=2921
+MUTATE 188000/200000 created=105309 last_kr=0x0 id=186 nmut=1 conn_gen=2937
+MUTATE 189000/200000 created=105847 last_kr=0xe00002c2 id=0 nmut=1 conn_gen=2953
+MUTATE 190000/200000 created=106370 last_kr=0xe00002c2 id=0 nmut=1 conn_gen=2968
+MUTATE 191000/200000 created=106908 last_kr=0x0 id=186 nmut=1 conn_gen=2984
+MUTATE 192000/200000 created=107449 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=3000
+MUTATE 193000/200000 created=108029 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=3015
+MUTATE 194000/200000 created=108597 last_kr=0x0 id=173 nmut=2 conn_gen=3031
+MUTATE 195000/200000 created=109163 last_kr=0xe00002c2 id=0 nmut=2 conn_gen=3046
+MUTATE 196000/200000 created=109733 last_kr=0x0 id=185 nmut=3 conn_gen=3062
+MUTATE 197000/200000 created=110306 last_kr=0x0 id=19 nmut=1 conn_gen=3078
+MUTATE 198000/200000 created=110876 last_kr=0x0 id=195 nmut=1 conn_gen=3093
+MUTATE 199000/200000 created=111433 last_kr=0xe00002c2 id=0 nmut=3 conn_gen=3109
+=== MUTATE done: 200000 calls, 111989 created (55.99%), 3124 reconnects, last_kr=0x0 ===

@@ -1,0 +1,676 @@
+openjdk version "27" 2026-09-15
+OpenJDK Runtime Environment (build 27)
+OpenJDK 64-Bit Server VM (build 27, mixed mode)
+INFO  Using log config file: jar:file:/home/femboychik/ghidra/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/application.log (LoggingInitialization)  
+INFO  Loading user preferences: /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/preferences (Preferences)  
+INFO  Loading previous preferences: /home/femboychik/.config/ghidra/ghidra_11.4.2_PUBLIC/preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (4032 ms) (ClassSearcher)  
+WARNING: Final field name in class ghidra.util.charset.CharsetInfo has been mutated reflectively by class com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$2 in unnamed module @2c35e847 (file:/home/femboychik/ghidra/Ghidra/Framework/Generic/lib/gson-2.13.2.jar)
+WARNING: Use --enable-final-field-mutation=ALL-UNNAMED to avoid a warning
+WARNING: Mutating final fields will be blocked in a future release unless final field mutation is enabled
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (7602 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 59 extension points (21 false positives) (ClassSearcher)  
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::staticFieldOffset has been called by org.apache.felix.framework.util.SecureAction (file:/home/femboychik/ghidra/Ghidra/Features/Base/lib/org.apache.felix.framework-7.0.5.jar)
+WARNING: Please consider reporting this to the maintainers of class org.apache.felix.framework.util.SecureAction
+WARNING: sun.misc.Unsafe::staticFieldOffset will be removed in a future release
+INFO  HEADLESS Script Paths:
+    /home/femboychik/ghidra/Ghidra/Features/PyGhidra/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/FileFormats/ghidra_scripts
+    /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/Extensions/Jython/ghidra_scripts
+    /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/Extensions/MachineLearning/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/Base/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /home/femboychik/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/BytePatterns/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/VersionTracking/ghidra_scripts
+    /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/Extensions/SleighDevTools/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/PDB/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Processors/Atmel/ghidra_scripts
+    /home/femboychik/claude_code/research_27_2/scripts
+    /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/Extensions/Lisa/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Processors/DATA/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Debug/Debugger/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Processors/8051/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Processors/JVM/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/FunctionID/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Processors/PIC/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/Decompiler/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/SwiftDemangler/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/BSim/ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: /home/femboychik/Загрузки/AyuGram Desktop/Архив/123 (HeadlessAnalyzer)  
+INFO  Opening project: /home/femboychik/Загрузки/AyuGram Desktop/Архив/123 (HeadlessProject)  
+INFO  REPORT: Processing read-only project file: /kernelcache.release.iphone14b.decompressed (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: DumpFunctions.java '0xfffffff00821f880' '0xfffffff0082d1a0c' '0xfffffff00830b278' '0xfffffff00830b448' '0xfffffff00830b554' '0xfffffff00830baf4' '0xfffffff0083212b4' '0xfffffff00832144c' '0xfffffff0083219b4'  (HeadlessAnalyzer)  
+INFO  SCRIPT: /home/femboychik/claude_code/research_27_2/scripts/DumpFunctions.java (HeadlessAnalyzer)  
+INFO  DumpFunctions.java> WROTE fn_fffffff00821f880.c bytes=2685 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff0082d1a0c.c bytes=339 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff00830b278.c bytes=2156 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff00830b448.c bytes=1198 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff00830b554.c bytes=15380 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff00830baf4.c bytes=9196 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff0083212b4.c bytes=1531 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff00832144c.c bytes=6624 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff0083219b4.c bytes=857 (GhidraScript)  
+INFO  REPORT: Execute script: FindStrings.java 'VictimUserClient' 'AggressorUserClient' 'initWithTask'  (HeadlessAnalyzer)  
+INFO  SCRIPT: /home/femboychik/claude_code/research_27_2/scripts/FindStrings.java (HeadlessAnalyzer)  
+INFO  FindStrings.java> STR fffffff007162867 :: VictimUserClient (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830c090 in FUN_fffffff00830c07c@fffffff00830c07c (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830a93c in FUN_fffffff00830a930@fffffff00830a930 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830aa80 in FUN_fffffff00830aa74@fffffff00830aa74 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008348408 in FUN_fffffff008348398@fffffff008348398 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff0083485ac in FUN_fffffff008348530@fffffff008348530 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff00716287d :: VictimUserClient (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0071628b2 :: VictimUserClient::start. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830ac1c in FUN_fffffff00830abf0@fffffff00830abf0 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0071628cb :: VictimUserClient::start failed to start provider. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830ac74 in FUN_fffffff00830abf0@fffffff00830abf0 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0071628fd :: VictimUserClient::start failed to init _mDriver. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830ac80 in FUN_fffffff00830abf0@fffffff00830abf0 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff00716292e :: VictimUserClient::initWithTask owningTask invalid. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830aed0 in FUN_fffffff00830ac9c@fffffff00830ac9c (GhidraScript)  
+INFO  FindStrings.java> STR fffffff00716298f :: VictimUserClient::initWithTask. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830ad44 in FUN_fffffff00830ac9c@fffffff00830ac9c (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007162a90 :: VictimUserClient:initWithTask::super failed. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830af98 in FUN_fffffff00830ac9c@fffffff00830ac9c (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007162abd :: VictimUserClient::sRegisterVictim. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830afc0 in FUN_fffffff00830afa0@fffffff00830afa0 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007162ae0 :: VictimUserClient::registerVictim - Registering victim!. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830b2ac in FUN_fffffff00830b27c@fffffff00830b27c (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007162b18 :: VictimUserClient::registerVictim - ERROR - failed to register victim due to incorrect data size. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830b2cc in FUN_fffffff00830b27c@fffffff00830b27c (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007162b79 :: VictimUserClient::registerVictim - ERROR - invalid character '%c'. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830b394 in FUN_fffffff00830b27c@fffffff00830b27c (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007162bc9 :: VictimUserClient::registerVictim - ERROR - failed to register victim. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830b3bc in FUN_fffffff00830b27c@fffffff00830b27c (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007162c0f :: VictimUserClient::sDeregisterVictim. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830b00c in FUN_fffffff00830aff0@fffffff00830aff0 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007162c34 :: VictimUserClient::deregisterVictim - Deregistering victim!. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830b3e4 in FUN_fffffff00830b3c8@fffffff00830b3c8 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007162c70 :: VictimUserClient::sGetFreqList. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830b054 in FUN_fffffff00830b034@fffffff00830b034 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007162c90 :: VictimUserClient::getFreqList. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830b474 in FUN_fffffff00830b448@fffffff00830b448 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007162caf :: VictimUserClient::getFreqList -- not enough memory allocated. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830b490 in FUN_fffffff00830b448@fffffff00830b448 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007162d38 :: VictimUserClient::getFreqList -- memcpy failed. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830b4f4 in FUN_fffffff00830b448@fffffff00830b448 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007162d68 :: VictimUserClient::sGetNumFreqs. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830b0a4 in FUN_fffffff00830b084@fffffff00830b084 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007162d88 :: VictimUserClient::getNumFreqs. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830b534 in FUN_fffffff00830b514@fffffff00830b514 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830b0b0 in FUN_fffffff00830b084@fffffff00830b084 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007162da7 :: VictimUserClient::sAddFreqs. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830b0f4 in FUN_fffffff00830b0d4@fffffff00830b0d4 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007162dc4 :: VictimUserClient::addFreqs. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830b594 in FUN_fffffff00830b554@fffffff00830b554 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007162de0 :: VictimUserClient::addFreqs -- duplicates in provided frequencies. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830b748 in FUN_fffffff00830b554@fffffff00830b554 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007162e22 :: VictimUserClient::addFreqs -- victims exist, going through validation process. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830b5d4 in FUN_fffffff00830b554@fffffff00830b554 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007162e71 :: VictimUserClient::addFreqs - registering the following with SAC. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830b86c in FUN_fffffff00830b554@fffffff00830b554 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007162eb2 :: VictimUserClient::addFreqs - registering: freq=%lluHz bandwidth=%dHz priority=%d. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830b8b0 in FUN_fffffff00830b554@fffffff00830b554 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007162f04 :: VictimUserClient::addFreqs - Failed to add freqs. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830b8f8 in FUN_fffffff00830b554@fffffff00830b554 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007162f36 :: VictimUserClient::addFreqs - memcpy failed. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830ba68 in FUN_fffffff00830b554@fffffff00830b554 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007162f62 :: VictimUserClient::addFreqs - adding: freq=%lluHz bandwidth=%dHz priority=%d. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830b7c0 in FUN_fffffff00830b554@fffffff00830b554 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007162faf :: VictimUserClient::addFreqs - Failed to add Freqs. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830baa8 in FUN_fffffff00830b554@fffffff00830b554 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007162fe1 :: VictimUserClient::sRemoveFreqs. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830b144 in FUN_fffffff00830b124@fffffff00830b124 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007163001 :: VictimUserClient::removeFreqs. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830bb34 in FUN_fffffff00830baf4@fffffff00830baf4 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007163020 :: VictimUserClient::removeFreqs -- removing: freq=%lluHz bandwidth=%dHz priority=%d. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830bc00 in FUN_fffffff00830baf4@fffffff00830baf4 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007163073 :: VictimUserClient::removeFreqs -- requested to remove all freqs, calling VictimUserClient::clearFreqs. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830bc7c in FUN_fffffff00830baf4@fffffff00830baf4 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0071630bb :: VictimUserClient::clearFreqs. (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0071630d9 :: VictimUserClient::removeFreqs -- no frequencies to remove!. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830bc54 in FUN_fffffff00830baf4@fffffff00830baf4 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007163115 :: VictimUserClient::removeFreqs -- removeVictims call to SAC failed. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830bddc in FUN_fffffff00830baf4@fffffff00830baf4 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007163158 :: VictimUserClient::sClearFreqs. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830b190 in FUN_fffffff00830b174@fffffff00830b174 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007163177 :: VictimUserClient::clearFreqs. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830be50 in FUN_fffffff00830be34@fffffff00830be34 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007163195 :: VictimUserClient::stop. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830becc in FUN_fffffff00830beb0@fffffff00830beb0 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0071631ad :: VictimUserClient::clientClose. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830bfc0 in FUN_fffffff00830bfa4@fffffff00830bfa4 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0071631cc :: VictimUserClient::clientDied. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830c02c in FUN_fffffff00830c010@fffffff00830c010 (GhidraScript)  
+INFO  FindStrings.java> HITS VictimUserClient = 43 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0071629b6 :: AggressorUserClient::start found %d nodes with name arm-io, this should not happen. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830aefc in FUN_fffffff00830ac9c@fffffff00830ac9c (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008320cb8 in FUN_fffffff008320a50@fffffff008320a50 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007162a0a :: AggressorUserClient::start failed to initialize %s. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830af24 in FUN_fffffff00830ac9c@fffffff00830ac9c (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008320ce0 in FUN_fffffff008320a50@fffffff008320a50 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007162a56 :: AggressorUserClient::start failed to attach %s to arm-io. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00830af34 in FUN_fffffff00830ac9c@fffffff00830ac9c (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008320cf0 in FUN_fffffff008320a50@fffffff008320a50 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007166045 :: AggressorUserClient (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008321c24 in FUN_fffffff008321c10@fffffff008321c10 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff0083206f0 in FUN_fffffff0083206e4@fffffff0083206e4 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008320834 in FUN_fffffff008320828@fffffff008320828 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008348418 in FUN_fffffff008348398@fffffff008348398 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff0083485ac in FUN_fffffff008348530@fffffff008348530 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff0083485bc in FUN_fffffff008348530@fffffff008348530 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff00716605e :: AggressorUserClient (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007166097 :: AggressorUserClient::start. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff0083209d0 in FUN_fffffff0083209a4@fffffff0083209a4 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0071660b3 :: AggressorUserClient::start failed to start provider. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008320a28 in FUN_fffffff0083209a4@fffffff0083209a4 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0071660e8 :: AggressorUserClient::start failed to init _mDriver. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008320a34 in FUN_fffffff0083209a4@fffffff0083209a4 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff00716611c :: AggressorUserClient::initWithTask owningTask invalid. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008320c8c in FUN_fffffff008320a50@fffffff008320a50 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007166152 :: AggressorUserClient::initWithTask. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008320af8 in FUN_fffffff008320a50@fffffff008320a50 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007166175 :: AggressorUserClient:initWithTask::super failed. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008320d54 in FUN_fffffff008320a50@fffffff008320a50 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0071661a5 :: AggressorUserClient::aggressorActionSingle -- SAC Callback -- Selecting Frequency %llu..%dHz. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008320dc8 in FUN_fffffff008320d60@fffffff008320d60 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007166203 :: AggressorUserClient::aggressorActionSingle -- SAC Callback -- _mAggressorFreqList/_mAggressorNoiseWidthList NOT INITIALIZED?. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008320dfc in FUN_fffffff008320d60@fffffff008320d60 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007166281 :: AggressorUserClient::aggressorActionMultiple -- count = %d. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008320e6c in FUN_fffffff008320e38@fffffff008320e38 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0071662bd :: AggressorUserClient::aggressorActionMultiple -- SAC Callback -- buffer=%d, Frequency %llu..%dHz. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008320ef4 in FUN_fffffff008320e38@fffffff008320e38 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff00716631e :: AggressorUserClient::sSetAggressorKey. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008320f70 in FUN_fffffff008320f50@fffffff008320f50 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007166345 :: AggressorUserClient::setAggressorKey. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff0083212e8 in FUN_fffffff0083212b8@fffffff0083212b8 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff00716636b :: AggressorUserClient::setAggressorKey - ERROR - failed to set aggressor key due to incorrect data size. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff0083213a8 in FUN_fffffff0083212b8@fffffff0083212b8 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0071663d2 :: AggressorUserClient::setAggressorKey - ERROR - invalid character '%c'. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff0083213b8 in FUN_fffffff0083212b8@fffffff0083212b8 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007166427 :: AggressorUserClient::sSetAggressorIndexActionType. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008320fcc in FUN_fffffff008320fa0@fffffff008320fa0 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff00716645a :: AggressorUserClient::setAggressorIndexActionType. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008320fe0 in FUN_fffffff008320fa0@fffffff008320fa0 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008321408 in FUN_fffffff0083213dc@fffffff0083213dc (GhidraScript)  
+INFO  FindStrings.java> STR fffffff00716648c :: AggressorUserClient::sRegisterAggressor. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008321044 in FUN_fffffff008321024@fffffff008321024 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0071664b5 :: AggressorUserClient::registerAggressor - Registering aggressor!. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008321488 in FUN_fffffff00832144c@fffffff00832144c (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007166517 :: AggressorUserClient::registerAggressor - Registering Frequency %llu..%dHz. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008321568 in FUN_fffffff00832144c@fffffff00832144c (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007166562 :: AggressorUserClient::registerAggressor - ERROR - failed to register aggressor. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff0083215f4 in FUN_fffffff00832144c@fffffff00832144c (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0071665b1 :: AggressorUserClient::sDeregisterAggressor. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008321094 in FUN_fffffff008321078@fffffff008321078 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0071665dc :: AggressorUserClient::deregisterAggressor - Deregistering aggressor!. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008321634 in FUN_fffffff008321618@fffffff008321618 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007166621 :: AggressorUserClient::sGetFreqList. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff0083210d4 in FUN_fffffff0083210b4@fffffff0083210b4 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007166644 :: AggressorUserClient::getFreqList. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff0083216b8 in FUN_fffffff008321690@fffffff008321690 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007166666 :: AggressorUserClient::sGetSafeFreqList. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008321174 in FUN_fffffff008321154@fffffff008321154 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff00716668d :: AggressorUserClient::getSafeFreqList. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008321760 in FUN_fffffff008321728@fffffff008321728 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0071666b3 :: AggressorUserClient::getSafeFreqList: populating with %llu..%d Hz. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008321968 in FUN_fffffff008321728@fffffff008321728 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0071666f6 :: AggressorUserClient::sSetFreqList. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008321124 in FUN_fffffff008321104@fffffff008321104 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007166719 :: AggressorUserClient::setFreqList. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff0083219dc in FUN_fffffff0083219b4@fffffff0083219b4 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff00716673b :: AggressorUserClient::sGetNumFreqs. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff0083211c4 in FUN_fffffff0083211a4@fffffff0083211a4 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff00716675e :: AggressorUserClient::getNumFreqs. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008321a3c in FUN_fffffff008321a1c@fffffff008321a1c (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff0083211d0 in FUN_fffffff0083211a4@fffffff0083211a4 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007166780 :: AggressorUserClient::stop. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008321a78 in FUN_fffffff008321a5c@fffffff008321a5c (GhidraScript)  
+INFO  FindStrings.java> STR fffffff00716679b :: AggressorUserClient::clientClose. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008321b54 in FUN_fffffff008321b38@fffffff008321b38 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0071667bd :: AggressorUserClient::clientDied. (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008321bc0 in FUN_fffffff008321ba4@fffffff008321ba4 (GhidraScript)  
+INFO  FindStrings.java> HITS AggressorUserClient = 39 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0070b931a :: initWithTask (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00a9e9c48 in FUN_fffffff00a9e9874@fffffff00a9e9874 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff00714698c :: initWithTask (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff0082c9f1c in FUN_fffffff0082c9e6c@fffffff0082c9e6c (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff0082ca038 in FUN_fffffff0082c9e6c@fffffff0082c9e6c (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff0082c9f8c in FUN_fffffff0082c9e6c@fffffff0082c9e6c (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff0082a89a4 in FUN_fffffff0082a8864@fffffff0082a8864 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff0082a8918 in FUN_fffffff0082a8864@fffffff0082a8864 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0071469c5 :: initWithTask(inOwningTask, inSecurityToken, inType, inProperties) (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007146a15 :: initWithTask(%p, ...) -> %s. (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007151ec8 :: initWithTask (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff0082d3410 in FUN_fffffff0082d3394@fffffff0082d3394 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff0082d3424 in FUN_fffffff0082d3394@fffffff0082d3394 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff0082d3574 in FUN_fffffff0082d3394@fffffff0082d3394 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff0082d3588 in FUN_fffffff0082d3394@fffffff0082d3394 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff0082d3470 in FUN_fffffff0082d3394@fffffff0082d3394 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff0082d3484 in FUN_fffffff0082d3394@fffffff0082d3394 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007151f3e :: initWithTask(inOwningTask, inSecurityToken, inType, inProperties) (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007162940 :: initWithTask owningTask invalid. (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0071629a1 :: initWithTask. (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007162aa1 :: initWithTask::super failed. (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007166131 :: initWithTask owningTask invalid. (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007166167 :: initWithTask. (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007166189 :: initWithTask::super failed. (GhidraScript)  
+INFO  FindStrings.java> STR fffffff00737f1a2 :: initWithTask (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff0085a1b94 in FUN_fffffff0085a1af4@fffffff0085a1af4 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff0085a1cb0 in FUN_fffffff0085a1af4@fffffff0085a1af4 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff0085a1be4 in FUN_fffffff0085a1af4@fffffff0085a1af4 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff00739f497 :: initWithTask (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00863cb1c in FUN_fffffff00863c9bc@fffffff00863c9bc (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00863cc40 in FUN_fffffff00863c9bc@fffffff00863c9bc (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0073a4d80 :: initWithTask(task_t, void *, UInt32, OSDictionary *) (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0073a5629 :: initWithTask(task_t, void *, UInt32, OSDictionary *) (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0073ae9bf :: initWithTask: Client lacks entitlement. (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0073c4d2c :: initWithTask (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00873571c in FUN_fffffff008735544@fffffff008735544 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff0087357d0 in FUN_fffffff008735544@fffffff008735544 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00873ab8c in FUN_fffffff00873a9b4@fffffff00873a9b4 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00873ac40 in FUN_fffffff00873a9b4@fffffff00873a9b4 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0073ccc26 :: initWithTask(task_t, void *, UInt32) (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0073cfeee :: initWithTask(task_t, void *, UInt32) (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0073d4556 :: initWithTask failed. (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0073d456b :: initWithTask (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008773e7c in FUN_fffffff008773e28@fffffff008773e28 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007421fac :: initWithTask called with owningTask=%p, type=%u. (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007421fdd :: initWithTask (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008899804 in FUN_fffffff0088997b0@fffffff0088997b0 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008899918 in FUN_fffffff0088997b0@fffffff0088997b0 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff0088998d8 in FUN_fffffff0088997b0@fffffff0088997b0 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff0088998b4 in FUN_fffffff0088997b0@fffffff0088997b0 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0074220a2 :: initWithTask returning: %s. (GhidraScript)  
+INFO  FindStrings.java> STR fffffff00742f81f :: initWithTask(task_t, void *, UInt32, OSDictionary *) (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0074d8fdd :: initWithTask (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008b59158 in FUN_fffffff008b590b0@fffffff008b590b0 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008b5907c in FUN_fffffff008b58fd4@fffffff008b58fd4 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0074fc9ad :: initWithTask] entering. (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007514d3b :: initWithTask (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008c71488 in FUN_fffffff008c713f8@fffffff008c713f8 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008c71538 in FUN_fffffff008c714ac@fffffff008c714ac (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007646330 :: initWithTask (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008f00314 in FUN_fffffff008f00258@fffffff008f00258 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008f004bc in FUN_fffffff008f00258@fffffff008f00258 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008f00370 in FUN_fffffff008f00258@fffffff008f00258 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0076742ce :: initWithTask (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008fd8070 in FUN_fffffff008fd7fc8@fffffff008fd7fc8 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff008fd8034 in FUN_fffffff008fd7fc8@fffffff008fd7fc8 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0076742fc :: initWithTask(task_t, void *, UInt32, OSDictionary *) (GhidraScript)  
+INFO  FindStrings.java> STR fffffff00767beac :: initWithTask failed. (GhidraScript)  
+INFO  FindStrings.java> STR fffffff00768a8d4 :: initWithTask (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff0090471c8 in FUN_fffffff009047124@fffffff009047124 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff009047258 in FUN_fffffff009047124@fffffff009047124 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff009047304 in FUN_fffffff009047124@fffffff009047124 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff009047320 in FUN_fffffff009047124@fffffff009047124 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0076a3536 :: initWithTask (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff009089784 in FUN_fffffff009089628@fffffff009089628 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff009089708 in FUN_fffffff009089628@fffffff009089628 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff0090896b8 in FUN_fffffff009089628@fffffff009089628 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0076b980f :: initWithTask (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00911445c in FUN_fffffff009114384@fffffff009114384 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff0091143e4 in FUN_fffffff009114384@fffffff009114384 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0076cc07f :: initWithTask(task_t, void *, UInt32) (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0076eb270 :: initWithTask. (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0076eb284 :: initWithTask ERROR: owningTask == NULL. (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0076eb2b7 :: initWithTask client (%s:%d) fUCHasPrivilege = %d. (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0076eb316 :: initWithTask found %d specifcally entitled keys for client (%s:%d). (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0076eb360 :: initWithTask client (%s:%d) fUCHasEntitlement = %d. (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0076eb39a :: initWithTask ERROR: SUPER::initWithTask failed for client (%s:%d). (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0076eb3b5 :: initWithTask failed for client (%s:%d). (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0076ef57a :: initWithTask called. (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007766287 :: initWithTask. (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0077662bf :: initWithTask(task_t, void *, UInt32, OSDictionary *) (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0077666e8 :: initWithTask(task_t, void *, UInt32, OSDictionary *) (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0077672e6 :: initWithTask. (GhidraScript)  
+INFO  FindStrings.java> STR fffffff007767e48 :: initWithTask. (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0077680a8 :: initWithTask. (GhidraScript)  
+INFO  FindStrings.java> STR fffffff00777e816 :: initWithTask] Error: caller does not have a valid entitlement. (GhidraScript)  
+INFO  FindStrings.java> STR fffffff00777e86f :: initWithTask] Error: entitlement not found. (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0077ed614 :: initWithTask (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff00988d748 in FUN_fffffff00988d6f4@fffffff00988d6f4 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff009879d88 in FUN_fffffff009879d34@fffffff009879d34 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff00784cf4c :: initWithTask failed.. (GhidraScript)  
+INFO  FindStrings.java> STR fffffff00786b0b8 :: initWithTask(task_t, void *, UInt32, OSDictionary *) (GhidraScript)  
+INFO  FindStrings.java> STR fffffff00786f808 :: initWithTask(task_t, void *, UInt32, OSDictionary *) (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0078715b4 :: initWithTask(task_t, void *, UInt32, OSDictionary *) (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0078721ec :: initWithTask(task_t, void *, UInt32, OSDictionary *) (GhidraScript)  
+INFO  FindStrings.java> STR fffffff0079069e6 :: initWithTask (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff009e9335c in FUN_fffffff009e932a0@fffffff009e932a0 (GhidraScript)  
+INFO  FindStrings.java>    XREF fffffff009e93384 in FUN_fffffff009e932a0@fffffff009e932a0 (GhidraScript)  
+INFO  FindStrings.java> STR fffffff00af7642f :: initWithTaskEP4taskPvj. (GhidraScript)  
+INFO  FindStrings.java> STR fffffff00af76461 :: initWithTaskEP4taskPvjP12OSDictionary. (GhidraScript)  
+INFO  FindStrings.java> HITS initWithTask = 62 (GhidraScript)  
+INFO  FindStrings.java> === FN fffffff00830c07c FUN_fffffff00830c07c (GhidraScript)  
+INFO  FindStrings.java> 
+void FUN_fffffff00830c07c
+               (undefined1 param_1 [16],undefined1 param_2 [16],undefined1 param_3 [16],
+               undefined1 param_4 [16],undefined4 param_5,undefined4 param_6)
+
+{
+  undefined8 *puVar1;
+  undefined *in_x4;
+  
+  puVar1 = thunk_FUN_fffffff00a894d88
+                     (param_1,param_2,param_3,param_4,param_5,param_6,
+                      (undefined8 *)&DAT_fffffff00ae2b3e0,"VictimUserClient",
+                      PTR_DAT_fffffff007ce9be8,0x118,in_x4);
+  *puVar1 = &PTR_thunk_FUN_fffffff00a895910_fffffff007cd4450;
+  return;
+}
+
+ (GhidraScript)  
+INFO  FindStrings.java> === FN fffffff00830a930 FUN_fffffff00830a930 (GhidraScript)  
+INFO  FindStrings.java> 
+void FUN_fffffff00830a930
+               (undefined1 param_1 [16],undefined1 param_2 [16],undefined1 param_3 [16],
+               undefined1 param_4 [16],undefined4 param_5,undefined4 param_6,undefined8 *param_7)
+
+{
+  undefined8 *puVar1;
+  undefined *in_x4;
+  
+  puVar1 = thunk_FUN_fffffff00a894d88
+                     (param_1,param_2,param_3,param_4,param_5,param_6,param_7,"VictimUserClient",
+                      PTR_DAT_fffffff007ce9be8,0x118,in_x4);
+  *puVar1 = &PTR_thunk_FUN_fffffff00a895910_fffffff007cd4450;
+  return;
+}
+
+ (GhidraScript)  
+INFO  FindStrings.java> === FN fffffff00830aa74 FUN_fffffff00830aa74 (GhidraScript)  
+INFO  FindStrings.java> 
+void FUN_fffffff00830aa74
+               (undefined1 param_1 [16],undefined1 param_2 [16],undefined1 param_3 [16],
+               undefined1 param_4 [16],undefined4 param_5,undefined4 param_6,undefined8 *param_7)
+
+{
+  undefined8 *puVar1;
+  undefined *in_x4;
+  
+  puVar1 = thunk_FUN_fffffff00a894d88
+                     (param_1,param_2,param_3,param_4,param_5,param_6,param_7,"VictimUserClient",
+                      PTR_DAT_fffffff007ce9be8,0x118,in_x4);
+  *puVar1 = &PTR_thunk_FUN_fffffff00a895910_fffffff007cd4450;
+  return;
+}
+
+ (GhidraScript)  
+INFO  FindStrings.java> === FN fffffff008348398 FUN_fffffff008348398 (GhidraScript)  
+INFO  FindStrings.java> 
+undefined8 FUN_fffffff008348398(long *param_1,long *param_2)
+
+{
+  bool bVar1;
+  int iVar2;
+  undefined8 uVar3;
+  long *plVar4;
+  bool bVar5;
+  long **pplVar6;
+  long *local_58;
+  long *local_50;
+  long local_48;
+  
+  local_48 = *(long *)PTR_DAT_fffffff007ce9d28;
+  uVar3 = (**(code **)(PTR_DAT_fffffff007ce9d00 + 0x2c0))();
+  if ((int)uVar3 != 0) {
+    iVar2 = thunk_FUN_fffffff00aa16d84((undefined4 *)0x0);
+    if (iVar2 != 0) {
+      local_58 = thunk_FUN_fffffff00a8d2200("VictimUserClient");
+      local_50 = thunk_FUN_fffffff00a8d2200("AggressorUserClient");
+      plVar4 = thunk_FUN_fffffff00a89a290(&local_58,2,0);
+      (**(code **)(*param_1 + 200))(param_1,"IOUserClientClass",plVar4);
+      (**(code **)(*plVar4 + 0x28))(plVar4);
+      pplVar6 = &local_58;
+      bVar1 = true;
+      do {
+        bVar5 = bVar1;
+        (**(code **)(**pplVar6 + 0x28))();
+        pplVar6 = &local_50;
+        bVar1 = false;
+      } while (bVar5);
+    }
+    FUN_fffffff0083059c4(param_2,param_1);
+    (**(code **)(*param_1 + 0x2a0))(param_1,0);
+  }
+  if (*(long *)PTR_DAT_fffffff007ce9d28 == local_48) {
+    return uVar3;
+  }
+                    /* WARNING: Subroutine does not return */
+  thunk_FUN_fffffff00aa4c590();
+}
+
+ (GhidraScript)  
+INFO  FindStrings.java> === FN fffffff008348530 FUN_fffffff008348530 (GhidraScript)  
+INFO  FindStrings.java> 
+/* WARNING: Removing unreachable block (ram,0xfffffff00834867c) */
+/* WARNING: Removing unreachable block (ram,0xfffffff0083486bc) */
+/* WARNING: Removing unreachable block (ram,0xfffffff008348628) */
+
+undefined8
+FUN_fffffff008348530
+          (undefined8 param_1,undefined8 param_2,undefined8 param_3,undefined8 param_4,
+          undefined8 param_5,undefined8 *param_6)
+
+{
+  int iVar1;
+  long *plVar2;
+  long *plVar3;
+  ulong uVar4;
+  code *pcVar5;
+  long lVar6;
+  char *pcVar7;
+  
+  iVar1 = thunk_FUN_fffffff00aa16d84((undefined4 *)0x0);
+  if (iVar1 == 0) {
+    return 0xe00002e2;
+  }
+  if ((int)param_4 == 1) {
+    pcVar7 = "VictimUserClient";
+  }
+  else {
+    if ((int)param_4 != 2) {
+      thunk_FUN_fffffff00a9029a0
+                ((byte *)
+                 "AppleARMSlowAdaptiveClockingManager::newUserClient - ERROR - unsupported UserClient type\n"
+                );
+      return 0xe00002c7;
+    }
+    pcVar7 = "AggressorUserClient";
+  }
+  thunk_FUN_fffffff00a9029a0
+            ((byte *)"AppleARMSlowAdaptiveClockingManager::newUserClient - Creating a %s\n");
+  plVar2 = thunk_FUN_fffffff00a8d2200(pcVar7);
+  plVar3 = (long *)thunk_FUN_fffffff00a8970c0(plVar2);
+  (**(code **)(*plVar2 + 0x28))(plVar2);
+  if (plVar3 == (long *)0x0) {
+    return 0xe00002bd;
+  }
+  plVar2 = thunk_FUN_fffffff00a894f30(plVar3,*(long *)PTR_PTR_fffffff007ce9bf0);
+  lVar6 = *plVar3;
+  if (plVar2 != (long *)0x0) {
+    uVar4 = (**(code **)(lVar6 + 0x550))(lVar6 + 0x550,plVar3,param_2,param_3,param_4,param_5);
+    lVar6 = *plVar3;
+    if ((uVar4 & 1) == 0) {
+      (**(code **)(lVar6 + 0x28))(plVar3);
+      return 0xe00002c2;
+    }
+    uVar4 = (**(code **)(lVar6 + 0x360))(lVar6 + 0x360,plVar3,param_1);
+    lVar6 = *plVar3;
+    if ((uVar4 & 1) != 0) {
+      uVar4 = (**(code **)(lVar6 + 0x2b0))(lVar6 + 0x2b0,plVar3,param_1);
+      if ((uVar4 & 1) != 0) {
+        *param_6 = plVar3;
+        return 0;
+      }
+      (**(code **)(*plVar3 + 0x368))(plVar3,param_1);
+      pcVar5 = *(code **)(*plVar3 + 0x28);
+      goto LAB_fffffff00834870c;
+    }
+  }
+  pcVar5 = *(code **)(lVar6 + 0x28);
+LAB_fffffff00834870c:
+  (*pcVar5)(plVar3);
+  return 0xe00002c7;
+}
+
+ (GhidraScript)  
+INFO  FindStrings.java> === FN fffffff00830abf0 FUN_fffffff00830abf0 (GhidraScript)  
+INFO  FindStrings.java> 
+undefined4 FUN_fffffff00830abf0(long param_1,long *param_2)
+
+{
+  int iVar1;
+  long *plVar2;
+  char *pcVar3;
+  
+  iVar1 = thunk_FUN_fffffff00aa16d84((undefined4 *)0x0);
+  if (iVar1 != 0) {
+    thunk_FUN_fffffff00a9029a0((byte *)"VictimUserClient::start\n");
+    iVar1 = (**(code **)(PTR_DAT_fffffff007ce9cb8 + 0x2c0))(param_1,param_2);
+    if (iVar1 == 0) {
+      pcVar3 = "VictimUserClient::start failed to start provider\n";
+    }
+    else {
+      plVar2 = thunk_FUN_fffffff00a894f30(param_2,(long)PTR_DAT_fffffff007ce3900);
+      *(long **)(param_1 + 0xf8) = plVar2;
+      if (plVar2 != (long *)0x0) {
+        return 1;
+      }
+      pcVar3 = "VictimUserClient::start failed to init _mDriver\n";
+    }
+    thunk_FUN_fffffff00a9029a0((byte *)pcVar3);
+  }
+  return 0;
+}
+
+ (GhidraScript)  
+INFO  FindStrings.java> === FN fffffff00830ac9c FUN_fffffff00830ac9c (GhidraScript)  
+INFO  FindStrings.java> 
+/* WARNING: Removing unreachable block (ram,0xfffffff00830ae44) */
+
+undefined4
+FUN_fffffff00830ac9c
+          (undefined1 param_1 [16],undefined1 param_2 [16],undefined1 param_3 [16],
+          undefined1 param_4 [16],undefined4 param_5,undefined4 param_6,long param_7,long param_8,
+          undefined8 param_9,ulong *param_10,undefined8 param_11)
+
+{
+  int iVar1;
+  long *plVar2;
+  long *plVar3;
+  ulong uVar4;
+  char *pcVar5;
+  undefined8 uVar6;
+  ulong *puVar7;
+  code *pcVar8;
+  long *plVar9;
+  undefined1 auVar10 [16];
+  
+  uVar6 = param_9;
+  puVar7 = param_10;
+  iVar1 = thunk_FUN_fffffff00aa16d84((undefined4 *)0x0);
+  if (iVar1 == 0) {
+    return 0;
+  }
+  if (param_8 == 0) {
+    pcVar5 = "VictimUserClient::initWithTask owningTask invalid\n";
+LAB_fffffff00830aed4:
+    thunk_FUN_fffffff00a9029a0((byte *)pcVar5);
+  }
+  else {
+    *(long *)(param_7 + 0x110) = param_8;
+    plVar2 = (long *)thunk_FUN_fffffff00a9a6b94(param_8,-0xff8e9d69f);
+    if ((plVar2 != (long *)0x0) &&
+       (plVar9 = (long *)**(undefined8 **)PTR_PTR_fffffff007ce9db0, (**(code **)(*plVar2 + 0x28))(),
+       plVar2 != plVar9)) {
+      return 0;
+    }
+    iVar1 = thunk_FUN_fffffff00a9a63f4
+                      (*(undefined8 **)(param_7 + 0x110),&DAT_fffffff00716298a,uVar6,puVar7,param_11
+                      );
+    if (iVar1 != 0) {
+      return 0;
+    }
+    thunk_FUN_fffffff00a9029a0((byte *)"VictimUserClient::initWithTask\n");
+    plVar2 = thunk_FUN_fffffff00a9332f0((byte *)"arm-io",(long *)0x0);
+    iVar1 = (**(code **)(*plVar2 + 0x90))();
+    if (iVar1 == 1) {
+      plVar9 = thunk_FUN_fffffff00a9327bc(plVar2);
+      auVar10 = (**(code **)(*plVar2 + 0x28))(plVar2);
+      plVar2 = (long *)FUN_fffffff00830d218
+                                 (auVar10,param_2,param_3,param_4,param_5,param_6,(ulong *)0x108);
+      plVar3 = FUN_fffffff00830d22c(plVar2);
+      uVar4 = (**(code **)(*plVar3 + 0xa8))(plVar3,0);
+      if ((uVar4 & 1) == 0) {
+        pcVar5 = "AggressorUserClient::start failed to initialize %s\n";
+      }
+      else {
+        (**(code **)(*plVar2 + 0x210))(plVar2,"sac-test-framework-node",0);
+        uVar4 = (**(code **)(*plVar2 + 0x1b8))
+                          (*plVar2 + 0x1b8,plVar2,plVar9,*(undefined8 *)PTR_DAT_fffffff007ce9d98);
+        if ((uVar4 & 1) != 0) {
+          *(long **)(param_7 + 0xd8) = plVar2;
+          (**(code **)(*plVar9 + 0x28))(plVar9);
+          uVar4 = (**(code **)(PTR_DAT_fffffff007ce9cb8 + 0x568))(param_7,param_8,param_9,param_10);
+          if ((uVar4 & 1) != 0) {
+            *(undefined4 *)(param_7 + 0xe8) = 0;
+            *(undefined8 *)(param_7 + 0xf0) = 0;
+            return 1;
+          }
+          pcVar5 = "VictimUserClient:initWithTask::super failed\n";
+          goto LAB_fffffff00830aed4;
+        }
+        pcVar5 = "AggressorUserClient::start failed to attach %s to arm-io\n";
+      }
+      thunk_FUN_fffffff00a9029a0((byte *)pcVar5);
+      (**(code **)(*plVar9 + 0x28))(plVar9);
+      pcVar8 = *(code **)(*plVar2 + 0x28);
+    }
+    else {
+      (**(code **)(*plVar2 + 0x90))(plVar2);
+      thunk_FUN_fffffff00a9029a0
+                ((byte *)
+                 "AggressorUserClient::start found %d nodes with name arm-io, this should not happen\n"
+                );
+      pcVar8 = *(code **)(*plVar2 + 0x28);
+    }
+    (*pcVar8)(plVar2);
+  }
+  return 0;
+}
+
+ (GhidraScript)  
+INFO  FindStrings.java> === FN fffffff00830afa0 FUN_fffffff00830afa0 (GhidraScript)  
+INFO  FindStrings.java> 
+void FUN_fffffff00830afa0(long param_1,undefined8 param_2,long param_3)
+
+{
+  code *pcVar1;
+  ulong unaff_x30;
+  
+  thunk_FUN_fffffff00a9029a0((byte *)"VictimUserClient::sRegisterVictim\n");
+  if (((unaff_x30 ^ unaff_x30 << 1) >> 0x3e & 1) != 0) {
+                    /* WARNING: Does not return */
+    pcVar1 = (code *)SoftwareBreakpoint(0xc471,0xfffffff00830afec);
+    (*pcVar1)();
+  }
+  FUN_fffffff00830b278(param_1,(uint *)(param_3 + 0x38),*(long *)(param_3 + 0x30));
+  return;
+}
+
+ (GhidraScript)  

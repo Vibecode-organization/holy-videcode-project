@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UserName</key>
+	<string>_swtransparencyd</string>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.bg.system.task</key>
+		<dict>
+			<key>com.apple.swtransparencyd.24h</key>
+			<dict>
+				<key>RepeatingTask</key>
+				<dict>
+					<key>Interval</key>
+					<integer>86400</integer>
+				</dict>
+				<key>RequiresNetworkConnectivity</key>
+				<true/>
+				<key>RequiresExternalPower</key>
+				<false/>
+				<key>Priority</key>
+				<string>Maintenance</string>
+				<key>RequiresProtectionClass</key>
+				<string>kBGSTProtectionClassC</string>
+			</dict>
+			<key>com.apple.swtransparencyd.milestone-refresh</key>
+			<dict>
+				<key>RepeatingTask</key>
+				<dict>
+					<key>Interval</key>
+					<integer>43200</integer>
+				</dict>
+				<key>RequiresNetworkConnectivity</key>
+				<true/>
+				<key>RequiresExternalPower</key>
+				<false/>
+				<key>Priority</key>
+				<string>Maintenance</string>
+				<key>RequiresProtectionClass</key>
+				<string>kBGSTProtectionClassC</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>EnablePressuredExit</key>
+	<true/>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>Label</key>
+	<string>com.apple.swtransparencyd</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.swtransparencyd</key>
+		<true/>
+	</dict>
+	<key>POSIXSpawnType</key>
+	<string>Adaptive</string>
+	<key>Program</key>
+	<string>/usr/libexec/swtransparencyd</string>
+</dict>
+</plist>

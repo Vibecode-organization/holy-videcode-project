@@ -1,0 +1,24 @@
+=== signed watch start Вт 03 ноя 2026 11:55:27 UTC ===
+HIT com.smith.krwprobe.873962H52X.873962H52X CFProbe /private/var/containers/Bundle/Application/9A5C2801-72F3-4D33-BB9E-C36326A03B4A/CFProbe.app at Вт 03 ноя 2026 12:36:04 UTC
+{
+    "processToken": {
+        "auditToken": [
+            4294967295,
+            501,
+            501,
+            501,
+            501,
+            62658,
+            0,
+            181141
+        ],
+        "executableURL": {
+            "relative": "file:///private/var/containers/Bundle/Application/9A5C2801-72F3-4D33-BB9E-C36326A03B4A/CFProbe.app/CFProbe"
+        },
+        "processIdentifier": 62658,
+        "processIdentifierVersion": 181141
+    }
+}
+2026-11-03 15:36:17 femboychik-systemproductname pymobiledevice3.__main__[35020] ERROR Opcode: GET_FILE_INFO failed with status: 8 for file: cfprobe.log (AFC status OBJECT_NOT_FOUND).
+2026-11-03 15:36:17 femboychik-systemproductname pymobiledevice3.__main__[35020] INFO Run again with -v for the full traceback (include it when reporting an issue)
+DONE CFProbe

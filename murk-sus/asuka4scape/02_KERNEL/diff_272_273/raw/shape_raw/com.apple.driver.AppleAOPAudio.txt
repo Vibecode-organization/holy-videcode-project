@@ -1,0 +1,6 @@
+funcs 1224 1224
+identical 1223 ratio 0.99918
+changed regions 1
+== replace A[493:494] B[493:494]
+   A 0xfffffff0082ac3d4 sz=496
+   B 0xfffffff0082ce764 sz=476

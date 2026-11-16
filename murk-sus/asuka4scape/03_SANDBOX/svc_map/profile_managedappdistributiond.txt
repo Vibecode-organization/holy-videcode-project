@@ -1,0 +1,218 @@
+## managedappdistributiond  9066560 bytes
+### entitlements (89 keys)
+  FairPlay-Classic-Client
+  adi-client = 409835401
+  application-identifier = com.apple.managedappdistributiond
+  com.apple.CommCenter.fine-grained = spi
+  com.apple.GAX.SPI
+  com.apple.accounts.appleaccount.fullaccess
+  com.apple.app-distribution.private
+  com.apple.asktod
+  com.apple.attributionkitd.token-handoff
+  com.apple.authkit.client.internal
+  com.apple.backboardd.eventAuthenticationVerification
+  com.apple.backboardd.setAuthenticatedTouches
+  com.apple.backgroundassets.appstore
+  com.apple.devicemanagementclient.managedappsd.appconfig
+  com.apple.dmd-access
+  com.apple.dmd.operation.fetch-apps
+  com.apple.dmd.operation.start-managing-app
+  com.apple.dmd.operation.stop-managing-app
+  com.apple.dmd.operation.update-app
+  com.apple.dmd.operation.update-app-attributes
+  com.apple.duet.activityscheduler.allow
+  com.apple.frontboard.launchapplications
+  com.apple.keystore.absinthe
+  com.apple.keystore.device
+  com.apple.keystore.sik.access
+  com.apple.lsapplicationproxy.deviceidentifierforvendor
+  com.apple.managedconfiguration.profiled.get = MDMInfo
+  com.apple.networkd.set_source_application
+  com.apple.private.FairPlayIOKitUserClient.access
+  com.apple.private.InstallCoordination.allowed
+  com.apple.private.InstallCoordination.ignoreAppProtection
+  com.apple.private.InstallCoordination.ignoreRemovability
+  com.apple.private.InstallCoordination.ignoreRestrictions
+  com.apple.private.InstallCoordination.uninstall
+  com.apple.private.MobileContainerManager.lookup = {appData}
+  com.apple.private.MobileGestalt.AllowedProtectedKeys = SerialNumber, UniqueDeviceID, UniqueDeviceIDData
+  com.apple.private.accounts.allaccounts
+  com.apple.private.appinstallationmetrics
+  com.apple.private.applemediaservices
+  com.apple.private.appstorecomponents
+  com.apple.private.coreservices.appmarketplace.read
+  com.apple.private.coreservices.appmarketplace.write
+  com.apple.private.followup
+  com.apple.private.game-center = Games
+  com.apple.private.install.can-set-install-requestor
+  com.apple.private.install.distributor-info-source
+  com.apple.private.marketplace-extension-host
+  com.apple.private.mobileinstall.allowedSPI = CheckCapabilitiesMatch
+  com.apple.private.network.socket-delegate
+  com.apple.private.nsurlsession.impersonate
+  com.apple.private.nsurlsession.set-task-priority
+  com.apple.private.remotemanagement.subscriber
+  com.apple.private.sandbox.profile:embedded = temporary-sandbox
+  com.apple.private.security.storage.os_eligibility.readonly
+  com.apple.private.storekit = ExternalGateway
+  com.apple.runningboard.jetengine
+  com.apple.security.exception.files.absolute-path.read-only = /private/var/db/MobileIdentityData/, /private/var/db/os_eligibility/eligibility.plist
+  com.apple.security.exception.files.home-relative-path.read-only = /Library/UserConfigurationProfiles/
+  com.apple.security.exception.files.home-relative-path.read-write = /Library/com.apple.AppleMediaServices/, /Library/Application Support/managedappdistributiond/, /Library/Caches/com.apple.AppleMediaServices/, /Library/Caches/com.apple.managedappdistributiond/, /Libra
+  com.apple.security.exception.mach-lookup.global-name = com.apple.adid, com.apple.accessibility.AXBackBoardServer, com.apple.apsd, com.apple.appinstallationmetrics.xpc, com.apple.AssetCacheLocatorService, com.apple.backboard.hid.services, com.apple.backboa
+  com.apple.security.exception.process-info
+  com.apple.security.exception.shared-preference.read-only = com.apple.appstored, com.apple.itunesstored, com.apple.amsengagementd, com.apple.madctl
+  com.apple.security.exception.shared-preference.read-write = com.apple.managedappdistributiond, com.apple.appstored
+  com.apple.security.hardened-process
+  com.apple.security.hardened-process.checked-allocations
+  com.apple.security.hardened-process.checked-allocations.enforce-checked-pointer-arithmetic-overflow
+  com.apple.security.hardened-process.dyld-ro
+  com.apple.security.hardened-process.enhanced-security-version-string = 2
+  com.apple.security.hardened-process.hardened-heap
+  com.apple.security.hardened-process.platform-restrictions = 2
+  com.apple.security.iokit-user-client-class = com_apple_driver_FairPlayIOKitUserClient
+  com.apple.security.network.client
+  com.apple.security.system-container
+  com.apple.security.system-groups = systemgroup.com.apple.installcoordinationd, systemgroup.com.apple.applicensedelivery, systemgroup.com.apple.configurationprofiles
+  com.apple.security.ts.mobile-keybag-access
+  com.apple.security.ts.power-assertions
+  com.apple.security.ts.read-any-bundle
+  com.apple.security.ts.springboard-services
+  com.apple.springboard.CFUserNotification
+  com.apple.springboard.opensensitiveurl
+  com.apple.springboard.remote-alert
+  com.apple.storekit.client-override
+  com.apple.symptom_analytics.query
+  com.apple.symptoms.NetworkOfInterest
+  com.apple.usermanagerd.persona.fetch
+  com.apple.usermanagerd.persona.setbundle
+  fairplay-client = 1445028844
+  keychain-access-groups = apple
+  platform-application
+### selector-like strings (323)
+  URLSessionDidFinishEventsForBackgroundURLSession:
+  URLsForDirectory:inDomains:
+  actionWithLabel:url:
+  activateWithContext:
+  appAssetPromiseHasBegunFulfillment:error:
+  appAssetPromiseResponsibleClientWithError:
+  appAssetPromiseWithError:
+  archivedDataWithRootObject:requiringSecureCoding:error:
+  arrayWithObjects:count:
+  assetGlyphWithName:glyphSize:textStyle:
+  availableAppsForAppleItemIDs:reply:
+  boolForKey:
+  bundleForClass:
+  bundleRecordWithBundleIdentifier:allowPlaceholder:error:
+  cancelForReason:client:completion:
+  cancelForReason:client:error:
+  cancelTaskRequestWithIdentifier:error:
+  checkDeviceCabilityForADPInstallation:reply:
+  clearPendingFollowUpItemsWithUniqueIdentifiers:completion:
+  clearPendingFollowUpItemsWithUniqueIdentifiers:error:
+  com.apple.AppDistribution.ADAskForExceptionExtension
+  com.apple.AppDistribution.ADFollowUpExtension
+  com.apple.AppDistributionLaunchAngel
+  com.apple.AppStore
+  com.apple.BiometricKit.lockoutStateChanged
+  com.apple.CARenderServer
+  com.apple.GAX.SPI
+  com.apple.LaunchServices.applicationRegistered
+  com.apple.LaunchServices.applicationUnregistered
+  com.apple.ManagedAppDistribution
+  com.apple.Preferences
+  com.apple.SBUserNotification
+  com.apple.StoreServices
+  com.apple.StreamingUnzipService
+  com.apple.TestFlight
+  com.apple.adid
+  com.apple.adid.midchangedV1.5
+  com.apple.amsengagementd
+  com.apple.app-distribution.approval-flow
+  com.apple.app-distribution.private
+  com.apple.appstored
+  com.apple.appstored.updates.ios
+  com.apple.apsd
+  com.apple.askpermissiond0.
+  com.apple.asktod
+  com.apple.cache_delete.public
+  com.apple.corefollowup.agent
+  com.apple.developer.browser.app-installation
+  com.apple.developer.embedded-web-browser-engine.engine-association
+  com.apple.developer.managed-app-distribution.install-ui
+  com.apple.developer.marketplace.app-installation
+  com.apple.developer.temp.app-distribution
+  com.apple.distnoted.matching
+  com.apple.distnoted.matching.trusted
+  com.apple.dmd-access
+  com.apple.fairplayd.versioned
+  com.apple.fairplayd.xpc
+  com.apple.fontservicesd
+  com.apple.frontboard.app-library
+  com.apple.gamed
+  com.apple.installcoordinationd
+  com.apple.ios.StoreKitUIService
+  com.apple.itunesstored
+  com.apple.keystore.absinthe
+  com.apple.keystore.device
+  com.apple.keystore.sik.access
+  com.apple.lsd.installation
+  com.apple.lsd.modifydb
+  com.apple.lsd.xpc
+  com.apple.madctl
+  com.apple.madctl0u
+  com.apple.managedappdistribution.managed-app-changed.system
+  com.apple.managedappdistribution.managed-app-changed.user
+  com.apple.managedappdistribution.marketplace-approval-followup
+  com.apple.managedappdistribution.marketplace.install.gauge
+  com.apple.managedappdistribution.marketplace.status
+  com.apple.managedappdistribution.no-applicable-variant
+  com.apple.managedappdistributionagent
+  com.apple.managedappdistributiond
+  com.apple.managedappdistributiond.StreamingExtractor.extractor
+  com.apple.managedappdistributiond.app-declaration-backoff
+  com.apple.managedappdistributiond.day-lock
+  com.apple.managedappdistributiond.ddm-repair
+  com.apple.managedappdistributiond.installcoordination
+  com.apple.managedappdistributiond.update-poll
+  com.apple.managedappdistributiond.xpc
+  com.apple.manageddeviced
+  com.apple.marketplace.extension
+  com.apple.mdm-view-service-extension
+  com.apple.message-payload-provider
+  com.apple.misagent
+  com.apple.mobile.installd
+  com.apple.mobile.keybagd.first_unlock
+  com.apple.notifyd.matching
+  com.apple.pearld
+  com.apple.platform.appletvos
+  com.apple.platform.iphoneos
+  com.apple.platform.macosx
+  com.apple.platform.watchos
+  com.apple.private.appdistribution.distributor-override
+  com.apple.private.followup
+  com.apple.private.game-center0
+  com.apple.private.managedappdistribution.ddm
+  com.apple.private.storekit0
+  com.apple.storekitd
+  com.apple.xpc.amsaccountsd
+  com.apple.xpc.amsuniversallinks
+  containsPredicateWithProperty:values:
+  coordinatorDidRegisterForObservation:
+  coordinatorForAppWithIdentity:withClientID:createIfNotExisting:created:error:
+  countByEnumeratingWithState:objects:count:
+  createDeviceIdentifierWithVendorName:bundleIdentifier:
+  createDirectoryAtPath:withIntermediateDirectories:attributes:error:
+  createDirectoryAtURL:withIntermediateDirectories:attributes:error:
+  currentDeclarationKeysWithReply:
+  daemonInstanceIdentifierWithReply:
+  dataTaskPromiseWithRequest:
+  dataTaskWithRequest:
+  descriptorWithAppBundleIdentifier:appBundleURL:event:client:
+  descriptorWithAppBundleIdentifier:appStoreMetadata:client:
+### path/url-ish strings
+  		<string>/private/var/db/MobileIdentityData/</string>
+  		<string>/private/var/db/os_eligibility/eligibility.plist</string>
+  #/private/var/db/MobileIdentityData/
+  0/private/var/db/os_eligibility/eligibility.plist0h
+

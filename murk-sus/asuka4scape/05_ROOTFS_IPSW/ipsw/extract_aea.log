@@ -1,0 +1,19 @@
+
+7-Zip 26.03 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-09-03
+ 64-bit locale=ru_RU.UTF-8 Threads:8 OPEN_MAX:524288, ASM
+
+Scanning the drive for archives:
+1 file, 11435385034 bytes (11 GiB)
+
+Extracting archive: /home/femboychik/work/rc115/iPhone14,7_27.2_24B115_Restore.ipsw
+--
+Path = /home/femboychik/work/rc115/iPhone14,7_27.2_24B115_Restore.ipsw
+Type = zip
+Physical Size = 11435385034
+64-bit = +
+Characteristics = Zip64
+
+
+
+
+Break signaled

@@ -1,0 +1,29 @@
+// FUN_fffffff0081b6d20 @ fffffff0081b6d20 size=216
+
+undefined8 FUN_fffffff0081b6d20(long param_1,undefined8 param_2,undefined4 param_3)
+
+{
+  undefined8 uVar1;
+  long *plVar2;
+  undefined8 uVar3;
+  undefined8 *puVar4;
+  undefined4 local_38;
+  undefined4 local_34;
+  
+  local_34 = param_3;
+  uVar1 = (**(code **)(*(long *)(param_1 + 0x848) + 0x30))(param_1 + 0x848);
+  local_38 = 0;
+  plVar2 = *(long **)(*(long *)(param_1 + 0x280) + 0x310);
+  puVar4 = (undefined8 *)(*plVar2 + 0xe8);
+  uVar3 = (*(code *)*puVar4)(puVar4,plVar2,FUN_fffffff00817ea94,param_2,&local_34,&local_38,0);
+  if ((int)uVar3 == 0) {
+    if (((byte)local_34 >> 1 & 1) == 0) {
+      uVar3 = 0;
+    }
+    else {
+      uVar3 = FUN_fffffff0081a43cc(param_1,uVar1,local_38);
+    }
+  }
+  return uVar3;
+}
+

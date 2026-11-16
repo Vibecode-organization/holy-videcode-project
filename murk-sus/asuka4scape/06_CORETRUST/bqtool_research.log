@@ -1,0 +1,203 @@
+=== BQEscape start | iOS 27.2 | bundle app.lake9674.aquila8809 ===
+MCM loaded=1 create=0x21837b46c get=0x2183821ec token=0x21838a0e4 consume=0x2dac37560 release=0x2dac377ec
+app group entitlement: group.8e0bc870a21520b9.1
+app group: id=group.8e0bc870a21520b9.1 root=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E
+core init ok=1
+fonttest path=/private/var/containers/Bundle/Application/3868A914-8C48-4891-B5EE-242055F0FF0A/BQTool.app/minecraft.ttf exists=1
+fonttest user scope=0 code=307 err=Font registration was unsuccessful.
+fonttest process scope=1 err=(null)
+fonttest family=Minecraft Rus
+selftest args=(
+    "/var/containers/Bundle/Application/3868A914-8C48-4891-B5EE-242055F0FF0A/BQTool.app/BQTool",
+    "--bqselftest",
+    "--bqfonttest"
+)
+probe[class7]: base=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E target=/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches
+probe[class7]: result=0x10584cbe0
+probe[class7]: token=YES consume=2
+probe[class7]: marker=OK
+probe[class2]: base=/var/mobile/Containers/Data/Application/3059AC80-7E46-4711-B959-E1156635D3DD target=/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches
+swap move /var/mobile/Containers/Data/Application/3059AC80-7E46-4711-B959-E1156635D3DD/Library/Caches -> /var/mobile/Containers/Data/Application/3059AC80-7E46-4711-B959-E1156635D3DD/Library/Caches.probe failed: Error Domain=NSCocoaErrorDomain Code=513 "“Caches” couldn’t be moved because you don’t have permission to access “Library”." UserInfo={NSSourceFilePathErrorKey=/var/mobile/Containers/Data/Application/3059AC80-7E46-4711-B959-E1156635D3DD/Library/Caches, NSUserStringVariant=(
+    Move
+), NSDestinationFilePath=/var/mobile/Containers/Data/Application/3059AC80-7E46-4711-B959-E1156635D3DD/Library/Caches.probe, NSFilePath=/var/mobile/Containers/Data/Application/3059AC80-7E46-4711-B959-E1156635D3DD/Library/Caches, NSURL=file:///var/mobile/Containers/Data/Application/3059AC80-7E46-4711-B959-E1156635D3DD/Library/Caches, NSUnderlyingError=0x1058232d0 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+probe summary: {
+    bundle = "app.lake9674.aquila8809";
+    class2 = "-2";
+    class7 = 0;
+    "group_id" = "group.8e0bc870a21520b9.1";
+    "group_root" = "/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E";
+    "own_home" = "/var/mobile/Containers/Data/Application/3059AC80-7E46-4711-B959-E1156635D3DD";
+}
+selftest probe={
+    bundle = "app.lake9674.aquila8809";
+    class2 = "-2";
+    class7 = 0;
+    "group_id" = "group.8e0bc870a21520b9.1";
+    "group_root" = "/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E";
+    "own_home" = "/var/mobile/Containers/Data/Application/3059AC80-7E46-4711-B959-E1156635D3DD";
+}
+c2 part 0 -> /private/var/mobile/Containers/Data/Application/3059AC80-7E46-4711-B959-E1156635D3DD
+c2 part 1 -> (null)
+c2 part 2 -> /private/var/mobile/Containers/Data/Application/3059AC80-7E46-4711-B959-E1156635D3DD/Library/Preferences
+c2 part 3 -> /private/var/mobile/Containers/Data/Application/3059AC80-7E46-4711-B959-E1156635D3DD/Library/Caches
+c2 part 4 -> /private/var/mobile/Containers/Data/Application/3059AC80-7E46-4711-B959-E1156635D3DD/Documents
+c2 part 5 -> /private/var/mobile/Containers/Data/Application/3059AC80-7E46-4711-B959-E1156635D3DD/tmp
+c2 part 6 -> /private/var/mobile/Containers/Data/Application/3059AC80-7E46-4711-B959-E1156635D3DD/SystemData
+c2 move p2 /private/var/mobile/Containers/Data/Application/3059AC80-7E46-4711-B959-E1156635D3DD/Library/Preferences -> -1 errno=1
+c2 move p3 /private/var/mobile/Containers/Data/Application/3059AC80-7E46-4711-B959-E1156635D3DD/Library/Caches -> -1 errno=1
+c2 move p4 /private/var/mobile/Containers/Data/Application/3059AC80-7E46-4711-B959-E1156635D3DD/Documents -> -1 errno=1
+c2 move p5 /private/var/mobile/Containers/Data/Application/3059AC80-7E46-4711-B959-E1156635D3DD/tmp -> -1 errno=1
+c2 move p6 /private/var/mobile/Containers/Data/Application/3059AC80-7E46-4711-B959-E1156635D3DD/SystemData -> -1 errno=1
+selftest class2 parts={
+    0 = "/private/var/mobile/Containers/Data/Application/3059AC80-7E46-4711-B959-E1156635D3DD";
+    2 = "/private/var/mobile/Containers/Data/Application/3059AC80-7E46-4711-B959-E1156635D3DD/Library/Preferences";
+    3 = "/private/var/mobile/Containers/Data/Application/3059AC80-7E46-4711-B959-E1156635D3DD/Library/Caches";
+    4 = "/private/var/mobile/Containers/Data/Application/3059AC80-7E46-4711-B959-E1156635D3DD/Documents";
+    5 = "/private/var/mobile/Containers/Data/Application/3059AC80-7E46-4711-B959-E1156635D3DD/tmp";
+    6 = "/private/var/mobile/Containers/Data/Application/3059AC80-7E46-4711-B959-E1156635D3DD/SystemData";
+}
+strategy class13-traversal: cls=13 ident=systemgroup.com.apple.mobilegestaltcache part=3 result=0x0 path=(null) token=NO consume=-5
+class13-traversal: last_error posix=0 msg=(null)
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10584f980 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=3
+escape: using class7 symlink
+MG backup created (10776 bytes)
+MG loaded: 80 CacheExtra key(s), 10776 byte(s)
+selftest MG=OK err=- keys=80
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10f874c80 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=4
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10f874be0 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=5
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10f874460 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=6
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10f874d20 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=7
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10f874c80 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=8
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10f874be0 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=9
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10f874460 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=10
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10f874d20 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=11
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10f874c80 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=12
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10f874be0 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=13
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10f874460 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=14
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10f874d20 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=15
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10f874c80 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=16
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10f874be0 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=17
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10f874460 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=18
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10f874d20 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=19
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10f874c80 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=20
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10f874be0 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=21
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10f874460 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=22
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10f874d20 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=23
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10584c460 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=24
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10584c780 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=25
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10584f200 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=26
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10584f0c0 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=27
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10584c460 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=28
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10584c780 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=29
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10f874c80 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=30
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10f874d20 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=31
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10f874be0 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=32
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10584f0c0 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=33
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10584f0c0 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=34
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10584f0c0 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=35
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10f874460 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=36
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10f874460 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=37
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10f874460 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=38
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10fb901e0 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=39
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10fb90280 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=40
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10fb900a0 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=41
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10fb90320 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=42
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10fb901e0 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=43
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10fb90280 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=44
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10fb900a0 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=45
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10fb90320 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=46
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10fb901e0 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=47
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10fb90280 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=48
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10fb900a0 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=49
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10fb90320 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=50
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10fb901e0 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=51
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10fb90280 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=52
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10fb900a0 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=53
+escape: using class7 symlink
+PB scan: 50
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10fb90320 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=54
+escape: using class7 symlink
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10fb901e0 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=55
+escape: using class7 symlink
+PosterBoard container: /var/mobile/Containers/Data/Application/967AA218-2C52-4D2B-B47F-2B20FC356783
+selftest PB=/var/mobile/Containers/Data/Application/967AA218-2C52-4D2B-B47F-2B20FC356783 err=-
+selftest done
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x10fb90280 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=56
+escape: using class7 symlink
+MG loaded: 80 CacheExtra key(s), 10776 byte(s)
+=== BQEscape start | iOS 27.2 | bundle app.lake9674.aquila8809 ===
+MCM loaded=1 create=0x21837b46c get=0x2183821ec token=0x21838a0e4 consume=0x2dac37560 release=0x2dac377ec
+app group entitlement: group.8e0bc870a21520b9.1
+app group: id=group.8e0bc870a21520b9.1 root=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E
+core init ok=1
+strategy class13-traversal: cls=13 ident=systemgroup.com.apple.mobilegestaltcache part=3 result=0x0 path=(null) token=NO consume=-5
+class13-traversal: last_error posix=0 msg=(null)
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x109558280 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=2
+escape: using class7 symlink
+MG loaded: 80 CacheExtra key(s), 10776 byte(s)
+=== BQEscape start | iOS 27.2 | bundle app.lake9674.aquila8809 ===
+MCM loaded=1 create=0x21837b46c get=0x2183821ec token=0x21838a0e4 consume=0x2dac37560 release=0x2dac377ec
+app group entitlement: group.8e0bc870a21520b9.1
+app group: id=group.8e0bc870a21520b9.1 root=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E
+core init ok=1
+strategy class13-traversal: cls=13 ident=systemgroup.com.apple.mobilegestaltcache part=3 result=0x0 path=(null) token=NO consume=-5
+class13-traversal: last_error posix=0 msg=(null)
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x136554320 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=2
+escape: using class7 symlink
+MG loaded: 80 CacheExtra key(s), 10776 byte(s)
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x1365545a0 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=3
+escape: using class7 symlink
+MG saved: 10809 bytes, 81 CacheExtra keys
+research: set ResearchFuse ok=1 err=- keys=81
+strategy class7-symlink: cls=7 ident=group.8e0bc870a21520b9.1 part=3 result=0x1365573e0 path=/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E/Library/Caches token=YES consume=4
+escape: using class7 symlink
+MG loaded: 81 CacheExtra key(s), 10809 byte(s)

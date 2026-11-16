@@ -1,0 +1,11 @@
+start
+dlopen /usr/lib/libmis.dylib -> 0x3773db250 (ok)
+  dlsym CTEvaluateAMFICodeSignatureCMS -> 0x233a15a70
+dlopen /System/Library/PrivateFrameworks/MobileInBoxUpdate.framework/MobileInBoxUpdate -> 0x37715fce0 (ok)
+  dlsym CTEvaluateAMFICodeSignatureCMS -> 0x233a15a70
+dlopen /System/Library/PrivateFrameworks/CoreTrust.framework/CoreTrust -> 0x0 (dlopen(/System/Library/PrivateFrameworks/CoreTrust.framework/CoreTrust, 0x0006): tried: '/System/Library/PrivateFrameworks/CoreTrust.framework/CoreTrust' (no such file), '/private/preboot/Cryptexes/OS/System/Library/PrivateFrameworks/CoreTrust.framework/CoreTrust' (no such file), '/System/Library/PrivateFrameworks/CoreTrust.framework/CoreTrust' (no such file, not in dyld cache), '/System/Library/Frameworks/CoreTrust.framework/CoreTrust' (no such file, not in dyld cache))
+orig: ret=0x0 leaf=1471 digestType=4 agility=4 digLen=32
+  policy=0x10000
+  cdhash=7bac38b03977a3b90c127e640f6f07709bb2713b992654794ea3a1a2330c6f69
+fake: ret=0x70002 leaf=0 digestType=0 agility=0 digLen=0
+  policy=0x0

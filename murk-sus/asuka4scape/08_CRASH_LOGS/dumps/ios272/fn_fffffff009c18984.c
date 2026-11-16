@@ -1,0 +1,26 @@
+// FUN_fffffff009c18984 @ fffffff009c18984 size=188
+
+ulong FUN_fffffff009c18984
+                (long param_1,long param_2,long param_3,undefined8 param_4,undefined8 param_5,
+                long param_6)
+
+{
+  ulong uVar1;
+  long lVar2;
+  
+  uVar1 = 0;
+  if ((((param_2 != 0) && (param_3 != 0)) && (param_6 != 0)) &&
+     (uVar1 = (**(code **)(PTR_DAT_fffffff00806ca30 + 0x78))(param_1), (int)uVar1 != 0)) {
+    FUN_fffffff009c16670(param_1 + 0x38,param_2);
+    FUN_fffffff009c18a40(param_1 + 0x40,param_3);
+    *(undefined8 *)(param_1 + 0x10) = param_4;
+    *(undefined8 *)(param_1 + 0x18) = 0;
+    *(undefined8 *)(param_1 + 0x20) = param_5;
+    *(byte *)(param_1 + 0x68) = *(byte *)(*(long *)(param_1 + 0x40) + 0x40) & 1;
+    lVar2 = thunk_EXT_FUN_80110000038e97d8(param_6);
+    *(long *)(param_1 + 0x60) = lVar2;
+    uVar1 = (ulong)(lVar2 != 0);
+  }
+  return uVar1;
+}
+

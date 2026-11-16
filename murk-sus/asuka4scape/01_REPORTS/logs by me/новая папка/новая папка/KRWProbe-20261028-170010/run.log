@@ -1,0 +1,167 @@
+=== KRWProbe 1.4 ===
+Documents run dir: /var/mobile/Containers/Data/Application/629A0617-AD81-4DA0-9429-96F88DE96401/Documents/KRWProbe-20261028-170010
+tmp run dir: /private/var/mobile/Containers/Data/Application/629A0617-AD81-4DA0-9429-96F88DE96401/tmp/KRWProbe-20261028-170010
+active run dir: /var/mobile/Containers/Data/Application/629A0617-AD81-4DA0-9429-96F88DE96401/Documents/KRWProbe-20261028-170010
+tmp mirror: /private/var/mobile/Containers/Data/Application/629A0617-AD81-4DA0-9429-96F88DE96401/tmp/KRWProbe-20261028-170010
+run log: /var/mobile/Containers/Data/Application/629A0617-AD81-4DA0-9429-96F88DE96401/Documents/KRWProbe-20261028-170010/run.log (flushed after every line)
+run folder verified: run.log, last_config.xml, last_action.json, last_phase.txt present in all created locations
+[PHASE] idle — press a mode
+[PHASE] SAFE: sysctl + last files
+=== KRWProbe 1.4 ===
+machine=iPhone14,7 release=27.2.0 os=24B115 build=?
+kern.version=Darwin Kernel Version 27.2.0: Tue Oct 13 21:26:30 PDT 2026; root:xnu-13432.42.3~28/RELEASE_ARM64_T8110
+hw.model=D27AP memsize=
+pid=11938 uid=501 euid=501
+Documents run dir: /var/mobile/Containers/Data/Application/629A0617-AD81-4DA0-9429-96F88DE96401/Documents/KRWProbe-20261028-170010
+tmp run dir: /private/var/mobile/Containers/Data/Application/629A0617-AD81-4DA0-9429-96F88DE96401/tmp/KRWProbe-20261028-170010
+active run dir: /var/mobile/Containers/Data/Application/629A0617-AD81-4DA0-9429-96F88DE96401/Documents/KRWProbe-20261028-170010
+*** LAST PHASE (crash candidate): SAFE: sysctl + last files
+*** LAST FUZZ CONFIG (crash candidate): {}
+*** LAST MUTATE CONFIG (crash candidate):
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict><key>IOSurfaceWidth</key><integer>64</integer><key>IOSurfaceHeight</key><integer>64</integer><key>IOSurfaceBytesPerElement</key><integer>4</integer><key>IOSurfacePixelFormat</key><integer>1111970369</integer></dict></plist>
+
+*** LAST HARD ACTION (crash candidate): {"mode":"idle","note":"no action yet"}
+[PHASE] SAFE: surfaces
+--- surfaces ---
+basic surface: id=13 alloc=16384 bpe=4 bpr=256 base=0x1095a8000
+planes=1 256x256: OK id=13 alloc=262144 count=1
+planes=2 256x256: OK id=13 alloc=524288 count=2
+planes=4 256x256: OK id=13 alloc=1048576 count=4
+planes=8 256x256: OK id=13 alloc=2097152 count=8
+[PHASE] SAFE: user clients
+--- user clients (controls first) ---
+NoSuchService_SMITH_0: no service
+AppleMobileFileIntegrity: kr=0xe00002e2 (3758097122) not-permitted-or-error
+IOSurfaceRoot: kr=0x0 (0) OK
+AppleAVE2Driver: kr=0xe00002bd (3758097085) not-permitted-or-error
+AppleAVE2Interface: no service
+AppleH11ANEInterface: no service
+AGXAcceleratorG14P: kr=0xe00002c7 (3758097095) not-permitted-or-error
+[PHASE] SAFE done
+=== safe done ===
+[PHASE] SCAN sel 0..12
+sel  0: non-badsize=0
+[PHASE] SCAN sel 0/12
+sel  1: non-badsize=0
+[PHASE] SCAN sel 1/12
+sel  2: non-badsize=0
+[PHASE] SCAN sel 2/12
+sel  3: non-badsize=0
+[PHASE] SCAN sel 3/12
+sel  4: non-badsize=0
+[PHASE] SCAN sel 4/12
+sel  5: non-badsize=0
+[PHASE] SCAN sel 5/12
+sel  6: non-badsize=0
+[PHASE] SCAN sel 6/12
+sel  7: non-badsize=0
+[PHASE] SCAN sel 7/12
+sel  8: non-badsize=0
+[PHASE] SCAN sel 8/12
+sel  9: non-badsize=0
+[PHASE] SCAN sel 9/12
+sel 10: non-badsize=0
+[PHASE] SCAN sel 10/12
+sel 11: non-badsize=0
+[PHASE] SCAN sel 11/12
+sel 12: non-badsize=0
+[PHASE] SCAN sel 12/12
+[PHASE] SCAN done
+--- s0 scan done ---
+=== KRWProbe 1.4 CREATE (IOSurfaceRootUserClient) ===
+create: IOServiceOpen OK conn=9075
+[PHASE] CREATE sel0 chain
+sel0: scalarIn=1 {parent=0}, structIn=394 (XML+NUL), scalarOut=0, structOut=0xc68
+sel0 CREATE -> kr=0x0 (0) OK, structOut=3176/0xc68
+sel0: surface id=13 (u32 at info+0x18)
+sel0: planes=0 (+0x58) flag=0 (+0x5c) pixfmt=0x00000000 (+0x64) usecnt=0 (+0x68)
+sel0: IOSurfaceInfo[0x00..0x90]:
+  +0x000: 00 80 5b 09 01 00 00 00 90 0a 5a 09 01 00 00 00
+  +0x010: 40 43 5a 09 01 00 00 00 0d 00 00 00 00 00 00 00
+  +0x020: 00 40 00 00 00 00 00 00 40 00 00 00 00 00 00 00
+  +0x030: 40 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00
+  +0x040: 00 00 00 00 00 00 00 00 41 52 47 42 00 00 00 00
+  +0x050: 00 40 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  +0x060: 04 00 01 01 00 00 00 00 00 00 00 00 00 00 00 00
+  +0x070: 00 00 00 00 00 00 00 00 7d 09 14 00 00 00 00 01
+  +0x080: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+sel2 USE+INFO -> kr=0x0 (0) OK, structIn=12 structOut=3176/0xc68
+sel2: id=13 usecnt=1 (+0x68) planes=0
+sel3 USE- -> kr=0x0 (0) OK, structIn=0xc structOut=4/4 value=1
+sel9 SET 'KRWProbeValue'=1 -> kr=0x0 (0) OK, structIn=107 structOut=4/4 value=3
+sel10 GET 'KRWProbeValue' -> kr=0x0 (0) OK, structIn=26 structOut=28
+sel10: serialized value (16 bytes at out+0xc):
+  +0x000: d3 00 00 00 40 00 00 84 01 00 00 00 00 00 00 00
+
+sel11 REMOVE 'KRWProbeValue' -> kr=0x0 (0) OK, structIn=26 structOut=4/4 value=5
+sel1 RELEASE id=13 -> kr=0xe00002c2 (3758097090) FAIL
+=== CREATE probe done ===
+[PHASE] HARD: start
+=== KRWProbe 1.4 HARD ===
+[HARD] geometry start: 422 singles + 2496 CT-pairs + 6084 selected pairs = 9002 sel0 calls
+[PHASE] HARD/geom singles start (422)
+[PHASE] HARD/geom single 0/422
+HARD geom single 0/422 created=1 last_kr=0x0 id=13 out=3176 [CT=0]
+[PHASE] HARD/geom single 100/422
+HARD geom single 100/422 created=57 last_kr=0xe00002c2 id=0 out=3176 [CT=4,IOSurfacePlaneCompressedTileWidth=256]
+[PHASE] HARD/geom single 200/422
+HARD geom single 200/422 created=68 last_kr=0xe00002c2 id=0 out=3176 [CT=4,IOSurfacePlaneWidthInCompressedTiles=64]
+[PHASE] HARD/geom single 300/422
+HARD geom single 300/422 created=70 last_kr=0xe00002c2 id=0 out=3176 [CT=4,IOSurfacePlaneCompressedTileDataRegionOffset=16]
+[PHASE] HARD/geom single 400/422
+HARD geom single 400/422 created=144 last_kr=0xe00002c2 id=0 out=3176 [CT=4,IOSurfaceAllocSize=4]
+HARD geom single 421/422 created=147 last_kr=0xe00002c2 id=0 out=3176 [CT=4,IOSurfaceAllocSize=4294967295]
+[PHASE] HARD/geom ct-pairs start (2496)
+[PHASE] HARD/geom ct-pair 0/2496
+HARD geom ct-pair 0/2496 created=148 last_kr=0x0 id=352 out=3176 [CT=0,IOSurfaceSliceCount=0]
+[PHASE] HARD/geom ct-pair 100/2496
+HARD geom ct-pair 100/2496 created=199 last_kr=0xe00002c2 id=0 out=3176 [CT=3,IOSurfaceSliceCount=65536]
+[PHASE] HARD/geom ct-pair 200/2496
+HARD geom ct-pair 200/2496 created=225 last_kr=0xe00002c2 id=0 out=3176 [CT=1,IOSurfacePlaneDataRegionBytesPerSlice=512]
+[PHASE] HARD/geom ct-pair 300/2496
+HARD geom ct-pair 300/2496 created=303 last_kr=0xe00002c2 id=0 out=3176 [CT=5,IOSurfacePlaneDataRegionBytesPerSlice=128]
+[PHASE] HARD/geom ct-pair 400/2496
+HARD geom ct-pair 400/2496 created=366 last_kr=0x0 id=270 out=3176 [CT=3,IOSurfacePlaneHeaderRegionBytesPerSlice=32]
+[PHASE] HARD/geom ct-pair 500/2496
+HARD geom ct-pair 500/2496 created=433 last_kr=0xe00002c2 id=0 out=3176 [CT=1,IOSurfacePlaneCompressedTileWidth=8]
+[PHASE] HARD/geom ct-pair 600/2496
+HARD geom ct-pair 600/2496 created=436 last_kr=0xe00002c2 id=0 out=3176 [CT=5,IOSurfacePlaneCompressedTileWidth=2]
+[PHASE] HARD/geom ct-pair 700/2496
+HARD geom ct-pair 700/2496 created=467 last_kr=0xe00002c2 id=0 out=3176 [CT=2,IOSurfacePlaneCompressedTileHeight=2147483648]
+[PHASE] HARD/geom ct-pair 800/2496
+HARD geom ct-pair 800/2496 created=498 last_kr=0x0 id=328 out=3176 [CT=0,IOSurfacePlaneBytesPerCompressedTileHeader=4096]
+[PHASE] HARD/geom ct-pair 900/2496
+HARD geom ct-pair 900/2496 created=512 last_kr=0xe00002c2 id=0 out=3176 [CT=4,IOSurfacePlaneBytesPerCompressedTileHeader=256]
+[PHASE] HARD/geom ct-pair 1000/2496
+HARD geom ct-pair 1000/2496 created=539 last_kr=0xe00002c2 id=0 out=3176 [CT=2,IOSurfacePlaneBytesPerTileData=64]
+[PHASE] HARD/geom ct-pair 1100/2496
+HARD geom ct-pair 1100/2496 created=553 last_kr=0x0 id=308 out=3176 [CT=0,IOSurfacePlaneWidthInCompressedTiles=16]
+[PHASE] HARD/geom ct-pair 1200/2496
+HARD geom ct-pair 1200/2496 created=573 last_kr=0xe00002c2 id=0 out=3176 [CT=4,IOSurfacePlaneWidthInCompressedTiles=4]
+[PHASE] HARD/geom ct-pair 1300/2496
+HARD geom ct-pair 1300/2496 created=599 last_kr=0xe00002c2 id=0 out=3176 [CT=2,IOSurfacePlaneHeightInCompressedTiles=0]
+[PHASE] HARD/geom ct-pair 1400/2496
+HARD geom ct-pair 1400/2496 created=602 last_kr=0xe00002c2 id=0 out=3176 [CT=5,IOSurfacePlaneHeightInCompressedTiles=65536]
+[PHASE] HARD/geom ct-pair 1500/2496
+HARD geom ct-pair 1500/2496 created=628 last_kr=0xe00002c2 id=0 out=3176 [CT=3,IOSurfacePlaneBytesPerRowOfTileData=512]
+[PHASE] HARD/geom ct-pair 1600/2496
+HARD geom ct-pair 1600/2496 created=654 last_kr=0xe00002c2 id=0 out=3176 [CT=1,IOSurfacePlaneCompressedTileHeaderRegionOffset=128]
+[PHASE] HARD/geom ct-pair 1700/2496
+HARD geom ct-pair 1700/2496 created=654 last_kr=0xe00002c2 id=0 out=3176 [CT=5,IOSurfacePlaneCompressedTileHeaderRegionOffset=32]
+[PHASE] HARD/geom ct-pair 1800/2496
+HARD geom ct-pair 1800/2496 created=682 last_kr=0xe00002c2 id=0 out=3176 [CT=3,IOSurfacePlaneCompressedTileDataRegionOffset=8]
+[PHASE] HARD/geom ct-pair 1900/2496
+HARD geom ct-pair 1900/2496 created=709 last_kr=0xe00002c2 id=0 out=3176 [CT=1,IOSurfacePlaneHTPCPredictionSelector=2]
+[PHASE] HARD/geom ct-pair 2000/2496
+HARD geom ct-pair 2000/2496 created=786 last_kr=0x0 id=380 out=3176 [CT=4,IOSurfacePlaneHTPCPredictionSelector=2147483648]
+[PHASE] HARD/geom ct-pair 2100/2496
+HARD geom ct-pair 2100/2496 created=834 last_kr=0x0 id=433 out=3176 [CT=2,IOSurfacePlaneHTPCVerticalHeaderGroupingMode=4096]
+[PHASE] HARD/geom ct-pair 2200/2496
+HARD geom ct-pair 2200/2496 created=908 last_kr=0x0 id=271 out=3176 [CT=0,IOSurfaceBitsPerBlock=256]
+[PHASE] HARD/geom ct-pair 2300/2496
+HARD geom ct-pair 2300/2496 created=970 last_kr=0x0 id=386 out=3176 [CT=4,IOSurfaceBitsPerBlock=64]
+[PHASE] HARD/geom ct-pair 2400/2496
+HARD geom ct-pair 2400/2496 created=982 last_kr=0xe00002c2 id=0 out=3176 [CT=2,IOSurfaceAllocSize=16]

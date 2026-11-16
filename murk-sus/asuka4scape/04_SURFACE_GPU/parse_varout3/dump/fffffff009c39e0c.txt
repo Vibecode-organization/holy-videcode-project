@@ -1,0 +1,87 @@
+func 0xfffffff009c39e0c kext com.apple.iokit.IOSurface writes ['0xfffffff009c39ea0']
+  table 0xfffffff008068b90 stride 0x28 idx 49/120 kext com.apple.iokit.IOSurface f=[1, 0, 0, 4294967295]
+
+fffffff009c39e0c  bti      c
+fffffff009c39e10  pacibsp  
+fffffff009c39e14  stp      x22, x21, [sp, #-0x30]!
+fffffff009c39e18  stp      x20, x19, [sp, #0x10]
+fffffff009c39e1c  stp      x29, x30, [sp, #0x20]
+fffffff009c39e20  add      x29, sp, #0x20
+fffffff009c39e24  mov      w19, #0x2bd
+fffffff009c39e28  movk     w19, #0xe000, lsl #16
+fffffff009c39e2c  ldr      x8, [x2, #0x78]
+fffffff009c39e30  cbz      x8, #0xfffffff009c39e94
+fffffff009c39e34  mov      x20, x2
+fffffff009c39e38  mov      x22, x0
+fffffff009c39e3c  mov      w0, #0x100000
+fffffff009c39e40  mov      x1, #0
+fffffff009c39e44  mov      x2, #0
+fffffff009c39e48  bl       #0xfffffff009c497d4
+fffffff009c39e4c  cbz      x0, #0xfffffff009c39ea4
+fffffff009c39e50  mov      x21, x0
+fffffff009c39e54  ldr      x8, [x20, #0x20]
+fffffff009c39e58  ldr      w1, [x8]
+fffffff009c39e5c  mov      x0, x22
+fffffff009c39e60  mov      x2, x21
+fffffff009c39e64  bl       #0xfffffff009c3eb68
+fffffff009c39e68  mov      x19, x0
+fffffff009c39e6c  cbz      w0, #0xfffffff009c39e9c
+fffffff009c39e70  ldr      x16, [x21]
+fffffff009c39e74  mov      x17, x21
+fffffff009c39e78  movk     x17, #0xcda1, lsl #48
+fffffff009c39e7c  autda    x16, x17
+fffffff009c39e80  ldr      x8, [x16, #0x28]!
+fffffff009c39e84  mov      x0, x21
+fffffff009c39e88  movk     x16, #0x3a87, lsl #48
+fffffff009c39e8c  blraa    x8, x16
+fffffff009c39e90  b        #0xfffffff009c39ea4
+fffffff009c39e94  add      w19, w19, #5
+fffffff009c39e98  b        #0xfffffff009c39ea4
+fffffff009c39e9c  ldr      x8, [x20, #0x78]
+fffffff009c39ea0  str      x21, [x8] <<<
+fffffff009c39ea4  mov      x0, x19
+fffffff009c39ea8  ldp      x29, x30, [sp, #0x20]
+fffffff009c39eac  ldp      x20, x19, [sp, #0x10]
+fffffff009c39eb0  ldp      x22, x21, [sp], #0x30
+fffffff009c39eb4  retab    
+fffffff009c39eb8  bti      c
+fffffff009c39ebc  ldr      x8, [x2, #0x40]
+fffffff009c39ec0  cbz      x8, #0xfffffff009c39ed0
+fffffff009c39ec4  mov      w0, #0x2c2
+fffffff009c39ec8  movk     w0, #0xe000, lsl #16
+fffffff009c39ecc  ret      
+fffffff009c39ed0  ldr      x8, [x2, #0x20]
+fffffff009c39ed4  ldr      w1, [x8]
+fffffff009c39ed8  ldr      x8, [x8, #8]
+fffffff009c39edc  ldr      w3, [x2, #0x38]
+fffffff009c39ee0  ldr      x4, [x2, #0x30]
+fffffff009c39ee4  mov      x2, x8
+fffffff009c39ee8  b        #0xfffffff009c40588
+fffffff009c39eec  bti      c
+fffffff009c39ef0  ldr      x8, [x2, #0x68]
+fffffff009c39ef4  cbz      x8, #0xfffffff009c39f04
+fffffff009c39ef8  mov      w0, #0x2c2
+fffffff009c39efc  movk     w0, #0xe000, lsl #16
+fffffff009c39f00  ret      
+fffffff009c39f04  mov      x6, x2
+fffffff009c39f08  ldr      w3, [x6, #0x60]!
+fffffff009c39f0c  ldur     x8, [x6, #-0x40]
+fffffff009c39f10  ldr      w1, [x8]
+fffffff009c39f14  ldr      x2, [x8, #8]
+fffffff009c39f18  ldur     x4, [x6, #-0x18]
+fffffff009c39f1c  ldur     x7, [x6, #-8]
+fffffff009c39f20  add      x5, x4, #8
+fffffff009c39f24  b        #0xfffffff009c4060c
+fffffff009c39f28  bti      c
+fffffff009c39f2c  ldr      x8, [x2, #0x68]
+fffffff009c39f30  cbz      x8, #0xfffffff009c39f40
+fffffff009c39f34  mov      w0, #0x2c2
+fffffff009c39f38  movk     w0, #0xe000, lsl #16
+fffffff009c39f3c  ret      
+fffffff009c39f40  ldr      x8, [x2, #0x20]
+fffffff009c39f44  ldr      w1, [x8]
+fffffff009c39f48  b        #0xfffffff009c40728
+fffffff009c39f4c  bti      c
+fffffff009c39f50  ldr      x8, [x2, #0x20]
+fffffff009c39f54  ldr      w1, [x8]
+fffffff009c39f58  b        #0xfffffff009c3b240

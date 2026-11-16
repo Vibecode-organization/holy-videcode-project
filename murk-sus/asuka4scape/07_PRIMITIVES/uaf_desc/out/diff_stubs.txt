@@ -1,0 +1,124 @@
+
+=== sel9: 27.2 0xfffffff009c38b2c (0x118) vs 27.0 0xfffffff009bfcb84 (0x118)  insns 70/70  diffs=3
+  [ 13] 27.2: cbz       x0,#-0xff63c742c
+        27.0: cbz       x0,#-0xff64033d4
+  [ 22] 27.2: cbz       x0,#-0xff63c73d8
+        27.0: cbz       x0,#-0xff6403380
+  [ 53] 27.2: cbz       x21,#-0xff63c73d4
+        27.0: cbz       x21,#-0xff640337c
+
+=== sel10: 27.2 0xfffffff009c38c44 (0x328) vs 27.0 0xfffffff009bfcc9c (0x328)  insns 202/202  diffs=13
+  [ 13] 27.2: ldr       x8,[x8+0xa40]
+        27.0: ldr       x8,[x8+0x3e0]
+  [ 24] 27.2: cbz       x0,#-0xff63c72e4
+        27.0: cbz       x0,#-0xff640328c
+  [ 34] 27.2: cbz       x0,#-0xff63c7214
+        27.0: cbz       x0,#-0xff64031bc
+  [ 56] 27.2: cbz       x0,#-0xff63c7284
+        27.0: cbz       x0,#-0xff640322c
+  [ 65] 27.2: cbz       x0,#-0xff63c7214
+        27.0: cbz       x0,#-0xff64031bc
+  [ 85] 27.2: cbz       x26,#-0xff63c7214
+        27.0: cbz       x26,#-0xff64031bc
+  [ 95] 27.2: cbnz      x21,#-0xff63c720c
+        27.0: cbnz      x21,#-0xff64031b4
+  [105] 27.2: cbnz      x26,#-0xff63c7264
+        27.0: cbnz      x26,#-0xff640320c
+  [107] 27.2: cbz       x21,#-0xff63c71ec
+        27.0: cbz       x21,#-0xff6403194
+  [118] 27.2: ldr       x9,[x9+0xa40]
+        27.0: ldr       x9,[x9+0x3e0]
+  [145] 27.2: cbz       x0,#-0xff63c7104
+        27.0: cbz       x0,#-0xff64030ac
+  [154] 27.2: cbz       x0,#-0xff63c70b0
+        27.0: cbz       x0,#-0xff6403058
+  [185] 27.2: cbz       x21,#-0xff63c70ac
+        27.0: cbz       x21,#-0xff6403054
+
+=== sel11: 27.2 0xfffffff009c38e54 (0x118) vs 27.0 0xfffffff009bfceac (0x118)  insns 70/70  diffs=3
+  [ 13] 27.2: cbz       x0,#-0xff63c7104
+        27.0: cbz       x0,#-0xff64030ac
+  [ 22] 27.2: cbz       x0,#-0xff63c70b0
+        27.0: cbz       x0,#-0xff6403058
+  [ 53] 27.2: cbz       x21,#-0xff63c70ac
+        27.0: cbz       x21,#-0xff6403054
+
+=== sel24: 27.2 0xfffffff009c392c0 (0x110) vs 27.0 0xfffffff009bfd318 (0x110)  insns 68/68  diffs=3
+  [ 12] 27.2: cbz       x0,#-0xff63c6c9c
+        27.0: cbz       x0,#-0xff6402c44
+  [ 21] 27.2: cbz       x0,#-0xff63c6c4c
+        27.0: cbz       x0,#-0xff6402bf4
+  [ 51] 27.2: cbz       x20,#-0xff63c6c48
+        27.0: cbz       x20,#-0xff6402bf0
+
+=== sel26: 27.2 0xfffffff009c39448 (0x300) vs 27.0 0xfffffff009bfd4a0 (0x300)  insns 192/192  diffs=14
+  [ 13] 27.2: ldr       x8,[x8+0xa40]
+        27.0: ldr       x8,[x8+0x3e0]
+  [ 24] 27.2: cbz       x0,#-0xff63c6ae0
+        27.0: cbz       x0,#-0xff6402a88
+  [ 34] 27.2: cbz       x0,#-0xff63c6a14
+        27.0: cbz       x0,#-0xff64029bc
+  [ 56] 27.2: cbz       x0,#-0xff63c6a80
+        27.0: cbz       x0,#-0xff6402a28
+  [ 65] 27.2: cbz       x0,#-0xff63c6a14
+        27.0: cbz       x0,#-0xff64029bc
+  [ 84] 27.2: cbz       x26,#-0xff63c6a14
+        27.0: cbz       x26,#-0xff64029bc
+  [ 94] 27.2: cbnz      x21,#-0xff63c6a0c
+        27.0: cbnz      x21,#-0xff64029b4
+  [104] 27.2: cbnz      x26,#-0xff63c6a64
+        27.0: cbnz      x26,#-0xff6402a0c
+  [106] 27.2: cbz       x21,#-0xff63c69ec
+        27.0: cbz       x21,#-0xff6402994
+  [117] 27.2: ldr       x9,[x9+0xa40]
+        27.0: ldr       x9,[x9+0x3e0]
+  [154] 27.2: tbz       w8,#0x0,#-0xff63c68e4
+        27.0: tbz       w8,#0x0,#-0xff640288c
+  [157] 27.2: cbz       x8,#-0xff63c68dc
+        27.0: cbz       x8,#-0xff6402884
+  [163] 27.2: cbz       x0,#-0xff63c68cc
+        27.0: cbz       x0,#-0xff6402874
+  [171] 27.2: cbz       w0,#-0xff63c68d4
+        27.0: cbz       w0,#-0xff640287c
+
+=== sel46: 27.2 0xfffffff009c39a78 (0x27c) vs 27.0 0xfffffff009bfdad0 (0x27c)  insns 159/159  diffs=8
+  [ 11] 27.2: ldr       x8,[x8+0xa40]
+        27.0: ldr       x8,[x8+0x3e0]
+  [ 21] 27.2: cbz       x0,#-0xff63c64c0
+        27.0: cbz       x0,#-0xff6402468
+  [ 30] 27.2: cbz       x0,#-0xff63c6460
+        27.0: cbz       x0,#-0xff6402408
+  [ 64] 27.2: cbz       x22,#-0xff63c645c
+        27.0: cbz       x22,#-0xff6402404
+  [ 77] 27.2: ldr       x9,[x9+0xa40]
+        27.0: ldr       x9,[x9+0x3e0]
+  [101] 27.2: cbz       x0,#-0xff63c6380
+        27.0: cbz       x0,#-0xff6402328
+  [110] 27.2: cbz       x0,#-0xff63c6328
+        27.0: cbz       x0,#-0xff64022d0
+  [142] 27.2: cbz       x20,#-0xff63c6324
+        27.0: cbz       x20,#-0xff64022cc
+
+=== sel47: 27.2 0xfffffff009c39bdc (0x118) vs 27.0 0xfffffff009bfdc34 (0x118)  insns 70/70  diffs=3
+  [ 12] 27.2: cbz       x0,#-0xff63c6380
+        27.0: cbz       x0,#-0xff6402328
+  [ 21] 27.2: cbz       x0,#-0xff63c6328
+        27.0: cbz       x0,#-0xff64022d0
+  [ 53] 27.2: cbz       x20,#-0xff63c6324
+        27.0: cbz       x20,#-0xff64022cc
+
+=== sel48: 27.2 0xfffffff009c39cf4 (0x118) vs 27.0 0xfffffff009bfdd4c (0x118)  insns 70/70  diffs=3
+  [ 12] 27.2: cbz       x0,#-0xff63c6268
+        27.0: cbz       x0,#-0xff6402210
+  [ 21] 27.2: cbz       x0,#-0xff63c6210
+        27.0: cbz       x0,#-0xff64021b8
+  [ 53] 27.2: cbz       x20,#-0xff63c620c
+        27.0: cbz       x20,#-0xff64021b4
+
+=== sel54: 27.2 0xfffffff009c39f5c (0x110) vs 27.0 0xfffffff009bfdfb4 (0x110)  insns 68/68  diffs=3
+  [ 12] 27.2: cbz       x0,#-0xff63c6000
+        27.0: cbz       x0,#-0xff6401fa8
+  [ 21] 27.2: cbz       x0,#-0xff63c5fb0
+        27.0: cbz       x0,#-0xff6401f58
+  [ 51] 27.2: cbz       x20,#-0xff63c5fac
+        27.0: cbz       x20,#-0xff6401f54

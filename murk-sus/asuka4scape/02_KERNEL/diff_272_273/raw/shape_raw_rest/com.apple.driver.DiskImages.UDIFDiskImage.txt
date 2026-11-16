@@ -1,0 +1,9 @@
+funcs 190 190
+identical 188 ratio 0.98947
+changed regions 2
+== replace A[20:21] B[20:21]
+   A 0xfffffff0099c0950 sz=784
+   B 0xfffffff009a88650 sz=800
+== replace A[147:148] B[147:148]
+   A 0xfffffff0099c3f0c sz=1396
+   B 0xfffffff009a8bc1c sz=1444

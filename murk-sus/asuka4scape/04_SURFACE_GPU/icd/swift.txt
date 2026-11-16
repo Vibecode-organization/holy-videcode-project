@@ -1,0 +1,75 @@
+struct __C.IXAppReplacementErrorCode {
+    let rawValue: _$sSi
+}
+
+struct __C.IXCoordinatorErrorCode {
+    let rawValue: _$sSi
+}
+
+struct __C.IXSUninstallDisposition {
+    var rawValue: _$sSu
+}
+
+class installcoordinationd.IXSDataReplacementExtensionSession: _$sSo8NSObjectC {
+  /* fields */
+    let extensionBundleID: _$sSS
+    let process: _$s19ExtensionFoundation03AppA7ProcessVMn
+    let connection: _$sSo15NSXPCConnectionC
+  /* methods */
+    // <stripped> static func init __ptrauth(2a87)
+}
+
+protocol installcoordinationd.IXErrorCode {
+  /* signature requirements */
+    A: _$sSYMp // key_arg: true, extra_arg: false, kind: protocol
+    RawValueSYQz: _$sSi // key_arg: false, extra_arg: false, kind: same-type
+  /* requirements */
+    // <stripped> base protocol
+    // <stripped> static func getter __ptrauth(97ab) (func_impl)
+}
+
+protocol conformance __C.IXAppReplacementErrorCode : _$sSYMp {
+  /* resilient witnesses */
+    _$s8RawValueSYTl
+    _$sSY8rawValuexSg03RawB0Qz_tcfCTq
+    _$sSY8rawValue03RawB0QzvgTq
+}
+
+protocol conformance __C.IXCoordinatorErrorCode : _$sSYMp {
+  /* resilient witnesses */
+    _$s8RawValueSYTl
+    _$sSY8rawValuexSg03RawB0Qz_tcfCTq
+    _$sSY8rawValue03RawB0QzvgTq
+}
+
+protocol conformance __C.IXSUninstallDisposition : _$sSYMp {
+  /* resilient witnesses */
+    _$s8RawValueSYTl
+    _$sSY8rawValuexSg03RawB0Qz_tcfCTq
+    _$sSY8rawValue03RawB0QzvgTq
+}
+
+protocol conformance __C.IXSUninstallDisposition : _$sSQMp {
+  /* resilient witnesses */
+    _$sSQ2eeoiySbx_xtFZTq
+}
+
+protocol conformance __C.IXCoordinatorErrorCode : installcoordinationd.IXErrorCode {
+}
+
+protocol conformance __C.IXAppReplacementErrorCode : installcoordinationd.IXErrorCode {
+}
+
+extension __C.IXAppReplacementErrorCode: _$sSY {
+    typealias RawValue = _$sSi
+}
+
+extension __C.IXCoordinatorErrorCode: _$sSY {
+    typealias RawValue = _$sSi
+}
+
+extension __C.IXSUninstallDisposition: _$sSY {
+    typealias RawValue = _$sSu
+}
+
+

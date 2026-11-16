@@ -1,0 +1,291 @@
+{
+ "0xfffffff00932c994": {
+  "kext": "com.apple.driver.AppleT8110CLPC",
+  "writes": [
+   "0xfffffff00932c9ec"
+  ],
+  "tabs": [
+   [
+    18446744005123349832,
+    24,
+    6,
+    11,
+    [
+     0,
+     0,
+     0,
+     4294967295
+    ]
+   ]
+  ],
+  "flags": [],
+  "ents": {}
+ },
+ "0xfffffff00932ca04": {
+  "kext": "com.apple.driver.AppleT8110CLPC",
+  "writes": [
+   "0xfffffff00932ca5c"
+  ],
+  "tabs": [
+   [
+    18446744005123349832,
+    24,
+    7,
+    11,
+    [
+     0,
+     0,
+     0,
+     4294967295
+    ]
+   ]
+  ],
+  "flags": [],
+  "ents": {}
+ },
+ "0xfffffff0097b6cf0": {
+  "kext": "com.apple.iokit.IOAVFamily",
+  "writes": [
+   "0xfffffff0097b6d54"
+  ],
+  "tabs": [
+   [
+    18446744005123853728,
+    24,
+    26,
+    33,
+    [
+     0,
+     0,
+     0,
+     4294967295
+    ]
+   ]
+  ],
+  "flags": [],
+  "ents": {}
+ },
+ "0xfffffff0097b7154": {
+  "kext": "com.apple.iokit.IOAVFamily",
+  "writes": [
+   "0xfffffff0097b71b8"
+  ],
+  "tabs": [
+   [
+    18446744005123853728,
+    24,
+    31,
+    33,
+    [
+     0,
+     0,
+     0,
+     4294967295
+    ]
+   ]
+  ],
+  "flags": [],
+  "ents": {}
+ },
+ "0xfffffff009994f34": {
+  "kext": "com.apple.iokit.IOGameControllerFamily",
+  "writes": [
+   "0xfffffff009995370"
+  ],
+  "tabs": [
+   [
+    18446744005124239256,
+    40,
+    5,
+    6,
+    [
+     1,
+     4294967295,
+     0,
+     4294967295
+    ]
+   ]
+  ],
+  "flags": [],
+  "ents": {}
+ },
+ "0xfffffff009a459b0": {
+  "kext": "com.apple.iokit.IOHIDFamily",
+  "writes": [
+   "0xfffffff009a45a6c"
+  ],
+  "tabs": [
+   [
+    18446744005124366424,
+    40,
+    4,
+    5,
+    [
+     0,
+     4294967295,
+     0,
+     4294967295
+    ]
+   ]
+  ],
+  "flags": [],
+  "ents": {}
+ },
+ "0xfffffff009c3968c": {
+  "kext": "com.apple.iokit.IOSurface",
+  "writes": [
+   "0xfffffff009c39730"
+  ],
+  "tabs": [
+   [
+    18446744005124721552,
+    40,
+    30,
+    120,
+    [
+     1,
+     0,
+     0,
+     4294967295
+    ]
+   ]
+  ],
+  "flags": [
+   {
+    "va": "0xfffffff009c396ac",
+    "off": "0x122"
+   }
+  ],
+  "ents": {}
+ },
+ "0xfffffff009c39e0c": {
+  "kext": "com.apple.iokit.IOSurface",
+  "writes": [
+   "0xfffffff009c39ea0"
+  ],
+  "tabs": [
+   [
+    18446744005124721552,
+    40,
+    49,
+    120,
+    [
+     1,
+     0,
+     0,
+     4294967295
+    ]
+   ]
+  ],
+  "flags": [],
+  "ents": {}
+ },
+ "0xfffffff009d241cc": {
+  "kext": "com.apple.iokit.IOUSBHostFamily",
+  "writes": [
+   "0xfffffff009d24288",
+   "0xfffffff009d24288"
+  ],
+  "tabs": [
+   [
+    18446744005124878496,
+    24,
+    4,
+    29,
+    [
+     5,
+     0,
+     1,
+     4294967295
+    ]
+   ],
+   [
+    18446744005124892600,
+    24,
+    4,
+    15,
+    [
+     5,
+     0,
+     1,
+     4294967295
+    ]
+   ]
+  ],
+  "flags": [],
+  "ents": {}
+ },
+ "0xfffffff009fff338": {
+  "kext": "com.apple.filesystems.apfs",
+  "writes": [
+   "0xfffffff009fff374",
+   "0xfffffff009fff490"
+  ],
+  "tabs": [
+   [
+    18446744005125214536,
+    24,
+    8,
+    11,
+    [
+     0,
+     0,
+     0,
+     0
+    ]
+   ]
+  ],
+  "flags": [],
+  "ents": {}
+ },
+ "0xfffffff009ffa1d4": {
+  "kext": "com.apple.filesystems.apfs",
+  "writes": [
+   "0xfffffff009ffa234",
+   "0xfffffff009ffa414"
+  ],
+  "tabs": [
+   [
+    18446744005125216048,
+    24,
+    2,
+    18,
+    [
+     0,
+     4,
+     0,
+     0
+    ]
+   ]
+  ],
+  "flags": [],
+  "ents": {}
+ },
+ "0xfffffff00999a0d0": {
+  "kext": "com.apple.iokit.IOGameControllerFamily",
+  "writes": [
+   "0xfffffff00999ac58"
+  ],
+  "tabs": [],
+  "flags": [],
+  "ents": {}
+ },
+ "0xfffffff00999acf0": {
+  "kext": "com.apple.iokit.IOGameControllerFamily",
+  "writes": [
+   "0xfffffff00999aea8"
+  ],
+  "tabs": [],
+  "flags": [],
+  "ents": {}
+ },
+ "0xfffffff00a9c4778": {
+  "kext": "com.apple.kernel",
+  "writes": [
+   "0xfffffff00a9c49b8"
+  ],
+  "tabs": [],
+  "flags": [],
+  "ents": {}
+ }
+}

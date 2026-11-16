@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>Label</key>
+	<string>com.apple.storekitd</string>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.distnoted.matching</key>
+		<dict>
+			<key>com.apple.LaunchServices.applicationRegistered</key>
+			<dict>
+				<key>Name</key>
+				<string>com.apple.LaunchServices.applicationRegistered</string>
+			</dict>
+			<key>com.apple.LaunchServices.applicationUnregistered</key>
+			<dict>
+				<key>Name</key>
+				<string>com.apple.LaunchServices.applicationUnregistered</string>
+			</dict>
+			<key>com.apple.storekit.accountchangednotification</key>
+			<dict>
+				<key>Name</key>
+				<string>com.apple.storekit.accountchangednotification</string>
+			</dict>
+		</dict>
+		<key>com.apple.distnoted.matching.trusted</key>
+		<dict>
+			<key>ApplicationRegistered</key>
+			<dict>
+				<key>Name</key>
+				<string>com.apple.LaunchServices.applicationRegistered</string>
+			</dict>
+			<key>ApplicationUnregistered</key>
+			<dict>
+				<key>Name</key>
+				<string>com.apple.LaunchServices.applicationUnregistered</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>Program</key>
+	<string>/System/Library/Frameworks/StoreKit.framework/Support/storekitd</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.aps.storekitservice</key>
+		<true/>
+		<key>com.apple.storekitd</key>
+		<true/>
+		<key>com.apple.storekit.configuration.xpc</key>
+		<true/>
+	</dict>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/System/Library/Frameworks/StoreKit.framework/Support/storekitd</string>
+	</array>
+	<key>UserName</key>
+	<string>mobile</string>
+	<key>POSIXSpawnType</key>
+	<string>Adaptive</string>
+</dict>
+</plist>

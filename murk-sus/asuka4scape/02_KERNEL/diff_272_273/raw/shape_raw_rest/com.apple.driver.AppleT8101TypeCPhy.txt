@@ -1,0 +1,3 @@
+funcs 61 61
+identical 61 ratio 1.0
+changed regions 0

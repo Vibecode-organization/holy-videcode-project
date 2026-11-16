@@ -1,0 +1,89 @@
+openjdk version "27" 2026-09-15
+OpenJDK Runtime Environment (build 27)
+OpenJDK 64-Bit Server VM (build 27, mixed mode)
+INFO  Using log config file: jar:file:/home/femboychik/ghidra/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/application.log (LoggingInitialization)  
+INFO  Loading user preferences: /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/preferences (Preferences)  
+INFO  Loading previous preferences: /home/femboychik/.config/ghidra/ghidra_11.4.2_PUBLIC/preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (1518 ms) (ClassSearcher)  
+WARNING: Final field name in class ghidra.util.charset.CharsetInfo has been mutated reflectively by class com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$2 in unnamed module @2c35e847 (file:/home/femboychik/ghidra/Ghidra/Framework/Generic/lib/gson-2.13.2.jar)
+WARNING: Use --enable-final-field-mutation=ALL-UNNAMED to avoid a warning
+WARNING: Mutating final fields will be blocked in a future release unless final field mutation is enabled
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (10867 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 59 extension points (21 false positives) (ClassSearcher)  
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::staticFieldOffset has been called by org.apache.felix.framework.util.SecureAction (file:/home/femboychik/ghidra/Ghidra/Features/Base/lib/org.apache.felix.framework-7.0.5.jar)
+WARNING: Please consider reporting this to the maintainers of class org.apache.felix.framework.util.SecureAction
+WARNING: sun.misc.Unsafe::staticFieldOffset will be removed in a future release
+INFO  HEADLESS Script Paths:
+    /home/femboychik/ghidra/Ghidra/Features/PyGhidra/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/FileFormats/ghidra_scripts
+    /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/Extensions/Jython/ghidra_scripts
+    /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/Extensions/MachineLearning/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/Base/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /home/femboychik/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/BytePatterns/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/VersionTracking/ghidra_scripts
+    /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/Extensions/SleighDevTools/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/PDB/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Processors/Atmel/ghidra_scripts
+    /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/Extensions/Lisa/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Processors/DATA/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Debug/Debugger/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Processors/8051/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Processors/JVM/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/FunctionID/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Processors/PIC/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/Decompiler/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/SwiftDemangler/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/BSim/ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: /home/femboychik/Загрузки/AyuGram Desktop/Архив/123 (HeadlessAnalyzer)  
+INFO  Opening project: /home/femboychik/Загрузки/AyuGram Desktop/Архив/123 (HeadlessProject)  
+INFO  REPORT: Processing read-only project file: /kernelcache.release.iphone14b.decompressed (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: Probe.java  (HeadlessAnalyzer)  
+INFO  SCRIPT: /home/femboychik/ghidra_scripts/Probe.java (HeadlessAnalyzer)  
+INFO  Probe.java> PROBE kernelcache.release.iphone14b.decompressed blocks=3904 initialized=3904 bytes=67239936 (GhidraScript)  
+INFO  Probe.java> BLK __TEXT fffffff007004000 size=0x8000 head=cffaedfe0c000001020000c00c00000007010000784900000000000000000000 (GhidraScript)  
+INFO  Probe.java> BLK __TEXT fffffff00700c000 size=0x1760 head=cffaedfe0c000001020000c0020000001b000000901500000100208000000000 (GhidraScript)  
+INFO  Probe.java> BLK __const fffffff00700d760 size=0x362d0 head=00340838100c1c14042430182c28203c080c1c14043c102418302c203438280c (GhidraScript)  
+INFO  Probe.java> BLK __copyio_vectors fffffff007043a30 size=0xf0 head=c0cf18030000000098d0180300000000a4cf180300000000c8d0180300000000 (GhidraScript)  
+INFO  Probe.java> BLK __cstring fffffff007043b20 size=0x7cb0f head=4b65726e656c20737461636b206d656d6f727920636f7272757074696f6e2064 (GhidraScript)  
+INFO  Probe.java> BLK __os_log fffffff0070c062f size=0x41de9 head=737461636b73686f743a20696e697469616c20616c6c6f636174696f6e206661 (GhidraScript)  
+INFO  Probe.java> BLK __eh_frame fffffff007102418 size=0x7e0 head=1400000000000000017a52530001781e01100c1f000000002c0000001c000000 (GhidraScript)  
+INFO  Probe.java> BLK __TEXT fffffff007102bf8 size=0x1408 head=0000000000000000000000000000000000000000000000000000000000000000 (GhidraScript)  
+INFO  Probe.java> RAW Darwin @ fffffff0070438cd : ...........@(#)VERSION: Darwin Kernel Version 27.2.0: Tue Oct 13 21:26:30 PDT 2026; root:xnu-13432.42.3~28/RELEASE_ARM64 (GhidraScript)  
+INFO  Probe.java> RAW Darwin @ fffffff007043934 : ~28/RELEASE_ARM64_T8110.Darwin Kernel Version 27.2.0: Tue Oct 13 21:26:30 PDT 2026; root:xnu-13432.42.3~28/RELEASE_ARM64 (GhidraScript)  
+INFO  Probe.java> RAW Darwin @ fffffff0070439c6 : ..0.release.root.27.2.0.Darwin.......................................................................................... (GhidraScript)  
+INFO  Probe.java> RAW Darwin @ fffffff007511549 : rse uuid string: %s: %d.Darwin Kernel [arm64]./chosen./defaults./product./chosen/manifest-properties./chosen/asmb.%s.%s. (GhidraScript)  
+INFO  Probe.java> RAW Darwin @ fffffff007513e84 : d type = 0x%llx: %d.374.Darwin Image4 Extension Version 7.0.0: Tue Oct 13 20:57:13 PDT 2026; root:AppleImage4-374~16518/ (GhidraScript)  
+INFO  Probe.java> NEEDLE Darwin hits=20 (GhidraScript)  
+INFO  Probe.java> RAW SPTM @ fffffff0070042b7 : .............H...__DATA_SPTM.........................................................H...__TEXT_EXEC..............@..... (GhidraScript)  
+INFO  Probe.java> RAW SPTM @ fffffff00700c4cf : .................__DATA_SPTM......@..............................................__const.........__DATA_SPTM......@..... (GhidraScript)  
+INFO  Probe.java> RAW SPTM @ fffffff00700c51f : .__const.........__DATA_SPTM......@..................................................8...__TEXT_EXEC.................... (GhidraScript)  
+INFO  Probe.java> RAW SPTM @ fffffff007045844 : ebug Header kernelcache.SPTM version: %.256s..SPTM load address: %p..SPTM.KernelCache slide: 0x%016lx..KernelCache base: (GhidraScript)  
+INFO  Probe.java> RAW SPTM @ fffffff00704585a : e.SPTM version: %.256s..SPTM load address: %p..SPTM.KernelCache slide: 0x%016lx..KernelCache base:  %p..Kernel slide:    (GhidraScript)  
+INFO  Probe.java> NEEDLE SPTM hits=23 (GhidraScript)  
+INFO  Probe.java> RAW XNU @ fffffff007056aba : MB leaves no memory for XNU/SPTM to manage: the iBoot carveouts alone are %llu MB @%s:%d.arm_init_sptm.c.maxmem.hw.memsi (GhidraScript)  
+INFO  Probe.java> RAW XNU @ fffffff007056b5e : _MEMORY in SPTM (%#llx)/XNU (%#llx) @%s:%d.Mismatch of ARM_LARGE_MEMORY_KERNONLY in SPTM (%#llx)/XNU (%#llx) @%s:%d.%s:  (GhidraScript)  
+INFO  Probe.java> RAW XNU @ fffffff007056ba7 : ERNONLY in SPTM (%#llx)/XNU (%#llx) @%s:%d.%s: Unable to find 'chosen' DT node @%s:%d.arm_init.dram-base.%s: Unable to f (GhidraScript)  
+INFO  Probe.java> RAW XNU @ fffffff007056d17 : elopment SPTM / Release XNU is not a supported configuration. @%s:%d.The cpumask=N boot arg cannot be used together with (GhidraScript)  
+INFO  Probe.java> RAW XNU @ fffffff007058586 : %llx bytes it handed to XNU @%s:%d.Invalidate HMAC function already set @%s:%d.machine_routines.c.slto_us.tlto_us.mtxspi (GhidraScript)  
+INFO  Probe.java> NEEDLE XNU hits=25 (GhidraScript)  
+INFO  Probe.java> RAW Apple @ fffffff007004779 : .......com.apple.driver.AppleA7IOP-ASCWrap-v4..5...@................... .......com.apple.driver.AppleA7IOP.....5...H.... (GhidraScript)  
+INFO  Probe.java> RAW Apple @ fffffff0070047c1 : .......com.apple.driver.AppleA7IOP.....5...H................... .......com.apple.driver.AppleALSColorSensor....5...@.... (GhidraScript)  
+INFO  Probe.java> RAW Apple @ fffffff007004801 : .......com.apple.driver.AppleALSColorSensor....5...@....4.............. .......com.apple.driver.AppleAOPAudio..5...H.... (GhidraScript)  
+INFO  Probe.java> RAW Apple @ fffffff007004849 : .......com.apple.driver.AppleAOPAudio..5...H................... .......com.apple.driver.AppleAOPVoiceTrigger...5...H.... (GhidraScript)  
+INFO  Probe.java> RAW Apple @ fffffff007004889 : .......com.apple.driver.AppleAOPVoiceTrigger...5...H....>.............. .......com.apple.iokit.AppleARMIISAudio........5 (GhidraScript)  
+INFO  Probe.java> NEEDLE Apple hits=19861 (GhidraScript)  

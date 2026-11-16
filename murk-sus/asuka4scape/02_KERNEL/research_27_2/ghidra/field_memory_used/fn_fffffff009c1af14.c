@@ -1,0 +1,3344 @@
+// FUN_fffffff009c1af14 @ fffffff009c1af14
+
+/* WARNING: Removing unreachable block (ram,0xfffffff009c1e030) */
+/* WARNING: Removing unreachable block (ram,0xfffffff009c1c78c) */
+/* WARNING: Removing unreachable block (ram,0xfffffff009c1c600) */
+/* WARNING: Removing unreachable block (ram,0xfffffff009c1c554) */
+/* WARNING: Removing unreachable block (ram,0xfffffff009c1b188) */
+/* WARNING: Removing unreachable block (ram,0xfffffff009c1c88c) */
+/* WARNING: Removing unreachable block (ram,0xfffffff009c1c738) */
+/* WARNING: Removing unreachable block (ram,0xfffffff009c1df68) */
+/* WARNING: Removing unreachable block (ram,0xfffffff009c1e078) */
+/* WARNING: Removing unreachable block (ram,0xfffffff009c1b134) */
+
+ulong FUN_fffffff009c1af14
+                (undefined1 param_1 [16],undefined1 param_2 [16],undefined1 param_3 [16],
+                undefined1 param_4 [16],undefined4 param_5,undefined4 param_6,long param_7,
+                long *param_8)
+
+{
+  uint *puVar1;
+  long lVar2;
+  uint *puVar3;
+  undefined1 **ppuVar4;
+  undefined4 *puVar5;
+  ushort uVar6;
+  uint uVar7;
+  undefined1 auVar8 [16];
+  undefined1 auVar9 [16];
+  undefined1 auVar10 [16];
+  undefined1 auVar11 [16];
+  undefined1 auVar12 [16];
+  undefined1 auVar13 [16];
+  undefined1 auVar14 [16];
+  undefined1 auVar15 [16];
+  undefined1 auVar16 [16];
+  undefined1 auVar17 [16];
+  undefined1 auVar18 [16];
+  undefined1 auVar19 [16];
+  undefined1 auVar20 [16];
+  undefined1 auVar21 [16];
+  undefined1 auVar22 [16];
+  undefined1 auVar23 [16];
+  undefined1 auVar24 [16];
+  undefined1 auVar25 [16];
+  undefined1 auVar26 [16];
+  undefined1 auVar27 [16];
+  undefined1 auVar28 [16];
+  undefined1 auVar29 [16];
+  undefined1 auVar30 [16];
+  undefined1 auVar31 [16];
+  undefined1 auVar32 [16];
+  undefined1 auVar33 [16];
+  undefined1 auVar34 [16];
+  undefined1 auVar35 [16];
+  undefined1 auVar36 [16];
+  undefined1 auVar37 [16];
+  undefined1 auVar38 [16];
+  undefined1 auVar39 [16];
+  undefined1 auVar40 [16];
+  undefined1 auVar41 [16];
+  undefined1 auVar42 [16];
+  undefined1 auVar43 [16];
+  undefined1 auVar44 [16];
+  undefined1 auVar45 [16];
+  undefined1 auVar46 [16];
+  undefined1 auVar47 [16];
+  undefined1 auVar48 [16];
+  undefined1 auVar49 [16];
+  undefined1 auVar50 [16];
+  undefined1 auVar51 [16];
+  undefined1 auVar52 [16];
+  undefined1 auVar53 [16];
+  undefined1 auVar54 [16];
+  undefined1 auVar55 [16];
+  undefined1 auVar56 [16];
+  undefined1 auVar57 [16];
+  undefined1 auVar58 [16];
+  undefined1 auVar59 [16];
+  undefined1 auVar60 [16];
+  undefined1 auVar61 [16];
+  undefined1 auVar62 [16];
+  undefined1 auVar63 [16];
+  undefined1 auVar64 [16];
+  undefined1 auVar65 [16];
+  undefined1 auVar66 [16];
+  undefined1 auVar67 [16];
+  undefined1 auVar68 [16];
+  undefined1 auVar69 [16];
+  undefined1 auVar70 [16];
+  undefined1 auVar71 [16];
+  undefined1 auVar72 [16];
+  undefined1 auVar73 [16];
+  undefined1 auVar74 [16];
+  undefined1 auVar75 [16];
+  undefined1 auVar76 [16];
+  undefined1 auVar77 [16];
+  undefined1 auVar78 [16];
+  undefined1 auVar79 [16];
+  undefined1 auVar80 [16];
+  undefined1 auVar81 [16];
+  undefined1 auVar82 [16];
+  undefined1 auVar83 [16];
+  undefined1 auVar84 [16];
+  undefined1 auVar85 [16];
+  undefined1 auVar86 [16];
+  undefined1 auVar87 [16];
+  undefined1 auVar88 [16];
+  undefined1 auVar89 [16];
+  undefined1 auVar90 [16];
+  undefined1 auVar91 [16];
+  undefined1 auVar92 [16];
+  undefined1 auVar93 [16];
+  undefined1 auVar94 [16];
+  undefined1 auVar95 [16];
+  undefined1 auVar96 [16];
+  undefined1 auVar97 [16];
+  undefined1 auVar98 [16];
+  undefined1 auVar99 [16];
+  undefined1 auVar100 [16];
+  undefined1 auVar101 [16];
+  undefined1 auVar102 [16];
+  undefined1 auVar103 [16];
+  undefined1 auVar104 [16];
+  undefined1 auVar105 [16];
+  undefined1 auVar106 [16];
+  undefined1 auVar107 [16];
+  undefined1 auVar108 [16];
+  undefined1 auVar109 [16];
+  undefined1 auVar110 [16];
+  undefined1 auVar111 [16];
+  undefined1 auVar112 [16];
+  undefined1 auVar113 [16];
+  undefined1 auVar114 [16];
+  undefined1 auVar115 [16];
+  undefined1 auVar116 [16];
+  undefined1 auVar117 [16];
+  undefined1 auVar118 [16];
+  undefined1 auVar119 [16];
+  undefined1 auVar120 [16];
+  undefined1 auVar121 [16];
+  undefined1 auVar122 [16];
+  undefined1 auVar123 [16];
+  undefined1 auVar124 [16];
+  undefined1 auVar125 [16];
+  undefined1 auVar126 [16];
+  undefined1 auVar127 [16];
+  undefined1 auVar128 [16];
+  undefined1 auVar129 [16];
+  undefined1 auVar130 [16];
+  undefined1 auVar131 [16];
+  undefined1 auVar132 [16];
+  undefined1 auVar133 [16];
+  undefined1 auVar134 [16];
+  undefined1 auVar135 [16];
+  undefined1 auVar136 [16];
+  undefined1 auVar137 [16];
+  undefined1 auVar138 [16];
+  undefined1 auVar139 [16];
+  undefined1 auVar140 [16];
+  undefined1 auVar141 [16];
+  undefined1 auVar142 [16];
+  undefined1 auVar143 [16];
+  undefined1 auVar144 [16];
+  undefined1 auVar145 [16];
+  undefined1 auVar146 [16];
+  undefined1 auVar147 [16];
+  undefined1 auVar148 [16];
+  undefined1 auVar149 [16];
+  undefined1 auVar150 [16];
+  undefined1 auVar151 [16];
+  undefined1 auVar152 [16];
+  undefined1 auVar153 [16];
+  undefined1 auVar154 [16];
+  undefined1 auVar155 [16];
+  undefined1 auVar156 [16];
+  undefined1 auVar157 [16];
+  undefined1 auVar158 [16];
+  undefined1 auVar159 [16];
+  undefined1 auVar160 [16];
+  undefined1 auVar161 [16];
+  undefined1 auVar162 [16];
+  undefined1 auVar163 [16];
+  undefined1 auVar164 [16];
+  undefined1 auVar165 [16];
+  undefined1 auVar166 [16];
+  undefined1 auVar167 [16];
+  undefined1 auVar168 [16];
+  undefined1 auVar169 [16];
+  undefined1 auVar170 [16];
+  undefined1 auVar171 [16];
+  undefined1 auVar172 [16];
+  undefined1 auVar173 [16];
+  undefined1 auVar174 [16];
+  undefined1 auVar175 [16];
+  undefined1 auVar176 [16];
+  undefined1 auVar177 [16];
+  undefined1 auVar178 [16];
+  undefined1 auVar179 [16];
+  undefined1 auVar180 [16];
+  undefined1 auVar181 [16];
+  undefined1 auVar182 [16];
+  undefined1 auVar183 [16];
+  undefined1 auVar184 [16];
+  undefined1 auVar185 [16];
+  undefined1 auVar186 [16];
+  undefined1 auVar187 [16];
+  undefined1 auVar188 [16];
+  undefined1 auVar189 [16];
+  undefined1 auVar190 [16];
+  undefined1 auVar191 [16];
+  undefined1 auVar192 [16];
+  undefined1 auVar193 [16];
+  undefined1 auVar194 [16];
+  undefined1 auVar195 [16];
+  undefined1 auVar196 [16];
+  undefined1 auVar197 [16];
+  undefined1 auVar198 [16];
+  undefined1 auVar199 [16];
+  undefined1 auVar200 [16];
+  undefined1 auVar201 [16];
+  undefined1 auVar202 [16];
+  undefined1 auVar203 [16];
+  undefined1 auVar204 [16];
+  undefined1 auVar205 [16];
+  undefined1 auVar206 [16];
+  undefined1 auVar207 [16];
+  undefined1 auVar208 [16];
+  undefined1 auVar209 [16];
+  undefined1 auVar210 [16];
+  undefined1 auVar211 [16];
+  undefined1 auVar212 [16];
+  undefined1 auVar213 [16];
+  undefined1 auVar214 [16];
+  undefined1 auVar215 [16];
+  undefined1 auVar216 [16];
+  undefined1 auVar217 [16];
+  undefined1 auVar218 [16];
+  undefined1 auVar219 [16];
+  undefined1 auVar220 [16];
+  undefined1 auVar221 [16];
+  undefined1 auVar222 [16];
+  undefined1 auVar223 [16];
+  undefined1 auVar224 [16];
+  undefined1 auVar225 [16];
+  undefined1 auVar226 [16];
+  undefined1 auVar227 [16];
+  undefined1 auVar228 [16];
+  undefined1 auVar229 [16];
+  undefined1 auVar230 [16];
+  undefined1 auVar231 [16];
+  undefined1 auVar232 [16];
+  undefined1 auVar233 [16];
+  undefined1 auVar234 [16];
+  undefined1 auVar235 [16];
+  undefined1 auVar236 [16];
+  undefined1 auVar237 [16];
+  undefined1 auVar238 [16];
+  undefined1 auVar239 [16];
+  undefined1 auVar240 [16];
+  undefined1 auVar241 [16];
+  undefined1 auVar242 [16];
+  undefined1 auVar243 [16];
+  undefined1 auVar244 [16];
+  undefined1 auVar245 [16];
+  undefined1 auVar246 [16];
+  undefined1 auVar247 [16];
+  undefined1 auVar248 [16];
+  undefined1 auVar249 [16];
+  undefined1 auVar250 [16];
+  undefined1 auVar251 [16];
+  undefined1 auVar252 [16];
+  undefined1 auVar253 [16];
+  undefined1 auVar254 [16];
+  undefined1 auVar255 [16];
+  undefined1 auVar256 [16];
+  undefined1 auVar257 [16];
+  undefined1 auVar258 [16];
+  undefined1 auVar259 [16];
+  undefined1 auVar260 [16];
+  undefined1 auVar261 [16];
+  undefined1 auVar262 [16];
+  undefined1 auVar263 [16];
+  undefined1 auVar264 [16];
+  undefined1 auVar265 [16];
+  undefined1 auVar266 [16];
+  undefined1 auVar267 [16];
+  undefined1 auVar268 [16];
+  undefined1 auVar269 [16];
+  undefined1 auVar270 [16];
+  undefined1 auVar271 [16];
+  undefined1 auVar272 [16];
+  undefined1 auVar273 [16];
+  undefined1 auVar274 [16];
+  undefined1 auVar275 [16];
+  undefined1 auVar276 [16];
+  undefined1 auVar277 [16];
+  undefined1 auVar278 [16];
+  undefined1 auVar279 [16];
+  undefined1 auVar280 [16];
+  undefined1 auVar281 [16];
+  undefined1 auVar282 [16];
+  undefined1 auVar283 [16];
+  undefined1 auVar284 [16];
+  undefined1 auVar285 [16];
+  undefined1 auVar286 [16];
+  undefined1 auVar287 [16];
+  undefined1 auVar288 [16];
+  undefined1 auVar289 [16];
+  undefined1 auVar290 [16];
+  undefined1 auVar291 [16];
+  undefined1 auVar292 [16];
+  undefined1 auVar293 [16];
+  undefined1 auVar294 [16];
+  bool bVar295;
+  bool bVar296;
+  uint uVar297;
+  int iVar298;
+  uint uVar299;
+  ulong uVar300;
+  long *plVar301;
+  long extraout_x0;
+  ulong *puVar302;
+  long extraout_x0_00;
+  byte *extraout_x0_01;
+  undefined4 *extraout_x0_02;
+  long *plVar303;
+  ulong extraout_x0_03;
+  undefined8 *extraout_x0_04;
+  undefined8 *puVar304;
+  long *plVar305;
+  char *pcVar306;
+  uint uVar307;
+  ulong uVar308;
+  ulong uVar309;
+  undefined1 *puVar310;
+  undefined8 *puVar311;
+  ulong uVar312;
+  ulong uVar313;
+  undefined1 *puVar314;
+  long lVar315;
+  long lVar316;
+  ulong uVar317;
+  ulong uVar318;
+  byte bVar319;
+  uint uVar320;
+  byte *pbVar321;
+  byte *pbVar322;
+  undefined1 **ppuVar323;
+  byte bVar324;
+  ulong uVar325;
+  long lVar326;
+  undefined8 extraout_d0;
+  undefined8 extraout_d0_63;
+  undefined8 extraout_d0_00;
+  undefined8 extraout_d0_01;
+  undefined8 extraout_d0_02;
+  undefined8 extraout_d0_03;
+  undefined8 extraout_d0_04;
+  undefined8 extraout_d0_05;
+  undefined8 extraout_d0_06;
+  undefined8 extraout_d0_07;
+  undefined8 extraout_d0_08;
+  undefined8 extraout_d0_09;
+  undefined8 extraout_d0_10;
+  undefined8 extraout_d0_11;
+  undefined8 extraout_d0_12;
+  undefined8 extraout_d0_13;
+  undefined8 extraout_d0_14;
+  undefined8 extraout_d0_15;
+  undefined8 extraout_d0_16;
+  undefined8 extraout_d0_17;
+  undefined8 extraout_d0_18;
+  undefined8 extraout_d0_19;
+  undefined8 extraout_d0_20;
+  undefined8 extraout_d0_21;
+  undefined8 extraout_d0_22;
+  undefined8 extraout_d0_23;
+  undefined8 extraout_d0_24;
+  undefined8 extraout_d0_25;
+  undefined8 uVar327;
+  undefined8 extraout_d0_26;
+  undefined8 extraout_d0_27;
+  undefined8 extraout_d0_28;
+  undefined8 extraout_d0_29;
+  undefined8 extraout_d0_30;
+  undefined8 extraout_d0_31;
+  undefined8 extraout_d0_32;
+  undefined8 extraout_d0_33;
+  undefined8 extraout_d0_34;
+  undefined8 extraout_d0_35;
+  undefined8 extraout_d0_36;
+  undefined8 extraout_var;
+  undefined8 extraout_var_00;
+  undefined8 extraout_var_01;
+  undefined8 extraout_var_02;
+  undefined8 extraout_var_03;
+  undefined8 extraout_var_04;
+  undefined8 extraout_var_05;
+  undefined8 extraout_var_06;
+  undefined8 extraout_var_07;
+  undefined8 extraout_var_08;
+  undefined8 extraout_var_09;
+  undefined8 extraout_var_10;
+  undefined8 extraout_var_11;
+  undefined8 extraout_var_12;
+  undefined8 extraout_var_13;
+  undefined8 extraout_var_14;
+  undefined8 extraout_var_15;
+  undefined8 extraout_var_16;
+  undefined8 extraout_var_17;
+  undefined8 extraout_var_18;
+  undefined8 extraout_var_19;
+  undefined8 extraout_var_20;
+  undefined8 extraout_var_21;
+  undefined8 extraout_var_22;
+  undefined8 extraout_var_23;
+  undefined8 extraout_var_24;
+  undefined8 extraout_var_25;
+  undefined8 uVar331;
+  undefined8 extraout_var_26;
+  undefined8 extraout_var_27;
+  undefined8 extraout_var_28;
+  undefined8 extraout_var_29;
+  undefined8 extraout_var_30;
+  undefined8 extraout_var_31;
+  undefined8 extraout_var_32;
+  undefined8 extraout_var_33;
+  undefined8 extraout_var_34;
+  undefined8 extraout_var_35;
+  undefined8 extraout_var_36;
+  undefined1 auVar328 [16];
+  undefined8 extraout_d0_37;
+  undefined8 extraout_d0_38;
+  undefined8 extraout_var_37;
+  undefined8 extraout_var_38;
+  undefined1 auVar329 [16];
+  undefined8 extraout_d0_39;
+  undefined8 extraout_d0_40;
+  undefined8 extraout_d0_41;
+  undefined8 extraout_d0_42;
+  undefined8 extraout_d0_43;
+  undefined8 extraout_d0_44;
+  undefined8 extraout_d0_45;
+  undefined8 extraout_d0_46;
+  undefined8 extraout_d0_47;
+  undefined8 extraout_d0_48;
+  undefined8 extraout_d0_49;
+  undefined8 extraout_d0_50;
+  undefined8 extraout_d0_51;
+  undefined8 extraout_d0_52;
+  undefined8 extraout_d0_53;
+  undefined8 extraout_d0_54;
+  undefined8 extraout_d0_55;
+  undefined8 extraout_d0_56;
+  undefined8 extraout_d0_57;
+  undefined8 extraout_d0_58;
+  undefined8 extraout_d0_59;
+  undefined8 extraout_d0_60;
+  undefined8 extraout_d0_61;
+  undefined8 extraout_d0_62;
+  undefined8 extraout_var_39;
+  undefined8 extraout_var_40;
+  undefined8 extraout_var_41;
+  undefined8 extraout_var_42;
+  undefined8 extraout_var_43;
+  undefined8 extraout_var_44;
+  undefined8 extraout_var_45;
+  undefined8 extraout_var_46;
+  undefined8 extraout_var_47;
+  undefined8 extraout_var_48;
+  undefined8 extraout_var_49;
+  undefined8 extraout_var_50;
+  undefined8 extraout_var_51;
+  undefined8 extraout_var_52;
+  undefined8 extraout_var_53;
+  undefined8 extraout_var_54;
+  undefined8 extraout_var_55;
+  undefined8 extraout_var_56;
+  undefined8 extraout_var_57;
+  undefined8 extraout_var_58;
+  undefined8 extraout_var_59;
+  undefined8 extraout_var_60;
+  undefined8 extraout_var_61;
+  undefined8 extraout_var_62;
+  undefined1 auVar330 [16];
+  undefined8 extraout_var_63;
+  undefined4 uVar332;
+  undefined1 auVar333 [12];
+  undefined4 uVar334;
+  undefined1 auVar335 [12];
+  undefined1 auVar336 [16];
+  byte local_89;
+  ulong local_88;
+  byte local_79;
+  undefined1 *local_78;
+  long local_70;
+  
+  uVar334 = param_4._0_4_;
+  auVar335 = param_4._4_12_;
+  uVar332 = param_3._0_4_;
+  auVar333 = param_3._4_12_;
+  local_70 = *(long *)PTR_DAT_fffffff00806ca40;
+  local_78 = &DAT_aaaaaaaaaaaaaaaa;
+  local_88 = local_88 & 0xffffffffffffff00;
+  bVar295 = FUN_fffffff009c1fec4(param_8,"IOSurfaceDisableMapperFlush",(undefined1 *)&local_88);
+  if (bVar295) {
+    *(uint *)(param_7 + 0x3d0) =
+         *(uint *)(param_7 + 0x3d0) & 0xff000000 |
+         *(uint *)(param_7 + 0x3d0) & 0x7fffff | ((byte)local_88 & 1) << 0x17;
+  }
+  local_88 = local_88 & 0xffffffffffffff00;
+  bVar295 = FUN_fffffff009c1fec4(param_8,"IOSurfacePreallocPages",(undefined1 *)&local_88);
+  if (bVar295) {
+    *(uint *)(param_7 + 0x3d0) =
+         *(uint *)(param_7 + 0x3d0) & 0xfffff000 |
+         *(uint *)(param_7 + 0x3d0) & 0x7ff | ((byte)local_88 & 1) << 0xb;
+  }
+  local_88 = local_88 & 0xffffffffffffff00;
+  bVar295 = FUN_fffffff009c1fec4(param_8,"IOSurfacePrefetchPages",(undefined1 *)&local_88);
+  if (bVar295) {
+    *(uint *)(param_7 + 0x3d0) =
+         *(uint *)(param_7 + 0x3d0) & 0xffff8000 |
+         *(uint *)(param_7 + 0x3d0) & 0x3fff | ((byte)local_88 & 1) << 0xe;
+  }
+  local_88 = local_88 & 0xffffffffffffff00;
+  bVar295 = FUN_fffffff009c1fec4(param_8,"IOSurfaceHostOnly",(undefined1 *)&local_88);
+  if (bVar295) {
+    *(uint *)(param_7 + 0x3d0) =
+         *(uint *)(param_7 + 0x3d0) & 0xfe000000 |
+         *(uint *)(param_7 + 0x3d0) & 0xffffff | ((byte)local_88 & 1) << 0x18;
+  }
+  local_88 = local_88 & 0xffffffffffffff00;
+  bVar295 = FUN_fffffff009c1fec4(param_8,"MetalSharedTexture",(undefined1 *)&local_88);
+  if (bVar295) {
+    *(uint *)(param_7 + 0x3d0) =
+         *(uint *)(param_7 + 0x3d0) & 0xfc000000 |
+         *(uint *)(param_7 + 0x3d0) & 0x1ffffff | ((byte)local_88 & 1) << 0x19;
+  }
+  local_88 = local_88 & 0xffffffffffffff00;
+  bVar295 = FUN_fffffff009c1fec4(param_8,"IOSurfaceGPUGlobalRO",(undefined1 *)&local_88);
+  if (bVar295) {
+    uVar299 = *(uint *)(param_7 + 0x3d0);
+    uVar297 = uVar299 & 0xf8000000 | uVar299 & 0x3ffffff | ((byte)local_88 & 1) << 0x1a;
+    *(uint *)(param_7 + 0x3d0) = uVar297;
+    uVar299 = uVar299 & 0x4000;
+  }
+  else {
+    uVar297 = *(uint *)(param_7 + 0x3d0);
+    uVar299 = uVar297 >> 0xe & 1;
+  }
+  if (uVar299 != 0) {
+    *(uint *)(param_7 + 0x3d0) = uVar297 & 0xfffff7ff;
+  }
+  local_88 = local_88 & 0xffffffffffffff00;
+  bVar295 = FUN_fffffff009c1fec4(param_8,"IOSurfaceUseReserve",(undefined1 *)&local_88);
+  if (bVar295) {
+    *(uint *)(param_7 + 0x3d0) =
+         *(uint *)(param_7 + 0x3d0) & 0xfffc0000 |
+         *(uint *)(param_7 + 0x3d0) & 0x1ffff | ((byte)local_88 & 1) << 0x11;
+  }
+  local_79 = 0;
+  bVar295 = FUN_fffffff009c1fec4(param_8,"IOSurfaceNonPurgeable",&local_79);
+  if (bVar295) {
+    *(uint *)(param_7 + 0x3d0) =
+         *(uint *)(param_7 + 0x3d0) & 0xffff0000 |
+         *(uint *)(param_7 + 0x3d0) & 0x7fff | (~(uint)local_79 & 1) << 0xf;
+  }
+  local_88 = local_88 & 0xffffffffffffff00;
+  bVar295 = FUN_fffffff009c1fec4(param_8,"IsDisplayable",(undefined1 *)&local_88);
+  uVar297 = *(uint *)(param_7 + 0x3d0);
+  if (bVar295) {
+    uVar297 = uVar297 & 0xffe00000 | uVar297 & 0xfffff | ((byte)local_88 & 1) << 0x14;
+    *(uint *)(param_7 + 0x3d0) = uVar297;
+  }
+  plVar305 = (long *)(param_7 + 0x178);
+  *(byte *)(*(long *)(param_7 + 0x178) + 0x2d) = (byte)(uVar297 >> 0x14) & 1;
+  local_88 = local_88 & 0xffffffffffffff00;
+  bVar295 = FUN_fffffff009c1fec4(param_8,"IOSurfaceSysMemOnly",(undefined1 *)&local_88);
+  uVar297 = *(uint *)(param_7 + 0x3d0);
+  if (bVar295) {
+    uVar297 = uVar297 & 0xfff80000 | uVar297 & 0x3ffff | ((byte)local_88 & 1) << 0x12;
+    *(uint *)(param_7 + 0x3d0) = uVar297;
+  }
+  *(byte *)(*(long *)(param_7 + 0x178) + 0x2e) = (byte)(uVar297 >> 0x12) & 1;
+  auVar336._8_8_ = extraout_var;
+  auVar336._0_8_ = extraout_d0;
+  uVar300 = FUN_fffffff009c1ff50
+                      (auVar336,param_2,uVar332,uVar334,param_5,param_6,param_8,
+                       "IOSurfaceSubsampling",(undefined4 *)(param_7 + 0x3ac));
+  if ((uVar300 & 1) == 0) {
+    auVar31._8_8_ = extraout_var_00;
+    auVar31._0_8_ = extraout_d0_00;
+    thunk_FUN_fffffff00a8df19c
+              (auVar31,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+               (short *)PTR_DAT_fffffff00806ca48,0x10,
+               (byte *)"IOSurface::parse_properties() problem with kIOSurfaceSubsampling\n");
+    uVar300 = 0;
+    goto LAB_fffffff009c1b2a8;
+  }
+  local_88 = local_88 & 0xffffffffffffff00;
+  bVar295 = FUN_fffffff009c1fec4(param_8,"IOSurfaceProhibitUseCount",(undefined1 *)&local_88);
+  if (bVar295) {
+    *(uint *)(param_7 + 0x3d0) =
+         *(uint *)(param_7 + 0x3d0) & 0xffc00000 |
+         *(uint *)(param_7 + 0x3d0) & 0x1fffff | ((byte)local_88 & 1) << 0x15;
+  }
+  *(undefined8 *)(param_7 + 0x308) = 0;
+  *(undefined4 *)(param_7 + 0x310) = 0;
+  *(undefined4 *)(param_7 + 0x3b8) = 0;
+  plVar301 = (long *)FUN_fffffff009c20000(param_8,"IOSurfacePlaneInfo");
+  if (plVar301 == (long *)0x0) {
+    *(undefined8 *)(param_7 + 0x180) = 0;
+    *(undefined4 *)(param_7 + 0x188) = 0;
+    *(undefined8 *)(param_7 + 0x328) = 1;
+    auVar32._8_8_ = extraout_var_01;
+    auVar32._0_8_ = extraout_d0_01;
+    auVar183._4_12_ = auVar333;
+    auVar183._0_4_ = uVar332;
+    auVar239._4_12_ = auVar335;
+    auVar239._0_4_ = uVar334;
+    thunk_FUN_fffffff00a9025cc
+              (auVar32,param_2,auVar183,auVar239,param_5,param_6,(ulong *)&DAT_00000018);
+    *(byte **)(param_7 + 0x318) = extraout_x0_01;
+    *(undefined4 *)(param_7 + 800) = 1;
+    uVar300 = 0;
+    if (extraout_x0_01 == (byte *)0x0) goto LAB_fffffff009c1b2a8;
+    uVar300 = (long)(extraout_x0_01 + 0x18) - (long)extraout_x0_01;
+    if ((extraout_x0_01 + 0x18 < extraout_x0_01) || (uVar300 >> 0x20 != 0)) {
+      auVar33._8_8_ = extraout_var_05;
+      auVar33._0_8_ = extraout_d0_05;
+      auVar184._4_12_ = auVar333;
+      auVar184._0_4_ = uVar332;
+      auVar240._4_12_ = auVar335;
+      auVar240._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+      FUN_fffffff009c48f64(auVar33,param_2,auVar184,auVar240,param_5,param_6);
+    }
+    if (uVar300 < 0x18) {
+      auVar34._8_8_ = extraout_var_05;
+      auVar34._0_8_ = extraout_d0_05;
+      auVar185._4_12_ = auVar333;
+      auVar185._0_4_ = uVar332;
+      auVar241._4_12_ = auVar335;
+      auVar241._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+      FUN_fffffff009c48f28(auVar34,param_2,auVar185,auVar241,param_5,param_6);
+    }
+    auVar35._8_8_ = extraout_var_05;
+    auVar35._0_8_ = extraout_d0_05;
+    uVar300 = FUN_fffffff009c201c4
+                        (auVar35,param_2,uVar332,uVar334,param_5,param_6,extraout_x0_01,param_8);
+    if ((uVar300 & 1) == 0) {
+      auVar36._8_8_ = extraout_var_06;
+      auVar36._0_8_ = extraout_d0_06;
+      thunk_FUN_fffffff00a8df19c
+                (auVar36,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                 (short *)PTR_DAT_fffffff00806ca48,0x10,
+                 (byte *)"IOSurface::parse_properties() parseAdditionalPlaneInfo failed.\n");
+      uVar300 = 0;
+      goto LAB_fffffff009c1b2a8;
+    }
+    *(undefined8 *)(param_7 + 0x348) = 0x20;
+    auVar37._8_8_ = extraout_var_06;
+    auVar37._0_8_ = extraout_d0_06;
+    auVar186._4_12_ = auVar333;
+    auVar186._0_4_ = uVar332;
+    auVar242._4_12_ = auVar335;
+    auVar242._0_4_ = uVar334;
+    thunk_FUN_fffffff00a9025cc
+              (auVar37,param_2,auVar186,auVar242,param_5,param_6,(ulong *)&DAT_00000020);
+    *(undefined4 **)(param_7 + 0x350) = extraout_x0_02;
+    *(undefined4 *)(param_7 + 0x358) = 1;
+    uVar300 = 0;
+    if (extraout_x0_02 == (undefined4 *)0x0) goto LAB_fffffff009c1b2a8;
+    uVar300 = (long)(extraout_x0_02 + 8) - (long)extraout_x0_02;
+    if ((extraout_x0_02 + 8 < extraout_x0_02) || (uVar300 >> 0x20 != 0)) {
+      auVar38._8_8_ = extraout_var_07;
+      auVar38._0_8_ = extraout_d0_07;
+      auVar187._4_12_ = auVar333;
+      auVar187._0_4_ = uVar332;
+      auVar243._4_12_ = auVar335;
+      auVar243._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+      FUN_fffffff009c48f64(auVar38,param_2,auVar187,auVar243,param_5,param_6);
+    }
+    if (uVar300 < 0x20) {
+      auVar39._8_8_ = extraout_var_07;
+      auVar39._0_8_ = extraout_d0_07;
+      auVar188._4_12_ = auVar333;
+      auVar188._0_4_ = uVar332;
+      auVar244._4_12_ = auVar335;
+      auVar244._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+      FUN_fffffff009c48f28(auVar39,param_2,auVar188,auVar244,param_5,param_6);
+    }
+    auVar40._8_8_ = extraout_var_07;
+    auVar40._0_8_ = extraout_d0_07;
+    FUN_fffffff009c1ff50
+              (auVar40,param_2,uVar332,uVar334,param_5,param_6,param_8,
+               "IOSurfacePlaneExtendedPixelsOnLeft",extraout_x0_02 + 2);
+    auVar41._8_8_ = extraout_var_08;
+    auVar41._0_8_ = extraout_d0_08;
+    FUN_fffffff009c1ff50
+              (auVar41,param_2,uVar332,uVar334,param_5,param_6,param_8,
+               "IOSurfacePlaneExtendedPixelsOnRight",extraout_x0_02);
+    auVar42._8_8_ = extraout_var_09;
+    auVar42._0_8_ = extraout_d0_09;
+    FUN_fffffff009c1ff50
+              (auVar42,param_2,uVar332,uVar334,param_5,param_6,param_8,
+               "IOSurfacePlaneExtendedPixelsOnBottom",extraout_x0_02 + 1);
+    auVar43._8_8_ = extraout_var_10;
+    auVar43._0_8_ = extraout_d0_10;
+    FUN_fffffff009c1ff50
+              (auVar43,param_2,uVar332,uVar334,param_5,param_6,param_8,
+               "IOSurfacePlaneExtendedPixelsOnTop",extraout_x0_02 + 3);
+  }
+  else {
+    uVar297 = (**(code **)(*plVar301 + 0x90))();
+    *(uint *)(param_7 + 0x98) = uVar297;
+    if (uVar297 == 0) {
+      auVar44._8_8_ = extraout_var_02;
+      auVar44._0_8_ = extraout_d0_02;
+      thunk_FUN_fffffff00a8df19c
+                (auVar44,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                 (short *)PTR_DAT_fffffff00806ca48,0x10,
+                 (byte *)
+                 "IOSurface::::parse_properties() kIOSurfacePlaneInfo array must not be empty.\n");
+      uVar300 = 0;
+      goto LAB_fffffff009c1b2a8;
+    }
+    *(ulong *)(param_7 + 0x328) = (ulong)uVar297;
+    auVar45._8_8_ = extraout_var_02;
+    auVar45._0_8_ = extraout_d0_02;
+    auVar189._4_12_ = auVar333;
+    auVar189._0_4_ = uVar332;
+    auVar245._4_12_ = auVar335;
+    auVar245._0_4_ = uVar334;
+    thunk_FUN_fffffff00a9025cc
+              (auVar45,param_2,auVar189,auVar245,param_5,param_6,
+               (ulong *)(((ulong)uVar297 * 2 + (ulong)uVar297) * 8));
+    if (*(ulong *)(param_7 + 0x328) >> 0x20 != 0) {
+      auVar46._8_8_ = extraout_var_03;
+      auVar46._0_8_ = extraout_d0_03;
+      auVar190._4_12_ = auVar333;
+      auVar190._0_4_ = uVar332;
+      auVar246._4_12_ = auVar335;
+      auVar246._0_4_ = uVar334;
+      FUN_fffffff009c48fa8(auVar46,param_2,auVar190,auVar246,param_5,param_6);
+      uVar327 = extraout_d0_53;
+      uVar331 = extraout_var_53;
+LAB_fffffff009c1d28c:
+      auVar120._8_8_ = uVar331;
+      auVar120._0_8_ = uVar327;
+      thunk_FUN_fffffff00a8df19c
+                (auVar120,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                 (short *)PTR_DAT_fffffff00806ca48,0x10,
+                 (byte *)
+                 "IOSurface: compressed plane[%d] extended left is not supported for compressed iosurfaces\n"
+                );
+      uVar300 = 0;
+      goto LAB_fffffff009c1b2a8;
+    }
+    *(long *)(param_7 + 0x318) = extraout_x0;
+    *(int *)(param_7 + 800) = (int)*(ulong *)(param_7 + 0x328);
+    uVar300 = 0;
+    if (extraout_x0 == 0) goto LAB_fffffff009c1b2a8;
+    puVar302 = (ulong *)((ulong)*(uint *)(param_7 + 0x98) << 5);
+    *(ulong **)(param_7 + 0x348) = puVar302;
+    auVar47._8_8_ = extraout_var_03;
+    auVar47._0_8_ = extraout_d0_03;
+    auVar191._4_12_ = auVar333;
+    auVar191._0_4_ = uVar332;
+    auVar247._4_12_ = auVar335;
+    auVar247._0_4_ = uVar334;
+    thunk_FUN_fffffff00a9025cc(auVar47,param_2,auVar191,auVar247,param_5,param_6,puVar302);
+    uVar297 = *(uint *)(param_7 + 0x98);
+    *(long *)(param_7 + 0x350) = extraout_x0_00;
+    *(uint *)(param_7 + 0x358) = uVar297;
+    uVar300 = 0;
+    if (extraout_x0_00 == 0) goto LAB_fffffff009c1b2a8;
+    if (uVar297 < 4) {
+      *(long *)(param_7 + 0x180) = param_7 + 0xa8;
+      *(uint *)(param_7 + 0x188) = uVar297;
+    }
+    else {
+      if (0x14 < uVar297) {
+        auVar48._8_8_ = extraout_var_04;
+        auVar48._0_8_ = extraout_d0_04;
+        thunk_FUN_fffffff00a8df19c
+                  (auVar48,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                   (short *)PTR_DAT_fffffff00806ca48,0x10,
+                   (byte *)"IOSurface: maximum plane count of %d exceeded.\n");
+        uVar300 = 0;
+        goto LAB_fffffff009c1b2a8;
+      }
+      auVar49._8_8_ = extraout_var_04;
+      auVar49._0_8_ = extraout_d0_04;
+      auVar192._4_12_ = auVar333;
+      auVar192._0_4_ = uVar332;
+      auVar248._4_12_ = auVar335;
+      auVar248._0_4_ = uVar334;
+      auVar336 = thunk_FUN_fffffff00a902750
+                           (auVar49,param_2,auVar192,auVar248,param_5,param_6,0xfffffff00806bcf0,
+                            (ulong *)((ulong)uVar297 * 0x38));
+      uVar297 = *(uint *)(param_7 + 0x98);
+      *(long *)(param_7 + 0x180) = auVar336._0_8_;
+      *(uint *)(param_7 + 0x188) = uVar297;
+      uVar300 = 0;
+      if (auVar336._0_8_ == 0) goto LAB_fffffff009c1b2a8;
+    }
+    if (uVar297 != 0) {
+      lVar316 = 0;
+      uVar308 = 0;
+      lVar326 = *(long *)PTR_PTR_fffffff00806c9c8;
+      do {
+        uVar312 = *(ulong *)(param_7 + 0x180);
+        uVar300 = uVar312 + (ulong)*(uint *)(param_7 + 0x188) * 0x38;
+        if (((uVar312 ^ uVar300) & 0xffc0000000000000) != 0) {
+          uVar300 = uVar300 & 0xffffffffffff | 0xc8a2000000000000;
+        }
+        if ((uVar300 < uVar312) || (uVar300 - uVar312 >> 0x20 != 0)) {
+          auVar193._4_12_ = auVar333;
+          auVar193._0_4_ = uVar332;
+          auVar249._4_12_ = auVar335;
+          auVar249._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+          FUN_fffffff009c48f64(ZEXT816(0),param_2,auVar193,auVar249,param_5,param_6);
+        }
+        if (uVar308 * 0x38 != (long)(int)(uVar308 * 0x38)) {
+          auVar194._4_12_ = auVar333;
+          auVar194._0_4_ = uVar332;
+          auVar250._4_12_ = auVar335;
+          auVar250._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+          FUN_fffffff009c48f3c(ZEXT816(0),param_2,auVar194,auVar250,param_5,param_6);
+        }
+        uVar313 = (uVar308 << 0x26) - (uVar308 << 0x23);
+        if (((long)uVar313 < 0) || ((uint)(uVar300 - uVar312) < (int)(uVar313 >> 0x20) + 0x38U)) {
+          auVar195._4_12_ = auVar333;
+          auVar195._0_4_ = uVar332;
+          auVar251._4_12_ = auVar335;
+          auVar251._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+          FUN_fffffff009c48f28(ZEXT816(0),param_2,auVar195,auVar251,param_5,param_6);
+        }
+        puVar302 = (ulong *)(uVar312 + (uVar313 >> 0x20));
+        uVar312 = (ulong)CARRY8(uVar312,uVar313 >> 0x20);
+        uVar300 = -uVar312;
+        if ((uVar300 != uVar312) || ((long)uVar300 < 0)) {
+          auVar196._4_12_ = auVar333;
+          auVar196._0_4_ = uVar332;
+          auVar252._4_12_ = auVar335;
+          auVar252._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+          FUN_fffffff009c48f50(ZEXT816(0),param_2,auVar196,auVar252,param_5,param_6);
+        }
+        uVar312 = *(ulong *)(param_7 + 0x350);
+        uVar300 = uVar312 + (ulong)*(uint *)(param_7 + 0x358) * 0x20;
+        if (((uVar312 ^ uVar300) & 0xffc0000000000000) != 0) {
+          uVar300 = uVar300 & 0xffffffffffff | 0xc8a2000000000000;
+        }
+        if ((uVar300 < uVar312) || (uVar300 - uVar312 >> 0x20 != 0)) {
+          auVar197._4_12_ = auVar333;
+          auVar197._0_4_ = uVar332;
+          auVar253._4_12_ = auVar335;
+          auVar253._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+          FUN_fffffff009c48f64(ZEXT816(0),param_2,auVar197,auVar253,param_5,param_6);
+        }
+        if (uVar308 * 0x20 - (long)(int)(uVar308 * 0x20) != 0) {
+          auVar198._4_12_ = auVar333;
+          auVar198._0_4_ = uVar332;
+          auVar254._4_12_ = auVar335;
+          auVar254._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+          FUN_fffffff009c48f3c(ZEXT816(0),param_2,auVar198,auVar254,param_5,param_6);
+        }
+        if ((uVar308 & 0x7ffffff) >> 0x1a != 0) {
+LAB_fffffff009c1dba4:
+          auVar199._4_12_ = auVar333;
+          auVar199._0_4_ = uVar332;
+          auVar255._4_12_ = auVar335;
+          auVar255._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+          FUN_fffffff009c48f28(ZEXT816(0),param_2,auVar199,auVar255,param_5,param_6);
+        }
+        uVar299 = (uint)uVar308;
+        uVar297 = uVar299 * 0x20;
+        if ((uint)(uVar300 - uVar312) < uVar297 + 0x20) goto LAB_fffffff009c1dba4;
+        puVar1 = (uint *)(uVar312 + uVar297);
+        uVar312 = (ulong)CARRY8(uVar312,(ulong)uVar297);
+        uVar300 = -uVar312;
+        if ((uVar300 != uVar312) || ((long)uVar300 < 0)) {
+          auVar200._4_12_ = auVar333;
+          auVar200._0_4_ = uVar332;
+          auVar256._4_12_ = auVar335;
+          auVar256._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+          FUN_fffffff009c48f50(ZEXT816(0),param_2,auVar200,auVar256,param_5,param_6);
+        }
+        puVar302[6] = 0;
+        puVar302[3] = 0;
+        puVar302[2] = 0;
+        puVar302[5] = 0;
+        puVar302[4] = 0;
+        puVar302[1] = 0;
+        *puVar302 = 0;
+        plVar303 = (long *)(**(code **)(*plVar301 + 0x118))(plVar301,uVar308);
+        plVar303 = thunk_FUN_fffffff00a894f30(plVar303,lVar326);
+        uVar300 = 0;
+        if (plVar303 == (long *)0x0) goto LAB_fffffff009c1b2a8;
+        bVar295 = FUN_fffffff009c20038(plVar303,"IOSurfacePlaneWidth",puVar302);
+        uVar300 = (ulong)bVar295;
+        if (!bVar295) goto LAB_fffffff009c1b2a8;
+        bVar295 = FUN_fffffff009c20038(plVar303,"IOSurfacePlaneHeight",puVar302 + 1);
+        uVar300 = (ulong)bVar295;
+        if ((((!bVar295) ||
+             (auVar50._8_8_ = extraout_var_11, auVar50._0_8_ = extraout_d0_11,
+             uVar300 = FUN_fffffff009c1ff50
+                                 (auVar50,param_2,uVar332,uVar334,param_5,param_6,plVar303,
+                                  "IOSurfacePlaneExtendedPixelsOnLeft",puVar1 + 2),
+             (int)uVar300 == 0)) ||
+            (auVar51._8_8_ = extraout_var_12, auVar51._0_8_ = extraout_d0_12,
+            uVar300 = FUN_fffffff009c1ff50
+                                (auVar51,param_2,uVar332,uVar334,param_5,param_6,plVar303,
+                                 "IOSurfacePlaneExtendedPixelsOnRight",puVar1), (int)uVar300 == 0))
+           || ((auVar52._8_8_ = extraout_var_13, auVar52._0_8_ = extraout_d0_13,
+               uVar300 = FUN_fffffff009c1ff50
+                                   (auVar52,param_2,uVar332,uVar334,param_5,param_6,plVar303,
+                                    "IOSurfacePlaneExtendedPixelsOnTop",puVar1 + 3),
+               (int)uVar300 == 0 ||
+               (auVar53._8_8_ = extraout_var_14, auVar53._0_8_ = extraout_d0_14,
+               uVar300 = FUN_fffffff009c1ff50
+                                   (auVar53,param_2,uVar332,uVar334,param_5,param_6,plVar303,
+                                    "IOSurfacePlaneExtendedPixelsOnBottom",puVar1 + 1),
+               (int)uVar300 == 0)))) goto LAB_fffffff009c1b2a8;
+        bVar295 = FUN_fffffff009c20038(plVar303,"IOSurfacePlaneBytesPerElement",(ulong *)&local_78);
+        if (bVar295) {
+          if ((undefined1 *)0x1fff < local_78) {
+            auVar56._8_8_ = extraout_var_15;
+            auVar56._0_8_ = extraout_d0_15;
+            thunk_FUN_fffffff00a8df19c
+                      (auVar56,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)"IOSurface: kIOSurfacePlaneBytesPerElement out of range\n");
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+          *(short *)(puVar302 + 6) = (short)local_78;
+          puVar310 = local_78;
+          puVar314 = (undefined1 *)((long)local_78 << 3);
+          uVar327 = extraout_d0_15;
+          uVar331 = extraout_var_15;
+LAB_fffffff009c1b6b8:
+          if ((int)puVar310 == 0) {
+            auVar57._8_8_ = uVar331;
+            auVar57._0_8_ = uVar327;
+            thunk_FUN_fffffff00a8df19c
+                      (auVar57,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)"IOSurface: plane[%d] bytes per element is zero.\n");
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+        }
+        else {
+          bVar295 = FUN_fffffff009c20038(plVar303,"IOSurfacePlaneBitsPerElement",(ulong *)&local_78)
+          ;
+          if (bVar295) {
+            uVar327 = extraout_d0_16;
+            uVar331 = extraout_var_16;
+            if (local_78 < (undefined1 *)0x10000) {
+LAB_fffffff009c1b6b0:
+              puVar310 = (undefined1 *)((ulong)local_78 >> 3 & 0x1fffffff);
+              *(short *)(puVar302 + 6) = (short)puVar310;
+              puVar314 = local_78;
+              goto LAB_fffffff009c1b6b8;
+            }
+            auVar55._8_8_ = extraout_var_16;
+            auVar55._0_8_ = extraout_d0_16;
+            thunk_FUN_fffffff00a8df19c
+                      (auVar55,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)"IOSurface: kIOSurfacePlaneBitsPerElement out of range\n");
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+          bVar295 = FUN_fffffff009c20038(plVar303,"IOSurfacePlaneBitsPerBlock",(ulong *)&local_78);
+          uVar327 = extraout_d0_17;
+          uVar331 = extraout_var_17;
+          if (bVar295) {
+            if (local_78 < (undefined1 *)0x10000) goto LAB_fffffff009c1b6b0;
+            auVar54._8_8_ = extraout_var_17;
+            auVar54._0_8_ = extraout_d0_17;
+            thunk_FUN_fffffff00a8df19c
+                      (auVar54,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)"IOSurface: kIOSurfacePlaneBitsPerBlock out of range\n");
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+          *(undefined2 *)(puVar302 + 6) = 1;
+          puVar314 = (undefined1 *)0x8;
+        }
+        pbVar322 = (byte *)((long)puVar302 + 0x34);
+        *pbVar322 = 1;
+        auVar58._8_8_ = uVar331;
+        auVar58._0_8_ = uVar327;
+        uVar300 = FUN_fffffff009c20114
+                            (auVar58,param_2,uVar332,uVar334,param_5,param_6,plVar303,
+                             "IOSurfacePlaneElementWidth",pbVar322);
+        if ((int)uVar300 == 0) goto LAB_fffffff009c1b2a8;
+        if (*pbVar322 == 0) {
+          auVar59._8_8_ = extraout_var_18;
+          auVar59._0_8_ = extraout_d0_18;
+          thunk_FUN_fffffff00a8df19c
+                    (auVar59,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                     (short *)PTR_DAT_fffffff00806ca48,0x10,
+                     (byte *)"IOSurface: plane[%d] element width is zero.\n");
+          uVar300 = 0;
+          goto LAB_fffffff009c1b2a8;
+        }
+        pbVar321 = (byte *)((long)puVar302 + 0x35);
+        *pbVar321 = 1;
+        auVar60._8_8_ = extraout_var_18;
+        auVar60._0_8_ = extraout_d0_18;
+        uVar300 = FUN_fffffff009c20114
+                            (auVar60,param_2,uVar332,uVar334,param_5,param_6,plVar303,
+                             "IOSurfacePlaneElementHeight",pbVar321);
+        if ((int)uVar300 == 0) goto LAB_fffffff009c1b2a8;
+        if (*pbVar321 == 0) {
+          auVar61._8_8_ = extraout_var_19;
+          auVar61._0_8_ = extraout_d0_19;
+          thunk_FUN_fffffff00a8df19c
+                    (auVar61,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                     (short *)PTR_DAT_fffffff00806ca48,0x10,
+                     (byte *)"IOSurface: plane[%d] element height is zero.\n");
+          uVar300 = 0;
+          goto LAB_fffffff009c1b2a8;
+        }
+        pcVar306 = (char *)((long)puVar302 + 0x36);
+        *pcVar306 = '\0';
+        auVar62._8_8_ = extraout_var_19;
+        auVar62._0_8_ = extraout_d0_19;
+        uVar300 = FUN_fffffff009c20114
+                            (auVar62,param_2,uVar332,uVar334,param_5,param_6,plVar303,
+                             "IOSurfaceAddressFormat",pcVar306);
+        if ((int)uVar300 == 0) goto LAB_fffffff009c1b2a8;
+        uVar300 = *puVar302 + (ulong)*puVar1;
+        uVar325 = (ulong)*(byte *)((long)puVar302 + 0x34);
+        iVar298 = *(byte *)((long)puVar302 + 0x34) - 1;
+        uVar309 = (ulong)iVar298;
+        uVar313 = (long)uVar309 >> 0x3f;
+        uVar312 = uVar313;
+        if (CARRY8(uVar300,(long)iVar298)) {
+          uVar312 = uVar313 + 1;
+        }
+        if (((CARRY8(*puVar302,(ulong)*puVar1)) || (-(uVar312 & 1) != uVar312)) ||
+           ((long)-(uVar312 & 1) < 0)) {
+          auVar63._8_8_ = extraout_var_20;
+          auVar63._0_8_ = extraout_d0_20;
+          thunk_FUN_fffffff00a8df19c
+                    (auVar63,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                     (short *)PTR_DAT_fffffff00806ca48,0x10,
+                     (byte *)"IOSurface: plane[%d] extended width exceeds 64bit limit\n");
+          uVar300 = 0;
+          goto LAB_fffffff009c1b2a8;
+        }
+        uVar297 = puVar1[2];
+        if (CARRY8((ulong)uVar297,uVar309)) {
+          uVar313 = uVar313 + 1;
+        }
+        uVar312 = uVar325;
+        if ((uVar313 & 1) != 0) {
+          auVar64._8_8_ = extraout_var_20;
+          auVar64._0_8_ = extraout_d0_20;
+          thunk_FUN_fffffff00a8df19c
+                    (auVar64,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                     (short *)PTR_DAT_fffffff00806ca48,0x10,
+                     (byte *)"IOSurface: plane[%d] extended left exceeds 64bit limit\n");
+          uVar312 = (ulong)*pbVar322;
+        }
+        uVar313 = 0;
+        if (uVar325 != 0) {
+          uVar313 = (uVar300 + (long)iVar298) / uVar325;
+        }
+        uVar300 = 0;
+        if (uVar312 != 0) {
+          uVar300 = (uVar297 + uVar309) / uVar312;
+        }
+        bVar295 = FUN_fffffff009c20038(plVar303,"IOSurfacePlaneBytesPerRow",(ulong *)&local_78);
+        if (bVar295) {
+          puVar302[4] = (ulong)local_78;
+          uVar312 = (ulong)(ushort)puVar302[6];
+          puVar310 = local_78;
+        }
+        else {
+          auVar8._8_8_ = 0;
+          auVar8._0_8_ = uVar313;
+          if (SUB168(auVar8 * ZEXT116(*pbVar322),8) != 0) {
+            auVar65._8_8_ = extraout_var_21;
+            auVar65._0_8_ = extraout_d0_21;
+            thunk_FUN_fffffff00a8df19c
+                      (auVar65,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)
+                       "IOSurface: plane[%d] calculated width in pixels exceeds 64bit limit\n");
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+          if (CARRY8(uVar313,uVar300)) {
+            auVar66._8_8_ = extraout_var_21;
+            auVar66._0_8_ = extraout_d0_21;
+            thunk_FUN_fffffff00a8df19c
+                      (auVar66,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)"IOSurface: plane[%d] total width in elements exceeds 64bit limit\n")
+            ;
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+          uVar312 = CONCAT62(0,(ushort)puVar302[6]);
+          auVar9._8_8_ = 0;
+          auVar9._0_8_ = uVar313 + uVar300;
+          auVar20._8_8_ = 0;
+          auVar20._0_8_ = uVar312;
+          if (SUB168(auVar9 * auVar20,8) != 0) {
+            auVar67._8_8_ = extraout_var_21;
+            auVar67._0_8_ = extraout_d0_21;
+            thunk_FUN_fffffff00a8df19c
+                      (auVar67,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)"IOSurface: plane[%d] bytesPerRow exceeds 64bit limit\n");
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+          uVar325 = (uVar313 + uVar300) * uVar312;
+          uVar309 = (ulong)*(uint *)(DAT_fffffff00af483b0 + 0xb0);
+          if (CARRY8(uVar325,uVar309)) {
+            auVar68._8_8_ = extraout_var_21;
+            auVar68._0_8_ = extraout_d0_21;
+            thunk_FUN_fffffff00a8df19c
+                      (auVar68,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)"IOSurface: plane[%d] calculated bytesPerRow exceeds 64bit limit\n");
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+          puVar310 = (undefined1 *)(uVar325 + uVar309 & (uVar309 ^ 0xffffffffffffffff));
+          puVar302[4] = (ulong)puVar310;
+        }
+        auVar10._8_8_ = 0;
+        auVar10._0_8_ = uVar313;
+        auVar21._8_8_ = 0;
+        auVar21._0_8_ = uVar312;
+        if (SUB168(auVar10 * auVar21,8) != 0) {
+          auVar69._8_8_ = extraout_var_21;
+          auVar69._0_8_ = extraout_d0_21;
+          thunk_FUN_fffffff00a8df19c
+                    (auVar69,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                     (short *)PTR_DAT_fffffff00806ca48,0x10,
+                     (byte *)"IOSurface: plane[%d] plane width in bytes exceeds 64bit limit\n");
+          uVar300 = 0;
+          goto LAB_fffffff009c1b2a8;
+        }
+        auVar11._8_8_ = 0;
+        auVar11._0_8_ = uVar300;
+        auVar22._8_8_ = 0;
+        auVar22._0_8_ = uVar312;
+        if (SUB168(auVar11 * auVar22,8) != 0) {
+          auVar70._8_8_ = extraout_var_21;
+          auVar70._0_8_ = extraout_d0_21;
+          thunk_FUN_fffffff00a8df19c
+                    (auVar70,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                     (short *)PTR_DAT_fffffff00806ca48,0x10,
+                     (byte *)
+                     "IOSurface: plane[%d] minimum extended left bytes per row value exceeds 64bit limit\n"
+                    );
+          uVar300 = 0;
+          goto LAB_fffffff009c1b2a8;
+        }
+        if (CARRY8(uVar313 * uVar312,uVar300 * uVar312)) {
+          auVar71._8_8_ = extraout_var_21;
+          auVar71._0_8_ = extraout_d0_21;
+          thunk_FUN_fffffff00a8df19c
+                    (auVar71,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                     (short *)PTR_DAT_fffffff00806ca48,0x10,
+                     (byte *)
+                     "IOSurface: plane[%d] minimum bytes per row value exceeds 64bit limit\n");
+          uVar300 = 0;
+          goto LAB_fffffff009c1b2a8;
+        }
+        if (puVar310 < (undefined1 *)(uVar313 * uVar312 + uVar300 * uVar312)) {
+          auVar72._8_8_ = extraout_var_21;
+          auVar72._0_8_ = extraout_d0_21;
+          thunk_FUN_fffffff00a8df19c
+                    (auVar72,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                     (short *)PTR_DAT_fffffff00806ca48,0x10,
+                     (byte *)"IOSurface: plane[%d] bytes per row value of %llu is too small\n");
+          uVar300 = 0;
+          goto LAB_fffffff009c1b2a8;
+        }
+        uVar300 = puVar302[1] + (ulong)puVar1[1];
+        bVar319 = *pbVar321;
+        iVar298 = bVar319 - 1;
+        uVar312 = (long)iVar298 >> 0x3f;
+        if (CARRY8(uVar300,(long)iVar298)) {
+          uVar312 = uVar312 + 1;
+        }
+        if (((CARRY8(puVar302[1],(ulong)puVar1[1])) || (-(uVar312 & 1) != uVar312)) ||
+           ((long)-(uVar312 & 1) < 0)) {
+          auVar73._8_8_ = extraout_var_21;
+          auVar73._0_8_ = extraout_d0_21;
+          thunk_FUN_fffffff00a8df19c
+                    (auVar73,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                     (short *)PTR_DAT_fffffff00806ca48,0x10,
+                     (byte *)"IOSurface: plane[%d] extended height exceeds 64bit limit\n");
+          uVar300 = 0;
+          goto LAB_fffffff009c1b2a8;
+        }
+        uVar312 = 0;
+        if ((ulong)bVar319 != 0) {
+          uVar312 = (uVar300 + (long)iVar298) / (ulong)bVar319;
+        }
+        bVar295 = FUN_fffffff009c20038(plVar303,"IOSurfacePlaneSize",(ulong *)&local_78);
+        puVar310 = local_78;
+        if (!bVar295) {
+          auVar12._8_8_ = 0;
+          auVar12._0_8_ = puVar302[4];
+          auVar23._8_8_ = 0;
+          auVar23._0_8_ = uVar312;
+          if (SUB168(auVar12 * auVar23,8) != 0) {
+            auVar74._8_8_ = extraout_var_22;
+            auVar74._0_8_ = extraout_d0_22;
+            thunk_FUN_fffffff00a8df19c
+                      (auVar74,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)"IOSurface: plane[%d] calculated size value exceeds 64bit limit\n");
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+          puVar310 = (undefined1 *)(puVar302[4] * uVar312);
+        }
+        puVar302[5] = (ulong)puVar310;
+        if (puVar310 == (undefined1 *)0x0) {
+          auVar75._8_8_ = extraout_var_22;
+          auVar75._0_8_ = extraout_d0_22;
+          thunk_FUN_fffffff00a8df19c
+                    (auVar75,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                     (short *)PTR_DAT_fffffff00806ca48,0x10,
+                     (byte *)"IOSurface: plane[%d] size is zero\n");
+          uVar300 = 0;
+          goto LAB_fffffff009c1b2a8;
+        }
+        bVar295 = FUN_fffffff009c20038(plVar303,"IOSurfacePlaneOffset",(ulong *)&local_78);
+        puVar310 = local_78;
+        if (!bVar295) {
+          if (uVar299 == 0) {
+            puVar310 = (undefined1 *)0x0;
+          }
+          else {
+            uVar309 = *(ulong *)(param_7 + 0x180);
+            uVar300 = uVar309 + (ulong)*(uint *)(param_7 + 0x188) * 0x38;
+            if (((uVar309 ^ uVar300) & 0xffc0000000000000) != 0) {
+              uVar300 = uVar300 & 0xffffffffffff | 0xc8a2000000000000;
+            }
+            if ((uVar300 < uVar309) || (uVar300 - uVar309 >> 0x20 != 0)) {
+              auVar76._8_8_ = extraout_var_23;
+              auVar76._0_8_ = extraout_d0_23;
+              auVar201._4_12_ = auVar333;
+              auVar201._0_4_ = uVar332;
+              auVar257._4_12_ = auVar335;
+              auVar257._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+              FUN_fffffff009c48f64(auVar76,param_2,auVar201,auVar257,param_5,param_6);
+            }
+            uVar325 = (ulong)(uVar299 - 1);
+            if (uVar325 * 0x38 != (long)(int)(uVar325 * 0x38)) {
+              auVar77._8_8_ = extraout_var_23;
+              auVar77._0_8_ = extraout_d0_23;
+              auVar202._4_12_ = auVar333;
+              auVar202._0_4_ = uVar332;
+              auVar258._4_12_ = auVar335;
+              auVar258._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+              FUN_fffffff009c48f3c(auVar77,param_2,auVar202,auVar258,param_5,param_6);
+            }
+            uVar325 = (uVar325 << 0x26) - (uVar325 << 0x23);
+            if (((long)uVar325 < 0) || ((uint)(uVar300 - uVar309) < (int)(uVar325 >> 0x20) + 0x38U))
+            {
+              auVar78._8_8_ = extraout_var_23;
+              auVar78._0_8_ = extraout_d0_23;
+              auVar203._4_12_ = auVar333;
+              auVar203._0_4_ = uVar332;
+              auVar259._4_12_ = auVar335;
+              auVar259._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+              FUN_fffffff009c48f28(auVar78,param_2,auVar203,auVar259,param_5,param_6);
+            }
+            lVar315 = uVar309 + (uVar325 >> 0x20);
+            uVar309 = (ulong)CARRY8(uVar309,uVar325 >> 0x20);
+            uVar300 = -uVar309;
+            if ((uVar300 != uVar309) || ((long)uVar300 < 0)) {
+              auVar79._8_8_ = extraout_var_23;
+              auVar79._0_8_ = extraout_d0_23;
+              auVar204._4_12_ = auVar333;
+              auVar204._0_4_ = uVar332;
+              auVar260._4_12_ = auVar335;
+              auVar260._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+              FUN_fffffff009c48f50(auVar79,param_2,auVar204,auVar260,param_5,param_6);
+            }
+            uVar325 = *(ulong *)(lVar315 + 0x10);
+            uVar309 = *(ulong *)(lVar315 + 0x28);
+            uVar300 = uVar325 + uVar309;
+            uVar297 = *(uint *)(DAT_fffffff00af483b0 + 0xac);
+            if ((CARRY8(uVar325,uVar309)) || (CARRY8((ulong)uVar297,uVar300))) {
+              auVar80._8_8_ = extraout_var_23;
+              auVar80._0_8_ = extraout_d0_23;
+              thunk_FUN_fffffff00a8df19c
+                        (auVar80,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                         (short *)PTR_DAT_fffffff00806ca48,0x10,
+                         (byte *)
+                         "IOSurface: plane[%d] calculated offset value exceeds 64bit limit\n");
+              uVar300 = 0;
+              goto LAB_fffffff009c1b2a8;
+            }
+            puVar310 = (undefined1 *)(uVar297 + uVar300 & (ulong)~uVar297);
+          }
+        }
+        ppuVar323 = (undefined1 **)(puVar302 + 3);
+        *ppuVar323 = puVar310;
+        bVar295 = FUN_fffffff009c20038(plVar303,"IOSurfacePlaneBase",(ulong *)&local_78);
+        ppuVar4 = &local_78;
+        if (!bVar295) {
+          ppuVar4 = ppuVar323;
+        }
+        puVar310 = *ppuVar4;
+        puVar302[2] = (ulong)puVar310;
+        if ((uVar299 != 0) && (*(long *)(param_7 + 0x378) == 0)) {
+          uVar309 = *(ulong *)(param_7 + 0x180);
+          uVar300 = uVar309 + (ulong)*(uint *)(param_7 + 0x188) * 0x38;
+          if (((uVar309 ^ uVar300) & 0xffc0000000000000) != 0) {
+            uVar300 = uVar300 & 0xffffffffffff | 0xc8a2000000000000;
+          }
+          if ((uVar300 < uVar309) || (uVar300 - uVar309 >> 0x20 != 0)) {
+            auVar81._8_8_ = extraout_var_24;
+            auVar81._0_8_ = extraout_d0_24;
+            auVar205._4_12_ = auVar333;
+            auVar205._0_4_ = uVar332;
+            auVar261._4_12_ = auVar335;
+            auVar261._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+            FUN_fffffff009c48f64(auVar81,param_2,auVar205,auVar261,param_5,param_6);
+          }
+          uVar325 = 0;
+          lVar315 = 0;
+          do {
+            if (lVar315 == -0x2492493) {
+              auVar82._8_8_ = extraout_var_24;
+              auVar82._0_8_ = extraout_d0_24;
+              auVar206._4_12_ = auVar333;
+              auVar206._0_4_ = uVar332;
+              auVar262._4_12_ = auVar335;
+              auVar262._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+              FUN_fffffff009c48f3c(auVar82,param_2,auVar206,auVar262,param_5,param_6);
+            }
+            if (((long)uVar325 < 0) || ((uint)(uVar300 - uVar309) < (int)(uVar325 >> 0x20) + 0x38U))
+            {
+              auVar83._8_8_ = extraout_var_24;
+              auVar83._0_8_ = extraout_d0_24;
+              auVar207._4_12_ = auVar333;
+              auVar207._0_4_ = uVar332;
+              auVar263._4_12_ = auVar335;
+              auVar263._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+              FUN_fffffff009c48f28(auVar83,param_2,auVar207,auVar263,param_5,param_6);
+            }
+            lVar2 = uVar309 + (uVar325 >> 0x20);
+            uVar318 = (ulong)CARRY8(uVar309,uVar325 >> 0x20);
+            uVar317 = -uVar318;
+            if ((uVar317 != uVar318) || ((long)uVar317 < 0)) {
+              auVar84._8_8_ = extraout_var_24;
+              auVar84._0_8_ = extraout_d0_24;
+              auVar208._4_12_ = auVar333;
+              auVar208._0_4_ = uVar332;
+              auVar264._4_12_ = auVar335;
+              auVar264._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+              FUN_fffffff009c48f50(auVar84,param_2,auVar208,auVar264,param_5,param_6);
+            }
+            if (puVar310 < (undefined1 *)(*(long *)(lVar2 + 0x28) + *(long *)(lVar2 + 0x10))) {
+              auVar85._8_8_ = extraout_var_24;
+              auVar85._0_8_ = extraout_d0_24;
+              thunk_FUN_fffffff00a8df19c
+                        (auVar85,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                         (short *)PTR_DAT_fffffff00806ca48,0x10,
+                         (byte *)
+                         "IOSurface: plane[%d] base %016llx overlaps with previous plane %d\n");
+              uVar300 = 0;
+              goto LAB_fffffff009c1b2a8;
+            }
+            lVar315 = lVar315 + -1;
+            uVar325 = uVar325 + 0x3800000000;
+          } while (lVar316 != lVar315);
+        }
+        if (*ppuVar323 < puVar310) {
+          auVar86._8_8_ = extraout_var_24;
+          auVar86._0_8_ = extraout_d0_24;
+          thunk_FUN_fffffff00a8df19c
+                    (auVar86,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                     (short *)PTR_DAT_fffffff00806ca48,0x10,
+                     (byte *)
+                     "IOSurface: plane[%d] offset %016llx is less than plane[%d] base %016llx\n");
+          uVar300 = 0;
+          goto LAB_fffffff009c1b2a8;
+        }
+        if (CARRY8((ulong)puVar310,puVar302[5])) {
+          auVar87._8_8_ = extraout_var_24;
+          auVar87._0_8_ = extraout_d0_24;
+          thunk_FUN_fffffff00a8df19c
+                    (auVar87,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                     (short *)PTR_DAT_fffffff00806ca48,0x10,
+                     (byte *)
+                     "IOSurface: plane[%d] base %016llx plus plane size %016llx exceeds 64bit limit\n"
+                    );
+          uVar300 = 0;
+          goto LAB_fffffff009c1b2a8;
+        }
+        auVar13._8_8_ = 0;
+        auVar13._0_8_ = puVar302[4];
+        auVar24._8_8_ = 0;
+        auVar24._0_8_ = uVar312 - 1;
+        if (SUB168(auVar13 * auVar24,8) != 0) {
+          auVar88._8_8_ = extraout_var_24;
+          auVar88._0_8_ = extraout_d0_24;
+          thunk_FUN_fffffff00a8df19c
+                    (auVar88,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                     (short *)PTR_DAT_fffffff00806ca48,0x10,
+                     (byte *)"IOSurface: plane[%d] required size exceeds 64bit limit\n");
+          uVar300 = 0;
+          goto LAB_fffffff009c1b2a8;
+        }
+        uVar300 = CONCAT62(0,(ushort)puVar302[6]);
+        auVar14._8_8_ = 0;
+        auVar14._0_8_ = uVar313;
+        auVar25._8_8_ = 0;
+        auVar25._0_8_ = uVar300;
+        if (SUB168(auVar14 * auVar25,8) != 0) {
+          auVar89._8_8_ = extraout_var_24;
+          auVar89._0_8_ = extraout_d0_24;
+          thunk_FUN_fffffff00a8df19c
+                    (auVar89,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                     (short *)PTR_DAT_fffffff00806ca48,0x10,
+                     (byte *)"IOSurface: plane[%d] required size for one line exceeds 64bit limit\n"
+                    );
+          uVar300 = 0;
+          goto LAB_fffffff009c1b2a8;
+        }
+        uVar312 = puVar302[4] * (uVar312 - 1);
+        uVar313 = uVar313 * uVar300;
+        if (CARRY8(uVar312,uVar313)) {
+          auVar90._8_8_ = extraout_var_24;
+          auVar90._0_8_ = extraout_d0_24;
+          thunk_FUN_fffffff00a8df19c
+                    (auVar90,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                     (short *)PTR_DAT_fffffff00806ca48,0x10,
+                     (byte *)"IOSurface: plane[%d] total required size exceeds 64bit limit\n");
+          uVar300 = 0;
+          goto LAB_fffffff009c1b2a8;
+        }
+        uVar309 = *(ulong *)(param_7 + 0x318);
+        uVar300 = uVar309 + (ulong)*(uint *)(param_7 + 800) * 0x18;
+        if (((uVar309 ^ uVar300) & 0xffc0000000000000) != 0) {
+          uVar300 = uVar300 & 0xffffffffffff | 0xc8a2000000000000;
+        }
+        if ((uVar300 < uVar309) || (uVar300 - uVar309 >> 0x20 != 0)) {
+          auVar91._8_8_ = extraout_var_24;
+          auVar91._0_8_ = extraout_d0_24;
+          auVar209._4_12_ = auVar333;
+          auVar209._0_4_ = uVar332;
+          auVar265._4_12_ = auVar335;
+          auVar265._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+          FUN_fffffff009c48f64(auVar91,param_2,auVar209,auVar265,param_5,param_6);
+        }
+        if (uVar308 * 0x18 - (long)(int)(uVar308 * 0x18) != 0) {
+          auVar92._8_8_ = extraout_var_24;
+          auVar92._0_8_ = extraout_d0_24;
+          auVar210._4_12_ = auVar333;
+          auVar210._0_4_ = uVar332;
+          auVar266._4_12_ = auVar335;
+          auVar266._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+          FUN_fffffff009c48f3c(auVar92,param_2,auVar210,auVar266,param_5,param_6);
+        }
+        if ((((ulong)(uVar299 * 3) & 0x1fffffff) >> 0x1c != 0) ||
+           (uVar297 = uVar299 * 0x18, (uint)(uVar300 - uVar309) < uVar297 + 0x18)) {
+          auVar93._8_8_ = extraout_var_24;
+          auVar93._0_8_ = extraout_d0_24;
+          auVar211._4_12_ = auVar333;
+          auVar211._0_4_ = uVar332;
+          auVar267._4_12_ = auVar335;
+          auVar267._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+          FUN_fffffff009c48f28(auVar93,param_2,auVar211,auVar267,param_5,param_6);
+        }
+        uVar325 = (ulong)CARRY8(uVar309,(ulong)uVar297);
+        uVar300 = -uVar325;
+        if ((uVar300 != uVar325) || ((long)uVar300 < 0)) {
+          auVar94._8_8_ = extraout_var_24;
+          auVar94._0_8_ = extraout_d0_24;
+          auVar212._4_12_ = auVar333;
+          auVar212._0_4_ = uVar332;
+          auVar268._4_12_ = auVar335;
+          auVar268._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+          FUN_fffffff009c48f50(auVar94,param_2,auVar212,auVar268,param_5,param_6);
+        }
+        auVar95._8_8_ = extraout_var_24;
+        auVar95._0_8_ = extraout_d0_24;
+        uVar300 = FUN_fffffff009c201c4
+                            (auVar95,param_2,uVar332,uVar334,param_5,param_6,
+                             (byte *)(uVar309 + uVar297),plVar303);
+        if ((uVar300 & 1) == 0) {
+          auVar96._8_8_ = extraout_var_25;
+          auVar96._0_8_ = extraout_d0_25;
+          thunk_FUN_fffffff00a8df19c
+                    (auVar96,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                     (short *)PTR_DAT_fffffff00806ca48,0x10,
+                     (byte *)"IOSurface: plane[%d] parseAdditionalPlaneInfo failed.\n");
+          uVar300 = 0;
+          goto LAB_fffffff009c1b2a8;
+        }
+        bVar295 = FUN_fffffff009c20038(plVar303,"IOSurfacePlaneCompressionType",(ulong *)&local_78);
+        puVar310 = local_78;
+        uVar327 = 0;
+        uVar331 = 0;
+        if (bVar295) {
+          if ((long)local_78 < 2) {
+            if (local_78 == (undefined1 *)0x0) {
+              if (*pcVar306 != '\x05') goto LAB_fffffff009c1bc70;
+              bVar295 = false;
+              bVar296 = false;
+              bVar319 = 0;
+              bVar324 = 0;
+            }
+            else {
+              if (local_78 != (undefined1 *)0x1) {
+LAB_fffffff009c1d744:
+                thunk_FUN_fffffff00a8df19c
+                          (ZEXT816(0),param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                           (short *)PTR_DAT_fffffff00806ca48,0x10,
+                           (byte *)"IOSurface: plane[%d] illegal compression type: %lld\n");
+                uVar300 = 0;
+                goto LAB_fffffff009c1b2a8;
+              }
+              bVar296 = false;
+              bVar319 = 0;
+              bVar324 = 0;
+              bVar295 = true;
+            }
+          }
+          else if (local_78 == (undefined1 *)0x4) {
+            bVar295 = false;
+            bVar296 = false;
+            bVar319 = 0;
+            bVar324 = 1;
+          }
+          else if (local_78 == (undefined1 *)0x3) {
+            bVar295 = false;
+            bVar296 = false;
+            bVar324 = 0;
+            bVar319 = 1;
+          }
+          else {
+            if (local_78 != (undefined1 *)0x2) goto LAB_fffffff009c1d744;
+            bVar295 = false;
+            bVar319 = 0;
+            bVar324 = 0;
+            bVar296 = true;
+          }
+          uVar312 = *(ulong *)(param_7 + 0x308);
+          if (uVar312 == 0) {
+            auVar213._4_12_ = auVar333;
+            auVar213._0_4_ = uVar332;
+            auVar269._4_12_ = auVar335;
+            auVar269._0_4_ = uVar334;
+            thunk_FUN_fffffff00a9025cc
+                      (ZEXT816(0),param_2,auVar213,auVar269,param_5,param_6,
+                       (ulong *)((ulong)*(uint *)(param_7 + 0x98) * 0x3c));
+            uVar297 = *(uint *)(param_7 + 0x98);
+            *(ulong *)(param_7 + 0x308) = extraout_x0_03;
+            *(uint *)(param_7 + 0x310) = uVar297;
+            uVar300 = 0;
+            uVar312 = extraout_x0_03;
+            uVar327 = extraout_d0_26;
+            uVar331 = extraout_var_26;
+            if (extraout_x0_03 == 0) goto LAB_fffffff009c1b2a8;
+          }
+          else {
+            uVar297 = *(uint *)(param_7 + 0x310);
+          }
+          uVar300 = uVar312 + (ulong)uVar297 * 0x3c;
+          if (((uVar312 ^ uVar300) & 0xffc0000000000000) != 0) {
+            uVar300 = uVar300 & 0xffffffffffff | 0xc8a2000000000000;
+          }
+          if ((uVar300 < uVar312) || (uVar300 - uVar312 >> 0x20 != 0)) {
+            auVar97._8_8_ = uVar331;
+            auVar97._0_8_ = uVar327;
+            auVar214._4_12_ = auVar333;
+            auVar214._0_4_ = uVar332;
+            auVar270._4_12_ = auVar335;
+            auVar270._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+            FUN_fffffff009c48f64(auVar97,param_2,auVar214,auVar270,param_5,param_6);
+          }
+          if (uVar308 * 0x3c != (long)(int)(uVar308 * 0x3c)) {
+            auVar98._8_8_ = uVar331;
+            auVar98._0_8_ = uVar327;
+            auVar215._4_12_ = auVar333;
+            auVar215._0_4_ = uVar332;
+            auVar271._4_12_ = auVar335;
+            auVar271._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+            FUN_fffffff009c48f3c(auVar98,param_2,auVar215,auVar271,param_5,param_6);
+          }
+          uVar313 = (uVar308 << 0x26) - (uVar308 << 0x22);
+          if ((long)uVar313 < 0) {
+LAB_fffffff009c1de1c:
+            auVar99._8_8_ = uVar331;
+            auVar99._0_8_ = uVar327;
+            auVar216._4_12_ = auVar333;
+            auVar216._0_4_ = uVar332;
+            auVar272._4_12_ = auVar335;
+            auVar272._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+            FUN_fffffff009c48f28(auVar99,param_2,auVar216,auVar272,param_5,param_6);
+          }
+          uVar309 = uVar313 >> 0x20;
+          uVar297 = (int)(uVar313 >> 0x20) + 0x3c;
+          if ((uint)(uVar300 - uVar312) < uVar297) goto LAB_fffffff009c1de1c;
+          uVar300 = -(ulong)CARRY8(uVar312,uVar309);
+          if ((uVar300 != CARRY8(uVar312,uVar309)) || ((long)uVar300 < 0)) {
+            auVar100._8_8_ = uVar331;
+            auVar100._0_8_ = uVar327;
+            auVar217._4_12_ = auVar333;
+            auVar217._0_4_ = uVar332;
+            auVar273._4_12_ = auVar335;
+            auVar273._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+            FUN_fffffff009c48f50(auVar100,param_2,auVar217,auVar273,param_5,param_6);
+          }
+          *(char *)(uVar312 + uVar309 + 0x20) = (char)puVar310;
+          local_88 = 0;
+          if ((bVar295 || bVar296) ||
+             (bVar296 = FUN_fffffff009c20038(param_8,"IOSurfaceSliceCount",&local_88),
+             uVar327 = extraout_d0_27, uVar331 = extraout_var_27, !bVar296)) {
+            uVar300 = 1;
+          }
+          else {
+            uVar300 = local_88;
+            if (local_88 - 0x100000000 < 0xffffffff00000002) {
+              auVar101._8_8_ = extraout_var_27;
+              auVar101._0_8_ = extraout_d0_27;
+              thunk_FUN_fffffff00a8df19c
+                        (auVar101,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                         (short *)PTR_DAT_fffffff00806ca48,0x10,
+                         (byte *)
+                         "IOSurface: sliceCount provided %d is out of bound for maximum / minimum number of required slices.\n"
+                        );
+              uVar300 = 0;
+              goto LAB_fffffff009c1b2a8;
+            }
+          }
+          *(int *)(param_7 + 0x3b8) = (int)uVar300;
+          uVar312 = *(ulong *)(param_7 + 0x308);
+          uVar300 = uVar312 + (ulong)*(uint *)(param_7 + 0x310) * 0x3c;
+          if (((uVar312 ^ uVar300) & 0xffc0000000000000) != 0) {
+            uVar300 = uVar300 & 0xffffffffffff | 0xc8a2000000000000;
+          }
+          if ((uVar300 < uVar312) || (uVar300 - uVar312 >> 0x20 != 0)) {
+            auVar102._8_8_ = uVar331;
+            auVar102._0_8_ = uVar327;
+            auVar218._4_12_ = auVar333;
+            auVar218._0_4_ = uVar332;
+            auVar274._4_12_ = auVar335;
+            auVar274._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+            FUN_fffffff009c48f64(auVar102,param_2,auVar218,auVar274,param_5,param_6);
+          }
+          if ((uint)(uVar300 - uVar312) < uVar297) {
+            auVar103._8_8_ = uVar331;
+            auVar103._0_8_ = uVar327;
+            auVar219._4_12_ = auVar333;
+            auVar219._0_4_ = uVar332;
+            auVar275._4_12_ = auVar335;
+            auVar275._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+            FUN_fffffff009c48f28(auVar103,param_2,auVar219,auVar275,param_5,param_6);
+          }
+          puVar3 = (uint *)(uVar312 + uVar309);
+          uVar300 = -(ulong)CARRY8(uVar312,uVar309);
+          if ((uVar300 != CARRY8(uVar312,uVar309)) || ((long)uVar300 < 0)) {
+            auVar104._8_8_ = uVar331;
+            auVar104._0_8_ = uVar327;
+            auVar220._4_12_ = auVar333;
+            auVar220._0_4_ = uVar332;
+            auVar276._4_12_ = auVar335;
+            auVar276._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+            FUN_fffffff009c48f50(auVar104,param_2,auVar220,auVar276,param_5,param_6);
+          }
+          if (bVar295) {
+            bVar296 = FUN_fffffff009c20038
+                                (plVar303,"IOSurfacePlaneHTPCPredictionSelector",(ulong *)&local_78)
+            ;
+            if (bVar296) {
+              if ((undefined1 *)0xff < local_78) goto LAB_fffffff009c1d63c;
+              *(char *)((long)puVar3 + 0x21) = (char)local_78;
+              if ((undefined1 *)0x1 < local_78) {
+                auVar105._8_8_ = extraout_var_28;
+                auVar105._0_8_ = extraout_d0_28;
+                thunk_FUN_fffffff00a8df19c
+                          (auVar105,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                           (short *)PTR_DAT_fffffff00806ca48,0x10,
+                           (byte *)
+                           "IOSurface: compressed plane[%d] HTPCPredictionSelector must be in range\n"
+                          );
+                uVar300 = 0;
+                goto LAB_fffffff009c1b2a8;
+              }
+            }
+            else {
+              *(undefined1 *)((long)puVar3 + 0x21) = 0;
+            }
+          }
+          bVar296 = FUN_fffffff009c20038
+                              (plVar303,"IOSurfacePlaneBytesPerCompressedTileHeader",
+                               (ulong *)&local_78);
+          if (bVar296) {
+            if ((ulong)local_78 >> 0x20 != 0) goto LAB_fffffff009c1d63c;
+            puVar3[4] = (uint)local_78;
+          }
+          uVar297 = puVar3[4];
+          if (bVar295) {
+            if ((uVar297 != 4) && (uVar297 != 8)) {
+              auVar107._8_8_ = extraout_var_29;
+              auVar107._0_8_ = extraout_d0_29;
+              thunk_FUN_fffffff00a8df19c
+                        (auVar107,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                         (short *)PTR_DAT_fffffff00806ca48,0x10,
+                         (byte *)
+                         "IOSurface: HTPC compressed plane[%d] Tile header must be 32-bit or 64-bit\n"
+                        );
+              uVar300 = 0;
+              goto LAB_fffffff009c1b2a8;
+            }
+          }
+          else if ((0x20 < uVar297) || ((1L << ((ulong)uVar297 & 0x3f) & 0x100000104U) == 0)) {
+            auVar106._8_8_ = extraout_var_29;
+            auVar106._0_8_ = extraout_d0_29;
+            thunk_FUN_fffffff00a8df19c
+                      (auVar106,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)
+                       "IOSurface: AGX BytesPerCompressedTileHeader of plane[%d] must be 2 or 8 or 32\n"
+                      );
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+          if (((bool)(bVar319 | bVar324)) &&
+             (bVar296 = FUN_fffffff009c20038
+                                  (plVar303,"IOSurfacePlaneCompressionFootprint",(ulong *)&local_78)
+             , bVar296)) {
+            if ((undefined1 *)0x3 < local_78) {
+              auVar108._8_8_ = extraout_var_30;
+              auVar108._0_8_ = extraout_d0_30;
+              thunk_FUN_fffffff00a8df19c
+                        (auVar108,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                         (short *)PTR_DAT_fffffff00806ca48,0x10,
+                         (byte *)
+                         "IOSurface: plane[%d] illegal compression footprint for type kIOSurfaceCompressionTypeInterchangeLossy %lld \n"
+                        );
+              uVar300 = 0;
+              goto LAB_fffffff009c1b2a8;
+            }
+            *(char *)(puVar3 + 10) = (char)local_78;
+          }
+          bVar296 = FUN_fffffff009c20038
+                              (plVar303,"IOSurfacePlaneCompressedTileWidth",(ulong *)&local_78);
+          if (bVar296) {
+            if ((ulong)local_78 >> 0x20 != 0) goto LAB_fffffff009c1d63c;
+            *puVar3 = (uint)local_78;
+            puVar310 = local_78;
+          }
+          else {
+            puVar310 = (undefined1 *)(ulong)*puVar3;
+          }
+          uVar297 = (uint)puVar310;
+          if (uVar297 == 0) {
+            auVar109._8_8_ = extraout_var_31;
+            auVar109._0_8_ = extraout_d0_31;
+            thunk_FUN_fffffff00a8df19c
+                      (auVar109,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)
+                       "IOSurface: compressed plane[%d] CompressedTileWidth must be at least 1\n");
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+          if ((uVar297 & uVar297 - 1) != 0) {
+            auVar110._8_8_ = extraout_var_31;
+            auVar110._0_8_ = extraout_d0_31;
+            thunk_FUN_fffffff00a8df19c
+                      (auVar110,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)
+                       "IOSurface: compressed plane[%d] CompressedTileWidth must be power of 2\n");
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+          if (0x3ff < uVar297) {
+            auVar111._8_8_ = extraout_var_31;
+            auVar111._0_8_ = extraout_d0_31;
+            thunk_FUN_fffffff00a8df19c
+                      (auVar111,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)
+                       "IOSurface: compressed plane[%d] CompressedTileWidth must be less than 1024\n"
+                      );
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+          if (*puVar302 + ((ulong)puVar310 & 0xffffffff) >> 0x20 != 0) {
+            auVar112._8_8_ = extraout_var_31;
+            auVar112._0_8_ = extraout_d0_31;
+            thunk_FUN_fffffff00a8df19c
+                      (auVar112,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)
+                       "IOSurface: compressed plane[%d] Width + CompressedTileWidth doesn\'t fit in 32 bits\n"
+                      );
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+          bVar296 = FUN_fffffff009c20038
+                              (plVar303,"IOSurfacePlaneCompressedTileHeight",(ulong *)&local_78);
+          if (bVar296) {
+            if ((ulong)local_78 >> 0x20 != 0) goto LAB_fffffff009c1d63c;
+            puVar3[1] = (uint)local_78;
+            puVar310 = local_78;
+          }
+          else {
+            puVar310 = (undefined1 *)(ulong)puVar3[1];
+          }
+          if (puVar310 == (undefined1 *)0x0) {
+            auVar113._8_8_ = extraout_var_32;
+            auVar113._0_8_ = extraout_d0_32;
+            thunk_FUN_fffffff00a8df19c
+                      (auVar113,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)
+                       "IOSurface: compressed plane[%d] CompressedTileHeight must be at least 1\n");
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+          if ((undefined1 *)0x3ff < puVar310) {
+            auVar114._8_8_ = extraout_var_32;
+            auVar114._0_8_ = extraout_d0_32;
+            thunk_FUN_fffffff00a8df19c
+                      (auVar114,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)
+                       "IOSurface: compressed plane[%d] CompressedTileHeight must be less than 1024\n"
+                      );
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+          if (((ulong)(puVar310 + 0x3ff) & (ulong)puVar310) != 0) {
+            auVar115._8_8_ = extraout_var_32;
+            auVar115._0_8_ = extraout_d0_32;
+            thunk_FUN_fffffff00a8df19c
+                      (auVar115,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)
+                       "IOSurface: compressed plane[%d] CompressedTileHeight must be power of 2\n");
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+          if ((ulong)(puVar310 + (ulong)puVar3[4] + puVar302[1]) >> 0x20 != 0) {
+            auVar116._8_8_ = extraout_var_32;
+            auVar116._0_8_ = extraout_d0_32;
+            thunk_FUN_fffffff00a8df19c
+                      (auVar116,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)
+                       "IOSurface: compressed plane[%d] Height + CompressedTileHeight doesn\'t fit in 32 bits\n"
+                      );
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+          bVar296 = FUN_fffffff009c20038
+                              (plVar303,
+                               "IOSurfacePlaneHorizontalPixelOffsetWithinCompressedTileArray",
+                               (ulong *)&local_78);
+          if (bVar296) {
+            if ((ulong)local_78 >> 0x10 != 0) goto LAB_fffffff009c1d63c;
+            *(short *)(puVar3 + 9) = (short)local_78;
+            puVar310 = local_78;
+          }
+          else {
+            puVar310 = (undefined1 *)(ulong)(ushort)puVar3[9];
+          }
+          if (*puVar3 < (uint)puVar310) {
+            auVar117._8_8_ = extraout_var_33;
+            auVar117._0_8_ = extraout_d0_33;
+            thunk_FUN_fffffff00a8df19c
+                      (auVar117,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)
+                       "IOSurface: compressed plane[%d] kIOSurfacePlaneHorizontalPixelOffsetWithinCompressedTileArray is more than a kIOSurfacePlaneCompressedTileWidth.\n"
+                      );
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+          bVar296 = FUN_fffffff009c20038
+                              (plVar303,"IOSurfacePlaneVerticalPixelOffsetWithinCompressedTileArray"
+                               ,(ulong *)&local_78);
+          if (bVar296) {
+            if ((ulong)local_78 >> 0x10 != 0) goto LAB_fffffff009c1d63c;
+            *(short *)((long)puVar3 + 0x26) = (short)local_78;
+            puVar310 = local_78;
+          }
+          else {
+            puVar310 = (undefined1 *)(ulong)*(ushort *)((long)puVar3 + 0x26);
+          }
+          if (puVar3[1] < (uint)puVar310) {
+            auVar118._8_8_ = extraout_var_34;
+            auVar118._0_8_ = extraout_d0_34;
+            thunk_FUN_fffffff00a8df19c
+                      (auVar118,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)
+                       "IOSurface: compressed plane[%d] kIOSurfacePlaneVerticalPixelOffsetWithinCompressedTileArray is more than a kIOSurfacePlaneCompressedTileHeight.\n"
+                      );
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+          bVar296 = FUN_fffffff009c20038
+                              (plVar303,"IOSurfacePlaneBytesPerTileData",(ulong *)&local_78);
+          if (bVar296) {
+            if ((ulong)local_78 >> 0x20 != 0) goto LAB_fffffff009c1d63c;
+            puVar3[0xb] = (uint)local_78;
+          }
+          if (bVar295) {
+            local_88 = 0;
+            bVar296 = FUN_fffffff009c20038
+                                (plVar303,"IOSurfacePlaneHTPCVerticalHeaderGroupingMode",&local_88);
+            if ((bVar296) && (0xff < local_88)) goto LAB_fffffff009c1d63c;
+            *(char *)((long)puVar3 + 0x22) = (char)local_88;
+            if ((local_88 & 0xfc) != 0) {
+              auVar119._8_8_ = extraout_var_35;
+              auVar119._0_8_ = extraout_d0_35;
+              thunk_FUN_fffffff00a8df19c
+                        (auVar119,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                         (short *)PTR_DAT_fffffff00806ca48,0x10,
+                         (byte *)
+                         "IOSurface: compressed plane[%d] HTPCVerticalHeaderGroupingMode must be in range\n"
+                        );
+              goto LAB_fffffff009c1d63c;
+            }
+            uVar297 = 1 << (ulong)((uint)local_88 & 0x1f);
+          }
+          else {
+            *(undefined1 *)((long)puVar3 + 0x22) = 0;
+            uVar297 = 1;
+          }
+          bVar296 = FUN_fffffff009c20038
+                              (plVar303,"IOSurfacePlaneWidthInCompressedTiles",(ulong *)&local_78);
+          auVar328._8_8_ = extraout_var_36;
+          auVar328._0_8_ = extraout_d0_36;
+          if (bVar296) {
+            if ((ulong)local_78 >> 0x20 != 0) goto LAB_fffffff009c1d63c;
+            puVar3[5] = (uint)local_78;
+          }
+          uVar327 = extraout_d0_36;
+          uVar331 = extraout_var_36;
+          if (puVar1[2] != 0) goto LAB_fffffff009c1d28c;
+          if (puVar1[3] != 0) {
+            auVar121._8_8_ = extraout_var_36;
+            auVar121._0_8_ = extraout_d0_36;
+            thunk_FUN_fffffff00a8df19c
+                      (auVar121,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)
+                       "IOSurface: compressed plane[%d] extended top is not supported for compressed iosurfaces\n"
+                      );
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+          uVar6 = (ushort)puVar3[9];
+          uVar320 = *puVar1;
+          uVar307 = uVar6 + uVar320;
+          uVar300 = (ulong)*puVar3;
+          uVar7 = *puVar3 - 1;
+          if ((CARRY4((uint)uVar6,uVar320)) || (CARRY4(uVar7,uVar307))) {
+            auVar122._8_8_ = extraout_var_36;
+            auVar122._0_8_ = extraout_d0_36;
+            thunk_FUN_fffffff00a8df19c
+                      (auVar122,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)"IOSurface: compressed plane[%d] extra width calculation overflow\n")
+            ;
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+          uVar313 = *puVar302;
+          uVar312 = (ulong)(uVar7 + uVar307);
+          if (CARRY8(uVar313,uVar312)) {
+            auVar123._8_8_ = extraout_var_36;
+            auVar123._0_8_ = extraout_d0_36;
+            thunk_FUN_fffffff00a8df19c
+                      (auVar123,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)"IOSurface: compressed plane[%d] full width calculation overflow\n");
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+          uVar325 = (ulong)puVar3[5];
+          uVar309 = 0;
+          if (uVar300 != 0) {
+            uVar309 = (uVar313 + uVar312) / uVar300;
+          }
+          if (uVar309 != uVar325) {
+            auVar124._8_8_ = extraout_var_36;
+            auVar124._0_8_ = extraout_d0_36;
+            thunk_FUN_fffffff00a8df19c
+                      (auVar124,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)
+                       "IOSurface: compressed plane[%d] CompressedTileHeaderRegionWidth must exactly cover the width in tiles\n"
+                      );
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+          if (CARRY8(uVar313,(ulong)uVar320)) {
+            auVar125._8_8_ = extraout_var_36;
+            auVar125._0_8_ = extraout_d0_36;
+            auVar328 = thunk_FUN_fffffff00a8df19c
+                                 (auVar125,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                                  (short *)PTR_DAT_fffffff00806ca48,0x10,
+                                  (byte *)
+                                  "IOSurface: compressed plane[%d] extended width calculation overflow\n"
+                                 );
+            uVar300 = (ulong)*puVar3;
+            uVar325 = (ulong)puVar3[5];
+            uVar6 = (ushort)puVar3[9];
+          }
+          uVar312 = (ulong)uVar6;
+          uVar325 = uVar325 * uVar300;
+          if (uVar325 < uVar312 || uVar325 - uVar312 == 0) {
+            auVar328 = thunk_FUN_fffffff00a8df19c
+                                 (auVar328,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                                  (short *)PTR_DAT_fffffff00806ca48,0x10,
+                                  (byte *)
+                                  "IOSurface: compressed plane[%d] planeHorizontalPixelOffsetWithinCompressedTile exceeds compressedPlaneBytesPerTileRow\n"
+                                 );
+            uVar312 = (ulong)(ushort)puVar3[9];
+          }
+          if (uVar325 - uVar312 < uVar313 + uVar320) {
+            thunk_FUN_fffffff00a8df19c
+                      (auVar328,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)"IOSurface: compressed plane[%d] Plane width must fit into tiles\n");
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+          bVar296 = FUN_fffffff009c20038
+                              (plVar303,"IOSurfacePlaneBytesPerRowOfTileData",(ulong *)&local_78);
+          if (bVar296) {
+            if ((ulong)local_78 >> 0x20 != 0) goto LAB_fffffff009c1d63c;
+            if ((puVar3[0xb] != 0) && (local_78 != (undefined1 *)(ulong)(puVar3[5] * puVar3[0xb])))
+            {
+              auVar126._8_8_ = extraout_var_37;
+              auVar126._0_8_ = extraout_d0_37;
+              thunk_FUN_fffffff00a8df19c
+                        (auVar126,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                         (short *)PTR_DAT_fffffff00806ca48,0x10,
+                         (byte *)
+                         "IOSurface: compressed plane[%d] kIOSurfacePlaneBytesPerRowOfTileData is %d less than WidthInCompressedTiles %d x BytesPerTileData %d Bytes.\n"
+                        );
+              uVar300 = 0;
+              goto LAB_fffffff009c1b2a8;
+            }
+            puVar3[0xc] = (uint)local_78;
+          }
+          bVar296 = FUN_fffffff009c20038
+                              (plVar303,"IOSurfacePlaneHeightInCompressedTiles",(ulong *)&local_78);
+          auVar329._8_8_ = extraout_var_38;
+          auVar329._0_8_ = extraout_d0_38;
+          if (bVar296) {
+            if ((ulong)local_78 >> 0x20 != 0) goto LAB_fffffff009c1d63c;
+            puVar3[6] = (uint)local_78;
+          }
+          uVar300 = puVar302[1] + (ulong)puVar1[1];
+          uVar312 = *(ushort *)((long)puVar3 + 0x26) + uVar300;
+          if ((CARRY8(puVar302[1],(ulong)puVar1[1])) ||
+             (CARRY8((ulong)*(ushort *)((long)puVar3 + 0x26),uVar300))) {
+            auVar127._8_8_ = extraout_var_38;
+            auVar127._0_8_ = extraout_d0_38;
+            auVar329 = thunk_FUN_fffffff00a8df19c
+                                 (auVar127,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                                  (short *)PTR_DAT_fffffff00806ca48,0x10,
+                                  (byte *)
+                                  "IOSurface: compressed plane[%d] extendedHeight overflow\n");
+          }
+          uVar307 = puVar3[1];
+          uVar320 = uVar307 - 1;
+          if (CARRY8(uVar312,(ulong)uVar320)) {
+            auVar329 = thunk_FUN_fffffff00a8df19c
+                                 (auVar329,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                                  (short *)PTR_DAT_fffffff00806ca48,0x10,
+                                  (byte *)
+                                  "IOSurface: compressed plane[%d] roundedExtendedHeight overflow\n"
+                                 );
+            uVar307 = puVar3[1];
+          }
+          uVar313 = (ulong)uVar307;
+          uVar300 = 0;
+          if (uVar313 != 0) {
+            uVar300 = (uVar312 + uVar320) / uVar313;
+          }
+          if (0xfffffffe < uVar300 + uVar297) {
+            thunk_FUN_fffffff00a8df19c
+                      (auVar329,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)
+                       "IOSurface: compressed plane[%d] tilesToCoverHeight + headersInGroup doesn\'t fit in 32 bits\n"
+                      );
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+          uVar307 = puVar3[6];
+          if (uVar307 < ((int)(uVar300 + uVar297) - 1U & -uVar297)) {
+            thunk_FUN_fffffff00a8df19c
+                      (auVar329,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)
+                       "IOSurface: compressed plane[%d] CompressedTileHeaderRegionHeight must exactly cover the height in tiles\n"
+                      );
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+          if ((uVar307 & uVar297 - 1) != 0) {
+            thunk_FUN_fffffff00a8df19c
+                      (auVar329,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)
+                       "IOSurface: compressed plane[%d] Header region height must fit header group\n"
+                      );
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+          if (uVar307 * uVar313 - (ulong)*(ushort *)((long)puVar3 + 0x26) < puVar302[1]) {
+            thunk_FUN_fffffff00a8df19c
+                      (auVar329,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)"IOSurface: compressed plane[%d] Plane height must fit into tiles\n")
+            ;
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+          bVar296 = FUN_fffffff009c20038
+                              (plVar303,"IOSurfacePlaneBytesPerRowOfCompressedTileHeaderGroups",
+                               (ulong *)&local_78);
+          if (bVar296) {
+            if ((ulong)local_78 >> 0x20 != 0) goto LAB_fffffff009c1d63c;
+            puVar3[7] = (uint)local_78;
+          }
+          uVar300 = (ulong)puVar3[5] *
+                    (ulong)(puVar3[4] << (ulong)(*(byte *)((long)puVar3 + 0x22) & 0x1f));
+          if (uVar300 >> 0x20 != 0) {
+            auVar128._8_8_ = extraout_var_39;
+            auVar128._0_8_ = extraout_d0_39;
+            thunk_FUN_fffffff00a8df19c
+                      (auVar128,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)
+                       "IOSurface: compressed plane[%d] bytesPerCompressedTileHeaderGroup * planeWidthInCompressedTiles doesn\'t fit in 32 bits\n"
+                      );
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+          if ((bVar295) && (puVar3[7] <= uVar300 && uVar300 - puVar3[7] != 0)) {
+            auVar129._8_8_ = extraout_var_39;
+            auVar129._0_8_ = extraout_d0_39;
+            thunk_FUN_fffffff00a8df19c
+                      (auVar129,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)
+                       "IOSurface: compressed plane[%d] BytesPerRowOfCompressedTileHeaderGroups needs to be enough for a row of groups of tiles at this width\n"
+                      );
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+          auVar130._8_8_ = extraout_var_39;
+          auVar130._0_8_ = extraout_d0_39;
+          uVar300 = FUN_fffffff009c20288
+                              (auVar130,param_2,uVar332,uVar334,param_5,param_6,plVar303,
+                               "IOSurfacePlaneCompressedTileHeaderRegionOffset",puVar3 + 2);
+          if (((int)uVar300 == 0) ||
+             (auVar131._8_8_ = extraout_var_40, auVar131._0_8_ = extraout_d0_40,
+             uVar300 = FUN_fffffff009c20288
+                                 (auVar131,param_2,uVar332,uVar334,param_5,param_6,plVar303,
+                                  "IOSurfacePlaneCompressedTileDataRegionOffset",puVar3 + 3),
+             (int)uVar300 == 0)) goto LAB_fffffff009c1b2a8;
+          uVar297 = puVar3[7];
+          uVar307 = puVar3[6] >> (ulong)(*(byte *)((long)puVar3 + 0x22) & 0x1f);
+          if (puVar302[5] + puVar302[2] < (ulong)puVar3[2] + (ulong)uVar297 * (ulong)uVar307) {
+            thunk_FUN_fffffff00a8df19c
+                      (ZEXT816(0),param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)
+                       "IOSurface: compressed plane[%d] Header region doesn\'t fit into plane size\n"
+                      );
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+          uVar300 = (ulong)puVar3[0xb];
+          if (puVar3[0xb] == 0) {
+            uVar300 = ((ulong)puVar314 & 0xffff) * (ulong)*puVar3 * (ulong)puVar3[1] + 7;
+            if (uVar300 >> 0x23 != 0) {
+              thunk_FUN_fffffff00a8df19c
+                        (ZEXT816(0),param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                         (short *)PTR_DAT_fffffff00806ca48,0x10,
+                         (byte *)
+                         "IOSurface: compressed plane[%d] uncompressedTileSize doesn\'t fit in 32 bits\n"
+                        );
+              uVar300 = 0;
+              goto LAB_fffffff009c1b2a8;
+            }
+            uVar300 = uVar300 >> 3;
+          }
+          uVar312 = (ulong)puVar3[0xc];
+          if ((puVar3[0xc] == 0) && (uVar312 = uVar300 * puVar3[5], uVar312 >> 0x20 != 0)) {
+            thunk_FUN_fffffff00a8df19c
+                      (ZEXT816(0),param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)
+                       "IOSurface: compressed plane[%d] rowOfUncompressedTiles doesn\'t fit in 32 bits\n"
+                      );
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+          uVar312 = uVar312 * puVar3[6];
+          if (uVar312 >> 0x20 != 0) {
+            thunk_FUN_fffffff00a8df19c
+                      (ZEXT816(0),param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)
+                       "IOSurface: compressed plane[%d] dataRegionTotalSize doesn\'t fit in 32 bits\n"
+                      );
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+          if (puVar302[5] + puVar302[2] < (ulong)puVar3[3] + uVar312 * *(uint *)(param_7 + 0x3b8)) {
+            thunk_FUN_fffffff00a8df19c
+                      (ZEXT816(0),param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)
+                       "IOSurface: compressed plane[%d] Data region doesn\'t fit into plane size\n")
+            ;
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+          if (1 < *(uint *)(param_7 + 0x3b8)) {
+            bVar296 = FUN_fffffff009c20038
+                                (plVar303,"IOSurfacePlaneDataRegionBytesPerSlice",(ulong *)&local_78
+                                );
+            if (!bVar296) {
+              auVar132._8_8_ = extraout_var_41;
+              auVar132._0_8_ = extraout_d0_41;
+              thunk_FUN_fffffff00a8df19c
+                        (auVar132,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                         (short *)PTR_DAT_fffffff00806ca48,0x10,
+                         (byte *)
+                         "IOSurface: kIOSurfacePlaneDataRegionBytesPerSlice must be present for multi-slice plane %d with sliceCount %d .\n"
+                        );
+              uVar300 = 0;
+              goto LAB_fffffff009c1b2a8;
+            }
+            if ((ulong)local_78 >> 0x20 != 0) {
+              auVar133._8_8_ = extraout_var_41;
+              auVar133._0_8_ = extraout_d0_41;
+              thunk_FUN_fffffff00a8df19c
+                        (auVar133,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                         (short *)PTR_DAT_fffffff00806ca48,0x10,
+                         (byte *)
+                         "IOSurface: kIOSurfacePlaneDataRegionBytesPerSlice %d exceeds maximum value.\n"
+                        );
+              uVar300 = 0;
+              goto LAB_fffffff009c1b2a8;
+            }
+            if (local_78 < (undefined1 *)(ulong)(puVar3[6] * puVar3[5] * puVar3[0xb])) {
+              thunk_FUN_fffffff00a8df19c
+                        (ZEXT816(0),param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                         (short *)PTR_DAT_fffffff00806ca48,0x10,
+                         (byte *)
+                         "IOSurface: kIOSurfacePlaneDataRegionBytesPerSlice %d is smaller than expected value %d .\n"
+                        );
+              uVar300 = 0;
+              goto LAB_fffffff009c1b2a8;
+            }
+            puVar3[0xd] = (uint)local_78;
+          }
+          puVar310 = (undefined1 *)((ulong)uVar297 * (ulong)uVar307);
+          if (bVar295) {
+            if ((undefined1 *)(ulong)puVar3[3] < puVar310 + puVar3[2]) {
+              thunk_FUN_fffffff00a8df19c
+                        (ZEXT816(0),param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                         (short *)PTR_DAT_fffffff00806ca48,0x10,
+                         (byte *)
+                         "IOSurface: HTPC compressed plane[%d] Header region overlaps data region\n"
+                        );
+              uVar300 = 0;
+              goto LAB_fffffff009c1b2a8;
+            }
+          }
+          else {
+            if ((ulong)puVar3[2] < (ulong)puVar3[3] + uVar312 * *(uint *)(param_7 + 0x3b8)) {
+              thunk_FUN_fffffff00a8df19c
+                        (ZEXT816(0),param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                         (short *)PTR_DAT_fffffff00806ca48,0x10,
+                         (byte *)
+                         "IOSurface: compressed plane[%d] Data region overlaps header region\n");
+              uVar300 = 0;
+              goto LAB_fffffff009c1b2a8;
+            }
+            if (1 < *(uint *)(param_7 + 0x3b8)) {
+              bVar295 = FUN_fffffff009c20038
+                                  (plVar303,"IOSurfacePlaneHeaderRegionBytesPerSlice",
+                                   (ulong *)&local_78);
+              if (!bVar295) {
+                auVar134._8_8_ = extraout_var_42;
+                auVar134._0_8_ = extraout_d0_42;
+                thunk_FUN_fffffff00a8df19c
+                          (auVar134,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                           (short *)PTR_DAT_fffffff00806ca48,0x10,
+                           (byte *)
+                           "IOSurface: kIOSurfacePlaneHeaderRegionBytesPerSlice must be present for multi-slice plane %d with sliceCount %d .\n"
+                          );
+                uVar300 = 0;
+                goto LAB_fffffff009c1b2a8;
+              }
+              if ((ulong)local_78 >> 0x20 != 0) {
+                auVar135._8_8_ = extraout_var_42;
+                auVar135._0_8_ = extraout_d0_42;
+                thunk_FUN_fffffff00a8df19c
+                          (auVar135,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                           (short *)PTR_DAT_fffffff00806ca48,0x10,
+                           (byte *)
+                           "IOSurface: kIOSurfacePlaneHeaderRegionBytesPerSlice %d exeeds maximum value.\n"
+                          );
+                uVar300 = 0;
+                goto LAB_fffffff009c1b2a8;
+              }
+              if (local_78 < puVar310) {
+                thunk_FUN_fffffff00a8df19c
+                          (ZEXT816(0),param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                           (short *)PTR_DAT_fffffff00806ca48,0x10,
+                           (byte *)
+                           "IOSurface: kIOSurfacePlaneHeaderRegionBytesPerSlice %d is smaller than expected value %d .\n"
+                          );
+                uVar300 = 0;
+                goto LAB_fffffff009c1b2a8;
+              }
+              puVar3[0xe] = (uint)local_78;
+              if (puVar302[5] < (ulong)((puVar3[0xd] + (uint)local_78) * *(int *)(param_7 + 0x3b8)))
+              {
+                thunk_FUN_fffffff00a8df19c
+                          (ZEXT816(0),param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                           (short *)PTR_DAT_fffffff00806ca48,0x10,
+                           (byte *)
+                           "IOSurface: multi-slice interchange compressed plane[%d] (DataRegionBytesPerSlice %d + HeaderRegionBytesPerSlice %d) * sliceCount %d size is greater than total planeSize %lld\n"
+                          );
+                uVar300 = 0;
+                goto LAB_fffffff009c1b2a8;
+              }
+            }
+          }
+          if (uVar299 < 5) {
+            lVar315 = uVar308 * 4;
+            puVar5 = (undefined4 *)(*plVar305 + 0xb8 + (long)(int)lVar315);
+            if (lVar315 - (int)lVar315 != 0) {
+              puVar5 = (undefined4 *)
+                       (*plVar305 + 0xb8 + lVar315 & 0xffffffffffffU | 0x2bad000000000000);
+            }
+            *puVar5 = (int)uVar312;
+          }
+        }
+        else {
+LAB_fffffff009c1bc70:
+          uVar300 = puVar302[3] + uVar312 + uVar313;
+          if (*(long *)(param_7 + 0x378) == 0) {
+            if (puVar302[5] + puVar302[2] < uVar300) {
+              thunk_FUN_fffffff00a8df19c
+                        (ZEXT816(0),param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                         (short *)PTR_DAT_fffffff00806ca48,0x10,
+                         (byte *)
+                         "IOSurface: plane[%d] Image data doesn\'t fit within allocated plane size\n"
+                        );
+              uVar300 = 0;
+              goto LAB_fffffff009c1b2a8;
+            }
+          }
+          else if (*(long *)(*(long *)(param_7 + 0x378) + 0x90) + puVar302[2] < uVar300) {
+            thunk_FUN_fffffff00a8df19c
+                      (ZEXT816(0),param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)
+                       "IOSurface: child surface plane[%d] Image data doesn\'t fit within allocated parent plane size\n"
+                      );
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+        }
+        uVar308 = (ulong)(uVar299 + 1);
+        lVar316 = lVar316 + -1;
+      } while (uVar299 + 1 < *(uint *)(param_7 + 0x98));
+    }
+  }
+  *(undefined8 *)(param_7 + 0x3a0) = 0;
+  if (*(long *)(param_7 + 0x378) == 0) {
+    local_88 = local_88 & 0xffffffffffffff00;
+    bVar295 = FUN_fffffff009c1fec4(param_8,"IOSurfaceEnableStatistics",(undefined1 *)&local_88);
+    bVar319 = (byte)local_88;
+    local_88 = 0;
+    bVar296 = FUN_fffffff009c20038(param_8,"IOSurfaceProtectionOptions",&local_88);
+    uVar327 = extraout_d0_44;
+    uVar331 = extraout_var_44;
+    if (bVar296) {
+      if (0xf < local_88) {
+        auVar136._8_8_ = extraout_var_44;
+        auVar136._0_8_ = extraout_d0_44;
+        thunk_FUN_fffffff00a8df19c
+                  (auVar136,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                   (short *)PTR_DAT_fffffff00806ca48,0x10,
+                   (byte *)"Unsupported protection bits set: %016llx\n");
+        uVar300 = 0;
+        goto LAB_fffffff009c1b2a8;
+      }
+      uVar308 = FUN_fffffff009c314f8(local_88);
+      uVar327 = extraout_d0_45;
+      uVar331 = extraout_var_45;
+      uVar300 = uVar308;
+      if ((uVar308 != 0 && (bVar295 & bVar319) == 0) &&
+         (uVar297 = FUN_fffffff009c31488(0x10000), uVar327 = extraout_d0_46,
+         uVar331 = extraout_var_46, uVar297 != 0)) {
+        uVar297 = FUN_fffffff009c31488(0x20000);
+        uVar327 = extraout_d0_47;
+        uVar331 = extraout_var_47;
+        uVar300 = uVar308 | 8;
+        if (uVar297 != 0) {
+          uVar300 = uVar308;
+        }
+      }
+      goto LAB_fffffff009c1c608;
+    }
+  }
+  else {
+    uVar297 = FUN_fffffff009c31488(0x2000);
+    uVar300 = *(ulong *)(*(long *)(param_7 + 0x378) + 0x3a0);
+    uVar327 = extraout_d0_43;
+    uVar331 = extraout_var_43;
+    if ((uVar297 == 0) && (uVar300 != 0)) {
+      auVar137._8_8_ = extraout_var_43;
+      auVar137._0_8_ = extraout_d0_43;
+      thunk_FUN_fffffff00a8df19c
+                (auVar137,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                 (short *)PTR_DAT_fffffff00806ca48,0x10,
+                 (byte *)"Cannot create children of protected surfaces\n");
+      uVar300 = 0;
+      goto LAB_fffffff009c1b2a8;
+    }
+LAB_fffffff009c1c608:
+    *(ulong *)(param_7 + 0x3a0) = uVar300 & 0xffffffff;
+  }
+  auVar138._8_8_ = uVar331;
+  auVar138._0_8_ = uVar327;
+  FUN_fffffff009c1ff50
+            (auVar138,param_2,uVar332,uVar334,param_5,param_6,param_8,"IOSurfaceBufferTileFormat",
+             (undefined4 *)(param_7 + 0x234));
+  local_88 = local_88 & 0xffffffffffffff00;
+  bVar295 = FUN_fffffff009c1fec4(param_8,"IOFenceAllowTearing",(undefined1 *)&local_88);
+  if (bVar295) {
+    *(uint *)(param_7 + 0x3d0) =
+         *(uint *)(param_7 + 0x3d0) & 0xffffc000 |
+         *(uint *)(param_7 + 0x3d0) & 0x1fff | ((byte)local_88 & 1) << 0xd;
+  }
+  local_88 = local_88 & 0xffffffffffffff00;
+  bVar295 = FUN_fffffff009c1fec4(param_8,"IOSurfaceBufferTileMode",(undefined1 *)&local_88);
+  uVar297 = *(uint *)(param_7 + 0x3d0);
+  if (bVar295) {
+    uVar297 = uVar297 & 0xfffffc00 | uVar297 & 0x1ff | ((byte)local_88 & 1) << 9;
+    *(uint *)(param_7 + 0x3d0) = uVar297;
+  }
+  *(byte *)(*(long *)(param_7 + 0x178) + 0x14) = (byte)(uVar297 >> 9) & 1;
+  local_88 = local_88 & 0xffffffffffffff00;
+  bVar295 = FUN_fffffff009c1fec4(param_8,"IOSurfacePixelSizeCastingAllowed",(undefined1 *)&local_88)
+  ;
+  uVar297 = *(uint *)(param_7 + 0x3d0);
+  if (bVar295) {
+    uVar297 = uVar297 & 0xfffe0000 | uVar297 & 0xffff | ((byte)local_88 & 1) << 0x10;
+    *(uint *)(param_7 + 0x3d0) = uVar297;
+  }
+  *(byte *)(*plVar305 + 0x2c) = (byte)(uVar297 >> 0x10) & 1;
+  local_88 = 0;
+  bVar295 = FUN_fffffff009c20038(param_8,"IOSurfacePixelFormat",&local_88);
+  if (bVar295) {
+    *(int *)(param_7 + 0x80) = (int)local_88;
+  }
+  bVar295 = FUN_fffffff009c20038(param_8,"IOSurfaceBitsPerBlock",(ulong *)&local_78);
+  if (bVar295) {
+    if ((ulong)local_78 >> 0x10 == 0) {
+      *(ushort *)(param_7 + 0x70) = (ushort)((uint)local_78 >> 3) & 0x1fff;
+      goto LAB_fffffff009c1c7e4;
+    }
+LAB_fffffff009c1d63c:
+    uVar300 = 0;
+  }
+  else {
+LAB_fffffff009c1c7e4:
+    bVar295 = FUN_fffffff009c20038(param_8,"IOSurfaceBytesPerElement",(ulong *)&local_78);
+    if (bVar295) {
+      if ((ulong)local_78 >> 0x10 != 0) goto LAB_fffffff009c1d63c;
+      *(short *)(param_7 + 0x70) = (short)local_78;
+    }
+    bVar295 = FUN_fffffff009c20038(param_8,"IOSurfaceWidth",(ulong *)&local_78);
+    if (bVar295) {
+      *(undefined1 **)(param_7 + 0x58) = local_78;
+    }
+    else if (*(int *)(param_7 + 0x98) != 0) {
+      auVar139._8_8_ = extraout_var_48;
+      auVar139._0_8_ = extraout_d0_48;
+      thunk_FUN_fffffff00a8df19c
+                (auVar139,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                 (short *)PTR_DAT_fffffff00806ca48,0x10,
+                 (byte *)
+                 "IOSurface: Planar surfaces must specify a valid buffer width and height.\n");
+      uVar300 = 0;
+      goto LAB_fffffff009c1b2a8;
+    }
+    bVar295 = FUN_fffffff009c20038(param_8,"IOSurfaceHeight",(ulong *)&local_78);
+    if (bVar295) {
+      *(undefined1 **)(param_7 + 0x60) = local_78;
+    }
+    else if (*(int *)(param_7 + 0x98) != 0) {
+      auVar140._8_8_ = extraout_var_49;
+      auVar140._0_8_ = extraout_d0_49;
+      thunk_FUN_fffffff00a8df19c
+                (auVar140,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                 (short *)PTR_DAT_fffffff00806ca48,0x10,
+                 (byte *)
+                 "IOSurface: Planar surfaces must specify a valid buffer width and height.\n");
+      uVar300 = 0;
+      goto LAB_fffffff009c1b2a8;
+    }
+    bVar295 = FUN_fffffff009c20038(param_8,"IOSurfaceElementWidth",(ulong *)&local_78);
+    if (bVar295) {
+      if ((undefined1 *)0xff < local_78) goto LAB_fffffff009c1d63c;
+      *(char *)(param_7 + 0x72) = (char)local_78;
+    }
+    bVar295 = FUN_fffffff009c20038(param_8,"IOSurfaceElementHeight",(ulong *)&local_78);
+    if (bVar295) {
+      if ((undefined1 *)0xff < local_78) goto LAB_fffffff009c1d63c;
+      *(char *)(param_7 + 0x73) = (char)local_78;
+    }
+    if (*(short *)(param_7 + 0x70) == 0) {
+      auVar141._8_8_ = extraout_var_50;
+      auVar141._0_8_ = extraout_d0_50;
+      thunk_FUN_fffffff00a8df19c
+                (auVar141,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                 (short *)PTR_DAT_fffffff00806ca48,0x10,
+                 (byte *)"IOSurface: buffer bytes per element is zero.\n");
+      uVar300 = 0;
+      goto LAB_fffffff009c1b2a8;
+    }
+    bVar319 = *(byte *)(param_7 + 0x72);
+    if (bVar319 == 0) {
+      auVar142._8_8_ = extraout_var_50;
+      auVar142._0_8_ = extraout_d0_50;
+      thunk_FUN_fffffff00a8df19c
+                (auVar142,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                 (short *)PTR_DAT_fffffff00806ca48,0x10,
+                 (byte *)"IOSurface: buffer element width is zero.\n");
+      uVar300 = 0;
+      goto LAB_fffffff009c1b2a8;
+    }
+    if (*(char *)(param_7 + 0x73) == '\0') {
+      auVar143._8_8_ = extraout_var_50;
+      auVar143._0_8_ = extraout_d0_50;
+      thunk_FUN_fffffff00a8df19c
+                (auVar143,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                 (short *)PTR_DAT_fffffff00806ca48,0x10,
+                 (byte *)"IOSurface: buffer element height is zero.\n");
+      uVar300 = 0;
+      goto LAB_fffffff009c1b2a8;
+    }
+    uVar300 = (ulong)(bVar319 - 1);
+    uVar312 = (ulong)CARRY8(*(ulong *)(param_7 + 0x58),uVar300);
+    uVar308 = -uVar312;
+    if ((uVar308 != uVar312) || ((long)uVar308 < 0)) {
+      auVar144._8_8_ = extraout_var_50;
+      auVar144._0_8_ = extraout_d0_50;
+      thunk_FUN_fffffff00a8df19c
+                (auVar144,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                 (short *)PTR_DAT_fffffff00806ca48,0x10,(byte *)"IOSurface: buffer width overflow\n"
+                );
+      uVar300 = 0;
+      goto LAB_fffffff009c1b2a8;
+    }
+    uVar308 = 0;
+    if ((ulong)bVar319 != 0) {
+      uVar308 = (*(ulong *)(param_7 + 0x58) + uVar300) / (ulong)bVar319;
+    }
+    bVar295 = FUN_fffffff009c20038(param_8,"IOSurfaceBytesPerRow",(ulong *)&local_78);
+    if (bVar295) {
+      *(undefined1 **)(param_7 + 0x68) = local_78;
+      uVar300 = CONCAT62(0,*(ushort *)(param_7 + 0x70));
+      puVar310 = (undefined1 *)(uVar308 * uVar300);
+      auVar15._8_8_ = 0;
+      auVar15._0_8_ = uVar308;
+      auVar26._8_8_ = 0;
+      auVar26._0_8_ = uVar300;
+      bVar295 = SUB168(auVar15 * auVar26,8) != 0;
+      puVar314 = local_78;
+    }
+    else {
+      uVar300 = CONCAT62(0,*(ushort *)(param_7 + 0x70));
+      auVar16._8_8_ = 0;
+      auVar16._0_8_ = uVar308;
+      auVar27._8_8_ = 0;
+      auVar27._0_8_ = uVar300;
+      puVar310 = (undefined1 *)(uVar308 * uVar300);
+      uVar300 = (ulong)*(uint *)(DAT_fffffff00af483b0 + 0xb0);
+      if ((SUB168(auVar16 * auVar27,8) != 0) || (CARRY8(uVar300,(ulong)puVar310))) {
+        auVar145._8_8_ = extraout_var_51;
+        auVar145._0_8_ = extraout_d0_51;
+        thunk_FUN_fffffff00a8df19c
+                  (auVar145,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                   (short *)PTR_DAT_fffffff00806ca48,0x10,
+                   (byte *)"IOSurface: bytesPerRow calculation overflow\n");
+        uVar300 = 0;
+        goto LAB_fffffff009c1b2a8;
+      }
+      puVar314 = (undefined1 *)((ulong)(puVar310 + uVar300) & (uVar300 ^ 0xffffffffffffffff));
+      *(undefined1 **)(param_7 + 0x68) = puVar314;
+      bVar295 = false;
+    }
+    if (bVar295) {
+      auVar182._8_8_ = extraout_var_51;
+      auVar182._0_8_ = extraout_d0_51;
+      thunk_FUN_fffffff00a8df19c
+                (auVar182,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                 (short *)PTR_DAT_fffffff00806ca48,0x10,
+                 (byte *)"IOSurface: buffer required width in bytes overflow\n");
+      uVar300 = 0;
+      goto LAB_fffffff009c1b2a8;
+    }
+    if (puVar314 < puVar310) {
+      auVar181._8_8_ = extraout_var_51;
+      auVar181._0_8_ = extraout_d0_51;
+      thunk_FUN_fffffff00a8df19c
+                (auVar181,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                 (short *)PTR_DAT_fffffff00806ca48,0x10,
+                 (byte *)"IOSurface: buffer bytes per row value is too small\n");
+      uVar300 = 0;
+      goto LAB_fffffff009c1b2a8;
+    }
+    bVar295 = FUN_fffffff009c20038(param_8,"IOSurfaceOffset",(ulong *)&local_78);
+    if (bVar295) {
+      *(undefined1 **)(param_7 + 0x78) = local_78;
+    }
+    if (*(long *)(param_7 + 0x378) == 0) {
+      bVar295 = FUN_fffffff009c20038(param_8,"IOSurfaceAllocSize",(ulong *)&local_78);
+      puVar310 = local_78;
+      uVar327 = extraout_d0_54;
+      uVar331 = extraout_var_54;
+      if (!bVar295) {
+        if (*(int *)(param_7 + 0x98) == 0) {
+          auVar17._8_8_ = 0;
+          auVar17._0_8_ = *(ulong *)(param_7 + 0x68);
+          auVar28._8_8_ = 0;
+          auVar28._0_8_ = *(ulong *)(param_7 + 0x60);
+          uVar312 = *(ulong *)(param_7 + 0x68) * *(ulong *)(param_7 + 0x60);
+          uVar300 = *(ulong *)(param_7 + 0x78) + uVar312;
+          if ((SUB168(auVar17 * auVar28,8) != 0) || (CARRY8(*(ulong *)(param_7 + 0x78),uVar312))) {
+            auVar146._8_8_ = extraout_var_54;
+            auVar146._0_8_ = extraout_d0_54;
+            thunk_FUN_fffffff00a8df19c
+                      (auVar146,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)"IOSurface: required allocation size overflow\n");
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+        }
+        else {
+          uVar312 = *(ulong *)(param_7 + 0x180);
+          uVar300 = uVar312 + (ulong)*(uint *)(param_7 + 0x188) * 0x38;
+          if (((uVar312 ^ uVar300) & 0xffc0000000000000) != 0) {
+            uVar300 = uVar300 & 0xffffffffffff | 0xc8a2000000000000;
+          }
+          if ((uVar300 < uVar312) || (uVar300 - uVar312 >> 0x20 != 0)) {
+            auVar147._8_8_ = extraout_var_54;
+            auVar147._0_8_ = extraout_d0_54;
+            auVar221._4_12_ = auVar333;
+            auVar221._0_4_ = uVar332;
+            auVar277._4_12_ = auVar335;
+            auVar277._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+            FUN_fffffff009c48f64(auVar147,param_2,auVar221,auVar277,param_5,param_6);
+          }
+          uVar313 = (ulong)(*(int *)(param_7 + 0x98) - 1);
+          if (uVar313 * 0x38 != (long)(int)(uVar313 * 0x38)) {
+            auVar148._8_8_ = extraout_var_54;
+            auVar148._0_8_ = extraout_d0_54;
+            auVar222._4_12_ = auVar333;
+            auVar222._0_4_ = uVar332;
+            auVar278._4_12_ = auVar335;
+            auVar278._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+            FUN_fffffff009c48f3c(auVar148,param_2,auVar222,auVar278,param_5,param_6);
+          }
+          uVar313 = (uVar313 << 0x26) - (uVar313 << 0x23);
+          if (((long)uVar313 < 0) || ((uint)(uVar300 - uVar312) < (int)(uVar313 >> 0x20) + 0x38U)) {
+            auVar149._8_8_ = extraout_var_54;
+            auVar149._0_8_ = extraout_d0_54;
+            auVar223._4_12_ = auVar333;
+            auVar223._0_4_ = uVar332;
+            auVar279._4_12_ = auVar335;
+            auVar279._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+            FUN_fffffff009c48f28(auVar149,param_2,auVar223,auVar279,param_5,param_6);
+          }
+          lVar316 = uVar312 + (uVar313 >> 0x20);
+          uVar312 = (ulong)CARRY8(uVar312,uVar313 >> 0x20);
+          uVar300 = -uVar312;
+          if ((uVar300 != uVar312) || ((long)uVar300 < 0)) {
+            auVar150._8_8_ = extraout_var_54;
+            auVar150._0_8_ = extraout_d0_54;
+            auVar224._4_12_ = auVar333;
+            auVar224._0_4_ = uVar332;
+            auVar280._4_12_ = auVar335;
+            auVar280._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+            FUN_fffffff009c48f50(auVar150,param_2,auVar224,auVar280,param_5,param_6);
+          }
+          uVar313 = *(ulong *)(lVar316 + 0x10);
+          uVar312 = *(ulong *)(lVar316 + 0x28);
+          uVar300 = uVar313 + uVar312;
+          if (CARRY8(uVar313,uVar312)) {
+            auVar152._8_8_ = extraout_var_54;
+            auVar152._0_8_ = extraout_d0_54;
+            thunk_FUN_fffffff00a8df19c
+                      (auVar152,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                       (short *)PTR_DAT_fffffff00806ca48,0x10,
+                       (byte *)"IOSurface: required planar allocation size overflow\n");
+            uVar300 = 0;
+            goto LAB_fffffff009c1b2a8;
+          }
+        }
+        uVar312 = (ulong)*(uint *)(DAT_fffffff00af483b0 + 0xac);
+        if (CARRY8(uVar300,uVar312)) {
+          auVar151._8_8_ = extraout_var_54;
+          auVar151._0_8_ = extraout_d0_54;
+          thunk_FUN_fffffff00a8df19c
+                    (auVar151,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                     (short *)PTR_DAT_fffffff00806ca48,0x10,
+                     (byte *)"IOSurface: aligned allocation size overflow\n");
+          uVar300 = 0;
+          goto LAB_fffffff009c1b2a8;
+        }
+        puVar310 = (undefined1 *)(uVar300 + uVar312 & (uVar312 ^ 0xffffffffffffffff));
+      }
+    }
+    else {
+      puVar310 = *(undefined1 **)(*(long *)(param_7 + 0x378) + 0x90);
+      uVar327 = extraout_d0_52;
+      uVar331 = extraout_var_52;
+    }
+    *(undefined1 **)(param_7 + 0x90) = puVar310;
+    uVar300 = (ulong)(uint)~(-1 << (ulong)(*(uint *)PTR_DAT_fffffff00806c9b0 & 0x1f));
+    if ((undefined1 *)((ulong)(puVar310 + uVar300) & (uVar300 ^ 0xffffffffffffffff)) < puVar310) {
+      auVar180._8_8_ = uVar331;
+      auVar180._0_8_ = uVar327;
+      thunk_FUN_fffffff00a8df19c
+                (auVar180,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                 (short *)PTR_DAT_fffffff00806ca48,0x10,
+                 (byte *)"IOSurface: allocation size overflow\n");
+      uVar300 = 0;
+      goto LAB_fffffff009c1b2a8;
+    }
+    if ((*(long *)(param_7 + 0x378) != 0) &&
+       (*(undefined1 **)(*(long *)(param_7 + 0x378) + 0x90) < puVar310)) {
+      auVar179._8_8_ = uVar331;
+      auVar179._0_8_ = uVar327;
+      thunk_FUN_fffffff00a8df19c
+                (auVar179,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                 (short *)PTR_DAT_fffffff00806ca48,0x10,
+                 (byte *)
+                 "IOSurface: child surfaces must specify an allocation size less than or equal to the parent surface size\n"
+                );
+      uVar300 = 0;
+      goto LAB_fffffff009c1b2a8;
+    }
+    if (*(undefined1 **)(DAT_fffffff00af483b0 + 0x198) < puVar310) {
+      auVar178._8_8_ = uVar331;
+      auVar178._0_8_ = uVar327;
+      thunk_FUN_fffffff00a8df19c
+                (auVar178,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                 (short *)PTR_DAT_fffffff00806ca48,0x10,
+                 (byte *)"IOSurface: allocation size of %llu exceeds limit of %llu bytes\n");
+      uVar300 = 0;
+      goto LAB_fffffff009c1b2a8;
+    }
+    if (*(int *)(param_7 + 0x98) == 0) {
+      bVar319 = *(byte *)(param_7 + 0x73);
+      iVar298 = bVar319 - 1;
+      uVar300 = (long)iVar298 >> 0x3f;
+      if (CARRY8(*(ulong *)(param_7 + 0x60),(long)iVar298)) {
+        uVar300 = uVar300 + 1;
+      }
+      if ((-(uVar300 & 1) != uVar300) || ((long)-(uVar300 & 1) < 0)) {
+        auVar153._8_8_ = uVar331;
+        auVar153._0_8_ = uVar327;
+        thunk_FUN_fffffff00a8df19c
+                  (auVar153,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                   (short *)PTR_DAT_fffffff00806ca48,0x10,
+                   (byte *)"IOSurface: aligned height calculation overflow\n");
+        uVar300 = 0;
+        goto LAB_fffffff009c1b2a8;
+      }
+      uVar300 = CONCAT62(0,*(ushort *)(param_7 + 0x70));
+      auVar18._8_8_ = 0;
+      auVar18._0_8_ = uVar308;
+      auVar29._8_8_ = 0;
+      auVar29._0_8_ = uVar300;
+      if (SUB168(auVar18 * auVar29,8) != 0) {
+        auVar157._8_8_ = uVar331;
+        auVar157._0_8_ = uVar327;
+        thunk_FUN_fffffff00a8df19c
+                  (auVar157,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                   (short *)PTR_DAT_fffffff00806ca48,0x10,
+                   (byte *)"IOSurface: required bytes per line overflow\n");
+        uVar300 = 0;
+        goto LAB_fffffff009c1b2a8;
+      }
+      uVar308 = uVar308 * uVar300;
+      uVar300 = 0;
+      if ((ulong)bVar319 != 0) {
+        uVar300 = (*(ulong *)(param_7 + 0x60) + (long)iVar298) / (ulong)bVar319;
+      }
+      auVar19._8_8_ = 0;
+      auVar19._0_8_ = *(ulong *)(param_7 + 0x68);
+      auVar30._8_8_ = 0;
+      auVar30._0_8_ = uVar300 - 1;
+      uVar312 = *(ulong *)(param_7 + 0x68) * (uVar300 - 1);
+      uVar300 = uVar308 + uVar312;
+      if ((SUB168(auVar19 * auVar30,8) != 0) || (CARRY8(uVar308,uVar312))) {
+        auVar154._8_8_ = uVar331;
+        auVar154._0_8_ = uVar327;
+        thunk_FUN_fffffff00a8df19c
+                  (auVar154,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                   (short *)PTR_DAT_fffffff00806ca48,0x10,
+                   (byte *)"IOSurface: required image bytes overflow\n");
+        uVar300 = 0;
+        goto LAB_fffffff009c1b2a8;
+      }
+      if (CARRY8(*(ulong *)(param_7 + 0x78),uVar300)) {
+        auVar156._8_8_ = uVar331;
+        auVar156._0_8_ = uVar327;
+        thunk_FUN_fffffff00a8df19c
+                  (auVar156,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                   (short *)PTR_DAT_fffffff00806ca48,0x10,
+                   (byte *)"IOSurface: required allocation size overflow\n\n");
+        uVar300 = 0;
+        goto LAB_fffffff009c1b2a8;
+      }
+      if (puVar310 < (undefined1 *)(*(ulong *)(param_7 + 0x78) + uVar300)) {
+        auVar155._8_8_ = uVar331;
+        auVar155._0_8_ = uVar327;
+        thunk_FUN_fffffff00a8df19c
+                  (auVar155,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                   (short *)PTR_DAT_fffffff00806ca48,0x10,
+                   (byte *)
+                   "IOSurface: buffer allocation size is too small to cover valid image area: fAllocSize=%llu, requiredSizeInBytes=%llu\n"
+                  );
+        uVar300 = 0;
+        goto LAB_fffffff009c1b2a8;
+      }
+    }
+    else {
+      uVar308 = *(ulong *)(param_7 + 0x180);
+      uVar300 = uVar308 + (ulong)*(uint *)(param_7 + 0x188) * 0x38;
+      if (((uVar308 ^ uVar300) & 0xffc0000000000000) != 0) {
+        uVar300 = uVar300 & 0xffffffffffff | 0xc8a2000000000000;
+      }
+      if ((uVar300 < uVar308) || (uVar300 - uVar308 >> 0x20 != 0)) {
+        auVar158._8_8_ = uVar331;
+        auVar158._0_8_ = uVar327;
+        auVar225._4_12_ = auVar333;
+        auVar225._0_4_ = uVar332;
+        auVar281._4_12_ = auVar335;
+        auVar281._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+        FUN_fffffff009c48f64(auVar158,param_2,auVar225,auVar281,param_5,param_6);
+      }
+      uVar313 = 0;
+      uVar312 = 0xffffffff7fffffc8;
+      iVar298 = 0;
+      do {
+        uVar312 = uVar312 + 0x38;
+        if (uVar312 < 0xffffffff00000000) {
+          auVar159._8_8_ = uVar331;
+          auVar159._0_8_ = uVar327;
+          auVar226._4_12_ = auVar333;
+          auVar226._0_4_ = uVar332;
+          auVar282._4_12_ = auVar335;
+          auVar282._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+          FUN_fffffff009c48f3c(auVar159,param_2,auVar226,auVar282,param_5,param_6);
+        }
+        if (((long)uVar313 < 0) || ((uint)(uVar300 - uVar308) < (int)(uVar313 >> 0x20) + 0x38U)) {
+          auVar160._8_8_ = uVar331;
+          auVar160._0_8_ = uVar327;
+          auVar227._4_12_ = auVar333;
+          auVar227._0_4_ = uVar332;
+          auVar283._4_12_ = auVar335;
+          auVar283._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+          FUN_fffffff009c48f28(auVar160,param_2,auVar227,auVar283,param_5,param_6);
+        }
+        lVar316 = uVar308 + (uVar313 >> 0x20);
+        uVar325 = (ulong)CARRY8(uVar308,uVar313 >> 0x20);
+        uVar309 = -uVar325;
+        if ((uVar309 != uVar325) || ((long)uVar309 < 0)) {
+          auVar161._8_8_ = uVar331;
+          auVar161._0_8_ = uVar327;
+          auVar228._4_12_ = auVar333;
+          auVar228._0_4_ = uVar332;
+          auVar284._4_12_ = auVar335;
+          auVar284._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+          FUN_fffffff009c48f50(auVar161,param_2,auVar228,auVar284,param_5,param_6);
+        }
+        uVar309 = *(ulong *)(lVar316 + 0x10);
+        uVar325 = *(ulong *)(lVar316 + 0x28);
+        if (CARRY8(uVar309,uVar325)) {
+          auVar162._8_8_ = uVar331;
+          auVar162._0_8_ = uVar327;
+          thunk_FUN_fffffff00a8df19c
+                    (auVar162,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                     (short *)PTR_DAT_fffffff00806ca48,0x10,
+                     (byte *)"IOSurface: plane limit calculation overflow\n");
+          uVar300 = 0;
+          goto LAB_fffffff009c1b2a8;
+        }
+        if (puVar310 < (undefined1 *)(uVar309 + uVar325)) {
+          auVar163._8_8_ = uVar331;
+          auVar163._0_8_ = uVar327;
+          thunk_FUN_fffffff00a8df19c
+                    (auVar163,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                     (short *)PTR_DAT_fffffff00806ca48,0x10,
+                     (byte *)
+                     "IOSurface: buffer allocation size is too small to cover valid image area of plane %d: fAllocSize=%llu, planeLimit=%llu\n"
+                    );
+          uVar300 = 0;
+          goto LAB_fffffff009c1b2a8;
+        }
+        uVar313 = uVar313 + 0x3800000000;
+        iVar298 = iVar298 + 1;
+      } while (*(int *)(param_7 + 0x98) != iVar298);
+    }
+    bVar295 = FUN_fffffff009c20038(param_8,"IOSurfaceDirection",(ulong *)&local_78);
+    if (bVar295) {
+      *(uint *)(param_7 + 0x368) = (uint)local_78;
+      if (((uint)local_78 & 0xfffffffe) != 2) {
+        auVar164._8_8_ = extraout_var_55;
+        auVar164._0_8_ = extraout_d0_55;
+        thunk_FUN_fffffff00a8df19c
+                  (auVar164,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                   (short *)PTR_DAT_fffffff00806ca48,0x10,
+                   (byte *)"IOSurface: client direction not InOut or Out\n");
+        uVar300 = 0;
+        goto LAB_fffffff009c1b2a8;
+      }
+    }
+    bVar295 = FUN_fffffff009c20038(param_8,"IOSurfaceAddressOffset",(ulong *)&local_78);
+    if ((bVar295) &&
+       (*(ulong *)(param_7 + 0x168) = (ulong)local_78 & 0xffffffff,
+       *(ulong *)PTR_DAT_fffffff00806ca78 <= ((ulong)local_78 & 0xffffffff))) {
+      auVar165._8_8_ = extraout_var_56;
+      auVar165._0_8_ = extraout_d0_56;
+      thunk_FUN_fffffff00a8df19c
+                (auVar165,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                 (short *)PTR_DAT_fffffff00806ca48,0x10,
+                 (byte *)"IOSurface: fClientAlignedOffset >= page_size\n");
+      uVar300 = 0;
+      goto LAB_fffffff009c1b2a8;
+    }
+    plVar301 = (long *)FUN_fffffff009c203b0(param_8,"IOSurfaceAddressRanges");
+    if (plVar301 != (long *)0x0) {
+      uVar297 = (**(code **)(*plVar301 + 0xa0))();
+      if ((uVar297 < 0x10) || ((uVar297 & 0xf) != 0)) {
+        auVar177._8_8_ = extraout_var_57;
+        auVar177._0_8_ = extraout_d0_57;
+        thunk_FUN_fffffff00a8df19c
+                  (auVar177,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                   (short *)PTR_DAT_fffffff00806ca48,0x10,
+                   (byte *)"IOSurface: address ranges size not multiple of IOAddressRange\n");
+        uVar300 = 0;
+        goto LAB_fffffff009c1b2a8;
+      }
+      if (*(long *)(param_7 + 0x3a0) != 0) goto LAB_fffffff009c1d63c;
+      auVar166._8_8_ = extraout_var_57;
+      auVar166._0_8_ = extraout_d0_57;
+      auVar229._4_12_ = auVar333;
+      auVar229._0_4_ = uVar332;
+      auVar285._4_12_ = auVar335;
+      auVar285._0_4_ = uVar334;
+      thunk_FUN_fffffff00a902580
+                (auVar166,param_2,auVar229,auVar285,param_5,param_6,(ulong *)(ulong)uVar297);
+      *(undefined8 **)(param_7 + 0x370) = extraout_x0_04;
+      *(uint *)(param_7 + 0x3b4) = uVar297 >> 4;
+      puVar304 = (undefined8 *)(**(code **)(*plVar301 + 0xd8))(plVar301);
+      thunk_FUN_fffffff00aa65b10(extraout_x0_04,puVar304,(ulong)uVar297);
+    }
+    bVar295 = FUN_fffffff009c20038(param_8,"IOSurfaceAddress",(ulong *)&local_78);
+    if (bVar295) {
+      if (*(long *)(param_7 + 0x308) != 0) {
+        auVar176._8_8_ = extraout_var_58;
+        auVar176._0_8_ = extraout_d0_58;
+        thunk_FUN_fffffff00a8df19c
+                  (auVar176,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                   (short *)PTR_DAT_fffffff00806ca48,0x10,
+                   (byte *)
+                   "IOSurface: Cannot use kIOSurfaceClientAddress with compressed iosurfaces.\n");
+        uVar300 = 0;
+        goto LAB_fffffff009c1b2a8;
+      }
+      if (*(long *)(param_7 + 0x3a0) != 0) goto LAB_fffffff009c1d63c;
+      *(undefined1 **)(param_7 + 0x150) = local_78;
+    }
+    bVar295 = FUN_fffffff009c20038(param_8,"IOSurfaceYCbCrMatrix",(ulong *)&local_78);
+    if (bVar295) {
+      *(char *)(*plVar305 + 0x6e) = (char)local_78;
+    }
+    bVar295 = FUN_fffffff009c20038(param_8,"IOSurfaceCacheMode",(ulong *)&local_78);
+    if (bVar295) {
+      uVar297 = (uint)local_78 & 0xf00;
+      bVar295 = 0x9ff < uVar297;
+      if (bVar295) {
+        uVar297 = 0;
+      }
+      *(uint *)(param_7 + 0x9c) = uVar297;
+      if (bVar295) {
+        auVar167._8_8_ = extraout_var_59;
+        auVar167._0_8_ = extraout_d0_59;
+        thunk_FUN_fffffff00a8df19c
+                  (auVar167,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                   (short *)PTR_DAT_fffffff00806ca48,0x10,(byte *)"Unknown cache mode: %08x\n");
+        uVar300 = 0;
+        goto LAB_fffffff009c1b2a8;
+      }
+    }
+    bVar295 = FUN_fffffff009c20038(param_8,"IOSurfaceMapCacheAttribute",(ulong *)&local_78);
+    if (bVar295) {
+      *(int *)(param_7 + 0x230) = (int)local_78;
+    }
+    local_89 = 0;
+    bVar295 = FUN_fffffff009c1fec4(param_8,"IOSurfaceIsGlobal",&local_89);
+    if (bVar295) {
+      *(uint *)(param_7 + 0x3d0) =
+           *(uint *)(param_7 + 0x3d0) & 0xfffffffc |
+           *(uint *)(param_7 + 0x3d0) & 1 | (local_89 & 1) << 1;
+    }
+    local_89 = 0;
+    bVar295 = FUN_fffffff009c1fec4(param_8,"IOSurfaceIsPrivate",&local_89);
+    uVar297 = *(uint *)(param_7 + 0x3d0);
+    if (bVar295) {
+      uVar297 = uVar297 & 0xfff00000 | uVar297 & 0x7ffff | (local_89 & 1) << 0x13;
+      *(uint *)(param_7 + 0x3d0) = uVar297;
+    }
+    if (((uVar297 ^ 0xffffffff) & 0x80002) == 0) {
+      auVar175._8_8_ = extraout_var_60;
+      auVar175._0_8_ = extraout_d0_60;
+      thunk_FUN_fffffff00a8df19c
+                (auVar175,param_2,uVar332,uVar334,param_5,param_6,&MACH_HEADER,
+                 (short *)PTR_DAT_fffffff00806ca48,0x10,
+                 (byte *)"IOSurface: Cannot set both global and private properties\n");
+      uVar300 = 0;
+    }
+    else {
+      local_89 = 0;
+      bVar295 = FUN_fffffff009c1fec4(param_8,"IOSurfacePurgeWhenNotInUse",&local_89);
+      if (bVar295) {
+        *(uint *)(param_7 + 0x3d0) =
+             *(uint *)(param_7 + 0x3d0) & 0xffffff80 |
+             *(uint *)(param_7 + 0x3d0) & 0x3f | (local_89 & 1) << 6;
+      }
+      local_89 = 0;
+      bVar295 = FUN_fffffff009c1fec4
+                          (param_8,"IOSurfaceResetDefaultAttachmentsWhenNotInUse",&local_89);
+      if (bVar295) {
+        *(uint *)(param_7 + 0x3d0) =
+             *(uint *)(param_7 + 0x3d0) & 0xffffff00 |
+             *(uint *)(param_7 + 0x3d0) & 0x7f | (local_89 & 1) << 7;
+      }
+      plVar305 = (long *)FUN_fffffff009c203e8(param_8);
+      if (plVar305 != (long *)0x0) {
+        FUN_fffffff009c16670((long *)(param_7 + 0x210),plVar305);
+      }
+      plVar305 = (long *)FUN_fffffff009c203b0(param_8,"IOSurfaceDefaultBulkAttachments");
+      if ((plVar305 != (long *)0x0) &&
+         (puVar304 = (undefined8 *)(**(code **)(*plVar305 + 0xd8))(), puVar304 != (undefined8 *)0x0)
+         ) {
+        lVar316 = thunk_FUN_fffffff00a902074((long *)&DAT_fffffff00806af70);
+        *(long *)(param_7 + 0x260) = lVar316;
+        if (lVar316 != 0) {
+          uVar297 = (**(code **)(*plVar305 + 0xa0))(plVar305);
+          puVar311 = *(undefined8 **)(param_7 + 0x260);
+          puVar311[1] = 0;
+          *puVar311 = 0;
+          puVar311[3] = 0;
+          puVar311[2] = 0;
+          puVar311[5] = 0;
+          puVar311[4] = 0;
+          puVar311[7] = 0;
+          puVar311[6] = 0;
+          puVar311[9] = 0;
+          puVar311[8] = 0;
+          puVar311[0xb] = 0;
+          puVar311[10] = 0;
+          puVar311[0xd] = 0;
+          puVar311[0xc] = 0;
+          puVar311[0xf] = 0;
+          puVar311[0xe] = 0;
+          *(undefined4 *)(puVar311 + 0x10) = 0;
+          if (0x83 < uVar297) {
+            uVar297 = 0x84;
+          }
+          thunk_FUN_fffffff00aa65b10(*(undefined8 **)(param_7 + 0x260),puVar304,(ulong)uVar297);
+        }
+      }
+      *(uint *)(param_7 + 0x3d0) =
+           *(uint *)(param_7 + 0x3d0) & 0xf0000000 |
+           *(uint *)(param_7 + 0x3d0) & 0x7ffffff |
+           (~(uint)*(byte *)(DAT_fffffff00af483b0 + 0x498) & 1) << 0x1b;
+      plVar305 = (long *)FUN_fffffff009c20428(param_8,"IOSurfaceName");
+      if ((plVar305 != (long *)0x0) &&
+         ((uVar300 = (**(code **)(*plVar305 + 0xb8))(plVar305,"QuartzCore"), (uVar300 & 1) != 0 ||
+          (iVar298 = (**(code **)(*plVar305 + 0xb8))(plVar305,"CA Framebuffer"), iVar298 != 0)))) {
+        *(uint *)(param_7 + 0x3d0) = *(uint *)(param_7 + 0x3d0) | 0x8000000;
+      }
+      lVar316 = FUN_fffffff009c20428(param_8,"IOSurfaceMemoryRegion");
+      if (lVar316 == 0) {
+        plVar305 = (long *)FUN_fffffff009c20000(param_8,"IOSurfaceMemoryRegion");
+        if (plVar305 != (long *)0x0) {
+          uVar299 = (**(code **)(*plVar305 + 0x90))();
+          uVar297 = uVar299;
+          if (1 < uVar299) {
+            uVar297 = 2;
+          }
+          if (uVar299 != 0) {
+            uVar299 = 0;
+            lVar316 = *(long *)PTR_PTR_fffffff00806ca10;
+            uVar300 = param_7 + 0x198;
+            uVar308 = (param_7 + 0x1a8U) - uVar300;
+            do {
+              plVar301 = (long *)(**(code **)(*plVar305 + 0x118))(plVar305,uVar299);
+              plVar301 = thunk_FUN_fffffff00a894f30(plVar301,lVar316);
+              if (plVar301 != (long *)0x0) {
+                lVar326 = FUN_fffffff009c34124(DAT_fffffff00af483b0,plVar301);
+                auVar330._8_8_ = extraout_var_62;
+                auVar330._0_8_ = extraout_d0_62;
+                if ((uVar308 & 0xffffffff00000000) != 0 || param_7 + 0x1a8U < uVar300) {
+                  auVar168._8_8_ = extraout_var_62;
+                  auVar168._0_8_ = extraout_d0_62;
+                  auVar230._4_12_ = auVar333;
+                  auVar230._0_4_ = uVar332;
+                  auVar286._4_12_ = auVar335;
+                  auVar286._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+                  FUN_fffffff009c48f64(auVar168,param_2,auVar230,auVar286,param_5,param_6);
+                }
+                uVar312 = (ulong)*(uint *)(param_7 + 400);
+                if (uVar312 << 3 != (long)(int)(uVar312 << 3)) {
+                  auVar169._8_8_ = extraout_var_62;
+                  auVar169._0_8_ = extraout_d0_62;
+                  auVar231._4_12_ = auVar333;
+                  auVar231._0_4_ = uVar332;
+                  auVar287._4_12_ = auVar335;
+                  auVar287._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+                  FUN_fffffff009c48f3c(auVar169,param_2,auVar231,auVar287,param_5,param_6);
+                }
+                if ((uVar312 & 0x1fffffff) >> 0x1c != 0) {
+LAB_fffffff009c1e600:
+                  auVar170._8_8_ = extraout_var_62;
+                  auVar170._0_8_ = extraout_d0_62;
+                  auVar232._4_12_ = auVar333;
+                  auVar232._0_4_ = uVar332;
+                  auVar288._4_12_ = auVar335;
+                  auVar288._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+                  FUN_fffffff009c48f28(auVar170,param_2,auVar232,auVar288,param_5,param_6);
+                }
+                uVar307 = *(uint *)(param_7 + 400) * 8;
+                uVar320 = (uint)uVar308;
+                if (uVar320 < uVar307 + 8) goto LAB_fffffff009c1e600;
+                plVar301 = (long *)(uVar300 + uVar307);
+                uVar309 = (ulong)CARRY8(uVar300,(ulong)uVar307);
+                uVar313 = -uVar309;
+                if ((uVar313 != uVar309) || ((long)uVar313 < 0)) {
+                  auVar171._8_8_ = extraout_var_62;
+                  auVar171._0_8_ = extraout_d0_62;
+                  auVar233._4_12_ = auVar333;
+                  auVar233._0_4_ = uVar332;
+                  auVar289._4_12_ = auVar335;
+                  auVar289._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+                  FUN_fffffff009c48f50(auVar171,param_2,auVar233,auVar289,param_5,param_6);
+                }
+                if ((long *)*plVar301 == (long *)0x0) {
+                  *plVar301 = lVar326;
+                }
+                else {
+                  auVar330 = (**(code **)(*(long *)*plVar301 + 0x28))();
+                  uVar312 = (ulong)*(uint *)(param_7 + 400);
+                  *plVar301 = lVar326;
+                  if (uVar312 << 3 != (long)(int)(uVar312 << 3)) {
+                    auVar234._4_12_ = auVar333;
+                    auVar234._0_4_ = uVar332;
+                    auVar290._4_12_ = auVar335;
+                    auVar290._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+                    FUN_fffffff009c48f3c(auVar330,param_2,auVar234,auVar290,param_5,param_6);
+                  }
+                }
+                if ((uVar312 & 0x1fffffff) >> 0x1c != 0) {
+LAB_fffffff009c1e60c:
+                  auVar235._4_12_ = auVar333;
+                  auVar235._0_4_ = uVar332;
+                  auVar291._4_12_ = auVar335;
+                  auVar291._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+                  FUN_fffffff009c48f28(auVar330,param_2,auVar235,auVar291,param_5,param_6);
+                }
+                uVar307 = (int)uVar312 * 8;
+                if (uVar320 < uVar307 + 8) goto LAB_fffffff009c1e60c;
+                uVar309 = (ulong)CARRY8(uVar300,(ulong)uVar307);
+                uVar313 = -uVar309;
+                if ((uVar313 != uVar309) || ((long)uVar313 < 0)) {
+                  auVar236._4_12_ = auVar333;
+                  auVar236._0_4_ = uVar332;
+                  auVar292._4_12_ = auVar335;
+                  auVar292._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+                  FUN_fffffff009c48f50(auVar330,param_2,auVar236,auVar292,param_5,param_6);
+                }
+                if (*(long *)(uVar300 + uVar307) != 0) {
+                  *(int *)(param_7 + 400) = (int)uVar312 + 1;
+                }
+              }
+              uVar299 = uVar299 + 1;
+            } while (uVar297 != uVar299);
+          }
+        }
+      }
+      else {
+        lVar316 = FUN_fffffff009c34124(DAT_fffffff00af483b0,lVar316);
+        plVar305 = (long *)(param_7 + 0x198);
+        uVar300 = (long)(param_7 + 0x1a8U) - (long)plVar305;
+        if (((long *)(param_7 + 0x1a8U) < plVar305) || (uVar300 >> 0x20 != 0)) {
+          auVar172._8_8_ = extraout_var_61;
+          auVar172._0_8_ = extraout_d0_61;
+          auVar237._4_12_ = auVar333;
+          auVar237._0_4_ = uVar332;
+          auVar293._4_12_ = auVar335;
+          auVar293._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+          FUN_fffffff009c48f64(auVar172,param_2,auVar237,auVar293,param_5,param_6);
+        }
+        if (uVar300 < 8) {
+          auVar173._8_8_ = extraout_var_61;
+          auVar173._0_8_ = extraout_d0_61;
+          auVar238._4_12_ = auVar333;
+          auVar238._0_4_ = uVar332;
+          auVar294._4_12_ = auVar335;
+          auVar294._0_4_ = uVar334;
+                    /* WARNING: Subroutine does not return */
+          FUN_fffffff009c48f28(auVar173,param_2,auVar238,auVar294,param_5,param_6);
+        }
+        if ((long *)*plVar305 != (long *)0x0) {
+          (**(code **)(*(long *)*plVar305 + 0x28))();
+        }
+        *plVar305 = lVar316;
+        if (lVar316 != 0) {
+          *(undefined4 *)(param_7 + 400) = 1;
+        }
+      }
+      bVar295 = FUN_fffffff009c20038(param_8,"IOSurfaceAllocateFromSuperbuffer",(ulong *)&local_78);
+      if (bVar295) {
+        *(undefined1 **)(param_7 + 0x340) = local_78;
+      }
+      auVar174._8_8_ = extraout_var_63;
+      auVar174._0_8_ = extraout_d0_63;
+      auVar336 = thunk_FUN_fffffff00a6de494
+                           (auVar174,param_2,uVar332,uVar334,param_5,param_6,0x5400010,
+                            (ulong)*(uint *)(param_7 + 0x10),(ulong)*(uint *)(param_7 + 0x80),
+                            *(long *)(param_7 + 0x90),
+                            (ulong)(*(int *)(param_7 + 0x98) << 8 |
+                                   *(uint *)(param_7 + 0x3d0) >> 9 & 1));
+      thunk_FUN_fffffff00a6de494
+                (auVar336,param_2,uVar332,uVar334,param_5,param_6,0x5400014,
+                 (ulong)*(uint *)(param_7 + 0x10),*(ulong *)(param_7 + 0x58),
+                 *(long *)(param_7 + 0x60),
+                 (long)(int)((uint)*(byte *)(param_7 + 0x72) << 0x18) |
+                 (ulong)*(byte *)(param_7 + 0x73) << 0x10 | (ulong)*(ushort *)(param_7 + 0x70));
+      FUN_fffffff009c20460(param_7);
+      uVar300 = 1;
+    }
+  }
+LAB_fffffff009c1b2a8:
+  if (*(long *)PTR_DAT_fffffff00806ca40 != local_70) {
+                    /* WARNING: Subroutine does not return */
+    thunk_FUN_fffffff00aa4c590();
+  }
+  return uVar300;
+}
+

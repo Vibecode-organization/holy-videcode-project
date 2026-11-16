@@ -1,0 +1,70 @@
+=== KRWProbe 1.3 ===
+run dir: /var/mobile/Containers/Data/Application/E212FDDB-845F-41DF-BD13-00D2A90B421C/Documents/KRWProbe-20261028-165547
+run log: /var/mobile/Containers/Data/Application/E212FDDB-845F-41DF-BD13-00D2A90B421C/Documents/KRWProbe-20261028-165547/run.log (flushed after every line)
+[PHASE] idle — press a mode
+[PHASE] HARD: start
+=== KRWProbe 1.3 HARD ===
+[HARD] geometry start: 422 singles + 2496 CT-pairs + 6084 selected pairs = 9002 sel0 calls
+[PHASE] HARD/geom singles start (422)
+[PHASE] HARD/geom single 0/422
+HARD geom single 0/422 created=1 last_kr=0x0 id=13 out=3176 [CT=0]
+[PHASE] HARD/geom single 100/422
+HARD geom single 100/422 created=57 last_kr=0xe00002c2 id=0 out=3176 [CT=4,IOSurfacePlaneCompressedTileWidth=256]
+[PHASE] HARD/geom single 200/422
+HARD geom single 200/422 created=68 last_kr=0xe00002c2 id=0 out=3176 [CT=4,IOSurfacePlaneWidthInCompressedTiles=64]
+[PHASE] HARD/geom single 300/422
+HARD geom single 300/422 created=70 last_kr=0xe00002c2 id=0 out=3176 [CT=4,IOSurfacePlaneCompressedTileDataRegionOffset=16]
+[PHASE] HARD/geom single 400/422
+HARD geom single 400/422 created=144 last_kr=0xe00002c2 id=0 out=3176 [CT=4,IOSurfaceAllocSize=4]
+HARD geom single 421/422 created=147 last_kr=0xe00002c2 id=0 out=3176 [CT=4,IOSurfaceAllocSize=4294967295]
+[PHASE] HARD/geom ct-pairs start (2496)
+[PHASE] HARD/geom ct-pair 0/2496
+HARD geom ct-pair 0/2496 created=148 last_kr=0x0 id=354 out=3176 [CT=0,IOSurfaceSliceCount=0]
+[PHASE] HARD/geom ct-pair 100/2496
+HARD geom ct-pair 100/2496 created=199 last_kr=0xe00002c2 id=0 out=3176 [CT=3,IOSurfaceSliceCount=65536]
+[PHASE] HARD/geom ct-pair 200/2496
+HARD geom ct-pair 200/2496 created=225 last_kr=0xe00002c2 id=0 out=3176 [CT=1,IOSurfacePlaneDataRegionBytesPerSlice=512]
+[PHASE] HARD/geom ct-pair 300/2496
+HARD geom ct-pair 300/2496 created=303 last_kr=0xe00002c2 id=0 out=3176 [CT=5,IOSurfacePlaneDataRegionBytesPerSlice=128]
+[PHASE] HARD/geom ct-pair 400/2496
+HARD geom ct-pair 400/2496 created=366 last_kr=0x0 id=301 out=3176 [CT=3,IOSurfacePlaneHeaderRegionBytesPerSlice=32]
+[PHASE] HARD/geom ct-pair 500/2496
+HARD geom ct-pair 500/2496 created=433 last_kr=0xe00002c2 id=0 out=3176 [CT=1,IOSurfacePlaneCompressedTileWidth=8]
+[PHASE] HARD/geom ct-pair 600/2496
+HARD geom ct-pair 600/2496 created=436 last_kr=0xe00002c2 id=0 out=3176 [CT=5,IOSurfacePlaneCompressedTileWidth=2]
+[PHASE] HARD/geom ct-pair 700/2496
+HARD geom ct-pair 700/2496 created=467 last_kr=0xe00002c2 id=0 out=3176 [CT=2,IOSurfacePlaneCompressedTileHeight=2147483648]
+[PHASE] HARD/geom ct-pair 800/2496
+HARD geom ct-pair 800/2496 created=498 last_kr=0x0 id=404 out=3176 [CT=0,IOSurfacePlaneBytesPerCompressedTileHeader=4096]
+[PHASE] HARD/geom ct-pair 900/2496
+HARD geom ct-pair 900/2496 created=512 last_kr=0xe00002c2 id=0 out=3176 [CT=4,IOSurfacePlaneBytesPerCompressedTileHeader=256]
+[PHASE] HARD/geom ct-pair 1000/2496
+HARD geom ct-pair 1000/2496 created=539 last_kr=0xe00002c2 id=0 out=3176 [CT=2,IOSurfacePlaneBytesPerTileData=64]
+[PHASE] HARD/geom ct-pair 1100/2496
+HARD geom ct-pair 1100/2496 created=553 last_kr=0x0 id=385 out=3176 [CT=0,IOSurfacePlaneWidthInCompressedTiles=16]
+[PHASE] HARD/geom ct-pair 1200/2496
+HARD geom ct-pair 1200/2496 created=573 last_kr=0xe00002c2 id=0 out=3176 [CT=4,IOSurfacePlaneWidthInCompressedTiles=4]
+[PHASE] HARD/geom ct-pair 1300/2496
+HARD geom ct-pair 1300/2496 created=599 last_kr=0xe00002c2 id=0 out=3176 [CT=2,IOSurfacePlaneHeightInCompressedTiles=0]
+[PHASE] HARD/geom ct-pair 1400/2496
+HARD geom ct-pair 1400/2496 created=602 last_kr=0xe00002c2 id=0 out=3176 [CT=5,IOSurfacePlaneHeightInCompressedTiles=65536]
+[PHASE] HARD/geom ct-pair 1500/2496
+HARD geom ct-pair 1500/2496 created=628 last_kr=0xe00002c2 id=0 out=3176 [CT=3,IOSurfacePlaneBytesPerRowOfTileData=512]
+[PHASE] HARD/geom ct-pair 1600/2496
+HARD geom ct-pair 1600/2496 created=654 last_kr=0xe00002c2 id=0 out=3176 [CT=1,IOSurfacePlaneCompressedTileHeaderRegionOffset=128]
+[PHASE] HARD/geom ct-pair 1700/2496
+HARD geom ct-pair 1700/2496 created=654 last_kr=0xe00002c2 id=0 out=3176 [CT=5,IOSurfacePlaneCompressedTileHeaderRegionOffset=32]
+[PHASE] HARD/geom ct-pair 1800/2496
+HARD geom ct-pair 1800/2496 created=682 last_kr=0xe00002c2 id=0 out=3176 [CT=3,IOSurfacePlaneCompressedTileDataRegionOffset=8]
+[PHASE] HARD/geom ct-pair 1900/2496
+HARD geom ct-pair 1900/2496 created=709 last_kr=0xe00002c2 id=0 out=3176 [CT=1,IOSurfacePlaneHTPCPredictionSelector=2]
+[PHASE] HARD/geom ct-pair 2000/2496
+HARD geom ct-pair 2000/2496 created=786 last_kr=0x0 id=448 out=3176 [CT=4,IOSurfacePlaneHTPCPredictionSelector=2147483648]
+[PHASE] HARD/geom ct-pair 2100/2496
+HARD geom ct-pair 2100/2496 created=834 last_kr=0x0 id=498 out=3176 [CT=2,IOSurfacePlaneHTPCVerticalHeaderGroupingMode=4096]
+[PHASE] HARD/geom ct-pair 2200/2496
+HARD geom ct-pair 2200/2496 created=908 last_kr=0x0 id=385 out=3176 [CT=0,IOSurfaceBitsPerBlock=256]
+[PHASE] HARD/geom ct-pair 2300/2496
+HARD geom ct-pair 2300/2496 created=970 last_kr=0x0 id=454 out=3176 [CT=4,IOSurfaceBitsPerBlock=64]
+[PHASE] HARD/geom ct-pair 2400/2496
+HARD geom ct-pair 2400/2496 created=982 last_kr=0xe00002c2 id=0 out=3176 [CT=2,IOSurfaceAllocSize=16]

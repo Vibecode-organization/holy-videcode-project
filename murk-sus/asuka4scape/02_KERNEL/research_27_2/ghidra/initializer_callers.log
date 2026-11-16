@@ -1,0 +1,126 @@
+openjdk version "27" 2026-09-15
+OpenJDK Runtime Environment (build 27)
+OpenJDK 64-Bit Server VM (build 27, mixed mode)
+INFO  Using log config file: jar:file:/home/femboychik/ghidra/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/application.log (LoggingInitialization)  
+INFO  Loading user preferences: /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/preferences (Preferences)  
+INFO  Loading previous preferences: /home/femboychik/.config/ghidra/ghidra_11.4.2_PUBLIC/preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (2185 ms) (ClassSearcher)  
+WARNING: Final field name in class ghidra.util.charset.CharsetInfo has been mutated reflectively by class com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$2 in unnamed module @2c35e847 (file:/home/femboychik/ghidra/Ghidra/Framework/Generic/lib/gson-2.13.2.jar)
+WARNING: Use --enable-final-field-mutation=ALL-UNNAMED to avoid a warning
+WARNING: Mutating final fields will be blocked in a future release unless final field mutation is enabled
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (6125 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 59 extension points (21 false positives) (ClassSearcher)  
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::staticFieldOffset has been called by org.apache.felix.framework.util.SecureAction (file:/home/femboychik/ghidra/Ghidra/Features/Base/lib/org.apache.felix.framework-7.0.5.jar)
+WARNING: Please consider reporting this to the maintainers of class org.apache.felix.framework.util.SecureAction
+WARNING: sun.misc.Unsafe::staticFieldOffset will be removed in a future release
+INFO  HEADLESS Script Paths:
+    /home/femboychik/ghidra/Ghidra/Features/PyGhidra/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/FileFormats/ghidra_scripts
+    /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/Extensions/Jython/ghidra_scripts
+    /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/Extensions/MachineLearning/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/Base/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /home/femboychik/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/BytePatterns/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/VersionTracking/ghidra_scripts
+    /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/Extensions/SleighDevTools/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/PDB/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Processors/Atmel/ghidra_scripts
+    /home/femboychik/claude_code/research_27_2/scripts
+    /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/Extensions/Lisa/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Processors/DATA/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Debug/Debugger/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Processors/8051/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Processors/JVM/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/FunctionID/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Processors/PIC/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/Decompiler/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/SwiftDemangler/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/BSim/ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: /home/femboychik/Загрузки/AyuGram Desktop/Архив/123 (HeadlessAnalyzer)  
+INFO  Opening project: /home/femboychik/Загрузки/AyuGram Desktop/Архив/123 (HeadlessProject)  
+INFO  REPORT: Processing read-only project file: /kernelcache.release.iphone14b.decompressed (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: DumpFunctions.java '0xfffffff008022068' '0xfffffff00802a188' '0xfffffff009984aac' '0xfffffff009a9a660' '0xfffffff009abd83c' '0xfffffff009c33c34' '0xfffffff009c1a908' '0xfffffff009c2cf30' '0xfffffff00a97ba94' '0xfffffff009c2e950' '0xfffffff009c2e900' '0xfffffff009c2efa4' '0xfffffff009c2ec70' '0xfffffff009c2f000' '0xfffffff009c3ab8c' '0xfffffff00a9e4acc' '0xfffffff0099847ec'  (HeadlessAnalyzer)  
+INFO  SCRIPT: /home/femboychik/claude_code/research_27_2/scripts/DumpFunctions.java (HeadlessAnalyzer)  
+INFO  DumpFunctions.java> NO_FUNCTION fffffff008022068 (GhidraScript)  
+INFO  DumpFunctions.java> NO_FUNCTION fffffff00802a188 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff009984aac.c bytes=500 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff009a9a660.c bytes=560 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff009abd83c.c bytes=560 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff009c33c34.c bytes=2777 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff009c1a908.c bytes=625 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff009c2cf30.c bytes=583 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff00a97ba94.c bytes=372 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff009c2e950.c bytes=276 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff009c2e900.c bytes=276 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff009c2efa4.c bytes=336 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff009c2ec70.c bytes=660 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff009c2f000.c bytes=600 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff009c3ab8c.c bytes=9258 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff00a9e4acc.c bytes=971 (GhidraScript)  
+INFO  DumpFunctions.java> WROTE fn_fffffff0099847ec.c bytes=582 (GhidraScript)  
+INFO  REPORT: Execute script: InspectAddresses.java '0xfffffff008022068' '0xfffffff00802a188'  (HeadlessAnalyzer)  
+INFO  SCRIPT: /home/femboychik/claude_code/research_27_2/scripts/InspectAddresses.java (HeadlessAnalyzer)  
+INFO  InspectAddresses.java> === ADDRESS fffffff008022068 (GhidraScript)  
+INFO  InspectAddresses.java> BLOCK __auth_got fffffff008021ac0-fffffff00802223f execute=false initialized=true (GhidraScript)  
+INFO  InspectAddresses.java> FUNCTION none (GhidraScript)  
+INFO  InspectAddresses.java> DATA PTR_FUN_fffffff008022068 len=8 value=fffffff009c29ee4 (GhidraScript)  
+INFO  InspectAddresses.java> INSTRUCTION none (GhidraScript)  
+INFO  InspectAddresses.java> XREFS fffffff009a9a668/READ/thunk_FUN_fffffff009c29ee4@fffffff009a9a660 (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff008022028: fffffff009c2a65c fffffff009a9a5e8/READ/thunk_FUN_fffffff009c2a65c@fffffff009a9a5e0 (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff008022030: fffffff009c2a640 fffffff009a9a5f8/READ/thunk_FUN_fffffff009c2a640@fffffff009a9a5f0 (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff008022038: fffffff009c2a3c4 fffffff009a9a608/READ/thunk_FUN_fffffff009c2a3c4@fffffff009a9a600 (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff008022040: fffffff009c25748 fffffff009a9a618/READ/thunk_FUN_fffffff009c25748@fffffff009a9a610 (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff008022048: fffffff009c25e38 fffffff009a9a628/READ/thunk_FUN_fffffff009c25e38@fffffff009a9a620 (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff008022050: fffffff009c257a8 fffffff009a9a638/READ/thunk_FUN_fffffff009c257a8@fffffff009a9a630 (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff008022058: fffffff009c2a3d0 fffffff009a9a648/READ/thunk_FUN_fffffff009c2a3d0@fffffff009a9a640 (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff008022060: fffffff009c21350 fffffff009a9a658/READ/thunk_FUN_fffffff009c21350@fffffff009a9a650 (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff008022068: fffffff009c29ee4 fffffff009a9a668/READ/thunk_FUN_fffffff009c29ee4@fffffff009a9a660 (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff008022070: fffffff009c2771c fffffff009a9a678/READ/thunk_FUN_fffffff009c2771c@fffffff009a9a670 (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff008022078: fffffff009c24784 fffffff009a9a688/READ/thunk_FUN_fffffff009c24784@fffffff009a9a680 (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff008022080: fffffff009c237e8 fffffff009a9a698/READ/thunk_FUN_fffffff009c237e8@fffffff009a9a690 (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff008022088: fffffff009c1e624 fffffff009a9a6a8/READ/thunk_FUN_fffffff009c1e624@fffffff009a9a6a0 (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff008022090: fffffff009c23a14 fffffff009a9a6b8/READ/thunk_FUN_fffffff009c23a14@fffffff009a9a6b0 (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff008022098: fffffff00a8962a0 fffffff009a9a6c8/READ/thunk_FUN_fffffff00a8962a0@fffffff009a9a6c0 (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff0080220a0: fffffff009c17530 fffffff009a9a6d8/READ/thunk_FUN_fffffff009c17530@fffffff009a9a6d0 (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff0080220a8: fffffff009c17500 fffffff009a9a6e8/READ/thunk_FUN_fffffff009c17500@fffffff009a9a6e0 (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff0080220b0: fffffff009c17590 fffffff009a9a6f8/READ/thunk_FUN_fffffff009c17590@fffffff009a9a6f0 (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff0080220b8: fffffff009a9f4c4 fffffff009a9a708/READ/thunk_FUN_fffffff009a9f4c4@fffffff009a9a700 (GhidraScript)  
+INFO  InspectAddresses.java> === ADDRESS fffffff00802a188 (GhidraScript)  
+INFO  InspectAddresses.java> BLOCK __auth_got fffffff008029de0-fffffff00802a387 execute=false initialized=true (GhidraScript)  
+INFO  InspectAddresses.java> FUNCTION none (GhidraScript)  
+INFO  InspectAddresses.java> DATA PTR_FUN_fffffff00802a188 len=8 value=fffffff009c29ee4 (GhidraScript)  
+INFO  InspectAddresses.java> INSTRUCTION none (GhidraScript)  
+INFO  InspectAddresses.java> XREFS fffffff009abd844/READ/thunk_FUN_fffffff009c29ee4@fffffff009abd83c (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff00802a148: fffffff009c25af4 fffffff009abd7c4/READ/thunk_FUN_fffffff009c25af4@fffffff009abd7bc (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff00802a150: fffffff009c2a65c fffffff009abd7d4/READ/thunk_FUN_fffffff009c2a65c@fffffff009abd7cc (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff00802a158: fffffff009c2a640 fffffff009abd7e4/READ/thunk_FUN_fffffff009c2a640@fffffff009abd7dc (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff00802a160: fffffff009c2a3c4 fffffff009abd7f4/READ/thunk_FUN_fffffff009c2a3c4@fffffff009abd7ec (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff00802a168: fffffff009c25748 fffffff009abd804/READ/thunk_FUN_fffffff009c25748@fffffff009abd7fc (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff00802a170: fffffff009c25e38 fffffff009abd814/READ/thunk_FUN_fffffff009c25e38@fffffff009abd80c (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff00802a178: fffffff009c257a8 fffffff009abd824/READ/thunk_FUN_fffffff009c257a8@fffffff009abd81c (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff00802a180: fffffff009c2a3d0 fffffff009abd834/READ/thunk_FUN_fffffff009c2a3d0@fffffff009abd82c (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff00802a188: fffffff009c29ee4 fffffff009abd844/READ/thunk_FUN_fffffff009c29ee4@fffffff009abd83c (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff00802a190: fffffff009c24784 fffffff009abd854/READ/thunk_FUN_fffffff009c24784@fffffff009abd84c (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff00802a198: fffffff009c2a750 fffffff009abd864/READ/thunk_FUN_fffffff009c2a750@fffffff009abd85c (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff00802a1a0: fffffff009c237e8 fffffff009abd874/READ/thunk_FUN_fffffff009c237e8@fffffff009abd86c (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff00802a1a8: fffffff009c1e624 fffffff009abd884/READ/thunk_FUN_fffffff009c1e624@fffffff009abd87c (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff00802a1b0: fffffff009c23a14 fffffff009abd894/READ/thunk_FUN_fffffff009c23a14@fffffff009abd88c (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff00802a1b8: fffffff00a89b0c4 fffffff009abd8a4/READ/thunk_FUN_fffffff00a89b0c4@fffffff009abd89c (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff00802a1c0: fffffff00a8962a0 fffffff009abd8b4/READ/thunk_FUN_fffffff00a8962a0@fffffff009abd8ac (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff00802a1c8: fffffff008d05f1c fffffff009abd8c4/READ/thunk_FUN_fffffff008d05f1c@fffffff009abd8bc (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff00802a1d0: fffffff009c1f1a8 fffffff009abd8d4/READ/thunk_FUN_fffffff009c1f1a8@fffffff009abd8cc (GhidraScript)  
+INFO  InspectAddresses.java> QWORD fffffff00802a1d8: fffffff009c2241c fffffff009abd8e4/READ/thunk_FUN_fffffff009c2241c@fffffff009abd8dc (GhidraScript)  

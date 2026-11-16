@@ -1,0 +1,6 @@
+funcs 2237 2237
+identical 2236 ratio 0.99955
+changed regions 1
+== replace A[1305:1306] B[1305:1306]
+   A 0xfffffff008330a28 sz=2752
+   B 0xfffffff008352d38 sz=2752

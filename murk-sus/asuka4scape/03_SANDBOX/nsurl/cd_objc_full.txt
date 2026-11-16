@@ -1,0 +1,1951 @@
+@protocol CDDaemonPurgeableResultCache
+
+@required
+
+/* required instance methods */
+-[CDDaemonPurgeableResultCache updateRecentInfoForServiceID:volume:info:];
+-[CDDaemonPurgeableResultCache deductPurgeableAmount:serviceID:volume:urgency:];
+-[CDDaemonPurgeableResultCache removeServiceInfo:];
+-[CDDaemonPurgeableResultCache updateRecentStateforVolume:];
+-[CDDaemonPurgeableResultCache copyInvalidServicesForVolume:atUrgency:];
+-[CDDaemonPurgeableResultCache copyPushingServices];
+-[CDDaemonPurgeableResultCache invalidateRecentResultsForVolume:];
+-[CDDaemonPurgeableResultCache forgetPushingService:];
+-[CDDaemonPurgeableResultCache setUpdateNotificationBlock:];
+-[CDDaemonPurgeableResultCache setUpdateBlock:];
+
+@optional
+
+@end
+
+@protocol CDPurgeableResultCache
+
+@required
+
+/* required instance methods */
+-[CDPurgeableResultCache recentPurgeableTotals:];
+-[CDPurgeableResultCache recentInfoForVolume:atUrgency:validateResults:];
+-[CDPurgeableResultCache recentInfoForVolume:atUrgency:];
+-[CDPurgeableResultCache dictionaryByMerging:with:];
+-[CDPurgeableResultCache recentInfoForVolumes:atUrgency:validateResults:targetVolume:];
+-[CDPurgeableResultCache recentStateForVolume:];
+-[CDPurgeableResultCache invalidateAllForgettingPushers:];
+-[CDPurgeableResultCache isEmpty];
+-[CDPurgeableResultCache isStale];
+-[CDPurgeableResultCache hasInvalids];
+
+@optional
+
+@end
+
+@protocol CDService <NSObject>
+
+@required
+
+@property (T@"NSString",R,N) ID;
+@property (T@"NSArray",R,N) volUUIDs;
+@property (TB,R,N) doesPeriodic;
+@property (TB,R,N) doesPurge;
+@property (TB,R,N) rootOnly;
+@property (TB,R,N) doNotQuery;
+@property (TB,R,N) inFlight;
+@property (TB,R,N) noQuota;
+
+/* required instance methods */
+-[CDService servicePurgeable:info:replyBlock:];
+-[CDService servicePurge:info:replyBlock:];
+-[CDService servicePeriodic:info:replyBlock:];
+-[CDService serviceCancelPurge:];
+-[CDService serviceCancelPurgeImmediate:];
+-[CDService servicePing:];
+-[CDService serviceNotify:replyBlock:];
+-[CDService serviceCallback:replyBlock:];
+-[CDService setServiceInvalidationHandler:];
+-[CDService setServiceInterruptionHandler:];
+-[CDService ID];
+-[CDService volUUIDs];
+-[CDService doesPeriodic];
+-[CDService doesPurge];
+-[CDService rootOnly];
+-[CDService doNotQuery];
+-[CDService inFlight];
+-[CDService noQuota];
+
+@optional
+
+@end
+
+@protocol CacheDeleteClientProtocol <CacheDeletePublicClientProtocol>
+
+@required
+
+/* required instance methods */
+-[CacheDeleteClientProtocol clientCheckin:endpoint:info:reply:];
+-[CacheDeleteClientProtocol clientPurge:replyBlock:];
+-[CacheDeleteClientProtocol clientPerformOperation:replyBlock:];
+-[CacheDeleteClientProtocol clientPerformServiceRequest:replyBlock:];
+-[CacheDeleteClientProtocol clientCancelPurge:];
+-[CacheDeleteClientProtocol clientSetState:key:];
+-[CacheDeleteClientProtocol clientGetState:replyBlock:];
+-[CacheDeleteClientProtocol clientUpdatePurgeable:];
+-[CacheDeleteClientProtocol clientRegisterLowDiskFailure:failureType:isRoot:];
+
+@optional
+
+@end
+
+@protocol CacheDeleteOperation <NSObject>
+
+@required
+
+@property (T@"<CDPurgeableResultCache><CDDaemonPurgeableResultCache>",&,N) resultCache;
+@property (T@"NSArray",&,N) volumes;
+
+/* required instance methods */
+-[CacheDeleteOperation startOperation:];
+-[CacheDeleteOperation resultCache];
+-[CacheDeleteOperation setResultCache:];
+-[CacheDeleteOperation volumes];
+-[CacheDeleteOperation setVolumes:];
+
+@optional
+
+/* optional instance methods */
+-[CacheDeleteOperation cancelOperation];
+
+@end
+
+@protocol CacheDeletePrivateClientProtocol <CacheDeleteClientProtocol>
+
+@required
+
+/* required instance methods */
+-[CacheDeletePrivateClientProtocol clientGetPendingStorageThreshold:replyBlock:];
+-[CacheDeletePrivateClientProtocol queryAppContainers:replyBlock:];
+
+@optional
+
+@end
+
+@protocol CacheDeletePublicClientProtocol
+
+@required
+
+/* required instance methods */
+-[CacheDeletePublicClientProtocol clientUnifiedPurgeableSpace:queryType:replyBlock:];
+
+@optional
+
+@end
+
+@protocol CacheDeleteServiceProtocol
+
+@required
+
+/* required instance methods */
+-[CacheDeleteServiceProtocol servicePurgeable:info:replyBlock:];
+-[CacheDeleteServiceProtocol servicePurge:info:replyBlock:];
+-[CacheDeleteServiceProtocol servicePeriodic:info:replyBlock:];
+-[CacheDeleteServiceProtocol serviceCancelPurge:];
+-[CacheDeleteServiceProtocol serviceCancelPurgeImmediate:];
+-[CacheDeleteServiceProtocol servicePing:];
+-[CacheDeleteServiceProtocol serviceNotify:replyBlock:];
+-[CacheDeleteServiceProtocol serviceCallback:replyBlock:];
+
+@optional
+
+@end
+
+@protocol CacheDeleteServiceProvider
+
+@required
+
+/* required instance methods */
+-[CacheDeleteServiceProvider serviceWithID:];
+
+@optional
+
+@end
+
+@protocol NSCoding
+
+@required
+
+/* required instance methods */
+-[NSCoding encodeWithCoder:];
+-[NSCoding initWithCoder:];
+
+@optional
+
+@end
+
+@protocol NSCopying
+
+@required
+
+/* required instance methods */
+-[NSCopying copyWithZone:];
+
+@optional
+
+@end
+
+@protocol NSObject
+
+@required
+
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* required instance methods */
+-[NSObject isEqual:];
+-[NSObject class];
+-[NSObject self];
+-[NSObject performSelector:];
+-[NSObject performSelector:withObject:];
+-[NSObject performSelector:withObject:withObject:];
+-[NSObject isProxy];
+-[NSObject isKindOfClass:];
+-[NSObject isMemberOfClass:];
+-[NSObject conformsToProtocol:];
+-[NSObject respondsToSelector:];
+-[NSObject retain];
+-[NSObject release];
+-[NSObject autorelease];
+-[NSObject retainCount];
+-[NSObject zone];
+-[NSObject hash];
+-[NSObject superclass];
+-[NSObject description];
+
+@optional
+
+/* optional instance methods */
+-[NSObject debugDescription];
+
+@end
+
+@protocol NSSecureCoding <NSCoding>
+
+@required
+
+@property (class, TB,R) supportsSecureCoding;
+
+/* class methods */
++[NSSecureCoding supportsSecureCoding];
+
+@optional
+
+@end
+
+@interface AppCacheDeleteOptions : NSObject {
+    /* instance variables */
+    B _fairPurgeMode;
+    i _urgency;
+    @"TestTelemetry" _telemetry;
+    @"NSObject<OS_dispatch_group>" _group;
+    Q _bytesNeeded;
+}
+
+@property (Ti,N,V_urgency) urgency;
+@property (T@"TestTelemetry",&,N,V_telemetry) telemetry;
+@property (T@"NSObject<OS_dispatch_group>",&,N,V_group) group;
+@property (TB,N,V_fairPurgeMode) fairPurgeMode;
+@property (TQ,N,V_bytesNeeded) bytesNeeded;
+
+/* instance methods */
+-[AppCacheDeleteOptions urgency];
+-[AppCacheDeleteOptions setUrgency:];
+-[AppCacheDeleteOptions telemetry];
+-[AppCacheDeleteOptions setTelemetry:];
+-[AppCacheDeleteOptions group];
+-[AppCacheDeleteOptions setGroup:];
+-[AppCacheDeleteOptions fairPurgeMode];
+-[AppCacheDeleteOptions setFairPurgeMode:];
+-[AppCacheDeleteOptions bytesNeeded];
+-[AppCacheDeleteOptions setBytesNeeded:];
+
+@end
+
+@interface AppContainerCaches : CDService <NSSecureCoding, NSCopying> {
+    /* instance variables */
+    B _multi_user;
+    @"NSMutableDictionary" _cachesByVolume;
+    @"NSMutableDictionary" _cdVolumes;
+    @"OperationState" _opState;
+    @"NSObject<OS_dispatch_queue>" _collection_queue;
+    @"NSObject<OS_dispatch_queue>" _purge_queue;
+    @"NSDictionary" _info;
+}
+
+@property (T@"NSObject<OS_dispatch_queue>",&,N,V_collection_queue) collection_queue;
+@property (T@"NSObject<OS_dispatch_queue>",&,N,V_purge_queue) purge_queue;
+@property (T@"NSDictionary",&,N,V_info) info;
+@property (TB,V_multi_user) multi_user;
+@property (T@"NSMutableDictionary",&,N,V_cachesByVolume) cachesByVolume;
+@property (T@"NSMutableDictionary",&,N,V_cdVolumes) cdVolumes;
+@property (T@"OperationState",&,N,V_opState) opState;
+
+/* class methods */
++[AppContainerCaches deleteAppCaches:telemetry:];
++[AppContainerCaches deleteAppCaches:urgency:telemetry:group:];
++[AppContainerCaches deleteAppCaches:options:];
++[AppContainerCaches supportsSecureCoding];
++[AppContainerCaches appContainerCachesWithInfo:];
+
+/* instance methods */
+-[AppContainerCaches initWithInfo:];
+-[AppContainerCaches initWithCoder:];
+-[AppContainerCaches encodeWithCoder:];
+-[AppContainerCaches cachesForInstalledApps];
+-[AppContainerCaches cachesForInstalledApps:bytesNeeded:volume:sortForUrgency:telemetry:];
+-[AppContainerCaches processContainerCachesForVolume:bytesNeeded:urgency:calculate:verbose:telemetry:];
+-[AppContainerCaches cdVolumeForPath:];
+-[AppContainerCaches appCache:forPath:];
+-[AppContainerCaches mountPointForPath:];
+-[AppContainerCaches initReadOnlyCopy];
+-[AppContainerCaches copyWithZone:];
+-[AppContainerCaches _servicePurgeable:info:replyBlock:];
+-[AppContainerCaches _servicePurge:info:replyBlock:];
+-[AppContainerCaches _servicePeriodic:info:replyBlock:];
+-[AppContainerCaches _serviceCancelPurge:];
+-[AppContainerCaches _serviceCancelPurgeImmediate:];
+-[AppContainerCaches _servicePing:];
+-[AppContainerCaches _serviceNotify:replyBlock:];
+-[AppContainerCaches _serviceCallback:replyBlock:];
+-[AppContainerCaches cachesByVolume];
+-[AppContainerCaches setCachesByVolume:];
+-[AppContainerCaches cdVolumes];
+-[AppContainerCaches setCdVolumes:];
+-[AppContainerCaches opState];
+-[AppContainerCaches setOpState:];
+-[AppContainerCaches collection_queue];
+-[AppContainerCaches setCollection_queue:];
+-[AppContainerCaches purge_queue];
+-[AppContainerCaches setPurge_queue:];
+-[AppContainerCaches info];
+-[AppContainerCaches setInfo:];
+-[AppContainerCaches multi_user];
+-[AppContainerCaches setMulti_user:];
+
+@end
+
+@interface CDAnonymousXPCService : CDXPCService {
+    /* instance variables */
+    B _haveCreatedHeartbeat;
+    @"NSXPCListenerEndpoint" _endpoint;
+    @"NSXPCConnection" _heartbeatConnection;
+}
+
+@property (T@"NSXPCConnection",&,N,V_heartbeatConnection) heartbeatConnection;
+@property (TB,N,V_haveCreatedHeartbeat) haveCreatedHeartbeat;
+@property (T@"NSXPCListenerEndpoint",R,N,V_endpoint) endpoint;
+
+/* instance methods */
+-[CDAnonymousXPCService initWithInfo:endpoint:];
+-[CDAnonymousXPCService _servicePing:];
+-[CDAnonymousXPCService createHeartbeatConnection];
+-[CDAnonymousXPCService obtainXPCConnection:];
+-[CDAnonymousXPCService endpoint];
+-[CDAnonymousXPCService heartbeatConnection];
+-[CDAnonymousXPCService setHeartbeatConnection:];
+-[CDAnonymousXPCService haveCreatedHeartbeat];
+-[CDAnonymousXPCService setHaveCreatedHeartbeat:];
+
+@end
+
+@interface CDAppClassifier : NSObject {
+    /* instance variables */
+    @"NSDictionary" _tagHashToBundleID;
+    @"NSObject<OS_dispatch_queue>" _classifierQueue;
+    @"NSArray" _appsData;
+    @"NSArray" _hiddenAppsData;
+    @"NSNumber" _timestamp;
+    @"NSString" _version;
+    @"NSDictionary" _bundleToPluginsMap;
+    @"NSDictionary" _pluginToBundleMap;
+    @"NSMutableSet" _internalVisibleAppBundleIDs;
+    @"NSMutableSet" _internalHiddenAppBundleIDs;
+}
+
+@property (T@"NSObject<OS_dispatch_queue>",&,N,V_classifierQueue) classifierQueue;
+@property (T@"NSArray",C,N,V_appsData) appsData;
+@property (T@"NSArray",C,N,V_hiddenAppsData) hiddenAppsData;
+@property (T@"NSNumber",C,N,V_timestamp) timestamp;
+@property (T@"NSString",C,N,V_version) version;
+@property (T@"NSDictionary",C,N,V_bundleToPluginsMap) bundleToPluginsMap;
+@property (T@"NSDictionary",C,N,V_pluginToBundleMap) pluginToBundleMap;
+@property (T@"NSDictionary",C,N,V_tagHashToBundleID) tagHashToBundleID;
+@property (T@"NSMutableSet",&,N,V_internalVisibleAppBundleIDs) internalVisibleAppBundleIDs;
+@property (T@"NSMutableSet",&,N,V_internalHiddenAppBundleIDs) internalHiddenAppBundleIDs;
+@property (T@"NSSet",R,C,N) allVisibleAppBundleGroups;
+@property (T@"NSSet",R,C,N) allHiddenAppBundleGroups;
+
+/* class methods */
++[CDAppClassifier sharedClassifier];
++[CDAppClassifier loadAndClassifyData];
++[CDAppClassifier loadAndClassifyDataWithCompletion:];
+
+/* instance methods */
+-[CDAppClassifier init];
+-[CDAppClassifier _updateWithMappingData:];
+-[CDAppClassifier _loadHardcodedPluginMappingData];
+-[CDAppClassifier _loadPlistPluginMappingData];
+-[CDAppClassifier allVisibleAppBundleGroups];
+-[CDAppClassifier allHiddenAppBundleGroups];
+-[CDAppClassifier isVisibleApp:];
+-[CDAppClassifier appBundleIDForPlugin:];
+-[CDAppClassifier pluginsForApp:];
+-[CDAppClassifier dirStatIDToBundleMap];
+-[CDAppClassifier buildAppInfoForBundleGroups:];
+-[CDAppClassifier tagHashToBundleID];
+-[CDAppClassifier setTagHashToBundleID:];
+-[CDAppClassifier classifierQueue];
+-[CDAppClassifier setClassifierQueue:];
+-[CDAppClassifier appsData];
+-[CDAppClassifier setAppsData:];
+-[CDAppClassifier hiddenAppsData];
+-[CDAppClassifier setHiddenAppsData:];
+-[CDAppClassifier timestamp];
+-[CDAppClassifier setTimestamp:];
+-[CDAppClassifier version];
+-[CDAppClassifier setVersion:];
+-[CDAppClassifier bundleToPluginsMap];
+-[CDAppClassifier setBundleToPluginsMap:];
+-[CDAppClassifier pluginToBundleMap];
+-[CDAppClassifier setPluginToBundleMap:];
+-[CDAppClassifier internalVisibleAppBundleIDs];
+-[CDAppClassifier setInternalVisibleAppBundleIDs:];
+-[CDAppClassifier internalHiddenAppBundleIDs];
+-[CDAppClassifier setInternalHiddenAppBundleIDs:];
+
+@end
+
+@interface CDAppExtensionService : CDXPCService {
+    /* instance variables */
+    @"NSExtension" _extension;
+    @"<NSCopying>" _requestId;
+}
+
+@property (T@"<NSCopying>",&,N,V_requestId) requestId;
+@property (T@"NSExtension",R,N,V_extension) extension;
+
+/* instance methods */
+-[CDAppExtensionService initWithInfo:extension:];
+-[CDAppExtensionService obtainXPCConnection:];
+-[CDAppExtensionService resumeConnection];
+-[CDAppExtensionService invalidateConnection];
+-[CDAppExtensionService extension];
+-[CDAppExtensionService requestId];
+-[CDAppExtensionService setRequestId:];
+
+@end
+
+@interface CDDaemonPurgeableResultCache : CDPurgeableResultCache <CDPurgeableResultCache, CDDaemonPurgeableResultCache> {
+    /* instance variables */
+    @"CDDaemonRecentInfo" _recentPurgeableResults;
+    @"NSString" _path;
+    @"NSObject<OS_dispatch_queue>" _queue;
+    @? _updatedNotificationBlock;
+    @? _updatedBlock;
+}
+
+@property (T@"CDDaemonRecentInfo",&,N,V_recentPurgeableResults) recentPurgeableResults;
+@property (T@"NSString",&,N,V_path) path;
+@property (T@"NSObject<OS_dispatch_queue>",&,N,V_queue) queue;
+@property (T@?,C,N,V_updatedNotificationBlock) updatedNotificationBlock;
+@property (T@?,C,N,V_updatedBlock) updatedBlock;
+
+/* class methods */
++[CDDaemonPurgeableResultCache currentVersion];
++[CDDaemonPurgeableResultCache pathForVersion:];
++[CDDaemonPurgeableResultCache defaultPath];
++[CDDaemonPurgeableResultCache sharedPurgeableResultsCache];
++[CDDaemonPurgeableResultCache fetchVolumeWithPath:];
+
+/* instance methods */
+-[CDDaemonPurgeableResultCache initWithPath:];
+-[CDDaemonPurgeableResultCache save:];
+-[CDDaemonPurgeableResultCache prune];
+-[CDDaemonPurgeableResultCache absorbRecentInfo:];
+-[CDDaemonPurgeableResultCache emitRecentInfo:];
+-[CDDaemonPurgeableResultCache addInvalidVolume:];
+-[CDDaemonPurgeableResultCache updateInvalidVolumes];
+-[CDDaemonPurgeableResultCache updateDiagnostics:onVolume:atUrgency:];
+-[CDDaemonPurgeableResultCache diagnosticsForVolume:atUrgency:];
+-[CDDaemonPurgeableResultCache updateRecentInfoForServiceID:volume:info:];
+-[CDDaemonPurgeableResultCache deductPurgeableAmount:serviceID:volume:urgency:];
+-[CDDaemonPurgeableResultCache removeServiceInfo:];
+-[CDDaemonPurgeableResultCache updateRecentStateforVolume:];
+-[CDDaemonPurgeableResultCache prunePreserving:];
+-[CDDaemonPurgeableResultCache forgetPushingService:];
+-[CDDaemonPurgeableResultCache invalidateRecentResultsForVolume:];
+-[CDDaemonPurgeableResultCache copyInvalidServicesForVolume:atUrgency:];
+-[CDDaemonPurgeableResultCache copyPushingServices];
+-[CDDaemonPurgeableResultCache setUpdateNotificationBlock:];
+-[CDDaemonPurgeableResultCache setUpdateBlock:];
+-[CDDaemonPurgeableResultCache keepUpToDate:];
+-[CDDaemonPurgeableResultCache recentPurgeableResults];
+-[CDDaemonPurgeableResultCache setRecentPurgeableResults:];
+-[CDDaemonPurgeableResultCache path];
+-[CDDaemonPurgeableResultCache setPath:];
+-[CDDaemonPurgeableResultCache queue];
+-[CDDaemonPurgeableResultCache setQueue:];
+-[CDDaemonPurgeableResultCache updatedNotificationBlock];
+-[CDDaemonPurgeableResultCache setUpdatedNotificationBlock:];
+-[CDDaemonPurgeableResultCache updatedBlock];
+-[CDDaemonPurgeableResultCache setUpdatedBlock:];
+
+@end
+
+@interface CDDaemonRecentInfo : CDRecentInfo
+
+/* class methods */
++[CDDaemonRecentInfo recentInfoForVolumes:];
++[CDDaemonRecentInfo fetchAllowedClassesSet];
+
+/* instance methods */
+-[CDDaemonRecentInfo _createNewRecentVolumeInfoWithName:];
+-[CDDaemonRecentInfo _createNewRecentVolumeInfo];
+-[CDDaemonRecentInfo prunePreserving:];
+-[CDDaemonRecentInfo prune];
+-[CDDaemonRecentInfo isStale];
+-[CDDaemonRecentInfo invalidateForVolume:];
+-[CDDaemonRecentInfo isInvalidForVolume:];
+-[CDDaemonRecentInfo addInvalidVolume:];
+-[CDDaemonRecentInfo updateInvalidVolumes];
+
+@end
+
+@interface CDDaemonRecentVolumeInfo : CDRecentVolumeInfo
+
+@property (T@"CacheDeleteDaemonVolume",&,D,N) cdVolume;
+
+/* class methods */
++[CDDaemonRecentVolumeInfo supportsSecureCoding];
++[CDDaemonRecentVolumeInfo CDRecentVolumeInfo:];
+
+/* instance methods */
+-[CDDaemonRecentVolumeInfo createVolumeWithPath:];
+-[CDDaemonRecentVolumeInfo createVolumeWithMountPoint:];
+-[CDDaemonRecentVolumeInfo copyWithZone:];
+-[CDDaemonRecentVolumeInfo _validateWithSharedCacheDeleteForService:];
+-[CDDaemonRecentVolumeInfo _reserveForVolume];
+-[CDDaemonRecentVolumeInfo prunePreserving:];
+-[CDDaemonRecentVolumeInfo prune];
+-[CDDaemonRecentVolumeInfo isStale];
+-[CDDaemonRecentVolumeInfo bsdDisk];
+-[CDDaemonRecentVolumeInfo thresholds];
+-[CDDaemonRecentVolumeInfo reserve];
+-[CDDaemonRecentVolumeInfo hasSnapshot];
+
+@end
+
+@interface CDFairPurgeOperationResult : CDPurgeOperationResult {
+    /* instance variables */
+    B _safDataLoadSuccess;
+    @"NSString" _completionStatus;
+    Q _executedPhase;
+    Q _phase1Step1PluginsReported;
+    Q _phase1Step2ContainersReported;
+    Q _phase1Step3FSPurgeableReported;
+    Q _phase1Step1StartTime;
+    Q _phase1Step1EndTime;
+    Q _phase1Step2StartTime;
+    Q _phase1Step2EndTime;
+    Q _phase1Step3StartTime;
+    Q _phase1Step3EndTime;
+    Q _phase2PluginsReported;
+    Q _phase2CacheReported;
+    Q _phase2FSPurgeableReported;
+    Q _phase2PluginsStartTime;
+    Q _phase2PluginsEndTime;
+    Q _phase2FSPurgeableStartTime;
+    Q _phase2FSPurgeableEndTime;
+    Q _totalHiddenAppsAnalyzed;
+    Q _totalVisibleAppsAnalyzed;
+    @"NSArray" _appTelemetryData;
+}
+
+@property (T@"NSString",C,N,V_completionStatus) completionStatus;
+@property (TQ,N,V_executedPhase) executedPhase;
+@property (TQ,N,V_phase1Step1PluginsReported) phase1Step1PluginsReported;
+@property (TQ,N,V_phase1Step2ContainersReported) phase1Step2ContainersReported;
+@property (TQ,N,V_phase1Step3FSPurgeableReported) phase1Step3FSPurgeableReported;
+@property (TQ,N,V_phase1Step1StartTime) phase1Step1StartTime;
+@property (TQ,N,V_phase1Step1EndTime) phase1Step1EndTime;
+@property (TQ,N,V_phase1Step2StartTime) phase1Step2StartTime;
+@property (TQ,N,V_phase1Step2EndTime) phase1Step2EndTime;
+@property (TQ,N,V_phase1Step3StartTime) phase1Step3StartTime;
+@property (TQ,N,V_phase1Step3EndTime) phase1Step3EndTime;
+@property (TQ,N,V_phase2PluginsReported) phase2PluginsReported;
+@property (TQ,N,V_phase2CacheReported) phase2CacheReported;
+@property (TQ,N,V_phase2FSPurgeableReported) phase2FSPurgeableReported;
+@property (TQ,N,V_phase2PluginsStartTime) phase2PluginsStartTime;
+@property (TQ,N,V_phase2PluginsEndTime) phase2PluginsEndTime;
+@property (TQ,N,V_phase2FSPurgeableStartTime) phase2FSPurgeableStartTime;
+@property (TQ,N,V_phase2FSPurgeableEndTime) phase2FSPurgeableEndTime;
+@property (TB,N,V_safDataLoadSuccess) safDataLoadSuccess;
+@property (TQ,N,V_totalHiddenAppsAnalyzed) totalHiddenAppsAnalyzed;
+@property (TQ,N,V_totalVisibleAppsAnalyzed) totalVisibleAppsAnalyzed;
+@property (T@"NSArray",&,N,V_appTelemetryData) appTelemetryData;
+
+/* instance methods */
+-[CDFairPurgeOperationResult initWithVolumes:requestedBytes:mainVolume:clientProcName:];
+-[CDFairPurgeOperationResult totalReportedBytes];
+-[CDFairPurgeOperationResult completionStatus];
+-[CDFairPurgeOperationResult setCompletionStatus:];
+-[CDFairPurgeOperationResult executedPhase];
+-[CDFairPurgeOperationResult setExecutedPhase:];
+-[CDFairPurgeOperationResult phase1Step1PluginsReported];
+-[CDFairPurgeOperationResult setPhase1Step1PluginsReported:];
+-[CDFairPurgeOperationResult phase1Step2ContainersReported];
+-[CDFairPurgeOperationResult setPhase1Step2ContainersReported:];
+-[CDFairPurgeOperationResult phase1Step3FSPurgeableReported];
+-[CDFairPurgeOperationResult setPhase1Step3FSPurgeableReported:];
+-[CDFairPurgeOperationResult phase1Step1StartTime];
+-[CDFairPurgeOperationResult setPhase1Step1StartTime:];
+-[CDFairPurgeOperationResult phase1Step1EndTime];
+-[CDFairPurgeOperationResult setPhase1Step1EndTime:];
+-[CDFairPurgeOperationResult phase1Step2StartTime];
+-[CDFairPurgeOperationResult setPhase1Step2StartTime:];
+-[CDFairPurgeOperationResult phase1Step2EndTime];
+-[CDFairPurgeOperationResult setPhase1Step2EndTime:];
+-[CDFairPurgeOperationResult phase1Step3StartTime];
+-[CDFairPurgeOperationResult setPhase1Step3StartTime:];
+-[CDFairPurgeOperationResult phase1Step3EndTime];
+-[CDFairPurgeOperationResult setPhase1Step3EndTime:];
+-[CDFairPurgeOperationResult phase2PluginsReported];
+-[CDFairPurgeOperationResult setPhase2PluginsReported:];
+-[CDFairPurgeOperationResult phase2CacheReported];
+-[CDFairPurgeOperationResult setPhase2CacheReported:];
+-[CDFairPurgeOperationResult phase2FSPurgeableReported];
+-[CDFairPurgeOperationResult setPhase2FSPurgeableReported:];
+-[CDFairPurgeOperationResult phase2PluginsStartTime];
+-[CDFairPurgeOperationResult setPhase2PluginsStartTime:];
+-[CDFairPurgeOperationResult phase2PluginsEndTime];
+-[CDFairPurgeOperationResult setPhase2PluginsEndTime:];
+-[CDFairPurgeOperationResult phase2FSPurgeableStartTime];
+-[CDFairPurgeOperationResult setPhase2FSPurgeableStartTime:];
+-[CDFairPurgeOperationResult phase2FSPurgeableEndTime];
+-[CDFairPurgeOperationResult setPhase2FSPurgeableEndTime:];
+-[CDFairPurgeOperationResult safDataLoadSuccess];
+-[CDFairPurgeOperationResult setSafDataLoadSuccess:];
+-[CDFairPurgeOperationResult totalHiddenAppsAnalyzed];
+-[CDFairPurgeOperationResult setTotalHiddenAppsAnalyzed:];
+-[CDFairPurgeOperationResult totalVisibleAppsAnalyzed];
+-[CDFairPurgeOperationResult setTotalVisibleAppsAnalyzed:];
+-[CDFairPurgeOperationResult appTelemetryData];
+-[CDFairPurgeOperationResult setAppTelemetryData:];
+
+@end
+
+@interface CDFairPurgeState : NSObject {
+    /* instance variables */
+    q _currentPhase;
+    @"NSDate" _lastRunTimestamp;
+    @"NSURL" _stateFileURL;
+}
+
+@property (Tq,N,V_currentPhase) currentPhase;
+@property (T@"NSDate",&,N,V_lastRunTimestamp) lastRunTimestamp;
+@property (T@"NSURL",&,N,V_stateFileURL) stateFileURL;
+
+/* class methods */
++[CDFairPurgeState sharedState];
+
+/* instance methods */
+-[CDFairPurgeState init];
+-[CDFairPurgeState isFirstPhase];
+-[CDFairPurgeState markPhaseComplete];
+-[CDFairPurgeState reset];
+-[CDFairPurgeState lastRunTimestamp];
+-[CDFairPurgeState save];
+-[CDFairPurgeState load];
+-[CDFairPurgeState currentPhase];
+-[CDFairPurgeState setCurrentPhase:];
+-[CDFairPurgeState setLastRunTimestamp:];
+-[CDFairPurgeState stateFileURL];
+-[CDFairPurgeState setStateFileURL:];
+
+@end
+
+@interface CDNamedXPCService : CDXPCService {
+    /* instance variables */
+    @"NSString" _xpcServiceName;
+    Q _options;
+}
+
+@property (T@"NSString",&,N,V_xpcServiceName) xpcServiceName;
+@property (TQ,N,V_options) options;
+
+/* instance methods */
+-[CDNamedXPCService initWithInfo:];
+-[CDNamedXPCService obtainXPCConnection:];
+-[CDNamedXPCService xpcServiceName];
+-[CDNamedXPCService setXpcServiceName:];
+-[CDNamedXPCService options];
+-[CDNamedXPCService setOptions:];
+
+@end
+
+@interface CDPeriodicOperationResult : CDResult {
+    /* instance variables */
+    @"NSArray" _volumeNames;
+    @"NSMutableArray" _mutableResults;
+}
+
+@property (T@"NSMutableArray",&,N,V_mutableResults) mutableResults;
+@property (T@"NSArray",R,N) results;
+@property (T@"NSArray",R,N,V_volumeNames) volumeNames;
+
+/* instance methods */
+-[CDPeriodicOperationResult initWithVolumes:];
+-[CDPeriodicOperationResult results];
+-[CDPeriodicOperationResult addResult:];
+-[CDPeriodicOperationResult volumeNames];
+-[CDPeriodicOperationResult mutableResults];
+-[CDPeriodicOperationResult setMutableResults:];
+
+@end
+
+@interface CDPeriodicServiceRequestResult : CDServiceRequestResult {
+    /* instance variables */
+    Q _reportedPurgedBytes;
+}
+
+@property (TQ,N,V_reportedPurgedBytes) reportedPurgedBytes;
+
+/* instance methods */
+-[CDPeriodicServiceRequestResult reportedPurgedBytes];
+-[CDPeriodicServiceRequestResult setReportedPurgedBytes:];
+
+@end
+
+@interface CDPurgeOperationResult : CDResult {
+    /* instance variables */
+    B _fsPurgeSuccess;
+    B _lowDisk;
+    B _veryLowDisk;
+    B _nearLowDisk;
+    B _idlePurge;
+    B _criticalRelinquishPurge;
+    i _level;
+    @"NSString" _clientProcName;
+    @"NSArray" _volumeNames;
+    Q _requestedBytes;
+    Q _beginFreeSpace;
+    Q _containerSize;
+    Q _containerInitialFreespace;
+    Q _endFreeSpace;
+    Q _noOfTimeouts;
+    Q _timeoutTime;
+    @"NSMutableArray" _timedOutServices;
+    @"NSMutableArray" _mutableResults;
+}
+
+@property (T@"NSMutableArray",&,N,V_mutableResults) mutableResults;
+@property (T@"NSArray",R,N) results;
+@property (T@"NSString",R,N,V_clientProcName) clientProcName;
+@property (T@"NSArray",R,N,V_volumeNames) volumeNames;
+@property (TQ,R,N,V_requestedBytes) requestedBytes;
+@property (TQ,R,N,V_beginFreeSpace) beginFreeSpace;
+@property (TQ,R,N,V_containerSize) containerSize;
+@property (TQ,R,N,V_containerInitialFreespace) containerInitialFreespace;
+@property (TQ,N,V_endFreeSpace) endFreeSpace;
+@property (Ti,N,V_level) level;
+@property (TB,N,V_fsPurgeSuccess) fsPurgeSuccess;
+@property (TB,N,GisLowDisk,V_lowDisk) lowDisk;
+@property (TB,N,GisVeryLowDisk,V_veryLowDisk) veryLowDisk;
+@property (TB,N,GisNearLowDisk,V_nearLowDisk) nearLowDisk;
+@property (TB,N,GisIdlePurgeDisk,V_idlePurge) idlePurge;
+@property (TB,N,GisCriticalRelinquishPurge,V_criticalRelinquishPurge) criticalRelinquishPurge;
+@property (TQ,N,V_noOfTimeouts) noOfTimeouts;
+@property (TQ,N,V_timeoutTime) timeoutTime;
+@property (T@"NSMutableArray",&,N,V_timedOutServices) timedOutServices;
+@property (TQ,R,D,N) totalReportedBytes;
+@property (TQ,R,D,N) totalMeasuredBytes;
+
+/* instance methods */
+-[CDPurgeOperationResult initWithVolumes:requestedBytes:mainVolume:clientProcName:];
+-[CDPurgeOperationResult totalReportedBytes];
+-[CDPurgeOperationResult totalMeasuredBytes];
+-[CDPurgeOperationResult results];
+-[CDPurgeOperationResult addResult:];
+-[CDPurgeOperationResult clientProcName];
+-[CDPurgeOperationResult volumeNames];
+-[CDPurgeOperationResult requestedBytes];
+-[CDPurgeOperationResult beginFreeSpace];
+-[CDPurgeOperationResult containerSize];
+-[CDPurgeOperationResult containerInitialFreespace];
+-[CDPurgeOperationResult endFreeSpace];
+-[CDPurgeOperationResult setEndFreeSpace:];
+-[CDPurgeOperationResult level];
+-[CDPurgeOperationResult setLevel:];
+-[CDPurgeOperationResult fsPurgeSuccess];
+-[CDPurgeOperationResult setFsPurgeSuccess:];
+-[CDPurgeOperationResult isLowDisk];
+-[CDPurgeOperationResult setLowDisk:];
+-[CDPurgeOperationResult isVeryLowDisk];
+-[CDPurgeOperationResult setVeryLowDisk:];
+-[CDPurgeOperationResult isNearLowDisk];
+-[CDPurgeOperationResult setNearLowDisk:];
+-[CDPurgeOperationResult isIdlePurgeDisk];
+-[CDPurgeOperationResult setIdlePurge:];
+-[CDPurgeOperationResult isCriticalRelinquishPurge];
+-[CDPurgeOperationResult setCriticalRelinquishPurge:];
+-[CDPurgeOperationResult noOfTimeouts];
+-[CDPurgeOperationResult setNoOfTimeouts:];
+-[CDPurgeOperationResult timeoutTime];
+-[CDPurgeOperationResult setTimeoutTime:];
+-[CDPurgeOperationResult timedOutServices];
+-[CDPurgeOperationResult setTimedOutServices:];
+-[CDPurgeOperationResult mutableResults];
+-[CDPurgeOperationResult setMutableResults:];
+
+@end
+
+@interface CDPurgeServiceRequestResult : CDServiceRequestResult {
+    /* instance variables */
+    Q _requestedBytes;
+    Q _reportedBytes;
+}
+
+@property (TQ,N,V_requestedBytes) requestedBytes;
+@property (TQ,N,V_reportedBytes) reportedBytes;
+
+/* instance methods */
+-[CDPurgeServiceRequestResult requestedBytes];
+-[CDPurgeServiceRequestResult setRequestedBytes:];
+-[CDPurgeServiceRequestResult reportedBytes];
+-[CDPurgeServiceRequestResult setReportedBytes:];
+
+@end
+
+@interface CDPurgeWeightCalculator : NSObject
+
+/* instance methods */
+-[CDPurgeWeightCalculator calculateWeightsForAppInfo:alpha:recentlyUsedOverride:];
+-[CDPurgeWeightCalculator _calculateWeightForApp:alpha:recentlyUsedApps:];
+-[CDPurgeWeightCalculator _calculateAverageLastUseTimeForEntry:recentlyUsedApps:];
+
+@end
+
+@interface CDPurgeableAppInfo : NSObject <NSSecureCoding> {
+    /* instance variables */
+    B _isVisible;
+    @"NSArray" _bundles;
+    Q _dataSize;
+    Q _cacheSize;
+    Q _pluginsPurgeableSize;
+    Q _fsPurgeableSize;
+    Q _pluginsPurgedSize;
+    Q _cachePurgedSize;
+    Q _fsPurgedSize;
+    @"NSMutableArray" _pluginServices;
+    d _weight;
+    d _lastUseTimeInDays;
+}
+
+@property (T@"NSArray",R,C,N,V_bundles) bundles;
+@property (TQ,R,N,V_dataSize) dataSize;
+@property (TB,R,N,V_isVisible) isVisible;
+@property (TQ,R,N,V_cacheSize) cacheSize;
+@property (TQ,N,V_pluginsPurgeableSize) pluginsPurgeableSize;
+@property (TQ,N,V_fsPurgeableSize) fsPurgeableSize;
+@property (TQ,N,V_pluginsPurgedSize) pluginsPurgedSize;
+@property (TQ,N,V_cachePurgedSize) cachePurgedSize;
+@property (TQ,N,V_fsPurgedSize) fsPurgedSize;
+@property (T@"NSMutableArray",R,N,V_pluginServices) pluginServices;
+@property (Td,N,V_weight) weight;
+@property (Td,N,V_lastUseTimeInDays) lastUseTimeInDays;
+
+/* class methods */
++[CDPurgeableAppInfo supportsSecureCoding];
+
+/* instance methods */
+-[CDPurgeableAppInfo initWithBundles:dataSize:cacheSize:isVisible:];
+-[CDPurgeableAppInfo bundlesKey];
+-[CDPurgeableAppInfo description];
+-[CDPurgeableAppInfo encodeWithCoder:];
+-[CDPurgeableAppInfo initWithCoder:];
+-[CDPurgeableAppInfo bundles];
+-[CDPurgeableAppInfo dataSize];
+-[CDPurgeableAppInfo isVisible];
+-[CDPurgeableAppInfo cacheSize];
+-[CDPurgeableAppInfo pluginsPurgeableSize];
+-[CDPurgeableAppInfo setPluginsPurgeableSize:];
+-[CDPurgeableAppInfo fsPurgeableSize];
+-[CDPurgeableAppInfo setFsPurgeableSize:];
+-[CDPurgeableAppInfo pluginsPurgedSize];
+-[CDPurgeableAppInfo setPluginsPurgedSize:];
+-[CDPurgeableAppInfo cachePurgedSize];
+-[CDPurgeableAppInfo setCachePurgedSize:];
+-[CDPurgeableAppInfo fsPurgedSize];
+-[CDPurgeableAppInfo setFsPurgedSize:];
+-[CDPurgeableAppInfo pluginServices];
+-[CDPurgeableAppInfo weight];
+-[CDPurgeableAppInfo setWeight:];
+-[CDPurgeableAppInfo lastUseTimeInDays];
+-[CDPurgeableAppInfo setLastUseTimeInDays:];
+
+@end
+
+@interface CDPurgeableOperationResult : CDResult {
+    /* instance variables */
+    @"NSArray" _volumes;
+    Q _totalPurgeableBytes;
+    @"NSMutableArray" _mutableResults;
+}
+
+@property (T@"NSMutableArray",&,N,V_mutableResults) mutableResults;
+@property (T@"NSArray",R,N) results;
+@property (T@"NSArray",R,N,V_volumes) volumes;
+@property (TQ,R,N,V_totalPurgeableBytes) totalPurgeableBytes;
+
+/* instance methods */
+-[CDPurgeableOperationResult initWithVolumes:];
+-[CDPurgeableOperationResult results];
+-[CDPurgeableOperationResult addResult:];
+-[CDPurgeableOperationResult volumes];
+-[CDPurgeableOperationResult totalPurgeableBytes];
+-[CDPurgeableOperationResult mutableResults];
+-[CDPurgeableOperationResult setMutableResults:];
+
+@end
+
+@interface CDPurgeableServiceRequestResult : CDServiceRequestResult {
+    /* instance variables */
+    Q _reportedPurgeableBytes;
+}
+
+@property (TQ,N,V_reportedPurgeableBytes) reportedPurgeableBytes;
+
+/* instance methods */
+-[CDPurgeableServiceRequestResult reportedPurgeableBytes];
+-[CDPurgeableServiceRequestResult setReportedPurgeableBytes:];
+
+@end
+
+@interface CDResult : NSObject {
+    /* instance variables */
+    B _isFinished;
+    B _success;
+    B _timedOut;
+    B _finished;
+    Q _monotonicBegin;
+    Q _monotonicEnd;
+}
+
+@property (TB,N,V_finished) finished;
+@property (TQ,N,V_monotonicEnd) monotonicEnd;
+@property (TQ,R,N,V_monotonicBegin) monotonicBegin;
+@property (Td,R,N) duration;
+@property (TB,R,N,V_isFinished) isFinished;
+@property (TB,N,V_success) success;
+@property (TB,N,V_timedOut) timedOut;
+
+/* instance methods */
+-[CDResult init];
+-[CDResult finish];
+-[CDResult duration];
+-[CDResult monotonicBegin];
+-[CDResult monotonicEnd];
+-[CDResult setMonotonicEnd:];
+-[CDResult isFinished];
+-[CDResult success];
+-[CDResult setSuccess:];
+-[CDResult timedOut];
+-[CDResult setTimedOut:];
+-[CDResult finished];
+-[CDResult setFinished:];
+
+@end
+
+@interface CDService : NSObject <CDService> {
+    /* instance variables */
+    B _doesPeriodic;
+    B _doesPurge;
+    B _doNotQuery;
+    B _rootOnly;
+    B _supportsCriticalRelinquishPurge;
+    B _noQuota;
+    B __inFlight;
+    @"NSArray" _volUUIDs;
+    @"NSString" _ID;
+    @"NSObject<OS_dispatch_queue>" _serviceQueue;
+    @"NSObject<OS_dispatch_queue>" _requestQueue;
+    @"NSSet" _desiredNotifications;
+    @"NSDictionary" _notificationOptions;
+    @? _serviceInvalidationHandler;
+    @? _serviceInterruptionHandler;
+    @"NSMutableArray" _purgeQueue;
+}
+
+@property (T@"NSMutableArray",&,N,V_purgeQueue) purgeQueue;
+@property (T@"NSArray",R,N,V_volUUIDs) volUUIDs;
+@property (T@"NSString",&,N,V_ID) ID;
+@property (TB,N,V_doesPeriodic) doesPeriodic;
+@property (TB,N,V_doesPurge) doesPurge;
+@property (TB,N,V_doNotQuery) doNotQuery;
+@property (TB,N,V_rootOnly) rootOnly;
+@property (TB,N,V_supportsCriticalRelinquishPurge) supportsCriticalRelinquishPurge;
+@property (T@"NSObject<OS_dispatch_queue>",&,N,V_serviceQueue) serviceQueue;
+@property (T@"NSObject<OS_dispatch_queue>",&,N,V_requestQueue) requestQueue;
+@property (T@"NSSet",R,V_desiredNotifications) desiredNotifications;
+@property (T@"NSDictionary",&,V_notificationOptions) notificationOptions;
+@property (TB,N,V_noQuota) noQuota;
+@property (TB,N,V__inFlight) _inFlight;
+@property (T@?,C,N,V_serviceInvalidationHandler) serviceInvalidationHandler;
+@property (T@?,C,N,V_serviceInterruptionHandler) serviceInterruptionHandler;
+@property (TB,R,N) inFlight;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* class methods */
++[CDService serviceWithInfo:];
++[CDService serviceWithInfo:endpoint:];
++[CDService serviceWithInfo:extension:];
+
+/* instance methods */
+-[CDService initWithInfo:];
+-[CDService drainPurgeQueue];
+-[CDService servicePurgeable:info:replyBlock:];
+-[CDService servicePurge:info:replyBlock:];
+-[CDService servicePeriodic:info:replyBlock:];
+-[CDService serviceCancelPurge:];
+-[CDService serviceCancelPurgeImmediate:];
+-[CDService servicePing:];
+-[CDService serviceNotify:replyBlock:];
+-[CDService serviceCallback:replyBlock:];
+-[CDService _servicePurgeable:info:replyBlock:];
+-[CDService _servicePurge:info:replyBlock:];
+-[CDService _servicePeriodic:info:replyBlock:];
+-[CDService _serviceCancelPurge:];
+-[CDService _serviceCancelPurgeImmediate:];
+-[CDService _servicePing:];
+-[CDService _serviceNotify:replyBlock:];
+-[CDService _serviceCallback:replyBlock:];
+-[CDService inFlight];
+-[CDService description];
+-[CDService debugDescription];
+-[CDService volUUIDs];
+-[CDService ID];
+-[CDService setID:];
+-[CDService doesPeriodic];
+-[CDService setDoesPeriodic:];
+-[CDService doesPurge];
+-[CDService setDoesPurge:];
+-[CDService doNotQuery];
+-[CDService setDoNotQuery:];
+-[CDService rootOnly];
+-[CDService setRootOnly:];
+-[CDService supportsCriticalRelinquishPurge];
+-[CDService setSupportsCriticalRelinquishPurge:];
+-[CDService serviceQueue];
+-[CDService setServiceQueue:];
+-[CDService requestQueue];
+-[CDService setRequestQueue:];
+-[CDService desiredNotifications];
+-[CDService notificationOptions];
+-[CDService setNotificationOptions:];
+-[CDService noQuota];
+-[CDService setNoQuota:];
+-[CDService _inFlight];
+-[CDService set_inFlight:];
+-[CDService serviceInvalidationHandler];
+-[CDService setServiceInvalidationHandler:];
+-[CDService serviceInterruptionHandler];
+-[CDService setServiceInterruptionHandler:];
+-[CDService purgeQueue];
+-[CDService setPurgeQueue:];
+
+@end
+
+@interface CDServiceRequestResult : CDResult {
+    /* instance variables */
+    i _urgency;
+    @"NSString" _serviceName;
+}
+
+@property (T@"NSString",&,N,V_serviceName) serviceName;
+@property (Ti,N,V_urgency) urgency;
+
+/* instance methods */
+-[CDServiceRequestResult serviceName];
+-[CDServiceRequestResult setServiceName:];
+-[CDServiceRequestResult urgency];
+-[CDServiceRequestResult setUrgency:];
+
+@end
+
+@interface CDXPCService : CDService {
+    /* instance variables */
+    B _isConnected;
+    B _isInterrupted;
+    B _isInvalidated;
+    @"NSXPCConnection" _xpcConnection;
+    @"NSObject<OS_dispatch_source>" _watchdog_timer;
+}
+
+@property (T@"NSXPCConnection",&,N,V_xpcConnection) xpcConnection;
+@property (TB,N,V_isConnected) isConnected;
+@property (TB,N,V_isInterrupted) isInterrupted;
+@property (TB,N,V_isInvalidated) isInvalidated;
+@property (T@"NSObject<OS_dispatch_source>",&,N,V_watchdog_timer) watchdog_timer;
+
+/* instance methods */
+-[CDXPCService initWithInfo:];
+-[CDXPCService dealloc];
+-[CDXPCService addProcInfoForConnection:toDict:];
+-[CDXPCService _servicePurgeable:info:replyBlock:];
+-[CDXPCService _servicePurge:info:replyBlock:];
+-[CDXPCService _servicePeriodic:info:replyBlock:];
+-[CDXPCService _serviceCancelPurge:];
+-[CDXPCService _serviceCancelPurgeImmediate:];
+-[CDXPCService _serviceNotify:replyBlock:];
+-[CDXPCService _serviceCallback:replyBlock:];
+-[CDXPCService doWithProxy:failure:];
+-[CDXPCService obtainXPCConnection:];
+-[CDXPCService invalidateConnection];
+-[CDXPCService resumeConnection];
+-[CDXPCService connectionWasInvalidated];
+-[CDXPCService xpcConnection];
+-[CDXPCService setXpcConnection:];
+-[CDXPCService isConnected];
+-[CDXPCService setIsConnected:];
+-[CDXPCService isInterrupted];
+-[CDXPCService setIsInterrupted:];
+-[CDXPCService isInvalidated];
+-[CDXPCService setIsInvalidated:];
+-[CDXPCService watchdog_timer];
+-[CDXPCService setWatchdog_timer:];
+
+@end
+
+@interface CacheDelete : NSObject <CacheDeleteClientProtocol, CacheDeletePublicClientProtocol, CacheDeleteServiceProvider, CacheDeletePrivateClientProtocol> {
+    /* instance variables */
+    B _measureElapsedTimes;
+    @"NSObject<OS_dispatch_queue>" _collection_queue;
+    @"NSObject<OS_dispatch_queue>" _defaults_queue;
+    @"NSObject<OS_dispatch_queue>" _operations_queue;
+    @"CacheDeleteListener" _listener;
+    @"CacheDeleteListener" _publicListener;
+    @"CacheDeleteListener" _privateListener;
+    @ _extensionMatchContext;
+    @"NSObject<OS_dispatch_queue>" _notify_queue;
+    @"NSObject<OS_dispatch_queue>" _timer_queue;
+    @"NSObject<OS_dispatch_source>" _persistence_timer;
+    @"NSURL" _rootPath;
+    @"NSMutableDictionary" _lastRefreshTimes;
+    @"NSUserDefaults" _userDefaults;
+    @"NSMutableDictionary" _services;
+    @"NSMutableSet" _daemons;
+    @"NSDictionary" _default_values;
+    @"NSMutableDictionary" _purgeOperations;
+    @"NSMutableSet" _cancelledPurgeTokens;
+    @"CDDaemonPurgeableResultCache" _purgeableResultCache;
+    @"CacheDeleteAnalytics" _analytics;
+    @"NSPointerArray" _inFlightOperations;
+    Q _pendingLowDiskCount;
+    @"NSMutableSet" _pendingLowDiskVolumes;
+    @"NSMutableSet" _volumesWithPurgeInProgress;
+    @"NSMutableDictionary" _lastUpdateTimes;
+    @"NSMutableDictionary" _pendingStorageLevels;
+    @"NSMutableDictionary" _pendingStorageThresholds;
+}
+
+@property (T@"CacheDeleteListener",&,N,V_listener) listener;
+@property (T@"CacheDeleteListener",&,N,V_publicListener) publicListener;
+@property (T@"CacheDeleteListener",&,N,V_privateListener) privateListener;
+@property (TB,R,V_measureElapsedTimes) measureElapsedTimes;
+@property (T@,&,N,V_extensionMatchContext) extensionMatchContext;
+@property (T@"NSObject<OS_dispatch_queue>",R,N,V_notify_queue) notify_queue;
+@property (T@"NSObject<OS_dispatch_queue>",R,N,V_timer_queue) timer_queue;
+@property (T@"NSObject<OS_dispatch_source>",&,N,V_persistence_timer) persistence_timer;
+@property (T@"NSURL",R,N,V_rootPath) rootPath;
+@property (T@"NSMutableDictionary",&,N,V_lastRefreshTimes) lastRefreshTimes;
+@property (T@"NSUserDefaults",&,N,V_userDefaults) userDefaults;
+@property (T@"NSMutableDictionary",&,N,V_services) services;
+@property (T@"NSMutableSet",&,N,V_daemons) daemons;
+@property (T@"NSDictionary",&,N,V_default_values) default_values;
+@property (T@"NSMutableDictionary",&,N,V_purgeOperations) purgeOperations;
+@property (T@"NSMutableSet",&,N,V_cancelledPurgeTokens) cancelledPurgeTokens;
+@property (T@"CDDaemonPurgeableResultCache",&,N,V_purgeableResultCache) purgeableResultCache;
+@property (T@"CacheDeleteAnalytics",&,N,V_analytics) analytics;
+@property (T@"NSPointerArray",&,N,V_inFlightOperations) inFlightOperations;
+@property (TQ,N,V_pendingLowDiskCount) pendingLowDiskCount;
+@property (T@"NSMutableSet",&,N,V_pendingLowDiskVolumes) pendingLowDiskVolumes;
+@property (T@"NSMutableSet",&,N,V_volumesWithPurgeInProgress) volumesWithPurgeInProgress;
+@property (T@"NSMutableDictionary",&,N,V_lastUpdateTimes) lastUpdateTimes;
+@property (T@"NSMutableDictionary",&,N,V_pendingStorageLevels) pendingStorageLevels;
+@property (T@"NSMutableDictionary",&,N,V_pendingStorageThresholds) pendingStorageThresholds;
+@property (T@"NSObject<OS_dispatch_queue>",R,N,V_collection_queue) collection_queue;
+@property (T@"NSObject<OS_dispatch_queue>",R,N,V_defaults_queue) defaults_queue;
+@property (T@"NSObject<OS_dispatch_queue>",R,N,V_operations_queue) operations_queue;
+
+/* class methods */
++[CacheDelete sharedCacheDelete];
+
+/* instance methods */
+-[CacheDelete init];
+-[CacheDelete beginListening];
+-[CacheDelete scanPlistsAtPath:execBlock:];
+-[CacheDelete processLowDiskVolumes:key:];
+-[CacheDelete processLowDiskVolumes:filteringBySet:key:];
+-[CacheDelete processLowDiskVolume:key:];
+-[CacheDelete extractThresholdsAndGoals:];
+-[CacheDelete shouldTriggerFairPurge:];
+-[CacheDelete levelStr:];
+-[CacheDelete notifyFollowup:completion:];
+-[CacheDelete updateFollowup:];
+-[CacheDelete broadcastLowDiskNotificationForVolume:key:];
+-[CacheDelete checkNotificationState];
+-[CacheDelete handleVFSStreamXPCEventForVolume:event:];
+-[CacheDelete handleVFSStreamXPCEvent:];
+-[CacheDelete beginCriticalPurgeActivityForVolume:];
+-[CacheDelete endCriticalPurgeActivityForVolume:];
+-[CacheDelete beginComfortPurgeActivityForVolume:];
+-[CacheDelete endComfortPurgeActivityForVolume:];
+-[CacheDelete beginIdlePurgeActivityForVolume:];
+-[CacheDelete endIdlePurgeActivityForVolume:];
+-[CacheDelete registerActivityWithIdentifier:criteria:runHandler:];
+-[CacheDelete saveRecentInfo];
+-[CacheDelete startPersistenceTimer];
+-[CacheDelete persistPurgeableResultsAndPostNotification];
+-[CacheDelete cancelPersistenceTimer];
+-[CacheDelete log_recent_info];
+-[CacheDelete applicationExtensions];
+-[CacheDelete prunePurgeHistory];
+-[CacheDelete fsPurgedVolumes:];
+-[CacheDelete processFSEventsNotificationFromResult:tokenString:];
+-[CacheDelete copyServices];
+-[CacheDelete serviceWithID:];
+-[CacheDelete validateService:];
+-[CacheDelete normalizeUrgency:];
+-[CacheDelete keyForVolume:atUrgency:];
+-[CacheDelete shouldUpdateVolumes:atUrgency:];
+-[CacheDelete timestampUpdateForVolumes:atUrgency:];
+-[CacheDelete shouldUpdatePurgeable:];
+-[CacheDelete updateRecentResultsForVolumes:fsPurgeableOnly:withInfo:qos:receiveResults:];
+-[CacheDelete asyncUpdateRecentResultsForAllVolumesWithInfo:];
+-[CacheDelete totalAvailable:];
+-[CacheDelete purge:volume:callback:];
+-[CacheDelete _purge:volume:services:callback:];
+-[CacheDelete invokeAfterMaxSeconds:min:group:block:];
+-[CacheDelete processPurgeNotification:forService:info:group:force:];
+-[CacheDelete _notifyRecipients:value:force:];
+-[CacheDelete notifyRecipients:value:];
+-[CacheDelete forcePurgeNotify:];
+-[CacheDelete checkAndReserveSpace:];
+-[CacheDelete getReserveSpaceFromUpdateVolume:];
+-[CacheDelete setEntitledReserve:unentitledReserve:];
+-[CacheDelete CheckPurgeableAndUpdateReserveSpace];
+-[CacheDelete clientCheckin:endpoint:info:reply:];
+-[CacheDelete _entitlementToCheck:];
+-[CacheDelete queryAppContainers:replyBlock:];
+-[CacheDelete clientUnifiedPurgeableSpace:queryType:replyBlock:];
+-[CacheDelete clientPurge:replyBlock:];
+-[CacheDelete clientCancelPurge:];
+-[CacheDelete clientPerformPeriodicsWithInfo:completion:];
+-[CacheDelete clientPerformServiceRequest:replyBlock:];
+-[CacheDelete clientPerformVFSEventWithInfo:replyBlock:];
+-[CacheDelete clientPerformFairPurgeOperation:replyBlock:];
+-[CacheDelete clientPerformOperation:replyBlock:];
+-[CacheDelete checkSettingEntitlements:onConnection:];
+-[CacheDelete _clientSetState:key:asyncReserve:];
+-[CacheDelete clientSetState:key:];
+-[CacheDelete _clientGetState:replyBlock:];
+-[CacheDelete clientGetState:replyBlock:];
+-[CacheDelete clientUpdatePurgeable:];
+-[CacheDelete clientRegisterLowDiskFailure:failureType:isRoot:];
+-[CacheDelete clientGetPendingStorageThreshold:replyBlock:];
+-[CacheDelete pruneCacheableStates];
+-[CacheDelete registerOperation:];
+-[CacheDelete removeOperation:];
+-[CacheDelete iteratePendingOperations:];
+-[CacheDelete debugState];
+-[CacheDelete operationsDebugState];
+-[CacheDelete servicesDebugState];
+-[CacheDelete maybeCrashForTest:];
+-[CacheDelete collection_queue];
+-[CacheDelete defaults_queue];
+-[CacheDelete operations_queue];
+-[CacheDelete listener];
+-[CacheDelete setListener:];
+-[CacheDelete publicListener];
+-[CacheDelete setPublicListener:];
+-[CacheDelete privateListener];
+-[CacheDelete setPrivateListener:];
+-[CacheDelete measureElapsedTimes];
+-[CacheDelete extensionMatchContext];
+-[CacheDelete setExtensionMatchContext:];
+-[CacheDelete notify_queue];
+-[CacheDelete timer_queue];
+-[CacheDelete persistence_timer];
+-[CacheDelete setPersistence_timer:];
+-[CacheDelete rootPath];
+-[CacheDelete lastRefreshTimes];
+-[CacheDelete setLastRefreshTimes:];
+-[CacheDelete userDefaults];
+-[CacheDelete setUserDefaults:];
+-[CacheDelete services];
+-[CacheDelete setServices:];
+-[CacheDelete daemons];
+-[CacheDelete setDaemons:];
+-[CacheDelete default_values];
+-[CacheDelete setDefault_values:];
+-[CacheDelete purgeOperations];
+-[CacheDelete setPurgeOperations:];
+-[CacheDelete cancelledPurgeTokens];
+-[CacheDelete setCancelledPurgeTokens:];
+-[CacheDelete purgeableResultCache];
+-[CacheDelete setPurgeableResultCache:];
+-[CacheDelete analytics];
+-[CacheDelete setAnalytics:];
+-[CacheDelete inFlightOperations];
+-[CacheDelete setInFlightOperations:];
+-[CacheDelete pendingLowDiskCount];
+-[CacheDelete setPendingLowDiskCount:];
+-[CacheDelete pendingLowDiskVolumes];
+-[CacheDelete setPendingLowDiskVolumes:];
+-[CacheDelete volumesWithPurgeInProgress];
+-[CacheDelete setVolumesWithPurgeInProgress:];
+-[CacheDelete lastUpdateTimes];
+-[CacheDelete setLastUpdateTimes:];
+-[CacheDelete pendingStorageLevels];
+-[CacheDelete setPendingStorageLevels:];
+-[CacheDelete pendingStorageThresholds];
+-[CacheDelete setPendingStorageThresholds:];
+
+@end
+
+@interface CacheDeleteAnalytics : NSObject {
+    /* instance variables */
+    @"<CDPurgeableResultCache><CDDaemonPurgeableResultCache>" _purgeableResultCache;
+    @"NSObject<OS_dispatch_queue>" _serialQueue;
+    @"NSMutableDictionary" _dailyStats;
+    @"<CacheDeleteServiceProvider>" _serviceProvider;
+    Q _nandSize;
+    @"PurgeStatsReporter" _purgeStatReporter;
+    @"PowerLogger" _powerLogger;
+}
+
+@property (T@"NSObject<OS_dispatch_queue>",&,N,V_serialQueue) serialQueue;
+@property (T@"NSMutableDictionary",&,N,V_dailyStats) dailyStats;
+@property (T@"<CDPurgeableResultCache><CDDaemonPurgeableResultCache>",&,N,V_purgeableResultCache) purgeableResultCache;
+@property (T@"<CacheDeleteServiceProvider>",&,N,V_serviceProvider) serviceProvider;
+@property (TQ,R,V_nandSize) nandSize;
+@property (T@"PurgeStatsReporter",&,N,V_purgeStatReporter) purgeStatReporter;
+@property (T@"PowerLogger",&,N,V_powerLogger) powerLogger;
+
+/* class methods */
++[CacheDeleteAnalytics currentSystemInfo];
++[CacheDeleteAnalytics buildType];
++[CacheDeleteAnalytics isDataCollectionEnabled];
++[CacheDeleteAnalytics isInternalBuild];
++[CacheDeleteAnalytics isThirdPartyAppInfo:];
++[CacheDeleteAnalytics individualAppStatsForAppInfo:phase:purgeAttempt:];
++[CacheDeleteAnalytics appStatsBatchForFairPurgeResult:purgeAttempt:];
++[CacheDeleteAnalytics getLowDiskLevelFromPurgeResult:];
+
+/* instance methods */
+-[CacheDeleteAnalytics initWithServiceProvider:withPurgeableResultCache:];
+-[CacheDeleteAnalytics persistPath];
+-[CacheDeleteAnalytics save];
+-[CacheDeleteAnalytics load:];
+-[CacheDeleteAnalytics clear];
+-[CacheDeleteAnalytics addDailyStats:];
+-[CacheDeleteAnalytics postDailyStats:];
+-[CacheDeleteAnalytics reportPurgeTimingInfo:];
+-[CacheDeleteAnalytics reportPurgeableTimingInfo:];
+-[CacheDeleteAnalytics fetchLowDiskStats];
+-[CacheDeleteAnalytics fetchStorageStats];
+-[CacheDeleteAnalytics fetchTimingStats:];
+-[CacheDeleteAnalytics fetchApplicationUsageStats];
+-[CacheDeleteAnalytics fetchAdditionalStats];
+-[CacheDeleteAnalytics sendCAEvent:key:value:value2:];
+-[CacheDeleteAnalytics sendCAEvent:key:value1:value2:value3:value4:];
+-[CacheDeleteAnalytics sendPurgeableAmountStats];
+-[CacheDeleteAnalytics sendAppCacheStats:];
+-[CacheDeleteAnalytics _addDailyStats:];
+-[CacheDeleteAnalytics _postDailyStats:];
+-[CacheDeleteAnalytics anonymizeAndFlush:name:];
+-[CacheDeleteAnalytics _reportPurgeTimingInfo:];
+-[CacheDeleteAnalytics _reportPurgeableTimingInfo:];
+-[CacheDeleteAnalytics reportPurge:];
+-[CacheDeleteAnalytics reportPurgeable:];
+-[CacheDeleteAnalytics reportPeriodic:];
+-[CacheDeleteAnalytics reportFairPurge:];
+-[CacheDeleteAnalytics round:toSignificantDigits:];
+-[CacheDeleteAnalytics roundNumber:toSignificantDigits:];
+-[CacheDeleteAnalytics postStatsDictionary:summarize:];
+-[CacheDeleteAnalytics machTimeToSeconds:];
+-[CacheDeleteAnalytics secondsFrom:to:];
+-[CacheDeleteAnalytics incrementDailyValueForKey:];
+-[CacheDeleteAnalytics addDailyValueForKey:value:];
+-[CacheDeleteAnalytics stringForUrgency:];
+-[CacheDeleteAnalytics stringForTime:];
+-[CacheDeleteAnalytics isRootVolume:];
+-[CacheDeleteAnalytics dailyPurgeableStats:];
+-[CacheDeleteAnalytics systemUsageStats];
+-[CacheDeleteAnalytics cacheManagementUsageStats];
+-[CacheDeleteAnalytics processPurgeOperationResult:];
+-[CacheDeleteAnalytics processPurgeableOperationResult:];
+-[CacheDeleteAnalytics processPeriodicOperationResult:];
+-[CacheDeleteAnalytics processFairPurgeOperationResult:];
+-[CacheDeleteAnalytics reportReceivedLowDiskNotification:forVolume:];
+-[CacheDeleteAnalytics _reportReceivedLowDiskNotification:forVolume:];
+-[CacheDeleteAnalytics reportBroadcastLowDiskNotification:forVolume:];
+-[CacheDeleteAnalytics _reportBroadcastLowDiskNotification:forVolume:];
+-[CacheDeleteAnalytics reportLowDiskFunctionalFailure:failureType:isRoot:];
+-[CacheDeleteAnalytics _reportLowDiskFunctionalFailure:failureType:isRoot:];
+-[CacheDeleteAnalytics purgeableResultCache];
+-[CacheDeleteAnalytics setPurgeableResultCache:];
+-[CacheDeleteAnalytics serialQueue];
+-[CacheDeleteAnalytics setSerialQueue:];
+-[CacheDeleteAnalytics dailyStats];
+-[CacheDeleteAnalytics setDailyStats:];
+-[CacheDeleteAnalytics serviceProvider];
+-[CacheDeleteAnalytics setServiceProvider:];
+-[CacheDeleteAnalytics nandSize];
+-[CacheDeleteAnalytics purgeStatReporter];
+-[CacheDeleteAnalytics setPurgeStatReporter:];
+-[CacheDeleteAnalytics powerLogger];
+-[CacheDeleteAnalytics setPowerLogger:];
+
+@end
+
+@interface CacheDeleteAsyncTimeoutFlag : NSObject {
+    /* instance variables */
+    B _timedOut;
+    @"NSObject<OS_dispatch_queue>" _queue;
+}
+
+@property (T@"NSObject<OS_dispatch_queue>",&,N,V_queue) queue;
+@property (TB,N) timedOut;
+
+/* instance methods */
+-[CacheDeleteAsyncTimeoutFlag initWithQueue:];
+-[CacheDeleteAsyncTimeoutFlag setTimedOut:];
+-[CacheDeleteAsyncTimeoutFlag timedOut];
+-[CacheDeleteAsyncTimeoutFlag queue];
+-[CacheDeleteAsyncTimeoutFlag setQueue:];
+
+@end
+
+@interface CacheDeleteDaemonVolume : CacheDeleteVolume {
+    /* instance variables */
+    B _primary;
+    B _validated;
+    B _isValid;
+    B _isAPFSVolume;
+    S _role;
+    @"NSUUID" _uuid;
+    Q _reserve;
+    Q _quota;
+    @"NSDictionary" __thresholds;
+}
+
+@property (TS,R,V_role) role;
+@property (TB,R,V_isAPFSVolume) isAPFSVolume;
+@property (T@"NSDictionary",R,N,V__thresholds) _thresholds;
+@property (T@"NSUUID",R,N,V_uuid) uuid;
+@property (TB,R,V_primary) primary;
+@property (T@"NSArray",R,D,N) siblings;
+@property (TQ,V_reserve) reserve;
+@property (TQ,V_quota) quota;
+@property (TB,V_validated) validated;
+@property (TB,V_isValid) isValid;
+@property (TB,R,N) isSpecialVolume;
+
+/* class methods */
++[CacheDeleteDaemonVolume volumeWithPath:];
++[CacheDeleteDaemonVolume createVolume:isPrimary:];
++[CacheDeleteDaemonVolume invalidateVolumesCache:];
++[CacheDeleteDaemonVolume volumeWithMountpoint:];
+
+/* instance methods */
+-[CacheDeleteDaemonVolume snapshots];
+-[CacheDeleteDaemonVolume hasSnapshotsMatchingRegularExpression:];
+-[CacheDeleteDaemonVolume snapshotsMatchingRegularExpression:];
+-[CacheDeleteDaemonVolume hasSnapshotsExcludingRegularExpression:];
+-[CacheDeleteDaemonVolume snapshotsExcludingRegularExpression:];
+-[CacheDeleteDaemonVolume timeMachineSnapshotRegex];
+-[CacheDeleteDaemonVolume hasSnapshotsExcludingTimeMachine];
+-[CacheDeleteDaemonVolume snapshotsExcludingTimeMachine];
+-[CacheDeleteDaemonVolume bsdDisk];
+-[CacheDeleteDaemonVolume validate];
+-[CacheDeleteDaemonVolume siblings];
+-[CacheDeleteDaemonVolume initWithPath:isPrimary:];
+-[CacheDeleteDaemonVolume initWithPath:];
+-[CacheDeleteDaemonVolume initWithVolume:];
+-[CacheDeleteDaemonVolume copyWithZone:];
+-[CacheDeleteDaemonVolume thresholds];
+-[CacheDeleteDaemonVolume isSpecialVolume];
+-[CacheDeleteDaemonVolume containerTotalSize:andFreespace:];
+-[CacheDeleteDaemonVolume description];
+-[CacheDeleteDaemonVolume uuid];
+-[CacheDeleteDaemonVolume primary];
+-[CacheDeleteDaemonVolume reserve];
+-[CacheDeleteDaemonVolume setReserve:];
+-[CacheDeleteDaemonVolume quota];
+-[CacheDeleteDaemonVolume setQuota:];
+-[CacheDeleteDaemonVolume validated];
+-[CacheDeleteDaemonVolume setValidated:];
+-[CacheDeleteDaemonVolume isValid];
+-[CacheDeleteDaemonVolume setIsValid:];
+-[CacheDeleteDaemonVolume role];
+-[CacheDeleteDaemonVolume isAPFSVolume];
+-[CacheDeleteDaemonVolume _thresholds];
+
+@end
+
+@interface CacheDeleteFairPurgeOperation : CacheDeletePurgeOperation {
+    /* instance variables */
+    B _collectStatistics;
+    B _forceHiddenPhase;
+    B _forceVisiblePhase;
+    B _reportTelemetry;
+    B _mustRescan;
+    @"CDFairPurgeState" _purgeState;
+    @"CDAppClassifier" _appClassifier;
+    @"CDPurgeWeightCalculator" _weightCalculator;
+    @"NSDictionary" _allServices;
+    @"CDFairPurgeOperationResult" _fairPurgeResult;
+    @"NSMutableDictionary" _allAppInfoObjects;
+    @"NSDictionary" _recentlyUsedOverride;
+    Q _beforePurgeEventID;
+    @"NSMutableArray" _purgedVolumeUUIDs;
+    @"NSMutableDictionary" _cloneCorrectionByVolume;
+}
+
+@property (T@"CDFairPurgeState",&,N,V_purgeState) purgeState;
+@property (T@"CDAppClassifier",&,N,V_appClassifier) appClassifier;
+@property (T@"CDPurgeWeightCalculator",&,N,V_weightCalculator) weightCalculator;
+@property (T@"NSDictionary",&,N,V_allServices) allServices;
+@property (T@"CDFairPurgeOperationResult",&,N,V_fairPurgeResult) fairPurgeResult;
+@property (TB,N,V_collectStatistics) collectStatistics;
+@property (T@"NSMutableDictionary",&,N,V_allAppInfoObjects) allAppInfoObjects;
+@property (TB,N,V_forceHiddenPhase) forceHiddenPhase;
+@property (TB,N,V_forceVisiblePhase) forceVisiblePhase;
+@property (T@"NSDictionary",&,N,V_recentlyUsedOverride) recentlyUsedOverride;
+@property (TB,N,V_reportTelemetry) reportTelemetry;
+@property (TQ,N,V_beforePurgeEventID) beforePurgeEventID;
+@property (T@"NSMutableArray",&,N,V_purgedVolumeUUIDs) purgedVolumeUUIDs;
+@property (TB,N,V_mustRescan) mustRescan;
+@property (T@"NSMutableDictionary",&,N,V_cloneCorrectionByVolume) cloneCorrectionByVolume;
+
+/* class methods */
++[CacheDeleteFairPurgeOperation criticalSystemPluginExemptions];
++[CacheDeleteFairPurgeOperation isServiceIDExempted:];
+
+/* instance methods */
+-[CacheDeleteFairPurgeOperation initWithInfo:services:volumes:];
+-[CacheDeleteFairPurgeOperation parseTestParameters];
+-[CacheDeleteFairPurgeOperation checkCancellationAndAbortIfNeeded:];
+-[CacheDeleteFairPurgeOperation startOperation:];
+-[CacheDeleteFairPurgeOperation loadSAFDataSynchronously];
+-[CacheDeleteFairPurgeOperation executeFirstPhase:];
+-[CacheDeleteFairPurgeOperation goalMet:];
+-[CacheDeleteFairPurgeOperation remainingAmountToPurge:];
+-[CacheDeleteFairPurgeOperation purgeNonVisiblePlugins:completion:];
+-[CacheDeleteFairPurgeOperation roundRobinPurgeServices:amount:batchSize:completion:];
+-[CacheDeleteFairPurgeOperation purgeNonVisibleAppContainers:completion:];
+-[CacheDeleteFairPurgeOperation purgeNonVisibleFSPurgeable:completion:];
+-[CacheDeleteFairPurgeOperation executeSecondPhase:];
+-[CacheDeleteFairPurgeOperation purgeSentinel:outInode:];
+-[CacheDeleteFairPurgeOperation completeWithResultAndReport:];
+-[CacheDeleteFairPurgeOperation serializeTelemetry];
+-[CacheDeleteFairPurgeOperation getStatistics];
+-[CacheDeleteFairPurgeOperation _updateFSPurgeableSizesForApps:forVolume:];
+-[CacheDeleteFairPurgeOperation _purgeSpecificApplications:forVolume:purgeLimit:];
+-[CacheDeleteFairPurgeOperation _analyzeAndSortAppsByWeight:];
+-[CacheDeleteFairPurgeOperation _calculatePluginSizesForApps:];
+-[CacheDeleteFairPurgeOperation _purgePluginsForApp:];
+-[CacheDeleteFairPurgeOperation _purgeCachePathForApp:];
+-[CacheDeleteFairPurgeOperation waitWithDeferralCheck:waitBlock:operationName:];
+-[CacheDeleteFairPurgeOperation waitForSemaphore:withTimeout:operationName:];
+-[CacheDeleteFairPurgeOperation waitForGroup:withTimeout:operationName:];
+-[CacheDeleteFairPurgeOperation purgeState];
+-[CacheDeleteFairPurgeOperation setPurgeState:];
+-[CacheDeleteFairPurgeOperation appClassifier];
+-[CacheDeleteFairPurgeOperation setAppClassifier:];
+-[CacheDeleteFairPurgeOperation weightCalculator];
+-[CacheDeleteFairPurgeOperation setWeightCalculator:];
+-[CacheDeleteFairPurgeOperation allServices];
+-[CacheDeleteFairPurgeOperation setAllServices:];
+-[CacheDeleteFairPurgeOperation fairPurgeResult];
+-[CacheDeleteFairPurgeOperation setFairPurgeResult:];
+-[CacheDeleteFairPurgeOperation collectStatistics];
+-[CacheDeleteFairPurgeOperation setCollectStatistics:];
+-[CacheDeleteFairPurgeOperation allAppInfoObjects];
+-[CacheDeleteFairPurgeOperation setAllAppInfoObjects:];
+-[CacheDeleteFairPurgeOperation forceHiddenPhase];
+-[CacheDeleteFairPurgeOperation setForceHiddenPhase:];
+-[CacheDeleteFairPurgeOperation forceVisiblePhase];
+-[CacheDeleteFairPurgeOperation setForceVisiblePhase:];
+-[CacheDeleteFairPurgeOperation recentlyUsedOverride];
+-[CacheDeleteFairPurgeOperation setRecentlyUsedOverride:];
+-[CacheDeleteFairPurgeOperation reportTelemetry];
+-[CacheDeleteFairPurgeOperation setReportTelemetry:];
+-[CacheDeleteFairPurgeOperation beforePurgeEventID];
+-[CacheDeleteFairPurgeOperation setBeforePurgeEventID:];
+-[CacheDeleteFairPurgeOperation purgedVolumeUUIDs];
+-[CacheDeleteFairPurgeOperation setPurgedVolumeUUIDs:];
+-[CacheDeleteFairPurgeOperation mustRescan];
+-[CacheDeleteFairPurgeOperation setMustRescan:];
+-[CacheDeleteFairPurgeOperation cloneCorrectionByVolume];
+-[CacheDeleteFairPurgeOperation setCloneCorrectionByVolume:];
+
+@end
+
+@interface CacheDeleteOperation : NSObject <CacheDeleteOperation> {
+    /* instance variables */
+    B _hasRootOnlyServices;
+    B _measureElapsedTime;
+    B _clientSpecifiedTimeout;
+    i _urgencyLimit;
+    i _urgency;
+    @"<CDPurgeableResultCache><CDDaemonPurgeableResultCache>" _resultCache;
+    @"NSDictionary" _info;
+    @"NSDictionary" _services;
+    @"NSMutableDictionary" _result;
+    @"NSMutableDictionary" _testFailures;
+    @"NSArray" _volumes;
+    @"NSArray" _volumeNames;
+    @"NSArray" _servicesToTranslate;
+    @"NSObject<OS_dispatch_queue>" _operation_queue;
+    @"NSObject<OS_dispatch_queue>" _response_queue;
+    d _start_time;
+    @"CacheDeleteAnalytics" _analyticsReporter;
+    d _timeout_seconds;
+}
+
+@property (Td,V_timeout_seconds) timeout_seconds;
+@property (T@"<CDPurgeableResultCache><CDDaemonPurgeableResultCache>",&,N,V_resultCache) resultCache;
+@property (T@"NSDictionary",&,N,V_info) info;
+@property (T@"NSDictionary",&,N,V_services) services;
+@property (T@"NSMutableDictionary",&,N,V_result) result;
+@property (T@"NSMutableDictionary",&,N,V_testFailures) testFailures;
+@property (T@"NSArray",&,N,V_volumes) volumes;
+@property (T@"NSArray",&,N,V_volumeNames) volumeNames;
+@property (TB,R,N,V_hasRootOnlyServices) hasRootOnlyServices;
+@property (T@"NSArray",R,N,V_servicesToTranslate) servicesToTranslate;
+@property (Ti,R,V_urgencyLimit) urgencyLimit;
+@property (Ti,R,V_urgency) urgency;
+@property (T@"NSObject<OS_dispatch_queue>",&,V_operation_queue) operation_queue;
+@property (T@"NSObject<OS_dispatch_queue>",&,V_response_queue) response_queue;
+@property (TB,V_measureElapsedTime) measureElapsedTime;
+@property (Td,V_start_time) start_time;
+@property (T@"CacheDeleteAnalytics",&,N,V_analyticsReporter) analyticsReporter;
+@property (TB,R,N,V_clientSpecifiedTimeout) clientSpecifiedTimeout;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* instance methods */
+-[CacheDeleteOperation initWithInfo:services:volumes:];
+-[CacheDeleteOperation startOperation:];
+-[CacheDeleteOperation _startOperation:];
+-[CacheDeleteOperation serviceIsRegistered:];
+-[CacheDeleteOperation servicesForVolume:];
+-[CacheDeleteOperation performBlockWithUrgency:];
+-[CacheDeleteOperation processTestFailures:];
+-[CacheDeleteOperation volumeNames];
+-[CacheDeleteOperation validateDictionaryForXPC:];
+-[CacheDeleteOperation non_negative_time_remaining];
+-[CacheDeleteOperation timeoutNotReached];
+-[CacheDeleteOperation description];
+-[CacheDeleteOperation resultCache];
+-[CacheDeleteOperation setResultCache:];
+-[CacheDeleteOperation info];
+-[CacheDeleteOperation setInfo:];
+-[CacheDeleteOperation services];
+-[CacheDeleteOperation setServices:];
+-[CacheDeleteOperation result];
+-[CacheDeleteOperation setResult:];
+-[CacheDeleteOperation testFailures];
+-[CacheDeleteOperation setTestFailures:];
+-[CacheDeleteOperation volumes];
+-[CacheDeleteOperation setVolumes:];
+-[CacheDeleteOperation setVolumeNames:];
+-[CacheDeleteOperation hasRootOnlyServices];
+-[CacheDeleteOperation servicesToTranslate];
+-[CacheDeleteOperation urgencyLimit];
+-[CacheDeleteOperation urgency];
+-[CacheDeleteOperation operation_queue];
+-[CacheDeleteOperation setOperation_queue:];
+-[CacheDeleteOperation response_queue];
+-[CacheDeleteOperation setResponse_queue:];
+-[CacheDeleteOperation measureElapsedTime];
+-[CacheDeleteOperation setMeasureElapsedTime:];
+-[CacheDeleteOperation start_time];
+-[CacheDeleteOperation setStart_time:];
+-[CacheDeleteOperation analyticsReporter];
+-[CacheDeleteOperation setAnalyticsReporter:];
+-[CacheDeleteOperation clientSpecifiedTimeout];
+-[CacheDeleteOperation timeout_seconds];
+-[CacheDeleteOperation setTimeout_seconds:];
+
+@end
+
+@interface CacheDeletePeriodicOperation : CacheDeleteOperation <CacheDeleteOperation> {
+    /* instance variables */
+    @"CDPeriodicOperationResult" _periodicResult;
+}
+
+@property (T@"CDPeriodicOperationResult",&,N,V_periodicResult) periodicResult;
+@property (T@"<CDPurgeableResultCache><CDDaemonPurgeableResultCache>",&,N) resultCache;
+@property (T@"NSArray",&,N) volumes;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* instance methods */
+-[CacheDeletePeriodicOperation initWithInfo:services:volumes:];
+-[CacheDeletePeriodicOperation _startOperation:];
+-[CacheDeletePeriodicOperation periodicResult];
+-[CacheDeletePeriodicOperation setPeriodicResult:];
+
+@end
+
+@interface CacheDeletePruner : NSObject {
+    /* instance variables */
+    B _cancel;
+    q _dir_age;
+    q _file_age;
+    @"TestTelemetry" _testObject;
+}
+
+@property (Tq,N,V_dir_age) dir_age;
+@property (Tq,N,V_file_age) file_age;
+@property (TB,V_cancel) cancel;
+@property (T@"TestTelemetry",&,V_testObject) testObject;
+
+/* class methods */
++[CacheDeletePruner prunerWithFileAge:dirAge:];
+
+/* instance methods */
+-[CacheDeletePruner initWithFileAge:dirAge:];
+-[CacheDeletePruner stop];
+-[CacheDeletePruner pruneContainerTmps];
+-[CacheDeletePruner pruneSystemTmp];
+-[CacheDeletePruner pruneUserTmp];
+-[CacheDeletePruner pruneDir:bundleID:];
+-[CacheDeletePruner dir_age];
+-[CacheDeletePruner setDir_age:];
+-[CacheDeletePruner file_age];
+-[CacheDeletePruner setFile_age:];
+-[CacheDeletePruner cancel];
+-[CacheDeletePruner setCancel:];
+-[CacheDeletePruner testObject];
+-[CacheDeletePruner setTestObject:];
+
+@end
+
+@interface CacheDeletePurgeOperation : CacheDeleteOperation <CacheDeleteOperation> {
+    /* instance variables */
+    B _cancel;
+    Q _purge_amount_needed;
+    Q _purge_amount_reported;
+    @"CDPurgeOperationResult" _purgeResult;
+    @"NSString" _cachedTokenString;
+    @"NSMutableSet" _timedOutServices;
+}
+
+@property (T@"CDPurgeOperationResult",&,N,V_purgeResult) purgeResult;
+@property (T@"NSString",&,N,V_cachedTokenString) cachedTokenString;
+@property (T@"NSMutableSet",&,N,V_timedOutServices) timedOutServices;
+@property (TB,V_cancel) cancel;
+@property (TQ,R,V_purge_amount_needed) purge_amount_needed;
+@property (TQ,V_purge_amount_reported) purge_amount_reported;
+@property (T@"<CDPurgeableResultCache><CDDaemonPurgeableResultCache>",&,N) resultCache;
+@property (T@"NSArray",&,N) volumes;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* instance methods */
+-[CacheDeletePurgeOperation tokenString];
+-[CacheDeletePurgeOperation initWithInfo:services:volumes:];
+-[CacheDeletePurgeOperation cancelOperation];
+-[CacheDeletePurgeOperation tryFSPurgeBatchAllVolumes:atUrgency:signpostID:orderedServices:completion:];
+-[CacheDeletePurgeOperation reportedAmountMatchesFreedSpace:];
+-[CacheDeletePurgeOperation purgeSentinel:outInode:];
+-[CacheDeletePurgeOperation createAndStartFSEventStreamForSentinel:path:semaphore:outRescan:];
+-[CacheDeletePurgeOperation createFSPurgeNotificationWithEventID:volumes:mustRescan:];
+-[CacheDeletePurgeOperation executePurgeWithFSEventsMonitoring:volume:timeout:outEventID:outMustRescan:];
+-[CacheDeletePurgeOperation batchServicesForVolume:atUrgency:services:batchSize:block:];
+-[CacheDeletePurgeOperation volumeContribution:urgency:isTargetVolume:];
+-[CacheDeletePurgeOperation filterServices:];
+-[CacheDeletePurgeOperation _startOperation:];
+-[CacheDeletePurgeOperation oneShot:volume:urgency:donation:currentRoundResults:timeout:info:optionalTestInfo:signpostID:];
+-[CacheDeletePurgeOperation serviceRequest:volume:urgency:donation:info:optionalTestInfo:signpostID:completion:];
+-[CacheDeletePurgeOperation cancel];
+-[CacheDeletePurgeOperation setCancel:];
+-[CacheDeletePurgeOperation purge_amount_needed];
+-[CacheDeletePurgeOperation purge_amount_reported];
+-[CacheDeletePurgeOperation setPurge_amount_reported:];
+-[CacheDeletePurgeOperation purgeResult];
+-[CacheDeletePurgeOperation setPurgeResult:];
+-[CacheDeletePurgeOperation cachedTokenString];
+-[CacheDeletePurgeOperation setCachedTokenString:];
+-[CacheDeletePurgeOperation timedOutServices];
+-[CacheDeletePurgeOperation setTimedOutServices:];
+
+@end
+
+@interface CacheDeletePurgeableOperation : CacheDeleteOperation <CacheDeleteOperation> {
+    /* instance variables */
+    B _cancel;
+    i _purgeableUrgency;
+    @"CDPurgeableOperationResult" _purgeableResult;
+    @"NSObject<OS_dispatch_queue>" _inflight_q;
+    @"NSCountedSet" _inflight;
+}
+
+@property (T@"CDPurgeableOperationResult",&,N,V_purgeableResult) purgeableResult;
+@property (TB,V_cancel) cancel;
+@property (T@"NSObject<OS_dispatch_queue>",&,N,V_inflight_q) inflight_q;
+@property (T@"NSCountedSet",&,N,V_inflight) inflight;
+@property (Ti,V_purgeableUrgency) purgeableUrgency;
+@property (T@"<CDPurgeableResultCache><CDDaemonPurgeableResultCache>",&,N) resultCache;
+@property (T@"NSArray",&,N) volumes;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* instance methods */
+-[CacheDeletePurgeableOperation initWithInfo:services:volumes:];
+-[CacheDeletePurgeableOperation cancelOperation];
+-[CacheDeletePurgeableOperation addInFlight:];
+-[CacheDeletePurgeableOperation removeInFlight:];
+-[CacheDeletePurgeableOperation copyInFlights];
+-[CacheDeletePurgeableOperation performBlockWithUrgency:];
+-[CacheDeletePurgeableOperation _startOperation:];
+-[CacheDeletePurgeableOperation _queryFSPurgeableBatchAllVolumes:urgency:infoCopy:refreshAll:];
+-[CacheDeletePurgeableOperation purgeableUrgency];
+-[CacheDeletePurgeableOperation setPurgeableUrgency:];
+-[CacheDeletePurgeableOperation purgeableResult];
+-[CacheDeletePurgeableOperation setPurgeableResult:];
+-[CacheDeletePurgeableOperation cancel];
+-[CacheDeletePurgeableOperation setCancel:];
+-[CacheDeletePurgeableOperation inflight_q];
+-[CacheDeletePurgeableOperation setInflight_q:];
+-[CacheDeletePurgeableOperation inflight];
+-[CacheDeletePurgeableOperation setInflight:];
+
+@end
+
+@interface CacheDeleteSnapshotInfo : NSObject {
+    /* instance variables */
+    @"NSString" _name;
+    Q _uid;
+}
+
+@property (T@"NSString",R,N,V_name) name;
+@property (TQ,R,N,V_uid) uid;
+
+/* instance methods */
+-[CacheDeleteSnapshotInfo initWithName:uid:];
+-[CacheDeleteSnapshotInfo name];
+-[CacheDeleteSnapshotInfo uid];
+
+@end
+
+@interface PowerLogger : NSObject {
+    /* instance variables */
+    @"NSMutableArray" _events;
+    @"NSObject<OS_dispatch_queue>" _queue;
+}
+
+@property (T@"NSMutableArray",&,N,V_events) events;
+@property (T@"NSObject<OS_dispatch_queue>",&,N,V_queue) queue;
+
+/* class methods */
++[PowerLogger sharedLogger];
+
+/* instance methods */
+-[PowerLogger init];
+-[PowerLogger logCacheDuetEvent:urgencyLevel:serviceName:startFromUptime:duration:];
+-[PowerLogger logCacheDuetEvent:urgencyLevel:serviceName:startFromUptime:duration:purgedBytes:];
+-[PowerLogger logCacheDuetEvent:urgencyLevel:serviceName:startFromUptime:duration:requestedBytes:purgedBytes:];
+-[PowerLogger flush];
+-[PowerLogger events];
+-[PowerLogger setEvents:];
+-[PowerLogger queue];
+-[PowerLogger setQueue:];
+
+@end
+
+@interface PurgeStatsReporter : NSObject {
+    /* instance variables */
+    @"NSURL" _persistenceURL;
+    @"NSObject<OS_dispatch_queue>" _persistenceQueue;
+}
+
+@property (T@"NSURL",R,N,V_persistenceURL) persistenceURL;
+@property (T@"NSObject<OS_dispatch_queue>",&,N,V_persistenceQueue) persistenceQueue;
+
+/* class methods */
++[PurgeStatsReporter statKeys];
++[PurgeStatsReporter sendPurgeStatsEventWithKey:];
+
+/* instance methods */
+-[PurgeStatsReporter initWithPath:];
+-[PurgeStatsReporter save:];
+-[PurgeStatsReporter load];
+-[PurgeStatsReporter statsAreStale];
+-[PurgeStatsReporter resetPurgeStats];
+-[PurgeStatsReporter appendAndSaveStats:];
+-[PurgeStatsReporter appendBatchAndSaveStats:];
+-[PurgeStatsReporter generationNumber];
+-[PurgeStatsReporter sendAndResetStats];
+-[PurgeStatsReporter persistenceURL];
+-[PurgeStatsReporter persistenceQueue];
+-[PurgeStatsReporter setPersistenceQueue:];
+
+@end
+
+@interface purgeOP : NSObject {
+    /* instance variables */
+    i _urgency;
+    @? _reply;
+    @"NSDictionary" _info;
+}
+
+@property (T@?,C,N,V_reply) reply;
+@property (T@"NSDictionary",&,N,V_info) info;
+@property (Ti,R,V_urgency) urgency;
+
+/* class methods */
++[purgeOP purgeOpAtUrgency:info:reply:];
+
+/* instance methods */
+-[purgeOP initWithUrgency:info:reply:];
+-[purgeOP reply];
+-[purgeOP setReply:];
+-[purgeOP info];
+-[purgeOP setInfo:];
+-[purgeOP urgency];
+
+@end
+
+@interface CacheDeleteListener (Daemon)
+
+/* class methods */
++[CacheDeleteListener  daemonListenerWithExportedObject:];
++[CacheDeleteListener  daemonPublicListenerWithExportedObject:];
++[CacheDeleteListener  daemonPrivateListenerWithExportedObject:];
+
+@end
+

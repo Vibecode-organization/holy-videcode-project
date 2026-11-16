@@ -1,0 +1,6 @@
+funcs 1078 1078
+identical 1077 ratio 0.99907
+changed regions 1
+== replace A[437:438] B[437:438]
+   A 0xfffffff0086e32d8 sz=476
+   B 0xfffffff00878daf8 sz=476

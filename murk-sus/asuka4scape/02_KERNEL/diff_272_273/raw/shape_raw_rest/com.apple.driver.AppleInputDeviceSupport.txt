@@ -1,0 +1,3 @@
+funcs 877 877
+identical 877 ratio 1.0
+changed regions 0

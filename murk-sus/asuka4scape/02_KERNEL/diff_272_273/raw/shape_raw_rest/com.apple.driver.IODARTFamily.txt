@@ -1,0 +1,3 @@
+funcs 384 384
+identical 384 ratio 1.0
+changed regions 0

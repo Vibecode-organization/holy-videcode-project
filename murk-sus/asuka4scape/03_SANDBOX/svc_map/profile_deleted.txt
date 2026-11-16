@@ -1,0 +1,154 @@
+## deleted  850384 bytes
+### entitlements (22 keys)
+  com.apple.itunesstored.private
+  com.apple.mkb.usersession.info
+  com.apple.mobile.keybagd.UserManager.logout
+  com.apple.multitasking.termination
+  com.apple.private.CacheDelete = PURGEABLE_ENTITLEMENT, ITEMIZED_PURGEABLE_ENTITLEMENT, PURGE_ENTITLEMENT, CANCEL_PURGE_ENTITLEMENT, PERIODIC_ENTITLEMENT, SERVICE_REQUEST_ENTITLEMENT, NOTIFICATION_ENTITLEMENT
+  com.apple.private.MobileContainerManager.lookup = {appData, appGroup, pluginData}
+  com.apple.private.MobileContainerManager.userManagedAssets
+  com.apple.private.apfs.set_purgeable_notification_threshold
+  com.apple.private.apfs.space-attribution
+  com.apple.private.biome.read-only = App.InFocus
+  com.apple.private.coreservices.canmapbundleidtouuid
+  com.apple.private.ind.client
+  com.apple.private.mobileinstall.allowedSPI = InstallForLaunchServices
+  com.apple.private.security.datavault.controller
+  com.apple.private.security.storage.AppDataContainers
+  com.apple.private.tcc.allow = kTCCServiceSystemPolicyRemovableVolumes, kTCCServiceSystemPolicyNetworkVolumes
+  com.apple.private.vfs.entitled-reserve-access
+  com.apple.security.enterprise-volume-access
+  com.apple.security.exception.files.absolute-path.read-only = /private/var/db/spaceattribution/CDMapping.json
+  com.apple.security.network.client
+  com.apple.usermanagerd.persona.fetch
+  seatbelt-profiles = deleted
+### selector-like strings (306)
+  JSONObjectWithData:options:error:
+  addDailyValueForKey: Negative value (%f) for total measured bytes in: "%@"
+  addDailyValueForKey:value:
+  addProcInfoForConnection:toDict:
+  allocWithZone:
+  appBundleIDForPlugin:
+  appContainerCachesWithInfo:
+  appStatsBatchForFairPurgeResult:purgeAttempt:
+  appendFormat:
+  archivedDataWithRootObject:requiringSecureCoding:error:
+  arrayWithArray:
+  arrayWithCapacity:
+  arrayWithObject:
+  arrayWithObjects:count:
+  asyncUpdateRecentResultsForAllVolumesWithInfo:
+  batchServicesForVolume:atUrgency:services:batchSize:block:
+  beginComfortPurgeActivityForVolume:
+  beginCriticalPurgeActivityForVolume:
+  beginExtensionRequestWithOptions:inputItems:completion:
+  beginIdlePurgeActivityForVolume:
+  beginMatchingExtensionsWithAttributes:: error: %@
+  beginMatchingExtensionsWithAttributes:: got Plugins: %@
+  beginMatchingExtensionsWithAttributes:completion:
+  broadcastLowDiskNotificationForVolume:key:
+  buildAppInfoForBundleGroups:
+  bundleRecordWithBundleIdentifier:allowPlaceholder:error:
+  cachesForInstalledApps:bytesNeeded:volume:sortForUrgency:telemetry:
+  calculateWeightsForAppInfo:alpha:recentlyUsedOverride:
+  cancelExtensionRequestWithIdentifier:
+  cdVolumeForPath:
+  clientPerformPeriodicsWithInfo:completion:
+  clientPerformVFSEventWithInfo:replyBlock:
+  com.apple.CDTests.HiddenApp
+  com.apple.CDTests.HiddenApp.CacheDelete.TestService
+  com.apple.CacheDelete.CDAppClassifier
+  com.apple.CacheDelete.daily
+  com.apple.CacheDelete.fairpurge
+  com.apple.CacheDelete.purgeStatReporter
+  com.apple.CloudDocs.iCloudDriveFileProvider
+  com.apple.FileProvider
+  com.apple.FileProvider.LocalStorage
+  com.apple.FileProvider.cache-delete
+  com.apple.Maps
+  com.apple.Music
+  com.apple.Spotlight
+  com.apple.TMCacheDelete
+  com.apple.TextInput
+  com.apple.TextInput.CacheDelete
+  com.apple.WebBookmarks
+  com.apple.WebBookmarks.CacheDelete
+  com.apple.abm.cache-delete
+  com.apple.appstored
+  com.apple.appstored.CacheDelete
+  com.apple.assetsd
+  com.apple.assetsd.cacheDelete
+  com.apple.cacheDelete.purgeStats
+  com.apple.cache_delete
+  com.apple.cache_delete.CDAnonymousXPCService.duplicate_connection
+  com.apple.cache_delete.CDAnonymousXPCService.no_endpoint
+  com.apple.cache_delete.CDNamedXPCService.duplicate_connection
+  com.apple.cache_delete.CDService.serviceCallback
+  com.apple.cache_delete.CDService.serviceCancelPurge
+  com.apple.cache_delete.CDService.serviceCancelPurgeImmediate
+  com.apple.cache_delete.CDService.serviceNotify
+  com.apple.cache_delete.CDService.servicePeriodic
+  com.apple.cache_delete.CDService.servicePing
+  com.apple.cache_delete.CDService.servicePurge
+  com.apple.cache_delete.CDService.servicePurgeable
+  com.apple.cache_delete.CDXPCService.no_connection
+  com.apple.cache_delete.ComfortPurge
+  com.apple.cache_delete.CriticalPurge
+  com.apple.cache_delete.IdlePurge
+  com.apple.cache_delete.PowerLogger
+  com.apple.cache_delete._notifyRecipients
+  com.apple.cache_delete.analytics
+  com.apple.cache_delete.app_caches.collection
+  com.apple.cache_delete.app_caches.purge
+  com.apple.cache_delete.applicationExtensions
+  com.apple.cache_delete.daily_activity
+  com.apple.cache_delete.fair_purge.aggregated_third_party
+  com.apple.cache_delete.fair_purge.completed
+  com.apple.cache_delete.fair_purge.should_defer
+  com.apple.cache_delete.fair_purge.started
+  com.apple.cache_delete.fairpurge_activity
+  com.apple.cache_delete.fsPurgeableQ
+  com.apple.cache_delete.launched
+  com.apple.cache_delete.low_disk_event
+  com.apple.cache_delete.private
+  com.apple.cache_delete.public
+  com.apple.cache_delete.purge_fsevents
+  com.apple.cache_delete.saveDaemonRecentInfo
+  com.apple.cache_delete.shouldUpdatePurgeable
+  com.apple.cache_delete.startPersistenceTimer
+  com.apple.cache_delete.startup_lowdisk_poll
+  com.apple.cache_delete.unexpected_multiple_callback
+  com.apple.cache_delete.volumes
+  com.apple.cache_delete_collection
+  com.apple.cache_delete_defaults
+  com.apple.cache_delete_extension
+  com.apple.cache_delete_notify
+  com.apple.cache_delete_operations
+  com.apple.cache_delete_periodic_results
+  com.apple.cache_delete_timer
+  com.apple.cache_deleteiCloudNotification_queue
+  com.apple.cache_deleteoperation_test_failures
+  com.apple.cachedelete
+  com.apple.cachedelete.purgeablestats
+  com.apple.cahce_delete.purgeable_inflight
+  com.apple.cloudd
+  com.apple.cloudd.cache-delete
+  com.apple.deleted
+  com.apple.deleted_helper
+  com.apple.deleted_helper.purge_specific_apps
+  com.apple.dispatch.vfs
+  com.apple.geod.cachedelete
+  com.apple.healthd
+  com.apple.healthd.cache-delete
+  com.apple.imagent
+  com.apple.imagent.cache-delete
+  com.apple.installcoordinationd
+### path/url-ish strings
+  /private/var/tmp
+  /private/var/mobile/tmp
+  /var/db/spaceattribution/CDMapping.json
+  /private/var/mobile
+  /private/var
+  		<string>/private/var/db/spaceattribution/CDMapping.json</string>
+  //private/var/db/spaceattribution/CDMapping.json0&
+

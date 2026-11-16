@@ -1,0 +1,441 @@
+{
+"map": {
+"PurplePPTServer": [],
+"ScripterServer": [],
+"com.apple.AccessibilityUIServer": [
+"System/Library/CoreServices/AccessibilityUIServer.app/AccessibilityUIServer",
+"System/Library/CoreServices/AccessibilityUIServer.app/AccessibilityUIServer.icns"
+],
+"com.apple.AccessorySetupUI": [
+"Applications/AccessorySetupUI.app/AccessorySetupUI"
+],
+"com.apple.AdSheetPad.server": [],
+"com.apple.AdSheetPhone.server": [],
+"com.apple.AppMigrationKitHelper": [],
+"com.apple.AppTrackingTransparency.EnforcementService": [
+"System/Library/Frameworks/AppTrackingTransparency.framework/XPCServices/EnforcementService.xpc/EnforcementService"
+],
+"com.apple.AuthenticationServices.AuthenticationServicesAgent.PhoneNumberVerification": [
+"System/Library/PreferenceBundles/AuthenticationServicesDeveloperSettings.bundle/AuthenticationServicesDeveloperSettings",
+"Applications/AuthenticationServicesUI.app/AuthenticationServicesUI"
+],
+"com.apple.AutoFillSuggestions": [
+"Applications/AutoFillSuggestions.app/AutoFillSuggestions"
+],
+"com.apple.BrowserEngineKit.Intermediary": [
+"System/Library/Frameworks/BrowserEngineKit.framework/XPCServices/BrowserEngineKit.Intermediary.xpc/BrowserEngineKit.Intermediary"
+],
+"com.apple.CameraOverlayAngel.application-service": [
+"System/Library/PreferenceBundles/SIMApplicationsTelephonySettings.bundle/SIMApplicationsTelephonySettings",
+"System/Library/Assistant/Plugins/Applications.assistantBundle/Applications"
+],
+"com.apple.ClockKit.CLKWatchFaceLibrary": [],
+"com.apple.CoreMLModelSecurityService": [
+"System/Library/Frameworks/CoreML.framework/XPCServices/CoreMLModelSecurityService.xpc/CoreMLModelSecurityService"
+],
+"com.apple.FontServices.FontProviderLoader": [
+"System/Library/PrivateFrameworks/FontServices.framework/XPCServices/com.apple.FontServices.FontProviderLoader.xpc/com.apple.FontServices.FontProviderLoader"
+],
+"com.apple.IncomingCallNotifications.ICNotificationManagerHost": [],
+"com.apple.KeyboardServices.TextReplacementService": [],
+"com.apple.MediaControl.daemon": [
+"System/Library/PrivateFrameworks/MediaControl.framework/XPCServices/MediaControlMessageService.xpc/MediaControlMessageService"
+],
+"com.apple.Music.MPMusicPlayerControllerInternal": [
+"System/Library/PrivateFrameworks/CameraEffectsKit.framework/iOSTemplates.localized/Titles.localized/Overlays.localized/DrawnMusicNote.localized/DrawnMusicNote.moti",
+"System/Library/Audio/Tunings/Generic/CinematicSeparation/Tunings/separate_and_remix_music.dspg"
+],
+"com.apple.Music.MPMusicPlayerMigServer": [
+"System/Library/PrivateFrameworks/CameraEffectsKit.framework/iOSTemplates.localized/Titles.localized/Overlays.localized/DrawnMusicNote.localized/DrawnMusicNote.moti",
+"System/Library/Audio/Tunings/Generic/CinematicSeparation/Tunings/separate_and_remix_music.dspg"
+],
+"com.apple.Music.MPMusicPlayerMigServerExists": [
+"System/Library/PrivateFrameworks/CameraEffectsKit.framework/iOSTemplates.localized/Titles.localized/Overlays.localized/DrawnMusicNote.localized/DrawnMusicNote.moti",
+"System/Library/Audio/Tunings/Generic/CinematicSeparation/Tunings/separate_and_remix_music.dspg"
+],
+"com.apple.NPKCompanionAgent.library": [
+"System/Library/PrivateFrameworks/PodcastsFoundation.framework/Archive.momd/MTLibrary 14.mom",
+"private/var/staged_system_apps/Books.app/Frameworks/BKLibrary.framework/BKLibrary.momd/BKLibrary.mom"
+],
+"com.apple.PassKitWrapperXPCServiceUI": [
+"System/Library/Frameworks/PassKit.framework/XPCServices/PassKitWrapperXPCServiceUI.xpc/PassKitWrapperXPCServiceUI"
+],
+"com.apple.PersistentURLTranslator.Gatekeeper": [],
+"com.apple.PhotosViewService": [
+"System/Library/CoreServices/PhotosViewService.app/PhotosViewService"
+],
+"com.apple.SensorKit.SKMediaEventsHelper": [
+"System/Library/PrivateFrameworks/SensorKitHelper.framework/XPCServices/com.apple.SensorKit.SKMediaEventsHelper.xpc/com.apple.SensorKit.SKMediaEventsHelper"
+],
+"com.apple.ServicesAccountLinkingService.xpc": [
+"System/Library/Frameworks/ServicesAccountLinking.framework/XPCServices/ServicesAccountLinkingService.xpc/ServicesAccountLinkingService"
+],
+"com.apple.SetStoreUpdateService": [
+"System/Library/PrivateFrameworks/CascadeSets.framework/XPCServices/SetStoreUpdateService.xpc/SetStoreUpdateService"
+],
+"com.apple.SiriTTSService.TrialProxy": [
+"System/Library/PrivateFrameworks/SiriTTSService.framework/XPCServices/com.apple.SiriTTSService.TrialProxy.xpc/com.apple.SiriTTSService.TrialProxy"
+],
+"com.apple.SpatialAudioProfileXPCService": [
+"System/Library/PrivateFrameworks/SpatialAudioProfile.framework/XPCServices/SpatialAudioProfileXPCService.xpc/SpatialAudioProfileXPCService"
+],
+"com.apple.StoreKitUISceneService": [
+"Applications/StoreKitUISceneService.app/StoreKitUISceneService"
+],
+"com.apple.SystemConfiguration.PPPController": [
+"System/Library/UserEventPlugins/com.apple.systemconfiguration.plugin/com.apple.systemconfiguration",
+"System/Library/SystemConfiguration/PPPController.bundle/PPPController"
+],
+"com.apple.SystemConfiguration.SCNetworkReachability": [
+"System/Library/UserEventPlugins/com.apple.systemconfiguration.plugin/com.apple.systemconfiguration"
+],
+"com.apple.TelephonyTransferService": [
+"System/Library/Frameworks/TelephonyMessagingKit.framework/XPCServices/TelephonyTransferService.xpc/TelephonyTransferService"
+],
+"com.apple.UIKit.OverlayUI.services": [
+"System/Library/PreferenceManifestsInternal/ScreenshotServicesSettingsSearch.bundle/ScreenshotServicesSettingsSearch",
+"System/Library/UserNotifications/Bundles/com.apple.identityservicesd.firewall.bundle/com.apple.identityservicesd.firewall"
+],
+"com.apple.UIKit.SecureControlService": [
+"System/Library/Frameworks/UIKit.framework/PlugIns/com.apple.UIKit.ShareUI.appex/com.apple.UIKit.ShareUI",
+"System/Library/PrivateFrameworks/UIKitCore.framework/XPCServices/SecureControlService.xpc/SecureControlService"
+],
+"com.apple.UIKit.pasteboardd": [
+"System/Library/Frameworks/UIKit.framework/PlugIns/com.apple.UIKit.ShareUI.appex/com.apple.UIKit.ShareUI",
+"System/Library/Frameworks/UIKit.framework/PlugIns/com.apple.UIKit.screenpicker.appex/com.apple.UIKit.screenpicker"
+],
+"com.apple.USDKit.FormatLoader": [
+"System/Library/PrivateFrameworks/USDLib_FormatLoaderProxy.framework/XPCServices/USDLib_FormatLoader.xpc/USDLib_FormatLoader"
+],
+"com.apple.USDLib.FormatLoader": [
+"System/Library/PrivateFrameworks/USDLib_FormatLoaderProxy.framework/XPCServices/USDLib_FormatLoader.xpc/USDLib_FormatLoader"
+],
+"com.apple.accessibility.mediaaccessibilityd": [
+"System/Library/Frameworks/MediaAccessibility.framework/XPCServices/com.apple.accessibility.mediaaccessibilityd.xpc/com.apple.accessibility.mediaaccessibilityd"
+],
+"com.apple.accountsd.accessmanager": [
+"System/Library/Frameworks/Accounts.framework/accountsd",
+"System/Library/PrivateFrameworks/AppleMediaServices.framework/amsaccountsd"
+],
+"com.apple.accountsd.authmanager": [
+"System/Library/Frameworks/Accounts.framework/accountsd",
+"System/Library/PrivateFrameworks/AppleMediaServices.framework/amsaccountsd"
+],
+"com.apple.airplay.apsynccontroller.xpc": [
+"usr/libexec/airplayd",
+"System/Library/PrivateFrameworks/AirPlaySenderKit.framework/XPCServices/AirPlaySenderService.xpc/AirPlaySenderService"
+],
+"com.apple.airplay.sender.xpc": [
+"System/Library/PrivateFrameworks/AirPlaySenderKit.framework/XPCServices/AirPlaySenderService.xpc/AirPlaySenderService",
+"Applications/AirPlaySenderUIApp.app/AirPlaySenderUIApp"
+],
+"com.apple.airplaydiagnostics.server": [],
+"com.apple.ait.client": [
+"System/Library/PrivateFrameworks/PodcastsFoundation.framework/Archive.momd/MTLibrary 14.mom",
+"System/Library/ProductDocuments/Warranties/HomePod.bundle/030123-Portugal-Universal-Warranty-v1.5.html"
+],
+"com.apple.ap.adprivacyd.trackingtransparency": [
+"usr/libexec/adprivacyd"
+],
+"com.apple.appleprofilepolicyd": [],
+"com.apple.assetsd.changehub": [
+"System/Library/PrivateFrameworks/AXAssetLoader.framework/Support/axassetsd",
+"System/Library/Frameworks/AssetsLibrary.framework/Support/assetsd"
+],
+"com.apple.audio.AudioConverterServer": [
+"System/Library/Assistant/FlowDelegatePlugins/AudioFlowDelegatePlugin.bundle/Audio.intentdefinition",
+"System/Library/Frameworks/AudioToolbox.framework/XPCServices/AudioConverterHardenedService.xpc/AudioConverterHardenedService"
+],
+"com.apple.awdd": [
+"System/Library/PrivateFrameworks/WirelessDiagnostics.framework/PlugIns/AWDDiagnosticExtension.appex/AWDDiagnosticExtension"
+],
+"com.apple.backboard.animation-fence-arbiter": [
+"System/Library/LocationBundles/LocationFenceSync.bundle/LocationFenceSync",
+"System/Library/PrivateFrameworks/VisualLookUp.framework/assets_581/StorefrontsGeoFenceConfig.pb"
+],
+"com.apple.backboard.workspaceserverconnection": [
+"System/Library/AccessibilityBundles/GAXBackboardServer.bundle/GAXBackboardServer",
+"usr/libexec/backboardd"
+],
+"com.apple.bypassBasebandAutoBooter.msgport": [],
+"com.apple.campo": [],
+"com.apple.commcenter.dm-helper": [
+"System/Library/Frameworks/CoreTelephony.framework/Support/CommCenterRootHelper",
+"System/Library/Frameworks/CoreTelephony.framework/Support/CommCenterMobileHelper"
+],
+"com.apple.corelocation.locationUI": [
+"System/Library/Frameworks/CoreLocationUI.framework/XPCServices/com.apple.corelocation.locationUI.xpc/com.apple.corelocation.locationUI"
+],
+"com.apple.coremedia.admin": [
+"System/Library/PrivateFrameworks/AdminLite.framework/Resources/AdminLiteTool"
+],
+"com.apple.coremedia.audioprocessingtap": [],
+"com.apple.coremedia.bytestream.xpc": [],
+"com.apple.coremedia.capturesession": [],
+"com.apple.coremedia.capturesource": [],
+"com.apple.coremedia.compressionsession": [],
+"com.apple.coremedia.decompressionsession": [],
+"com.apple.coremedia.externalstoragedevicemanager.xpc": [],
+"com.apple.coremedia.externalsyncdevicemanager.xpc": [],
+"com.apple.coremedia.figcontentkeyboss.xpc": [],
+"com.apple.coremedia.figvirtualcapturecard.xpc": [],
+"com.apple.coremedia.mediaplaybackd.audiodeviceclock.xpc": [
+"usr/libexec/mediaplaybackd"
+],
+"com.apple.coremedia.remotequeue": [],
+"com.apple.coremedia.sandboxserver": [],
+"com.apple.coremedia.sandboxserver.xpc": [],
+"com.apple.coremedia.videocodecd.compressionsession.xpc": [
+"usr/libexec/videocodecd"
+],
+"com.apple.coremedia.wirelessdisplay": [],
+"com.apple.coremedia.wirelessdisplayserver": [],
+"com.apple.cvmsCompAgent_armv7": [],
+"com.apple.cvmsServ": [],
+"com.apple.datamigrator.dz": [
+"System/Library/DataClassMigrators/PassbookDataMigrator.migrator/PassbookDataMigrator",
+"System/Library/DataClassMigrators/CookieDataMigrator.migrator/CookieDataMigrator"
+],
+"com.apple.dictationd.recognition": [
+"System/Library/PrivateFrameworks/AccessibilityUtilities.framework/PlugIns/NameRecognitionNotificationsExtension.appex/NameRecognitionNotificationsExtension",
+"System/Library/AccessibilityBundles/AXImageExplorerServer.axuiservice/speech_recognition_did_end.aiff"
+],
+"com.apple.dt.testmanagerd.runner": [
+"System/Library/PrivateFrameworks/StorageKit.framework/XPCServices/storagekitfsrunner.xpc/storagekitfsrunner",
+"System/Library/PrivateFrameworks/DVTInstrumentsFoundation.framework/XPCServices/com.apple.dt.DTAIModelRunnerService.xpc/com.apple.dt.DTAIModelRunnerService"
+],
+"com.apple.dt.testmanagerd.uiprocess": [],
+"com.apple.dt.xctestd.target": [
+"System/Library/ExtensionKit/Extensions/PednetInferenceProviderTarget.appex/PednetInferenceProviderTarget"
+],
+"com.apple.gamecenter": [
+"System/Library/SetupAssistantBundles/GameCenterSetupAssistant.bundle/GameCenterSetupAssistant",
+"System/Library/Accounts/AppleIDLoginPlugins/GameCenterAppleIDLoginPlugin.bundle/GameCenterAppleIDLoginPlugin"
+],
+"com.apple.gamed.note": [
+"System/Library/PrivateFrameworks/CameraEffectsKit.framework/iOSTemplates.localized/Titles.localized/Overlays.localized/DrawnMusicNote.localized/DrawnMusicNote.moti",
+"System/Library/PrivateFrameworks/NotesShared.framework/NoteDataOld.momd/NoteData1.1.mom"
+],
+"com.apple.gizmoappd": [],
+"com.apple.gputools.producer": [
+"System/Library/PrivateFrameworks/GPUToolsDeviceServices.framework/XPCServices/GPUToolsReplayService.xpc/GPUToolsReplayService",
+"System/Library/PrivateFrameworks/SlideshowKit.framework/PlugIns/OpusNewClassicProducer.opplugin/OpusNewClassicProducer"
+],
+"com.apple.healthd.restriction": [
+"System/Library/Health/Plugins/MentalHealthDaemonPlugin.bundle/MentalHealthDaemonPlugin",
+"System/Library/Health/Plugins/SummariesHealthDaemonPlugin.bundle/SummariesHealthDaemonPlugin"
+],
+"com.apple.iMessageAppsViewService.warmup-connection": [
+"System/Library/PrivateFrameworks/iTunesCloud.framework/XPCServices/SharedListeningConnectionService.xpc/SharedListeningConnectionService",
+"Applications/iMessageAppsViewService.app/iMessageAppsViewService"
+],
+"com.apple.iTunesStore.daemon": [
+"System/Library/PrivateFrameworks/iTunesStore.framework/Support/itunesstored.momd/itunesstored.13.0.omo",
+"System/Library/SetupAssistantBundles/iTunesStoreSetupAssistant.bundle/iTunesStoreSetupAssistant"
+],
+"com.apple.iTunesStore.daemon-notifications": [
+"System/Library/PrivateFrameworks/iTunesStore.framework/Support/itunesstored.momd/itunesstored.13.0.omo",
+"System/Library/UserNotifications/Bundles/com.apple.ARQLNotifications.bundle/com.apple.ARQLNotifications"
+],
+"com.apple.iTunesStore.daemon.deatchwatch": [
+"System/Library/PrivateFrameworks/iTunesStore.framework/Support/itunesstored.momd/itunesstored.13.0.omo",
+"System/Library/SetupAssistantBundles/iTunesStoreSetupAssistant.bundle/iTunesStoreSetupAssistant"
+],
+"com.apple.iap2d": [],
+"com.apple.iaptransportd": [],
+"com.apple.iaptransportd.ExternalAccessory.distributednotification.server": [
+"System/Library/UserEventPlugins/com.apple.ExternalAccessory.matching.plugin/com.apple.ExternalAccessory.matching",
+"System/Library/Frameworks/ExternalAccessory.framework/PlugIns/com.apple.ExternalAccessory.WACUI.appex/com.apple.ExternalAccessory.WACUI"
+],
+"com.apple.icprefd-xpc": [
+"System/Library/Frameworks/ImageCaptureCore.framework/XPCServices/icprefd-xpc.xpc/icprefd-xpc"
+],
+"com.apple.imavagent.embedded.auth": [],
+"com.apple.inputservice.input-ui-host": [
+"System/Library/PrivateFrameworks/AvatarKit.framework/animoji/ghost/ghost_head_DIFFUSE.heic",
+"System/Library/PrivateFrameworks/AvatarKit.framework/animoji/ghost/ghost-camera.atx"
+],
+"com.apple.inputservice.keyboardui": [
+"System/Library/DataClassMigrators/KeyboardUIMigrator.migrator/KeyboardUIMigrator",
+"System/Library/AccessibilityBundles/AXFloatingUIKeyboardUIServer.axuiservice/AXFloatingUIKeyboardUIServer"
+],
+"com.apple.instruments.server.mig": [
+"System/Library/PrivateFrameworks/DVTInstrumentsFoundation.framework/XPCServices/com.apple.dt.instruments.dtsecurity.xpc/com.apple.dt.instruments.dtsecurity"
+],
+"com.apple.itdbprep.server": [],
+"com.apple.librariand": [],
+"com.apple.livecommunicationkit.conversationhistory": [],
+"com.apple.livecommunicationkit.telephonymanager": [],
+"com.apple.mDNSResponder": [
+"usr/sbin/mDNSResponderHelper",
+"usr/sbin/mDNSResponder"
+],
+"com.apple.marco": [],
+"com.apple.mediaserverd": [],
+"com.apple.mediastream.sharing-nowake": [
+"System/Library/PrivateFrameworks/DeviceSharing.framework/SharingMode_Ended.wav",
+"System/Library/PrivateFrameworks/DeviceSharingServices.framework/SharingMode_Ended.wav"
+],
+"com.apple.metricmeasurement.MetricMeasurementHelper": [
+"System/Library/PrivateFrameworks/MetricMeasurement.framework/XPCServices/MetricMeasurementHelper.xpc/MetricMeasurementHelper"
+],
+"com.apple.mobileipod.MPMusicPlayerControllerInternal": [],
+"com.apple.mobileipod.MPMusicPlayerMigServerExists": [],
+"com.apple.networkd": [
+"System/Library/Audio/MIDI Drivers/AppleMIDINetworkDriver.plugin/NetworkDriverIcon.tiff",
+"System/Library/Audio/MIDI Drivers/AppleMIDINetworkDriver.plugin/AppleMIDINetworkDriver"
+],
+"com.apple.networkscored": [],
+"com.apple.prdaily": [],
+"com.apple.rti-screencontinuity": [
+"Applications/ScreenContinuityShell.app/ScreenContinuityShell"
+],
+"com.apple.sandboxd": [],
+"com.apple.speech.localspeechrecognition": [
+"System/Library/Frameworks/Speech.framework/XPCServices/localspeechrecognition.xpc/localspeechrecognition"
+],
+"com.apple.springboard": [
+"System/Library/DoNotDisturb/ClientBundles/com.apple.private.SpringBoard.focus.intents.preload.bundle/com.apple.private.SpringBoard.focus.intents.preload",
+"System/Library/ExtensionKit/Extensions/SpringBoardAppReplacement.appex/SpringBoardAppReplacement"
+],
+"com.apple.springboard.icongeneration": [
+"System/Library/DoNotDisturb/ClientBundles/com.apple.private.SpringBoard.focus.intents.preload.bundle/com.apple.private.SpringBoard.focus.intents.preload",
+"System/Library/ExtensionKit/Extensions/SpringBoardAppReplacement.appex/SpringBoardAppReplacement"
+],
+"com.apple.springboard.watchdogserver": [
+"System/Library/DoNotDisturb/ClientBundles/com.apple.private.SpringBoard.focus.intents.preload.bundle/com.apple.private.SpringBoard.focus.intents.preload",
+"System/Library/ExtensionKit/Extensions/SpringBoardAppReplacement.appex/SpringBoardAppReplacement"
+],
+"com.apple.symptomsd": [
+"usr/libexec/symptomsd-distributed",
+"usr/libexec/symptomsd"
+],
+"com.apple.syncdefaultsd": [
+"System/Library/PrivateFrameworks/SyncedDefaults.framework/Support/syncdefaultsd"
+],
+"com.apple.telephonyutilities.remotelogdaemon": [],
+"com.apple.testmanagerd": [],
+"com.apple.toolmetadataservice": [
+"System/Library/PrivateFrameworks/ToolKit.framework/XPCServices/ToolMetadataService.xpc/ToolMetadataService"
+],
+"com.apple.twitterd": [],
+"com.apple.twitterd.server": [],
+"com.apple.vibrationmanagerd": [],
+"com.apple.vsassetd": [],
+"com.apple.webfilterd": [],
+"com.apple.weibod.server": [],
+"com.apple.widget.pushkit": [
+"System/Library/PrivateFrameworks/MobileTimer.framework/Base.lproj/WidgetIntents.intentdefinition",
+"System/Library/PrivateFrameworks/MobileTimer.framework/PlugIns/MobileTimerIntents.appex/Base.lproj/WidgetIntents.intentdefinition"
+],
+"com.apple.wifi.manager": [
+"System/Library/UserNotifications/Bundles/com.apple.corewifi.usernotifications.bundle/com.apple.corewifi.usernotifications",
+"usr/libexec/usermanagerhelper"
+]
+},
+"cand": [
+"Applications/AccessorySetupUI.app/AccessorySetupUI",
+"Applications/AirPlaySenderUIApp.app/AirPlaySenderUIApp",
+"Applications/AuthenticationServicesUI.app/AuthenticationServicesUI",
+"Applications/AutoFillSuggestions.app/AutoFillSuggestions",
+"Applications/ScreenContinuityShell.app/ScreenContinuityShell",
+"Applications/StoreKitUISceneService.app/StoreKitUISceneService",
+"Applications/iMessageAppsViewService.app/iMessageAppsViewService",
+"System/Library/AccessibilityBundles/AXFloatingUIKeyboardUIServer.axuiservice/AXFloatingUIKeyboardUIServer",
+"System/Library/AccessibilityBundles/AXImageExplorerServer.axuiservice/speech_recognition_did_end.aiff",
+"System/Library/AccessibilityBundles/GAXBackboardServer.bundle/GAXBackboardServer",
+"System/Library/Accounts/AppleIDLoginPlugins/GameCenterAppleIDLoginPlugin.bundle/GameCenterAppleIDLoginPlugin",
+"System/Library/Assistant/FlowDelegatePlugins/AudioFlowDelegatePlugin.bundle/Audio.intentdefinition",
+"System/Library/Assistant/Plugins/Applications.assistantBundle/Applications",
+"System/Library/Audio/MIDI Drivers/AppleMIDINetworkDriver.plugin/AppleMIDINetworkDriver",
+"System/Library/Audio/MIDI Drivers/AppleMIDINetworkDriver.plugin/NetworkDriverIcon.tiff",
+"System/Library/Audio/Tunings/Generic/CinematicSeparation/Tunings/separate_and_remix_music.dspg",
+"System/Library/CoreServices/AccessibilityUIServer.app/AccessibilityUIServer",
+"System/Library/CoreServices/AccessibilityUIServer.app/AccessibilityUIServer.icns",
+"System/Library/CoreServices/PhotosViewService.app/PhotosViewService",
+"System/Library/DataClassMigrators/CookieDataMigrator.migrator/CookieDataMigrator",
+"System/Library/DataClassMigrators/KeyboardUIMigrator.migrator/KeyboardUIMigrator",
+"System/Library/DataClassMigrators/PassbookDataMigrator.migrator/PassbookDataMigrator",
+"System/Library/DoNotDisturb/ClientBundles/com.apple.private.SpringBoard.focus.intents.preload.bundle/com.apple.private.SpringBoard.focus.intents.preload",
+"System/Library/ExtensionKit/Extensions/PednetInferenceProviderTarget.appex/PednetInferenceProviderTarget",
+"System/Library/ExtensionKit/Extensions/SpringBoardAppReplacement.appex/SpringBoardAppReplacement",
+"System/Library/Frameworks/Accounts.framework/accountsd",
+"System/Library/Frameworks/AppTrackingTransparency.framework/XPCServices/EnforcementService.xpc/EnforcementService",
+"System/Library/Frameworks/AssetsLibrary.framework/Support/assetsd",
+"System/Library/Frameworks/AudioToolbox.framework/XPCServices/AudioConverterHardenedService.xpc/AudioConverterHardenedService",
+"System/Library/Frameworks/BrowserEngineKit.framework/XPCServices/BrowserEngineKit.Intermediary.xpc/BrowserEngineKit.Intermediary",
+"System/Library/Frameworks/CoreLocationUI.framework/XPCServices/com.apple.corelocation.locationUI.xpc/com.apple.corelocation.locationUI",
+"System/Library/Frameworks/CoreML.framework/XPCServices/CoreMLModelSecurityService.xpc/CoreMLModelSecurityService",
+"System/Library/Frameworks/CoreTelephony.framework/Support/CommCenterMobileHelper",
+"System/Library/Frameworks/CoreTelephony.framework/Support/CommCenterRootHelper",
+"System/Library/Frameworks/ExternalAccessory.framework/PlugIns/com.apple.ExternalAccessory.WACUI.appex/com.apple.ExternalAccessory.WACUI",
+"System/Library/Frameworks/ImageCaptureCore.framework/XPCServices/icprefd-xpc.xpc/icprefd-xpc",
+"System/Library/Frameworks/MediaAccessibility.framework/XPCServices/com.apple.accessibility.mediaaccessibilityd.xpc/com.apple.accessibility.mediaaccessibilityd",
+"System/Library/Frameworks/PassKit.framework/XPCServices/PassKitWrapperXPCServiceUI.xpc/PassKitWrapperXPCServiceUI",
+"System/Library/Frameworks/ServicesAccountLinking.framework/XPCServices/ServicesAccountLinkingService.xpc/ServicesAccountLinkingService",
+"System/Library/Frameworks/Speech.framework/XPCServices/localspeechrecognition.xpc/localspeechrecognition",
+"System/Library/Frameworks/TelephonyMessagingKit.framework/XPCServices/TelephonyTransferService.xpc/TelephonyTransferService",
+"System/Library/Frameworks/UIKit.framework/PlugIns/com.apple.UIKit.ShareUI.appex/com.apple.UIKit.ShareUI",
+"System/Library/Frameworks/UIKit.framework/PlugIns/com.apple.UIKit.screenpicker.appex/com.apple.UIKit.screenpicker",
+"System/Library/Health/Plugins/MentalHealthDaemonPlugin.bundle/MentalHealthDaemonPlugin",
+"System/Library/Health/Plugins/SummariesHealthDaemonPlugin.bundle/SummariesHealthDaemonPlugin",
+"System/Library/LocationBundles/LocationFenceSync.bundle/LocationFenceSync",
+"System/Library/PreferenceBundles/AuthenticationServicesDeveloperSettings.bundle/AuthenticationServicesDeveloperSettings",
+"System/Library/PreferenceBundles/SIMApplicationsTelephonySettings.bundle/SIMApplicationsTelephonySettings",
+"System/Library/PreferenceManifestsInternal/ScreenshotServicesSettingsSearch.bundle/ScreenshotServicesSettingsSearch",
+"System/Library/PrivateFrameworks/AXAssetLoader.framework/Support/axassetsd",
+"System/Library/PrivateFrameworks/AccessibilityUtilities.framework/PlugIns/NameRecognitionNotificationsExtension.appex/NameRecognitionNotificationsExtension",
+"System/Library/PrivateFrameworks/AdminLite.framework/Resources/AdminLiteTool",
+"System/Library/PrivateFrameworks/AirPlaySenderKit.framework/XPCServices/AirPlaySenderService.xpc/AirPlaySenderService",
+"System/Library/PrivateFrameworks/AppleMediaServices.framework/amsaccountsd",
+"System/Library/PrivateFrameworks/AvatarKit.framework/animoji/ghost/ghost-camera.atx",
+"System/Library/PrivateFrameworks/AvatarKit.framework/animoji/ghost/ghost_head_DIFFUSE.heic",
+"System/Library/PrivateFrameworks/CameraEffectsKit.framework/iOSTemplates.localized/Titles.localized/Overlays.localized/DrawnMusicNote.localized/DrawnMusicNote.moti",
+"System/Library/PrivateFrameworks/CascadeSets.framework/XPCServices/SetStoreUpdateService.xpc/SetStoreUpdateService",
+"System/Library/PrivateFrameworks/DVTInstrumentsFoundation.framework/XPCServices/com.apple.dt.DTAIModelRunnerService.xpc/com.apple.dt.DTAIModelRunnerService",
+"System/Library/PrivateFrameworks/DVTInstrumentsFoundation.framework/XPCServices/com.apple.dt.instruments.dtsecurity.xpc/com.apple.dt.instruments.dtsecurity",
+"System/Library/PrivateFrameworks/DeviceSharing.framework/SharingMode_Ended.wav",
+"System/Library/PrivateFrameworks/DeviceSharingServices.framework/SharingMode_Ended.wav",
+"System/Library/PrivateFrameworks/FontServices.framework/XPCServices/com.apple.FontServices.FontProviderLoader.xpc/com.apple.FontServices.FontProviderLoader",
+"System/Library/PrivateFrameworks/GPUToolsDeviceServices.framework/XPCServices/GPUToolsReplayService.xpc/GPUToolsReplayService",
+"System/Library/PrivateFrameworks/MediaControl.framework/XPCServices/MediaControlMessageService.xpc/MediaControlMessageService",
+"System/Library/PrivateFrameworks/MetricMeasurement.framework/XPCServices/MetricMeasurementHelper.xpc/MetricMeasurementHelper",
+"System/Library/PrivateFrameworks/MobileTimer.framework/Base.lproj/WidgetIntents.intentdefinition",
+"System/Library/PrivateFrameworks/MobileTimer.framework/PlugIns/MobileTimerIntents.appex/Base.lproj/WidgetIntents.intentdefinition",
+"System/Library/PrivateFrameworks/NotesShared.framework/NoteDataOld.momd/NoteData1.1.mom",
+"System/Library/PrivateFrameworks/PodcastsFoundation.framework/Archive.momd/MTLibrary 14.mom",
+"System/Library/PrivateFrameworks/SensorKitHelper.framework/XPCServices/com.apple.SensorKit.SKMediaEventsHelper.xpc/com.apple.SensorKit.SKMediaEventsHelper",
+"System/Library/PrivateFrameworks/SiriTTSService.framework/XPCServices/com.apple.SiriTTSService.TrialProxy.xpc/com.apple.SiriTTSService.TrialProxy",
+"System/Library/PrivateFrameworks/SlideshowKit.framework/PlugIns/OpusNewClassicProducer.opplugin/OpusNewClassicProducer",
+"System/Library/PrivateFrameworks/SpatialAudioProfile.framework/XPCServices/SpatialAudioProfileXPCService.xpc/SpatialAudioProfileXPCService",
+"System/Library/PrivateFrameworks/StorageKit.framework/XPCServices/storagekitfsrunner.xpc/storagekitfsrunner",
+"System/Library/PrivateFrameworks/SyncedDefaults.framework/Support/syncdefaultsd",
+"System/Library/PrivateFrameworks/ToolKit.framework/XPCServices/ToolMetadataService.xpc/ToolMetadataService",
+"System/Library/PrivateFrameworks/UIKitCore.framework/XPCServices/SecureControlService.xpc/SecureControlService",
+"System/Library/PrivateFrameworks/USDLib_FormatLoaderProxy.framework/XPCServices/USDLib_FormatLoader.xpc/USDLib_FormatLoader",
+"System/Library/PrivateFrameworks/VisualLookUp.framework/assets_581/StorefrontsGeoFenceConfig.pb",
+"System/Library/PrivateFrameworks/WirelessDiagnostics.framework/PlugIns/AWDDiagnosticExtension.appex/AWDDiagnosticExtension",
+"System/Library/PrivateFrameworks/iTunesCloud.framework/XPCServices/SharedListeningConnectionService.xpc/SharedListeningConnectionService",
+"System/Library/PrivateFrameworks/iTunesStore.framework/Support/itunesstored.momd/itunesstored.13.0.omo",
+"System/Library/ProductDocuments/Warranties/HomePod.bundle/030123-Portugal-Universal-Warranty-v1.5.html",
+"System/Library/SetupAssistantBundles/GameCenterSetupAssistant.bundle/GameCenterSetupAssistant",
+"System/Library/SetupAssistantBundles/iTunesStoreSetupAssistant.bundle/iTunesStoreSetupAssistant",
+"System/Library/SystemConfiguration/PPPController.bundle/PPPController",
+"System/Library/UserEventPlugins/com.apple.ExternalAccessory.matching.plugin/com.apple.ExternalAccessory.matching",
+"System/Library/UserEventPlugins/com.apple.systemconfiguration.plugin/com.apple.systemconfiguration",
+"System/Library/UserNotifications/Bundles/com.apple.ARQLNotifications.bundle/com.apple.ARQLNotifications",
+"System/Library/UserNotifications/Bundles/com.apple.corewifi.usernotifications.bundle/com.apple.corewifi.usernotifications",
+"System/Library/UserNotifications/Bundles/com.apple.identityservicesd.firewall.bundle/com.apple.identityservicesd.firewall",
+"private/var/staged_system_apps/Books.app/Frameworks/BKLibrary.framework/BKLibrary.momd/BKLibrary.mom",
+"usr/libexec/adprivacyd",
+"usr/libexec/airplayd",
+"usr/libexec/backboardd",
+"usr/libexec/mediaplaybackd",
+"usr/libexec/symptomsd",
+"usr/libexec/symptomsd-distributed",
+"usr/libexec/usermanagerhelper",
+"usr/libexec/videocodecd",
+"usr/sbin/mDNSResponder",
+"usr/sbin/mDNSResponderHelper"
+]
+}

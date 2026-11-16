@@ -1,0 +1,28 @@
+waiting for device...
+device at Вс 08 ноя 2026 22:47:20 MSK
+installing...
+install rc=0
+launching...
+{
+    "processToken": {
+        "auditToken": [
+            4294967295,
+            501,
+            501,
+            501,
+            501,
+            10443,
+            0,
+            29084
+        ],
+        "executableURL": {
+            "relative": "file:///private/var/containers/Bundle/Application/83EF6EE7-E4C2-4E6B-A652-F2AF86D4BF42/AVEMCTFProbe.app/AVEMCTFProbe"
+        },
+        "processIdentifier": 10443,
+        "processIdentifierVersion": 29084
+    }
+}
+launch rc=0
+pulling log...
+read log rc=0
+done at Вс 08 ноя 2026 22:47:53 MSK

@@ -1,0 +1,16 @@
+// FUN_fffffff0081d5640 @ fffffff0081d5640 size=116
+
+undefined8 FUN_fffffff0081d5640(void)
+
+{
+  undefined8 uVar1;
+  undefined8 *puVar2;
+  
+  uVar1 = thunk_EXT_FUN_80110000038943cc(&DAT_fffffff007ca1948,400);
+  puVar2 = (undefined8 *)thunk_EXT_FUN_8011000002941404(uVar1,&DAT_fffffff00ae22830);
+  *(undefined8 *)((long)puVar2 + 0x104) = 0;
+  *puVar2 = &DAT_fffffff007c976e0;
+  thunk_EXT_FUN_80110000038922a0(&DAT_fffffff00ae22830);
+  return uVar1;
+}
+

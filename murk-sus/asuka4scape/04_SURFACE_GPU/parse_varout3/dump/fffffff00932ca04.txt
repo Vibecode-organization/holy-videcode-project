@@ -1,0 +1,31 @@
+func 0xfffffff00932ca04 kext com.apple.driver.AppleT8110CLPC writes ['0xfffffff00932ca5c']
+  table 0xfffffff007f19d48 stride 0x18 idx 7/11 kext com.apple.driver.AppleT8110CLPC f=[0, 0, 0, 4294967295]
+
+fffffff00932ca04  bti      c
+fffffff00932ca08  pacibsp  
+fffffff00932ca0c  sub      sp, sp, #0x30
+fffffff00932ca10  stp      x20, x19, [sp, #0x10]
+fffffff00932ca14  stp      x29, x30, [sp, #0x20]
+fffffff00932ca18  add      x29, sp, #0x20
+fffffff00932ca1c  mov      x19, x2
+fffffff00932ca20  mov      w20, #0x2c2
+fffffff00932ca24  movk     w20, #0xe000, lsl #16
+fffffff00932ca28  adrp     x8, #0xfffffff007f19000
+fffffff00932ca2c  add      x8, x8, #0xd8
+fffffff00932ca30  ldr      x1, [x8]
+fffffff00932ca34  bl       #0xfffffff009363e50
+fffffff00932ca38  cbz      x0, #0xfffffff00932ca60
+fffffff00932ca3c  str      xzr, [sp, #8]
+fffffff00932ca40  ldr      x8, [x19, #0x78]
+fffffff00932ca44  cbz      x8, #0xfffffff00932ca60
+fffffff00932ca48  add      x1, sp, #8
+fffffff00932ca4c  bl       #0xfffffff00932bee4
+fffffff00932ca50  mov      x20, x0
+fffffff00932ca54  ldr      x8, [sp, #8]
+fffffff00932ca58  ldr      x9, [x19, #0x78]
+fffffff00932ca5c  str      x8, [x9] <<<
+fffffff00932ca60  mov      x0, x20
+fffffff00932ca64  ldp      x29, x30, [sp, #0x20]
+fffffff00932ca68  ldp      x20, x19, [sp, #0x10]
+fffffff00932ca6c  add      sp, sp, #0x30
+fffffff00932ca70  retab    

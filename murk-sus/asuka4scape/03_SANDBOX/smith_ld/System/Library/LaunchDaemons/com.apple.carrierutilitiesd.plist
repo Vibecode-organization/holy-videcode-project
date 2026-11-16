@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.apple.carrierutilitiesd</string>
+	<key>UserName</key>
+	<string>root</string>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>KeepAlive</key>
+	<dict>
+		<key>PathState</key>
+		<dict>
+			<key>/private/var/mobile/Library/Caches/com.apple.carrierFeedbackd</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.carrierFeedbackd.xpc</key>
+		<true/>
+		<key>com.apple.mobileCBPd.xpc</key>
+		<true/>
+		<key>com.apple.fieldTestMenud.xpc</key>
+		<true/>
+		<key>com.apple.carrierPartnerUtilitiesSettingsd.xpc</key>
+		<true/>
+	</dict>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/local/libexec/carrierutilitiesd</string>
+	</array>
+	<key>ProcessType</key>
+	<string>Adaptive</string>
+</dict>
+</plist>

@@ -1,0 +1,13 @@
+// FUN_fffffff00995a8fc @ fffffff00995a8fc size=92
+
+undefined8 FUN_fffffff00995a8fc(undefined8 param_1)
+
+{
+  undefined8 *puVar1;
+  
+  puVar1 = (undefined8 *)FUN_fffffff00994d73c(param_1,&DAT_fffffff00af224c0);
+  *puVar1 = &DAT_fffffff007fec8a8;
+  thunk_EXT_FUN_80110000038922a0(&DAT_fffffff00af224c0);
+  return param_1;
+}
+

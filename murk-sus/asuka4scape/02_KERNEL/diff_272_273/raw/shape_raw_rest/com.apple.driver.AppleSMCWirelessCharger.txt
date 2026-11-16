@@ -1,0 +1,14 @@
+funcs 211 211
+identical 207 ratio 0.98104
+changed regions 3
+== replace A[14:15] B[14:15]
+   A 0xfffffff0091e5d68 sz=5668
+   B 0xfffffff0092aa388 sz=5804
+== replace A[73:74] B[73:74]
+   A 0xfffffff0091ecbf0 sz=408
+   B 0xfffffff0092b1298 sz=408
+== replace A[165:167] B[165:167]
+   A 0xfffffff0091f5d14 sz=2136
+   A 0xfffffff0091f656c sz=112
+   B 0xfffffff0092ba3bc sz=2336
+   B 0xfffffff0092bacdc sz=116

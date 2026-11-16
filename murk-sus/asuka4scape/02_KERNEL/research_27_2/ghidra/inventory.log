@@ -1,0 +1,74 @@
+openjdk version "27" 2026-09-15
+OpenJDK Runtime Environment (build 27)
+OpenJDK 64-Bit Server VM (build 27, mixed mode)
+INFO  Using log config file: jar:file:/home/femboychik/ghidra/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/application.log (LoggingInitialization)  
+INFO  Loading user preferences: /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/preferences (Preferences)  
+INFO  Loading previous preferences: /home/femboychik/.config/ghidra/ghidra_11.4.2_PUBLIC/preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (1911 ms) (ClassSearcher)  
+WARNING: Final field name in class ghidra.util.charset.CharsetInfo has been mutated reflectively by class com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$2 in unnamed module @2c35e847 (file:/home/femboychik/ghidra/Ghidra/Framework/Generic/lib/gson-2.13.2.jar)
+WARNING: Use --enable-final-field-mutation=ALL-UNNAMED to avoid a warning
+WARNING: Mutating final fields will be blocked in a future release unless final field mutation is enabled
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (4136 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 59 extension points (21 false positives) (ClassSearcher)  
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::staticFieldOffset has been called by org.apache.felix.framework.util.SecureAction (file:/home/femboychik/ghidra/Ghidra/Features/Base/lib/org.apache.felix.framework-7.0.5.jar)
+WARNING: Please consider reporting this to the maintainers of class org.apache.felix.framework.util.SecureAction
+WARNING: sun.misc.Unsafe::staticFieldOffset will be removed in a future release
+INFO  HEADLESS Script Paths:
+    /home/femboychik/ghidra/Ghidra/Features/PyGhidra/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/FileFormats/ghidra_scripts
+    /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/Extensions/Jython/ghidra_scripts
+    /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/Extensions/MachineLearning/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/Base/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /home/femboychik/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/BytePatterns/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/VersionTracking/ghidra_scripts
+    /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/Extensions/SleighDevTools/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/PDB/ghidra_scripts
+    /home/femboychik/work/scripts
+    /home/femboychik/ghidra/Ghidra/Processors/Atmel/ghidra_scripts
+    /home/femboychik/.config/ghidra/ghidra_12.1.4_PUBLIC/Extensions/Lisa/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Processors/DATA/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Debug/Debugger/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Processors/8051/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Processors/JVM/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/FunctionID/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Processors/PIC/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/Decompiler/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/SwiftDemangler/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /home/femboychik/ghidra/Ghidra/Features/BSim/ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: /home/femboychik/Загрузки/AyuGram Desktop/Архив/123 (HeadlessAnalyzer)  
+INFO  Opening project: /home/femboychik/Загрузки/AyuGram Desktop/Архив/123 (HeadlessProject)  
+INFO  REPORT: Processing read-only project file: /kernelcache.release.iphone14b.decompressed (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: Inventory.java  (HeadlessAnalyzer)  
+INFO  SCRIPT: /home/femboychik/ghidra_scripts/Inventory.java (HeadlessAnalyzer)  
+INFO  Inventory.java> INV kernelcache.release.iphone14b.decompressed blocks=3904 (GhidraScript)  
+INFO  Inventory.java> MACHO_TOTAL 0 (GhidraScript)  
+INFO  Inventory.java> HITS SPTM-8 = 0 (GhidraScript)  
+INFO  Inventory.java> HIT SPTM version @ fffffff007045844 : der kernelcache.SPTM version: %.256s..SPTM load address: %p..SPTM.KernelCache slide: 0x%016lx..KernelCache base:  %p..Kernel slide:      0x%016lx..Kernel te (GhidraScript)  
+INFO  Inventory.java> HITS SPTM version = 1 (GhidraScript)  
+INFO  Inventory.java> HITS SPTM_UAT_ENDPOINT = 0 (GhidraScript)  
+INFO  Inventory.java> HIT t8110dart @ fffffff00705a051 : ode_global_data.t8110dart %p (%s): invalid SID %u @%s:%d.t8110dart.c.t8110dart %p (%s): invalid SID %u translation level: %u @%s:%d.t8110dart.t8110dart: bin (GhidraScript)  
+INFO  Inventory.java> HIT t8110dart @ fffffff00705a07a : d SID %u @%s:%d.t8110dart.c.t8110dart %p (%s): invalid SID %u translation level: %u @%s:%d.t8110dart.t8110dart: bincompat breakage, invalid size or version  (GhidraScript)  
+INFO  Inventory.java> HIT t8110dart @ fffffff00705a086 : :%d.t8110dart.c.t8110dart %p (%s): invalid SID %u translation level: %u @%s:%d.t8110dart.t8110dart: bincompat breakage, invalid size or version @%s:%d.t8110 (GhidraScript)  
+INFO  Inventory.java> HIT t8110dart @ fffffff00705a0c5 : evel: %u @%s:%d.t8110dart.t8110dart: bincompat breakage, invalid size or version @%s:%d.t8110dart %p (%s): invalid %s limit @%s:%d.PA.SID.minPage.maxPage.t8 (GhidraScript)  
+INFO  Inventory.java> HIT t8110dart @ fffffff00705a0cf : %s:%d.t8110dart.t8110dart: bincompat breakage, invalid size or version @%s:%d.t8110dart %p (%s): invalid %s limit @%s:%d.PA.SID.minPage.maxPage.t8110dart %p (GhidraScript)  
+INFO  Inventory.java> HIT t8110dart @ fffffff00705a10d :  version @%s:%d.t8110dart %p (%s): invalid %s limit @%s:%d.PA.SID.minPage.maxPage.t8110dart %p(%s, SID %u): exceeds the maximum SIDs (%u) for this DART @%s: (GhidraScript)  
+INFO  Inventory.java> HITS t8110dart = 58 (GhidraScript)  
+INFO  Inventory.java> HITS VIOLATION_T8110 = 0 (GhidraScript)  
+INFO  Inventory.java> HITS init_xnu_ro_data = 0 (GhidraScript)  
+INFO  Inventory.java> HITS SPTM_DOMAIN_ = 0 (GhidraScript)  
+INFO  Inventory.java> BLOCKNAMES __DATA=109 __TEXT=252 __TEXT_EXEC=195 __auth_got=246 __auth_ptr=50 __auth_stubs=246 __bss=134 __common=249 __const=436 __cstring=246 __data=251 __got=246 __kalloc_type=243 __kalloc_var=98 __mod_init_func=238 __mod_term_func=236 __os_log=118 __text=252  (GhidraScript)  

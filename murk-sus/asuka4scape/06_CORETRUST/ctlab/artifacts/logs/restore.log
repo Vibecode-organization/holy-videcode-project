@@ -1,0 +1,3 @@
+restore                                            0%   0/100  -:--:--
+2026-11-09 20:34:47 femboychik-systemproductname pymobiledevice3.__main__[12582] ERROR The device reported an error: {'ErrorCode': 211, 'ErrorDescription': 'Find My iPhone must be disabled before restoring (MBErrorDomain/211)', 'MessageName': 'Response'}.
+Please report it at https://github.com/doronz88/pymobiledevice3/issues, with the output of the same command run with -v (`pymobiledevice3 -v ...`), so support for it can be added.

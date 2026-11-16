@@ -1,0 +1,12 @@
+// FUN_fffffff0099702b4 @ fffffff0099702b4 size=48
+
+void FUN_fffffff0099702b4(void)
+
+{
+  undefined8 *puVar1;
+  
+  puVar1 = (undefined8 *)thunk_EXT_FUN_80110000038944ec();
+  *puVar1 = &DAT_fffffff007fede48;
+  return;
+}
+

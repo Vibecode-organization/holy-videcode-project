@@ -1,0 +1,1341 @@
+INFO  SCRIPT: /home/femboychik/work/scripts2/SptmDump.java (HeadlessAnalyzer)  
+INFO  SptmDump.java> === PROGRAM sptm_27.2_24B119.macho lang=AARCH64:LE:64:AppleSilicon (GhidraScript)  
+INFO  SptmDump.java> === FN FUN_fffffff0270adf30 @fffffff0270adf30 size=1636 (GhidraScript)  
+INFO  SptmDump.java> --- CALLERS (GhidraScript)  
+INFO  SptmDump.java>   fffffff02701c148 ? (GhidraScript)  
+INFO  SptmDump.java>   fffffff0270ae8ac FUN_fffffff0270ae700 (GhidraScript)  
+INFO  SptmDump.java> 
+undefined8 FUN_fffffff0270adf30(undefined8 param_1)
+
+{
+  ulong uVar1;
+  ulong uVar2;
+  bool bVar3;
+  bool bVar4;
+  bool bVar5;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  ulong uVar7;
+  byte bVar8;
+  uint uVar9;
+  ulong uVar10;
+  ulong uVar11;
+  ulong uVar12;
+  undefined4 uVar13;
+  undefined8 uVar14;
+  ulong uVar15;
+  ulong uVar16;
+  ulong *puVar17;
+  ulong *puVar18;
+  ulong uVar19;
+  ulong uVar20;
+  ulong *puVar21;
+  ulong uVar22;
+  ulong uVar23;
+  ulong uVar24;
+  undefined1 auVar25 [16];
+  undefined8 local_70 [2];
+  byte *pbVar6;
+  
+  auVar25 = FUN_fffffff0270bf2a0(param_1,3,0xf);
+  uVar14 = auVar25._8_8_;
+  pbVar6 = auVar25._0_8_;
+  uVar2 = *(ulong *)(pbVar6 + 0x28);
+  uVar20 = *(ulong *)(pbVar6 + 0x30);
+  if (uVar2 <= uVar20) {
+                    /* WARNING: Subroutine does not return */
+    FUN_fffffff0270f46b4
+              ("%s: Corrupted map_data, current segment greater than number of segments %p %zu %zu")
+    ;
+  }
+  uVar23 = 0;
+  uVar22 = *(ulong *)(pbVar6 + 0x38);
+  uVar15 = *(ulong *)(pbVar6 + 0x20);
+  do {
+    if (uVar2 <= uVar20) {
+      DataMemoryBarrier(0,3);
+      if (pbVar6[0x1a] != 1) goto LAB_fffffff0270ae558;
+      pbVar6[0x1a] = 2;
+      uVar14 = 0;
+      bVar8 = *pbVar6;
+      goto joined_r0xfffffff0270ae2a8;
+    }
+    puVar21 = (ulong *)(pbVar6 + 0x48 + uVar20 * 0x10);
+    if ((((ulong)(pbVar6 + 0x48) ^ (ulong)puVar21) & 0xffc0000000000000) != 0) {
+      puVar21 = (ulong *)((ulong)puVar21 & 0xffffffffffff | 0xc8a2000000000000);
+    }
+    uVar7 = puVar21[1];
+    if (uVar7 <= uVar22) {
+                    /* WARNING: Subroutine does not return */
+      FUN_fffffff0270f46b4("%s: Invalid cur_seg_offset %zu %zu");
+    }
+    if (uVar22 == 0) {
+      uVar16 = uVar7 * 0x4000;
+      if (uVar7 >> 0x32 != 0) {
+                    /* WARNING: Subroutine does not return */
+        FUN_fffffff0270f46f4
+                  (0x4000013,uVar14,
+                   "%s(%s:%d) - %s(%#llx), %s(%#llx), %s(%#llx), %s(%#llx), %s(%#llx)\n");
+      }
+      uVar7 = *puVar21;
+      if (CARRY8(uVar7,uVar16)) {
+                    /* WARNING: Subroutine does not return */
+        FUN_fffffff0270f46f4
+                  (0x4000011,uVar14,"%s(%s:%d) - %s(%#llx), %s(%#llx), %s(%#llx), %s(%#llx)\n");
+      }
+      uVar13 = *(undefined4 *)(pbVar6 + 0x40);
+      FUN_fffffff0270ae594(uVar7,uVar13);
+      FUN_fffffff0270ae594(uVar7 + uVar16,uVar13);
+      FUN_fffffff0270bf7b4(uVar15,uVar16,pbVar6,0);
+      uVar7 = puVar21[1];
+      uVar14 = extraout_x1;
+    }
+    uVar10 = *(ulong *)(DAT_fffffff0270921b8 + 0x1c8);
+    uVar16 = uVar7 - uVar22;
+    if (uVar10 - uVar23 <= uVar7 - uVar22) {
+      uVar16 = uVar10 - uVar23;
+    }
+    local_70[0] = 0;
+    if (uVar16 != 0) {
+      puVar17 = (ulong *)0x0;
+      uVar7 = *puVar21 + uVar22 * 0x4000;
+      uVar10 = uVar15;
+      uVar24 = uVar16;
+      do {
+        auVar25._8_8_ = uVar14;
+        auVar25._0_8_ = puVar17;
+        if (((ulong)puVar17 & 0x3fff) == 0) {
+          uVar12 = uVar10 >> ((ulong)*(byte *)(DAT_fffffff0270921b8 + 0x1b1) & 0x3f);
+          bVar8 = 5;
+          if ((uVar12 & 1) != 0) {
+            bVar8 = 0xe;
+          }
+          if ((bVar8 & *pbVar6) == 0) {
+                    /* WARNING: Subroutine does not return */
+            FUN_fffffff0270f46b4("%s: %d is not a valid UAT state object type when getting TTBR%d");
+          }
+          auVar25 = FUN_fffffff0270ad14c
+                              (*(undefined8 *)(pbVar6 + (uVar12 & 1) * 8 + 8),uVar10,3,local_70);
+        }
+        uVar14 = auVar25._8_8_;
+        puVar18 = auVar25._0_8_;
+        if ((~(uint)*puVar18 & 3) == 0) {
+                    /* WARNING: Subroutine does not return */
+          FUN_fffffff0270f46f4
+                    (0x400000d,uVar14,"%s(%s:%d) - %s(%#llx), %s(%#llx), %s(%#llx), %s(%#llx)\n");
+        }
+        uVar9 = *(uint *)(pbVar6 + 0x40);
+        uVar12 = (ulong)(uVar9 >> 8 & 2 | (uVar9 & 3) << 2 | uVar9 >> 8 & 1);
+        if ((1L << uVar12 & 0x4ac0U) != 0) {
+                    /* WARNING: Subroutine does not return */
+          FUN_fffffff0270f46f4
+                    (0x400001f,uVar14,
+                     "%s(%s:%d) - %s(%#llx), %s(%#llx), %s(%#llx), %s(%#llx), %s(%#llx)\n");
+        }
+        uVar19 = uVar7 & 0xfffffffff000;
+        bVar8 = (&DAT_fffffff027019e80)[uVar12];
+        uVar12 = 3;
+        if ((uVar9 & 8) != 0) {
+          uVar12 = 0xb;
+        }
+        if ((uVar9 & 4) != 0) {
+          uVar12 = 7;
+        }
+        uVar1 = 0x800;
+        if ((*pbVar6 & 10) != 0) {
+          uVar1 = 0;
+        }
+        uVar11 = (ulong)bVar8 & 0xf;
+        uVar9 = (uint)uVar11;
+        bVar3 = uVar9 - 5 < 3;
+        bVar5 = uVar11 - 9 < 2;
+        bVar4 = (uVar9 & 0xe) == 2;
+        uVar13 = 1;
+        if ((bVar3 || bVar5) || bVar4) {
+          uVar13 = 2;
+        }
+        if ((uVar19 == *(ulong *)(DAT_fffffff0270921b8 + 0x68)) && ((bVar3 || bVar5) || bVar4)) {
+                    /* WARNING: Subroutine does not return */
+          FUN_fffffff0270f46f4
+                    (0x4000012,uVar14,
+                     "%s(%s:%d) - %s(%#llx), %s(%#llx), %s(%#llx), %s(%#llx), %s(%#llx), %s(%#llx)\n"
+                    );
+        }
+        if (uVar19 != *(ulong *)(DAT_fffffff0270921b8 + 0x68)) {
+          FUN_fffffff0270e1168(uVar19,uVar13);
+        }
+        uVar14 = local_70[0];
+        FUN_fffffff0270e08e4(local_70[0],0x18);
+        FUN_fffffff0270e0e58(uVar14,1);
+        FUN_fffffff0270e0b28(uVar14);
+        puVar17 = puVar18 + 1;
+        *puVar18 = uVar1 | ((ulong)bVar8 & 3) << 0x35 | uVar19 |
+                   uVar12 | ((ulong)(bVar8 >> 2) & 3) << 6 | 0x80000000000400;
+        uVar7 = uVar7 + 0x4000;
+        uVar10 = uVar10 + 0x4000;
+        uVar24 = uVar24 - 1;
+        uVar14 = extraout_x1_00;
+      } while (uVar24 != 0);
+      uVar7 = puVar21[1];
+      uVar10 = *(ulong *)(DAT_fffffff0270921b8 + 0x1c8);
+    }
+    uVar15 = uVar15 + uVar16 * 0x4000;
+    bVar3 = uVar20 == uVar2 - 1;
+    uVar22 = uVar16 + uVar22;
+    bVar5 = uVar22 == uVar7;
+    if (bVar5) {
+      uVar20 = uVar20 + 1;
+    }
+    if (bVar5) {
+      uVar22 = 0;
+    }
+    uVar23 = uVar16 + uVar23;
+  } while ((uVar23 < uVar10) || (bVar5 && bVar3));
+  *(ulong *)(pbVar6 + 0x20) = uVar15;
+  *(ulong *)(pbVar6 + 0x30) = uVar20;
+  *(ulong *)(pbVar6 + 0x38) = uVar22;
+  if (pbVar6[0x1a] != 1) {
+LAB_fffffff0270ae558:
+                    /* WARNING: Subroutine does not return */
+    FUN_fffffff0270f46b4("%s: state_guard_release - %#llx, %#llx");
+  }
+  pbVar6[0x1a] = 3;
+  bVar8 = *pbVar6;
+  uVar14 = 1;
+joined_r0xfffffff0270ae2a8:
+  if ((bVar8 & 5) != 0) {
+    FUN_fffffff0270d3dec(pbVar6);
+    FUN_fffffff0270e0b28();
+  }
+  return uVar14;
+}
+
+ (GhidraScript)  
+INFO  SptmDump.java> === FN FUN_fffffff0270e1168 @fffffff0270e1168 size=1032 (GhidraScript)  
+INFO  SptmDump.java> --- CALLERS (GhidraScript)  
+INFO  SptmDump.java>   fffffff0270bc584 FUN_fffffff0270bc484 (GhidraScript)  
+INFO  SptmDump.java>   fffffff0270bcb0c FUN_fffffff0270bc9d8 (GhidraScript)  
+INFO  SptmDump.java>   fffffff0270bdb00 FUN_fffffff0270bd8ec (GhidraScript)  
+INFO  SptmDump.java>   fffffff0270bdb78 FUN_fffffff0270bd8ec (GhidraScript)  
+INFO  SptmDump.java>   fffffff0270bdc00 FUN_fffffff0270bd8ec (GhidraScript)  
+INFO  SptmDump.java>   fffffff0270ae194 FUN_fffffff0270adf30 (GhidraScript)  
+INFO  SptmDump.java>   fffffff0270c0924 FUN_fffffff0270c0820 (GhidraScript)  
+INFO  SptmDump.java>   fffffff0270c8d6c FUN_fffffff0270c8a9c (GhidraScript)  
+INFO  SptmDump.java>   fffffff0270d0d14 FUN_fffffff0270d0c5c (GhidraScript)  
+INFO  SptmDump.java> 
+void FUN_fffffff0270e1168(ulong param_1,undefined8 param_2)
+
+{
+  byte *pbVar1;
+  byte bVar2;
+  byte bVar3;
+  uint uVar4;
+  int iVar5;
+  undefined2 *puVar6;
+  long lVar7;
+  undefined8 extraout_x1;
+  undefined8 uVar8;
+  undefined8 extraout_x1_00;
+  undefined8 extraout_x1_01;
+  undefined8 extraout_x1_02;
+  undefined8 extraout_x1_03;
+  ulong uVar9;
+  undefined1 auVar10 [16];
+  
+  FUN_fffffff0270e08e4(param_1,0x46);
+  if (param_1 < DAT_fffffff0270921c8 || DAT_fffffff0270921d0 <= param_1) {
+    auVar10 = FUN_fffffff0270df750(param_1);
+    uVar8 = auVar10._8_8_;
+    puVar6 = &DAT_fffffff027101ec0;
+    if (auVar10._0_8_ != (undefined2 *)0x0) {
+      puVar6 = auVar10._0_8_;
+    }
+  }
+  else {
+    puVar6 = (undefined2 *)
+             (DAT_fffffff0270914f0 + (param_1 - DAT_fffffff0270921c8 >> 0xe & 0xffffffff) * 0x10);
+    uVar8 = extraout_x1;
+  }
+  lVar7 = UnkSytemRegRead(3,6,0xf,8,0);
+  if (lVar7 == 0) {
+    lVar7 = tpidr_el2;
+  }
+  else {
+    lVar7 = UnkSytemRegRead(3,6,0xf,0xb,1);
+  }
+  if (8 < *(long *)(lVar7 + 0xb08) - 1U) {
+LAB_fffffff0270e12f0:
+                    /* WARNING: Subroutine does not return */
+    FUN_fffffff0270f46b4("%s: Unexpected Dispatch ID %llu");
+  }
+  if (((*(ulong *)(&DAT_fffffff027092228 + (ulong)*(byte *)(puVar6 + 1) * 0x90) >>
+        ((ulong)((int)*(long *)(lVar7 + 0xb08) - 1) & 0x3f) & 1) == 0) ||
+     ((uint)(byte)(&DAT_fffffff027092230)[(ulong)*(byte *)(puVar6 + 1) * 0x90] < (uint)param_2)) {
+    FUN_fffffff0270e0dfc();
+                    /* WARNING: Subroutine does not return */
+    FUN_fffffff0270f46f4
+              (0x2a,extraout_x1_00,
+               "%s(%s:%d) - paddr(%#llx), fte(%p), fte->type(%s), current_iommu(%u), allowed_permissions(%u), mapping_type(%u)\n"
+              );
+  }
+  uVar9 = (ulong)*(byte *)(puVar6 + 1);
+  if ((DAT_fffffff0270921e0 <= param_1 || param_1 < DAT_fffffff0270921d8) &&
+     (*(byte *)(puVar6 + 1) == 0)) {
+    FUN_fffffff0270d10dc(0xff000000,uVar8,"%s(%s:%d) - %s(%#llx), %s(%#llx)\n");
+    uVar9 = (ulong)*(byte *)(puVar6 + 1);
+    uVar8 = extraout_x1_03;
+  }
+  if (((&DAT_fffffff027092201)[uVar9 * 0x90] == '\x06') && (*(uint *)(puVar6 + 2) >> 0x18 != 0)) {
+    uVar4 = (*(uint *)(puVar6 + 2) >> 0x18) - 1;
+    if ((uint)DAT_fffffff0270914e8 <= (uVar4 & 0xff)) {
+                    /* WARNING: Subroutine does not return */
+      FUN_fffffff0270f46b4("%s: IO range restriction (%d) out of bounds");
+    }
+    pbVar1 = (byte *)(DAT_fffffff0270914e0 + ((ulong)uVar4 & 0xff) + (ulong)(byte)uVar4 * 0x10);
+    if (DAT_fffffff0270914e0 != 0) {
+      if (*pbVar1 == 1) {
+                    /* WARNING: Subroutine does not return */
+        FUN_fffffff0270f46f4(0x3d,uVar8,"%s(%s:%d) - %s(%#llx), %s(%#llx)\n");
+      }
+      FUN_fffffff0270e0dfc();
+      lVar7 = FUN_fffffff0270df6fc();
+      uVar4 = *(uint *)(lVar7 + 0x54);
+      bVar2 = *pbVar1;
+      FUN_fffffff0270e0dfc();
+      lVar7 = FUN_fffffff0270df6fc();
+      iVar5 = *(int *)(lVar7 + 0x54);
+      bVar3 = *pbVar1;
+      FUN_fffffff0270e0dfc();
+      lVar7 = FUN_fffffff0270df6fc();
+      if (((*(int *)(lVar7 + 0x54) + (uint)bVar3 ^ iVar5 + (uint)bVar2) + 1 <<
+           (ulong)(*pbVar1 & 0x1f) & uVar4) == 0) {
+        FUN_fffffff0270e0dfc(puVar6);
+                    /* WARNING: Subroutine does not return */
+        FUN_fffffff0270f46f4(0x3d,extraout_x1_01,"%s(%s:%d) - %s(%#llx), %s(%#llx), %s(%#llx)\n");
+      }
+    }
+  }
+  if ((DAT_fffffff027104028 & 1) != 0) {
+    iVar5 = FUN_fffffff0270b9bcc(param_1);
+    if (iVar5 == 0) {
+                    /* WARNING: Subroutine does not return */
+      FUN_fffffff0270f46f4(0x5d,extraout_x1_02,"%s(%s:%d) - %s(%#llx)\n");
+    }
+    if ((DAT_fffffff027104028 & 1) != 0) {
+      lVar7 = UnkSytemRegRead(3,6,0xf,8,0);
+      if (lVar7 == 0) {
+        lVar7 = tpidr_el2;
+      }
+      else {
+        lVar7 = UnkSytemRegRead(3,6,0xf,0xb,1);
+      }
+      if (8 < *(long *)(lVar7 + 0xb08) - 1U) goto LAB_fffffff0270e12f0;
+      if (*(long *)(lVar7 + 0xb08) == 3) goto LAB_fffffff0270e12b8;
+    }
+  }
+  FUN_fffffff0270e1570(puVar6,param_2,1);
+LAB_fffffff0270e12b8:
+  FUN_fffffff0270e0b28(param_1);
+  return;
+}
+
+ (GhidraScript)  
+INFO  SptmDump.java> === FN FUN_fffffff0270e1570 @fffffff0270e1570 size=876 (GhidraScript)  
+INFO  SptmDump.java> --- CALLERS (GhidraScript)  
+INFO  SptmDump.java>   fffffff0270e12b4 FUN_fffffff0270e1168 (GhidraScript)  
+INFO  SptmDump.java>   fffffff0270e1a2c FUN_fffffff0270e18dc (GhidraScript)  
+INFO  SptmDump.java> 
+void FUN_fffffff0270e1570(long param_1,int param_2,int param_3)
+
+{
+  byte bVar1;
+  int iVar2;
+  undefined4 extraout_w1;
+  undefined4 extraout_w1_00;
+  undefined4 uVar3;
+  long lVar4;
+  int *piVar5;
+  
+  lVar4 = UnkSytemRegRead(3,6,0xf,8,0);
+  if (lVar4 == 0) {
+    lVar4 = tpidr_el2;
+  }
+  else {
+    lVar4 = UnkSytemRegRead(3,6,0xf,0xb,1);
+  }
+  if (*(long *)(lVar4 + 0xb08) - 1U < 9) {
+    if (((&DAT_fffffff0270913a0)[((ulong)((int)*(long *)(lVar4 + 0xb08) - 1) & 0xff) * 0x20] & 1) ==
+        0) goto LAB_fffffff0270e18c0;
+    lVar4 = UnkSytemRegRead(3,6,0xf,8,0);
+    if (lVar4 == 0) {
+      lVar4 = tpidr_el2;
+    }
+    else {
+      lVar4 = UnkSytemRegRead(3,6,0xf,0xb,1);
+    }
+    if (*(long *)(lVar4 + 0xb08) - 1U < 9) {
+      if ((*(ulong *)(&DAT_fffffff027092228 + (ulong)*(byte *)(param_1 + 2) * 0x90) >>
+           ((ulong)((int)*(long *)(lVar4 + 0xb08) - 1) & 0x3f) & 1) == 0) {
+                    /* WARNING: Subroutine does not return */
+        FUN_fffffff0270f46b4
+                  (
+                  "%s: IOMMU %s (%d): Unexpected frame found while attempting to modify refcnt %p %s"
+                  );
+      }
+      lVar4 = UnkSytemRegRead(3,6,0xf,8,0);
+      if (lVar4 == 0) {
+        lVar4 = tpidr_el2;
+      }
+      else {
+        lVar4 = UnkSytemRegRead(3,6,0xf,0xb,1);
+      }
+      if (*(long *)(lVar4 + 0xb08) - 1U < 9) {
+        if (((&DAT_fffffff0270913a0)[((ulong)((int)*(long *)(lVar4 + 0xb08) - 1) & 0xff) * 0x20] & 1
+            ) != 0) {
+          if ((&DAT_fffffff027092201)[(ulong)*(byte *)(param_1 + 2) * 0x90] == '\x06') {
+            return;
+          }
+          lVar4 = UnkSytemRegRead(3,6,0xf,8,0);
+          if (lVar4 == 0) {
+            lVar4 = tpidr_el2;
+          }
+          else {
+            lVar4 = UnkSytemRegRead(3,6,0xf,0xb,1);
+          }
+          if (8 < *(long *)(lVar4 + 0xb08) - 1U) goto LAB_fffffff0270e1798;
+          if (((&DAT_fffffff0270913a0)[((ulong)((int)*(long *)(lVar4 + 0xb08) - 1) & 0xff) * 0x20] &
+              1) != 0) {
+            bVar1 = *(byte *)(param_1 + 2);
+            if ((&DAT_fffffff027092201)[(ulong)bVar1 * 0x90] != '\x03') {
+                    /* WARNING: Subroutine does not return */
+              FUN_fffffff0270f46b4
+                        (
+                        "%s: IOMMU %s (%d): Non-refcounted frame found while attempting to modify refcnt %p %s"
+                        );
+            }
+            if (param_2 == 1) {
+              piVar5 = (int *)(param_1 + 8);
+              if (param_3 == 0) {
+                *(char *)(param_1 + 5) = *(char *)(param_1 + 5) + -1;
+LAB_fffffff0270e1740:
+                *piVar5 = *piVar5 + -1;
+                return;
+              }
+              *(char *)(param_1 + 5) = *(char *)(param_1 + 5) + '\x01';
+            }
+            else {
+              piVar5 = (int *)(param_1 + 0xc);
+              if (param_3 == 0) goto LAB_fffffff0270e1740;
+            }
+            iVar2 = *piVar5;
+            *piVar5 = iVar2 + 1;
+            if (iVar2 == 0x7fffffff) {
+              uVar3 = 0x47;
+              if (param_2 != 1) {
+                uVar3 = 0x48;
+              }
+              FUN_fffffff0270e0dfc();
+                    /* WARNING: Subroutine does not return */
+              FUN_fffffff0270f46f4
+                        (uVar3,extraout_w1_00,
+                         "%s(%s:%d) - fte(%p), fte->type(%s), current_iommu(%u)\n");
+            }
+            if ((iVar2 != 0) && (((&DAT_fffffff027092233)[(ulong)bVar1 * 0x90] & 1) == 0)) {
+              FUN_fffffff0270e0dfc();
+                    /* WARNING: Subroutine does not return */
+              FUN_fffffff0270f46f4
+                        (0x46,extraout_w1,"%s(%s:%d) - fte(%p), fte->type(%s), current_iommu(%u)\n")
+              ;
+            }
+            return;
+          }
+        }
+LAB_fffffff0270e18c0:
+                    /* WARNING: Subroutine does not return */
+        FUN_fffffff0270f46b4("%s: IOMMU with id %d not supported");
+      }
+    }
+  }
+LAB_fffffff0270e1798:
+                    /* WARNING: Subroutine does not return */
+  FUN_fffffff0270f46b4("%s: Unexpected Dispatch ID %llu");
+}
+
+ (GhidraScript)  
+INFO  SptmDump.java> === FN FUN_fffffff0270abc74 @fffffff0270abc74 size=1456 (GhidraScript)  
+INFO  SptmDump.java> --- CALLERS (GhidraScript)  
+INFO  SptmDump.java>   fffffff02701c1d8 ? (GhidraScript)  
+INFO  SptmDump.java> 
+void FUN_fffffff0270abc74(undefined8 param_1)
+
+{
+  ulong *puVar1;
+  char *pcVar2;
+  ulong uVar3;
+  ushort uVar4;
+  ushort uVar5;
+  long lVar6;
+  ulong uVar7;
+  long lVar8;
+  byte *pbVar9;
+  undefined8 extraout_x1;
+  undefined8 uVar10;
+  long lVar11;
+  byte *pbVar12;
+  byte in_wzr;
+  undefined1 auVar13 [16];
+  
+  auVar13 = FUN_fffffff0270bf2a0(param_1,2,5);
+  uVar10 = auVar13._8_8_;
+  pbVar9 = auVar13._0_8_;
+  uVar4 = *(ushort *)(pbVar9 + 0x18);
+  if (0x3f < uVar4) {
+                    /* WARNING: Subroutine does not return */
+    FUN_fffffff0270f46f4(0x4000019,uVar10,"%s(%s:%d) - %s(%#llx), %s(%#llx)\n");
+  }
+  if (*(int *)(*(long *)(DAT_fffffff0270921b8 + 0x148) + 0x20 +
+              ((ulong)uVar4 + (ulong)(uint)uVar4 * 2) * 8) != 0) {
+                    /* WARNING: Subroutine does not return */
+    FUN_fffffff0270f46f4(0x4000016,uVar10,"%s(%s:%d) - %s(%#llx), %s(%#llx), %s(%#llx)\n");
+  }
+  lVar11 = UnkSytemRegRead(3,6,0xf,8,0);
+  if (lVar11 == 0) {
+    lVar11 = tpidr_el2;
+  }
+  else {
+    lVar11 = UnkSytemRegRead(3,6,0xf,0xb,1);
+  }
+  if (*(byte *)(DAT_fffffff0270921b8 + 0x60) != 0) {
+                    /* WARNING: Subroutine does not return */
+    FUN_fffffff0270f46f4(0x400001a,uVar10,"%s(%s:%d) - %s(%#llx), %s(%#llx), %s(%#llx)\n");
+  }
+  *(byte *)(DAT_fffffff0270921b8 + 0x60) = *(char *)(lVar11 + 0x14a8) << 1 | 1;
+  lVar11 = DAT_fffffff0270921b8;
+  puVar1 = (ulong *)(*(long *)(DAT_fffffff0270921b8 + 0x78) + (ulong)uVar4 * 0x10);
+  if (((*puVar1 & 1) == 0) || ((puVar1[1] & 1) == 0)) {
+                    /* WARNING: Subroutine does not return */
+    FUN_fffffff0270f46b4
+              ("%s: Valid context ID but the TTBAT already contains invalid entries %p %d");
+  }
+  puVar1[1] = (ulong)((uint)puVar1[1] & 0xfffffffe);
+  *puVar1 = (ulong)((uint)*puVar1 & 0xfffffffe);
+  if ((*(byte *)(lVar11 + 0x80) & 1) != 0) {
+    pcVar2 = (char *)(lVar11 + 0x92 + (ulong)*(ushort *)(pbVar9 + 0x18) * 2);
+    *pcVar2 = *pcVar2 + '\x01';
+  }
+  DataSynchronizationBarrier(0,2,0);
+  uVar5 = *(ushort *)(pbVar9 + 0x18);
+  if (uVar5 != 0xffff) {
+    if ((*pbVar9 & 5) == 0) {
+                    /* WARNING: Subroutine does not return */
+      FUN_fffffff0270f46b4
+                ("%s: Attempted a TLB Invalidate by ASID on a UAT state object with type %d");
+    }
+    if ((*(byte *)(DAT_fffffff0270921b8 + 0x1b0) & 1) == 0) {
+      if (0x3f < uVar5) {
+                    /* WARNING: Subroutine does not return */
+        FUN_fffffff0270f46b4("%s: invalid context ID %p %u");
+      }
+      SysOp_W(0,8,1,2,(ulong)uVar5 << 0x30);
+    }
+    else {
+      FUN_fffffff0270ac224(pbVar9,0x1000000000,0x6000000000,0);
+      uVar10 = extraout_x1;
+    }
+  }
+  DataSynchronizationBarrier(0,3,0);
+  lVar11 = DAT_fffffff0270921b8;
+  if ((*(byte *)(DAT_fffffff0270921b8 + 0x81) & 1) != 0) {
+    lVar11 = *(long *)(DAT_fffffff0270921b8 + 0x148);
+    lVar8 = daif;
+    if ((~(uint)lVar8 & 0x1c0) != 0) {
+      uVar3 = daif;
+      daif = uVar3 | 0x1c0;
+    }
+    DataSynchronizationBarrier(3,3,0);
+    lVar6 = UnkSytemRegRead(3,4,0xf,10,6);
+    uVar3 = cntfrq_el0;
+    uVar3 = (uVar3 & 0xfffffff8) / 5000 + lVar6;
+    while ((pbVar12 = (byte *)(DAT_fffffff0270921b8 + 0x91), (*pbVar12 & 1) != 0 || (*pbVar12 != 0))
+          ) {
+      DataSynchronizationBarrier(3,3,0);
+      uVar7 = UnkSytemRegRead(3,4,0xf,10,6);
+      if (uVar3 < uVar7) {
+        uVar10 = cntfrq_el0;
+                    /* WARNING: Subroutine does not return */
+        FUN_fffffff0270f46b4
+                  ("%s: UAT Dekker gate acquisition timed out after %llu ns (spun for %llu cycles)")
+        ;
+      }
+    }
+    *pbVar12 = 1;
+    *(undefined1 *)(lVar11 + 0x10) = 1;
+    DataMemoryBarrier(3,3);
+    while ((*(byte *)(lVar11 + 0x11) & 1) != 0) {
+      if (*(int *)(lVar11 + 0x14) == 1) {
+        *(undefined1 *)(lVar11 + 0x10) = 0;
+        while (*(int *)(lVar11 + 0x14) == 1) {
+          DataSynchronizationBarrier(3,3,0);
+          uVar7 = UnkSytemRegRead(3,4,0xf,10,6);
+          if (uVar3 < uVar7) goto LAB_fffffff0270abea4;
+        }
+        *(undefined1 *)(lVar11 + 0x10) = 1;
+        DataMemoryBarrier(3,3);
+      }
+      DataSynchronizationBarrier(3,3,0);
+      uVar7 = UnkSytemRegRead(3,4,0xf,10,6);
+      if (uVar3 < uVar7) {
+LAB_fffffff0270abea4:
+        uVar10 = cntfrq_el0;
+                    /* WARNING: Subroutine does not return */
+        FUN_fffffff0270f46b4
+                  ("%s: UAT Dekker lock acquisition timed out after %llu ns (spun for %llu cycles)")
+        ;
+      }
+    }
+    DataMemoryBarrier(3,3);
+    if (((*(byte *)(lVar11 + 0x648) & 1) != 0) &&
+       ((**(ulong **)(DAT_fffffff0270921b8 + 0x88) >>
+         ((ulong)*(byte *)(DAT_fffffff0270921b8 + 0x90) & 0x3f) & 1) != 0)) {
+                    /* WARNING: Subroutine does not return */
+      FUN_fffffff0270f46b4("%s: Failed to verify TLBI");
+    }
+    DataMemoryBarrier(3,3);
+    *(undefined4 *)(lVar11 + 0x14) = 1;
+    *(undefined1 *)(lVar11 + 0x10) = 0;
+    lVar11 = DAT_fffffff0270921b8;
+    *(byte *)(DAT_fffffff0270921b8 + 0x91) = in_wzr;
+    if (lVar8 != 0x1c0) {
+      daif = lVar8;
+      lVar11 = DAT_fffffff0270921b8;
+    }
+  }
+  if ((*(byte *)(lVar11 + 0x80) & 1) != 0) {
+    pcVar2 = (char *)(lVar11 + (ulong)*(ushort *)(pbVar9 + 0x18) * 2 + 0x93);
+    *pcVar2 = *pcVar2 + '\x01';
+    lVar11 = DAT_fffffff0270921b8;
+  }
+  if (*(uint *)(*(long *)(lVar11 + 0x148) + 0x18) == (uint)uVar4) {
+                    /* WARNING: Subroutine does not return */
+    FUN_fffffff0270f46f4(0x400001d,uVar10,"%s(%s:%d) - %s(%#llx), %s(%#llx)\n");
+  }
+  pbVar9[0x18] = 0xff;
+  pbVar9[0x19] = 0xff;
+  lVar11 = UnkSytemRegRead(3,6,0xf,8,0);
+  if (lVar11 == 0) {
+    lVar11 = tpidr_el2;
+  }
+  else {
+    lVar11 = UnkSytemRegRead(3,6,0xf,0xb,1);
+  }
+  if (*(byte *)(DAT_fffffff0270921b8 + 0x60) == (byte)(*(char *)(lVar11 + 0x14a8) << 1 | 1U)) {
+    *(byte *)(DAT_fffffff0270921b8 + 0x60) = in_wzr;
+    if (pbVar9[0x1a] == 1) {
+      pbVar9[0x1a] = 2;
+      if ((*pbVar9 & 5) == 0) {
+        return;
+      }
+      FUN_fffffff0270d3dec();
+      FUN_fffffff0270e0b28();
+      return;
+    }
+  }
+                    /* WARNING: Subroutine does not return */
+  FUN_fffffff0270f46b4("%s: state_guard_release - %#llx, %#llx");
+}
+
+ (GhidraScript)  
+INFO  SptmDump.java> === FN FUN_fffffff0270afb68 @fffffff0270afb68 size=4608 (GhidraScript)  
+INFO  SptmDump.java> --- CALLERS (GhidraScript)  
+INFO  SptmDump.java>   fffffff02701f038 ? (GhidraScript)  
+INFO  SptmDump.java> 
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+undefined8 FUN_fffffff0270afb68(void)
+
+{
+  undefined8 *puVar1;
+  undefined8 uVar2;
+  byte bVar3;
+  uint uVar4;
+  bool bVar5;
+  undefined *puVar6;
+  bool bVar7;
+  int iVar8;
+  long lVar9;
+  undefined1 *puVar10;
+  undefined8 uVar11;
+  undefined8 *puVar12;
+  undefined8 in_x6;
+  undefined8 in_x7;
+  ulong uVar13;
+  ulong uVar14;
+  long lVar15;
+  ulong *puVar16;
+  ulong uVar17;
+  byte *pbVar18;
+  long lVar19;
+  long lVar20;
+  undefined *puVar21;
+  char *pcVar22;
+  ulong **ppuVar23;
+  undefined *puVar24;
+  undefined8 local_c8;
+  int local_bc;
+  ulong *local_b8;
+  undefined8 local_b0;
+  undefined8 uStack_a8;
+  undefined8 local_a0;
+  undefined8 uStack_98;
+  ulong *local_90;
+  undefined8 uStack_88;
+  undefined8 local_80;
+  undefined8 uStack_78;
+  long local_70;
+  
+  local_70 = DAT_fffffff027100000;
+  FUN_fffffff0270dfe50("UAT Global");
+  DAT_fffffff0270921b8 = FUN_fffffff0270e07e8();
+  puVar6 = PTR_DAT_fffffff027090600;
+  if (DAT_fffffff0270921b8 == 0) {
+                    /* WARNING: Subroutine does not return */
+    FUN_fffffff0270f46b4("%s: uat_instance is NULL");
+  }
+  if (PTR_DAT_fffffff027090600 == (undefined *)0x0) {
+                    /* WARNING: Subroutine does not return */
+    FUN_fffffff0270f46b4("%s: Error getting SecureDT");
+  }
+  local_c8 = 0;
+  iVar8 = FUN_fffffff0270b1214(PTR_DAT_fffffff027090600,0,"/arm-io/sgx",&local_c8);
+  uVar11 = local_c8;
+  if (iVar8 != 1) {
+                    /* WARNING: Subroutine does not return */
+    FUN_fffffff0270f46b4("%s: error %d looking up /arm-io/sgx");
+  }
+  local_90 = (ulong *)0x0;
+  local_b0 = (byte *)((ulong)local_b0._4_4_ << 0x20);
+  iVar8 = FUN_fffffff0270b142c
+                    (local_c8,"agx-address-space-mgmt-mode",&local_90,&local_b0,
+                     *(undefined8 *)puVar6,*(undefined8 *)(puVar6 + 8));
+  if (iVar8 == 1) {
+    if ((int)local_b0 != 4) goto LAB_fffffff0270b04c8;
+    uVar13 = 0;
+    if (local_90 != (ulong *)0x0) {
+      local_90 = (ulong *)0x0;
+      local_b0 = (byte *)((ulong)local_b0 & 0xffffffff00000000);
+      FUN_fffffff0270b142c
+                (uVar11,"agx-address-space-mgmt-mode",&local_90,&local_b0,*(undefined8 *)puVar6,
+                 *(undefined8 *)(puVar6 + 8));
+      if ((int)local_b0 != 4) goto LAB_fffffff0270b04c8;
+      uVar13 = (ulong)(uint)*local_90;
+    }
+  }
+  else {
+    uVar13 = 0;
+  }
+  *(ulong *)(DAT_fffffff0270921b8 + 0x10) = uVar13;
+  local_90 = (ulong *)0x0;
+  local_b0 = (byte *)((ulong)local_b0 & 0xffffffff00000000);
+  iVar8 = FUN_fffffff0270b142c
+                    (uVar11,"issue-gmmu-tlbis-at-retype",&local_90,&local_b0,*(undefined8 *)puVar6,
+                     *(undefined8 *)(puVar6 + 8));
+  if (iVar8 == 1) {
+    if ((int)local_b0 != 4) goto LAB_fffffff0270b04c8;
+    bVar7 = false;
+    if (local_90 != (ulong *)0x0) {
+      local_90 = (ulong *)0x0;
+      local_b0 = (byte *)((ulong)local_b0 & 0xffffffff00000000);
+      FUN_fffffff0270b142c
+                (uVar11,"issue-gmmu-tlbis-at-retype",&local_90,&local_b0,*(undefined8 *)puVar6,
+                 *(undefined8 *)(puVar6 + 8));
+      if ((int)local_b0 != 4) goto LAB_fffffff0270b04c8;
+      bVar7 = (uint)*local_90 != 0;
+    }
+  }
+  else {
+    bVar7 = false;
+  }
+  *(bool *)(DAT_fffffff0270921b8 + 0x80) = bVar7;
+  local_90 = (ulong *)0x0;
+  local_b0 = (byte *)((ulong)local_b0 & 0xffffffff00000000);
+  iVar8 = FUN_fffffff0270b142c
+                    (uVar11,"verify-gmmu-tlbis-at-sync",&local_90,&local_b0,*(undefined8 *)puVar6,
+                     *(undefined8 *)(puVar6 + 8));
+  lVar9 = DAT_fffffff0270921b8;
+  if (iVar8 == 1) {
+    if ((int)local_b0 != 4) goto LAB_fffffff0270b04c8;
+    if (local_90 == (ulong *)0x0) goto LAB_fffffff0270afed4;
+    local_90 = (ulong *)0x0;
+    local_b0 = (byte *)((ulong)local_b0 & 0xffffffff00000000);
+    FUN_fffffff0270b142c
+              (uVar11,"verify-gmmu-tlbis-at-sync",&local_90,&local_b0,*(undefined8 *)puVar6,
+               *(undefined8 *)(puVar6 + 8));
+    lVar9 = DAT_fffffff0270921b8;
+    if ((int)local_b0 != 4) goto LAB_fffffff0270b04c8;
+    uVar13 = *local_90;
+    *(bool *)(DAT_fffffff0270921b8 + 0x81) = (uint)uVar13 != 0;
+    if ((uint)uVar13 != 0) {
+      local_90 = (ulong *)0x0;
+      local_b0 = (byte *)((ulong)local_b0 & 0xffffffff00000000);
+      iVar8 = FUN_fffffff0270b142c
+                        (uVar11,"gmmu-tlbi-verification-reg",&local_90,&local_b0,
+                         *(undefined8 *)puVar6,*(undefined8 *)(puVar6 + 8));
+      if (iVar8 != 1) {
+LAB_fffffff0270b0d30:
+                    /* WARNING: Subroutine does not return */
+        FUN_fffffff0270f46b4
+                  (
+                  "%s: verify-gmmu-tlbis-at-sync is enabled but gmmu-tlbi-verification-reg is not set"
+                  );
+      }
+      if ((int)local_b0 != 8) goto LAB_fffffff0270b04c8;
+      if (local_90 == (ulong *)0x0) goto LAB_fffffff0270b0d30;
+      local_90 = (ulong *)0x0;
+      local_b0 = (byte *)((ulong)local_b0 & 0xffffffff00000000);
+      FUN_fffffff0270b142c
+                (uVar11,"gmmu-tlbi-verification-reg",&local_90,&local_b0,*(undefined8 *)puVar6,
+                 *(undefined8 *)(puVar6 + 8));
+      if ((int)local_b0 != 8) goto LAB_fffffff0270b04c8;
+      uVar13 = *local_90;
+      if (uVar13 == 0) goto LAB_fffffff0270b0d30;
+      if ((uVar13 & 7) != 0) {
+                    /* WARNING: Subroutine does not return */
+        FUN_fffffff0270f46b4("%s: The GMMU TLBI verification register should be 8B-aligned");
+      }
+      lVar9 = FUN_fffffff0270d4cd4(uVar13 & 0xffffffffffffc000,1,0);
+      *(ulong *)(DAT_fffffff0270921b8 + 0x88) = (uVar13 & 0x3ff8) + lVar9;
+      local_90 = (ulong *)0x0;
+      local_b0 = (byte *)((ulong)local_b0 & 0xffffffff00000000);
+      iVar8 = FUN_fffffff0270b142c
+                        (uVar11,"gmmu-tlbi-verification-bit",&local_90,&local_b0,
+                         *(undefined8 *)puVar6,*(undefined8 *)(puVar6 + 8));
+      if (iVar8 != 1) {
+LAB_fffffff0270b0d4c:
+                    /* WARNING: Subroutine does not return */
+        FUN_fffffff0270f46b4
+                  ("%s: gmmu-tlbi-verification-bit (%llu) is unset or out of range [0, 63]");
+      }
+      if ((int)local_b0 != 4) goto LAB_fffffff0270b04c8;
+      if (local_90 == (ulong *)0x0) goto LAB_fffffff0270b0d4c;
+      local_90 = (ulong *)0x0;
+      local_b0 = (byte *)((ulong)local_b0 & 0xffffffff00000000);
+      FUN_fffffff0270b142c
+                (uVar11,"gmmu-tlbi-verification-bit",&local_90,&local_b0,*(undefined8 *)puVar6,
+                 *(undefined8 *)(puVar6 + 8));
+      lVar9 = DAT_fffffff0270921b8;
+      if ((int)local_b0 != 4) goto LAB_fffffff0270b04c8;
+      if (0x3f < (uint)*local_90) goto LAB_fffffff0270b0d4c;
+      *(char *)(DAT_fffffff0270921b8 + 0x90) = (char)(uint)*local_90;
+    }
+  }
+  else {
+LAB_fffffff0270afed4:
+    *(undefined1 *)(DAT_fffffff0270921b8 + 0x81) = 0;
+  }
+  local_90 = (ulong *)0x0;
+  local_b0 = (byte *)((ulong)local_b0 & 0xffffffff00000000);
+  iVar8 = FUN_fffffff0270b142c
+                    (uVar11,"gfx-shared-region-base",&local_90,&local_b0,*(undefined8 *)puVar6,
+                     *(undefined8 *)(puVar6 + 8));
+  if (iVar8 != 1) {
+LAB_fffffff0270b0d14:
+                    /* WARNING: Subroutine does not return */
+    FUN_fffffff0270f46b4("%s: error %d looking up %s");
+  }
+  if ((int)local_b0 != 8) goto LAB_fffffff0270b04c8;
+  *(ulong *)(lVar9 + 0x128) = *local_90;
+  local_90 = (ulong *)0x0;
+  local_b0 = (byte *)((ulong)local_b0 & 0xffffffff00000000);
+  iVar8 = FUN_fffffff0270b142c
+                    (uVar11,"gfx-shared-region-size",&local_90,&local_b0,*(undefined8 *)puVar6,
+                     *(undefined8 *)(puVar6 + 8));
+  if (iVar8 != 1) goto LAB_fffffff0270b0d14;
+  if ((int)local_b0 != 8) goto LAB_fffffff0270b04c8;
+  uVar13 = *local_90;
+  if ((uVar13 < 0x4000) || ((uVar13 & 0x3fff) != 0)) {
+                    /* WARNING: Subroutine does not return */
+    FUN_fffffff0270f46b4
+              (
+              "%s: The ASC carveout region is smaller than a page in size or not a multiple of the SPTM_PAGE_SIZE %llu"
+              );
+  }
+  *(ulong *)(lVar9 + 0x130) = uVar13 >> 0xe;
+  FUN_fffffff0270dffd4(*(undefined8 *)(lVar9 + 0x128),uVar13 >> 0xe,1);
+  lVar9 = DAT_fffffff0270921b8;
+  local_90 = (ulong *)0x0;
+  local_b0 = (byte *)((ulong)local_b0 & 0xffffffff00000000);
+  iVar8 = FUN_fffffff0270b142c
+                    (uVar11,"gfx-shared-l2-region-base",&local_90,&local_b0,*(undefined8 *)puVar6,
+                     *(undefined8 *)(puVar6 + 8));
+  if (iVar8 != 1) goto LAB_fffffff0270b0d14;
+  if ((int)local_b0 != 8) goto LAB_fffffff0270b04c8;
+  *(ulong *)(lVar9 + 0x118) = *local_90;
+  local_90 = (ulong *)0x0;
+  local_b0 = (byte *)((ulong)local_b0 & 0xffffffff00000000);
+  iVar8 = FUN_fffffff0270b142c
+                    (uVar11,"gfx-shared-l2-region-size",&local_90,&local_b0,*(undefined8 *)puVar6,
+                     *(undefined8 *)(puVar6 + 8));
+  if (iVar8 != 1) goto LAB_fffffff0270b0d14;
+  if ((int)local_b0 != 8) goto LAB_fffffff0270b04c8;
+  if (*local_90 != 0x4000) {
+                    /* WARNING: Subroutine does not return */
+    FUN_fffffff0270f46b4
+              ("%s: The TTBR1 shared L2 region size (0x%llx) is not equal to the SPTM_PAGE_SIZE");
+  }
+  *(undefined8 *)(lVar9 + 0x120) = 1;
+  FUN_fffffff0270dffd4(*(undefined8 *)(lVar9 + 0x118),1,1);
+  lVar9 = DAT_fffffff0270921b8;
+  local_90 = (ulong *)0x0;
+  local_b0 = (byte *)((ulong)local_b0 & 0xffffffff00000000);
+  iVar8 = FUN_fffffff0270b142c
+                    (uVar11,"gpu-region-base",&local_90,&local_b0,*(undefined8 *)puVar6,
+                     *(undefined8 *)(puVar6 + 8));
+  if (iVar8 != 1) goto LAB_fffffff0270b0d14;
+  if ((int)local_b0 != 8) goto LAB_fffffff0270b04c8;
+  *(ulong *)(lVar9 + 0x68) = *local_90;
+  local_90 = (ulong *)0x0;
+  local_b0 = (byte *)((ulong)local_b0 & 0xffffffff00000000);
+  iVar8 = FUN_fffffff0270b142c
+                    (uVar11,"gpu-region-size",&local_90,&local_b0,*(undefined8 *)puVar6,
+                     *(undefined8 *)(puVar6 + 8));
+  if (iVar8 != 1) goto LAB_fffffff0270b0d14;
+  if ((int)local_b0 != 8) goto LAB_fffffff0270b04c8;
+  uVar13 = *local_90;
+  if ((uVar13 < 0x4000) || ((uVar13 & 0x3fff) != 0)) {
+                    /* WARNING: Subroutine does not return */
+    FUN_fffffff0270f46b4
+              (
+              "%s: The TTBAT is smaller than a page in size or not a multiple of the SPTM_PAGE_SIZE %llu"
+              );
+  }
+  *(ulong *)(lVar9 + 0x70) = uVar13 >> 0xe;
+  FUN_fffffff0270dffd4(*(undefined8 *)(lVar9 + 0x68),uVar13 >> 0xe,2);
+  uVar13 = *(ulong *)(lVar9 + 0x68);
+  if (((uint)DAT_fffffff027106040 >> 8 & 1) == 0) {
+    lVar9 = (uVar13 - DAT_fffffff0270921c8) + DAT_fffffff027090ff0;
+  }
+  else {
+    uVar14 = (ulong)DAT_fffffff0271019f8;
+    if (DAT_fffffff0271019f8 != 0) {
+      lVar9 = 0;
+      do {
+        puVar16 = &DAT_fffffff027101a00 + lVar9 * 3;
+        if ((((ulong)puVar16 ^ 0xfffffff027101a00) & 0xffc0000000000000) != 0) {
+          puVar16 = (ulong *)((ulong)puVar16 & 0xffffffffffff | 0xc8a2000000000000);
+        }
+        uVar17 = *puVar16;
+        if ((uVar17 <= uVar13) && (uVar13 < uVar17 + (ulong)(uint)puVar16[2] * 0x4000)) {
+          lVar9 = (uVar13 - uVar17) + puVar16[1];
+          goto LAB_fffffff0270b017c;
+        }
+        lVar9 = lVar9 + 1;
+        uVar14 = uVar14 - 1;
+      } while (uVar14 != 0);
+    }
+    lVar9 = FUN_fffffff0270dfaa8();
+  }
+LAB_fffffff0270b017c:
+  uVar11 = local_c8;
+  lVar19 = DAT_fffffff0270921b8;
+  *(long *)(DAT_fffffff0270921b8 + 0x78) = lVar9;
+  local_90 = (ulong *)0x0;
+  local_b0 = (byte *)((ulong)local_b0 & 0xffffffff00000000);
+  iVar8 = FUN_fffffff0270b142c
+                    (local_c8,"gfx-handoff-base",&local_90,&local_b0,*(undefined8 *)puVar6,
+                     *(undefined8 *)(puVar6 + 8));
+  if (iVar8 != 1) goto LAB_fffffff0270b0d14;
+  if ((int)local_b0 != 8) goto LAB_fffffff0270b04c8;
+  *(ulong *)(lVar19 + 0x138) = *local_90;
+  local_90 = (ulong *)0x0;
+  local_b0 = (byte *)((ulong)local_b0 & 0xffffffff00000000);
+  iVar8 = FUN_fffffff0270b142c
+                    (uVar11,"gfx-handoff-size",&local_90,&local_b0,*(undefined8 *)puVar6,
+                     *(undefined8 *)(puVar6 + 8));
+  if (iVar8 != 1) goto LAB_fffffff0270b0d14;
+  if ((int)local_b0 != 8) goto LAB_fffffff0270b04c8;
+  uVar13 = *local_90;
+  if ((uVar13 < 0x4000) || ((uVar13 & 0x3fff) != 0)) {
+                    /* WARNING: Subroutine does not return */
+    FUN_fffffff0270f46b4
+              (
+              "%s: The Handoff region is smaller than a page in size or not a multiple of the SPTM_PAGE_SIZE %llu"
+              );
+  }
+  *(ulong *)(lVar19 + 0x140) = uVar13 >> 0xe;
+  FUN_fffffff0270dffd4(*(undefined8 *)(lVar19 + 0x138),uVar13 >> 0xe,2);
+  lVar9 = 0;
+  bVar7 = true;
+  do {
+    bVar5 = bVar7;
+    local_80 = 0;
+    uStack_78 = 0;
+    pcVar22 = "gfx";
+    local_90 = (ulong *)0x0;
+    uStack_88 = 0;
+    if (!bVar5) {
+      pcVar22 = (char *)&local_90;
+      FUN_fffffff0270b0d68(&local_90);
+    }
+    lVar19 = 0;
+    lVar20 = 3;
+    do {
+      puVar16 = (ulong *)(DAT_fffffff0270921b8 + 0x150 + lVar9 * 0x30 + lVar19 * 0x10);
+      local_a0 = 0;
+      uStack_98 = 0;
+      local_b0 = (byte *)0x0;
+      uStack_a8 = 0;
+      puVar21 = (&PTR_s__fffffff02701c6d0)[lVar19];
+      ppuVar23 = (ulong **)pcVar22;
+      puVar24 = puVar21;
+      FUN_fffffff0270b0d68(&local_b0);
+      local_b8 = (ulong *)0x0;
+      local_bc = 0;
+      iVar8 = FUN_fffffff0270b142c
+                        (uVar11,&local_b0,&local_b8,&local_bc,*(undefined8 *)puVar6,
+                         *(undefined8 *)(puVar6 + 8),in_x6,in_x7,ppuVar23,puVar24);
+      if (iVar8 == 1) {
+        if (local_bc != 8) goto LAB_fffffff0270b04c8;
+        if (local_b8 == (ulong *)0x0) goto LAB_fffffff0270b0380;
+        local_b8 = (ulong *)0x0;
+        local_bc = 0;
+        FUN_fffffff0270b142c
+                  (uVar11,&local_b0,&local_b8,&local_bc,*(undefined8 *)puVar6,
+                   *(undefined8 *)(puVar6 + 8),in_x6,in_x7,ppuVar23,puVar24);
+        if (local_bc != 8) goto LAB_fffffff0270b04c8;
+        uVar13 = *local_b8;
+        *puVar16 = uVar13;
+        if ((uVar13 & 0x3fff) != 0) {
+                    /* WARNING: Subroutine does not return */
+          FUN_fffffff0270f46b4("%s: The %s data%s segment base(%#llx) is not page-aligned");
+        }
+      }
+      else {
+LAB_fffffff0270b0380:
+        *puVar16 = 0;
+      }
+      ppuVar23 = (ulong **)pcVar22;
+      FUN_fffffff0270b0d68(&local_b0);
+      local_b8 = (ulong *)0x0;
+      local_bc = 0;
+      iVar8 = FUN_fffffff0270b142c
+                        (uVar11,&local_b0,&local_b8,&local_bc,*(undefined8 *)puVar6,
+                         *(undefined8 *)(puVar6 + 8),in_x6,in_x7,ppuVar23,puVar21);
+      if (iVar8 == 1) {
+        if (local_bc != 8) goto LAB_fffffff0270b04c8;
+        if (local_b8 == (ulong *)0x0) goto LAB_fffffff0270b02b8;
+        local_b8 = (ulong *)0x0;
+        local_bc = 0;
+        FUN_fffffff0270b142c
+                  (uVar11,&local_b0,&local_b8,&local_bc,*(undefined8 *)puVar6,
+                   *(undefined8 *)(puVar6 + 8),in_x6,in_x7,ppuVar23,puVar21);
+        if (local_bc != 8) goto LAB_fffffff0270b04c8;
+        uVar13 = *local_b8;
+        if ((uVar13 & 0x3fff) != 0) {
+                    /* WARNING: Subroutine does not return */
+          FUN_fffffff0270f46b4
+                    ("%s: The %s data%s segment size(%#llx) is not a multiple of the page size");
+        }
+        puVar16[1] = uVar13 >> 0xe;
+        if ((uVar13 != 0) && (*puVar16 != 0)) {
+          FUN_fffffff0270dffd4(*puVar16,uVar13 >> 0xe,1);
+        }
+      }
+      else {
+LAB_fffffff0270b02b8:
+        puVar16[1] = 0;
+      }
+      lVar19 = lVar19 + 1;
+      lVar20 = lVar20 + -1;
+    } while (lVar20 != 0);
+    lVar9 = 1;
+    bVar7 = false;
+  } while (bVar5);
+  iVar8 = FUN_fffffff0270b1214(puVar6,0,"/defaults",&local_c8);
+  uVar11 = local_c8;
+  if (iVar8 != 1) {
+                    /* WARNING: Subroutine does not return */
+    FUN_fffffff0270f46b4("%s: error %d looking up /defaults");
+  }
+  local_b0 = (byte *)0x0;
+  local_bc = 0;
+  iVar8 = FUN_fffffff0270b142c
+                    (local_c8,"uat-enforce-gpu-carveout",&local_b0,&local_bc,*(undefined8 *)puVar6,
+                     *(undefined8 *)(puVar6 + 8),in_x6,in_x7,ppuVar23,puVar21);
+  if (iVar8 == 1) {
+    if (local_bc != 4) {
+                    /* WARNING: Subroutine does not return */
+      FUN_fffffff0270f46b4("%s: uat-enforce-gpu-carveout is not %zu bytes wide (%d)");
+    }
+    *(bool *)(DAT_fffffff0270921b8 + 0x1b0) = *(int *)local_b0 != 0;
+  }
+  else {
+    *(undefined1 *)(DAT_fffffff0270921b8 + 0x1b0) = 1;
+  }
+  iVar8 = FUN_fffffff0270b142c
+                    (uVar11,"uat-vaddr-size",&local_b0,&local_bc,*(undefined8 *)puVar6,
+                     *(undefined8 *)(puVar6 + 8));
+  lVar9 = DAT_fffffff0270921b8;
+  if (iVar8 == 1) {
+    if (local_bc != 4) {
+                    /* WARNING: Subroutine does not return */
+      FUN_fffffff0270f46b4("%s: uat-vaddr-size is %zu bytes wide (%d)");
+    }
+    bVar3 = *local_b0;
+    uVar4 = bVar3 - 1;
+    uVar13 = (ulong)uVar4;
+    *(char *)(DAT_fffffff0270921b8 + 0x1b1) = (char)uVar4;
+    if (8 < bVar3 - 0x28) {
+                    /* WARNING: Subroutine does not return */
+      FUN_fffffff0270f46b4
+                (
+                "%s: Invalid vaddr size specified in device tree (%d). Valid values are %d to %d inclusive"
+                );
+    }
+  }
+  else {
+    uVar13 = 0x27;
+    *(undefined1 *)(DAT_fffffff0270921b8 + 0x1b1) = 0x27;
+  }
+  *(ulong *)(lVar9 + 0x1b8) = 0xffffffffffffffffU >> (-(uVar13 & 0xff) & 0x3f) & 0x7ff000000000;
+  local_90 = (ulong *)0x0;
+  local_b8 = (ulong *)((ulong)local_b8 & 0xffffffff00000000);
+  iVar8 = FUN_fffffff0270b142c
+                    (uVar11,"uat-segment-limit",&local_90,&local_b8,*(undefined8 *)puVar6,
+                     *(undefined8 *)(puVar6 + 8));
+  if (iVar8 == 1) {
+    if ((int)local_b8 != 4) goto LAB_fffffff0270b04c8;
+    if (local_90 == (ulong *)0x0) goto LAB_fffffff0270b0630;
+    local_90 = (ulong *)0x0;
+    local_b8 = (ulong *)((ulong)local_b8 & 0xffffffff00000000);
+    FUN_fffffff0270b142c
+              (uVar11,"uat-segment-limit",&local_90,&local_b8,*(undefined8 *)puVar6,
+               *(undefined8 *)(puVar6 + 8));
+    if ((int)local_b8 != 4) goto LAB_fffffff0270b04c8;
+    uVar13 = (ulong)(uint)*local_90;
+  }
+  else {
+LAB_fffffff0270b0630:
+    uVar13 = 0x40;
+  }
+  *(ulong *)(DAT_fffffff0270921b8 + 0x1c0) = uVar13;
+  local_90 = (ulong *)0x0;
+  local_b8 = (ulong *)((ulong)local_b8 & 0xffffffff00000000);
+  iVar8 = FUN_fffffff0270b142c
+                    (uVar11,"uat-mapping-limit",&local_90,&local_b8,*(undefined8 *)puVar6,
+                     *(undefined8 *)(puVar6 + 8));
+  if (iVar8 == 1) {
+    if ((int)local_b8 != 4) {
+LAB_fffffff0270b04c8:
+                    /* WARNING: Subroutine does not return */
+      FUN_fffffff0270f46b4("%s: %s is not %zu bytes wide (%d)");
+    }
+    if (local_90 == (ulong *)0x0) goto LAB_fffffff0270b06c4;
+    local_90 = (ulong *)0x0;
+    local_b8 = (ulong *)((ulong)local_b8 & 0xffffffff00000000);
+    FUN_fffffff0270b142c
+              (uVar11,"uat-mapping-limit",&local_90,&local_b8,*(undefined8 *)puVar6,
+               *(undefined8 *)(puVar6 + 8));
+    if ((int)local_b8 != 4) goto LAB_fffffff0270b04c8;
+    uVar13 = (ulong)(uint)*local_90;
+  }
+  else {
+LAB_fffffff0270b06c4:
+    uVar13 = 0x100;
+  }
+  lVar9 = DAT_fffffff0270921b8;
+  *(ulong *)(DAT_fffffff0270921b8 + 0x1c8) = uVar13;
+  if (*(long *)(lVar9 + 0x10) == 1) {
+    if (((uint)DAT_fffffff027106040 >> 7 & 1) != 0) {
+LAB_fffffff0270b0be4:
+                    /* WARNING: Subroutine does not return */
+      FUN_fffffff0270f46b4("%s: Unexpected bootstrap stages reached. Expected: %p, Actual: %p");
+    }
+    puVar10 = (undefined1 *)FUN_fffffff0270dfbbc(10,1);
+    *(undefined1 **)(lVar9 + 0x18) = puVar10;
+    *puVar10 = 8;
+    pbVar18 = *(byte **)(lVar9 + 0x18);
+    if (((uint)DAT_fffffff027106040 >> 7 & 1) != 0) goto LAB_fffffff0270b0be4;
+    FUN_fffffff0270dfbbc(10,1);
+    uVar11 = FUN_fffffff0270d3dec();
+    if ((*pbVar18 & 0xe) == 0) {
+LAB_fffffff0270b0c58:
+                    /* WARNING: Subroutine does not return */
+      FUN_fffffff0270f46b4("%s: %d is not a valid UAT state object type when getting TTBR%d");
+    }
+    *(undefined8 *)(pbVar18 + 0x10) = uVar11;
+    lVar19 = *(long *)(lVar9 + 0x18);
+    *(undefined2 *)(lVar19 + 0x18) = 0x40;
+    *(undefined1 *)(lVar19 + 0x1a) = 2;
+    if ((**(byte **)(lVar9 + 0x18) & 0xe) == 0) goto LAB_fffffff0270b0c58;
+    uVar13 = *(ulong *)(*(byte **)(lVar9 + 0x18) + 0x10);
+    if (((uint)DAT_fffffff027106040 >> 8 & 1) == 0) {
+      lVar19 = (uVar13 - DAT_fffffff0270921c8) + DAT_fffffff027090ff0;
+    }
+    else {
+      uVar14 = (ulong)DAT_fffffff0271019f8;
+      if (DAT_fffffff0271019f8 != 0) {
+        lVar19 = 0;
+        do {
+          puVar16 = &DAT_fffffff027101a00 + lVar19 * 3;
+          if ((((ulong)puVar16 ^ 0xfffffff027101a00) & 0xffc0000000000000) != 0) {
+            puVar16 = (ulong *)((ulong)puVar16 & 0xffffffffffff | 0xc8a2000000000000);
+          }
+          uVar17 = *puVar16;
+          if ((uVar17 <= uVar13) && (uVar13 < uVar17 + (ulong)(uint)puVar16[2] * 0x4000)) {
+            lVar19 = (uVar13 - uVar17) + puVar16[1];
+            goto LAB_fffffff0270b0940;
+          }
+          lVar19 = lVar19 + 1;
+          uVar14 = uVar14 - 1;
+        } while (uVar14 != 0);
+      }
+      lVar19 = FUN_fffffff0270dfaa8();
+    }
+LAB_fffffff0270b0940:
+    lVar15 = DAT_fffffff0270921b8;
+    *(ulong *)(lVar19 + 0x10) = *(ulong *)(DAT_fffffff0270921b8 + 0x118) & 0xfffffffff000 | 3;
+    uVar13 = 0xffffffffffffffff >> ((ulong)-(uint)*(byte *)(lVar15 + 0x1b1) & 0x3f);
+    lVar19 = -1L << ((ulong)*(byte *)(lVar15 + 0x1b1) & 0x3f);
+    bVar7 = (*(byte *)(lVar15 + 0x1b0) & 1) != 0;
+    uVar11 = 0;
+    lVar20 = lVar19;
+    if (bVar7) {
+      uVar11 = 0x1000000000;
+      uVar13 = 0x6fffffffff;
+      lVar20 = 1;
+    }
+    uVar2 = 0xffffffffffffffff;
+    if (bVar7) {
+      uVar2 = 0;
+    }
+    *(undefined8 *)(lVar9 + 0x20) = uVar11;
+    *(long *)(lVar9 + 0x28) = lVar20;
+    *(ulong *)(lVar9 + 0x30) = uVar13;
+    *(undefined8 *)(lVar9 + 0x38) = uVar2;
+    *(undefined8 *)(lVar9 + 0x40) = 1;
+    *(long *)(lVar9 + 0x48) = lVar19 + 0x2000000000;
+    *(undefined8 *)(lVar9 + 0x50) = 0;
+    lVar19 = lVar19 + 0x2fffffffff;
+  }
+  else {
+    lVar15 = lVar9;
+    if (*(long *)(lVar9 + 0x10) != 0) goto LAB_fffffff0270b09c8;
+    if (((uint)DAT_fffffff027106040 >> 7 & 1) != 0) goto LAB_fffffff0270b0be4;
+    puVar10 = (undefined1 *)FUN_fffffff0270dfbbc(10,1);
+    *(undefined1 **)(lVar9 + 0x18) = puVar10;
+    *puVar10 = 2;
+    pbVar18 = *(byte **)(lVar9 + 0x18);
+    if (((uint)DAT_fffffff027106040 >> 7 & 1) != 0) goto LAB_fffffff0270b0be4;
+    FUN_fffffff0270dfbbc(10,1);
+    uVar11 = FUN_fffffff0270d3dec();
+    if ((*pbVar18 & 0xe) == 0) goto LAB_fffffff0270b0c58;
+    *(undefined8 *)(pbVar18 + 0x10) = uVar11;
+    lVar19 = *(long *)(lVar9 + 0x18);
+    *(undefined2 *)(lVar19 + 0x18) = 0x40;
+    *(undefined1 *)(lVar19 + 0x1a) = 2;
+    if ((**(byte **)(lVar9 + 0x18) & 0xe) == 0) goto LAB_fffffff0270b0c58;
+    uVar13 = *(ulong *)(*(byte **)(lVar9 + 0x18) + 0x10);
+    if (((uint)DAT_fffffff027106040 >> 8 & 1) == 0) {
+      lVar19 = (uVar13 - DAT_fffffff0270921c8) + DAT_fffffff027090ff0;
+    }
+    else {
+      uVar14 = (ulong)DAT_fffffff0271019f8;
+      if (DAT_fffffff0271019f8 != 0) {
+        lVar19 = 0;
+        do {
+          puVar16 = &DAT_fffffff027101a00 + lVar19 * 3;
+          if ((((ulong)puVar16 ^ 0xfffffff027101a00) & 0xffc0000000000000) != 0) {
+            puVar16 = (ulong *)((ulong)puVar16 & 0xffffffffffff | 0xc8a2000000000000);
+          }
+          uVar17 = *puVar16;
+          if ((uVar17 <= uVar13) && (uVar13 < uVar17 + (ulong)(uint)puVar16[2] * 0x4000)) {
+            lVar19 = (uVar13 - uVar17) + puVar16[1];
+            goto LAB_fffffff0270b08c4;
+          }
+          lVar19 = lVar19 + 1;
+          uVar14 = uVar14 - 1;
+        } while (uVar14 != 0);
+      }
+      lVar19 = FUN_fffffff0270dfaa8();
+    }
+LAB_fffffff0270b08c4:
+    lVar15 = DAT_fffffff0270921b8;
+    *(ulong *)(lVar19 + 0x10) = *(ulong *)(DAT_fffffff0270921b8 + 0x118) & 0xfffffffff000 | 3;
+    bVar3 = *(byte *)(lVar15 + 0x1b1);
+    lVar19 = -1;
+    bVar7 = (*(byte *)(lVar15 + 0x1b0) & 1) == 0;
+    uVar11 = 0x1000000000;
+    if (bVar7) {
+      uVar11 = 0;
+    }
+    uVar13 = 0x6fffffffff;
+    if (bVar7) {
+      uVar13 = 0xffffffffffffffff >> ((ulong)-(uint)bVar3 & 0x3f);
+    }
+    *(undefined8 *)(lVar9 + 0x20) = uVar11;
+    *(undefined8 *)(lVar9 + 0x28) = 1;
+    *(ulong *)(lVar9 + 0x30) = uVar13;
+    uVar11 = _DAT_fffffff027019e20;
+    *(undefined8 *)(lVar9 + 0x40) = _UNK_fffffff027019e28;
+    *(undefined8 *)(lVar9 + 0x38) = uVar11;
+    *(long *)(lVar9 + 0x48) = -1L << ((ulong)bVar3 & 0x3f);
+    *(undefined8 *)(lVar9 + 0x50) = 0;
+  }
+  *(long *)(lVar9 + 0x58) = lVar19;
+LAB_fffffff0270b09c8:
+  *(undefined1 *)(lVar15 + 0x60) = 0;
+  uVar13 = *(ulong *)(lVar15 + 0x138);
+  if (((uint)DAT_fffffff027106040 >> 8 & 1) == 0) {
+    puVar12 = (undefined8 *)((uVar13 - DAT_fffffff0270921c8) + DAT_fffffff027090ff0);
+  }
+  else {
+    uVar14 = (ulong)DAT_fffffff0271019f8;
+    if (DAT_fffffff0271019f8 != 0) {
+      lVar9 = 0;
+      do {
+        puVar16 = &DAT_fffffff027101a00 + lVar9 * 3;
+        if ((((ulong)puVar16 ^ 0xfffffff027101a00) & 0xffc0000000000000) != 0) {
+          puVar16 = (ulong *)((ulong)puVar16 & 0xffffffffffff | 0xc8a2000000000000);
+        }
+        uVar17 = *puVar16;
+        if ((uVar17 <= uVar13) && (uVar13 < uVar17 + (ulong)(uint)puVar16[2] * 0x4000)) {
+          puVar12 = (undefined8 *)((uVar13 - uVar17) + puVar16[1]);
+          goto LAB_fffffff0270b0a40;
+        }
+        lVar9 = lVar9 + 1;
+        uVar14 = uVar14 - 1;
+      } while (uVar14 != 0);
+    }
+    puVar12 = (undefined8 *)FUN_fffffff0270dfaa8();
+  }
+LAB_fffffff0270b0a40:
+  lVar9 = 0;
+  *puVar12 = 0x4b1d000000000003;
+  *(undefined4 *)(puVar12 + 3) = 0xffff;
+  puVar12[200] = 0;
+  *(undefined1 *)(puVar12 + 199) = 1;
+  lVar19 = 0x41;
+  do {
+    puVar1 = puVar12 + lVar9 * 3 + 4;
+    *(undefined4 *)puVar1 = 0;
+    puVar1[1] = 0;
+    puVar1[2] = 0;
+    lVar20 = DAT_fffffff0270921b8;
+    lVar9 = lVar9 + 1;
+    lVar19 = lVar19 + -1;
+  } while (lVar19 != 0);
+  *(undefined1 *)(DAT_fffffff0270921b8 + 0x91) = 0;
+  *(undefined1 *)(puVar12 + 2) = 0;
+  *(undefined1 *)((long)puVar12 + 0x11) = 0;
+  *(undefined4 *)((long)puVar12 + 0x14) = 1;
+  *(undefined1 *)(puVar12 + 0xc9) = 0;
+  *(undefined8 **)(lVar20 + 0x148) = puVar12;
+  *(long *)(lVar20 + 0x1d0) = *(long *)(lVar20 + 0x1c0) * 0x10 + 0x48;
+  if (DAT_fffffff027100000 == local_70) {
+    return 0;
+  }
+                    /* WARNING: Subroutine does not return */
+  FUN_fffffff0270a6ac8();
+}
+
+ (GhidraScript)  

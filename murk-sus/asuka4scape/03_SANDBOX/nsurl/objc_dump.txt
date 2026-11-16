@@ -1,0 +1,3882 @@
+@protocol AVAssetDownloadLiveActivityDownload <NSObject>
+
+@required
+
+@property (T@"NSString",R,C,N) liveActivityDownloadIdentifier;
+@property (T@"NSString",R,C,N) liveActivityClientBundleIdentifier;
+@property (T@"NSString",R,C,N) liveActivityAssetTitle;
+@property (Tq,R,N) liveActivityBytesWritten;
+@property (Tq,R,N) liveActivityBytesExpectedToWrite;
+
+/* required instance methods */
+-[AVAssetDownloadLiveActivityDownload liveActivityRequestsCancellation];
+-[AVAssetDownloadLiveActivityDownload liveActivityDownloadIdentifier];
+-[AVAssetDownloadLiveActivityDownload liveActivityClientBundleIdentifier];
+-[AVAssetDownloadLiveActivityDownload liveActivityAssetTitle];
+-[AVAssetDownloadLiveActivityDownload liveActivityBytesWritten];
+-[AVAssetDownloadLiveActivityDownload liveActivityBytesExpectedToWrite];
+
+@optional
+
+@end
+
+@protocol AVAssetDownloadSessionDelegate
+
+@required
+
+@optional
+
+/* optional instance methods */
+-[AVAssetDownloadSessionDelegate assetDownloadSessionDidFinishDownload:];
+-[AVAssetDownloadSessionDelegate assetDownloadSession:didFailWithError:];
+-[AVAssetDownloadSessionDelegate assetDownloadSession:didFinishDownloadForMediaSelection:];
+-[AVAssetDownloadSessionDelegate assetDownloadSession:didResolveMediaSelection:];
+-[AVAssetDownloadSessionDelegate assetDownloadSession:didLoadTimeRange:totalTimeRangesLoaded:timeRangeExpectedToLoad:forMediaSelection:];
+-[AVAssetDownloadSessionDelegate assetDownloadSession:didUpdateProgressWithExpectedBytes:bytesDownloaded:];
+-[AVAssetDownloadSessionDelegate assetDownloadSession:willDownloadVariants:];
+-[AVAssetDownloadSessionDelegate assetDownloadSession:didReceiveMetricEvent:];
+
+@end
+
+@protocol BRContainerObserver <NSObject>
+
+@required
+
+/* required instance methods */
+-[BRContainerObserver containerDidEnterForeground:];
+-[BRContainerObserver containerDidEnterBackground:];
+
+@optional
+
+@end
+
+@protocol CBScalablePipeManagerDelegate <NSObject>
+
+@required
+
+/* required instance methods */
+-[CBScalablePipeManagerDelegate scalablePipeManagerDidUpdateState:];
+
+@optional
+
+/* optional instance methods */
+-[CBScalablePipeManagerDelegate scalablePipeManager:didRegisterEndpoint:error:];
+-[CBScalablePipeManagerDelegate scalablePipeManager:didUnregisterEndpoint:];
+-[CBScalablePipeManagerDelegate scalablePipeManager:pipeDidConnect:];
+-[CBScalablePipeManagerDelegate scalablePipeManager:pipeDidDisconnect:error:];
+
+@end
+
+@protocol FPProviderObserver <NSObject>
+
+@required
+
+/* required instance methods */
+-[FPProviderObserver providerDidEnterForeground:];
+-[FPProviderObserver providerDidEnterBackground:];
+
+@optional
+
+@end
+
+@protocol IDSServiceDelegate <NSObject>
+
+@required
+
+@optional
+
+/* optional instance methods */
+-[IDSServiceDelegate service:account:incomingOpportunisticData:withIdentifier:fromID:context:];
+-[IDSServiceDelegate service:didSendOpportunisticDataWithIdentifier:toIDs:];
+-[IDSServiceDelegate service:account:incomingMessage:fromID:context:];
+-[IDSServiceDelegate service:account:incomingData:fromID:context:];
+-[IDSServiceDelegate service:account:incomingUnhandledProtobuf:fromID:context:];
+-[IDSServiceDelegate service:account:incomingResourceAtURL:fromID:context:];
+-[IDSServiceDelegate service:account:incomingResourceAtURL:metadata:fromID:context:];
+-[IDSServiceDelegate service:account:pendingResourceWithMetadata:fromID:acknowledgementBlock:context:];
+-[IDSServiceDelegate service:account:incomingPendingMessageOfType:fromID:context:];
+-[IDSServiceDelegate service:activeAccountsChanged:];
+-[IDSServiceDelegate service:devicesChanged:];
+-[IDSServiceDelegate service:nearbyDevicesChanged:];
+-[IDSServiceDelegate service:connectedDevicesChanged:];
+-[IDSServiceDelegate service:linkedDevicesChanged:];
+-[IDSServiceDelegate service:account:identifier:didSendWithSuccess:error:];
+-[IDSServiceDelegate service:account:identifier:didSendWithSuccess:error:context:];
+-[IDSServiceDelegate service:account:identifier:sentBytes:totalBytes:];
+-[IDSServiceDelegate service:account:identifier:hasBeenDeliveredWithContext:];
+-[IDSServiceDelegate service:account:identifier:fromID:hasBeenDeliveredWithContext:];
+-[IDSServiceDelegate service:account:inviteReceivedForSession:fromID:];
+-[IDSServiceDelegate service:account:inviteReceivedForSession:fromID:withOptions:];
+-[IDSServiceDelegate service:account:inviteReceivedForSession:fromID:withContext:];
+-[IDSServiceDelegate service:account:inviteDroppedForSessionID:fromID:context:error:];
+-[IDSServiceDelegate service:account:didReceiveLocalNetworkHandshake:fromID:context:];
+-[IDSServiceDelegate service:account:receivedGroupSessionParticipantUpdate:];
+-[IDSServiceDelegate service:account:receivedGroupSessionParticipantUpdate:context:];
+-[IDSServiceDelegate service:account:receivedGroupSessionParticipantDataUpdate:];
+-[IDSServiceDelegate serviceSpaceDidBecomeAvailable:];
+-[IDSServiceDelegate serviceAllowedTrafficClassifiersDidReset:];
+-[IDSServiceDelegate service:didSwitchActivePairedDevice:acknowledgementBlock:];
+-[IDSServiceDelegate service:didCancelMessageWithSuccess:error:identifier:];
+
+@end
+
+@protocol LSApplicationWorkspaceObserverProtocol <NSObject>
+
+@required
+
+@optional
+
+/* optional instance methods */
+-[LSApplicationWorkspaceObserverProtocol applicationInstallsDidStart:];
+-[LSApplicationWorkspaceObserverProtocol applicationInstallsDidChange:];
+-[LSApplicationWorkspaceObserverProtocol applicationInstallsDidUpdateIcon:];
+-[LSApplicationWorkspaceObserverProtocol applicationsWillInstall:];
+-[LSApplicationWorkspaceObserverProtocol applicationsDidInstall:];
+-[LSApplicationWorkspaceObserverProtocol pluginsDidInstall:];
+-[LSApplicationWorkspaceObserverProtocol applicationsDidFailToInstall:];
+-[LSApplicationWorkspaceObserverProtocol applicationsWillUninstall:];
+-[LSApplicationWorkspaceObserverProtocol pluginsWillUninstall:];
+-[LSApplicationWorkspaceObserverProtocol applicationsDidUninstall:];
+-[LSApplicationWorkspaceObserverProtocol pluginsDidUninstall:];
+-[LSApplicationWorkspaceObserverProtocol applicationsDidFailToUninstall:];
+-[LSApplicationWorkspaceObserverProtocol applicationInstallsArePrioritized:arePaused:];
+-[LSApplicationWorkspaceObserverProtocol applicationInstallsDidPause:];
+-[LSApplicationWorkspaceObserverProtocol applicationInstallsDidResume:];
+-[LSApplicationWorkspaceObserverProtocol applicationInstallsDidCancel:];
+-[LSApplicationWorkspaceObserverProtocol applicationInstallsDidPrioritize:];
+-[LSApplicationWorkspaceObserverProtocol applicationStateDidChange:];
+-[LSApplicationWorkspaceObserverProtocol applicationIconDidChange:];
+-[LSApplicationWorkspaceObserverProtocol networkUsageChanged:];
+-[LSApplicationWorkspaceObserverProtocol observeLaunchProhibitedApps];
+-[LSApplicationWorkspaceObserverProtocol deviceManagementPolicyDidChange:];
+-[LSApplicationWorkspaceObserverProtocol applicationsDidChangePersonas:];
+-[LSApplicationWorkspaceObserverProtocol databaseWasRebuilt];
+-[LSApplicationWorkspaceObserverProtocol helperPlaceholdersInstalled:];
+-[LSApplicationWorkspaceObserverProtocol helperPlaceholdersUninstalled:];
+-[LSApplicationWorkspaceObserverProtocol applicationsDidUpdateMetadata:];
+
+@end
+
+@protocol NDAVAssetDownloadSessionWrapperDelegate <NSObject>
+
+@required
+
+/* required instance methods */
+-[NDAVAssetDownloadSessionWrapperDelegate NDAVAssetDownloadSessionWrapper:didCompleteWithError:];
+-[NDAVAssetDownloadSessionWrapperDelegate NDAVAssetDownloadSessionWrapper:didUpdateProgressWithLastBytesWritten:totalBytesWritten:totalBytesExpectedToWrite:];
+-[NDAVAssetDownloadSessionWrapperDelegate NDAVAssetDownloadSessionWrapper:didLoadTimeRange:totalTimeRangesLoaded:timeRangeExpectedToLoad:forMediaSelectionPropertyList:];
+-[NDAVAssetDownloadSessionWrapperDelegate NDAVAssetDownloadSessionWrapper:didResolveMediaSelectionPropertyList:];
+-[NDAVAssetDownloadSessionWrapperDelegate NDAVAssetDownloadSessionWrapper:didFinishDownloadForMediaSelectionPropertyList:];
+-[NDAVAssetDownloadSessionWrapperDelegate NDAVAssetDownloadSessionWrapper:willDownloadVariants:];
+-[NDAVAssetDownloadSessionWrapperDelegate NDAVAssetDownloadSessionWrapper:didReceiveMetricEvent:];
+
+@optional
+
+@end
+
+@protocol NDApplicationObserver <NSObject>
+
+@required
+
+@optional
+
+/* optional instance methods */
+-[NDApplicationObserver applicationWasQuitFromAppSwitcher:];
+-[NDApplicationObserver backgroundUpdatesDisabledForApplication:];
+-[NDApplicationObserver backgroundUpdatesEnabledForApplication:];
+-[NDApplicationObserver applicationWasSuspended:pid:];
+-[NDApplicationObserver applicationEnteredForeground:];
+-[NDApplicationObserver applicationNoLongerInForeground:];
+-[NDApplicationObserver applicationEndedNonDiscretionaryBackgroundGracePeriod:];
+-[NDApplicationObserver applicationEndedExtendedNonDiscretionaryBackgroundGracePeriod:];
+-[NDApplicationObserver applicationEndedTransitionalDiscretionaryBackgroundPeriod:];
+
+@end
+
+@protocol NDBackgroundSessionDelegate <NSObject>
+
+@required
+
+/* required instance methods */
+-[NDBackgroundSessionDelegate sessionCompleted:withCompletionHandler:];
+
+@optional
+
+@end
+
+@protocol NDBackgroundSessionInterface <NSObject>
+
+@required
+
+@property (T@"NSUUID",R) uuid;
+@property (T@"NSString",R) identifier;
+@property (T@"NSString",R) clientBundleID;
+@property (T@"<NDBackgroundSessionProtocol>",R) xpcProtocol;
+
+/* required instance methods */
+-[NDBackgroundSessionInterface initWithConfiguration:bundleID:isSpringBoardApp:downloadDirectory:options:clientProxy:delegate:workQueue:db:];
+-[NDBackgroundSessionInterface updateOptions:];
+-[NDBackgroundSessionInterface restoreTasks:];
+-[NDBackgroundSessionInterface clientDidDisconnect];
+-[NDBackgroundSessionInterface reconnectClient:withCompletion:];
+-[NDBackgroundSessionInterface allowReconnect];
+-[NDBackgroundSessionInterface getTasksForReconnection];
+-[NDBackgroundSessionInterface getTLSSessionCachePrefix];
+-[NDBackgroundSessionInterface setXPCConnection:];
+-[NDBackgroundSessionInterface hasConnectedClient];
+-[NDBackgroundSessionInterface requeueTask:];
+-[NDBackgroundSessionInterface clientApplicationWasReinstalled];
+-[NDBackgroundSessionInterface obliterate];
+-[NDBackgroundSessionInterface archiveTimerFired];
+-[NDBackgroundSessionInterface triggerPowerlogPeriodicUpdate];
+-[NDBackgroundSessionInterface uuid];
+-[NDBackgroundSessionInterface identifier];
+-[NDBackgroundSessionInterface clientBundleID];
+-[NDBackgroundSessionInterface xpcProtocol];
+
+@optional
+
+@end
+
+@protocol NDBackgroundSessionManagerProtocol <NSObject>
+
+@required
+
+/* required instance methods */
+-[NDBackgroundSessionManagerProtocol boost];
+-[NDBackgroundSessionManagerProtocol dropBoost];
+-[NDBackgroundSessionManagerProtocol createSessionWithConfiguration:clientProxy:cachesDirectory:options:reply:];
+-[NDBackgroundSessionManagerProtocol sendPendingCallbacksForIdentifier:reply:];
+-[NDBackgroundSessionManagerProtocol releaseAssertionForSession:reply:];
+-[NDBackgroundSessionManagerProtocol okayToSendPendingCallbacksForIdentifier:reply:];
+-[NDBackgroundSessionManagerProtocol getActiveSessionIdentifiersWithReply:];
+-[NDBackgroundSessionManagerProtocol obliterateAllSessionsWithReply:];
+
+@optional
+
+@end
+
+@protocol NDBackgroundSessionProtocol <NSObject>
+
+@required
+
+/* required instance methods */
+-[NDBackgroundSessionProtocol pingForXPCObjectValidityWithReply:];
+-[NDBackgroundSessionProtocol downloadTaskWithRequest:originalRequest:downloadFilePath:identifier:uniqueIdentifier:reply:];
+-[NDBackgroundSessionProtocol uploadTaskWithRequest:originalRequest:fromFile:sandboxExtensionData:identifier:uniqueIdentifier:potentialCredentials:reply:];
+-[NDBackgroundSessionProtocol dataTaskWithRequest:originalRequest:identifier:uniqueIdentifier:reply:];
+-[NDBackgroundSessionProtocol downloadTaskWithResumeData:extractor:identifier:uniqueIdentifier:reply:];
+-[NDBackgroundSessionProtocol uploadTaskWithResumableUploadState:request:originalRequest:fromFile:sandboxExtensionData:identifier:uniqueIdentifier:potentialCredentials:reply:];
+-[NDBackgroundSessionProtocol cancelTaskWithIdentifier:];
+-[NDBackgroundSessionProtocol cancelTaskWithIdentifier:byProducingResumeData:];
+-[NDBackgroundSessionProtocol suspendTaskWithIdentifier:];
+-[NDBackgroundSessionProtocol resumeTaskWithIdentifier:withProperties:];
+-[NDBackgroundSessionProtocol setDescription:forTask:];
+-[NDBackgroundSessionProtocol setPriority:forTaskWithIdentifier:];
+-[NDBackgroundSessionProtocol setLoadingPoolPriority:forTaskWithIdentifier:];
+-[NDBackgroundSessionProtocol setBytesPerSecondLimit:forTaskWithIdentifier:];
+-[NDBackgroundSessionProtocol setExpectedProgressTarget:forTaskWithIdentifier:];
+-[NDBackgroundSessionProtocol setTLSMinimumSupportedProtocolVersion:forTaskWithIdentifier:];
+-[NDBackgroundSessionProtocol setTLSMaximumSupportedProtocolVersion:forTaskWithIdentifier:];
+-[NDBackgroundSessionProtocol setDiscretionaryOverride:forTaskWithIdentifier:];
+-[NDBackgroundSessionProtocol setTLSSessionCachePrefix:];
+-[NDBackgroundSessionProtocol resetStorageWithReply:];
+-[NDBackgroundSessionProtocol invalidateWithReply:];
+-[NDBackgroundSessionProtocol setPropertyOnStreamWithIdentifier:propDict:propKey:withReply:];
+-[NDBackgroundSessionProtocol applyOverrides:forTaskWithIdentifier:];
+-[NDBackgroundSessionProtocol avAssetDownloadTaskWithDownloadToken:URL:destinationURL:temporaryDestinationURL:assetTitle:assetArtworkData:options:assetOptions:identifier:uniqueIdentifier:taskKind:enableSPIDelegateCallbacks:reply:];
+-[NDBackgroundSessionProtocol avAggregateAssetDownloadTaskWithDownloadToken:serializedMediaSelections:assetTitle:assetArtworkData:options:assetOptions:childDownloadSessionIdentifier:identifier:uniqueIdentifier:reply:];
+
+@optional
+
+@end
+
+@protocol NDCallbackQueueDelegate <NSObject>
+
+@required
+
+/* required instance methods */
+-[NDCallbackQueueDelegate wakeUpClient:];
+-[NDCallbackQueueDelegate errorOccurredDuringFinishedCallbackDelivery:];
+-[NDCallbackQueueDelegate errorOccurredDuringAuthCallbackDelivery:completionHandler:];
+-[NDCallbackQueueDelegate clientAcknowledgedTerminalCallbackForTask:];
+-[NDCallbackQueueDelegate getClientProxy];
+-[NDCallbackQueueDelegate descriptionForTaskWithIdentifier:];
+
+@optional
+
+@end
+
+@protocol NDChronoKitExtensionObserver <NSObject>
+
+@required
+
+/* required instance methods */
+-[NDChronoKitExtensionObserver extensionWasRemovedFromScreen:];
+
+@optional
+
+@end
+
+@protocol NDCredentialStorageDelegate <NSObject>
+
+@required
+
+/* required instance methods */
+-[NDCredentialStorageDelegate getClientProxy];
+
+@optional
+
+@end
+
+@protocol NDSessionManagerDelegate <NSObject>
+
+@required
+
+/* required instance methods */
+-[NDSessionManagerDelegate managerBecameEmpty:bundleID:withCompletionHandler:];
+
+@optional
+
+@end
+
+@protocol NDSpringBoardAppObserver <NSObject>
+
+@required
+
+/* required instance methods */
+-[NDSpringBoardAppObserver applicationWasQuitFromAppSwitcher:];
+-[NDSpringBoardAppObserver applicationBackgroundUpdatesTurnedOff:];
+-[NDSpringBoardAppObserver applicationBackgroundUpdatesTurnedOn:];
+-[NDSpringBoardAppObserver applicationWasSuspended:pid:];
+-[NDSpringBoardAppObserver applicationEnteredForeground:];
+-[NDSpringBoardAppObserver applicationNoLongerInForeground:];
+
+@optional
+
+@end
+
+@protocol NDStatusMonitorClient <NSObject>
+
+@required
+
+/* required instance methods */
+-[NDStatusMonitorClient statusMonitor:callbackForIdentifier:networkChanged:];
+
+@optional
+
+@end
+
+@protocol NDTaskMonitorDelegate <NSObject>
+
+@required
+
+/* required instance methods */
+-[NDTaskMonitorDelegate taskMonitor:updateTaskPriority:reason:];
+-[NDTaskMonitorDelegate taskMonitor:retryTask:reason:];
+-[NDTaskMonitorDelegate taskMonitor:terminateTask:reason:];
+
+@optional
+
+@end
+
+@protocol NSCoding
+
+@required
+
+/* required instance methods */
+-[NSCoding encodeWithCoder:];
+-[NSCoding initWithCoder:];
+
+@optional
+
+@end
+
+@protocol NSCopying
+
+@required
+
+/* required instance methods */
+-[NSCopying copyWithZone:];
+
+@optional
+
+@end
+
+@protocol NSObject
+
+@required
+
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* required instance methods */
+-[NSObject isEqual:];
+-[NSObject class];
+-[NSObject self];
+-[NSObject performSelector:];
+-[NSObject performSelector:withObject:];
+-[NSObject performSelector:withObject:withObject:];
+-[NSObject isProxy];
+-[NSObject isKindOfClass:];
+-[NSObject isMemberOfClass:];
+-[NSObject conformsToProtocol:];
+-[NSObject respondsToSelector:];
+-[NSObject retain];
+-[NSObject release];
+-[NSObject autorelease];
+-[NSObject retainCount];
+-[NSObject zone];
+-[NSObject hash];
+-[NSObject superclass];
+-[NSObject description];
+
+@optional
+
+/* optional instance methods */
+-[NSObject debugDescription];
+
+@end
+
+@protocol NSSecureCoding <NSCoding>
+
+@required
+
+@property (class, TB,R) supportsSecureCoding;
+
+/* class methods */
++[NSSecureCoding supportsSecureCoding];
+
+@optional
+
+@end
+
+@protocol NSURLSessionDataDelegate <NSURLSessionTaskDelegate>
+
+@required
+
+@optional
+
+/* optional instance methods */
+-[NSURLSessionDataDelegate URLSession:dataTask:didReceiveResponse:completionHandler:];
+-[NSURLSessionDataDelegate URLSession:dataTask:didBecomeDownloadTask:];
+-[NSURLSessionDataDelegate URLSession:dataTask:didBecomeStreamTask:];
+-[NSURLSessionDataDelegate URLSession:dataTask:didReceiveData:];
+-[NSURLSessionDataDelegate URLSession:dataTask:willCacheResponse:completionHandler:];
+
+@end
+
+@protocol NSURLSessionDataDelegatePrivate <NSURLSessionDataDelegate>
+
+@required
+
+@optional
+
+/* optional instance methods */
+-[NSURLSessionDataDelegatePrivate URLSession:dataTask:_didReceiveData:completionHandler:];
+-[NSURLSessionDataDelegatePrivate URLSession:_willRetryBackgroundDataTask:withError:];
+-[NSURLSessionDataDelegatePrivate URLSession:_willRetryBackgroundDataTask:];
+
+@end
+
+@protocol NSURLSessionDelegate <NSObject>
+
+@required
+
+@optional
+
+/* optional instance methods */
+-[NSURLSessionDelegate URLSession:didBecomeInvalidWithError:];
+-[NSURLSessionDelegate URLSession:didReceiveChallenge:completionHandler:];
+-[NSURLSessionDelegate URLSessionDidFinishEventsForBackgroundURLSession:];
+
+@end
+
+@protocol NSURLSessionDelegate_Internal <NSURLSessionDelegate>
+
+@required
+
+@optional
+
+/* optional instance methods */
+-[NSURLSessionDelegate_Internal _URLSession:task:getAuthHeadersForResponse:completionHandler:];
+-[NSURLSessionDelegate_Internal _URLSession:openFileAtPath:mode:completionHandler:];
+
+@end
+
+@protocol NSURLSessionDownloadDelegate <NSURLSessionTaskDelegate>
+
+@required
+
+/* required instance methods */
+-[NSURLSessionDownloadDelegate URLSession:downloadTask:didFinishDownloadingToURL:];
+
+@optional
+
+/* optional instance methods */
+-[NSURLSessionDownloadDelegate URLSession:downloadTask:didWriteData:totalBytesWritten:totalBytesExpectedToWrite:];
+-[NSURLSessionDownloadDelegate URLSession:downloadTask:didResumeAtOffset:expectedTotalBytes:];
+
+@end
+
+@protocol NSURLSessionDownloadDelegate_Private <NSURLSessionDownloadDelegate>
+
+@required
+
+/* required instance methods */
+-[NSURLSessionDownloadDelegate_Private _URLSession:downloadTask:didReceiveResponse:];
+-[NSURLSessionDownloadDelegate_Private _URLSession:downloadTaskNeedsDownloadDirectory:];
+
+@optional
+
+@end
+
+@protocol NSURLSessionStreamDelegate <NSURLSessionTaskDelegate>
+
+@required
+
+@optional
+
+/* optional instance methods */
+-[NSURLSessionStreamDelegate URLSession:readClosedForStreamTask:];
+-[NSURLSessionStreamDelegate URLSession:writeClosedForStreamTask:];
+-[NSURLSessionStreamDelegate URLSession:betterRouteDiscoveredForStreamTask:];
+-[NSURLSessionStreamDelegate URLSession:streamTask:didBecomeInputStream:outputStream:];
+
+@end
+
+@protocol NSURLSessionStreamDelegate_Internal <NSURLSessionStreamDelegate>
+
+@required
+
+@optional
+
+/* optional instance methods */
+-[NSURLSessionStreamDelegate_Internal _URLSession:connectionEstablishedForStreamTask:];
+
+@end
+
+@protocol NSURLSessionTaskDelegate <NSURLSessionDelegate>
+
+@required
+
+@optional
+
+/* optional instance methods */
+-[NSURLSessionTaskDelegate URLSession:didCreateTask:];
+-[NSURLSessionTaskDelegate URLSession:task:willBeginDelayedRequest:completionHandler:];
+-[NSURLSessionTaskDelegate URLSession:taskIsWaitingForConnectivity:];
+-[NSURLSessionTaskDelegate URLSession:task:willPerformHTTPRedirection:newRequest:completionHandler:];
+-[NSURLSessionTaskDelegate URLSession:task:didReceiveChallenge:completionHandler:];
+-[NSURLSessionTaskDelegate URLSession:task:needNewBodyStream:];
+-[NSURLSessionTaskDelegate URLSession:task:needNewBodyStreamFromOffset:completionHandler:];
+-[NSURLSessionTaskDelegate URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:];
+-[NSURLSessionTaskDelegate URLSession:task:didReceiveInformationalResponse:];
+-[NSURLSessionTaskDelegate URLSession:task:didFinishCollectingMetrics:];
+-[NSURLSessionTaskDelegate URLSession:task:didCompleteWithError:];
+
+@end
+
+@protocol NSURLSessionTaskDelegatePrivate <NSURLSessionTaskDelegate>
+
+@required
+
+@optional
+
+/* optional instance methods */
+-[NSURLSessionTaskDelegatePrivate URLSession:task:_schemeUpgraded:completionHandler:];
+-[NSURLSessionTaskDelegatePrivate URLSession:task:_willSendRequestForEstablishedConnection:completionHandler:];
+-[NSURLSessionTaskDelegatePrivate URLSession:task:_isWaitingForConnectionWithError:];
+-[NSURLSessionTaskDelegatePrivate URLSession:task:_isWaitingForConnectionWithReason:];
+-[NSURLSessionTaskDelegatePrivate URLSession:_taskIsWaitingForConnection:];
+-[NSURLSessionTaskDelegatePrivate URLSession:task:_conditionalRequirementsChanged:];
+-[NSURLSessionTaskDelegatePrivate URLSession:task:_didReceiveInformationalResponse:];
+-[NSURLSessionTaskDelegatePrivate URLSession:task:_alternatePathAvailable:];
+
+@end
+
+@protocol NSXPCListenerDelegate <NSObject>
+
+@required
+
+@optional
+
+/* optional instance methods */
+-[NSXPCListenerDelegate listener:shouldAcceptNewConnection:];
+
+@end
+
+@protocol PDURLSessionProxyServerDelegate
+
+@required
+
+/* required instance methods */
+-[PDURLSessionProxyServerDelegate proxyServerBecameInvalid:];
+
+@optional
+
+@end
+
+@protocol STExtractor <NSObject, NSSecureCoding>
+
+@required
+
+@property (T@"<STExtractorDelegate>",W,N) extractorDelegate;
+@property (TB,?,R,N) doesConsumeExtractedData;
+
+/* required instance methods */
+-[STExtractor prepareForExtractionToPath:completionBlock:];
+-[STExtractor supplyBytes:withCompletionBlock:];
+-[STExtractor suspendStreamWithCompletionBlock:];
+-[STExtractor finishStreamWithCompletionBlock:];
+-[STExtractor terminateStreamWithError:completionBlock:];
+-[STExtractor extractorDelegate];
+-[STExtractor setExtractorDelegate:];
+
+@optional
+
+/* optional instance methods */
+-[STExtractor doesConsumeExtractedData];
+
+@end
+
+@protocol UMUserSwitchStakeholder <NSObject>
+
+@required
+
+/* required instance methods */
+-[UMUserSwitchStakeholder willSwitchUser];
+
+@optional
+
+@end
+
+@protocol UMUserSyncStakeholder <UMUserSwitchStakeholder>
+
+@required
+
+/* required instance methods */
+-[UMUserSyncStakeholder uploadContent];
+
+@optional
+
+@end
+
+@interface Daemon : NSObject <LSApplicationWorkspaceObserverProtocol, NSXPCListenerDelegate, NDSessionManagerDelegate> {
+    /* instance variables */
+    @"NSMutableDictionary" _clients;
+    @"NSObject<OS_dispatch_queue>" _transactionQueue;
+    B _createdDataVault;
+    @"NSObject<OS_dispatch_source>" _archiveTimer;
+    @"NDTaskStorageDB" _sessionTasksDB;
+    B _privileged;
+    B _inSyncBubble;
+    @"NSObject<OS_dispatch_queue>" _queue;
+    @"NDUserSyncStakeholder" _stakeholder;
+}
+
+@property (T@"NSObject<OS_dispatch_queue>",R,V_queue) queue;
+@property (TB,GisPrivileged,V_privileged) privileged;
+@property (TB,GisInSyncBubble,V_inSyncBubble) inSyncBubble;
+@property (T@"NDUserSyncStakeholder",&,V_stakeholder) stakeholder;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* class methods */
++[Daemon sharedDaemon];
+
+/* instance methods */
+-[Daemon createDaemonDirectory];
+-[Daemon init];
+-[Daemon applicationIsInstalled:];
+-[Daemon setupNewClassMappingsForUnarchiver];
+-[Daemon restoreState];
+-[Daemon setupArchiveTimer];
+-[Daemon updateWorkState];
+-[Daemon listener:shouldAcceptNewConnection:];
+-[Daemon getSessionWithIdentifier:forBundleID:];
+-[Daemon managerBecameEmpty:bundleID:withCompletionHandler:];
+-[Daemon addTransaction];
+-[Daemon releaseTransaction];
+-[Daemon bundleIDsForAppProxies:];
+-[Daemon applicationsDidInstall:];
+-[Daemon applicationsDidUninstall:];
+-[Daemon waitUntilDeviceIsUnlocked];
+-[Daemon start];
+-[Daemon queue];
+-[Daemon isPrivileged];
+-[Daemon setPrivileged:];
+-[Daemon isInSyncBubble];
+-[Daemon setInSyncBubble:];
+-[Daemon stakeholder];
+-[Daemon setStakeholder:];
+
+@end
+
+@interface NDAVAssetDownloadSessionWrapper : NSObject <AVAssetDownloadSessionDelegate> {
+    /* instance variables */
+    @"AVURLAsset" _asset;
+    @"NSObject<OS_dispatch_source>" _powerAssertionTimer;
+    I _powerAssertion;
+    @"NSObject<OS_dispatch_queue>" _callbackQueue;
+    B _progressTimerRunning;
+    @"AVAssetDownloadSession" _downloadSession;
+    @"<NDAVAssetDownloadSessionWrapperDelegate>" _delegate;
+    @"NSObject<OS_dispatch_queue>" _delegateQueue;
+    @"NSURL" _URL;
+    @"NSURL" _destinationURL;
+    @"NSDictionary" _options;
+    Q _downloadToken;
+    Q _countOfBytesWritten;
+    Q _countOfBytesExpectedToWrite;
+    Q _taskIdentifier;
+}
+
+@property (TQ,V_countOfBytesWritten) countOfBytesWritten;
+@property (TQ,V_countOfBytesExpectedToWrite) countOfBytesExpectedToWrite;
+@property (TB,V_progressTimerRunning) progressTimerRunning;
+@property (T@"AVAssetDownloadSession",&,V_downloadSession) downloadSession;
+@property (T@"<NDAVAssetDownloadSessionWrapperDelegate>",R,W,V_delegate) delegate;
+@property (T@"NSObject<OS_dispatch_queue>",R,&,V_delegateQueue) delegateQueue;
+@property (T@"NSURL",R,C,V_URL) URL;
+@property (T@"NSURL",R,C,V_destinationURL) destinationURL;
+@property (T@"NSDictionary",R,&,V_options) options;
+@property (TQ,R,V_downloadToken) downloadToken;
+@property (TQ,V_taskIdentifier) taskIdentifier;
+
+/* instance methods */
+-[NDAVAssetDownloadSessionWrapper doesAVAssetDownloadSessionSupportMultipleDownloads];
+-[NDAVAssetDownloadSessionWrapper initWithURL:destinationURL:options:delegate:queue:];
+-[NDAVAssetDownloadSessionWrapper initWithURLAsset:destinationURL:options:delegate:queue:];
+-[NDAVAssetDownloadSessionWrapper disavowSession];
+-[NDAVAssetDownloadSessionWrapper takePowerAssertion];
+-[NDAVAssetDownloadSessionWrapper releasePowerAssertion];
+-[NDAVAssetDownloadSessionWrapper resume];
+-[NDAVAssetDownloadSessionWrapper suspend];
+-[NDAVAssetDownloadSessionWrapper cancel];
+-[NDAVAssetDownloadSessionWrapper cancelAndDeliverError:];
+-[NDAVAssetDownloadSessionWrapper startLoadingMetadata];
+-[NDAVAssetDownloadSessionWrapper assetDownloadSessionDidFinishDownload:];
+-[NDAVAssetDownloadSessionWrapper assetDownloadSession:didFailWithError:];
+-[NDAVAssetDownloadSessionWrapper assetDownloadSession:didLoadTimeRange:totalTimeRangesLoaded:timeRangeExpectedToLoad:forMediaSelection:];
+-[NDAVAssetDownloadSessionWrapper assetDownloadSession:didFinishDownloadForMediaSelection:];
+-[NDAVAssetDownloadSessionWrapper assetDownloadSession:didResolveMediaSelection:];
+-[NDAVAssetDownloadSessionWrapper assetDownloadSession:didUpdateProgressWithExpectedBytes:bytesDownloaded:];
+-[NDAVAssetDownloadSessionWrapper assetDownloadSession:willDownloadVariants:];
+-[NDAVAssetDownloadSessionWrapper assetDownloadSession:didReceiveMetricEvent:];
+-[NDAVAssetDownloadSessionWrapper downloadSession];
+-[NDAVAssetDownloadSessionWrapper setDownloadSession:];
+-[NDAVAssetDownloadSessionWrapper delegate];
+-[NDAVAssetDownloadSessionWrapper delegateQueue];
+-[NDAVAssetDownloadSessionWrapper URL];
+-[NDAVAssetDownloadSessionWrapper destinationURL];
+-[NDAVAssetDownloadSessionWrapper options];
+-[NDAVAssetDownloadSessionWrapper downloadToken];
+-[NDAVAssetDownloadSessionWrapper countOfBytesWritten];
+-[NDAVAssetDownloadSessionWrapper setCountOfBytesWritten:];
+-[NDAVAssetDownloadSessionWrapper countOfBytesExpectedToWrite];
+-[NDAVAssetDownloadSessionWrapper setCountOfBytesExpectedToWrite:];
+-[NDAVAssetDownloadSessionWrapper taskIdentifier];
+-[NDAVAssetDownloadSessionWrapper setTaskIdentifier:];
+-[NDAVAssetDownloadSessionWrapper progressTimerRunning];
+-[NDAVAssetDownloadSessionWrapper setProgressTimerRunning:];
+
+@end
+
+@interface NDAVBackgroundSession : NDBackgroundSession <NDStatusMonitorClient, NDBackgroundSessionProtocol, NDAVAssetDownloadSessionWrapperDelegate> {
+    /* instance variables */
+    @"NSMutableDictionary" _identifiersToAVWrappers;
+    @"NSMutableDictionary" _identifiersToThroughputMonitors;
+    @"NSMutableDictionary" _identifiersToTCPConnections;
+    @"NSMutableDictionary" _identifiersToDASActivities;
+    @"NSMapTable" _assetDownloadTokensToAssets;
+    @"NSURLSessionConfiguration" _clientConfig;
+    @"NSObject<OS_dispatch_source>" _delayedWakeTimer;
+    @"NSMutableArray" _pendingTasksToResume;
+    @"NSMutableDictionary" _identifiersToLiveActivityDownloads;
+}
+
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* instance methods */
+-[NDAVBackgroundSession initWithConfiguration:bundleID:isSpringBoardApp:downloadDirectory:options:clientProxy:delegate:workQueue:db:];
+-[NDAVBackgroundSession setupDelayedCompletionWakeTimer];
+-[NDAVBackgroundSession cancelDelayedCompletionWakeTimer];
+-[NDAVBackgroundSession setupThroughputMonitorForWrapper:taskInfo:identifier:];
+-[NDAVBackgroundSession cancelThroughputMonitorForWrapper:];
+-[NDAVBackgroundSession restoreTasksFromSqliteDB:];
+-[NDAVBackgroundSession restoreTasksFromArchivedInfo:];
+-[NDAVBackgroundSession fillInByteCountsForTaskInfo:withTaskID:];
+-[NDAVBackgroundSession updatePriorityForTaskID:];
+-[NDAVBackgroundSession queryAndCopyContainer];
+-[NDAVBackgroundSession avAssetDownloadsDirectory];
+-[NDAVBackgroundSession downloadDirectoryToUse:];
+-[NDAVBackgroundSession destinationURLToUseForTask:];
+-[NDAVBackgroundSession applicationNoLongerInForeground:];
+-[NDAVBackgroundSession applicationEnteredForeground:];
+-[NDAVBackgroundSession applicationWasQuitFromAppSwitcher:];
+-[NDAVBackgroundSession backgroundUpdatesDisabledForApplication:];
+-[NDAVBackgroundSession applicationEndedTransitionalDiscretionaryBackgroundPeriod:];
+-[NDAVBackgroundSession clientDidDisconnect];
+-[NDAVBackgroundSession downloadTaskWithRequest:originalRequest:identifier:uniqueIdentifier:reply:];
+-[NDAVBackgroundSession uploadTaskWithRequest:originalRequest:fromFile:identifier:uniqueIdentifier:reply:];
+-[NDAVBackgroundSession dataTaskWithRequest:originalRequest:pipeHandle:identifier:uniqueIdentifier:reply:];
+-[NDAVBackgroundSession hasEntitlementToSpecifyDownloadDestinationURL];
+-[NDAVBackgroundSession avAssetForURL:downloadToken:];
+-[NDAVBackgroundSession doesAVAssetDownloadSessionSupportMultipleDownloads];
+-[NDAVBackgroundSession avAssetDownloadTaskWithDownloadToken:URL:destinationURL:temporaryDestinationURL:assetTitle:assetArtworkData:options:assetOptions:identifier:uniqueIdentifier:taskKind:enableSPIDelegateCallbacks:reply:];
+-[NDAVBackgroundSession avAggregateAssetDownloadTaskWithDownloadToken:serializedMediaSelections:assetTitle:assetArtworkData:options:assetOptions:childDownloadSessionIdentifier:identifier:uniqueIdentifier:reply:];
+-[NDAVBackgroundSession cancelTaskWithIdentifier:];
+-[NDAVBackgroundSession cancelTaskWithIdentifier:byProducingResumeData:];
+-[NDAVBackgroundSession setPriority:forTaskWithIdentifier:];
+-[NDAVBackgroundSession setLoadingPoolPriority:forTaskWithIdentifier:];
+-[NDAVBackgroundSession cancelAVDownloadAndFailTaskWithIdentifier:withError:];
+-[NDAVBackgroundSession setPriority:forTCPConnectionWithTaskIdentifier:];
+-[NDAVBackgroundSession statusMonitor:callbackForIdentifier:networkChanged:];
+-[NDAVBackgroundSession retryTask:originalError:];
+-[NDAVBackgroundSession taskShouldSuspend:];
+-[NDAVBackgroundSession resumeNextPendingTaskIfNeeded];
+-[NDAVBackgroundSession taskShouldResume:];
+-[NDAVBackgroundSession adjustedTCPConnectionPriorityForTaskPriority:];
+-[NDAVBackgroundSession newAVAssetDownloadSessionWrapperForTaskInfo:];
+-[NDAVBackgroundSession ensureAVAssetDownloadSessionWrapperForTaskIdentifier:];
+-[NDAVBackgroundSession startAVAssetDownloadSessionWithTaskIdentifier:];
+-[NDAVBackgroundSession stopAVAssetDownloadSessionWithTaskIdentifier:];
+-[NDAVBackgroundSession resetStorageWithReply:];
+-[NDAVBackgroundSession clientAcknowledgedTerminalCallbackForTask:];
+-[NDAVBackgroundSession cancelTCPConnectionForTask:withError:];
+-[NDAVBackgroundSession URLSession:downloadTask:didFinishDownloadingToURL:];
+-[NDAVBackgroundSession taskWithIdentifier:didCompleteWithError:];
+-[NDAVBackgroundSession isLiveActivityEligibleTaskInfo:];
+-[NDAVBackgroundSession liveActivityDownloadForTaskIdentifier:];
+-[NDAVBackgroundSession updateLiveActivityForResumedTaskWithIdentifier:];
+-[NDAVBackgroundSession updateLiveActivityForRetryingTaskWithIdentifier:];
+-[NDAVBackgroundSession liveActivityTerminalStatusForClientError:];
+-[NDAVBackgroundSession unregisterLiveActivityForTaskWithIdentifier:terminalStatus:error:];
+-[NDAVBackgroundSession liveActivityRequestsCancellationOfTaskWithIdentifier:];
+-[NDAVBackgroundSession dealloc];
+-[NDAVBackgroundSession NDAVAssetDownloadSessionWrapper:didUpdateProgressWithLastBytesWritten:totalBytesWritten:totalBytesExpectedToWrite:];
+-[NDAVBackgroundSession NDAVAssetDownloadSessionWrapper:willDownloadVariants:];
+-[NDAVBackgroundSession NDAVAssetDownloadSessionWrapper:didReceiveMetricEvent:];
+-[NDAVBackgroundSession NDAVAssetDownloadSessionWrapper:didLoadTimeRange:totalTimeRangesLoaded:timeRangeExpectedToLoad:forMediaSelectionPropertyList:];
+-[NDAVBackgroundSession NDAVAssetDownloadSessionWrapper:didFinishDownloadForMediaSelectionPropertyList:];
+-[NDAVBackgroundSession NDAVAssetDownloadSessionWrapper:didResolveMediaSelectionPropertyList:];
+-[NDAVBackgroundSession NDAVAssetDownloadSessionWrapper:didCompleteWithError:];
+
+@end
+
+@interface NDAVLiveActivityDownload : NSObject <AVAssetDownloadLiveActivityDownload> {
+    /* instance variables */
+    @"NSString" _liveActivityDownloadIdentifier;
+    @"NSString" _liveActivityClientBundleIdentifier;
+    @"NSString" _liveActivityAssetTitle;
+    q _liveActivityBytesWritten;
+    q _liveActivityBytesExpectedToWrite;
+    Q _taskIdentifier;
+    @"NDAVBackgroundSession" _session;
+}
+
+@property (T@"NSString",C,N,V_liveActivityDownloadIdentifier) liveActivityDownloadIdentifier;
+@property (T@"NSString",C,N,V_liveActivityClientBundleIdentifier) liveActivityClientBundleIdentifier;
+@property (T@"NSString",C,N,V_liveActivityAssetTitle) liveActivityAssetTitle;
+@property (Tq,N,V_liveActivityBytesWritten) liveActivityBytesWritten;
+@property (Tq,N,V_liveActivityBytesExpectedToWrite) liveActivityBytesExpectedToWrite;
+@property (TQ,N,V_taskIdentifier) taskIdentifier;
+@property (T@"NDAVBackgroundSession",W,N,V_session) session;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* instance methods */
+-[NDAVLiveActivityDownload liveActivityRequestsCancellation];
+-[NDAVLiveActivityDownload liveActivityDownloadIdentifier];
+-[NDAVLiveActivityDownload setLiveActivityDownloadIdentifier:];
+-[NDAVLiveActivityDownload liveActivityClientBundleIdentifier];
+-[NDAVLiveActivityDownload setLiveActivityClientBundleIdentifier:];
+-[NDAVLiveActivityDownload liveActivityAssetTitle];
+-[NDAVLiveActivityDownload setLiveActivityAssetTitle:];
+-[NDAVLiveActivityDownload liveActivityBytesWritten];
+-[NDAVLiveActivityDownload setLiveActivityBytesWritten:];
+-[NDAVLiveActivityDownload liveActivityBytesExpectedToWrite];
+-[NDAVLiveActivityDownload setLiveActivityBytesExpectedToWrite:];
+-[NDAVLiveActivityDownload taskIdentifier];
+-[NDAVLiveActivityDownload setTaskIdentifier:];
+-[NDAVLiveActivityDownload session];
+-[NDAVLiveActivityDownload setSession:];
+
+@end
+
+@interface NDAVThroughputMonitor : NSObject <NDApplicationObserver> {
+    /* instance variables */
+    @"NDAVAssetDownloadSessionWrapper" _wrapper;
+    @"NSObject<OS_dispatch_queue>" _queue;
+    @"NSObject<OS_dispatch_source>" _throughputTimer;
+    @"NSMutableArray" _progressTimestamps;
+    @"NSMutableArray" _progressValues;
+    Q _throughputInterval;
+    d _throughputMonitoringStartTime;
+    B _hasTransferredData;
+    B _discretionary;
+    B _explicitlyDiscretionary;
+    B _performsNonDiscretionaryThroughputMonitoring;
+    @"NDApplication" _monitoredApplication;
+    q _basePriority;
+}
+
+@property (Tq,V_basePriority) basePriority;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* instance methods */
+-[NDAVThroughputMonitor initWithWrapper:monitoredApplication:priority:options:queue:];
+-[NDAVThroughputMonitor wrapperWillSuspend];
+-[NDAVThroughputMonitor cancel];
+-[NDAVThroughputMonitor wrapperTransferredData:];
+-[NDAVThroughputMonitor startThroughputMonitoringIfAppropriate];
+-[NDAVThroughputMonitor startThroughputMonitoring];
+-[NDAVThroughputMonitor stopThroughputMonitoring];
+-[NDAVThroughputMonitor calculateThroughput];
+-[NDAVThroughputMonitor currentIntervalDuration];
+-[NDAVThroughputMonitor currentIntervalThroughputThreshold];
+-[NDAVThroughputMonitor setThroughputTimerForCurrentInterval];
+-[NDAVThroughputMonitor applicationEnteredForeground:];
+-[NDAVThroughputMonitor applicationNoLongerInForeground:];
+-[NDAVThroughputMonitor basePriority];
+-[NDAVThroughputMonitor setBasePriority:];
+
+@end
+
+@interface NDApplication : NSObject {
+    /* instance variables */
+    @"NSString" _bundleIdentifier;
+    @"NSMutableArray" _observers;
+    B isInTransitionalDiscretionaryPeriod;
+    d _currentRequestDelay;
+}
+
+@property (T@"NSString",&,V_bundleIdentifier) bundleIdentifier;
+@property (Td,V_currentRequestDelay) currentRequestDelay;
+@property (TB,VisInTransitionalDiscretionaryPeriod) isInTransitionalDiscretionaryPeriod;
+
+/* class methods */
++[NDApplication initialize];
++[NDApplication applicationWithIdentifier:];
++[NDApplication springboardApplicationWithBundleIdentifier:];
++[NDApplication springBoardApplicationExistsWithIdentifier:];
++[NDApplication chronoKitExtensionWithIdentifier:];
++[NDApplication cloudContainerWithIdentifier:];
++[NDApplication fileProviderWithIdentifer:applicationIdentifier:];
+
+/* instance methods */
+-[NDApplication initWithIdentifier:];
+-[NDApplication containerURL];
+-[NDApplication usesContainerManagerForAVAsset];
+-[NDApplication supportsWakes];
+-[NDApplication maySupportWakesLater];
+-[NDApplication wakeForSessionIdentifier:withSessionUUID:wakeRequirement:];
+-[NDApplication shouldElevateDiscretionaryPriority];
+-[NDApplication hasForegroundBackgroundStates];
+-[NDApplication isForeground];
+-[NDApplication canBeSuspended];
+-[NDApplication hasBackgroundTaskCompletion];
+-[NDApplication isHandlingBackgroundURLSessionWithIdentifier:withSessionUUID:];
+-[NDApplication addObserver:];
+-[NDApplication removeObserver:];
+-[NDApplication invokeSelectorForAllObservers:];
+-[NDApplication invokeSelectorForAllObservers:pid:];
+-[NDApplication backgroundUpdatesEnabled];
+-[NDApplication _onqueue_resetRequestDelay];
+-[NDApplication isInTransitionalDiscretionaryPeriod];
+-[NDApplication setIsInTransitionalDiscretionaryPeriod:];
+-[NDApplication bundleIdentifier];
+-[NDApplication setBundleIdentifier:];
+-[NDApplication currentRequestDelay];
+-[NDApplication setCurrentRequestDelay:];
+
+@end
+
+@interface NDBackgroundSession : NSObject <NDStatusMonitorClient, NDTaskMonitorDelegate, NDBackgroundSessionInterface, NDBackgroundSessionProtocol, NDCallbackQueueDelegate, NSURLSessionDataDelegatePrivate, NSURLSessionDownloadDelegate, NSURLSessionTaskDelegatePrivate, NSURLSessionDownloadDelegate_Private, NSURLSessionDelegate_Internal, NDCredentialStorageDelegate, NDApplicationObserver> {
+    /* instance variables */
+    @"NSURLSession" _userInitiatedSession;
+    @"NSURLSession" _discretionaryPrioritySession;
+    @"NDCredentialStorage" _credentialStorage;
+    @"NDApplication" _clientApplication;
+    @"NDApplication" _connectedExtension;
+    @"NSMutableDictionary" _tasksToIdentifiers;
+    @"NSMutableDictionary" _identifiersToTasks;
+    @"NSMutableDictionary" _identifiersToMonitors;
+    @"NSMutableDictionary" _identifiersToStreams;
+    @"NSMutableArray" _outstandingTaskIDs;
+    d _lastArchiveTime;
+    B _taskInfoUpdatesDeferred;
+    @"NSURL" _sessionDirectory;
+    @"NSURL" _downloadDirectory;
+    @"NSURL" _uploadsDirectory;
+    B _performsEVCertCheck;
+    B _clientImplementsWillSendRequest;
+    B _clientImplementsWillBeginDelayedRequest;
+    B _clientImplementsSessionChallenge;
+    B _clientImplementsTaskChallenge;
+    B _sendsLaunchEvents;
+    B _discretionary;
+    B _obliterated;
+    B _cleanedUp;
+    B _hasBeenSignalledToDeliverPendingEvents;
+    B _infersDiscretionary;
+    B _shouldPullInitialCredentials;
+    B _shouldElevateDiscretionaryPriority;
+    @? _completeReconnectionBlock;
+    i _neTrackerTCCResult;
+    i _clientPID;
+    @"NSXPCConnection" _xpcConn;
+    @"NSMutableDictionary" _identifiersToUpdates;
+    B _retryDataTasks;
+    @"NSObject<OS_dispatch_queue>" _workQueue;
+    @"NDCallbackQueue" _callbackQueue;
+    @"NDApplication" _monitoredApplication;
+    @"NSMutableDictionary" _identifiersToTaskInfo;
+    @"<NSXPCProxyCreating><NDBackgroundSessionClient>" _clientProxy;
+    @"NDTaskStorageDB" tasksDB;
+    B _hasSqliteSupport;
+    @"<NDBackgroundSessionDelegate>" _delegate;
+    @"NSUUID" _uuid;
+    @"NSString" _identifier;
+    @"NSString" _clientBundleID;
+    @"NSString" _monitoredAppBundleID;
+    @"NSString" _secondaryID;
+    @? _invalidateReply;
+    @"NSString" _sharedContainerIdentifier;
+}
+
+@property (T@"<NDBackgroundSessionDelegate>",W,V_delegate) delegate;
+@property (T@"NSUUID",R,V_uuid) uuid;
+@property (T@"NSString",R,V_identifier) identifier;
+@property (T@"NSString",R,V_clientBundleID) clientBundleID;
+@property (T@"NSString",R,V_monitoredAppBundleID) monitoredAppBundleID;
+@property (T@"NSString",R,V_secondaryID) secondaryID;
+@property (T@?,C,V_invalidateReply) invalidateReply;
+@property (T@"NSString",C,V_sharedContainerIdentifier) sharedContainerIdentifier;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+@property (T@"<NDBackgroundSessionProtocol>",R) xpcProtocol;
+
+/* instance methods */
+-[NDBackgroundSession updateOptions:];
+-[NDBackgroundSession defaultWindowDurationForResourceTimeout:];
+-[NDBackgroundSession configurationWithClientConfiguration:discretionary:];
+-[NDBackgroundSession initWithConfiguration:bundleID:isSpringBoardApp:downloadDirectory:options:clientProxy:delegate:workQueue:db:];
+-[NDBackgroundSession sessionForDiscretionaryStatus:];
+-[NDBackgroundSession setXPCConnection:];
+-[NDBackgroundSession hasConnectedClient];
+-[NDBackgroundSession xpcProtocol];
+-[NDBackgroundSession applicationWasSuspended:pid:];
+-[NDBackgroundSession backgroundUpdatesEnabledForApplication:];
+-[NDBackgroundSession clientApplicationWasReinstalled];
+-[NDBackgroundSession setupDownloadDirectory];
+-[NDBackgroundSession cleanupSessionWithCompletionHandler:];
+-[NDBackgroundSession obliterate];
+-[NDBackgroundSession tasksArchivePath];
+-[NDBackgroundSession storeTaskInfoUpdates:];
+-[NDBackgroundSession queueUpdatesForTask:updateType:highPriority:];
+-[NDBackgroundSession archiveTimerFired];
+-[NDBackgroundSession descriptionForTaskWithIdentifier:];
+-[NDBackgroundSession descriptionForRequest:];
+-[NDBackgroundSession requestWithAdjustedWindowForTaskInfo:];
+-[NDBackgroundSession updateTaskInfoBasedOnCurrentDiscretionaryStatus:];
+-[NDBackgroundSession adjustDiscretionaryStatusForTaskInfo:];
+-[NDBackgroundSession sanitizeTaskProperties:];
+-[NDBackgroundSession configureAdditionalPropertiesOnTask:taskInfo:];
+-[NDBackgroundSession configureTask:withTaskInfo:];
+-[NDBackgroundSession ensureSessionDownloadDirectoryExists];
+-[NDBackgroundSession createNewTaskFromInfo:];
+-[NDBackgroundSession restoreInProgressTask:];
+-[NDBackgroundSession restoreCompletedTask:];
+-[NDBackgroundSession restoreTask:isOutstanding:];
+-[NDBackgroundSession restoreTasksFromSqliteDB:];
+-[NDBackgroundSession restoreTasksFromArchivedInfo:];
+-[NDBackgroundSession restoreTasks:];
+-[NDBackgroundSession clientErrorForError:];
+-[NDBackgroundSession statusMonitor:callbackForIdentifier:networkChanged:];
+-[NDBackgroundSession retryTask:originalError:transactionMetrics:];
+-[NDBackgroundSession removeDownloadFileForTaskInfo:];
+-[NDBackgroundSession removeUploadFileForTaskInfo:];
+-[NDBackgroundSession sessionHasOutstandingTasks];
+-[NDBackgroundSession clientIsActive];
+-[NDBackgroundSession handleCompletionOfTask:identifier:taskInfo:isRecoverable:suppressWake:];
+-[NDBackgroundSession finalizeTaskCompletionWithSuppressedWake:];
+-[NDBackgroundSession cancelTasksRequiringClientConnectionAndResumeUnstartedTasks];
+-[NDBackgroundSession clientDidDisconnect];
+-[NDBackgroundSession reconnectClient:withCompletion:];
+-[NDBackgroundSession allowReconnect];
+-[NDBackgroundSession fillInByteCountsForTaskInfo:withTaskID:];
+-[NDBackgroundSession triggerPowerlogPeriodicUpdate];
+-[NDBackgroundSession getTasksForReconnection];
+-[NDBackgroundSession getTLSSessionCachePrefix];
+-[NDBackgroundSession priorityForDiscretionaryStatus:];
+-[NDBackgroundSession currentDiscretionaryStatus:withOptionalTaskInfo:];
+-[NDBackgroundSession cancelMonitorForTask:];
+-[NDBackgroundSession handleEarliestBeginDateForTaskWithIdentifier:completionHandler:];
+-[NDBackgroundSession handleWillBeginDelayedRequestForTaskWithIdentifier:completionHandler:];
+-[NDBackgroundSession taskShouldResume:];
+-[NDBackgroundSession taskShouldSuspend:];
+-[NDBackgroundSession enqueueTaskWithIdentifier:];
+-[NDBackgroundSession addOutstandingTaskWithIdentifier:];
+-[NDBackgroundSession removeOutstandingTaskWithIdentifier:];
+-[NDBackgroundSession requeueTask:skipResume:];
+-[NDBackgroundSession requeueTask:];
+-[NDBackgroundSession makeTempUploadFile:withExtensionData:];
+-[NDBackgroundSession inputStreamWithFileHandle:taskIdentifier:];
+-[NDBackgroundSession errorIfBlockedTracker:url:];
+-[NDBackgroundSession taskMonitor:updateTaskPriority:reason:];
+-[NDBackgroundSession taskMonitor:retryTask:reason:];
+-[NDBackgroundSession taskMonitor:terminateTask:reason:];
+-[NDBackgroundSession getClientProxy];
+-[NDBackgroundSession errorOccurredDuringFinishedCallbackDelivery:];
+-[NDBackgroundSession errorOccurredDuringAuthCallbackDelivery:completionHandler:];
+-[NDBackgroundSession clientAcknowledgedTerminalCallbackForTask:];
+-[NDBackgroundSession wakeUpClient:];
+-[NDBackgroundSession setupDASPropertiesOnTask:taskInfo:discretionaryStatus:];
+-[NDBackgroundSession performCommonSetupForTask:taskInfo:identifier:discretionaryStatus:];
+-[NDBackgroundSession pingForXPCObjectValidityWithReply:];
+-[NDBackgroundSession downloadTaskWithResumeData:extractor:identifier:uniqueIdentifier:reply:];
+-[NDBackgroundSession downloadTaskWithRequest:originalRequest:downloadFilePath:identifier:uniqueIdentifier:reply:];
+-[NDBackgroundSession uploadTaskWithResumableUploadState:request:originalRequest:fromFile:sandboxExtensionData:identifier:uniqueIdentifier:potentialCredentials:reply:];
+-[NDBackgroundSession uploadTaskWithRequest:originalRequest:fromFile:sandboxExtensionData:identifier:uniqueIdentifier:potentialCredentials:reply:];
+-[NDBackgroundSession dataTaskWithRequest:originalRequest:identifier:uniqueIdentifier:reply:];
+-[NDBackgroundSession avAssetDownloadTaskWithDownloadToken:URL:destinationURL:temporaryDestinationURL:assetTitle:assetArtworkData:options:assetOptions:identifier:uniqueIdentifier:taskKind:enableSPIDelegateCallbacks:reply:];
+-[NDBackgroundSession avAggregateAssetDownloadTaskWithDownloadToken:serializedMediaSelections:assetTitle:assetArtworkData:options:assetOptions:childDownloadSessionIdentifier:identifier:uniqueIdentifier:reply:];
+-[NDBackgroundSession cancelTaskWithIdentifier:byProducingResumeData:];
+-[NDBackgroundSession cancelTaskWithIdentifier:];
+-[NDBackgroundSession suspendTaskWithIdentifier:];
+-[NDBackgroundSession resumeTaskWithIdentifier:withProperties:];
+-[NDBackgroundSession setPropertyOnStreamWithIdentifier:propDict:propKey:withReply:];
+-[NDBackgroundSession setDescription:forTask:];
+-[NDBackgroundSession setPriority:forTaskWithIdentifier:];
+-[NDBackgroundSession setLoadingPoolPriority:forTaskWithIdentifier:];
+-[NDBackgroundSession setBytesPerSecondLimit:forTaskWithIdentifier:];
+-[NDBackgroundSession setExpectedProgressTarget:forTaskWithIdentifier:];
+-[NDBackgroundSession setTLSMinimumSupportedProtocolVersion:forTaskWithIdentifier:];
+-[NDBackgroundSession setTLSMaximumSupportedProtocolVersion:forTaskWithIdentifier:];
+-[NDBackgroundSession setDiscretionaryOverride:forTaskWithIdentifier:];
+-[NDBackgroundSession applyOverrides:forTaskWithIdentifier:];
+-[NDBackgroundSession setTLSSessionCachePrefix:];
+-[NDBackgroundSession resetStorageWithReply:];
+-[NDBackgroundSession invalidateWithReply:];
+-[NDBackgroundSession URLSession:didBecomeInvalidWithError:];
+-[NDBackgroundSession trustPassesExtendedValidation:];
+-[NDBackgroundSession URLSession:task:didReceiveChallenge:completionHandler:];
+-[NDBackgroundSession URLSession:task:willPerformHTTPRedirection:newRequest:completionHandler:];
+-[NDBackgroundSession URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:];
+-[NDBackgroundSession URLSession:task:needNewBodyStream:];
+-[NDBackgroundSession URLSession:task:didReceiveInformationalResponse:];
+-[NDBackgroundSession URLSession:task:didCompleteWithError:];
+-[NDBackgroundSession URLSession:dataTask:willCacheResponse:completionHandler:];
+-[NDBackgroundSession URLSession:dataTask:didReceiveResponse:completionHandler:];
+-[NDBackgroundSession URLSession:dataTask:_didReceiveData:completionHandler:];
+-[NDBackgroundSession URLSession:dataTask:didBecomeDownloadTask:];
+-[NDBackgroundSession URLSession:downloadTask:didFinishDownloadingToURL:];
+-[NDBackgroundSession URLSession:downloadTask:didResumeAtOffset:expectedTotalBytes:];
+-[NDBackgroundSession URLSession:downloadTask:didWriteData:totalBytesWritten:totalBytesExpectedToWrite:];
+-[NDBackgroundSession URLSession:task:_willSendRequestForEstablishedConnection:completionHandler:];
+-[NDBackgroundSession URLSession:task:_isWaitingForConnectionWithReason:];
+-[NDBackgroundSession URLSession:task:_conditionalRequirementsChanged:];
+-[NDBackgroundSession _URLSession:downloadTask:didReceiveResponse:];
+-[NDBackgroundSession _URLSession:downloadTaskNeedsDownloadDirectory:];
+-[NDBackgroundSession _URLSession:openFileAtPath:mode:completionHandler:];
+-[NDBackgroundSession _URLSession:task:getAuthHeadersForResponse:completionHandler:];
+-[NDBackgroundSession delegate];
+-[NDBackgroundSession setDelegate:];
+-[NDBackgroundSession uuid];
+-[NDBackgroundSession identifier];
+-[NDBackgroundSession clientBundleID];
+-[NDBackgroundSession monitoredAppBundleID];
+-[NDBackgroundSession secondaryID];
+-[NDBackgroundSession invalidateReply];
+-[NDBackgroundSession setInvalidateReply:];
+-[NDBackgroundSession sharedContainerIdentifier];
+-[NDBackgroundSession setSharedContainerIdentifier:];
+
+@end
+
+@interface NDCallbackQueue : NSObject {
+    /* instance variables */
+    @"NSMutableArray" _callbacks;
+    @"<NDCallbackQueueDelegate>" _delegate;
+}
+
+@property (T@"<NDCallbackQueueDelegate>",W,V_delegate) delegate;
+
+/* instance methods */
+-[NDCallbackQueue initWithDelegate:];
+-[NDCallbackQueue performCallback:];
+-[NDCallbackQueue drainCallback:];
+-[NDCallbackQueue addPendingCallbackToFront:];
+-[NDCallbackQueue addPendingCallback:wakeRequirement:];
+-[NDCallbackQueue performAllCallbacks];
+-[NDCallbackQueue drainCallbacksForTaskIdentifier:];
+-[NDCallbackQueue count];
+-[NDCallbackQueue delegate];
+-[NDCallbackQueue setDelegate:];
+
+@end
+
+@interface NDChronoKitExtension : NDApplication <NDChronoKitExtensionObserver> {
+    /* instance variables */
+    @"NSObject<OS_dispatch_source>" _delayTimer;
+}
+
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* class methods */
++[NDChronoKitExtension requestDelayQueue];
+
+/* instance methods */
+-[NDChronoKitExtension setupDelayTimer];
+-[NDChronoKitExtension _onqueue_resetRequestDelay];
+-[NDChronoKitExtension containerURL];
+-[NDChronoKitExtension supportsWakes];
+-[NDChronoKitExtension wakeForSessionIdentifier:withSessionUUID:wakeRequirement:];
+-[NDChronoKitExtension shouldElevateDiscretionaryPriority];
+-[NDChronoKitExtension canBeSuspended];
+-[NDChronoKitExtension backgroundUpdatesEnabled];
+-[NDChronoKitExtension isHandlingBackgroundURLSessionWithIdentifier:withSessionUUID:];
+-[NDChronoKitExtension addObserver:];
+-[NDChronoKitExtension removeObserver:];
+-[NDChronoKitExtension extensionWasRemovedFromScreen:];
+
+@end
+
+@interface NDChronoKitLauncher : NSObject {
+    /* instance variables */
+    @"CHSNSURLSessiondService" _service;
+    @"NSMutableDictionary" _pendingLaunches;
+    @"NSMutableDictionary" _observers;
+    @"NSMutableSet" _monitoredBundleIDs;
+    @"NSObject<OS_dispatch_queue>" _queue;
+}
+
+/* class methods */
++[NDChronoKitLauncher sharedLauncher];
+
+/* instance methods */
+-[NDChronoKitLauncher init];
+-[NDChronoKitLauncher addObserver:forExtension:];
+-[NDChronoKitLauncher removeObserver:forExtension:];
+-[NDChronoKitLauncher startMonitoringBundleID:];
+-[NDChronoKitLauncher stopMonitoringBundleID:];
+-[NDChronoKitLauncher wakeUpExtension:forSession:withSessionUUID:wakeRequirement:];
+-[NDChronoKitLauncher _onqueue_wakeUpExtension:forSession:withSessionUUID:wakeRequirement:];
+-[NDChronoKitLauncher removePendingLaunchForBundleID:sessionID:];
+-[NDChronoKitLauncher _onqueue_removePendingLaunchForBundleID:sessionID:];
+-[NDChronoKitLauncher extension:isHandlingBackgroundSessionWithIdentifier:withSessionUUID:];
+
+@end
+
+@interface NDCloudContainer : NDApplication <BRContainerObserver> {
+    /* instance variables */
+    @"BRContainersMonitor" _monitor;
+    B _isForeground;
+    B _initializedForegroundStateFromMonitorCallback;
+}
+
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* class methods */
++[NDCloudContainer containerIDForPrimaryIdentifier:secondaryIdentifier:];
++[NDCloudContainer bundleIDForPrimaryIdentifier:secondaryIdentifier:];
+
+/* instance methods */
+-[NDCloudContainer initWithIdentifier:];
+-[NDCloudContainer hasForegroundBackgroundStates];
+-[NDCloudContainer isForeground];
+-[NDCloudContainer supportsWakes];
+-[NDCloudContainer wakeForSessionIdentifier:withSessionUUID:wakeRequirement:];
+-[NDCloudContainer addObserver:];
+-[NDCloudContainer removeObserver:];
+-[NDCloudContainer containerDidEnterBackground:];
+-[NDCloudContainer containerDidEnterForeground:];
+
+@end
+
+@interface NDCredentialStorage : NSURLCredentialStorage {
+    /* instance variables */
+    @"NSMutableDictionary" _cachedCredentials;
+    @"NSMutableDictionary" _cachedDefaultCredentialUsers;
+    @"NSObject<OS_dispatch_queue>" _queue;
+    @"<NDCredentialStorageDelegate>" _delegate;
+    @"NSString" _bundleID;
+}
+
+@property (T@"<NDCredentialStorageDelegate>",W,V_delegate) delegate;
+@property (T@"NSString",C,V_bundleID) bundleID;
+
+/* instance methods */
+-[NDCredentialStorage initWithDelegate:forBundleID:];
+-[NDCredentialStorage populateWithInitialCredentials];
+-[NDCredentialStorage credentialsForProtectionSpace:];
+-[NDCredentialStorage allCredentials];
+-[NDCredentialStorage setCredential:forProtectionSpace:];
+-[NDCredentialStorage removeCredential:forProtectionSpace:];
+-[NDCredentialStorage defaultCredentialForProtectionSpace:];
+-[NDCredentialStorage setDefaultCredential:forProtectionSpace:];
+-[NDCredentialStorage reset];
+-[NDCredentialStorage delegate];
+-[NDCredentialStorage setDelegate:];
+-[NDCredentialStorage bundleID];
+-[NDCredentialStorage setBundleID:];
+
+@end
+
+@interface NDFPProvider : NDApplication <FPProviderObserver> {
+    /* instance variables */
+    @"FPProviderMonitor" _monitor;
+    B _isForeground;
+    B _initializedForegroundState;
+    @"NDSpringBoardApplication" _springboardApplication;
+}
+
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* class methods */
++[NDFPProvider providerIDForBundle:sharedContainerIdentifier:];
+
+/* instance methods */
+-[NDFPProvider initWithIdentifier:applicationIdentifier:];
+-[NDFPProvider hasForegroundBackgroundStates];
+-[NDFPProvider isForeground];
+-[NDFPProvider supportsWakes];
+-[NDFPProvider wakeForSessionIdentifier:withSessionUUID:wakeRequirement:];
+-[NDFPProvider addObserver:];
+-[NDFPProvider removeObserver:];
+-[NDFPProvider providerDidEnterBackground:];
+-[NDFPProvider providerDidEnterForeground:];
+
+@end
+
+@interface NDFileUtilities : NSObject
+
+/* class methods */
++[NDFileUtilities nsurlsessiondPath];
++[NDFileUtilities bundleManagerPath:];
++[NDFileUtilities sessionPath:forBundleID:];
++[NDFileUtilities nsurlsessiondLaunchdPath];
++[NDFileUtilities removeItemAtPath:];
++[NDFileUtilities removeItemAtURL:];
++[NDFileUtilities createDataVaultDirectoryAtPath:];
++[NDFileUtilities createDirectoryAtPath:];
++[NDFileUtilities createDirectoryAtURL:];
++[NDFileUtilities defaultDownloadDirectoryContainer];
++[NDFileUtilities defaultDownloadDirectoryForBundleID:];
++[NDFileUtilities setDaemonWorkState:];
++[NDFileUtilities updateStreamingZipModificationDate:];
++[NDFileUtilities removeStreamingZipModificationDate:];
++[NDFileUtilities fetchStreamingZipModificationDate:];
++[NDFileUtilities noFollowRealURL:];
++[NDFileUtilities safeDirectoryForDownloads:auditToken:];
++[NDFileUtilities safeURLForDownload:auditToken:];
+
+@end
+
+@interface NDNWBackgroundSession : NSObject <NDStatusMonitorClient, NDBackgroundSessionProtocol, NDCallbackQueueDelegate, NSURLSessionDataDelegatePrivate, NSURLSessionDownloadDelegate, NSURLSessionTaskDelegatePrivate, NDCredentialStorageDelegate, NDApplicationObserver, NDTaskMonitorDelegate, NDBackgroundSessionInterface> {
+    /* instance variables */
+    B _taskInfoUpdatesDeferred;
+    B _performsEVCertCheck;
+    B _clientImplementsWillSendRequest;
+    B _clientImplementsWillBeginDelayedRequest;
+    B _clientImplementsSessionChallenge;
+    B _clientImplementsTaskChallenge;
+    B _sendsLaunchEvents;
+    B _discretionary;
+    B _obliterated;
+    B _cleanedUp;
+    B _hasBeenSignalledToDeliverPendingEvents;
+    B _infersDiscretionary;
+    B _shouldPullInitialCredentials;
+    B _shouldElevateDiscretionaryPriority;
+    B _retryDataTasks;
+    i _neTrackerTCCResult;
+    i _clientPID;
+    @"NSString" _identifier;
+    @"NSUUID" _uuid;
+    @"NSString" _clientBundleID;
+    @"<NDBackgroundSessionDelegate>" _delegate;
+    @"NSURLSession" _session;
+    @"NSString" _monitoredAppBundleID;
+    @"NSString" _secondaryID;
+    @? _invalidateReply;
+    @"NSString" _sharedContainerIdentifier;
+    @"NDCredentialStorage" _credentialStorage;
+    @"NDApplication" _clientApplication;
+    @"NDApplication" _connectedExtension;
+    @"NSMutableDictionary" _identifiersToTasks;
+    @"NSMutableDictionary" _identifiersToMonitors;
+    @"NSMutableDictionary" _identifiersToStreams;
+    d _lastArchiveTime;
+    @"NSURL" _sessionDirectory;
+    @"NSURL" _downloadDirectory;
+    @"NSURL" _uploadsDirectory;
+    @? _completeReconnectionBlock;
+    @"NSXPCConnection" _xpcConn;
+    @"NSMutableDictionary" _identifiersToUpdates;
+    @"NSObject<OS_dispatch_queue>" _workQueue;
+    @"NDCallbackQueue" _callbackQueue;
+    @"NDApplication" _monitoredApplication;
+    @"NSMutableDictionary" _identifiersToTaskInfo;
+    @"<NSXPCProxyCreating><NDBackgroundSessionClient>" _clientProxy;
+    @"NDTaskStorageDB" _tasksDB;
+}
+
+@property (T@"<NDBackgroundSessionDelegate>",W,N,V_delegate) delegate;
+@property (T@"NSURLSession",&,N,V_session) session;
+@property (T@"NSString",&,N,V_monitoredAppBundleID) monitoredAppBundleID;
+@property (T@"NSString",&,N,V_secondaryID) secondaryID;
+@property (T@?,C,N,V_invalidateReply) invalidateReply;
+@property (T@"NSString",&,N,V_sharedContainerIdentifier) sharedContainerIdentifier;
+@property (T@"NDCredentialStorage",&,N,V_credentialStorage) credentialStorage;
+@property (T@"NDApplication",&,N,V_clientApplication) clientApplication;
+@property (T@"NDApplication",&,N,V_connectedExtension) connectedExtension;
+@property (T@"NSMutableDictionary",&,N,V_identifiersToTasks) identifiersToTasks;
+@property (T@"NSMutableDictionary",&,N,V_identifiersToMonitors) identifiersToMonitors;
+@property (T@"NSMutableDictionary",&,N,V_identifiersToStreams) identifiersToStreams;
+@property (Td,N,V_lastArchiveTime) lastArchiveTime;
+@property (TB,N,V_taskInfoUpdatesDeferred) taskInfoUpdatesDeferred;
+@property (T@"NSURL",&,N,V_sessionDirectory) sessionDirectory;
+@property (T@"NSURL",&,N,V_downloadDirectory) downloadDirectory;
+@property (T@"NSURL",&,N,V_uploadsDirectory) uploadsDirectory;
+@property (TB,N,V_performsEVCertCheck) performsEVCertCheck;
+@property (TB,N,V_clientImplementsWillSendRequest) clientImplementsWillSendRequest;
+@property (TB,N,V_clientImplementsWillBeginDelayedRequest) clientImplementsWillBeginDelayedRequest;
+@property (TB,N,V_clientImplementsSessionChallenge) clientImplementsSessionChallenge;
+@property (TB,N,V_clientImplementsTaskChallenge) clientImplementsTaskChallenge;
+@property (TB,N,V_sendsLaunchEvents) sendsLaunchEvents;
+@property (TB,N,V_discretionary) discretionary;
+@property (TB,N,V_obliterated) obliterated;
+@property (TB,N,V_cleanedUp) cleanedUp;
+@property (TB,N,V_hasBeenSignalledToDeliverPendingEvents) hasBeenSignalledToDeliverPendingEvents;
+@property (TB,N,V_infersDiscretionary) infersDiscretionary;
+@property (TB,N,V_shouldPullInitialCredentials) shouldPullInitialCredentials;
+@property (TB,N,V_shouldElevateDiscretionaryPriority) shouldElevateDiscretionaryPriority;
+@property (T@?,C,N,V_completeReconnectionBlock) completeReconnectionBlock;
+@property (Ti,N,V_neTrackerTCCResult) neTrackerTCCResult;
+@property (Ti,N,V_clientPID) clientPID;
+@property (T@"NSXPCConnection",&,N,V_xpcConn) xpcConn;
+@property (T@"NSMutableDictionary",&,N,V_identifiersToUpdates) identifiersToUpdates;
+@property (TB,N,V_retryDataTasks) retryDataTasks;
+@property (T@"NSObject<OS_dispatch_queue>",&,N,V_workQueue) workQueue;
+@property (T@"NDCallbackQueue",&,N,V_callbackQueue) callbackQueue;
+@property (T@"NDApplication",&,N,V_monitoredApplication) monitoredApplication;
+@property (T@"NSMutableDictionary",&,N,V_identifiersToTaskInfo) identifiersToTaskInfo;
+@property (T@"<NSXPCProxyCreating><NDBackgroundSessionClient>",&,N,V_clientProxy) clientProxy;
+@property (T@"NDTaskStorageDB",&,N,V_tasksDB) tasksDB;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+@property (T@"NSUUID",R,V_uuid) uuid;
+@property (T@"NSString",R,V_identifier) identifier;
+@property (T@"NSString",R,V_clientBundleID) clientBundleID;
+@property (T@"<NDBackgroundSessionProtocol>",R) xpcProtocol;
+
+/* class methods */
++[NDNWBackgroundSession downloadFileURLFormTaskInfo:];
+
+/* instance methods */
+-[NDNWBackgroundSession updateOptions:];
+-[NDNWBackgroundSession configurationWithClientConfiguration:];
+-[NDNWBackgroundSession initWithConfiguration:bundleID:isSpringBoardApp:downloadDirectory:options:clientProxy:delegate:workQueue:db:];
+-[NDNWBackgroundSession setXPCConnection:];
+-[NDNWBackgroundSession hasConnectedClient];
+-[NDNWBackgroundSession xpcProtocol];
+-[NDNWBackgroundSession applicationWasSuspended:pid:];
+-[NDNWBackgroundSession backgroundUpdatesEnabledForApplication:];
+-[NDNWBackgroundSession clientApplicationWasReinstalled];
+-[NDNWBackgroundSession setupDownloadDirectory];
+-[NDNWBackgroundSession cleanupSessionWithCompletionHandler:];
+-[NDNWBackgroundSession obliterate];
+-[NDNWBackgroundSession storeTaskInfoUpdates:];
+-[NDNWBackgroundSession queueUpdatesForTask:updateType:highPriority:];
+-[NDNWBackgroundSession archiveTimerFired];
+-[NDNWBackgroundSession descriptionForTaskWithIdentifier:];
+-[NDNWBackgroundSession descriptionForRequest:];
+-[NDNWBackgroundSession sanitizeTaskProperties:];
+-[NDNWBackgroundSession configureResumeInfo:withTaskInfo:];
+-[NDNWBackgroundSession backgroundSchedulingPriorityWithTaskInfo:];
+-[NDNWBackgroundSession configureTask:withTaskInfo:];
+-[NDNWBackgroundSession configureTaskInfo:withResumeInfo:];
+-[NDNWBackgroundSession taskWithTaskInfo:];
+-[NDNWBackgroundSession createTaskIfNeeded:];
+-[NDNWBackgroundSession startTasksIfAllowed];
+-[NDNWBackgroundSession _cancelTaskWithIdentifier:error:];
+-[NDNWBackgroundSession ensureSessionDownloadDirectoryExists];
+-[NDNWBackgroundSession restoreCompletedTask:];
+-[NDNWBackgroundSession restoreTasksFromSqliteDB:];
+-[NDNWBackgroundSession restoreTasks:];
+-[NDNWBackgroundSession statusMonitor:callbackForIdentifier:networkChanged:];
+-[NDNWBackgroundSession removeDownloadFileForTaskInfo:];
+-[NDNWBackgroundSession removeUploadFileForTaskInfo:];
+-[NDNWBackgroundSession sessionHasOutstandingTasks];
+-[NDNWBackgroundSession clientIsActive];
+-[NDNWBackgroundSession handleCompletionOfTask:identifier:taskInfo:suppressWake:];
+-[NDNWBackgroundSession finalizeTaskCompletionWithSuppressedWake:];
+-[NDNWBackgroundSession cancelTasksRequiringClientConnectionAndResumeUnstartedTasks];
+-[NDNWBackgroundSession clientDidDisconnect];
+-[NDNWBackgroundSession reconnectClient:withCompletion:];
+-[NDNWBackgroundSession allowReconnect];
+-[NDNWBackgroundSession fillInByteCountsForTaskInfo:withTaskID:];
+-[NDNWBackgroundSession fillInPropertiesForTaskInfo:withTaskID:];
+-[NDNWBackgroundSession triggerPowerlogPeriodicUpdate];
+-[NDNWBackgroundSession getTasksForReconnection];
+-[NDNWBackgroundSession getTLSSessionCachePrefix];
+-[NDNWBackgroundSession currentDiscretionaryStatusWithOptionalTaskInfo:];
+-[NDNWBackgroundSession startMonitorForTask:];
+-[NDNWBackgroundSession cancelMonitorForTask:];
+-[NDNWBackgroundSession _resumeTask:];
+-[NDNWBackgroundSession enqueueTaskWithIdentifier:];
+-[NDNWBackgroundSession requeueTask:];
+-[NDNWBackgroundSession makeTempUploadFile:withExtensionData:];
+-[NDNWBackgroundSession inputStreamWithFileHandle:taskIdentifier:];
+-[NDNWBackgroundSession errorIfBlockedTracker:url:];
+-[NDNWBackgroundSession taskMonitor:updateTaskPriority:reason:];
+-[NDNWBackgroundSession taskMonitor:retryTask:reason:];
+-[NDNWBackgroundSession taskMonitor:terminateTask:reason:];
+-[NDNWBackgroundSession getClientProxy];
+-[NDNWBackgroundSession errorOccurredDuringFinishedCallbackDelivery:];
+-[NDNWBackgroundSession errorOccurredDuringAuthCallbackDelivery:completionHandler:];
+-[NDNWBackgroundSession clientAcknowledgedTerminalCallbackForTask:];
+-[NDNWBackgroundSession wakeUpClient:];
+-[NDNWBackgroundSession pingForXPCObjectValidityWithReply:];
+-[NDNWBackgroundSession downloadTaskWithResumeData:extractor:identifier:uniqueIdentifier:reply:];
+-[NDNWBackgroundSession downloadTaskWithRequest:originalRequest:downloadFilePath:identifier:uniqueIdentifier:reply:];
+-[NDNWBackgroundSession uploadTaskWithResumableUploadState:request:originalRequest:fromFile:sandboxExtensionData:identifier:uniqueIdentifier:potentialCredentials:reply:];
+-[NDNWBackgroundSession uploadTaskWithRequest:originalRequest:fromFile:sandboxExtensionData:identifier:uniqueIdentifier:potentialCredentials:reply:];
+-[NDNWBackgroundSession dataTaskWithRequest:originalRequest:identifier:uniqueIdentifier:reply:];
+-[NDNWBackgroundSession avAssetDownloadTaskWithDownloadToken:URL:destinationURL:temporaryDestinationURL:assetTitle:assetArtworkData:options:assetOptions:identifier:uniqueIdentifier:taskKind:enableSPIDelegateCallbacks:reply:];
+-[NDNWBackgroundSession avAggregateAssetDownloadTaskWithDownloadToken:serializedMediaSelections:assetTitle:assetArtworkData:options:assetOptions:childDownloadSessionIdentifier:identifier:uniqueIdentifier:reply:];
+-[NDNWBackgroundSession cancelTaskWithIdentifier:byProducingResumeData:];
+-[NDNWBackgroundSession cancelTaskWithIdentifier:];
+-[NDNWBackgroundSession suspendTaskWithIdentifier:];
+-[NDNWBackgroundSession resumeTaskWithIdentifier:withProperties:];
+-[NDNWBackgroundSession setPropertyOnStreamWithIdentifier:propDict:propKey:withReply:];
+-[NDNWBackgroundSession setDescription:forTask:];
+-[NDNWBackgroundSession setPriority:forTaskWithIdentifier:];
+-[NDNWBackgroundSession setLoadingPoolPriority:forTaskWithIdentifier:];
+-[NDNWBackgroundSession setBytesPerSecondLimit:forTaskWithIdentifier:];
+-[NDNWBackgroundSession setExpectedProgressTarget:forTaskWithIdentifier:];
+-[NDNWBackgroundSession setTLSMinimumSupportedProtocolVersion:forTaskWithIdentifier:];
+-[NDNWBackgroundSession setTLSMaximumSupportedProtocolVersion:forTaskWithIdentifier:];
+-[NDNWBackgroundSession setDiscretionaryOverride:forTaskWithIdentifier:];
+-[NDNWBackgroundSession applyOverrides:forTaskWithIdentifier:];
+-[NDNWBackgroundSession setTLSSessionCachePrefix:];
+-[NDNWBackgroundSession resetStorageWithReply:];
+-[NDNWBackgroundSession invalidateWithReply:];
+-[NDNWBackgroundSession URLSession:didBecomeInvalidWithError:];
+-[NDNWBackgroundSession trustPassesExtendedValidation:];
+-[NDNWBackgroundSession URLSession:task:willBeginDelayedRequest:completionHandler:];
+-[NDNWBackgroundSession URLSession:_taskDidConnect:];
+-[NDNWBackgroundSession URLSession:task:didReceiveChallenge:completionHandler:];
+-[NDNWBackgroundSession URLSession:task:willPerformHTTPRedirection:newRequest:completionHandler:];
+-[NDNWBackgroundSession URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:];
+-[NDNWBackgroundSession URLSession:task:needNewBodyStream:];
+-[NDNWBackgroundSession URLSession:task:didReceiveInformationalResponse:];
+-[NDNWBackgroundSession URLSession:task:didCompleteWithError:];
+-[NDNWBackgroundSession URLSession:dataTask:willCacheResponse:completionHandler:];
+-[NDNWBackgroundSession URLSession:dataTask:didReceiveResponse:completionHandler:];
+-[NDNWBackgroundSession URLSession:dataTask:_didReceiveData:completionHandler:];
+-[NDNWBackgroundSession URLSession:dataTask:didBecomeDownloadTask:];
+-[NDNWBackgroundSession URLSession:_willRetryBackgroundDataTask:withError:];
+-[NDNWBackgroundSession URLSession:downloadTask:didFinishDownloadingToURL:];
+-[NDNWBackgroundSession URLSession:downloadTask:didResumeAtOffset:expectedTotalBytes:];
+-[NDNWBackgroundSession URLSession:downloadTask:didWriteData:totalBytesWritten:totalBytesExpectedToWrite:];
+-[NDNWBackgroundSession _URLSession:downloadTask:didReceiveResponse:];
+-[NDNWBackgroundSession _URLSession:downloadTaskNeedsDownloadDirectory:];
+-[NDNWBackgroundSession _URLSession:openFileAtPath:mode:completionHandler:];
+-[NDNWBackgroundSession _URLSession:task:getAuthHeadersForResponse:completionHandler:];
+-[NDNWBackgroundSession identifier];
+-[NDNWBackgroundSession uuid];
+-[NDNWBackgroundSession clientBundleID];
+-[NDNWBackgroundSession delegate];
+-[NDNWBackgroundSession setDelegate:];
+-[NDNWBackgroundSession session];
+-[NDNWBackgroundSession setSession:];
+-[NDNWBackgroundSession monitoredAppBundleID];
+-[NDNWBackgroundSession setMonitoredAppBundleID:];
+-[NDNWBackgroundSession secondaryID];
+-[NDNWBackgroundSession setSecondaryID:];
+-[NDNWBackgroundSession invalidateReply];
+-[NDNWBackgroundSession setInvalidateReply:];
+-[NDNWBackgroundSession sharedContainerIdentifier];
+-[NDNWBackgroundSession setSharedContainerIdentifier:];
+-[NDNWBackgroundSession credentialStorage];
+-[NDNWBackgroundSession setCredentialStorage:];
+-[NDNWBackgroundSession clientApplication];
+-[NDNWBackgroundSession setClientApplication:];
+-[NDNWBackgroundSession connectedExtension];
+-[NDNWBackgroundSession setConnectedExtension:];
+-[NDNWBackgroundSession identifiersToTasks];
+-[NDNWBackgroundSession setIdentifiersToTasks:];
+-[NDNWBackgroundSession identifiersToMonitors];
+-[NDNWBackgroundSession setIdentifiersToMonitors:];
+-[NDNWBackgroundSession identifiersToStreams];
+-[NDNWBackgroundSession setIdentifiersToStreams:];
+-[NDNWBackgroundSession lastArchiveTime];
+-[NDNWBackgroundSession setLastArchiveTime:];
+-[NDNWBackgroundSession taskInfoUpdatesDeferred];
+-[NDNWBackgroundSession setTaskInfoUpdatesDeferred:];
+-[NDNWBackgroundSession sessionDirectory];
+-[NDNWBackgroundSession setSessionDirectory:];
+-[NDNWBackgroundSession downloadDirectory];
+-[NDNWBackgroundSession setDownloadDirectory:];
+-[NDNWBackgroundSession uploadsDirectory];
+-[NDNWBackgroundSession setUploadsDirectory:];
+-[NDNWBackgroundSession performsEVCertCheck];
+-[NDNWBackgroundSession setPerformsEVCertCheck:];
+-[NDNWBackgroundSession clientImplementsWillSendRequest];
+-[NDNWBackgroundSession setClientImplementsWillSendRequest:];
+-[NDNWBackgroundSession clientImplementsWillBeginDelayedRequest];
+-[NDNWBackgroundSession setClientImplementsWillBeginDelayedRequest:];
+-[NDNWBackgroundSession clientImplementsSessionChallenge];
+-[NDNWBackgroundSession setClientImplementsSessionChallenge:];
+-[NDNWBackgroundSession clientImplementsTaskChallenge];
+-[NDNWBackgroundSession setClientImplementsTaskChallenge:];
+-[NDNWBackgroundSession sendsLaunchEvents];
+-[NDNWBackgroundSession setSendsLaunchEvents:];
+-[NDNWBackgroundSession discretionary];
+-[NDNWBackgroundSession setDiscretionary:];
+-[NDNWBackgroundSession obliterated];
+-[NDNWBackgroundSession setObliterated:];
+-[NDNWBackgroundSession cleanedUp];
+-[NDNWBackgroundSession setCleanedUp:];
+-[NDNWBackgroundSession hasBeenSignalledToDeliverPendingEvents];
+-[NDNWBackgroundSession setHasBeenSignalledToDeliverPendingEvents:];
+-[NDNWBackgroundSession infersDiscretionary];
+-[NDNWBackgroundSession setInfersDiscretionary:];
+-[NDNWBackgroundSession shouldPullInitialCredentials];
+-[NDNWBackgroundSession setShouldPullInitialCredentials:];
+-[NDNWBackgroundSession shouldElevateDiscretionaryPriority];
+-[NDNWBackgroundSession setShouldElevateDiscretionaryPriority:];
+-[NDNWBackgroundSession completeReconnectionBlock];
+-[NDNWBackgroundSession setCompleteReconnectionBlock:];
+-[NDNWBackgroundSession neTrackerTCCResult];
+-[NDNWBackgroundSession setNeTrackerTCCResult:];
+-[NDNWBackgroundSession clientPID];
+-[NDNWBackgroundSession setClientPID:];
+-[NDNWBackgroundSession xpcConn];
+-[NDNWBackgroundSession setXpcConn:];
+-[NDNWBackgroundSession identifiersToUpdates];
+-[NDNWBackgroundSession setIdentifiersToUpdates:];
+-[NDNWBackgroundSession retryDataTasks];
+-[NDNWBackgroundSession setRetryDataTasks:];
+-[NDNWBackgroundSession workQueue];
+-[NDNWBackgroundSession setWorkQueue:];
+-[NDNWBackgroundSession callbackQueue];
+-[NDNWBackgroundSession setCallbackQueue:];
+-[NDNWBackgroundSession monitoredApplication];
+-[NDNWBackgroundSession setMonitoredApplication:];
+-[NDNWBackgroundSession identifiersToTaskInfo];
+-[NDNWBackgroundSession setIdentifiersToTaskInfo:];
+-[NDNWBackgroundSession clientProxy];
+-[NDNWBackgroundSession setClientProxy:];
+-[NDNWBackgroundSession tasksDB];
+-[NDNWBackgroundSession setTasksDB:];
+
+@end
+
+@interface NDPowerlogReporter : NSObject {
+    /* instance variables */
+    @"NSString" _taskDescription;
+    d _lastUpdateTime;
+    d _lastSuspendTime;
+    d _suspendedDurationSinceLastUpdate;
+    B _hasStarted;
+}
+
+/* instance methods */
+-[NDPowerlogReporter initWithTaskDescription:];
+-[NDPowerlogReporter taskWillResume];
+-[NDPowerlogReporter taskWillSuspend];
+-[NDPowerlogReporter taskTransferredData:countOfBytesReceived:cellular:];
+-[NDPowerlogReporter cancel];
+
+@end
+
+@interface NDSessionManager : NSObject <NDBackgroundSessionManagerProtocol, NDBackgroundSessionDelegate> {
+    /* instance variables */
+    @"NSMutableDictionary" _sessions;
+    @"NSMutableDictionary" _reconnectingProxies;
+    @"NSString" _clientBundleID;
+    @"NSURL" _bundleDirectory;
+    @ _boost;
+    @"NSObject<OS_dispatch_source>" _powerlogPeriodicUpdateTimer;
+    @"NDTaskStorageDB" _sessionTasksDB;
+    B _isSpringBoardApp;
+    @"NSObject<OS_dispatch_queue>" _queue;
+    @"NSXPCConnection" _xpcConn;
+    @"<NDSessionManagerDelegate>" _delegate;
+    @"NSString" _persona;
+    @"NSString" _containerPath;
+    @? _obliterationCompletion;
+}
+
+@property (T@"NSObject<OS_dispatch_queue>",&,V_queue) queue;
+@property (T@"NSXPCConnection",W,V_xpcConn) xpcConn;
+@property (T@"<NDSessionManagerDelegate>",W,V_delegate) delegate;
+@property (TB,V_isSpringBoardApp) isSpringBoardApp;
+@property (T@"NSString",&,V_persona) persona;
+@property (T@"NSString",&,V_containerPath) containerPath;
+@property (T@?,C,V_obliterationCompletion) obliterationCompletion;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* class methods */
++[NDSessionManager restoreOptionsFromArchivePath:];
+
+/* instance methods */
+-[NDSessionManager initWithDelegate:bundleID:isSpringBoardApp:forPersona:dataSeparatedPath:db:];
+-[NDSessionManager dealloc];
+-[NDSessionManager downloadDirectoryDataPath];
+-[NDSessionManager failedSessionRestoreWithID:directoryToDelete:];
+-[NDSessionManager restoreState:];
+-[NDSessionManager boost];
+-[NDSessionManager dropBoost];
+-[NDSessionManager copyAndSanitizeClientConfiguration:];
+-[NDSessionManager connection:canUseSharedContainerIdentifier:];
+-[NDSessionManager createSessionWithConfiguration:clientProxy:cachesDirectory:options:reply:];
+-[NDSessionManager sendPendingCallbacksForIdentifier:reply:];
+-[NDSessionManager releaseAssertionForSession:reply:];
+-[NDSessionManager okayToSendPendingCallbacksForIdentifier:reply:];
+-[NDSessionManager getActiveSessionIdentifiersWithReply:];
+-[NDSessionManager obliterateAllSessionsWithReply:];
+-[NDSessionManager cleanupWithCompletionHandler:];
+-[NDSessionManager sessionCompleted:withCompletionHandler:];
+-[NDSessionManager getSessionWithIdentifier:];
+-[NDSessionManager clientApplicationWasReinstalled];
+-[NDSessionManager obliterate];
+-[NDSessionManager archiveTimerFired];
+-[NDSessionManager queue];
+-[NDSessionManager setQueue:];
+-[NDSessionManager xpcConn];
+-[NDSessionManager setXpcConn:];
+-[NDSessionManager delegate];
+-[NDSessionManager setDelegate:];
+-[NDSessionManager isSpringBoardApp];
+-[NDSessionManager setIsSpringBoardApp:];
+-[NDSessionManager persona];
+-[NDSessionManager setPersona:];
+-[NDSessionManager containerPath];
+-[NDSessionManager setContainerPath:];
+-[NDSessionManager obliterationCompletion];
+-[NDSessionManager setObliterationCompletion:];
+
+@end
+
+@interface NDSpringBoard : NSObject {
+    /* instance variables */
+    @"RBSProcessMonitor" _monitor;
+    @"NSMutableDictionary" _assertions;
+    @"NSMutableDictionary" _observers;
+    @"NSMutableDictionary" _appIsForeground;
+    @"NSMutableDictionary" _observedBackgroundSettings;
+    @"NSMutableSet" _monitoredBundleIDs;
+    @"NSObject<OS_dispatch_queue>" _queue;
+    {os_unfair_lock_s="_os_unfair_lock_opaque"I} _assertion_lock;
+    B _backgroundUpdatesAllowed;
+}
+
+/* class methods */
++[NDSpringBoard sharedSpringBoard];
+
+/* instance methods */
+-[NDSpringBoard init];
+-[NDSpringBoard dealloc];
+-[NDSpringBoard getBackgroundSettingsAppList];
+-[NDSpringBoard handleBackgroundSettingsChange];
+-[NDSpringBoard handleStateUpdate:forProcess:];
+-[NDSpringBoard addObserver:forApplication:];
+-[NDSpringBoard removeObserver:forApplication:];
+-[NDSpringBoard monitoredBundleIDsUpdated];
+-[NDSpringBoard startMonitoringBundleID:];
+-[NDSpringBoard stopMonitoringBundleID:];
+-[NDSpringBoard applicationIsForeground:];
+-[NDSpringBoard isValidAssertion:withName:];
+-[NDSpringBoard application:hasAssertionWithName:];
+-[NDSpringBoard applicationHasBackgroundTaskCompletion:];
+-[NDSpringBoard application:isHandlingBackgroundSessionWithIdentifier:withSessionUUID:];
+-[NDSpringBoard applicationBackgroundUpdatesEnabled:];
+-[NDSpringBoard _onqueue_releaseAssertionForBundleID:sessionID:];
+-[NDSpringBoard releaseAssertionForBundleID:sessionID:];
+-[NDSpringBoard removePendingLaunchTasksForBundleID:sessionID:cancel:];
+-[NDSpringBoard assertionNameForSessionUUID:];
+-[NDSpringBoard takeAssertionForBundleID:sessionID:sessionUUID:pid:];
+-[NDSpringBoard wakeUpApp:forSession:withSessionUUID:];
+-[NDSpringBoard identifierIsForSpringBoardApplication:];
+
+@end
+
+@interface NDSpringBoardApplication : NDApplication <NDSpringBoardAppObserver> {
+    /* instance variables */
+    @"NSObject<OS_dispatch_source>" _delayTimer;
+    @"NSObject<OS_dispatch_source>" _nonDiscretionaryGracePeriodTimer;
+    @"NSObject<OS_dispatch_source>" _extendedNonDiscretionaryGracePeriodTimer;
+    @"NSObject<OS_dispatch_source>" _transitionalDiscretionaryStateTimer;
+    @"NDSpringBoardApplication" _containingApplication;
+}
+
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* class methods */
++[NDSpringBoardApplication requestDelayQueue];
+
+/* instance methods */
+-[NDSpringBoardApplication initWithIdentifier:];
+-[NDSpringBoardApplication containerURL];
+-[NDSpringBoardApplication usesContainerManagerForAVAsset];
+-[NDSpringBoardApplication supportsWakes];
+-[NDSpringBoardApplication setupDelayTimer];
+-[NDSpringBoardApplication _onqueue_resetRequestDelay];
+-[NDSpringBoardApplication wakeForSessionIdentifier:withSessionUUID:wakeRequirement:];
+-[NDSpringBoardApplication shouldElevateDiscretionaryPriority];
+-[NDSpringBoardApplication hasForegroundBackgroundStates];
+-[NDSpringBoardApplication isForeground];
+-[NDSpringBoardApplication canBeSuspended];
+-[NDSpringBoardApplication isHandlingBackgroundURLSessionWithIdentifier:withSessionUUID:];
+-[NDSpringBoardApplication hasBackgroundTaskCompletion];
+-[NDSpringBoardApplication backgroundUpdatesEnabled];
+-[NDSpringBoardApplication addObserver:];
+-[NDSpringBoardApplication removeObserver:];
+-[NDSpringBoardApplication setupTransitionalDiscretionaryPeriodTimer];
+-[NDSpringBoardApplication disableTransitionalDiscretionaryPeriodTimer];
+-[NDSpringBoardApplication startTransitionalDiscretionaryPeriodTimer];
+-[NDSpringBoardApplication applicationWasQuitFromAppSwitcher:];
+-[NDSpringBoardApplication applicationBackgroundUpdatesTurnedOff:];
+-[NDSpringBoardApplication applicationBackgroundUpdatesTurnedOn:];
+-[NDSpringBoardApplication applicationWasSuspended:pid:];
+-[NDSpringBoardApplication applicationEnteredForeground:];
+-[NDSpringBoardApplication applicationNoLongerInForeground:];
+
+@end
+
+@interface NDStatusMonitor : NSObject {
+    /* instance variables */
+    ^{__SCDynamicStore=} _dynamicStore;
+    @"NSMutableSet" _clients;
+    Q _networkChangeEventCount;
+    @"NSObject<OS_dispatch_queue>" _queue;
+    i _symptomToken;
+}
+
+/* class methods */
++[NDStatusMonitor sharedMonitor];
+
+/* instance methods */
+-[NDStatusMonitor init];
+-[NDStatusMonitor dealloc];
+-[NDStatusMonitor performCallbackAfterNetworkChangedEvent:identifier:numberOfPreviousRetries:];
+-[NDStatusMonitor performCallbackAfterNetworkChangedEvent:identifier:delay:];
+-[NDStatusMonitor simulateNetworkChangedEvent:identifier:];
+-[NDStatusMonitor handleDynamicStoreCallback:changedKeys:];
+-[NDStatusMonitor handleBetterNetworkEvent];
+-[NDStatusMonitor startMonitoringDynamicStore];
+-[NDStatusMonitor stopMonitoringDynamicStore];
+-[NDStatusMonitor start];
+-[NDStatusMonitor stop];
+
+@end
+
+@interface NDStatusMonitorClientHolder : NSObject {
+    /* instance variables */
+    @"<NDStatusMonitorClient>" _client;
+    Q _identifier;
+    @"NSObject<OS_voucher>" _voucher;
+}
+
+@property (T@"<NDStatusMonitorClient>",&,N,V_client) client;
+@property (TQ,N,V_identifier) identifier;
+@property (T@"NSObject<OS_voucher>",&,N,V_voucher) voucher;
+
+/* instance methods */
+-[NDStatusMonitorClientHolder initWithClient:identifier:];
+-[NDStatusMonitorClientHolder hash];
+-[NDStatusMonitorClientHolder isEqual:];
+-[NDStatusMonitorClientHolder client];
+-[NDStatusMonitorClientHolder setClient:];
+-[NDStatusMonitorClientHolder identifier];
+-[NDStatusMonitorClientHolder setIdentifier:];
+-[NDStatusMonitorClientHolder voucher];
+-[NDStatusMonitorClientHolder setVoucher:];
+
+@end
+
+@interface NDTaskMonitor : NSObject <NDApplicationObserver> {
+    /* instance variables */
+    @"__NSCFURLSessionTaskInfo" _taskInfo;
+    @"NSString" _clientBundleIdentifier;
+    @"NSString" _clientSecondaryIdentifier;
+    @"NSObject<OS_dispatch_queue>" _queue;
+    @"NSObject<OS_dispatch_source>" _throughputTimer;
+    @"NSMutableArray" _progressTimestamps;
+    @"NSMutableArray" _progressValues;
+    Q _throughputInterval;
+    @"NDApplication" _monitoredApplication;
+    d _throughputMonitoringStartTime;
+    @"UMUserSyncTask" _UMSyncTask;
+    i _powerMonitorToken;
+    B _hasTransferredData;
+    B _discretionary;
+    B _explicitlyDiscretionary;
+    B _performsNonDiscretionaryThrougputMonitoring;
+    B _mayBeDemotedToDiscretionary;
+    q _basePriority;
+    @"<NDTaskMonitorDelegate>" _delegate;
+}
+
+@property (T@"<NDTaskMonitorDelegate>",W,V_delegate) delegate;
+@property (Tq,V_basePriority) basePriority;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* instance methods */
+-[NDTaskMonitor initWithDelegate:taskInfo:clientBundleIdentifier:secondaryIdentifier:monitoredApplication:priority:options:queue:];
+-[NDTaskMonitor currentThroughputThreshold];
+-[NDTaskMonitor currentIntervalEndDelta];
+-[NDTaskMonitor calculateThroughput];
+-[NDTaskMonitor setThroughputTimerForCurrentInterval];
+-[NDTaskMonitor taskTransferredData:countOfBytesReceived:cellular:];
+-[NDTaskMonitor startThroughputMonitoring];
+-[NDTaskMonitor stopThroughputMonitoring];
+-[NDTaskMonitor taskWillResume];
+-[NDTaskMonitor startThroughputMonitoringIfAppropriate];
+-[NDTaskMonitor taskWillSuspend];
+-[NDTaskMonitor cancel];
+-[NDTaskMonitor applicationWasQuitFromAppSwitcher:];
+-[NDTaskMonitor backgroundUpdatesDisabledForApplication:];
+-[NDTaskMonitor applicationEnteredForeground:];
+-[NDTaskMonitor applicationNoLongerInForeground:];
+-[NDTaskMonitor applicationEndedTransitionalDiscretionaryBackgroundPeriod:];
+-[NDTaskMonitor basePriority];
+-[NDTaskMonitor setBasePriority:];
+-[NDTaskMonitor delegate];
+-[NDTaskMonitor setDelegate:];
+
+@end
+
+@interface NDTaskStorageDB : NSObject {
+    /* instance variables */
+    @"NSURL" _path;
+    @"NSURL" _dbDir;
+    B _dbInitialized;
+    B _dbInitializationStarted;
+    @"NSObject<OS_dispatch_queue>" _workQueue;
+    ^{sqlite3=} _dbConnection;
+    ^{sqlite3_stmt=} _insertOrUpdateAllEntriesStmt;
+    ^{sqlite3_stmt=} _updateTaskDescriptionForTaskStmt;
+    ^{sqlite3_stmt=} _updateResponseForTaskStmt;
+    ^{sqlite3_stmt=} _updateResumableUploadDataForTaskStmt;
+    ^{sqlite3_stmt=} _updateDownloadFileURLForTaskStmt;
+    ^{sqlite3_stmt=} _updateLoadingPriorityForTaskStmt;
+    ^{sqlite3_stmt=} _updateBytesPerSecondLimitForTaskStmt;
+    ^{sqlite3_stmt=} _updateExpectedProgressTargetForTaskStmt;
+    ^{sqlite3_stmt=} _updateTLSSupportedProtocolVersionForTaskStmt;
+    ^{sqlite3_stmt=} _deleteEntryForTaskStmt;
+    ^{sqlite3_stmt=} _updateCurrentRequestForTaskStmt;
+    ^{sqlite3_stmt=} _updateRespondedToWillBeginDelayedRequestCallbackForTaskStmt;
+    ^{sqlite3_stmt=} _updateShouldCancelOnDisconnectForTaskStmt;
+    ^{sqlite3_stmt=} _updateSuspendPathEntriesForTaskStmt;
+    ^{sqlite3_stmt=} _updateSetPriorityEntriesForTaskStmt;
+}
+
+/* class methods */
++[NDTaskStorageDB _preset_unarchiveObjectWithData:];
++[NDTaskStorageDB removeItemAtPath:];
++[NDTaskStorageDB nsurlsessiondPath];
+
+/* instance methods */
+-[NDTaskStorageDB migrateSchemaToLatestVersion:];
+-[NDTaskStorageDB handleSchemaVersionChange];
+-[NDTaskStorageDB _createDBSchemaForPath:];
+-[NDTaskStorageDB _onqueue_garbageCollect];
+-[NDTaskStorageDB _onqueue_initDB];
+-[NDTaskStorageDB _sqlBlobHelper:forColumn:];
+-[NDTaskStorageDB _onqueue_convertSqlRowToTaskInfoEntry:];
+-[NDTaskStorageDB _onqueue_insertOrUpdateAllEntriesForTask:sessionUUID:];
+-[NDTaskStorageDB _onqueue_updateResponseForTask:sessionUUID:];
+-[NDTaskStorageDB _onqueue_updateResumableUploadDataForTask:sessionUUID:];
+-[NDTaskStorageDB _onqueue_updateTaskDescriptionForTask:sessionUUID:];
+-[NDTaskStorageDB _onqueue_updateShouldCancelOnDisconnectForTask:sessionUUID:];
+-[NDTaskStorageDB _onqueue_updateCurrentRequestForTask:sessionUUID:];
+-[NDTaskStorageDB _onqueue_updateTLSSupportedProtocolVersionForTask:sessionUUID:];
+-[NDTaskStorageDB _onqueue_updateBytesPerSecondLimitForTask:sessionUUID:];
+-[NDTaskStorageDB _onqueue_updateLoadingPriorityForTask:sessionUUID:];
+-[NDTaskStorageDB _onqueue_updateExpectedProgressTargetForTask:sessionUUID:];
+-[NDTaskStorageDB _onqueue_deleteEntryForTask:forSession:sessionUUID:];
+-[NDTaskStorageDB _onqueue_deleteAllTaskEntriesForSession:sessionUUID:];
+-[NDTaskStorageDB _onqueue_updateRespondedToWillBeginDelayedRequestCallbackForTask:sessionUUID:];
+-[NDTaskStorageDB _onqueue_updateDownloadFileURLForTask:sessionUUID:];
+-[NDTaskStorageDB _onqueue_updateSuspendPathEntriesForTask:sessionUUID:];
+-[NDTaskStorageDB _onqueue_updateSetPriorityEntriesForTask:sessionUUID:];
+-[NDTaskStorageDB _initDB:];
+-[NDTaskStorageDB _updateDBEntryForTask:updateType:sessionUUID:];
+-[NDTaskStorageDB _getAllTasksFromDBForSession:sessionUUID:];
+-[NDTaskStorageDB _deleteAllTaskEntriesForSession:sessionUUID:];
+-[NDTaskStorageDB _deleteAllDataInDB];
+-[NDTaskStorageDB _cleanupDB];
+-[NDTaskStorageDB _getAllSessionIDsForBundle:];
+-[NDTaskStorageDB _onqueue_getAllSessionIDsForBundle:];
+-[NDTaskStorageDB _beginSqliteTransaction];
+-[NDTaskStorageDB _commitSqliteTransaction];
+-[NDTaskStorageDB _updateDBEntriesForTasksInSession:taskInfos:updates:];
+-[NDTaskStorageDB _deleteTaskEntriesWithIdentifiers:forSession:sessionUUID:];
+-[NDTaskStorageDB _getAllBundleIDsFromSessionTasks];
+-[NDTaskStorageDB _onqueue_getAllBundleIDsFromSessionTasks];
+-[NDTaskStorageDB _getConfigurationForBundleID:sessionID:];
+-[NDTaskStorageDB _onqueue_getConfigurationForBundleID:sessionID:];
+-[NDTaskStorageDB _getOptionsForBundleID:sessionID:];
+-[NDTaskStorageDB _onqueue_getOptionsForBundleID:sessionID:];
+-[NDTaskStorageDB _deleteSessionForBundleID:sessionID:];
+-[NDTaskStorageDB _onqueue_deleteSessionForBundleID:sessionID:];
+-[NDTaskStorageDB _deleteAllSessionsForBundleID:];
+-[NDTaskStorageDB _onqueue_deleteAllSessionsForBundleID:];
+-[NDTaskStorageDB _updateConfigurationForBundleID:sessionID:with:];
+-[NDTaskStorageDB _onqueue_updateConfigurationForBundleID:sessionID:with:];
+-[NDTaskStorageDB _onqueue_updateConfigurationForBundleID:sessionID:withData:];
+-[NDTaskStorageDB _updateOptionsForBundleID:sessionID:with:];
+-[NDTaskStorageDB _onqueue_updateOptionsForBundleID:sessionID:with:];
+-[NDTaskStorageDB _onqueue_updateOptionsForBundleID:sessionID:withData:];
+
+@end
+
+@interface NDUserEventAgentConnection : NSObject {
+    /* instance variables */
+    @"NSObject<OS_dispatch_queue>" _queue;
+    @"NSObject<OS_xpc_object>" _connection;
+    @"NSObject<OS_xpc_object>" _listener;
+    @"NSDictionary" _registeredClients;
+    @"NSMutableDictionary" _pendingWakes;
+}
+
+/* class methods */
++[NDUserEventAgentConnection sharedUserEventAgentConnection];
+
+/* instance methods */
+-[NDUserEventAgentConnection init];
+-[NDUserEventAgentConnection start];
+-[NDUserEventAgentConnection handleNewConnection:];
+-[NDUserEventAgentConnection canLaunchProcessWithIdentifier:];
+-[NDUserEventAgentConnection launchProcessWithIdentifier:sessionIdentifier:];
+-[NDUserEventAgentConnection performWake:uponNotification:sessionIdentifier:];
+-[NDUserEventAgentConnection removePendingWakeForClient:sessionIdentifier:];
+
+@end
+
+@interface NDUserSyncStakeholder : NSObject <UMUserSyncStakeholder> {
+    /* instance variables */
+    B _tasksInitialized;
+    B _tasksEnqueued;
+    {os_unfair_lock_s="_os_unfair_lock_opaque"I} _activeTasksLock;
+    {os_unfair_lock_s="_os_unfair_lock_opaque"I} _monitorTaskLock;
+    @"NSMutableSet" _activeTasks;
+    @"UMUserSyncTask" _monitorTask;
+    @"NSMutableSet" _monitorTaskSet;
+    @"NSMutableDictionary" _bridgeTasks;
+}
+
+@property (T@"NSMutableSet",&,V_activeTasks) activeTasks;
+@property (T{os_unfair_lock_s=I},V_activeTasksLock) activeTasksLock;
+@property (T@"UMUserSyncTask",&,V_monitorTask) monitorTask;
+@property (T@"NSMutableSet",&,V_monitorTaskSet) monitorTaskSet;
+@property (T{os_unfair_lock_s=I},V_monitorTaskLock) monitorTaskLock;
+@property (TB,V_tasksInitialized) tasksInitialized;
+@property (TB,V_tasksEnqueued) tasksEnqueued;
+@property (T@"NSMutableDictionary",&,V_bridgeTasks) bridgeTasks;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* class methods */
++[NDUserSyncStakeholder sharedStakeholder];
++[NDUserSyncStakeholder EDUMode];
+
+/* instance methods */
+-[NDUserSyncStakeholder init];
+-[NDUserSyncStakeholder startUMTask:taskInfo:];
+-[NDUserSyncStakeholder startBridgingUMTask:];
+-[NDUserSyncStakeholder endBridgingUMTask:];
+-[NDUserSyncStakeholder endUMTask:];
+-[NDUserSyncStakeholder uploadContent];
+-[NDUserSyncStakeholder restoredTaskEnqueued:];
+-[NDUserSyncStakeholder restoredTaskActive:];
+-[NDUserSyncStakeholder tasksHaveBeenEnqueued];
+-[NDUserSyncStakeholder willSwitchToUser:];
+-[NDUserSyncStakeholder readyToSwitchToUser:];
+-[NDUserSyncStakeholder willSwitchUser];
+-[NDUserSyncStakeholder activeTasks];
+-[NDUserSyncStakeholder setActiveTasks:];
+-[NDUserSyncStakeholder activeTasksLock];
+-[NDUserSyncStakeholder setActiveTasksLock:];
+-[NDUserSyncStakeholder monitorTask];
+-[NDUserSyncStakeholder setMonitorTask:];
+-[NDUserSyncStakeholder monitorTaskSet];
+-[NDUserSyncStakeholder setMonitorTaskSet:];
+-[NDUserSyncStakeholder monitorTaskLock];
+-[NDUserSyncStakeholder setMonitorTaskLock:];
+-[NDUserSyncStakeholder tasksInitialized];
+-[NDUserSyncStakeholder setTasksInitialized:];
+-[NDUserSyncStakeholder tasksEnqueued];
+-[NDUserSyncStakeholder setTasksEnqueued:];
+-[NDUserSyncStakeholder bridgeTasks];
+-[NDUserSyncStakeholder setBridgeTasks:];
+
+@end
+
+@interface PDBluetoothCompanionLinkAssertion : NSObject <CBScalablePipeManagerDelegate> {
+    /* instance variables */
+    @"NSObject<OS_dispatch_queue>" _bluetoothSerialQueue;
+    @"NSUUID" _companionPeerIdentifier;
+    B _hasLoadedCompanionPeerIdentifier;
+    B _hasSetLinkRequirements;
+    B _isActive;
+    @"CBScalablePipeManager" _pipeManager;
+}
+
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* instance methods */
+-[PDBluetoothCompanionLinkAssertion init];
+-[PDBluetoothCompanionLinkAssertion dealloc];
+-[PDBluetoothCompanionLinkAssertion acquire];
+-[PDBluetoothCompanionLinkAssertion invalidate];
+-[PDBluetoothCompanionLinkAssertion scalablePipeManagerDidUpdateState:];
+-[PDBluetoothCompanionLinkAssertion scalablePipeManager:didRegisterEndpoint:error:];
+-[PDBluetoothCompanionLinkAssertion scalablePipeManager:didUnregisterEndpoint:];
+-[PDBluetoothCompanionLinkAssertion scalablePipeManager:pipeDidConnect:];
+-[PDBluetoothCompanionLinkAssertion scalablePipeManager:pipeDidDisconnect:error:];
+-[PDBluetoothCompanionLinkAssertion _updateState];
+
+@end
+
+@interface PDURLSessionProxyAuthChallenge : PBCodable <NSCopying> {
+    /* instance variables */
+    @"NSData" _archiveList;
+    I _version;
+    {?="version"b1} _has;
+}
+
+@property (TB,N) hasVersion;
+@property (TI,N,V_version) version;
+@property (TB,R,N) hasArchiveList;
+@property (T@"NSData",&,N,V_archiveList) archiveList;
+
+/* instance methods */
+-[PDURLSessionProxyAuthChallenge _initWithActualAuthChallenge:];
+-[PDURLSessionProxyAuthChallenge _actualAuthChallenge];
+-[PDURLSessionProxyAuthChallenge setVersion:];
+-[PDURLSessionProxyAuthChallenge setHasVersion:];
+-[PDURLSessionProxyAuthChallenge hasVersion];
+-[PDURLSessionProxyAuthChallenge hasArchiveList];
+-[PDURLSessionProxyAuthChallenge description];
+-[PDURLSessionProxyAuthChallenge dictionaryRepresentation];
+-[PDURLSessionProxyAuthChallenge readFrom:];
+-[PDURLSessionProxyAuthChallenge writeTo:];
+-[PDURLSessionProxyAuthChallenge copyTo:];
+-[PDURLSessionProxyAuthChallenge copyWithZone:];
+-[PDURLSessionProxyAuthChallenge isEqual:];
+-[PDURLSessionProxyAuthChallenge hash];
+-[PDURLSessionProxyAuthChallenge mergeFrom:];
+-[PDURLSessionProxyAuthChallenge version];
+-[PDURLSessionProxyAuthChallenge archiveList];
+-[PDURLSessionProxyAuthChallenge setArchiveList:];
+
+@end
+
+@interface PDURLSessionProxyCancelTask : PBCodable <NSCopying> {
+    /* instance variables */
+    @"PDURLSessionProxyTaskMessage" _task;
+}
+
+@property (TB,R,N) hasTask;
+@property (T@"PDURLSessionProxyTaskMessage",&,N,V_task) task;
+
+/* instance methods */
+-[PDURLSessionProxyCancelTask hasTask];
+-[PDURLSessionProxyCancelTask description];
+-[PDURLSessionProxyCancelTask dictionaryRepresentation];
+-[PDURLSessionProxyCancelTask readFrom:];
+-[PDURLSessionProxyCancelTask writeTo:];
+-[PDURLSessionProxyCancelTask copyTo:];
+-[PDURLSessionProxyCancelTask copyWithZone:];
+-[PDURLSessionProxyCancelTask isEqual:];
+-[PDURLSessionProxyCancelTask hash];
+-[PDURLSessionProxyCancelTask mergeFrom:];
+-[PDURLSessionProxyCancelTask task];
+-[PDURLSessionProxyCancelTask setTask:];
+
+@end
+
+@interface PDURLSessionProxyCommon : NSObject
+
+/* class methods */
++[PDURLSessionProxyCommon allowedClassesForUnarchiving];
++[PDURLSessionProxyCommon getComponentsForFullIdentifier:bundleIdentifier:sessionIdentifier:];
++[PDURLSessionProxyCommon messageSubclassForMessageType:isReply:];
+
+@end
+
+@interface PDURLSessionProxyConnectedToServer : PBCodable <NSCopying> {
+    /* instance variables */
+    @"NSString" _socketUUID;
+    @"PDURLSessionProxyTaskMessage" _task;
+}
+
+@property (TB,R,N) hasTask;
+@property (T@"PDURLSessionProxyTaskMessage",&,N,V_task) task;
+@property (TB,R,N) hasSocketUUID;
+@property (T@"NSString",&,N,V_socketUUID) socketUUID;
+
+/* instance methods */
+-[PDURLSessionProxyConnectedToServer hasTask];
+-[PDURLSessionProxyConnectedToServer hasSocketUUID];
+-[PDURLSessionProxyConnectedToServer description];
+-[PDURLSessionProxyConnectedToServer dictionaryRepresentation];
+-[PDURLSessionProxyConnectedToServer readFrom:];
+-[PDURLSessionProxyConnectedToServer writeTo:];
+-[PDURLSessionProxyConnectedToServer copyTo:];
+-[PDURLSessionProxyConnectedToServer copyWithZone:];
+-[PDURLSessionProxyConnectedToServer isEqual:];
+-[PDURLSessionProxyConnectedToServer hash];
+-[PDURLSessionProxyConnectedToServer mergeFrom:];
+-[PDURLSessionProxyConnectedToServer task];
+-[PDURLSessionProxyConnectedToServer setTask:];
+-[PDURLSessionProxyConnectedToServer socketUUID];
+-[PDURLSessionProxyConnectedToServer setSocketUUID:];
+
+@end
+
+@interface PDURLSessionProxyCreateSession : PBCodable <NSCopying> {
+    /* instance variables */
+    @"NSData" _configuration;
+    @"PDURLSessionProxySessionMessage" _session;
+    B _delegateImplementsDidReceiveResponse;
+    B _delegateImplementsSessionAuthChallenge;
+    B _delegateImplementsTaskAuthChallenge;
+    B _delegateImplementsWillPerformRedirection;
+    B _delegateImplementsWillSendRequest;
+    B _supportsRedirects;
+    {?="delegateImplementsDidReceiveResponse"b1"delegateImplementsSessionAuthChallenge"b1"delegateImplementsTaskAuthChallenge"b1"delegateImplementsWillPerformRedirection"b1"delegateImplementsWillSendRequest"b1"supportsRedirects"b1} _has;
+}
+
+@property (T@"NSURLSessionConfiguration",&,S_setActualConfiguration:) _actualConfiguration;
+@property (TB,R,N) hasSession;
+@property (T@"PDURLSessionProxySessionMessage",&,N,V_session) session;
+@property (TB,R,N) hasConfiguration;
+@property (T@"NSData",&,N,V_configuration) configuration;
+@property (TB,N) hasSupportsRedirects;
+@property (TB,N,V_supportsRedirects) supportsRedirects;
+@property (TB,N) hasDelegateImplementsWillSendRequest;
+@property (TB,N,V_delegateImplementsWillSendRequest) delegateImplementsWillSendRequest;
+@property (TB,N) hasDelegateImplementsSessionAuthChallenge;
+@property (TB,N,V_delegateImplementsSessionAuthChallenge) delegateImplementsSessionAuthChallenge;
+@property (TB,N) hasDelegateImplementsTaskAuthChallenge;
+@property (TB,N,V_delegateImplementsTaskAuthChallenge) delegateImplementsTaskAuthChallenge;
+@property (TB,N) hasDelegateImplementsWillPerformRedirection;
+@property (TB,N,V_delegateImplementsWillPerformRedirection) delegateImplementsWillPerformRedirection;
+@property (TB,N) hasDelegateImplementsDidReceiveResponse;
+@property (TB,N,V_delegateImplementsDidReceiveResponse) delegateImplementsDidReceiveResponse;
+
+/* instance methods */
+-[PDURLSessionProxyCreateSession _actualConfiguration];
+-[PDURLSessionProxyCreateSession _setActualConfiguration:];
+-[PDURLSessionProxyCreateSession hasSession];
+-[PDURLSessionProxyCreateSession hasConfiguration];
+-[PDURLSessionProxyCreateSession setSupportsRedirects:];
+-[PDURLSessionProxyCreateSession setHasSupportsRedirects:];
+-[PDURLSessionProxyCreateSession hasSupportsRedirects];
+-[PDURLSessionProxyCreateSession setDelegateImplementsWillSendRequest:];
+-[PDURLSessionProxyCreateSession setHasDelegateImplementsWillSendRequest:];
+-[PDURLSessionProxyCreateSession hasDelegateImplementsWillSendRequest];
+-[PDURLSessionProxyCreateSession setDelegateImplementsSessionAuthChallenge:];
+-[PDURLSessionProxyCreateSession setHasDelegateImplementsSessionAuthChallenge:];
+-[PDURLSessionProxyCreateSession hasDelegateImplementsSessionAuthChallenge];
+-[PDURLSessionProxyCreateSession setDelegateImplementsTaskAuthChallenge:];
+-[PDURLSessionProxyCreateSession setHasDelegateImplementsTaskAuthChallenge:];
+-[PDURLSessionProxyCreateSession hasDelegateImplementsTaskAuthChallenge];
+-[PDURLSessionProxyCreateSession setDelegateImplementsWillPerformRedirection:];
+-[PDURLSessionProxyCreateSession setHasDelegateImplementsWillPerformRedirection:];
+-[PDURLSessionProxyCreateSession hasDelegateImplementsWillPerformRedirection];
+-[PDURLSessionProxyCreateSession setDelegateImplementsDidReceiveResponse:];
+-[PDURLSessionProxyCreateSession setHasDelegateImplementsDidReceiveResponse:];
+-[PDURLSessionProxyCreateSession hasDelegateImplementsDidReceiveResponse];
+-[PDURLSessionProxyCreateSession description];
+-[PDURLSessionProxyCreateSession dictionaryRepresentation];
+-[PDURLSessionProxyCreateSession readFrom:];
+-[PDURLSessionProxyCreateSession writeTo:];
+-[PDURLSessionProxyCreateSession copyTo:];
+-[PDURLSessionProxyCreateSession copyWithZone:];
+-[PDURLSessionProxyCreateSession isEqual:];
+-[PDURLSessionProxyCreateSession hash];
+-[PDURLSessionProxyCreateSession mergeFrom:];
+-[PDURLSessionProxyCreateSession session];
+-[PDURLSessionProxyCreateSession setSession:];
+-[PDURLSessionProxyCreateSession configuration];
+-[PDURLSessionProxyCreateSession setConfiguration:];
+-[PDURLSessionProxyCreateSession supportsRedirects];
+-[PDURLSessionProxyCreateSession delegateImplementsWillSendRequest];
+-[PDURLSessionProxyCreateSession delegateImplementsSessionAuthChallenge];
+-[PDURLSessionProxyCreateSession delegateImplementsTaskAuthChallenge];
+-[PDURLSessionProxyCreateSession delegateImplementsWillPerformRedirection];
+-[PDURLSessionProxyCreateSession delegateImplementsDidReceiveResponse];
+
+@end
+
+@interface PDURLSessionProxyCredential : PBCodable <NSCopying> {
+    /* instance variables */
+    @"NSData" _archiveList;
+    I _version;
+    {?="version"b1} _has;
+}
+
+@property (TB,N) hasVersion;
+@property (TI,N,V_version) version;
+@property (TB,R,N) hasArchiveList;
+@property (T@"NSData",&,N,V_archiveList) archiveList;
+
+/* instance methods */
+-[PDURLSessionProxyCredential _initWithActualCredential:];
+-[PDURLSessionProxyCredential _actualCredential];
+-[PDURLSessionProxyCredential setVersion:];
+-[PDURLSessionProxyCredential setHasVersion:];
+-[PDURLSessionProxyCredential hasVersion];
+-[PDURLSessionProxyCredential hasArchiveList];
+-[PDURLSessionProxyCredential description];
+-[PDURLSessionProxyCredential dictionaryRepresentation];
+-[PDURLSessionProxyCredential readFrom:];
+-[PDURLSessionProxyCredential writeTo:];
+-[PDURLSessionProxyCredential copyTo:];
+-[PDURLSessionProxyCredential copyWithZone:];
+-[PDURLSessionProxyCredential isEqual:];
+-[PDURLSessionProxyCredential hash];
+-[PDURLSessionProxyCredential mergeFrom:];
+-[PDURLSessionProxyCredential version];
+-[PDURLSessionProxyCredential archiveList];
+-[PDURLSessionProxyCredential setArchiveList:];
+
+@end
+
+@interface PDURLSessionProxyDataTaskWithRequest : PBRequest <NSCopying> {
+    /* instance variables */
+    Q _taskSequenceNumber;
+    @"PDURLSessionProxyRequest" _currentRequest;
+    @"PDURLSessionProxyRequest" _originalRequest;
+    @"PDURLSessionProxyTaskMessage" _task;
+    {?="taskSequenceNumber"b1} _has;
+}
+
+@property (TB,R,N) hasTask;
+@property (T@"PDURLSessionProxyTaskMessage",&,N,V_task) task;
+@property (TB,R,N) hasOriginalRequest;
+@property (T@"PDURLSessionProxyRequest",&,N,V_originalRequest) originalRequest;
+@property (TB,R,N) hasCurrentRequest;
+@property (T@"PDURLSessionProxyRequest",&,N,V_currentRequest) currentRequest;
+@property (TB,N) hasTaskSequenceNumber;
+@property (TQ,N,V_taskSequenceNumber) taskSequenceNumber;
+
+/* instance methods */
+-[PDURLSessionProxyDataTaskWithRequest hasTask];
+-[PDURLSessionProxyDataTaskWithRequest hasOriginalRequest];
+-[PDURLSessionProxyDataTaskWithRequest hasCurrentRequest];
+-[PDURLSessionProxyDataTaskWithRequest setTaskSequenceNumber:];
+-[PDURLSessionProxyDataTaskWithRequest setHasTaskSequenceNumber:];
+-[PDURLSessionProxyDataTaskWithRequest hasTaskSequenceNumber];
+-[PDURLSessionProxyDataTaskWithRequest description];
+-[PDURLSessionProxyDataTaskWithRequest dictionaryRepresentation];
+-[PDURLSessionProxyDataTaskWithRequest readFrom:];
+-[PDURLSessionProxyDataTaskWithRequest writeTo:];
+-[PDURLSessionProxyDataTaskWithRequest copyTo:];
+-[PDURLSessionProxyDataTaskWithRequest copyWithZone:];
+-[PDURLSessionProxyDataTaskWithRequest isEqual:];
+-[PDURLSessionProxyDataTaskWithRequest hash];
+-[PDURLSessionProxyDataTaskWithRequest mergeFrom:];
+-[PDURLSessionProxyDataTaskWithRequest task];
+-[PDURLSessionProxyDataTaskWithRequest setTask:];
+-[PDURLSessionProxyDataTaskWithRequest originalRequest];
+-[PDURLSessionProxyDataTaskWithRequest setOriginalRequest:];
+-[PDURLSessionProxyDataTaskWithRequest currentRequest];
+-[PDURLSessionProxyDataTaskWithRequest setCurrentRequest:];
+-[PDURLSessionProxyDataTaskWithRequest taskSequenceNumber];
+
+@end
+
+@interface PDURLSessionProxyDataTaskWithRequestReply : PBCodable <NSCopying> {
+    /* instance variables */
+    @"PDURLSessionProxyTaskMessage" _task;
+    @"NSData" _taskInfo;
+}
+
+@property (T@"__NSCFURLSessionTaskInfo",&,S_setActualTaskInfo:) _actualTaskInfo;
+@property (TB,R,N) hasTask;
+@property (T@"PDURLSessionProxyTaskMessage",&,N,V_task) task;
+@property (TB,R,N) hasTaskInfo;
+@property (T@"NSData",&,N,V_taskInfo) taskInfo;
+
+/* instance methods */
+-[PDURLSessionProxyDataTaskWithRequestReply _actualTaskInfo];
+-[PDURLSessionProxyDataTaskWithRequestReply _setActualTaskInfo:];
+-[PDURLSessionProxyDataTaskWithRequestReply hasTask];
+-[PDURLSessionProxyDataTaskWithRequestReply hasTaskInfo];
+-[PDURLSessionProxyDataTaskWithRequestReply description];
+-[PDURLSessionProxyDataTaskWithRequestReply dictionaryRepresentation];
+-[PDURLSessionProxyDataTaskWithRequestReply readFrom:];
+-[PDURLSessionProxyDataTaskWithRequestReply writeTo:];
+-[PDURLSessionProxyDataTaskWithRequestReply copyTo:];
+-[PDURLSessionProxyDataTaskWithRequestReply copyWithZone:];
+-[PDURLSessionProxyDataTaskWithRequestReply isEqual:];
+-[PDURLSessionProxyDataTaskWithRequestReply hash];
+-[PDURLSessionProxyDataTaskWithRequestReply mergeFrom:];
+-[PDURLSessionProxyDataTaskWithRequestReply task];
+-[PDURLSessionProxyDataTaskWithRequestReply setTask:];
+-[PDURLSessionProxyDataTaskWithRequestReply taskInfo];
+-[PDURLSessionProxyDataTaskWithRequestReply setTaskInfo:];
+
+@end
+
+@interface PDURLSessionProxyDidReceiveChallenge : PBCodable <NSCopying> {
+    /* instance variables */
+    @"PDURLSessionProxyAuthChallenge" _challenge;
+    @"PDURLSessionProxyTaskMessage" _task;
+}
+
+@property (TB,R,N) hasTask;
+@property (T@"PDURLSessionProxyTaskMessage",&,N,V_task) task;
+@property (TB,R,N) hasChallenge;
+@property (T@"PDURLSessionProxyAuthChallenge",&,N,V_challenge) challenge;
+
+/* instance methods */
+-[PDURLSessionProxyDidReceiveChallenge hasTask];
+-[PDURLSessionProxyDidReceiveChallenge hasChallenge];
+-[PDURLSessionProxyDidReceiveChallenge description];
+-[PDURLSessionProxyDidReceiveChallenge dictionaryRepresentation];
+-[PDURLSessionProxyDidReceiveChallenge readFrom:];
+-[PDURLSessionProxyDidReceiveChallenge writeTo:];
+-[PDURLSessionProxyDidReceiveChallenge copyTo:];
+-[PDURLSessionProxyDidReceiveChallenge copyWithZone:];
+-[PDURLSessionProxyDidReceiveChallenge isEqual:];
+-[PDURLSessionProxyDidReceiveChallenge hash];
+-[PDURLSessionProxyDidReceiveChallenge mergeFrom:];
+-[PDURLSessionProxyDidReceiveChallenge task];
+-[PDURLSessionProxyDidReceiveChallenge setTask:];
+-[PDURLSessionProxyDidReceiveChallenge challenge];
+-[PDURLSessionProxyDidReceiveChallenge setChallenge:];
+
+@end
+
+@interface PDURLSessionProxyDidReceiveChallengeReply : PBCodable <NSCopying> {
+    /* instance variables */
+    @"PDURLSessionProxyCredential" _credential;
+    i _disposition;
+    @"PDURLSessionProxyTaskMessage" _task;
+    {?="disposition"b1} _has;
+}
+
+@property (TB,R,N) hasTask;
+@property (T@"PDURLSessionProxyTaskMessage",&,N,V_task) task;
+@property (TB,N) hasDisposition;
+@property (Ti,N,V_disposition) disposition;
+@property (TB,R,N) hasCredential;
+@property (T@"PDURLSessionProxyCredential",&,N,V_credential) credential;
+
+/* instance methods */
+-[PDURLSessionProxyDidReceiveChallengeReply hasTask];
+-[PDURLSessionProxyDidReceiveChallengeReply disposition];
+-[PDURLSessionProxyDidReceiveChallengeReply setDisposition:];
+-[PDURLSessionProxyDidReceiveChallengeReply setHasDisposition:];
+-[PDURLSessionProxyDidReceiveChallengeReply hasDisposition];
+-[PDURLSessionProxyDidReceiveChallengeReply dispositionAsString:];
+-[PDURLSessionProxyDidReceiveChallengeReply StringAsDisposition:];
+-[PDURLSessionProxyDidReceiveChallengeReply hasCredential];
+-[PDURLSessionProxyDidReceiveChallengeReply description];
+-[PDURLSessionProxyDidReceiveChallengeReply dictionaryRepresentation];
+-[PDURLSessionProxyDidReceiveChallengeReply readFrom:];
+-[PDURLSessionProxyDidReceiveChallengeReply writeTo:];
+-[PDURLSessionProxyDidReceiveChallengeReply copyTo:];
+-[PDURLSessionProxyDidReceiveChallengeReply copyWithZone:];
+-[PDURLSessionProxyDidReceiveChallengeReply isEqual:];
+-[PDURLSessionProxyDidReceiveChallengeReply hash];
+-[PDURLSessionProxyDidReceiveChallengeReply mergeFrom:];
+-[PDURLSessionProxyDidReceiveChallengeReply task];
+-[PDURLSessionProxyDidReceiveChallengeReply setTask:];
+-[PDURLSessionProxyDidReceiveChallengeReply credential];
+-[PDURLSessionProxyDidReceiveChallengeReply setCredential:];
+
+@end
+
+@interface PDURLSessionProxyDidReceiveData : PBCodable <NSCopying> {
+    /* instance variables */
+    @"NSData" _receivedData;
+    @"PDURLSessionProxyTaskMessage" _task;
+}
+
+@property (TB,R,N) hasTask;
+@property (T@"PDURLSessionProxyTaskMessage",&,N,V_task) task;
+@property (TB,R,N) hasReceivedData;
+@property (T@"NSData",&,N,V_receivedData) receivedData;
+
+/* instance methods */
+-[PDURLSessionProxyDidReceiveData hasTask];
+-[PDURLSessionProxyDidReceiveData hasReceivedData];
+-[PDURLSessionProxyDidReceiveData description];
+-[PDURLSessionProxyDidReceiveData dictionaryRepresentation];
+-[PDURLSessionProxyDidReceiveData readFrom:];
+-[PDURLSessionProxyDidReceiveData writeTo:];
+-[PDURLSessionProxyDidReceiveData copyTo:];
+-[PDURLSessionProxyDidReceiveData copyWithZone:];
+-[PDURLSessionProxyDidReceiveData isEqual:];
+-[PDURLSessionProxyDidReceiveData hash];
+-[PDURLSessionProxyDidReceiveData mergeFrom:];
+-[PDURLSessionProxyDidReceiveData task];
+-[PDURLSessionProxyDidReceiveData setTask:];
+-[PDURLSessionProxyDidReceiveData receivedData];
+-[PDURLSessionProxyDidReceiveData setReceivedData:];
+
+@end
+
+@interface PDURLSessionProxyDidReceiveDataReply : PBCodable <NSCopying> {
+    /* instance variables */
+    @"PDURLSessionProxyTaskMessage" _task;
+}
+
+@property (TB,R,N) hasTask;
+@property (T@"PDURLSessionProxyTaskMessage",&,N,V_task) task;
+
+/* instance methods */
+-[PDURLSessionProxyDidReceiveDataReply hasTask];
+-[PDURLSessionProxyDidReceiveDataReply description];
+-[PDURLSessionProxyDidReceiveDataReply dictionaryRepresentation];
+-[PDURLSessionProxyDidReceiveDataReply readFrom:];
+-[PDURLSessionProxyDidReceiveDataReply writeTo:];
+-[PDURLSessionProxyDidReceiveDataReply copyTo:];
+-[PDURLSessionProxyDidReceiveDataReply copyWithZone:];
+-[PDURLSessionProxyDidReceiveDataReply isEqual:];
+-[PDURLSessionProxyDidReceiveDataReply hash];
+-[PDURLSessionProxyDidReceiveDataReply mergeFrom:];
+-[PDURLSessionProxyDidReceiveDataReply task];
+-[PDURLSessionProxyDidReceiveDataReply setTask:];
+
+@end
+
+@interface PDURLSessionProxyDidReceiveResponse : PBCodable <NSCopying> {
+    /* instance variables */
+    @"PDURLSessionProxyResponse" _response;
+    @"PDURLSessionProxyTaskMessage" _task;
+}
+
+@property (TB,R,N) hasTask;
+@property (T@"PDURLSessionProxyTaskMessage",&,N,V_task) task;
+@property (TB,R,N) hasResponse;
+@property (T@"PDURLSessionProxyResponse",&,N,V_response) response;
+
+/* instance methods */
+-[PDURLSessionProxyDidReceiveResponse hasTask];
+-[PDURLSessionProxyDidReceiveResponse hasResponse];
+-[PDURLSessionProxyDidReceiveResponse description];
+-[PDURLSessionProxyDidReceiveResponse dictionaryRepresentation];
+-[PDURLSessionProxyDidReceiveResponse readFrom:];
+-[PDURLSessionProxyDidReceiveResponse writeTo:];
+-[PDURLSessionProxyDidReceiveResponse copyTo:];
+-[PDURLSessionProxyDidReceiveResponse copyWithZone:];
+-[PDURLSessionProxyDidReceiveResponse isEqual:];
+-[PDURLSessionProxyDidReceiveResponse hash];
+-[PDURLSessionProxyDidReceiveResponse mergeFrom:];
+-[PDURLSessionProxyDidReceiveResponse task];
+-[PDURLSessionProxyDidReceiveResponse setTask:];
+-[PDURLSessionProxyDidReceiveResponse response];
+-[PDURLSessionProxyDidReceiveResponse setResponse:];
+
+@end
+
+@interface PDURLSessionProxyDidReceiveResponseReply : PBCodable <NSCopying> {
+    /* instance variables */
+    i _disposition;
+    @"PDURLSessionProxyTaskMessage" _task;
+    {?="disposition"b1} _has;
+}
+
+@property (TB,R,N) hasTask;
+@property (T@"PDURLSessionProxyTaskMessage",&,N,V_task) task;
+@property (TB,N) hasDisposition;
+@property (Ti,N,V_disposition) disposition;
+
+/* instance methods */
+-[PDURLSessionProxyDidReceiveResponseReply hasTask];
+-[PDURLSessionProxyDidReceiveResponseReply disposition];
+-[PDURLSessionProxyDidReceiveResponseReply setDisposition:];
+-[PDURLSessionProxyDidReceiveResponseReply setHasDisposition:];
+-[PDURLSessionProxyDidReceiveResponseReply hasDisposition];
+-[PDURLSessionProxyDidReceiveResponseReply dispositionAsString:];
+-[PDURLSessionProxyDidReceiveResponseReply StringAsDisposition:];
+-[PDURLSessionProxyDidReceiveResponseReply description];
+-[PDURLSessionProxyDidReceiveResponseReply dictionaryRepresentation];
+-[PDURLSessionProxyDidReceiveResponseReply readFrom:];
+-[PDURLSessionProxyDidReceiveResponseReply writeTo:];
+-[PDURLSessionProxyDidReceiveResponseReply copyTo:];
+-[PDURLSessionProxyDidReceiveResponseReply copyWithZone:];
+-[PDURLSessionProxyDidReceiveResponseReply isEqual:];
+-[PDURLSessionProxyDidReceiveResponseReply hash];
+-[PDURLSessionProxyDidReceiveResponseReply mergeFrom:];
+-[PDURLSessionProxyDidReceiveResponseReply task];
+-[PDURLSessionProxyDidReceiveResponseReply setTask:];
+
+@end
+
+@interface PDURLSessionProxyDidSendBodyData : PBCodable <NSCopying> {
+    /* instance variables */
+    Q _bytesSent;
+    Q _totalBytesExpectedToSend;
+    Q _totalBytesSent;
+    @"PDURLSessionProxyTaskMessage" _task;
+    {?="bytesSent"b1"totalBytesExpectedToSend"b1"totalBytesSent"b1} _has;
+}
+
+@property (TB,R,N) hasTask;
+@property (T@"PDURLSessionProxyTaskMessage",&,N,V_task) task;
+@property (TB,N) hasBytesSent;
+@property (TQ,N,V_bytesSent) bytesSent;
+@property (TB,N) hasTotalBytesSent;
+@property (TQ,N,V_totalBytesSent) totalBytesSent;
+@property (TB,N) hasTotalBytesExpectedToSend;
+@property (TQ,N,V_totalBytesExpectedToSend) totalBytesExpectedToSend;
+
+/* instance methods */
+-[PDURLSessionProxyDidSendBodyData hasTask];
+-[PDURLSessionProxyDidSendBodyData setBytesSent:];
+-[PDURLSessionProxyDidSendBodyData setHasBytesSent:];
+-[PDURLSessionProxyDidSendBodyData hasBytesSent];
+-[PDURLSessionProxyDidSendBodyData setTotalBytesSent:];
+-[PDURLSessionProxyDidSendBodyData setHasTotalBytesSent:];
+-[PDURLSessionProxyDidSendBodyData hasTotalBytesSent];
+-[PDURLSessionProxyDidSendBodyData setTotalBytesExpectedToSend:];
+-[PDURLSessionProxyDidSendBodyData setHasTotalBytesExpectedToSend:];
+-[PDURLSessionProxyDidSendBodyData hasTotalBytesExpectedToSend];
+-[PDURLSessionProxyDidSendBodyData description];
+-[PDURLSessionProxyDidSendBodyData dictionaryRepresentation];
+-[PDURLSessionProxyDidSendBodyData readFrom:];
+-[PDURLSessionProxyDidSendBodyData writeTo:];
+-[PDURLSessionProxyDidSendBodyData copyTo:];
+-[PDURLSessionProxyDidSendBodyData copyWithZone:];
+-[PDURLSessionProxyDidSendBodyData isEqual:];
+-[PDURLSessionProxyDidSendBodyData hash];
+-[PDURLSessionProxyDidSendBodyData mergeFrom:];
+-[PDURLSessionProxyDidSendBodyData task];
+-[PDURLSessionProxyDidSendBodyData setTask:];
+-[PDURLSessionProxyDidSendBodyData bytesSent];
+-[PDURLSessionProxyDidSendBodyData totalBytesSent];
+-[PDURLSessionProxyDidSendBodyData totalBytesExpectedToSend];
+
+@end
+
+@interface PDURLSessionProxyError : PBCodable <NSCopying> {
+    /* instance variables */
+    Q _code;
+    @"NSString" _domain;
+    @"NSData" _userInfo;
+    I _version;
+    {?="code"b1"version"b1} _has;
+}
+
+@property (TB,N) hasVersion;
+@property (TI,N,V_version) version;
+@property (TB,R,N) hasDomain;
+@property (T@"NSString",&,N,V_domain) domain;
+@property (TB,N) hasCode;
+@property (TQ,N,V_code) code;
+@property (TB,R,N) hasUserInfo;
+@property (T@"NSData",&,N,V_userInfo) userInfo;
+
+/* instance methods */
+-[PDURLSessionProxyError _initWithActualError:];
+-[PDURLSessionProxyError _actualError];
+-[PDURLSessionProxyError setVersion:];
+-[PDURLSessionProxyError setHasVersion:];
+-[PDURLSessionProxyError hasVersion];
+-[PDURLSessionProxyError hasDomain];
+-[PDURLSessionProxyError setCode:];
+-[PDURLSessionProxyError setHasCode:];
+-[PDURLSessionProxyError hasCode];
+-[PDURLSessionProxyError hasUserInfo];
+-[PDURLSessionProxyError description];
+-[PDURLSessionProxyError dictionaryRepresentation];
+-[PDURLSessionProxyError readFrom:];
+-[PDURLSessionProxyError writeTo:];
+-[PDURLSessionProxyError copyTo:];
+-[PDURLSessionProxyError copyWithZone:];
+-[PDURLSessionProxyError isEqual:];
+-[PDURLSessionProxyError hash];
+-[PDURLSessionProxyError mergeFrom:];
+-[PDURLSessionProxyError version];
+-[PDURLSessionProxyError domain];
+-[PDURLSessionProxyError setDomain:];
+-[PDURLSessionProxyError code];
+-[PDURLSessionProxyError userInfo];
+-[PDURLSessionProxyError setUserInfo:];
+
+@end
+
+@interface PDURLSessionProxyGetAuthHeaders : PBCodable <NSCopying> {
+    /* instance variables */
+    @"PDURLSessionProxyResponse" _response;
+    @"PDURLSessionProxyTaskMessage" _task;
+}
+
+@property (TB,R,N) hasTask;
+@property (T@"PDURLSessionProxyTaskMessage",&,N,V_task) task;
+@property (TB,R,N) hasResponse;
+@property (T@"PDURLSessionProxyResponse",&,N,V_response) response;
+
+/* instance methods */
+-[PDURLSessionProxyGetAuthHeaders hasTask];
+-[PDURLSessionProxyGetAuthHeaders hasResponse];
+-[PDURLSessionProxyGetAuthHeaders description];
+-[PDURLSessionProxyGetAuthHeaders dictionaryRepresentation];
+-[PDURLSessionProxyGetAuthHeaders readFrom:];
+-[PDURLSessionProxyGetAuthHeaders writeTo:];
+-[PDURLSessionProxyGetAuthHeaders copyTo:];
+-[PDURLSessionProxyGetAuthHeaders copyWithZone:];
+-[PDURLSessionProxyGetAuthHeaders isEqual:];
+-[PDURLSessionProxyGetAuthHeaders hash];
+-[PDURLSessionProxyGetAuthHeaders mergeFrom:];
+-[PDURLSessionProxyGetAuthHeaders task];
+-[PDURLSessionProxyGetAuthHeaders setTask:];
+-[PDURLSessionProxyGetAuthHeaders response];
+-[PDURLSessionProxyGetAuthHeaders setResponse:];
+
+@end
+
+@interface PDURLSessionProxyGetAuthHeadersReply : PBCodable <NSCopying> {
+    /* instance variables */
+    @"NSData" _headerData;
+    @"PDURLSessionProxyTaskMessage" _task;
+    B _continueLoad;
+    {?="continueLoad"b1} _has;
+}
+
+@property (T@"NSDictionary",&,S_setActualAuthHeaders:) _actualAuthHeaders;
+@property (TB,R,N) hasTask;
+@property (T@"PDURLSessionProxyTaskMessage",&,N,V_task) task;
+@property (TB,R,N) hasHeaderData;
+@property (T@"NSData",&,N,V_headerData) headerData;
+@property (TB,N) hasContinueLoad;
+@property (TB,N,V_continueLoad) continueLoad;
+
+/* instance methods */
+-[PDURLSessionProxyGetAuthHeadersReply _actualAuthHeaders];
+-[PDURLSessionProxyGetAuthHeadersReply _setActualAuthHeaders:];
+-[PDURLSessionProxyGetAuthHeadersReply hasTask];
+-[PDURLSessionProxyGetAuthHeadersReply hasHeaderData];
+-[PDURLSessionProxyGetAuthHeadersReply setContinueLoad:];
+-[PDURLSessionProxyGetAuthHeadersReply setHasContinueLoad:];
+-[PDURLSessionProxyGetAuthHeadersReply hasContinueLoad];
+-[PDURLSessionProxyGetAuthHeadersReply description];
+-[PDURLSessionProxyGetAuthHeadersReply dictionaryRepresentation];
+-[PDURLSessionProxyGetAuthHeadersReply readFrom:];
+-[PDURLSessionProxyGetAuthHeadersReply writeTo:];
+-[PDURLSessionProxyGetAuthHeadersReply copyTo:];
+-[PDURLSessionProxyGetAuthHeadersReply copyWithZone:];
+-[PDURLSessionProxyGetAuthHeadersReply isEqual:];
+-[PDURLSessionProxyGetAuthHeadersReply hash];
+-[PDURLSessionProxyGetAuthHeadersReply mergeFrom:];
+-[PDURLSessionProxyGetAuthHeadersReply task];
+-[PDURLSessionProxyGetAuthHeadersReply setTask:];
+-[PDURLSessionProxyGetAuthHeadersReply headerData];
+-[PDURLSessionProxyGetAuthHeadersReply setHeaderData:];
+-[PDURLSessionProxyGetAuthHeadersReply continueLoad];
+
+@end
+
+@interface PDURLSessionProxyInvalidateSession : PBCodable <NSCopying> {
+    /* instance variables */
+    @"PDURLSessionProxySessionMessage" _session;
+    B _shouldCancel;
+    {?="shouldCancel"b1} _has;
+}
+
+@property (TB,R,N) hasSession;
+@property (T@"PDURLSessionProxySessionMessage",&,N,V_session) session;
+@property (TB,N) hasShouldCancel;
+@property (TB,N,V_shouldCancel) shouldCancel;
+
+/* instance methods */
+-[PDURLSessionProxyInvalidateSession hasSession];
+-[PDURLSessionProxyInvalidateSession setShouldCancel:];
+-[PDURLSessionProxyInvalidateSession setHasShouldCancel:];
+-[PDURLSessionProxyInvalidateSession hasShouldCancel];
+-[PDURLSessionProxyInvalidateSession description];
+-[PDURLSessionProxyInvalidateSession dictionaryRepresentation];
+-[PDURLSessionProxyInvalidateSession readFrom:];
+-[PDURLSessionProxyInvalidateSession writeTo:];
+-[PDURLSessionProxyInvalidateSession copyTo:];
+-[PDURLSessionProxyInvalidateSession copyWithZone:];
+-[PDURLSessionProxyInvalidateSession isEqual:];
+-[PDURLSessionProxyInvalidateSession hash];
+-[PDURLSessionProxyInvalidateSession mergeFrom:];
+-[PDURLSessionProxyInvalidateSession session];
+-[PDURLSessionProxyInvalidateSession setSession:];
+-[PDURLSessionProxyInvalidateSession shouldCancel];
+
+@end
+
+@interface PDURLSessionProxyMessageInfo : NSObject {
+    /* instance variables */
+    S _type;
+    @"PBCodable" _message;
+}
+
+@property (T@"PBCodable",C,V_message) message;
+@property (TS,V_type) type;
+
+/* instance methods */
+-[PDURLSessionProxyMessageInfo initWithMessage:type:];
+-[PDURLSessionProxyMessageInfo message];
+-[PDURLSessionProxyMessageInfo setMessage:];
+-[PDURLSessionProxyMessageInfo type];
+-[PDURLSessionProxyMessageInfo setType:];
+
+@end
+
+@interface PDURLSessionProxyOpenBodyStream : PBCodable <NSCopying> {
+    /* instance variables */
+    @"PDURLSessionProxyTaskMessage" _task;
+}
+
+@property (TB,R,N) hasTask;
+@property (T@"PDURLSessionProxyTaskMessage",&,N,V_task) task;
+
+/* instance methods */
+-[PDURLSessionProxyOpenBodyStream hasTask];
+-[PDURLSessionProxyOpenBodyStream description];
+-[PDURLSessionProxyOpenBodyStream dictionaryRepresentation];
+-[PDURLSessionProxyOpenBodyStream readFrom:];
+-[PDURLSessionProxyOpenBodyStream writeTo:];
+-[PDURLSessionProxyOpenBodyStream copyTo:];
+-[PDURLSessionProxyOpenBodyStream copyWithZone:];
+-[PDURLSessionProxyOpenBodyStream isEqual:];
+-[PDURLSessionProxyOpenBodyStream hash];
+-[PDURLSessionProxyOpenBodyStream mergeFrom:];
+-[PDURLSessionProxyOpenBodyStream task];
+-[PDURLSessionProxyOpenBodyStream setTask:];
+
+@end
+
+@interface PDURLSessionProxyOpenSocket : PBCodable <NSCopying> {
+    /* instance variables */
+    @"NSString" _host;
+    I _port;
+    @"PDURLSessionProxySessionMessage" _session;
+    @"NSString" _socketUUID;
+    {?="port"b1} _has;
+}
+
+@property (TB,R,N) hasSession;
+@property (T@"PDURLSessionProxySessionMessage",&,N,V_session) session;
+@property (TB,R,N) hasSocketUUID;
+@property (T@"NSString",&,N,V_socketUUID) socketUUID;
+@property (TB,R,N) hasHost;
+@property (T@"NSString",&,N,V_host) host;
+@property (TB,N) hasPort;
+@property (TI,N,V_port) port;
+
+/* instance methods */
+-[PDURLSessionProxyOpenSocket hasSession];
+-[PDURLSessionProxyOpenSocket hasSocketUUID];
+-[PDURLSessionProxyOpenSocket hasHost];
+-[PDURLSessionProxyOpenSocket setPort:];
+-[PDURLSessionProxyOpenSocket setHasPort:];
+-[PDURLSessionProxyOpenSocket hasPort];
+-[PDURLSessionProxyOpenSocket description];
+-[PDURLSessionProxyOpenSocket dictionaryRepresentation];
+-[PDURLSessionProxyOpenSocket readFrom:];
+-[PDURLSessionProxyOpenSocket writeTo:];
+-[PDURLSessionProxyOpenSocket copyTo:];
+-[PDURLSessionProxyOpenSocket copyWithZone:];
+-[PDURLSessionProxyOpenSocket isEqual:];
+-[PDURLSessionProxyOpenSocket hash];
+-[PDURLSessionProxyOpenSocket mergeFrom:];
+-[PDURLSessionProxyOpenSocket session];
+-[PDURLSessionProxyOpenSocket setSession:];
+-[PDURLSessionProxyOpenSocket socketUUID];
+-[PDURLSessionProxyOpenSocket setSocketUUID:];
+-[PDURLSessionProxyOpenSocket host];
+-[PDURLSessionProxyOpenSocket setHost:];
+-[PDURLSessionProxyOpenSocket port];
+
+@end
+
+@interface PDURLSessionProxyOpenSocketReply : PBCodable <NSCopying> {
+    /* instance variables */
+    i _streamErrorCode;
+    i _streamErrorDomain;
+    {?="streamErrorCode"b1"streamErrorDomain"b1} _has;
+}
+
+@property (TB,N) hasStreamErrorDomain;
+@property (Ti,N,V_streamErrorDomain) streamErrorDomain;
+@property (TB,N) hasStreamErrorCode;
+@property (Ti,N,V_streamErrorCode) streamErrorCode;
+
+/* instance methods */
+-[PDURLSessionProxyOpenSocketReply setStreamErrorDomain:];
+-[PDURLSessionProxyOpenSocketReply setHasStreamErrorDomain:];
+-[PDURLSessionProxyOpenSocketReply hasStreamErrorDomain];
+-[PDURLSessionProxyOpenSocketReply setStreamErrorCode:];
+-[PDURLSessionProxyOpenSocketReply setHasStreamErrorCode:];
+-[PDURLSessionProxyOpenSocketReply hasStreamErrorCode];
+-[PDURLSessionProxyOpenSocketReply description];
+-[PDURLSessionProxyOpenSocketReply dictionaryRepresentation];
+-[PDURLSessionProxyOpenSocketReply readFrom:];
+-[PDURLSessionProxyOpenSocketReply writeTo:];
+-[PDURLSessionProxyOpenSocketReply copyTo:];
+-[PDURLSessionProxyOpenSocketReply copyWithZone:];
+-[PDURLSessionProxyOpenSocketReply isEqual:];
+-[PDURLSessionProxyOpenSocketReply hash];
+-[PDURLSessionProxyOpenSocketReply mergeFrom:];
+-[PDURLSessionProxyOpenSocketReply streamErrorDomain];
+-[PDURLSessionProxyOpenSocketReply streamErrorCode];
+
+@end
+
+@interface PDURLSessionProxyRequest : PBRequest <NSCopying> {
+    /* instance variables */
+    @"NSData" _archiveList;
+    I _version;
+    {?="version"b1} _has;
+}
+
+@property (TB,N) hasVersion;
+@property (TI,N,V_version) version;
+@property (TB,R,N) hasArchiveList;
+@property (T@"NSData",&,N,V_archiveList) archiveList;
+
+/* instance methods */
+-[PDURLSessionProxyRequest _initWithActualRequest:];
+-[PDURLSessionProxyRequest _actualRequest];
+-[PDURLSessionProxyRequest setVersion:];
+-[PDURLSessionProxyRequest setHasVersion:];
+-[PDURLSessionProxyRequest hasVersion];
+-[PDURLSessionProxyRequest hasArchiveList];
+-[PDURLSessionProxyRequest description];
+-[PDURLSessionProxyRequest dictionaryRepresentation];
+-[PDURLSessionProxyRequest readFrom:];
+-[PDURLSessionProxyRequest writeTo:];
+-[PDURLSessionProxyRequest copyTo:];
+-[PDURLSessionProxyRequest copyWithZone:];
+-[PDURLSessionProxyRequest isEqual:];
+-[PDURLSessionProxyRequest hash];
+-[PDURLSessionProxyRequest mergeFrom:];
+-[PDURLSessionProxyRequest version];
+-[PDURLSessionProxyRequest archiveList];
+-[PDURLSessionProxyRequest setArchiveList:];
+
+@end
+
+@interface PDURLSessionProxyResponse : PBCodable <NSCopying> {
+    /* instance variables */
+    @"NSData" _archiveList;
+    I _version;
+    {?="version"b1} _has;
+}
+
+@property (TB,N) hasVersion;
+@property (TI,N,V_version) version;
+@property (TB,R,N) hasArchiveList;
+@property (T@"NSData",&,N,V_archiveList) archiveList;
+
+/* instance methods */
+-[PDURLSessionProxyResponse _initWithActualResponse:];
+-[PDURLSessionProxyResponse _actualResponse];
+-[PDURLSessionProxyResponse setVersion:];
+-[PDURLSessionProxyResponse setHasVersion:];
+-[PDURLSessionProxyResponse hasVersion];
+-[PDURLSessionProxyResponse hasArchiveList];
+-[PDURLSessionProxyResponse description];
+-[PDURLSessionProxyResponse dictionaryRepresentation];
+-[PDURLSessionProxyResponse readFrom:];
+-[PDURLSessionProxyResponse writeTo:];
+-[PDURLSessionProxyResponse copyTo:];
+-[PDURLSessionProxyResponse copyWithZone:];
+-[PDURLSessionProxyResponse isEqual:];
+-[PDURLSessionProxyResponse hash];
+-[PDURLSessionProxyResponse mergeFrom:];
+-[PDURLSessionProxyResponse version];
+-[PDURLSessionProxyResponse archiveList];
+-[PDURLSessionProxyResponse setArchiveList:];
+
+@end
+
+@interface PDURLSessionProxyResumeTask : PBCodable <NSCopying> {
+    /* instance variables */
+    @"NSData" _additionalProperties;
+    @"PDURLSessionProxyTaskMessage" _task;
+}
+
+@property (T@"NSDictionary",&,S_setActualAdditionalProperties:) _actualAdditionalProperties;
+@property (TB,R,N) hasTask;
+@property (T@"PDURLSessionProxyTaskMessage",&,N,V_task) task;
+@property (TB,R,N) hasAdditionalProperties;
+@property (T@"NSData",&,N,V_additionalProperties) additionalProperties;
+
+/* instance methods */
+-[PDURLSessionProxyResumeTask _actualAdditionalProperties];
+-[PDURLSessionProxyResumeTask _setActualAdditionalProperties:];
+-[PDURLSessionProxyResumeTask hasTask];
+-[PDURLSessionProxyResumeTask hasAdditionalProperties];
+-[PDURLSessionProxyResumeTask description];
+-[PDURLSessionProxyResumeTask dictionaryRepresentation];
+-[PDURLSessionProxyResumeTask readFrom:];
+-[PDURLSessionProxyResumeTask writeTo:];
+-[PDURLSessionProxyResumeTask copyTo:];
+-[PDURLSessionProxyResumeTask copyWithZone:];
+-[PDURLSessionProxyResumeTask isEqual:];
+-[PDURLSessionProxyResumeTask hash];
+-[PDURLSessionProxyResumeTask mergeFrom:];
+-[PDURLSessionProxyResumeTask task];
+-[PDURLSessionProxyResumeTask setTask:];
+-[PDURLSessionProxyResumeTask additionalProperties];
+-[PDURLSessionProxyResumeTask setAdditionalProperties:];
+
+@end
+
+@interface PDURLSessionProxyServer : NSObject <NSURLSessionDataDelegatePrivate, NSURLSessionTaskDelegatePrivate, NSURLSessionStreamDelegate_Internal> {
+    /* instance variables */
+    @"NSURLSession" _session;
+    @"NSURLSessionConfiguration" _sessionConfiguration;
+    @"NSMutableDictionary" _tasks;
+    @"NSMutableDictionary" _tasksToIdentifiers;
+    @"NSMutableDictionary" _taskIdentifiersToSequenceNumbers;
+    @"NSMutableDictionary" _taskIdentifiersToBodyStreams;
+    @"NSMutableDictionary" _taskIdentifiersToInitialBodyInputStreams;
+    @"NSMutableDictionary" _taskIdentifiersToWaitingReasons;
+    @"NSMutableDictionary" _taskIdentifiersToPendingDataBytes;
+    @"NSMutableDictionary" _taskIdentifiersToPendingDataCompletion;
+    @"NSMutableDictionary" _streamTasksToDeviceConnections;
+    @"NSMutableDictionary" _streamTasksToIDSTCPConnections;
+    @"NSMutableDictionary" _streamTasksToOpenSocketReplies;
+    @"NSMutableSet" _taskIdentifiersRetainingInfraWiFi;
+    @"NSMutableSet" _taskIdentifiersRetainingBTLinkAssertion;
+    @"NSMutableSet" _deviceConnections;
+    @"NSMutableArray" _messagesToReSend;
+    @"NSObject<OS_dispatch_queue>" _queue;
+    B _skipInvalidateMessage;
+    B _supportsRedirects;
+    B _implementsWillSendRequest;
+    B _implementsSessionAuthChallenge;
+    B _implementsTaskAuthChallenge;
+    B _implementsWillPerformRedirection;
+    B _implementsDidReceiveResponse;
+    B _isInvalid;
+    @"NSString" _identifier;
+    @"NSString" _uuidString;
+    @"<PDURLSessionProxyServerDelegate>" _delegate;
+}
+
+@property (T@"NSString",C,V_identifier) identifier;
+@property (T@"NSString",C,V_uuidString) uuidString;
+@property (T@"<PDURLSessionProxyServerDelegate>",R,V_delegate) delegate;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* class methods */
++[PDURLSessionProxyServer initialize];
+
+/* instance methods */
+-[PDURLSessionProxyServer initWithConfiguration:uuidString:options:delegate:];
+-[PDURLSessionProxyServer getTaskInformation];
+-[PDURLSessionProxyServer messagePriorityForTaskWithIdentifier:isReply:];
+-[PDURLSessionProxyServer sourceApplicationBundleIdentifier];
+-[PDURLSessionProxyServer IDSMessageTimeout];
+-[PDURLSessionProxyServer messageLoggableDescriptionForTaskWithIdentifier:];
+-[PDURLSessionProxyServer shouldRetainInfraWiFi];
+-[PDURLSessionProxyServer retainInfraWiFiForTaskWithIdentifier:];
+-[PDURLSessionProxyServer releaseInfraWiFiForTaskIfNecessary:];
+-[PDURLSessionProxyServer shouldRetainBTLinkAssertion];
+-[PDURLSessionProxyServer retainBTLinkAssertionWithIdentifier:];
+-[PDURLSessionProxyServer releaseBTLinkAssertionIfNecessary:];
+-[PDURLSessionProxyServer obliterate];
+-[PDURLSessionProxyServer devicesConnected];
+-[PDURLSessionProxyServer resendPendingMessage:];
+-[PDURLSessionProxyServer baseMessage];
+-[PDURLSessionProxyServer taskMessageForIdentifier:];
+-[PDURLSessionProxyServer descriptionForTaskWithIdentifier:];
+-[PDURLSessionProxyServer handleMessage:ofType:withReply:];
+-[PDURLSessionProxyServer handleFailedMessageSend:ofType:];
+-[PDURLSessionProxyServer handleDataTaskWithRequestMessage:forTaskIdentifier:withReply:];
+-[PDURLSessionProxyServer handleCancelTaskMessage:forTaskIdentifier:];
+-[PDURLSessionProxyServer handleSuspendTaskMessage:forTaskIdentifier:];
+-[PDURLSessionProxyServer handleResumeTaskMessage:forTaskIdentifier:withReply:];
+-[PDURLSessionProxyServer handleSetDescriptionMessage:forTaskIdentifier:];
+-[PDURLSessionProxyServer handleSetPriorityMessage:forTaskIdentifier:];
+-[PDURLSessionProxyServer handleInvalidateMessage:];
+-[PDURLSessionProxyServer handleUploadBodyDataMessage:forTaskIdentifier:withReply:];
+-[PDURLSessionProxyServer handleOpenSocketMessage:withReply:];
+-[PDURLSessionProxyServer performForwardingFromTCPConnection:toStreamTask:];
+-[PDURLSessionProxyServer performForwardingFromStreamTask:toTCPConnection:];
+-[PDURLSessionProxyServer URLSession:didBecomeInvalidWithError:];
+-[PDURLSessionProxyServer _URLSession:connectionEstablishedForStreamTask:];
+-[PDURLSessionProxyServer URLSession:task:didReceiveChallenge:completionHandler:];
+-[PDURLSessionProxyServer URLSession:task:_willSendRequestForEstablishedConnection:completionHandler:];
+-[PDURLSessionProxyServer URLSession:task:needNewBodyStream:];
+-[PDURLSessionProxyServer URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:];
+-[PDURLSessionProxyServer URLSession:task:didCompleteWithError:];
+-[PDURLSessionProxyServer URLSession:task:willPerformHTTPRedirection:newRequest:completionHandler:];
+-[PDURLSessionProxyServer URLSession:dataTask:didReceiveResponse:completionHandler:];
+-[PDURLSessionProxyServer URLSession:dataTask:_didReceiveData:completionHandler:];
+-[PDURLSessionProxyServer URLSession:_willRetryBackgroundDataTask:];
+-[PDURLSessionProxyServer URLSession:_willRetryBackgroundDataTask:withError:];
+-[PDURLSessionProxyServer URLSession:task:_isWaitingForConnectionWithReason:];
+-[PDURLSessionProxyServer _URLSession:task:getAuthHeadersForResponse:completionHandler:];
+-[PDURLSessionProxyServer identifier];
+-[PDURLSessionProxyServer setIdentifier:];
+-[PDURLSessionProxyServer uuidString];
+-[PDURLSessionProxyServer setUuidString:];
+-[PDURLSessionProxyServer delegate];
+
+@end
+
+@interface PDURLSessionProxyServerService : PDURLSessionProxyService <PDURLSessionProxyServerDelegate> {
+    /* instance variables */
+    @"NSMutableDictionary" _sessions;
+    q _infraWiFiRetainCount;
+    @"NSObject<OS_dispatch_source>" _infraWiFiTimer;
+    q _btLinkAssertionRetainCount;
+    @"NSObject<OS_dispatch_source>" _btLinkAssertionTimer;
+    @"PDBluetoothCompanionLinkAssertion" _bluetoothCompanionLinkAssertion;
+}
+
+/* class methods */
++[PDURLSessionProxyServerService sharedService];
+
+/* instance methods */
+-[PDURLSessionProxyServerService init];
+-[PDURLSessionProxyServerService dealloc];
+-[PDURLSessionProxyServerService start];
+-[PDURLSessionProxyServerService retainInfraWiFi];
+-[PDURLSessionProxyServerService releaseInfraWiFi];
+-[PDURLSessionProxyServerService retainBTLinkAssertion];
+-[PDURLSessionProxyServerService releaseBTLinkAssertion];
+-[PDURLSessionProxyServerService _onqueue_remoteDeviceStartedUp];
+-[PDURLSessionProxyServerService _onqueue_devicesConnected];
+-[PDURLSessionProxyServerService _onqueue_priorityForMessage:ofType:isReply:];
+-[PDURLSessionProxyServerService _onqueue_sourceApplicationForMessage:];
+-[PDURLSessionProxyServerService _onqueue_IDSTimoutForMessage:];
+-[PDURLSessionProxyServerService _onqueue_loggableDescriptionForMessage:];
+-[PDURLSessionProxyServerService _onqueue_handleReceivedMessage:ofType:withReply:];
+-[PDURLSessionProxyServerService _onqueue_handleFailedMessageSend:ofType:];
+-[PDURLSessionProxyServerService proxyServerBecameInvalid:];
+
+@end
+
+@interface PDURLSessionProxyService : NSObject <IDSServiceDelegate> {
+    /* instance variables */
+    @"IDSService" _idsService;
+    @"NSMutableDictionary" _outstandingReplies;
+    @"NSMutableDictionary" _outstandingMessages;
+    @"NSString" _startupMessageIdentifier;
+    @"NSMutableDictionary" _outgoingSequenceNumbersByPriority;
+    @"NSMutableDictionary" _incomingSequenceNumbersByPriority;
+    @"NSMutableSet" _receivedLaunchUUIDs;
+    @"NSString" _currentRemoteLaunchUUID;
+    B _prefersInfraWiFi;
+    B _startupMessageFailed;
+    B _haveReceivedLegacyStartupMessage;
+    B _haveReceivedMessage;
+    B _connected;
+    @"NSObject<OS_dispatch_queue>" _queue;
+    @"NSString" _launchUUID;
+}
+
+@property (T@"NSObject<OS_dispatch_queue>",&,V_queue) queue;
+@property (TB,GisConnected,V_connected) connected;
+@property (T@"NSString",&,V_launchUUID) launchUUID;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* instance methods */
+-[PDURLSessionProxyService init];
+-[PDURLSessionProxyService start];
+-[PDURLSessionProxyService devicesDidUnpair:];
+-[PDURLSessionProxyService _onqueue_sendStartupMessage];
+-[PDURLSessionProxyService withWorkQueue:];
+-[PDURLSessionProxyService defaultPairedDevice];
+-[PDURLSessionProxyService _onqueue_updateDeviceState];
+-[PDURLSessionProxyService _onqueue_devicesConnected];
+-[PDURLSessionProxyService _onqueue_devicesDisconnected];
+-[PDURLSessionProxyService _onqueue_remoteDeviceStartedUp];
+-[PDURLSessionProxyService _onqueue_receivedNewLaunchUUID:isStartupMessage:];
+-[PDURLSessionProxyService _onqueue_setPrefersInfraWiFi:];
+-[PDURLSessionProxyService _onqueue_priorityForMessage:ofType:isReply:];
+-[PDURLSessionProxyService _onqueue_sourceApplicationForMessage:];
+-[PDURLSessionProxyService _onqueue_IDSTimoutForMessage:];
+-[PDURLSessionProxyService _onqueue_loggableDescriptionForMessage:];
+-[PDURLSessionProxyService bumpAndReturnOutgoingSequenceNumberForPriority:];
+-[PDURLSessionProxyService verifyAndUpdateIncomingSequenceNumber:forPriority:];
+-[PDURLSessionProxyService _onqueue_sendMessage:ofType:responseIdentifier:forSourceApplication:withUrgency:withIDSMessageTimeout:withReply:];
+-[PDURLSessionProxyService sendProtobufMessage:ofType:withReply:];
+-[PDURLSessionProxyService _onqueue_handleReceivedMessage:ofType:withReply:];
+-[PDURLSessionProxyService _onqueue_handleFailedMessageSend:ofType:];
+-[PDURLSessionProxyService _onqueue_handleReceivedReply:forIdentifier:ofType:withError:];
+-[PDURLSessionProxyService _onqueue_messageWithIdentifier:didSendWithSuccess:error:];
+-[PDURLSessionProxyService service:account:incomingUnhandledProtobuf:fromID:context:];
+-[PDURLSessionProxyService service:account:identifier:didSendWithSuccess:error:];
+-[PDURLSessionProxyService service:devicesChanged:];
+-[PDURLSessionProxyService service:nearbyDevicesChanged:];
+-[PDURLSessionProxyService service:activeAccountsChanged:];
+-[PDURLSessionProxyService service:didSwitchActivePairedDevice:acknowledgementBlock:];
+-[PDURLSessionProxyService queue];
+-[PDURLSessionProxyService setQueue:];
+-[PDURLSessionProxyService isConnected];
+-[PDURLSessionProxyService setConnected:];
+-[PDURLSessionProxyService launchUUID];
+-[PDURLSessionProxyService setLaunchUUID:];
+
+@end
+
+@interface PDURLSessionProxySessionBecameInvalid : PBCodable <NSCopying> {
+    /* instance variables */
+    @"PDURLSessionProxyError" _error;
+    @"PDURLSessionProxySessionMessage" _session;
+}
+
+@property (TB,R,N) hasSession;
+@property (T@"PDURLSessionProxySessionMessage",&,N,V_session) session;
+@property (TB,R,N) hasError;
+@property (T@"PDURLSessionProxyError",&,N,V_error) error;
+
+/* instance methods */
+-[PDURLSessionProxySessionBecameInvalid hasSession];
+-[PDURLSessionProxySessionBecameInvalid hasError];
+-[PDURLSessionProxySessionBecameInvalid description];
+-[PDURLSessionProxySessionBecameInvalid dictionaryRepresentation];
+-[PDURLSessionProxySessionBecameInvalid readFrom:];
+-[PDURLSessionProxySessionBecameInvalid writeTo:];
+-[PDURLSessionProxySessionBecameInvalid copyTo:];
+-[PDURLSessionProxySessionBecameInvalid copyWithZone:];
+-[PDURLSessionProxySessionBecameInvalid isEqual:];
+-[PDURLSessionProxySessionBecameInvalid hash];
+-[PDURLSessionProxySessionBecameInvalid mergeFrom:];
+-[PDURLSessionProxySessionBecameInvalid session];
+-[PDURLSessionProxySessionBecameInvalid setSession:];
+-[PDURLSessionProxySessionBecameInvalid error];
+-[PDURLSessionProxySessionBecameInvalid setError:];
+
+@end
+
+@interface PDURLSessionProxySessionMessage : PBCodable <NSCopying> {
+    /* instance variables */
+    q _idsPriority;
+    Q _sequenceNumber;
+    @"NSString" _launchUUID;
+    @"NSString" _sessionIdentifier;
+    @"NSString" _uuidString;
+    {?="idsPriority"b1"sequenceNumber"b1} _has;
+}
+
+@property (TB,R,N) hasSessionIdentifier;
+@property (T@"NSString",&,N,V_sessionIdentifier) sessionIdentifier;
+@property (TB,R,N) hasUuidString;
+@property (T@"NSString",&,N,V_uuidString) uuidString;
+@property (TB,N) hasSequenceNumber;
+@property (TQ,N,V_sequenceNumber) sequenceNumber;
+@property (TB,N) hasIdsPriority;
+@property (Tq,N,V_idsPriority) idsPriority;
+@property (TB,R,N) hasLaunchUUID;
+@property (T@"NSString",&,N,V_launchUUID) launchUUID;
+
+/* instance methods */
+-[PDURLSessionProxySessionMessage hasSessionIdentifier];
+-[PDURLSessionProxySessionMessage hasUuidString];
+-[PDURLSessionProxySessionMessage setSequenceNumber:];
+-[PDURLSessionProxySessionMessage setHasSequenceNumber:];
+-[PDURLSessionProxySessionMessage hasSequenceNumber];
+-[PDURLSessionProxySessionMessage setIdsPriority:];
+-[PDURLSessionProxySessionMessage setHasIdsPriority:];
+-[PDURLSessionProxySessionMessage hasIdsPriority];
+-[PDURLSessionProxySessionMessage hasLaunchUUID];
+-[PDURLSessionProxySessionMessage description];
+-[PDURLSessionProxySessionMessage dictionaryRepresentation];
+-[PDURLSessionProxySessionMessage readFrom:];
+-[PDURLSessionProxySessionMessage writeTo:];
+-[PDURLSessionProxySessionMessage copyTo:];
+-[PDURLSessionProxySessionMessage copyWithZone:];
+-[PDURLSessionProxySessionMessage isEqual:];
+-[PDURLSessionProxySessionMessage hash];
+-[PDURLSessionProxySessionMessage mergeFrom:];
+-[PDURLSessionProxySessionMessage sessionIdentifier];
+-[PDURLSessionProxySessionMessage setSessionIdentifier:];
+-[PDURLSessionProxySessionMessage uuidString];
+-[PDURLSessionProxySessionMessage setUuidString:];
+-[PDURLSessionProxySessionMessage sequenceNumber];
+-[PDURLSessionProxySessionMessage idsPriority];
+-[PDURLSessionProxySessionMessage launchUUID];
+-[PDURLSessionProxySessionMessage setLaunchUUID:];
+
+@end
+
+@interface PDURLSessionProxySetTaskDescription : PBCodable <NSCopying> {
+    /* instance variables */
+    @"PDURLSessionProxyTaskMessage" _task;
+    @"NSString" _taskDescription;
+}
+
+@property (TB,R,N) hasTask;
+@property (T@"PDURLSessionProxyTaskMessage",&,N,V_task) task;
+@property (TB,R,N) hasTaskDescription;
+@property (T@"NSString",&,N,V_taskDescription) taskDescription;
+
+/* instance methods */
+-[PDURLSessionProxySetTaskDescription hasTask];
+-[PDURLSessionProxySetTaskDescription hasTaskDescription];
+-[PDURLSessionProxySetTaskDescription description];
+-[PDURLSessionProxySetTaskDescription dictionaryRepresentation];
+-[PDURLSessionProxySetTaskDescription readFrom:];
+-[PDURLSessionProxySetTaskDescription writeTo:];
+-[PDURLSessionProxySetTaskDescription copyTo:];
+-[PDURLSessionProxySetTaskDescription copyWithZone:];
+-[PDURLSessionProxySetTaskDescription isEqual:];
+-[PDURLSessionProxySetTaskDescription hash];
+-[PDURLSessionProxySetTaskDescription mergeFrom:];
+-[PDURLSessionProxySetTaskDescription task];
+-[PDURLSessionProxySetTaskDescription setTask:];
+-[PDURLSessionProxySetTaskDescription taskDescription];
+-[PDURLSessionProxySetTaskDescription setTaskDescription:];
+
+@end
+
+@interface PDURLSessionProxySetTaskPriority : PBCodable <NSCopying> {
+    /* instance variables */
+    I _priority;
+    @"PDURLSessionProxyTaskMessage" _task;
+    {?="priority"b1} _has;
+}
+
+@property (TB,R,N) hasTask;
+@property (T@"PDURLSessionProxyTaskMessage",&,N,V_task) task;
+@property (TB,N) hasPriority;
+@property (TI,N,V_priority) priority;
+
+/* instance methods */
+-[PDURLSessionProxySetTaskPriority hasTask];
+-[PDURLSessionProxySetTaskPriority setPriority:];
+-[PDURLSessionProxySetTaskPriority setHasPriority:];
+-[PDURLSessionProxySetTaskPriority hasPriority];
+-[PDURLSessionProxySetTaskPriority description];
+-[PDURLSessionProxySetTaskPriority dictionaryRepresentation];
+-[PDURLSessionProxySetTaskPriority readFrom:];
+-[PDURLSessionProxySetTaskPriority writeTo:];
+-[PDURLSessionProxySetTaskPriority copyTo:];
+-[PDURLSessionProxySetTaskPriority copyWithZone:];
+-[PDURLSessionProxySetTaskPriority isEqual:];
+-[PDURLSessionProxySetTaskPriority hash];
+-[PDURLSessionProxySetTaskPriority mergeFrom:];
+-[PDURLSessionProxySetTaskPriority task];
+-[PDURLSessionProxySetTaskPriority setTask:];
+-[PDURLSessionProxySetTaskPriority priority];
+
+@end
+
+@interface PDURLSessionProxySocketDisconnected : PBCodable <NSCopying> {
+    /* instance variables */
+    @"NSString" _socketUUID;
+    @"PDURLSessionProxyTaskMessage" _task;
+}
+
+@property (TB,R,N) hasTask;
+@property (T@"PDURLSessionProxyTaskMessage",&,N,V_task) task;
+@property (TB,R,N) hasSocketUUID;
+@property (T@"NSString",&,N,V_socketUUID) socketUUID;
+
+/* instance methods */
+-[PDURLSessionProxySocketDisconnected hasTask];
+-[PDURLSessionProxySocketDisconnected hasSocketUUID];
+-[PDURLSessionProxySocketDisconnected description];
+-[PDURLSessionProxySocketDisconnected dictionaryRepresentation];
+-[PDURLSessionProxySocketDisconnected readFrom:];
+-[PDURLSessionProxySocketDisconnected writeTo:];
+-[PDURLSessionProxySocketDisconnected copyTo:];
+-[PDURLSessionProxySocketDisconnected copyWithZone:];
+-[PDURLSessionProxySocketDisconnected isEqual:];
+-[PDURLSessionProxySocketDisconnected hash];
+-[PDURLSessionProxySocketDisconnected mergeFrom:];
+-[PDURLSessionProxySocketDisconnected task];
+-[PDURLSessionProxySocketDisconnected setTask:];
+-[PDURLSessionProxySocketDisconnected socketUUID];
+-[PDURLSessionProxySocketDisconnected setSocketUUID:];
+
+@end
+
+@interface PDURLSessionProxyStartedUp : PBCodable <NSCopying> {
+    /* instance variables */
+    @"NSString" _launchUUID;
+    I _version;
+    {?="version"b1} _has;
+}
+
+@property (TB,N) hasVersion;
+@property (TI,N,V_version) version;
+@property (TB,R,N) hasLaunchUUID;
+@property (T@"NSString",&,N,V_launchUUID) launchUUID;
+
+/* instance methods */
+-[PDURLSessionProxyStartedUp setVersion:];
+-[PDURLSessionProxyStartedUp setHasVersion:];
+-[PDURLSessionProxyStartedUp hasVersion];
+-[PDURLSessionProxyStartedUp hasLaunchUUID];
+-[PDURLSessionProxyStartedUp description];
+-[PDURLSessionProxyStartedUp dictionaryRepresentation];
+-[PDURLSessionProxyStartedUp readFrom:];
+-[PDURLSessionProxyStartedUp writeTo:];
+-[PDURLSessionProxyStartedUp copyTo:];
+-[PDURLSessionProxyStartedUp copyWithZone:];
+-[PDURLSessionProxyStartedUp isEqual:];
+-[PDURLSessionProxyStartedUp hash];
+-[PDURLSessionProxyStartedUp mergeFrom:];
+-[PDURLSessionProxyStartedUp version];
+-[PDURLSessionProxyStartedUp launchUUID];
+-[PDURLSessionProxyStartedUp setLaunchUUID:];
+
+@end
+
+@interface PDURLSessionProxySuspendTask : PBCodable <NSCopying> {
+    /* instance variables */
+    @"PDURLSessionProxyTaskMessage" _task;
+}
+
+@property (TB,R,N) hasTask;
+@property (T@"PDURLSessionProxyTaskMessage",&,N,V_task) task;
+
+/* instance methods */
+-[PDURLSessionProxySuspendTask hasTask];
+-[PDURLSessionProxySuspendTask description];
+-[PDURLSessionProxySuspendTask dictionaryRepresentation];
+-[PDURLSessionProxySuspendTask readFrom:];
+-[PDURLSessionProxySuspendTask writeTo:];
+-[PDURLSessionProxySuspendTask copyTo:];
+-[PDURLSessionProxySuspendTask copyWithZone:];
+-[PDURLSessionProxySuspendTask isEqual:];
+-[PDURLSessionProxySuspendTask hash];
+-[PDURLSessionProxySuspendTask mergeFrom:];
+-[PDURLSessionProxySuspendTask task];
+-[PDURLSessionProxySuspendTask setTask:];
+
+@end
+
+@interface PDURLSessionProxyTaskCompleted : PBCodable <NSCopying> {
+    /* instance variables */
+    @"PDURLSessionProxyError" _error;
+    @"PDURLSessionProxyTaskMessage" _task;
+    @"NSData" _taskInfo;
+}
+
+@property (T@"__NSCFURLSessionTaskInfo",&,S_setActualTaskInfo:) _actualTaskInfo;
+@property (TB,R,N) hasTask;
+@property (T@"PDURLSessionProxyTaskMessage",&,N,V_task) task;
+@property (TB,R,N) hasError;
+@property (T@"PDURLSessionProxyError",&,N,V_error) error;
+@property (TB,R,N) hasTaskInfo;
+@property (T@"NSData",&,N,V_taskInfo) taskInfo;
+
+/* instance methods */
+-[PDURLSessionProxyTaskCompleted _actualTaskInfo];
+-[PDURLSessionProxyTaskCompleted _setActualTaskInfo:];
+-[PDURLSessionProxyTaskCompleted hasTask];
+-[PDURLSessionProxyTaskCompleted hasError];
+-[PDURLSessionProxyTaskCompleted hasTaskInfo];
+-[PDURLSessionProxyTaskCompleted description];
+-[PDURLSessionProxyTaskCompleted dictionaryRepresentation];
+-[PDURLSessionProxyTaskCompleted readFrom:];
+-[PDURLSessionProxyTaskCompleted writeTo:];
+-[PDURLSessionProxyTaskCompleted copyTo:];
+-[PDURLSessionProxyTaskCompleted copyWithZone:];
+-[PDURLSessionProxyTaskCompleted isEqual:];
+-[PDURLSessionProxyTaskCompleted hash];
+-[PDURLSessionProxyTaskCompleted mergeFrom:];
+-[PDURLSessionProxyTaskCompleted task];
+-[PDURLSessionProxyTaskCompleted setTask:];
+-[PDURLSessionProxyTaskCompleted error];
+-[PDURLSessionProxyTaskCompleted setError:];
+-[PDURLSessionProxyTaskCompleted taskInfo];
+-[PDURLSessionProxyTaskCompleted setTaskInfo:];
+
+@end
+
+@interface PDURLSessionProxyTaskMessage : PBCodable <NSCopying> {
+    /* instance variables */
+    Q _taskIdentifier;
+    @"PDURLSessionProxySessionMessage" _session;
+    {?="taskIdentifier"b1} _has;
+}
+
+@property (TB,R,N) hasSession;
+@property (T@"PDURLSessionProxySessionMessage",&,N,V_session) session;
+@property (TB,N) hasTaskIdentifier;
+@property (TQ,N,V_taskIdentifier) taskIdentifier;
+
+/* instance methods */
+-[PDURLSessionProxyTaskMessage hasSession];
+-[PDURLSessionProxyTaskMessage setTaskIdentifier:];
+-[PDURLSessionProxyTaskMessage setHasTaskIdentifier:];
+-[PDURLSessionProxyTaskMessage hasTaskIdentifier];
+-[PDURLSessionProxyTaskMessage description];
+-[PDURLSessionProxyTaskMessage dictionaryRepresentation];
+-[PDURLSessionProxyTaskMessage readFrom:];
+-[PDURLSessionProxyTaskMessage writeTo:];
+-[PDURLSessionProxyTaskMessage copyTo:];
+-[PDURLSessionProxyTaskMessage copyWithZone:];
+-[PDURLSessionProxyTaskMessage isEqual:];
+-[PDURLSessionProxyTaskMessage hash];
+-[PDURLSessionProxyTaskMessage mergeFrom:];
+-[PDURLSessionProxyTaskMessage session];
+-[PDURLSessionProxyTaskMessage setSession:];
+-[PDURLSessionProxyTaskMessage taskIdentifier];
+
+@end
+
+@interface PDURLSessionProxyTaskWaiting : PBCodable <NSCopying> {
+    /* instance variables */
+    I _reason;
+    @"PDURLSessionProxyTaskMessage" _task;
+    {?="reason"b1} _has;
+}
+
+@property (TB,R,N) hasTask;
+@property (T@"PDURLSessionProxyTaskMessage",&,N,V_task) task;
+@property (TB,N) hasReason;
+@property (TI,N,V_reason) reason;
+
+/* instance methods */
+-[PDURLSessionProxyTaskWaiting hasTask];
+-[PDURLSessionProxyTaskWaiting setReason:];
+-[PDURLSessionProxyTaskWaiting setHasReason:];
+-[PDURLSessionProxyTaskWaiting hasReason];
+-[PDURLSessionProxyTaskWaiting description];
+-[PDURLSessionProxyTaskWaiting dictionaryRepresentation];
+-[PDURLSessionProxyTaskWaiting readFrom:];
+-[PDURLSessionProxyTaskWaiting writeTo:];
+-[PDURLSessionProxyTaskWaiting copyTo:];
+-[PDURLSessionProxyTaskWaiting copyWithZone:];
+-[PDURLSessionProxyTaskWaiting isEqual:];
+-[PDURLSessionProxyTaskWaiting hash];
+-[PDURLSessionProxyTaskWaiting mergeFrom:];
+-[PDURLSessionProxyTaskWaiting task];
+-[PDURLSessionProxyTaskWaiting setTask:];
+-[PDURLSessionProxyTaskWaiting reason];
+
+@end
+
+@interface PDURLSessionProxyTaskWillBeRetried : PBCodable <NSCopying> {
+    /* instance variables */
+    @"PDURLSessionProxyError" _error;
+    @"PDURLSessionProxyTaskMessage" _task;
+}
+
+@property (TB,R,N) hasTask;
+@property (T@"PDURLSessionProxyTaskMessage",&,N,V_task) task;
+@property (TB,R,N) hasError;
+@property (T@"PDURLSessionProxyError",&,N,V_error) error;
+
+/* instance methods */
+-[PDURLSessionProxyTaskWillBeRetried hasTask];
+-[PDURLSessionProxyTaskWillBeRetried hasError];
+-[PDURLSessionProxyTaskWillBeRetried description];
+-[PDURLSessionProxyTaskWillBeRetried dictionaryRepresentation];
+-[PDURLSessionProxyTaskWillBeRetried readFrom:];
+-[PDURLSessionProxyTaskWillBeRetried writeTo:];
+-[PDURLSessionProxyTaskWillBeRetried copyTo:];
+-[PDURLSessionProxyTaskWillBeRetried copyWithZone:];
+-[PDURLSessionProxyTaskWillBeRetried isEqual:];
+-[PDURLSessionProxyTaskWillBeRetried hash];
+-[PDURLSessionProxyTaskWillBeRetried mergeFrom:];
+-[PDURLSessionProxyTaskWillBeRetried task];
+-[PDURLSessionProxyTaskWillBeRetried setTask:];
+-[PDURLSessionProxyTaskWillBeRetried error];
+-[PDURLSessionProxyTaskWillBeRetried setError:];
+
+@end
+
+@interface PDURLSessionProxyUploadBodyData : PBCodable <NSCopying> {
+    /* instance variables */
+    @"NSData" _bodyData;
+    @"PDURLSessionProxyTaskMessage" _task;
+}
+
+@property (TB,R,N) hasTask;
+@property (T@"PDURLSessionProxyTaskMessage",&,N,V_task) task;
+@property (TB,R,N) hasBodyData;
+@property (T@"NSData",&,N,V_bodyData) bodyData;
+
+/* instance methods */
+-[PDURLSessionProxyUploadBodyData hasTask];
+-[PDURLSessionProxyUploadBodyData hasBodyData];
+-[PDURLSessionProxyUploadBodyData description];
+-[PDURLSessionProxyUploadBodyData dictionaryRepresentation];
+-[PDURLSessionProxyUploadBodyData readFrom:];
+-[PDURLSessionProxyUploadBodyData writeTo:];
+-[PDURLSessionProxyUploadBodyData copyTo:];
+-[PDURLSessionProxyUploadBodyData copyWithZone:];
+-[PDURLSessionProxyUploadBodyData isEqual:];
+-[PDURLSessionProxyUploadBodyData hash];
+-[PDURLSessionProxyUploadBodyData mergeFrom:];
+-[PDURLSessionProxyUploadBodyData task];
+-[PDURLSessionProxyUploadBodyData setTask:];
+-[PDURLSessionProxyUploadBodyData bodyData];
+-[PDURLSessionProxyUploadBodyData setBodyData:];
+
+@end
+
+@interface PDURLSessionProxyWillPerformRedirection : PBCodable <NSCopying> {
+    /* instance variables */
+    @"PDURLSessionProxyRequest" _request;
+    @"PDURLSessionProxyResponse" _response;
+    @"PDURLSessionProxyTaskMessage" _task;
+}
+
+@property (TB,R,N) hasTask;
+@property (T@"PDURLSessionProxyTaskMessage",&,N,V_task) task;
+@property (TB,R,N) hasRequest;
+@property (T@"PDURLSessionProxyRequest",&,N,V_request) request;
+@property (TB,R,N) hasResponse;
+@property (T@"PDURLSessionProxyResponse",&,N,V_response) response;
+
+/* instance methods */
+-[PDURLSessionProxyWillPerformRedirection hasTask];
+-[PDURLSessionProxyWillPerformRedirection hasRequest];
+-[PDURLSessionProxyWillPerformRedirection hasResponse];
+-[PDURLSessionProxyWillPerformRedirection description];
+-[PDURLSessionProxyWillPerformRedirection dictionaryRepresentation];
+-[PDURLSessionProxyWillPerformRedirection readFrom:];
+-[PDURLSessionProxyWillPerformRedirection writeTo:];
+-[PDURLSessionProxyWillPerformRedirection copyTo:];
+-[PDURLSessionProxyWillPerformRedirection copyWithZone:];
+-[PDURLSessionProxyWillPerformRedirection isEqual:];
+-[PDURLSessionProxyWillPerformRedirection hash];
+-[PDURLSessionProxyWillPerformRedirection mergeFrom:];
+-[PDURLSessionProxyWillPerformRedirection task];
+-[PDURLSessionProxyWillPerformRedirection setTask:];
+-[PDURLSessionProxyWillPerformRedirection request];
+-[PDURLSessionProxyWillPerformRedirection setRequest:];
+-[PDURLSessionProxyWillPerformRedirection response];
+-[PDURLSessionProxyWillPerformRedirection setResponse:];
+
+@end
+
+@interface PDURLSessionProxyWillPerformRedirectionReply : PBCodable <NSCopying> {
+    /* instance variables */
+    @"PDURLSessionProxyRequest" _request;
+    @"PDURLSessionProxyTaskMessage" _task;
+}
+
+@property (TB,R,N) hasTask;
+@property (T@"PDURLSessionProxyTaskMessage",&,N,V_task) task;
+@property (TB,R,N) hasRequest;
+@property (T@"PDURLSessionProxyRequest",&,N,V_request) request;
+
+/* instance methods */
+-[PDURLSessionProxyWillPerformRedirectionReply hasTask];
+-[PDURLSessionProxyWillPerformRedirectionReply hasRequest];
+-[PDURLSessionProxyWillPerformRedirectionReply description];
+-[PDURLSessionProxyWillPerformRedirectionReply dictionaryRepresentation];
+-[PDURLSessionProxyWillPerformRedirectionReply readFrom:];
+-[PDURLSessionProxyWillPerformRedirectionReply writeTo:];
+-[PDURLSessionProxyWillPerformRedirectionReply copyTo:];
+-[PDURLSessionProxyWillPerformRedirectionReply copyWithZone:];
+-[PDURLSessionProxyWillPerformRedirectionReply isEqual:];
+-[PDURLSessionProxyWillPerformRedirectionReply hash];
+-[PDURLSessionProxyWillPerformRedirectionReply mergeFrom:];
+-[PDURLSessionProxyWillPerformRedirectionReply task];
+-[PDURLSessionProxyWillPerformRedirectionReply setTask:];
+-[PDURLSessionProxyWillPerformRedirectionReply request];
+-[PDURLSessionProxyWillPerformRedirectionReply setRequest:];
+
+@end
+
+@interface PDURLSessionProxyWillSendRequest : PBRequest <NSCopying> {
+    /* instance variables */
+    @"PDURLSessionProxyRequest" _request;
+    @"PDURLSessionProxyTaskMessage" _task;
+    B _hasBodyStream;
+    {?="hasBodyStream"b1} _has;
+}
+
+@property (TB,R,N) hasTask;
+@property (T@"PDURLSessionProxyTaskMessage",&,N,V_task) task;
+@property (TB,R,N) hasRequest;
+@property (T@"PDURLSessionProxyRequest",&,N,V_request) request;
+@property (TB,N) hasHasBodyStream;
+@property (TB,N,V_hasBodyStream) hasBodyStream;
+
+/* instance methods */
+-[PDURLSessionProxyWillSendRequest hasTask];
+-[PDURLSessionProxyWillSendRequest hasRequest];
+-[PDURLSessionProxyWillSendRequest setHasBodyStream:];
+-[PDURLSessionProxyWillSendRequest setHasHasBodyStream:];
+-[PDURLSessionProxyWillSendRequest hasHasBodyStream];
+-[PDURLSessionProxyWillSendRequest description];
+-[PDURLSessionProxyWillSendRequest dictionaryRepresentation];
+-[PDURLSessionProxyWillSendRequest readFrom:];
+-[PDURLSessionProxyWillSendRequest writeTo:];
+-[PDURLSessionProxyWillSendRequest copyTo:];
+-[PDURLSessionProxyWillSendRequest copyWithZone:];
+-[PDURLSessionProxyWillSendRequest isEqual:];
+-[PDURLSessionProxyWillSendRequest hash];
+-[PDURLSessionProxyWillSendRequest mergeFrom:];
+-[PDURLSessionProxyWillSendRequest task];
+-[PDURLSessionProxyWillSendRequest setTask:];
+-[PDURLSessionProxyWillSendRequest request];
+-[PDURLSessionProxyWillSendRequest setRequest:];
+-[PDURLSessionProxyWillSendRequest hasBodyStream];
+
+@end
+
+@interface PendingCallback : NSObject <NSSecureCoding> {
+    /* instance variables */
+    B _hasBeenCalled;
+    i _type;
+    Q _taskIdentifier;
+    @"NSArray" _args;
+}
+
+@property (Ti,V_type) type;
+@property (TQ,V_taskIdentifier) taskIdentifier;
+@property (T@"NSArray",C,V_args) args;
+@property (TB,V_hasBeenCalled) hasBeenCalled;
+
+/* class methods */
++[PendingCallback supportsSecureCoding];
+
+/* instance methods */
+-[PendingCallback initWithCallbackType:taskIdentifier:args:];
+-[PendingCallback encodeWithCoder:];
+-[PendingCallback initWithCoder:];
+-[PendingCallback type];
+-[PendingCallback setType:];
+-[PendingCallback taskIdentifier];
+-[PendingCallback setTaskIdentifier:];
+-[PendingCallback args];
+-[PendingCallback setArgs:];
+-[PendingCallback hasBeenCalled];
+-[PendingCallback setHasBeenCalled:];
+
+@end
+
+@interface TLDMobileAssetManager : NSObject {
+    /* instance variables */
+    Q _installedAssetVersion;
+}
+
+@property (TQ,V_installedAssetVersion) installedAssetVersion;
+
+/* instance methods */
+-[TLDMobileAssetManager init];
+-[TLDMobileAssetManager queryAndFindBestAsset:];
+-[TLDMobileAssetManager findBestAssetFrom:skipDownload:];
+-[TLDMobileAssetManager downloadAsset:];
+-[TLDMobileAssetManager moveFileAtomically:toLocation:];
+-[TLDMobileAssetManager moveInstalledAsset:withVersion:];
+-[TLDMobileAssetManager installedAssetVersion];
+-[TLDMobileAssetManager setInstalledAssetVersion:];
+
+@end
+
+@interface __NSCFURLSessionTaskInfo (NDAVAdditions)
+
+/* instance methods */
+-[__NSCFURLSessionTaskInfo  _URLToUse];
+-[__NSCFURLSessionTaskInfo  _destinationURLToUse];
+-[__NSCFURLSessionTaskInfo  _AVAssetDownloadSessionOptions:config:asset:];
+
+@end
+
+@interface NSURLRequest (NSURLSessionProxyAdditions)
+
+/* instance methods */
+-[NSURLRequest  _nsurlsessionproxy_isSafeRequest];
+
+@end
+
+@interface NSKeyedArchiver (NSURLSessionProxyAdditions)
+
+/* class methods */
++[NSKeyedArchiver  _nsurlsessionproxy_secureArchivedDataWithRootObject:];
+
+@end
+
+@interface NSKeyedUnarchiver (NSURLSessionProxyAdditions)
+
+/* class methods */
++[NSKeyedUnarchiver  _nsurlsessionproxy_secureUnarchiveObjectOfClass:withData:];
+
+@end
+
+@interface NSURLSessionConfiguration (NSURLSessionProxyAdditions)
+
+/* instance methods */
+-[NSURLSessionConfiguration  _nsurlsessionproxy_requiresBackgroundSession];
+
+@end
+
+@interface NSURLSessionTask (NSURLSessionProxyAdditions)
+
+/* instance methods */
+-[NSURLSessionTask  _nsurlsessionproxy_cancelWithError:];
+-[NSURLSessionTask  _nsurlsessionproxy_clearError];
+-[NSURLSessionTask  _nsurlsessionproxy_error];
+
+@end
+
+@interface PBCodable (NSURLSessionProxyAdditions)
+
+/* instance methods */
+-[PBCodable  _nsurlsessionproxy_launchUUID];
+-[PBCodable  _nsurlsessionproxy_setLaunchUUID:];
+-[PBCodable  _nsurlsessionproxy_sessionUUID];
+-[PBCodable  _nsurlsessionproxy_setSessionUUID:];
+-[PBCodable  _nsurlsessionproxy_sessionIdentifier];
+-[PBCodable  _nsurlsessionproxy_taskIdentifier];
+-[PBCodable  _nsurlsessionproxy_sequenceNumber];
+-[PBCodable  _nsurlsessionproxy_setSequenceNumber:];
+-[PBCodable  _nsurlsessionproxy_messagePriority];
+-[PBCodable  _nsurlsessionproxy_setMessagePriority:];
+
+@end
+
+

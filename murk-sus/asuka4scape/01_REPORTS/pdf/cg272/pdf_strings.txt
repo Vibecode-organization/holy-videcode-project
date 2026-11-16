@@ -1,0 +1,1074 @@
+$s12CoreGraphics13BitPatterningP
+$s12CoreGraphics13PDFObjectTypeP
+$s12CoreGraphics36_CGPDFStructureElementInitTrampolineP
+ %10u %10u %18p %18p %6u %6u Pattern
+ %10u %10u %18p %18p %6u %6u PatternImage
+ %10u %10u %18p %18p %6zu %6zu Function
+11JBIG2Bitmap
+11JBIG2Stream
+12JBIG2Segment
+14JBIG2CodeTable
+15JBIG2SymbolDict
+16JBIG2PatternDict
+16SignedBitPattern
+17CGPDFHintTableSet
+17CGPDFSourceStream
+18UnsignedBitPattern
+32DisplayListXMLParserEntryShading
+32DisplayListXMLWriterEntryShading
+35DisplayListXMLParserResourcePattern
+35DisplayListXMLParserResourceShading
+35DisplayListXMLWriterResourcePattern
+35DisplayListXMLWriterResourceShading
+36DisplayListXMLParserResourceFunction
+36DisplayListXMLWriterResourceFunction
+37DisplayListXMLParserEntryStatePattern
+37DisplayListXMLWriterEntryStatePattern
+38DisplayListXMLParserResourceColorSpace
+38DisplayListXMLWriterResourceColorSpace
+7PDFFont
+acquire_function_1d
+acquire_function_2d
+AddPDFXInfo
+A non-null PDFDocumentCore is required for construction.
+An unknown error occurred while creating the PDF document.
+ASCII85Decode
+ASCII85Decode: encountered unexpected EOF.
+ASCII85Decode: invalid character 0x%02x encountered in stream.
+Attempt to create CGPDFDocument in Lockdown Mode for PDF
+B16@?0^{CGPDFDictionary=}8
+B16@?0^{RIPCacheEntry=[2{link=^{link}^{link}}]^{RIPData}^{RIPCache}iII(?={RIPFunctionData={RIPSignature=I{CGMD5Digest=[16C]}}iiQQ[4f]^f^f}{RIPPatternEntry=^{BltDepth}I{RIPSignature=I{CGMD5Digest=[16C]}}dddd{CGRect={CGPoint=dd}{CGSize=dd}}^{RIPLayerObject}})}8
+B24@?0^{CGPDFTaggedNode=}8Q16
+B24@?0Q8^{CGPDFObject=^{CGPDFObject}ib1b1{?=QS}(?=Cqd*^{CGPDFArray}^{CGPDFDictionary}^{CGPDFStream}^{CGPDFString}iq)}16
+B24@?0r*8^{CGPDFObject=^{CGPDFObject}ib1b1{?=QS}(?=Cqd*^{CGPDFArray}^{CGPDFDictionary}^{CGPDFStream}^{CGPDFString}iq)}16
+B32@?0r*8^{CGPDFObject=}16^v24
+B32@?0r*8^{CGPDFObject=^{CGPDFObject}ib1b1{?=QS}(?=Cqd*^{CGPDFArray}^{CGPDFDictionary}^{CGPDFStream}^{CGPDFString}iq)}16^v24
+B48@?0^{CGPDFAppender=^{CGPDFDocument}Q^{__CFDictionary}^{__CFData}^{__CFDictionary}{?=QS}}8^{__CFArray=}16q24Q32^v40
+B48@?0^{CGPDFAppender=^{CGPDFDocument}Q^{__CFDictionary}^{__CFData}^{__CFDictionary}{?=QS}}8^{__CFDictionary=}16^{CGPDFName=}24Q32^v40
+Bad bitmap in JBIG2 generic refinement region
+Bad bitmap reference in JBIG2 generic refinement segment
+Bad bitmap size in JBIG2 halftone segment
+Bad black code in JBIG2 MMR stream
+Bad delta-height value in JBIG2 symbol dictionary
+Bad grid size in JBIG2 halftone segment
+Bad height value in JBIG2 symbol dictionary
+Bad reference in JBIG2 generic refinement segment
+Bad symbol dictionary reference in JBIG2 halftone segment
+Bad two dim code in JBIG2 MMR stream
+Bad white code in JBIG2 MMR stream
+Bad width in JBIG2 generic bitmap
+Bad width value in JBIG2 symbol dictionary
+BitPatterning
+bool CG::PDFDocumentWrite(std::shared_ptr<PDFDocumentCore>, CGDataConsumerRef _Nonnull, CFDictionaryRef _Nullable)
+bool CGPDFHintTableSetGetPageRanges(CGPDFHintTableSetRef, size_t, CFRange **, size_t *)
+bool PDFLinearizerEndDocument(PDFLinearizer *, CGDataConsumerRef)
+calledFromPDFKit
+cannot decode CGColorSpace: bad color table size
+cannot decode CGColorSpace: invalid ICC data
+cannot decode CGColorSpace: invalid indexed color
+cannot decode CGColorSpace: missing keys
+cannot decode CGColorSpace: single value container not an id, name or ICC data
+cannot decode CGColorSpace: top-level container not single or keyed
+cannot encode CGColorSpace
+cannot encode CGColorSpace: 
+CCITTFaxDecode
+CGBitmapContextGetColorSpace
+CGColorConversionInfoIterateFunctionsWithCallbacks failed!
+CGColorConverterIterateColorSpaceFunctionsWithCallbacks
+CGColorConverterIterateFunctionsWithCallbacks
+CGColorCreateCopyByMatchingToColorSpace
+CGColorSpace
+^{CGColorSpace=}16@?0^{CGColorSpace=}8
+^{CGColorSpace={__CFRuntimeBase=QAQ}{?=i}^{color_space_state}{_opaque_pthread_mutex_t=q[56c]}^{icc_data_cache_slot}}16@?0^{CGColorSpace={__CFRuntimeBase=QAQ}{?=i}^{color_space_state}{_opaque_pthread_mutex_t=q[56c]}^{icc_data_cache_slot}}8
+CGColorSpaceCopyICCData
+CGColorSpaceCreateCopyWithPQTransferFunctions is decomissioned. Please use CGColorSpaceCreateFromCICP
+CGColorSpaceCreateWithName failed for %s
+CGColorSpaceGetCalibratedGrayData
+CGColorSpaceGetCalibratedRGBData
+CGColorSpaceGetColorants
+CGColorSpaceGetLabData
+CGColorSpaceGetNames
+CGColorSpaceGetNumberOfComponents(CGImageGetColorSpace(image)) == 1
+CGColorSpaceGetNumberOfComponents(CGImageGetColorSpace(image)) == 3
+CGColorSpaceGetNumberOfComponents(CGImageGetColorSpace(image)) == 4
+CGColorSpaceGetTintTransform
+CGColorSpaceGetType(s) == kCGColorSpaceDeviceN
+CGColorSpaceICCCopyData
+CGColorSpaceICCGetPlatformProfile
+CGColorSpaceICCGetRange
+CGColorSpaceICCSetAlternate
+CGColorSpaceIsSDR(source_space) == true
+(CGColorSpaceIsSDR(target_space) == false && CGColorSpaceUsesExtendedRange(target_space) == false && CGColorSpaceUsesITUR_2100TF(target_space) == false) || (CGColorSpaceIsSDR(source_space) == false && CGColorSpaceUsesExtendedRange(source_space) == false && CGColorSpaceUsesITUR_2100TF(source_space) == false)
+CGColorSpaceIsSDR(target_space) == true
+CGColorSpaceProfileSetsGetRange
+<CGColorSpace %p> (%s
+CGColorSpaceType
+CGColorSpaceUsesExtendedRange(source_space) == true
+CGColorSpaceUsesExtendedRange(target_space) == true
+CGColorSpaceUsesITUR_2100TF(source_space) == true
+CGColorSpaceUsesITUR_2100TF(target_space) == true
+CGContextCopyDeviceColorSpace
+CGContextDrawShading
+CGContextGetColorSpace
+CGContextGetFillColorSpace
+CGContextGetFillPattern
+CGContextGetLineDashPattern
+CGContextGetPatternPhase
+CGContextGetStrokeColorSpace
+CGContextGetStrokePattern
+CGContextGetTransferFunctions
+CGContextSetFillColorSpace
+CGContextSetFillPattern
+CGContextSetPatternPhase
+CGContextSetStrokeColorSpace
+CGContextSetStrokePattern
+CGContextSetTransferFunctions
+CGDisplayListEntryShadingGetCTM
+CGDisplayListEntryShadingGetInterpolationQuality
+CGDisplayListEntryShadingGetRenderingIntent
+CGDisplayListEntryShadingGetShading
+CGDisplayListEntryStateGetPatternPhase
+CGFontFinderApplyFunction
+CGFunction
+CGGradientGetFunction
+CGImageCopyJPEGDataAndColorSpace
+CGImageCreateCopyWithColorSpace
+CGImageProviderRef CGImageProviderCreateWithImageProviderInRect(CGImageProviderRef, CGRect, CGColorSpaceRef)
+CGIOSurfaceContextGetColorSpace
+cg_jbig2_library_link_symbol
+CGLibraryLoadImageIOFunction
+CGMetalContextGetColorSpace
+CGPattern
+CGPDFAdvancesValidate
+CGPDFAnnotation
+CGPDFAnnotation. Type? %d, Mutated? %s, BurnIn? %s IsGhost? %s
+CGPDFAppenderMutateDictionaryValue(...) was called with an inline / literal object
+CGPDFArchive
+<CGPDFArchive (%p)>
+CGPDFArray
+CGPDFArrayInsertObjectAtIndex
+CGPDFArrayInsertValueAtIndex: index (%ld) is beyond length of array (%ld)
+CGPDFArrayRef
+CGPDFArraySetObjectAtIndex
+CGPDFCMap
+CGPDFContentStream
+CGPDFContentStreamCreate
+CGPDFContextAddAnnotation
+CGPDFContextAddCatalogEntry
+CGPDFContextAddDestinationAtPoint
+CGPDFContextAddDocumentMetadata
+CGPDFContextAddPDFXInfo
+CGPDFContextAddStructureTreeRootChild
+CGPDFContextBeginAccessibilitySpan
+CGPDFContextBeginDrawingHiddenText
+CGPDFContextBeginMarkedContentSequence
+CGPDFContextBeginNonStructuralMarkedContentSequence
+CGPDFContextBeginObjectReference
+CGPDFContextBeginPage
+CGPDFContextBeginTag
+CGPDFContextBeginTagWithMCID
+CGPDFContextClose
+CGPDFContextCreate
+CGPDFContextCreateLinearizedPDF
+CGPDFContextCreatePDFA
+CGPDFContextDate
+__CGPDFContextDelegateCreate
+CGPDFContextDocumentID
+CGPDFContextEndAccessibilitySpan
+CGPDFContextEndDrawingHiddenText
+CGPDFContextEndMarkedContentSequence
+CGPDFContextEndObjectReference
+CGPDFContextEndPage
+CGPDFContextEndTag
+CGPDFContextPageApplicationData
+CGPDFContextProducer
+CGPDFContextSetDestinationForRect
+CGPDFContextSetIDTree
+CGPDFContextSetImageTag
+CGPDFContextSetOutputIntent
+CGPDFContextSetPageTagStructureTree
+CGPDFContextSetParentTree
+CGPDFContextSetRedactionPath
+CGPDFContextSetShouldDeflate
+CGPDFContextSetURLForRect
+CGPDFContextShouldOutputAllImagesAsJPEG
+CGPDFDictionary
+CGPDFDictionaryRef
+CGPDFDocument
+CGPDFDocument.cpp
+CGPDFDocumentGetArtBox
+CGPDFDocumentGetBleedBox
+CGPDFDocumentGetCropBox
+CGPDFDocumentGetMediaBox
+CGPDFDocumentGetPageForPageDictionary
+CGPDFDocumentGetRotationAngle
+CGPDFDocumentGetTrimBox
+CGPDFDocumentImpl
+[+] CGPDFDocumentImpl created.
+[-] CGPDFDocumentImpl destroyed.
+  [!] CGPDFDocumentImpl destroying...
+CGPDFDocumentLowMemoryNotificationName
+CGPDFDocumentPageResourcesCacheLogging
+CGPDFDocumentPageResourcesCacheSize
+CGPDFDrawingContextCreateWithContentStream
+CGPDFDrawingContextCreateWithStream
+CGPDFDrawingContextDrawGlyphStream
+CGPDFDrawingContextDrawGroupStream
+CGPDFDrawingContextDrawPage
+CGPDFDrawingContextDrawStream
+CGPDFFont
+CGPDFFontDescriptor
+CGPDFForm
+CGPDFGroup
+CGPDFHexData
+<CGPDFHexDataRef %p: data: %@>
+CGPDFHighlightContent
+CGPDFImage
+CGPDFImage(%p): Creating image with subsample_factor = %d
+CGPDFLayout
+CGPDFLayoutCreateDirectionalSelection
+CGPDFLayout.m
+<CGPDFLayout (%p)>
+CGPDFMarkedContentItem
+CGPDFName
+CGPDFNamedAlloc_Append
+CGPDFNamedAlloc_CGPDFObject
+CGPDFNamedAlloc_Font
+CGPDFNamedAlloc_Graphics
+CGPDFNamedAlloc_Image
+CGPDFNamedAlloc_Parser
+CGPDFNamedAlloc_Security
+CGPDFNamedAlloc_Stream
+CGPDFNamedAlloc_Structure
+CGPDFNamedAlloc_XRef
+<CGPDFNameRef (%s)>
+CGPDFNode.c
+CGPDFNodeMapByType
+CGPDFNodeRef: %p, type: <%s>, page %d, child count: %zu, text range: [%d, %d], bounds: (%.2f, %.2f), [%.2f, %.2f]
+CGPDFNodeTypeGetName
+CGPDFObjectRef
+CGPDFObjectStream
+CGPDFOperatorTable
+CGPDFOptimizeImagesCompressionQuality
+CGPDFOptimizeImagesForScreenDisplay
+CGPDFPage
+CGPDFPageCopyLayout
+CGPDFPageCopyPageLayout
+CGPDFPageCopyTextString
+CGPDFPageCopyTextStringWithGlyphs
+CGPDFPageCreate
+CGPDFPageCreateWithImage
+CGPDFPageGetBoxRect
+CGPDFPageGetColorSpace
+CGPDFPageGetLayout
+CGPDFPageGetRotationAngle
+  [+] CGPDFPageImpl for page %zu created.
+  [-] CGPDFPageImpl for page %zu destroyed.
+CGPDFPageLayout
+CGPDFPageLayoutRef CGPDFPageLayoutCreate(CG::PDFPageCore &, bool)
+CGPDFPageLayoutSimpleSelectionEnabled
+CGPDFPageLayoutTable
+CGPDFPageLayoutTableCell
+<CGPDFPage %p> page number: %zu
+CGPDFPagePrint
+CGPDFPageRef PageLayout::getPageRef() const
+CGPDFPageRemoveLayout
+CGPDFPageSetExtraContentStream
+CGPDFPageSetLayout
+CGPDFPageSetObjectForKey
+CGPDFPattern
+CGPDFReference
+<CGPDFReferenceRef (%d, %d)>
+CGPDFResources
+CGPDFScanner
+CGPDFSecurityHandlerKeyLength
+CGPDFSelection
+<CGPDFSelection (%p): {empty}>
+<CGPDFSelection (%p): {multiple ranges}>
+<CGPDFSelection (%p): range = [%ld,%ld)>
+CGPDFShading
+CGPDFShouldAnnotate
+CGPDFShouldCompress
+CGPDFShouldUsePNGPredictors
+CGPDFSoftMask
+CGPDFSource
+CGPDFSourceGetLength
+CGPDFSourceRefill
+CGPDFSourceRewind
+CGPDFStream
+CGPDFStreamObject
+<CGPDFStreamObjectRef: %d key-value pairs, %d data bytes, %s flate compress>
+CGPDFStreamRef
+CGPDFString
+CGPDFStringRef
+CGPDFStructureElement
+_CGPDFStructureElementInitTrampoline
+CGPDFTable
+CGPDFTableCell
+CGPDFTaggedContext
+CGPDFTaggedNode
+CGPDFTaggedNodeRef: %p, type: <%s>, page %d, child count: %zu, text range: [%d, %d], bounds: (%.2f, %.2f), [%.2f, %.2f] fromML: [%s]
+CGPDFTaggedPageProperties
+CGPDFTagPropertyActualText
+CGPDFTagPropertyAlternativeText
+CGPDFTagPropertyExpansionText
+CGPDFTagPropertyLanguageText
+CGPDFTagPropertyTitleText
+CG_PDF_VERBOSE
+CGPDFXObject
+CGPDFXObject.cpp
+CGPDFXObjectCreate
+CGPDFXRefEntry (%p)
+CGRect CGPDFPageGetBoxRect(CGPDFPageRef _Nullable, CGPDFBox)
+-[CGRemotePDFDocumentProxy getPageAtIndex:completion:]_block_invoke
+-[CGRemotePDFDocumentProxy getVersionMajor:andMinor:]_block_invoke
+-[CGRemotePDFDocumentProxy infoDictionary]_block_invoke
+-[CGRemotePDFDocumentProxy isEncrypted]_block_invoke
+-[CGRemotePDFDocumentProxy isUnlocked]_block_invoke
+-[CGRemotePDFDocumentProxy pageCount]_block_invoke
+-[CGRemotePDFDocumentProxy sync_pageAtIndex:]_block_invoke
+-[CGRemotePDFPageProxy drawWithBox:size:colorSpace:options:completion:]_block_invoke
+-[CGRemotePDFPageProxy getPageTextAndReturnError:]_block_invoke
+-[CGRemotePDFPageProxy identifier]_block_invoke
+-[CGRemotePDFPageProxy pageText]_block_invoke
+-[CGRemotePDFPageProxy rectForBox:]_block_invoke
+-[CGRemotePDFPageProxy rotation]_block_invoke
+-[CGRemotePDFServiceProxy newRemotePDFDocumentWithData:error:]_block_invoke
+CG-SEC-187882049: invalid function for type 5 shading (range dimension does not match color space).
+CGShading
+CGShadingCreateAxialWithContentHeadroom
+CGShadingCreateRadialWithContentHeadroom
+CGTaggedColorGetColorSpace
+code < LZW_TABLE_SIZE
+Color creation failed for CMYK colorspace %p, {%f, %f, %f %f, %f}
+Color creation failed for generic gray colorspace %p, {%f, %f}
+Color creation failed for gray 2.2 colorspace %p, {%f, %f}
+Color creation failed for RGB colorspace %p, {%f, %f, %f %f}
+Color creation failed for SRGB colorspace %p, {%f, %f, %f %f}
+colorSpace
+/ColorSpace
+/ColorSpace <<
+ColorSpace
+COLORSPACE
+colorspace cache missing
+colorspace_cache != NULL
+ColorSpace color components: %zu
+ColorSpace color components:%zu
+Colorspace component count unhandled. count = %zu
+colorspace components %zu
+/ColorSpace /DeviceGray
+colorspace_indexed_decode_array_is_identity
+ColorSpace-%llu.icc
+ ColorSpace: %lu, %lu unique.
+colorspace missing
+colorspace must be DeviceN. Type = %d
+Colorspace must be DeviceN. type = %d
+Colorspace must be ICC based. type = %d
+Colorspace not ICC based. type = %d
+Colorspace not ICC. type = %d
+Colorspace not of Lab type. type = %d
+colorSpace %p  dest colors %zu  src colors %zu
+Colorspace %p not calibrated grayscale. Type = %d
+Colorspace %p not RGB based. Type = %d
+colorSpace resourceID: %llu is of an unexpected class
+ColorSpaceSequence
+ColorSyncMatrixGetFunction
+ColorSyncNxMGetFunction
+ColorSyncTRCGetFunction
+com.apple.CoreGraphics.CGContextDrawPDFPageWithDrawingCallbacks
+com.apple.CoreGraphics.CGPDFDocumentCreateWithProvider
+com.apple.CoreGraphics.CGPDFDocumentCreateWithURL
+com.apple.CoreGraphics.CGPDFDocumentGetCatalog
+com.apple.CoreGraphics.CGPDFDocumentGetInfo
+com.apple.CoreGraphics.CGPDFDocumentGetNumberOfPages
+com.apple.CoreGraphics.CGPDFDocumentMemoryPressureResponse
+com.apple.CoreGraphics.CGPDFFontData
+com.apple.CoreGraphics.CGPDFFontFormat
+com.apple.CoreGraphics.CGPDFFontToUnicodeCMap
+com.apple.CoreGraphics.CGPDFPageEnumerateAnnotations
+com.apple.CoreGraphics.CGPDFService
+com.apple.CoreGraphics.CGRemotePDFServiceProxy
+com.apple.CoreGraphics.colorspace_from_ICC_data_cache
+com.apple.CoreGraphics.CreatePDFImage
+com.apple.coregraphics.disablepdf
+com.apple.CoreGraphics.display_colorspace_conversion_cache
+com.apple.CoreGraphics.Is1Bit1ChannelImageColorSpace
+com.apple.CoreGraphics.PDFCGImageCache
+com.apple.CorePDF
+component_count > 0 && component_count <= kCGColorSpaceICCMaxComponents
+(components == CGFunctionGetRangeDimension(function)) || (components + 1 == CGFunctionGetRangeDimension(function))
+CoreGraphics/CGPDFArray.swift
+CoreGraphics/CGPDFObject.swift
+CoreGraphics PDF has logged an error. Set environment variable "%s" to learn more.
+[+] Creating CGPDFDocument
+      Creating CGPDFPageLayout for page %zu.
+      Creating CGPDFTaggedNodeRef for page %zu.
+    Creating PDFPageCore for page %zu failed. Error: %s
+      Creating PDFResources for page %zu.
+cs->object_number != PDFObjectNumberInvalid
+dash_pattern.size() % 2 == 0
+DCTDecode
+delegate->addColorSpace != NULL
+delegate->addPattern != NULL
+delegate->addShading != NULL
+Delegate missing addColorSpace
+Delegate missing addPattern
+Delegate missing addShading
+DisplayListResourceColorSpace returned NULL for getColorSpace()
+DisplayListResourceGradient returned NULL for getColorSpaceResource()
+dlRecorder_DrawShading
+d->oldCode < LZW_TABLE_SIZE
+Drawing shading
+DrawShading
+emitColorSpace
+emit_Pattern
+entry is not of typeDisplayListEntryShading
+EOF encountered before end of Type4 function.
+Error connecting to PDFService: %s
+Error creating CGPDFPage: %s
+Error creating PDF document: %s
+error evaluating Type 4 function: typecheck.
+Error: PDFWriteObject(...) encountered unknown object ID %d
+evaluateShadingsOnRecord
+Exception in CGPDFStreamCopyData
+Faild to construct a PDFPageTree
+failed to build inline image dictionary.
+Failed to create a data provider for the PDF data.
+Failed to create PDF CGImage cache.
+Failed to create PDF destination set.
+Failed to create remote PDF document
+Failed to create symbolBitmap in JBIG2 text region
+failed to find end of inline image.
+failed to find PDF header: `%%PDF' not found.
+Failed to get resourceID: %llu for "colorSpace" attribute
+Failed to get the raw data pointer for PDFWriteStreamObject(...)
+Failed to load PDF context.
+Failed to parse bitmap JBIG2 stream
+Failed to parse "colorSpace" attribute
+Failed to parse "patternMatrix" attribute
+Failed to read pattern cell display list
+Failed to resolve ColorSpace (cs/csID=%ld) for BufferReader: %s
+/Filter /FlateDecode
+[-] Finalizing CGPDFDocument %p
+First JBIG2 segment associated with a page must be a page information segment
+FlateDecode
+FlateDecode: decoding error.
+FlateDecode: decoding error: %s.
+FlateDecode: initialization error.
+FlateDecode: initialization error: %s.
+FlateDecode: rewind error.
+FlateDecode: rewind error: %s.
+function
+Function
+ Function: %lu, %lu unique.
+/Function %R
+Functions
+/FunctionType
+FunctionType
+/FunctionType 0
+GTS_PDFA1
+GTS_PDFX
+GTS_PDFXVersion
+/GTS_PDFXVersion (PDF/X-3:2002)
+http://ns.adobe.com/pdf/1.3/
+http://www.aiim.org/pdfa/ns/id/
+Illegal code in JBIG2 MMR bitmap data
+Improperly formed BufferReader name (missing required params or colorspace): %s
+incompatible colorspace type %d
+indexedBaseColorSpace
+(int)dstType >= kCGColorSpaceDeviceGray && (int)dstType <= kCGColorSpaceDeviceCMYK
+(int)srcType >= kCGColorSpaceDeviceGray && (int)srcType <= kCGColorSpaceDeviceCMYK
+Invalid CGPDFAnnotationAppearanceEntry value
+invalid character `%c' encountered in Type4 function stream.
+Invalid color: colored pattern specified with uncolored pattern color space.
+invalid colorspace type %d
+Invalid color: uncolored pattern specified with colored pattern color space.
+Invalid data provider size. Sequential data providers are not supported for linearized PDF.
+invalid dest colorspace type %d
+invalid function: arithmetic overflow.
+invalid function: every domain of a sampling function must have at least one sample.
+invalid function: failed to read %zu bytes.
+invalid function for type 4 shading
+invalid function: invalid `Bounds' value.
+invalid function: invalid `C0' value.
+invalid function: invalid `C1' value.
+invalid function: invalid `Functions' value.
+invalid function: invalid `Order' value.
+invalid function: invalid `Range' value.
+invalid function: missing or invalid `BitsPerSample' value.
+invalid function: missing or invalid `Bounds' value.
+invalid function: missing or invalid `Domain' value.
+invalid function: missing or invalid `Encode' value.
+invalid function: missing or invalid `Functions' value.
+invalid function: missing or invalid `N' value.
+invalid function: missing or invalid `Range' value.
+invalid function: missing or invalid `Size' value.
+invalid function: not a dictionary.
+invalid function: not a dictionary or stream.
+invalid function: sample count is out of range.
+invalid image `ColorSpace' value.
+Invalid JBIG2 bitmap allocation
+Invalid JBIG2 MMR code
+invalid number `%s' encountered in Type4 function stream.
+invalid `Pattern' color space: incorrect number of entries in color space array.
+invalid `Pattern' color space: invalid base color space.
+invalid pattern: not a dictionary or stream.
+invalid pattern `PaintType' value.
+invalid pattern `TilingType' value.
+invalid PDF object %lu
+invalid PDF object number
+Invalid segment reference in JBIG2 text region
+invalid shading `BitsPerComponent' value.
+invalid shading `BitsPerCoordinate' value.
+invalid shading `BitsPerFlag' value.
+invalid shading `ColorSpace' value.
+invalid shading `Coords' value.
+invalid shading data format.
+invalid shading flag value.
+invalid shading function domain dimension.
+invalid shading function range dimension.
+invalid shading: not a dictionary or stream.
+invalid shading object: not a dictionary.
+invalid shading object: not a stream.
+invalid shading `ShadingType' value.
+invalid shading `VerticesPerRow' value.
+invalid soft-mask `ColorSpace' value `%s'.
+invalid src colorspace type %d
+Invalid symbol ID in JBIG2 symbol dictionary
+Invalid symbol number in JBIG2 text region
+invalid Type 0 function: not a stream.
+invalid Type 1 pattern: not a stream.
+invalid Type 2 pattern: not a dictionary.
+invalid Type 4 function: not a stream.
+Invalid value for kCGPDFContextDocumentID.
+IOSurfaceColorSpaceID
+JBIG2Decode
+JBIG2Filter: JBIG2Globals reference loop
+JBIG2Globals
+JBIG2 MMR row is wrong length ({0:%d})
+JPXDecode
+				kCGColorFunctionInputClamp            = %s
+				kCGColorFunctionOutputClamp           = %s
+				kCGColorFunctionSignedReflectionTRC   = %s
+kCGColorSpace
+kCGColorSpaceACESCGLinear
+kCGColorSpaceAdobeRGB1998
+kCGColorSpaceAttachment_CICP_data
+kCGColorSpace_Attachment_ICC_Data
+kCGColorSpaceCalibratedGray
+kCGColorSpaceCalibratedRGB
+kCGColorSpaceColoredPattern
+kCGColorSpaceCoreMedia709
+kCGColorSpaceDCIP3
+kCGColorSpaceDeviceCMYK
+kCGColorSpaceDeviceGray
+kCGColorSpaceDeviceN
+kCGColorSpaceDeviceRGB
+kCGColorSpaceDisplayP3
+kCGColorSpaceDisplayP3_709OETF
+kCGColorSpaceDisplayP3_HLG
+kCGColorSpaceDisplayP3_PQ
+kCGColorSpaceDisplayP3_PQ_EOTF
+kCGColorSpaceExtendedDerivative
+kCGColorSpaceExtendedDisplayP3
+kCGColorSpaceExtendedGray
+kCGColorSpaceExtendedITUR_2020
+kCGColorSpaceExtendedLinearDerivative
+kCGColorSpaceExtendedLinearDisplayP3
+kCGColorSpaceExtendedLinearGray
+kCGColorSpaceExtendedLinearITUR_2020
+kCGColorSpaceExtendedLinearSRGB
+kCGColorSpaceExtendedRange
+kCGColorSpaceExtendedSRGB
+kCGColorSpaceGenericCMYK
+kCGColorSpaceGenericGray
+kCGColorSpaceGenericGrayGamma2_2
+kCGColorSpaceGenericLab
+kCGColorSpaceGenericRGB
+kCGColorSpaceGenericRGBLinear
+kCGColorSpaceGenericXYZ
+kCGColorSpaceICCBased
+kCGColorSpaceICCData
+kCGColorSpaceIndexed
+kCGColorSpaceITUR_2020
+kCGColorSpaceITUR_2020_HLG
+kCGColorSpaceITUR_2020_PQ
+kCGColorSpaceITUR_2020_PQ_EOTF
+kCGColorSpaceITUR_2020_sRGBGamma
+kCGColorSpaceITUR_2100_HLG
+kCGColorSpaceITUR_2100_PQ
+kCGColorSpaceITUR_709
+kCGColorSpaceITUR_709_HLG
+kCGColorSpaceITUR_709_PQ
+kCGColorSpaceLAB
+kCGColorSpaceLinearDerivative
+kCGColorSpaceLinearDisplayP3
+kCGColorSpaceLinearGray
+kCGColorSpaceLinearITUR_2020
+kCGColorSpaceLinearSRGB
+kCGColorSpaceModelCMYK
+kCGColorSpaceModelDeviceN
+kCGColorSpaceModelLAB
+kCGColorSpaceModelMonochrome
+kCGColorSpaceModelRGB
+kCGColorSpaceModelXYZ
+kCGColorSpacePattern
+kCGColorSpacePerceptualStandardRGB
+kCGColorSpaceProfileSets
+kCGColorSpaceROMMRGB
+kCGColorSpaceSRGB
+kCGColorSpaceStandardRangeOriginal
+kCGColorSpaceUncalibratedCMYK
+kCGColorSpaceUncalibratedGray
+kCGColorSpaceUncalibratedRGB
+kCGColorSpaceUserCMYK
+kCGColorSpaceUserGray
+kCGColorSpaceUserRGB
+kCGContextColorSpace
+kCGContextTypePatternExecution
+kCGContextTypePDF
+kCGContextTypePDFSoftmask
+kCGContextTypeShadingExecution
+kCGDrawPDFPageAdditionalRotationOptionKey
+kCGDrawPDFPageAllowUpscaleOptionKey
+kCGDrawPDFPageBackgroundColorOptionKey
+kCGDrawPDFPageContentTypesOptionKey
+kCGDrawPDFPageDrawAnnotationsOptionKey
+kCGDrawPDFPageDrawImageCallbackOptionKey
+kCGDrawPDFPageImageCallbackOptionKey
+kCGDrawPDFPageIsThumbnailOptionKey
+kCGDrawPDFPageMaintainAspectRatioOptionKey
+kCGDrawPDFPageMarkedContentCallbackOptionKey
+kCGDrawPDFPageMatrixFilterOptionKey
+kCGDrawPDFPageProgressCallbackOptionKey
+kCGDrawPDFPageSourceRectOptionKey
+kCGDrawPDFPageWhiteBackgroundOptionKey
+kCGImageBlockColorSpaceRequest
+kCGImageProviderColorSpaceChangedOnImageCopy
+kCGIndexedBaseColorSpaceKey
+kCGPatternWillDeallocate
+kCGPDFContentStreamOptionAllowLossyImageCompressionKey
+kCGPDFContentStreamOptionRedactionPathKey
+kCGPDFContextAccessPermissions
+kCGPDFContextAllowsCopying
+kCGPDFContextAllowsPrinting
+kCGPDFContextAuthor
+kCGPDFContextCreator
+kCGPDFContextEncryptionCipher
+kCGPDFContextEncryptionCipherAESv2
+kCGPDFContextEncryptionCipherAESv3
+kCGPDFContextEncryptionCipherNone
+kCGPDFContextEncryptionCipherRC4
+kCGPDFContextEncryptionHashedOwnerPassword
+kCGPDFContextEncryptionHashedUserPassword
+kCGPDFContextEncryptionKey
+kCGPDFContextEncryptionKeyLength
+kCGPDFContextEncryptionPermissions
+kCGPDFContextEncryptionRevision
+kCGPDFContextEncryptionVersion
+kCGPDFContextEncryptMetadata
+kCGPDFContextJPEGCompressionQuality
+kCGPDFContextKeywords
+kCGPDFContextOutputIntent
+kCGPDFContextOutputIntents
+kCGPDFContextOwnerPassword
+kCGPDFContextSecurityHandlerRevision
+kCGPDFContextShouldCompress
+kCGPDFContextShouldOptimizeImagesForScreenDisplay
+kCGPDFContextShouldOutputAllImagesAsJPEG
+kCGPDFContextSubject
+kCGPDFContextTitle
+kCGPDFContextUserPassword
+kCGPDFDocumentAuthor
+kCGPDFDocumentCreationDate
+kCGPDFDocumentCreator
+kCGPDFDocumentKeywords
+kCGPDFDocumentModificationDate
+kCGPDFDocumentProducer
+kCGPDFDocumentSubject
+kCGPDFDocumentTitle
+kCGPDFDocumentWriteOptionAuthor
+kCGPDFDocumentWriteOptionCreator
+kCGPDFDocumentWriteOptionJPEGCompressionQuality
+kCGPDFDocumentWriteOptionKeywords
+kCGPDFDocumentWriteOptionOutputAllImagesAsJPEG
+kCGPDFDocumentWriteOptionOutputLinearized
+kCGPDFDocumentWriteOptionOutputPDFA
+kCGPDFDocumentWriteOptionProducer
+kCGPDFDocumentWriteOptionSaveTextFromOCR
+kCGPDFDocumentWriteOptionSubject
+kCGPDFDocumentWriteOptionTitle
+kCGPDFImageCallbackInfoKeyImageFilter
+kCGPDFImageIsSignature
+kCGPDFPageCreateWithImageAllowUpscale
+kCGPDFPageShouldRenderExtraContentStream
+kCGPDFSelectionImage
+kCGPDFXRefEntryKindOffset
+kCGPDFXRefEntryKindStream
+kCPcgpdfFont
+kCPfillColorSpace
+      Lazily creating CGPDFTaggedPageProperties for page %zu.
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphics/API/CGPattern.c
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphics/CGBlit/Functions/CGBufferIsConstantValue.h
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphics/ColorSpaces/CGColorSpace.c
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphics/ColorSpaces/CGColorSpace_CalGray.c
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphics/ColorSpaces/CGColorSpace_CalRGB.c
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphics/ColorSpaces/CGColorSpace_DeviceN.c
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphics/ColorSpaces/CGColorSpaceFromICCDataCache.c
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphics/ColorSpaces/CGColorSpace_ICC.c
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphics/ColorSpaces/CGColorSpace_Lab.c
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphics/ColorSpaces/CGColorSpace_ProfileSets.c
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphics/ColorSpaces/color-space-state.c
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphics/DisplayColorSpaceConversions/CGDisplayColorSpaceConversion.c
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphics/PDF/Documents/CGPDFDocument.cpp
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphics/PDF/Documents/CGPDFDocumentSerializer.mm
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphics/PDF/Documents/PDFDocumentCore.cpp
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphics/PDF/Documents/PDFPageCore.cpp
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphics/PDF/Filters/flate-filter.c
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphics/PDF/Filters/LZW/lzw-decode.c
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphics/PDF/Functions/type4-program.c
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphics/PDF/Linearized/PDFLinearizer.cc
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphics/PDF/PageLayout/PageLayoutFactory.mm
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphics/PDF/PageLayout/PageLayout.mm
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphics/PDF/PageLayout/PageLayoutTable.mm
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphics/PDF/Reader/CGPDFHintTable.cpp
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphics/PDF/Reader/CGPDFLexer.c
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphics/PDF/Reader/CGPDFSource.c
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphics/PDF/Reader/pdf-reader.cpp
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphics/PDF/Security/CGPDFDecryptor.c
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphics/PDF/Text/Advances/CGPDFAdvances.c
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphics/PDF/Text/Unicode/CGPDFUnicodeTable.c
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphicsRIP/PDF/Annotations/PDFMetaSet.c
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphicsRIP/PDF/ColorSpaces/PDFColorSpace.c
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphicsRIP/PDF/ContentStreams/PDFContentStream.c
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphicsRIP/PDF/ContentStreams/PDFGState.c
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphicsRIP/PDF/ContentStreams/PDFTextLayout.c
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphicsRIP/PDF/Encryption/PDFSecurityHandler.cpp
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphicsRIP/PDF/Fonts/FontSet.cc
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphicsRIP/PDF/Fonts/SimpleFont.cc
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphicsRIP/PDF/Images/PDFImageEmit.c
+/Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphicsRIP/RIP/RIPFunction.c
+lzw code (%u) is outside of table bounds (%u)
+lzw_decode
+LZWDecode
+LZW decode: encountered unexpected EOF.
+LZW decode: invalid chain sequence.
+lzw table building: old code (%u) is outside of table bounds (%u)
+Malformed PDF: /Contents entry is neither an Array nor a Stream.
+mesh %p: colorspace %p ; function %p
+Method to free pattern missing
+Missing code table in JBIG2 symbol dictionary
+Missing code table in JBIG2 text region
+Missing EOFB in JBIG2 MMR bitmap data
+missing or invalid `FunctionType' value.
+missing or invalid image `ColorSpace' value.
+missing or invalid pattern `BBox' value.
+missing or invalid pattern `PaintType' value.
+missing or invalid pattern `PatternType' value.
+missing or invalid pattern `Shading' value.
+missing or invalid pattern `TilingType' value.
+missing or invalid pattern `XStep' value.
+missing or invalid pattern `YStep' value.
+missing or invalid shading `BitsPerComponent' value.
+missing or invalid shading `BitsPerCoordinate' value.
+missing or invalid shading `BitsPerFlag' value.
+missing or invalid shading `ColorSpace' value.
+missing or invalid shading `Coords' value.
+missing or invalid shading `Decode' value.
+missing or invalid shading `Function' value.
+missing or invalid shading `ShadingType' value.
+missing or invalid shading `VerticesPerRow' value.
+missing or invalid soft-mask `ColorSpace' value.
+MutablePDF
+N2CG23DisplayListEntryShadingE
+N2CG26DisplayListResourcePatternE
+N2CG26DisplayListResourceShadingE
+N2CG27DisplayListResourceFunctionE
+N2CG28DisplayListEntryStatePatternE
+N2CG29DisplayListResourceColorSpaceE
+NCGColorSpaceRef
+NCGPDFStructureElementRef
+No content stream. It is required to call CGPDFContextBeginPage prior to rendering content into a PDFContext.
+no JBIG2 library available.
+No pattern specified for pattern color space.
+No pattern specified with pattern color space.
+n != PDFObjectNumberInvalid
+NSt3__110__function6__baseIFvP13CGPDFAppenderEEE
+NSt3__110__function6__baseIFvP13CGPDFAppenderP9__CFArrayEEE
+NSt3__110__function6__baseIFvP14CGDataConsumerEEE
+NSt3__110__function6__baseIFvP7CGImageEEE
+NSt3__110__function6__baseIFvP7__sFILEEEE
+NSt3__110__function6__baseIFvP8__CFDataEEE
+NSt3__110__function6__baseIFvP9PDFWriterEEE
+NSt3__110__function6__baseIFvPN15PageLayoutTable9TableCellEEEE
+NSt3__110__function6__baseIFvRKNS_10shared_ptrI8TextLineEERbEEE
+NSt3__110__function6__funcIU13block_pointerFvP13CGPDFAppenderP9__CFArrayES6_EE
+NSt3__110__function6__funcIZ32CGPDFDocumentPerformWithAppenderE3$_0FvP13CGPDFAppenderEEE
+NSt3__110__function6__funcIZ43CGPDFPageLayoutTableGetBoundsOfCellsInRangeE3$_0FvPN15PageLayoutTable9TableCellEEEE
+NSt3__110__function6__funcIZN10PageLayout23insertTableFromAnalysisEPK9__CFArrayE3$_0FvPN15PageLayoutTable9TableCellEEEE
+NSt3__110__function6__funcIZN13PDFLinearizer11endDocumentEP14CGDataConsumerE3$_0FvP9PDFWriterEEE
+NSt3__110__function6__funcIZN13PDFLinearizer11endDocumentEP14CGDataConsumerE3$_1FvP7__sFILEEEE
+NSt3__110__function6__funcIZN13PDFLinearizer11endDocumentEP14CGDataConsumerE3$_2FvP7__sFILEEEE
+NSt3__110__function6__funcIZN13PDFLinearizer11endDocumentEP14CGDataConsumerE3$_3FvS4_EEE
+NSt3__110__function6__funcIZN13PDFLinearizer11endDocumentEP14CGDataConsumerE3$_4FvP9PDFWriterEEE
+NSt3__110__function6__funcIZN13PDFLinearizer11endDocumentEP14CGDataConsumerE3$_5FvP8__CFDataEEE
+NSt3__110__function6__funcIZN13PDFLinearizer11endDocumentEP14CGDataConsumerE3$_6FvS4_EEE
+NSt3__110__function6__funcIZN13PDFLinearizer11endDocumentEP14CGDataConsumerE3$_7FvP9PDFWriterEEE
+NSt3__110__function6__funcIZN13PDFLinearizer11endDocumentEP14CGDataConsumerE3$_8FvP7__sFILEEEE
+NSt3__110__function6__funcIZN13PDFLinearizer14emitHintTablesEP17CGPDFHintTableSetP9PDFWriterE3$_0FvP8__CFDataEEE
+NSt3__110__function6__funcIZN13PDFLinearizer14emitHintTablesEP17CGPDFHintTableSetP9PDFWriterE3$_1FvP14CGDataConsumerEEE
+NSt3__110__function6__funcIZN13PDFLinearizer14emitHintTablesEP17CGPDFHintTableSetP9PDFWriterE3$_2FvP8__CFDataEEE
+NSt3__110__function6__funcIZN13PDFLinearizer14emitHintTablesEP17CGPDFHintTableSetP9PDFWriterE3$_3FvP14CGDataConsumerEEE
+NSt3__110__function6__funcIZN13PDFLinearizer14emitHintTablesEP17CGPDFHintTableSetP9PDFWriterE3$_4FvP14CGDataConsumerEEE
+NSt3__110__function6__funcIZN15PageLayoutTable12containsLineERKNS_10shared_ptrI8TextLineEEE3$_0FvS7_RbEEE
+NSt3__110__function6__funcIZN15PageLayoutTable18computeTableRangesEvE3$_0FvRKNS_10shared_ptrI8TextLineEERbEEE
+NSt3__110__function6__funcIZN15PageLayoutTableC1EP10PageLayoutlP12NSDictionaryE3$_0FvPNS2_9TableCellEEEE
+NSt3__110__function6__funcIZN17CGPDFDocumentImpl10appendPageEP9CGPDFPageE3$_0FvP13CGPDFAppenderEEE
+NSt3__110__function6__funcIZN17CGPDFDocumentImpl14appendMetadataEPK8__CFDataE3$_0FvP13CGPDFAppenderEEE
+NSt3__110__function6__funcIZN17CGPDFDocumentImpl17insertPageAtIndexEP9CGPDFPagemE3$_0FvP13CGPDFAppenderEEE
+NSt3__110__function6__funcIZN17CGPDFDocumentImpl17removePageAtIndexEmE3$_0FvP13CGPDFAppenderEEE
+NSt3__110__function6__funcIZN17CGPDFDocumentImpl18appendDocumentInfoEPK14__CFDictionaryE3$_0FvP13CGPDFAppenderEEE
+NSt3__110__function6__funcIZN17CGPDFDocumentImpl22exchangePagesAtIndicesEmmE3$_0FvP13CGPDFAppenderEEE
+NSt3__110__function6__funcIZN2CG15PDFDocumentCore21getCGImageForPDFImageEP10CGPDFImageiE3$_0FvP7CGImageEEE
+NSt3__110__function6__funcIZN2CG15PDFDocumentCore21getCGImageForPDFImageEP10CGPDFImageiE3$_1FvP7CGImageEEE
+NSt3__110__function6__funcIZNK10PageLayout30getTableSelectionRectForPointsE7CGPointS3_P15PageLayoutTableE3$_0FvPNS4_9TableCellEEEE
+NSt3__110__function6__funcIZNK10PageLayout39CreateAttributedStringForTableSelectionERK20TableSelectionStructE3$_0FvPN15PageLayoutTable9TableCellEEEE
+NSt3__110shared_ptrIKN2CG28DisplayListEntryStatePatternEE27__shared_ptr_default_deleteIS3_S2_EE
+NSt3__110shared_ptrIN2CG26DisplayListResourcePatternEE27__shared_ptr_default_deleteIS2_S2_EE
+NSt3__110shared_ptrIN2CG26DisplayListResourceShadingEE27__shared_ptr_default_deleteIS2_S2_EE
+NSt3__110shared_ptrIN2CG27DisplayListResourceFunctionEE27__shared_ptr_default_deleteIS2_S2_EE
+NSt3__110shared_ptrIN2CG29DisplayListResourceColorSpaceEE27__shared_ptr_default_deleteIS2_S2_EE
+?NSt3__120__shared_ptr_emplaceI11PDFPageNodeNS_9allocatorIS1_EEEE
+NSt3__120__shared_ptr_emplaceIN2CG11PDFPageCoreENS_9allocatorIS2_EEEE
+NSt3__120__shared_ptr_emplaceIN2CG15PDFDocumentCoreENS_9allocatorIS2_EEEE
+NSt3__120__shared_ptr_pointerIP7CGImageNS_8functionIFvS2_EEENS_9allocatorIS1_EEEE
+NSt3__120__shared_ptr_pointerIP7CGImageZ28CGPDFDrawingContextDrawImageE3$_0NS_9allocatorIS1_EEEE
+NSt3__120__shared_ptr_pointerIPN2CG26DisplayListResourcePatternENS_10shared_ptrIS2_E27__shared_ptr_default_deleteIS2_S2_EENS_9allocatorIS2_EEEE
+NSt3__120__shared_ptr_pointerIPN2CG26DisplayListResourceShadingENS_10shared_ptrIS2_E27__shared_ptr_default_deleteIS2_S2_EENS_9allocatorIS2_EEEE
+NSt3__120__shared_ptr_pointerIPN2CG27DisplayListResourceFunctionENS_10shared_ptrIS2_E27__shared_ptr_default_deleteIS2_S2_EENS_9allocatorIS2_EEEE
+NSt3__120__shared_ptr_pointerIPN2CG28DisplayListEntryStatePatternENS_10shared_ptrIKS2_E27__shared_ptr_default_deleteIS5_S2_EENS_9allocatorIS2_EEEE
+NSt3__120__shared_ptr_pointerIPN2CG29DisplayListResourceColorSpaceENS_10shared_ptrIS2_E27__shared_ptr_default_deleteIS2_S2_EENS_9allocatorIS2_EEEE
+NSt3__18functionIFvP7CGImageEEE
+NULL colorspace
+objectNumber != PDFObjectNumberInvalid
+pattern
+/Pattern <<
+[ /Pattern
+Pattern
+patternBaseName
+patternBounds
+PatternCell-%llu.dlist
+pattern_finalize
+PatternImage
+ Pattern: %lu, %lu unique.
+patternMatrix
+/Pattern %s
+pattern->should_free
+pattern size (%lu) is not a multiple of 2
+patternState
+patternType
+PatternType
+/PatternType 1
+/PatternType 2
+pdfaid
+pdfaid:conformance
+pdfaid:part
+PDFColorSpaceEmitICCDataStream
+PDFContentStreamBeginMarkedContentSequence
+PDFContentStreamCreate
+PDFContentStreamDrawDisplayList
+PDFContentStreamDrawGlyphs
+PDFContentStreamDrawStyle
+PDFContentStreamEndMarkedContentSequence
+PDFCRGroupRegion *PageLayout::getOrderedLayout()
+PDFCRGroupRegion *PageLayout::getOrderedLayout(NSMutableArray *__strong, CGRect, __strong id<CRCTLDDelegate>, __strong id<CRCTLDDelegate>)
+PDF data too large (%lu bytes)
+%%PDF-%d.%d
+PDFDocumentAddStructureTreeRootChild
+PDFDocumentBeginMarkedContentSequence
+PDFDocumentBeginNonStructuralMarkedContentSequence
+PDFDocumentBeginObjectReference
+PDF document colorspace missing
+PDFDocumentCore.cpp
+    [+] PDFDocumentCore created.
+    [-] PDFDocumentCore destroyed.
+PDFDocumentEmitStructureTree
+PDFDocumentEndMarkedContentSequence
+PDFDocumentEndObjectReference
+pdf:Keywords
+PDFKit
+PDFLinearizer *PDFLinearizerCreate(PDFDocument *)
+pdf_object_t CGPDFHintTableSetGetPageObjectNumber(CGPDFHintTableSetRef, size_t)
+PDFObjectType
+PDFPageCore.cpp
+    [+] PDFPageCore for page %zu created.
+    [-] PDFPageCore for page %zu destroyed.
+pdf:Producer
+pdf_reader *pdf_reader_create(CGPDFSource *)
+PDFReferenceType
+^{PDFResourceSet=}8@?0
+^{PDFSecurityHandler=}8@?0
+PDFTextLayoutCreate
+PDFWriteImage
+PDFWriteImageByName
+PDFWritePath
+^{PDFWriter=}8@?0
+PDF/X-3:2002
+Quartz PDFContext
+Quartz PDFContext, AppendMode %d.%d
+Quartz PDFDocument, Serializer %d.%d
+r*16@?0^{CGColorSpace=}8
+r*16@?0^{CGShading=}8
+r*64@?0^{CGPattern=}8{CGAffineTransform=dddddd}16
+ripc_GetPattern
+RIP_ENABLE_FUNCTION_CACHE
+RIP_ENABLE_PATTERN_CACHE
+RunLengthDecode
+RunLengthDecode: encountered unexpected EOF.
+%s: CGColorSpaceCopyICCData() returned NULL for ColorSpaceResource with id = %llu
+%s: CGColorSpace doesn't support output
+%s: CGColorSpace which uses extended range requires floating point or CIF10 bitmap context
+%s: Color resource has NULL CGColorSpace
+%s	colorSpace:         %p
+%s: colorSpace resource is of an unexpected class
+%s: Don't mix the old and new tagging functions
+%s: Don't nest calls to this function -- the results will not be what you expect.
+Self-referential pattern.
+SetOutputIntent cannot be used when generating PDF/A output
+%s: failed to create PDF context.
+%s: failed to create PDF context delegate.
+%s: Given colorspace does not match source colorspace.
+shading
+/Shading <<
+Shading
+shadingEntry != nullptr
+ Shading: %lu, %lu unique.
+/Shading %R
+ShadingType
+/ShadingType 1
+/ShadingType 2
+/ShadingType 3
+SignedBitPattern
+%s: invalid image colorspace.
+%s: invalid image colorspace: NULL.
+%s: no color space specified for fill pattern.
+%s: no color space specified for stroke pattern.
+source->length != (pdf_off_t)-1
+space->state->type == kCGColorSpaceCalibratedGray
+space->state->type == kCGColorSpaceCalibratedRGB
+space->state->type == kCGColorSpaceLAB
+space->state->type == kCGColorSpaceProfileSets
+%s: pattern and components may not be NULL.
+%s: Pattern resource has NULL CGPattern
+%s: pattern specified with non-pattern color space.
+%s: PDFPageCore for page %zu has no CGPDFPageRef wrapper.
+srcType == kCGColorSpaceDeviceGray || srcType == kCGColorSpaceDeviceRGB || srcType == kCGColorSpaceDeviceCMYK
+%s - rip_function_convert_color_components failed
+s->state->type == kCGColorSpaceDeviceN
+s->state->type == kCGColorSpaceICCBased
+s->state->type == kCGColorSpaceICCBased || s->state->type == kCGColorSpaceProfileSets
+s->state->type == kCGColorSpaceProfileSets
+state->type == kCGColorSpaceICCBased
+state->type == kCGColorSpaceLAB
+static void PageLayoutFactory::ScannerContext::op_c(CGPDFScannerRef, void *)
+static void PageLayoutFactory::ScannerContext::op_h(CGPDFScannerRef, void *)
+static void PageLayoutFactory::ScannerContext::op_l(CGPDFScannerRef, void *)
+static void PageLayoutFactory::ScannerContext::op_y(CGPDFScannerRef, void *)
+%s: This function is deprected. Please use CGColorConversionInfoIterateColorSpaceFunctionsWithCallbacks
+%s: This function is deprected. Please use CGColorConversionInfoIterateFunctionsWithCallbacks
+%s: Unhanded colorspace kind
+%s: value of CGContextDrawPDFPageOptionAdditionalRotation must be a multiple of 90
+The data provided is not a valid PDF document.
+The function `CGDataProviderGetBytePtr' is obsolete.
+The function `%s' is obsolete.
+The function `%s' is obsolete. Please use `%s' instead.
+Too few symbols in JBIG2 symbol dictionary
+Too many exported symbols in JBIG2 symbol dictionary
+Too many input symbols in JBIG2 symbol dictionary
+Too many symbols in JBIG2 symbol dictionary
+Type4 functions must start with `{'.
+type == kCGColorSpaceICCBased || type == kCGColorSpaceProfileSets
+/Type /Pattern
+U13block_pointerFvP13CGPDFAppenderP9__CFArrayE
+unable to create Type 0 function.
+unable to create Type 2 function.
+unable to create Type 3 function.
+unable to create Type 4 function.
+Unexpected EOF in JBIG2 stream
+Unhandled colorspace type
+Unknown segment type in JBIG2 stream
+unrecognized function name `%s'.
+UnsignedBitPattern
+UnsignedBitPattern SignedBitPattern
+Unsupported colorspace model: (%d)
+Unsupported ColorSpace Model fallback: %ld
+unsupported `FunctionType': %ld
+unsupported pattern type `%ld'.
+USE_FP16_EXPANDED_FUNCTIONS
+v128@?0^{PDFWriter=}8^{PDFGState=}16{CGAffineTransform=dddddd}24^{CGGState=}72{CGRect={CGPoint=dd}{CGSize=dd}}80^{CGImage=}112i120B124
+v16@?0^{CGColorSpace=}8
+v16@?0^{CGPDFAnnotation=}8
+v16@?0^{CGPDFAppender=}8
+v16@?0^{CGPDFMarkedContentItem=}8
+v16@?0^{CGPDFObject=^{CGPDFObject}ib1b1{?=QS}(?=Cqd*^{CGPDFArray}^{CGPDFDictionary}^{CGPDFStream}^{CGPDFString}iq)}8
+v16@?0@"<CGRemotePDFPageProtocol>"8
+v16@?0r^{DisplayListEntryStatePattern=^^?{CGAffineTransform=dddddd}{CGSize=dd}d}8
+v16@?0r^{DisplayListResourceColor=^^?b24b8^{CGColor}^{DisplayListResourceColorSpace}^{DisplayListResourcePattern}}8
+v16@?0r^{DisplayListResourceColorSpace=^^?b24b8^{CGColorSpace}}8
+v16@?0r^{DisplayListResourceGradient=^^?b24b8^{CGGradient}^{DisplayListResourceColorSpace}}8
+v16@?0r^{DisplayListResourceImage=^^?b24b8^{CGImage}QQ^{DisplayListResourceColorSpace}b4b1b1b1}8
+v16@?0r^{DisplayListResourcePattern=^^?b24b8^{CGPattern}}8
+v16@?0r^{DisplayListResourceShading=^^?b24b8^{CGShading}^{CGShading}^{DisplayListResourceColorSpace}}8
+v16@?0r^{DisplayListResourceStyle=^^?b24b8^{CGStyle}^{DisplayListResourceColorSpace}}8
+v24@?0^{CGPDFAppender=}8^{__CFArray=}16
+v24@?0^{CGPDFPage=}8^{CGPDFAnnotation=}16
+v24@?0^{CGPDFTaggedPageProperties=}8q16
+v24@?0@"<CGRemotePDFDocumentProtocol>"8@"NSError"16
+v24@?0@"CGRemotePDFDocumentProxy"8@"NSError"16
+v24@?0r^{DisplayListEntry=^^?b8b24{CGRect={CGPoint=dd}{CGSize=dd}}^{DisplayListEntryStateDrawing}^{DisplayListEntryStateFill}^{DisplayListEntryStateStroke}^{DisplayListEntryStatePattern}}8^B16
+v24@?0r^{DisplayListEntryDisplayList=^^?b8b24{CGRect={CGPoint=dd}{CGSize=dd}}^{DisplayListEntryStateDrawing}^{DisplayListEntryStateFill}^{DisplayListEntryStateStroke}^{DisplayListEntryStatePattern}^{DisplayListResourceDisplayList}{CGAffineTransform=dddddd}ii}8r^v16
+v24@?0^v8^{CGPDFAnnotation=}16
+virtual bool DisplayListXMLParserResourceColorSpace::parseAttributes(const DLXMLAttributes &)
+virtual bool DisplayListXMLWriterResourceColorSpace::writeAttributes(DLXMLAttributes &)
+void CGPDFDocumentExchangePagesAtIndices(CGPDFDocumentRef _Nullable, size_t, size_t)
+void CGPDFDocumentInsertPageAtIndex(CGPDFDocumentRef _Nullable, CGPDFPageRef _Nullable, size_t)
+void CGPDFDocumentRemovePageAtIndex(CGPDFDocumentRef _Nullable, size_t)
+void CGPDFPageAddAnnotationAppearance(CGPDFPageRef _Nonnull, CGPDFAnnotationRef _Nonnull, CGPDFStreamRef _Nonnull, CGPDFAnnotationAppearanceEntry)
+void CGPDFPageAddXObject(CGPDFPageRef _Nonnull, CGPDFStreamRef _Nonnull, bool)
+void CGPDFPageAppendXObject(CGPDFPageRef _Nonnull, CGPDFStreamRef _Nonnull)
+void CG::PDFPageCore::drawInRect(CGContextRef, CGPDFBox, CGRect, CFDictionaryRef)
+void CGPDFPageImpl::removeAnnotationAtIndex(CGPDFPageRef, size_t)
+void CGPDFPageSetBoxRect(CGPDFPageRef _Nonnull, CGPDFBox, CGRect)
+void CGPDFPageSetObjectForKey(CGPDFPageRef _Nonnull, const char * _Nonnull, CGPDFObjectRef _Nullable)
+void PageLayout::ConvertTextRangesToStringRanges(I &&, O &&) const [I = std::ranges::transform_view<std::ranges::ref_view<std::vector<std::pair<unsigned long, CFRange>>>, (lambda at /Library/Caches/com.apple.xbs/418A84E5-A935-45BB-BEF3-31726BD24C5D/TemporaryDirectory.myKecQ/Sources/CoreGraphics/CoreGraphics/PDF/Text/Selection/Selection.mm:490:59)> &, O = std::back_insert_iterator<std::vector<CFRange>>]
+void PageLayoutTable::forEachCellInRange(TableCell * _Nonnull, TableCell * _Nonnull, std::function<void (TableCell *)>)
+void PDFLinearizerBeginPage(PDFLinearizer *, PDFPage *)
+void PDFLinearizer::recordPageParentReference(PDFObjectNumber, PDFObjectNumber)
+void PDFLinearizer::recordReference(PDFObjectNumber, PDFObjectNumber)
+w"w"Lzw$w$
+XML node of dash resource does not contain a "pattern" child
+Z28CGPDFDrawingContextDrawImageE3$_0
+Z32CGPDFDocumentPerformWithAppenderE3$_0
+Z43CGPDFPageLayoutTableGetBoundsOfCellsInRangeE3$_0
+ZN13PDFLinearizer11endDocumentEP14CGDataConsumerE3$_0
+ZN13PDFLinearizer11endDocumentEP14CGDataConsumerE3$_1
+ZN13PDFLinearizer11endDocumentEP14CGDataConsumerE3$_2
+ZN13PDFLinearizer11endDocumentEP14CGDataConsumerE3$_3
+ZN13PDFLinearizer11endDocumentEP14CGDataConsumerE3$_4
+ZN13PDFLinearizer11endDocumentEP14CGDataConsumerE3$_5
+ZN13PDFLinearizer11endDocumentEP14CGDataConsumerE3$_6
+ZN13PDFLinearizer11endDocumentEP14CGDataConsumerE3$_7
+ZN13PDFLinearizer11endDocumentEP14CGDataConsumerE3$_8
+ZN13PDFLinearizer14emitHintTablesEP17CGPDFHintTableSetP9PDFWriterE3$_0
+ZN13PDFLinearizer14emitHintTablesEP17CGPDFHintTableSetP9PDFWriterE3$_1
+ZN13PDFLinearizer14emitHintTablesEP17CGPDFHintTableSetP9PDFWriterE3$_2
+ZN13PDFLinearizer14emitHintTablesEP17CGPDFHintTableSetP9PDFWriterE3$_3
+ZN13PDFLinearizer14emitHintTablesEP17CGPDFHintTableSetP9PDFWriterE3$_4
+ZN17CGPDFDocumentImpl10appendPageEP9CGPDFPageE3$_0
+ZN17CGPDFDocumentImpl14appendMetadataEPK8__CFDataE3$_0
+ZN17CGPDFDocumentImpl17insertPageAtIndexEP9CGPDFPagemE3$_0
+ZN17CGPDFDocumentImpl17removePageAtIndexEmE3$_0
+ZN17CGPDFDocumentImpl18appendDocumentInfoEPK14__CFDictionaryE3$_0
+ZN17CGPDFDocumentImpl22exchangePagesAtIndicesEmmE3$_0
+ZN2CG15PDFDocumentCore21getCGImageForPDFImageEP10CGPDFImageiE3$_0
+ZN2CG15PDFDocumentCore21getCGImageForPDFImageEP10CGPDFImageiE3$_1

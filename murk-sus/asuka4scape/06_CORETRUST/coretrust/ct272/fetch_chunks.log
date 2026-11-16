@@ -1,0 +1,290 @@
+start have=67108864 target=2415919104 2026-10-27T02:55:25+03:00
+chunk [67108864..335544320] got=268435456 want=268435456 2026-10-27T02:57:29+03:00
+chunk [335544320..603979776] got=268435456 want=268435456 2026-10-27T02:58:29+03:00
+chunk [603979776..872415232] got=268435456 want=268435456 2026-10-27T02:59:33+03:00
+chunk [872415232..1140850688] got=268435456 want=268435456 2026-10-27T03:01:02+03:00
+chunk [1140850688..1409286144] got=268435456 want=268435456 2026-10-27T03:01:59+03:00
+chunk [1409286144..1677721600] got=268435456 want=268435456 2026-10-27T03:03:54+03:00
+chunk [1677721600..1946157056] got=268435456 want=268435456 2026-10-27T03:07:44+03:00
+curl: (28) Operation timed out after 30167 milliseconds with 0 bytes received
+curl: (28) Operation too slow. Less than 100000 bytes/sec transferred the last 60 seconds
+curl: (28) Resolving timed out after 30003 milliseconds
+curl: (28) Resolving timed out after 30002 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30002 milliseconds
+curl: (28) Resolving timed out after 30002 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+chunk fail at 1946157056 2026-10-27T03:23:13+03:00
+chunk [1946157056..1954536263] got=8379207 want=268435456 2026-10-27T03:23:15+03:00
+short read, continuing from 1954536263
+curl: (6) Could not resolve host: updates.cdn-apple.com
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30002 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30004 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+chunk fail at 1954536263 2026-10-27T03:27:57+03:00
+chunk [1954536263..1954536263] got=0 want=268435456 2026-10-27T03:27:59+03:00
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30003 milliseconds
+curl: (28) Resolving timed out after 30002 milliseconds
+curl: (28) Resolving timed out after 30002 milliseconds
+curl: (28) Resolving timed out after 30007 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+chunk fail at 1954536263 2026-10-27T03:32:56+03:00
+chunk [1954536263..1954536263] got=0 want=268435456 2026-10-27T03:32:58+03:00
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30002 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30002 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30002 milliseconds
+chunk fail at 1954536263 2026-10-27T03:37:55+03:00
+chunk [1954536263..1954536263] got=0 want=268435456 2026-10-27T03:37:57+03:00
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30005 milliseconds
+curl: (28) Resolving timed out after 30002 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30006 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+chunk fail at 1954536263 2026-10-27T03:42:54+03:00
+chunk [1954536263..1954536263] got=0 want=268435456 2026-10-27T03:42:56+03:00
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30003 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30002 milliseconds
+curl: (28) Resolving timed out after 30006 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+chunk fail at 1954536263 2026-10-27T03:47:53+03:00
+chunk [1954536263..1954536263] got=0 want=268435456 2026-10-27T03:47:55+03:00
+curl: (6) Could not resolve host: updates.cdn-apple.com
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+chunk fail at 1954536263 2026-10-27T03:52:50+03:00
+chunk [1954536263..1954536263] got=0 want=268435456 2026-10-27T03:52:52+03:00
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30007 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+chunk fail at 1954536263 2026-10-27T03:57:49+03:00
+chunk [1954536263..1954536263] got=0 want=268435456 2026-10-27T03:57:51+03:00
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30003 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Connection timeout after 30000 ms
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+chunk fail at 1954536263 2026-10-27T04:02:49+03:00
+chunk [1954536263..1954536263] got=0 want=268435456 2026-10-27T04:02:51+03:00
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30002 milliseconds
+curl: (28) Resolving timed out after 30002 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+chunk fail at 1954536263 2026-10-27T04:07:48+03:00
+chunk [1954536263..1954536263] got=0 want=268435456 2026-10-27T04:07:50+03:00
+curl: (6) Could not resolve host: updates.cdn-apple.com
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30002 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+chunk fail at 1954536263 2026-10-27T04:12:29+03:00
+chunk [1954536263..1954536263] got=0 want=268435456 2026-10-27T04:12:31+03:00
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30002 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+chunk fail at 1954536263 2026-10-27T04:17:28+03:00
+chunk [1954536263..1954536263] got=0 want=268435456 2026-10-27T04:17:31+03:00
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30006 milliseconds
+curl: (28) Resolving timed out after 30003 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+chunk fail at 1954536263 2026-10-27T04:22:28+03:00
+chunk [1954536263..1954536263] got=0 want=268435456 2026-10-27T04:22:30+03:00
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30003 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+chunk fail at 1954536263 2026-10-27T04:27:27+03:00
+chunk [1954536263..1954536263] got=0 want=268435456 2026-10-27T04:27:29+03:00
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30003 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+chunk fail at 1954536263 2026-10-27T04:32:26+03:00
+chunk [1954536263..1954536263] got=0 want=268435456 2026-10-27T04:32:28+03:00
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30004 milliseconds
+chunk fail at 1954536263 2026-10-27T04:37:25+03:00
+chunk [1954536263..1954536263] got=0 want=268435456 2026-10-27T04:37:27+03:00
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30002 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+chunk fail at 1954536263 2026-10-27T04:42:24+03:00
+chunk [1954536263..1954536263] got=0 want=268435456 2026-10-27T04:42:26+03:00
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30002 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+chunk fail at 1954536263 2026-10-27T04:47:23+03:00
+chunk [1954536263..1954536263] got=0 want=268435456 2026-10-27T04:47:25+03:00
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30002 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+chunk fail at 1954536263 2026-10-27T04:52:22+03:00
+chunk [1954536263..1954536263] got=0 want=268435456 2026-10-27T04:52:24+03:00
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30002 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+chunk fail at 1954536263 2026-10-27T04:57:21+03:00
+chunk [1954536263..1954536263] got=0 want=268435456 2026-10-27T04:57:23+03:00
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+chunk fail at 1954536263 2026-10-27T05:02:20+03:00
+chunk [1954536263..1954536263] got=0 want=268435456 2026-10-27T05:02:22+03:00
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+chunk fail at 1954536263 2026-10-27T05:07:19+03:00
+chunk [1954536263..1954536263] got=0 want=268435456 2026-10-27T05:07:21+03:00
+curl: (28) Resolving timed out after 30002 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Connection timeout after 30000 ms
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30002 milliseconds
+curl: (28) Resolving timed out after 30002 milliseconds
+curl: (28) Resolving timed out after 30003 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+chunk fail at 1954536263 2026-10-27T05:12:18+03:00
+chunk [1954536263..1954536263] got=0 want=268435456 2026-10-27T05:12:20+03:00
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+chunk fail at 1954536263 2026-10-27T05:17:17+03:00
+chunk [1954536263..1954536263] got=0 want=268435456 2026-10-27T05:17:19+03:00
+curl: (28) Resolving timed out after 30002 milliseconds
+curl: (28) Resolving timed out after 30002 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+chunk fail at 1954536263 2026-10-27T05:22:16+03:00
+chunk [1954536263..1954536263] got=0 want=268435456 2026-10-27T05:22:18+03:00
+curl: (28) Resolving timed out after 30001 milliseconds
+curl: (28) Resolving timed out after 30000 milliseconds
+curl: (28) Resolving timed out after 30001 milliseconds
+chunk [1954536263..2222971719] got=268435456 want=268435456 2026-10-27T05:26:24+03:00
+chunk [2222971719..2415919104] got=192947385 want=192947385 2026-10-27T05:28:15+03:00
+done 2415919104 d48ad9abe6390f5de28b6869c7068d47f284238ead1a457dcbe7975b38fb65bf  /home/femboychik/work/coretrust/ct272/141-09773-227.dmg.aea 2026-10-27T05:28:45+03:00

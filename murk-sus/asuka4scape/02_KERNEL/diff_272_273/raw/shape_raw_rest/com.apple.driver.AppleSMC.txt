@@ -1,0 +1,9 @@
+funcs 1009 1009
+identical 1007 ratio 0.99802
+changed regions 2
+== replace A[93:94] B[93:94]
+   A 0xfffffff0091bb680 sz=192
+   B 0xfffffff00927fca0 sz=192
+== replace A[362:363] B[362:363]
+   A 0xfffffff0091cae40 sz=3116
+   B 0xfffffff00928f460 sz=3116

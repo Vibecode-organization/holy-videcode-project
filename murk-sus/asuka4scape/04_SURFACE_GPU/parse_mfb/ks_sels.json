@@ -1,0 +1,3069 @@
+[
+ {
+  "target": 18446744005142401404,
+  "sels": [
+   1
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff009142968",
+   "#0xfffffff00913793c",
+   "#0xfffffff00913f014",
+   "#0xfffffff00913e624",
+   "#0xfffffff00914233c",
+   "#0xfffffff00915fffc"
+  ],
+  "prog": [
+   "bti j",
+   "ldrb w8, [x22, #0xf3]",
+   "cmp w8, #5",
+   "b.eq #0xfffffff009145198",
+   "mov x0, x22",
+   "mov w1, #1"
+  ]
+ },
+ {
+  "target": 18446744005142402676,
+  "sels": [
+   2
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff009139b18",
+   "#0xfffffff00913e624",
+   "#0xfffffff00913aa88",
+   "#0xfffffff00913e624",
+   "#0xfffffff00914233c"
+  ],
+  "prog": [
+   "bti j",
+   "str wzr, [sp, #0xd0]",
+   "stur wzr, [x29, #-0x88]",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #6",
+   "b.eq #0xfffffff009147a0c"
+  ]
+ },
+ {
+  "target": 18446744005142401116,
+  "sels": [
+   3
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff009132c38",
+   "#0xfffffff00914233c",
+   "#0xfffffff00916ba84",
+   "#0xfffffff00914da54",
+   "#0xfffffff00917334c",
+   "#0xfffffff00917380c"
+  ],
+  "prog": [
+   "bti j",
+   "mov x0, x19",
+   "bl #0xfffffff009132c38",
+   "mov x23, x0",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1"
+  ]
+ },
+ {
+  "target": 18446744005142402216,
+  "sels": [
+   4
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff00913a6f0",
+   "#0xfffffff00915fffc",
+   "#0xfffffff00917350c",
+   "#0xfffffff00915faf8",
+   "#0xfffffff009132a58"
+  ],
+  "prog": [
+   "bti j",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1",
+   "b.ne #0xfffffff009148f14",
+   "ldr w8, [x19, #0x50]",
+   "mov w24, #0x2c2"
+  ]
+ },
+ {
+  "target": 18446744005142402328,
+  "sels": [
+   5
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00915fffc",
+   "#0xfffffff00917350c",
+   "#0xfffffff00915faf8",
+   "#0xfffffff009132a58",
+   "#0xfffffff00914233c",
+   "#0xfffffff009139b18"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "mov w9, #0x11",
+   "bic w8, w9, w8",
+   "cbnz w8, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]"
+  ]
+ },
+ {
+  "target": 18446744005142400988,
+  "sels": [
+   6
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914b66c",
+   "#0xfffffff009132c38",
+   "#0xfffffff00914233c",
+   "#0xfffffff00916ba84",
+   "#0xfffffff00914da54",
+   "#0xfffffff00917334c"
+  ],
+  "prog": [
+   "bti j",
+   "mov w8, #-1",
+   "str w8, [sp, #0xd0]",
+   "ldrh w8, [x22, #0xf0]",
+   "tbnz w8, #0xf, #0xfffffff0091470d8",
+   "ldrb w9, [x22, #0xf2]"
+  ]
+ },
+ {
+  "target": 18446744005142402048,
+  "sels": [
+   7
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff0091374d8",
+   "#0xfffffff009171c48",
+   "#0xfffffff00914233c",
+   "#0xfffffff00913a6f0",
+   "#0xfffffff00915fffc"
+  ],
+  "prog": [
+   "bti j",
+   "str xzr, [x21, #0xa8]",
+   "str wzr, [sp, #0xc0]",
+   "movi v0.2d, #0000000000000000",
+   "stur q0, [x21, #0x6c]",
+   "stp q0, q0, [sp, #0x120]"
+  ]
+ },
+ {
+  "target": 18446744005142399708,
+  "sels": [
+   8
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00913e624",
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38",
+   "#0xfffffff009132d48",
+   "#0xfffffff009132e34",
+   "#0xfffffff009132e34"
+  ],
+  "prog": [
+   "bti j",
+   "str wzr, [sp, #0xd0]",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1",
+   "b.eq #0xfffffff009147230",
+   "cbnz w8, #0xfffffff009148f14"
+  ]
+ },
+ {
+  "target": 18446744005142400052,
+  "sels": [
+   9
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff009132c38",
+   "#0xfffffff00913affc",
+   "#0xfffffff0091413c4",
+   "#0xfffffff009132c38",
+   "#0xfffffff00913b1e0",
+   "#0xfffffff00917333c"
+  ],
+  "prog": [
+   "bti j",
+   "str wzr, [sp, #0xd0]",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #3",
+   "b.eq #0xfffffff0091477fc",
+   "cmp w8, #4"
+  ]
+ },
+ {
+  "target": 18446744005142400116,
+  "sels": [
+   10
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff009132c38",
+   "#0xfffffff00913affc",
+   "#0xfffffff0091413c4",
+   "#0xfffffff009132c38",
+   "#0xfffffff00913b1e0",
+   "#0xfffffff00917333c"
+  ],
+  "prog": [
+   "bti j",
+   "movi v0.2d, #0000000000000000",
+   "str q0, [x21, #0x70]",
+   "stp q0, q0, [sp, #0x120]",
+   "stp q0, q0, [sp, #0x100]",
+   "stp q0, q0, [sp, #0xe0]"
+  ]
+ },
+ {
+  "target": 18446744005142400364,
+  "sels": [
+   11
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff009132c38",
+   "#0xfffffff00913b1e0",
+   "#0xfffffff00917333c",
+   "#0xfffffff009132f48",
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38"
+  ],
+  "prog": [
+   "bti j",
+   "movi v0.2d, #0000000000000000",
+   "stp q0, q0, [sp, #0xd0]",
+   "mov w8, #0x20",
+   "stur w8, [x29, #-0x88]",
+   "ldr w8, [x19, #0x28]"
+  ]
+ },
+ {
+  "target": 18446744005142399496,
+  "sels": [
+   12
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff009165260",
+   "#0xfffffff00913e624",
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38",
+   "#0xfffffff009132d48"
+  ],
+  "prog": [
+   "bti j",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #3",
+   "b.eq #0xfffffff009147c30",
+   "cmp w8, #4",
+   "b.eq #0xfffffff009147c04"
+  ]
+ },
+ {
+  "target": 18446744005142402744,
+  "sels": [
+   13
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff009139b18",
+   "#0xfffffff00913e624",
+   "#0xfffffff00913aa88",
+   "#0xfffffff00913e624",
+   "#0xfffffff00914233c"
+  ],
+  "prog": [
+   "bti j",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1",
+   "b.ne #0xfffffff009148f14",
+   "ldr w8, [x19, #0x50]",
+   "mov w24, #0x2c2"
+  ]
+ },
+ {
+  "target": 18446744005142400004,
+  "sels": [
+   14
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff009132c38",
+   "#0xfffffff00913affc",
+   "#0xfffffff0091413c4",
+   "#0xfffffff009132c38",
+   "#0xfffffff00913b1e0",
+   "#0xfffffff00917333c"
+  ],
+  "prog": [
+   "bti j",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1",
+   "b.eq #0xfffffff009147790",
+   "cbnz w8, #0xfffffff009148f14",
+   "ldr w8, [x19, #0x50]"
+  ]
+ },
+ {
+  "target": 18446744005142398900,
+  "sels": [
+   15
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38",
+   "#0xfffffff009132d48",
+   "#0xfffffff009132e34",
+   "#0xfffffff00914d99c",
+   "#0xfffffff0091722fc"
+  ],
+  "prog": [
+   "bti j",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #0xb",
+   "b.eq #0xfffffff009147694",
+   "cmp w8, #0xc",
+   "b.ne #0xfffffff009148f14"
+  ]
+ },
+ {
+  "target": 18446744005142399980,
+  "sels": [
+   16
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00913696c",
+   "#0xfffffff009132c38",
+   "#0xfffffff00913affc",
+   "#0xfffffff0091413c4",
+   "#0xfffffff009132c38",
+   "#0xfffffff00913b1e0"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff009145770",
+   "ldr x0, [x23]",
+   "bl #0xfffffff00913696c",
+   "b #0xfffffff009145770"
+  ]
+ },
+ {
+  "target": 18446744005142401060,
+  "sels": [
+   17
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff009132c38",
+   "#0xfffffff00914233c",
+   "#0xfffffff00916ba84",
+   "#0xfffffff00914da54",
+   "#0xfffffff00917334c",
+   "#0xfffffff00917380c"
+  ],
+  "prog": [
+   "bti j",
+   "str xzr, [sp, #0xd0]",
+   "stur wzr, [x29, #-0x88]",
+   "str wzr, [sp, #0xc0]",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1"
+  ]
+ },
+ {
+  "target": 18446744005142400656,
+  "sels": [
+   18
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38",
+   "#0xfffffff009164fb0",
+   "#0xfffffff00914b66c",
+   "#0xfffffff009132c38",
+   "#0xfffffff00914233c"
+  ],
+  "prog": [
+   "bti j",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #3",
+   "b.eq #0xfffffff00914794c",
+   "cmp w8, #4",
+   "b.ne #0xfffffff009148f14"
+  ]
+ },
+ {
+  "target": 18446744005142402892,
+  "sels": [
+   19
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00913e624",
+   "#0xfffffff00913aa88",
+   "#0xfffffff00913e624",
+   "#0xfffffff00914233c",
+   "#0xfffffff00913fe54",
+   "#0xfffffff009132c38"
+  ],
+  "prog": [
+   "bti j",
+   "adrp x0, #0xfffffff0076c3000",
+   "add x0, x0, #0xe5f",
+   "mov x1, #0",
+   "bl #0xfffffff00913e624",
+   "cbz w0, #0xfffffff009148cf0"
+  ]
+ },
+ {
+  "target": 18446744005142398496,
+  "sels": [
+   20
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff009139f40",
+   "#0xfffffff00917334c",
+   "#0xfffffff00917380c",
+   "#0xfffffff009172f8c",
+   "#0xfffffff009140828"
+  ],
+  "prog": [
+   "bti j",
+   "str xzr, [sp, #0xd0]",
+   "stur wzr, [x29, #-0x88]",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff009147788",
+   "ldr w8, [x19, #0x28]"
+  ]
+ },
+ {
+  "target": 18446744005142393532,
+  "sels": [
+   21,
+   22
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00915fffc",
+   "#0xfffffff00914233c",
+   "#0xfffffff00913fbec",
+   "#0xfffffff00914233c",
+   "#0xfffffff00914d5d4",
+   "#0xfffffff00914d604"
+  ],
+  "prog": [
+   "bti j",
+   "mov w8, #-1",
+   "stur w8, [x29, #-0x88]",
+   "str xzr, [sp, #0xd0]",
+   "str wzr, [sp, #0xc0]",
+   "ldrh w8, [x22, #0xf0]"
+  ]
+ },
+ {
+  "target": 18446744005142401184,
+  "sels": [
+   23
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff00916ba84",
+   "#0xfffffff00914da54",
+   "#0xfffffff00917334c",
+   "#0xfffffff00917380c",
+   "#0xfffffff009172f8c"
+  ],
+  "prog": [
+   "bti j",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1",
+   "b.ne #0xfffffff009148f14",
+   "ldr w8, [x19, #0x50]",
+   "mov w24, #0x2c2"
+  ]
+ },
+ {
+  "target": 18446744005142403036,
+  "sels": [
+   24
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff009132c38",
+   "#0xfffffff00913e624",
+   "#0xfffffff00914da28",
+   "#0xfffffff00914233c",
+   "#0xfffffff0091413c4",
+   "#0xfffffff00914d5d4"
+  ],
+  "prog": [
+   "bti j",
+   "movi v0.2d, #0000000000000000",
+   "add x8, sp, #0x2d",
+   "stur q0, [x8, #0xff]",
+   "stp q0, q0, [sp, #0x110]",
+   "stp q0, q0, [sp, #0xf0]"
+  ]
+ },
+ {
+  "target": 18446744005142417172,
+  "sels": [
+   25,
+   28,
+   29,
+   47,
+   59,
+   60,
+   61,
+   62,
+   99,
+   102,
+   103,
+   134,
+   136,
+   158,
+   163,
+   164,
+   165,
+   166,
+   167,
+   168
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff009132e34",
+   "#0xfffffff00916608c",
+   "#0xfffffff009132f48",
+   "#0xfffffff00916b8a0",
+   "#0xfffffff00914da54",
+   "#0xfffffff00917334c"
+  ],
+  "prog": [
+   "bti j",
+   "mov w24, #0x2c2",
+   "movk w24, #0xe000, lsl #16",
+   "b #0xfffffff00914a7c8",
+   "str xzr, [sp, #0xd0]",
+   "str wzr, [sp, #0xc0]"
+  ]
+ },
+ {
+  "target": 18446744005142412904,
+  "sels": [
+   26,
+   27,
+   100,
+   101
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff009132c38",
+   "#0xfffffff00913e624",
+   "#0xfffffff00914da28",
+   "#0xfffffff009132d48",
+   "#0xfffffff0091413c4",
+   "#0xfffffff00914233c"
+  ],
+  "prog": [
+   "bti j",
+   "ldur x8, [x29, #-0x68]",
+   "adrp x9, #0xfffffff007ec7000",
+   "ldr x9, [x9, #0x788]",
+   "ldr x9, [x9]",
+   "cmp x9, x8"
+  ]
+ },
+ {
+  "target": 18446744005142404504,
+  "sels": [
+   30
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff00915fffc",
+   "#0xfffffff00913e624",
+   "#0xfffffff00913e624",
+   "#0xfffffff00913e624",
+   "#0xfffffff00913e624"
+  ],
+  "prog": [
+   "bti j",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #3",
+   "b.ne #0xfffffff009148f14",
+   "ldr w8, [x19, #0x50]",
+   "cbnz w8, #0xfffffff009148f14"
+  ]
+ },
+ {
+  "target": 18446744005142403392,
+  "sels": [
+   31
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff00916d63c",
+   "#0xfffffff00914da54",
+   "#0xfffffff00914d5d4",
+   "#0xfffffff00914d604",
+   "#0xfffffff00917300c"
+  ],
+  "prog": [
+   "bti j",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1",
+   "b.ne #0xfffffff009148f14",
+   "ldr w8, [x19, #0x50]",
+   "mov w24, #0x2c2"
+  ]
+ },
+ {
+  "target": 18446744005142399700,
+  "sels": [
+   32
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00913e624",
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38",
+   "#0xfffffff009132d48",
+   "#0xfffffff009132e34",
+   "#0xfffffff009132e34"
+  ],
+  "prog": [
+   "bti j",
+   "mov w26, #1",
+   "bti j",
+   "str wzr, [sp, #0xd0]",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1"
+  ]
+ },
+ {
+  "target": 18446744005142402396,
+  "sels": [
+   33
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00915fffc",
+   "#0xfffffff00917350c",
+   "#0xfffffff00915faf8",
+   "#0xfffffff009132a58",
+   "#0xfffffff00914233c",
+   "#0xfffffff009139b18"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "stp xzr, xzr, [sp, #0xd0]",
+   "stp xzr, xzr, [x21, #0xa8]",
+   "ldr w8, [x19, #0x28]"
+  ]
+ },
+ {
+  "target": 18446744005142399556,
+  "sels": [
+   34
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff009165260",
+   "#0xfffffff00913e624",
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38",
+   "#0xfffffff009132d48"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #0xe, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #2",
+   "b.ne #0xfffffff009148f14"
+  ]
+ },
+ {
+  "target": 18446744005142401052,
+  "sels": [
+   35
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff009132c38",
+   "#0xfffffff00914233c",
+   "#0xfffffff00916ba84",
+   "#0xfffffff00914da54",
+   "#0xfffffff00917334c",
+   "#0xfffffff00917380c"
+  ],
+  "prog": [
+   "bti j",
+   "mov w27, #0",
+   "bti j",
+   "str xzr, [sp, #0xd0]",
+   "stur wzr, [x29, #-0x88]",
+   "str wzr, [sp, #0xc0]"
+  ]
+ },
+ {
+  "target": 18446744005142401828,
+  "sels": [
+   36
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff00916544c",
+   "#0xfffffff00914233c",
+   "#0xfffffff0091374d8",
+   "#0xfffffff009171c48",
+   "#0xfffffff00914233c"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #0xe, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1",
+   "b.ne #0xfffffff009148f14"
+  ]
+ },
+ {
+  "target": 18446744005142400872,
+  "sels": [
+   37
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914b66c",
+   "#0xfffffff009132c38",
+   "#0xfffffff00914233c",
+   "#0xfffffff00916ba84",
+   "#0xfffffff00914da54",
+   "#0xfffffff00917334c"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #0xe, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cbnz w8, #0xfffffff009148f14",
+   "ldr w8, [x19, #0x50]"
+  ]
+ },
+ {
+  "target": 18446744005142401592,
+  "sels": [
+   38
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00913e624",
+   "#0xfffffff00914233c",
+   "#0xfffffff00915fffc",
+   "#0xfffffff00913adf0",
+   "#0xfffffff009132f48",
+   "#0xfffffff00914233c"
+  ],
+  "prog": [
+   "bti j",
+   "adrp x0, #0xfffffff0076c3000",
+   "add x0, x0, #0xec3",
+   "mov x1, #0",
+   "bl #0xfffffff00913e624",
+   "cbz w0, #0xfffffff0091493a0"
+  ]
+ },
+ {
+  "target": 18446744005142398212,
+  "sels": [
+   39
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00913e624",
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38",
+   "#0xfffffff00913af30",
+   "#0xfffffff0091413c4",
+   "#0xfffffff009132c38"
+  ],
+  "prog": [
+   "bti j",
+   "adrp x0, #0xfffffff0076c3000",
+   "add x0, x0, #0xec3",
+   "mov x1, #0",
+   "bl #0xfffffff00913e624",
+   "cbz w0, #0xfffffff0091493a0"
+  ]
+ },
+ {
+  "target": 18446744005142400708,
+  "sels": [
+   40
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38",
+   "#0xfffffff009164fb0",
+   "#0xfffffff00914b66c",
+   "#0xfffffff009132c38",
+   "#0xfffffff00914233c"
+  ],
+  "prog": [
+   "bti j",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #2",
+   "b.ne #0xfffffff009148f14",
+   "ldr w8, [x19, #0x50]",
+   "mov w24, #0x2c2"
+  ]
+ },
+ {
+  "target": 18446744005142396228,
+  "sels": [
+   41
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00913e624",
+   "#0xfffffff009132c38",
+   "#0xfffffff00914e248",
+   "#0xfffffff00914da54",
+   "#0xfffffff00913e624",
+   "#0xfffffff009132c38"
+  ],
+  "prog": [
+   "bti j",
+   "adrp x0, #0xfffffff0076c3000",
+   "add x0, x0, #0xee1",
+   "mov x1, #0",
+   "bl #0xfffffff00913e624",
+   "cbz w0, #0xfffffff0091493a0"
+  ]
+ },
+ {
+  "target": 18446744005142401532,
+  "sels": [
+   42
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00913e624",
+   "#0xfffffff00914233c",
+   "#0xfffffff00915fffc",
+   "#0xfffffff00913adf0",
+   "#0xfffffff009132f48",
+   "#0xfffffff00914233c"
+  ],
+  "prog": [
+   "bti j",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1",
+   "b.eq #0xfffffff009147d30",
+   "cmp w8, #4",
+   "b.eq #0xfffffff009147d10"
+  ]
+ },
+ {
+  "target": 18446744005142397648,
+  "sels": [
+   43
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38",
+   "#0xfffffff0091725ac",
+   "#0xfffffff0091413c4",
+   "#0xfffffff00913e624",
+   "#0xfffffff00914233c"
+  ],
+  "prog": [
+   "bti j",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1",
+   "b.ne #0xfffffff009148f14",
+   "ldr w8, [x19, #0x50]",
+   "cbnz w8, #0xfffffff009148f14"
+  ]
+ },
+ {
+  "target": 18446744005142399756,
+  "sels": [
+   44
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00913e624",
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38",
+   "#0xfffffff009132d48",
+   "#0xfffffff009132e34",
+   "#0xfffffff009132e34"
+  ],
+  "prog": [
+   "bti j",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #2",
+   "b.ne #0xfffffff009148f14",
+   "ldr w8, [x19, #0x50]",
+   "cmp w8, #1"
+  ]
+ },
+ {
+  "target": 18446744005142392584,
+  "sels": [
+   45,
+   46,
+   48,
+   52,
+   56,
+   64,
+   109,
+   116,
+   148,
+   161
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00913e624",
+   "#0xfffffff00914233c",
+   "#0xfffffff00915fffc",
+   "#0xfffffff0091399b0",
+   "#0xfffffff009142c90",
+   "#0xfffffff00914233c"
+  ],
+  "prog": [
+   "bti j",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #3",
+   "b.ne #0xfffffff009148f14",
+   "ldr w8, [x19, #0x50]",
+   "mov w24, #0x2c2"
+  ]
+ },
+ {
+  "target": 18446744005142406584,
+  "sels": [
+   49
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00913e624",
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38",
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38",
+   "#0xfffffff00915fffc"
+  ],
+  "prog": [
+   "bti j",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #2",
+   "b.ne #0xfffffff009148f14",
+   "ldr w8, [x19, #0x50]",
+   "mov w24, #0x2c2"
+  ]
+ },
+ {
+  "target": 18446744005142404856,
+  "sels": [
+   50
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00913e624",
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38",
+   "#0xfffffff009132d48",
+   "#0xfffffff009132e34",
+   "#0xfffffff009132e34"
+  ],
+  "prog": [
+   "bti j",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #3",
+   "b.ne #0xfffffff009148f14",
+   "ldr w8, [x19, #0x50]",
+   "cbnz w8, #0xfffffff009148f14"
+  ]
+ },
+ {
+  "target": 18446744005142396964,
+  "sels": [
+   51
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff00914edc0",
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38",
+   "#0xfffffff00913f624",
+   "#0xfffffff00914233c"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #0xe, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1",
+   "b.ne #0xfffffff009148f14"
+  ]
+ },
+ {
+  "target": 18446744005142403940,
+  "sels": [
+   53
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00913e624",
+   "#0xfffffff00914233c",
+   "#0xfffffff00914f01c",
+   "#0xfffffff00914da54",
+   "#0xfffffff00914233c",
+   "#0xfffffff00913f6e0"
+  ],
+  "prog": [
+   "bti j",
+   "adrp x0, #0xfffffff0076c3000",
+   "add x0, x0, #0xea2",
+   "mov x1, #0",
+   "bl #0xfffffff00913e624",
+   "cbz w0, #0xfffffff0091493a0"
+  ]
+ },
+ {
+  "target": 18446744005142423496,
+  "sels": [
+   54
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00917380c",
+   "#0xfffffff009172f8c",
+   "#0xfffffff0091413c4",
+   "#0xfffffff00917380c",
+   "#0xfffffff009172f8c",
+   "#0xfffffff0091413c4"
+  ],
+  "prog": [
+   "bti j",
+   "ldur x8, [x29, #-0x68]",
+   "adrp x9, #0xfffffff007ec7000",
+   "ldr x9, [x9, #0x788]",
+   "ldr x9, [x9]",
+   "cmp x9, x8"
+  ]
+ },
+ {
+  "target": 18446744005142395320,
+  "sels": [
+   55
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff00913a7ec",
+   "#0xfffffff00914233c",
+   "#0xfffffff009137a88",
+   "#0xfffffff00913a8e4",
+   "#0xfffffff00914233c"
+  ],
+  "prog": [
+   "bti j",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1",
+   "b.ne #0xfffffff009148f14",
+   "ldr w8, [x19, #0x50]",
+   "mov w24, #0x2c2"
+  ]
+ },
+ {
+  "target": 18446744005142398956,
+  "sels": [
+   57
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38",
+   "#0xfffffff009132d48",
+   "#0xfffffff009132e34",
+   "#0xfffffff00914d99c",
+   "#0xfffffff0091722fc"
+  ],
+  "prog": [
+   "bti j",
+   "str xzr, [sp, #0xd0]",
+   "stur wzr, [x29, #-0x88]",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1",
+   "b.eq #0xfffffff009147700"
+  ]
+ },
+ {
+  "target": 18446744005142406204,
+  "sels": [
+   58
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff00914233c",
+   "#0xfffffff00913fa7c",
+   "#0xfffffff00913e624",
+   "#0xfffffff00916b184",
+   "#0xfffffff00913e624"
+  ],
+  "prog": [
+   "bti j",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1",
+   "b.eq #0xfffffff009147a70",
+   "cmp w8, #2",
+   "b.ne #0xfffffff009148f14"
+  ]
+ },
+ {
+  "target": 18446744005142406812,
+  "sels": [
+   63
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38",
+   "#0xfffffff00915fffc",
+   "#0xfffffff00914d5d4",
+   "#0xfffffff00914d604",
+   "#0xfffffff00917300c"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "mov w9, #0x4010",
+   "and w8, w8, w9",
+   "cbz w8, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]"
+  ]
+ },
+ {
+  "target": 18446744005142402604,
+  "sels": [
+   65
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff009132a58",
+   "#0xfffffff00914233c",
+   "#0xfffffff009139b18",
+   "#0xfffffff00913e624",
+   "#0xfffffff00913aa88",
+   "#0xfffffff00913e624"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "mov w9, #0x11",
+   "bic w8, w9, w8",
+   "cbnz w8, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]"
+  ]
+ },
+ {
+  "target": 18446744005142403796,
+  "sels": [
+   66
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914d5d4",
+   "#0xfffffff00914d604",
+   "#0xfffffff00917300c",
+   "#0xfffffff00913e624",
+   "#0xfffffff00914233c",
+   "#0xfffffff00914f01c"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbnz w8, #4, #0xfffffff0091474d4",
+   "adrp x21, #0xfffffff00aedc000",
+   "add x21, x21, #0x800",
+   "ldr x8, [x21]"
+  ]
+ },
+ {
+  "target": 18446744005142403592,
+  "sels": [
+   67
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914d5d4",
+   "#0xfffffff00914d604",
+   "#0xfffffff00917300c",
+   "#0xfffffff00914d5d4",
+   "#0xfffffff00914d604",
+   "#0xfffffff00917300c"
+  ],
+  "prog": [
+   "bti j",
+   "adrp x21, #0xfffffff00aedc000",
+   "add x21, x21, #0x800",
+   "ldr x8, [x21]",
+   "adrp x9, #0xfffffff0076c0000",
+   "add x9, x9, #0x4a1"
+  ]
+ },
+ {
+  "target": 18446744005142399008,
+  "sels": [
+   68
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38",
+   "#0xfffffff009132d48",
+   "#0xfffffff009132e34",
+   "#0xfffffff00914d99c",
+   "#0xfffffff0091722fc"
+  ],
+  "prog": [
+   "bti j",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1",
+   "b.ne #0xfffffff009148f14",
+   "ldr w8, [x19, #0x50]",
+   "cbnz w8, #0xfffffff009148f14"
+  ]
+ },
+ {
+  "target": 18446744005142393136,
+  "sels": [
+   69,
+   140
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff00915fffc",
+   "#0xfffffff00913f2d8",
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38",
+   "#0xfffffff009132d48"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #3",
+   "b.ne #0xfffffff009148f14"
+  ]
+ },
+ {
+  "target": 18446744005142401768,
+  "sels": [
+   70
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff00916544c",
+   "#0xfffffff00914233c",
+   "#0xfffffff0091374d8",
+   "#0xfffffff009171c48",
+   "#0xfffffff00914233c"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #3",
+   "b.eq #0xfffffff0091481a4"
+  ]
+ },
+ {
+  "target": 18446744005142407268,
+  "sels": [
+   71
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff00914233c",
+   "#0xfffffff00913f47c",
+   "#0xfffffff009132c38",
+   "#0xfffffff009132d48",
+   "#0xfffffff00913e624"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1",
+   "b.ne #0xfffffff009148f14"
+  ]
+ },
+ {
+  "target": 18446744005142406248,
+  "sels": [
+   72
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff00914233c",
+   "#0xfffffff00913fa7c",
+   "#0xfffffff00913e624",
+   "#0xfffffff00916b184",
+   "#0xfffffff00913e624"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #4",
+   "b.eq #0xfffffff009148708"
+  ]
+ },
+ {
+  "target": 18446744005142407356,
+  "sels": [
+   73
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff00913f47c",
+   "#0xfffffff009132c38",
+   "#0xfffffff009132d48",
+   "#0xfffffff00913e624",
+   "#0xfffffff009132c38"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1",
+   "b.ne #0xfffffff009148f14"
+  ]
+ },
+ {
+  "target": 18446744005142392924,
+  "sels": [
+   74,
+   75,
+   76,
+   77,
+   78,
+   79,
+   84,
+   85
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff00915fffc",
+   "#0xfffffff00913f2d8",
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38",
+   "#0xfffffff009132d48"
+  ],
+  "prog": [
+   "bti j",
+   "ldur x8, [x29, #-0x68]",
+   "adrp x9, #0xfffffff007ec7000",
+   "ldr x9, [x9, #0x788]",
+   "ldr x9, [x9]",
+   "cmp x9, x8"
+  ]
+ },
+ {
+  "target": 18446744005142395932,
+  "sels": [
+   80
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00913e624",
+   "#0xfffffff009132c38",
+   "#0xfffffff009132d48",
+   "#0xfffffff009132e34",
+   "#0xfffffff009132e34",
+   "#0xfffffff009167d9c"
+  ],
+  "prog": [
+   "bti j",
+   "adrp x0, #0xfffffff0076c4000",
+   "add x0, x0, #0x15b",
+   "mov x1, #0",
+   "bl #0xfffffff00913e624",
+   "cbz w0, #0xfffffff0091493a0"
+  ]
+ },
+ {
+  "target": 18446744005142396508,
+  "sels": [
+   81
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00913e624",
+   "#0xfffffff009132c38",
+   "#0xfffffff009132d48",
+   "#0xfffffff009132e34",
+   "#0xfffffff009132e34",
+   "#0xfffffff009167e8c"
+  ],
+  "prog": [
+   "bti j",
+   "adrp x0, #0xfffffff0076c4000",
+   "add x0, x0, #0x15b",
+   "mov x1, #0",
+   "bl #0xfffffff00913e624",
+   "cbz w0, #0xfffffff0091493a0"
+  ]
+ },
+ {
+  "target": 18446744005142396376,
+  "sels": [
+   82
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914e248",
+   "#0xfffffff00914da54",
+   "#0xfffffff00913e624",
+   "#0xfffffff009132c38",
+   "#0xfffffff009132d48",
+   "#0xfffffff009132e34"
+  ],
+  "prog": [
+   "bti j",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1",
+   "b.ne #0xfffffff009148f14",
+   "ldr w8, [x19, #0x50]",
+   "mov w24, #0x2c2"
+  ]
+ },
+ {
+  "target": 18446744005142397900,
+  "sels": [
+   83
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00913e624",
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38",
+   "#0xfffffff009132d48",
+   "#0xfffffff009132e34",
+   "#0xfffffff0091659d0"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbnz w8, #4, #0xfffffff0091443ec",
+   "adrp x0, #0xfffffff0076c4000",
+   "add x0, x0, #0x177",
+   "mov x1, #0"
+  ]
+ },
+ {
+  "target": 18446744005142406508,
+  "sels": [
+   86
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00913e624",
+   "#0xfffffff00916b184",
+   "#0xfffffff00913e624",
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38",
+   "#0xfffffff00914233c"
+  ],
+  "prog": [
+   "bti j",
+   "adrp x0, #0xfffffff0076c4000",
+   "add x0, x0, #0x193",
+   "mov x1, #0",
+   "bl #0xfffffff00913e624",
+   "cbz w0, #0xfffffff0091493a0"
+  ]
+ },
+ {
+  "target": 18446744005142404304,
+  "sels": [
+   87
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff009132c38",
+   "#0xfffffff00913ba98",
+   "#0xfffffff00914233c",
+   "#0xfffffff00915fffc",
+   "#0xfffffff00913e624",
+   "#0xfffffff00913e624"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cbnz w8, #0xfffffff009148f14",
+   "ldr w8, [x19, #0x50]"
+  ]
+ },
+ {
+  "target": 18446744005142397080,
+  "sels": [
+   88
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38",
+   "#0xfffffff00913f624",
+   "#0xfffffff00914233c",
+   "#0xfffffff00913f9a8",
+   "#0xfffffff00914233c"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1",
+   "b.ne #0xfffffff009148f14"
+  ]
+ },
+ {
+  "target": 18446744005142405376,
+  "sels": [
+   89
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff00913f79c",
+   "#0xfffffff00913e624",
+   "#0xfffffff00914233c",
+   "#0xfffffff00914060c",
+   "#0xfffffff00917333c"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1",
+   "b.ne #0xfffffff009148f14"
+  ]
+ },
+ {
+  "target": 18446744005142404072,
+  "sels": [
+   90
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff00913f6e0",
+   "#0xfffffff00914233c",
+   "#0xfffffff009165930",
+   "#0xfffffff009132c38",
+   "#0xfffffff00913ba98"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1",
+   "b.ne #0xfffffff009148f14"
+  ]
+ },
+ {
+  "target": 18446744005142395844,
+  "sels": [
+   91
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff00913f858",
+   "#0xfffffff00913e624",
+   "#0xfffffff009132c38",
+   "#0xfffffff009132d48",
+   "#0xfffffff009132e34"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1",
+   "b.ne #0xfffffff009148f14"
+  ]
+ },
+ {
+  "target": 18446744005142393016,
+  "sels": [
+   92,
+   157
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff00915fffc",
+   "#0xfffffff00913f2d8",
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38",
+   "#0xfffffff009132d48"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cbnz w8, #0xfffffff009148f14",
+   "ldr w8, [x19, #0x50]"
+  ]
+ },
+ {
+  "target": 18446744005142407764,
+  "sels": [
+   93
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38",
+   "#0xfffffff00914233c",
+   "#0xfffffff00915fffc",
+   "#0xfffffff0091404a4",
+   "#0xfffffff00914233c"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "mov w9, #0x4010",
+   "and w8, w8, w9",
+   "cbz w8, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]"
+  ]
+ },
+ {
+  "target": 18446744005142394760,
+  "sels": [
+   94
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff00913f904",
+   "#0xfffffff009132c38",
+   "#0xfffffff0091401ec",
+   "#0xfffffff009132c38",
+   "#0xfffffff009140134"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1",
+   "b.ne #0xfffffff009148f14"
+  ]
+ },
+ {
+  "target": 18446744005142406424,
+  "sels": [
+   95
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff00913fa7c",
+   "#0xfffffff00913e624",
+   "#0xfffffff00916b184",
+   "#0xfffffff00913e624",
+   "#0xfffffff00914233c"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cbnz w8, #0xfffffff009148f14",
+   "ldr w8, [x19, #0x50]"
+  ]
+ },
+ {
+  "target": 18446744005142408216,
+  "sels": [
+   96
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38",
+   "#0xfffffff009132d48",
+   "#0xfffffff009132e34",
+   "#0xfffffff00915fffc",
+   "#0xfffffff0091657f0"
+  ],
+  "prog": [
+   "bti j",
+   "mov w8, #-1",
+   "str w8, [sp, #0xd0]",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #3",
+   "b.ne #0xfffffff009148f14"
+  ]
+ },
+ {
+  "target": 18446744005142404180,
+  "sels": [
+   97
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff009165930",
+   "#0xfffffff009132c38",
+   "#0xfffffff00913ba98",
+   "#0xfffffff00914233c",
+   "#0xfffffff00915fffc"
+  ],
+  "prog": [
+   "bti j",
+   "mov w8, #-1",
+   "stur w8, [x29, #-0x88]",
+   "str xzr, [sp, #0xd0]",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1"
+  ]
+ },
+ {
+  "target": 18446744005142397992,
+  "sels": [
+   98
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38",
+   "#0xfffffff009132d48",
+   "#0xfffffff009132e34",
+   "#0xfffffff0091659d0",
+   "#0xfffffff00913e624"
+  ],
+  "prog": [
+   "bti j",
+   "mov w8, #-1",
+   "str w8, [sp, #0xd0]",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1",
+   "b.ne #0xfffffff009148f14"
+  ]
+ },
+ {
+  "target": 18446744005142408868,
+  "sels": [
+   104
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00913e624",
+   "#0xfffffff009132c38",
+   "#0xfffffff00916f784",
+   "#0xfffffff00914da54",
+   "#0xfffffff00917333c",
+   "#0xfffffff009132f48"
+  ],
+  "prog": [
+   "bti j",
+   "adrp x0, #0xfffffff0076c4000",
+   "add x0, x0, #0x1ab",
+   "mov x1, #0",
+   "bl #0xfffffff00913e624",
+   "cbz w0, #0xfffffff0091493a0"
+  ]
+ },
+ {
+  "target": 18446744005142407016,
+  "sels": [
+   105
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914d5d4",
+   "#0xfffffff00914d604",
+   "#0xfffffff00917300c",
+   "#0xfffffff00914233c",
+   "#0xfffffff00914233c",
+   "#0xfffffff00913f47c"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #3",
+   "b.eq #0xfffffff0091485d4"
+  ]
+ },
+ {
+  "target": 18446744005142393640,
+  "sels": [
+   106,
+   156
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff00913fbec",
+   "#0xfffffff00914233c",
+   "#0xfffffff00914d5d4",
+   "#0xfffffff00914d604",
+   "#0xfffffff00917300c"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #0xb, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1",
+   "b.ne #0xfffffff009148f14"
+  ]
+ },
+ {
+  "target": 18446744005142397264,
+  "sels": [
+   107
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff00913f9a8",
+   "#0xfffffff00914233c",
+   "#0xfffffff009137a88",
+   "#0xfffffff00914d5d4",
+   "#0xfffffff00914d604"
+  ],
+  "prog": [
+   "bti j",
+   "sturb wzr, [x29, #-0x88]",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff009147788",
+   "ldr w8, [x19, #0x28]",
+   "cbnz w8, #0xfffffff00914a7c4"
+  ]
+ },
+ {
+  "target": 18446744005142398412,
+  "sels": [
+   108
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff009132c38",
+   "#0xfffffff009140970",
+   "#0xfffffff00914233c",
+   "#0xfffffff009139f40",
+   "#0xfffffff00917334c",
+   "#0xfffffff00917380c"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1",
+   "b.ne #0xfffffff009148f14"
+  ]
+ },
+ {
+  "target": 18446744005142405648,
+  "sels": [
+   110
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00913e624",
+   "#0xfffffff009132c38",
+   "#0xfffffff00916fb24",
+   "#0xfffffff00914da54",
+   "#0xfffffff00917333c",
+   "#0xfffffff009132f48"
+  ],
+  "prog": [
+   "bti j",
+   "str xzr, [sp, #0xd0]",
+   "ldrh w8, [x22, #0xf0]",
+   "mov w9, #0x11",
+   "bic w8, w9, w8",
+   "cbnz w8, #0xfffffff009147788"
+  ]
+ },
+ {
+  "target": 18446744005142396888,
+  "sels": [
+   111
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff009132c38",
+   "#0xfffffff009132d48",
+   "#0xfffffff00914233c",
+   "#0xfffffff00914edc0",
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "mov w9, #0x11",
+   "bic w8, w9, w8",
+   "cbnz w8, #0xfffffff0091493a0",
+   "mov x0, x19"
+  ]
+ },
+ {
+  "target": 18446744005142407448,
+  "sels": [
+   112
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff009132c38",
+   "#0xfffffff009132d48",
+   "#0xfffffff00913e624",
+   "#0xfffffff009132c38",
+   "#0xfffffff00916fe0c",
+   "#0xfffffff00914da54"
+  ],
+  "prog": [
+   "bti j",
+   "str xzr, [sp, #0xd0]",
+   "mov x0, x19",
+   "bl #0xfffffff009132c38",
+   "cbz x0, #0xfffffff00914a7c4",
+   "mov x24, x0"
+  ]
+ },
+ {
+  "target": 18446744005142397468,
+  "sels": [
+   113
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914d5d4",
+   "#0xfffffff00914d604",
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38",
+   "#0xfffffff0091725ac",
+   "#0xfffffff0091413c4"
+  ],
+  "prog": [
+   "bti j",
+   "movi v0.2d, #0000000000000000",
+   "add x8, sp, #0x2d",
+   "stur q0, [x8, #0xff]",
+   "stp q0, q0, [sp, #0x110]",
+   "stp q0, q0, [sp, #0xf0]"
+  ]
+ },
+ {
+  "target": 18446744005142395000,
+  "sels": [
+   114
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff009132c38",
+   "#0xfffffff009140134",
+   "#0xfffffff00914d5d4",
+   "#0xfffffff00914d604",
+   "#0xfffffff00914233c",
+   "#0xfffffff00913a7ec"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cbnz w8, #0xfffffff009148f14",
+   "ldr w8, [x19, #0x50]"
+  ]
+ },
+ {
+  "target": 18446744005142409184,
+  "sels": [
+   115
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00913e624",
+   "#0xfffffff00914233c",
+   "#0xfffffff009140088",
+   "#0xfffffff009132c38",
+   "#0xfffffff00913a958",
+   "#0xfffffff00914233c"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cbnz w8, #0xfffffff009148f14",
+   "ldr w8, [x19, #0x50]"
+  ]
+ },
+ {
+  "target": 18446744005142408484,
+  "sels": [
+   117
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38",
+   "#0xfffffff009132d48",
+   "#0xfffffff0091403f4",
+   "#0xfffffff00914d5d4",
+   "#0xfffffff00914d604"
+  ],
+  "prog": [
+   "bti j",
+   "mov w8, #-1",
+   "str w8, [sp, #0xd0]",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #4",
+   "b.ne #0xfffffff009148f14"
+  ]
+ },
+ {
+  "target": 18446744005142395252,
+  "sels": [
+   118
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff00913a7ec",
+   "#0xfffffff00914233c",
+   "#0xfffffff009137a88",
+   "#0xfffffff00913a8e4",
+   "#0xfffffff00914233c"
+  ],
+  "prog": [
+   "bti j",
+   "mov w8, #-1",
+   "str w8, [sp, #0xc0]",
+   "str w8, [sp, #0xcc]",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff009147788"
+  ]
+ },
+ {
+  "target": 18446744005142396152,
+  "sels": [
+   119
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff009132c38",
+   "#0xfffffff009132d48",
+   "#0xfffffff00916afa8",
+   "#0xfffffff00913e624",
+   "#0xfffffff009132c38",
+   "#0xfffffff00914e248"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cbnz w8, #0xfffffff009148f14",
+   "ldr w8, [x19, #0x50]"
+  ]
+ },
+ {
+  "target": 18446744005142406016,
+  "sels": [
+   120
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38",
+   "#0xfffffff009132d48",
+   "#0xfffffff009132e34",
+   "#0xfffffff009169350",
+   "#0xfffffff00914233c"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1",
+   "b.ne #0xfffffff009148f14"
+  ]
+ },
+ {
+  "target": 18446744005142394088,
+  "sels": [
+   121
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff00913a6f0",
+   "#0xfffffff00913e624",
+   "#0xfffffff00914233c",
+   "#0xfffffff009140560",
+   "#0xfffffff00913e624"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1",
+   "b.ne #0xfffffff009148f14"
+  ]
+ },
+ {
+  "target": 18446744005142395412,
+  "sels": [
+   122
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff009137a88",
+   "#0xfffffff00913a8e4",
+   "#0xfffffff00914233c",
+   "#0xfffffff00915fffc",
+   "#0xfffffff00913fcbc"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1",
+   "b.ne #0xfffffff009148f14"
+  ]
+ },
+ {
+  "target": 18446744005142393332,
+  "sels": [
+   123,
+   154
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38",
+   "#0xfffffff009132d48",
+   "#0xfffffff009132e34",
+   "#0xfffffff009137b14",
+   "#0xfffffff00915fffc"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1",
+   "b.ne #0xfffffff009148f14"
+  ]
+ },
+ {
+  "target": 18446744005142403524,
+  "sels": [
+   124
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914d5d4",
+   "#0xfffffff00914d604",
+   "#0xfffffff00917300c",
+   "#0xfffffff00914d5d4",
+   "#0xfffffff00914d604",
+   "#0xfffffff00917300c"
+  ],
+  "prog": [
+   "bti j",
+   "mov w8, #-1",
+   "stur w8, [x29, #-0x88]",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]"
+  ]
+ },
+ {
+  "target": 18446744005142395532,
+  "sels": [
+   125
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00913a8e4",
+   "#0xfffffff00914233c",
+   "#0xfffffff00915fffc",
+   "#0xfffffff00913fcbc",
+   "#0xfffffff00917333c",
+   "#0xfffffff009132f48"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cbnz w8, #0xfffffff009148f14",
+   "ldr w8, [x19, #0x50]"
+  ]
+ },
+ {
+  "target": 18446744005142394532,
+  "sels": [
+   126
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff009140770",
+   "#0xfffffff00914d5d4",
+   "#0xfffffff00914d604",
+   "#0xfffffff00914233c",
+   "#0xfffffff00913f904",
+   "#0xfffffff009132c38"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #6",
+   "b.eq #0xfffffff009147f90"
+  ]
+ },
+ {
+  "target": 18446744005142408716,
+  "sels": [
+   127
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914d5d4",
+   "#0xfffffff00914d604",
+   "#0xfffffff00913e624",
+   "#0xfffffff009132c38",
+   "#0xfffffff00916f784",
+   "#0xfffffff00914da54"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cbnz w8, #0xfffffff009146e28",
+   "ldr w8, [x19, #0x50]"
+  ]
+ },
+ {
+  "target": 18446744005142405720,
+  "sels": [
+   128
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00913e624",
+   "#0xfffffff009132c38",
+   "#0xfffffff00916fb24",
+   "#0xfffffff00914da54",
+   "#0xfffffff00917333c",
+   "#0xfffffff009132f48"
+  ],
+  "prog": [
+   "bti j",
+   "adrp x0, #0xfffffff0076c3000",
+   "add x0, x0, #0x71b",
+   "mov x1, #0",
+   "bl #0xfffffff00913e624",
+   "cbz w0, #0xfffffff0091493a0"
+  ]
+ },
+ {
+  "target": 18446744005142407076,
+  "sels": [
+   129
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914d5d4",
+   "#0xfffffff00914d604",
+   "#0xfffffff00917300c",
+   "#0xfffffff00914233c",
+   "#0xfffffff00914233c",
+   "#0xfffffff00913f47c"
+  ],
+  "prog": [
+   "bti j",
+   "str xzr, [x21, #0xa0]",
+   "movi v0.2d, #0000000000000000",
+   "stp q0, q0, [x21, #0x80]",
+   "str q0, [x21, #0x70]",
+   "stp q0, q0, [sp, #0x120]"
+  ]
+ },
+ {
+  "target": 18446744005142396728,
+  "sels": [
+   130
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914d5d4",
+   "#0xfffffff00914d604",
+   "#0xfffffff00917300c",
+   "#0xfffffff009132c38",
+   "#0xfffffff009132d48",
+   "#0xfffffff00914233c"
+  ],
+  "prog": [
+   "bti j",
+   "movi v0.2d, #0000000000000000",
+   "stp q0, q0, [sp, #0xd0]",
+   "mov w8, #0x20",
+   "stur w8, [x29, #-0x88]",
+   "ldrh w8, [x22, #0xf0]"
+  ]
+ },
+ {
+  "target": 18446744005142394644,
+  "sels": [
+   131
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914d5d4",
+   "#0xfffffff00914d604",
+   "#0xfffffff00914233c",
+   "#0xfffffff00913f904",
+   "#0xfffffff009132c38",
+   "#0xfffffff0091401ec"
+  ],
+  "prog": [
+   "bti j",
+   "mov w8, #-1",
+   "str w8, [sp, #0xd0]",
+   "stur w8, [x29, #-0x88]",
+   "ldrh w8, [x22, #0xf0]",
+   "tbnz w8, #3, #0xfffffff0091472a0"
+  ]
+ },
+ {
+  "target": 18446744005142395136,
+  "sels": [
+   132
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914d5d4",
+   "#0xfffffff00914d604",
+   "#0xfffffff00914233c",
+   "#0xfffffff00913a7ec",
+   "#0xfffffff00914233c",
+   "#0xfffffff009137a88"
+  ],
+  "prog": [
+   "bti j",
+   "mov w8, #-1",
+   "stur w8, [x29, #-0x88]",
+   "str xzr, [sp, #0xd0]",
+   "ldrh w8, [x22, #0xf0]",
+   "tbnz w8, #3, #0xfffffff009147310"
+  ]
+ },
+ {
+  "target": 18446744005142408028,
+  "sels": [
+   133
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff00915fffc",
+   "#0xfffffff0091404a4",
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38",
+   "#0xfffffff009132d48"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #3",
+   "b.ne #0xfffffff009148f14"
+  ]
+ },
+ {
+  "target": 18446744005142407512,
+  "sels": [
+   135
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00913e624",
+   "#0xfffffff009132c38",
+   "#0xfffffff00916fe0c",
+   "#0xfffffff00914da54",
+   "#0xfffffff00917333c",
+   "#0xfffffff009132f48"
+  ],
+  "prog": [
+   "bti j",
+   "adrp x0, #0xfffffff0076c4000",
+   "add x0, x0, #0x1c7",
+   "mov x1, #0",
+   "bl #0xfffffff00913e624",
+   "cbz w0, #0xfffffff0091493a0"
+  ]
+ },
+ {
+  "target": 18446744005142407940,
+  "sels": [
+   137
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff00915fffc",
+   "#0xfffffff0091404a4",
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38",
+   "#0xfffffff009132d48"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "ldur x8, [x29, #-0x68]",
+   "adrp x9, #0xfffffff007ec7000",
+   "ldr x9, [x9, #0x788]"
+  ]
+ },
+ {
+  "target": 18446744005142394200,
+  "sels": [
+   138
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00913e624",
+   "#0xfffffff00914233c",
+   "#0xfffffff009140560",
+   "#0xfffffff00913e624",
+   "#0xfffffff00914233c",
+   "#0xfffffff00915fffc"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbnz w8, #4, #0xfffffff009143578",
+   "adrp x0, #0xfffffff0076c4000",
+   "add x0, x0, #0x56e",
+   "mov x1, #0"
+  ]
+ },
+ {
+  "target": 18446744005142405484,
+  "sels": [
+   139
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00913e624",
+   "#0xfffffff00914233c",
+   "#0xfffffff00914060c",
+   "#0xfffffff00917333c",
+   "#0xfffffff009132f48",
+   "#0xfffffff00913e624"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbnz w8, #4, #0xfffffff00914618c",
+   "adrp x0, #0xfffffff0076c4000",
+   "add x0, x0, #0x56e",
+   "mov x1, #0"
+  ]
+ },
+ {
+  "target": 18446744005142406308,
+  "sels": [
+   141
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff00914233c",
+   "#0xfffffff00913fa7c",
+   "#0xfffffff00913e624",
+   "#0xfffffff00916b184",
+   "#0xfffffff00913e624"
+  ],
+  "prog": [
+   "bti j",
+   "mov w8, #-1",
+   "str w8, [sp, #0xd0]",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1",
+   "b.ne #0xfffffff009148f14"
+  ]
+ },
+ {
+  "target": 18446744005142393960,
+  "sels": [
+   142
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00913e624",
+   "#0xfffffff00914233c",
+   "#0xfffffff00913ffcc",
+   "#0xfffffff00914233c",
+   "#0xfffffff00913a6f0",
+   "#0xfffffff00913e624"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbnz w8, #4, #0xfffffff009143488",
+   "adrp x0, #0xfffffff0076c4000",
+   "add x0, x0, #0x143",
+   "mov x1, #0"
+  ]
+ },
+ {
+  "target": 18446744005142393736,
+  "sels": [
+   143
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff00914d5d4",
+   "#0xfffffff00914d604",
+   "#0xfffffff00917300c",
+   "#0xfffffff00913e624",
+   "#0xfffffff00914233c"
+  ],
+  "prog": [
+   "bti j",
+   "mov w8, #-1",
+   "str w8, [sp, #0xd0]",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff009147788",
+   "ldr w8, [x19, #0x28]"
+  ]
+ },
+ {
+  "target": 18446744005142394864,
+  "sels": [
+   144
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff009132c38",
+   "#0xfffffff0091401ec",
+   "#0xfffffff009132c38",
+   "#0xfffffff009140134",
+   "#0xfffffff00914d5d4",
+   "#0xfffffff00914d604"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cbnz w8, #0xfffffff009148f14",
+   "ldr w8, [x19, #0x50]"
+  ]
+ },
+ {
+  "target": 18446744005142397360,
+  "sels": [
+   145
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff009137a88",
+   "#0xfffffff00914d5d4",
+   "#0xfffffff00914d604",
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "mov w8, #-1",
+   "str w8, [sp, #0xd0]",
+   "ldr w8, [x19, #0x28]"
+  ]
+ },
+ {
+  "target": 18446744005142408624,
+  "sels": [
+   146
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff0091403f4",
+   "#0xfffffff00914d5d4",
+   "#0xfffffff00914d604",
+   "#0xfffffff00913e624",
+   "#0xfffffff009132c38",
+   "#0xfffffff00916f784"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1",
+   "b.ne #0xfffffff009148f14"
+  ]
+ },
+ {
+  "target": 18446744005142405964,
+  "sels": [
+   147
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff009168910",
+   "#0xfffffff00914233c",
+   "#0xfffffff009132c38",
+   "#0xfffffff009132d48",
+   "#0xfffffff009132e34",
+   "#0xfffffff009169350"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "str wzr, [sp, #0xd0]",
+   "add x2, sp, #0xd0",
+   "ldr x1, [sp, #0xb0]"
+  ]
+ },
+ {
+  "target": 18446744005142398684,
+  "sels": [
+   149
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff009140828",
+   "#0xfffffff00917333c",
+   "#0xfffffff009132f48",
+   "#0xfffffff00917380c",
+   "#0xfffffff009172f8c",
+   "#0xfffffff00914233c"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cbnz w8, #0xfffffff009148f14",
+   "ldr w8, [x19, #0x50]"
+  ]
+ },
+ {
+  "target": 18446744005142409112,
+  "sels": [
+   150
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00913e624",
+   "#0xfffffff00916b0cc",
+   "#0xfffffff00913e624",
+   "#0xfffffff00914233c",
+   "#0xfffffff009140088",
+   "#0xfffffff009132c38"
+  ],
+  "prog": [
+   "bti j",
+   "adrp x0, #0xfffffff0076c2000",
+   "add x0, x0, #0xc94",
+   "mov x1, #0",
+   "bl #0xfffffff00913e624",
+   "cbz w0, #0xfffffff0091493a0"
+  ]
+ },
+ {
+  "target": 18446744005142401924,
+  "sels": [
+   151
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff0091374d8",
+   "#0xfffffff009171c48",
+   "#0xfffffff00914233c",
+   "#0xfffffff00913a6f0",
+   "#0xfffffff00915fffc"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #1",
+   "b.ne #0xfffffff009148f14"
+  ]
+ },
+ {
+  "target": 18446744005142394600,
+  "sels": [
+   152
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff009140770",
+   "#0xfffffff00914d5d4",
+   "#0xfffffff00914d604",
+   "#0xfffffff00914233c",
+   "#0xfffffff00913f904",
+   "#0xfffffff009132c38"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "str xzr, [sp, #0xd0]",
+   "stur wzr, [x29, #-0x88]",
+   "add x2, sp, #0xd0"
+  ]
+ },
+ {
+  "target": 18446744005142403228,
+  "sels": [
+   153
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914d5d4",
+   "#0xfffffff00914d604",
+   "#0xfffffff00914233c",
+   "#0xfffffff00916d63c",
+   "#0xfffffff00914da54",
+   "#0xfffffff00914d5d4"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "sub w20, w20, #1",
+   "mov x24, x20",
+   "tbz w8, #4, #0xfffffff00914a7c8",
+   "ldr w8, [x19, #0x28]"
+  ]
+ },
+ {
+  "target": 18446744005142395596,
+  "sels": [
+   155
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00914233c",
+   "#0xfffffff00915fffc",
+   "#0xfffffff00913fcbc",
+   "#0xfffffff00917333c",
+   "#0xfffffff009132f48",
+   "#0xfffffff00914233c"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #0xc, #0xfffffff0091493a0",
+   "ldr w8, [x19, #0x28]",
+   "cmp w8, #3",
+   "b.ne #0xfffffff009148f14"
+  ]
+ },
+ {
+  "target": 18446744005142394308,
+  "sels": [
+   159
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00913e624",
+   "#0xfffffff00914233c",
+   "#0xfffffff00915fffc",
+   "#0xfffffff00913fd88",
+   "#0xfffffff009140770",
+   "#0xfffffff00914d5d4"
+  ],
+  "prog": [
+   "bti j",
+   "adrp x0, #0xfffffff0076c4000",
+   "add x0, x0, #0x102",
+   "mov x1, #0",
+   "bl #0xfffffff00913e624",
+   "cbz w0, #0xfffffff0091493a0"
+  ]
+ },
+ {
+  "target": 18446744005142402936,
+  "sels": [
+   160
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00913e624",
+   "#0xfffffff00914233c",
+   "#0xfffffff00913fe54",
+   "#0xfffffff009132c38",
+   "#0xfffffff00913e624",
+   "#0xfffffff00914da28"
+  ],
+  "prog": [
+   "bti j",
+   "adrp x0, #0xfffffff0076c4000",
+   "add x0, x0, #0x11e",
+   "mov x1, #0",
+   "bl #0xfffffff00913e624",
+   "cbz w0, #0xfffffff0091493a0"
+  ]
+ },
+ {
+  "target": 18446744005142409296,
+  "sels": [
+   162
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff00913e624",
+   "#0xfffffff00914233c",
+   "#0xfffffff009140088",
+   "#0xfffffff009132c38",
+   "#0xfffffff00913a958",
+   "#0xfffffff00914233c"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbnz w8, #0xa, #0xfffffff00914708c",
+   "adrp x0, #0xfffffff0076c3000",
+   "add x0, x0, #0xdf4",
+   "mov x1, #0"
+  ]
+ },
+ {
+  "target": 18446744005142398796,
+  "sels": [
+   169
+  ],
+  "fields": [],
+  "n": 200,
+  "calls": [
+   "#0xfffffff009140828",
+   "#0xfffffff00917333c",
+   "#0xfffffff009132f48",
+   "#0xfffffff00917380c",
+   "#0xfffffff009172f8c",
+   "#0xfffffff00914233c"
+  ],
+  "prog": [
+   "bti j",
+   "ldrh w8, [x22, #0xf0]",
+   "tbz w8, #4, #0xfffffff0091493a0",
+   "str xzr, [sp, #0xd0]",
+   "stur wzr, [x29, #-0x88]",
+   "add x1, sp, #0xd0"
+  ]
+ }
+]

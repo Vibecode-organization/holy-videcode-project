@@ -1,0 +1,122 @@
+=== BQEscape start | iOS 27.2 | bundle app.lake9674.aquila8809 ===
+MCM loaded=1 create=0x2150c746c get=0x2150ce1ec token=0x2150d60e4 consume=0x2d7983560 release=0x2d79837ec
+app group entitlement: group.8e0bc870a21520b9.1
+app group: id=group.8e0bc870a21520b9.1 root=/private/var/mobile/Containers/Shared/AppGroup/17CE248E-AAE9-45E6-8247-CAD8BB52724D
+core init ok=1
+MG loaded: 80 CacheExtra key(s), 10772 byte(s)
+selftest args=(
+    "/var/containers/Bundle/Application/7F8F78B2-624F-4F6E-9807-15DC4DFC074E/BQTool.app/BQTool",
+    "--bqselftest"
+)
+probe[class7]: base=/private/var/mobile/Containers/Shared/AppGroup/17CE248E-AAE9-45E6-8247-CAD8BB52724D target=/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches
+probe[class7]: result=0x10f0630c0
+probe[class7]: token=YES consume=3
+probe[class7]: marker=OK
+probe[class2]: base=/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832 target=/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches
+swap move /var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/Library/Caches -> /var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/Library/Caches.probe failed: Error Domain=NSCocoaErrorDomain Code=513 "“Caches” couldn’t be moved because you don’t have permission to access “Library”." UserInfo={NSSourceFilePathErrorKey=/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/Library/Caches, NSUserStringVariant=(
+    Move
+), NSDestinationFilePath=/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/Library/Caches.probe, NSFilePath=/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/Library/Caches, NSURL=file:///var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/Library/Caches, NSUnderlyingError=0x10f0e8360 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+probe summary: {
+    bundle = "app.lake9674.aquila8809";
+    class2 = "-2";
+    class7 = 0;
+    "group_id" = "group.8e0bc870a21520b9.1";
+    "group_root" = "/private/var/mobile/Containers/Shared/AppGroup/17CE248E-AAE9-45E6-8247-CAD8BB52724D";
+    "own_home" = "/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832";
+}
+selftest probe={
+    bundle = "app.lake9674.aquila8809";
+    class2 = "-2";
+    class7 = 0;
+    "group_id" = "group.8e0bc870a21520b9.1";
+    "group_root" = "/private/var/mobile/Containers/Shared/AppGroup/17CE248E-AAE9-45E6-8247-CAD8BB52724D";
+    "own_home" = "/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832";
+}
+c2 part 0 -> /private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832
+c2 part 1 -> (null)
+c2 part 2 -> /private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/Library/Preferences
+c2 part 3 -> /private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/Library/Caches
+c2 part 4 -> /private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/Documents
+c2 part 5 -> /private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/tmp
+c2 part 6 -> /private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/SystemData
+c2 move p2 /private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/Library/Preferences -> -1 errno=1
+c2 move p3 /private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/Library/Caches -> -1 errno=1
+c2 move p4 /private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/Documents -> -1 errno=1
+c2 move p5 /private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/tmp -> -1 errno=1
+c2 move p6 /private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/SystemData -> -1 errno=1
+selftest class2 parts={
+    0 = "/private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832";
+    2 = "/private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/Library/Preferences";
+    3 = "/private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/Library/Caches";
+    4 = "/private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/Documents";
+    5 = "/private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/tmp";
+    6 = "/private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/SystemData";
+}
+MG loaded: 80 CacheExtra key(s), 10772 byte(s)
+selftest MG=OK err=- keys=80
+PB scan: 50
+PosterBoard container: /var/mobile/Containers/Data/Application/967AA218-2C52-4D2B-B47F-2B20FC356783
+selftest PB=/var/mobile/Containers/Data/Application/967AA218-2C52-4D2B-B47F-2B20FC356783 err=-
+selftest done
+=== BQEscape start | iOS 27.2 | bundle app.lake9674.aquila8809 ===
+MCM loaded=1 create=0x2150c746c get=0x2150ce1ec token=0x2150d60e4 consume=0x2d7983560 release=0x2d79837ec
+app group entitlement: group.8e0bc870a21520b9.1
+app group: id=group.8e0bc870a21520b9.1 root=/private/var/mobile/Containers/Shared/AppGroup/17CE248E-AAE9-45E6-8247-CAD8BB52724D
+core init ok=1
+MG loaded: 80 CacheExtra key(s), 10772 byte(s)
+selftest args=(
+    "/var/containers/Bundle/Application/7F8F78B2-624F-4F6E-9807-15DC4DFC074E/BQTool.app/BQTool",
+    "--bqselftest"
+)
+probe[class7]: base=/private/var/mobile/Containers/Shared/AppGroup/17CE248E-AAE9-45E6-8247-CAD8BB52724D target=/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches
+probe[class7]: result=0x111c7a260
+probe[class7]: token=YES consume=3
+probe[class7]: marker=OK
+probe[class2]: base=/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832 target=/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches
+swap move /var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/Library/Caches -> /var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/Library/Caches.probe failed: Error Domain=NSCocoaErrorDomain Code=513 "“Caches” couldn’t be moved because you don’t have permission to access “Library”." UserInfo={NSSourceFilePathErrorKey=/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/Library/Caches, NSUserStringVariant=(
+    Move
+), NSDestinationFilePath=/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/Library/Caches.probe, NSFilePath=/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/Library/Caches, NSURL=file:///var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/Library/Caches, NSUnderlyingError=0x111cd1a40 {Error Domain=NSPOSIXErrorDomain Code=1 "Operation not permitted"}}
+probe summary: {
+    bundle = "app.lake9674.aquila8809";
+    class2 = "-2";
+    class7 = 0;
+    "group_id" = "group.8e0bc870a21520b9.1";
+    "group_root" = "/private/var/mobile/Containers/Shared/AppGroup/17CE248E-AAE9-45E6-8247-CAD8BB52724D";
+    "own_home" = "/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832";
+}
+selftest probe={
+    bundle = "app.lake9674.aquila8809";
+    class2 = "-2";
+    class7 = 0;
+    "group_id" = "group.8e0bc870a21520b9.1";
+    "group_root" = "/private/var/mobile/Containers/Shared/AppGroup/17CE248E-AAE9-45E6-8247-CAD8BB52724D";
+    "own_home" = "/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832";
+}
+c2 part 0 -> /private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832
+c2 part 1 -> (null)
+c2 part 2 -> /private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/Library/Preferences
+c2 part 3 -> /private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/Library/Caches
+c2 part 4 -> /private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/Documents
+c2 part 5 -> /private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/tmp
+c2 part 6 -> /private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/SystemData
+c2 move p2 /private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/Library/Preferences -> -1 errno=1
+c2 move p3 /private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/Library/Caches -> -1 errno=1
+c2 move p4 /private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/Documents -> -1 errno=1
+c2 move p5 /private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/tmp -> -1 errno=1
+c2 move p6 /private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/SystemData -> -1 errno=1
+selftest class2 parts={
+    0 = "/private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832";
+    2 = "/private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/Library/Preferences";
+    3 = "/private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/Library/Caches";
+    4 = "/private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/Documents";
+    5 = "/private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/tmp";
+    6 = "/private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/SystemData";
+}
+MG loaded: 80 CacheExtra key(s), 10772 byte(s)
+selftest MG=OK err=- keys=80
+selftest PB=/var/mobile/Containers/Data/Application/967AA218-2C52-4D2B-B47F-2B20FC356783 err=-
+zip: extracted 25 file(s) to /private/var/mobile/Containers/Data/Application/BCBEC729-2891-4F7E-98AD-2D593E00A832/tmp/bqtendies-6BDBD133-6073-47FD-88A0-B18ADE01F3B0
+tendies sample.tendies: 1 descriptor folder(s)
+apply: L0L00000-5QU0-0000-0000-00000N300000 -> com.apple.WallpaperKit.CollectionsPoster
+selftest apply sample.tendies ok=1 count=1 err=-
+selftest done

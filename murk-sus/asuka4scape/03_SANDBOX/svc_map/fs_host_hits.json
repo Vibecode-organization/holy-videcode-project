@@ -1,0 +1,150 @@
+{
+"com.apple.AccessibilityUIServer": [
+"AccessibilityUIServer",
+"GAXBackboardServer"
+],
+"com.apple.AccessorySetupUI": [
+"AccessorySetupUI"
+],
+"com.apple.AppTrackingTransparency.EnforcementService": [
+"EnforcementService"
+],
+"com.apple.AutoFillSuggestions": [
+"AutoFillSuggestions"
+],
+"com.apple.BrowserEngineKit.Intermediary": [
+"BrowserEngineKit.Intermediary"
+],
+"com.apple.CoreMLModelSecurityService": [
+"CoreMLModelSecurityService"
+],
+"com.apple.FontServices.FontProviderLoader": [
+"com.apple.FontServices.FontProviderLoader"
+],
+"com.apple.PassKitWrapperXPCServiceUI": [
+"PassKitWrapperXPCServiceUI"
+],
+"com.apple.PhotosViewService": [
+"PhotosViewService"
+],
+"com.apple.SensorKit.SKMediaEventsHelper": [
+"com.apple.SensorKit.SKMediaEventsHelper"
+],
+"com.apple.ServicesAccountLinkingService.xpc": [
+"ServicesAccountLinkingService"
+],
+"com.apple.SetStoreUpdateService": [
+"SetStoreUpdateService"
+],
+"com.apple.SiriTTSService.TrialProxy": [
+"com.apple.SiriTTSService.TrialProxy"
+],
+"com.apple.SpatialAudioProfileXPCService": [
+"SpatialAudioProfileXPCService"
+],
+"com.apple.StoreKitUISceneService": [
+"StoreKitUISceneService"
+],
+"com.apple.SystemConfiguration.PPPController": [
+"PPPController"
+],
+"com.apple.TelephonyTransferService": [
+"TelephonyTransferService"
+],
+"com.apple.UIKit.OverlayUI.services": [
+"AccessibilityUIServer"
+],
+"com.apple.UIKit.SecureControlService": [
+"SecureControlService"
+],
+"com.apple.USDLib.FormatLoader": [
+"USDLib_FormatLoader"
+],
+"com.apple.accessibility.mediaaccessibilityd": [
+"com.apple.accessibility.mediaaccessibilityd",
+"mediaplaybackd"
+],
+"com.apple.awdd": [
+"AWDDiagnosticExtension",
+"com.apple.ExternalAccessory.WACUI",
+"symptomsd"
+],
+"com.apple.campo": [
+"CommCenterMobileHelper"
+],
+"com.apple.corelocation.locationUI": [
+"com.apple.corelocation.locationUI"
+],
+"com.apple.coremedia.figvirtualcapturecard.xpc": [
+"mediaplaybackd"
+],
+"com.apple.gamecenter": [
+"GameCenterAppleIDLoginPlugin"
+],
+"com.apple.iMessageAppsViewService.warmup-connection": [
+"iMessageAppsViewService"
+],
+"com.apple.iap2d": [
+"AccessibilityUIServer",
+"airplayd"
+],
+"com.apple.iaptransportd": [
+"AccessibilityUIServer",
+"airplayd"
+],
+"com.apple.iaptransportd.ExternalAccessory.distributednotification.server": [
+"AccessibilityUIServer",
+"airplayd"
+],
+"com.apple.icprefd-xpc": [
+"icprefd-xpc"
+],
+"com.apple.inputservice.input-ui-host": [
+"AccessibilityUIServer"
+],
+"com.apple.inputservice.keyboardui": [
+"AccessibilityUIServer"
+],
+"com.apple.mDNSResponder": [
+"mDNSResponder",
+"mDNSResponderHelper"
+],
+"com.apple.mediaserverd": [
+"airplayd"
+],
+"com.apple.metricmeasurement.MetricMeasurementHelper": [
+"MetricMeasurementHelper"
+],
+"com.apple.networkd": [
+"ScreenContinuityShell",
+"axassetsd",
+"accountsd"
+],
+"com.apple.sandboxd": [
+"CommCenterMobileHelper"
+],
+"com.apple.speech.localspeechrecognition": [
+"localspeechrecognition"
+],
+"com.apple.springboard": [
+"AutoFillSuggestions",
+"AuthenticationServicesUI",
+"ScreenContinuityShell"
+],
+"com.apple.symptomsd": [
+"CommCenterMobileHelper",
+"symptomsd-distributed",
+"symptomsd"
+],
+"com.apple.syncdefaultsd": [
+"syncdefaultsd"
+],
+"com.apple.toolmetadataservice": [
+"ToolMetadataService"
+],
+"com.apple.wifi.manager": [
+"ScreenContinuityShell",
+"AccessorySetupUI",
+"AirPlaySenderService"
+]
+}

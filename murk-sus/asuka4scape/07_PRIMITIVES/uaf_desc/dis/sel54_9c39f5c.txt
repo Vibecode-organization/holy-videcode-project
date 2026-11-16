@@ -1,0 +1,68 @@
+0xfffffff009c39f5c:  bti       c
+0xfffffff009c39f60:  pacibsp   
+0xfffffff009c39f64:  stp       x24, x23, [sp, #-0x40]!
+0xfffffff009c39f68:  stp       x22, x21, [sp, #0x10]
+0xfffffff009c39f6c:  stp       x20, x19, [sp, #0x20]
+0xfffffff009c39f70:  stp       x29, x30, [sp, #0x30]
+0xfffffff009c39f74:  add       x29, sp, #0x30
+0xfffffff009c39f78:  mov       x23, x2
+0xfffffff009c39f7c:  mov       x21, x0
+0xfffffff009c39f80:  mov       w19, #0x2c2
+0xfffffff009c39f84:  movk      w19, #0xe000, lsl #16
+0xfffffff009c39f88:  ldr       x0, [x2, #0x40]
+0xfffffff009c39f8c:  cbz       x0, #0xfffffff009c3a000
+0xfffffff009c39f90:  ldr       x16, [x0]
+0xfffffff009c39f94:  mov       x17, x0
+0xfffffff009c39f98:  movk      x17, #0xcda1, lsl #48
+0xfffffff009c39f9c:  autda     x16, x17
+0xfffffff009c39fa0:  ldr       x8, [x16, #0xe8]!
+0xfffffff009c39fa4:  mov       w1, #0x1000
+0xfffffff009c39fa8:  movk      x16, #0x3ed6, lsl #48
+0xfffffff009c39fac:  blraa     x8, x16   ; vcall slot 0xe8
+0xfffffff009c39fb0:  cbz       x0, #0xfffffff009c3a050
+0xfffffff009c39fb4:  mov       x20, x0
+0xfffffff009c39fb8:  ldr       x16, [x0]
+0xfffffff009c39fbc:  mov       x17, x0
+0xfffffff009c39fc0:  movk      x17, #0xcda1, lsl #48
+0xfffffff009c39fc4:  autda     x16, x17
+0xfffffff009c39fc8:  ldr       x8, [x16, #0x78]!
+0xfffffff009c39fcc:  movk      x16, #0x34f6, lsl #48
+0xfffffff009c39fd0:  blraa     x8, x16   ; vcall slot 0x78
+0xfffffff009c39fd4:  mov       x22, x0
+0xfffffff009c39fd8:  ldr       x0, [x23, #0x40]
+0xfffffff009c39fdc:  ldr       x16, [x0]
+0xfffffff009c39fe0:  mov       x17, x0
+0xfffffff009c39fe4:  movk      x17, #0xcda1, lsl #48
+0xfffffff009c39fe8:  autda     x16, x17
+0xfffffff009c39fec:  ldr       x8, [x16, #0xb0]!
+0xfffffff009c39ff0:  movk      x16, #0xb392, lsl #48
+0xfffffff009c39ff4:  blraa     x8, x16   ; vcall slot 0xb0
+0xfffffff009c39ff8:  mov       x2, x0
+0xfffffff009c39ffc:  b         #0xfffffff009c3a00c   ; 0xfffffff009c3a00c
+0xfffffff009c3a000:  mov       x20, #0
+0xfffffff009c3a004:  ldr       x22, [x23, #0x30]
+0xfffffff009c3a008:  ldr       w2, [x23, #0x38]
+0xfffffff009c3a00c:  cmp       x22, #0
+0xfffffff009c3a010:  ccmp      w2, #0xd, #0, ne
+0xfffffff009c3a014:  b.lo      #0xfffffff009c3a028
+0xfffffff009c3a018:  mov       x0, x21
+0xfffffff009c3a01c:  mov       x1, x22
+0xfffffff009c3a020:  bl        #0xfffffff009c3c7fc   ; 0xfffffff009c3c7fc
+0xfffffff009c3a024:  mov       x19, x0
+0xfffffff009c3a028:  cbz       x20, #0xfffffff009c3a054
+0xfffffff009c3a02c:  ldr       x16, [x20]
+0xfffffff009c3a030:  mov       x17, x20
+0xfffffff009c3a034:  movk      x17, #0xcda1, lsl #48
+0xfffffff009c3a038:  autda     x16, x17
+0xfffffff009c3a03c:  ldr       x8, [x16, #0x28]!
+0xfffffff009c3a040:  mov       x0, x20
+0xfffffff009c3a044:  movk      x16, #0x3a87, lsl #48
+0xfffffff009c3a048:  blraa     x8, x16   ; vcall slot 0x28
+0xfffffff009c3a04c:  b         #0xfffffff009c3a054   ; 0xfffffff009c3a054
+0xfffffff009c3a050:  add       w19, w19, #6
+0xfffffff009c3a054:  mov       x0, x19
+0xfffffff009c3a058:  ldp       x29, x30, [sp, #0x30]
+0xfffffff009c3a05c:  ldp       x20, x19, [sp, #0x20]
+0xfffffff009c3a060:  ldp       x22, x21, [sp, #0x10]
+0xfffffff009c3a064:  ldp       x24, x23, [sp], #0x40
+0xfffffff009c3a068:  retab        ; RETURN

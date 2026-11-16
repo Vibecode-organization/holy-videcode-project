@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UserName</key>
+	<string>mobile</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.translationd</key>
+		<true/>
+		<key>com.apple.translation.text</key>
+		<true/>
+	</dict>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/System/Library/Frameworks/Translation.framework/translationd</string>
+	</array>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>EnablePressuredExit</key>
+	<true/>
+	<key>ProcessType</key>
+	<string>Adaptive</string>
+	<key>Label</key>
+	<string>com.apple.translationd</string>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.notifyd.matching</key>
+		<dict>
+            <key>com.apple.siri.uaf.com.apple.sequoia.asset</key>
+            <dict>
+                <key>Notification</key>
+                <string>com.apple.siri.uaf.com.apple.sequoia.asset</string>
+            </dict>
+            <key>com.apple.siri.uaf.com.apple.speech.automaticspeechrecognition</key>
+            <dict>
+                <key>Notification</key>
+                <string>com.apple.siri.uaf.com.apple.speech.automaticspeechrecognition</string>
+            </dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

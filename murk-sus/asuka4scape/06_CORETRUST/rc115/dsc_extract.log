@@ -1,0 +1,4 @@
+   • Extracting dyld_shared_cache
+      • Preparing caches: SystemOS
+   ⨯ failed to extract 141-09773-223.dmg.aea from IPSW: zip: checksum error
+DONE

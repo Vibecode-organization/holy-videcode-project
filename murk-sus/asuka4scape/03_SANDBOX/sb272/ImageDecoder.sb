@@ -1,0 +1,380 @@
+(version 1)
+(%extends-builtin "baseline")
+(enable-profile-flag "autobox-client")
+(enable-profile-flag "common-rules")
+(enable-profile-flag "common-syscall-rules")
+(enable-profile-flag "common-apple-internal-rules")
+(enable-profile-flag "common-apple-signed-executable-rules")
+(enable-profile-flag "common-mach-lookups")
+(enable-profile-flag "common-sysctl-rules")
+(enable-profile-flag "common-pluginkit-support")
+(enable-profile-flag "generic-sandbox-extension-support")
+(enable-profile-flag "common-debugging-rules")
+(enable-profile-flag "common-device-access")
+(enable-profile-flag "common-preferences-rules")
+(enable-profile-flag "common-mobilegestalt-rules")
+(enable-profile-flag "common-containermanagerd-rules")
+(enable-profile-flag "common-system-logging-rules")
+(enable-profile-flag "common-managed-configuration-read-rules")
+(enable-profile-flag "common-exception-entitlement-rules")
+
+;; (default) inherited from parent profile "baseline"
+(delegate default)
+
+(allow asr-parser-enter)
+
+(allow coalition-info)
+
+(allow consume-extension)
+
+(allow darwin-notification-post)
+
+(allow dynamic-code-generation)
+
+(allow file-clone)
+
+(allow file-graft)
+
+(allow file-issue-extension
+	(require-all
+		(extension-class "com.apple.mediaserverd.read")
+		(require-any
+			(extension "com.apple.security.exception.files.absolute-path.read-only")
+			(extension "com.apple.security.exception.files.absolute-path.read-write")
+			(extension "com.apple.security.exception.files.home-relative-path.read-only")
+			(extension "com.apple.security.exception.files.home-relative-path.read-write")
+		)
+	)
+)
+(allow file-issue-extension
+	(require-all
+		(extension-class "com.apple.mediaserverd.read-write")
+		(require-any
+			(extension "com.apple.security.exception.files.absolute-path.read-write")
+			(extension "com.apple.security.exception.files.home-relative-path.read-write")
+		)
+	)
+)
+(deny file-issue-extension
+	(require-all
+		(require-not (extension "com.apple.app-sandbox.read"))
+		(require-not (extension "com.apple.app-sandbox.read-write"))
+		(require-not (extension "com.apple.security.exception.files.absolute-path.read-only"))
+		(require-not (extension "com.apple.security.exception.files.absolute-path.read-write"))
+		(require-any
+			(require-any
+				(literal "/System/Library/Caches/apticket.der")
+				(subpath "/System/Library/Caches/com.apple.factorydata")
+				(subpath "/System/Library/Caches/com.apple.kernelcaches")
+			)
+			(require-any
+				(literal "/usr/standalone/firmware/apticket.der")
+				(subpath "/private/var/hardware/FactoryData")
+			)
+		)
+	)
+)
+
+(allow file-link)
+
+(allow file-lock)
+
+(allow file-map-executable
+	(require-all
+		(extension "com.apple.sandbox.oopjit")
+		(subpath "/private/var/OOPJit")
+		(require-not (%entitlement-is-present "com.apple.private.oop-jit.loader"))
+	)
+)
+(allow file-map-executable
+	(require-all
+		(system-attribute carrier-build)
+		(require-any
+			(subpath "/AppleInternal")
+			(subpath "/usr/local/lib")
+		)
+	)
+)
+
+(allow file-read*
+	(require-all
+		(extension "com.apple.sandbox.oopjit")
+		(subpath "/private/var/OOPJit")
+		(require-not (%entitlement-is-present "com.apple.private.oop-jit.loader"))
+	)
+)
+(allow file-read*
+	(require-all
+		(subpath "/AppleInternal")
+		(system-attribute carrier-build)
+	)
+)
+(allow file-read*
+	(require-all
+		(subpath "/usr/local/lib")
+		(system-attribute carrier-build)
+	)
+)
+(deny file-read*
+	(require-any
+		(literal "/System/Library/Caches/apticket.der")
+		(literal "/usr/standalone/firmware/apticket.der")
+		(subpath "/System/Library/Caches/com.apple.factorydata")
+		(subpath "/System/Library/Caches/com.apple.kernelcaches")
+		(subpath "/private/var/hardware/FactoryData")
+	)
+)
+
+(allow file-read-metadata
+	(require-all
+		(extension "com.apple.sandbox.oopjit")
+		(subpath "/private/var/OOPJit")
+		(require-not (%entitlement-is-present "com.apple.private.oop-jit.loader"))
+	)
+)
+(allow file-read-metadata
+	(require-all
+		(subpath "/AppleInternal")
+		(system-attribute carrier-build)
+	)
+)
+(allow file-read-metadata
+	(require-all
+		(subpath "/usr/local/lib")
+		(system-attribute carrier-build)
+	)
+)
+(allow file-read-metadata
+	(require-any
+		(literal "${HOME}")
+		(literal "${HOME}/Library/Preferences")
+	)
+)
+(deny file-read-metadata
+	(require-any
+		(literal "/System/Library/Caches/apticket.der")
+		(literal "/usr/standalone/firmware/apticket.der")
+		(subpath "/System/Library/Caches/com.apple.factorydata")
+		(subpath "/System/Library/Caches/com.apple.kernelcaches")
+		(subpath "/private/var/hardware/FactoryData")
+	)
+)
+
+(allow file-test-existence)
+
+(allow file-ungraft)
+
+(deny file-write-setugid)
+
+(allow file-write-unlink
+	(require-all
+		(extension "com.apple.sandbox.oopjit")
+		(subpath "/private/var/OOPJit")
+		(require-not (%entitlement-is-present "com.apple.private.oop-jit.loader"))
+	)
+)
+
+(allow fs-info)
+
+(allow fs-quota*)
+
+(allow fs-snapshot-mount)
+
+(allow iokit-get-properties)
+
+(allow iokit-open-user-client
+	(require-any
+		(extension "com.apple.security.exception.iokit-user-client-class")
+		(iokit-registry-entry-class "IOSurfaceRootUserClient")
+	)
+)
+
+(allow iokit-open-service
+	(%entitlement-is-present "com.apple.security.exception.iokit-user-client-class")
+)
+
+(allow ipc-posix-shm-read-data
+	(require-all
+		(ipc-posix-name "apple.shm.notification_center")
+		(require-not (%entitlement-is-bool-true "com.apple.security.on-demand-install-capable"))
+	)
+)
+
+(deny job-creation)
+
+(deny lsopen
+	(profile-flag "deny-lsopen")
+)
+
+(allow mach-bootstrap)
+
+(allow mach-cross-domain-lookup)
+
+(allow mach-derive-port)
+
+(allow mach-lookup
+	(require-all
+		(global-name "com.apple.system.notification_center")
+		(%entitlement-is-bool-true "com.apple.security.on-demand-install-capable")
+	)
+)
+(allow mach-lookup
+	(require-any
+		(extension "com.apple.security.exception.mach-lookup.global-name")
+		(extension "com.apple.security.exception.mach-lookup.local-name")
+		(global-name "com.apple.airplay.apsynccontroller.xpc")
+		(global-name "com.apple.airplay.endpoint.xpc")
+		(global-name "com.apple.audio.AudioSession")
+		(global-name "com.apple.audioanalyticsd")
+		(global-name "com.apple.coremedia.admin")
+		(global-name "com.apple.coremedia.bytestream.xpc")
+		(global-name "com.apple.coremedia.capturesession")
+		(global-name "com.apple.coremedia.capturesource")
+		(global-name "com.apple.coremedia.endpoint.xpc")
+		(global-name "com.apple.coremedia.endpointremotecontrolsession.xpc")
+		(global-name "com.apple.coremedia.externalstoragedevicemanager.xpc")
+		(global-name "com.apple.coremedia.externalsyncdevicemanager.xpc")
+		(global-name "com.apple.coremedia.figcontentkeyboss.xpc")
+		(global-name "com.apple.coremedia.mediaparserd.formatreader.xpc")
+		(global-name "com.apple.coremedia.mediaparserd.jsonparser.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.asset.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.assetcacheinspector.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.assetimagegenerator.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.audiodeviceclock.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.audioprocessingtap.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.bytestream.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.cpeprotector.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.customurlloader.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.figcontentkeyboss.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.figcontentkeysession.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.figcpecryptor.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.figmetriceventtimeline.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.formatreader.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.player.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.remaker.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.samplebufferaudiorenderer.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.samplebufferrendersynchronizer.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.samplegenerator.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.sandboxserver.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.videocompositor.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.videotarget.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.visualcontext.xpc")
+		(global-name "com.apple.coremedia.remotequeue")
+		(global-name "com.apple.coremedia.routediscoverer.xpc")
+		(global-name "com.apple.coremedia.routingcontext.xpc")
+		(global-name "com.apple.coremedia.routingsessionmanager.xpc")
+		(global-name "com.apple.coremedia.sandboxserver")
+		(global-name "com.apple.coremedia.sandboxserver.xpc")
+		(global-name "com.apple.coremedia.sts")
+		(global-name "com.apple.coremedia.systemcontroller.xpc")
+		(global-name "com.apple.coremedia.videocodecd.compressionsession")
+		(global-name "com.apple.coremedia.videocodecd.compressionsession.xpc")
+		(global-name "com.apple.coremedia.videocodecd.decompressionsession")
+		(global-name "com.apple.coremedia.videocodecd.decompressionsession.xpc")
+		(global-name "com.apple.coremedia.volumecontroller.xpc")
+		(global-name "com.apple.itunescloudd.xpc")
+		(global-name "com.apple.itunesstored.xpc")
+		(global-name "com.apple.lsd.advertisingidentifiers")
+		(global-name "com.apple.lsd.openurl")
+		(global-name "com.apple.mediaexperience.endpoint.xpc")
+		(global-name "com.apple.mediaexperience.systemmediacastingcontroller.xpc")
+		(global-name "com.apple.mediaserverd")
+		(global-name "com.apple.pegasus")
+		(global-name "com.apple.privacyaccountingd")
+		(global-name "com.apple.springboard.backgroundappservices")
+		(global-name "com.apple.tccd")
+		(global-name "com.apple.timesync.expositor")
+		(global-name "com.apple.timesync.manager")
+		(global-name "com.apple.timesync.ptp.manager")
+	)
+)
+(deny mach-lookup
+	(require-any
+		(xpc-service-name "com.apple.CoreGraphics.CGPDFService")
+		(xpc-service-name "com.apple.WebKit.*")
+	)
+)
+
+(allow mach-register
+	(extension "com.apple.security.exception.mach-register.global-name")
+)
+
+(allow mach-task-exception-port-set)
+
+(allow mach-task-inspect
+	(target self)
+)
+
+(allow mach-task-name
+	(target self)
+)
+
+(allow mach-task-read
+	(target self)
+)
+
+(allow mach-task-special-port*)
+
+(allow necp-client-open)
+
+(allow nvram*)
+
+(allow process-codesigning)
+
+(allow process-info*)
+
+(allow process-iopolicy*)
+
+(allow sandbox-check)
+
+(allow signal
+	(target self)
+)
+
+(allow socket-option-get)
+
+(allow socket-option-set)
+
+(deny system-kas-info)
+
+(allow system-memorystatus-control)
+
+(allow system-privilege)
+
+(allow user-preference-read
+	(require-all
+		(preference-domain "com.apple.itunesstored")
+		(process-attribute is-apple-signed-executable)
+		(require-not (%entitlement-is-bool-true "com.apple.itunesstored.private"))
+	)
+)
+(allow user-preference-read
+	(require-any
+		(preference-domain "com.apple.avfoundation")
+		(preference-domain "com.apple.coreaudio")
+		(preference-domain "com.apple.coremedia")
+		(preference-domain "com.apple.corevideo")
+		(preference-domain "com.apple.mobileipod")
+	)
+)
+
+(allow managed-preference-read
+	(require-all
+		(preference-domain "com.apple.itunesstored")
+		(process-attribute is-apple-signed-executable)
+		(require-not (%entitlement-is-bool-true "com.apple.itunesstored.private"))
+	)
+)
+(allow managed-preference-read
+	(require-any
+		(preference-domain "com.apple.avfoundation")
+		(preference-domain "com.apple.coreaudio")
+		(preference-domain "com.apple.coremedia")
+		(preference-domain "com.apple.corevideo")
+		(preference-domain "com.apple.mobileipod")
+	)
+)
+
+(allow exception-entitlement)
+
+(allow process-exec-update-label)

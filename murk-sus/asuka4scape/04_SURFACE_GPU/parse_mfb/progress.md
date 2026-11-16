@@ -1,0 +1,12 @@
+# progress
+- 2026-10-28T16:31:23+03:00 start: env ok capstone 5.0.7
+- 16:40 step1 class strings + metaclass sites found (IOMobileFramebufferUserClient 0x958 @0x9aa0f48; AppleKeyStoreUserClient 0x118 @0x914cbbc)
+- 16:55 PAC decode for data ptrs: VA = 0xfffffff007004000 + (q & 0x0FFFFFFF); vtable slot 0x550 = IOUserClient::externalMethod (verified on IOGPU 0x994a1dc @0x7fea0c8, IOSurface 0x9c3ee10 @0x8068af0)
+- 17:10 MFB: dispatch table @0x8023ad0, 101 entries, stride 0x28; shared validator 0xa9b0888 (this,sel,args,table,count) ; wrapper extMethod 0x9aa33b8 (vtable slot 0x80239a8)
+- 17:15 KeyStore: manual switch externalMethod @0x916958c (cmp w1,#0x65 / #0x1b / #0x64 / #0x1a ...)
+- TODO: dump validator, per-selector handlers, IOGPU restricted table diff
+- 17:30 MFB: vtable 0x8023458, slot 0x80239a8 -> extMethod 0x9aa33b8; validator 0xa9b0888; table 0x8023ad0 x101 -> mfb_selectors.tsv
+- 17:40 KeyStore: extMethod 0x9142e0c, jump table 0x914b3c8 x169 (base 0x9142efc), no structure input -> ks_selectors.tsv
+- 17:50 IOGPU: restricted bit = !has(private|developer gpu-restricted) @0x99658e8; 28 blocked -> iogpu_tables.tsv
+- 18:00 sandbox pool @0x79ddc00 lists MFB/IOGPU/KeyStore/IOSurface/AGX/IOAccel
+- 18:05 REPORT.md + CHAT entry written. done.

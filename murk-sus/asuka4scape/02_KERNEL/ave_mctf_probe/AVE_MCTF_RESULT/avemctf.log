@@ -1,0 +1,352 @@
+=== AVEMCTFProbe start iPhone14,7 Darwin Kernel Version 27.2.0: Tue Oct 13 21:26:30 PDT 2026; root:xnu-13432.42.3~28/RELEASE_ARM64_T8110 ===
+log: /var/mobile/Containers/Data/Application/D733B7D3-B7F8-4FF5-AFAC-E51DCEF591C0/Documents/avemctf.log
+=== AGX / IOGPU probe (safe) ===
+AGX AGXAcceleratorG14P class=AGXAcceleratorG14P
+AGX AGXAcceleratorG14P open type=0 -> 0xe00002c7 conn=0x0
+AGX AGXAcceleratorG14P open type=1 -> 0x0 conn=0x6e17
+AGX AGXAcceleratorG14P sel1 -> 0xe00002c2 osz=0x218 q0=0x0 q1=0x0
+AGX AGXAcceleratorG14P open type=2 -> 0xe00002c7 conn=0x0
+AGX AGXAcceleratorG14P open type=3 -> 0xe00002c7 conn=0x0
+AGX AGXAcceleratorG14P parent class=AppleARMIODevice
+AGX parent AppleARMIODevice open type=0 -> 0xe00002c7 conn=0x0
+AGX parent AppleARMIODevice open type=1 -> 0xe00002c7 conn=0x0
+AGX parent AppleARMIODevice open type=2 -> 0xe00002c7 conn=0x0
+AGX parent AppleARMIODevice open type=3 -> 0xe00002c7 conn=0x0
+AGX AGXAccelerator class=AGXAcceleratorG14P
+AGX AGXAccelerator open type=0 -> 0xe00002c7 conn=0x0
+AGX AGXAccelerator open type=1 -> 0x0 conn=0x5273
+AGX AGXAccelerator sel1 -> 0xe00002c2 osz=0x218 q0=0x0 q1=0x0
+AGX AGXAccelerator open type=2 -> 0xe00002c7 conn=0x0
+AGX AGXAccelerator open type=3 -> 0xe00002c7 conn=0x0
+AGX AGXAccelerator parent class=AppleARMIODevice
+AGX parent AppleARMIODevice open type=0 -> 0xe00002c7 conn=0x0
+AGX parent AppleARMIODevice open type=1 -> 0xe00002c7 conn=0x0
+AGX parent AppleARMIODevice open type=2 -> 0xe00002c7 conn=0x0
+AGX parent AppleARMIODevice open type=3 -> 0xe00002c7 conn=0x0
+AGX IOGPU class=AGXAcceleratorG14P
+AGX IOGPU open type=0 -> 0xe00002c7 conn=0x0
+AGX IOGPU open type=1 -> 0x0 conn=0x6f83
+AGX IOGPU sel1 -> 0xe00002c2 osz=0x218 q0=0x0 q1=0x0
+AGX IOGPU open type=2 -> 0xe00002c7 conn=0x0
+AGX IOGPU open type=3 -> 0xe00002c7 conn=0x0
+AGX IOGPU parent class=AppleARMIODevice
+AGX parent AppleARMIODevice open type=0 -> 0xe00002c7 conn=0x0
+AGX parent AppleARMIODevice open type=1 -> 0xe00002c7 conn=0x0
+AGX parent AppleARMIODevice open type=2 -> 0xe00002c7 conn=0x0
+AGX parent AppleARMIODevice open type=3 -> 0xe00002c7 conn=0x0
+AGX IOAccelerator absent
+=== IOGPU KASLR probe (safe) ===
+IOGPUDevice absent
+=== M2Scaler user-client probe (safe, open only) ===
+scaler AppleM2ScalerCSCDriver open type=0 -> 0x0 conn=0x6e33
+scaler AppleM2ScalerCSCDriver open type=1 -> 0x0 conn=0x6e37
+scaler AppleM2ScalerCSCDriver open type=2 -> 0x0 conn=0x6e3b
+scaler AppleM2ScalerCSCDriver open type=3 -> 0x0 conn=0x6e3f
+scaler service IOSurfaceAccelerator: absent
+=== M2Scaler selector dump (GATED) ===
+[SCALER] open type=0 -> 0x0 conn=0x52a3
+[SCALER] sel11 variant=0 -> 0x0 osz=0x298
+[SCALER] hexdump: {length = 664, bytes = 0x0b000000 01000c00 01010101 01010101 ... 01000000 00000000 }
+[SCALER] sel11 variant=1 -> 0x0 osz=0x298
+[SCALER] hexdump: {length = 664, bytes = 0x0b000000 01000c00 01010101 01010101 ... 01000000 00000000 }
+[SCALER] sel6 crafted -> 0xe00002c2 osz=0x400
+=== M2Scaler selector dump done ===
+=== AppleAVE2 direct user-client probe (safe, open only) ===
+AVE2 AppleAVE2Driver open type=0 -> 0xe00002bd conn=0x0
+AVE2 AppleAVE2Driver open type=1 -> 0xe00002e2 conn=0x0
+AVE2 AppleAVE2Driver open type=2 -> 0xe00002e2 conn=0x0
+AVE2 AppleAVE2Driver open type=3 -> 0xe00002e2 conn=0x0
+AVE2 AppleAVE2Driver open type=4 -> 0xe00002e2 conn=0x0
+AVE2 AppleAVE2Driver open type=5 -> 0xe00002e2 conn=0x0
+AVE2 AppleAVE2Driver open type=6 -> 0xe00002bd conn=0x0
+AVE2 AppleAVE2Driver open type=7 -> 0xe00002bd conn=0x0
+AVE2 service AppleAVE2Interface: absent
+AVE2 service AppleAVE2: absent
+[AVE2SWEEP] /var/mobile/Containers/Data/Application/D733B7D3-B7F8-4FF5-AFAC-E51DCEF591C0/Documents/run_ave2 absent; skipped
+VTCopyVideoEncoderList -> 0 count=21
+  HEVC enc id=com.apple.videotoolbox.videoencoder.hevc name=Dynamically Registered hvc1 Video Encoder hw=1 perf=0
+supported props (hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 encID=com.apple.videotoolbox.videoencoder.hevc count=167
+    key: AllowCompressedPixelFormats
+    key: AllowFrameReordering
+    key: AllowOpenGOP
+    key: AllowPixelTransfer
+    key: AllowTemporalCompression
+    key: AmbientViewingEnvironment
+    key: AuxiliaryLayerProperties
+    key: AuxiliaryTypeInfo
+    key: AverageBitRate
+    key: AverageNonDroppableFrameRate
+    key: BaseLayerFrameRate
+    key: BitRate
+    key: CalculateMeanSquaredError
+    key: CameraCalibrationDataLensCollection
+    key: ChromaLocationBottomField
+    key: ChromaLocationTopField
+    key: ChromaQPIndexOffsetMultiPPS
+    key: CleanAperture
+    key: ClientPID
+    key: ColorPrimaries
+    key: ComponentRange
+    key: CompressionSessionOptions
+    key: ConstantBitRate
+    key: ConstantQualityFactor
+    key: ContentLightLevelInfo
+    key: ConvergenceDurationForAverageDataRate
+    key: DPBRequirements
+    key: DataRateLimits
+    key: DebugMetadataSEI
+    key: DroppablePFramesOnly
+    key: EnableMultiReferenceP
+    key: EnableResumableEncoding
+    key: EnableStatsCollect
+    key: EnableUserQPMap
+    key: EnableUserRefForFacetime
+    key: EnableVUIBitstreamRestriction
+    key: EnableWeightedPrediction
+    key: EncoderEncryptionData
+    key: EncoderEncryptionKeyID
+    key: EncoderID
+=== props-only pass (no encode) ===
+-- props key=LRMERSPassNum val=1
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x15274ec00
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set LRMERSPassNum            = 1 -> -12900  readback=err=-12900
+-- props key=LRMERSPassNum val=16
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848800
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set LRMERSPassNum            = 16 -> -12900  readback=err=-12900
+-- props key=LRMERSPassNum val=256
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848800
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set LRMERSPassNum            = 256 -> -12900  readback=err=-12900
+-- props key=LRMERSPassNum val=4096
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848800
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set LRMERSPassNum            = 4096 -> -12900  readback=err=-12900
+-- props key=LRMERSPassNum val=65536
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848800
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set LRMERSPassNum            = 65536 -> -12900  readback=err=-12900
+-- props key=LRMERSPassNum val=1048576
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848800
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set LRMERSPassNum            = 1048576 -> -12900  readback=err=-12900
+-- props key=LRMERSPassNum val=1073741824
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848800
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set LRMERSPassNum            = 1073741824 -> -12900  readback=err=-12900
+-- props key=LRMERSPassNum val=2147483647
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848800
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set LRMERSPassNum            = 2147483647 -> -12900  readback=err=-12900
+-- props key=MCTFEdgeCount val=1
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848800
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set MCTFEdgeCount            = 1 -> -12900  readback=err=-12900
+-- props key=MCTFEdgeCount val=16
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848800
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set MCTFEdgeCount            = 16 -> -12900  readback=err=-12900
+-- props key=MCTFEdgeCount val=256
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848800
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set MCTFEdgeCount            = 256 -> -12900  readback=err=-12900
+-- props key=MCTFEdgeCount val=4096
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848800
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set MCTFEdgeCount            = 4096 -> -12900  readback=err=-12900
+-- props key=MCTFEdgeCount val=65536
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848800
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set MCTFEdgeCount            = 65536 -> -12900  readback=err=-12900
+-- props key=MCTFEdgeCount val=1048576
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848800
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set MCTFEdgeCount            = 1048576 -> -12900  readback=err=-12900
+-- props key=MCTFEdgeCount val=1073741824
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848800
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set MCTFEdgeCount            = 1073741824 -> -12900  readback=err=-12900
+-- props key=MCTFEdgeCount val=2147483647
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848800
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set MCTFEdgeCount            = 2147483647 -> -12900  readback=err=-12900
+-- props key=MCTFEdgeThresh val=1
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848800
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set MCTFEdgeThresh           = 1 -> -12900  readback=err=-12900
+-- props key=MCTFEdgeThresh val=16
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848800
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set MCTFEdgeThresh           = 16 -> -12900  readback=err=-12900
+-- props key=MCTFEdgeThresh val=256
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848800
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set MCTFEdgeThresh           = 256 -> -12900  readback=err=-12900
+-- props key=MCTFEdgeThresh val=4096
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848800
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set MCTFEdgeThresh           = 4096 -> -12900  readback=err=-12900
+-- props key=MCTFEdgeThresh val=65536
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848800
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set MCTFEdgeThresh           = 65536 -> -12900  readback=err=-12900
+-- props key=MCTFEdgeThresh val=1048576
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848800
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set MCTFEdgeThresh           = 1048576 -> -12900  readback=err=-12900
+-- props key=MCTFEdgeThresh val=1073741824
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848800
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set MCTFEdgeThresh           = 1073741824 -> -12900  readback=err=-12900
+-- props key=MCTFEdgeThresh val=2147483647
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848800
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set MCTFEdgeThresh           = 2147483647 -> -12900  readback=err=-12900
+-- props key=MCTFMaxNextRefNum val=1
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848800
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set MCTFMaxNextRefNum        = 1 -> -12900  readback=err=-12900
+-- props key=MCTFMaxNextRefNum val=16
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848800
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set MCTFMaxNextRefNum        = 16 -> -12900  readback=err=-12900
+-- props key=MCTFMaxNextRefNum val=256
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848800
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set MCTFMaxNextRefNum        = 256 -> -12900  readback=err=-12900
+-- props key=MCTFMaxNextRefNum val=4096
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848400
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set MCTFMaxNextRefNum        = 4096 -> -12900  readback=err=-12900
+-- props key=MCTFMaxNextRefNum val=65536
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848400
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set MCTFMaxNextRefNum        = 65536 -> -12900  readback=err=-12900
+-- props key=MCTFMaxNextRefNum val=1048576
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848400
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set MCTFMaxNextRefNum        = 1048576 -> -12900  readback=err=-12900
+-- props key=MCTFMaxNextRefNum val=1073741824
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848400
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set MCTFMaxNextRefNum        = 1073741824 -> -12900  readback=err=-12900
+-- props key=MCTFMaxNextRefNum val=2147483647
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848400
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set MCTFMaxNextRefNum        = 2147483647 -> -12900  readback=err=-12900
+-- props key=MCTFRampUpFrameNum val=1
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848400
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set MCTFRampUpFrameNum       = 1 -> -12900  readback=err=-12900
+-- props key=MCTFRampUpFrameNum val=16
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848800
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set MCTFRampUpFrameNum       = 16 -> -12900  readback=err=-12900
+-- props key=MCTFRampUpFrameNum val=256
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848800
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set MCTFRampUpFrameNum       = 256 -> -12900  readback=err=-12900
+-- props key=MCTFRampUpFrameNum val=4096
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848800
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set MCTFRampUpFrameNum       = 4096 -> -12900  readback=err=-12900
+-- props key=MCTFRampUpFrameNum val=65536
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848800
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set MCTFRampUpFrameNum       = 65536 -> -12900  readback=err=-12900
+-- props key=MCTFRampUpFrameNum val=1048576
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848800
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set MCTFRampUpFrameNum       = 1048576 -> -12900  readback=err=-12900
+-- props key=MCTFRampUpFrameNum val=1073741824
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848800
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set MCTFRampUpFrameNum       = 1073741824 -> -12900  readback=err=-12900
+-- props key=MCTFRampUpFrameNum val=2147483647
+VTCompressionSessionCreate(hevc, hwID=com.apple.videotoolbox.videoencoder.hevc) -> 0 session=0x152848400
+  set EncoderUsage             = 1 -> 0  readback=1
+  set RCMode                   = 20 -> -12900  readback=err=-12900
+  set EnableMCTF               = 1 -> -12900  readback=err=-12900
+  set MCTFRampUpFrameNum       = 2147483647 -> -12900  readback=err=-12900
+=== props-only pass done ===
+[GATE] /var/mobile/Containers/Data/Application/D733B7D3-B7F8-4FF5-AFAC-E51DCEF591C0/Documents/run_encode absent; encode pass skipped
+=== done ===

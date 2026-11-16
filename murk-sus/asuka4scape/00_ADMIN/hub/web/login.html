@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>ASUKA4SCAPE — вход</title>
+  <link rel="stylesheet" href="/static/app.css">
+</head>
+<body class="login-body">
+  <div class="login-grid" aria-hidden="true"></div>
+  <main class="login-wrap">
+    <section class="login-card">
+      <div class="login-brand">
+        <div class="brand-mark big">A4</div>
+        <div>
+          <div class="brand-name">ASUKA4SCAPE</div>
+          <div class="brand-sub">iOS research hub · command</div>
+        </div>
+      </div>
+
+      <div class="login-copy">
+        <div class="eyebrow">AUTHORIZED PERSONNEL ONLY</div>
+        <h1>Вход в панель</h1>
+        <p class="muted">Управление папками, ключами и подключениями исследователей.</p>
+      </div>
+
+      <form id="login-form" class="login-form" autocomplete="on">
+        <label class="field">
+          <span>Логин</span>
+          <input id="username" name="username" type="text" autocomplete="username"
+                 spellcheck="false" required autofocus>
+        </label>
+        <label class="field">
+          <span>Пароль</span>
+          <input id="password" name="password" type="password" autocomplete="current-password"
+                 required>
+        </label>
+        <div id="login-error" class="form-error hidden" role="alert"></div>
+        <button id="login-submit" class="btn primary wide" type="submit">
+          <span class="btn-label">Войти</span>
+        </button>
+      </form>
+
+      <div class="login-foot">
+        <span class="status-dot" id="login-dot"></span>
+        <span id="login-status">узел доступен</span>
+        <span class="spacer"></span>
+        <span class="mono muted">v1.0</span>
+      </div>
+    </section>
+    <p class="login-note">Доступ только для участников проекта. Все действия логируются.</p>
+  </main>
+  <script src="/static/login.js"></script>
+</body>
+</html>

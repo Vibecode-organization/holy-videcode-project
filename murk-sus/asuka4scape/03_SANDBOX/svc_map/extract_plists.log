@@ -1,0 +1,56 @@
+
+7-Zip 26.03 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-09-03
+ 64-bit locale=ru_RU.UTF-8 Threads:8 OPEN_MAX:524288, ASM
+
+Scanning the drive for archives:
+1 file, 9728688128 bytes (9278 MiB)
+
+Extracting archive: out272_clean/141-10327-211.dmg
+WARNING:
+out272_clean/141-10327-211.dmg
+Cannot open the file as [Dmg] archive
+The file is open as [APFS] archive
+
+--
+Path = out272_clean/141-10327-211.dmg
+Open WARNING: Cannot open the file as [Dmg] archive
+Type = APFS
+Physical Size = 9728688128
+Name = RaveB24B115.D27OS.apfs
+Characteristics = ZLIB-rsrc COPY-attr
+ID = f4f45703b2c14ee28e897849a097fd11
+Cluster Size = 4096
+Created = 2026-10-16 10:23:26.066185457
+Modified = 2026-10-16 10:31:29.415201673
+Comment = 
+{
+block_size: 4096
+fs_index: 0
+volume_name: RaveB24B115.D27OS
+vol_uuid: 88bb692f23ba4606af43de835f9a1762
+incompatible_features: NORMALIZATION_INSENSITIVE
+fs_alloc_count: 2237160
+num_files: 229258
+num_directories: 258949
+num_symlinks: 2747
+num_other_fsobjects: 0
+Num_Attr_Streams: 0
+num_snapshots: 0
+total_blocks_alloced: 2572732
+total_blocks_freed: 393731
+unmounted: 2026-10-16 10:31:29.415204714
+last_modified: 2026-10-16 10:30:36.224047372
+formatted_by: newfs_apfs (2332.120.31.100.1)
+  timestamp: 2026-10-16 10:23:26.066185457
+  last_xid: 2
+modified_by[0]: apfs_kext (2332.120.31.100.1)
+  timestamp: 2026-10-16 10:31:29.415201673
+  last_xid: 502
+}
+
+Everything is Ok
+
+Archives with Warnings: 1
+Files: 689
+Size:       936272
+Compressed: 9728688128

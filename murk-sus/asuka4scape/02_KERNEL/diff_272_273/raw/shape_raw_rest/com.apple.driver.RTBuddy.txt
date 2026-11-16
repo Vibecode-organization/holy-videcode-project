@@ -1,0 +1,14 @@
+funcs 2455 2456
+identical 2452 ratio 0.99857
+changed regions 4
+== insert A[1862:1862] B[1862:1863]
+   B 0xfffffff00a027750 sz=172
+== replace A[1908:1909] B[1909:1910]
+   A 0xfffffff009f5ed30 sz=288
+   B 0xfffffff00a0283fc sz=276
+== replace A[1970:1971] B[1971:1972]
+   A 0xfffffff009f615fc sz=288
+   B 0xfffffff00a02acbc sz=276
+== replace A[1977:1978] B[1978:1979]
+   A 0xfffffff009f61e40 sz=1416
+   B 0xfffffff00a02b4f4 sz=1448

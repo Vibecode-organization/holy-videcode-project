@@ -1,0 +1,2138 @@
+[
+ {
+  "id": "com.apple.driver.AppleBSDKextStarterTMPFS",
+  "exe": null,
+  "ver": "1",
+  "addr": 9223372036854775807,
+  "size": null,
+  "kmod": null
+ },
+ {
+  "id": "com.apple.driver.AppleBSDKextStarterVPN",
+  "exe": null,
+  "ver": "3",
+  "addr": 9223372036854775807,
+  "size": null,
+  "kmod": null
+ },
+ {
+  "id": "com.apple.driver.AppleHIDKeyboardEmbedded",
+  "exe": null,
+  "ver": "1.2.0a3",
+  "addr": 9223372036854775807,
+  "size": null,
+  "kmod": null
+ },
+ {
+  "id": "com.apple.driver.AppleStorageDrivers",
+  "exe": null,
+  "ver": "564",
+  "addr": 9223372036854775807,
+  "size": null,
+  "kmod": null
+ },
+ {
+  "id": "com.apple.driver.AppleTopCaseDriverV2",
+  "exe": null,
+  "ver": "1000.22",
+  "addr": 9223372036854775807,
+  "size": null,
+  "kmod": null
+ },
+ {
+  "id": "com.apple.driver.SCSIDeviceSpecifics",
+  "exe": null,
+  "ver": "564",
+  "addr": 9223372036854775807,
+  "size": null,
+  "kmod": null
+ },
+ {
+  "id": "com.apple.driver.USBStorageDeviceSpecifics",
+  "exe": null,
+  "ver": "564",
+  "addr": 9223372036854775807,
+  "size": null,
+  "kmod": null
+ },
+ {
+  "id": "com.apple.driver.usb.AppleUSBHostPlatformProperties",
+  "exe": null,
+  "ver": "1.2",
+  "addr": 9223372036854775807,
+  "size": null,
+  "kmod": null
+ },
+ {
+  "id": "com.apple.driver.usb.IOUSBHostHIDDeviceSafeBoot",
+  "exe": null,
+  "ver": "1.2",
+  "addr": 9223372036854775807,
+  "size": null,
+  "kmod": null
+ },
+ {
+  "id": "com.apple.iokit.IOHIDEventDriver",
+  "exe": null,
+  "ver": "2.0.0",
+  "addr": 9223372036854775807,
+  "size": null,
+  "kmod": null
+ },
+ {
+  "id": "com.apple.iokit.IOHIDEventDriverSafeBoot",
+  "exe": null,
+  "ver": "2.0.0",
+  "addr": 9223372036854775807,
+  "size": null,
+  "kmod": null
+ },
+ {
+  "id": "com.apple.kpi.bsd",
+  "exe": "BSDKernel",
+  "ver": "27.2.0",
+  "addr": 9223372036854775807,
+  "size": null,
+  "kmod": null
+ },
+ {
+  "id": "com.apple.kpi.dsep",
+  "exe": "MACFramework",
+  "ver": "27.2.0",
+  "addr": 9223372036854775807,
+  "size": null,
+  "kmod": null
+ },
+ {
+  "id": "com.apple.kpi.iokit",
+  "exe": "IOKit",
+  "ver": "27.2.0",
+  "addr": 9223372036854775807,
+  "size": null,
+  "kmod": null
+ },
+ {
+  "id": "com.apple.kpi.libkern",
+  "exe": "Libkern",
+  "ver": "27.2.0",
+  "addr": 9223372036854775807,
+  "size": null,
+  "kmod": null
+ },
+ {
+  "id": "com.apple.kpi.mach",
+  "exe": "Mach",
+  "ver": "27.2.0",
+  "addr": 9223372036854775807,
+  "size": null,
+  "kmod": null
+ },
+ {
+  "id": "com.apple.kpi.private",
+  "exe": "Private",
+  "ver": "27.2.0",
+  "addr": 9223372036854775807,
+  "size": null,
+  "kmod": null
+ },
+ {
+  "id": "com.apple.kpi.unsupported",
+  "exe": "Unsupported",
+  "ver": "27.2.0",
+  "addr": 9223372036854775807,
+  "size": null,
+  "kmod": null
+ },
+ {
+  "id": "com.apple.kec.Libm",
+  "exe": "Libm",
+  "ver": "1",
+  "addr": 18446744005108580352,
+  "size": 43788,
+  "kmod": 18446744005172658176
+ },
+ {
+  "id": "com.apple.kec.pthread",
+  "exe": "pthread",
+  "ver": "1",
+  "addr": 18446744005108609184,
+  "size": 32061,
+  "kmod": 18446744005172658416
+ },
+ {
+  "id": "com.apple.driver.AFKHIDTBDevice",
+  "exe": "AFKHIDTBDevice",
+  "ver": "1",
+  "addr": 18446744005108612704,
+  "size": 64166,
+  "kmod": 18446744005172658808
+ },
+ {
+  "id": "com.apple.AGXFirmwareKextG14PRTBuddy",
+  "exe": "AGXFirmwareKextG14PRTBuddy",
+  "ver": "1",
+  "addr": 18446744005108621632,
+  "size": 18387,
+  "kmod": 18446744005172659064
+ },
+ {
+  "id": "com.apple.AGXFirmwareKextRTBuddy64",
+  "exe": "AGXFirmwareKextRTBuddy64",
+  "ver": "362.5",
+  "addr": 18446744005108625184,
+  "size": 16672,
+  "kmod": 18446744005172659504
+ },
+ {
+  "id": "com.apple.AGXG14P",
+  "exe": "AGXG14P",
+  "ver": "362.5",
+  "addr": 18446744005108641568,
+  "size": 905100,
+  "kmod": 18446744005172659720
+ },
+ {
+  "id": "com.apple.security.AKSAnalytics",
+  "exe": "AKSAnalytics",
+  "ver": "1",
+  "addr": 18446744005108714656,
+  "size": 112502,
+  "kmod": 18446744005172681648
+ },
+ {
+  "id": "com.apple.driver.AOPTouchKext",
+  "exe": "AOPTouchKext",
+  "ver": "314",
+  "addr": 18446744005108757776,
+  "size": 16484,
+  "kmod": 18446744005172694744
+ },
+ {
+  "id": "com.apple.driver.ASIOKit",
+  "exe": "ASIOKit",
+  "ver": "27.2.9",
+  "addr": 18446744005108760160,
+  "size": 384624,
+  "kmod": 18446744005172695080
+ },
+ {
+  "id": "com.apple.AUC",
+  "exe": "AUC",
+  "ver": "1.0",
+  "addr": 18446744005108799280,
+  "size": 50652,
+  "kmod": 18446744005172695520
+ },
+ {
+  "id": "com.apple.driver.AppleA7IOP-ASCWrap-v4",
+  "exe": "AppleA7IOP-ASCWrap-v4",
+  "ver": "1.0.2",
+  "addr": 18446744005108810784,
+  "size": 12733,
+  "kmod": 18446744005172695960
+ },
+ {
+  "id": "com.apple.driver.AppleA7IOP",
+  "exe": "AppleA7IOP",
+  "ver": "1.0.2",
+  "addr": 18446744005108813072,
+  "size": 40999,
+  "kmod": 18446744005172696256
+ },
+ {
+  "id": "com.apple.driver.AppleALSColorSensor",
+  "exe": "AppleALSColorSensor",
+  "ver": "1.0.0d1",
+  "addr": 18446744005108818592,
+  "size": 178540,
+  "kmod": 18446744005172696632
+ },
+ {
+  "id": "com.apple.driver.AppleAOPAudio",
+  "exe": "AppleAOPAudio",
+  "ver": "600.1",
+  "addr": 18446744005108839440,
+  "size": 302938,
+  "kmod": 18446744005172697568
+ },
+ {
+  "id": "com.apple.driver.AppleAOPVoiceTrigger",
+  "exe": "AppleAOPVoiceTrigger",
+  "ver": "600.6",
+  "addr": 18446744005108892176,
+  "size": 46742,
+  "kmod": 18446744005172700032
+ },
+ {
+  "id": "com.apple.iokit.AppleARMIISAudio",
+  "exe": "AppleARMIISAudio",
+  "ver": "610.2",
+  "addr": 18446744005108907680,
+  "size": 124320,
+  "kmod": 18446744005172700600
+ },
+ {
+  "id": "com.apple.driver.AppleARMPMU",
+  "exe": "AppleARMPMU",
+  "ver": "1.0",
+  "addr": 18446744005108933216,
+  "size": 111761,
+  "kmod": 18446744005172701120
+ },
+ {
+  "id": "com.apple.driver.AppleARMPlatform",
+  "exe": "AppleARMPlatform",
+  "ver": "1.0.2",
+  "addr": 18446744005108946624,
+  "size": 534236,
+  "kmod": 18446744005172701992
+ },
+ {
+  "id": "com.apple.driver.AppleARMWatchdogTimer",
+  "exe": "AppleARMWatchdogTimer",
+  "ver": "1",
+  "addr": 18446744005109014720,
+  "size": 37537,
+  "kmod": 18446744005172707128
+ },
+ {
+  "id": "com.apple.driver.AppleAVD",
+  "exe": "AppleAVD",
+  "ver": "995",
+  "addr": 18446744005109021504,
+  "size": 1635612,
+  "kmod": 18446744005172707656
+ },
+ {
+  "id": "com.apple.driver.AppleAVE2",
+  "exe": "AppleAVE2",
+  "ver": "913.64.1",
+  "addr": 18446744005110181712,
+  "size": 2990802,
+  "kmod": 18446744005172712720
+ },
+ {
+  "id": "com.apple.driver.AppleActuatorDriver",
+  "exe": "AppleActuatorDriver",
+  "ver": "1010.4",
+  "addr": 18446744005111177264,
+  "size": 58475,
+  "kmod": 18446744005172714696
+ },
+ {
+  "id": "com.apple.driver.AppleAstrisGpioProbe",
+  "exe": "AppleAstrisGpioProbe",
+  "ver": "1.0.1",
+  "addr": 18446744005111184976,
+  "size": 27281,
+  "kmod": 18446744005172715136
+ },
+ {
+  "id": "com.apple.driver.AppleAudioClockLibs",
+  "exe": "AppleAudioClockLibs",
+  "ver": "600.6",
+  "addr": 18446744005111188624,
+  "size": 4483,
+  "kmod": 18446744005172715960
+ },
+ {
+  "id": "com.apple.driver.AppleAuthCP",
+  "exe": "AppleAuthCP",
+  "ver": "1.0.0",
+  "addr": 18446744005111190736,
+  "size": 159482,
+  "kmod": 18446744005172716200
+ },
+ {
+  "id": "com.apple.driver.AppleAvalancheErrorHandler",
+  "exe": "AppleAvalancheErrorHandler",
+  "ver": "1",
+  "addr": 18446744005111209984,
+  "size": 10948,
+  "kmod": 18446744005172717176
+ },
+ {
+  "id": "com.apple.driver.AppleBSDKextStarter",
+  "exe": "AppleBSDKextStarter",
+  "ver": "3",
+  "addr": 18446744005111214928,
+  "size": 5314,
+  "kmod": 18446744005172717440
+ },
+ {
+  "id": "com.apple.driver.AppleBasebandM20",
+  "exe": "AppleBasebandM20",
+  "ver": "1.0.0d1",
+  "addr": 18446744005111216608,
+  "size": 421689,
+  "kmod": 18446744005172717696
+ },
+ {
+  "id": "com.apple.driver.AppleBasebandPCI",
+  "exe": "AppleBasebandPCI",
+  "ver": "1",
+  "addr": 18446744005111301696,
+  "size": 424259,
+  "kmod": 18446744005172719632
+ },
+ {
+  "id": "com.apple.driver.AppleBasebandPCIMAVControl",
+  "exe": "AppleBasebandPCIMAVControl",
+  "ver": "1",
+  "addr": 18446744005111343168,
+  "size": 230923,
+  "kmod": 18446744005172733640
+ },
+ {
+  "id": "com.apple.driver.AppleBasebandPCIMAVPDP",
+  "exe": "AppleBasebandPCIMAVPDP",
+  "ver": "1",
+  "addr": 18446744005111361568,
+  "size": 75924,
+  "kmod": 18446744005172740240
+ },
+ {
+  "id": "com.apple.driver.AppleBluetoothDebug",
+  "exe": "AppleBluetoothDebug",
+  "ver": "1",
+  "addr": 18446744005111368448,
+  "size": 58653,
+  "kmod": 18446744005172740928
+ },
+ {
+  "id": "com.apple.driver.AppleBluetoothDebugService",
+  "exe": "AppleBluetoothDebugService",
+  "ver": "1",
+  "addr": 18446744005111376480,
+  "size": 4393,
+  "kmod": 18446744005172741320
+ },
+ {
+  "id": "com.apple.driver.AppleBluetoothModule",
+  "exe": "AppleBluetoothModule",
+  "ver": "1",
+  "addr": 18446744005111378032,
+  "size": 49612,
+  "kmod": 18446744005172741576
+ },
+ {
+  "id": "com.apple.driver.AppleC26Charger",
+  "exe": "AppleC26Charger",
+  "ver": "1.0.1",
+  "addr": 18446744005111389552,
+  "size": 124784,
+  "kmod": 18446744005172742064
+ },
+ {
+  "id": "com.apple.driver.AppleCSEmbeddedAudio",
+  "exe": "AppleCSEmbeddedAudio",
+  "ver": "1010.2",
+  "addr": 18446744005111401872,
+  "size": 61756,
+  "kmod": 18446744005172743224
+ },
+ {
+  "id": "com.apple.driver.AppleCallbackPowerSource",
+  "exe": "AppleCallbackPowerSource",
+  "ver": "1",
+  "addr": 18446744005111405600,
+  "size": 35868,
+  "kmod": 18446744005172744112
+ },
+ {
+  "id": "com.apple.driver.AppleConvergedIPCOLYBTControl",
+  "exe": "AppleConvergedIPCOLYBTControl",
+  "ver": "1",
+  "addr": 18446744005111411712,
+  "size": 357840,
+  "kmod": 18446744005172750344
+ },
+ {
+  "id": "com.apple.driver.AppleConvergedPCI",
+  "exe": "AppleConvergedPCI",
+  "ver": "1",
+  "addr": 18446744005111445568,
+  "size": 304190,
+  "kmod": 18446744005172751088
+ },
+ {
+  "id": "com.apple.driver.AppleDCP",
+  "exe": "AppleDCP",
+  "ver": "1",
+  "addr": 18446744005111474384,
+  "size": 53889,
+  "kmod": 18446744005172752400
+ },
+ {
+  "id": "com.apple.driver.AppleDCPDPTXProxy",
+  "exe": "AppleDCPDPTXProxy",
+  "ver": "1.0.0",
+  "addr": 18446744005111483856,
+  "size": 56258,
+  "kmod": 18446744005172752792
+ },
+ {
+  "id": "com.apple.driver.AppleDiagnosticDataAccessReadOnly",
+  "exe": "AppleDiagnosticDataAccessReadOnly",
+  "ver": "1.0.0",
+  "addr": 18446744005111492304,
+  "size": 9140,
+  "kmod": 18446744005172753208
+ },
+ {
+  "id": "com.apple.driver.AppleDialogPMU",
+  "exe": "AppleDialogPMU",
+  "ver": "1.0.1",
+  "addr": 18446744005111494592,
+  "size": 20218,
+  "kmod": 18446744005172753520
+ },
+ {
+  "id": "com.apple.driver.AppleDiskImages2",
+  "exe": "AppleDiskImages2",
+  "ver": "598.40.4",
+  "addr": 18446744005111497696,
+  "size": 114029,
+  "kmod": 18446744005172754064
+ },
+ {
+  "id": "com.apple.driver.AppleDockChannel",
+  "exe": "AppleDockChannel",
+  "ver": "1",
+  "addr": 18446744005111524000,
+  "size": 24511,
+  "kmod": 18446744005172755656
+ },
+ {
+  "id": "com.apple.driver.AppleEffaceableBlockDevice",
+  "exe": "AppleEffaceableBlockDevice",
+  "ver": "1.0",
+  "addr": 18446744005111531072,
+  "size": 8358,
+  "kmod": 18446744005172755992
+ },
+ {
+  "id": "com.apple.driver.AppleEffaceableStorage",
+  "exe": "AppleEffaceableStorage",
+  "ver": "1.0",
+  "addr": 18446744005111532928,
+  "size": 32292,
+  "kmod": 18446744005172756248
+ },
+ {
+  "id": "com.apple.driver.AppleEmbeddedAudio",
+  "exe": "AppleEmbeddedAudio",
+  "ver": "1010.2",
+  "addr": 18446744005111539856,
+  "size": 317044,
+  "kmod": 18446744005172756544
+ },
+ {
+  "id": "com.apple.driver.AppleAOPAD5860",
+  "exe": "AppleAOPAD5860",
+  "ver": "1010.2",
+  "addr": 18446744005111572416,
+  "size": 30599,
+  "kmod": 18446744005172758432
+ },
+ {
+  "id": "com.apple.driver.AppleAOPHaptics",
+  "exe": "AppleAOPHaptics",
+  "ver": "1010.2",
+  "addr": 18446744005111580080,
+  "size": 26465,
+  "kmod": 18446744005172758728
+ },
+ {
+  "id": "com.apple.driver.AppleCS35L27Amp",
+  "exe": "AppleCS35L27Amp",
+  "ver": "1010.2",
+  "addr": 18446744005111584736,
+  "size": 139964,
+  "kmod": 18446744005172759064
+ },
+ {
+  "id": "com.apple.driver.AppleCS42L77Audio",
+  "exe": "AppleCS42L77Audio",
+  "ver": "1010.2",
+  "addr": 18446744005111633856,
+  "size": 377543,
+  "kmod": 18446744005172759320
+ },
+ {
+  "id": "com.apple.driver.AppleEmbeddedAudioLibs",
+  "exe": "AppleEmbeddedAudioLibs",
+  "ver": "600.6",
+  "addr": 18446744005111718176,
+  "size": 87122,
+  "kmod": 18446744005172760320
+ },
+ {
+  "id": "com.apple.driver.AppleEmbeddedAudioResourceManager",
+  "exe": "AppleEmbeddedAudioResourceManager",
+  "ver": "1010.2",
+  "addr": 18446744005111741360,
+  "size": 24548,
+  "kmod": 18446744005172760952
+ },
+ {
+  "id": "com.apple.driver.AppleEmbeddedGPS",
+  "exe": "AppleEmbeddedGPS",
+  "ver": "1.0.0d1",
+  "addr": 18446744005111752928,
+  "size": 25162,
+  "kmod": 18446744005172761208
+ },
+ {
+  "id": "com.apple.driver.AppleEmbeddedLightSensor",
+  "exe": "AppleEmbeddedLightSensor",
+  "ver": "1.0.0d1",
+  "addr": 18446744005111755552,
+  "size": 132183,
+  "kmod": 18446744005172761728
+ },
+ {
+  "id": "com.apple.driver.AppleEmbeddedMikeyBus",
+  "exe": "AppleEmbeddedMikeyBus",
+  "ver": "1.0.0d1",
+  "addr": 18446744005111779520,
+  "size": 132916,
+  "kmod": 18446744005172763232
+ },
+ {
+  "id": "com.apple.driver.AppleEmbeddedPCIE",
+  "exe": "AppleEmbeddedPCIE",
+  "ver": "1",
+  "addr": 18446744005111789600,
+  "size": 276604,
+  "kmod": 18446744005172764488
+ },
+ {
+  "id": "com.apple.driver.AppleEmbeddedTempSensor",
+  "exe": "AppleEmbeddedTempSensor",
+  "ver": "1.0.0",
+  "addr": 18446744005111834128,
+  "size": 137708,
+  "kmod": 18446744005172765872
+ },
+ {
+  "id": "com.apple.driver.AppleEmbeddedTouchEEPROM",
+  "exe": "AppleEmbeddedTouchEEPROMDriver",
+  "ver": "1",
+  "addr": 18446744005111847168,
+  "size": 29794,
+  "kmod": 18446744005172767912
+ },
+ {
+  "id": "com.apple.driver.AppleEmbeddedUSB",
+  "exe": "AppleEmbeddedUSB",
+  "ver": "1",
+  "addr": 18446744005111856896,
+  "size": 49300,
+  "kmod": 18446744005172769144
+ },
+ {
+  "id": "com.apple.driver.AppleEmbeddedUSBHost",
+  "exe": "AppleEmbeddedUSBHost",
+  "ver": "1",
+  "addr": 18446744005111862784,
+  "size": 54424,
+  "kmod": 18446744005172770088
+ },
+ {
+  "id": "com.apple.driver.AppleEventLogHandler",
+  "exe": "AppleEventLogHandler",
+  "ver": "1",
+  "addr": 18446744005111868880,
+  "size": 11127,
+  "kmod": 18446744005172770760
+ },
+ {
+  "id": "com.apple.driver.AppleFAN53740",
+  "exe": "AppleFAN53740",
+  "ver": "1",
+  "addr": 18446744005111872144,
+  "size": 10158,
+  "kmod": 18446744005172771016
+ },
+ {
+  "id": "com.apple.AppleFSCompression.AppleFSCompressionTypeZlib",
+  "exe": "AppleFSCompressionTypeZlib",
+  "ver": "1.0.0",
+  "addr": 18446744005111874112,
+  "size": 59958,
+  "kmod": 18446744005172771328
+ },
+ {
+  "id": "com.apple.driver.AppleFireStormErrorHandler",
+  "exe": "AppleFireStormErrorHandler",
+  "ver": "1",
+  "addr": 18446744005111890544,
+  "size": 10948,
+  "kmod": 18446744005172771592
+ },
+ {
+  "id": "com.apple.driver.AppleFirmwareKit",
+  "exe": "AppleFirmwareKit",
+  "ver": "1",
+  "addr": 18446744005111895488,
+  "size": 446994,
+  "kmod": 18446744005172771856
+ },
+ {
+  "id": "com.apple.driver.AppleFirmwareUpdateKext",
+  "exe": "AppleFirmwareUpdateKext",
+  "ver": "1",
+  "addr": 18446744005111926400,
+  "size": 17897,
+  "kmod": 18446744005172775688
+ },
+ {
+  "id": "com.apple.driver.AppleGPIOCanary",
+  "exe": "AppleGPIOCanary",
+  "ver": "1.0.0",
+  "addr": 18446744005111930080,
+  "size": 6158,
+  "kmod": 18446744005172775984
+ },
+ {
+  "id": "com.apple.driver.AppleGPIOICController",
+  "exe": "AppleGPIOICController",
+  "ver": "1.0.2",
+  "addr": 18446744005111931824,
+  "size": 67584,
+  "kmod": 18446744005172776240
+ },
+ {
+  "id": "com.apple.driver.AppleGameControllerPersonality",
+  "exe": "AppleGameControllerPersonality",
+  "ver": "14.1.2",
+  "addr": 18446744005111938176,
+  "size": 21102,
+  "kmod": 18446744005172776800
+ },
+ {
+  "id": "com.apple.driver.AppleGenericMultitouch",
+  "exe": "AppleGenericMultitouch",
+  "ver": "30",
+  "addr": 18446744005111940960,
+  "size": 93167,
+  "kmod": 18446744005172777200
+ },
+ {
+  "id": "com.apple.driver.AppleH10PearlCameraInterface",
+  "exe": "AppleH10PearlCameraInterface",
+  "ver": "22.304.0",
+  "addr": 18446744005111982368,
+  "size": 44927,
+  "kmod": 18446744005172777592
+ },
+ {
+  "id": "com.apple.driver.AppleH11ANEInterface",
+  "exe": "AppleH11ANEInterface",
+  "ver": "10.102.4",
+  "addr": 18446744005111985920,
+  "size": 1879984,
+  "kmod": 18446744005172778528
+ },
+ {
+  "id": "com.apple.driver.AppleH13CameraInterface",
+  "exe": "AppleH13CameraInterface",
+  "ver": "11.4.0",
+  "addr": 18446744005112311312,
+  "size": 785880,
+  "kmod": 18446744005172804440
+ },
+ {
+  "id": "com.apple.driver.AppleHIDKeyboard",
+  "exe": "AppleHIDKeyboard",
+  "ver": "9070.3",
+  "addr": 18446744005112569200,
+  "size": 41504,
+  "kmod": 18446744005172806328
+ },
+ {
+  "id": "com.apple.driver.AppleHIDTransport",
+  "exe": "AppleHIDTransport",
+  "ver": "1010.1",
+  "addr": 18446744005112575600,
+  "size": 616790,
+  "kmod": 18446744005172806664
+ },
+ {
+  "id": "com.apple.driver.AppleHIDTransportFIFO",
+  "exe": "AppleHIDTransportFIFO",
+  "ver": "1010.1",
+  "addr": 18446744005112630416,
+  "size": 100448,
+  "kmod": 18446744005172809184
+ },
+ {
+  "id": "com.apple.driver.AppleHIDTransportMailbox",
+  "exe": "AppleHIDTransportMailbox",
+  "ver": "1010.1",
+  "addr": 18446744005112643328,
+  "size": 118429,
+  "kmod": 18446744005172809488
+ },
+ {
+  "id": "com.apple.driver.AppleHIDTransportSCMCommon",
+  "exe": "AppleHIDTransportSCMCommon",
+  "ver": "1010.1",
+  "addr": 18446744005112657792,
+  "size": 27847,
+  "kmod": 18446744005172809784
+ },
+ {
+  "id": "com.apple.driver.AppleHIDTransportSPI",
+  "exe": "AppleHIDTransportSPI",
+  "ver": "1010.1",
+  "addr": 18446744005112661072,
+  "size": 306883,
+  "kmod": 18446744005172810120
+ },
+ {
+  "id": "com.apple.driver.AppleHapticsSupportLEAP",
+  "exe": "AppleHapticsSupportLEAP",
+  "ver": "11.6",
+  "addr": 18446744005112695632,
+  "size": 328099,
+  "kmod": 18446744005172810544
+ },
+ {
+  "id": "com.apple.driver.AppleHapticsSupportNVM",
+  "exe": "AppleHapticsSupportNVM",
+  "ver": "11.6",
+  "addr": 18446744005112731808,
+  "size": 7416,
+  "kmod": 18446744005172817568
+ },
+ {
+  "id": "com.apple.driver.AppleIDAMInterface",
+  "exe": "AppleIDAMInterface",
+  "ver": "1",
+  "addr": 18446744005112734320,
+  "size": 8923,
+  "kmod": 18446744005172817824
+ },
+ {
+  "id": "com.apple.driver.AppleIDV",
+  "exe": "AppleIDV",
+  "ver": "9.108",
+  "addr": 18446744005112737600,
+  "size": 40862,
+  "kmod": 18446744005172818088
+ },
+ {
+  "id": "com.apple.driver.AppleIISController",
+  "exe": "AppleIISController",
+  "ver": "600.3",
+  "addr": 18446744005112744448,
+  "size": 47578,
+  "kmod": 18446744005172818384
+ },
+ {
+  "id": "com.apple.driver.AppleIPAppender",
+  "exe": "AppleIPAppender",
+  "ver": "1.0",
+  "addr": 18446744005112749840,
+  "size": 32856,
+  "kmod": 18446744005172819056
+ },
+ {
+  "id": "com.apple.security.AppleImage4",
+  "exe": "AppleImage4",
+  "ver": "7.0.0",
+  "addr": 18446744005112753216,
+  "size": 298969,
+  "kmod": 18446744005172819744
+ },
+ {
+  "id": "com.apple.driver.AppleInputDeviceSupport",
+  "exe": "AppleInputDeviceSupport",
+  "ver": "1010.1",
+  "addr": 18446744005112841472,
+  "size": 156443,
+  "kmod": 18446744005172822448
+ },
+ {
+  "id": "com.apple.driver.AppleInterruptControllerV2",
+  "exe": "AppleInterruptControllerV2",
+  "ver": "1.0.0d1",
+  "addr": 18446744005112858624,
+  "size": 16788,
+  "kmod": 18446744005172823584
+ },
+ {
+  "id": "com.apple.driver.AppleJPEGDriver",
+  "exe": "AppleJPEGDriver",
+  "ver": "8.1.7",
+  "addr": 18446744005112861840,
+  "size": 294701,
+  "kmod": 18446744005172823880
+ },
+ {
+  "id": "com.apple.driver.AppleLockdownMode",
+  "exe": "AppleLockdownMode",
+  "ver": "1",
+  "addr": 18446744005112930384,
+  "size": 116581,
+  "kmod": 18446744005172836768
+ },
+ {
+  "id": "com.apple.driver.AppleM2ScalerCSCDriver",
+  "exe": "AppleM2ScalerCSC",
+  "ver": "265.0.0",
+  "addr": 18446744005112951184,
+  "size": 2634964,
+  "kmod": 18446744005172837056
+ },
+ {
+  "id": "com.apple.driver.AppleM68Buttons",
+  "exe": "AppleM68Buttons",
+  "ver": "1.0.0d1",
+  "addr": 18446744005113904512,
+  "size": 156216,
+  "kmod": 18446744005172995768
+ },
+ {
+  "id": "com.apple.driver.AppleMCA2-T8110",
+  "exe": "AppleMCA2_T8110",
+  "ver": "1110.2",
+  "addr": 18446744005113928720,
+  "size": 234802,
+  "kmod": 18446744005172996272
+ },
+ {
+  "id": "com.apple.kext.AppleMatch",
+  "exe": "AppleMatch",
+  "ver": "1.0.0d1",
+  "addr": 18446744005113953856,
+  "size": 12155,
+  "kmod": 18446744005172998624
+ },
+ {
+  "id": "com.apple.driver.AppleMikeyBusAudio",
+  "exe": "AppleMikeyBusAudio",
+  "ver": "600.2",
+  "addr": 18446744005113955216,
+  "size": 125739,
+  "kmod": 18446744005172998848
+ },
+ {
+  "id": "com.apple.driver.AppleMobileApNonce",
+  "exe": "AppleMobileApNonce",
+  "ver": "1",
+  "addr": 18446744005113972672,
+  "size": 28906,
+  "kmod": 18446744005172999720
+ },
+ {
+  "id": "com.apple.driver.AppleMobileDispH14P-DCP",
+  "exe": "AppleMobileDispH14P-DCP",
+  "ver": "140.0",
+  "addr": 18446744005113980944,
+  "size": 752237,
+  "kmod": 18446744005173000024
+ },
+ {
+  "id": "com.apple.driver.AppleMobileFileIntegrity",
+  "exe": "AppleMobileFileIntegrity",
+  "ver": "1.0.5",
+  "addr": 18446744005114020352,
+  "size": 264242,
+  "kmod": 18446744005173353864
+ },
+ {
+  "id": "com.apple.driver.AppleMultiFunctionManager",
+  "exe": "AppleMultiFunctionManager",
+  "ver": "1",
+  "addr": 18446744005114076256,
+  "size": 64001,
+  "kmod": 18446744005173355592
+ },
+ {
+  "id": "com.apple.driver.AppleMultitouchDriver",
+  "exe": "AppleMultitouchDriver",
+  "ver": "1010.4",
+  "addr": 18446744005114087664,
+  "size": 169924,
+  "kmod": 18446744005173356336
+ },
+ {
+  "id": "com.apple.driver.AppleMultitouchSPI",
+  "exe": "AppleMultitouchSPI",
+  "ver": "1010.4",
+  "addr": 18446744005114113888,
+  "size": 4856,
+  "kmod": 18446744005173357192
+ },
+ {
+  "id": "com.apple.driver.AppleNANDConfigAccess",
+  "exe": "AppleNANDConfigAccess",
+  "ver": "1.0.0",
+  "addr": 18446744005114115888,
+  "size": 4635,
+  "kmod": 18446744005173357408
+ },
+ {
+  "id": "com.apple.driver.AppleOLYHAL",
+  "exe": "AppleOLYHAL",
+  "ver": "1",
+  "addr": 18446744005114117456,
+  "size": 163472,
+  "kmod": 18446744005173357664
+ },
+ {
+  "id": "com.apple.driver.AppleOnboardSerial",
+  "exe": "AppleOnboardSerial",
+  "ver": "1.0",
+  "addr": 18446744005114147456,
+  "size": 101476,
+  "kmod": 18446744005173358448
+ },
+ {
+  "id": "com.apple.driver.ApplePIODMA",
+  "exe": "ApplePIODMA",
+  "ver": "1",
+  "addr": 18446744005114155872,
+  "size": 25666,
+  "kmod": 18446744005173360416
+ },
+ {
+  "id": "com.apple.driver.ApplePMGR",
+  "exe": "ApplePMGR",
+  "ver": "1",
+  "addr": 18446744005114160016,
+  "size": 539136,
+  "kmod": 18446744005173360752
+ },
+ {
+  "id": "com.apple.driver.ApplePMP",
+  "exe": "ApplePMP",
+  "ver": "1",
+  "addr": 18446744005114228352,
+  "size": 78424,
+  "kmod": 18446744005173362920
+ },
+ {
+  "id": "com.apple.driver.ApplePMPFirmware",
+  "exe": "ApplePMPFirmware",
+  "ver": "1",
+  "addr": 18446744005114235392,
+  "size": 10114,
+  "kmod": 18446744005173364016
+ },
+ {
+  "id": "com.apple.driver.ApplePPMCPMS",
+  "exe": "ApplePPMCPMS",
+  "ver": "3.0",
+  "addr": 18446744005114237968,
+  "size": 465192,
+  "kmod": 18446744005173364272
+ },
+ {
+  "id": "com.apple.driver.AppleParrot",
+  "exe": "AppleParrot",
+  "ver": "1",
+  "addr": 18446744005114324320,
+  "size": 8315,
+  "kmod": 18446744005173366368
+ },
+ {
+  "id": "com.apple.driver.ApplePearlSEPDriver",
+  "exe": "ApplePearlSEPDriver",
+  "ver": "1",
+  "addr": 18446744005114326256,
+  "size": 351605,
+  "kmod": 18446744005173366624
+ },
+ {
+  "id": "com.apple.driver.ApplePhoneBTM",
+  "exe": "ApplePhoneBTM",
+  "ver": "1.0.1",
+  "addr": 18446744005114394848,
+  "size": 149995,
+  "kmod": 18446744005173367568
+ },
+ {
+  "id": "com.apple.driver.ApplePhotonDetector",
+  "exe": "ApplePhotonDetector",
+  "ver": "1.0",
+  "addr": 18446744005114416880,
+  "size": 18585,
+  "kmod": 18446744005173369216
+ },
+ {
+  "id": "com.apple.driver.AppleProResHW",
+  "exe": "AppleProResHW",
+  "ver": "600.53",
+  "addr": 18446744005114420400,
+  "size": 500187,
+  "kmod": 18446744005173369552
+ },
+ {
+  "id": "com.apple.driver.AppleProxDriver",
+  "exe": "AppleProxDriver",
+  "ver": "59",
+  "addr": 18446744005114476048,
+  "size": 60137,
+  "kmod": 18446744005173410240
+ },
+ {
+  "id": "com.apple.driver.AppleS5L8920XPWM",
+  "exe": "AppleS5L8920XPWM",
+  "ver": "1.0.0d1",
+  "addr": 18446744005114482048,
+  "size": 21333,
+  "kmod": 18446744005173410680
+ },
+ {
+  "id": "com.apple.driver.AppleS5L8940XI2C",
+  "exe": "AppleS5L8940XI2C",
+  "ver": "1.0.0d2",
+  "addr": 18446744005114484944,
+  "size": 19086,
+  "kmod": 18446744005173411168
+ },
+ {
+  "id": "com.apple.driver.AppleS5L8960XNCO",
+  "exe": "AppleS5L8960XNCO",
+  "ver": "1",
+  "addr": 18446744005114488880,
+  "size": 8776,
+  "kmod": 18446744005173411424
+ },
+ {
+  "id": "com.apple.driver.AppleS8000AES",
+  "exe": "AppleS8000AES",
+  "ver": "1",
+  "addr": 18446744005114490640,
+  "size": 27244,
+  "kmod": 18446744005173411720
+ },
+ {
+  "id": "com.apple.driver.AppleS8000DWI",
+  "exe": "AppleS8000DWI",
+  "ver": "1.0.0d1",
+  "addr": 18446744005114497344,
+  "size": 11787,
+  "kmod": 18446744005173412336
+ },
+ {
+  "id": "com.apple.driver.AppleSART",
+  "exe": "AppleSART",
+  "ver": "1",
+  "addr": 18446744005114499456,
+  "size": 21204,
+  "kmod": 18446744005173412672
+ },
+ {
+  "id": "com.apple.driver.AppleSEPCredentialManager",
+  "exe": "AppleSEPCredentialManager",
+  "ver": "1.0",
+  "addr": 18446744005114504400,
+  "size": 442597,
+  "kmod": 18446744005173413008
+ },
+ {
+  "id": "com.apple.iokit.AppleSEPGenericTransfer",
+  "exe": "AppleSEPGenericTransfer",
+  "ver": "1",
+  "addr": 18446744005114587344,
+  "size": 25893,
+  "kmod": 18446744005173428616
+ },
+ {
+  "id": "com.apple.driver.AppleSEPKeyStore",
+  "exe": "AppleSEPKeyStore",
+  "ver": "2",
+  "addr": 18446744005114592288,
+  "size": 315544,
+  "kmod": 18446744005173428952
+ },
+ {
+  "id": "com.apple.driver.AppleSEPManager",
+  "exe": "AppleSEPManager",
+  "ver": "1.0.1",
+  "addr": 18446744005114617024,
+  "size": 465608,
+  "kmod": 18446744005173431560
+ },
+ {
+  "id": "com.apple.driver.AppleSMC",
+  "exe": "AppleSMC",
+  "ver": "3.1.9",
+  "addr": 18446744005114747600,
+  "size": 270043,
+  "kmod": 18446744005173435144
+ },
+ {
+  "id": "com.apple.driver.AppleSMCWirelessCharger",
+  "exe": "AppleSMCWirelessCharger",
+  "ver": "1.0.1",
+  "addr": 18446744005114791952,
+  "size": 96980,
+  "kmod": 18446744005173436872
+ },
+ {
+  "id": "com.apple.driver.AppleSPIMC",
+  "exe": "AppleSPIMC",
+  "ver": "1",
+  "addr": 18446744005114809936,
+  "size": 40467,
+  "kmod": 18446744005173437368
+ },
+ {
+  "id": "com.apple.driver.AppleSPMI",
+  "exe": "AppleSPMI",
+  "ver": "1.0.1",
+  "addr": 18446744005114817632,
+  "size": 71435,
+  "kmod": 18446744005173437672
+ },
+ {
+  "id": "com.apple.driver.AppleSPMIPMU",
+  "exe": "AppleSPMIPMU",
+  "ver": "1.0.1",
+  "addr": 18446744005114830672,
+  "size": 74998,
+  "kmod": 18446744005173437936
+ },
+ {
+  "id": "com.apple.driver.AppleSPU",
+  "exe": "AppleSPU",
+  "ver": "1",
+  "addr": 18446744005114843696,
+  "size": 445688,
+  "kmod": 18446744005173439288
+ },
+ {
+  "id": "com.apple.driver.AppleSPURose",
+  "exe": "AppleSPURose",
+  "ver": "1",
+  "addr": 18446744005114873504,
+  "size": 134474,
+  "kmod": 18446744005173445632
+ },
+ {
+  "id": "com.apple.driver.AppleSPUSphere",
+  "exe": "AppleSPUSphere",
+  "ver": "1",
+  "addr": 18446744005114892000,
+  "size": 13391,
+  "kmod": 18446744005173446840
+ },
+ {
+  "id": "com.apple.driver.AppleSSE",
+  "exe": "AppleSSE",
+  "ver": "1.0",
+  "addr": 18446744005114894848,
+  "size": 47720,
+  "kmod": 18446744005173447328
+ },
+ {
+  "id": "com.apple.driver.AppleSamsungSerial",
+  "exe": "AppleSamsungSerial",
+  "ver": "1.0.0d1",
+  "addr": 18446744005114902592,
+  "size": 12426,
+  "kmod": 18446744005173447672
+ },
+ {
+  "id": "com.apple.driver.AppleSerialShim",
+  "exe": "AppleSerialShim",
+  "ver": "1",
+  "addr": 18446744005114904560,
+  "size": 7098,
+  "kmod": 18446744005173447928
+ },
+ {
+  "id": "com.apple.driver.AppleSmartBatteryManagerEmbedded",
+  "exe": "AppleSmartBatteryManager-Embedded",
+  "ver": "1",
+  "addr": 18446744005114906560,
+  "size": 318943,
+  "kmod": 18446744005173448184
+ },
+ {
+  "id": "com.apple.driver.AppleSmartIO2",
+  "exe": "AppleSmartIO2",
+  "ver": "1",
+  "addr": 18446744005114963104,
+  "size": 81332,
+  "kmod": 18446744005173472296
+ },
+ {
+  "id": "com.apple.driver.AppleStockholmControl",
+  "exe": "AppleStockholmControl",
+  "ver": "1.0.0",
+  "addr": 18446744005114983072,
+  "size": 116834,
+  "kmod": 18446744005173474752
+ },
+ {
+  "id": "com.apple.driver.AppleUSBCardReader",
+  "exe": "AppleUSBCardReader",
+  "ver": "564",
+  "addr": 18446744005115003072,
+  "size": 61032,
+  "kmod": 18446744005173475680
+ },
+ {
+  "id": "com.apple.driver.AppleUSBMassStorageInterfaceNub",
+  "exe": "AppleUSBMassStorageInterfaceNub",
+  "ver": "564",
+  "addr": 18446744005115009648,
+  "size": 11703,
+  "kmod": 18446744005173477256
+ },
+ {
+  "id": "com.apple.driver.AppleSynopsysMIPIDSI",
+  "exe": "AppleSynopsysMIPIDSI",
+  "ver": "1.0.0",
+  "addr": 18446744005115011840,
+  "size": 53254,
+  "kmod": 18446744005173477512
+ },
+ {
+  "id": "com.apple.driver.AppleT8030SOCTuner",
+  "exe": "AppleT8030SOCTuner",
+  "ver": "1",
+  "addr": 18446744005115023488,
+  "size": 12976,
+  "kmod": 18446744005173477888
+ },
+ {
+  "id": "com.apple.driver.AppleT8110",
+  "exe": "AppleT8110",
+  "ver": "1",
+  "addr": 18446744005115026176,
+  "size": 188327,
+  "kmod": 18446744005173478184
+ },
+ {
+  "id": "com.apple.driver.AppleT8110CLPC",
+  "exe": "AppleT8110CLPC",
+  "ver": "1",
+  "addr": 18446744005115063088,
+  "size": 521688,
+  "kmod": 18446744005173524096
+ },
+ {
+  "id": "com.apple.driver.AppleT8110DART",
+  "exe": "AppleT8110DART",
+  "ver": "1",
+  "addr": 18446744005115081216,
+  "size": 84003,
+  "kmod": 18446744005173619960
+ },
+ {
+  "id": "com.apple.driver.AppleT8110PCIe",
+  "exe": "AppleT8110PCIe",
+  "ver": "1",
+  "addr": 18446744005115093664,
+  "size": 70440,
+  "kmod": 18446744005173620288
+ },
+ {
+  "id": "com.apple.driver.AppleT8110PMGR",
+  "exe": "AppleT8110PMGR",
+  "ver": "1",
+  "addr": 18446744005115104352,
+  "size": 117062,
+  "kmod": 18446744005173620912
+ },
+ {
+  "id": "com.apple.driver.AppleTemperatureSensor",
+  "exe": "AppleTemperatureSensor",
+  "ver": "1.0.0d1",
+  "addr": 18446744005115121840,
+  "size": 68500,
+  "kmod": 18446744005173621424
+ },
+ {
+  "id": "com.apple.driver.AppleTopCaseHIDEventDriver",
+  "exe": "AppleTopCaseHIDEventDriver",
+  "ver": "1000.22",
+  "addr": 18446744005115127488,
+  "size": 53579,
+  "kmod": 18446744005173622624
+ },
+ {
+  "id": "com.apple.driver.AppleUSBTopCaseDriver",
+  "exe": "AppleUSBTopCaseDriver",
+  "ver": "1000.22",
+  "addr": 18446744005115136320,
+  "size": 6090,
+  "kmod": 18446744005173623000
+ },
+ {
+  "id": "com.apple.driver.AppleTriStar",
+  "exe": "AppleTriStar",
+  "ver": "1.0.0",
+  "addr": 18446744005115138336,
+  "size": 157587,
+  "kmod": 18446744005173623256
+ },
+ {
+  "id": "com.apple.driver.AppleTypeCPhy",
+  "exe": "AppleTypeCPhy",
+  "ver": "1",
+  "addr": 18446744005115155328,
+  "size": 99574,
+  "kmod": 18446744005173624464
+ },
+ {
+  "id": "com.apple.driver.AppleT8101TypeCPhy",
+  "exe": "AppleT8101TypeCPhy",
+  "ver": "1",
+  "addr": 18446744005115168944,
+  "size": 18943,
+  "kmod": 18446744005173624880
+ },
+ {
+  "id": "com.apple.driver.AppleUSBAudio",
+  "exe": "AppleUSBAudio",
+  "ver": "910.2",
+  "addr": 18446744005115174256,
+  "size": 536324,
+  "kmod": 18446744005173625136
+ },
+ {
+  "id": "com.apple.driver.usb.cdc",
+  "exe": "AppleUSBCDC",
+  "ver": "5.0.0",
+  "addr": 18446744005115190688,
+  "size": 15361,
+  "kmod": 18446744005173626952
+ },
+ {
+  "id": "com.apple.driver.usb.AppleUSBCommon",
+  "exe": "AppleUSBCommon",
+  "ver": "1.0",
+  "addr": 18446744005115192832,
+  "size": 32747,
+  "kmod": 18446744005173627248
+ },
+ {
+  "id": "com.apple.driver.AppleUSBDeviceAudioController",
+  "exe": "AppleUSBDeviceAudioController",
+  "ver": "910.2",
+  "addr": 18446744005115195792,
+  "size": 20138,
+  "kmod": 18446744005173627728
+ },
+ {
+  "id": "com.apple.driver.AppleUSBDeviceMux",
+  "exe": "AppleUSBDeviceMux",
+  "ver": "1.0.0d1",
+  "addr": 18446744005115198432,
+  "size": 34973,
+  "kmod": 18446744005173628024
+ },
+ {
+  "id": "com.apple.driver.AppleUSBDeviceNCM",
+  "exe": "AppleUSBDeviceNCM",
+  "ver": "5.0.0",
+  "addr": 18446744005115205104,
+  "size": 55728,
+  "kmod": 18446744005173628336
+ },
+ {
+  "id": "com.apple.driver.usb.cdc.ecm",
+  "exe": "AppleUSBECM",
+  "ver": "5.0.0",
+  "addr": 18446744005115210896,
+  "size": 27104,
+  "kmod": 18446744005173628752
+ },
+ {
+  "id": "com.apple.driver.usb.ethernet.asix",
+  "exe": "AppleUSBEthernet",
+  "ver": "5.0.0",
+  "addr": 18446744005115213408,
+  "size": 83604,
+  "kmod": 18446744005173629384
+ },
+ {
+  "id": "com.apple.driver.AppleUSBEthernetDevice",
+  "exe": "AppleUSBEthernetDevice",
+  "ver": "7.0",
+  "addr": 18446744005115219248,
+  "size": 25222,
+  "kmod": 18446744005173630104
+ },
+ {
+  "id": "com.apple.driver.AppleUSBEthernetHost",
+  "exe": "AppleUSBEthernetHost",
+  "ver": "8.1.1",
+  "addr": 18446744005115223952,
+  "size": 26876,
+  "kmod": 18446744005173630440
+ },
+ {
+  "id": "com.apple.driver.AppleUSBMike",
+  "exe": "AppleUSBMike",
+  "ver": "1.0.0d1",
+  "addr": 18446744005115228544,
+  "size": 36220,
+  "kmod": 18446744005173630976
+ },
+ {
+  "id": "com.apple.driver.usb.cdc.ncm",
+  "exe": "AppleUSBNCM",
+  "ver": "5.0.0",
+  "addr": 18446744005115235808,
+  "size": 80702,
+  "kmod": 18446744005173631312
+ },
+ {
+  "id": "com.apple.driver.usb.networking",
+  "exe": "AppleUSBNetworking",
+  "ver": "5.0.0",
+  "addr": 18446744005115247040,
+  "size": 21807,
+  "kmod": 18446744005173631776
+ },
+ {
+  "id": "com.apple.driver.AudioDMAController-T8110",
+  "exe": "AudioDMAController_T8110",
+  "ver": "600.45",
+  "addr": 18446744005115250272,
+  "size": 112406,
+  "kmod": 18446744005173632112
+ },
+ {
+  "id": "com.apple.kec.Compression",
+  "exe": "Compression",
+  "ver": "1.0",
+  "addr": 18446744005115265088,
+  "size": 17372,
+  "kmod": 18446744005173633072
+ },
+ {
+  "id": "com.apple.iokit.CoreAnalyticsFamily",
+  "exe": "CoreAnalyticsFamily",
+  "ver": "1",
+  "addr": 18446744005115266272,
+  "size": 60819,
+  "kmod": 18446744005173633296
+ },
+ {
+  "id": "com.apple.kext.CoreTrust",
+  "exe": "CoreTrust",
+  "ver": "1",
+  "addr": 18446744005115282256,
+  "size": 100924,
+  "kmod": 18446744005173633760
+ },
+ {
+  "id": "com.apple.driver.DCPAVFamilyProxy",
+  "exe": "DCPAVFamilyProxy",
+  "ver": "1",
+  "addr": 18446744005115320240,
+  "size": 148829,
+  "kmod": 18446744005173633992
+ },
+ {
+  "id": "com.apple.driver.DCPDPFamilyProxy",
+  "exe": "DCPDPFamilyProxy",
+  "ver": "1",
+  "addr": 18446744005115336704,
+  "size": 31840,
+  "kmod": 18446744005173634976
+ },
+ {
+  "id": "com.apple.iokit.IOMIPIFamily",
+  "exe": "DCPMIPIProxy",
+  "ver": "1",
+  "addr": 18446744005115339744,
+  "size": 13539,
+  "kmod": 18446744005173635432
+ },
+ {
+  "id": "com.apple.EXBrightCalibrationConsumer",
+  "exe": "EXBrightCalibrationConsumer",
+  "ver": "1.0.0",
+  "addr": 18446744005115342432,
+  "size": 8619,
+  "kmod": 18446744005173635728
+ },
+ {
+  "id": "com.apple.driver.ExclavesAudioKext",
+  "exe": "ExclavesAudioKext",
+  "ver": "410.2",
+  "addr": 18446744005115346128,
+  "size": 128806,
+  "kmod": 18446744005173635984
+ },
+ {
+  "id": "com.apple.driver.FairPlayIOKit",
+  "exe": "FairPlayIOKit",
+  "ver": "72.19.0",
+  "addr": 18446744005115371504,
+  "size": 2777928,
+  "kmod": 18446744005173636560
+ },
+ {
+  "id": "com.apple.driver.IISAudioIsolatedStreamECProxy",
+  "exe": "IISAudioIsolatedStreamECProxy",
+  "ver": "610.2",
+  "addr": 18446744005115651392,
+  "size": 16056,
+  "kmod": 18446744005173697320
+ },
+ {
+  "id": "com.apple.iokit.IOAVFamily",
+  "exe": "IOAVFamily",
+  "ver": "1.0.0",
+  "addr": 18446744005115655136,
+  "size": 765568,
+  "kmod": 18446744005173697632
+ },
+ {
+  "id": "com.apple.iokit.IOAccessoryManager",
+  "exe": "IOAccessoryManager",
+  "ver": "1.0.0",
+  "addr": 18446744005115806480,
+  "size": 1295432,
+  "kmod": 18446744005173700472
+ },
+ {
+  "id": "com.apple.iokit.IOAccessoryPortUSB",
+  "exe": "IOAccessoryPortUSB",
+  "ver": "1.0.0",
+  "addr": 18446744005115952992,
+  "size": 16165,
+  "kmod": 18446744005173708640
+ },
+ {
+  "id": "com.apple.iokit.IOAudio2Family",
+  "exe": "IOAudio2Family",
+  "ver": "1.0",
+  "addr": 18446744005115956112,
+  "size": 32152,
+  "kmod": 18446744005173709240
+ },
+ {
+  "id": "com.apple.driver.IOAudioCodecs",
+  "exe": "IOAudioCodecs",
+  "ver": "1.0.0",
+  "addr": 18446744005115958656,
+  "size": 77948,
+  "kmod": 18446744005173709536
+ },
+ {
+  "id": "com.apple.iokit.IOBiometricFamily",
+  "exe": "IOBiometricFamily",
+  "ver": "1",
+  "addr": 18446744005115970768,
+  "size": 92232,
+  "kmod": 18446744005173709832
+ },
+ {
+  "id": "com.apple.iokit.IOCECFamily",
+  "exe": "IOCECFamily",
+  "ver": "1",
+  "addr": 18446744005115982080,
+  "size": 18014,
+  "kmod": 18446744005173710888
+ },
+ {
+  "id": "com.apple.iokit.IOCryptoAcceleratorFamily",
+  "exe": "IOCryptoAcceleratorFamily",
+  "ver": "1.0.1",
+  "addr": 18446744005115984704,
+  "size": 24703,
+  "kmod": 18446744005173711224
+ },
+ {
+  "id": "com.apple.driver.IODARTFamily",
+  "exe": "IODARTFamily",
+  "ver": "1",
+  "addr": 18446744005115987712,
+  "size": 106060,
+  "kmod": 18446744005173711736
+ },
+ {
+  "id": "com.apple.iokit.IODisplayPortFamily",
+  "exe": "IODisplayPortFamily",
+  "ver": "1.0.0",
+  "addr": 18446744005115997344,
+  "size": 539912,
+  "kmod": 18446744005173712312
+ },
+ {
+  "id": "com.apple.iokit.IOGPUFamily",
+  "exe": "IOGPUFamily",
+  "ver": "162.16.1",
+  "addr": 18446744005116075872,
+  "size": 372545,
+  "kmod": 18446744005173714024
+ },
+ {
+  "id": "com.apple.iokit.IOGameControllerFamily",
+  "exe": "IOGameControllerFamily",
+  "ver": "14.1.2",
+  "addr": 18446744005116124496,
+  "size": 154352,
+  "kmod": 18446744005173717360
+ },
+ {
+  "id": "com.apple.iokit.IOHDCPFamily",
+  "exe": "IOHDCPFamily",
+  "ver": "1.0.0",
+  "addr": 18446744005116138768,
+  "size": 94811,
+  "kmod": 18446744005173718240
+ },
+ {
+  "id": "com.apple.driver.DiskImages",
+  "exe": "IOHDIXController",
+  "ver": "493.0.0",
+  "addr": 18446744005116164016,
+  "size": 55856,
+  "kmod": 18446744005173718824
+ },
+ {
+  "id": "com.apple.driver.DiskImages.FileBackingStore",
+  "exe": "AppleDiskImagesFileBackingStore",
+  "ver": "493.0.0",
+  "addr": 18446744005116169088,
+  "size": 10115,
+  "kmod": 18446744005173719320
+ },
+ {
+  "id": "com.apple.driver.DiskImages.KernelBacked",
+  "exe": "AppleDiskImagesKernelBacked",
+  "ver": "493.0.0",
+  "addr": 18446744005116171264,
+  "size": 33802,
+  "kmod": 18446744005173719576
+ },
+ {
+  "id": "com.apple.driver.DiskImages.RAMBackingStore",
+  "exe": "AppleDiskImagesRAMBackingStore",
+  "ver": "493.0.0",
+  "addr": 18446744005116173744,
+  "size": 6892,
+  "kmod": 18446744005173720080
+ },
+ {
+  "id": "com.apple.driver.DiskImages.ReadWriteDiskImage",
+  "exe": "AppleDiskImagesReadWriteDiskImage",
+  "ver": "493.0.0",
+  "addr": 18446744005116175440,
+  "size": 5188,
+  "kmod": 18446744005173720336
+ },
+ {
+  "id": "com.apple.driver.DiskImages.UDIFDiskImage",
+  "exe": "AppleDiskImagesUDIFDiskImage",
+  "ver": "493.0.0",
+  "addr": 18446744005116177008,
+  "size": 73788,
+  "kmod": 18446744005173720592
+ },
+ {
+  "id": "com.apple.iokit.IOHIDFamily",
+  "exe": "IOHIDFamily",
+  "ver": "2.0.0",
+  "addr": 18446744005116191792,
+  "size": 630520,
+  "kmod": 18446744005173721008
+ },
+ {
+  "id": "com.apple.driver.IOHIDPowerSource",
+  "exe": "IOHIDPowerSource",
+  "ver": "1",
+  "addr": 18446744005116228320,
+  "size": 50387,
+  "kmod": 18446744005173727000
+ },
+ {
+  "id": "com.apple.iokit.IOMikeyBusFamily",
+  "exe": "IOMikeyBusFamily",
+  "ver": "1.0.0",
+  "addr": 18446744005116233184,
+  "size": 152264,
+  "kmod": 18446744005173727536
+ },
+ {
+  "id": "com.apple.iokit.IOMobileGraphicsFamily-DCP",
+  "exe": "IOMobileGraphicsFamily-DCP",
+  "ver": "343.0.0",
+  "addr": 18446744005116240704,
+  "size": 243112,
+  "kmod": 18446744005173729128
+ },
+ {
+  "id": "com.apple.iokit.IOMobileGraphicsFamily",
+  "exe": "IOMobileGraphicsFamily",
+  "ver": "343.0.0",
+  "addr": 18446744005116281120,
+  "size": 336232,
+  "kmod": 18446744005173739432
+ },
+ {
+  "id": "com.apple.iokit.IONVMeFamily",
+  "exe": "IONVMeFamily",
+  "ver": "2.1.0",
+  "addr": 18446744005116323072,
+  "size": 521256,
+  "kmod": 18446744005173856752
+ },
+ {
+  "id": "com.apple.iokit.IONetworkFamily",
+  "exe": "IONetworkFamily",
+  "ver": "1.0",
+  "addr": 18446744005116393440,
+  "size": 5063,
+  "kmod": 18446744005173859304
+ },
+ {
+  "id": "com.apple.iokit.IONetworkingFamily",
+  "exe": "IONetworkingFamily",
+  "ver": "3.4",
+  "addr": 18446744005116395040,
+  "size": 151856,
+  "kmod": 18446744005173859560
+ },
+ {
+  "id": "com.apple.iokit.IOPCIFamily",
+  "exe": "IOPCIFamily",
+  "ver": "2.9",
+  "addr": 18446744005116401328,
+  "size": 350422,
+  "kmod": 18446744005173860848
+ },
+ {
+  "id": "com.apple.iokit.IOPortFamily",
+  "exe": "IOPortFamily",
+  "ver": "1.0",
+  "addr": 18446744005116458080,
+  "size": 16732,
+  "kmod": 18446744005173862128
+ },
+ {
+  "id": "com.apple.iokit.IOReportFamily",
+  "exe": "IOReportFamily",
+  "ver": "47",
+  "addr": 18446744005116474464,
+  "size": 20707,
+  "kmod": 18446744005173862344
+ },
+ {
+  "id": "com.apple.iokit.IOSCSIArchitectureModelFamily",
+  "exe": "IOSCSIArchitectureModelFamily",
+  "ver": "565.40.2",
+  "addr": 18446744005116477968,
+  "size": 131845,
+  "kmod": 18446744005173862640
+ },
+ {
+  "id": "com.apple.iokit.IOSCSIBlockCommandsDevice",
+  "exe": "IOSCSIBlockCommandsDevice",
+  "ver": "565.40.2",
+  "addr": 18446744005116485968,
+  "size": 71522,
+  "kmod": 18446744005173864264
+ },
+ {
+  "id": "com.apple.iokit.IOSerialFamily",
+  "exe": "IOSerialFamily",
+  "ver": "11",
+  "addr": 18446744005116492112,
+  "size": 45877,
+  "kmod": 18446744005173865112
+ },
+ {
+  "id": "com.apple.iokit.IOSkywalkFamily",
+  "exe": "IOSkywalkFamily",
+  "ver": "1.0",
+  "addr": 18446744005116495504,
+  "size": 354280,
+  "kmod": 18446744005173866056
+ },
+ {
+  "id": "com.apple.driver.IOSlaveProcessor",
+  "exe": "IOSlaveProcessor",
+  "ver": "1",
+  "addr": 18446744005116519584,
+  "size": 15466,
+  "kmod": 18446744005173868400
+ },
+ {
+  "id": "com.apple.iokit.IOSlowAdaptiveClockingFamily",
+  "exe": "IOSlowAdaptiveClockingFamily",
+  "ver": "1.0.0",
+  "addr": 18446744005116521392,
+  "size": 18872,
+  "kmod": 18446744005173868856
+ },
+ {
+  "id": "com.apple.iokit.IOStorageFamily",
+  "exe": "IOStorageFamily",
+  "ver": "2.1",
+  "addr": 18446744005116524688,
+  "size": 149697,
+  "kmod": 18446744005173869152
+ },
+ {
+  "id": "com.apple.iokit.IOStreamFamily",
+  "exe": "IOStreamFamily",
+  "ver": "1.1.0",
+  "addr": 18446744005116532928,
+  "size": 23316,
+  "kmod": 18446744005173870112
+ },
+ {
+  "id": "com.apple.iokit.IOSurface",
+  "exe": "IOSurface",
+  "ver": "403.1",
+  "addr": 18446744005116534832,
+  "size": 273756,
+  "kmod": 18446744005173870488
+ },
+ {
+  "id": "com.apple.IOTextEncryptionFamily",
+  "exe": "IOTextEncryptionFamily",
+  "ver": "1.0.0",
+  "addr": 18446744005116564192,
+  "size": 13495,
+  "kmod": 18446744005173872040
+ },
+ {
+  "id": "com.apple.iokit.IOTimeSyncFamily",
+  "exe": "IOTimeSyncFamily",
+  "ver": "1510.9",
+  "addr": 18446744005116566384,
+  "size": 318117,
+  "kmod": 18446744005173872424
+ },
+ {
+  "id": "com.apple.iokit.IOUSBDeviceFamily",
+  "exe": "IOUSBDeviceFamily",
+  "ver": "2.0.0",
+  "addr": 18446744005116620688,
+  "size": 222080,
+  "kmod": 18446744005173874368
+ },
+ {
+  "id": "com.apple.driver.AppleUSBXDCI",
+  "exe": "AppleUSBXDCI",
+  "ver": "1.0",
+  "addr": 18446744005116645232,
+  "size": 170176,
+  "kmod": 18446744005173875144
+ },
+ {
+  "id": "com.apple.driver.AppleUSBXDCIARM",
+  "exe": "AppleUSBXDCIARM",
+  "ver": "1.0",
+  "addr": 18446744005116679984,
+  "size": 410046,
+  "kmod": 18446744005173875600
+ },
+ {
+  "id": "com.apple.iokit.IOUSBHostFamily",
+  "exe": "IOUSBHostFamily",
+  "ver": "1.2",
+  "addr": 18446744005116739568,
+  "size": 767912,
+  "kmod": 18446744005173876376
+ },
+ {
+  "id": "com.apple.driver.usb.AppleSynopsysUSBXHCI",
+  "exe": "AppleSynopsysUSBXHCI",
+  "ver": "1",
+  "addr": 18446744005116825616,
+  "size": 436730,
+  "kmod": 18446744005173879320
+ },
+ {
+  "id": "com.apple.driver.usb.AppleUSBHostCompositeDevice",
+  "exe": "AppleUSBHostCompositeDevice",
+  "ver": "1.2",
+  "addr": 18446744005116880736,
+  "size": 19803,
+  "kmod": 18446744005173880288
+ },
+ {
+  "id": "com.apple.driver.usb.AppleUSBHostDeviceSupport",
+  "exe": "AppleUSBHostDeviceSupport",
+  "ver": "1.0",
+  "addr": 18446744005116883920,
+  "size": 6231,
+  "kmod": 18446744005173880624
+ },
+ {
+  "id": "com.apple.driver.AppleUSBHostMergeProperties",
+  "exe": "AppleUSBHostMergeProperties",
+  "ver": "1.2",
+  "addr": 18446744005116885808,
+  "size": 6482,
+  "kmod": 18446744005173880880
+ },
+ {
+  "id": "com.apple.driver.usb.AppleUSBHostPacketFilter",
+  "exe": "AppleUSBHostPacketFilter",
+  "ver": "1.0",
+  "addr": 18446744005116887536,
+  "size": 15125,
+  "kmod": 18446744005173881144
+ },
+ {
+  "id": "com.apple.driver.usb.AppleUSBHostiOSDevice",
+  "exe": "AppleUSBHostiOSDevice",
+  "ver": "1.0",
+  "addr": 18446744005116892128,
+  "size": 12246,
+  "kmod": 18446744005173881432
+ },
+ {
+  "id": "com.apple.driver.usb.AppleUSBHub",
+  "exe": "AppleUSBHub",
+  "ver": "1.2",
+  "addr": 18446744005116895712,
+  "size": 145080,
+  "kmod": 18446744005173881688
+ },
+ {
+  "id": "com.apple.driver.usb.AppleUSBXHCI",
+  "exe": "AppleUSBXHCI",
+  "ver": "1.2",
+  "addr": 18446744005116913280,
+  "size": 374856,
+  "kmod": 18446744005173882184
+ },
+ {
+  "id": "com.apple.driver.usb.IOUSBHostHIDDevice",
+  "exe": "IOUSBHostHIDDevice",
+  "ver": "1.2",
+  "addr": 18446744005116958240,
+  "size": 41687,
+  "kmod": 18446744005173883400
+ },
+ {
+  "id": "com.apple.iokit.IOUSBMassStorageDriver",
+  "exe": "IOUSBMassStorageDriver",
+  "ver": "283",
+  "addr": 18446744005116965056,
+  "size": 155861,
+  "kmod": 18446744005173883696
+ },
+ {
+  "id": "com.apple.iokit.IOUserEthernet",
+  "exe": "IOUserEthernet",
+  "ver": "1.0.1",
+  "addr": 18446744005116977792,
+  "size": 38141,
+  "kmod": 18446744005173884480
+ },
+ {
+  "id": "com.apple.plugin.IOgPTPPlugin",
+  "exe": "IOgPTPPlugin",
+  "ver": "1510.9",
+  "addr": 18446744005116982672,
+  "size": 675542,
+  "kmod": 18446744005173884880
+ },
+ {
+  "id": "com.apple.security.Image4",
+  "exe": "Image4",
+  "ver": "1.0.0",
+  "addr": 18446744005117127472,
+  "size": 133032,
+  "kmod": 18446744005173886776
+ },
+ {
+  "id": "com.apple.nke.l2tp",
+  "exe": "L2TP",
+  "ver": "1.9",
+  "addr": 18446744005117175120,
+  "size": 28216,
+  "kmod": 18446744005173888728
+ },
+ {
+  "id": "com.apple.nke.ppp",
+  "exe": "PPP",
+  "ver": "1.9",
+  "addr": 18446744005117179376,
+  "size": 43172,
+  "kmod": 18446744005173893552
+ },
+ {
+  "id": "com.apple.driver.RTBuddy",
+  "exe": "RTBuddy",
+  "ver": "1.0.0",
+  "addr": 18446744005117187936,
+  "size": 406224,
+  "kmod": 18446744005173894480
+ },
+ {
+  "id": "com.apple.security.sandbox",
+  "exe": "Sandbox",
+  "ver": "300.0",
+  "addr": 18446744005117237696,
+  "size": 2425322,
+  "kmod": 18446744005173897744
+ },
+ {
+  "id": "com.apple.driver.VideoProcessing",
+  "exe": "VCPDRM",
+  "ver": "1.0",
+  "addr": 18446744005119313872,
+  "size": 11720,
+  "kmod": 18446744005173985104
+ },
+ {
+  "id": "com.apple.filesystems.apfs",
+  "exe": "apfs",
+  "ver": "3288.42.1",
+  "addr": 18446744005119316560,
+  "size": 1804485,
+  "kmod": 18446744005173985400
+ },
+ {
+  "id": "com.apple.driver.corecapture",
+  "exe": "corecapture",
+  "ver": "1.0.4",
+  "addr": 18446744005119649232,
+  "size": 232964,
+  "kmod": 18446744005173990608
+ },
+ {
+  "id": "com.apple.kec.corecrypto",
+  "exe": "corecrypto",
+  "ver": "27.0",
+  "addr": 18446744005119678032,
+  "size": 579008,
+  "kmod": 18446744005173992272
+ },
+ {
+  "id": "com.apple.filesystems.lifs",
+  "exe": "lifs",
+  "ver": "1",
+  "addr": 18446744005119763392,
+  "size": 174320,
+  "kmod": 18446744005174013192
+ },
+ {
+  "id": "com.apple.driver.mDNSOffloadUserClient-Embedded",
+  "exe": "mDNSOffloadUserClient-Embedded",
+  "ver": "1.0.1b8",
+  "addr": 18446744005119785104,
+  "size": 23914,
+  "kmod": 18446744005174015048
+ },
+ {
+  "id": "com.apple.filesystems.tmpfs",
+  "exe": "tmpfs",
+  "ver": "1",
+  "addr": 18446744005119791376,
+  "size": 48622,
+  "kmod": 18446744005174015352
+ }
+]

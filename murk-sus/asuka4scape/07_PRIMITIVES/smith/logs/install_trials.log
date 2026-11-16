@@ -1,0 +1,72 @@
+===== RootKey-modcd Вт 03 ноя 2026 11:31:02 UTC
+2026-11-03 14:31:02 femboychik-systemproductname pymobiledevice3.services.installation_proxy[5599] INFO Stage: InspectingPackage
+2026-11-03 14:31:03 femboychik-systemproductname pymobiledevice3.services.installation_proxy[5599] INFO Stage: PreflightingApplication
+2026-11-03 14:31:03 femboychik-systemproductname pymobiledevice3.services.installation_proxy[5599] INFO Stage: VerifyingApplication
+install ━━━━━━━━━━━━━━━━                          40%  40/100  0:00:01
+2026-11-03 14:31:03 femboychik-systemproductname pymobiledevice3.__main__[5599] ERROR ApplicationVerificationFailed: Failed to verify code signature of /var/installd/Library/Caches/com.apple.mobile.installd.staging/temp.6VgkQu/extracted/Payload/RootKey.app : 0xe8008001 (An unknown error has occurred.)
+2026-11-03 14:31:03 femboychik-systemproductname pymobiledevice3.__main__[5599] INFO Run again with -v for the full traceback (include it when reporting an issue)
+rc=1
+===== RootKey-modcdours Вт 03 ноя 2026 11:31:03 UTC
+2026-11-03 14:31:03 femboychik-systemproductname pymobiledevice3.services.installation_proxy[5613] INFO Stage: InspectingPackage
+2026-11-03 14:31:04 femboychik-systemproductname pymobiledevice3.services.installation_proxy[5613] INFO Stage: PreflightingApplication
+2026-11-03 14:31:04 femboychik-systemproductname pymobiledevice3.services.installation_proxy[5613] INFO Stage: VerifyingApplication
+install ━━━━━━━━━━━━━━━━                          40%  40/100  0:00:01
+2026-11-03 14:31:04 femboychik-systemproductname pymobiledevice3.__main__[5613] ERROR ApplicationVerificationFailed: Failed to verify code signature of /var/installd/Library/Caches/com.apple.mobile.installd.staging/temp.mOmPlT/extracted/Payload/RootKey.app : 0xe8008001 (An unknown error has occurred.)
+2026-11-03 14:31:04 femboychik-systemproductname pymobiledevice3.__main__[5613] INFO Run again with -v for the full traceback (include it when reporting an issue)
+rc=1
+===== RootKey-iphone Вт 03 ноя 2026 11:31:04 UTC
+2026-11-03 14:31:04 femboychik-systemproductname pymobiledevice3.services.installation_proxy[5633] INFO Stage: InspectingPackage
+2026-11-03 14:31:05 femboychik-systemproductname pymobiledevice3.services.installation_proxy[5633] INFO Stage: PreflightingApplication
+2026-11-03 14:31:05 femboychik-systemproductname pymobiledevice3.services.installation_proxy[5633] INFO Stage: VerifyingApplication
+install ━━━━━━━━━━━━━━━━                          40%  40/100  0:00:01
+2026-11-03 14:31:05 femboychik-systemproductname pymobiledevice3.__main__[5633] ERROR ApplicationVerificationFailed: Failed to verify code signature of /var/installd/Library/Caches/com.apple.mobile.installd.staging/temp.B1oxNT/extracted/Payload/RootKey.app : 0xe8008001 (An unknown error has occurred.)
+2026-11-03 14:31:05 femboychik-systemproductname pymobiledevice3.__main__[5633] INFO Run again with -v for the full traceback (include it when reporting an issue)
+rc=1
+===== RootKey-tsrev Вт 03 ноя 2026 11:31:05 UTC
+2026-11-03 14:31:06 femboychik-systemproductname pymobiledevice3.services.installation_proxy[5646] INFO Stage: InspectingPackage
+2026-11-03 14:31:06 femboychik-systemproductname pymobiledevice3.services.installation_proxy[5646] INFO Stage: PreflightingApplication
+2026-11-03 14:31:06 femboychik-systemproductname pymobiledevice3.services.installation_proxy[5646] INFO Stage: VerifyingApplication
+install ━━━━━━━━━━━━━━━━                          40%  40/100  0:00:01
+2026-11-03 14:31:06 femboychik-systemproductname pymobiledevice3.__main__[5646] ERROR ApplicationVerificationFailed: Failed to verify code signature of /var/installd/Library/Caches/com.apple.mobile.installd.staging/temp.hHdMkx/extracted/Payload/RootKey.app : 0xe8008001 (An unknown error has occurred.)
+2026-11-03 14:31:06 femboychik-systemproductname pymobiledevice3.__main__[5646] INFO Run again with -v for the full traceback (include it when reporting an issue)
+rc=1
+===== CFProbe-HSBC-ts Вт 03 ноя 2026 11:31:06 UTC
+2026-11-03 14:31:07 femboychik-systemproductname pymobiledevice3.services.installation_proxy[5658] INFO Stage: InspectingPackage
+2026-11-03 14:31:07 femboychik-systemproductname pymobiledevice3.services.installation_proxy[5658] INFO Stage: PreflightingApplication
+2026-11-03 14:31:08 femboychik-systemproductname pymobiledevice3.services.installation_proxy[5658] INFO Stage: VerifyingApplication
+install ━━━━━━━━━━━━━━━━                          40%  40/100  0:00:02
+2026-11-03 14:31:08 femboychik-systemproductname pymobiledevice3.__main__[5658] ERROR ApplicationVerificationFailed: Failed to verify code signature of /var/installd/Library/Caches/com.apple.mobile.installd.staging/temp.0ZHWhx/extracted/Payload/CFProbe.app : 0xe8008001 (An unknown error has occurred.)
+2026-11-03 14:31:08 femboychik-systemproductname pymobiledevice3.__main__[5658] INFO Run again with -v for the full traceback (include it when reporting an issue)
+rc=1
+===== CFProbe-HSBC-modcd Вт 03 ноя 2026 11:31:08 UTC
+2026-11-03 14:31:09 femboychik-systemproductname pymobiledevice3.services.installation_proxy[5672] INFO Stage: InspectingPackage
+2026-11-03 14:31:09 femboychik-systemproductname pymobiledevice3.services.installation_proxy[5672] INFO Stage: PreflightingApplication
+2026-11-03 14:31:09 femboychik-systemproductname pymobiledevice3.services.installation_proxy[5672] INFO Stage: VerifyingApplication
+install ━━━━━━━━━━━━━━━━                          40%  40/100  0:00:01
+2026-11-03 14:31:09 femboychik-systemproductname pymobiledevice3.__main__[5672] ERROR ApplicationVerificationFailed: Failed to verify code signature of /var/installd/Library/Caches/com.apple.mobile.installd.staging/temp.vBuRFX/extracted/Payload/CFProbe.app : 0xe8008001 (An unknown error has occurred.)
+2026-11-03 14:31:09 femboychik-systemproductname pymobiledevice3.__main__[5672] INFO Run again with -v for the full traceback (include it when reporting an issue)
+rc=1
+===== CFProbe-ts Вт 03 ноя 2026 11:31:09 UTC
+2026-11-03 14:31:10 femboychik-systemproductname pymobiledevice3.services.installation_proxy[5685] INFO Stage: InspectingPackage
+2026-11-03 14:31:10 femboychik-systemproductname pymobiledevice3.services.installation_proxy[5685] INFO Stage: PreflightingApplication
+2026-11-03 14:31:10 femboychik-systemproductname pymobiledevice3.services.installation_proxy[5685] INFO Stage: VerifyingApplication
+install ━━━━━━━━━━━━━━━━                          40%  40/100  0:00:01
+2026-11-03 14:31:10 femboychik-systemproductname pymobiledevice3.__main__[5685] ERROR ApplicationVerificationFailed: Failed to verify code signature of /var/installd/Library/Caches/com.apple.mobile.installd.staging/temp.Cd6b9z/extracted/Payload/CFProbe.app : 0xe8008001 (An unknown error has occurred.)
+2026-11-03 14:31:10 femboychik-systemproductname pymobiledevice3.__main__[5685] INFO Run again with -v for the full traceback (include it when reporting an issue)
+rc=1
+===== CFProbe-modcd Вт 03 ноя 2026 11:31:10 UTC
+2026-11-03 14:31:11 femboychik-systemproductname pymobiledevice3.services.installation_proxy[5697] INFO Stage: InspectingPackage
+2026-11-03 14:31:11 femboychik-systemproductname pymobiledevice3.services.installation_proxy[5697] INFO Stage: PreflightingApplication
+2026-11-03 14:31:11 femboychik-systemproductname pymobiledevice3.services.installation_proxy[5697] INFO Stage: VerifyingApplication
+install ━━━━━━━━━━━━━━━━                          40%  40/100  0:00:01
+2026-11-03 14:31:11 femboychik-systemproductname pymobiledevice3.__main__[5697] ERROR ApplicationVerificationFailed: Failed to verify code signature of /var/installd/Library/Caches/com.apple.mobile.installd.staging/temp.RBtpcA/extracted/Payload/CFProbe.app : 0xe8008001 (An unknown error has occurred.)
+2026-11-03 14:31:11 femboychik-systemproductname pymobiledevice3.__main__[5697] INFO Run again with -v for the full traceback (include it when reporting an issue)
+rc=1
+===== MCMProbe-ts Вт 03 ноя 2026 11:31:11 UTC
+2026-11-03 14:31:12 femboychik-systemproductname pymobiledevice3.services.installation_proxy[5709] INFO Stage: InspectingPackage
+2026-11-03 14:31:12 femboychik-systemproductname pymobiledevice3.services.installation_proxy[5709] INFO Stage: PreflightingApplication
+2026-11-03 14:31:12 femboychik-systemproductname pymobiledevice3.services.installation_proxy[5709] INFO Stage: VerifyingApplication
+install ━━━━━━━━━━━━━━━━                          40%  40/100  0:00:01
+2026-11-03 14:31:12 femboychik-systemproductname pymobiledevice3.__main__[5709] ERROR ApplicationVerificationFailed: Failed to verify code signature of /var/installd/Library/Caches/com.apple.mobile.installd.staging/temp.d3GXIM/extracted/Payload/MCMProbe.app : 0xe8008001 (An unknown error has occurred.)
+2026-11-03 14:31:12 femboychik-systemproductname pymobiledevice3.__main__[5709] INFO Run again with -v for the full traceback (include it when reporting an issue)
+rc=1

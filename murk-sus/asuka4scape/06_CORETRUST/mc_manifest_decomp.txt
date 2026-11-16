@@ -1,0 +1,539 @@
+//===== FUN 18fe33e18 _MCProfileConnectionXPCProtocolInterface =====
+
+/* WARNING: Control flow encountered bad instruction data */
+
+void _MCProfileConnectionXPCProtocolInterface(void)
+
+{
+  code *pcVar1;
+  ulong unaff_x30;
+  
+  if (_MCProfileConnectionXPCProtocolInterface_onceToken != -1) {
+    _MCProfileConnectionXPCProtocolInterface_cold_1();
+  }
+  if (((unaff_x30 ^ unaff_x30 << 1) >> 0x3e & 1) != 0) {
+                    /* WARNING: Does not return */
+    pcVar1 = (code *)SoftwareBreakpoint(0xc471,0x18fe33e3c);
+    (*pcVar1)();
+  }
+                    /* WARNING: Bad instruction - Truncating control flow here */
+  halt_baddata();
+}
+
+
+
+//===== FUN 18fe33e5c _MCProfileConnectionXPCProtocolInterface.cold.1 =====
+
+/* WARNING: Control flow encountered bad instruction data */
+
+void _MCProfileConnectionXPCProtocolInterface_cold_1(void)
+
+{
+                    /* WARNING: Bad instruction - Truncating control flow here */
+  halt_baddata();
+}
+
+
+
+//===== FUN 18fe435e0 _MCSystemManifestPath =====
+
+/* WARNING: Control flow encountered bad instruction data */
+
+void _MCSystemManifestPath(void)
+
+{
+  code *pcVar1;
+  ulong unaff_x30;
+  
+  if (_MCSystemManifestPath_once != -1) {
+    _MCSystemManifestPath_cold_1();
+  }
+  if (((unaff_x30 ^ unaff_x30 << 1) >> 0x3e & 1) != 0) {
+                    /* WARNING: Does not return */
+    pcVar1 = (code *)SoftwareBreakpoint(0xc471,0x18fe43604);
+    (*pcVar1)();
+  }
+                    /* WARNING: Bad instruction - Truncating control flow here */
+  halt_baddata();
+}
+
+
+
+//===== FUN 18fe43754 _MCUserManifestPath =====
+
+/* WARNING: Control flow encountered bad instruction data */
+
+void _MCUserManifestPath(void)
+
+{
+  code *pcVar1;
+  ulong unaff_x30;
+  
+  if (_MCUserManifestPath_once != -1) {
+    _MCUserManifestPath_cold_1();
+  }
+  if (((unaff_x30 ^ unaff_x30 << 1) >> 0x3e & 1) != 0) {
+                    /* WARNING: Does not return */
+    pcVar1 = (code *)SoftwareBreakpoint(0xc471,0x18fe43778);
+    (*pcVar1)();
+  }
+                    /* WARNING: Bad instruction - Truncating control flow here */
+  halt_baddata();
+}
+
+
+
+//===== FUN 18fe43798 _MCUserManifestPath.cold.1 =====
+
+/* WARNING: Control flow encountered bad instruction data */
+
+void _MCUserManifestPath_cold_1(void)
+
+{
+                    /* WARNING: Bad instruction - Truncating control flow here */
+  halt_baddata();
+}
+
+
+
+//===== FUN 18fe437ac _MCSystemManifestPath.cold.1 =====
+
+/* WARNING: Control flow encountered bad instruction data */
+
+void _MCSystemManifestPath_cold_1(void)
+
+{
+                    /* WARNING: Bad instruction - Truncating control flow here */
+  halt_baddata();
+}
+
+
+
+//===== FUN 18fe55610 _MCHoldingTankManifestName =====
+
+/* WARNING: Control flow encountered bad instruction data */
+
+void _MCHoldingTankManifestName(void)
+
+{
+  code *pcVar1;
+  ulong unaff_x30;
+  
+  if (_MCHoldingTankManifestName_once != -1) {
+    _MCHoldingTankManifestName_cold_1();
+  }
+  if (((unaff_x30 ^ unaff_x30 << 1) >> 0x3e & 1) != 0) {
+                    /* WARNING: Does not return */
+    pcVar1 = (code *)SoftwareBreakpoint(0xc471,0x18fe55634);
+    (*pcVar1)();
+  }
+                    /* WARNING: Bad instruction - Truncating control flow here */
+  halt_baddata();
+}
+
+
+
+//===== FUN 18fe5bd18 __populateMissingManifestDictionaries =====
+
+/* WARNING: Control flow encountered bad instruction data */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void __populateMissingManifestDictionaries(void)
+
+{
+  code *pcVar1;
+  undefined8 uVar2;
+  long lVar3;
+  undefined8 extraout_x1;
+  undefined8 extraout_x1_00;
+  undefined8 uVar4;
+  ulong unaff_x30;
+  undefined1 auVar5 [16];
+  
+  auVar5 = func_0x0001900cc6f0();
+  uVar2 = auVar5._0_8_;
+  func_0x000190002a60(uVar2,auVar5._8_8_,&cf_OrderedProfiles);
+  lVar3 = func_0x0001900cc520();
+  func_0x0001900cc620();
+  uVar4 = extraout_x1;
+  if (lVar3 == 0) {
+    func_0x000190001670(_DAT_1e00fe200);
+    auVar5 = func_0x0001900cc520();
+    func_0x0001900039b0(uVar2,auVar5._8_8_,auVar5._0_8_,&cf_OrderedProfiles);
+    func_0x0001900cc620();
+    uVar4 = extraout_x1_00;
+  }
+  func_0x000190002a60(uVar2,uVar4,&cf_HiddenProfiles);
+  lVar3 = func_0x0001900cc520();
+  func_0x0001900cc620();
+  if (lVar3 == 0) {
+    func_0x000190001670(_DAT_1e00fe200);
+    auVar5 = func_0x0001900cc520();
+    func_0x0001900039b0(uVar2,auVar5._8_8_,auVar5._0_8_,&cf_HiddenProfiles);
+    func_0x0001900cc620();
+  }
+  if (((unaff_x30 ^ unaff_x30 << 1) >> 0x3e & 1) != 0) {
+                    /* WARNING: Does not return */
+    pcVar1 = (code *)SoftwareBreakpoint(0xc471,0x18fe5bde8);
+    (*pcVar1)();
+  }
+                    /* WARNING: Bad instruction - Truncating control flow here */
+  halt_baddata();
+}
+
+
+
+//===== FUN 18fee2ec4 ___67-[MCProfileConnection(MDM)_storeCertificateData:forHostIdentifier:]_block_invoke =====
+
+void ___67__MCProfileConnection_MDM__storeCertificateData_forHostIdentifier___block_invoke(void)
+
+{
+  int iVar1;
+  long lVar2;
+  undefined8 uVar3;
+  undefined4 uStack_40;
+  undefined8 uStack_3c;
+  
+  lVar2 = func_0x0001900cc730();
+  if ((lVar2 != 0) && (iVar1 = func_0x0001900cc910(DAT_1ede35e10,0x10), iVar1 != 0)) {
+    uVar3 = func_0x0001900cc7b0();
+    func_0x0001900b8aa0(lVar2);
+    uStack_3c = func_0x0001900cc520();
+    uStack_40 = (undefined4)DAT_18ff31810;
+    func_0x0001900cc170(&MACH_HEADER,uVar3,0x10,"Store certificate data error. Error: %{public}@",
+                        &uStack_40,0xc);
+    func_0x0001900cc640();
+    func_0x0001900cc630();
+  }
+  func_0x0001900cc620();
+  return;
+}
+
+
+
+//===== FUN 18ff0c834 _MCHoldingTankManifestName.cold.1 =====
+
+/* WARNING: Control flow encountered bad instruction data */
+
+void _MCHoldingTankManifestName_cold_1(void)
+
+{
+                    /* WARNING: Bad instruction - Truncating control flow here */
+  halt_baddata();
+}
+
+
+
+//===== FUN 18ff0c938 _MCProfileEventsFilePath.cold.1 =====
+
+/* WARNING: Control flow encountered bad instruction data */
+
+void _MCProfileEventsFilePath_cold_1(void)
+
+{
+                    /* WARNING: Bad instruction - Truncating control flow here */
+  halt_baddata();
+}
+
+
+
+//===== FUN 18ff0cc1c +[MCManifest_sharedManifest].cold.1 =====
+
+/* WARNING: Control flow encountered bad instruction data */
+
+void __MCManifest_sharedManifest__cold_1(void)
+
+{
+                    /* WARNING: Bad instruction - Truncating control flow here */
+  halt_baddata();
+}
+
+
+
+//===== FUN 18ff0d064 +[MCHoldingTankManifest_sharedManifest].cold.1 =====
+
+/* WARNING: Control flow encountered bad instruction data */
+
+void __MCHoldingTankManifest_sharedManifest__cold_1(void)
+
+{
+                    /* WARNING: Bad instruction - Truncating control flow here */
+  halt_baddata();
+}
+
+
+
+//===== FUN 18ff0d1e0 -[MCProfileConnection(Profiles)_preflightUserInputResponses:forPayloadIndex:].cold.1 =====
+
+void __MCProfileConnection_Profiles__preflightUserInputResponses_forPayloadIndex___cold_1
+               (undefined8 param_1)
+
+{
+  _OUTLINED_FUNCTION_0(DAT_18ff318b8,param_1,param_1);
+  _OUTLINED_FUNCTION_1();
+  _OUTLINED_FUNCTION_2(0x45d);
+  _OUTLINED_FUNCTION_3();
+  return;
+}
+
+
+
+//===== FUN 18ff0d22c -[MCProfileConnection(Profiles)_cancelUserInputResponses].cold.1 =====
+
+void __MCProfileConnection_Profiles__cancelUserInputResponses__cold_1(undefined8 param_1)
+
+{
+  _OUTLINED_FUNCTION_0(DAT_18ff318b8,param_1,param_1);
+  _OUTLINED_FUNCTION_1();
+  _OUTLINED_FUNCTION_2(0x466);
+  _OUTLINED_FUNCTION_3();
+  return;
+}
+
+
+
+//===== FUN 18ff0d278 -[MCProfileConnection(Profiles)_submitUserInputResponses:].cold.1 =====
+
+void __MCProfileConnection_Profiles__submitUserInputResponses___cold_1(undefined8 param_1)
+
+{
+  _OUTLINED_FUNCTION_0(DAT_18ff318b8,param_1,param_1);
+  _OUTLINED_FUNCTION_1();
+  _OUTLINED_FUNCTION_2(0x46f);
+  _OUTLINED_FUNCTION_3();
+  return;
+}
+
+
+
+//===== FUN 18ff0d2c4 -[MCProfileConnection(Profiles)_respondToWarningsContinueInstallation:].cold.1 =====
+
+void __MCProfileConnection_Profiles__respondToWarningsContinueInstallation___cold_1
+               (undefined8 param_1)
+
+{
+  _OUTLINED_FUNCTION_0(DAT_18ff318b8,param_1,param_1);
+  _OUTLINED_FUNCTION_1();
+  _OUTLINED_FUNCTION_2(0x487);
+  _OUTLINED_FUNCTION_3();
+  return;
+}
+
+
+
+//===== FUN 18ff0d310 -[MCProfileConnection(Profiles)_respondToCurrentPasscodeRequestContinue:passcode:].cold.1 =====
+
+void __MCProfileConnection_Profiles__respondToCurrentPasscodeRequestContinue_passcode___cold_1
+               (undefined8 param_1)
+
+{
+  _OUTLINED_FUNCTION_0(DAT_18ff318b8,param_1,param_1);
+  _OUTLINED_FUNCTION_1();
+  _OUTLINED_FUNCTION_2(0x490);
+  _OUTLINED_FUNCTION_3();
+  return;
+}
+
+
+
+//===== FUN 18ff0d35c -[MCProfileConnection(Profiles)_respondToCurrentPasscodeRequestContinue:passcodeContext:].cold.1 =====
+
+void __MCProfileConnection_Profiles__respondToCurrentPasscodeRequestContinue_passcodeContext___cold_1
+               (undefined8 param_1)
+
+{
+  _OUTLINED_FUNCTION_0(DAT_18ff318b8,param_1,param_1);
+  _OUTLINED_FUNCTION_1();
+  _OUTLINED_FUNCTION_2(0x499);
+  _OUTLINED_FUNCTION_3();
+  return;
+}
+
+
+
+//===== FUN 18ff0d3a8 +[MCProfileConnection(Settings)_features].cold.1 =====
+
+/* WARNING: Control flow encountered bad instruction data */
+
+void __MCProfileConnection_Settings__features__cold_1(void)
+
+{
+                    /* WARNING: Bad instruction - Truncating control flow here */
+  halt_baddata();
+}
+
+
+
+//===== FUN 18ff0d3bc -[MCProfileConnection(Misc)_isAppleIntelligenceRestricted].cold.1 =====
+
+/* WARNING: Control flow encountered bad instruction data */
+
+void __MCProfileConnection_Misc__isAppleIntelligenceRestricted__cold_1(void)
+
+{
+                    /* WARNING: Bad instruction - Truncating control flow here */
+  halt_baddata();
+}
+
+
+
+//===== FUN 18ff0d3d0 -[MCProfileConnection(Private)_doMCICDidUpdateStatus:completion:].cold.1 =====
+
+void __MCProfileConnection_Private__doMCICDidUpdateStatus_completion___cold_1(undefined8 param_1)
+
+{
+  _OUTLINED_FUNCTION_0(DAT_18ff318b8,param_1,param_1);
+  _OUTLINED_FUNCTION_1();
+  _OUTLINED_FUNCTION_2(0x89);
+  _OUTLINED_FUNCTION_3();
+  return;
+}
+
+
+
+//===== FUN 18ff0d41c -[MCProfileConnection(Private)_doMCICDidRequestCurrentPasscodeNeedsExtractable:withCompletion:].cold.1 =====
+
+void __MCProfileConnection_Private__doMCICDidRequestCurrentPasscodeNeedsExtractable_withCompletion___cold_1
+               (undefined8 param_1)
+
+{
+  _OUTLINED_FUNCTION_0(DAT_18ff318b8,param_1,param_1);
+  _OUTLINED_FUNCTION_1();
+  _OUTLINED_FUNCTION_2(0x92);
+  _OUTLINED_FUNCTION_3();
+  return;
+}
+
+
+
+//===== FUN 18ff0d468 -[MCProfileConnection(Private)_doMCICDidBeginInstallingNextProfileData:completion:].cold.1 =====
+
+void __MCProfileConnection_Private__doMCICDidBeginInstallingNextProfileData_completion___cold_1
+               (undefined8 param_1)
+
+{
+  _OUTLINED_FUNCTION_0(DAT_18ff318b8,param_1,param_1);
+  _OUTLINED_FUNCTION_1();
+  _OUTLINED_FUNCTION_2(0xa0);
+  _OUTLINED_FUNCTION_3();
+  return;
+}
+
+
+
+//===== FUN 18ff0d4b4 -[MCProfileConnection(Private)_doMCICDidFinishInstallationWithIdentifier:error:completion:].cold.1 =====
+
+void __MCProfileConnection_Private__doMCICDidFinishInstallationWithIdentifier_error_completion___cold_1
+               (undefined8 param_1)
+
+{
+  _OUTLINED_FUNCTION_0(DAT_18ff318b8,param_1,param_1);
+  _OUTLINED_FUNCTION_1();
+  _OUTLINED_FUNCTION_2(0xae);
+  _OUTLINED_FUNCTION_3();
+  return;
+}
+
+
+
+//===== FUN 18ff0d500 -[MCProfileConnection(Private)_doMCICDidRequestUserInput:completion:].cold.1 =====
+
+void __MCProfileConnection_Private__doMCICDidRequestUserInput_completion___cold_1
+               (undefined8 param_1)
+
+{
+  _OUTLINED_FUNCTION_0(DAT_18ff318b8,param_1,param_1);
+  _OUTLINED_FUNCTION_1();
+  _OUTLINED_FUNCTION_2(0xb8);
+  _OUTLINED_FUNCTION_3();
+  return;
+}
+
+
+
+//===== FUN 18ff0d54c -[MCProfileConnection(Private)_doMCICDidRequestShowUserWarnings:completion:].cold.1 =====
+
+void __MCProfileConnection_Private__doMCICDidRequestShowUserWarnings_completion___cold_1
+               (undefined8 param_1)
+
+{
+  _OUTLINED_FUNCTION_0(DAT_18ff318b8,param_1,param_1);
+  _OUTLINED_FUNCTION_1();
+  _OUTLINED_FUNCTION_2(199);
+  _OUTLINED_FUNCTION_3();
+  return;
+}
+
+
+
+//===== FUN 18ff0d598 -[MCProfileConnection(Private)_doMCICDidFinishPreflightWithError:completion:].cold.1 =====
+
+void __MCProfileConnection_Private__doMCICDidFinishPreflightWithError_completion___cold_1
+               (undefined8 param_1)
+
+{
+  _OUTLINED_FUNCTION_0(DAT_18ff318b8,param_1,param_1);
+  _OUTLINED_FUNCTION_1();
+  _OUTLINED_FUNCTION_2(0xd3);
+  _OUTLINED_FUNCTION_3();
+  return;
+}
+
+
+
+//===== FUN 18ff0d5e4 -[MCProfileConnection(Private)_doMCICWaitForEnrollmentToFinishWithCompletion:].cold.1 =====
+
+void __MCProfileConnection_Private__doMCICWaitForEnrollmentToFinishWithCompletion___cold_1
+               (undefined8 param_1)
+
+{
+  _OUTLINED_FUNCTION_0(DAT_18ff318b8,param_1,param_1);
+  _OUTLINED_FUNCTION_1();
+  _OUTLINED_FUNCTION_2(0xd9);
+  _OUTLINED_FUNCTION_3();
+  return;
+}
+
+
+
+//===== FUN 18ff0d6e4 -[MCProfile_mayInstallWithOptions:hasInteractionClient:outError:].cold.1 =====
+
+/* WARNING: Control flow encountered bad instruction data */
+
+void __MCProfile_mayInstallWithOptions_hasInteractionClient_outError___cold_1(void)
+
+{
+                    /* WARNING: Bad instruction - Truncating control flow here */
+  halt_baddata();
+}
+
+
+
+//===== FUN 18ff2244c _aks_measure_and_seal_cryptex_manifest.cold.1 =====
+
+void _aks_measure_and_seal_cryptex_manifest_cold_1(void)
+
+{
+  _OUTLINED_FUNCTION_0();
+  _OUTLINED_FUNCTION_10();
+  _OUTLINED_FUNCTION_0();
+  func_0x0001900cfbc0();
+  return;
+}
+
+
+
+//===== FUN 18ff22488 _aks_seal_cryptex_manifest_lock.cold.1 =====
+
+void _aks_seal_cryptex_manifest_lock_cold_1(void)
+
+{
+  _OUTLINED_FUNCTION_0();
+  _OUTLINED_FUNCTION_10();
+  _OUTLINED_FUNCTION_0();
+  func_0x0001900cfbc0();
+  return;
+}
+
+
+

@@ -1,0 +1,13 @@
+=== VCPDRM probe start ===
+match VCPDRMService -> 0x4513
+  open VCPDRMService type=0 kr=0xe00002e2 conn=0x0
+  open VCPDRMService type=1 kr=0xe00002bd conn=0x0
+  open VCPDRMService type=2 kr=0xe00002bd conn=0x0
+  open VCPDRMService type=3 kr=0xe00002bd conn=0x0
+match VCPDRMServiceUserClient -> 0x0
+match VCPDRMUserClient -> 0x0
+match com.apple.VCPDirtyDetectionDRMHandler -> 0x0
+match VideoProcessingDRM -> 0x0
+match AppleVideoToolboxParavirtualizationDriver -> 0x0
+match AppleVideoToolboxParavirtualizationUserClient -> 0x0
+no VCPDRM user client opened

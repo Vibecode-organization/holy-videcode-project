@@ -1,0 +1,73 @@
+
+7-Zip 26.03 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-09-03
+ 64-bit locale=ru_RU.UTF-8 Threads:8 OPEN_MAX:524288, ASM
+
+Scanning the drive for archives:
+1 file, 5263851520 bytes (5020 MiB)
+
+Extracting archive: 094-96507-085.dmg
+
+WARNINGS:
+Unsupported method
+
+WARNING:
+094-96507-085.dmg
+Cannot open the file as [Dmg] archive
+The file is open as [APFS] archive
+
+--
+Path = 094-96507-085.dmg
+Open WARNING: Cannot open the file as [Dmg] archive
+Type = APFS
+WARNINGS:
+Unsupported method
+Physical Size = 5263851520
+Name = LuckG23G71.D83SystemCryptex.apfs
+Characteristics = COPY-attr ZBM-rsrc
+ID = eb76c2959ed2498cb31213cc909532fe
+Cluster Size = 4096
+Created = 2026-07-17 05:24:10.980220649
+Modified = 2026-07-17 05:24:46.200805000
+Comment = 
+{
+block_size: 4096
+fs_index: 0
+volume_name: LuckG23G71.D83SystemCryptex
+vol_uuid: 0d7d3106db43431683cfd8d29c439dd7
+incompatible_features: NORMALIZATION_INSENSITIVE SEALED_VOLUME
+im_flags: 0
+im_hash_type: SHA256
+fs_alloc_count: 1241279
+num_files: 1806
+num_directories: 846
+num_symlinks: 2
+num_other_fsobjects: 0
+Num_Attr_Streams: 3196
+num_snapshots: 0
+total_blocks_alloced: 1321612
+total_blocks_freed: 86580
+unmounted: 2026-07-17 05:24:46.200808000
+last_modified: 2026-07-17 05:24:46.200808000
+formatted_by: newfs_apfs (2142.41.2.100.2)
+  timestamp: 2026-07-17 05:24:10.980220649
+  last_xid: 2
+modified_by[0]: apfs_sealvolume (2811.160.7.0.4
+  timestamp: 2026-07-17 05:24:46.200805000
+  last_xid: 16
+modified_by[1]: apfs_kext (2142.41.2.100.2)
+  timestamp: 2026-07-17 05:24:42.334996303
+  last_xid: 15
+}
+
+ERROR: Unsupported Method : System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64e.72.dyldlinkedit
+ERROR: Unsupported Method : System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64e.35.dyldlinkedit
+ERROR: Unsupported Method : System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64e.symbols
+ERROR: Unsupported Method : System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64e.83.dyldlinkedit
+
+Sub items Errors: 4
+
+Archives with Errors: 1
+
+Warnings: 1
+
+Sub items Errors: 4

@@ -1,0 +1,3 @@
+funcs 225 225
+identical 225 ratio 1.0
+changed regions 0

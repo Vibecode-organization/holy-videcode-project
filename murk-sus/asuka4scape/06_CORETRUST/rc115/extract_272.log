@@ -1,0 +1,32 @@
+start Вт 27 окт 2026 22:30:04 MSK
+download done Вт 27 окт 2026 22:57:11 MSK
+-rw-r--r-- 1 femboychik femboychik 11435385034 окт 27 22:55 iPhone14,7_27.2_24B115_Restore.ipsw
+--- dmg.aea ---
+8388608000  2007-01-09 09:41   141-10327-211.dmg.aea
+2415919104  2007-01-09 09:41   141-09773-223.dmg.aea
+ROOT=141-10327-211.dmg.aea
+extracting 141-10327-211.dmg.aea Вт 27 окт 2026 22:57:11 MSK
+141-10327-211.dmg.aea   bad CRC ebcfd6b1  (should be 4b6ea81b)
+-rw-r--r-- 1 femboychik femboychik 8388608000 окт 27 23:00 root272.dmg.aea
+decrypting aea Вт 27 окт 2026 23:00:02 MSK
+   • Using pure Go implementation for AEA decryption
+   ⨯ failed to parse AEA: failed to decrypt clusters: failed to decrypt cluster #1: invalid segment #217 HMAC: 155415a09a62683d7701ec752cef7bd6c6eeefbae928ec00085463b89e512d56; expected 1c57047e0dc9e306e2eb549797f1cee972a26c9b9d07aa1e0f00c12705bbd6cf
+итого 484364
+drwxr-xr-x 2 femboychik femboychik      4096 окт 27 23:00 .
+drwxr-xr-x 4 femboychik femboychik      4096 окт 27 23:00 ..
+-rw-r--r-- 1 femboychik femboychik 495976448 окт 27 23:00 root272.dmg
+--- root fs listing ---
+
+ERROR: out272/root272.dmg : out272/root272.dmg
+Open ERROR: Cannot open the file as [Dmg] archive
+
+
+
+installd                       0
+containermanagerd              0
+amfid                          0
+sharingd                       0
+quicklookd                     0
+mediaparserd                   0
+streaming_zip_conduit          0
+done Вт 27 окт 2026 23:00:13 MSK

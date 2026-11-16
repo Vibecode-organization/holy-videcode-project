@@ -1,0 +1,350 @@
+================ BQ272 v11 final tool ================
+date=2026-11-08 09:21:26 +0000 uid=501
+dlopen MCM = 0x3773153c0 (ok)
+xpc sym create=0x18d727250 release=0x18d72770c array=0x18d7329b0 append=0x18d732bcc
+sym create=0x2150c746c class=0x2150c7c2c ids=0x2150d0dd4 gids=0x2150c7648 flags=0x2150c7e2c part=0x2150e7ffc domain=0x2150e8224 one=0x2150ce1ec path=0x2150e93c0 token=0x2150d60e4 free=0x2150ce0c8 consume=0x2d7983560 release=0x2d79837ec
+group=file:///private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/
+escape[mgapply]: target=/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /private/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches ret=0 errno=0
+escape[mgapply]: result=0x10589bac0
+escape[mgapply]: token=YES consume=2
+mg: read=10740 bytes
+mg: backup -> /var/mobile/Containers/Data/Application/B68504AD-F186-4DF1-BA17-3577DED6BA5E/Documents/OriginalGestalt.plist
+mg: top keys=(
+    CacheUUID,
+    CacheData,
+    CacheExtra,
+    CacheVersion
+)
+mg: CacheExtra keys=79
+mg: island before=(null)
+mg: APPLY set=1 removed=0 bytes=10772 write=1 rename=0 errno=2
+mg: island after=1
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[mgapply]: release handle + restore Caches
+scan: 246 containers
+escape[scan]: target=/var/mobile/Containers/Data/Application/E8F3FE05-149F-4634-A907-7765B3FA861E
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/E8F3FE05-149F-4634-A907-7765B3FA861E ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=3
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/C22D5D9A-66FE-40C3-934D-3667BF7529C9
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/C22D5D9A-66FE-40C3-934D-3667BF7529C9 ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=4
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/BF3F43DA-17D5-4FB2-A83E-9D862905B7EC
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/BF3F43DA-17D5-4FB2-A83E-9D862905B7EC ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=5
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/1D6931FA-A411-42AC-9A48-970BF7668A3C
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/1D6931FA-A411-42AC-9A48-970BF7668A3C ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=6
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/F4FE709E-664A-4BE1-BE60-B966BD859194
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/F4FE709E-664A-4BE1-BE60-B966BD859194 ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=7
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/FFAB761A-C7D7-45B8-859C-F0DD232A41DD
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/FFAB761A-C7D7-45B8-859C-F0DD232A41DD ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=8
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/E75375F6-D622-4DA8-9A6F-9B09CB243418
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/E75375F6-D622-4DA8-9A6F-9B09CB243418 ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=9
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/7C19B8DC-866D-4061-9716-1E5B58937CEF
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/7C19B8DC-866D-4061-9716-1E5B58937CEF ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=10
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/5BFDC3B4-9F81-4459-ACE8-FBE5B1F487EF
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/5BFDC3B4-9F81-4459-ACE8-FBE5B1F487EF ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=11
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/47BDAE06-A53C-4882-81FD-E2B9481F8967
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/47BDAE06-A53C-4882-81FD-E2B9481F8967 ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=12
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/11763893-F087-4C82-8803-FB553579F442
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/11763893-F087-4C82-8803-FB553579F442 ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=13
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/36BF9374-EE9D-4A34-9CFB-02B64925F392
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/36BF9374-EE9D-4A34-9CFB-02B64925F392 ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=14
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/FC4D9AAB-47CA-4E8F-956E-43D9DB3514B8
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/FC4D9AAB-47CA-4E8F-956E-43D9DB3514B8 ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=15
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/20858B1C-CFC6-48D4-961D-4A07452B3F8A
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/20858B1C-CFC6-48D4-961D-4A07452B3F8A ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=16
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/E0B78741-1510-4799-BD29-1A239482899B
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/E0B78741-1510-4799-BD29-1A239482899B ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=17
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/E2CBEA89-C3D1-488E-82D9-EBA0E0A3E327
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/E2CBEA89-C3D1-488E-82D9-EBA0E0A3E327 ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=18
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/D15A95F0-1659-46DD-A9DA-786E422E1B27
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/D15A95F0-1659-46DD-A9DA-786E422E1B27 ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=19
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/FD5D8E97-3655-4C8B-8768-AAA847398DAA
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/FD5D8E97-3655-4C8B-8768-AAA847398DAA ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=20
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/2640E704-2B32-4EF2-92C3-1FF0FAC22EFF
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/2640E704-2B32-4EF2-92C3-1FF0FAC22EFF ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=21
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/0F93D25D-DAA6-4A06-8A15-B5B022DED0EB
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/0F93D25D-DAA6-4A06-8A15-B5B022DED0EB ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=22
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/8C506A8D-BC98-4D26-A7DC-A480BC44A921
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/8C506A8D-BC98-4D26-A7DC-A480BC44A921 ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=23
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/AA7BDA79-932A-447A-9788-D04B487681B7
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/AA7BDA79-932A-447A-9788-D04B487681B7 ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=24
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/FFA8DE70-095D-44DF-8086-5864E9A184E8
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/FFA8DE70-095D-44DF-8086-5864E9A184E8 ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=25
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/43E1578F-F4CD-48B8-969C-B9B21E23A691
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/43E1578F-F4CD-48B8-969C-B9B21E23A691 ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=26
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/A12181F4-0D84-43BE-AADC-533BD25B97EA
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/A12181F4-0D84-43BE-AADC-533BD25B97EA ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=27
+scan: n=25
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/3018985C-5626-49B9-B6D4-CA6F5E3EE9CE
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/3018985C-5626-49B9-B6D4-CA6F5E3EE9CE ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=28
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/3B49F0D4-648D-4E57-9B49-38338B2A6CA2
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/3B49F0D4-648D-4E57-9B49-38338B2A6CA2 ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=29
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/93F62B77-027C-4B04-AD9A-9A672EEB0401
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/93F62B77-027C-4B04-AD9A-9A672EEB0401 ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=30
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/13374924-1A64-49A7-9732-566D3DBB1A7D
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/13374924-1A64-49A7-9732-566D3DBB1A7D ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=31
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/11071B93-4535-4A8D-BD10-F993879CB74F
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/11071B93-4535-4A8D-BD10-F993879CB74F ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=32
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/97C018AC-E896-46FE-8B15-C63F08268713
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/97C018AC-E896-46FE-8B15-C63F08268713 ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=33
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/F8593D71-EE80-4F8E-8B9E-FA89E21AF49F
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/F8593D71-EE80-4F8E-8B9E-FA89E21AF49F ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=34
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/23816073-3151-4D41-B265-779750EA2598
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/23816073-3151-4D41-B265-779750EA2598 ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=35
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/BB603433-C9FB-48A4-8882-076013534C8F
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/BB603433-C9FB-48A4-8882-076013534C8F ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=36
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/AE7B7AE5-3F31-4D86-8A9D-0F552EABB1E3
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/AE7B7AE5-3F31-4D86-8A9D-0F552EABB1E3 ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=37
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/2D207F9A-E033-4766-A2BD-F4E0343F272F
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/2D207F9A-E033-4766-A2BD-F4E0343F272F ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=38
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/CF86ED3A-AD43-42F4-88F4-7E5AC864C6C5
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/CF86ED3A-AD43-42F4-88F4-7E5AC864C6C5 ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=39
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/2CD67D0D-EED0-47B1-9BE4-4FCE9B1E70FD
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/2CD67D0D-EED0-47B1-9BE4-4FCE9B1E70FD ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=40
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/9B0178F4-78DB-47C8-9CC2-DD7D7BA1F413
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/9B0178F4-78DB-47C8-9CC2-DD7D7BA1F413 ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=41
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/2124BF44-8427-4C38-A61D-0F90E1630E66
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/2124BF44-8427-4C38-A61D-0F90E1630E66 ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=42
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/B897F615-B398-453E-90C3-7D6FC205C895
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/B897F615-B398-453E-90C3-7D6FC205C895 ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=43
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/3EC56835-9B27-4BA5-8273-47D1AC77327F
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/3EC56835-9B27-4BA5-8273-47D1AC77327F ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=44
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/21A6B4DA-4620-45F9-B932-8AFBCDA6D6D5
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/21A6B4DA-4620-45F9-B932-8AFBCDA6D6D5 ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=45
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/2FC2029F-DE27-434E-9BE9-0583BA168C47
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/2FC2029F-DE27-434E-9BE9-0583BA168C47 ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=46
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/59B74AA1-604D-4EE2-AE74-885C63E6CA72
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/59B74AA1-604D-4EE2-AE74-885C63E6CA72 ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=47
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/259D30CC-0EB3-40AE-9D8C-6B71B31BCE88
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/259D30CC-0EB3-40AE-9D8C-6B71B31BCE88 ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=48
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/55467368-F188-409A-B013-35B20AB16A79
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/55467368-F188-409A-B013-35B20AB16A79 ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=49
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/178687FA-4A0C-438B-828F-45B02C73234C
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/178687FA-4A0C-438B-828F-45B02C73234C ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=50
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/17521C69-D7D6-4EE1-BD72-3A662167717A
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/17521C69-D7D6-4EE1-BD72-3A662167717A ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=51
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/947F81E5-CD19-490F-8EFF-7F6DAD80A76C
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/947F81E5-CD19-490F-8EFF-7F6DAD80A76C ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=52
+scan: n=50
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/4D4AC32D-EBA2-4D67-A9EB-5722473AC2CC
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/4D4AC32D-EBA2-4D67-A9EB-5722473AC2CC ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=53
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+escape[scan]: target=/var/mobile/Containers/Data/Application/967AA218-2C52-4D2B-B47F-2B20FC356783
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/967AA218-2C52-4D2B-B47F-2B20FC356783 ret=0 errno=0
+escape[scan]: result=0x1058988c0
+escape[scan]: token=YES consume=54
+scan: FOUND Library/Application Support/PRBPosterExtensionDataStore in 967AA218-2C52-4D2B-B47F-2B20FC356783 (n=52)
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[scan]: release handle + restore Caches
+PosterBoard container=/var/mobile/Containers/Data/Application/967AA218-2C52-4D2B-B47F-2B20FC356783
+escape[pb]: target=/var/mobile/Containers/Data/Application/967AA218-2C52-4D2B-B47F-2B20FC356783
+swap: symlink /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches -> /var/mobile/Containers/Data/Application/967AA218-2C52-4D2B-B47F-2B20FC356783 ret=0 errno=0
+escape[pb]: result=0x1058988c0
+escape[pb]: token=YES consume=55
+  readdir(/private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches/Library/Application Support) OK n=3: com.apple.PosterKit PRBPosterExtensionDataStore ArchivedDataStores 
+wallpapers: no source dir /var/mobile/Containers/Data/Application/B68504AD-F186-4DF1-BA17-3577DED6BA5E/Documents/PosterBoard/Wallpapers
+restore: /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches.bq_cur -> /private/var/mobile/Containers/Shared/AppGroup/D772088F-51FE-415F-8A8B-1D20117FF87B/Library/Caches ok=1 err=(null)
+escape[pb]: release handle + restore Caches
+================ PROBE_DONE ================

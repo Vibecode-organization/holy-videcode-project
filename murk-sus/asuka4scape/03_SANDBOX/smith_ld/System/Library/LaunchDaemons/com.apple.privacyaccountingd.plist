@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnablePressuredExit</key>
+	<true/>
+	<key>Label</key>
+	<string>com.apple.privacyaccountingd</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/System/Library/PrivateFrameworks/PrivacyAccounting.framework/Versions/A/Resources/privacyaccountingd</string>
+	</array>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.privacyaccountingd</key>
+		<true/>
+	</dict>
+	<key>POSIXSpawnType</key>
+	<string>Adaptive</string>
+	<key>UserName</key>
+	<string>mobile</string>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.xpc.activity</key>
+		<dict>
+			<key>com.apple.privacyaccountingd.prune</key>
+			<dict>
+				<key>Interval</key>
+				<integer>86400</integer>
+				<key>DiskIntensive</key>
+				<true/>
+				<key>RequiresClassA</key>
+				<true/>
+			</dict>
+			<key>com.apple.privacyaccountingd.analytics</key>
+			<dict>
+				<key>Interval</key>
+				<integer>86400</integer>
+				<key>Priority</key>
+				<string>Maintenance</string>
+				<key>RequiresClassA</key>
+				<true/>
+			</dict>
+		</dict>
+		<key>com.apple.distnoted.matching.trusted</key>
+		<dict>
+			<key>com.apple.LaunchServices.applicationUnregistered</key>
+			<dict>
+				<key>Name</key>
+				<string>com.apple.LaunchServices.applicationUnregistered</string>
+			</dict>
+		</dict>
+		<key>com.apple.notifyd.matching</key>
+		<dict>
+			<key>com.apple.private.restrict-post.Preferences.ResetPrivacyWarningsNotification</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.private.restrict-post.Preferences.ResetPrivacyWarningsNotification</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

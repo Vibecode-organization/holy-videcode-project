@@ -1,0 +1,1169 @@
+fffffff00762d528	CSTRING	com.apple.family
+fffffff00762d539	CSTRING	com.apple.mobilenotes
+fffffff00762d54f	CSTRING	com.apple.abm-helper
+fffffff00762d564	CSTRING	com.apple.springboard
+fffffff00762d57a	CSTRING	com.apple.WebKit.WebContent
+fffffff00762d596	CSTRING	com.apple.BlastDoor
+fffffff00762d5aa	CSTRING	com.apple.IDSBlastDoorSupport
+fffffff00762d5c8	CSTRING	com.apple.IDSBlastDoorService
+fffffff00762d5e6	CSTRING	com.apple.MediaAnalysisBlastDoorSupport
+fffffff00762d60e	CSTRING	com.apple.MediaAnalysisBlastDoorService
+fffffff00762d636	CSTRING	com.apple.MessagesBlastDoorSupport
+fffffff00762d659	CSTRING	com.apple.MessagesBlastDoorService
+fffffff00762d67c	CSTRING	com.apple.MessagesAirlockService
+fffffff00762d69d	CSTRING	com.apple.TelephonyBlastDoorSupport
+fffffff00762d6c1	CSTRING	com.apple.TelephonyBlastDoorService
+fffffff00762d6e5	CSTRING	com.apple.WalletBlastDoorSupport
+fffffff00762d706	CSTRING	com.apple.WalletBlastDoorService
+fffffff00762d727	CSTRING	AppleMobileFileIntegrityUserClient
+fffffff00762d74a	CSTRING	site.AppleMobileFileIntegrityUserClient
+fffffff00762d772	CSTRING	12111112122212121111111111112
+fffffff00762d790	CSTRING	root
+fffffff00762d795	CSTRING	%s: unrecognized method selector %d\n
+fffffff00762d7ba	CSTRING	virtual IOReturn AppleMobileFileIntegrityUserClient::externalMethod(uint32_t, IOExternalMethodArguments *, IOExternalMethodDispatch *, OSObject *, void *)
+fffffff00762d855	CSTRING	%s: could not get target\n
+fffffff00762d86f	CSTRING	static IOReturn AppleMobileFileIntegrityUserClient::setDenylist(OSObject *, void *, IOExternalMethodArguments *)
+fffffff00762d8e0	CSTRING	%s: target is not AppleMobileFileIntegrity object\n
+fffffff00762d913	CSTRING	%s: could not get current process\n
+fffffff00762d936	CSTRING	com.apple.private.amfi.can-set-denylist
+fffffff00762d95e	CSTRING	%s: failure getting can set denylist entitlement for process %d\n
+fffffff00762d99f	CSTRING	%s: process %d not allowed to set denylist\n
+fffffff00762d9cb	CSTRING	copyPackedData failed: %d\n
+fffffff00762d9e6	CSTRING	Invalid denylist\n
+fffffff00762d9f8	CSTRING	%s: input too large: %llu\n
+fffffff00762da13	CSTRING	static IOReturn AppleMobileFileIntegrityUserClient::copyBytesFromInputArguments(IOExternalMethodArguments *, void **, IOByteCount *)
+fffffff00762da98	CSTRING	%s: unable to allocate %llu bytes\n
+fffffff00762dabb	CSTRING	%s: prepare failed: 0x%x\n
+fffffff00762dad5	CSTRING	%s: short input: %zu < %zu\n
+fffffff00762daf1	CSTRING	copyTrustCacheAndManifestFromInputArgument
+fffffff00762db1c	CSTRING	%s: blob too large: %zu\n
+fffffff00762db35	CSTRING	%s: prepare failed: %d\n
+fffffff00762db4d	CSTRING	%s: total length overflow: %zu != %zu + %zu\n
+fffffff00762db7a	CSTRING	%s: data length overflow: %zu (= %zu + %zu)\n
+fffffff00762dba7	CSTRING	%s: expected length overflow: %zu (total len %zu + %zu)\n
+fffffff00762dbe0	CSTRING	%s: short input data: %zu < %zu\n
+fffffff00762dc01	CSTRING	%s: PID %d is requesting a trust cache load\n
+fffffff00762dc2e	CSTRING	static IOReturn AppleMobileFileIntegrityUserClient::loadTrustCache(OSObject *, void *, IOExternalMethodArguments *)
+fffffff00762dca2	CSTRING	com.apple.private.amfi.can-load-trust-cache
+fffffff00762dcce	CSTRING	%s: failure getting load trust cache entitlement for process %d\n
+fffffff00762dd0f	CSTRING	%s: process %d not allowed to load trust cache\n
+fffffff00762dd3f	CSTRING	%s: copyBytesFromInputArguments failed: %d\n
+fffffff00762dd6b	CSTRING	%s: copyTrustCacheAndManifestFromInputArgument failed: %d\n
+fffffff00762dda6	CSTRING	%s: invalid load trust cache selector %d\n
+fffffff00762ddd0	CSTRING	static IOReturn AppleMobileFileIntegrityUserClient::loadCompilationServiceCodeDirectoryHash(OSObject *, void *, IOExternalMethodArguments *)
+fffffff00762de5d	CSTRING	com.apple.private.amfi.can-load-cdhash
+fffffff00762de84	CSTRING	%s: could not get entitlements\n
+fffffff00762dea4	CSTRING	%s: only allowed process can modify the compilation service trust cache\n
+fffffff00762deed	CSTRING	static IOReturn AppleMobileFileIntegrityUserClient::isCdhashInTrustCache(OSObject *, void *, IOExternalMethodArguments *)
+fffffff00762df67	CSTRING	%s: Process %d is checking if a cdhash is in the trust cache\n
+fffffff00762dfa5	CSTRING	%s: Returning IOReturn 0x%x to process %d\n
+fffffff00762dfd0	CSTRING	com.apple.private.amfi.developer-mode-control
+fffffff00762dffe	CSTRING	AMFI: armSecurityBootMode: invalid scalarInput\n
+fffffff00762e02e	CSTRING	AMFI: armSecurityBootMode: invalid scalarInputCount\n
+fffffff00762e063	CSTRING	com.apple.private.amfi.garbage-collect-profiles
+fffffff00762e093	CSTRING	AMFI: completeSecurityBootMode: invalid scalarInput\n
+fffffff00762e0c8	CSTRING	AMFI: completeSecurityBootMode: invalid scalarInputCount\n
+fffffff00762e102	CSTRING	Entry count is too large, failing: %lld\n
+fffffff00762e12b	CSTRING	Unable to allocate %llu bytes\n
+fffffff00762e14a	CSTRING	Memory prepare failed: 0x%x\n
+fffffff00762e167	CSTRING	Invalid data length: %lld entries, %u bytes\n
+fffffff00762e194	CSTRING	"Failed to add encyclopedia to MetaEncyclopedia" @%s:%d
+fffffff00762e1cc	CSTRING	MetaEncyclopedia.cpp
+fffffff00762e1e1	CSTRING	No Process
+fffffff00762e1ec	CSTRING	is-init-proc
+fffffff00762e1f9	CSTRING	is-kernel-proc
+fffffff00762e208	CSTRING	platform
+fffffff00762e211	CSTRING	code-signing-flags
+fffffff00762e224	CSTRING	site.ProcessAccessor
+fffffff00762e239	CSTRING	1122211222112012122222
+fffffff00762e250	CSTRING	%s: unable to obtain AKS services for checking unlock state, failing.\n
+fffffff00762e297	CSTRING	boolean_t deviceUnlocked(bool *)
+fffffff00762e2b8	CSTRING	%s: error %d when querying AKS for extended lock state, failing.\n
+fffffff00762e2fa	CSTRING	%s: device is not unlocked (lock_state %d).\n
+fffffff00762e327	CSTRING	Caller provided a disallowed launch type
+fffffff00762e350	CSTRING	AMFI: Unknown Launch Type: %d\n
+fffffff00762e36f	CSTRING	site.LaunchTypeNonePolicy
+fffffff00762e389	CSTRING	site.LaunchTypeSystemServicePolicy
+fffffff00762e3ac	CSTRING	site.LaunchTypeSysdiagnosePolicy
+fffffff00762e3cd	CSTRING	site.LaunchTypeApplicationPolicy
+fffffff00762e3ee	CSTRING	IODTNVRAM
+fffffff00762e3f8	CSTRING	%s: NVRAM service not available
+fffffff00762e418	CSTRING	AMFIInMobileObliterationPhase
+fffffff00762e436	CSTRING	oblit-inprogress
+fffffff00762e447	CSTRING	"AMFI: not capturing mobile obliteration state" @%s:%d
+fffffff00762e47e	CSTRING	LocalSigning.cpp
+fffffff00762e48f	CSTRING	/arm-io/sep/iop-sep-nub/xART
+fffffff00762e4ac	CSTRING	"AMFI: calling %s without xART storage support" @%s:%d
+fffffff00762e4e3	CSTRING	AMFIProtectedDataAvailable
+fffffff00762e4fe	CSTRING	/chosen
+fffffff00762e506	CSTRING	"AMFI: no chosen device tree node!" @%s:%d
+fffffff00762e531	CSTRING	protected-data-access
+fffffff00762e547	CSTRING	"AMFI: no protected-data-access device tree node!" @%s:%d
+fffffff00762e581	CSTRING	"AMFI: protected-data-access has unexpected size (%u)!" @%s:%d
+fffffff00762e5c0	CSTRING	-restore
+fffffff00762e5c9	CSTRING	%s: unable to get amfid daemon port: %d\n
+fffffff00762e5f2	CSTRING	%s: daemon replied with error: %d\n
+fffffff00762e615	CSTRING	%s: daemon token not trusted\n
+fffffff00762e633	CSTRING	"AMFI: %s: unable to obtain local signing public key at early boot" @%s:%d
+fffffff00762e67e	CSTRING	AMFIGetLocalSigningPublicKey
+fffffff00762e69b	CSTRING	%s: local signing public key not available with daemon\n
+fffffff00762e6d3	CSTRING	AMFISetLocalSigningPublicKey
+fffffff00762e6f0	CSTRING	"AMFI: unexpectedly failed to obtain AKS services" @%s:%d
+fffffff00762e72a	CSTRING	AMFI: unable to obtain AKS services\n
+fffffff00762e74f	CSTRING	AMFI: disabling local signing due to AKS error: %x\n
+fffffff00762e783	CSTRING	AMFI: unable to obtain local signing public key from AKS: %x\n
+fffffff00762e7c1	CSTRING	AMFI: disabling local signing due to key length: %lu\n
+fffffff00762e7f7	CSTRING	AMFI: disabling local signing due to allow3rdParty = false\n
+fffffff00762e833	CSTRING	AMFI: disabling local signing due to restore environment\n
+fffffff00762e86d	CSTRING	AMFI: disabling local signing due to no protected data access\n
+fffffff00762e8ac	CSTRING	AMFI: disabling local signing due to failed MO query: %d\n
+fffffff00762e8e6	CSTRING	AMFI: disabling local signing due to mobile obliteration\n
+fffffff00762e920	CSTRING	Constraint not matched
+fffffff00762e937	CSTRING	com.apple.CoreLocation.PrivateMode
+fffffff00762e95a	CSTRING	com.apple.QuartzCore.global-capture
+fffffff00762e97e	CSTRING	com.apple.QuartzCore.secure-capture
+fffffff00762e9a2	CSTRING	com.apple.QuartzCore.secure-mode
+fffffff00762e9c3	CSTRING	com.apple.accounts.appleaccount.fullaccess
+fffffff00762e9ee	CSTRING	com.apple.avfoundation.allow-capture-filter-rendering
+fffffff00762ea24	CSTRING	com.apple.avfoundation.allow-still-image-capture-shutter-sound-manipulation
+fffffff00762ea70	CSTRING	com.apple.backboardd.debugapplications
+fffffff00762ea97	CSTRING	com.apple.backboardd.launchapplications
+fffffff00762eabf	CSTRING	com.apple.basebandd.xpc.allow
+fffffff00762eadd	CSTRING	com.apple.camera.iokit-user-access
+fffffff00762eb00	CSTRING	com.apple.coretelephony.Identity.get
+fffffff00762eb25	CSTRING	com.apple.diagnosticd.diagnostic
+fffffff00762eb46	CSTRING	com.apple.locationd.activity
+fffffff00762eb63	CSTRING	com.apple.locationd.private_info
+fffffff00762eb84	CSTRING	com.apple.nvram.boot-args-set-allow
+fffffff00762eba8	CSTRING	com.apple.private.CallHistory.read
+fffffff00762ebcb	CSTRING	com.apple.private.MobileContainerManager.allowed
+fffffff00762ebfc	CSTRING	com.apple.private.MobileGestalt.AllowProtectedKeys
+fffffff00762ec2f	CSTRING	com.apple.private.accounts.allaccounts
+fffffff00762ec56	CSTRING	com.apple.private.amfi.can-check-trust-cache
+fffffff00762ec83	CSTRING	com.apple.private.amfi.can-execute-cdhash
+fffffff00762ecad	CSTRING	com.apple.private.apfs.revert-to-snapshot
+fffffff00762ecd7	CSTRING	com.apple.private.avfoundation.capture.nonstandard-client.allow
+fffffff00762ed17	CSTRING	com.apple.private.cloudkit.spi
+fffffff00762ed36	CSTRING	com.apple.private.contacts
+fffffff00762ed51	CSTRING	com.apple.private.corespotlight.receiver
+fffffff00762ed7a	CSTRING	com.apple.private.cs.debugger
+fffffff00762ed98	CSTRING	com.apple.private.email
+fffffff00762edb0	CSTRING	com.apple.private.hid.manager.client
+fffffff00762edd5	CSTRING	com.apple.private.host-exception-port-override
+fffffff00762ee04	CSTRING	com.apple.private.kernel.system-override
+fffffff00762ee2d	CSTRING	com.apple.private.mediaexperience.suppressrecordingstatetosystemstatus
+fffffff00762ee74	CSTRING	com.apple.private.osanalytics.defaults.allow
+fffffff00762eea1	CSTRING	com.apple.private.osanalytics.defaults.read-all.allow
+fffffff00762eed7	CSTRING	com.apple.private.photoanalysisd.access
+fffffff00762eeff	CSTRING	com.apple.private.security.container-manager
+fffffff00762ef2c	CSTRING	com.apple.private.security.disk-device-access
+fffffff00762ef5a	CSTRING	com.apple.private.security.no-container
+fffffff00762ef82	CSTRING	com.apple.private.security.no-sandbox
+fffffff00762efa8	CSTRING	com.apple.private.security.storage-exempt.heritable
+fffffff00762efdc	CSTRING	com.apple.private.set-exception-port
+fffffff00762f001	CSTRING	com.apple.private.system-keychain
+fffffff00762f023	CSTRING	com.apple.private.thread-set-state
+fffffff00762f046	CSTRING	com.apple.private.uninstall.deletion
+fffffff00762f06b	CSTRING	com.apple.private.vfs.snapshot
+fffffff00762f08a	CSTRING	com.apple.sh
+fffffff00762f097	CSTRING	com.apple.system-task-ports
+fffffff00762f0b3	CSTRING	com.apple.system-task-ports.control
+fffffff00762f0d7	CSTRING	com.apple.vpn.installer_events
+fffffff00762f0f6	CSTRING	com.apple.wifi.manager-access
+fffffff00762f114	CSTRING	com.apple.wlan.authentication
+fffffff00762f132	CSTRING	dynamic-codesigning
+fffffff00762f146	CSTRING	get-task-allow
+fffffff00762f155	CSTRING	modify-anchor-certificates
+fffffff00762f170	CSTRING	task_for_pid-allow
+fffffff00762f183	CSTRING	com.apple.private.security.storage.AppBundles
+fffffff00762f1b1	CSTRING	com.apple.private.security.storage.DiagnosticReports.read-write
+fffffff00762f1f1	CSTRING	com.apple.private.security.storage.Messages
+fffffff00762f21d	CSTRING	com.apple.private.security.storage.Photos
+fffffff00762f247	CSTRING	com.apple.private.security.storage.trustd-private
+fffffff00762f279	CSTRING	com.apple.keystore.access-keychain-keys
+fffffff00762f2a1	CSTRING	com.apple.keystore.auth-token
+fffffff00762f2bf	CSTRING	com.apple.keystore.device
+fffffff00762f2d9	CSTRING	com.apple.keystore.devicebackup
+fffffff00762f2f9	CSTRING	com.apple.keystore.sik.access
+fffffff00762f317	CSTRING	com.apple.keystore.stash.access
+fffffff00762f337	CSTRING	com.apple.private.tcc.allow
+fffffff00762f353	CSTRING	com.apple.private.tcc.allow.overridable
+fffffff00762f37b	CSTRING	com.apple.private.tcc.manager
+fffffff00762f399	CSTRING	run-unsigned-code
+fffffff00762f3ab	CSTRING	com.apple.private.assetsd.nebulad.access
+fffffff00762f3d4	CSTRING	com.apple.developer.cs.allow-jit
+fffffff00762f3f5	CSTRING	Setting up notifier for %s\n
+fffffff00762f411	CSTRING	%s::%s CoreAnalyticsmatchingDict is null\n
+fffffff00762f43b	CSTRING	initCoreAnalyticsService
+fffffff00762f454	CSTRING	Failed to cast CoreAnalyticsHub
+fffffff00762f474	CSTRING	com.apple.sha1.code_directory.usage
+fffffff00762f498	CSTRING	filename
+fffffff00762f4a1	CSTRING	AMFI: Failed to set filename in the SHA1 code directory usage event payload\n
+fffffff00762f4ee	CSTRING	N/A
+fffffff00762f4f2	CSTRING	signing_identifier
+fffffff00762f505	CSTRING	AMFI: Failed to set signing_identifier in the SHA1 code directory usage event payload\n
+fffffff00762f55c	CSTRING	cdhash
+fffffff00762f563	CSTRING	AMFI: Failed to set cdhash in the SHA1 code directory usage event payload\n
+fffffff00762f5ae	CSTRING	team_identifier
+fffffff00762f5be	CSTRING	AMFI: Failed to set team_identifier in the SHA1 code directory usage event payload\n
+fffffff00762f612	CSTRING	cpu_type
+fffffff00762f61b	CSTRING	AMFI: Failed to set cpu_type in the SHA1 code directory usage event payload\n
+fffffff00762f668	CSTRING	validation_category
+fffffff00762f67c	CSTRING	AMFI: Failed to set validation_category in the SHA1 code directory usage event payload\n
+fffffff00762f6d4	CSTRING	has_restricted_entitlements
+fffffff00762f6f0	CSTRING	AMFI: Failed to set has_restricted_entitlements in the SHA1 code directory usage event payload\n
+fffffff00762f750	CSTRING	com.apple.cs-auxiliary-info
+fffffff00762f76c	CSTRING	Private Cloud Compute
+fffffff00762f782	CSTRING	iOS
+fffffff00762f786	CSTRING	AMFI: failed to set platform for auxiliary info\n
+fffffff00762f7b7	CSTRING	TXM
+fffffff00762f7bb	CSTRING	PPL
+fffffff00762f7bf	CSTRING	XNU
+fffffff00762f7c3	CSTRING	monitor
+fffffff00762f7cb	CSTRING	AMFI: failed to set monitor for auxiliary info\n
+fffffff00762f7fb	CSTRING	auxiliary_info
+fffffff00762f80a	CSTRING	AMFI: failed to set auxiliary_info for auxiliary info\n
+fffffff00762f841	CSTRING	AMFI: failed to set signing_identifier for auxiliary info\n
+fffffff00762f87c	CSTRING	AMFI: failed to set team_identifier for auxiliary info\n
+fffffff00762f8b4	CSTRING	AMFI: failed to set filename for auxiliary info\n
+fffffff00762f8e5	CSTRING	research_variant
+fffffff00762f8f6	CSTRING	AMFI: failed to set research_variant for auxiliary info\n
+fffffff00762f92f	CSTRING	trust_level
+fffffff00762f93b	CSTRING	AMFI: failed to set trust_level for auxiliary info\n
+fffffff00762f96f	CSTRING	com.apple.amfi.developer_mode_state
+fffffff00762f993	CSTRING	developer_app_executions
+fffffff00762f9ac	CSTRING	developer_mode_state
+fffffff00762f9c1	CSTRING	lockdown_mode_state
+fffffff00762f9d5	CSTRING	CoreAnalyticsHub
+fffffff00762f9e6	CSTRING	site.VnodeLazyPath
+fffffff00762f9f9	CSTRING	122222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222211
+fffffff00762fa7e	CSTRING	AMFI: vn_getpath() returned %d.\n
+fffffff00762fa9f	CSTRING	application-identifier
+fffffff00762fab6	CSTRING	LOCALSPKEY.swift-playgrounds-
+fffffff00762fad4	CSTRING	com.apple.developer.app-management-domain
+fffffff00762fafe	CSTRING	swift-playgrounds
+fffffff00762fb10	CSTRING	com.apple.developer.swift-playgrounds-app
+fffffff00762fb3a	CSTRING	com.apple.developer.team-identifier
+fffffff00762fb5e	CSTRING	LOCALSPKEY
+fffffff00762fb69	CSTRING	com.apple.developer.swift-playgrounds-app.development-build
+fffffff00762fba5	CSTRING	AMFI: '%s': disallowed value for entitlement: %s\n
+fffffff00762fbd7	CSTRING	AMFI: '%s': disallowed entitlement key: %s\n
+fffffff00762fc03	CSTRING	none
+fffffff00762fc08	CSTRING	launch-type
+fffffff00762fc14	CSTRING	AMFI: CC_Self: Unknown Constraint category: %d\n
+fffffff00762fc44	CSTRING	AMFI: CC_Parent: Unknown Constraint category: %d\n
+fffffff00762fc76	CSTRING	AMFI: CC_Responsible: Unknown Constraint category: %d\n
+fffffff00762fcad	CSTRING	"Should not reach here, uncategorized constraint category: %d" @%s:%d
+fffffff00762fcf3	CSTRING	ConstraintCategories.cpp
+fffffff00762fd0c	CSTRING	"Constraint array failed to validate" @%s:%d
+fffffff00762fd39	CSTRING	"previously valid CE result has become invalid" @%s:%d
+fffffff00762fd70	CSTRING	srd_allow_trust_caches_when_locked
+fffffff00762fd93	CSTRING	AMFI: research variant relaxes lock-state for trust caches: %u\n
+fffffff00762fdd3	CSTRING	amfi-allows-trust-cache-load
+fffffff00762fdf0	CSTRING	AMFI: amfi-allows-trust-cache-load has unexpected size (%u).\n
+fffffff00762fe2e	CSTRING	%s: loading duplicate trust cache (success)\n
+fffffff00762fe5b	CSTRING	loadTrustCacheWithExternalManifest
+fffffff00762fe7e	CSTRING	%s: loading trust caches disallowed by system state\n
+fffffff00762feb3	CSTRING	%s: attempted to load duplicate trust cache -- switching to success\n
+fffffff00762fef8	CSTRING	%s: unable to load trust cache: %d\n
+fffffff00762ff1c	CSTRING	loadTrustCacheWithType
+fffffff00762ff33	CSTRING	%s: unable to extract img4 module: 0x%02X | 0x%02X | %u\n
+fffffff00762ff6c	CSTRING	trustCacheIsDuplicateImg4
+fffffff00762ff86	CSTRING	%s: Unknown hash type %d\n
+fffffff00762ffa0	CSTRING	slotHashSize
+fffffff00762ffad	CSTRING	signing-identifier
+fffffff00762ffc0	CSTRING	validation-category
+fffffff00762ffd4	CSTRING	entitlements
+fffffff00762ffe1	CSTRING	team-identifier
+fffffff00762fff1	CSTRING	team-identifier-for-current-process
+fffffff007630015	CSTRING	info-plist-hash
+fffffff007630025	CSTRING	in-tc-with-constraint-category
+fffffff007630044	CSTRING	cdhash-full
+fffffff007630050	CSTRING	platform-identifier
+fffffff007630064	CSTRING	platform-identifier-for-current-process
+fffffff00763008c	CSTRING	is-main-binary
+fffffff00763009b	CSTRING	AMFI: Failed to get trust cache UUID for %s (TCReturn: 0x%02X | 0x%02X | %u)\n
+fffffff0076300e9	CSTRING	AMFI: Failed to get trust cache type for %s: (TCReturn: 0x%02X | 0x%02X | %u)
+fffffff007630137	CSTRING	AMFI: file (%s) contains an invalid launch constraint on in slot %d, ignoring\n
+fffffff007630186	CSTRING	CSBlobAccessor.cpp
+fffffff007630199	CSTRING	AMFI: file (%s) failed to parse a launch constraint on in slot %d (%s), ignoring\n
+fffffff0076301eb	CSTRING	com.apple.amfi.tle_violation.v2
+fffffff00763020b	CSTRING	constraint_identifier
+fffffff007630221	CSTRING	AMFI: Failed to set constraint identifier in the tle violation event payload
+fffffff00763026e	CSTRING	process_identifier
+fffffff007630281	CSTRING	AMFI: Failed to set process identifier in the tle violation event payload
+fffffff0076302cb	CSTRING	match_result
+fffffff0076302d8	CSTRING	AMFI: Failed to set match result in the tle violation event payload
+fffffff00763031c	CSTRING	error_code
+fffffff007630327	CSTRING	AMFI: Failed to set error code in the tle violation event payload
+fffffff007630369	CSTRING	error_msg
+fffffff007630373	CSTRING	AMFI: Failed to set error message in the tle violation event payload
+fffffff0076303b8	CSTRING	curr_validation_category
+fffffff0076303d1	CSTRING	AMFI: Failed to set launching process validation category in the tle violation event payload
+fffffff00763042e	CSTRING	curr_path
+fffffff007630438	CSTRING	AMFI: Failed to set launching process path in the tle violation event payload
+fffffff007630486	CSTRING	launch_type
+fffffff007630492	CSTRING	AMFI: Failed to set launch type in the tle violation event payload
+fffffff0076304d5	CSTRING	fail_validation_category
+fffffff0076304ee	CSTRING	AMFI: Failed to set failed process validation category in the tle violation event payload
+fffffff007630548	CSTRING	fail_path
+fffffff007630552	CSTRING	com.apple.tle.constraints.usage
+fffffff007630572	CSTRING	AMFI: Failed to set validation category in the tle usage event payload
+fffffff0076305b9	CSTRING	AMFI: Failed to set signing identifier in the tle usage event payload
+fffffff0076305ff	CSTRING	AMFI: Failed to set team identifier in the tle usage event payload
+fffffff007630642	CSTRING	constraint_type
+fffffff007630652	CSTRING	AMFI: Failed to set constraint type in the tle usage event payload
+fffffff007630695	CSTRING	amfi
+fffffff00763069a	CSTRING	N
+fffffff00763069c	CSTRING	AppleMobileFileIntegrity
+fffffff0076306b5	CSTRING	developer_mode_status
+fffffff0076306cb	CSTRING	I
+fffffff0076306cd	CSTRING	developer mode status
+fffffff0076306e3	CSTRING	developer_mode_resolved
+fffffff0076306fb	CSTRING	developer mode status has been resolved
+fffffff007630723	CSTRING	launch_constraints_enforced
+fffffff00763073f	CSTRING	launch constraints enforced
+fffffff00763075b	CSTRING	launch_constraints_3rd_party_allowed
+fffffff007630780	CSTRING	launch constraints are allowed for 3rd parties
+fffffff0076307af	CSTRING	launch_constraints_cc_types_enforced
+fffffff0076307d4	CSTRING	The ConstraintCategory types that are enforcing
+fffffff007630804	CSTRING	launch_env_logging
+fffffff007630817	CSTRING	launch environment logging
+fffffff007630832	CSTRING	pqc_codesigning_enabled
+fffffff00763084a	CSTRING	PQC code signing support compiled in
+fffffff00763086f	CSTRING	restricted_execution_mode_status
+fffffff007630890	CSTRING	restricted execution mode status
+fffffff0076308b1	CSTRING	security-mode-change-enable
+fffffff0076308cd	CSTRING	kern.hv_vmm_present
+fffffff0076308e1	CSTRING	AMFI: Booted in a VM\n
+fffffff0076308f7	CSTRING	AMFI: finished: %i %i\n
+fffffff00763090e	CSTRING	AMFI: delaying developer mode latching...\n
+fffffff007630939	CSTRING	AMFI: AMFICompleteSecurityBootMode | bootMode: %u\n
+fffffff00763096c	CSTRING	AMFI: AMFIUpdateDeviceState\n
+fffffff007630989	CSTRING	AMFI: [2] informing daemon of developer mode state change
+fffffff0076309c3	CSTRING	sep-endpoint,scrd
+fffffff0076309d5	CSTRING	"AMFI: Unable to create a name matching for SCRD" @%s:%d
+fffffff007630a0e	CSTRING	ConfigurationSettings.cpp
+fffffff007630a28	CSTRING	"AMFI: Unable to match on SCRD endpoint" @%s:%d
+fffffff007630a58	CSTRING	%u
+fffffff007630a5b	CSTRING	AMFI: failed formatting for security boot mode: %u\n
+fffffff007630a8f	CSTRING	AMFI: failed to arm security boot mode: %u\n
+fffffff007630abb	CSTRING	AMFI: armed security boot mode: %s\n
+fffffff007630adf	CSTRING	"AMFI: not booted with security-mode-change-enabled\\n" @%s:%d
+fffffff007630b1d	CSTRING	AMFI: Developer Mode is off (%i)\n
+fffffff007630b3f	CSTRING	osenvironment
+fffffff007630b4d	CSTRING	amfi_enforce_launch_constraints
+fffffff007630b6d	CSTRING	amfi_allow_3p_launch_constraints
+fffffff007630b8e	CSTRING	amfi_enforce_cc_types
+fffffff007630ba4	CSTRING	BATS_TESTPLAN_ID
+fffffff007630bb5	CSTRING	darwinos-security-environment
+fffffff007630bd3	CSTRING	AMFI: Enabling developer mode since we are restoring....\n
+fffffff007630c0d	CSTRING	AMFI: Enabling developer mode since protected data is not available\n
+fffffff007630c52	CSTRING	AMFI: Disable developer mode since we couldn't get mobile obliteration status\n
+fffffff007630ca1	CSTRING	AMFI: Enabling developer mode since we are in mobile obliteration\n
+fffffff007630ce4	CSTRING	AMFI: developer mode is enabled in the trusted darwinos research variant\n
+fffffff007630d2e	CSTRING	AMFI: developer mode is force enabled\n
+fffffff007630d55	CSTRING	AMFI: trying to get developer mode status from ACM\n
+fffffff007630d89	CSTRING	AMFI: ACM status %i\n
+fffffff007630d9e	CSTRING	ACM says dev mode is %llu\n
+fffffff007630db9	CSTRING	AMFI: Developer Mode Is On\n
+fffffff007630dd5	CSTRING	AMFI: Developer Mode can not be enabled on trusted darwinOS.\n
+fffffff007630e13	CSTRING	AMFI: skipping PMGRAON latch due to AVP\n
+fffffff007630e3c	CSTRING	/arm-io/soc-misc
+fffffff007630e4d	CSTRING	AppleSoCMisc
+fffffff007630e5a	CSTRING	getBPR
+fffffff007630e61	CSTRING	"AMFI: Unable to query BPR via AppleSocMisc: 0x%x\\n" @%s:%d
+fffffff007630e9d	CSTRING	setBPR
+fffffff007630ea4	CSTRING	"AMFI: Unable to set BPR via AppleSocMisc: 0x%x\\n" @%s:%d
+fffffff007630ede	CSTRING	AMFI: [AppleSocMisc] latched BPR\n
+fffffff007630f00	CSTRING	"AMFI: No AppleSocMisc?\\n" @%s:%d
+fffffff007630f22	CSTRING	ApplePMGRNub
+fffffff007630f2f	CSTRING	AMFI: [ApplePMGRNub] latched BPR\n
+fffffff007630f51	CSTRING	"AMFI: No PMGR?\\n" @%s:%d
+fffffff007630f6b	CSTRING	AMFI: [1] informing daemon of developer mode state change
+fffffff007630fa5	CSTRING	com.apple.MobileFileIntegrity
+fffffff007630fc3	CSTRING	library_validation_failure
+fffffff007630fde	CSTRING	Library violates process' library load contraint
+fffffff00763100f	CSTRING	yes
+fffffff007631013	CSTRING	no
+fffffff007631016	CSTRING	Process violates library's library load constraint
+fffffff007631049	CSTRING	mapped file has wrong signer type
+fffffff00763106b	CSTRING	mapped file has no cdhash, completely unsigned? Code has to be at least ad-hoc signed.
+fffffff0076310c2	CSTRING	OOP-JIT signature not valid for mapping process
+fffffff0076310f2	CSTRING	mapped file has no Team ID and is not a platform binary (signed with custom identity or adhoc?)
+fffffff007631152	CSTRING	Non-SMAC process not permitted to map library from SMAC
+fffffff00763118a	CSTRING	Couldn't find trust cache UUID for process when mapping library from SMAC
+fffffff0076311d4	CSTRING	Couldn't find trust cache UUID for library from SMAC
+fffffff007631209	CSTRING	SMAC process not permitted to map library from different SMAC
+fffffff007631247	CSTRING	mapping process has no Team ID and is not a platform binary
+fffffff007631283	CSTRING	mapping process is a platform binary, but mapped file is not
+fffffff0076312c0	CSTRING	mapping process and mapped file (non-platform) have different Team IDs
+fffffff007631307	CSTRING	not allowing mapping of development code into production process
+fffffff007631348	CSTRING	AMFI: %s: required cs_blobs not available\n
+fffffff007631373	CSTRING	_checkOOPJitLibraryValidation
+fffffff007631391	CSTRING	AMFI: %s not allowed to map OOP-JIT %s\n
+fffffff0076313b9	CSTRING	AMFI: OOP-JIT %s is not meant for %s\n
+fffffff0076313df	CSTRING	AMFI: %s: %s has no entitlements\n
+fffffff007631401	CSTRING	_oopJITLibraryValidationEntitlement
+fffffff007631425	CSTRING	com.apple.private.oop-jit.runner
+fffffff007631446	CSTRING	AMFI: OOP-JIT previews allowed through %s\n
+fffffff007631471	CSTRING	com.apple.security.get-task-allow
+fffffff007631493	CSTRING	AMFI: no alternative entitlements for OOP-JIT type: %u\n
+fffffff0076314cb	CSTRING	previews
+fffffff0076314d4	CSTRING	ml-compiler
+fffffff0076314e0	CSTRING	AMFI: Non-SMAC process %s not permitted to map library %s from SMAC
+fffffff007631524	CSTRING	AMFI: SMAC process %s not permitted to map library %s from different SMAC
+fffffff00763156e	CSTRING	"Validation category %d should not reach here" @%s:%d
+fffffff0076315a4	CSTRING	LibraryConstraints.cpp
+fffffff0076315bb	CSTRING	"Should not reach here proc: %d library: %d" @%s:%d
+fffffff0076315ef	CSTRING	"Unknown validation category %d" @%s:%d
+fffffff007631617	CSTRING	%s called with NULL cred\n
+fffffff007631631	CSTRING	getOSEntitlements
+fffffff007631643	CSTRING	%s called with NULL proc\n
+fffffff00763165d	CSTRING	copyOSEntitlements
+fffffff007631670	CSTRING	AMFI: Entitlement extraction failure in no entitlement check.
+fffffff0076316ae	CSTRING	AMFI: Entitlements present in no entitlement check. (length: %ld, ptr: %s)
+fffffff0076316f9	CSTRING	NULL
+fffffff0076316fe	CSTRING	non-NULL
+fffffff007631708	CSTRING	com.apple.system-task-ports.token.control
+fffffff007631732	CSTRING	trust_cache_interface
+fffffff007631748	CSTRING	IU
+fffffff00763174b	CSTRING	AMFI Trust Cache Interface
+fffffff007631766	CSTRING	"CoreEntitlments has triggered a panic\\n" @%s:%d
+fffffff007631797	CSTRING	Support.cpp
+fffffff0076317a3	CSTRING	site.CEAccelerationElement_t
+fffffff0076317c0	CSTRING	amfi.OSEntitlements
+fffffff0076317d4	CSTRING	AMFI: Failed to allocate ProcessAccessor objects\n
+fffffff007631806	CSTRING	AMFI: Validation Category info: current %s (%d) parent %s (%d) responsible %s (%d) launch type %d\n
+fffffff007631869	CSTRING	Launch warning found for proc (fatal): %s
+fffffff007631893	CSTRING	AMFI: Failed to allocate memory for the failure description\n
+fffffff0076318d0	CSTRING	"Should have fatal failure description pointers when we are enforcing" @%s:%d
+fffffff00763191e	CSTRING	LaunchConstraints.cpp
+fffffff007631934	CSTRING	AMFI: %s: cannot securely resolve entitlements from NULL proc\n
+fffffff007631973	CSTRING	getOSEntitlementsFromProcSecure
+fffffff007631993	CSTRING	failed to construct an LWCR from the provided buffer (error: %d)
+fffffff0076319d4	CSTRING	No process found pid: %d pidversion: %d
+fffffff0076319fc	CSTRING	Constraint categories are not supported when matching against a running process (cc:%lld)
+fffffff007631a56	CSTRING	No requirements in the provided constraint
+fffffff007631a81	CSTRING	%s: Unexpected match result %d\n
+fffffff007631aa1	CSTRING	_proc_satisfies_constraint
+fffffff007631abc	CSTRING	Requirement not satisfied: %.*s
+fffffff007631adc	CSTRING	AKSKernelServices
+fffffff007631aee	CSTRING	%s: unable to get %s (0x%x)\n
+fffffff007631b0b	CSTRING	const kks_services_t *AKS_services()
+fffffff007631b30	CSTRING	com.apple.recoveryos_agent
+fffffff007631b4b	CSTRING	com.apple.RecoveryOS-Agent
+fffffff007631b66	CSTRING	com.apple.RecoveryDiagnose.recoverydiagnosed
+fffffff007631b93	CSTRING	Unknown launch type
+fffffff007631ba7	CSTRING	Constraint category disallowed in spawn attr
+fffffff007631bd4	CSTRING	Caller provided an invalid constraint as a spawnattr
+fffffff007631c09	CSTRING	Only platform code can set launch constraints on itself
+fffffff007631c41	CSTRING	Embedded self constraint can't be enforced because parent has changed
+fffffff007631c87	CSTRING	Only platform code can set launch constraints on its parent
+fffffff007631cc3	CSTRING	Embedded parent constraint can't be enforced because parent has changed
+fffffff007631d0b	CSTRING	Only platform code can set launch constraints on its responsible process
+fffffff007631d54	CSTRING	Only platform code can set launch constraints
+fffffff007631d82	CSTRING	No error message set
+fffffff007631d97	CSTRING	AMFI: Launch Constraint Violation (%senforcing), error info: c[%d]p[%d]m[%d]e[%d], (%.*s) launching proc[vc: %d pid: %d]: %s, launch type %d, failure proc [vc: %d pid: %d]: %s\n
+fffffff007631e48	CSTRING	not 
+fffffff007631e4d	CSTRING	Launch Constraint Violation, error info: c[%d]p[%d]m[%d]e[%d], (%.*s) launch type %d, failure proc [vc: %d]: %s
+fffffff007631ebd	CSTRING	LaunchConstraintPolicy.cpp
+fffffff007631ed8	CSTRING	%s: no registered daemon port\n
+fffffff007631ef7	CSTRING	checkForLaunchWarningsInDaemon
+fffffff007631f16	CSTRING	Error communicating with amfid while checking launch warnings for %s\n
+fffffff007631f5c	CSTRING	Disallowing: found launch warnings for %s\n
+fffffff007631f87	CSTRING	%s: token is untrusted: hash does not match\n
+fffffff007631fb4	CSTRING	Boolean tokenIsTrusted(audit_token_t)
+fffffff007631fda	CSTRING	%s: token is untrusted: error %d getting cdhash\n
+fffffff00763200b	CSTRING	%s: token idversion (%d) does not match proc (%d)\n
+fffffff00763203e	CSTRING	%s: token is untrusted: pid %d not found\n
+fffffff007632068	CSTRING	com.apple.sysdiagnosed
+fffffff00763207f	CSTRING	AMFI: only sysdiagnose can set the sysdiagnose launch type (parent changed: %d)\n
+fffffff0076320d0	CSTRING	Root installed sysdiagnose helper allowed: %s\n
+fffffff0076320ff	CSTRING	Process was launched as a sysdiagnose helper unexpectedly
+fffffff007632139	CSTRING	/product
+fffffff007632142	CSTRING	%s: /product node not found\n
+fffffff00763215f	CSTRING	initUDIDEnforcement
+fffffff007632173	CSTRING	%s: /chosen node not found\n
+fffffff00763218f	CSTRING	udid-version
+fffffff00763219c	CSTRING	%s: /product is missing udid-version\n
+fffffff0076321c2	CSTRING	%s: /product/udid-version has unexpected length: %u\n
+fffffff0076321f7	CSTRING	chip-id
+fffffff0076321ff	CSTRING	unique-chip-id
+fffffff00763220e	CSTRING	"%s: missing ChipID or UniqueChipID: %p | %p" @%s:%d
+fffffff007632243	CSTRING	AMFIProfiles.cpp
+fffffff007632254	CSTRING	%08X-%016llX
+fffffff007632261	CSTRING	unique-device-id-string
+fffffff007632279	CSTRING	"%s: /chosen is missing unique-device-id-string" @%s:%d
+fffffff0076322b1	CSTRING	"%s: /chosen/unique-device-id-string is too large: %d" @%s:%d
+fffffff0076322ef	CSTRING	%s: /product/udid-version is not supported: %u\n
+fffffff00763231f	CSTRING	AMFI: UDID support enabled: %u\n
+fffffff00763233f	CSTRING	"AMFI: failed to evaluate provisioning profile: %d" @%s:%d
+fffffff00763237a	CSTRING	"AMFI: failed to create profile context: %u" @%s:%d
+fffffff0076323ae	CSTRING	AMFI: profile validated the code signature\n
+fffffff0076323da	CSTRING	AMFI: profile not registered with XNU monitor without cs_blob\n
+fffffff007632419	CSTRING	AMFI: providing XNU monitor with auxiliary signature\n
+fffffff00763244f	CSTRING	unknown
+fffffff007632457	CSTRING	AMFI: empty profile provided: %s\n
+fffffff007632479	CSTRING	AMFI: failed to create kernel allocation for profile\n
+fffffff0076324af	CSTRING	AMFI: failed to copy profile data into kernel allocation\n
+fffffff0076324e9	CSTRING	AMFI: Couldn't copy buffer for the profile aux-sig\n
+fffffff00763251d	CSTRING	AMFI: XNU monitor refused profile\n
+fffffff007632540	CSTRING	UUID
+fffffff007632545	CSTRING	"AMFI: failed to acquire UUID element from profile: %u" @%s:%d
+fffffff007632584	CSTRING	"AMFI: failed to acquire UUID string from profile: %u" @%s:%d
+fffffff0076325c2	CSTRING	AMFI: evaluating provisioning profile: %.*s\n
+fffffff0076325ef	CSTRING	AMFI: %s not allowed with universal profile\n
+fffffff00763261c	CSTRING	AMFI: profile disallowed due to developer mode\n
+fffffff00763264c	CSTRING	Entitlements
+fffffff007632659	CSTRING	"AMFI: failed to acquire entitlements element from profile: %u" @%s:%d
+fffffff0076326a0	CSTRING	"AMFI: failed to acquire entitlements buffer from profile: %u" @%s:%d
+fffffff0076326e6	CSTRING	"AMFI: failed to validate entitlements from profile: %u" @%s:%d
+fffffff007632726	CSTRING	ProvisionsAllDevices
+fffffff00763273b	CSTRING	AMFI: apple-internal profile allows all entitlements\n
+fffffff007632771	CSTRING	AMFI: profile provisions claimed entitlements\n
+fffffff0076327a0	CSTRING	AMFI: profile does not provision claimed entitlements\n
+fffffff0076327d7	CSTRING	AppleInternalProfile
+fffffff0076327ec	CSTRING	DeveloperCertificates
+fffffff007632802	CSTRING	AMFI: profile does not provision any developer certificates\n
+fffffff00763283f	CSTRING	AMFI: profile provisions developer certificate\n
+fffffff00763286f	CSTRING	AMFI: profile does not provision developer certificate\n
+fffffff0076328a7	CSTRING	AMFI: device UDID not enforced\n
+fffffff0076328c7	CSTRING	AMFI: using universal provisioning profile\n
+fffffff0076328f3	CSTRING	ProvisionedDevices
+fffffff007632906	CSTRING	AMFI: profile does not provision any devices\n
+fffffff007632934	CSTRING	AMFI: profile provisions current device\n
+fffffff00763295d	CSTRING	AMFI: profile does not provision current device\n
+fffffff00763298e	CSTRING	beta-reports-active
+fffffff0076329a2	CSTRING	AMFI: Only launchd can set the application launch type\n
+fffffff0076329da	CSTRING	System process was launched as an application unexpectedly
+fffffff007632a15	CSTRING	allows_security_research
+fffffff007632a2e	CSTRING	Security research enabled
+fffffff007632a48	CSTRING	0123456789abcdef
+fffffff007632a59	CSTRING	Non-Fatal: failed to change validation category from %d to %d at %s\n
+fffffff007632a9e	CSTRING	AppleMobileFileIntegrity.cpp
+fffffff007632abb	CSTRING	Couldn't find daemon.\n
+fffffff007632ad2	CSTRING	AMFI: %s: Failed to allocate memory for fatal error message, cannot produce a crash reason.\n
+fffffff007632b2f	CSTRING	%s: Internal error when creating code signature validation error (buffer allocation failed).
+fffffff007632b8c	CSTRING	When validating %s:\n  %s
+fffffff007632ba5	CSTRING	AMFI: %s\n
+fffffff007632baf	CSTRING	p
+fffffff007632bb1	CSTRING	vp
+fffffff007632bb4	CSTRING	vnode_isreg(vp)
+fffffff007632bc4	CSTRING	!vnode_isdir(vp)
+fffffff007632bd5	CSTRING	AMFI: hook..execve() killing %s (pid %u): Attempt to execute completely unsigned code (must be at least ad-hoc signed).\n
+fffffff007632c4e	CSTRING	Restricted Execution Mode state(%s): %s (pid %u) would be disallowed by policy, but is allowed by boot-args\n
+fffffff007632cbb	CSTRING	enabled
+fffffff007632cc3	CSTRING	disabled
+fffffff007632ccc	CSTRING	%s (pid %u) not allowed for Restricted Execution Mode state (%s): code is not present in any trustcache\n
+fffffff007632d35	CSTRING	%s (pid %u) not allowed for Restricted Execution Mode state (%s): code is unsigned\n
+fffffff007632d89	CSTRING	%s (pid %u) not allowed for Restricted Execution Mode state (%s)\n
+fffffff007632dcb	CSTRING	AMFI: hook..execve() killing %s (pid %u): Attempt to execute a Legacy VPN Plugin.\n
+fffffff007632e1e	CSTRING	AMFI: hook..execve() killing %s (pid %u): dyld signature cannot be verified. You either have a corrupt system image or are trying to run an unsigned application outside of a supported development configuration.\n
+fffffff007632ef2	CSTRING	AMFI: hook..execve() killing %s (pid %u): %s\n
+fffffff007632f20	CSTRING	retained
+fffffff007632f29	CSTRING	AMFI: process with pid %u is not CS_VALID, not honoring entitlements.\n
+fffffff007632f70	CSTRING	com.apple.private.security.install
+fffffff007632f93	CSTRING	com.apple.rootless.install
+fffffff007632fae	CSTRING	com.apple.private.security.install.heritable
+fffffff007632fdb	CSTRING	com.apple.rootless.install.heritable
+fffffff007633000	CSTRING	com.apple.private.security.restricted-nvram-variables.heritable
+fffffff007633040	CSTRING	com.apple.rootless.restricted-nvram-variables.heritable
+fffffff007633078	CSTRING	com.apple.private.security.datavault.controller
+fffffff0076330a8	CSTRING	com.apple.rootless.datavault.controller
+fffffff0076330d0	CSTRING	site.AppleMobileFileIntegrity
+fffffff0076330ee	CSTRING	1211111212221212111
+fffffff007633102	CSTRING	%s: built %s %s\n
+fffffff007633113	CSTRING	virtual bool AppleMobileFileIntegrity::start(IOService *)
+fffffff00763314d	CSTRING	Aug 13 2026
+fffffff007633159	CSTRING	21:26:02
+fffffff007633162	CSTRING	"AMFI failed to initialize. This would compromise system security." @%s:%d
+fffffff0076331ad	CSTRING	%s\n
+fffffff0076331b1	CSTRING	virtual void AppleMobileFileIntegrity::stop(IOService *)
+fffffff0076331ea	CSTRING	"Cannot unload AMFI - policy is not dynamic\\n" @%s:%d
+fffffff007633220	CSTRING	seatbelt-profiles
+fffffff007633232	CSTRING	site.char*
+fffffff00763323d	CSTRING	AMFI: %s: unable to allocate storage space for names\n
+fffffff007633273	CSTRING	_amfi_copy_seatbelt_profile_names
+fffffff007633295	CSTRING	S24@?0r^{_CEValueTypePair=I{_CEElement={?=*Q}{?=Q{?=*Q}}}}8^{_CEIterateArgs=Q^vB}16
+fffffff0076332e9	CSTRING	platform-application
+fffffff0076332fe	CSTRING	site.char *
+fffffff00763330a	CSTRING	AMFI
+fffffff00763330f	CSTRING	AMFI booted with research mode\n
+fffffff00763332f	CSTRING	cs_enforcement_disable
+fffffff007633346	CSTRING	%s: cs_enforcement disabled by boot-arg\n
+fffffff00763336f	CSTRING	kern_return_t _initializeAppleMobileFileIntegrity()
+fffffff0076333a3	CSTRING	"can't has cs_enforcement_disable" @%s:%d
+fffffff0076333cd	CSTRING	Apple Mobile File Integrity
+fffffff0076333e9	CSTRING	%s: mac_policy_register failed: %d\n
+fffffff00763340d	CSTRING	"AMFI mac policy could not be registered!" @%s:%d
+fffffff00763343f	CSTRING	amfi-only-platform-code
+fffffff007633457	CSTRING	"AMFI: no amfi-only-platform-code device tree node!" @%s:%d
+fffffff007633493	CSTRING	"AMFI: amfi-only-platform-code has unexpected size (%u)!" @%s:%d
+fffffff0076334d4	CSTRING	/
+fffffff0076334d6	CSTRING	"AMFI: no root device tree node!" @%s:%d
+fffffff0076334ff	CSTRING	model
+fffffff007633505	CSTRING	"AMFI: no /model device tree node!" @%s:%d
+fffffff007633530	CSTRING	AMFI: queried model name from device tree: %s\n
+fffffff00763355f	CSTRING	iPhone
+fffffff007633566	CSTRING	AMFI: disabling Swift Playgrounds JIT services on iPhone devices\n
+fffffff0076335a8	CSTRING	img_vp
+fffffff0076335af	CSTRING	AMFI: allowing pid %u to inherit IPC ports (platform binary)\n
+fffffff0076335ed	CSTRING	AMFI: allowing pid %u to inherit IPC ports (no entitlements)\n
+fffffff00763362b	CSTRING	AMFI: allowing pid %u to inherit IPC ports (get-task-allow)\n
+fffffff007633668	CSTRING	AMFI: allowing pid %u to inherit IPC ports (teamid match)\n
+fffffff0076336a3	CSTRING	com.apple.system-task-ports.read
+fffffff0076336c4	CSTRING	com.apple.system-task-ports.inspect
+fffffff0076336e8	CSTRING	AMFI: allowing pid %u to inherit IPC ports (cur_vp entitled)\n
+fffffff007633726	CSTRING	AMFI: _proc_check_inherit_ipc_ports returning %d for pid %u\n
+fffffff007633763	CSTRING	AMFI: vnode_check_signature called with platform %d\n
+fffffff007633798	CSTRING	com.apple.mis.warning
+fffffff0076337ae	CSTRING	Respecting MIS launch warning: %s\n
+fffffff0076337d1	CSTRING	The signature could not be validated because AMFI could not load its entitlements for validation: %s
+fffffff007633836	CSTRING	Restricted Execution Mode state(%s): %s would be disallowed by policy, but is allowed by boot-args\n
+fffffff00763389a	CSTRING	%s not allowed for Restricted Execution Mode state (%s): code is not present in any trustcache
+fffffff0076338f9	CSTRING	%s not allowed for Restricted Execution Mode state (%s): code is unsigned
+fffffff007633943	CSTRING	%s not allowed for Restricted Execution Mode state (%s)
+fffffff00763397b	CSTRING	Internal Error: No cdhash found.
+fffffff00763399c	CSTRING	trust-cache
+fffffff0076339a8	CSTRING	in-kernel
+fffffff0076339b2	CSTRING	compilation-service
+fffffff0076339c6	CSTRING	AMFI: can-execute-cdhash is disabled by system configuration\n
+fffffff007633a04	CSTRING	can-execute-cdhash
+fffffff007633a17	CSTRING	AMFI: can-execute-cdhash code in non-entitled context.\n
+fffffff007633a4f	CSTRING	site.amfid_failed_entitlements_desc_t
+fffffff007633a75	CSTRING	dynamic
+fffffff007633a7d	CSTRING	AMFI: code signature validation failed.\n
+fffffff007633aa6	CSTRING	untrusted
+fffffff007633ab0	CSTRING	AMFI: Platform binary with platform identifier not in trust cache\n
+fffffff007633af3	CSTRING	platform binary with platform identifier not in trust cache\n
+fffffff007633b30	CSTRING	AMFI: bailing out because of restricted entitlements.\n
+fffffff007633b67	CSTRING	Code has restricted entitlements, but the validation of its code signature failed.\nUnsatisfied Entitlements: %s
+fffffff007633bd7	CSTRING	AMFI: local signing validation was unsuccessful.\n
+fffffff007633c09	CSTRING	AMFI: OOP-JIT validation was unsuccessful.\n
+fffffff007633c35	CSTRING	fatal error detected during OOP-JIT signature validation
+fffffff007633c6e	CSTRING	Bad things happened.
+fffffff007633c83	CSTRING	The system only allows platform binaries until developer mode status has been resolved, and the code is not a platform binary\n
+fffffff007633d02	CSTRING	(*cs_flags & initial_cs_flags) == initial_cs_flags
+fffffff007633d35	CSTRING	Error getting XML\n
+fffffff007633d48	CSTRING	failed getting entitlements
+fffffff007633d64	CSTRING	Error getting DER\n
+fffffff007633d77	CSTRING	failed getting DER entitlements
+fffffff007633d97	CSTRING	AMFI: constraint violation %s has entitlements but is not a main binary\n
+fffffff007633de0	CSTRING	entitlement validation failed, binary has XML entitlements but no DER slot is present.
+fffffff007633e37	CSTRING	entitlements too small
+fffffff007633e4e	CSTRING	entitlements too large
+fffffff007633e65	CSTRING	failed parsing DER entitlements
+fffffff007633e85	CSTRING	Developer mode is disabled, %*.s is disallowed
+fffffff007633eb4	CSTRING	com.apple.private.oop-jit.loader
+fffffff007633ed5	CSTRING	OOP-JIT loader entitlement is an incorrect type
+fffffff007633f05	CSTRING	OOP-JIT runner entitlement is an incorrect type
+fffffff007633f35	CSTRING	S24@?0r^{_CEKeyValuePair={_CEElement={?=*Q}{?=Q{?=*Q}}}{_CEValueTypePair=I{_CEElement={?=*Q}{?=Q{?=*Q}}}}}8^{_CEIterateArgs=Q^vB}16
+fffffff007633fb9	CSTRING	Cannot be both OOP-JIT loader and runner simultaneously
+fffffff007633ff1	CSTRING	%s: Hash type is SHA1
+fffffff007634007	CSTRING	%s: %s disallowed due to OOP-JIT loader entitlement
+fffffff00763403b	CSTRING	%s: %s disallowed due to OOP-JIT runner entitlement
+fffffff00763406f	CSTRING	cdhash != NULL
+fffffff00763407e	CSTRING	AMFI: '%s': Unrecoverable CT signature issue, bailing out.\n
+fffffff0076340ba	CSTRING	AMFI: '%s': unsuitable CT policy %#llx for this platform/device, rejecting signature.\n
+fffffff007634111	CSTRING	AMFI: '%s': has developer signature (%#llx) but developer mode is not enabled\n
+fffffff007634160	CSTRING	App Store Fast Path -> %s\n
+fffffff00763417b	CSTRING	fast-path-appstore
+fffffff00763418e	CSTRING	QA Hierarchy used -> %s\n
+fffffff0076341a7	CSTRING	qa-path-appstore
+fffffff0076341b8	CSTRING	Locally Signed Fast Path -> %s\n
+fffffff0076341d8	CSTRING	fast-path-local
+fffffff0076341e8	CSTRING	OOP-JIT Signed Fast Path -> %s\n
+fffffff007634208	CSTRING	oop-jit
+fffffff007634210	CSTRING	AMFI: '%s' does not pass kernel-side policy for this model, bailing out.\n
+fffffff00763425a	CSTRING	AMFI: '%s' has no cd?\n
+fffffff007634271	CSTRING	AMFI: '%s' has short cd (%u)?\n
+fffffff007634290	CSTRING	AMFI: '%s' has no CMS blob?\n
+fffffff0076342ad	CSTRING	AMFI: '%s' has short cms (%u), bailing out.\n
+fffffff0076342da	CSTRING	AMFI: '%s' is adhoc signed.\n
+fffffff0076342f7	CSTRING	AMFI: '%s' has zero length cms, but is not adhoc?\n
+fffffff00763432a	CSTRING	AMFI: '%s' couldn't fetch certs\n
+fffffff00763434b	CSTRING	AMFI: '%s' cmsBlobInit failed: component=%#x error=%#x unique=%#x\n
+fffffff00763438e	CSTRING	AMFI: '%s' cmsBlobVerify failed: component=%#x error=%#x unique=%u\n
+fffffff0076343d2	CSTRING	AMFI: '%s' cmsBlobVerifyWithAgilityHash unsupported: unique=%#x\n
+fffffff007634413	CSTRING	AMFI: '%s' cmsBlobVerifyWithAgilityHash failed: component=%#x error=%#x unique=%u\n
+fffffff007634466	CSTRING	AMFI: '%s': local signing public key not initialized\n
+fffffff00763449c	CSTRING	AMFI: '%s' : locally signed jit is disabled by system configuration\n
+fffffff0076344e1	CSTRING	AMFI: '%s': locally signed\n
+fffffff0076344fd	CSTRING	AMFI: '%s' no hash agility and first code directory is not the best one\n
+fffffff007634546	CSTRING	AMFI: %s: unable to find code directory\n
+fffffff00763456f	CSTRING	_checkForOOPJit
+fffffff00763457f	CSTRING	AMFI: '%s': unable to find code directory\n
+fffffff0076345aa	CSTRING	AMFI: '%s': locally signed signatures need to be at least 0x%X signature version (0x%X)\n
+fffffff007634603	CSTRING	AMFI: '%s': verification failed since local signing is restricted\n
+fffffff007634646	CSTRING	AMFI: '%s': local signed binary does not have a team identifier\n
+fffffff007634687	CSTRING	AMFI: '%s': local signed binary has an invalid team-identifier: %s\n
+fffffff0076346cb	CSTRING	AMFI: '%s': disallowing locally signed library with entitlements
+fffffff00763470c	CSTRING	unable to create an OSString for locally signed entitlement
+fffffff007634748	CSTRING	unable to create an OSObject for locally signed entitlement
+fffffff007634784	CSTRING	"AMFI: %s: Anomaly, code directory is NULL" @%s:%d
+fffffff0076347b7	CSTRING	_validateOOPJit
+fffffff0076347c7	CSTRING	AMFI: %s: OOP-JIT signature represents main binary\n
+fffffff0076347fb	CSTRING	AMFI: %s: OOP-JIT signature has entitlements\n
+fffffff007634829	CSTRING	AMFI: %s linkage size is too small\n
+fffffff00763484d	CSTRING	AMFI: %s: invalid OOP-JIT type\n
+fffffff00763486d	CSTRING	AMFI: %s: unsupported OOP-JIT type: %u\n
+fffffff007634895	CSTRING	AMFI: %s: unable to obtain cs_blob on current_proc\n
+fffffff0076348c9	CSTRING	AMFI: %s: oop-jit is disabled by system configuration\n
+fffffff007634900	CSTRING	AMFI: %s: unsatisfied entitlements for loading OOP-JIT signature\n
+fffffff007634942	CSTRING	callout out to amfid for %s %s, return %d valid: %d isApple: %d\n
+fffffff007634983	CSTRING	"amfid is broken. (%s) (%d) (%d) (%d)" @%s:%d
+fffffff0076349b1	CSTRING	%s: Signature meets iphone VPN Prod policy\n
+fffffff0076349dd	CSTRING	amfid_validated
+fffffff0076349ed	CSTRING	StaticPlatformPolicy<%d>: Unable to match identity\n
+fffffff007634a21	CSTRING	StaticPlatformPolicy<%d>: unable to verify audit token came from amfid\n
+fffffff007634a69	CSTRING	StaticPlatformPolicy<%d>: verify_code_directory server is dead\n
+fffffff007634aa9	CSTRING	StaticPlatformPolicy<%d>: verify_code_directory interrupted\n
+fffffff007634ae6	CSTRING	StaticPlatformPolicy<%d>: verify_code_directory returned 0x%x\n
+fffffff007634b25	CSTRING	StaticPlatformPolicy<%d>: no registered daemon port\n
+fffffff007634b5a	CSTRING	%s: Possible race detected. Rejecting.\n
+fffffff007634b82	CSTRING	com.apple.developer.web-browser-engine.webcontent
+fffffff007634bb4	CSTRING	%s disallowed without %s
+fffffff007634bcd	CSTRING	%s disallowed on non-platform process
+fffffff007634bf3	CSTRING	%s: unexpected cd hash length: %u\n
+fffffff007634c16	CSTRING	int _check_cdhash_in_trustcache(struct proc *, user_addr_t)
+fffffff007634c52	CSTRING	%s: failed to copy in cdhash %d\n
+fffffff007634c73	CSTRING	%s: copying private key from AMFI not supported on this platform\n
+fffffff007634cb5	CSTRING	int _get_local_signing_private_key(struct proc *, user_addr_t)
+fffffff007634cf4	CSTRING	com.apple.private.playgrounds-local-signing-allowed
+fffffff007634d28	CSTRING	%s: could not query process for entitlements\n
+fffffff007634d56	CSTRING	%s: null arguments\n
+fffffff007634d6a	CSTRING	%s: error copying in args %d\n
+fffffff007634d88	CSTRING	int _get_local_signing_public_key(struct proc *, user_addr_t)
+fffffff007634dc6	CSTRING	%s: null address for public key\n
+fffffff007634de7	CSTRING	%s: public key size not accepted: %zu\n
+fffffff007634e0e	CSTRING	%s: local signing public key not available\n
+fffffff007634e3a	CSTRING	%s: failed to copy out public key: %d\n
+fffffff007634e61	CSTRING	int _set_local_signing_public_key(struct proc *, user_addr_t)
+fffffff007634e9f	CSTRING	%s: only an allowed process can set local signing public key\n
+fffffff007634edd	CSTRING	%s: error copying in public key %d\n
+fffffff007634f01	CSTRING	int _authorize_local_signing(struct proc *, user_addr_t)
+fffffff007634f3a	CSTRING	com.apple.private.enable-swift-playgrounds-validation
+fffffff007634f70	CSTRING	int _check_authorize_local_signing_entitlement(struct proc *)
+fffffff007634fae	CSTRING	%s: only an allowed process can authorize local signing\n
+fffffff007634fe7	CSTRING	_load_trust_cache
+fffffff007634ff9	CSTRING	%s: error copying in args: %d\n
+fffffff007635018	CSTRING	%s: img4_object_addr expected but not provided\n
+fffffff007635048	CSTRING	%s: img4_object cannot have zero length\n
+fffffff007635071	CSTRING	%s: error copying in img4_object_addr: %d\n
+fffffff00763509c	CSTRING	%s: img4_manifest_addr expected but not provided\n
+fffffff0076350ce	CSTRING	%s: error copying in img4_manifest_addr: %d\n
+fffffff0076350fb	CSTRING	%s: img4_aux_manifest_addr expected but not provided\n
+fffffff007635131	CSTRING	%s: error copying in img4_aux_manifest_addr: %d\n
+fffffff007635162	CSTRING	_unload_trust_cache
+fffffff007635176	CSTRING	%s: UUID expected but not provided\n
+fffffff00763519a	CSTRING	%s: error copying in UUID: %d\n
+fffffff0076351b9	CSTRING	_process_matches_constraint
+fffffff0076351d5	CSTRING	%s: invalid error struct size: %zu\n
+fffffff0076351f9	CSTRING	site.amfi_interface_constraint_match_result_t
+fffffff007635227	CSTRING	Constraint size (%zu) exceeds maximum %d
+fffffff007635250	CSTRING	error copying in constraint %d
+fffffff00763526f	CSTRING	%s: error: %s\n
+fffffff00763527e	CSTRING	com.apple.system-task-ports.token.corpse
+fffffff0076352a7	CSTRING	com.apple.system-task-ports.token.inspect
+fffffff0076352d1	CSTRING	com.apple.system-task-ports.token.read
+fffffff0076352f8	CSTRING	%s: process %s attempted to use MAP_JIT but jit is disallowed by system configuration\n
+fffffff00763534f	CSTRING	int _proc_check_map_anon(proc_t, kauth_cred_t, user_addr_t, user_size_t, int, int, int *)
+fffffff0076353a9	CSTRING	%s: process %d attempted to use MAP_JIT but developer mode status has not been resolved!\n
+fffffff007635403	CSTRING	%s: process %d attempted to use MAP_JIT, but device still locked!\n
+fffffff007635446	CSTRING	csflags
+fffffff00763544e	CSTRING	AMFI: task_for_pid() not allowed\n
+fffffff007635470	CSTRING	AMFI: developer mode is disabled, processes can not run invalid.
+fffffff0076354b1	CSTRING	research.com.apple.license-to-operate
+fffffff0076354d7	CSTRING	AMFI: allowed with a license-to-operate\n
+fffffff007635500	CSTRING	AMFI: run invalid not allowed\n
+fffffff00763551f	CSTRING	com.apple.security.get-movable-control-port
+fffffff00763554b	CSTRING	EntitlementPolicy.h
+fffffff00763555f	CSTRING	no code signature
+fffffff007635571	CSTRING	kern.osreleasetype
+fffffff007635584	CSTRING	Internal
+fffffff00763558d	CSTRING	sip-enabled
+fffffff007635599	CSTRING	apple-internal
+fffffff0076355a8	CSTRING	developer-mode
+fffffff0076355b7	CSTRING	os-environment
+fffffff0076355c6	CSTRING	AMFI: Error: expected light weight code requirement, but data is not valid: %s\n
+fffffff007635616	CSTRING	ConstraintUtilities.cpp
+fffffff00763562e	CSTRING	Constraint category parent constraint can't be enforced because parent has changed
+fffffff007635681	CSTRING	OSDetachedCertificates
+fffffff007635698	CSTRING	iokit.OSDetachedCertificates
+fffffff0076356b5	CSTRING	"Bad AMFI Detached Certs size" @%s:%d
+fffffff0076356db	CSTRING	CertManager.cpp
+fffffff0076356eb	CSTRING	"AMFI gave us too many certs\\n" @%s:%d
+fffffff007635712	CSTRING	"AMFI cert overrun\\n" @%s:%d
+fffffff00763572f	CSTRING	Couldn't allocate buffer for cms blob\n
+fffffff007635756	CSTRING	Couldn't fetch detached certificates for %s\n
+fffffff007635783	CSTRING	AMFI: using cached detached cert data for %s\n
+fffffff0076357b1	CSTRING	alloc_vm_buffer
+fffffff0076357c1	CSTRING	Failed to get path for vnode
+fffffff0076357de	CSTRING	on-system-volume
+fffffff0076357ef	CSTRING	on-authorized-authapfs-volume
+fffffff00763580d	CSTRING	is-sip-protected
+fffffff00763581e	CSTRING	"Couldn't allocate memory for a denylist" @%s:%d
+fffffff00763584f	CSTRING	MISDenylist.cpp
+fffffff00763585f	CSTRING	Validation of denylist failed: not sorted
+fffffff007635889	CSTRING	OSEntitlements
+fffffff007635898	CSTRING	iokit.OSEntitlements
+fffffff0076358ad	CSTRING	"AMFI: failed OSEntitlements back-reference: %p | %p" @%s:%d
+fffffff0076358ea	CSTRING	OSEntitlements.cpp
+fffffff0076358fd	CSTRING	"AMFI: attempted to reinitialize OSEntitlementsReadOnly data: %p" @%s:%d
+fffffff007635946	CSTRING	"AMFI: attempted to reinitialize OSEntitlementsReadOnly ceCtx: %p" @%s:%d
+fffffff007635990	CSTRING	"AMFI: unable to obtain legacy CE context from CE context: %u" @%s:%d
+fffffff0076359d6	CSTRING	"AMFI: attempted to reinitialize OSEntitlementsReadOnly identity: %p" @%s:%d
+fffffff007635a23	CSTRING	"AMFI: unexpected OSEntitlements adjustment without monitor" @%s:%d
+fffffff007635a67	CSTRING	"AMFI: inconsistency between instance and csBlob context" @%s:%d
+fffffff007635aa8	CSTRING	"AMFI: inconsistency in DER entitlements length: %u | %lu" @%s:%d
+fffffff007635aea	CSTRING	"AMFI: unable to adjust without monitor: %u" @%s:%d
+fffffff007635b1e	CSTRING	"AMFI: unable to get legacy context after adjustment without monitor: %u" @%s:%d
+fffffff007635b6f	CSTRING	AMFI: [non-fatal] unable to accelerate context: %s | %u\n
+fffffff007635ba8	CSTRING	"AMFI: unexpected OSEntitlements adjustment with monitor" @%s:%d
+fffffff007635be9	CSTRING	"AMFI: inconsistency between instance and monitor context: %u | %u" @%s:%d
+fffffff007635c34	CSTRING	"AMFI: unable to create legacy CE context from monitor CE context: %u" @%s:%d
+fffffff007635c82	CSTRING	"AMFI: attempted to free OSEntitlements without invalidation" @%s:%d
+fffffff007635cc7	CSTRING	AMFI: unable to validate entitlements: %u\n
+fffffff007635cf2	CSTRING	v16@?0r^{_OSEntitlementsReadOnly=^{OSEntitlements}{CEQueryContext={der_vm_context=^{CERuntime}{CEAccelerationContext=^{CEAccelerationElement}Q}QBB(?={ccder_read_blob=**}{?=**})}B}{_CEContext={_CEContextInfo=CI}{_CEElement={?=*Q}{?=Q{?=*Q}}}^{_CEElementIndex}Q{CEQueryContext={der_vm_context=^{CERuntime}{CEAccelerationContext=^{CEAccelerationElement}Q}QBB(?={ccder_read_blob=**}{?=**})}B}B}^{_CEContext}*{?=^{__SC_GenericBlob}}{?=BB}}8
+fffffff007635ea6	CSTRING	AMFI: failed to create OSObject copy: %u\n
+fffffff007635ed0	CSTRING	"AMFI: failed to create OSDictionary copy: %u\\n" @%s:%d
+fffffff007635f08	CSTRING	"AMFI: failed to compute size for deserialization: %s\\n" @%s:%d
+fffffff007635f48	CSTRING	"AMFI: failed to deserialize legacy context: %s\\n" @%s:%d
+fffffff007635f82	CSTRING	"AMFI: failed to compute size for XML: %s\\n" @%s:%d
+fffffff007635fb6	CSTRING	"AMFI: failed to serialize as XML: %s\\n" @%s:%d
+fffffff007635fe6	CSTRING	2322
+fffffff007635feb	CSTRING	AMFI: Only launchd can set the system service launch type (parent changed: %d)\n
+fffffff00763603b	CSTRING	Root installed system service allowed: %s\n
+fffffff007636066	CSTRING	Process was launched as a system service unexpectedly but met System Service constraints
+fffffff0076360bf	CSTRING	ACMKernelTransport
+fffffff0076360d2	CSTRING	---
+fffffff0076360d6	CSTRING	AssertMacros: %s (value: 0x%lx), %s, file: %s:%d\n
+fffffff007636108	CSTRING	UTIL_OPTIONAL_BUFFER(outBuffer,outSize)
+fffffff007636130	CSTRING	/Library/Caches/com.apple.xbs/A1DFC313-3939-4260-93B4-338320D4E0E9/TemporaryDirectory.95Owi8/Sources/AppleCredentialManager_KernelLibs/ACMKernelLib/ACMKernelTransport.cpp
+fffffff0076361db	CSTRING	transportContext
+fffffff0076361ec	CSTRING	err == 0 
+fffffff0076361f6	CSTRING	_acmService
+fffffff007636202	CSTRING	command
+fffffff00763620a	CSTRING	<data>
+fffffff007636211	CSTRING	%s: %s: returning, err = %ld.\n
+fffffff007636230	CSTRING	initAppleCredentialService
+fffffff00763624b	CSTRING	acmService
+fffffff007636256	CSTRING	AppleCredentialManager
+fffffff00763626d	CSTRING	serviceMatchingDict
+fffffff007636281	CSTRING	service
+fffffff007636289	CSTRING	performCommand
+fffffff007636298	CSTRING	performCommandV3
+fffffff0076362a9	CSTRING	performCommandFunc
+fffffff0076362bc	CSTRING	validateCommand
+fffffff0076362cc	CSTRING	inSize >= sizeof(acm_command_t)
+fffffff0076362ec	CSTRING	%s: %s: called.\n
+fffffff0076362fd	CSTRING	ACM
+fffffff007636301	CSTRING	LibCall_BuildCommand
+fffffff007636316	CSTRING	!dataSize || data
+fffffff007636328	CSTRING	/Library/Caches/com.apple.xbs/A1DFC313-3939-4260-93B4-338320D4E0E9/TemporaryDirectory.95Owi8/Sources/AppleCredentialManager_KernelLibs/common/LibCall.c
+fffffff0076363c0	CSTRING	commandSize
+fffffff0076363cc	CSTRING	os_add_overflow(sizeof(acm_command_t), dataSize, &cmdSize) == 0 
+fffffff00763640d	CSTRING	cmd = (acm_command_t *)acm_malloc_data(cmdSize)
+fffffff00763643d	CSTRING	%s: %s: returning.\n
+fffffff007636451	CSTRING	site.ACMHandleWithPayload
+fffffff00763646b	CSTRING	transport
+fffffff007636475	CSTRING	LibCall_ACMKernelControl
+fffffff00763648e	CSTRING	(data && dataLength && dataLength <= kACMControlMaxDataLength) || (!data && !dataLength)
+fffffff0076364e7	CSTRING	LibCall_ACMGetEnvironmentVariable
+fffffff007636509	CSTRING	dataOutBuffer && dataInOutLength
+fffffff00763652a	CSTRING	LibCall_ACMSetEnvironmentVariable
+fffffff00763654c	CSTRING	(keybagUuid && keybagUuidLength == UUID_LEN) || (!keybagUuid && !keybagUuidLength)
+fffffff00763659f	CSTRING	(data && dataLength && dataLength <= kACMEnvironmentVariableMaxDataLength) || (!data && !dataLength)
+fffffff007636604	CSTRING	ptr
+fffffff007636608	CSTRING	/Library/Caches/com.apple.xbs/A1DFC313-3939-4260-93B4-338320D4E0E9/TemporaryDirectory.95Owi8/Sources/AppleCredentialManager_KernelLibs/common/CommonMem.c
+fffffff0076366a2	CSTRING	_allocatedMem.data >= size
+fffffff0076366bd	CSTRING	heap underflow / memory tracking issue?
+fffffff0076366e5	CSTRING	%s: %s: mem: type=%s ptr=%p size=%u (total=%u raw=%u data=%u types=%u) %s:%d (%s).\n
+fffffff007636739	CSTRING	acm_mem_alloc_info
+fffffff00763674c	CSTRING	_allocatedMem.total >= size
+fffffff007636768	CSTRING	acm_mem_free_info
+fffffff00763677a	CSTRING	site.ACMCredentialRef
+fffffff007636790	CSTRING	site.ACMCredential.ACMCredentialDataPassphraseExtractable
+fffffff0076367ca	CSTRING	site.ACMCredential.ACMCredentialDataPassphraseEntered
+fffffff007636800	CSTRING	site.ACMCredential.ACMCredentialDataBiometryMatched
+fffffff007636834	CSTRING	site.ACMCredential.ACMCredentialDataPasscodeValidated
+fffffff00763686a	CSTRING	site.ACMCredential.ACMCredentialDataPasscodeValidated2
+fffffff0076368a1	CSTRING	site.ACMCredential.ACMCredentialDataUserOutputDisplayed
+fffffff0076368d9	CSTRING	site.ACMCredential.ACMCredentialDataContinuityUnlock
+fffffff00763690e	CSTRING	site.ACMCredential.ACMCredentialDataKextDenyList
+fffffff00763693f	CSTRING	site.ACMCredential.ACMCredentialDataSecureIntent
+fffffff007636970	CSTRING	site.ACMCredential.ACMCredentialDataBiometryMatchAttempted
+fffffff0076369ab	CSTRING	site.ACMCredential.ACMCredentialDataAP
+fffffff0076369d2	CSTRING	site.ACMCredential.ACMCredentialDataSignature
+fffffff007636a00	CSTRING	site.ACMCredential
+fffffff007636a13	CSTRING	site.ACMRequirement
+fffffff007636a27	CSTRING	site.ACMRequirement.ACMRequirementDataPushButton
+fffffff007636a58	CSTRING	site.ACMRequirement.ACMRequirementDataPasscodeValidated
+fffffff007636a90	CSTRING	site.ACMRequirement.ACMRequirementDataPassphraseEntered
+fffffff007636ac8	CSTRING	site.ACMRequirement.ACMRequirementDataBiometryMatched
+fffffff007636afe	CSTRING	site.ACMRequirement.ACMRequirementDataSecureIntent
+fffffff007636b31	CSTRING	site.ACMRequirement.ACMRequirementDataBiometryMatchAttempted
+fffffff007636b6e	CSTRING	site.ACMRequirement.ACMRequirementDataUserOutputDisplayed
+fffffff007636ba8	CSTRING	site.ACMRequirement.ACMRequirementDataAP
+fffffff007636bd1	CSTRING	site.ACMRequirement.ACMRequirementDataKeyRef
+fffffff007636bfe	CSTRING	site.ACMRequirement.ACMRequirementDataAccessGroups
+fffffff007636c31	CSTRING	site.ACMRequirement.ACMRequirementDataRatchet
+fffffff007636c5f	CSTRING	site.ACMRequirement.ACMRequirementDataBiometryMatchedWithAttributes
+fffffff007636ca3	CSTRING	site.ACMRequirement.ACMRequirementDataPushButtonWithAttributes
+fffffff007636ce2	CSTRING	site.ACMRequirement.ACMRequirementDataSecureStateWithAttributes
+fffffff007636d22	CSTRING	site.ACMRequirement.ACMRequirementDataPasscodeValidatedWithAttributes
+fffffff007636d68	CSTRING	ACMKernelLib
+fffffff007636d75	CSTRING	ACMKernControl
+fffffff007636d84	CSTRING	%s: %s: returning, err = %ld, code=%u.\n
+fffffff007636dac	CSTRING	ACMKernSetEnvironmentVariable
+fffffff007636dca	CSTRING	%s: %s: returning, err = %ld, var=%u.\n
+fffffff007636df1	CSTRING	ACMKernGetEnvironmentVariable
+fffffff007636e0f	CSTRING	personalized.engineering-root
+fffffff007636e2d	CSTRING	personalized.pdi
+fffffff007636e3e	CSTRING	personalized.ddi
+fffffff007636e4f	CSTRING	personalized.cryptex-research
+fffffff007636e6d	CSTRING	global.ota-update-brain
+fffffff007636e85	CSTRING	global.bootability-brain
+fffffff007636e9e	CSTRING	cryptex1.boot.os
+fffffff007636eaf	CSTRING	cryptex1.boot.app
+fffffff007636ec1	CSTRING	cryptex1.preboot.app
+fffffff007636ed6	CSTRING	global.pdi
+fffffff007636ee1	CSTRING	personalized.mobile-asset-brain
+fffffff007636f01	CSTRING	cryptex1.safari-downlevel
+fffffff007636f1b	CSTRING	cryptex1.preboot.os
+fffffff007636f2f	CSTRING	personalized.supplemental-persistent
+fffffff007636f54	CSTRING	personalized.supplemental-ephemeral
+fffffff007636f78	CSTRING	cryptex1.generic
+fffffff007636f89	CSTRING	cryptex1.generic.supplemental
+fffffff007636fa7	CSTRING	personalized.mobile-asset-code
+fffffff007636fc6	CSTRING	personalized.cryptex1.update-brain
+fffffff007636fe9	CSTRING	cryptex1.boot.rosetta
+fffffff007636fff	CSTRING	CoreEntitlements: validation | %.*s: 0x%04X\n
+fffffff00763702c	CSTRING	CoreEntitlements: subset | %.*s: 0x%04X\n
+fffffff007637055	CSTRING	vers
+fffffff00763705a	CSTRING	comp
+fffffff00763705f	CSTRING	loadFromCE
+fffffff00763706a	CSTRING	LWCR: invalid version / compatible version fields
+fffffff00763709c	CSTRING	LWCRs are not encoded correctly
+fffffff0076370bc	CSTRING	This LWCR is not compatible with this runtime
+fffffff0076370ea	CSTRING	ccat
+fffffff0076370ef	CSTRING	LWCRs constraint category cannot be less that zero
+fffffff007637122	CSTRING	LWCRs 'requirements' field is not a dictionary
+fffffff007637151	CSTRING	LWCRs do not specify a constraint category or explicit requirements
+fffffff007637195	CSTRING	Got an unexpected type (not an integer, string or data) when trying to generate an In operation.
+fffffff0076371f6	CSTRING	Got an unexpected type (not a sequence) when trying to read the array of matches.
+fffffff007637248	CSTRING	$and operator disallowed for active fact
+fffffff007637271	CSTRING	$or operator disallowed for active fact
+fffffff007637299	CSTRING	$optional only supports a single dependent operation
+fffffff0076372ce	CSTRING	There should only be one operation to match a fact
+fffffff007637301	CSTRING	Got an unexpected type (not a dictionary) when trying to generate a query operation.
+fffffff007637356	CSTRING	$query deserialization failed since it has an invalid query definition
+fffffff00763739d	CSTRING	Expected operator string in Array tuple
+fffffff0076373c5	CSTRING	factless operator disallowed for active fact
+fffffff0076373f2	CSTRING	Non array element found in operator Array
+fffffff00763741c	CSTRING	Incorrect number of elements in operator Array tuple
+fffffff007637451	CSTRING	Unexpected operator in Array tuple
+fffffff007637474	CSTRING	Unexpected type in Array tuple
+fffffff007637493	CSTRING	The array of dependent operations is empty.
+fffffff0076374bf	CSTRING	Array contains too many elements
+fffffff0076374e0	CSTRING	Null query context
+fffffff0076374f3	CSTRING	Constraint is too deeply nested. Failing to avoid recursion overflow
+fffffff007637538	CSTRING	Got an unexpected type (not a dictionary) when trying to generate dependent operations for evaluation.
+fffffff00763759f	CSTRING	The dictionary of dependent operations is empty.
+fffffff0076375d0	CSTRING	Unexpected key for parsing context
+fffffff0076375f3	CSTRING	Too many elements in dictionary
+fffffff007637613	CSTRING	Unexpected type of an fact declaration.
+fffffff00763763b	CSTRING	Unexpected type of an operation declaration.
+fffffff007637668	CSTRING	Fact not allowed in context
+fffffff007637684	CSTRING	$and
+fffffff007637689	CSTRING	$or
+fffffff00763768d	CSTRING	$optional
+fffffff007637697	CSTRING	$and-array
+fffffff0076376a2	CSTRING	$or-array
+fffffff0076376ac	CSTRING	$in
+fffffff0076376b0	CSTRING	$lt
+fffffff0076376b4	CSTRING	$lte
+fffffff0076376b9	CSTRING	$gt
+fffffff0076376bd	CSTRING	$gte
+fffffff0076376c2	CSTRING	$flag-check
+fffffff0076376ce	CSTRING	$query
+fffffff0076376d5	CSTRING	Got an unexpected type (not an integer) when trying to generate an integer operation.
+fffffff00763772b	CSTRING	site.BinaryIntOp
+fffffff00763773c	CSTRING	12122
+fffffff007637742	CSTRING	Invalid fact type for this operation (expected an integer or bool)
+fffffff007637785	CSTRING	site.BinaryStrOp
+fffffff007637796	CSTRING	Invalid fact type for this operation (expected a string)
+fffffff0076377cf	CSTRING	site.BinaryDataOp
+fffffff0076377e1	CSTRING	Invalid fact type for this operation (expected data)
+fffffff007637816	CSTRING	bounded_ptr<T>::operator+=(n): Calculating the number of bytes to add to the offset (n * sizeof(T)) would trigger an overflow
+fffffff007637894	CSTRING	Attempted resurection of an object
+fffffff0076378b7	CSTRING	site.ConstErrorOperation
+fffffff0076378d0	CSTRING	1212212
+fffffff0076378d8	CSTRING	In Operation expected the Fact to be an integer, string or data
+fffffff007637918	CSTRING	Query Operation expected the Fact to be a CoreEntitlements dictionary
+fffffff00763795e	CSTRING	String op requires string parameter
+fffffff007637982	CSTRING	Bool op requires boolean parameter
+fffffff0076379a5	CSTRING	Int op requires int parameter
+fffffff0076379c3	CSTRING	Attempted to execute unknown CoreEntitlements operation
+fffffff0076379fb	CSTRING	Attempted to execute a non-iterable query
+fffffff007637a25	CSTRING	Over-release of an object
+fffffff007637a3f	CSTRING	"%s" @%s:%d
+fffffff007637a4b	CSTRING	OSBoundedPtr.h
+fffffff007637a5a	CSTRING	site.T
+fffffff007637a61	CSTRING	1
+fffffff007637a63	CSTRING	RefCounted object destroyed, but is not fully released
+fffffff007637a9a	CSTRING	site.RefCounted
+fffffff007637aaa	CSTRING	12
+fffffff007637aad	CSTRING	site.AndOperation
+fffffff007637abf	CSTRING	121212
+fffffff007637ac6	CSTRING	site.OrOperation
+fffffff007637ad7	CSTRING	site.InOperation
+fffffff007637ae8	CSTRING	12121122211
+fffffff007637af4	CSTRING	site.QueryOperation
+fffffff007637b08	CSTRING	site.OptionalOperation
+fffffff007637b1f	CSTRING	The range of valid memory is too large to be represented by this type, or [begin, end) is not a well-formed range
+fffffff007637b91	CSTRING	The offset of the pointer inside its valid memory range can't be represented using int32_t
+fffffff007637bec	CSTRING	This bounded_ptr is pointing to memory outside of what can be represented by a native pointer.
+fffffff007637c4b	CSTRING	bounded_ptr<T>::operator+=(n): Adding the specified number of bytes to the offset representing the current position would overflow.
+fffffff007637ccf	CSTRING	bounded_ptr<T>::operator*: Dereferencing this pointer would access memory outside of the bounds set originally
+fffffff007637d3e	CSTRING	<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "https://www.apple.com/DTDs/PropertyList-1.0.dtd"><plist version="1.0">
+fffffff007637de1	CSTRING	</string>
+fffffff007637deb	CSTRING	<integer>
+fffffff007637df5	CSTRING	</integer>
+fffffff007637e00	CSTRING	CESerializeXML
+fffffff007637e0f	CSTRING	critical failure during xml serialization, start != end
+fffffff007637e47	CSTRING	der_vm_execute_nocopy
+fffffff007637e5d	CSTRING	noop
+fffffff007637e62	CSTRING	unhandled opcode
+fffffff007637e73	CSTRING	der_vm_iterate_b
+fffffff007637e84	CSTRING	iterable decoding failure
+fffffff007637e9e	CSTRING	iteration over a non-iterable type
+fffffff007637ec1	CSTRING	encountered invalid element in an iterable
+fffffff007637eec	CSTRING	der_vm_integer_from_context
+fffffff007637f08	CSTRING	Attempting to select an integer value from a non-integer DER object
+fffffff007637f4c	CSTRING	der_vm_string_from_context
+fffffff007637f67	CSTRING	Attempting to select a string value from a non-string DER object
+fffffff007637fa8	CSTRING	der_vm_bool_from_context
+fffffff007637fc1	CSTRING	Attempting to select a boolean value from a non-boolean DER object
+fffffff007638004	CSTRING	der_vm_data_from_context
+fffffff00763801d	CSTRING	Attempting to select a data value from a non-data DER object
+fffffff00763805a	CSTRING	der_vm_buffer_from_context
+fffffff007638075	CSTRING	Failed during buffer decoding
+fffffff007638093	CSTRING	CEValidateWithOptions
+fffffff0076380a9	CSTRING	invalid arguments passed in
+fffffff0076380c5	CSTRING	xml-looking blob was passed in
+fffffff0076380e4	CSTRING	validate_VNext
+fffffff0076380f3	CSTRING	entitlements blob does not have CCDER_ENTITLEMENTS coding
+fffffff00763812d	CSTRING	[%s]: entitlements blob has unexpected version %lld\n
+fffffff007638162	CSTRING	entitlements blob does not have CCDER_ENTITLEMENTS_DICT as the second element
+fffffff0076381b0	CSTRING	validate_V0
+fffffff0076381bc	CSTRING	entitlements blob does not have CCDER_CONSTRUCTED_SET coding
+fffffff0076381f9	CSTRING	&amp;
+fffffff0076381ff	CSTRING	&gt;
+fffffff007638204	CSTRING	&lt;
+fffffff007638209	CSTRING	&apos;
+fffffff007638210	CSTRING	&quot;
+fffffff007638217	CSTRING	%lld
+fffffff00763821c	CSTRING	[%s]: subset validation failed, key not found in the superset '%.*s'\n
+fffffff007638262	CSTRING	valuesAreAllowed_block_invoke
+fffffff007638280	CSTRING	*
+fffffff007638282	CSTRING	[%s]: subset validation failed, key %.*s with value '%.*s' not allowed\n
+fffffff0076382ca	CSTRING	[%s]: subset validation failed, bool value of key '%.*s' not allowed\n
+fffffff007638310	CSTRING	[%s]: subset validation failed, integer value of key '%.*s' not allowed\n
+fffffff007638359	CSTRING	[%s]: subset validation failed, string array of key '%.*s' not allowed\n
+fffffff0076383a1	CSTRING	[%s]: subset validation failed, type mismatch for key '%.*s' %lu != %lu \n
+fffffff0076383eb	CSTRING	CEIndexSizeForContext
+fffffff007638401	CSTRING	index size overflow
+fffffff007638415	CSTRING	CEBuildIndexForContext
+fffffff00763842c	CSTRING	runtime doesn't support acceleration
+fffffff007638451	CSTRING	copy_keys_to_accelerator_block_invoke
+fffffff007638477	CSTRING	fatal error when decoding key/value pair
+fffffff0076384a0	CSTRING	Not a CoreEntitlements error!
+fffffff0076384be	CSTRING	OK
+fffffff0076384c1	CSTRING	API Misuse
+fffffff0076384cc	CSTRING	Invalid Arguments
+fffffff0076384de	CSTRING	A memory allocation has failed
+fffffff0076384fd	CSTRING	Verification failed
+fffffff007638511	CSTRING	Query cannot be satisfied
+fffffff00763852b	CSTRING	Not eligible for acceleration
+fffffff007638549	CSTRING	recursivelyValidateEntitlements
+fffffff007638569	CSTRING	recursion limit reached
+fffffff007638581	CSTRING	invalid tag or length
+fffffff007638597	CSTRING	String contains an embedded NUL
+fffffff0076385b7	CSTRING	data element not allowed
+fffffff0076385d0	CSTRING	numeric string element not allowed
+fffffff0076385f3	CSTRING	UTC Time element not allowed
+fffffff007638610	CSTRING	Entitlements element not allowed
+fffffff007638631	CSTRING	encountered invalid tag
+fffffff007638649	CSTRING	extra data at the end of element
+fffffff00763866a	CSTRING	der_validate_dictionary
+fffffff007638682	CSTRING	dictionary key / value decoding failure
+fffffff0076386aa	CSTRING	key contains an embedded NUL
+fffffff0076386c7	CSTRING	dictionary keys are not sorted or not unique
+fffffff0076386f4	CSTRING	dictionary value verification failure
+fffffff00763871a	CSTRING	der_validate_array
+fffffff00763872d	CSTRING	der_vm_execute_select_index
+fffffff007638749	CSTRING	array decoding failure
+fffffff007638760	CSTRING	encountered invalid element in an array
+fffffff007638788	CSTRING	der_vm_execute_select_key
+fffffff0076387a2	CSTRING	dictionary decoding failure
+fffffff0076387be	CSTRING	key length is invalid
+fffffff0076387d4	CSTRING	invalid dictionary element
+fffffff0076387ef	CSTRING	der_vm_execute_match_string
+fffffff00763880b	CSTRING	string decode failure
+fffffff007638821	CSTRING	der_vm_execute_match_bool
+fffffff00763883b	CSTRING	bool decode failure
+fffffff00763884f	CSTRING	der_vm_execute_match_integer
+fffffff00763886c	CSTRING	der_vm_execute_match_string_prefix
+fffffff00763888f	CSTRING	der_vm_execute_string_value_allowed
+fffffff0076388b3	CSTRING	Unexpected type to match against
+fffffff0076388d4	CSTRING	der_vm_execute_string_prefix_value_allowed
+fffffff0076388ff	CSTRING	der_vm_execute_select_longest_matching_key
+fffffff00763892a	CSTRING	der_vm_execute_integer_value_allowed
+fffffff00763894f	CSTRING	string_value_allowed_iterate
+fffffff00763896c	CSTRING	Unexpected type to match against during iteration
+fffffff00763899e	CSTRING	string_prefix_allowed_iterate
+fffffff0076389bc	CSTRING	integer_allowed_iterate
+fffffff0076389d4	CSTRING	der_decode_next
+fffffff0076389e4	CSTRING	could not decode tag for next DER sub-sequence
+fffffff007638a13	CSTRING	could not decode size for next DER sub-sequence
+fffffff007638a43	CSTRING	sub-sequence size is larger than sequence size
+fffffff007638a72	CSTRING	der_decode_number
+fffffff007638a84	CSTRING	unknown number encoding
+fffffff007638a9c	CSTRING	number too large
+fffffff007638aad	CSTRING	der_decode_boolean
+fffffff007638ac0	CSTRING	Unknown boolean encoding
+fffffff007638ad9	CSTRING	boolean should be exactly 1 byte
+fffffff007638afa	CSTRING	der_decode_string
+fffffff007638b0c	CSTRING	Unknown string encoding
+fffffff007638b24	CSTRING	der_decode_data
+fffffff007638b34	CSTRING	Unknown data encoding
+fffffff007638b4a	CSTRING	der_decode_numeric_string
+fffffff007638b64	CSTRING	Unknown numeric string encoding
+fffffff007638b84	CSTRING	der_decode_utc_time
+fffffff007638b98	CSTRING	Unknown UTC Time encoding
+fffffff007638bb2	CSTRING	der_decode_entitlements
+fffffff007638bca	CSTRING	Unknown DER entitlements encoding
+fffffff007638bec	CSTRING	der_decode_key_value
+fffffff007638c01	CSTRING	key / value decoding failure
+fffffff007638c1e	CSTRING	dictionary key is not a valid string
+fffffff007638c43	CSTRING	unable to decode value tag for key-value pair
+fffffff007638c71	CSTRING	unable to decode value size for key-value pair
+fffffff007638ca0	CSTRING	key-value pair contains extra elements
+fffffff007638cc7	CSTRING	v40@?0{CESerializedElement=q(?=q)QB}8
+fffffff007638ced	CSTRING	[%s]: %s\n
+fffffff007638cf7	CSTRING	CEDeserialize_block_invoke
+fffffff007638d12	CSTRING	CEDeserialization length mismatch
+fffffff007638d34	CSTRING	B16@?0^{?={der_vm_context=^{CERuntime}{CEAccelerationContext=^{CEAccelerationElement}Q}QBB(?={ccder_read_blob=**}{?=**})}{der_vm_context=^{CERuntime}{CEAccelerationContext=^{CEAccelerationElement}Q}QBB(?={ccder_read_blob=**}{?=**})}II^v}8
+fffffff00763a398	OSLOG	Library Load Constraint Rejection: Rejecting '%s' (Team ID: %s, platform: %s) for process '%s(%d)' (Team ID: %s, platform: %s), reason: %.*s
+fffffff00763a425	OSLOG	evaluateLibraryLoadConstraintOnLibrary() could not copy out error msg '%s', error: %d
+fffffff00763a47b	OSLOG	Library Process Constraint Rejection: Rejecting loading of '%s' (Team ID: %s, platform: %s) for process '%s(%d)' (Team ID: %s, platform: %s), reason: %.*s
+fffffff00763a516	OSLOG	evaluateLibraryLoadConstraintOnProcess() could not copy out error msg '%s', error: %d
+fffffff00763a56c	OSLOG	Library Validation overridden for '%s' (Team ID: %s, platform: %s) for process '%s(%d)' (Team ID: %s, platform: %s), overridden failure: %s
+fffffff00763a5f8	OSLOG	Library Validation failed: Rejecting '%s' (Team ID: %s, platform: %s) for process '%s(%d)' (Team ID: %s, platform: %s), reason: %s
+fffffff00763a67b	OSLOG	library_validation_failure() could not copy out error msg '%s', error: %d
+fffffff00763a6c5	OSLOG	%s: vm_allocate failed
+fffffff00763a6dc	OSLOG	%s: vm_map_wire failed kr = %d
+fffffff00763a6fb	OSLOG	%s: vm_map_unwire failed kr = %d
+fffffff00763a71c	OSLOG	%s: vm_map_copyin failed kr = %d

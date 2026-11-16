@@ -1,0 +1,3 @@
+funcs 356 356
+identical 356 ratio 1.0
+changed regions 0

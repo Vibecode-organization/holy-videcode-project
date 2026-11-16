@@ -1,0 +1,437 @@
+CoreGraphics PDF 处理中的两个堆越界写（OOB Write）漏洞详解
+目标：iPhone 14（iPhone14,7 / D27AP / A15 T8110），iOS 27.2 RC（24B115）
+作者：SMITH / 2026-10-27
+
+
+====================================================================
+一、先说结论
+====================================================================
+
+1. 本次找到的是两个 OOB Write（越界写）漏洞，都是【用户态堆越界写】，
+   不是任意内核读写（arbitrary kernel R/W）。
+
+2. 两个漏洞都在 CoreGraphics 的 PDF 渲染路径中：
+   - 漏洞一：Type 5 网格着色（lattice-form Gouraud mesh shading）
+             函数输出维度与颜色空间分量数不匹配，导致按固定步长写入顶点记录时越界。
+             修复标记：CG-SEC-187882049
+   - 漏洞二：CMap /UseCMap 链的码空间维度不匹配，
+             解码时使用未初始化的栈值作为“已消费字节数”，
+             造成长度数组（malloc(len*8)）越界写。
+             修复标记：CG-SEC-187882136
+
+3. 修复状态：
+   - iOS 27.2 RC（24B115）：两个漏洞均已修复。
+   - iOS 27.2 正式版（24B119）：已修复，且 CoreGraphics 代码与 RC 基本一致。
+   - iOS 27.0（24A5408d）、iOS 26.6（23G71）：均未修复，漏洞存在。
+   - 因此：27.2 RC 上不可利用；26.5.2 / 26.6 / 27.0 上可利用。
+
+4. 影响范围：任何渲染 PDF 的应用进程（文件预览、附件预览、Safari、
+   第三方 PDF 阅读器）。破坏的是该进程内的 malloc 堆，可能导致崩溃，
+   进一步可用于进程内代码执行或数据破坏；但不能直接读写内核内存，
+   也不能仅凭该漏洞逃逸沙箱。
+
+
+====================================================================
+二、为什么这不是任意内核 R/W
+====================================================================
+
+CoreGraphics 是用户态框架，运行在应用自己的进程里，和内核态没有直接关系。
+本次漏洞的原语是：
+
+  - 在用户态 malloc 堆上分配的顶点记录数组中，
+  - 以 0x48 字节为步长，
+  - 从记录 +0x20 处开始，
+  - 连续写入 N 个 64 位 double（N 由 PDF 中的函数 /Range 决定）。
+
+这是一个“固定偏移、可控数量、可控 64 位值”的堆写原语，不是内核地址写。
+它不能：
+  - 读写内核虚拟地址；
+  - 修改内核对象（task、proc、cred、IOSurface 等）；
+  - 绕过沙箱或 PAC/KASLR。
+
+要做到任意内核读写，需要另一个独立的内核层漏洞（例如之前 IOSurface
+方向的研究）。本漏洞的现实价值是：
+  - 在渲染进程内实现可控堆破坏；
+  - 可作为沙箱内代码执行链的第一步；
+  - 若渲染发生在有额外权限的进程（例如某些预览服务），价值更高，
+    但仍需配合其他漏洞才能提权。
+
+一句话：OOB Write = 用户态堆越界写；任意内核 R/W = 另一类内核漏洞。
+
+
+====================================================================
+三、研究方法（如何定位到这两处）
+====================================================================
+
+1. 从 IPSW 中提取 SystemOS cryptex：
+   - iOS 27.2 RC IPSW：iPhone14,7_27.2_24B115_Restore.ipsw
+   - 用 HTTP Range 只取 141-09773-223.dmg.aea（约 2.4 GB）
+   - ipsw fw aea 解密，7-Zip 解开 APFS 镜像
+   - 从 split dyld shared cache 中提取 CoreGraphics
+
+2. 符号恢复：
+   - dyld_shared_cache_arm64e.symbols 使用 LZBITMAP 压缩（decmpfs type 14）
+   - 自己实现 LZBITMAP 解压（Rust + zbitmap crate）
+   - 恢复 CoreGraphics 约 12000 个本地符号
+
+3. 版本对比：
+   - 提取 iOS 27.0（24A5408d）与 27.2（24B119）的 CoreGraphics
+   - 用 capstone 做指令级归一化对比，过滤寄存器/立即数差异
+   - 发现两处带新字符串的 PDF 安全修复
+
+4. 反编译确认：
+   - Ghidra 导入、按符号建函数、反编译关键函数
+   - 确认越界写点、调用链、修复检查
+
+5. RC 验证：
+   - 从 RC IPSW 提取 CoreGraphics，确认两个 CG-SEC 字符串都存在
+   - RC 与正式版 CoreGraphics 函数级对比：仅 11 处差异，全部是 ObjC 元数据
+   - 结论：RC 已包含修复，代码与正式版一致
+
+
+====================================================================
+四、漏洞一：Type 5 着色堆越界写
+====================================================================
+
+4.1 PDF 中的结构
+
+ShadingType 5 是 lattice-form Gouraud 网格。PDF 中用流保存顶点：
+每个顶点包含 x、y 和颜色分量，按 BitsPerCoordinate / BitsPerComponent 打包。
+
+示例字典：
+
+  << /ShadingType 5
+     /ColorSpace /DeviceRGB
+     /BitsPerCoordinate 8
+     /BitsPerComponent 8
+     /VerticesPerRow 2
+     /Decode [0 1 0 1 0 1]
+     /Function 6 0 R
+     /Length ...
+  >>
+  stream
+  ...顶点数据...
+  endstream
+
+页面内容流中通过 “/Sh1 sh” 触发绘制。
+
+4.2 调用链（27.2 地址）
+
+  /Sh1 sh
+    -> CGPDFContentStreamImpl::getShading        0x183f3384c
+    -> CGPDFShadingCreateWithObject              0x183eed21c
+    -> CGPDFShadingType5Init                     0x183c5c88c
+    -> type5_create_shading                      0x183c5cc60
+    -> _rips_BltShade
+    -> _cg_shading_type5_draw                    0x183c5ce60
+
+4.3 根因
+
+CGPDFShadingType5Init 读取 /Function 后，会得到函数对象：
+  - 函数对象 +0x20：domain dimension
+  - 函数对象 +0x30：range dimension（输出 double 的个数）
+
+对于单个函数，range dimension = /Range 数组长度 / 2。
+对于函数数组，range dimension = 数组元素个数（每个元素必须是 range 1）。
+
+在 27.0 中，初始化时【没有】比较：
+  function->range_dim  vs  color_space->components
+
+于是可以构造：
+  /ColorSpace /DeviceRGB   （3 个分量）
+  /Function 输出 64 个 double
+
+27.2 增加了检查：
+
+  uVar3 = colorspace->components;   // DeviceRGB = 3
+  uVar7 = function->range_dim;      // 例如 64
+  if ((4 < uVar3) || (uVar7 != uVar3)) {
+      _pdf_error("CG-SEC-187882049: invalid function for type 5 shading "
+                 "(range dimension does not match color space).");
+      return 0;
+  }
+
+4.4 越界写点
+
+_cg_shading_type5_draw 为三角形顶点分配记录数组，每条记录步长：
+  0x48 字节 = 72 字节 = 9 个 double
+
+记录布局：
+
+  偏移        内容
+  +0x00       x
+  +0x08       y
+  +0x10       0
+  +0x18       0
+  +0x20       color[0] ... color[N-1]
+  +0x20+N*8   alpha = 1.0
+
+反编译代码（27.2，逻辑与 27.0 相同）：
+
+  puVar14 = (undefined8 *)(triangle_array + index * 0x48);
+  puVar14[0] = x;
+  puVar14[1] = y;
+  puVar14[2] = 0;
+  puVar14[3] = 0;
+
+  if (shading->function == 0) {
+      for (i = 0; i < components; i++)
+          puVar14[i + 4] = vertex_colors[i];
+  } else {
+      local_b8 = vertex_param;                  // 每个顶点 1 个参数
+      FUN_183b7ffbc(shading->function, &local_b8, puVar14 + 4);
+      // 从 +0x20 开始写入 range_dim 个 double
+  }
+
+  puVar14[components + 4] = 1.0;                // alpha
+
+计算：
+  - 颜色从索引 4 开始；
+  - 记录总共 9 个 double，索引 0..8；
+  - 安全的最大输出数 N = 5（索引 4..8）。
+
+当 N = 64：
+  - 函数写入 64 个 double = 512 字节；
+  - 起点是记录 +0x20；
+  - 超出记录末尾 512 - (72 - 32) = 472 字节；
+  - 即 59 个 double 写到下一条记录/相邻堆对象中。
+
+对最后一条记录，越界部分直接写到整个顶点数组之外，进入相邻堆块。
+
+写入值：
+  - Type 0 采样函数：由样本字节和 /Decode 决定，可以控制为任意 0..1 的 double；
+  - Type 4 PostScript 计算函数：可以计算任意 double 常量。
+  因此不是“写垃圾”，而是“连续写入 N 个可控 64 位值”。
+
+4.5 触发方式与 PoC
+
+PoC 生成脚本：make_type5_shading.py
+生成文件：type5_8.pdf、type5_32.pdf、type5_64.pdf
+
+PDF 内容：
+  - 1 页；
+  - /Resources /Shading << /Sh1 5 0 R >>；
+  - 内容流 “/Sh1 sh”；
+  - 对象 5：ShadingType 5，DeviceRGB，BitsPerCoordinate 8，
+    BitsPerComponent 8，VerticesPerRow 2，Decode [0 1 0 1 0 1]，
+    流为 4 个顶点 × 3 字节（2×2 网格）；
+  - 对象 6：Type 0 函数，Domain [0 1]，Range 为 2*N 个数，
+    Size [2]，BitsPerSample 8，Order 1，Encode [0 1]，
+    Decode 为 2*N 个数，流为 2*N 字节。
+
+第三方解析器（poppler）对该文件的输出：
+  “GfxGouraudTriangleShading: function with wrong output size”
+
+说明 PDF 结构正确，函数确实是“输出维度错误”的 64 输出函数，
+CoreGraphics 27.0 及更早版本不会拦截。
+
+4.6 预期效果
+
+在存在漏洞的版本（26.5.2 / 26.6 / 27.0）上：
+  - 每个顶点写入 64 个 double；
+  - 最后一条记录越界约 472 字节；
+  - 单次渲染即可破坏相邻堆对象；
+  - 重复渲染（PoC 应用默认 200 次）会放大破坏，通常表现为崩溃、
+    堆校验失败或后续对象使用异常。
+
+在 27.2 RC / 27.2 正式版上：
+  - 初始化阶段直接返回错误；
+  - 不会进入 _cg_shading_type5_draw 的漏洞分支。
+
+4.7 修复差异
+
+  iOS 27.0：_CGPDFShadingType5Init @ 0x183d77bfc，约 220 条指令，无检查。
+  iOS 27.2：_CGPDFShadingType5Init @ 0x183c5c88c，约 245 条指令，有检查。
+  修复字符串：CG-SEC-187882049，位于 0x18426968e。
+
+
+====================================================================
+五、漏洞二：CMap /UseCMap 长度数组越界写
+====================================================================
+
+5.1 背景
+
+Type0 字体中的文本字符串不是 Unicode，而是 code space 中的编码。
+解码由 CMap 完成：code -> CID。
+
+核心函数：
+  _cmap_convert(cmap, in, len, out_codes, out_lengths)
+  27.2 地址：0x183ed71a4
+
+它逐字节扫描输入，在 code space 中查找匹配范围，
+写入输出码和“消费的字节数”，返回解码出的码数量。
+
+CMap 可以带 /UseCMap（cmap+0x20），指向父 CMap。
+如果当前 CMap 的 code space 找不到匹配，会递归调用父 CMap。
+
+5.2 漏洞路径
+
+构造：
+  - 外层 CMap：1 字节 code space（<00> <ff>）
+  - /UseCMap 指向：2 字节 code space（<0000> <ffff>）
+  - 输入：1 字节，例如 <41>
+
+递归分支：
+
+  bVar10 = *pbVar5;              // 外层 code 长度 = 1
+  if (3 < bVar10) bVar10 = 4;
+  lVar3 = _cmap_convert(used_cmap, in, bVar10,
+                        local_70, local_90);
+  uVar9 = local_90[0];           // 递归“消费”的字节数
+
+父 CMap 只有 1 个字节可用，无法匹配 2 字节 code，
+递归返回 0，且【没有写入】local_90[0]。
+
+27.0 及更早版本直接使用 local_90[0] —— 这是一个未初始化的栈值。
+
+5.3 后果
+
+  - uVar9 == 0：
+      in += 0; len -= 0;
+      循环不前进，但 out_codes / out_lengths 持续递增；
+      每次迭代写 2 字节码 + 8 字节长度；
+      最终写出 malloc(len * 8) 分配的长度数组之外 —— 堆越界写。
+
+  - uVar9 很大：
+      len 发生无符号下溢；
+      继续读取输入缓冲区之外的数据；
+      同时持续写输出数组 —— 越界读 + 越界写。
+
+调用者 FUN_183fe61a0 的关键分配：
+  uVar2 = malloc(param_3 << 3);   // param_3 = 输入字节数
+  lVar7 = _cmap_convert(..., puVar3);  // puVar3 为长度数组
+
+也就是说，长度数组大小固定为“输入长度 × 8”，
+而漏洞路径可以让循环写入超过这个数量的条目。
+
+5.4 修复
+
+27.2 增加：
+
+  lVar3 = _cmap_convert(used_cmap, in, bVar10,
+                        local_70, local_90);
+  uVar9 = local_90[0];
+  uVar18 = local_70[0];
+  if (lVar3 != 1) {
+      _pdf_log("CG-SEC-187882136: used-cmap codespace-dimension mismatch "
+               "contained (decoded %zu codes from a %zu-byte code); "
+               "falling back to identity.");
+      goto identity_fallback;   // uVar9 = *pbVar5; 码 = 原码
+  }
+
+修复后：
+  - 递归必须恰好解码出 1 个码，否则回退到 identity；
+  - 回退时长度取外层 code space 的长度（>=1），
+    循环保证推进，不会再无限写入。
+
+5.5 PoC 思路
+
+需要：
+  - Type0 字体；
+  - /Encoding 指向一个内嵌 CMap 流；
+  - 该 CMap 声明 1 字节 code space，并带 /UseCMap 指向另一个
+    声明 2 字节 code space 的 CMap；
+  - 页面内容中用单字节字符串触发（例如 <41> Tj）。
+
+该 PoC 目前只有静态方案，尚未在设备上做动态验证；
+Type 5 的 PoC 已经验证了 PDF 结构可被解析。
+
+
+====================================================================
+六、版本对照
+====================================================================
+
+  版本                          Type 5      CMap
+  ----------------------------------------------------------
+  iOS 26.5.2                   存在        存在
+  iOS 26.6（23G71）            存在        存在
+  iOS 27.0（24A5408d）         存在        存在
+  iOS 27.2 RC（24B115）        已修复      已修复
+  iOS 27.2（24B119）           已修复      已修复
+
+RC 验证依据：
+  - RC 的 dyld_shared_cache_arm64e.01 中存在
+    CG-SEC-187882049 与 CG-SEC-187882136 两个字符串；
+  - RC 与 24B119 的 CoreGraphics 函数级对比只有 11 处差异，
+    全部是 ObjC 元数据，没有代码差异。
+
+
+====================================================================
+七、产物与验证步骤
+====================================================================
+
+文件（均在 /home/femboychik/work/pdf/ 下）：
+
+  REPORT_PDF_OOB_27.2_RC.md        完整俄文报告
+  CGPDF_OOB_write_CN.txt           本中文说明
+  poc/make_type5_shading.py        Type 5 PoC 生成器
+  poc/type5_8.pdf                  N=8 的 PoC
+  poc/type5_32.pdf                 N=32 的 PoC
+  poc/type5_64.pdf                 N=64 的 PoC
+  app/                             Theos 测试应用源码
+  app/PDFProbe.ipa                 已编译的 ad-hoc IPA
+  CoreGraphics.26.6 / 27.0 / RC115 / 27.2   提取出的二进制
+  dump_shading.c / dump_filters.c / dump_xref.c   反编译代码
+
+验证步骤（在存在漏洞的设备上，例如 26.5.2 的 iPhone 12 Pro Max）：
+
+  1. 用正常签名流程给 PDFProbe.ipa 签名并安装；
+  2. 启动应用；
+  3. 应用会自动依次渲染 type5_8、type5_32、type5_64，
+     然后循环渲染 type5_64 共 200 次；
+  4. 在漏洞版本上预期出现崩溃或堆损坏；
+     在 27.2 RC 上预期正常完成，日志显示 done；
+  5. 崩溃日志位于 Analytics Data / CrashReporter。
+
+
+====================================================================
+八、后续方向（针对 27.2 仍存活的攻击面）
+====================================================================
+
+1. libType1Scaler.dylib
+   - 27.0 到 27.2 之间存在真实代码改动：
+     多处索引计算从 uxtw 改为 lsl，以及舍入逻辑调整；
+   - 27.2 中仍存在 22 处带 uxtw/sxtw 索引的写入；
+   - PDF 可内嵌 Type1 字体（FontFile），经 CGFont 路径进入 scaler；
+   - 这是目前最值得继续审计的“字体 -> 标量器”路径。
+
+2. CoreGraphics 内嵌 CFF/Type1 解析
+   - CGFontCreateWithPDFFontDataAndZapfData 在 27.0 到 27.2 变化较大；
+   - 27.2 的字体 OOB 修复（CVE-2026-113950 一类）说明该区域近期活跃。
+
+3. 图像 XObject / 软掩码
+   - PDF 图像的解码参数（Width、Height、BitsPerComponent、Decode、
+     SMask）仍是大表面积；
+   - 历史上 CVE-2021-30860 即位于软掩码数据提供者。
+
+4. 设备端模糊测试
+   - 使用 PDFProbe 作为渲染宿主，喂入变异后的 PDF 语料；
+   - 无覆盖率，但可作为低成本补充手段。
+
+====================================================================
+九、附录：关键地址与字符串
+====================================================================
+
+iOS 27.2（RC 24B115 与正式 24B119 代码一致）：
+
+  _CGPDFShadingType5Init                 0x183c5c88c
+  _type5_create_shading                   0x183c5cc60
+  _cg_shading_type5_draw                  0x183c5ce60
+  FUN_183b7ffbc（函数求值写入）            0x183b7ffbc
+  _cmap_convert                           0x183ed71a4
+  FUN_183fe61a0（长度数组分配者）          0x183fe61a0
+  CG-SEC-187882049 字符串                  0x18426968e
+  CG-SEC-187882136 字符串                  0x18426aff2
+
+iOS 27.0（24A5408d）：
+
+  _CGPDFShadingType5Init                 0x183d77bfc
+  _cg_shading_type5_draw                  0x183d7816c
+  _cmap_convert                           0x183fe9c40（无回退检查）
+
+iOS 26.6（23G71）：
+
+  _CGPDFShadingType5Init                 0x18441f610
+  _cmap_convert                           0x18469db78
+
+（完）

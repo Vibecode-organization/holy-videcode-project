@@ -1,0 +1,567 @@
+(version 1)
+(%extends-builtin "baseline")
+(enable-profile-flag "common-rules")
+(enable-profile-flag "common-syscall-rules")
+(enable-profile-flag "common-apple-internal-rules")
+(enable-profile-flag "common-sysctl-rules")
+(enable-profile-flag "common-pluginkit-support")
+(enable-profile-flag "generic-sandbox-extension-support")
+(enable-profile-flag "common-debugging-rules")
+(enable-profile-flag "common-device-access")
+(enable-profile-flag "common-preferences-rules")
+(enable-profile-flag "common-mobilegestalt-rules")
+(enable-profile-flag "common-containermanagerd-rules")
+(enable-profile-flag "common-system-logging-rules")
+(enable-profile-flag "common-managed-configuration-read-rules")
+(enable-profile-flag "common-exception-entitlement-rules")
+(enable-profile-flag "neuter-syscall-unix-policy-enforcement")
+(enable-profile-flag "neuter-syscall-mach-policy-enforcement")
+
+;; (default) inherited from parent profile "baseline"
+(delegate default)
+
+(allow asr-parser-enter)
+
+(allow coalition-info)
+
+(allow consume-extension)
+
+(allow file-graft)
+
+(allow file-issue-extension
+	(require-all
+		(subpath "${PROCESS_TEMP_DIR}/com.apple.mediaparserd")
+		(extension-class "com.apple.mediaserverd.read-write")
+	)
+)
+(allow file-issue-extension
+	(require-all
+		(subpath "/private/var/tmp/com.apple.mediaparserd")
+		(require-any
+			(extension-class "com.apple.aned.read-only")
+			(extension-class "com.apple.app-sandbox.read")
+			(extension-class "com.apple.app-sandbox.read-write")
+			(extension-class "com.apple.mediaserverd.read")
+			(extension-class "com.apple.mediaserverd.read-write")
+		)
+	)
+)
+(deny file-issue-extension
+	(require-all
+		(require-not (extension "com.apple.app-sandbox.read"))
+		(require-not (extension "com.apple.app-sandbox.read-write"))
+		(require-not (extension "com.apple.security.exception.files.absolute-path.read-only"))
+		(require-not (extension "com.apple.security.exception.files.absolute-path.read-write"))
+		(require-any
+			(require-any
+				(literal "/System/Library/Caches/apticket.der")
+				(subpath "/System/Library/Caches/com.apple.factorydata")
+				(subpath "/System/Library/Caches/com.apple.kernelcaches")
+			)
+			(require-any
+				(literal "/usr/standalone/firmware/apticket.der")
+				(subpath "/private/var/hardware/FactoryData")
+			)
+		)
+	)
+)
+
+(allow file-lock)
+
+(allow file-map-executable
+	(require-all
+		(extension "com.apple.sandbox.oopjit")
+		(subpath "/private/var/OOPJit")
+		(require-not (%entitlement-is-present "com.apple.private.oop-jit.loader"))
+	)
+)
+
+(allow file-read*
+	(require-all
+		(extension "com.apple.sandbox.oopjit")
+		(subpath "/private/var/OOPJit")
+		(require-not (%entitlement-is-present "com.apple.private.oop-jit.loader"))
+	)
+)
+(allow file-read*
+	(require-all
+		(system-attribute internal-build)
+		(require-any
+			(literal "${FRONT_USER_HOME}/Library/Logs/CrashReporter")
+			(require-all
+				(subpath "/private/var")
+				(require-any
+					(literal "${FRONT_USER_HOME}/Library/Logs/CrashReporter")
+					(require-all
+						(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Library/Logs/CrashReporter/(Retired/)?(\.)?mediaparserd_")
+						(subpath "${FRONT_USER_HOME}")
+					)
+				)
+			)
+		)
+	)
+)
+(allow file-read*
+	(require-any
+		(subpath "${PROCESS_TEMP_DIR}/com.apple.mediaparserd")
+		(subpath "/private/var/tmp/com.apple.mediaparserd")
+		(subpath "/usr/libexec")
+	)
+)
+(deny file-read*
+	(require-any
+		(literal "/System/Library/Caches/apticket.der")
+		(literal "/usr/standalone/firmware/apticket.der")
+		(subpath "/System/Library/Caches/com.apple.factorydata")
+		(subpath "/System/Library/Caches/com.apple.kernelcaches")
+		(subpath "/private/var/hardware/FactoryData")
+	)
+)
+
+(allow file-read-metadata
+	(require-all
+		(extension "com.apple.sandbox.oopjit")
+		(subpath "/private/var/OOPJit")
+		(require-not (%entitlement-is-present "com.apple.private.oop-jit.loader"))
+	)
+)
+(allow file-read-metadata
+	(require-all
+		(system-attribute internal-build)
+		(subpath "${FRONT_USER_HOME}/Library/Logs/CrashReporter")
+	)
+)
+(allow file-read-metadata
+	(require-all
+		(system-attribute internal-build)
+		(require-any
+			(literal "${FRONT_USER_HOME}/Library/Logs/CrashReporter")
+			(require-all
+				(subpath "/private/var")
+				(require-any
+					(literal "${FRONT_USER_HOME}/Library/Logs/CrashReporter")
+					(require-all
+						(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Library/Logs/CrashReporter/(Retired/)?(\.)?mediaparserd_")
+						(subpath "${FRONT_USER_HOME}")
+					)
+				)
+			)
+		)
+	)
+)
+(allow file-read-metadata
+	(require-any
+		(literal "${HOME}")
+		(literal "${HOME}/Library/Preferences")
+		(subpath "${PROCESS_TEMP_DIR}/com.apple.mediaparserd")
+		(subpath "/private/var/tmp/com.apple.mediaparserd")
+		(subpath "/usr/libexec")
+	)
+)
+(deny file-read-metadata
+	(require-any
+		(literal "/System/Library/Caches/apticket.der")
+		(literal "/usr/standalone/firmware/apticket.der")
+		(subpath "/System/Library/Caches/com.apple.factorydata")
+		(subpath "/System/Library/Caches/com.apple.kernelcaches")
+		(subpath "/private/var/hardware/FactoryData")
+	)
+)
+
+(allow file-read-xattr
+	(require-all
+		(extension "com.apple.sandbox.oopjit")
+		(subpath "/private/var/OOPJit")
+		(require-not (%entitlement-is-present "com.apple.private.oop-jit.loader"))
+	)
+)
+(allow file-read-xattr
+	(require-all
+		(system-attribute internal-build)
+		(subpath "${FRONT_USER_HOME}/Library/Logs/CrashReporter")
+	)
+)
+(allow file-read-xattr
+	(require-all
+		(system-attribute internal-build)
+		(require-any
+			(literal "${FRONT_USER_HOME}/Library/Logs/CrashReporter")
+			(require-all
+				(subpath "/private/var")
+				(require-any
+					(literal "${FRONT_USER_HOME}/Library/Logs/CrashReporter")
+					(require-all
+						(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Library/Logs/CrashReporter/(Retired/)?(\.)?mediaparserd_")
+						(subpath "${FRONT_USER_HOME}")
+					)
+				)
+			)
+		)
+	)
+)
+(allow file-read-xattr
+	(require-any
+		(subpath "${PROCESS_TEMP_DIR}/com.apple.mediaparserd")
+		(subpath "/private/var/tmp/com.apple.mediaparserd")
+		(subpath "/usr/libexec")
+	)
+)
+(deny file-read-xattr
+	(require-any
+		(literal "/System/Library/Caches/apticket.der")
+		(literal "/usr/standalone/firmware/apticket.der")
+		(subpath "/System/Library/Caches/com.apple.factorydata")
+		(subpath "/System/Library/Caches/com.apple.kernelcaches")
+		(subpath "/private/var/hardware/FactoryData")
+	)
+)
+
+(allow file-test-existence)
+
+(allow file-ungraft)
+
+(allow file-write*
+	(require-all
+		(system-attribute internal-build)
+		(subpath "/private/var")
+		(subpath "${FRONT_USER_HOME}")
+		(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Library/Logs/CrashReporter/(Retired/)?(\.)?mediaparserd_")
+	)
+)
+(allow file-write*
+	(require-any
+		(subpath "${PROCESS_TEMP_DIR}/com.apple.mediaparserd")
+		(subpath "/private/var/tmp/com.apple.mediaparserd")
+	)
+)
+
+(deny file-write-setugid)
+
+(allow file-write-unlink
+	(require-all
+		(extension "com.apple.sandbox.oopjit")
+		(subpath "/private/var/OOPJit")
+	)
+)
+(allow file-write-unlink
+	(require-all
+		(system-attribute internal-build)
+		(subpath "/private/var")
+		(subpath "${FRONT_USER_HOME}")
+		(regex #"^/private/var/(((mobile|euser[0-9]+)|[-0-9A-F]+)|Users/[^/]+)/Library/Logs/CrashReporter/(Retired/)?(\.)?mediaparserd_")
+	)
+)
+(allow file-write-unlink
+	(require-any
+		(subpath "${PROCESS_TEMP_DIR}/com.apple.mediaparserd")
+		(subpath "/private/var/tmp/com.apple.mediaparserd")
+	)
+)
+
+(allow fs-info)
+
+(allow iokit-get-properties
+	(require-all
+		(iokit-property "product-id")
+		(iokit-registry-entry-class "IOPlatformDevice")
+	)
+)
+
+(allow iokit-open-user-client
+	(extension "com.apple.security.exception.iokit-user-client-class")
+)
+
+(allow iokit-open-service
+	(%entitlement-is-present "com.apple.security.exception.iokit-user-client-class")
+)
+
+(allow ipc-posix-shm-read-data
+	(require-all
+		(ipc-posix-name "apple.shm.notification_center")
+		(require-not (%entitlement-is-bool-true "com.apple.security.on-demand-install-capable"))
+	)
+)
+
+(allow isp-command-send)
+
+(deny job-creation)
+
+(deny lsopen
+	(profile-flag "deny-lsopen")
+)
+
+(allow mach-bootstrap)
+
+(allow mach-derive-port)
+
+(allow mach-lookup
+	(require-all
+		(global-name "com.apple.system.notification_center")
+		(require-not (%entitlement-is-bool-true "com.apple.security.on-demand-install-capable"))
+	)
+)
+(allow mach-lookup
+	(require-any
+		(extension "com.apple.security.exception.mach-lookup.global-name")
+		(extension "com.apple.security.exception.mach-lookup.local-name")
+		(global-name "com.apple.audio.AudioComponentRegistrar")
+		(global-name "com.apple.audioanalyticsd")
+		(global-name "com.apple.coremedia.bytestream.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.bytestream.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.figcpecryptor.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.formatreader.xpc")
+		(global-name "com.apple.coremedia.mediaplaybackd.samplegenerator.xpc")
+		(global-name "com.apple.diagnosticd")
+		(global-name "com.apple.logd")
+		(global-name "com.apple.logd.events")
+		(global-name "com.apple.lsd.mapdb")
+	)
+)
+
+(allow mach-register
+	(extension "com.apple.security.exception.mach-register.global-name")
+)
+
+(allow mach-task-exception-port-set)
+
+(allow mach-task-inspect
+	(target self)
+)
+
+(allow mach-task-name
+	(target self)
+)
+
+(allow mach-task-read
+	(target self)
+)
+
+(allow mach-task-special-port*)
+
+(allow necp-client-open)
+
+(allow process-codesigning)
+
+(allow process-iopolicy*)
+
+(allow sandbox-check)
+
+(allow signal
+	(target self)
+)
+
+(allow syscall-unix
+	(syscall-number
+		SYS_exit
+		SYS_read
+		SYS_write
+		SYS_open
+		SYS_close
+		SYS_unlink
+		SYS_chmod
+		SYS_chown
+		SYS_getpid
+		SYS_getuid
+		SYS_sendmsg
+		SYS_chflags
+		SYS_fchflags
+		SYS_kill
+		SYS_sigaction
+		SYS_getgid
+		SYS_sigprocmask
+		SYS_sigpending
+		SYS_sigaltstack
+		SYS_readlink
+		SYS_umask
+		SYS_fsync
+		SYS_socket
+		SYS_sigsuspend
+		SYS_getrusage
+		SYS_readv
+		SYS_writev
+		SYS_fchown
+		SYS_fchmod
+		SYS_sendto
+		SYS_mkdir
+		SYS_utimes
+		SYS_futimes
+		SYS_pread
+		SYS_pwrite
+		SYS_sigreturn
+		SYS_pathconf
+		SYS_lseek
+		SYS_sysctl
+		SYS_getumask
+		SYS_setxattr
+		SYS_fsetxattr
+		SYS_removexattr
+		SYS_fremovexattr
+		SYS_fsctl
+		SYS_ffsctl
+		SYS_shm_open
+		SYS_sysctlbyname
+		SYS_chmod_extended
+		SYS_fchmod_extended
+		SYS_mkdir_extended
+		SYS_psynch_rw_longrdlock
+		SYS_psynch_rw_yieldwrlock
+		SYS_psynch_rw_downgrade
+		SYS_psynch_rw_upgrade
+		SYS_psynch_mutexwait
+		SYS_psynch_mutexdrop
+		SYS_psynch_cvbroad
+		SYS_psynch_cvsignal
+		SYS_psynch_cvwait
+		SYS_psynch_rw_rdlock
+		SYS_psynch_rw_wrlock
+		SYS_psynch_rw_unlock
+		SYS_psynch_rw_unlock2
+		SYS_psynch_cvclrprepost
+		SYS_issetugid
+		SYS___pthread_kill
+		SYS___pthread_sigmask
+		SYS___sigwait
+		SYS___pthread_markcancel
+		SYS___pthread_canceled
+		SYS_getdirentries64
+		SYS___pthread_chdir
+		SYS___pthread_fchdir
+		SYS_kqueue
+		SYS_lchown
+		SYS___mac_syscall
+		SYS_read_nocancel
+		SYS_write_nocancel
+		SYS_open_nocancel
+		SYS_close_nocancel
+		SYS_sendmsg_nocancel
+		SYS_sigsuspend_nocancel
+		SYS_readv_nocancel
+		SYS_writev_nocancel
+		SYS_sendto_nocancel
+		SYS_pread_nocancel
+		SYS_pwrite_nocancel
+		SYS___sigwait_nocancel
+		SYS_fileport_makeport
+		SYS_fileport_makefd
+		SYS_guarded_kqueue_np
+		SYS_change_fdguard_np
+		SYS_openat
+		SYS_openat_nocancel
+		SYS_fchmodat
+		SYS_fchownat
+		SYS_unlinkat
+		SYS_mkdirat
+		SYS_persona
+		SYS_mach_eventlink_signal
+		SYS_mach_eventlink_wait_until
+		SYS_mach_eventlink_signal_wait_until
+		SYS_necp_open
+		SYS_necp_client_action
+		SYS___channel_open
+		SYS___channel_get_info
+		SYS___channel_sync
+		SYS___channel_get_opt
+		SYS___channel_set_opt
+		SYS_ulock_wait
+		SYS_ulock_wake
+		SYS_terminate_with_payload
+		SYS_abort_with_payload
+		SYS_kqueue_workloop_ctl
+		SYS_preadv
+		SYS_pwritev
+		SYS_preadv_nocancel
+		SYS_pwritev_nocancel
+		SYS_ulock_wait2
+		SYS_proc_info_extended_id
+		SYS_freadlink)
+)
+
+(allow syscall-mach
+	(machtrap-number
+		MSC__kernelrpc_mach_vm_allocate_trap
+		MSC__kernelrpc_mach_vm_purgable_control_trap
+		MSC__kernelrpc_mach_vm_deallocate_trap
+		MSC_task_dyld_process_info_notify_get
+		MSC__kernelrpc_mach_vm_protect_trap
+		MSC__kernelrpc_mach_vm_map_trap
+		MSC__kernelrpc_mach_port_allocate_trap
+		MSC__kernelrpc_mach_port_deallocate_trap
+		MSC__kernelrpc_mach_port_mod_refs_trap
+		MSC__kernelrpc_mach_port_insert_right_trap
+		MSC__kernelrpc_mach_port_insert_member_trap
+		MSC__kernelrpc_mach_port_construct_trap
+		MSC__kernelrpc_mach_port_destruct_trap
+		MSC_mach_reply_port
+		MSC_task_self_trap
+		MSC_host_self_trap
+		MSC_semaphore_signal_trap
+		MSC_semaphore_wait_trap
+		MSC_semaphore_timedwait_trap
+		MSC__kernelrpc_mach_port_guard_trap
+		MSC_mach_generate_activity_id
+		MSC_mach_msg2_trap
+		MSC_thread_get_special_reply_port
+		MSC_swtch_pri
+		MSC_syscall_thread_switch
+		MSC_host_create_mach_voucher_trap
+		MSC__kernelrpc_mach_port_type_trap
+		MSC__kernelrpc_mach_port_request_notification_trap
+		MSC_mach_timebase_info_trap
+		MSC_mk_timer_create
+		MSC_iokit_user_client_trap)
+)
+
+(allow syscall-mig)
+
+(allow sysctl-read
+	(sysctl-name "kern.bootargs")
+)
+
+(allow system-fsctl
+	(fsctl-command APFSIOC_MARK_PURGEABLE)
+)
+
+(deny system-kas-info)
+
+(allow system-mac-syscall
+	(require-any
+		(mac-policy-name "AMFI")
+		(mac-policy-name "Sandbox")
+	)
+)
+
+(allow system-memorystatus-control)
+
+(allow system-necp-client-action)
+
+(allow system-privilege)
+
+(allow user-preference-read
+	(require-all
+		(preference-domain "com.apple.CrashReporter")
+		(system-attribute internal-build)
+	)
+)
+(allow user-preference-read
+	(require-any
+		(preference-domain "com.apple.coreaudio")
+		(preference-domain "com.apple.coremedia")
+	)
+)
+
+(allow managed-preference-read
+	(require-all
+		(preference-domain "com.apple.CrashReporter")
+		(system-attribute internal-build)
+	)
+)
+(allow managed-preference-read
+	(require-any
+		(preference-domain "com.apple.coreaudio")
+		(preference-domain "com.apple.coremedia")
+	)
+)
+
+(allow exception-entitlement)
+
+(allow process-exec-update-label)

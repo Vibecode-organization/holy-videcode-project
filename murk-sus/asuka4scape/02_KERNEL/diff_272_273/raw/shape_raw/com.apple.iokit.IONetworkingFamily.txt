@@ -1,0 +1,10 @@
+funcs 861 863
+identical 860 ratio 0.99768
+changed regions 3
+== insert A[479:479] B[479:480]
+   B 0xfffffff009bf5154 sz=132
+== replace A[529:530] B[530:531]
+   A 0xfffffff009b2e360 sz=2376
+   B 0xfffffff009bf7764 sz=2396
+== insert A[555:555] B[556:557]
+   B 0xfffffff009bf92f4 sz=92

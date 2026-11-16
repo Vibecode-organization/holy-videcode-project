@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.apple.applecamerad</string>
+	<key>EnablePressuredExit</key>
+	<true/>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.iokit.matching</key>
+		<dict>
+			<key>com.apple.applecamerad.launch - 2</key>
+			<dict>
+				<key>IOPropertyMatch</key>
+				<dict>
+					<key>applecamerad</key>
+					<true/>
+				</dict>
+				<key>IOProviderClass</key>
+				<string>IOResources</string>
+				<key>IOMatchLaunchStream</key>
+				<true/>
+				<key>IOMatchAll</key>
+				<true/>
+			</dict>
+			<key>com.apple.applecamerad.destroy</key>
+			<dict>
+				<key>IOPropertyMatch</key>
+				<dict>
+					<key>applecamerad</key>
+					<false/>
+				</dict>
+				<key>IOProviderClass</key>
+				<string>IOResources</string>
+				<key>IOMatchLaunchStream</key>
+				<true/>
+				<key>IOMatchAll</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+	<key>ThrottleInterval</key>
+	<integer>5</integer>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.applecamerad</key>
+		<true/>
+	</dict>
+	<key>ProcessType</key>
+	<string>Interactive</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/sbin/applecamerad</string>
+	</array>
+	<key>UserName</key>
+	<string>mobile</string>
+</dict>
+</plist>

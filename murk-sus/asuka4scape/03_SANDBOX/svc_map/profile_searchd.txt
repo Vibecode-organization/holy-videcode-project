@@ -1,0 +1,230 @@
+## searchd  826368 bytes
+### entitlements (101 keys)
+  application-identifier = com.apple.searchd
+  com.apple.Contacts.database-allow
+  com.apple.CoreRoutine.LocationOfInterest
+  com.apple.apfs.unlock
+  com.apple.appprotectiond.guard.access
+  com.apple.appprotectiond.read.access
+  com.apple.assistant.cdm.client
+  com.apple.coreduetd.allow
+  com.apple.coreduetd.context
+  com.apple.coreduetd.people
+  com.apple.developer.icloud-services
+  com.apple.developer.kernel.extended-virtual-addressing
+  com.apple.diagnosticpipeline.request
+  com.apple.duet.activityscheduler.allow
+  com.apple.duet.expertcenter.consumer
+  com.apple.extensionkit.host.extension-point-identifiers = com.apple.appintents-extension
+  com.apple.fileprovider.enumerate
+  com.apple.fileprovider.extension-host
+  com.apple.frontboard.launchapplications
+  com.apple.intelligenceplatform.EntityResolution
+  com.apple.intelligenceplatform.Knosis
+  com.apple.intelligenceplatform.View
+  com.apple.intelligenceplatform.knosis.indexes.read-only = eventGraphIndex, liveGlobalKnowledgeIndex, stableGraphIndex
+  com.apple.intents.extension.discovery
+  com.apple.keystore.allow.background-processing-assertions
+  com.apple.keystore.lockassertion
+  com.apple.linkd.registry
+  com.apple.linkd.transcript.privileged
+  com.apple.locationd.effective_bundle
+  com.apple.locationd.usage_oracle
+  com.apple.mobileassetd.v2
+  com.apple.mobilemail.mailservices
+  com.apple.private.ClipServices
+  com.apple.private.Safari.History
+  com.apple.private.accounts.allaccounts
+  com.apple.private.appintents.connection
+  com.apple.private.appintents.extension-host
+  com.apple.private.assets.accessible-asset-types = com.apple.MobileAsset.LinguisticData, com.apple.MobileAsset.SpotlightResources, com.apple.MobileAsset.TempMorphunData, com.apple.MobileAsset.Trial.Siri.SiriUnderstandingNL, com.apple.MobileAsset.Trial
+  com.apple.private.assets.bypass-asset-types-check
+  com.apple.private.attribution.implicitly-assumed-identity = {type, value}
+  com.apple.private.contacts
+  com.apple.private.coreservices.canmaplsdatabase
+  com.apple.private.corespotlight.internal
+  com.apple.private.corespotlight.search.internal
+  com.apple.private.corespotlight.sender
+  com.apple.private.corespotlight.skgupdater
+  com.apple.private.dmd.emergency-mode
+  com.apple.private.dmd.policy
+  com.apple.private.intelligenceplatform.use-cases = {PowerHUD, SpotlightDonationProgressObservability, SpotlightEngagementData}
+  com.apple.private.intelligenceplatform.views.read-only = appEntityRelevanceRanking, appleMusicEventMap, appleMusicEventSubgraph, behavioralPopularitySignals, entityAliasECR, entitySubgraph, entitySummary, eventSubgraph, inferenceFeaturesECR, loiEntityReleva
+  com.apple.private.iokit.powersource-control
+  com.apple.private.kernel.override-cpumon
+  com.apple.private.librarian.container-proxy
+  com.apple.private.logging.diagnostic
+  com.apple.private.memory.ownership_transfer
+  com.apple.private.metadata.exattrs
+  com.apple.private.network.socket-delegate
+  com.apple.private.nsurlsession.set-task-priority
+  com.apple.private.persona.read
+  com.apple.private.roots-installed-read-only
+  com.apple.private.screen-time
+  com.apple.private.screen-time-settings
+  com.apple.private.security.storage.Spotlight
+  com.apple.private.security.storage.triald
+  com.apple.private.subscriptionservice.internal
+  com.apple.private.suggestions
+  com.apple.private.suggestions.events
+  com.apple.private.tcc.allow = kTCCServiceAddressBook, kTCCServiceCalendar, kTCCServiceReminders
+  com.apple.private.tcc.events.subscriber
+  com.apple.private.tcc.manager.access.read = kTCCServiceAll
+  com.apple.proactive.ActionPrediction.predictions
+  com.apple.proactive.AppPrediction.predictions
+  com.apple.proactive.PersonalizationPortrait.Contact
+  com.apple.proactive.PersonalizationPortrait.NamedEntity.readOnly
+  com.apple.proactive.PersonalizationPortrait.Topic.readOnly
+  com.apple.proactive.eventtracker
+  com.apple.rootless.storage.coreduet_knowledge_store
+  com.apple.rootless.storage.proactivepredictions
+  com.apple.runningboard.launchprocess
+  com.apple.runningboard.process-state
+  com.apple.searchd.appservice
+  com.apple.security.exception.files.absolute-path.read-only = /private/var/mobile/Library/Trial/, /private/var/MobileAsset/
+  com.apple.security.exception.files.home-relative-path.read-only = /Library/com.apple.PrivacyDisclosure/
+  com.apple.security.exception.files.home-relative-path.read-write = /Library/Application Support/SNLUOverrides.sqlite, /Library/Application Support/SNLUOverrides.sqlite-shm, /Library/Application Support/SNLUOverrides.sqlite-wal, /Library/Assistant/ContinuousDialogMana
+  com.apple.security.exception.mach-lookup.global-name = com.apple.appprotectiond.guard, com.apple.appprotectiond.read, com.apple.assistant.cdm, com.apple.biome.access.system, com.apple.calaccessd, com.apple.ClipServices.clipserviced , com.apple.intelligenc
+  com.apple.security.exception.shared-preference.read-only = kCFPreferencesAnyApplication
+  com.apple.security.exception.shared-preference.read-write = com.apple.DataDeliveryServices
+  com.apple.security.hardened-process
+  com.apple.security.hardened-process.checked-allocations
+  com.apple.security.iokit-user-client-class = IOSurfaceRootUserClient
+  com.apple.security.network.client
+  com.apple.spotlight.entitledattributes
+  com.apple.symptom_analytics.query
+  com.apple.symptom_diagnostics.report
+  com.apple.symptoms.NetworkOfInterest
+  com.apple.systemstatus.domains = media
+  com.apple.trial.client = 332, 333, 334, 335, 336, 337, 409, 753, 755
+  com.apple.usermanagerd.persona.fetch
+  com.apple.usermanagerd.persona.observer
+  fairplay-client = 965772570
+  keychain-access-groups = com.apple.searchd, com.apple.Spotlight
+### selector-like strings (427)
+  URLWithString:
+  URLWithString:relativeToURL:
+  accountWithIdentifier:error:
+  activateForConnection:message:
+  addDefaultBundleInformationForURL:attrSet:altNames:namesOnly:withApp:enName:
+  addSuggestionsToSectionsForSending:searchString:updatedSections:queryKind:
+  addTopHitSectionIfNecessaryToSectionsForSending:updatedSections:isScopedSearch:
+  allVIPSendersWithCompletion:
+  appendFormat:
+  applicationProxyForIdentifier:
+  applySectionPolicyForQueryContext:sections:
+  archivePathForQuery:
+  arrayWithArray:
+  arrayWithCapacity:
+  arrayWithObject:
+  arrayWithObjects:count:
+  attributesOfItemAtPath:error:
+  backUpFileProtectionClassCheckWithFd:
+  blocklistCheck:withOptions:
+  boolForKey:
+  buildResultWithResult:queryContext:
+  buildResultWithSuggestion:queryContext:
+  buildResultsWithCompletionsData:queryContext:
+  buildResultsWithSuggestionsData:queryContext:
+  buildSearchResultWithRecommendations:query:
+  bundleForClass:
+  bundleRecordWithBundleIdentifier:allowPlaceholder:error:
+  cancelQueryWithExternalID:
+  categoryForDomain:
+  characterSetWithCharactersInString:
+  clearInputForConnection:
+  clientForConnection:
+  com.apple.CoreSuggestions
+  com.apple.DocumentManager
+  com.apple.DocumentsApp
+  com.apple.Health
+  com.apple.Maps
+  com.apple.MobileAddressBook
+  com.apple.MobileSMS
+  com.apple.Music
+  com.apple.PeopleViewService
+  com.apple.Preferences
+  com.apple.Preferences.thirdPartyApp
+  com.apple.Spotlight
+  com.apple.VoiceMemos
+  com.apple.apfs.unlock
+  com.apple.application
+  com.apple.appprotectiond.guard
+  com.apple.appprotectiond.read
+  com.apple.assistant.cdm
+  com.apple.assistant.cdm.client
+  com.apple.biome.access.system
+  com.apple.calaccessd
+  com.apple.calculation
+  com.apple.calculator
+  com.apple.conversion
+  com.apple.coreduetd.allow
+  com.apple.coreduetd.context
+  com.apple.coreduetd.people
+  com.apple.corespotlight
+  com.apple.facetime
+  com.apple.iBooks
+  com.apple.intelligenceflow
+  com.apple.linkd.extension
+  com.apple.linkd.mediator
+  com.apple.linkd.registry
+  com.apple.linkd.transcript
+  com.apple.mobileasset.autoasset
+  com.apple.mobileassetd.v2
+  com.apple.mobilecal
+  com.apple.mobilemail
+  com.apple.mobilenotes
+  com.apple.mobilenotes.spotlightrecord
+  com.apple.mobilephone
+  com.apple.mobilesafari
+  com.apple.mobileslideshow
+  com.apple.mobiletimer
+  com.apple.news
+  com.apple.notes.spotlightrecord
+  com.apple.omniSearch
+  com.apple.ondeviceeval
+  com.apple.parsec
+  com.apple.parsec.app_distr
+  com.apple.parsec.itunes.
+  com.apple.parsec.itunes.iosSoftware
+  com.apple.photos.search.result.collection.asset
+  com.apple.podcasts
+  com.apple.pommesctl
+  com.apple.private.ClipServices
+  com.apple.private.contacts
+  com.apple.private.dmd.policy
+  com.apple.private.persona.read
+  com.apple.private.screen-time
+  com.apple.private.suggestions
+  com.apple.private.tcc.allow0C
+  com.apple.reminders
+  com.apple.search.query
+  com.apple.searchd
+  com.apple.searchd.SiriSuggestionsEnabled
+  com.apple.searchd.application.localization.updates
+  com.apple.searchd.application.updates
+  com.apple.searchd.applications.changed
+  com.apple.searchd.appservice
+  com.apple.searchd.backend.query.end
+  com.apple.searchd.backend.query.start
+  com.apple.searchd.backend.stores.end
+  com.apple.searchd.backend.stores.start
+  com.apple.searchd.backend.suggestions.end
+  com.apple.searchd.backend.suggestions.start
+  com.apple.searchd.background
+  com.apple.searchd.bgworkq
+  com.apple.searchd.cachedelete
+  com.apple.searchd.createEncryptedRankingBackup
+  com.apple.searchd.createEncryptedRankingBackupQueue
+  com.apple.searchd.engagement
+  com.apple.searchd.feature.extraction
+  com.apple.searchd.feedback
+  com.apple.searchd.foreground
+  com.apple.searchd.indomain.score.computation
+  com.apple.searchd.launched
+### path/url-ish strings
+  		<string>/private/var/mobile/Library/Trial/</string>
+  		<string>/private/var/MobileAsset/</string>
+  "/private/var/mobile/Library/Trial/
+  /private/var/MobileAsset/0j
+

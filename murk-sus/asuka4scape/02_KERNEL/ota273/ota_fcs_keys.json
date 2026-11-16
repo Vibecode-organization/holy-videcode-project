@@ -1,0 +1,18 @@
+[
+  {
+    "os": "iOS",
+    "version": "27.3",
+    "build": "24C5037i",
+    "devices": [
+      "iPhone14,7"
+    ],
+    "models": [
+      "D27AP"
+    ],
+    "key": "RKYVJAq6Isaercfxqe2lm1ywcBxeWSQU5dEf6Aa6nn0=",
+    "documentation_id": "iOS273Beta1",
+    "url": "https://updates.cdn-apple.com/2026FallSeed/1e9c16af-df46-4a33-9b6b-2adb08546a3d/com_apple_MobileAsset_SoftwareUpdate/6b95a2af254572ebd83d62499fa4a537350a29c95a0cef34c7dfaa9b697c59a4.aea",
+    "filename": "6b95a2af254572ebd83d62499fa4a537350a29c95a0cef34c7dfaa9b697c59a4.aea",
+    "size": 8705449984
+  }
+]

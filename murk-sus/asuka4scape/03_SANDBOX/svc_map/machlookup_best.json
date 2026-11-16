@@ -1,0 +1,3002 @@
+{
+"PurplePPTServer": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"PurpleSystemAppPort": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"PurpleSystemEventPort": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"ScripterServer": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"UIASTNotificationCenter": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"^com[.]apple[.]uikit[.]viewservice[.].+": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.ABDatabaseDoctor": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.AOSNotification": {
+"detail": "com.apple.aosnotification.aosnotifyd-access",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.AccessibilityUIServer": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.AccessorySetupUI": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.AdSheetPad.server": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.AdSheetPhone.server": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.AppMigrationKitHelper": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.AppSSO.service-xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.AppTrackingTransparency.EnforcementService": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.AudioAccessoryKit": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.AuthenticationServices.AuthenticationServicesAgent.CredentialUpdate": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.AuthenticationServices.AuthenticationServicesAgent.PhoneNumberVerification": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.AuthenticationServices.AuthenticationServicesAgent.VerificationCodes": {
+"detail": "com.apple.developer.authentication-services.autofill-credential-provider",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.AuthenticationServicesCore.AuthenticationServicesAgent": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.AuthenticationServicesCore.AuthenticationServicesAgent.CredentialExchange": {
+"detail": "com.apple.developer.authentication-services.autofill-credential-provider",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.AutoFillSuggestions": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.BrowserEngineKit.Intermediary": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.CARenderServer": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.CameraOverlayAngel.application-service": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.ClipServices.clipserviced": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.ClockKit.CLKWatchFaceLibrary": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.CoreAuthentication.daemon": {
+"detail": "common-mach-lookups",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.CoreMLModelSecurityService": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.DeviceAccess.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.DeviceConfigurationAgent.consumer": {
+"detail": "com.apple.private.device-configuration.effective-configuration-ids.read",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.DeviceConfigurationAgent.consumer.async": {
+"detail": "com.apple.private.device-configuration.effective-configuration-ids.read",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.DeviceConfigurationAgent.publisher": {
+"detail": "com.apple.private.device-configuration.effective-configuration-ids.read",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.DragUI.druid.destination": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.DragUI.druid.source": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.EventTimingProfileService": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.ExposureNotification": {
+"detail": "com.apple.developer.exposure-notification",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.ExternalAccessory.distributednotification.server": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.FSEvents": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.FamilyControlsAgent.data-access": {
+"detail": "com.apple.developer.family-controls.app-and-website-usage",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.FileCoordination": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.FileProvider": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.FontServices.FontProviderLoader": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.GSSCred": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.GameController.gamecontrollerd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.GameController.gamecontrollerd.app": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.GameController.gamecontrollerd.haptics": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.Honeybee.event-notify": {
+"detail": "common-apple-signed-executable-rules",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.IncomingCallNotifications.ICNotificationManagerHost": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.JetTracingSupport.JetTracingService": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.KeyboardServices.TextReplacementService": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.MediaControl.daemon": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.MobileAccessoryUpdater": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.MobileFileIntegrity": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.MobileInternetSharing": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.MomentsUIService": {
+"detail": "com.apple.developer.journal.allow",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.Music.MPMusicPlayerControllerInternal": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.Music.MPMusicPlayerMigServer": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.Music.MPMusicPlayerMigServerExists": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.MusicKit.UI": {
+"detail": "com.apple.storekit.cloud-service-exempted-from-tcc-access",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.NPKCompanionAgent.library": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.PassKitWrapperXPCServiceUI": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.PerformanceTrace.PerformanceTraceService": {
+"detail": "common-apple-signed-executable-rules",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.PersistentURLTranslator.Gatekeeper": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.PhotosViewService": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.PointerUI.pointeruid.service": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.PowerManagement.control": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.ProgressReporting": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.ReportCrash": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.ReportCrash.DirectoryService": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.ReportCrash.SafetyNet": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.ReportCrash.StackShot": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.SBUserNotification": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.Safari.SafeBrowsing.Service": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.SafetyKit": {
+"detail": "com.apple.developer.severe-vehicular-crash-event",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.ScreenTimeAgent": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.ScreenTimeSettingsAgent.public": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.SensorKit.SKMediaEventsHelper": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.ServicesAccountLinkingService.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.ServicesPaymentAngel": {
+"detail": "com.apple.private.applemediaservices",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.SetStoreUpdateService": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.SharedWebCredentials": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.SiriTTSService.TrialProxy": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.SpatialAudioProfileXPCService": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.StoreKitUISceneService": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.StreamReceiverDisplay.sessions": {
+"detail": "com.apple.developer.foveated-streaming-session",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.SystemConfiguration.DNSConfiguration": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.SystemConfiguration.NetworkInformation": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.SystemConfiguration.PPPController": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.SystemConfiguration.PPPController-priv": {
+"detail": "com.apple.networking.vpn.configuration",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.SystemConfiguration.SCNetworkReachability": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.SystemConfiguration.configd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.SystemConfiguration.helper": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.TelephonyTransferService": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.TextInput": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.TextInput.emoji": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.TextInput.image-cache-server": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.TextInput.lexicon-server": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.TextInput.preferences": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.TextInput.rdt": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.TextInput.shortcuts": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.ThreadNetwork.xpc": {
+"detail": "com.apple.developer.networking.manage-thread-network-credentials",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.UIKit.KeyboardManagement.hosted": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.UIKit.OverlayUI.services": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.UIKit.SecureControlService": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.UIKit.pasteboardd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.UIKit.statusbarserver": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.USDKit.FormatLoader": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.USDLib.FormatLoader": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.UsageTrackingAgent.data-access": {
+"detail": "com.apple.developer.family-controls.app-and-website-usage",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.VideoSubscriberAccount.videosubscriptionsd": {
+"detail": "com.apple.developer.video-subscription-registration,com.apple.private.subscriptionservice.all-sources.read-only,com.apple.private.subscriptionservice.internal,com.apple.private.subscriptionservice.web-sources.read-write,com.apple.smoot.subscriptionservice",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.VoiceOverTouch": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.VoiceOverTouch.drag.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.VoiceOverTouch.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.WebBookmarks.webbookmarksd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.accessibility.AXBackBoardServer": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.accessibility.gax.backboard": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.accessibility.mediaaccessibilityd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.accessibility.voices": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.accessories.externalaccessory-server": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.accessories.transport-server": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.accountsd.accessmanager": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.accountsd.accountmanager": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.accountsd.authmanager": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.accountsd.oauthsigner": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.aggregated": {
+"detail": "common-mach-lookups",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.airplay.apsynccontroller.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.airplay.endpoint.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.airplay.sender.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.airplaydiagnostics.server": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.ait.client": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.ak.anisette.xpc": {
+"detail": "com.apple.authkit.client,com.apple.authkit.client.internal,com.apple.authkit.client.private",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.ak.auth.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.ak.authorizationservices.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.alarmkitservices": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.amsprivateidentifiers": {
+"detail": "com.apple.private.applemediaservices",
+"kind": "entitled",
+"profile": "baseline"
+},
+"com.apple.analyticsd": {
+"detail": "common-mach-lookups",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.ap.adprivacyd.attribution": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.ap.adprivacyd.trackingtransparency": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.ap.promotedcontent.attributionservice": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.appledepthd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.appleneuralengine": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.appleprofilepolicyd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.appmanagedfeatures.restrictions": {
+"detail": "com.apple.developer.appmanagedfeatures",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.appprotectiond.extensioninfo": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.appprotectiond.extensionmonitor": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.appprotectiond.viewsubjectinfo": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.appprotectiond.viewsubjectmonitor": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.appsupport.cplogd": {
+"detail": "common-mach-lookups",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.aps.alertprovider.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.apsd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.arkit.service.focusRegion": {
+"detail": "com.apple.developer.foveated-streaming-provider",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.arkit.service.geoTracking": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.arkit.service.location": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.asktod": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.assessmentagent": {
+"detail": "com.apple.developer.automatic-assessment-configuration",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.assetsd.changehub": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.assistant.analytics": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.assistant.dictation": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.assistivetouchd.drag.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.atc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.attributionkitd.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.audio.AURemoteIOServer": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.audio.AudioComponentPrefs": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.audio.AudioComponentRegistrar": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.audio.AudioConverterServer": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.audio.AudioFileServer": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.audio.AudioQueueServer": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.audio.AudioSession": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.audio.AudioUnitServer": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.audio.SystemSoundServer-iOS": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.audio.hapticd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.audioanalyticsd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.awdd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.backboard.TouchDeliveryPolicyServer": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.backboard.animation-fence-arbiter": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.backboard.display.services": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.backboard.hid-services.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.backboard.hid.services": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.backboard.watchdog": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.backboard.workspaceserverconnection": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.backgroundassets.user": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.backupd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.biome.access.user": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.bird": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.bird.token": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.browserkitd": {
+"detail": "com.apple.developer.web-browser",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.bulletinboard.observerconnection": {
+"detail": "com.apple.bulletinboard.observer",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.bulletinboard.settingsconnection": {
+"detail": "com.apple.bulletinboard.settings",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.bulletinboard.systemstateconnection": {
+"detail": "com.apple.bulletinboard.systemstate",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.bulletinboard.utilitiesconnection": {
+"detail": "com.apple.bulletinboard.utilities",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.bulletindistributord.server": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.businessservicesd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.bypassBasebandAutoBooter.msgport": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.cache_delete": {
+"detail": "com.apple.mobile.deleted.AllowFreeSpace,com.apple.private.CacheDelete",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.cache_delete.public": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.calaccessd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.calaccessd.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.callkit.callcontrollerhost": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.callkit.callsourcehost": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.callkit.networkextension.voip": {
+"detail": "com.apple.developer.networking.networkextension",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.callkit.service": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.campo": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.certui.relay": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.cfnetwork.AuthBrokerAgent": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.cfnetwork.cfnetworkagent": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.cfprefsd.agent": {
+"detail": "common-preferences-rules",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.cfprefsd.daemon": {
+"detail": "common-preferences-rules",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.cfprefsd.daemon.system": {
+"detail": "common-preferences-rules",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.chrono.accessoryLiveActivities": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.chrono.controlcenter": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.chrono.widgetcenterconnection": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.ckdiscretionaryd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.cloudasset.cloudd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.cloudd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.cloudd.debug": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.cloudkit.partlycloudd.debug": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.cmfsyncagent.embedded.auth": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.commandandcontrol.drag.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.commcenter.coretelephony.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.commcenter.cupolicy.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.commcenter.dm-helper": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.commcenter.mobile-helper": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.commcenter.tmk.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.commcenter.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.contacts.poster.api": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.contactsd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.contactsd.contact-provider": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.contactsd.support": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.containermanagerd": {
+"detail": "common-containermanagerd-rules",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.containermanagerd.system": {
+"detail": "common-containermanagerd-rules",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.conversation.accessibility": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.conversation.dialing": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.conversation.history": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coreduetd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coreduetd.people": {
+"detail": "com.apple.coreduetd.people",
+"kind": "entitled",
+"profile": "baseline"
+},
+"com.apple.coreidvd.digital-presentment.xpc": {
+"detail": "com.apple.developer.in-app-identity-presentment,com.apple.developer.in-app-identity-presentment.merchant-identifiers",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.coreidvd.mobile-document-provider-registration.xpc": {
+"detail": "com.apple.developer.identity-document-services.document-provider.mobile-document-types",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.coreidvd.web-presentment.xpc": {
+"detail": "com.apple.developer.identity-document-services.web-presentment-controller,com.apple.developer.web-browser",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.corelocation.locationUI": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.admin": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.audioprocessingtap": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.bytestream.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.capturesession": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.capturesource": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.compressionsession": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.decompressionsession": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.endpoint.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.endpointremotecontrolsession.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.externalstoragedevicemanager.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.externalsyncdevicemanager.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.figcontentkeyboss.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.figvirtualcapturecard.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.mediaparserd.formatreader.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.mediaparserd.jsonparser.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.mediaparserd.mutablemovie.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.mediaplaybackd.asset.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.mediaplaybackd.assetcacheinspector.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.mediaplaybackd.assetimagegenerator.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.mediaplaybackd.audiodeviceclock.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.mediaplaybackd.audioprocessingtap.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.mediaplaybackd.bytestream.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.mediaplaybackd.cpe.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.mediaplaybackd.cpeprotector.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.mediaplaybackd.customurlloader.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.mediaplaybackd.figcontentkeyboss.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.mediaplaybackd.figcontentkeysession.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.mediaplaybackd.figcpecryptor.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.mediaplaybackd.figmetriceventtimeline.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.mediaplaybackd.formatreader.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.mediaplaybackd.mutablecomposition.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.mediaplaybackd.mutablemovie.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.mediaplaybackd.player.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.mediaplaybackd.remaker.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.mediaplaybackd.samplebufferaudiorenderer.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.mediaplaybackd.samplebufferrendersynchronizer.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.mediaplaybackd.samplegenerator.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.mediaplaybackd.sandboxserver.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.mediaplaybackd.videocompositor.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.mediaplaybackd.videoqueue": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.mediaplaybackd.videotarget.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.mediaplaybackd.visualcontext.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.remotequeue": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.routediscoverer.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.routingcontext.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.routingsessionmanager.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.sandboxserver": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.sandboxserver.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.sts": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.systemcontroller.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.videocodecd.compressionsession": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.videocodecd.compressionsession.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.videocodecd.decompressionsession": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.videocodecd.decompressionsession.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.volumecontroller.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.wirelessdisplay": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coremedia.wirelessdisplayserver": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.corerecents.recentsd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coreservices.lsuseractivitymanager.xpc": {
+"detail": "common-mach-lookups",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.corespotlightservice": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.coresymbolicationd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.ctkd.slot-client": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.ctkd.smartcardregistration-client": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.ctkd.token-client": {
+"detail": "common-mach-lookups",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.cvhwa.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.cvmsCompAgent_armv7": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.cvmsServ": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.dasd.end-prewarm": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.dataaccess.dataaccessd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.datamigrator": {
+"detail": "common-apple-signed-executable-rules",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.datamigrator.dz": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.developer.wifi-infrastructure.WiFiNetworkSharingApp": {
+"detail": "com.apple.developer.wifi-infrastructure",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.developer.wifi-infrastructure.WiFiNetworkSharingExtension": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.devicecheckd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.deviceconfigurationd.consumer": {
+"detail": "com.apple.private.device-configuration.effective-configuration-ids.read",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.deviceconfigurationd.consumer.async": {
+"detail": "com.apple.private.device-configuration.effective-configuration-ids.read",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.deviceconfigurationd.publisher": {
+"detail": "com.apple.private.device-configuration.effective-configuration-ids.read",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.devicemanagementclient.managedappsd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.diagnosticd": {
+"detail": "common-mach-lookups",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.dictationd.recognition": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.distributed_notifications@0v3": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.distributed_notifications@1v3": {
+"detail": "common-mach-lookups",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.dnssd.service": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.dockaccessoryd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.donotdisturb.appconfiguration.service": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.donotdisturb.availability.service": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.dt.automationmode.reader": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.dt.testmanagerd.appintentsservices": {
+"detail": "common-debugging-rules",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.dt.testmanagerd.runner": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.dt.testmanagerd.uiprocess": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.dt.xctestd.target": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.duetactivityscheduler": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.duetknowledged.activity": {
+"detail": "common-mach-lookups",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.enterprise.licensing": {
+"detail": "com.apple.developer.app-compute-category,com.apple.developer.arkit.barcode-detection.allow,com.apple.developer.arkit.camera-region.allow,com.apple.developer.arkit.main-camera-access.allow,com.apple.developer.arkit.object-tracking-parameter-adjustment.allow,com.apple.developer.arkit.shared-coordinate-space.allow,com.apple.developer.arkit.visual-fidelity-monitoring.allow,com.apple.developer.avfoundation.uvc-device-access,com.apple.developer.coreml.neural-engine-access,com.apple.developer.protected-content,com.apple.developer.screen-capture.include-passthrough,com.apple.developer.window-body-follow",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.exchangesyncd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.extensionkitservice": {
+"detail": "common-pluginkit-support",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.fairplayd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.fairplayd.versioned": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.fairplayd.xpc": {
+"detail": "com.apple.private.applemediaservices",
+"kind": "entitled",
+"profile": "baseline"
+},
+"com.apple.family.ageRange.xpc": {
+"detail": "com.apple.developer.declared-age-range",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.familycircle.agent": {
+"detail": "com.apple.private.familycircle",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.fileprovider.pushkit": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.financed.service.coredatastore": {
+"detail": "com.apple.developer.financekit,com.apple.finance.private",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.financed.service.financestore": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.fontservicesd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.frontboard.systemappservices": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.frontboard.workspace": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.fullkeyboardaccess.drag.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.gamecenter": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.gamed": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.gamed.note": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.gamesaved": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.generativeexperiences.externaltextcomposition": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.geoanalyticsd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.geod": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.gizmoappd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.gpumemd.source": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.gputools.producer": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.gputools.service": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.handwritingd.pkanalytics": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.handwritingd.pksettings": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.handwritingd.remoterecognition": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.hangtelemetryd": {
+"detail": "common-debugging-rules",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.hangtracerd": {
+"detail": "common-debugging-rules",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.hangtracermonitor": {
+"detail": "common-debugging-rules",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.harvestd.manager": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.healthd.restriction": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.healthd.server": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.hid.PencilHaptics": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.homed.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.homed.xpc.accessory-setup": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.iMessageAppsViewService.warmup-connection": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.iTunesStore.daemon": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.iTunesStore.daemon-notifications": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.iTunesStore.daemon.deatchwatch": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.iTunesStore.daemon.notifications.public": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.iTunesStore.daemon.public": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.iap2d": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.iap2d.ExternalAccessory.distributednotification.server": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.iap2d.distributednotification.server": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.iap2d.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.iapauthd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.iapauthd.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.iapd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.iapd.distributednotification.server": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.iapd.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.iaptransportd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.iaptransportd.ExternalAccessory.distributednotification.server": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.iaptransportd.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.icfcallserver": {
+"detail": "com.apple.private.icfcallserver",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.icloud.findmydeviced": {
+"detail": "com.apple.aosnotification.aosnotifyd-access,com.apple.icloud.findmydeviced.access",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.iconservices": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.icprefd-xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.identityservicesd.embedded.auth": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.identityservicesd.idquery.embedded.auth": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.idsremoteurlconnectionagent.embedded.auth": {
+"detail": "com.apple.private.ids.remoteurlconnection,com.apple.private.imcore.imremoteurlconnection",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.imagent.EnhancedLinkSecurityStore": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.imagent.embedded.auth": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.imavagent.embedded.auth": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.inputanalyticsd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.inputservice.input-ui-host": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.inputservice.keyboardui": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.instruments.server.mig": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.iohideventsystem": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.iokit.powerdxpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.iphone.axserver-systemwide": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.itdbprep.server": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.itunescloudd.tcchelper": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.itunescloudd.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.itunesstored.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.kvsd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.librariand": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.linkd.autoShortcut": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.linkd.transcript": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.livecommunicationkit.conversationhistory": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.livecommunicationkit.telephonymanager": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.locationd.registration": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.locationd.spi": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.locationd.synchronous": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.logd": {
+"detail": "common-mach-lookups",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.logd.events": {
+"detail": "common-mach-lookups",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.lsd": {
+"detail": "common-mach-lookups",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.lsd.advertisingidentifiers": {
+"detail": "com.apple.security.on-demand-install-capable",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.lsd.icons": {
+"detail": "common-mach-lookups",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.lsd.mapdb": {
+"detail": "common-mach-lookups",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.lsd.open": {
+"detail": "common-mach-lookups",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.lsd.openurl": {
+"detail": "com.apple.security.on-demand-install-capable",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.lsd.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.lskdd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.lskdd.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.mDNSResponder": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.managedappdistributiond.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.managedconfiguration.mdmdservice": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.managedconfiguration.profiled": {
+"detail": "com.apple.managedconfiguration.profiled-access",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.managedconfiguration.profiled.public": {
+"detail": "common-managed-configuration-read-rules",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.marco": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.matter.support.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.mediaanalysisd.analysis": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.mediaanalysisd.service.public": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.mediaanalysisd.videosession.public": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.mediaexperience.endpoint.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.mediaexperience.systemmediacastingcontroller.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.medialibraryd.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.mediaremoted.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.mediaserverd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.mediastream.sharing": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.mediastream.sharing-nowake": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.merchantd.discovery": {
+"detail": "com.apple.developer.proximity-reader.identity.display,com.apple.developer.proximity-reader.identity.read,com.apple.developer.proximity-reader.payment.acceptance",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.merchantd.engagement": {
+"detail": "com.apple.developer.proximity-reader.customer-engagement",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.merchantd.identity": {
+"detail": "com.apple.developer.proximity-reader.identity.read",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.merchantd.storage": {
+"detail": "com.apple.developer.proximity-reader.payment.acceptance",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.merchantd.transaction": {
+"detail": "com.apple.developer.proximity-reader.payment.acceptance,com.apple.developer.proximity-reader.payment.acceptance-development",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.messages.critical-messaging": {
+"detail": "com.apple.developer.messages.critical-messaging,com.apple.developer.upi-device-validation",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.metrickit.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.metricmeasurement.MetricMeasurementHelper": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.midiserver": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.midiserver.io": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.mobile.installd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.mobile.keybagd.UserManager.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.mobile.keybagd.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.mobile.usermanagerd.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.mobileasset.autoasset": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.mobileassetd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.mobileassetd.v2": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.mobilecheckpoint.checkpointd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.mobilegestalt.xpc": {
+"detail": "common-mobilegestalt-rules",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.mobileipod.MPMusicPlayerControllerInternal": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.mobileipod.MPMusicPlayerMigServerExists": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.mobilemail": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.mobilemail.services.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.mobilestoredemod": {
+"detail": "com.apple.private.mobilestoredemo.enabledemo",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.modelmanager": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.nano.nanoregistry.paireddeviceregistry": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.nanomaps.xpc.GeoServices": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.nanomaps.xpc.GeoServices.Navigation": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.nanomaps.xpc.Navigation": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.nanoprefsync": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.naturallanguaged": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.nearbyd.xpc.nearbyinteraction": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.nehelper": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.nesessionmanager": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.networkd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.networkd_privileged": {
+"detail": "com.apple.networkd.advisory_socket,com.apple.networkd.disable_opportunistic,com.apple.networkd.modify_settings,com.apple.networkd.persistent_interface,com.apple.networkd_privileged",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.networking.captivenetworksupport": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.networkscored": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.networkserviceproxy.fetch-token": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.notificationcenter.widgetcontrollerconnection": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.nsurlsessiond": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.odi.assessmentService": {
+"detail": "com.apple.developer.trustinsights.base",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.ondemandd.client": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.osanalytics.osanalyticshelper": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.pairedsyncd.syncstate": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.parsecd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.passd.assertions": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.passd.in-app-payment": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.passd.library": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.pasteboard.pasted": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.pegasus": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.personad.xpc": {
+"detail": "com.apple.private.contactsui,com.apple.private.persona.read,com.apple.private.persona.write",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.photos.service": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.pluginkit.pkd": {
+"detail": "common-pluginkit-support",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.powerlog.plxpclogger.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.prdaily": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.privacyaccountingd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.private.corewifi.mobilewifi-xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.proactive.visual-action-execution.resource-retrieval": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.progressd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.ptpcamerad": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.quicklook.ThumbnailsAgent": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.relatived.public": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.relatived.status": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.relatived.tempest": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.remindd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.replayd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.revisiond": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.routined.registration": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.rti-screencontinuity": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.runningboard": {
+"detail": "common-mach-lookups",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.safarifetcherd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.sandboxd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.scrod": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.securityd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.server.bluetooth": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.server.bluetooth.le.att.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.server.bluetooth.le.pipe.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.servicesanalytics.xpc": {
+"detail": "com.apple.private.applemediaservices",
+"kind": "entitled",
+"profile": "baseline"
+},
+"com.apple.seserviced.credential.manager": {
+"detail": "com.apple.developer.secure-element-credential",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.seserviced.passkit-extensions": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.seserviced.session": {
+"detail": "com.apple.developer.carkey.session",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.sessionservices": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.sharing.sharesheet": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.sharingd.nsxpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.shazamd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.sigmond": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.siri.VoiceShortcuts.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.siri.vocabularyupdates": {
+"detail": "com.apple.developer.siri,com.apple.siri.synapse",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.speech.localspeechrecognition": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.spotlight.IndexAgent": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.spotlight.IndexDelegateAgent": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.spotlight.SearchAgent": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.springboard": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.springboard.backgroundappservices": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.springboard.blockableservices": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.springboard.icongeneration": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.springboard.services": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.springboard.watchdogserver": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.storekit.configuration.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.storekitd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.storekitservice": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.swiftuitracingsupport.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.symptoms.symptomsd.managed_events": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.symptomsd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.synapse.backlink-service": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.syncdefaultsd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.system.libinfo.muser": {
+"detail": "common-mach-lookups",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.system.logger": {
+"detail": "common-system-logging-rules",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.system.notification_center": {
+"detail": "com.apple.security.on-demand-install-capable",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.tccd": {
+"detail": "com.apple.security.on-demand-install-capable",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.telephonyutilities.callservicesdaemon.callcapabilities": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.telephonyutilities.callservicesdaemon.ptt": {
+"detail": "com.apple.developer.push-to-talk",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.telephonyutilities.callservicesdaemon.voip": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.telephonyutilities.remotelogdaemon": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.testmanagerd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.testmanagerd.appintentsservices": {
+"detail": "common-debugging-rules",
+"kind": "flagged",
+"profile": "baseline"
+},
+"com.apple.timesync.expositor": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.timesync.manager": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.timesync.ptp.manager": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.toolmetadataservice": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.translation.text": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.triald.namespace-management": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.trustd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.twitterd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.twitterd.server": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.uiintelligencesupport.agent": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.uikit.eyedropperd.service": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.uikit.viewservice.*": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.unfreed": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.usernotifications.accessorynotifications": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.usernotifications.listener": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.usernotifications.remotenotificationservice": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.usernotifications.usernotificationservice": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.usymptomsd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.vibrationmanagerd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.videoconference.avconference": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.videoconference.camera": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.voiceservices.keepalive": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.voiceservices.tts": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.vsassetd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.wapi.client": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.watchconnectivity.complication": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.wcd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.weatherkit.authservice": {
+"detail": "com.apple.developer.weatherkit",
+"kind": "entitled",
+"profile": "container"
+},
+"com.apple.webfilterd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.webinspector": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.webprivacyd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.weibod.server": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.widget.pushkit": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.wifi.manager": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.wifip2pd": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+},
+"com.apple.wirelessinsightsd.xpc": {
+"detail": "",
+"kind": "open",
+"profile": "container"
+}
+}

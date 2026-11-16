@@ -1,0 +1,71 @@
+
+7-Zip 26.03 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-09-03
+ 64-bit locale=ru_RU.UTF-8 Threads:8 OPEN_MAX:524288, ASM
+
+Scanning the drive for archives:
+1 file, 6310330368 bytes (6018 MiB)
+
+Extracting archive: 141-09773-227.dmg
+
+WARNINGS:
+Unsupported method
+
+WARNING:
+141-09773-227.dmg
+Cannot open the file as [Dmg] archive
+The file is open as [APFS] archive
+
+--
+Path = 141-09773-227.dmg
+Open WARNING: Cannot open the file as [Dmg] archive
+Type = APFS
+WARNINGS:
+Unsupported method
+Physical Size = 6310330368
+Name = RaveB24B119.D27SystemCryptex.apfs
+Characteristics = COPY-attr ZBM-rsrc
+ID = 9f4952e99d49472683e38fdd57dd1a0b
+Cluster Size = 4096
+Created = 2026-10-23 04:52:33.428618920
+Modified = 2026-10-23 04:52:52.771843000
+Comment = 
+{
+block_size: 4096
+fs_index: 0
+volume_name: RaveB24B119.D27SystemCryptex
+vol_uuid: 45e171f296464b659f93297f86d6a654
+incompatible_features: NORMALIZATION_INSENSITIVE SEALED_VOLUME
+im_flags: 0
+im_hash_type: SHA256
+fs_alloc_count: 1489394
+num_files: 1892
+num_directories: 893
+num_symlinks: 2
+num_other_fsobjects: 0
+Num_Attr_Streams: 3610
+num_snapshots: 0
+total_blocks_alloced: 1560713
+total_blocks_freed: 78747
+unmounted: 2026-10-23 04:52:52.771844000
+last_modified: 2026-10-23 04:52:52.771844000
+formatted_by: newfs_apfs (2332.120.31.100.1)
+  timestamp: 2026-10-23 04:52:33.428618920
+  last_xid: 2
+modified_by[0]: apfs_sealvolume (3288.42.1)
+  timestamp: 2026-10-23 04:52:52.771843000
+  last_xid: 15
+modified_by[1]: apfs_kext (2332.120.31.100.1)
+  timestamp: 2026-10-23 04:52:50.942225671
+  last_xid: 14
+}
+
+ERROR: Unsupported Method : System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64e.81.dyldlinkedit
+ERROR: Unsupported Method : System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64e.symbols
+
+Sub items Errors: 2
+
+Archives with Errors: 1
+
+Warnings: 1
+
+Sub items Errors: 2

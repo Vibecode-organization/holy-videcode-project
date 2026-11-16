@@ -1,0 +1,8 @@
+funcs 462 463
+identical 461 ratio 0.99676
+changed regions 2
+== replace A[90:91] B[90:91]
+   A 0xfffffff00a1a4240 sz=1388
+   B 0xfffffff00a26d930 sz=1384
+== insert A[315:315] B[315:316]
+   B 0xfffffff00a27dc1c sz=224

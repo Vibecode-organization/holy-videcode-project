@@ -1,0 +1,24 @@
+=== sblegacy start pid=753 bundle=app.lake9674.aquila8809
+legacy create=0x212aeaa5c copyFrom=0x212af0fc4 copyPath=0x212ae53c0 acquire=0x212af12cc free=0x212acf848 sysgroup=0x212ace53c sys=0x212ad27a0
+[old-/ create_false] obj=0 err=0 acquire=0 path= fd=0 crash=0
+[old-/ create_true] obj=0 err=0 acquire=0 path= fd=0 crash=0
+[old-/ copy_from_path] obj=0 err=0 acquire=0 path= fd=0 crash=0
+[old-/private/var create_false] obj=0 err=0 acquire=0 path= fd=0 crash=0
+[old-/private/var create_true] obj=0 err=0 acquire=0 path= fd=0 crash=0
+[old-/private/var copy_from_path] obj=0 err=0 acquire=0 path= fd=0 crash=0
+[old-/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache create_false] obj=0 err=0 acquire=0 path= fd=0 crash=0
+[old-/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache create_true] obj=0 err=0 acquire=0 path= fd=0 crash=0
+[old-/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache copy_from_path] obj=0 err=0 acquire=0 path= fd=0 crash=0
+[old-/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches create_false] obj=0 err=0 acquire=0 path= fd=0 crash=0
+[old-/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches create_true] obj=0 err=0 acquire=0 path= fd=0 crash=0
+[old-/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches copy_from_path] obj=0 err=0 acquire=0 path= fd=0 crash=0
+[old-/private/var/containers/Data/System/com.apple.geod create_false] obj=0 err=0 acquire=0 path= fd=0 crash=0
+[old-/private/var/containers/Data/System/com.apple.geod create_true] obj=0 err=0 acquire=0 path= fd=0 crash=0
+[old-/private/var/containers/Data/System/com.apple.geod copy_from_path] obj=0 err=0 acquire=0 path= fd=0 crash=0
+[old-/var/mobile/Containers/Data/Application/2C0F6283-6FCD-4F72-9DCE-DA72B7F60261 create_false] obj=0 err=0 acquire=0 path= fd=0 crash=0
+[old-/var/mobile/Containers/Data/Application/2C0F6283-6FCD-4F72-9DCE-DA72B7F60261 create_true] obj=0 err=0 acquire=0 path= fd=0 crash=0
+[old-/var/mobile/Containers/Data/Application/2C0F6283-6FCD-4F72-9DCE-DA72B7F60261 copy_from_path] obj=0 err=0 acquire=0 path= fd=0 crash=0
+[old-/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E create_false] obj=0 err=0 acquire=0 path= fd=0 crash=0
+[old-/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E create_true] obj=0 err=0 acquire=0 path= fd=0 crash=0
+[old-/private/var/mobile/Containers/Shared/AppGroup/4F933082-8C88-4699-A56C-889A12C0143E copy_from_path] obj=0 err=0 acquire=0 path= fd=0 crash=0
+sys_path_traversal id=../../../../../../.. -> (null) err=55

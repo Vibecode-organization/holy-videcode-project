@@ -1,0 +1,57 @@
+## com.apple.quicklook.ThumbnailsAgent  93408 bytes
+### entitlements (16 keys)
+  application-identifier = com.apple.quicklook.ThumbnailsAgent
+  com.apple.application-identifier = com.apple.quicklook.ThumbnailsAgent
+  com.apple.developer.hardened-process
+  com.apple.fileprovider.enumerate
+  com.apple.fileprovider.fetch-url
+  com.apple.private.coreservices.canmaplsdatabase
+  com.apple.private.security.daemon-container
+  com.apple.private.security.storage.FileProvider
+  com.apple.private.vfs.open-by-id
+  com.apple.quicklook.extension-host
+  com.apple.rootless.storage.QLThumbnailCache
+  com.apple.runningboard.quicklook
+  com.apple.security.exception.mach-lookup.global-name = com.apple.CoreGraphics.CGPDFService
+  com.apple.security.script-restrictions
+  com.apple.usermanagerd.persona.fetch
+  seatbelt-profiles = com.apple.quicklook.QLThumbnailsService
+### selector-like strings (36)
+  allThumbnailsForFPItemID:
+  allThumbnailsForIno:fsid:
+  cacheThreadForProviderDomainID:
+  cacheThreadForVolume:
+  canGenerateThumbnailForContentType:atSize:
+  canGenerateThumbnailsForContentType:atSize:completionHandler:
+  com.apple.app-sandbox.read
+  com.apple.private.quicklook.thumbnailcache.inspector
+  com.apple.quicklook.ThumbnailsAgent
+  com.apple.quicklook.thumbnailGeneration.background
+  com.apple.quicklook.thumbnailGeneration.utility
+  countByEnumeratingWithState:objects:count:
+  errorWithDomain:code:userInfo:
+  fetchAllDataSeparatedVolumesWithCompletionHandler:
+  fileURLWithPath:
+  generateSuccessiveThumbnailRepresentationsForGeneratorRequests:completionHandler:
+  getAllThumbnailsForFPItemID:completionHandler:
+  getAllThumbnailsForIno:fsid:completionHandler:
+  getAllThumbnailsInfoForCacheAtURL:completionHandler:
+  getCanGenerateThumbnailsForContentType:completionHandler:
+  getInfoForCacheAtURL:completionHandler:
+  hasThumbnailForURLWrapper:updateLastHitDate:andSize:completion:
+  initWithAdditionsPresentOnURL:error:
+  initWithCapacity:
+  initWithClientProcessIdentifier:auditToken:
+  initWithMachServiceName:
+  initWithRequest:generationHandler:
+  makeQueueWithBackgroundPriority:
+  performSelector:withObject:
+  performSelector:withObject:withObject:
+  removeAdditionsOnURL:error:
+  removeCachedThumbnailsFromUninstalledFileProvidersWithIdentifiers:completionHandler:
+  setLastHitDateOfAllCachedThumbnailsToDate:withCompletionHandler:
+  setUpCacheDeleteWithThumbnailAdditionIndex:
+  stringWithUTF8String:
+  thumbnailsStoreURLForURL:completionBlock:
+### path/url-ish strings
+

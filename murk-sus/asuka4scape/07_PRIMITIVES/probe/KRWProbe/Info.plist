@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key><string>en</string>
+    <key>CFBundleDisplayName</key><string>KRWProbe 1.8</string>
+    <key>CFBundleExecutable</key><string>KRWProbe</string>
+    <key>CFBundleIdentifier</key><string>com.smith.krwprobe</string>
+    <key>CFBundleInfoDictionaryVersion</key><string>6.0</string>
+    <key>CFBundleName</key><string>KRWProbe</string>
+    <key>CFBundlePackageType</key><string>APPL</string>
+    <key>CFBundleShortVersionString</key><string>3.11</string>
+    <key>CFBundleVersion</key><string>41</string>
+    <key>LSRequiresIPhoneOS</key><true/>
+    <key>LSSupportsOpeningDocumentsInPlace</key><true/>
+    <key>MinimumOSVersion</key><string>14.0</string>
+    <key>UIFileSharingEnabled</key><true/>
+    <key>UIStatusBarStyle</key><string>UIStatusBarStyleLightContent</string>
+    <key>UISupportedInterfaceOrientations</key><array><string>UIInterfaceOrientationPortrait</string></array>
+</dict>
+</plist>

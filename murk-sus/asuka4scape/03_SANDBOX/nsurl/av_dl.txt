@@ -1,0 +1,800 @@
+0x10007e800:	pacibsp
+0x10007e804:	sub	sp, sp, #0x1a0
+0x10007e808:	stp	d9, d8, [sp, #0x130]
+0x10007e80c:	stp	x28, x27, [sp, #0x140]
+0x10007e810:	stp	x26, x25, [sp, #0x150]
+0x10007e814:	stp	x24, x23, [sp, #0x160]
+0x10007e818:	stp	x22, x21, [sp, #0x170]
+0x10007e81c:	stp	x20, x19, [sp, #0x180]
+0x10007e820:	stp	x29, x30, [sp, #0x190]
+0x10007e824:	add	x29, sp, #0x190
+0x10007e828:	mov	x19, x7
+0x10007e82c:	mov	x20, x6
+0x10007e830:	mov	x22, x5
+0x10007e834:	mov	x27, x4
+0x10007e838:	str	x2, [sp, #0x78]
+0x10007e83c:	str	x0, [sp, #0x40]
+0x10007e840:	ldr	x24, [x29, #0x40]
+0x10007e844:	ldp	x25, x26, [x29, #0x20]
+0x10007e848:	ldp	x21, x28, [x29, #0x10]
+0x10007e84c:	bl	0x100086eb8 ; symbol stub for: _objc_retain_x3
+0x10007e850:	mov	x23, x0
+0x10007e854:	bl	0x100086e98 ; symbol stub for: _objc_retain_x27
+0x10007e858:	mov	x27, x0
+0x10007e85c:	bl	0x100086e48 ; symbol stub for: _objc_retain_x22
+0x10007e860:	str	x0, [sp, #0x68]
+0x10007e864:	bl	0x100086e28 ; symbol stub for: _objc_retain_x20
+0x10007e868:	str	x0, [sp, #0x88]
+0x10007e86c:	bl	0x100086e08 ; symbol stub for: _objc_retain_x19
+0x10007e870:	str	x0, [sp, #0x80]
+0x10007e874:	bl	0x100086e38 ; symbol stub for: _objc_retain_x21
+0x10007e878:	mov	x19, x0
+0x10007e87c:	bl	0x100086ea8 ; symbol stub for: _objc_retain_x28
+0x10007e880:	str	x0, [sp, #0x48]
+0x10007e884:	bl	0x100086e88 ; symbol stub for: _objc_retain_x26
+0x10007e888:	str	x0, [sp, #0x70]
+0x10007e88c:	bl	0x100086e68 ; symbol stub for: _objc_retain_x24
+0x10007e890:	mov	x21, x27
+0x10007e894:	mov	x27, x25
+0x10007e898:	str	x0, [sp, #0x60]
+0x10007e89c:	adrp	x26, 109 ; 0x1000eb000
+0x10007e8a0:	ldr	x20, [x26, #0x500]
+0x10007e8a4:	mov	x0, x20
+0x10007e8a8:	mov	w1, #0x0
+0x10007e8ac:	bl	0x100086f98 ; symbol stub for: _os_log_type_enabled
+0x10007e8b0:	cbz	w0, 0x10007e944
+0x10007e8b4:	adrp	x8, 26 ; 0x100098000
+0x10007e8b8:	ldr	d0, [x8, #0x678]
+0x10007e8bc:	str	s0, [sp, #0xc0]
+0x10007e8c0:	ldp	x9, x8, [sp, #0x68]
+0x10007e8c4:	stur	x8, [sp, #0xc4]
+0x10007e8c8:	mov	w8, #0x800
+0x10007e8cc:	strh	w8, [sp, #0xcc]
+0x10007e8d0:	stur	x27, [sp, #0xce]
+0x10007e8d4:	strh	w8, [sp, #0xd6]
+0x10007e8d8:	ldr	x8, [sp, #0x78]
+0x10007e8dc:	str	x8, [sp, #0xd8]
+0x10007e8e0:	mov	w8, #0x840
+0x10007e8e4:	strh	w8, [sp, #0xe0]
+0x10007e8e8:	stur	x23, [sp, #0xe2]
+0x10007e8ec:	strh	w8, [sp, #0xea]
+0x10007e8f0:	stur	x21, [sp, #0xec]
+0x10007e8f4:	strh	w8, [sp, #0xf4]
+0x10007e8f8:	stur	x9, [sp, #0xf6]
+0x10007e8fc:	strh	w8, [sp, #0xfe]
+0x10007e900:	ldp	x9, x10, [sp, #0x80]
+0x10007e904:	str	x10, [sp, #0x100]
+0x10007e908:	strh	w8, [sp, #0x108]
+0x10007e90c:	add	x10, sp, #0xb
+0x10007e910:	stur	x9, [x10, #0xff]
+0x10007e914:	strh	w8, [sp, #0x112]
+0x10007e918:	add	x8, sp, #0x15
+0x10007e91c:	stur	x19, [x8, #0xff]
+0x10007e920:	adrp	x0, -126 ; 0x100000000
+0x10007e924:	add	x0, x0, #0x0
+0x10007e928:	adrp	x3, 78 ; 0x1000cc000
+0x10007e92c:	add	x3, x3, #0xe1e ; literal pool for: "Task <%{public}@>.<%lu> avAssetDownloadTaskWithDownloadToken: %llu, URL: %@, destinationURL: %@, temporaryDestinationURL: %@, assetTitle: %@, assetArtworkData: %@, options: %@"
+0x10007e930:	add	x4, sp, #0xc0
+0x10007e934:	mov	x1, x20
+0x10007e938:	mov	w2, #0x0
+0x10007e93c:	mov	w5, #0x5c
+0x10007e940:	bl	0x100086768 ; symbol stub for: __os_log_impl
+0x10007e944:	ldr	x25, [sp, #0x40]
+0x10007e948:	mov	x0, x25
+0x10007e94c:	mov	x2, x21
+0x10007e950:	str	x21, [sp, #0x50]
+0x10007e954:	bl	0x10008b7e0 ; SEL downloadDirectoryToUse:
+0x10007e958:	bl	0x100086bc8 ; symbol stub for: _objc_claimAutoreleasedReturnValue
+0x10007e95c:	mov	x20, x0
+0x10007e960:	adrp	x8, 90 ; 0x1000d8000
+0x10007e964:	ldr	x22, [x8, #0x5a8]
+0x10007e968:	ldr	x0, [x25, #0xa0]
+0x10007e96c:	cbz	x0, 0x10007e97c
+0x10007e970:	add	x8, sp, #0xc0
+0x10007e974:	bl	0x100089be0 ; SEL auditToken
+0x10007e978:	b	0x10007e984
+0x10007e97c:	movi.2d	v0, #0000000000000000
+0x10007e980:	stp	q0, q0, [sp, #0xc0]
+0x10007e984:	add	x3, sp, #0xc0
+0x10007e988:	mov	x0, x22
+0x10007e98c:	mov	x2, x20
+0x10007e990:	bl	0x10008e8e0 ; SEL safeDirectoryForDownloads:auditToken:
+0x10007e994:	bl	0x100086bc8 ; symbol stub for: _objc_claimAutoreleasedReturnValue
+0x10007e998:	mov	x24, x0
+0x10007e99c:	bl	0x100086ce8 ; symbol stub for: _objc_release_x20
+0x10007e9a0:	str	x24, [sp, #0x38]
+0x10007e9a4:	cbz	x24, 0x10007e9d0
+0x10007e9a8:	adrp	x8, 90 ; 0x1000d8000
+0x10007e9ac:	ldr	x0, [x8, #0xc80] ; literal pool symbol address: _OBJC_CLASS_$_NSDate
+0x10007e9b0:	str	x23, [sp, #0x28]
+0x10007e9b4:	bl	0x100091a60 ; SEL timeIntervalSinceReferenceDate
+0x10007e9b8:	mov.16b	v8, v0
+0x10007e9bc:	cbz	x19, 0x10007ea0c
+0x10007e9c0:	mov	x0, x19
+0x10007e9c4:	bl	0x10008d500 ; SEL mutableCopy
+0x10007e9c8:	str	x0, [sp, #0x30]
+0x10007e9cc:	b	0x10007ea20
+0x10007e9d0:	ldr	x8, [x26, #0x500]
+0x10007e9d4:	bl	0x100086ed8 ; symbol stub for: _objc_retain_x8
+0x10007e9d8:	mov	x20, x0
+0x10007e9dc:	mov	w1, #0x10
+0x10007e9e0:	bl	0x100086f98 ; symbol stub for: _os_log_type_enabled
+0x10007e9e4:	cbnz	w0, 0x10007eff8
+0x10007e9e8:	bl	0x100086ce8 ; symbol stub for: _objc_release_x20
+0x10007e9ec:	ldr	x0, [sp, #0x60]
+0x10007e9f0:	mov	x8, x0
+0x10007e9f4:	ldr	x9, [x8, #0x10]!
+0x10007e9f8:	mov	x20, #0x0
+0x10007e9fc:	mov	w1, #0x0
+0x10007ea00:	blraa	x9, x8
+0x10007ea04:	mov	x24, x19
+0x10007ea08:	b	0x10007ef8c
+0x10007ea0c:	adrp	x8, 90 ; 0x1000d8000
+0x10007ea10:	ldr	x0, [x8, #0xca0] ; literal pool symbol address: _OBJC_CLASS_$_NSMutableDictionary
+0x10007ea14:	bl	0x10008b5c0 ; SEL dictionary
+0x10007ea18:	bl	0x100086bc8 ; symbol stub for: _objc_claimAutoreleasedReturnValue
+0x10007ea1c:	str	x0, [sp, #0x30]
+0x10007ea20:	adrp	x2, 89 ; 0x1000d7000
+0x10007ea24:	add	x2, x2, #0x328
+0x10007ea28:	mov	x0, x19
+0x10007ea2c:	bl	0x10008d7c0 ; SEL objectForKeyedSubscript:
+0x10007ea30:	bl	0x100086bc8 ; symbol stub for: _objc_claimAutoreleasedReturnValue
+0x10007ea34:	str	x0, [sp, #0x58]
+0x10007ea38:	adrp	x3, 89 ; 0x1000d7000
+0x10007ea3c:	add	x3, x3, #0x328
+0x10007ea40:	ldr	x20, [sp, #0x30]
+0x10007ea44:	mov	x0, x20
+0x10007ea48:	mov	x2, #0x0
+0x10007ea4c:	bl	0x10008f860 ; SEL setObject:forKeyedSubscript:
+0x10007ea50:	bl	0x100086e28 ; symbol stub for: _objc_retain_x20
+0x10007ea54:	mov	x24, x0
+0x10007ea58:	bl	0x100086cd8 ; symbol stub for: _objc_release_x19
+0x10007ea5c:	mov	x19, #0x0
+0x10007ea60:	mov	x0, x25
+0x10007ea64:	bl	0x10008b720 ; SEL doesAVAssetDownloadSessionSupportMultipleDownloads
+0x10007ea68:	ldr	x8, [x29, #0x30]
+0x10007ea6c:	cmp	x8, #0x5
+0x10007ea70:	eor	w8, w0, #0x1
+0x10007ea74:	adrp	x9, 90 ; 0x1000d8000
+0x10007ea78:	ldr	x0, [x9, #0xab8] ; literal pool symbol address: _OBJC_CLASS_$___NSCFURLSessionTaskInfo
+0x10007ea7c:	csinc	w8, w8, wzr, eq
+0x10007ea80:	tbnz	w8, #0x0, 0x10007eae8
+0x10007ea84:	mov	x19, #0x0
+0x10007ea88:	bl	0x100086b58 ; symbol stub for: _objc_alloc
+0x10007ea8c:	mov	x22, x0
+0x10007ea90:	mov	x19, #0x0
+0x10007ea94:	mov	x0, x25
+0x10007ea98:	bl	0x10008a5e0 ; SEL clientBundleID
+0x10007ea9c:	bl	0x100086bc8 ; symbol stub for: _objc_claimAutoreleasedReturnValue
+0x10007eaa0:	mov	x28, x0
+0x10007eaa4:	mov	x0, x25
+0x10007eaa8:	bl	0x10008c6e0 ; SEL identifier
+0x10007eaac:	bl	0x100086bc8 ; symbol stub for: _objc_claimAutoreleasedReturnValue
+0x10007eab0:	mov	x20, x0
+0x10007eab4:	ldrb	w8, [x29, #0x38]
+0x10007eab8:	strb	w8, [sp, #0x18]
+0x10007eabc:	stp	x28, x0, [sp, #0x8]
+0x10007eac0:	ldr	x8, [sp, #0x70]
+0x10007eac4:	str	x8, [sp]
+0x10007eac8:	mov	x0, x22
+0x10007eacc:	mov	x2, x23
+0x10007ead0:	ldr	x3, [sp, #0x50]
+0x10007ead4:	ldp	x5, x4, [sp, #0x80]
+0x10007ead8:	mov	x6, x24
+0x10007eadc:	mov	x7, x27
+0x10007eae0:	bl	0x10008c860 ; SEL initWithAVAggregateDownloadTaskNoChildTaskKindWithURL:destinationURL:assetTitle:assetArtworkData:options:taskIdentifier:uniqueIdentifier:bundleID:sessionID:enableSPIDelegateCallbacks:
+0x10007eae4:	b	0x10007eb40
+0x10007eae8:	mov	x19, #0x0
+0x10007eaec:	bl	0x100086b58 ; symbol stub for: _objc_alloc
+0x10007eaf0:	mov	x22, x0
+0x10007eaf4:	mov	x19, #0x0
+0x10007eaf8:	mov	x0, x25
+0x10007eafc:	bl	0x10008a5e0 ; SEL clientBundleID
+0x10007eb00:	bl	0x100086bc8 ; symbol stub for: _objc_claimAutoreleasedReturnValue
+0x10007eb04:	mov	x28, x0
+0x10007eb08:	mov	x0, x25
+0x10007eb0c:	bl	0x10008c6e0 ; SEL identifier
+0x10007eb10:	bl	0x100086bc8 ; symbol stub for: _objc_claimAutoreleasedReturnValue
+0x10007eb14:	mov	x20, x0
+0x10007eb18:	ldp	x3, x8, [sp, #0x50]
+0x10007eb1c:	stp	x0, x8, [sp, #0x10]
+0x10007eb20:	ldr	x8, [sp, #0x70]
+0x10007eb24:	stp	x8, x28, [sp]
+0x10007eb28:	mov	x0, x22
+0x10007eb2c:	mov	x2, x23
+0x10007eb30:	ldp	x5, x4, [sp, #0x80]
+0x10007eb34:	mov	x6, x24
+0x10007eb38:	mov	x7, x27
+0x10007eb3c:	bl	0x10008c880 ; SEL initWithAVAssetDownloadURL:destinationURL:assetTitle:assetArtworkData:options:taskIdentifier:uniqueIdentifier:bundleID:sessionID:downloadConfig:
+0x10007eb40:	mov	x19, x0
+0x10007eb44:	bl	0x100086ce8 ; symbol stub for: _objc_release_x20
+0x10007eb48:	bl	0x100086d68 ; symbol stub for: _objc_release_x28
+0x10007eb4c:	ldr	x0, [x25, #0xc8]
+0x10007eb50:	bl	0x10008c5a0 ; SEL hasForegroundBackgroundStates
+0x10007eb54:	cbz	w0, 0x10007eb64
+0x10007eb58:	ldrb	w8, [x25, #0x86]
+0x10007eb5c:	eor	w8, w8, #0x1
+0x10007eb60:	b	0x10007eb68
+0x10007eb64:	mov	w8, #0x0
+0x10007eb68:	and	w2, w8, #0x1
+0x10007eb6c:	mov	x0, x19
+0x10007eb70:	bl	0x10008f800 ; SEL setMayBeDemotedToDiscretionary:
+0x10007eb74:	adrp	x20, 89 ; 0x1000d7000
+0x10007eb78:	ldr	x8, [x20, #0xa20] ; Objc class ref: bad class ref
+0x10007eb7c:	stp	x25, x8, [sp, #0xb0]
+0x10007eb80:	adrp	x8, 103 ; 0x1000e5000
+0x10007eb84:	ldr	x1, [x8, #0xec0]
+0x10007eb88:	add	x0, sp, #0xb0
+0x10007eb8c:	mov	x2, #0x0
+0x10007eb90:	mov	x3, x19
+0x10007eb94:	bl	0x100086c58 ; symbol stub for: _objc_msgSendSuper2
+0x10007eb98:	mov	x2, x0
+0x10007eb9c:	mov	x0, x19
+0x10007eba0:	bl	0x10008f1e0 ; SEL setDiscretionary:
+0x10007eba4:	mov	x22, #0x0
+0x10007eba8:	mov	x0, x19
+0x10007ebac:	bl	0x10008cf20 ; SEL isDiscretionary
+0x10007ebb0:	mov	x2, x0
+0x10007ebb4:	ldr	x8, [x20, #0xa20]
+0x10007ebb8:	stp	x25, x8, [sp, #0xa0]
+0x10007ebbc:	adrp	x8, 104 ; 0x1000e6000
+0x10007ebc0:	ldr	x1, [x8, #0xa18]
+0x10007ebc4:	mov	x22, #0x0
+0x10007ebc8:	add	x0, sp, #0xa0
+0x10007ebcc:	bl	0x100086c58 ; symbol stub for: _objc_msgSendSuper2
+0x10007ebd0:	mov	x2, x0
+0x10007ebd4:	mov	x22, #0x0
+0x10007ebd8:	mov	x0, x19
+0x10007ebdc:	bl	0x10008ed60 ; SEL setBasePriority:
+0x10007ebe0:	mov	x22, #0x0
+0x10007ebe4:	mov	x0, x19
+0x10007ebe8:	mov	w2, #0x1
+0x10007ebec:	bl	0x10008fe00 ; SEL setState:
+0x10007ebf0:	mov	x22, #0x0
+0x10007ebf4:	mov	x0, x19
+0x10007ebf8:	mov	w2, #0x1
+0x10007ebfc:	bl	0x10008fea0 ; SEL setSuspendCount:
+0x10007ec00:	mov	x22, #0x0
+0x10007ec04:	mov	x0, x19
+0x10007ec08:	mov.16b	v0, v8
+0x10007ec0c:	bl	0x10008f060 ; SEL setCreationTime:
+0x10007ec10:	mov	x22, #0x0
+0x10007ec14:	mov	x0, x19
+0x10007ec18:	ldr	x2, [sp, #0x78]
+0x10007ec1c:	bl	0x10008eb60 ; SEL setAVAssetDownloadToken:
+0x10007ec20:	ldr	x8, [sp, #0x78]
+0x10007ec24:	cmp	x8, #0x0
+0x10007ec28:	cset	w2, ne
+0x10007ec2c:	mov	x22, #0x0
+0x10007ec30:	mov	x0, x19
+0x10007ec34:	bl	0x10008f600 ; SEL setInitializedWithAVAsset:
+0x10007ec38:	mov	x22, #0x0
+0x10007ec3c:	mov	x0, x19
+0x10007ec40:	bl	0x10008cd20 ; SEL initializedWithAVAsset
+0x10007ec44:	cbz	w0, 0x10007ec78
+0x10007ec48:	mov	x22, #0x0
+0x10007ec4c:	mov	x0, x25
+0x10007ec50:	mov	x2, x23
+0x10007ec54:	ldr	x3, [sp, #0x78]
+0x10007ec58:	bl	0x100089c60 ; SEL avAssetForURL:downloadToken:
+0x10007ec5c:	bl	0x100086bc8 ; symbol stub for: _objc_claimAutoreleasedReturnValue
+0x10007ec60:	mov	x28, x0
+0x10007ec64:	mov	x22, x0
+0x10007ec68:	mov	x0, x19
+0x10007ec6c:	mov	x2, x28
+0x10007ec70:	bl	0x10008eba0 ; SEL setAVURLAsset:
+0x10007ec74:	b	0x10007ec7c
+0x10007ec78:	mov	x28, #0x0
+0x10007ec7c:	mov	x22, x28
+0x10007ec80:	mov	x0, x19
+0x10007ec84:	ldr	x2, [sp, #0x68]
+0x10007ec88:	bl	0x10008ffe0 ; SEL setTemporaryDestinationURL:
+0x10007ec8c:	mov	x22, x28
+0x10007ec90:	mov	x0, x19
+0x10007ec94:	ldr	x2, [sp, #0x88]
+0x10007ec98:	bl	0x10008ece0 ; SEL setAssetTitle:
+0x10007ec9c:	mov	x22, x28
+0x10007eca0:	mov	x0, x19
+0x10007eca4:	ldr	x2, [sp, #0x80]
+0x10007eca8:	bl	0x10008eca0 ; SEL setAssetArtworkData:
+0x10007ecac:	mov	x22, x28
+0x10007ecb0:	mov	x0, x19
+0x10007ecb4:	ldr	x2, [sp, #0x48]
+0x10007ecb8:	bl	0x10008ecc0 ; SEL setAssetOptionsPlist:
+0x10007ecbc:	ldr	x8, [sp, #0x58]
+0x10007ecc0:	orr	x8, x28, x8
+0x10007ecc4:	cbz	x8, 0x10007ed58
+0x10007ecc8:	mov	x22, x28
+0x10007eccc:	mov	x0, x25
+0x10007ecd0:	mov	x2, x19
+0x10007ecd4:	bl	0x10008b540 ; SEL destinationURLToUseForTask:
+0x10007ecd8:	bl	0x100086bc8 ; symbol stub for: _objc_claimAutoreleasedReturnValue
+0x10007ecdc:	mov	x20, x0
+0x10007ece0:	mov	x0, x19
+0x10007ece4:	mov	x2, x20
+0x10007ece8:	bl	0x10008f180 ; SEL setDestinationURL:
+0x10007ecec:	bl	0x100086ce8 ; symbol stub for: _objc_release_x20
+0x10007ecf0:	cbz	x28, 0x10007ed1c
+0x10007ecf4:	mov	x22, x28
+0x10007ecf8:	mov	x0, x28
+0x10007ecfc:	bl	0x1000877e0 ; SEL URL
+0x10007ed00:	bl	0x100086bc8 ; symbol stub for: _objc_claimAutoreleasedReturnValue
+0x10007ed04:	mov	x20, x0
+0x10007ed08:	mov	x0, x19
+0x10007ed0c:	mov	x2, x20
+0x10007ed10:	bl	0x10008eb80 ; SEL setAVAssetURL:
+0x10007ed14:	bl	0x100086ce8 ; symbol stub for: _objc_release_x20
+0x10007ed18:	b	0x10007ed70
+0x10007ed1c:	ldr	x8, [sp, #0x58]
+0x10007ed20:	cbz	x8, 0x10007ed58
+0x10007ed24:	mov	x22, #0x0
+0x10007ed28:	ldr	x0, [sp, #0x58]
+0x10007ed2c:	bl	0x100087ca0 ; SEL _asset
+0x10007ed30:	bl	0x100086bc8 ; symbol stub for: _objc_claimAutoreleasedReturnValue
+0x10007ed34:	mov	x20, x0
+0x10007ed38:	bl	0x1000877e0 ; SEL URL
+0x10007ed3c:	bl	0x100086bc8 ; symbol stub for: _objc_claimAutoreleasedReturnValue
+0x10007ed40:	mov	x22, x0
+0x10007ed44:	mov	x0, x19
+0x10007ed48:	mov	x2, x22
+0x10007ed4c:	bl	0x10008eb80 ; SEL setAVAssetURL:
+0x10007ed50:	bl	0x100086d08 ; symbol stub for: _objc_release_x22
+0x10007ed54:	bl	0x100086ce8 ; symbol stub for: _objc_release_x20
+0x10007ed58:	mov	x22, #0x0
+0x10007ed5c:	mov	x0, x19
+0x10007ed60:	bl	0x10008cd20 ; SEL initializedWithAVAsset
+0x10007ed64:	cbz	w0, 0x10007ed70
+0x10007ed68:	ldr	x8, [sp, #0x58]
+0x10007ed6c:	cbz	x8, 0x10007ef28
+0x10007ed70:	mov	x22, x28
+0x10007ed74:	mov	x0, x19
+0x10007ed78:	bl	0x10008b520 ; SEL destinationURL
+0x10007ed7c:	bl	0x100086bc8 ; symbol stub for: _objc_claimAutoreleasedReturnValue
+0x10007ed80:	mov	x20, x0
+0x10007ed84:	bl	0x100086ce8 ; symbol stub for: _objc_release_x20
+0x10007ed88:	cbz	x20, 0x10007ef28
+0x10007ed8c:	mov	x0, x25
+0x10007ed90:	mov	x2, x19
+0x10007ed94:	bl	0x10008d540 ; SEL newAVAssetDownloadSessionWrapperForTaskInfo:
+0x10007ed98:	mov	x22, x0
+0x10007ed9c:	cmp	x0, #0x0
+0x10007eda0:	cset	w23, ne
+0x10007eda4:	ldr	x8, [x26, #0x500]
+0x10007eda8:	bl	0x100086ed8 ; symbol stub for: _objc_retain_x8
+0x10007edac:	mov	x20, x0
+0x10007edb0:	cbz	x22, 0x10007ef48
+0x10007edb4:	mov	w1, #0x0
+0x10007edb8:	bl	0x100086f98 ; symbol stub for: _os_log_type_enabled
+0x10007edbc:	cbz	w0, 0x10007ee24
+0x10007edc0:	mov	x0, x19
+0x10007edc4:	bl	0x100088460 ; SEL _loggableDescription
+0x10007edc8:	bl	0x100086bc8 ; symbol stub for: _objc_claimAutoreleasedReturnValue
+0x10007edcc:	mov	x26, x0
+0x10007edd0:	adrp	x8, 26 ; 0x100098000
+0x10007edd4:	ldr	d0, [x8, #0x578]
+0x10007edd8:	str	s0, [sp, #0xc0]
+0x10007eddc:	stur	x0, [sp, #0xc4]
+0x10007ede0:	mov	w8, #0x840
+0x10007ede4:	strh	w8, [sp, #0xcc]
+0x10007ede8:	stur	x22, [sp, #0xce]
+0x10007edec:	mov	w8, #0x800
+0x10007edf0:	strh	w8, [sp, #0xd6]
+0x10007edf4:	ldr	x8, [sp, #0x78]
+0x10007edf8:	str	x8, [sp, #0xd8]
+0x10007edfc:	adrp	x0, -126 ; 0x100000000
+0x10007ee00:	add	x0, x0, #0x0
+0x10007ee04:	adrp	x3, 78 ; 0x1000cc000
+0x10007ee08:	add	x3, x3, #0xece ; literal pool for: "%{public}@ new AVAssetDownloadSession %@ with token %llu"
+0x10007ee0c:	add	x4, sp, #0xc0
+0x10007ee10:	mov	x1, x20
+0x10007ee14:	mov	w2, #0x0
+0x10007ee18:	mov	w5, #0x20
+0x10007ee1c:	bl	0x100086768 ; symbol stub for: __os_log_impl
+0x10007ee20:	bl	0x100086d48 ; symbol stub for: _objc_release_x26
+0x10007ee24:	bl	0x100086ce8 ; symbol stub for: _objc_release_x20
+0x10007ee28:	ldr	x26, [x25, #0xd0]
+0x10007ee2c:	adrp	x21, 90 ; 0x1000d8000
+0x10007ee30:	ldr	x0, [x21, #0xa08] ; literal pool symbol address: _OBJC_CLASS_$_NSNumber
+0x10007ee34:	mov	x2, x27
+0x10007ee38:	bl	0x10008d700 ; SEL numberWithUnsignedInteger:
+0x10007ee3c:	bl	0x100086bc8 ; symbol stub for: _objc_claimAutoreleasedReturnValue
+0x10007ee40:	mov	x20, x0
+0x10007ee44:	mov	x0, x26
+0x10007ee48:	mov	x2, x19
+0x10007ee4c:	mov	x3, x20
+0x10007ee50:	bl	0x10008f860 ; SEL setObject:forKeyedSubscript:
+0x10007ee54:	bl	0x100086ce8 ; symbol stub for: _objc_release_x20
+0x10007ee58:	adrp	x8, 106 ; 0x1000e8000
+0x10007ee5c:	ldrsw	x8, [x8, #0xe84]
+0x10007ee60:	add	x8, x25, x8
+0x10007ee64:	ldr	x26, [x8]
+0x10007ee68:	ldr	x0, [x21, #0xa08]
+0x10007ee6c:	mov	x2, x27
+0x10007ee70:	bl	0x10008d700 ; SEL numberWithUnsignedInteger:
+0x10007ee74:	bl	0x100086bc8 ; symbol stub for: _objc_claimAutoreleasedReturnValue
+0x10007ee78:	mov	x20, x0
+0x10007ee7c:	mov	x0, x26
+0x10007ee80:	mov	x2, x22
+0x10007ee84:	mov	x3, x20
+0x10007ee88:	bl	0x10008f860 ; SEL setObject:forKeyedSubscript:
+0x10007ee8c:	bl	0x100086ce8 ; symbol stub for: _objc_release_x20
+0x10007ee90:	mov	x0, x22
+0x10007ee94:	mov	x20, x27
+0x10007ee98:	mov	x2, x27
+0x10007ee9c:	bl	0x10008ff60 ; SEL setTaskIdentifier:
+0x10007eea0:	mov	x0, x25
+0x10007eea4:	mov	x2, x22
+0x10007eea8:	mov	x3, x19
+0x10007eeac:	mov	x4, x20
+0x10007eeb0:	bl	0x100090d00 ; SEL setupThroughputMonitorForWrapper:taskInfo:identifier:
+0x10007eeb4:	adrp	x8, 89 ; 0x1000d7000
+0x10007eeb8:	ldr	x8, [x8, #0xa20] ; Objc class ref: bad class ref
+0x10007eebc:	stp	x25, x8, [sp, #0x90]
+0x10007eec0:	adrp	x8, 103 ; 0x1000e5000
+0x10007eec4:	ldr	x1, [x8, #0x860]
+0x10007eec8:	add	x0, sp, #0x90
+0x10007eecc:	mov	x2, x20
+0x10007eed0:	bl	0x100086c58 ; symbol stub for: _objc_msgSendSuper2
+0x10007eed4:	ldr	x0, [x21, #0xa08]
+0x10007eed8:	mov	x2, x20
+0x10007eedc:	bl	0x10008d700 ; SEL numberWithUnsignedInteger:
+0x10007eee0:	bl	0x100086bc8 ; symbol stub for: _objc_claimAutoreleasedReturnValue
+0x10007eee4:	mov	x20, x0
+0x10007eee8:	mov	x0, x25
+0x10007eeec:	mov	x2, x20
+0x10007eef0:	mov	w3, #0xe
+0x10007eef4:	mov	w4, #0x1
+0x10007eef8:	bl	0x10008df20 ; SEL queueUpdatesForTask:updateType:highPriority:
+0x10007eefc:	bl	0x100086ce8 ; symbol stub for: _objc_release_x20
+0x10007ef00:	ldr	x25, [x25, #0xd8]
+0x10007ef04:	mov	x0, x19
+0x10007ef08:	bl	0x10008b520 ; SEL destinationURL
+0x10007ef0c:	bl	0x100086bc8 ; symbol stub for: _objc_claimAutoreleasedReturnValue
+0x10007ef10:	mov	x20, x0
+0x10007ef14:	mov	x0, x25
+0x10007ef18:	mov	x2, x27
+0x10007ef1c:	mov	x3, x20
+0x10007ef20:	bl	0x100089d20 ; SEL backgroundAVAssetDownloadTask:willDownloadToURL:
+0x10007ef24:	b	0x10007ef54
+0x10007ef28:	ldr	x8, [x26, #0x500]
+0x10007ef2c:	bl	0x100086ed8 ; symbol stub for: _objc_retain_x8
+0x10007ef30:	mov	x22, x0
+0x10007ef34:	mov	w1, #0x10
+0x10007ef38:	bl	0x100086f98 ; symbol stub for: _os_log_type_enabled
+0x10007ef3c:	cbnz	w0, 0x10007f068
+0x10007ef40:	mov	w23, #0x0
+0x10007ef44:	b	0x10007ef58
+0x10007ef48:	mov	w1, #0x10
+0x10007ef4c:	bl	0x100086f98 ; symbol stub for: _os_log_type_enabled
+0x10007ef50:	cbnz	w0, 0x10007f0c4
+0x10007ef54:	bl	0x100086ce8 ; symbol stub for: _objc_release_x20
+0x10007ef58:	bl	0x100086d08 ; symbol stub for: _objc_release_x22
+0x10007ef5c:	ldr	x0, [sp, #0x60]
+0x10007ef60:	mov	x8, x0
+0x10007ef64:	ldr	x9, [x8, #0x10]!
+0x10007ef68:	mov	x22, x28
+0x10007ef6c:	mov	x1, x23
+0x10007ef70:	ldr	x23, [sp, #0x28]
+0x10007ef74:	blraa	x9, x8
+0x10007ef78:	bl	0x100086cd8 ; symbol stub for: _objc_release_x19
+0x10007ef7c:	ldr	x8, [sp, #0x58]
+0x10007ef80:	bl	0x100086d78 ; symbol stub for: _objc_release_x8
+0x10007ef84:	bl	0x100086d28 ; symbol stub for: _objc_release_x24
+0x10007ef88:	bl	0x100086d68 ; symbol stub for: _objc_release_x28
+0x10007ef8c:	ldr	x8, [sp, #0x38]
+0x10007ef90:	bl	0x100086d78 ; symbol stub for: _objc_release_x8
+0x10007ef94:	ldr	x8, [sp, #0x60]
+0x10007ef98:	bl	0x100086d78 ; symbol stub for: _objc_release_x8
+0x10007ef9c:	ldr	x8, [sp, #0x70]
+0x10007efa0:	bl	0x100086d78 ; symbol stub for: _objc_release_x8
+0x10007efa4:	ldr	x8, [sp, #0x48]
+0x10007efa8:	bl	0x100086d78 ; symbol stub for: _objc_release_x8
+0x10007efac:	bl	0x100086d28 ; symbol stub for: _objc_release_x24
+0x10007efb0:	ldr	x8, [sp, #0x80]
+0x10007efb4:	bl	0x100086d78 ; symbol stub for: _objc_release_x8
+0x10007efb8:	ldr	x8, [sp, #0x88]
+0x10007efbc:	bl	0x100086d78 ; symbol stub for: _objc_release_x8
+0x10007efc0:	ldr	x8, [sp, #0x68]
+0x10007efc4:	bl	0x100086d78 ; symbol stub for: _objc_release_x8
+0x10007efc8:	ldr	x8, [sp, #0x50]
+0x10007efcc:	bl	0x100086d78 ; symbol stub for: _objc_release_x8
+0x10007efd0:	bl	0x100086d18 ; symbol stub for: _objc_release_x23
+0x10007efd4:	ldp	x29, x30, [sp, #0x190]
+0x10007efd8:	ldp	x20, x19, [sp, #0x180]
+0x10007efdc:	ldp	x22, x21, [sp, #0x170]
+0x10007efe0:	ldp	x24, x23, [sp, #0x160]
+0x10007efe4:	ldp	x26, x25, [sp, #0x150]
+0x10007efe8:	ldp	x28, x27, [sp, #0x140]
+0x10007efec:	ldp	d9, d8, [sp, #0x130]
+0x10007eff0:	add	sp, sp, #0x1a0
+0x10007eff4:	retab
+0x10007eff8:	mov	x0, x25
+0x10007effc:	bl	0x10008a5e0 ; SEL clientBundleID
+0x10007f000:	bl	0x100086bc8 ; symbol stub for: _objc_claimAutoreleasedReturnValue
+0x10007f004:	mov	x22, x0
+0x10007f008:	adrp	x8, 25 ; 0x100098000
+0x10007f00c:	ldr	d0, [x8, #0x610]
+0x10007f010:	str	s0, [sp, #0xc0]
+0x10007f014:	ldr	x8, [sp, #0x70]
+0x10007f018:	stur	x8, [sp, #0xc4]
+0x10007f01c:	mov	w8, #0x800
+0x10007f020:	strh	w8, [sp, #0xcc]
+0x10007f024:	stur	x27, [sp, #0xce]
+0x10007f028:	mov	w8, #0x840
+0x10007f02c:	strh	w8, [sp, #0xd6]
+0x10007f030:	str	x0, [sp, #0xd8]
+0x10007f034:	strh	w8, [sp, #0xe0]
+0x10007f038:	stur	xzr, [sp, #0xe2]
+0x10007f03c:	adrp	x0, -127 ; 0x100000000
+0x10007f040:	add	x0, x0, #0x0
+0x10007f044:	adrp	x3, 77 ; 0x1000cc000
+0x10007f048:	add	x3, x3, #0xf74 ; literal pool for: "Task <%{public}@>.<%lu> for client %@ does not have write access to destination directory %@"
+0x10007f04c:	add	x4, sp, #0xc0
+0x10007f050:	mov	x1, x20
+0x10007f054:	mov	w2, #0x10
+0x10007f058:	mov	w5, #0x2a
+0x10007f05c:	bl	0x100086748 ; symbol stub for: __os_log_error_impl
+0x10007f060:	bl	0x100086d08 ; symbol stub for: _objc_release_x22
+0x10007f064:	b	0x10007e9e8
+0x10007f068:	mov	x0, x19
+0x10007f06c:	bl	0x100088460 ; SEL _loggableDescription
+0x10007f070:	bl	0x100086bc8 ; symbol stub for: _objc_claimAutoreleasedReturnValue
+0x10007f074:	mov	x20, x0
+0x10007f078:	adrp	x8, 25 ; 0x100098000
+0x10007f07c:	ldr	d0, [x8, #0x598]
+0x10007f080:	str	s0, [sp, #0xc0]
+0x10007f084:	stur	x0, [sp, #0xc4]
+0x10007f088:	mov	w8, #0x800
+0x10007f08c:	strh	w8, [sp, #0xcc]
+0x10007f090:	ldr	x8, [sp, #0x78]
+0x10007f094:	stur	x8, [sp, #0xce]
+0x10007f098:	adrp	x0, -127 ; 0x100000000
+0x10007f09c:	add	x0, x0, #0x0
+0x10007f0a0:	adrp	x3, 77 ; 0x1000cc000
+0x10007f0a4:	add	x3, x3, #0xf3f ; literal pool for: "%{public}@ failed to instantiate AVAsset, token %llu"
+0x10007f0a8:	add	x4, sp, #0xc0
+0x10007f0ac:	mov	x1, x22
+0x10007f0b0:	mov	w2, #0x10
+0x10007f0b4:	mov	w5, #0x16
+0x10007f0b8:	bl	0x100086748 ; symbol stub for: __os_log_error_impl
+0x10007f0bc:	bl	0x100086ce8 ; symbol stub for: _objc_release_x20
+0x10007f0c0:	b	0x10007ef40
+0x10007f0c4:	mov	x0, x19
+0x10007f0c8:	bl	0x100088460 ; SEL _loggableDescription
+0x10007f0cc:	bl	0x100086bc8 ; symbol stub for: _objc_claimAutoreleasedReturnValue
+0x10007f0d0:	mov	x25, x0
+0x10007f0d4:	adrp	x8, 25 ; 0x100098000
+0x10007f0d8:	ldr	d0, [x8, #0x5b8]
+0x10007f0dc:	str	s0, [sp, #0xc0]
+0x10007f0e0:	stur	x0, [sp, #0xc4]
+0x10007f0e4:	adrp	x0, -127 ; 0x100000000
+0x10007f0e8:	add	x0, x0, #0x0
+0x10007f0ec:	adrp	x3, 77 ; 0x1000cc000
+0x10007f0f0:	add	x3, x3, #0xf07 ; literal pool for: "%{public}@ failed to instantiate AVAssetDownloadSession"
+0x10007f0f4:	add	x4, sp, #0xc0
+0x10007f0f8:	mov	x1, x20
+0x10007f0fc:	mov	w2, #0x10
+0x10007f100:	mov	w5, #0xc
+0x10007f104:	bl	0x100086748 ; symbol stub for: __os_log_error_impl
+0x10007f108:	bl	0x100086d38 ; symbol stub for: _objc_release_x25
+0x10007f10c:	b	0x10007ef54
+0x10007f110:	mov	x23, x0
+0x10007f114:	bl	0x100086d08 ; symbol stub for: _objc_release_x22
+0x10007f118:	b	0x10007f120
+0x10007f11c:	mov	x23, x0
+0x10007f120:	bl	0x100086ce8 ; symbol stub for: _objc_release_x20
+0x10007f124:	b	0x10007f1dc
+0x10007f128:	b	0x10007f13c
+0x10007f12c:	b	0x10007f13c
+0x10007f130:	b	0x10007f13c
+0x10007f134:	b	0x10007f13c
+0x10007f138:	b	0x10007f13c
+0x10007f13c:	mov	x23, x0
+0x10007f140:	bl	0x100086ce8 ; symbol stub for: _objc_release_x20
+0x10007f144:	b	0x10007f1bc
+0x10007f148:	b	0x10007f160
+0x10007f14c:	mov	x23, x0
+0x10007f150:	mov	x19, #0x0
+0x10007f154:	b	0x10007f208
+0x10007f158:	mov	x23, x0
+0x10007f15c:	b	0x10007f1c0
+0x10007f160:	mov	x23, x0
+0x10007f164:	bl	0x100086ce8 ; symbol stub for: _objc_release_x20
+0x10007f168:	b	0x10007f1c0
+0x10007f16c:	b	0x10007f170
+0x10007f170:	mov	x23, x0
+0x10007f174:	bl	0x100086ce8 ; symbol stub for: _objc_release_x20
+0x10007f178:	b	0x10007f1f0
+0x10007f17c:	b	0x10007f180
+0x10007f180:	mov	x23, x0
+0x10007f184:	b	0x10007f1f0
+0x10007f188:	b	0x10007f1b8
+0x10007f18c:	b	0x10007f1c8
+0x10007f190:	b	0x10007f1a4
+0x10007f194:	mov	x23, x0
+0x10007f198:	b	0x10007f1f8
+0x10007f19c:	mov	x23, x0
+0x10007f1a0:	b	0x10007f200
+0x10007f1a4:	mov	x23, x0
+0x10007f1a8:	b	0x10007f208
+0x10007f1ac:	str	x23, [sp, #0x28]
+0x10007f1b0:	mov	x23, x0
+0x10007f1b4:	b	0x10007f210
+0x10007f1b8:	mov	x23, x0
+0x10007f1bc:	bl	0x100086d08 ; symbol stub for: _objc_release_x22
+0x10007f1c0:	bl	0x100086cd8 ; symbol stub for: _objc_release_x19
+0x10007f1c4:	b	0x10007f1f0
+0x10007f1c8:	str	x23, [sp, #0x28]
+0x10007f1cc:	mov	x23, x0
+0x10007f1d0:	str	x20, [sp, #0x38]
+0x10007f1d4:	b	0x10007f208
+0x10007f1d8:	mov	x23, x0
+0x10007f1dc:	mov	x28, x19
+0x10007f1e0:	b	0x10007f1f0
+0x10007f1e4:	mov	x23, x0
+0x10007f1e8:	bl	0x100086cd8 ; symbol stub for: _objc_release_x19
+0x10007f1ec:	mov	x28, x22
+0x10007f1f0:	bl	0x100086d68 ; symbol stub for: _objc_release_x28
+0x10007f1f4:	mov	x19, x24
+0x10007f1f8:	ldr	x8, [sp, #0x58]
+0x10007f1fc:	bl	0x100086d78 ; symbol stub for: _objc_release_x8
+0x10007f200:	ldr	x8, [sp, #0x30]
+0x10007f204:	bl	0x100086d78 ; symbol stub for: _objc_release_x8
+0x10007f208:	ldr	x8, [sp, #0x38]
+0x10007f20c:	bl	0x100086d78 ; symbol stub for: _objc_release_x8
+0x10007f210:	ldr	x8, [sp, #0x60]
+0x10007f214:	bl	0x100086d78 ; symbol stub for: _objc_release_x8
+0x10007f218:	ldr	x8, [sp, #0x70]
+0x10007f21c:	bl	0x100086d78 ; symbol stub for: _objc_release_x8
+0x10007f220:	ldr	x8, [sp, #0x48]
+0x10007f224:	bl	0x100086d78 ; symbol stub for: _objc_release_x8
+0x10007f228:	bl	0x100086cd8 ; symbol stub for: _objc_release_x19
+0x10007f22c:	ldr	x8, [sp, #0x80]
+0x10007f230:	bl	0x100086d78 ; symbol stub for: _objc_release_x8
+0x10007f234:	ldr	x8, [sp, #0x88]
+0x10007f238:	bl	0x100086d78 ; symbol stub for: _objc_release_x8
+0x10007f23c:	ldr	x8, [sp, #0x68]
+0x10007f240:	bl	0x100086d78 ; symbol stub for: _objc_release_x8
+0x10007f244:	ldr	x8, [sp, #0x50]
+0x10007f248:	bl	0x100086d78 ; symbol stub for: _objc_release_x8
+0x10007f24c:	ldr	x8, [sp, #0x28]
+0x10007f250:	bl	0x100086d78 ; symbol stub for: _objc_release_x8
+0x10007f254:	mov	x0, x23
+0x10007f258:	bl	0x1000866b8 ; symbol stub for: __Unwind_Resume
+0x10007f25c:	pacibsp
+0x10007f260:	sub	sp, sp, #0x160
+0x10007f264:	stp	d9, d8, [sp, #0xf0]
+0x10007f268:	stp	x28, x27, [sp, #0x100]
+0x10007f26c:	stp	x26, x25, [sp, #0x110]
+0x10007f270:	stp	x24, x23, [sp, #0x120]
+0x10007f274:	stp	x22, x21, [sp, #0x130]
+0x10007f278:	stp	x20, x19, [sp, #0x140]
+0x10007f27c:	stp	x29, x30, [sp, #0x150]
+0x10007f280:	add	x29, sp, #0x150
+0x10007f284:	mov	x20, x7
+0x10007f288:	mov	x21, x6
+0x10007f28c:	mov	x22, x5
+0x10007f290:	mov	x24, x4
+0x10007f294:	mov	x23, x2
+0x10007f298:	mov	x28, x0
+0x10007f29c:	ldp	x26, x25, [x29, #0x20]
+0x10007f2a0:	ldp	x27, x19, [x29, #0x10]
+0x10007f2a4:	adrp	x8, 89 ; 0x1000d8000
+0x10007f2a8:	ldr	x8, [x8, #0xbf8] ; literal pool symbol address: ___stack_chk_guard
+0x10007f2ac:	ldr	x8, [x8]
+0x10007f2b0:	stur	x8, [x29, #-0x70]
+0x10007f2b4:	bl	0x100086eb8 ; symbol stub for: _objc_retain_x3
+0x10007f2b8:	str	x0, [sp, #0x18]
+0x10007f2bc:	bl	0x100086e68 ; symbol stub for: _objc_retain_x24
+0x10007f2c0:	str	x0, [sp, #0x30]
+0x10007f2c4:	bl	0x100086e48 ; symbol stub for: _objc_retain_x22
+0x10007f2c8:	str	x0, [sp, #0x38]
+0x10007f2cc:	bl	0x100086e38 ; symbol stub for: _objc_retain_x21
+0x10007f2d0:	str	x0, [sp, #0x40]
+0x10007f2d4:	bl	0x100086e28 ; symbol stub for: _objc_retain_x20
+0x10007f2d8:	str	x0, [sp, #0x20]
+0x10007f2dc:	bl	0x100086e98 ; symbol stub for: _objc_retain_x27
+0x10007f2e0:	str	x0, [sp, #0x28]
+0x10007f2e4:	bl	0x100086e88 ; symbol stub for: _objc_retain_x26
+0x10007f2e8:	str	x0, [sp, #0x48]
+0x10007f2ec:	bl	0x100086e78 ; symbol stub for: _objc_retain_x25
+0x10007f2f0:	mov	x26, x0
+0x10007f2f4:	adrp	x8, 108 ; 0x1000eb000
+0x10007f2f8:	ldr	x20, [x8, #0x500]
+0x10007f2fc:	mov	x0, x20
+0x10007f300:	mov	w1, #0x0
+0x10007f304:	bl	0x100086f98 ; symbol stub for: _os_log_type_enabled
+0x10007f308:	cbz	w0, 0x10007f388
+0x10007f30c:	adrp	x8, 25 ; 0x100098000
+0x10007f310:	ldr	d0, [x8, #0x670]
+0x10007f314:	str	s0, [sp, #0x80]
+0x10007f318:	ldr	x8, [sp, #0x48]
+0x10007f31c:	stur	x8, [sp, #0x84]
+0x10007f320:	mov	w8, #0x800
+0x10007f324:	strh	w8, [sp, #0x8c]
+0x10007f328:	stur	x19, [sp, #0x8e]
+0x10007f32c:	strh	w8, [sp, #0x96]
+0x10007f330:	str	x23, [sp, #0x98]
+0x10007f334:	mov	w8, #0x840
+0x10007f338:	strh	w8, [sp, #0xa0]
+0x10007f33c:	ldr	x9, [sp, #0x18]
+0x10007f340:	stur	x9, [sp, #0xa2]
+0x10007f344:	strh	w8, [sp, #0xaa]
+0x10007f348:	ldp	x10, x9, [sp, #0x30]
+0x10007f34c:	stur	x10, [sp, #0xac]
+0x10007f350:	strh	w8, [sp, #0xb4]
+0x10007f354:	stur	x9, [sp, #0xb6]
+0x10007f358:	strh	w8, [sp, #0xbe]
+0x10007f35c:	ldr	x8, [sp, #0x40]
+0x10007f360:	str	x8, [sp, #0xc0]
+0x10007f364:	adrp	x0, -127 ; 0x100000000
+0x10007f368:	add	x0, x0, #0x0
+0x10007f36c:	adrp	x3, 77 ; 0x1000cc000
+0x10007f370:	add	x3, x3, #0xfd1 ; literal pool for: "Task <%{public}@>.<%lu> avAggregateAssetDownloadTaskWithDownloadToken: %llu, serializedMediaSelections: %@, assetTitle: %@, assetArtworkData: %@, options: %@"
+0x10007f374:	add	x4, sp, #0x80
+0x10007f378:	mov	x1, x20
+0x10007f37c:	mov	w2, #0x0
+0x10007f380:	mov	w5, #0x48
+0x10007f384:	bl	0x100086768 ; symbol stub for: __os_log_impl
+0x10007f388:	adrp	x8, 89 ; 0x1000d8000
+0x10007f38c:	ldr	x0, [x8, #0xc80] ; literal pool symbol address: _OBJC_CLASS_$_NSDate
+0x10007f390:	bl	0x100091a60 ; SEL timeIntervalSinceReferenceDate
+0x10007f394:	mov.16b	v8, v0
+0x10007f398:	adrp	x8, 89 ; 0x1000d8000
+0x10007f39c:	ldr	x0, [x8, #0xab8] ; literal pool symbol address: _OBJC_CLASS_$___NSCFURLSessionTaskInfo
+0x10007f3a0:	bl	0x100086b58 ; symbol stub for: _objc_alloc
+0x10007f3a4:	mov	x24, x0
+0x10007f3a8:	mov	x0, x28
+0x10007f3ac:	bl	0x10008a5e0 ; SEL clientBundleID
+0x10007f3b0:	bl	0x100086bc8 ; symbol stub for: _objc_claimAutoreleasedReturnValue
+0x10007f3b4:	mov	x20, x0
+0x10007f3b8:	mov	x0, x28
+0x10007f3bc:	bl	0x10008c6e0 ; SEL identifier
+0x10007f3c0:	bl	0x100086bc8 ; symbol stub for: _objc_claimAutoreleasedReturnValue
+0x10007f3c4:	mov	x21, x0
+0x10007f3c8:	stp	x20, x0, [sp]
+0x10007f3cc:	mov	x0, x24
+0x10007f3d0:	ldp	x2, x3, [sp, #0x28]
+0x10007f3d4:	ldp	x4, x5, [sp, #0x38]
+0x10007f3d8:	mov	x6, x19
+0x10007f3dc:	ldr	x7, [sp, #0x48]
+0x10007f3e0:	bl	0x10008c840 ; SEL initWithAVAggregateAssetDownloadChildDownloadSessionIdentifier:assetTitle:assetArtworkData:options:taskIdentifier:uniqueIdentifier:bundleID:sessionID:
+0x10007f3e4:	mov	x27, x0
+0x10007f3e8:	bl	0x100086cf8 ; symbol stub for: _objc_release_x21
+0x10007f3ec:	bl	0x100086ce8 ; symbol stub for: _objc_release_x20
+0x10007f3f0:	ldr	x0, [x28, #0xc8]
+0x10007f3f4:	bl	0x10008c5a0 ; SEL hasForegroundBackgroundStates
+0x10007f3f8:	cbz	w0, 0x10007f408
+0x10007f3fc:	ldrb	w8, [x28, #0x86]
+0x10007f400:	eor	w8, w8, #0x1
+0x10007f404:	b	0x10007f40c
+0x10007f408:	mov	w8, #0x0
+0x10007f40c:	and	w2, w8, #0x1
+0x10007f410:	mov	x0, x27
+0x10007f414:	bl	0x10008f800 ; SEL setMayBeDemotedToDiscretionary:
+0x10007f418:	adrp	x22, 88 ; 0x1000d7000
+0x10007f41c:	ldr	x8, [x22, #0xa20] ; Objc class ref: bad class ref
+0x10007f420:	stp	x28, x8, [sp, #0x70]
+0x10007f424:	adrp	x8, 102 ; 0x1000e5000
+0x10007f428:	ldr	x1, [x8, #0xec0]
+0x10007f42c:	add	x0, sp, #0x70
+0x10007f430:	mov	x2, #0x0
+0x10007f434:	mov	x3, x27
+0x10007f438:	bl	0x100086c58 ; symbol stub for: _objc_msgSendSuper2
+0x10007f43c:	mov	x2, x0
+0x10007f440:	mov	x0, x27
+0x10007f444:	bl	0x10008f1e0 ; SEL setDiscretionary:
+0x10007f448:	mov	x0, x27
+0x10007f44c:	bl	0x10008cf20 ; SEL isDiscretionary
+0x10007f450:	mov	x2, x0
+0x10007f454:	ldr	x8, [x22, #0xa20]
+0x10007f458:	stp	x28, x8, [sp, #0x60]
+0x10007f45c:	adrp	x8, 103 ; 0x1000e6000
+0x10007f460:	ldr	x1, [x8, #0xa18]
+0x10007f464:	add	x0, sp, #0x60
+0x10007f468:	bl	0x100086c58 ; symbol stub for: _objc_msgSendSuper2
+0x10007f46c:	mov	x2, x0
+0x10007f470:	mov	x0, x27
+0x10007f474:	bl	0x10008ed60 ; SEL setBasePriority:
+0x10007f478:	mov	x0, x27
+0x10007f47c:	mov	w2, #0x1

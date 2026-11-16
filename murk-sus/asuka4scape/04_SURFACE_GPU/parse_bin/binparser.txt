@@ -1,0 +1,43 @@
+fffffff00a8d96f4  pacibsp  
+fffffff00a8d96f8  sub      sp, sp, #0x100
+fffffff00a8d96fc  stp      x28, x27, [sp, #0xa0]
+fffffff00a8d9700  stp      x26, x25, [sp, #0xb0]
+fffffff00a8d9704  stp      x24, x23, [sp, #0xc0]
+fffffff00a8d9708  stp      x22, x21, [sp, #0xd0]
+fffffff00a8d970c  stp      x20, x19, [sp, #0xe0]
+fffffff00a8d9710  stp      x29, x30, [sp, #0xf0]
+fffffff00a8d9714  add      x29, sp, #0xf0
+fffffff00a8d9718  mov      x22, x0
+fffffff00a8d971c  cbz      x5, #0xfffffff00a8d9724
+fffffff00a8d9720  str      xzr, [x5]
+fffffff00a8d9724  cmp      x1, #4
+fffffff00a8d9728  b.lo     #0xfffffff00a8d9778
+fffffff00a8d972c  ldrb     w8, [x22]
+fffffff00a8d9730  cmp      w8, #0xd4
+fffffff00a8d9734  cset     w24, eq
+fffffff00a8d9738  b.eq     #0xfffffff00a8d9770
+fffffff00a8d973c  adrp     x0, #0xfffffff007043000
+fffffff00a8d9740  add      x0, x0, #0xa08
+fffffff00a8d9744  mov      x23, x1
+fffffff00a8d9748  mov      x1, x22
+fffffff00a8d974c  mov      x19, x4
+fffffff00a8d9750  mov      x20, x3
+fffffff00a8d9754  mov      x21, x2
+fffffff00a8d9758  bl       #0xfffffff00aa7451c
+fffffff00a8d975c  mov      x1, x23
+fffffff00a8d9760  mov      x2, x21
+fffffff00a8d9764  mov      x3, x20
+fffffff00a8d9768  mov      x4, x19
+fffffff00a8d976c  cbnz     w0, #0xfffffff00a8d9778
+fffffff00a8d9770  tst      x22, #3
+fffffff00a8d9774  b.eq     #0xfffffff00a8d97a0
+fffffff00a8d9778  mov      x19, #0
+fffffff00a8d977c  mov      x0, x19
+fffffff00a8d9780  ldp      x29, x30, [sp, #0xf0]
+fffffff00a8d9784  ldp      x20, x19, [sp, #0xe0]
+fffffff00a8d9788  ldp      x22, x21, [sp, #0xd0]
+fffffff00a8d978c  ldp      x24, x23, [sp, #0xc0]
+fffffff00a8d9790  ldp      x26, x25, [sp, #0xb0]
+fffffff00a8d9794  ldp      x28, x27, [sp, #0xa0]
+fffffff00a8d9798  add      sp, sp, #0x100
+fffffff00a8d979c  retab    

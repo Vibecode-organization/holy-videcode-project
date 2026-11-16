@@ -1,0 +1,12 @@
+{
+	"path": "/",
+	"root": "/home/femboychik/work/sbx_build/.theos/ipa/Payload/SBX.app",
+	"bundle_id": "com.smith.sbx",
+	"bundle_version": "1",
+	"bundle_executable": "SBX",
+	"sha1": "Mp4K8ug+IRiO8pQvREoklhf9fO8=",
+	"sha256": "99phkZ5PV75p3XpM7wF7mYiO+J5NXtESUQRvJDkEhQI=",
+	"name": "SBX",
+	"files": [ "SBX" ],
+	"changed": [ "SBX", "embedded.mobileprovision" ]
+}

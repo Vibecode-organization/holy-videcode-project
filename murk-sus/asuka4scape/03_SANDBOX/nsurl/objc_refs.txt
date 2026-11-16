@@ -1,0 +1,109 @@
+Magic         = 64-bit MachO
+Type          = EXECUTE
+CPU           = AARCH64, ARM64e caps: USR00
+Commands      = 54 (Size: 6872)
+Flags         = NoUndefs, DyldLink, TwoLevel, PIE
+000: LC_SEGMENT_64 sz=0x00000000 off=0x00000000-0x00000000 addr=0x000000000-0x100000000 ---/---   __PAGEZERO        
+001: LC_SEGMENT_64 sz=0x000d4000 off=0x00000000-0x000d4000 addr=0x100000000-0x1000d4000 r-x/r-x   __TEXT            
+	sz=0x00084730 off=0x00001b98-0x000862c8 addr=0x100001b98-0x1000862c8               __TEXT.__text            PureInstructions|SomeInstructions 
+	sz=0x000011e0 off=0x000862c8-0x000874a8 addr=0x1000862c8-0x1000874a8               __TEXT.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+	sz=0x000000fc off=0x000874a8-0x000875a4 addr=0x1000874a8-0x1000875a4               __TEXT.__lazy_helpers    PureInstructions|SomeInstructions 
+	sz=0x0000ab60 off=0x000875c0-0x00092120 addr=0x1000875c0-0x100092120               __TEXT.__objc_stubs      PureInstructions|SomeInstructions 
+	sz=0x0000633c off=0x00092120-0x0009845c addr=0x100092120-0x10009845c               __TEXT.__objc_methlist    
+	sz=0x00000270 off=0x00098460-0x000986d0 addr=0x100098460-0x1000986d0               __TEXT.__const            
+	sz=0x0000e8f0 off=0x000986d0-0x000a6fc0 addr=0x1000986d0-0x1000a6fc0               __TEXT.__gcc_except_tab   
+	sz=0x00003d4d off=0x000a6fc0-0x000aad0d addr=0x1000a6fc0-0x1000aad0d               __TEXT.__cstring          (CstringLiterals)
+	sz=0x0000f534 off=0x000aad0d-0x000ba241 addr=0x1000aad0d-0x1000ba241               __TEXT.__objc_methname    (CstringLiterals)
+	sz=0x00000bd1 off=0x000ba241-0x000bae12 addr=0x1000ba241-0x1000bae12               __TEXT.__objc_classname   (CstringLiterals)
+	sz=0x00002f81 off=0x000bae12-0x000bdd93 addr=0x1000bae12-0x1000bdd93               __TEXT.__objc_methtype    (CstringLiterals)
+	sz=0x0000f9cf off=0x000bdd93-0x000cd762 addr=0x1000bdd93-0x1000cd762               __TEXT.__oslogstring      (CstringLiterals)
+	sz=0x00000659 off=0x000cd762-0x000cddbb addr=0x1000cd762-0x1000cddbb               __TEXT.__info_plist       
+	sz=0x00002e88 off=0x000cddbc-0x000d0c44 addr=0x1000cddbc-0x1000d0c44               __TEXT.__unwind_info      
+002: LC_SEGMENT_64 sz=0x00008000 off=0x000d4000-0x000dc000 addr=0x1000d4000-0x1000dc000 rw-/rw-   __DATA_CONST      ReadOnly
+	sz=0x000015e8 off=0x000d4000-0x000d55e8 addr=0x1000d4000-0x1000d55e8         __DATA_CONST.__const            
+	sz=0x00001e60 off=0x000d55e8-0x000d7448 addr=0x1000d55e8-0x1000d7448         __DATA_CONST.__cfstring         
+	sz=0x00000240 off=0x000d7448-0x000d7688 addr=0x1000d7448-0x1000d7688         __DATA_CONST.__objc_classlist  NoDeadStrip 
+	sz=0x00000038 off=0x000d7688-0x000d76c0 addr=0x1000d7688-0x1000d76c0         __DATA_CONST.__objc_catlist    NoDeadStrip 
+	sz=0x00000138 off=0x000d76c0-0x000d77f8 addr=0x1000d76c0-0x1000d77f8         __DATA_CONST.__objc_protolist   
+	sz=0x00000008 off=0x000d77f8-0x000d7800 addr=0x1000d77f8-0x1000d7800         __DATA_CONST.__objc_imageinfo   
+	sz=0x00000010 off=0x000d7800-0x000d7810 addr=0x1000d7800-0x1000d7810         __DATA_CONST.__objc_protorefs   
+	sz=0x00000228 off=0x000d7810-0x000d7a38 addr=0x1000d7810-0x1000d7a38         __DATA_CONST.__objc_superrefs   
+	sz=0x000001e0 off=0x000d7a38-0x000d7c18 addr=0x1000d7a38-0x1000d7c18         __DATA_CONST.__objc_intobj      
+	sz=0x00000018 off=0x000d7c18-0x000d7c30 addr=0x1000d7c18-0x1000d7c30         __DATA_CONST.__objc_arraydata   
+	sz=0x00000028 off=0x000d7c30-0x000d7c58 addr=0x1000d7c30-0x1000d7c58         __DATA_CONST.__objc_dictobj     
+	sz=0x00000018 off=0x000d7c58-0x000d7c70 addr=0x1000d7c58-0x1000d7c70         __DATA_CONST.__objc_arrayobj    
+	sz=0x00000908 off=0x000d7c70-0x000d8578 addr=0x1000d7c70-0x1000d8578         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x000007b0 off=0x000d8578-0x000d8d28 addr=0x1000d8578-0x1000d8d28         __DATA_CONST.__got              (NonLazySymbolPointers)
+	sz=0x00000008 off=0x000d8d28-0x000d8d30 addr=0x1000d8d28-0x1000d8d30         __DATA_CONST.__auth_ptr         
+003: LC_SEGMENT_64 sz=0x00010000 off=0x000dc000-0x000ec000 addr=0x1000dc000-0x1000ec000 rw-/rw-   __DATA            
+	sz=0x00009000 off=0x000dc000-0x000e5000 addr=0x1000dc000-0x1000e5000               __DATA.__objc_const       
+	sz=0x000037d0 off=0x000e5000-0x000e87d0 addr=0x1000e5000-0x1000e87d0               __DATA.__objc_selrefs    NoDeadStrip (LiteralPointers)
+	sz=0x000006f0 off=0x000e87d0-0x000e8ec0 addr=0x1000e87d0-0x1000e8ec0               __DATA.__objc_ivar        
+	sz=0x00001680 off=0x000e8ec0-0x000ea540 addr=0x1000e8ec0-0x1000ea540               __DATA.__objc_data        
+	sz=0x00000018 off=0x000ea540-0x000ea558 addr=0x1000ea540-0x1000ea558               __DATA.__lazy_load_got    
+	sz=0x00000eac off=0x000ea558-0x000eb404 addr=0x1000ea558-0x1000eb404               __DATA.__data             
+	sz=0x00000138 off=0x00000000-0x00000138 addr=0x1000eb408-0x1000eb540               __DATA.__bss              (Zerofill)
+004: LC_SEGMENT_64 sz=0x00013490 off=0x000ec000-0x000ff490 addr=0x1000ec000-0x100100000 r--/r--   __LINKEDIT        
+005: LC_DYLD_CHAINED_FIXUPS      offset=0x0000ec000 size=0x3e60
+006: LC_DYLD_EXPORTS_TRIE        offset=0x0000efe60 size=0x20
+007: LC_SYMTAB                   Symbol offset=0x000F0BE8, Num Syms: 519, String offset=0x000F3930-0x000F6F88
+008: LC_DYSYMTAB                 
+	             Local Syms: 1 at 0
+	          External Syms: 1 at 1
+	         Undefined Syms: 517 at 2
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 821 at 0x000f2c58
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+009: LC_LOAD_DYLINKER            /usr/lib/dyld
+010: LC_UUID                     8983D9C6-91C1-3FAB-84E5-76E73187AB49
+011: LC_BUILD_VERSION            Platform: iOS, MinOS: 27.2, SDK: 27.2, Tool: ld (27106)
+012: LC_SOURCE_VERSION           3896.200.61.0.0
+013: LC_MAIN                     Entry Point: 0x0000000000024f1c, Stack Size: 0x0
+014: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/BackBoardServices.framework/BackBoardServices (1)
+015: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices (1153.2.2)
+016: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/InstallCoordination.framework/InstallCoordination (1)
+017: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/ManagedConfiguration.framework/ManagedConfiguration (1)
+018: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/DuetActivityScheduler.framework/DuetActivityScheduler (1)
+019: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag (1)
+020: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/PowerLog.framework/PowerLog (1)
+021: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/SymptomReporter.framework/SymptomReporter (2394.40.17)
+022: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/CloudDocs.framework/CloudDocs (5168.40.162)
+023: LC_LOAD_DYLIB               /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth (2701.7.1)
+024: LC_LOAD_DYLIB               /System/Library/Frameworks/FileProvider.framework/FileProvider (4838.42.2)
+025: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/NanoRegistry.framework/NanoRegistry (1)
+026: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/UserManagement.framework/UserManagement (1)
+027: LC_LOAD_WEAK_DYLIB          /System/Library/PrivateFrameworks/ChronoServices.framework/ChronoServices (1)
+028: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics (1)
+029: LC_LOAD_DYLIB               /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics (2050.1.6)
+030: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/IDS.framework/IDS (800)
+031: LC_LOAD_DYLIB               /System/Library/Frameworks/CoreServices.framework/CoreServices (1226)
+032: LC_LOAD_DYLIB               /System/Library/Frameworks/Network.framework/Network (6681.42.2)
+033: LC_LOAD_DYLIB               /System/Library/Frameworks/CoreMedia.framework/CoreMedia (3385.14.1)
+034: LC_LOAD_DYLIB               /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit (275)
+035: LC_LOAD_DYLIB               /System/Library/Frameworks/AVFoundation.framework/AVFoundation (2)
+036: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/ProtocolBuffer.framework/ProtocolBuffer (326.31.9)
+037: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/MobileAsset.framework/MobileAsset (1)
+038: LC_LOAD_DYLIB               /usr/lib/libsqlite3.dylib (408)
+039: LC_LOAD_DYLIB               /System/Library/Frameworks/Security.framework/Security (62460.40.78)
+040: LC_LOAD_DYLIB               /System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration (1453.40.1)
+041: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/StreamingExtractor.framework/StreamingExtractor (1)
+042: LC_LOAD_DYLIB               /System/Library/Frameworks/Foundation.framework/Foundation (5027.1.8)
+043: LC_LOAD_DYLIB               /System/Library/Frameworks/CFNetwork.framework/CFNetwork (3896.200.61)
+044: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices (1084.40.7)
+045: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/StreamingZip.framework/StreamingZip (1)
+046: LC_LOAD_DYLIB               /usr/lib/libobjc.A.dylib (228)
+047: LC_LOAD_DYLIB               /usr/lib/libc++.1.dylib (2200.32)
+048: LC_LOAD_DYLIB               /usr/lib/libSystem.B.dylib (1359.40.3)
+049: LC_LOAD_DYLIB               /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation (5027.1.8)
+050: LC_LAZY_LOAD_DYLIB_INFO     offset=0x0000efe80 size=0xc8 /AppleInternal/Library/Frameworks/TapToRadarKit.framework/TapToRadarKit (weak) (DYLD_CHAINED_PTR_ARM64E_USERLAND)
+		0x001000ea540  _OBJC_CLASS_$_RadarComponent
+		0x001000ea548  _OBJC_CLASS_$_RadarDraft
+		0x001000ea550  _OBJC_CLASS_$_TapToRadarService
+051: LC_FUNCTION_STARTS          offset=0x0000eff48 size=0xca0
+052: LC_DATA_IN_CODE             offset=0x000f0be8-0x000f0be8 size=    0 entries=0
+053: LC_CODE_SIGNATURE           offset=0x0000f6f90 size=0x8500
+
+

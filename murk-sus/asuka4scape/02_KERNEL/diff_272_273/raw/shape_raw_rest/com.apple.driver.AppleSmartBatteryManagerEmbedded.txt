@@ -1,0 +1,24 @@
+funcs 695 695
+identical 688 ratio 0.98993
+changed regions 7
+== replace A[0:1] B[0:1]
+   A 0xfffffff009287850 sz=1592
+   B 0xfffffff00934c440 sz=1592
+== replace A[186:187] B[186:187]
+   A 0xfffffff009291f80 sz=11284
+   B 0xfffffff009356b70 sz=11284
+== replace A[376:377] B[376:377]
+   A 0xfffffff0092a11c0 sz=2748
+   B 0xfffffff009365db0 sz=2748
+== replace A[399:400] B[399:400]
+   A 0xfffffff0092a5604 sz=3036
+   B 0xfffffff00936a1f4 sz=3524
+== replace A[403:404] B[403:404]
+   A 0xfffffff0092a6f70 sz=3264
+   B 0xfffffff00936bd48 sz=3264
+== replace A[507:508] B[507:508]
+   A 0xfffffff0092afdb4 sz=12768
+   B 0xfffffff009374b8c sz=12928
+== replace A[627:628] B[627:628]
+   A 0xfffffff0092b71b8 sz=3280
+   B 0xfffffff00937c030 sz=3280

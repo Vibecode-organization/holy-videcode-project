@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PublishesEvents</key>
+	<string>com.apple.proximity.launch</string>
+	<key>Label</key>
+	<string>com.apple.aonsensed</string>
+	<key>Program</key>
+	<string>/usr/libexec/aonsensed</string>
+	<key>GroupName</key>
+	<string>_aonsensed</string>
+	<key>UserName</key>
+	<string>_aonsensed</string>
+	<key>ProcessType</key>
+	<string>Adaptive</string>
+	<key>POSIXSpawnType</key>
+	<string>Interactive</string>
+	<key>_Conclave</key>
+	<string>com.apple.aonsensed.conclave</string>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>KeepAlive</key>
+	<dict>
+		<key>SuccessfulExit</key>
+		<false/>
+	</dict>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.notifyd.matching</key>
+		<dict>
+			<key>com.apple.MobileAsset.AutoAssetAtomicNotification^com.apple.MobileAsset.UAF.AONSenseConfiguration^ATOMIC_INSTANCE_DOWNLOADED</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.MobileAsset.AutoAssetAtomicNotification^com.apple.MobileAsset.UAF.AONSenseConfiguration^ATOMIC_INSTANCE_DOWNLOADED</string>
+			</dict>
+			<key>com.apple.MobileAsset.AutoAssetAtomicNotification^com.apple.MobileAsset.UAF.AONSenseConfiguration^ATOMIC_INSTANCE_NO_ENTRIES</key>
+			<dict>
+				<key>Notification</key>
+				<string>com.apple.MobileAsset.AutoAssetAtomicNotification^com.apple.MobileAsset.UAF.AONSenseConfiguration^ATOMIC_INSTANCE_NO_ENTRIES</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.aonsensed.xpc</key>
+		<true/>
+		<key>com.apple.aonsensed.ipc</key>
+		<true/>
+	</dict>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>EnablePressuredExit</key>
+	<true/>
+</dict>
+</plist>
