@@ -15,57 +15,110 @@
     --capsule-text: #cfd8ff;
     --capsule-text-active: #ffffff;
   }
+
   *, *::before, *::after { box-sizing: border-box; }
+
   html, body {
-    margin: 0; padding: 0; width: 100%; height: 100%;
-    overflow: hidden; background: var(--bg);
-    touch-action: none; -webkit-user-select: none; user-select: none;
-    -webkit-tap-highlight-color: transparent; overscroll-behavior: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: var(--bg);
+    touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    overscroll-behavior: none;
   }
-  #stage { display: block; width: 100%; height: 100%; cursor: crosshair; }
+
+  #stage {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: crosshair;
+  }
 
   /* ===== UI ===== */
   #ui {
-    position: fixed; top: max(10px, env(safe-area-inset-top)); left: max(10px, env(safe-area-inset-left));
-    z-index: 10; display: flex; flex-direction: column; gap: 6px; pointer-events: none;
+    position: fixed;
+    top: max(10px, env(safe-area-inset-top));
+    left: max(10px, env(safe-area-inset-left));
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    pointer-events: none;
   }
+
   #modes {
-    pointer-events: auto; display: inline-flex; align-items: center; padding: 4px;
-    border-radius: 999px; background: var(--capsule-bg); border: 1px solid var(--capsule-border);
-    backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+    pointer-events: auto;
+    display: inline-flex;
+    align-items: center;
+    padding: 4px;
+    border-radius: 999px;
+    background: var(--capsule-bg);
+    border: 1px solid var(--capsule-border);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
   }
+
   .mode-btn {
-    appearance: none; border: 0; background: transparent; color: var(--capsule-text);
+    appearance: none;
+    border: 0;
+    background: transparent;
+    color: var(--capsule-text);
     font: 600 13px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    padding: 8px 14px; border-radius: 999px; cursor: pointer;
+    padding: 8px 14px;
+    border-radius: 999px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
     transition: background 0.2s, color 0.2s, transform 0.1s;
-    display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;
   }
+
   .mode-btn:active { transform: scale(0.97); }
-  .mode-btn[aria-pressed="true"] { background: var(--capsule-active); color: var(--capsule-text-active); }
-  .mode-btn img { width: 16px; height: 16px; flex: 0 0 auto; object-fit: contain; }
+
+  .mode-btn[aria-pressed="true"] {
+    background: var(--capsule-active);
+    color: var(--capsule-text-active);
+  }
+
+  .mode-btn img,
+  .mode-btn svg {
+    width: 16px;
+    height: 16px;
+    flex: 0 0 auto;
+    object-fit: contain;
+  }
 
   #hud {
-    color: var(--accent); font: 12px/1.3 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-    background: rgba(0, 0, 0, 0.35); padding: 4px 8px; border-radius: 6px; align-self: flex-start;
+    align-self: flex-start;
+    padding: 4px 8px;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.35);
+    color: var(--accent);
+    font: 12px/1.3 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   }
 </style>
 </head>
 <body>
+
 <canvas id="stage" aria-hidden="true"></canvas>
 
 <div id="ui">
   <div id="modes" role="group" aria-label="Режим частиц">
     <button class="mode-btn" data-mode="stars" aria-pressed="true">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width:16px;height:16px;">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
         <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8 5.8 21.3l2.4-7.4L2 9.4h7.6z"/>
       </svg>
       Звёзды
     </button>
     <button class="mode-btn" data-mode="deepseek" aria-pressed="false">
-      <!-- Локальная картинка, лежащая в той же папке -->
-      <img src="./deepseek.png" alt="DeepSeek" aria-hidden="true">
+      <img src="./deepseek.png" alt="" aria-hidden="true">
       DeepSeek
     </button>
   </div>
@@ -76,313 +129,457 @@
 (() => {
   'use strict';
 
+  /* ===================== Конфигурация ===================== */
+
   const CONFIG = Object.freeze({
-    BG_COLOR: '5, 5, 16',
+    BG_RGB: '5, 5, 16',
     TRAIL_ALPHA: 0.35,
+
     ATTRACT_FORCE: 0.08,
     REPEL_FORCE: 0.35,
+    REPEL_RADIUS_MULT: 1.5,
+    ATTRACT_RADIUS_MIN: 120,
+    ATTRACT_RADIUS_RATIO: 0.22,
+
     FRICTION: 0.985,
     MAX_SPEED: 8,
+    WRAP_MARGIN: 10,
+
     MAX_STARS: 400,
     MIN_STARS: 80,
     STAR_DENSITY: 3000,
-    ATTRACT_RADIUS_MIN: 120,
-    ATTRACT_RADIUS_RATIO: 0.22,
-    REPEL_RADIUS_MULT: 1.5,
     MAX_DPR: 2,
-    FIXED_STEP: 16.667,
+
+    FIXED_STEP: 1000 / 60,
     MAX_STEPS_PER_FRAME: 3,
+    MAX_FRAME_DELTA: 100,
     FPS_UPDATE_MS: 500,
-    WRAP_MARGIN: 10,
-    DS_LOGO_SIZE: 24, // Чуть увеличили размер для читаемости деталей
+
+    LOGO_SIZE: 24,
+    LOGO_SPRITE_SIZE: 64,
   });
 
-  const clamp = (v, min, max) => v < min ? min : v > max ? max : v;
+  const TWO_PI = Math.PI * 2;
+
+  /* ===================== Утилиты ===================== */
+
+  const clamp = (v, min, max) => (v < min ? min : v > max ? max : v);
   const rand = (min, max) => min + Math.random() * (max - min);
 
-  const TWINKLE_TABLE = (() => {
-    const t = new Float32Array(256);
-    for (let i = 0; i < 256; i++) t[i] = 0.6 + 0.4 * Math.sin((i / 256) * Math.PI * 2);
-    return t;
-  })();
+  // Таблица мерцания: 256 значений, индекс = фаза.
+  const TWINKLE = Float32Array.from(
+    { length: 256 },
+    (_, i) => 0.6 + 0.4 * Math.sin((i / 256) * TWO_PI)
+  );
+
+  /* ===================== DOM ===================== */
 
   const canvas = document.getElementById('stage');
+  const ctx = canvas.getContext('2d', { alpha: false });
   const hud = document.getElementById('hud');
   const modesEl = document.getElementById('modes');
-  const ctx = canvas.getContext('2d', { alpha: false });
 
-  let W = 0, H = 0, DPR = 1;
-  let attractRadius = CONFIG.ATTRACT_RADIUS_MIN;
-  let particles = [];
-  let rafId = 0;
-  let running = true;
-  let lastTime = 0;
-  let accumulator = 0;
-  let mode = 'stars';
+  /* ===================== Состояние ===================== */
+
+  const state = {
+    W: 0,
+    H: 0,
+    dpr: 1,
+    attractRadius: CONFIG.ATTRACT_RADIUS_MIN,
+    mode: 'stars',
+    running: false,
+    rafId: 0,
+    lastTime: 0,
+    accumulator: 0,
+    fpsFrames: 0,
+    fpsLast: 0,
+  };
 
   const pointer = { x: -9999, y: -9999, active: false };
+  let particles = [];
+  let logoSprite = null;
 
-  let fpsFrames = 0;
-  let fpsLast = performance.now();
+  /* ===================== Логотип ===================== */
 
-  // ===== Загрузка ЛОКАЛЬНОГО логотипа =====
-  const imgDeepSeek = new Image();
-  imgDeepSeek.src = './deepseek.png';
+  function loadLogo() {
+    const img = new Image();
 
-  let dsSprite = null;
-  imgDeepSeek.onload = () => {
-    const size = CONFIG.DS_LOGO_SIZE;
-    const scale = Math.min(window.devicePixelRatio || 1, 2);
-    const c = document.createElement('canvas');
-    c.width = Math.ceil(size * scale);
-    c.height = Math.ceil(size * scale);
-    const g = c.getContext('2d');
-    g.scale(scale, scale);
-    g.drawImage(imgDeepSeek, 0, 0, size, size);
-    dsSprite = c;
-  };
+    img.onload = () => {
+      const size = CONFIG.LOGO_SPRITE_SIZE;
+      const sprite = document.createElement('canvas');
+      sprite.width = size;
+      sprite.height = size;
+      sprite.getContext('2d').drawImage(img, 0, 0, size, size);
+      logoSprite = sprite;
+    };
 
-  imgDeepSeek.onerror = () => {
-    console.error('Ошибка: Файл deepseek.png не найден рядом с index.html!');
-  };
+    img.onerror = () => {
+      console.error('Файл deepseek.png не найден рядом с index.html');
+    };
 
-  // ===== Частица =====
+    img.src = './deepseek.png';
+  }
+
+  /* ===================== Частицы ===================== */
+
   class Particle {
-    constructor() { this.reset(true); }
+    constructor() {
+      this.reset(true);
+    }
+
     reset(randomPos = false) {
-      this.x = randomPos ? Math.random() * W : 0;
-      this.y = randomPos ? Math.random() * H : 0;
+      this.x = randomPos ? Math.random() * state.W : 0;
+      this.y = randomPos ? Math.random() * state.H : 0;
       this.vx = rand(-0.4, 0.4);
       this.vy = rand(-0.4, 0.4);
       this.r = rand(0.5, 2.1);
       this.baseAlpha = rand(0.4, 1.0);
       this.phase = (Math.random() * 256) | 0;
-      this.speed = (Math.random() * 3 + 1) | 0;
+      this.speed = ((Math.random() * 3) | 0) + 1;
       this.glow = this.r > 1.4;
       this.rot = rand(-0.2, 0.2);
       this.scale = rand(0.8, 1.15);
     }
   }
 
-  // ===== Размер и адаптация =====
   function computeParticleCount() {
-    const area = W * H;
-    return clamp(Math.floor(area / CONFIG.STAR_DENSITY), CONFIG.MIN_STARS, CONFIG.MAX_STARS);
+    const count = Math.floor((state.W * state.H) / CONFIG.STAR_DENSITY);
+    return clamp(count, CONFIG.MIN_STARS, CONFIG.MAX_STARS);
   }
 
   function syncPool(target) {
     if (particles.length < target) {
-      for (let i = particles.length; i < target; i++) particles.push(new Particle());
-    } else if (particles.length > target) {
+      for (let i = particles.length; i < target; i++) {
+        particles.push(new Particle());
+      }
+    } else {
       particles.length = target;
     }
   }
 
+  /* ===================== Размер ===================== */
+
   function resize() {
-    DPR = Math.min(window.devicePixelRatio || 1, CONFIG.MAX_DPR);
-    W = window.innerWidth; H = window.innerHeight;
-    canvas.width = Math.floor(W * DPR);
-    canvas.height = Math.floor(H * DPR);
-    canvas.style.width = W + 'px'; canvas.style.height = H + 'px';
-    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
-    attractRadius = Math.max(CONFIG.ATTRACT_RADIUS_MIN, Math.min(W, H) * CONFIG.ATTRACT_RADIUS_RATIO);
+    const { W, H } = { W: window.innerWidth, H: window.innerHeight };
+    state.W = W;
+    state.H = H;
+    state.dpr = Math.min(window.devicePixelRatio || 1, CONFIG.MAX_DPR);
+
+    canvas.width = Math.floor(W * state.dpr);
+    canvas.height = Math.floor(H * state.dpr);
+    canvas.style.width = `${W}px`;
+    canvas.style.height = `${H}px`;
+    ctx.setTransform(state.dpr, 0, 0, state.dpr, 0, 0);
+
+    state.attractRadius = Math.max(
+      CONFIG.ATTRACT_RADIUS_MIN,
+      Math.min(W, H) * CONFIG.ATTRACT_RADIUS_RATIO
+    );
+
     syncPool(computeParticleCount());
-    for (let i = 0; i < particles.length; i++) {
-      const s = particles[i];
-      if (s.x < -CONFIG.WRAP_MARGIN || s.x > W + CONFIG.WRAP_MARGIN || s.y < -CONFIG.WRAP_MARGIN || s.y > H + CONFIG.WRAP_MARGIN) {
-        s.reset(true);
+
+    const M = CONFIG.WRAP_MARGIN;
+    for (const p of particles) {
+      if (p.x < -M || p.x > W + M || p.y < -M || p.y > H + M) {
+        p.reset(true);
       }
     }
-    ctx.fillStyle = `rgb(${CONFIG.BG_COLOR})`;
-    ctx.fillRect(0, 0, W, H);
+
+    clearFrame(true);
   }
 
-  // ===== Ввод =====
-  function getPos(e) {
+  /* ===================== Ввод ===================== */
+
+  function getPointerPos(e) {
     const t = e.touches ? e.touches[0] : e;
     if (!t) return null;
     const rect = canvas.getBoundingClientRect();
-    return { x: clamp(t.clientX - rect.left, 0, W), y: clamp(t.clientY - rect.top, 0, H) };
+    return {
+      x: clamp(t.clientX - rect.left, 0, state.W),
+      y: clamp(t.clientY - rect.top, 0, state.H),
+    };
   }
-  function onStart(e) {
+
+  function onPointerDown(e) {
     if (e.cancelable) e.preventDefault();
-    const p = getPos(e); if (!p) return;
-    pointer.x = p.x; pointer.y = p.y; pointer.active = true;
+    const p = getPointerPos(e);
+    if (!p) return;
+    pointer.x = p.x;
+    pointer.y = p.y;
+    pointer.active = true;
   }
-  function onMove(e) {
+
+  function onPointerMove(e) {
     if (!pointer.active) return;
     if (e.cancelable) e.preventDefault();
-    const p = getPos(e); if (!p) return;
-    pointer.x = p.x; pointer.y = p.y;
+    const p = getPointerPos(e);
+    if (!p) return;
+    pointer.x = p.x;
+    pointer.y = p.y;
   }
-  function onEnd(e) {
+
+  function onPointerUp(e) {
     if (e.cancelable) e.preventDefault();
     if (!pointer.active) return;
-    const R = attractRadius * CONFIG.REPEL_RADIUS_MULT;
-    const R2 = R * R; const px = pointer.x, py = pointer.y;
-    for (let i = 0; i < particles.length; i++) {
-      const s = particles[i];
-      const dx = s.x - px; const dy = s.y - py;
+
+    const R = state.attractRadius * CONFIG.REPEL_RADIUS_MULT;
+    const R2 = R * R;
+    const px = pointer.x;
+    const py = pointer.y;
+
+    for (const p of particles) {
+      const dx = p.x - px;
+      const dy = p.y - py;
       const d2 = dx * dx + dy * dy;
       if (d2 < R2 && d2 > 1) {
         const dist = Math.sqrt(d2);
         const force = CONFIG.REPEL_FORCE * (1 - dist / R);
-        s.vx += (dx / dist) * force; s.vy += (dy / dist) * force;
+        p.vx += (dx / dist) * force;
+        p.vy += (dy / dist) * force;
       }
     }
-    pointer.active = false; pointer.x = -9999; pointer.y = -9999;
+
+    pointer.active = false;
+    pointer.x = -9999;
+    pointer.y = -9999;
   }
 
-  // ===== Физика =====
+  /* ===================== Физика ===================== */
+
   function physicsStep() {
-    const ar = attractRadius; const ar2 = ar * ar;
-    const px = pointer.x, py = pointer.y; const pa = pointer.active; const M = CONFIG.WRAP_MARGIN;
-    for (let i = 0; i < particles.length; i++) {
-      const s = particles[i];
-      if (pa) {
-        const dx = px - s.x; const dy = py - s.y;
+    const { attractRadius: ar, W, H } = state;
+    const ar2 = ar * ar;
+    const { x: px, y: py, active } = pointer;
+    const M = CONFIG.WRAP_MARGIN;
+    const maxSpeed2 = CONFIG.MAX_SPEED * CONFIG.MAX_SPEED;
+
+    for (const p of particles) {
+      if (active) {
+        const dx = px - p.x;
+        const dy = py - p.y;
         const d2 = dx * dx + dy * dy;
         if (d2 < ar2 && d2 > 1) {
           const dist = Math.sqrt(d2);
           const force = CONFIG.ATTRACT_FORCE * (1 - dist / ar);
-          s.vx += (dx / dist) * force; s.vy += (dy / dist) * force;
+          p.vx += (dx / dist) * force;
+          p.vy += (dy / dist) * force;
         }
       }
-      s.x += s.vx; s.y += s.vy;
-      s.vx *= CONFIG.FRICTION; s.vy *= CONFIG.FRICTION;
-      const sp2 = s.vx * s.vx + s.vy * s.vy; const max2 = CONFIG.MAX_SPEED * CONFIG.MAX_SPEED;
-      if (sp2 > max2) {
-        const sp = Math.sqrt(sp2); const k = CONFIG.MAX_SPEED / sp;
-        s.vx *= k; s.vy *= k;
+
+      p.x += p.vx;
+      p.y += p.vy;
+      p.vx *= CONFIG.FRICTION;
+      p.vy *= CONFIG.FRICTION;
+
+      const sp2 = p.vx * p.vx + p.vy * p.vy;
+      if (sp2 > maxSpeed2) {
+        const k = CONFIG.MAX_SPEED / Math.sqrt(sp2);
+        p.vx *= k;
+        p.vy *= k;
       }
-      if (s.x < -M) s.x = W + M; else if (s.x > W + M) s.x = -M;
-      if (s.y < -M) s.y = H + M; else if (s.y > H + M) s.y = -M;
-      s.phase = (s.phase + s.speed) & 255;
+
+      if (p.x < -M) p.x = W + M;
+      else if (p.x > W + M) p.x = -M;
+      if (p.y < -M) p.y = H + M;
+      else if (p.y > H + M) p.y = -M;
+
+      p.phase = (p.phase + p.speed) & 255;
     }
   }
 
-  // ===== Рендер =====
+  /* ===================== Рендер ===================== */
+
+  function clearFrame(solid = false) {
+    ctx.fillStyle = solid
+      ? `rgb(${CONFIG.BG_RGB})`
+      : `rgba(${CONFIG.BG_RGB}, ${CONFIG.TRAIL_ALPHA})`;
+    ctx.fillRect(0, 0, state.W, state.H);
+  }
+
   function renderStars() {
-    ctx.fillStyle = '#ffffff'; ctx.globalAlpha = 1;
-    for (let i = 0; i < particles.length; i++) {
-      const s = particles[i]; if (s.glow) continue;
-      ctx.globalAlpha = s.baseAlpha * TWINKLE_TABLE[s.phase];
-      ctx.beginPath(); ctx.arc(s.x, s.y, s.r, 0, 6.2832); ctx.fill();
+    ctx.fillStyle = '#ffffff';
+
+    // Сначала обычные точки, затем светящиеся — меньше переключений состояния.
+    for (const p of particles) {
+      if (p.glow) continue;
+      ctx.globalAlpha = p.baseAlpha * TWINKLE[p.phase];
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, TWO_PI);
+      ctx.fill();
     }
-    for (let i = 0; i < particles.length; i++) {
-      const s = particles[i]; if (!s.glow) continue;
-      const a = s.baseAlpha * TWINKLE_TABLE[s.phase];
+
+    for (const p of particles) {
+      if (!p.glow) continue;
+      const a = p.baseAlpha * TWINKLE[p.phase];
       ctx.globalAlpha = a;
-      ctx.beginPath(); ctx.arc(s.x, s.y, s.r, 0, 6.2832); ctx.fill();
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, TWO_PI);
+      ctx.fill();
+
       ctx.globalAlpha = a * 0.15;
-      ctx.beginPath(); ctx.arc(s.x, s.y, s.r * 2.5, 0, 6.2832); ctx.fill();
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r * 2.5, 0, TWO_PI);
+      ctx.fill();
     }
+
     ctx.globalAlpha = 1;
   }
 
   function renderLogos() {
-    if (!dsSprite) return;
-    const half = CONFIG.DS_LOGO_SIZE / 2;
-    ctx.globalAlpha = 1;
-    for (let i = 0; i < particles.length; i++) {
-      const s = particles[i];
-      ctx.globalAlpha = s.baseAlpha * TWINKLE_TABLE[s.phase];
-      if (s.rot !== 0) {
-        ctx.save();
-        ctx.translate(s.x, s.y);
-        ctx.rotate(s.rot + Math.sin(s.phase * 0.05) * 0.05);
-        ctx.drawImage(dsSprite, -half * s.scale, -half * s.scale, CONFIG.DS_LOGO_SIZE * s.scale, CONFIG.DS_LOGO_SIZE * s.scale);
-        ctx.restore();
-      } else {
-        ctx.drawImage(dsSprite, s.x - half * s.scale, s.y - half * s.scale, CONFIG.DS_LOGO_SIZE * s.scale, CONFIG.DS_LOGO_SIZE * s.scale);
-      }
+    if (!logoSprite) return;
+
+    const half = CONFIG.LOGO_SIZE / 2;
+    const size = CONFIG.LOGO_SIZE;
+
+    for (const p of particles) {
+      const s = p.scale;
+      ctx.globalAlpha = p.baseAlpha * TWINKLE[p.phase];
+
+      // Вращение через transform: без save/restore на каждой частице.
+      const angle = p.rot + TWINKLE[p.phase] * 0.05 - 0.03;
+      const cos = Math.cos(angle) * s;
+      const sin = Math.sin(angle) * s;
+
+      ctx.setTransform(
+        state.dpr * cos, state.dpr * sin,
+        -state.dpr * sin, state.dpr * cos,
+        state.dpr * p.x, state.dpr * p.y
+      );
+      ctx.drawImage(logoSprite, -half, -half, size, size);
     }
+
+    ctx.setTransform(state.dpr, 0, 0, state.dpr, 0, 0);
     ctx.globalAlpha = 1;
+  }
+
+  function renderAttractCircle() {
+    if (!pointer.active) return;
+    ctx.beginPath();
+    ctx.arc(pointer.x, pointer.y, state.attractRadius, 0, TWO_PI);
+    ctx.strokeStyle = 'rgba(120, 160, 255, 0.08)';
+    ctx.lineWidth = 1;
+    ctx.stroke();
   }
 
   function render() {
-    ctx.fillStyle = `rgba(${CONFIG.BG_COLOR}, ${CONFIG.TRAIL_ALPHA})`;
-    ctx.fillRect(0, 0, W, H);
-    if (mode === 'stars') renderStars(); else renderLogos();
-    if (pointer.active) {
-      ctx.beginPath(); ctx.arc(pointer.x, pointer.y, attractRadius, 0, 6.2832);
-      ctx.strokeStyle = 'rgba(120, 160, 255, 0.08)'; ctx.lineWidth = 1; ctx.stroke();
+    clearFrame(false);
+    if (state.mode === 'stars') {
+      renderStars();
+    } else {
+      renderLogos();
     }
+    renderAttractCircle();
   }
 
-  // ===== FPS =====
+  /* ===================== FPS ===================== */
+
   function updateFPS(now) {
-    fpsFrames++;
-    const elapsed = now - fpsLast;
-    if (elapsed >= CONFIG.FPS_UPDATE_MS) {
-      hud.textContent = `FPS: ${Math.round((fpsFrames * 1000) / elapsed)}  \u2605 ${particles.length}`;
-      fpsFrames = 0; fpsLast = now;
-    }
+    state.fpsFrames++;
+    const elapsed = now - state.fpsLast;
+    if (elapsed < CONFIG.FPS_UPDATE_MS) return;
+
+    const fps = Math.round((state.fpsFrames * 1000) / elapsed);
+    hud.textContent = `FPS: ${fps}  ★ ${particles.length}`;
+    state.fpsFrames = 0;
+    state.fpsLast = now;
   }
 
-  // ===== Цикл =====
+  /* ===================== Цикл ===================== */
+
   function loop(now) {
-    if (!running) return;
-    const dt = Math.min(now - lastTime, 100);
-    lastTime = now; accumulator += dt;
+    if (!state.running) return;
+
+    const dt = Math.min(now - state.lastTime, CONFIG.MAX_FRAME_DELTA);
+    state.lastTime = now;
+    state.accumulator += dt;
+
     let steps = 0;
-    while (accumulator >= CONFIG.FIXED_STEP && steps < CONFIG.MAX_STEPS_PER_FRAME) {
-      physicsStep(); accumulator -= CONFIG.FIXED_STEP; steps++;
+    while (state.accumulator >= CONFIG.FIXED_STEP && steps < CONFIG.MAX_STEPS_PER_FRAME) {
+      physicsStep();
+      state.accumulator -= CONFIG.FIXED_STEP;
+      steps++;
     }
-    if (steps === CONFIG.MAX_STEPS_PER_FRAME) accumulator = 0;
-    render(); updateFPS(now);
-    rafId = requestAnimationFrame(loop);
+    if (steps === CONFIG.MAX_STEPS_PER_FRAME) state.accumulator = 0;
+
+    render();
+    updateFPS(now);
+    state.rafId = requestAnimationFrame(loop);
   }
 
   function start() {
-    if (running) return;
-    running = true; lastTime = performance.now(); accumulator = 0;
-    rafId = requestAnimationFrame(loop);
+    if (state.running) return;
+    state.running = true;
+    state.lastTime = performance.now();
+    state.accumulator = 0;
+    state.fpsLast = state.lastTime;
+    state.rafId = requestAnimationFrame(loop);
   }
+
   function stop() {
-    running = false; if (rafId) cancelAnimationFrame(rafId); rafId = 0;
+    state.running = false;
+    if (state.rafId) cancelAnimationFrame(state.rafId);
+    state.rafId = 0;
   }
-  function onVisibilityChange() { if (document.hidden) stop(); else start(); }
 
-  // ===== Режимы =====
+  /* ===================== Режимы ===================== */
+
   function setMode(next) {
-    if (next === mode) return;
-    mode = next;
-    const btns = modesEl.querySelectorAll('.mode-btn');
-    for (let i = 0; i < btns.length; i++) {
-      const b = btns[i];
-      b.setAttribute('aria-pressed', b.dataset.mode === mode ? 'true' : 'false');
+    if (next === state.mode) return;
+    state.mode = next;
+
+    for (const btn of modesEl.querySelectorAll('.mode-btn')) {
+      btn.setAttribute('aria-pressed', String(btn.dataset.mode === next));
     }
-    for (let i = 0; i < particles.length; i++) particles[i].reset(true);
-    ctx.fillStyle = `rgb(${CONFIG.BG_COLOR})`;
-    ctx.fillRect(0, 0, W, H);
+
+    for (const p of particles) p.reset(true);
+    clearFrame(true);
   }
-  modesEl.addEventListener('click', (e) => {
-    const btn = e.target.closest('.mode-btn');
-    if (!btn) return;
-    setMode(btn.dataset.mode);
-  });
 
-  const passiveOpt = { passive: true };
-  const activeOpt = { passive: false };
-  canvas.addEventListener('touchstart', onStart, activeOpt);
-  canvas.addEventListener('touchmove', onMove, activeOpt);
-  canvas.addEventListener('touchend', onEnd, activeOpt);
-  canvas.addEventListener('touchcancel', onEnd, activeOpt);
-  canvas.addEventListener('mousedown', onStart);
-  canvas.addEventListener('mousemove', (e) => { if (pointer.active) onMove(e); });
-  canvas.addEventListener('mouseup', onEnd);
-  canvas.addEventListener('mouseleave', (e) => { if (pointer.active) onEnd(e); });
-  canvas.addEventListener('contextmenu', (e) => e.preventDefault());
-  window.addEventListener('resize', resize, passiveOpt);
-  window.addEventListener('orientationchange', () => setTimeout(resize, 200), passiveOpt);
-  document.addEventListener('visibilitychange', onVisibilityChange, passiveOpt);
-  window.addEventListener('blur', stop, passiveOpt);
-  window.addEventListener('focus', start, passiveOpt);
+  /* ===================== Подписки ===================== */
 
-  resize();
-  lastTime = performance.now();
-  rafId = requestAnimationFrame(loop);
+  function bindEvents() {
+    const passive = { passive: true };
+    const active = { passive: false };
+
+    modesEl.addEventListener('click', (e) => {
+      const btn = e.target.closest('.mode-btn');
+      if (btn) setMode(btn.dataset.mode);
+    });
+
+    canvas.addEventListener('touchstart', onPointerDown, active);
+    canvas.addEventListener('touchmove', onPointerMove, active);
+    canvas.addEventListener('touchend', onPointerUp, active);
+    canvas.addEventListener('touchcancel', onPointerUp, active);
+
+    canvas.addEventListener('mousedown', onPointerDown);
+    canvas.addEventListener('mousemove', onPointerMove);
+    canvas.addEventListener('mouseup', onPointerUp);
+    canvas.addEventListener('mouseleave', (e) => {
+      if (pointer.active) onPointerUp(e);
+    });
+    canvas.addEventListener('contextmenu', (e) => e.preventDefault());
+
+    window.addEventListener('resize', resize, passive);
+    window.addEventListener('orientationchange', () => setTimeout(resize, 200), passive);
+    window.addEventListener('blur', stop, passive);
+    window.addEventListener('focus', start, passive);
+    document.addEventListener(
+      'visibilitychange',
+      () => (document.hidden ? stop() : start()),
+      passive
+    );
+  }
+
+  /* ===================== Инициализация ===================== */
+
+  function init() {
+    loadLogo();
+    bindEvents();
+    resize();
+    start();
+  }
+
+  init();
 })();
 </script>
 </body>
