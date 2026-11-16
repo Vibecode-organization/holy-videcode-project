@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "login": "murk-sus",
+  "name": "murk Surku",
+  "message": "На коврик для мышки <3",
+  "methods": [
+    {
+      "type": "trc20",
+      "label": "USDT TRC-20",
+      "value": "TCPD7jzSMtQ4zkoSxSbUZi6RFoVdKqv78w"
+    }
+  ],
+  "updated": "2026-11-16T06:24:44.971Z"
+}
