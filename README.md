@@ -10,7 +10,7 @@
 
 > An open collection of projects from vibecoders all around the world.
 >
-> 🌐 Website: **https://murk-sus.github.io/holy-videcode-project/**
+> 🌐 Website: **https://vibecode-organization.github.io/holy-videcode-project/**
 
 **Holy Vibecode Project** is a place where any vibecoder can share their project.
 It doesn't matter what platform it's built on, how long it took, or how experienced you are —
@@ -106,7 +106,7 @@ Links: iOS / web / bot (if any)
 
 | Project | Author | Platforms | Download |
 | --- | --- | --- | --- |
-| Project Asuka | [Murk](https://github.com/murk-sus) | Android, Windows | [ProjectAsuka_Murk.zip](https://github.com/murk-sus/holy-videcode-project/releases/download/Murk/project-asuka/ProjectAsuka_Murk.zip) |
+| Project Asuka | [Murk](https://github.com/murk-sus) | Android, Windows | [ProjectAsuka_Murk.zip](https://github.com/Vibecode-organization/holy-videcode-project/releases/download/Murk/project-asuka/ProjectAsuka_Murk.zip) |
 
 ### 💡 Principles
 
@@ -121,7 +121,7 @@ Links: iOS / web / bot (if any)
 
 > Открытая коллекция проектов от вайбкодеров со всего мира.
 >
-> 🌐 Сайт: **https://murk-sus.github.io/holy-videcode-project/**
+> 🌐 Сайт: **https://vibecode-organization.github.io/holy-videcode-project/**
 
 **Holy Vibecode Project** — это место, где любой вайбкодер может поделиться своим проектом.
 Неважно, на какой платформе он сделан, сколько времени ушло на разработку и какой у тебя опыт:
@@ -217,7 +217,7 @@ ProjectAsuka_Murk.zip
 
 | Проект | Автор | Платформы | Скачать |
 | --- | --- | --- | --- |
-| Project Asuka | [Murk](https://github.com/murk-sus) | Android, Windows | [ProjectAsuka_Murk.zip](https://github.com/murk-sus/holy-videcode-project/releases/download/Murk/project-asuka/ProjectAsuka_Murk.zip) |
+| Project Asuka | [Murk](https://github.com/murk-sus) | Android, Windows | [ProjectAsuka_Murk.zip](https://github.com/Vibecode-organization/holy-videcode-project/releases/download/Murk/project-asuka/ProjectAsuka_Murk.zip) |
 
 ### 💡 Принципы
 

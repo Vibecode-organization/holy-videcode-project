@@ -3,7 +3,7 @@
 (function () {
   'use strict';
 
-  const OWNER = 'murk-sus';
+  const OWNER = 'Vibecode-organization';
   const REPO = 'holy-videcode-project';
   const API = 'https://api.github.com';
   const SITE_DIRS = new Set(['web', 'support', '.github']);
