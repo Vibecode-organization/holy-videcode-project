@@ -58,7 +58,6 @@
       return row ? row.slice(prefix.length) : null;
     }
     function readFlag() {
-      // The URL survives a SpringBoard respring best, so check it first.
       try { if (location.hash === HASH) return true; } catch {}
       try { if (cookieValue(KEY) === '1') return true; } catch {}
       try { if (localStorage.getItem(KEY) === '1') return true; } catch {}
