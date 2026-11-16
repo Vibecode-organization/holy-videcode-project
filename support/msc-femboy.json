@@ -13,7 +13,12 @@
       "type": "ton",
       "label": "TON",
       "value": "UQDm8Og1-R3FudJUegv4T2o0vwzyPXdgFpQGbmjWhvj_RMeH"
+    },
+    {
+      "type": "custom",
+      "label": "USDT TON",
+      "value": "UQDm8Og1-R3FudJUegv4T2o0vwzyPXdgFpQGbmjWhvj_RMeH"
     }
   ],
-  "updated": "2026-11-16T10:01:49.496Z"
+  "updated": "2026-11-16T10:19:28.166Z"
 }
